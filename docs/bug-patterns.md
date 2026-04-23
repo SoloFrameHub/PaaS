@@ -981,3 +981,99 @@ doesn't invent it from scratch.
 - Keep `run-and-trace` as the canonical entrypoint for ops scripts
   even after that lands — structured system_audit rows are more
   useful than raw log files anyway.
+
+---
+
+### B-027 · Dokploy schedule wiring has two silent traps
+
+**Two related failures around `schedule.create` + idempotency —
+surfaced together trying to run the first `ops-leak-harness`.**
+
+---
+
+**Part A — missing `appName`/`serviceName` on create makes
+`runManually` 500.**
+
+Calling `POST /api/schedule.create` with only `applicationId` set
+(no `appName`, no `serviceName`) succeeds, but Dokploy auto-fills
+`appName` with a random placeholder like
+`schedule-program-virtual-hard-drive-ogq4v8` and leaves
+`serviceName=null`. When `schedule.runManually` is later invoked,
+the server uses `appName` (not `applicationId`) to locate the Swarm
+service via `docker service ls` / `docker ps --filter`, finds
+nothing, and returns HTTP 500 with no body. Same symptom as B-026
+(opaque schedule error), different root cause.
+
+---
+
+**Part B — schedules are NOT embedded in `application.one`, so the
+existing-id lookup never matched and every re-run of
+`provision-06-ops.sh` created a duplicate.**
+
+The original idempotency block read `APP_ONE.schedules[]`. That key
+doesn't exist on `application.one` responses. After two provision
+runs, `schedule.list?id=<appId>&scheduleType=application` returned
+8 schedules: two copies of each name, all but one broken (see Part
+A). Only the one schedule that had been hand-repaired in the UI
+(`ops-seed-tenant-demo`) was usable; the rest bloated the Dokploy UI
+and any of them was liable to be the one state.json pointed at.
+
+---
+
+**Symptom — what it looked like:** after provision-06-ops.sh created
+4 schedules pointing at ops-runner, only `ops-seed-tenant-demo`
+worked. The other three (`ops-apply-migrations`,
+`ops-seed-tenant-gtm`, `ops-leak-harness`) returned 500 on
+`runManually`. `/api/schedule.one` showed the working one had
+`appName = serviceName = app-override-back-end-system-vleoyy` (the
+ops-runner Swarm appName, B-024-suffixed), while the broken three
+had `appName = schedule-<adj>-<noun>-<hash>`, `serviceName = null`.
+Separately, `schedule.list` revealed 8 rows instead of 4 —
+confirming the idempotency bug.
+
+**Fix commit:** this commit — `tools/dokploy/provision-06-ops.sh`
+now (a) reads the target application's `appName` via
+`application.one` (B-024 pattern) and includes `appName` +
+`serviceName` on every `schedule.create` body, (b) uses
+`/api/schedule.list?id=<appId>&scheduleType=application` for its
+existing-id lookup instead of the non-existent
+`application.one.schedules`, and (c) on match, calls
+`schedule.update` to repair `appName`/`serviceName` in place. Does
+not auto-delete orphan duplicates — those need explicit cleanup
+(`schedule.delete`) because they're a destructive op.
+
+**Grep signature:**
+```bash
+grep -rn "schedule.create" tools/ infra/
+# Every hit must pass appName AND serviceName, not only applicationId.
+
+grep -rn "application.one.*schedules\|\.schedules\[" tools/ infra/
+# Any hit is relying on a field that doesn't exist — use schedule.list instead.
+```
+
+**Cross-check:**
+- `tools/dokploy/provision-06-ops.sh` — **fixed** in this commit.
+- No other provision script currently creates schedules.
+  (`grep -rn schedule.create tools/` returns only provision-06.)
+- Orphan duplicates in the live environment (`dokploy2`,
+  `solofame-prod`, application `ops-runner`): 4 as of this commit.
+  State-of-the-world check: `dk GET
+  /api/schedule.list?id=<opsApplicationId>&scheduleType=application`
+  should return exactly 4 rows, each with
+  `appName == serviceName == <ops-runner appName>`. Tracked under
+  "schedule reconciliation" in the pending list; cleanup is a one
+  delete-per-orphan + one update-per-broken-active in the UI or via
+  `dk POST /api/schedule.delete` / `schedule.update`.
+
+**Going forward:**
+- When provisioning a new ops-runner-like container with scheduled
+  commands, always set `appName = serviceName = <app>.appName`
+  (read back from `application.one`), never just `applicationId`.
+- Dokploy should arguably resolve `applicationId → appName`
+  server-side for application-typed schedules; upstream bug report
+  worth filing.
+- For idempotency, use `schedule.list?id=<appId>&scheduleType=...`
+  — `application.one.schedules` does not exist.
+- Add a post-provision verification step: call `runManually` with a
+  no-op command on each freshly created schedule. Any 500 surfaces
+  the misconfig before real ops try to use it.

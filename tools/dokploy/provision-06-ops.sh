@@ -62,6 +62,10 @@ print(d.get(os.environ["KEY"], "") or "")
 }
 
 put_state() {
+  if [ "$DRY_RUN" = "1" ]; then
+    plan "put_state $1=$2"
+    return 0
+  fi
   KEY="$1" VAL="$2" FILE="$STATE_FILE" python3 -c '
 import json, os
 path = os.environ["FILE"]
@@ -209,33 +213,98 @@ ok "env set"
 
 # ─── 5. schedules (register one per ops command; all "never" cron) ──────
 # Each schedule is a named command that we can trigger via schedule.runManually.
-# Re-running this script is safe: existing schedules with the same name are
-# detected and skipped.
+# Re-running this script is idempotent: existing schedules with the same name
+# are reused; if their appName/serviceName don't match ops-runner's Swarm
+# appName (see B-027), they get repaired via schedule.update.
 
-# Fetch existing schedules for this application.
+# Fetch the ops-runner's real Swarm appName (needed for schedule wiring —
+# see B-027) and the current list of schedules for de-duplication.
+#
+# B-027 (part A): `schedule.create` without appName/serviceName makes Dokploy
+# auto-fill a random placeholder like "schedule-program-virtual-hard-drive-
+# ogq4v8"; `schedule.runManually` then 500s because it can't find the Swarm
+# service. Read the ops-runner's own appName (B-024-suffixed) and pass it in.
+#
+# B-027 (part B): schedules are NOT embedded in `application.one` — any
+# idempotency check that reads them from there always misses and creates
+# duplicates on re-run. Use `/api/schedule.list?id=<appId>&scheduleType=application`.
 APP_ONE="$("$DK" GET "/api/application.one?applicationId=$APP_ID")"
+OPS_APP_NAME="$(printf '%s' "$APP_ONE" | python3 -c '
+import json, sys
+print(json.load(sys.stdin).get("appName") or "")
+')"
+[ -n "$OPS_APP_NAME" ] || die "could not read ops-runner appName from application.one"
+log "ops-runner swarm appName=$OPS_APP_NAME"
+
+SCHEDULES_JSON="$("$DK" GET "/api/schedule.list?id=$APP_ID&scheduleType=application")"
 
 register_schedule() {
   local sched_name="$1" command="$2"
 
+  # Prefer the scheduleId already pinned in state.json if one exists AND it
+  # still resolves to a live schedule with the right name. Otherwise fall
+  # back to the first name-match from schedule.list. This matters when an
+  # older provision run left orphan duplicates (see B-027) — without this
+  # preference, register_schedule could silently repoint state.json at an
+  # orphan and leave the canonical schedule broken.
+  local state_key="schedule_${sched_name//-/_}"
+  local pinned_id
+  pinned_id="$(get_state "$state_key" || true)"
+
   local existing_id
-  existing_id="$(printf '%s' "$APP_ONE" | NAME="$sched_name" python3 -c '
+  existing_id="$(printf '%s' "$SCHEDULES_JSON" | NAME="$sched_name" PINNED="$pinned_id" python3 -c '
 import json, os, sys
 d = json.load(sys.stdin)
-for s in d.get("schedules", []):
-    if s.get("name") == os.environ["NAME"]:
-        print(s.get("scheduleId", ""))
-        break
+name = os.environ["NAME"]
+pinned = os.environ.get("PINNED") or ""
+fallback = ""
+for s in (d if isinstance(d, list) else []):
+    if s.get("name") != name:
+        continue
+    sid = s.get("scheduleId", "")
+    if pinned and sid == pinned:
+        print(sid)
+        sys.exit(0)
+    if not fallback:
+        fallback = sid
+print(fallback)
 ')"
 
   if [ -n "$existing_id" ]; then
-    ok "schedule exists: $sched_name -> $existing_id"
+    # Existing schedule — verify appName/serviceName are correct; repair if not.
+    local existing_json
+    existing_json="$("$DK" GET "/api/schedule.one?scheduleId=$existing_id")"
+    local needs_repair
+    needs_repair="$(printf '%s' "$existing_json" | WANT="$OPS_APP_NAME" python3 -c '
+import json, os, sys
+d = json.load(sys.stdin)
+want = os.environ["WANT"]
+print("1" if d.get("appName") != want or d.get("serviceName") != want else "0")
+')"
+    if [ "$needs_repair" = "1" ]; then
+      log "schedule.update $sched_name (fix appName/serviceName → $OPS_APP_NAME — B-027)"
+      body="$(printf '%s' "$existing_json" | WANT="$OPS_APP_NAME" python3 -c '
+import json, os, sys
+d = json.load(sys.stdin)
+keep = ["scheduleId","name","cronExpression","shellType","scheduleType",
+        "command","script","applicationId","composeId","serverId","userId",
+        "enabled","timezone"]
+payload = {k: d[k] for k in keep if k in d}
+payload["appName"] = os.environ["WANT"]
+payload["serviceName"] = os.environ["WANT"]
+print(json.dumps(payload))
+')"
+      call POST /api/schedule.update "$body" > /dev/null
+      ok "repaired $sched_name -> $existing_id"
+    else
+      ok "schedule exists: $sched_name -> $existing_id"
+    fi
     put_state "schedule_${sched_name//-/_}" "$existing_id"
     return 0
   fi
 
   log "schedule.create $sched_name"
-  body="$(APP="$APP_ID" NAME="$sched_name" CMD="$command" CRON="$NEVER_CRON" python3 -c '
+  body="$(APP="$APP_ID" NAME="$sched_name" CMD="$command" CRON="$NEVER_CRON" APPNAME="$OPS_APP_NAME" python3 -c '
 import json, os
 print(json.dumps({
   "name": os.environ["NAME"],
@@ -245,6 +314,8 @@ print(json.dumps({
   "shellType": "sh",
   "scheduleType": "application",
   "applicationId": os.environ["APP"],
+  "appName": os.environ["APPNAME"],
+  "serviceName": os.environ["APPNAME"],
   "enabled": False,
   "timezone": "UTC",
 }))')"
