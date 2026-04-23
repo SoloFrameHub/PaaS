@@ -1,0 +1,209 @@
+{
+    "lessonId": "5",
+    "courseId": "retention",
+    "sectionId": "customer-success",
+    "title": "Reactivation Sequences Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "What is the optimal window for sending reactivation emails?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Days 1-3 of inactivity"
+                },
+                {
+                    "id": "b",
+                    "text": "Days 7-14 of inactivity"
+                },
+                {
+                    "id": "c",
+                    "text": "Days 21-30 of inactivity"
+                },
+                {
+                    "id": "d",
+                    "text": "After cancellation"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Days 7-14 is the golden window. Before Day 7 might be normal life. After Day 21, mental checkout has already happened and success rates drop below 10%.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "What percentage of churning customers give no verbal warning before cancelling?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30%"
+                },
+                {
+                    "id": "b",
+                    "text": "50%"
+                },
+                {
+                    "id": "c",
+                    "text": "70%"
+                },
+                {
+                    "id": "d",
+                    "text": "90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "70% of churning customers never complain or contact support — they just stop using the product. This is why proactive monitoring is essential.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "What is the typical pause-to-reactivation rate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10-20%"
+                },
+                {
+                    "id": "b",
+                    "text": "30-40%"
+                },
+                {
+                    "id": "c",
+                    "text": "60-70%"
+                },
+                {
+                    "id": "d",
+                    "text": "80-90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "60-70% of customers who pause instead of cancelling eventually reactivate, compared to only 5-15% of cancelled customers who return.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "A customer responds to your reactivation email saying 'I got busy.' What's the best response?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "No problem! Let me know when you're ready."
+                },
+                {
+                    "id": "b",
+                    "text": "Would you like to pause for 30-60 days instead of paying for something you can't use?"
+                },
+                {
+                    "id": "c",
+                    "text": "Here's a tutorial to help you get more value faster."
+                },
+                {
+                    "id": "d",
+                    "text": "Can I offer you a discount to stay?"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Offering pause is the best response. It acknowledges their situation, stops billing, and keeps the door open for reactivation when they're ready.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "What is the typical win-back rate for churned customers within 90 days?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5-10%"
+                },
+                {
+                    "id": "b",
+                    "text": "10-20%"
+                },
+                {
+                    "id": "c",
+                    "text": "25-35%"
+                },
+                {
+                    "id": "d",
+                    "text": "40-50%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "10-20% of churned customers return within 90 days if you maintain contact through a win-back sequence. This is significant revenue recovery.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "For a customer paying $200+/month who goes dormant, what's the recommended approach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send them through the automated sequence"
+                },
+                {
+                    "id": "b",
+                    "text": "Wait until they cancel, then reach out"
+                },
+                {
+                    "id": "c",
+                    "text": "Send a personal email from the founder immediately"
+                },
+                {
+                    "id": "d",
+                    "text": "Remove them from all communications"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-value accounts ($200+/mo) deserve personal attention. Send a personal email from the founder starting at Day 7-10, and escalate to a phone call if no response.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q7",
+            "question": "What should Email 3 (Day 21) of your reactivation sequence include?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A discount offer to encourage them to stay"
+                },
+                {
+                    "id": "b",
+                    "text": "Three clear options: keep using, pause, or cancel"
+                },
+                {
+                    "id": "c",
+                    "text": "A list of new features they've missed"
+                },
+                {
+                    "id": "d",
+                    "text": "A survey asking why they stopped using the product"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email 3 should give three clear paths forward: keep using (with help), pause (temporary break), or cancel (graceful exit). This makes it easy to respond and shows respect for their decision.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q8",
+            "question": "What is the primary goal of Email 1 (Day 7-10) in the reactivation sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Convince them to upgrade their plan"
+                },
+                {
+                    "id": "b",
+                    "text": "Remind them you exist without making them feel guilty"
+                },
+                {
+                    "id": "c",
+                    "text": "Ask them to refer other customers"
+                },
+                {
+                    "id": "d",
+                    "text": "Offer a discount to prevent churn"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email 1 is a gentle nudge. The goal is to remind them you exist, open the door for conversation, and make it easy to respond — without pressure or guilt.",
+            "type": "multiple-choice"
+        }
+    ]
+}

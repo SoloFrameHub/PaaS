@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheet 2.2: The Night & Day Reflection Log (Monthly)</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --warning-text-heading: #E65100;
+            --warning-text-body: #666;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Print Styles --- */
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--brand-white);
+        }
+
+        /* --- Typography --- */
+        h1, h2 {
+            font-weight: 600;
+            color: var(--brand-primary-blue);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1 { font-size: 24px; }
+        h2 { font-size: 20px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 8px; }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--brand-text-dark);
+        }
+
+        strong {
+            color: var(--brand-primary-blue);
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: left;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid var(--brand-primary-blue);
+        }
+        .header .course-title {
+            font-size: 16px;
+            color: var(--brand-text-light);
+            margin: 0;
+        }
+        .header .worksheet-title {
+            font-size: 28px;
+            color: var(--brand-primary-blue);
+            margin: 0;
+        }
+
+        /* --- Sections & Components --- */
+        .section {
+            margin-top: 30px;
+        }
+
+        .intro-note {
+            background-color: #f0f8ff;
+            border-left: 4px solid var(--brand-secondary-blue);
+            padding: 15px 20px;
+            font-style: italic;
+            color: var(--brand-text-light);
+            border-radius: 4px;
+        }
+        
+        /* --- Reflection Log Table --- */
+        .reflection-log-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .reflection-log-table th, .reflection-log-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .reflection-log-table thead th {
+            background-color: var(--brand-light-grey);
+            font-weight: 600;
+            color: var(--brand-primary-blue);
+        }
+        .reflection-log-table thead th span {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            color: var(--brand-text-light);
+        }
+        .reflection-log-table td {
+            height: 60px; /* Provides space to write */
+        }
+        .day-column {
+            width: 8%;
+            text-align: center;
+            font-weight: bold;
+            color: var(--brand-text-light);
+            vertical-align: middle;
+        }
+
+
+        /* --- Crisis Box --- */
+        .crisis-box {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+        .crisis-box h3 {
+            color: var(--warning-text-heading);
+            margin-top: 0;
+            font-size: 16px;
+        }
+        
+        /* --- Print-Specific Styles --- */
+        @media print {
+            body { margin: 0; padding: 0; font-size: 10pt; }
+            .container { max-width: 100%; margin: 0; padding: 1cm; box-shadow: none; }
+            .reflection-log-table { font-size: 9pt; }
+            .reflection-log-table thead { display: table-header-group; } /* Ensures header repeats on each page */
+            .reflection-log-table tbody tr { page-break-inside: avoid; } /* Tries to keep rows from splitting */
+            .crisis-box, .section { page-break-before: auto; }
+            .header { border-bottom: 2px solid var(--brand-primary-blue); }
+            .intro-note { background-color: var(--brand-white) !important; border: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <p class="course-title">Sleep Mastery: Part 2 - Sleep as a Biological Reset</p>
+            <h1 class="worksheet-title">Worksheet 2.2: The Night & Day Reflection Log</h1>
+        </div>
+
+        <div class="section">
+            <p class="intro-note">
+                <strong>A gentle invitation from Autumn:</strong> "Knowledge is the first step, but self-awareness is where true transformation happens. My invitation for you is to use this log to track your progress over the next month. Each day, take 5-10 minutes for this gentle curiosity. What connections can you find between how you sleep and how you feel? There is no judgment here, only learning."
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Your 30-Day Reflection Log</h2>
+            <p>At the end of each day, fill out a row in the log below. Be honest and compassionate with yourself. The goal is to see the "upward spiral" in action and to build a powerful awareness of your own mind-body connection.</p>
+            
+            <table class="reflection-log-table">
+                <thead>
+                    <tr>
+                        <th class="day-column">Day</th>
+                        <th style="width: 18%;">Last Night's Sleep Quality
+                            <span>(e.g., Poor, Fair, Good, Great)</span>
+                        </th>
+                        <th style="width: 26%;">My Mood & Emotions Today
+                            <span>How was my emotional resilience? (e.g., patient, irritable, calm, anxious)</span>
+                        </th>
+                        <th style="width: 22%;">My Focus & Clarity Today
+                             <span>When did I feel focused or foggy?</span>
+                        </th>
+                        <th style="width: 26%;">Connections I Noticed
+                            <span>What link did I see between my sleep and my day?</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="day-column">1</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">2</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">3</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">4</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">5</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">6</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">7</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">8</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">9</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">10</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">11</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">12</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">13</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">14</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">15</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">16</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">17</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">18</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">19</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">20</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">21</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">22</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">23</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">24</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">25</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">26</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">27</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">28</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">29</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="day-column">30</td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+             <p class="intro-note" style="border-left-color: var(--brand-green);">
+                <strong>A final thought from Autumn:</strong> "As you fill this out, you are gathering evidence of your own progress. You're proving to yourself, day by day, that the effort you put in at night directly nourishes your mind and mood the next day. This awareness is a powerful motivator. Keep up this beautiful work."
+            </p>
+        </div>
+
+        <div class="crisis-box">
+            <h3>Crisis Resources & Immediate Support</h3>
+            <p>If you're in immediate danger or having thoughts of self-harm:</p>
+            <ul>
+                <li><strong>Emergency Services:</strong> Call 911</li>
+                <li><strong>National Suicide Prevention Lifeline:</strong> Call or text 988</li>
+                <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+            </ul>
+            <p><strong>Disclaimer:</strong> This educational material is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+        </div>
+
+    </div>
+</body>
+</html>

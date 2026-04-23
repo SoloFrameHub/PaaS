@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does research show about CBT-I (Cognitive Behavioral Therapy for Insomnia) compared to sleep medication?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Sleep medication is always more effective than CBT-I"
+                },
+                {
+                    "id": "opt2",
+                    "text": "CBT-I produces results equal to sleep medication, with no side effects, fewer relapses, and continued improvement after treatment ends"
+                },
+                {
+                    "id": "opt3",
+                    "text": "CBT-I only works for mild insomnia"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no research comparing CBT-I to medication"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows CBT-I produces results equal to sleep medication with significant advantages: no side effects, fewer relapses, and sleep continues to improve even after treatment ends. This is why clinical guidelines recommend CBT-I as the first-line treatment for chronic insomnia."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the main difference between 'sleep onset insomnia' and 'sleep maintenance insomnia'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "They are the same condition with different names"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Sleep onset insomnia is difficulty falling asleep; sleep maintenance insomnia is difficulty staying asleep"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleep onset insomnia is more serious than sleep maintenance insomnia"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sleep maintenance insomnia only occurs in older adults"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep onset insomnia involves difficulty falling asleep at the beginning of the night (tossing and turning for 20-30+ minutes). Sleep maintenance insomnia involves difficulty staying asleep—multiple awakenings lasting 20-30 minutes each. Many people experience both types."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does the 'insomnia cycle' perpetuate sleep problems?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Insomnia is purely genetic and cannot be changed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Worrying about sleep and trying to force it (going to bed early, lying in bed longer) teaches the brain to associate the bed with wakefulness"
+                },
+                {
+                    "id": "opt3",
+                    "text": "The cycle only affects people over age 50"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise before bed causes the insomnia cycle"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The insomnia cycle becomes self-perpetuating: trouble sleeping leads to worry about sleep, which leads to trying to force sleep (going to bed early, lying in bed longer), which teaches the brain to associate the bed with wakefulness rather than sleep, making sleep even harder. CBT-I techniques break this cycle."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'sleep efficiency' and what is considered a good target?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Hours of sleep per night; target is 10+ hours"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Percentage of time in bed that you're actually asleep; target is 85% or higher"
+                },
+                {
+                    "id": "opt3",
+                    "text": "How quickly you fall asleep; target is under 1 minute"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Quality of dreams; target is vivid dreams every night"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep efficiency is the percentage of time in bed that you're actually asleep: (Time Asleep ÷ Time in Bed) × 100. A sleep efficiency of 85% or higher is considered good. Below 85% indicates room for improvement and suggests sleep restriction therapy may be helpful."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is a warning sign that you should seek medical evaluation before starting self-help insomnia treatment?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Occasional difficulty falling asleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Feeling tired after a poor night's sleep"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Loud snoring, breathing pauses during sleep, or excessive daytime sleepiness despite adequate time in bed (signs of sleep apnea)"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Preferring to sleep late on weekends"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Symptoms of sleep apnea—loud snoring (especially if it disturbs others), breathing pauses during sleep, gasping, and excessive daytime sleepiness despite adequate time in bed—require medical evaluation. Sleep apnea is a serious condition that needs professional treatment before implementing self-help insomnia techniques."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "1",
+    "title": "Understanding Sleep Problems - Quiz"
+}

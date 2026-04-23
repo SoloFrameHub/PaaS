@@ -1,0 +1,72 @@
+{
+  "lessonId": "9",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Fit Analysis: When to Use AI SDR vs DIY Stack",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "For a solo founder sending 50-150 contacts/day with under $200/month budget, which approach does the lesson recommend?",
+      "options": [
+        { "id": "a", "text": "Any AI SDR platform" },
+        {
+          "id": "b",
+          "text": "DIY stack (Instantly + Apollo + ChatGPT) — the economics don't justify an AI SDR platform"
+        },
+        { "id": "c", "text": "11x (Alice) for maximum automation" },
+        { "id": "d", "text": "No outreach at all until budget increases" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The decision framework routes founders with 50-150 contacts/day and under $200/month budget to the DIY stack. Most solo founders are better served by a $100-200/month DIY stack because the economics of AI SDR platforms don't work at solo founder scale."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the real question the lesson says 'everyone gets wrong' about AI SDRs?",
+      "options": [
+        { "id": "a", "text": "Which AI SDR platform is best?" },
+        {
+          "id": "b",
+          "text": "Should I pay $750-5,000/month for a platform to run AI outreach, or build my own system for $100-200/month?"
+        },
+        { "id": "c", "text": "Is AI better than humans at sales?" },
+        { "id": "d", "text": "When should I hire a human SDR?" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Most founders frame the question as 'AI vs manual' which is a false choice — they're already using AI (ChatGPT counts). The real question is whether the platform premium ($750-5,000/month) justifies itself over a well-configured DIY stack ($100-200/month) that achieves comparable results."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "At what contact volume does an AI SDR platform start making sense?",
+      "options": [
+        { "id": "a", "text": "Any volume" },
+        { "id": "b", "text": "10-30 contacts/day" },
+        { "id": "c", "text": "200+ contacts/day with $750+/month budget" },
+        { "id": "d", "text": "Only at 1,000+ contacts/day" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The decision tree shows that AI SDR platforms start making economic sense at 200+ contacts/day with a budget of $750+/month. Below that volume, the manual oversight required negates most of the automation benefit, and the cost premium isn't justified by incremental results."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Most solo founders reading the course will be better served by a DIY stack than an AI SDR platform.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson states this directly: 'Most solo founders reading this course will be better served by a $100-200/month DIY stack than a $750-5,000/month AI SDR platform. Not because AI SDRs are bad — they're impressive technology — but because the economics don't work at solo founder scale.'"
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Run through the lesson's decision framework with your actual numbers: daily contact volume, monthly budget, current results, and deal size. Where does the framework place you — DIY, Salesforge-tier, or full AI SDR? Do you agree with its recommendation?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response provides specific numbers for each decision criterion (contact volume, budget, current performance), follows the decision tree logic accurately, and reaches a justified conclusion. Look for honest assessment rather than aspirational numbers."
+    }
+  ]
+}

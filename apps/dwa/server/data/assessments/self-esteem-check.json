@@ -1,0 +1,92 @@
+{
+  "id": "self-esteem-check",
+  "title": "Self-Esteem Self-Check",
+  "description": "This brief self-check explores how you currently relate to yourself — your inner voice, your sense of worth, and how you respond to setbacks. It is not a diagnostic tool. Its purpose is to help you notice patterns of self-criticism and track how they change as you work through this course.",
+  "instructions": "For each statement below, choose the response that best describes how often you have experienced this over the past 2 weeks. Answer honestly — there are no right or wrong answers.",
+  "timeframe": "Over the past 2 weeks",
+  "questions": [
+    {
+      "id": "harsh-self-talk",
+      "text": "I speak to myself in a harsh or insulting way"
+    },
+    {
+      "id": "mistake-as-proof",
+      "text": "When I make a mistake, I treat it as proof that I am a failure"
+    },
+    {
+      "id": "cant-see-strengths",
+      "text": "I find it hard to notice my strengths or positive qualities"
+    },
+    {
+      "id": "unworthy",
+      "text": "I feel unworthy of kindness, respect, or good things happening to me"
+    },
+    {
+      "id": "unfavorable-comparison",
+      "text": "I compare myself unfavorably to other people"
+    },
+    {
+      "id": "avoidance-judgment",
+      "text": "I avoid situations where I might be judged or seen as inadequate"
+    },
+    {
+      "id": "dismiss-achievements",
+      "text": "I dismiss or downplay my achievements and successes"
+    },
+    {
+      "id": "fundamentally-flawed",
+      "text": "I believe I am fundamentally flawed or defective as a person"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Very often"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 8,
+        "label": "Low self-criticism",
+        "description": "Your responses suggest a relatively healthy relationship with yourself over the past two weeks. You may still experience occasional self-doubt — that is normal — but it does not appear to be a dominant pattern. The skills in this course can help you maintain and strengthen your self-worth."
+      },
+      {
+        "min": 9,
+        "max": 16,
+        "label": "Moderate self-criticism",
+        "description": "You endorsed a moderate level of self-critical patterns. This is common and very workable. The strategies in this course — particularly self-compassion practices and cognitive restructuring — are well-suited to help you develop a kinder inner voice. Consider tracking your progress over time."
+      },
+      {
+        "min": 17,
+        "max": 24,
+        "label": "Significant self-criticism",
+        "description": "Your answers suggest self-criticism is meaningfully affecting your daily life and well-being. We encourage you to work through this course AND consider speaking with a mental health professional. Therapy approaches like CBT and compassion-focused therapy have strong evidence for shifting these patterns."
+      },
+      {
+        "min": 25,
+        "max": 32,
+        "label": "High self-criticism",
+        "description": "Your answers suggest a persistent and intense pattern of self-criticism that is likely causing significant distress. We strongly encourage you to seek professional support if you haven't already. A therapist experienced with self-esteem and self-compassion work can provide personalized guidance alongside what you learn in this course. If you are in crisis or feeling unsafe, please reach out to a crisis resource immediately."
+      }
+    ],
+    "functionalImpairmentQuestion": {
+      "text": "How much has self-criticism or low self-worth interfered with your daily life, relationships, or work over the past 2 weeks?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "A little" },
+        { "value": 2, "label": "Moderately" },
+        { "value": 3, "label": "A lot" },
+        { "value": 4, "label": "Severely" }
+      ]
+    }
+  },
+  "disclaimer": "This self-check is for educational self-reflection only. It is NOT a diagnostic tool and cannot replace professional evaluation. Low self-esteem can co-occur with depression, anxiety, and other conditions that benefit from professional treatment. Do not use these results to self-diagnose. If you are experiencing thoughts of self-harm or suicide, contact the 988 Suicide & Crisis Lifeline by calling or texting 988."
+}

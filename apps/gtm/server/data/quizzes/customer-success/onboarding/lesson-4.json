@@ -1,0 +1,69 @@
+{
+  "lessonId": "4",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Welcome Sequences & In-App Checklists",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What open rate do welcome emails typically achieve compared to regular marketing emails?",
+      "options": [
+        { "id": "a", "text": "10-15% (lower than marketing emails)" },
+        { "id": "b", "text": "20-25% (same as marketing emails)" },
+        { "id": "c", "text": "30-40% (slightly higher)" },
+        { "id": "d", "text": "50-86% (significantly higher)" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Welcome emails get 50-86% open rates compared to 20-25% for regular marketing emails. The first 24 hours after purchase is the highest-engagement window in the entire customer lifecycle."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In Sarah's case study, what reduced her first-month churn from 42% to 11%?",
+      "options": [
+        { "id": "a", "text": "Lowering her price" },
+        {
+          "id": "b",
+          "text": "Adding a 5-minute welcome email, then a 3-item checklist, then a 7-email sequence"
+        },
+        { "id": "c", "text": "Hiring a customer success manager" },
+        { "id": "d", "text": "Redesigning her product UI" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's first-month churn dropped progressively: welcome email (42% to 28%), in-app checklist (28% to 18%), 7-email welcome sequence (18% to 11%). Same product, same features — different onboarding."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How many emails should a welcome sequence contain, and over what time period?",
+      "options": [
+        { "id": "a", "text": "1 email on Day 1" },
+        { "id": "b", "text": "3 emails over 7 days" },
+        { "id": "c", "text": "5-7 emails over 14 days" },
+        { "id": "d", "text": "10+ emails over 30 days" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A welcome sequence should be 5-7 emails over 14 days, each with a specific job: confirm purchase, guide first action, celebrate wins, troubleshoot blockers, and build habits. This coordinated campaign guides customers from signup to first value."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The first welcome email should be sent within 5 minutes of signup and include one clear first action step.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Email 1 (the Instant Welcome) should arrive within 5 minutes. It confirms the purchase, sets expectations for the next 14 days, and gives one clear action with a direct link. This email gets 60-80% open rates."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Draft the first 3 emails of your welcome sequence. For each email, specify the timing, subject line, primary goal, and the single action you want the customer to take.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response defines specific timing for each email (Day 0, Day 1, Day 3, etc.), includes subject lines that drive opens, specifies a clear goal per email (confirm, guide, celebrate), and gives each email exactly one call-to-action with a specific action rather than multiple asks."
+    }
+  ]
+}

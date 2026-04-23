@@ -1,0 +1,78 @@
+{
+  "lessonId": "10",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Your Complete Sales Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the five sections of the Complete Sales Playbook?",
+      "options": [
+        { "id": "a", "text": "Product, Price, Place, Promotion, People" },
+        {
+          "id": "b",
+          "text": "One-Page System, Situation Playbook, 90-Day Contract, Quarterly Review, Decision Log"
+        },
+        { "id": "c", "text": "Vision, Mission, Values, Strategy, Tactics" },
+        {
+          "id": "d",
+          "text": "Prospecting, Qualifying, Presenting, Closing, Following Up"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The five sections are: One-Page Acquisition System (Lesson 7), Situation-Specific Playbook (Lessons 2-6), 90-Day Commitment Contract (Lesson 8), Quarterly Review Framework (Lesson 9), and Decision Log (tracking what changed and why)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the purpose of the 14-Day Execution Sprint?",
+      "options": [
+        { "id": "a", "text": "To plan your next quarter" },
+        {
+          "id": "b",
+          "text": "To get the assembled playbook into motion with immediate execution"
+        },
+        { "id": "c", "text": "To hire your first sales rep" },
+        { "id": "d", "text": "To build your CRM" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 14-Day Execution Sprint bridges the gap between having a completed playbook and actually executing it. It's the ignition that gets the system in motion."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What separates founders who completed this course from 95% of other founders?",
+      "options": [
+        { "id": "a", "text": "They have more funding" },
+        { "id": "b", "text": "They have better products" },
+        {
+          "id": "c",
+          "text": "They built a specific, named, signed, wall-mounted commitment that turns insight into action"
+        },
+        { "id": "d", "text": "They spend more time on social media" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Most founders read articles, watch videos, and collect frameworks but never build the specific, committed system. Building and signing a commitment that you execute daily separates knowledge consumers from action takers."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Once your Complete Sales Playbook is assembled, it never needs updating.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The playbook is a living document. It gets versioned like software — v1.0 at launch, refined at 30 days, strategically updated at 90 days. The quarterly review framework ensures it stays current with real-world data."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Which of the five Complete Playbook sections do you have ready? Which are incomplete? What is your plan for the 14-Day Execution Sprint to launch your system?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses each of the five sections, identifies gaps, and commits to a specific 14-day sprint plan with concrete daily activities and a launch date — demonstrating readiness to move from planning to execution."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "lessonId": "9",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Cumplimiento: CAN-SPAM y GDPR",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es un requisito obligatorio para cada correo comercial enviado bajo la Ley CAN-SPAM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un enlace a tu perfil de Facebook"
+        },
+        {
+          "id": "b",
+          "text": "Una dirección postal física válida para tu negocio"
+        },
+        {
+          "id": "c",
+          "text": "La fecha de nacimiento del destinatario"
+        },
+        {
+          "id": "d",
+          "text": "Un código de descuento del 20%"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Para prevenir el spam anónimo, la ley de EE.UU. requiere una ubicación física donde se pueda contactar al negocio. Para los fundadores remotos, un buzón virtual o apartado postal es una solución estándar."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Bajo el GDPR, ¿en qué base legal puedes justificar el outreach frío B2B a una dirección de correo profesional?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Precedente Histórico"
+        },
+        {
+          "id": "b",
+          "text": "Consentimiento Universal"
+        },
+        {
+          "id": "c",
+          "text": "Interés Legítimo"
+        },
+        {
+          "id": "d",
+          "text": "Libertad de Información"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El Interés Legítimo permite el outreach que es profesionalmente relevante para el destinatario, siempre que se respeten sus derechos de privacidad y se proporcione una forma fácil de darse de baja."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según los mandatos de Google/Yahoo de 2024, ¿qué función técnica debe incluirse en los encabezados de tu correo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una lista de tus últimos 10 clientes"
+        },
+        {
+          "id": "b",
+          "text": "Cancelación de suscripción con un solo clic"
+        },
+        {
+          "id": "c",
+          "text": "El número de identificación fiscal de tu empresa"
+        },
+        {
+          "id": "d",
+          "text": "Un video de tu producto en acción"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La cancelación de suscripción con un solo clic (encabezado List-Unsubscribe) ahora es un requisito obligatorio para todo el correo comercial que llega a las bandejas de entrada de Gmail y Yahoo."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué tipo de dirección de correo está EXPLÍCITAMENTE prohibida para el outreach frío en la UE bajo el GDPR sin consentimiento previo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "nombre@empresa.com"
+        },
+        {
+          "id": "b",
+          "text": "prensa@organizacion.org"
+        },
+        {
+          "id": "c",
+          "text": "Direcciones personales (ej., nombre@gmail.com)"
+        },
+        {
+          "id": "d",
+          "text": "info@startup.io"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los correos personales reciben el nivel más alto de protección de privacidad. Enviarles correos fríos es un desencadenante principal de violaciones del GDPR."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Si alguien cancela su suscripción, ¿cuánto tiempo tienes bajo CAN-SPAM para honrar su solicitud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 horas"
+        },
+        {
+          "id": "b",
+          "text": "10 días hábiles"
+        },
+        {
+          "id": "c",
+          "text": "30 días"
+        },
+        {
+          "id": "d",
+          "text": "No tienes que honrarlo si son un buen candidato"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La ley de EE.UU. proporciona un período de 10 días, pero la mejor práctica es automatizar esto para que ocurra de inmediato."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Redacta tu declaración de 'Interés Legítimo' para tu negocio. ¿Por qué tu outreach es útil para tu audiencia objetivo? ¿Cómo manejarás una respuesta 'enojada' de alguien que afirma que estás violando su privacidad?",
+      "minLength": 100,
+      "promptForAI": "Revisa la declaración de Interés Legítimo para verificar relevancia profesional. Evalúa el manejo de las respuestas 'enojadas' — debe ser tranquilo, disculpándose y confirmando la supresión inmediata de todo outreach futuro."
+    }
+  ]
+}

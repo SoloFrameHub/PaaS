@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the two core components of OCD?",
+            "options": [
+                { "id": "opt1", "text": "Anxiety and depression" },
+                { "id": "opt2", "text": "Obsessions and compulsions" },
+                { "id": "opt3", "text": "Fear and avoidance" },
+                { "id": "opt4", "text": "Intrusive thoughts and panic attacks" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "OCD consists of obsessions (unwanted, intrusive thoughts, images, or urges that cause distress) and compulsions (repetitive behaviors or mental acts performed to reduce that distress). These two components work together in a cycle that maintains the disorder."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is OCD sometimes called 'the doubt disease'?",
+            "options": [
+                { "id": "opt1", "text": "Because people with OCD doubt their diagnosis" },
+                { "id": "opt2", "text": "Because OCD only affects people who are indecisive" },
+                { "id": "opt3", "text": "Because OCD's core mechanism is persistent doubt that targets your deepest values" },
+                { "id": "opt4", "text": "Because doctors are unsure how to treat it" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "OCD is called 'the doubt disease' because its core mechanism is doubt — not about one specific thing, but about everything OCD touches. It targets your deepest values and generates doubt about whether you're living up to them, which is why it feels so personal and terrifying."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is an example of a mental (invisible) compulsion?",
+            "options": [
+                { "id": "opt1", "text": "Excessive hand-washing" },
+                { "id": "opt2", "text": "Checking locks repeatedly" },
+                { "id": "opt3", "text": "Arranging objects until they feel right" },
+                { "id": "opt4", "text": "Mentally reviewing events to make sure nothing bad happened" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Mental compulsions are invisible to others but equally time-consuming and distressing as visible compulsions. Examples include mentally reviewing events, silent counting or praying, replacing 'bad' thoughts with 'good' ones, and seeking certainty through mental analysis."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does 'ego-dystonic' mean in the context of OCD thoughts?",
+            "options": [
+                { "id": "opt1", "text": "The thoughts are enjoyable and desired" },
+                { "id": "opt2", "text": "The thoughts directly clash with who the person is and what they value" },
+                { "id": "opt3", "text": "The thoughts are caused by a weak ego or low self-esteem" },
+                { "id": "opt4", "text": "The thoughts are rational responses to real threats" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "OCD thoughts are ego-dystonic, meaning they directly clash with who you are and what you value. Having a thought does not mean you want it or agree with it. This is one of the key facts about OCD: the thoughts are symptoms, not reflections of your true desires."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the gold-standard treatment for OCD?",
+            "options": [
+                { "id": "opt1", "text": "Exposure and Response Prevention (ERP)" },
+                { "id": "opt2", "text": "Talk therapy focused on childhood experiences" },
+                { "id": "opt3", "text": "Medication alone" },
+                { "id": "opt4", "text": "Relaxation and stress management techniques" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Exposure and Response Prevention (ERP) is the gold-standard treatment for OCD. It helps the majority of people who complete it. While medication (SSRIs) can be helpful alongside ERP, the most effective approach is ERP-based therapy guided by a trained OCD specialist."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "1",
+    "title": "Understanding OCD - Quiz"
+}

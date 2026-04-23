@@ -1,0 +1,118 @@
+{
+  "id": "emotion-analysis-worksheet",
+  "title": "Emotion Analysis Worksheet",
+  "description": "Use this worksheet to understand your emotions more deeply. Accurate emotion labeling is a core DBT skill — when you can name exactly what you feel and understand why, you gain access to more effective responses. This worksheet walks you through identifying, labeling, understanding, and responding to a strong emotion.",
+  "instructions": "When you experience a strong emotion (positive or negative), work through each step below. The goal is not to eliminate the emotion but to understand it clearly enough to respond wisely rather than reactively.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. What happened? (Facts only — who, what, when, where)",
+      "type": "textarea",
+      "placeholder": "e.g., My friend cancelled our plans 30 minutes before we were supposed to meet, saying something came up",
+      "required": true
+    },
+    {
+      "id": "primaryEmotion",
+      "label": "2. What emotion(s) did you feel? (Name them as specifically as possible)",
+      "type": "select",
+      "options": [
+        { "value": "anger", "label": "Anger — feeling wronged, violated, or blocked" },
+        { "value": "sadness", "label": "Sadness — feeling loss, disconnection, or disappointment" },
+        { "value": "fear", "label": "Fear — sensing threat, danger, or vulnerability" },
+        { "value": "shame", "label": "Shame — feeling fundamentally flawed or exposed" },
+        { "value": "guilt", "label": "Guilt — feeling you did something wrong or harmful" },
+        { "value": "jealousy", "label": "Jealousy / Envy — feeling threatened by loss or comparison" },
+        { "value": "disgust", "label": "Disgust — feeling revulsion or wanting to push away" },
+        { "value": "love", "label": "Love / Tenderness — feeling connection or care" },
+        { "value": "joy", "label": "Joy — feeling pleasure, delight, or satisfaction" }
+      ],
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. How intense was the emotion? (0 = barely noticeable, 100 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "bodySensations",
+      "label": "4. Where did you feel it in your body? What physical sensations did you notice?",
+      "type": "textarea",
+      "placeholder": "e.g., Tightness in chest, heat in face, clenched jaw, stomach dropping, racing heart, heaviness in limbs",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "5. What was the thought or interpretation that fueled the emotion?",
+      "type": "textarea",
+      "placeholder": "e.g., 'They don't care about me', 'I'm not important to anyone', 'They're lying about why they cancelled'",
+      "required": true
+    },
+    {
+      "id": "emotionFunction",
+      "label": "6. What is this emotion telling you? (What does it want you to do?)",
+      "type": "textarea",
+      "placeholder": "e.g., Anger wants me to confront them or punish them. Sadness wants me to withdraw. Fear wants me to avoid making plans again.",
+      "required": true
+    },
+    {
+      "id": "checkFacts",
+      "label": "7. Check the facts: Is the emotion fitting the facts of the situation, or is it based on an interpretation?",
+      "type": "textarea",
+      "placeholder": "e.g., Fact: they cancelled. Interpretation: they don't care. Alternative: they may have a real conflict. One cancellation doesn't mean they don't value me.",
+      "required": true
+    },
+    {
+      "id": "wiseResponse",
+      "label": "8. Wise Mind response: What is the most effective thing to do right now?",
+      "type": "textarea",
+      "placeholder": "e.g., Text them 'No worries, hope everything's okay' (opposite action to attacking). Plan something enjoyable for myself tonight. Revisit this if it becomes a pattern.",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "9. How intense is the emotion now? (0 = barely noticeable, 100 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "emotion-mind",
+      "name": "Emotion Mind Dominance",
+      "description": "Treating feelings as facts. 'I feel rejected, so I AM rejected.' 'I feel like a failure, so I AM a failure.' Emotions are real but they're not always accurate reflections of reality."
+    },
+    {
+      "id": "black-white",
+      "name": "Black-and-White Thinking",
+      "description": "Seeing situations in extremes: 'They always do this' or 'Nobody cares about me.' Reality usually lives in the gray area between extremes."
+    },
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Jumping to the worst possible outcome. 'This means our friendship is over.' Check: what is the most likely outcome, not the worst one?"
+    },
+    {
+      "id": "mind-reading",
+      "name": "Mind-Reading",
+      "description": "Assuming you know what others think or feel without checking. 'They cancelled because they find me boring.' Ask: do I actually have evidence for this?"
+    },
+    {
+      "id": "shoulding",
+      "name": "Should Statements",
+      "description": "Rigid rules about how things must be. 'They should have given me more notice.' 'I shouldn't feel this way.' Replace 'should' with 'I'd prefer' to reduce intensity."
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Using your emotional state as evidence. 'I feel anxious, so something bad must be about to happen.' 'I feel worthless, so I must be worthless.' Emotions are data, not verdicts."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational self-reflection, not a substitute for professional DBT therapy. If you are experiencing overwhelming emotions, urges to self-harm, or suicidal thoughts, please reach out: call or text 988 (Suicide & Crisis Lifeline), text HOME to 741741 (Crisis Text Line), or call 911 for emergencies."
+}

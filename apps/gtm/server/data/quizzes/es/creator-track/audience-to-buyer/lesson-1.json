@@ -1,0 +1,79 @@
+{
+  "lessonId": "1",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "La Brecha Audiencia-Ingresos",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál de los cinco modos de fallo describe a un creador que construyó una audiencia interesada en consejos de productividad pero intenta venderles un curso de freelancing?",
+      "options": [
+        { "id": "a", "text": "La Rueda del Hámster de Contenido" },
+        { "id": "b", "text": "El Déficit de Confianza" },
+        { "id": "c", "text": "El Desajuste Audiencia-Oferta" },
+        { "id": "d", "text": "La Trampa de la Plataforma" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El Desajuste Audiencia-Oferta ocurre cuando el creador construye una audiencia en torno a un tema pero vende algo adyacente o diferente. Las personas que siguieron al creador por el Tema A no quieren el Producto B. La solución es alinear la oferta con el problema que la audiencia ya te asocia con resolver."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Por qué un creador con 5,000 seguidores puede ganar más que uno con 500,000 seguidores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque los seguidores más pequeños tienen más dinero"
+        },
+        {
+          "id": "b",
+          "text": "Porque los seguidores de cuentas pequeñas son más leales"
+        },
+        {
+          "id": "c",
+          "text": "Porque el creador con menos seguidores puede estar más arriba en el espectro de monetización, vendiendo cursos o consultoría de alto valor en lugar de depender de ingresos publicitarios"
+        },
+        {
+          "id": "d",
+          "text": "Porque las plataformas pagan más por cuenta a los creadores pequeños"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El espectro de monetización muestra que los ingresos publicitarios generan $0.01-$0.05 por vista mientras que el coaching puede generar $500-$5,000 por contrato. Un creador con 5,000 seguidores vendiendo un curso de $497 al 2% de su lista (100 personas) genera $49,700. El mismo resultado requeriría 100 veces más audiencia dependiendo solo de anuncios."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia entre el Tamaño de Audiencia (Métrica de Vanidad) y el Tamaño de Audiencia Propia (Métrica Real)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El tamaño de audiencia incluye seguidores inactivos; la audiencia propia solo cuenta los activos"
+        },
+        {
+          "id": "b",
+          "text": "El tamaño de audiencia es el total de seguidores en todas las plataformas; la audiencia propia es la de suscriptores de correo, SMS y miembros de comunidad que puedes contactar directamente sin un algoritmo de por medio"
+        },
+        {
+          "id": "c",
+          "text": "El tamaño de audiencia mide redes sociales; la audiencia propia mide clientes de pago"
+        },
+        {
+          "id": "d",
+          "text": "No hay diferencia — ambas métricas miden lo mismo de manera diferente"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La audiencia 'alquilada' en redes sociales puede desaparecer con un cambio de algoritmo. La audiencia 'propia' — correo, SMS, comunidades directas — es la que puedes contactar cuando quieras, sin permisos ni intermediarios. Esta distinción es fundamental para construir un negocio resiliente."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Calcula tu Ingreso por Suscriptor (IPS) actual: divide tus ingresos mensuales totales entre el tamaño de tu lista de correo. ¿Cuál es tu IPS? ¿Cuál de los cinco modos de fallo se aplica más a tu negocio hoy? Describe un cambio concreto que podrías hacer en los próximos 30 días para aumentar tu IPS.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student calculates their actual RPS (not a hypothetical), identifies a specific failure mode with honest reasoning, and proposes a concrete change (not vague advice). The 30-day change should be realistic given their current stage."
+    }
+  ]
+}

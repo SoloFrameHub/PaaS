@@ -1,0 +1,141 @@
+{
+    "lessonId": "8",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Contracts and Terms Basics Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between a 'Proposal' and an 'Agreement' (MSA)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A proposal is for small companies; an agreement is for large companies."
+                },
+                {
+                    "id": "b",
+                    "text": "A proposal is a persuasive document focused on value; an agreement is a legal document focused on rules and risk."
+                },
+                {
+                    "id": "c",
+                    "text": "There is no difference; they are two names for the same thing."
+                },
+                {
+                    "id": "d",
+                    "text": "A proposal includes pricing, while an agreement does not."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Separating the two allows you to keep focused on the 'win' during the sales process while ensuring you have robust legal protections in a separate document."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What should be your 'Industry Standard' stance on Intellectual Property (IP) as a SaaS founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The client should own all the code you write for them."
+                },
+                {
+                    "id": "b",
+                    "text": "You should own the core platform and methodology; the client should own their specific data and deliverables."
+                },
+                {
+                    "id": "c",
+                    "text": "You shouldn't mention IP; it just complicates things."
+                },
+                {
+                    "id": "d",
+                    "text": "The IP should be shared 50/50."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Protecting your core IP is essential for building a scalable business. You grant a license to the client, but you retain the ownership of the 'engine'."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Limitation of Liability' critical for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It prevents you from ever being sued."
+                },
+                {
+                    "id": "b",
+                    "text": "It caps the maximum amount a client can sue you for, usually to the amount they paid you in the last year."
+                },
+                {
+                    "id": "c",
+                    "text": "It tells the client that you aren't responsible for any errors."
+                },
+                {
+                    "id": "d",
+                    "text": "It means you don't need business insurance."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Without this cap, a minor software error could theoretically lead to a lawsuit that exceeds the entire value of your business or personal assets. 'Unlimited liability' is a deal-breaker for most founders."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you respond to 'Redlines' from a prospect's legal team?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Accept all changes immediately to keep the deal moving."
+                },
+                {
+                    "id": "b",
+                    "text": "Refuse all changes and tell them they are being unreasonable."
+                },
+                {
+                    "id": "c",
+                    "text": "Understand the 'why' behind each change, pick your battles on non-critical terms, and hold firm on IP and Liability."
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore the email and hope they forget."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Legal negotiation is about managing risk. If you understand what they are afraid of, you can often find a middle ground without compromising your business's safety."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the best way to deal with a 'difficult' Procurement department?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Argue with them until they give in."
+                },
+                {
+                    "id": "b",
+                    "text": "Give them a massive discount so they meet their targets."
+                },
+                {
+                    "id": "c",
+                    "text": "Leverage your Internal Champion to explain the urgency of the project and request waivers for standard 'enterprise' requirements."
+                },
+                {
+                    "id": "d",
+                    "text": "Bypass procurement and send the invoice directly to the CEO."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Procurement is focused on process and cost. Your Champion is focused on results. When the process gets in the way of results, your Champion is the only one who can push the deal through internally."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Does your current contract (or the one you plan to write) include a 'Limitation of Liability' clause? If so, what is the cap? If not, what would a reasonable cap be for your current price point?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies a logical cap (e.g., '12 months of fees'). Provide feedback on why capping liability at the level of insurance coverage is a standard professional compromise."
+        }
+    ]
+}

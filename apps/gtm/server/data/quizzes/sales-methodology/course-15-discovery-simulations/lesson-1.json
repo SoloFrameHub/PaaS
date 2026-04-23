@@ -1,0 +1,153 @@
+{
+    "lessonId": "1",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 1: Setting Up for Effective Practice",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Practice Paradox' described in this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The fact that the more you practice, the worse your sales results become."
+                },
+                {
+                    "id": "b",
+                    "text": "The tendency for technical founders to study sales theory while neglecting the muscle memory needed for execution."
+                },
+                {
+                    "id": "c",
+                    "text": "The belief that you can only practice sales with real customers."
+                },
+                {
+                    "id": "d",
+                    "text": "The idea that discovery is actually the easiest part of the sales cycle."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Many founders intelletualize sales but haven't built the reflexes to handle spontaneous conversations effectively."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What is the 'gold standard' Talk Time Ratio for a successful discovery call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10% You / 90% Prospect"
+                },
+                {
+                    "id": "b",
+                    "text": "30% You / 70% Prospect"
+                },
+                {
+                    "id": "c",
+                    "text": "50% You / 50% Prospect"
+                },
+                {
+                    "id": "d",
+                    "text": "70% You / 30% Prospect"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you are talking more than 30-40% of the time, you are pitching rather than discovering the prospect's needs."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "If you are practicing with a 'High C' (Conscientious) personality, what should you prioritize in your discovery approach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spending 15 minutes on personal rapport and life stories."
+                },
+                {
+                    "id": "b",
+                    "text": "Using hype language like 'game-changer' and 'revolutionary'."
+                },
+                {
+                    "id": "c",
+                    "text": "Providing specific data, answering 'why' questions thoroughly, and avoiding vague claims."
+                },
+                {
+                    "id": "d",
+                    "text": "Interrupting them frequently to keep the call fast-paced."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Analytical prospects (High C) value logic, data, and precision over relationship-building or marketing hype."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of these is the most effective metric for judging the quality of your questions in a session?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The total number of questions asked."
+                },
+                {
+                    "id": "b",
+                    "text": "How many 'Yes/No' questions you managed to fit into 30 minutes."
+                },
+                {
+                    "id": "c",
+                    "text": "The percentage of 'Open' questions (Why, How, What) compared to closed ones."
+                },
+                {
+                    "id": "d",
+                    "text": "Whether the prospect liked your questions."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Open questions encourage the prospect to elaborate, providing deeper discovery than closed questions."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary goal of using a 'Resistant' prospect setting in the simulator?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To discourage you from ever doing sales again."
+                },
+                {
+                    "id": "b",
+                    "text": "To practice maintaining composure and methodology under pressure or skepticism."
+                },
+                {
+                    "id": "c",
+                    "text": "To prove that the AI is smarter than you."
+                },
+                {
+                    "id": "d",
+                    "text": "To learn how to argue with customers and win."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Resistance is common in real sales; practicing with difficult AI personalities builds the resilience needed to stay on track."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Identify which DISC personality type you personally find most difficult to sell to in real life. Why do you struggle with that specific type? Based on this lesson, what is one specific variable (Resistance level, DISC type, or Time constraint) you will prioritize in your first 3 practice sessions to overcome this struggle?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's self-awareness regarding their sales weak spots. Confirm that their chosen practice variable is a logical step toward improvement. Suggest one specific 'Open' question they could lead with in their next session."
+        }
+    ]
+}

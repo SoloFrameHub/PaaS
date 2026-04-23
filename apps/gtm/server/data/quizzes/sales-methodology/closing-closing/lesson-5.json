@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Signature Workflow Automation Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Engagement Intelligence' in the context of a digital contract?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tracking how many times the buyer clicks 'Delete'."
+                },
+                {
+                    "id": "b",
+                    "text": "The ability to see when, how often, and for how long a prospect views a contract, allowing you to identify hidden friction or interest."
+                },
+                {
+                    "id": "c",
+                    "text": "A list of the buyer's hobbies."
+                },
+                {
+                    "id": "d",
+                    "text": "The speed at which they type their name."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a contract is opened multiple times without a signature, it's a signal of friction. Tracking this allows the founder to proactively reach out and offer help before the deal stalls indefinitely."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'One-Step Onboarding' (linking signature to account creation) critical for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To charge their credit card faster."
+                },
+                {
+                    "id": "b",
+                    "text": "To reduce manual admin work and provide the buyer with immediate 'Value Realization', which neutralizes Buyer's Remorse."
+                },
+                {
+                    "id": "c",
+                    "text": "To show off your technical skills."
+                },
+                {
+                    "id": "d",
+                    "text": "To prevent them from cancelling."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Buyer's Remorse occurs in the vacuum between a signature and the first win. Automating the handover ensures the buyer gets immediate gratification and feels they are in good hands, despite your small team size."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is sending a contract as an email attachment considered 'High Risk' in 2026?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's illegal."
+                },
+                {
+                    "id": "b",
+                    "text": "It can be flagged by spam filters, lost in long threads, and requires high cognitive friction to sign (Download/Print/Scan)."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes the email too heavy."
+                },
+                {
+                    "id": "d",
+                    "text": "Because PDFs are outdated technology."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Modern closing is about removing friction. A signature link in a Digital Sales Room (DSR) is more secure, more trackable, and significantly easier for the buyer to complete."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Identify 3 points of 'Technical Friction' in your current closing process (e.g., manual invoicing, PDF attachments, wait times for account setup). For each, describe one tool or automation you could implement to make it a 'Low Friction' experience for the buyer.",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can identify specific friction points and proposes automated solutions (Zapier, DocuSign, DSRs, automated welcome emails)."
+        }
+    ]
+}

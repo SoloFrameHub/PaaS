@@ -1,0 +1,153 @@
+{
+    "lessonId": "8",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 8: Speed Discovery Practice",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary goal of an 'Extreme Agenda' in a 10-15 minute speed discovery call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the prospect feel comfortable and build long-term rapport."
+                },
+                {
+                    "id": "b",
+                    "text": "To establish the frame, check the time, and define the goal (Pursue/Disqualify) within the first 20 seconds."
+                },
+                {
+                    "id": "c",
+                    "text": "To explain the technical architecture of your product in detail."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask the prospect about their hobbies and personal life."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In a speed call, every second counts. Establishing a clear, outcome-focused agenda immediately saves time and builds professional respect."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Instead of asking 'Tell me about your role,' which of these is the recommended approach for a speed call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Can you send me a copy of your job description?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'I see you're leading [Department]. I'm curious how [Specific Trend] is affecting your team's workflow right now.'"
+                },
+                {
+                    "id": "c",
+                    "text": "'What's your favorite part of your job?'"
+                },
+                {
+                    "id": "d",
+                    "text": "Skip the role entirely and start talking about your price."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Demonstrating that you've done your research beforehand allows you to skip biographical chitchat and dive straight into high-value discovery."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "What is a 'Binary' question according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A question written in 1s and 0s."
+                },
+                {
+                    "id": "b",
+                    "text": "A question that forces a choice between two clear options (e.g., 'Is this a top priority or just research for next year?')."
+                },
+                {
+                    "id": "c",
+                    "text": "A question about the prospect's computer hardware."
+                },
+                {
+                    "id": "d",
+                    "text": "A question that has more than 5 possible answers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Binary questions force a 'fork in the road,' rapidly revealing the prospect's timeline and priority level."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What should you do if a prospect in a speed call reveals a clear 'no-fit' signal, such as having zero budget for two years?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Try to argue with them and convince them to find the money."
+                },
+                {
+                    "id": "b",
+                    "text": "Pretend you didn't hear it and keep pitching."
+                },
+                {
+                    "id": "c",
+                    "text": "Acknowledge the signal and gracefully end the call early to respect both of your time."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask them for a referral to a richer company."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Rapid disqualification is a core skill of the efficient solo founder. Ending a call that has no fit saves everyone time."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which of these is the 'Magic Wand' question used for in speed discovery?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find out what the prospect's childhood dreams were."
+                },
+                {
+                    "id": "b",
+                    "text": "To capture Pain, Root Cause, and internal Blockers in a single high-impact response."
+                },
+                {
+                    "id": "c",
+                    "text": "To distract the prospect from your expensive price tag."
+                },
+                {
+                    "id": "d",
+                    "text": "To see if the prospect believes in magic."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Magic Wand question skips the 'surface' talk and gets the prospect to reveal the core of their struggle and why they haven't fixed it yet."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft an 'Extreme Agenda' for a 10-minute intro call for your business. Then, create a 'Binary' question that would help you quickly identify if a lead is worth pursuing further. How does this 'speed' approach feel compared to your current way of starting sales calls?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's Extreme Agenda for directness and goal-setting. Review their Binary question for the 'fork in the road' logic. If their approach feels 'too aggressive,' suggest a way to soften the delivery while maintaining the velocity."
+        }
+    ]
+}

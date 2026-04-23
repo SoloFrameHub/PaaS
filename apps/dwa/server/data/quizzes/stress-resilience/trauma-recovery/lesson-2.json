@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What role does the amygdala play in trauma, and how is it affected?",
+            "options": [
+                { "id": "opt1", "text": "It processes memories and shrinks after trauma" },
+                { "id": "opt2", "text": "It is the brain's alarm system that becomes hyperactive after trauma, triggering fear responses even in safe situations" },
+                { "id": "opt3", "text": "It regulates emotions and shuts down completely after trauma" },
+                { "id": "opt4", "text": "It controls sleep cycles and becomes overactive at night" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The amygdala is your brain's alarm system. After trauma, it becomes hyperactive and more easily triggered, leading to heightened startle responses, feeling constantly 'on alert,' and interpreting safe situations as dangerous — like a smoke alarm that's been made extremely sensitive."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why do flashbacks feel as though the traumatic event is happening right now?",
+            "options": [
+                { "id": "opt1", "text": "The prefrontal cortex replays the memory on purpose to process it" },
+                { "id": "opt2", "text": "The amygdala creates new memories that replace the original event" },
+                { "id": "opt3", "text": "The person is deliberately choosing to recall the event" },
+                { "id": "opt4", "text": "The hippocampus hasn't fully processed the memory as something that happened in the past" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The hippocampus normally gives memories a 'timestamp,' filing them as past events. After trauma, the hippocampus can shrink, making it harder to process memories properly. Flashbacks feel so real because the brain literally hasn't finished filing the memory as something that happened in the past."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Window of Tolerance' as described by Dr. Dan Siegel?",
+            "options": [
+                { "id": "opt1", "text": "The amount of trauma a person can endure before developing PTSD" },
+                { "id": "opt2", "text": "The time period after a traumatic event during which symptoms are expected" },
+                { "id": "opt3", "text": "The emotional zone within which you can function effectively — think clearly, feel emotions without being overwhelmed, and respond flexibly" },
+                { "id": "opt4", "text": "The range of medications that are safe to use for trauma treatment" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Window of Tolerance describes the optimal emotional zone where you can think clearly, stay connected to your body and emotions, and respond flexibly to stressors. Trauma narrows this window, making it easier to be pushed into hyperarousal (fight/flight) or hypoarousal (freeze/shutdown)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the goal of trauma recovery in relation to the Window of Tolerance?",
+            "options": [
+                { "id": "opt1", "text": "To never experience triggers again" },
+                { "id": "opt2", "text": "To eliminate all hyperarousal and hypoarousal responses permanently" },
+                { "id": "opt3", "text": "To stay in a constant state of calm without any emotional fluctuation" },
+                { "id": "opt4", "text": "To gradually widen your window so you can return to it more quickly when pushed out" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The goal of trauma recovery is to gradually widen your window of tolerance — not to never be triggered, but to be able to return to your window more quickly when you do get pushed out. Complete elimination of triggers or emotional responses is not a realistic or healthy goal."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What happens to the prefrontal cortex when the amygdala's alarm system is activated?",
+            "options": [
+                { "id": "opt1", "text": "It becomes more active to help manage the threat" },
+                { "id": "opt2", "text": "It works together with the amygdala to create flashbacks" },
+                { "id": "opt3", "text": "Its activity becomes suppressed, making it harder to think clearly and manage emotions" },
+                { "id": "opt4", "text": "It permanently shuts down after repeated trauma exposure" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "When the amygdala (alarm brain) takes over, the prefrontal cortex (thinking brain) goes offline. This explains why you might know intellectually that you're safe, but still feel terrified — the thinking part of your brain isn't fully online when the alarm system is active."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "trauma-recovery",
+    "lessonId": "2",
+    "title": "How Trauma Affects the Brain and Body - Quiz"
+}

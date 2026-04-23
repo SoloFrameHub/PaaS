@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Weighted Forecasting Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is 'Weighted Forecasting' essential for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the sales chart look more complicated."
+                },
+                {
+                    "id": "b",
+                    "text": "To neutralize the 'Founder Optimism Bias' and provide a realistic view of future revenue for better budgeting and resource planning."
+                },
+                {
+                    "id": "c",
+                    "text": "To discourage the founder from selling."
+                },
+                {
+                    "id": "d",
+                    "text": "To please the IRS."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founders want to believe every deal will close. Weighted forecasting applies a mathematical filter that accounts for the historical reality that many deals stall or fail late, preventing the founder from 'over-spending' revenue that hasn't arrived."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is the most 'Objective' indicator for increasing a deal's forecast percentage?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect said 'I love this' three times."
+                },
+                {
+                    "id": "b",
+                    "text": "The prospect's LinkedIn profile is impressive."
+                },
+                {
+                    "id": "c",
+                    "text": "The deal has progressed to a verifiable stage (e.g., 'Contract in Legal') with a clear evidence trail."
+                },
+                {
+                    "id": "d",
+                    "text": "The founder has a 'gut feeling' that it will close."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Evidence > Enthusiasm. Buyers are often polite and enthusiastic even when they aren't going to buy. Verifiable progress (meetings held, documents opened, redlines received) is the only reliable predictor of a close."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Negative Forecasting' anchor?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Assuming every deal will fail."
+                },
+                {
+                    "id": "b",
+                    "text": "Asking: 'If I lose my #1 and #2 biggest deals today, what is my revenue floor?' to prevent deal-obsession and force continuous outreach."
+                },
+                {
+                    "id": "c",
+                    "text": "Reporting bad news to investors."
+                },
+                {
+                    "id": "d",
+                    "text": "Refusing to send proposals."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Fear-based forecasting can be productive. By knowing your absolute'floor', you protect yourself from the emotional devastation of a big deal falling through and ensure you never stop prospecting."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Calculate your 'Weighted Pipeline' right now using the 10/25/50/75/90 model. How does this number compare to your raw 'Total Pipeline'? If you had to run your business ONLY on the weighted number for the next 90 days, what's one expense you would cut or one prospecting habit you would change?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can apply the weighting model and if they recognize where optimism might be clouding their financial judgment."
+        }
+    ]
+}

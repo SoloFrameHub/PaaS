@@ -1,0 +1,67 @@
+{
+  "lessonId": "7",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Monetización de Substack y Newsletters",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En la cadencia de construcción de confianza de 4 semanas por correo, ¿cuál es la secuencia de temas semanales?",
+      "options": [
+        { "id": "a", "text": "Vende, Demuestra, Enseña, Conecta" },
+        { "id": "b", "text": "Enseña, Demuestra, Conecta, Vende" },
+        { "id": "c", "text": "Conecta, Enseña, Vende, Demuestra" },
+        { "id": "d", "text": "Demuestra, Vende, Enseña, Conecta" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La cadencia de 4 semanas es Enseña (comparte un marco), Demuestra (comparte un caso de estudio), Conecta (comparte una historia personal), luego Vende (presenta tu oferta). Esto crea un ritmo donde los suscriptores reciben 3 semanas de valor puro antes de un pitch de ventas, manteniendo el saldo de la cuenta de confianza."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Para el modelo de newsletter pagado en Substack, ¿cuántos suscriptores gratuitos necesitas típicamente para generar $10,000/mes solo de suscripciones pagadas?",
+      "options": [
+        { "id": "a", "text": "1,000-2,000 suscriptores gratuitos" },
+        { "id": "b", "text": "5,000-8,000 suscriptores gratuitos" },
+        { "id": "c", "text": "15,000-20,000 suscriptores gratuitos" },
+        { "id": "d", "text": "50,000-75,000 suscriptores gratuitos" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Para ganar $10,000/mes de suscripciones pagadas, necesitas aproximadamente 1,000 suscriptores pagados a $10/mes. Con una tasa de conversión típica de gratuito a pagado del 5-7%, esto requiere una base de suscriptores gratuitos de 15,000-20,000. Por esto, la mayoría de los creadores independientes se benefician más usando el newsletter como motor de ventas para sus propios productos."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la proporción recomendada de contenido gratuito a pagado para newsletters de Substack con un nivel pagado?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90% gratuito, 10% pagado — mantén casi todo accesible"
+        },
+        {
+          "id": "b",
+          "text": "60% gratuito, 40% pagado — las publicaciones gratuitas deben ser genuinamente valiosas, no avances escuetos"
+        },
+        {
+          "id": "c",
+          "text": "30% gratuito, 70% pagado — la mayor parte del contenido debe estar detrás del muro de pago"
+        },
+        {
+          "id": "d",
+          "text": "50% gratuito, 50% pagado — una división equilibrada funciona mejor"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La proporción óptima es aproximadamente 60% gratuito y 40% pagado. Las publicaciones gratuitas sirven como tu marketing — deben ser genuinamente valiosas para atraer y retener suscriptores. Las publicaciones pagadas van significativamente más en profundidad e incluyen recursos exclusivos que justifican la suscripción."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Elige un modelo de monetización de newsletter (gratuito, pagado o híbrido) para tu negocio y justifica tu decisión. Incluye: tu tamaño de audiencia actual, qué cubriría tu newsletter, cómo conecta con tu oferta principal y tu proyección de ingresos para 12 meses.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student makes a justified strategic decision based on their specific situation (audience size, niche, existing offers) rather than picking the model that sounds most appealing. Look for realistic revenue projections backed by the benchmarks from the lesson, and a clear connection between the newsletter and their broader business model."
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+    "lessonId": "8",
+    "courseId": "linkedin-ai",
+    "sectionId": "ai-acquisition",
+    "title": "Voice & Video Outreach Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the primary psychological advantage of voice notes over text DMs?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They're faster to record than typing"
+                },
+                {
+                    "id": "b",
+                    "text": "They activate parasocial trust (same neural pathways as in-person conversation)"
+                },
+                {
+                    "id": "c",
+                    "text": "They're harder for prospects to ignore"
+                },
+                {
+                    "id": "d",
+                    "text": "They show you have expensive recording equipment"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Voice notes activate the same neural pathways as in-person conversation, building trust faster than text. The other factors matter, but parasocial trust is the core advantage."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When should you NOT use a voice note for LinkedIn outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Following up after someone accepted your connection request"
+                },
+                {
+                    "id": "b",
+                    "text": "Cold outreach to a C-level executive you've never interacted with"
+                },
+                {
+                    "id": "c",
+                    "text": "Responding to someone who commented on your post"
+                },
+                {
+                    "id": "d",
+                    "text": "Following up after no reply to a text DM"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Voice notes are too informal for first touch to senior decision-makers. Start with text, use voice later if they engage."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What's the optimal length for a Loom video in cold outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "15-30 seconds"
+                },
+                {
+                    "id": "b",
+                    "text": "30-90 seconds"
+                },
+                {
+                    "id": "c",
+                    "text": "2-3 minutes"
+                },
+                {
+                    "id": "d",
+                    "text": "5+ minutes (show everything)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "30-90 seconds is ideal for cold outreach. Under 60 seconds is best. Longer videos work for warm prospects or demos."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "True or False: You should record one great voice note and send it to 50 prospects to save time.",
+            "correctAnswer": "b",
+            "explanation": "False. Voice notes must be 1:1 personalized. Recipients can tell when it's not specific to them. Mass voice = inauthentic.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the Hybrid Touch Strategy, what's the correct sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Text → Loom → Voice → Breakup"
+                },
+                {
+                    "id": "b",
+                    "text": "Voice → Text → Loom → Breakup"
+                },
+                {
+                    "id": "c",
+                    "text": "Text → Voice → Text → Loom → Breakup"
+                },
+                {
+                    "id": "d",
+                    "text": "Loom → Voice → Text → Breakup"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The optimal sequence: Connection request (text) → Voice note → Text follow-up → Loom video → Breakup message. Vary formats to maintain interest."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "What's the #1 mistake people make when using AI to draft voice note scripts?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Not including the prospect's name"
+                },
+                {
+                    "id": "b",
+                    "text": "Making the script too short"
+                },
+                {
+                    "id": "c",
+                    "text": "Not editing out AI-isms and making it sound like their actual voice"
+                },
+                {
+                    "id": "d",
+                    "text": "Including too much personalization"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "AI drafts are a starting point. You must edit for your voice, remove generic phrases, and add personal details. Reading AI scripts word-for-word sounds robotic."
+        },
+        {
+            "id": "q7",
+            "type": "multiple-choice",
+            "question": "What's a realistic voice note reply rate for warm prospects (people who've engaged with your content)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5-10%"
+                },
+                {
+                    "id": "b",
+                    "text": "15-25%"
+                },
+                {
+                    "id": "c",
+                    "text": "40-65%"
+                },
+                {
+                    "id": "d",
+                    "text": "80-90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "40-65% reply rate for warm prospects is realistic. Cold prospects: 20-40%. Text-only DMs: 5-15% (cold), 15-30% (warm)."
+        },
+        {
+            "id": "q8",
+            "type": "true-false",
+            "question": "True or False: Loom's free tier (25 videos, 5 min max) is sufficient for most solo founders doing outreach.",
+            "correctAnswer": "a",
+            "explanation": "True. Most outreach videos are 30-90 seconds. 25 videos/month = 6-7 videos/week, which is plenty for targeted outreach. Upgrade only if you need unlimited or custom branding.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

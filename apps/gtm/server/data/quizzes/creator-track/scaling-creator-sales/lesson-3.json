@@ -1,0 +1,99 @@
+{
+    "lessonId": "3",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 3: Hiring Your First Closer",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "During the role-play interview stage, what is the MOST important thing to evaluate in a closer candidate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Whether they can recite your offer features from memory"
+                },
+                {
+                    "id": "b",
+                    "text": "Whether they ask discovery questions before pitching, handle objections empathetically, and sound like someone your audience would trust"
+                },
+                {
+                    "id": "c",
+                    "text": "Whether they can close the role-play deal within 15 minutes"
+                },
+                {
+                    "id": "d",
+                    "text": "Whether they have experience with your specific CRM platform"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The role-play evaluates five dimensions: discovery skills (asking questions before pitching), listening ability, objection handling, closing confidence, and tone/energy. The goal is not speed or feature memorization, but whether they demonstrate the consultative selling approach that creator audiences respond to."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "A closer candidate says 'I can close anyone' in the interview, provides vague metrics ('I close a lot of deals'), and speaks negatively about a previous creator they worked with. How should you respond?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Proceed to the role-play stage -- confidence is the most important trait in a closer"
+                },
+                {
+                    "id": "b",
+                    "text": "Hire them on a trial basis to see if their confidence translates to results"
+                },
+                {
+                    "id": "c",
+                    "text": "Pass on this candidate -- they are exhibiting three distinct red flags identified in the lesson"
+                },
+                {
+                    "id": "d",
+                    "text": "Ask for references to verify their claims before making a decision"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson identifies three clear red flags here: 'I can close anyone' (indicates conquest mentality over matching), vague metrics (inability to cite specific close rates), and badmouthing previous employers. Any one of these warrants caution; all three together is a clear pass."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "At day 75 of your closer's 90-day onboarding, their close rate is 22% (yours is 35%), they have received one prospect complaint, and their refund rate is 12% compared to your historical 5%. What is the appropriate response?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Fire them immediately -- they are clearly not performing"
+                },
+                {
+                    "id": "b",
+                    "text": "Give them another 90 days -- it takes time to ramp up"
+                },
+                {
+                    "id": "c",
+                    "text": "Have the honest conversation -- their close rate is below the 80% benchmark, there has been a complaint, and the refund rate is double your average"
+                },
+                {
+                    "id": "d",
+                    "text": "Increase their base salary to reduce financial pressure and improve performance"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson sets clear 90-day benchmarks: close rate within 80% of yours (28% minimum, theirs is 22%), zero prospect complaints (they have one), and refund rate at or below historical average (theirs is 12% vs. your 5%). They are failing all three benchmarks. The lesson recommends having the honest conversation at this point rather than extending indefinitely or terminating without discussion."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Of the five sources for finding closer candidates (closer communities, your own audience, referrals from other creators, sales talent agencies, and contractor platforms), which two would you try first for your specific business and audience? Explain why these sources are the best fit given your niche, your brand, and your budget.",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student's choice of candidate sources is well-reasoned for their specific situation. Look for alignment between their stated niche/brand and the source they choose. For example, if they serve a niche audience, hiring from their own followers may yield candidates with deep domain knowledge. If they have a large budget, an agency might make sense. Challenge vague reasoning and affirm specific, contextual thinking."
+        }
+    ]
+}

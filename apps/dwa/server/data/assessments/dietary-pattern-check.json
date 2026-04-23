@@ -1,0 +1,108 @@
+{
+  "id": "dietary-pattern-check",
+  "title": "Dietary Pattern Self-Assessment",
+  "description": "Evaluate how your current eating patterns align with evidence-based dietary approaches that support mental health. Based on Mediterranean Diet Adherence and ultra-processed food research.",
+  "instructions": "Think about your typical eating habits over the past month. How often do you do the following?",
+  "timeframe": "past month",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Eat fruits and vegetables (at least 5 servings per day)"
+    },
+    {
+      "id": "q2",
+      "text": "Include whole grains (oats, brown rice, whole wheat bread)"
+    },
+    {
+      "id": "q3",
+      "text": "Eat fatty fish (salmon, sardines, mackerel) at least twice per week"
+    },
+    {
+      "id": "q4",
+      "text": "Use olive oil as your primary cooking fat"
+    },
+    {
+      "id": "q5",
+      "text": "Include legumes (beans, lentils, chickpeas) in your meals"
+    },
+    {
+      "id": "q6",
+      "text": "Eat nuts or seeds as snacks or in meals"
+    },
+    {
+      "id": "q7",
+      "text": "Consume ultra-processed foods (packaged snacks, fast food, sugary drinks)",
+      "reverseScored": true
+    },
+    {
+      "id": "q8",
+      "text": "Drink artificially sweetened beverages",
+      "reverseScored": true
+    },
+    {
+      "id": "q9",
+      "text": "Eat fermented foods (yogurt, kefir, sauerkraut, kimchi)"
+    },
+    {
+      "id": "q10",
+      "text": "Cook meals at home using whole, unprocessed ingredients"
+    },
+    {
+      "id": "q11",
+      "text": "Eat a wide variety of different plant foods each week"
+    },
+    {
+      "id": "q12",
+      "text": "Consume foods high in added sugar (desserts, candy, sweetened cereals)",
+      "reverseScored": true
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3,
+    "labels": {
+      "0": "Rarely or never",
+      "1": "Sometimes",
+      "2": "Often",
+      "3": "Almost always"
+    }
+  },
+  "scoring": {
+    "maxScore": 36,
+    "bands": [
+      {
+        "min": 0,
+        "max": 9,
+        "severity": "minimal",
+        "label": "Room for Improvement",
+        "description": "Your current dietary pattern may not be providing optimal support for your mental health. Research shows that shifting toward a Mediterranean-style pattern can reduce depression risk by up to 32% (SMILES Trial). This course will show you practical, gradual changes you can make.",
+        "color": "red"
+      },
+      {
+        "min": 10,
+        "max": 18,
+        "severity": "mild",
+        "label": "Building Foundations",
+        "description": "You have some healthy eating habits in place. Studies show even moderate Mediterranean diet adherence is associated with lower anxiety and stress. This course will help you identify which specific changes could have the biggest impact on your mood.",
+        "color": "yellow"
+      },
+      {
+        "min": 19,
+        "max": 27,
+        "severity": "moderate",
+        "label": "Good Dietary Foundation",
+        "description": "Your dietary pattern shows many elements that research links to better mental health outcomes. You're already incorporating anti-inflammatory foods and limiting some processed items. This course will help you fine-tune your approach with the latest evidence.",
+        "color": "green"
+      },
+      {
+        "min": 28,
+        "max": 36,
+        "severity": "high",
+        "label": "Strong Dietary Pattern",
+        "description": "Your eating habits closely align with dietary patterns shown to support mental health. Research from the BMJ shows these patterns are associated with 50% lower risk of common mental disorders. This course will deepen your understanding of why your habits work.",
+        "color": "green"
+      }
+    ]
+  },
+  "disclaimer": "This is an educational self-reflection tool, not a clinical dietary assessment. Note: Questions 7, 8, and 12 ask about habits that research associates with increased mental health risk — scoring higher on these items is not beneficial. For a comprehensive dietary evaluation, consult a registered dietitian. If you have an eating disorder, please discuss any dietary changes with your treatment team. If you are in crisis, call or text 988."
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What distinguishes a psychobiotic from a regular probiotic?",
+            "options": [
+                { "id": "opt1", "text": "Psychobiotics are more expensive than regular probiotics" },
+                { "id": "opt2", "text": "Psychobiotics have been studied specifically for their effects on brain function, mood, and psychiatric symptoms" },
+                { "id": "opt3", "text": "Psychobiotics contain more bacterial strains than regular probiotics" },
+                { "id": "opt4", "text": "There is no real difference — all probiotics are psychobiotics" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A psychobiotic is a probiotic that has been studied specifically for its effects on brain function, mood, stress response, or psychiatric symptoms. Unlike general probiotics formulated for digestive health, psychobiotics require psychiatric outcome data, with specific strains tested for neurotransmitter production, HPA axis modulation, and vagal signaling."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is strain specificity so important when choosing a psychobiotic?",
+            "options": [
+                { "id": "opt1", "text": "All strains within a species have identical properties, so it does not actually matter" },
+                { "id": "opt2", "text": "Different strains are simply different brand names for the same bacteria" },
+                { "id": "opt3", "text": "The exact strain — not just the species — determines whether a probiotic has psychobiotic properties" },
+                { "id": "opt4", "text": "Strain names are only used for marketing purposes" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Psychobiotic effects are strain-specific. For example, Lactobacillus plantarum 299v is the specific strain with clinical evidence for mood effects in depression. A different L. plantarum strain may have completely different properties. This means you cannot just grab any probiotic and expect mood benefits."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the Rudzki et al. study, what was the key finding when L. plantarum 299v was added to SSRI treatment in patients with depression?",
+            "options": [
+                { "id": "opt1", "text": "The probiotic completely replaced the need for SSRI medication" },
+                { "id": "opt2", "text": "Patients showed significant improvements in cognitive function, including attention and memory" },
+                { "id": "opt3", "text": "The probiotic caused serious side effects requiring hospitalization" },
+                { "id": "opt4", "text": "There was no measurable difference between the probiotic and placebo groups" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Rudzki et al. study found that patients with MDD taking L. plantarum 299v alongside their SSRI showed significant improvements in cognitive function (attention and memory) compared to SSRI + placebo. This is notable because cognitive symptoms like brain fog and difficulty concentrating are among the most persistent and treatment-resistant symptoms of depression."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to meta-analyses, psychobiotics show the strongest effects in which population?",
+            "options": [
+                { "id": "opt1", "text": "Healthy volunteers with no psychiatric conditions" },
+                { "id": "opt2", "text": "Children under the age of 5" },
+                { "id": "opt3", "text": "People with clinically significant baseline psychiatric symptoms" },
+                { "id": "opt4", "text": "Professional athletes during competition" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Meta-analyses show that psychobiotic effects were stronger in people who were actually experiencing psychiatric symptoms, suggesting psychobiotics may be most useful as part of treatment rather than as prevention in healthy populations. Effects were weaker in healthy volunteers without psychiatric conditions."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How long do most clinical trials show it takes for psychobiotics to produce measurable effects?",
+            "options": [
+                { "id": "opt1", "text": "Within 24 hours" },
+                { "id": "opt2", "text": "2-3 days" },
+                { "id": "opt3", "text": "1-2 weeks" },
+                { "id": "opt4", "text": "4-8 weeks of daily use" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Most clinical trials show psychobiotic effects after 4-8 weeks of daily use. They do not work overnight. Individual responses vary based on existing microbiome, diet, genetics, and other factors, so patience and consistency are key."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "5",
+    "title": "Psychobiotics: Therapeutic Bacteria for Your Mood - Quiz"
+}

@@ -1,0 +1,75 @@
+{
+  "lessonId": "1",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "When Pipeline Load Justifies a VA",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the real question when deciding whether to hire a VA?",
+      "options": [
+        { "id": "a", "text": "Can I afford a VA?" },
+        { "id": "b", "text": "Can I afford NOT to have a VA?" },
+        { "id": "c", "text": "Do my competitors have VAs?" },
+        { "id": "d", "text": "Will a VA make me look more professional?" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The real question is 'Can I afford NOT to have a VA?' When admin steals selling time, every hour on CRM updates or inbox triage is an hour not spent on revenue-generating activity."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happens when admin tasks eat into selling time for a solo founder?",
+      "options": [
+        { "id": "a", "text": "CRM stays perfectly updated" },
+        {
+          "id": "b",
+          "text": "Leads sit unfollowed, CRM goes stale, and calls get cancelled"
+        },
+        { "id": "c", "text": "Revenue automatically increases" },
+        {
+          "id": "d",
+          "text": "Nothing — admin and selling are equally valuable"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "When admin eats selling time: leads sit unfollowed for days, CRM hasn't been updated since last Tuesday, calls get cancelled because of inbox cleanup. You work until midnight doing things a capable person at $8/hour could have done."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the two delegation thresholds that indicate a VA makes economic sense?",
+      "options": [
+        { "id": "a", "text": "Revenue over $100K and 50+ employees" },
+        { "id": "b", "text": "Pipeline volume and time-on-admin thresholds" },
+        { "id": "c", "text": "Having an office and a team" },
+        {
+          "id": "d",
+          "text": "International expansion and multi-timezone coverage"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Two thresholds: Pipeline Volume (enough active deals that tracking becomes a bottleneck) and Time-on-Admin (hours per week spent on pure admin vs. revenue-generating activity). When either is crossed, a VA makes clear economic sense."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should hire a VA as early as possible, even before you have enough pipeline to justify it.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Hiring too early wastes money and management time. You need to cross the delegation threshold — enough pipeline volume or admin hours that delegation clearly produces more revenue than it costs."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "How many hours per week do you spend on pure admin (CRM updates, inbox sorting, data entry, scheduling)? How many active deals do you have? Based on the delegation thresholds, should you hire a VA now or wait?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response quantifies their admin hours and active pipeline honestly, applies the delegation thresholds from the lesson, and makes a clear hire/wait decision with specific reasoning tied to their numbers."
+    }
+  ]
+}

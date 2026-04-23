@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "8",
+    "lessonTitle": "Email Automation Tools",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary consideration when choosing an email tool as a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Choose the cheapest option available."
+                },
+                {
+                    "id": "b",
+                    "text": "Pick a tool you can grow into—check pricing at 10K, 25K, and 50K subscribers, not just today's needs."
+                },
+                {
+                    "id": "c",
+                    "text": "Always use the most feature-rich enterprise tool."
+                },
+                {
+                    "id": "d",
+                    "text": "Choose based on which tool has the best logo."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Migrating email tools is painful. Research pricing and features at future scale before committing. A tool that works at 1,000 subscribers but becomes punishing at 10,000 creates expensive problems later.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the 'Four Essential Automations' that handle 80% of email needs?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Newsletter, social media, SMS, and push notifications."
+                },
+                {
+                    "id": "b",
+                    "text": "Welcome sequence, nurture sequence, re-engagement sequence, and purchase follow-up."
+                },
+                {
+                    "id": "c",
+                    "text": "Landing page, checkout, upsell, and referral."
+                },
+                {
+                    "id": "d",
+                    "text": "Signup, confirmation, password reset, and account deletion."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "These four automations cover the core email journey: welcoming new subscribers, nurturing them toward purchase, re-engaging inactive subscribers, and onboarding customers after purchase.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which email tool was described as 'built specifically for newsletters' with native referral programs and AI writing assistance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Mailchimp"
+                },
+                {
+                    "id": "b",
+                    "text": "Buttondown"
+                },
+                {
+                    "id": "c",
+                    "text": "Beehiiv"
+                },
+                {
+                    "id": "d",
+                    "text": "Listmonk"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Beehiiv is designed specifically for newsletter creators, featuring native referral programs (like Morning Brew uses), AI writing assistance, and monetization features.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the basic logic structure of an email automation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send → Wait → Send again."
+                },
+                {
+                    "id": "b",
+                    "text": "Trigger → Condition → Action."
+                },
+                {
+                    "id": "c",
+                    "text": "Design → Build → Launch."
+                },
+                {
+                    "id": "d",
+                    "text": "Segment → Target → Convert."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "All automations follow this logic: Something happens (trigger), you check if conditions are met (condition), then you take action (action). Example: Form submitted → Not a customer → Send welcome email.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the main deliverability risk of sending to unengaged subscribers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It costs more money per subscriber."
+                },
+                {
+                    "id": "b",
+                    "text": "Consistently sending to non-openers damages your sender reputation, eventually causing even engaged subscribers' emails to go to spam."
+                },
+                {
+                    "id": "c",
+                    "text": "Email providers charge per unengaged subscriber."
+                },
+                {
+                    "id": "d",
+                    "text": "Unengaged subscribers are more likely to complain to the FTC."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email providers track engagement rates. If you consistently send to people who never open, you're training the algorithm to see you as spam. This eventually affects delivery to everyone—including engaged subscribers.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Based on your current stage (0-1K, 1-10K, or 10K+ subscribers) and your priority features (automation, referrals, landing pages, etc.), which 2 email tools from the lesson would you trial? Why are they the best fit for your situation? What will your first automation be?",
+            "promptHints": [
+                "Be honest about your actual subscriber count and budget.",
+                "Consider what features you actually need today vs. nice-to-haves.",
+                "Your first automation is almost always the welcome sequence."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "7"
+        ],
+        "unlocks": [
+            "9"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Email Automation Tools - Quiz"
+}

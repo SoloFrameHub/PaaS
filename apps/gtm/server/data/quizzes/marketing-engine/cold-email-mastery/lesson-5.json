@@ -1,0 +1,142 @@
+{
+    "lessonId": "5",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "The First Line Hook Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Where does a 'First Line Hook' primarily appear before an email is even opened?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "In the email signature"
+                },
+                {
+                    "id": "b",
+                    "text": "In the 'Mobile Preview' or inbox notification"
+                },
+                {
+                    "id": "c",
+                    "text": "In the spam folder"
+                },
+                {
+                    "id": "d",
+                    "text": "On your LinkedIn profile"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Modern email clients show the first 50-100 characters of the body. If those characters look like a generic template, the email is often deleted without being opened."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'Fake Personalization'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using a fake name to send emails"
+                },
+                {
+                    "id": "b",
+                    "text": "Using data that an AI scraped (like college or city) without adding any human context or relevance"
+                },
+                {
+                    "id": "c",
+                    "text": "Starting an email with 'Hi'"
+                },
+                {
+                    "id": "d",
+                    "text": "Sending an email to the wrong person"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Fake personalization (e.g., 'Go Mascot!') signals to the prospect that you are using automation to trick them into thinking you've done research, which often backfires."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these is a high-quality source for authentic personalization?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect's home address"
+                },
+                {
+                    "id": "b",
+                    "text": "A list of their competitors"
+                },
+                {
+                    "id": "c",
+                    "text": "A specific point from a recent LinkedIn post or podcast interview they were in"
+                },
+                {
+                    "id": "d",
+                    "text": "The stock price of their company"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Referencing something they actually said or wrote is the highest form of 'Proof of Work' and earns you the most credibility."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should a solo founder 'Tier' their personalization effort?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spend 30 minutes on every single email"
+                },
+                {
+                    "id": "b",
+                    "text": "Don't personalize at all; just send more volume"
+                },
+                {
+                    "id": "c",
+                    "text": "Focus 5+ minutes of custom research on the top 20% 'Whale' prospects, and use templates for lower-priority segments"
+                },
+                {
+                    "id": "d",
+                    "text": "Only personalize the subject line"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Efficiency is key. You should protect your time by investing heavily in the prospects with the highest potential value while staying efficient with the rest."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the primary psychological signal sent by a manual, relevant first line?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "I am a very smart person"
+                },
+                {
+                    "id": "b",
+                    "text": "I have a lot of free time"
+                },
+                {
+                    "id": "c",
+                    "text": "I am a human being who spent time specifically on you"
+                },
+                {
+                    "id": "d",
+                    "text": "I am trying to sell you something"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "In an era of AI spam, human effort is a massive trust signal. It shows the prospect they aren't just a row in a spreadsheet."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify a 'High-Tier' prospect you want to work with. Spend 2 minutes on their LinkedIn or company blog. Write a 1-sentence hook that proves you did the research. Why is THIS specific hook more effective than 'I saw your LinkedIn'?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the hook mentions a specific insight (e.g., 'your point on X') rather than just 'I saw your post.' The justification should address the signal of 'Proof of Work.'"
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

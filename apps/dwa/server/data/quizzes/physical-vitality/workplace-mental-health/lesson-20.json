@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What should you do if you experience suicidal ideation (thoughts of self-harm or not wanting to go on)?",
+            "options": [
+                {"id": "opt1", "text": "Wait and see if it goes away"},
+                {"id": "opt2", "text": "Take IMMEDIATE action: call/text 988 Suicide & Crisis Lifeline, go to ER, call 911, or tell someone — this is a medical emergency"},
+                {"id": "opt3", "text": "Try to handle it alone through self-help"},
+                {"id": "opt4", "text": "Suicidal ideation isn't serious"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Suicidal ideation requires IMMEDIATE action. Call or text 988 (Suicide & Crisis Lifeline), go to the nearest emergency room, call 911, or tell a trusted person. Burnout's exhaustion dimension is independently associated with suicidal ideation even in non-depressed individuals — this is a medical emergency, not something to manage alone."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When should you seek professional evaluation for burnout?",
+            "options": [
+                {"id": "opt1", "text": "Never — burnout is something you should manage on your own"},
+                {"id": "opt2", "text": "When experiencing: exhaustion not relieved by rest, functional impairment, symptoms lasting 4-6+ weeks, pervasive low mood, or thoughts of giving up/self-harm"},
+                {"id": "opt3", "text": "Only if your manager tells you to"},
+                {"id": "opt4", "text": "Burnout doesn't require professional help"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Seek professional evaluation if you experience: exhaustion not relieved by rest/weekends/vacation, functional impairment (difficulty completing work or daily tasks), symptoms persisting 4-6+ weeks without improvement, pervasive low mood or loss of pleasure (possible depression), or any thoughts of giving up or self-harm. Severe burnout warrants professional support."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the difference between self-guided learning (this course) and professional mental health treatment?",
+            "options": [
+                {"id": "opt1", "text": "Self-guided learning can replace therapy and medication"},
+                {"id": "opt2", "text": "Self-guided learning provides education, frameworks, and skills; professional treatment is required for clinical mental health conditions (depression, anxiety, PTSD, severe burnout, suicidal ideation)"},
+                {"id": "opt3", "text": "They are the same thing"},
+                {"id": "opt4", "text": "Professional treatment is never necessary"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Self-guided learning is appropriate for psychoeducation, individual skills (boundaries, CBT coping), and recognition/referral literacy. Professional treatment is REQUIRED for clinical mental health conditions (depression, anxiety, PTSD), severe burnout with functional impairment, suicidal ideation/self-harm, trauma requiring specialized treatment, and harassment requiring legal intervention. This course is education, not therapy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are appropriate escalation pathways for workplace harassment?",
+            "options": [
+                {"id": "opt1", "text": "Just try to be more resilient"},
+                {"id": "opt2", "text": "Document incidents, report to HR, consult employment lawyer, access EAP for support, file EEOC charge if needed (within 180-300 days), consider union representation"},
+                {"id": "opt3", "text": "Harassment should never be reported"},
+                {"id": "opt4", "text": "Only tell your friends"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Harassment escalation pathways: document all incidents, report to HR with written complaints, consult employment lawyer for legal options, access EAP for emotional support, file EEOC charges for discrimination (must be within 180-300 days), use union/employee representative for advocacy, document mental health impacts with occupational health. If organization doesn't respond, external legal action or exit may be necessary."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Based on your current symptoms and workplace situation, do you need professional help now? If yes, what is your first step (EAP, primary care, therapist, crisis line, HR)? If you're hesitant to seek help, what barrier is preventing you, and how can you address it?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "20",
+    "title": "When to Seek Help — Comprehensive Escalation Guide - Quiz"
+}

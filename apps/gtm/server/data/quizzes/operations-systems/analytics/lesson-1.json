@@ -1,0 +1,151 @@
+{
+    "lessonId": "1",
+    "courseId": "analytics",
+    "sectionId": "operations-systems",
+    "title": "The 3 Questions",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which of these is a LEADING indicator of acquisition success?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Revenue this month"
+                },
+                {
+                    "id": "b",
+                    "text": "Deals closed this month"
+                },
+                {
+                    "id": "c",
+                    "text": "Meetings booked this week"
+                },
+                {
+                    "id": "d",
+                    "text": "Customer churn rate"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Meetings booked this week is a leading indicator — it tells you NOW if acquisition is working. Revenue and deals closed are lagging indicators (they reflect past actions). Churn is a retention metric."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of tracking metrics?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To feel productive and data-driven"
+                },
+                {
+                    "id": "b",
+                    "text": "To have something to show investors"
+                },
+                {
+                    "id": "c",
+                    "text": "To change decisions based on what's working"
+                },
+                {
+                    "id": "d",
+                    "text": "To compare yourself to competitors"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Anti-Vanity Metrics Principle: Track only metrics that change decisions. If a metric doesn't influence what you do, delete it."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Healthy SMB SaaS monthly logo churn should be:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Under 1%"
+                },
+                {
+                    "id": "b",
+                    "text": "Under 3%"
+                },
+                {
+                    "id": "c",
+                    "text": "Under 10%"
+                },
+                {
+                    "id": "d",
+                    "text": "Under 20%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Healthy SMB SaaS monthly logo churn is &lt;3%. Above 5% and you're in trouble. Above 10% and you have a product-market fit problem."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "Email open rate is a good metric to track because it shows engagement.",
+            "correctAnswer": "b",
+            "explanation": "False. Email open rate is a vanity metric. Opens don't predict replies or meetings. Track reply rate instead.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How often should solo founders review their 5-metric dashboard?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Daily"
+                },
+                {
+                    "id": "b",
+                    "text": "Weekly"
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly"
+                },
+                {
+                    "id": "d",
+                    "text": "Quarterly"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Weekly. Daily is too frequent (you'll react to noise). Monthly is too slow (you'll miss trends). Weekly reviews catch problems before they compound."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "Which metric answers 'Where should I focus?'",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Total revenue"
+                },
+                {
+                    "id": "b",
+                    "text": "Channel attribution (wins by source)"
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly churn rate"
+                },
+                {
+                    "id": "d",
+                    "text": "Email open rate"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Channel attribution tells you which source produces the most wins, which directly answers 'Where should I focus?' Revenue is a lagging indicator. Churn answers 'Are customers staying?' Open rate is vanity."
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'allostatic load'?",
+            "options": [
+                { "id": "opt1", "text": "The amount of stress you can handle before feeling any symptoms" },
+                { "id": "opt2", "text": "The cumulative wear and tear on your body from chronic stress" },
+                { "id": "opt3", "text": "A measure of how quickly you recover from acute stress" },
+                { "id": "opt4", "text": "The level of cortisol in your bloodstream at any given moment" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Allostatic load is the scientific term for the cumulative wear and tear on your body from chronic stress. Think of it as your body's stress debt — when your stress response activates repeatedly without adequate recovery, the systems designed to protect you start causing damage."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does chronic stress affect the brain's prefrontal cortex?",
+            "options": [
+                { "id": "opt1", "text": "It makes the prefrontal cortex more active and efficient" },
+                { "id": "opt2", "text": "It has no measurable effect on the prefrontal cortex" },
+                { "id": "opt3", "text": "Activity decreases, leading to difficulty concentrating, poor judgment, and brain fog" },
+                { "id": "opt4", "text": "It causes the prefrontal cortex to grow larger" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Under chronic stress, activity in the prefrontal cortex decreases. This is your center for planning, decision-making, focus, and emotional regulation. The result is difficulty concentrating, poor judgment, impulsive decisions, and brain fog."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What happens to cortisol rhythms under chronic stress?",
+            "options": [
+                { "id": "opt1", "text": "Cortisol levels become completely unpredictable with no pattern" },
+                { "id": "opt2", "text": "The normal pattern flattens — morning peak is lower and evening levels stay elevated" },
+                { "id": "opt3", "text": "Cortisol production stops entirely" },
+                { "id": "opt4", "text": "Cortisol rhythms become stronger and more pronounced" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Under chronic stress, the normal cortisol pattern flattens: the morning peak is lower (you wake up exhausted), evening levels stay elevated (you cannot wind down), and your body is stuck in a state of persistent low-grade activation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the link between chronic stress and inflammation?",
+            "options": [
+                { "id": "opt1", "text": "Chronic stress reduces inflammation, which is why stressed people feel numb" },
+                { "id": "opt2", "text": "Chronic stress leads to elevated inflammatory markers, contributing to cardiovascular disease, depression, and weakened immunity" },
+                { "id": "opt3", "text": "Inflammation only occurs during acute stress, not chronic stress" },
+                { "id": "opt4", "text": "There is no established connection between stress and inflammation" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic stress leads to elevated inflammatory markers (IL-6, TNF-alpha, CRP). This low-grade, persistent inflammation contributes to cardiovascular disease, depression, fatigue, reduced motivation, autoimmune flare-ups, and accelerated aging."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'good news' about the effects of chronic stress on the body and brain?",
+            "options": [
+                { "id": "opt1", "text": "The effects are only temporary and disappear on their own within days" },
+                { "id": "opt2", "text": "The effects are permanent but you can learn to live with them" },
+                { "id": "opt3", "text": "Most effects are reversible when stress is reduced and recovery is supported" },
+                { "id": "opt4", "text": "Medication can completely eliminate all effects regardless of stress levels" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Most effects of chronic stress are reversible when stress is reduced and recovery is supported. Cortisol rhythms normalize, inflammatory markers decrease, brain structures can recover function, and physical symptoms improve as the chronic stress load decreases."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "stress-burnout",
+    "lessonId": "2",
+    "title": "How Chronic Stress Affects Body and Mind - Quiz"
+}

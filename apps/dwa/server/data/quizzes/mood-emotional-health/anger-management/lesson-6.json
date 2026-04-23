@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the correct I-statement formula?",
+            "options": [
+                { "id": "opt1", "text": "I think you should stop doing what you're doing because it's wrong" },
+                { "id": "opt2", "text": "I feel [emotion] when [specific behavior] because [impact on you]. I'd like [specific request]" },
+                { "id": "opt3", "text": "I feel like you're being unfair and you need to change" },
+                { "id": "opt4", "text": "I want you to know that I'm angry and it's your fault" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The I-statement formula shifts from blaming to ownership: name a specific emotion ('I feel frustrated'), describe the specific behavior ('when I get interrupted'), explain the impact ('because I lose my train of thought'), and make a concrete request ('I need you to let me finish before responding'). Disguised accusations like 'I feel like you're being a jerk' are not I-statements."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the key principle of assertiveness?",
+            "options": [
+                { "id": "opt1", "text": "Getting your way in every disagreement" },
+                { "id": "opt2", "text": "Being aggressive but using a polite tone of voice" },
+                { "id": "opt3", "text": "Expressing your feelings and needs clearly while respecting both yourself and the other person" },
+                { "id": "opt4", "text": "Never compromising on anything because your needs come first" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Assertiveness means clear, honest, respectful communication — expressing your feelings and needs without attacking, blaming, or collapsing. The core principle is that you can be firm and kind at the same time. You can disagree with someone's behavior without attacking their character, and stand up for yourself without stepping on someone else."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is active listening important during anger-related conversations?",
+            "options": [
+                { "id": "opt1", "text": "It gives you time to build a better argument against the other person" },
+                { "id": "opt2", "text": "It slows down the conversation and shows the other person you take them seriously, which de-escalates defensiveness" },
+                { "id": "opt3", "text": "It is only necessary when the other person is right" },
+                { "id": "opt4", "text": "It replaces the need to express your own feelings" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Active listening slows down the conversation, which is exactly what anger-fuelled interactions need. It also shows the other person you're taking them seriously, which often de-escalates their defensiveness — and yours. Key practices include giving full attention, reflecting back what you heard, asking clarifying questions, and validating without necessarily agreeing."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What makes a boundary effective?",
+            "options": [
+                { "id": "opt1", "text": "It tells the other person exactly how they should behave at all times" },
+                { "id": "opt2", "text": "It is clear, specific, enforced through follow-through, and focused on your behavior (not theirs)" },
+                { "id": "opt3", "text": "It is vague enough that you can adjust it depending on the situation" },
+                { "id": "opt4", "text": "It is only communicated once and never mentioned again" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Effective boundaries are clear ('I'm not okay with being yelled at'), specific ('If you raise your voice, I'm going to leave the room'), enforced through follow-through (you actually do it), and focused on your behavior, not theirs. You can't control what someone else does, but you can control what you do in response. Boundaries without follow-through train people to ignore them."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you avoid having a difficult conversation about anger?",
+            "options": [
+                { "id": "opt1", "text": "When you have cooled down and know what you want to say" },
+                { "id": "opt2", "text": "When there is enough time and privacy to talk properly" },
+                { "id": "opt3", "text": "When either person is above a 5-6 on the anger scale, intoxicated, or exhausted" },
+                { "id": "opt4", "text": "When you are open to hearing the other person's side" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Timing matters for assertive communication. Avoid difficult conversations when either person is above a 5-6 on the anger scale, intoxicated, exhausted or hungry, in public, rushing, or hasn't had time to think about what they actually need. Even perfect assertive communication fails if the timing is wrong."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "anger-management",
+    "lessonId": "6",
+    "title": "Communication Skills: Assertiveness and I-Statements - Quiz"
+}

@@ -1,0 +1,230 @@
+{
+  "industry_id": "real_estate",
+  "display_name": "Real Estate / PropTech",
+  "parent_category": "traditional",
+  "description": "Real estate professionals, brokerages, property management companies, and PropTech startups focused on residential and commercial real estate transactions, property management, and real estate investment. This industry is relationship-driven with a mix of independent agents and larger brokerages.",
+  "typical_company_sizes": ["1-10", "11-50", "51-200"],
+  "typical_deal_sizes": ["smb", "mid_market"],
+  "sales_cycle_length": "months",
+
+  "pain_points": [
+    {
+      "pain": "Lead quality and conversion rates from digital sources",
+      "level": "straightforward",
+      "context": "Many leads from Zillow, Realtor.com are low-intent browsers, wasting agent time"
+    },
+    {
+      "pain": "Transaction management and document coordination complexity",
+      "level": "complex",
+      "context": "Real estate transactions involve 20+ parties and hundreds of documents"
+    },
+    {
+      "pain": "High costs of market data subscriptions (CoStar, MLS)",
+      "level": "straightforward",
+      "context": "CoStar alone can cost $500-1500/month per user for commercial agents"
+    },
+    {
+      "pain": "Tenant management and rent collection inefficiencies",
+      "level": "straightforward",
+      "context": "Property managers juggle maintenance requests, late payments, and tenant communications"
+    },
+    {
+      "pain": "Manual processes and lack of workflow automation",
+      "level": "complex",
+      "context": "Many brokerages still rely on spreadsheets and email for deal tracking"
+    },
+    {
+      "pain": "Agent recruitment and retention challenges",
+      "level": "complex",
+      "context": "Top producers are heavily recruited; technology is a key differentiator for brokerages"
+    },
+    {
+      "pain": "Accurate property valuations in volatile markets",
+      "level": "complex",
+      "context": "Post-pandemic market volatility makes comps and pricing difficult"
+    }
+  ],
+
+  "buying_triggers": [
+    "New brokerage opening or expansion",
+    "Agent exodus to competitor with better technology",
+    "Peak season approaching (spring market)",
+    "New team leader or managing broker hired",
+    "Commission compression forcing efficiency improvements",
+    "Remote/hybrid work making collaboration tools essential",
+    "iBuyer competition pressuring traditional agents"
+  ],
+
+  "budget_cycle": "Often quarterly or flexible for smaller brokerages. Larger firms may have annual technology budgets. Individual agents frequently make personal technology purchases.",
+
+  "regulatory_concerns": [
+    "Fair Housing Act compliance",
+    "State real estate licensing requirements",
+    "RESPA (Real Estate Settlement Procedures Act)",
+    "Wire fraud and cybersecurity requirements",
+    "Data privacy regulations (especially for tenant data)"
+  ],
+
+  "compliance_language": [
+    "Fair Housing compliant",
+    "RESPA compliant",
+    "SOC 2 certified",
+    "Wire fraud protection",
+    "CCPA/GDPR compliant"
+  ],
+
+  "risk_tolerance": "medium",
+
+  "terminology": [
+    {
+      "term": "Cap Rate (Capitalization Rate)",
+      "definition": "Ratio of net operating income to property value, used to evaluate investment returns",
+      "usage_context": "Key metric for commercial real estate investors comparing properties"
+    },
+    {
+      "term": "NOI (Net Operating Income)",
+      "definition": "Property revenue minus operating expenses, excluding debt service and capital expenditures",
+      "usage_context": "Fundamental metric for valuing income-producing properties"
+    },
+    {
+      "term": "IRR (Internal Rate of Return)",
+      "definition": "Annualized return rate that accounts for the timing of cash flows over an investment period",
+      "usage_context": "Used by investors to compare real estate investments against other asset classes"
+    },
+    {
+      "term": "Rent Roll",
+      "definition": "Document listing all tenants, lease terms, and rental income for a property",
+      "usage_context": "Critical document in commercial property transactions and due diligence"
+    },
+    {
+      "term": "CoStar",
+      "definition": "Leading commercial real estate data and analytics provider",
+      "usage_context": "The dominant data source for commercial real estate; expensive but essential"
+    },
+    {
+      "term": "MLS (Multiple Listing Service)",
+      "definition": "Database of property listings shared among real estate brokers",
+      "usage_context": "The backbone of residential real estate; over 600 regional MLSs exist"
+    },
+    {
+      "term": "PropTech",
+      "definition": "Technology solutions designed specifically for the real estate industry",
+      "usage_context": "Umbrella term for startups and technology companies serving real estate"
+    },
+    {
+      "term": "Smart Building",
+      "definition": "Buildings with integrated IoT systems for automated control of HVAC, lighting, and security",
+      "usage_context": "Growing trend in commercial and Class A residential properties"
+    },
+    {
+      "term": "CRM (Customer Relationship Management)",
+      "definition": "Software for managing client relationships, leads, and communication history",
+      "usage_context": "Essential for agents managing prospect pipelines and past client relationships"
+    },
+    {
+      "term": "Lead Generation",
+      "definition": "Strategies and tools for attracting potential buyers and sellers",
+      "usage_context": "A primary concern for agents; Zillow Premier Agent, Realtor.com are major channels"
+    },
+    {
+      "term": "Virtual Tours / 3D Tours",
+      "definition": "Interactive digital representations of properties allowing remote viewing",
+      "usage_context": "Became essential during COVID; Matterport is the market leader"
+    },
+    {
+      "term": "Transaction Management",
+      "definition": "Software coordinating the documents, tasks, and parties involved in closing a deal",
+      "usage_context": "Dotloop, SkySlope, and similar tools manage the closing process"
+    },
+    {
+      "term": "Portfolio Management",
+      "definition": "Tools for tracking and analyzing multiple property investments",
+      "usage_context": "Used by investors and property managers with multiple properties"
+    }
+  ],
+
+  "formality_level": "professional",
+  "decision_making_style": "fast_individual",
+
+  "common_objections": [
+    {
+      "objection": "How accurate is your data compared to CoStar or the MLS?",
+      "underlying_concern": "Data accuracy is critical for client trust; bad comps can cost deals",
+      "effective_response_approach": "Be transparent about data sources, show side-by-side comparisons, explain methodology, offer a trial with their active listings to validate accuracy",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Does this integrate with our MLS and CoStar subscriptions?",
+      "underlying_concern": "Agents refuse to use tools that require double-entry or don't sync with their primary data sources",
+      "effective_response_approach": "Demonstrate specific MLS integrations (RESO Web API), show CoStar data import capabilities, list supported MLS systems in their region",
+      "level": "complex"
+    },
+    {
+      "objection": "What's my ROI on lead generation? I'm tired of paying for unqualified leads",
+      "underlying_concern": "Agents have been burned by Zillow and other lead sources with low conversion rates",
+      "effective_response_approach": "Share specific conversion metrics and cost-per-closed-deal numbers, offer performance guarantees if possible, show lead scoring and qualification features",
+      "level": "straightforward"
+    },
+    {
+      "objection": "My agents won't adopt another new tool - we've tried this before",
+      "underlying_concern": "Real estate agents are notoriously resistant to technology adoption; many tools go unused",
+      "effective_response_approach": "Emphasize mobile-first design, show adoption metrics from similar brokerages, offer onboarding support and training programs, highlight time-saving benefits in concrete terms",
+      "level": "complex"
+    },
+    {
+      "objection": "We just signed a contract with [competitor] last year",
+      "underlying_concern": "Switching costs are real and annual contracts are common",
+      "effective_response_approach": "Discuss parallel running options, offer extended trials, position as complement rather than replacement initially, ask about contract renewal timeline",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "CoStar / LoopNet (commercial data)",
+    "Zillow / Zillow Premier Agent",
+    "Realtor.com",
+    "Dotloop / SkySlope (transaction management)",
+    "BoomTown / kvCORE (CRM/lead gen)",
+    "Follow Up Boss (CRM)",
+    "Matterport (virtual tours)",
+    "AppFolio / Buildium (property management)",
+    "Yardi (enterprise property management)"
+  ],
+
+  "switching_barriers": [
+    "Years of client history and notes in existing CRM",
+    "MLS integration complexity and regional variations",
+    "Agent familiarity and training investment",
+    "Active transaction data that can't be interrupted",
+    "Brokerage-mandated tool requirements",
+    "Integration with accounting and commission systems"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're a {role} at a {company_size}-agent real estate brokerage. {trigger_event}. Your main concern is {pain_point}, and you're evaluating solutions against your current {incumbent_tool}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point", "incumbent_tool"]
+    },
+    {
+      "template": "You're the {role} for a {company_type} focused on {property_type} properties. Your team is frustrated with {pain_point}, and you've been asked to find a solution within a {budget} monthly budget.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_type", "property_type", "pain_point", "budget"]
+    },
+    {
+      "template": "You're a top-producing {role} at a {brokerage_type} brokerage. You have {team_size} buyer's agents on your team and personally spend ${amount} per month on lead generation. {trigger_event}, and you're questioning whether your current approach is sustainable.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "brokerage_type", "team_size", "amount", "trigger_event"]
+    },
+    {
+      "template": "You're the {role} at a growing property management company with {unit_count} units under management. {trigger_event}. Your biggest operational challenge is {pain_point}, and your owners are demanding {owner_requirement}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "unit_count", "trigger_event", "pain_point", "owner_requirement"]
+    },
+    {
+      "template": "You're a {role} at a {company_type} considering PropTech investments. {trigger_event}. You need to balance {stakeholder_a_need} with {stakeholder_b_need} while showing ROI within {timeframe}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_type", "trigger_event", "stakeholder_a_need", "stakeholder_b_need", "timeframe"]
+    }
+  ]
+}

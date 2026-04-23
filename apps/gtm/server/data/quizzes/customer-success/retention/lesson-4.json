@@ -1,0 +1,78 @@
+{
+  "lessonId": "4",
+  "courseId": "retention",
+  "sectionId": "customer-success",
+  "title": "SMB Churn Benchmarks & NRR Targets",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the industry median for monthly logo churn in SMB SaaS?",
+      "options": [
+        { "id": "a", "text": "1-2%" },
+        { "id": "b", "text": "3-4%" },
+        { "id": "c", "text": "5.2%" },
+        { "id": "d", "text": "8-10%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The industry median for SMB SaaS monthly logo churn is 5.2%. Starting point (normal) is 5-8%, good (6-month target) is 3-5%, and best-in-class (12-month target) is less than 3%."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the difference between logo churn and revenue churn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They measure the same thing with different names"
+        },
+        {
+          "id": "b",
+          "text": "Logo churn counts customers lost; revenue churn counts dollars lost"
+        },
+        { "id": "c", "text": "Logo churn is monthly; revenue churn is annual" },
+        {
+          "id": "d",
+          "text": "Logo churn only applies to SaaS; revenue churn applies to all businesses"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Logo churn counts customers. Revenue churn counts dollars. You can lose 5 small customers ($50/month each) but upsell 2 large ones (+$200/month each) — logo churn looks bad but revenue churn is actually negative (net gain)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "For solo founders, which three metrics tell you everything you need to know about retention?",
+      "options": [
+        { "id": "a", "text": "DAU, MAU, and session length" },
+        {
+          "id": "b",
+          "text": "Monthly logo churn, monthly revenue churn, and Net Revenue Retention"
+        },
+        { "id": "c", "text": "Customer count, revenue, and profit margin" },
+        { "id": "d", "text": "NPS score, CSAT score, and support ticket count" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three essential retention metrics are: Monthly Logo Churn (what % of customers cancel), Monthly Revenue Churn (what % of MRR is lost), and Net Revenue Retention (are you growing from existing customers faster than losing them)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Without benchmarks, every lost customer feels like failure, but with benchmarks you can tell whether you're fighting a product problem, an onboarding problem, or normal market dynamics.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Benchmarks provide context. Marcus was losing 3.9% monthly and thought his business was broken, but the industry median is 5.2%. He was above average. Instead of panic, benchmarks gave him a clear target: get from 3.9% to 2.8% in 6 months."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate your current monthly logo churn rate and monthly revenue churn rate. Compare them to the SMB SaaS benchmarks from this lesson. What does the gap tell you, and what is your 6-month target?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response calculates both metrics correctly (or provides reasonable estimates), compares them accurately to benchmarks (median 5.2% logo churn), interprets what the gap means for their business, and sets a specific, measurable 6-month target."
+    }
+  ]
+}

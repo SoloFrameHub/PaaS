@@ -1,0 +1,92 @@
+{
+  "id": "anger-self-check",
+  "title": "Anger Self-Check",
+  "description": "This brief self-check helps you reflect on how anger is showing up in your life — its frequency, intensity, and impact. It is not a diagnostic tool; it's designed to increase self-awareness and help you identify areas to focus on.",
+  "instructions": "For each statement below, choose the response that best describes your experience over the past 2 weeks. Answer honestly — there are no right or wrong answers.",
+  "timeframe": "Over the past 2 weeks",
+  "questions": [
+    {
+      "id": "frequency",
+      "text": "I felt angry or irritable"
+    },
+    {
+      "id": "intensity",
+      "text": "When I got angry, it was more intense than the situation called for"
+    },
+    {
+      "id": "duration",
+      "text": "Once I got angry, it was hard to calm down or let it go"
+    },
+    {
+      "id": "verbal",
+      "text": "I raised my voice, yelled, or said things I later regretted"
+    },
+    {
+      "id": "physical-urge",
+      "text": "I felt the urge to throw things, slam doors, or hit something"
+    },
+    {
+      "id": "relationship-impact",
+      "text": "My anger caused problems in my relationships (partner, family, friends, coworkers)"
+    },
+    {
+      "id": "rumination",
+      "text": "I replayed anger-provoking events over and over in my mind"
+    },
+    {
+      "id": "control",
+      "text": "I felt out of control during anger episodes"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Very often"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 8,
+        "label": "Generally manageable",
+        "description": "Your anger seems generally within a healthy range. The skills in this course can help you maintain this and handle the situations that do challenge you."
+      },
+      {
+        "min": 9,
+        "max": 16,
+        "label": "Moderate concerns",
+        "description": "Anger is showing up in ways that affect your life. The techniques in this course — particularly cool-down tools, thought challenging, and assertive communication — can make a meaningful difference. Consider tracking your episodes to identify patterns."
+      },
+      {
+        "min": 17,
+        "max": 24,
+        "label": "Significant impact",
+        "description": "Anger is causing notable problems in your relationships, work, or well-being. We encourage you to work through this course AND consider professional support — a therapist trained in CBT for anger management can provide personalized guidance."
+      },
+      {
+        "min": 25,
+        "max": 32,
+        "label": "Serious concerns",
+        "description": "Your answers suggest anger is causing serious problems and may feel out of control. We strongly encourage you to seek professional support. A therapist specializing in anger management or CBT can help you develop a personalized plan. If anger is leading to violence, threats, or harm, please contact a crisis resource or professional immediately."
+      }
+    ],
+    "functionalImpairmentQuestion": {
+      "text": "How much has anger interfered with your daily life, relationships, or work over the past 2 weeks?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "A little" },
+        { "value": 2, "label": "Moderately" },
+        { "value": 3, "label": "A lot" },
+        { "value": 4, "label": "Severely" }
+      ]
+    }
+  },
+  "disclaimer": "This self-check is for educational self-reflection only. It is not a clinical diagnostic tool and does not constitute medical or psychological advice. If your anger involves physical violence, threats, or harm to yourself or others, please seek professional help immediately. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline). For domestic violence support, call 1-800-799-7233."
+}

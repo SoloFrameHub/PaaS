@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2026 structural equation modeling study (n=842) find about technology use and wellbeing?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Total screen time was the strongest predictor of mental health outcomes"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Intentional, goal-directed use predicted better wellbeing — independent of total screen time"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Passive social media use always produces worse outcomes than active use"
+                },
+                {
+                    "id": "opt4",
+                    "text": "All social media use increases anxiety and depression equally"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Intentional, goal-directed technology use predicted better attentional control (β=0.42) and psychological wellbeing (β=0.37), while passive, habitual use showed negative associations. Quality of use matters more than quantity."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following claims has STRONG evidence in the current research base?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Social media is the primary cause of the adolescent mental health crisis"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Nighttime screen use suppresses melatonin and delays circadian rhythm via blue light"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Digital detox produces durable mental health improvement"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Screen addiction is a formal clinical diagnosis in the DSM-5"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The mechanism of blue light → ipRGCs → suprachiasmatic nucleus → melatonin suppression is STRONG evidence. The other claims are either overstated (social media as primary cause), have mixed evidence (digital detox), or are not supported (screen addiction is not a DSM-5 diagnosis)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the three-tier framework, what tier does this course operate in?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Tier 3: Treatment-Level Claims — this course treats mental health conditions"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Tiers 1 and 2: Wellness Education and Adjunctive Self-Management"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only Tier 1: General wellness tips with no clinical relevance"
+                },
+                {
+                    "id": "opt4",
+                    "text": "All three tiers — this course can replace therapy"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "This course teaches evidence-based wellness strategies (Tier 1) and skills that support professional care (Tier 2) — but does not replace professional mental health assessment or treatment (Tier 3)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'screen time' considered a poor predictor of mental health outcomes?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because people underreport their actual screen time"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because many heavy users show no mental health problems — it's the negative consequences (distress, interference, inability to stop) that predict outcomes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because all screens are equally harmful regardless of use"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because screen time measurement is impossible"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Karolinska study (n=2,265) found that heavy involvement alone didn't predict problems — it was the experience of harm and functional impairment that mattered. Quality of use > quantity of use."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about your own technology use. What's one area where you currently use technology *habitually or passively* rather than *intentionally and goal-directed*? How does it make you feel afterward?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "1",
+    "title": "The Science of Digital Wellness - Quiz"
+}

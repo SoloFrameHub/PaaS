@@ -1,0 +1,201 @@
+{
+    "lessonId": "3",
+    "courseId": "crm-setup",
+    "sectionId": "operations-systems",
+    "title": "Folk vs. Close vs. Pipedrive",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which CRM has built-in calling and SMS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk"
+                },
+                {
+                    "id": "b",
+                    "text": "Close"
+                },
+                {
+                    "id": "c",
+                    "text": "Pipedrive"
+                },
+                {
+                    "id": "d",
+                    "text": "All of them"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Close is the only one with built-in calling and SMS. Folk and Pipedrive require integrations (Aircall, Dialpad) for calling."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which CRM auto-enriches contacts from LinkedIn and public data?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk"
+                },
+                {
+                    "id": "b",
+                    "text": "Close"
+                },
+                {
+                    "id": "c",
+                    "text": "Pipedrive"
+                },
+                {
+                    "id": "d",
+                    "text": "None of them"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Folk auto-enriches contacts when you import them via the Chrome extension. Close and Pipedrive require external enrichment tools like Apollo."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "You send 150 cold emails/week and make 25 calls/week. Which CRM fits best?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk (relationship-first)"
+                },
+                {
+                    "id": "b",
+                    "text": "Close (volume outbound)"
+                },
+                {
+                    "id": "c",
+                    "text": "Pipedrive (visual pipeline)"
+                },
+                {
+                    "id": "d",
+                    "text": "Any of them work equally well"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Close is built for high-volume outbound with sequences and built-in calling. Folk is overkill for cold outbound, and Pipedrive would require adding Instantly + Aircall."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which CRM has the largest integration ecosystem (400+ integrations)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk (~50)"
+                },
+                {
+                    "id": "b",
+                    "text": "Close (~100)"
+                },
+                {
+                    "id": "c",
+                    "text": "Pipedrive (400+)"
+                },
+                {
+                    "id": "d",
+                    "text": "They all have the same"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pipedrive has 400+ integrations, the largest ecosystem. Folk has ~50, Close has ~100."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What's the cheapest paid tier for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk Standard ($20/mo)"
+                },
+                {
+                    "id": "b",
+                    "text": "Close Startup ($29/mo)"
+                },
+                {
+                    "id": "c",
+                    "text": "Pipedrive Essential ($14/mo)"
+                },
+                {
+                    "id": "d",
+                    "text": "HubSpot Starter ($20/mo)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pipedrive Essential at $14/mo is the cheapest paid tier. Folk Standard is $20/mo, Close Startup is $29/mo."
+        },
+        {
+            "id": "q6",
+            "type": "true-false",
+            "question": "True or False: You should switch CRMs every 60 days to find the perfect fit.",
+            "correctAnswer": "b",
+            "explanation": "False. The 90-day commitment principle says you should stick with one CRM for at least 90 days. Switching too often costs 20-40 hours of setup time and prevents you from building consistent habits.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q7",
+            "type": "multiple-choice",
+            "question": "Which CRM is best for a coach who closes 2-3 clients/month through warm referrals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk (relationship tags, mail merge)"
+                },
+                {
+                    "id": "b",
+                    "text": "Close (sequences, calling)"
+                },
+                {
+                    "id": "c",
+                    "text": "Pipedrive (visual pipeline)"
+                },
+                {
+                    "id": "d",
+                    "text": "None — use a spreadsheet"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Folk is designed for relationship sellers who manage warm connections. The coach doesn't need sequences or high-volume calling — they need relationship context and personalized outreach."
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "What's the main reason solo founders abandon CRMs?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Too expensive"
+                },
+                {
+                    "id": "b",
+                    "text": "Over-engineering (too many fields) or under-using (glorified spreadsheet)"
+                },
+                {
+                    "id": "c",
+                    "text": "Lack of integrations"
+                },
+                {
+                    "id": "d",
+                    "text": "Bad mobile apps"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The two failure modes are over-engineering (creating 50 custom fields you never use) and under-using (treating it like a glorified spreadsheet). Both lead to abandonment."
+        }
+    ]
+}

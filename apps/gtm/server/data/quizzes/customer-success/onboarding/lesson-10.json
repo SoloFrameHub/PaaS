@@ -1,0 +1,90 @@
+{
+  "lessonId": "10",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Your Onboarding Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What three questions does an onboarding playbook answer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How much does it cost? Who pays? When do they pay?"
+        },
+        {
+          "id": "b",
+          "text": "What happens when? Who does what? How do we measure success?"
+        },
+        {
+          "id": "c",
+          "text": "What features exist? How do they work? Who uses them?"
+        },
+        {
+          "id": "d",
+          "text": "Who are our customers? What do they need? How do we reach them?"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An onboarding playbook answers: (1) What happens when? (timeline and triggers), (2) Who does what? (automated vs. manual interventions), and (3) How do we measure success? (metrics and thresholds). This is your operating manual for the onboarding system."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the five core sections of an onboarding playbook?",
+      "options": [
+        { "id": "a", "text": "Pricing, features, support, marketing, sales" },
+        {
+          "id": "b",
+          "text": "Journey map, email sequences, milestone definitions, intervention scripts, metrics dashboard"
+        },
+        {
+          "id": "c",
+          "text": "Product roadmap, team roles, budget, timeline, risk register"
+        },
+        {
+          "id": "d",
+          "text": "Customer profiles, competitive analysis, positioning, messaging, channels"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The five sections are: (1) Onboarding Journey Map (90-day timeline), (2) Email & Automation Sequences, (3) Milestone Definitions (with activation criteria), (4) Intervention Scripts (for stalled and at-risk customers), and (5) Metrics Dashboard."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why is documenting the onboarding playbook important even if you're the only person running it?",
+      "options": [
+        { "id": "a", "text": "It looks professional to investors" },
+        {
+          "id": "b",
+          "text": "It lets you iterate without breaking things and becomes a training manual if you hire help"
+        },
+        { "id": "c", "text": "Customers will want to read it" },
+        { "id": "d", "text": "It's required for compliance purposes" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A documented playbook lets you iterate without breaking things — when you test a new email or add a milestone, you know exactly what you're changing and why. Plus, if you ever hire help, the playbook becomes their training manual."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The onboarding playbook is a one-time document that should not change once created.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The playbook is a living document. It should be updated as you learn what works, test new email variants, add milestones, and refine intervention triggers. Continuous iteration based on metrics is what makes the system improve over time."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Create a 14-day implementation sprint plan for building your onboarding playbook. Break it into specific daily or multi-day tasks, and identify which components you would build first based on your biggest retention gap.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response creates a realistic 14-day timeline with specific tasks per day or block, prioritizes components based on their actual retention challenges (not just following the lesson order), and includes concrete deliverables (e.g., 'Day 1-2: Build 7-email welcome sequence in ConvertKit')."
+    }
+  ]
+}

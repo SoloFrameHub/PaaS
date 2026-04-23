@@ -1,0 +1,122 @@
+{
+  "id": "perfectionism-thought-record",
+  "title": "Perfectionism Thought Record",
+  "description": "Use this worksheet to identify and challenge perfectionistic thoughts using cognitive restructuring. Examine the evidence for and against your rigid rules and develop more balanced, flexible alternatives.",
+  "instructions": "When you notice a perfectionistic thought causing distress, work through each field to examine the thought carefully and develop a more balanced perspective.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What was happening?",
+      "type": "textarea",
+      "placeholder": "Describe the situation briefly (e.g., 'Finishing a work presentation,' 'Received feedback on a project'). Please avoid including names or identifying details.",
+      "required": true
+    },
+    {
+      "id": "perfectionisticThought",
+      "label": "2. Perfectionistic Thought — What went through your mind?",
+      "type": "textarea",
+      "placeholder": "Write the exact thought (e.g., 'If this presentation is not perfect, everyone will think I am incompetent')",
+      "required": true
+    },
+    {
+      "id": "emotion",
+      "label": "3. Emotion — What did you feel?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "anxiety", "label": "Anxiety / Worry" },
+        { "value": "shame", "label": "Shame" },
+        { "value": "guilt", "label": "Guilt" },
+        { "value": "frustration", "label": "Frustration / Irritation" },
+        { "value": "sadness", "label": "Sadness / Hopelessness" },
+        { "value": "inadequacy", "label": "Inadequacy / Not good enough" },
+        { "value": "exhaustion", "label": "Exhaustion / Overwhelm" },
+        { "value": "fear", "label": "Fear" }
+      ]
+    },
+    {
+      "id": "emotionIntensity",
+      "label": "4. Emotion Intensity (0-100)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "required": true
+    },
+    {
+      "id": "distortion",
+      "label": "5. Cognitive Distortion — Which pattern is this?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "all-or-nothing", "label": "All-or-Nothing Thinking" },
+        { "value": "should-must", "label": "Should/Must Statements" },
+        { "value": "catastrophizing", "label": "Catastrophizing" },
+        { "value": "discounting-positive", "label": "Discounting the Positive" },
+        { "value": "mental-filtering", "label": "Mental Filtering" },
+        { "value": "emotional-reasoning", "label": "Emotional Reasoning" }
+      ]
+    },
+    {
+      "id": "evidenceFor",
+      "label": "6. Evidence For — What facts support this thought?",
+      "type": "textarea",
+      "placeholder": "List actual evidence (not feelings) that supports the thought",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "7. Evidence Against — What contradicts this thought?",
+      "type": "textarea",
+      "placeholder": "Consider: Has this fear come true before? What would I say to a friend? Am I confusing a feeling with a fact?",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "8. Balanced Thought — What is a more realistic perspective?",
+      "type": "textarea",
+      "placeholder": "Write a realistic, evidence-based alternative that acknowledges nuance (not a positive affirmation)",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "9. Re-rate Emotion Intensity (0-100)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "required": true
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "all-or-nothing",
+      "name": "All-or-Nothing Thinking",
+      "description": "Everything is either perfect or terrible, success or failure, with no middle ground. 'If it is not 100%, it is a failure.'"
+    },
+    {
+      "id": "should-must",
+      "name": "Should/Must Statements",
+      "description": "Rigid rules disguised as universal truths. 'I should always be productive.' 'I must never make mistakes.'"
+    },
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Imagining extreme, irreversible consequences for mistakes. 'If I make a typo, my career is over.'"
+    },
+    {
+      "id": "discounting-positive",
+      "name": "Discounting the Positive",
+      "description": "Dismissing achievements, compliments, or evidence of competence. 'They are just being nice.' 'That was not hard enough to count.'"
+    },
+    {
+      "id": "mental-filtering",
+      "name": "Mental Filtering",
+      "description": "Focusing exclusively on the one imperfect element while ignoring everything that went well."
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Treating feelings as evidence of facts. 'I feel like a failure, therefore I am a failure.'"
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes and self-understanding. It is not a substitute for professional mental health care. If perfectionistic thinking is causing significant distress, please consider working with a qualified therapist."
+}

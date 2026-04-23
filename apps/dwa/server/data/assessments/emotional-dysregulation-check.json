@@ -1,0 +1,92 @@
+{
+  "id": "emotional-dysregulation-check",
+  "title": "Emotional Dysregulation Self-Check",
+  "description": "This brief self-check helps you reflect on patterns of emotional intensity, reactivity, and difficulty managing strong emotions. It is not a diagnostic tool — it's designed to increase self-awareness and help you identify which DBT skills might be most helpful for you.",
+  "instructions": "For each statement below, choose the response that best describes your experience over the past 2 weeks. Answer honestly — there are no right or wrong answers.",
+  "timeframe": "Over the past 2 weeks",
+  "questions": [
+    {
+      "id": "intensity",
+      "text": "My emotions felt very intense — much stronger than the situation seemed to call for"
+    },
+    {
+      "id": "rapid-shift",
+      "text": "My mood shifted quickly and unpredictably, sometimes multiple times in a day"
+    },
+    {
+      "id": "slow-recovery",
+      "text": "Once I got upset, it took a long time to calm down and return to baseline"
+    },
+    {
+      "id": "overwhelm",
+      "text": "I felt emotionally overwhelmed — like my feelings were too much to handle"
+    },
+    {
+      "id": "impulsive",
+      "text": "I acted impulsively when upset (said things I regretted, spent money, ate/drank too much, self-harmed)"
+    },
+    {
+      "id": "avoidance",
+      "text": "I tried to avoid, suppress, or numb my emotions (through distraction, substances, isolation, or shutting down)"
+    },
+    {
+      "id": "relationship-impact",
+      "text": "My emotional reactions caused problems in my relationships"
+    },
+    {
+      "id": "self-criticism",
+      "text": "I was highly self-critical or felt ashamed about my emotional reactions"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Very often"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 8,
+        "label": "Generally manageable",
+        "description": "Your emotional patterns seem generally within a manageable range. The DBT skills in this course can still strengthen your emotional resilience and help you navigate challenging situations more effectively."
+      },
+      {
+        "min": 9,
+        "max": 16,
+        "label": "Moderate difficulty",
+        "description": "You're experiencing some difficulty managing emotional intensity. The skills in this course — particularly mindfulness, distress tolerance, and emotion labeling — can make a meaningful difference. Pay attention to which situations trigger the strongest reactions."
+      },
+      {
+        "min": 17,
+        "max": 24,
+        "label": "Significant difficulty",
+        "description": "Emotional dysregulation is notably affecting your life and relationships. We encourage you to work through this course AND consider professional support — a therapist trained in DBT can provide personalized skills coaching. The skills you'll learn here are the same ones used in clinical DBT."
+      },
+      {
+        "min": 25,
+        "max": 32,
+        "label": "Serious difficulty",
+        "description": "Your answers suggest intense emotional dysregulation that is causing serious problems. We strongly encourage you to seek professional support. A DBT-trained therapist can provide the structured skills training, coaching, and validation that makes the biggest difference. If emotional dysregulation is leading to self-harm or suicidal thoughts, please contact a crisis resource immediately."
+      }
+    ],
+    "functionalImpairmentQuestion": {
+      "text": "How much has difficulty managing emotions interfered with your daily life, relationships, or work over the past 2 weeks?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "A little" },
+        { "value": 2, "label": "Moderately" },
+        { "value": 3, "label": "A lot" },
+        { "value": 4, "label": "Severely" }
+      ]
+    }
+  },
+  "disclaimer": "This self-check is for educational self-reflection only. It is not a clinical diagnostic tool and does not constitute medical or psychological advice. If you are engaging in self-harm or having thoughts of suicide, please reach out immediately: call or text 988 (Suicide & Crisis Lifeline), text HOME to 741741 (Crisis Text Line), or call 911 for emergencies."
+}

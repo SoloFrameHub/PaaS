@@ -1,0 +1,99 @@
+{
+    "lessonId": "6",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 6: Group Program Design",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "According to the three-layer module architecture, what is the purpose of pre-recorded concept videos in a group program?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To replace live calls entirely and reduce the creator's time commitment"
+                },
+                {
+                    "id": "b",
+                    "text": "To deliver the 'what and why' asynchronously so that live calls can focus on application and coaching instead of lecturing"
+                },
+                {
+                    "id": "c",
+                    "text": "To create content that can be sold separately as a standalone course"
+                },
+                {
+                    "id": "d",
+                    "text": "To demonstrate production quality and justify higher program pricing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The three-layer architecture separates concept (async video for the what and why), application (live group call for the how), and implementation (async community for the do). Pre-recorded videos free live calls from being lectures, allowing the creator to use live time for higher-value coaching and hot seats."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "A creator is choosing between cohort and rolling enrollment. Their program teaches a 10-step process where each step builds on the previous one, and their audience values community bonding and shared accountability. Which enrollment model does the lesson recommend?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Rolling enrollment, because it generates more consistent revenue"
+                },
+                {
+                    "id": "b",
+                    "text": "Cohort enrollment, because it supports sequential learning, strong group bonding, and shared accountability"
+                },
+                {
+                    "id": "c",
+                    "text": "Neither -- they should stick with 1:1 since the content is sequential"
+                },
+                {
+                    "id": "d",
+                    "text": "A hybrid model with no cohort structure but year-round community"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson states that cohort enrollment is best for transformation-oriented programs where the journey matters as much as the content. A sequential 10-step process with an audience that values bonding and accountability perfectly fits the cohort model's strengths: shared experience, peer momentum, and higher completion rates."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "A group program has a thriving community on Slack, but the creator notices engagement drops every Thursday and Friday. They currently have no structured weekly rhythm. Based on the lesson's recommended community cadence, what should they implement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Post daily content to fill the engagement gaps on every day of the week"
+                },
+                {
+                    "id": "b",
+                    "text": "Monday intention posts, Wednesday mid-week check-ins, and Friday wins threads to create consistent engagement touchpoints"
+                },
+                {
+                    "id": "c",
+                    "text": "Move the community to a different platform that has better engagement features"
+                },
+                {
+                    "id": "d",
+                    "text": "Remove the community and replace it with more live calls"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson prescribes a specific weekly community rhythm: Monday (weekly intention post where the creator sets the theme and members share their goals), Wednesday (mid-week check-in prompt related to the current module), and Friday (wins thread where members share accomplishments). This creates the expectation of regular participation that drives engagement."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Design a two-call-per-week format for your group program. For each call, specify: (1) the day and time, (2) whether it is a workshop, hot seat, or panel format, (3) the typical duration, and (4) how you will handle the situation where only 3 out of 20 members attend a call. Explain your reasoning for each decision.",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student's call design is practical and follows the lesson's recommendations. The lesson suggests one teaching call (workshop format) and one coaching call (hot seat format) for a two-call-per-week program. Check that their timing makes sense for their audience. Pay special attention to how they handle low attendance -- this reveals whether they understand that recorded calls, async alternatives, and community accountability can support members who cannot attend live. Challenge unrealistic schedules or formats that would burn the creator out."
+        }
+    ]
+}

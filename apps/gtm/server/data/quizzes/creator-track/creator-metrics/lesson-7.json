@@ -1,0 +1,55 @@
+{
+  "lessonId": "7",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Lifetime Value for Creator Businesses Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "A creator runs a community membership at $97/month with an average retention of 8 months. What is the customer LTV, and how does the lesson say higher-priced memberships compare on retention?",
+      "options": [
+        { "id": "a", "text": "$776 LTV; higher-priced memberships retain shorter because of the cost burden" },
+        { "id": "b", "text": "$776 LTV; higher-priced memberships retain longer because members are more committed and see faster results" },
+        { "id": "c", "text": "$970 LTV; retention is the same regardless of price point" },
+        { "id": "d", "text": "$582 LTV; $97/month memberships typically retain for only 6 months" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LTV = $97 x 8 months = $776. The lesson makes the counterintuitive point that higher-priced memberships retain longer, not shorter. Members who pay $297/month are more committed, take the content more seriously, and see faster results -- all of which reduce churn."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What LTV:CAC ratio range is considered the 'sweet spot' for most creator businesses?",
+      "options": [
+        { "id": "a", "text": "1:1 to 2:1 -- break-even is sufficient for creator businesses" },
+        { "id": "b", "text": "3:1 to 5:1 -- healthy margins with room for growth investment" },
+        { "id": "c", "text": "8:1 to 10:1 -- the higher the ratio, the better the business" },
+        { "id": "d", "text": "10:1 or above -- creator businesses should have extremely low acquisition costs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The sweet spot for most creator businesses is 3:1 to 5:1. Below 3:1, profit margins are too thin. Above 8:1, you are actually under-investing in growth and leaving revenue on the table. The lesson specifically notes that a ratio above 8:1 means you should be spending more on marketing."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the membership churn benchmarks, what is the 'critical retention window' and what happens if a member survives it?",
+      "options": [
+        { "id": "a", "text": "The first week; surviving it doubles retention" },
+        { "id": "b", "text": "Months 1-3; surviving them increases the probability of staying 12+ months by 3x" },
+        { "id": "c", "text": "The first 30 days; after which churn drops to near zero" },
+        { "id": "d", "text": "Months 6-12; this is when most members decide whether to renew annually" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The critical retention window is months 1-3. Month 1 sees 10-20% churn, months 2-3 see 8-12% per month. But if a member survives the first 90 days, their probability of staying for 12+ months increases by 3x. This is why the best creator communities invest heavily in onboarding during the first 90 days."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Calculate your current LTV using the formulas from this lesson (choose the formula that matches your offer type). Then estimate your CAC. What is your LTV:CAC ratio? Based on the benchmarks, is your business in a healthy range, and which of the 4 LTV levers (increase transaction value, increase purchase frequency, extend customer lifespan, build recurring revenue) would have the biggest impact on your ratio?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student correctly applied the LTV formula for their offer type and provided a reasonable CAC estimate. Check that their LTV:CAC ratio interpretation aligns with the benchmarks (below 3:1 needs work, 3-5:1 is healthy, above 8:1 means under-investing in growth). Assess whether the LTV lever they chose is the most impactful for their specific situation."
+    }
+  ]
+}

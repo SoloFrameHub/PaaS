@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for social support as a stress buffer?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—only anecdotal evidence exists"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG—a 2025 APA meta-analysis (604 studies, 1,014 effect sizes) found perceived social support associated with better mental health (r+=0.35)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "MODERATE—only small studies support it"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No evidence—social support doesn't affect stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Social support has STRONG evidence as a stress buffer. A 2025 APA systematic review and meta-analysis covering 604 studies with 1,014 effect sizes found that perceived social support was most strongly associated with better mental health (r+=0.35) and better work performance (r+=0.37) of all domains studied. Perceived stress mediates the pathway from social support to reduced anxiety and depression. Instrumental social support (practical assistance) specifically buffers the impact of stress on depression. This makes social support one of the most powerful protective factors in the stress literature."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What distinguishes assertive communication from passive and aggressive communication?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Assertive means being louder and more forceful"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Assertive communication expresses needs clearly and directly while respecting others' needs and boundaries; passive avoids conflict at personal cost; aggressive meets needs at others' expense"
+                },
+                {
+                    "id": "opt3",
+                    "text": "All three styles are equally effective for stress reduction"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Passive communication is always best for reducing conflict"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "These three communication styles differ fundamentally in how they balance self-needs and others' needs. Passive communication avoids expressing needs to prevent conflict, leading to chronic stress from unmet needs and resentment. Aggressive communication expresses needs through demanding, blaming, or hostile means, damaging relationships (which are critical stress buffers). Assertive communication expresses needs, boundaries, and preferences clearly and directly while simultaneously respecting others—it focuses on behavior and impact, not character attacks. Research shows assertiveness is associated with lower stress, better mental health, and higher relationship satisfaction."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does passive communication create chronic stress despite avoiding immediate conflict?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Passive communication doesn't create stress—it prevents all conflict"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because unmet needs persist, resentment builds over time, and emotional suppression (associated with worse outcomes than reappraisal) compounds stress"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only aggressive communication creates stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Passive communication is the healthiest long-term strategy"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While passive communication avoids immediate confrontation, it creates chronic stress through multiple pathways: needs go unmet (leading to frustration), resentment builds over time (as you repeatedly prioritize others at your own expense), and you're using emotional suppression as a coping strategy. Remember from the cognitive reappraisal lesson that suppression (pushing down emotions) is associated with worse mental health outcomes than reappraisal. Additionally, when resentment eventually surfaces (it usually does), the relationship strain can be severe because issues weren't addressed early. Passive communication also reduces self-efficacy—the sense that you can advocate for yourself."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the assertive communication formula taught in evidence-based communication skills training?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Attack the person's character + demand change"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Describe the specific behavior (not the person) + state the impact + express your need or request clearly"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Hint at what you want and hope the other person figures it out"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Avoid all confrontation and hope the problem resolves itself"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The evidence-informed assertive communication structure has three key components: (1) Describe the specific, observable behavior—not character judgments (\"You interrupted me in the meeting\" not \"You're disrespectful\"). This reduces defensiveness. (2) State the impact of that behavior (\"When you interrupt me, I feel like my ideas aren't valued, and the team doesn't hear my full thought\"). This helps the other person understand consequences. (3) Express your need or request clearly (\"I need you to let me finish my thoughts before responding\" or \"Please wait until I'm done speaking\"). This is direct and actionable, making it more likely to be successful."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When is poor communication NOT a skill gap, and what should you do instead?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Communication is always just a skill issue—practice more"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When the relationship involves abuse, manipulation, or consistent boundary violations—these require safety planning, not better communication skills"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never—assertiveness fixes all relationship problems"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only in extreme physical violence—otherwise keep practicing communication"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "This is a critical safety consideration that must be included in communication skills training. Communication skills are designed for relationships where both people are operating in good faith. When a relationship involves abuse, manipulation, consistent boundary violations, or power imbalances (like workplace harassment), better communication skills won't fix the problem and may increase danger by signaling to an abuser that you're 'pushing back.' These situations require safety planning, external support, HR/legal intervention, or relationship exit—not individual skill-building. Failing to acknowledge this limitation inappropriately places responsibility on the person experiencing harm and can delay necessary protective action."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "8",
+    "title": "Communication Skills for Stress Reduction - Quiz"
+}

@@ -1,0 +1,55 @@
+{
+  "lessonId": "5",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Instagram & Short-Form Funnels",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the Reels-to-DM workflow, what is the expected comment-to-DM-opt-in rate when using proper automation?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "15-25%" },
+        { "id": "c", "text": "40-60%" },
+        { "id": "d", "text": "80-90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "With proper DM automation (using tools like ManyChat), the comment-to-DM-opt-in rate runs 40-60%. This is because the person has already shown intent by commenting a keyword, and the automated DM delivers the promised resource immediately."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why are Instagram Stories better for sales than Reels?",
+      "options": [
+        { "id": "a", "text": "Stories have higher video quality and editing capabilities" },
+        { "id": "b", "text": "Stories are only seen by existing followers (your warm audience), while Reels are shown to strangers" },
+        { "id": "c", "text": "Stories allow unlimited link placements while Reels do not" },
+        { "id": "d", "text": "Stories appear higher in the Instagram feed algorithm" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Stories are primarily shown to people who already follow you -- your warm audience. This makes them ideal for sales because these people already have context about who you are and what you do. Reels are shown to strangers, making them better for discovery but not for conversion."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the maximum number of links recommended for your Instagram bio link page, and which link should always appear first?",
+      "options": [
+        { "id": "a", "text": "5-7 links, with your latest post first" },
+        { "id": "b", "text": "3-4 links, with your lead magnet (free resource) first" },
+        { "id": "c", "text": "1-2 links, with your product sales page first" },
+        { "id": "d", "text": "Unlimited links organized by category, with your social profiles first" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your bio link page should have a maximum of 3-4 links, with your lead magnet always appearing first. The lead magnet link drives the highest traffic because it is free and captures email addresses. Too many links create decision paralysis and reduce conversions."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Design a complete Reels-to-DM workflow for your business. Include: the topic and hook of the Reel, the keyword viewers should comment, what the automated DM would say, and what lead magnet it would deliver. Explain how this connects to your paid offer.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student creates a specific, implementable workflow with all four components (Reel topic/hook, keyword, DM copy, lead magnet). The workflow should feel natural and value-driven, not spammy. Check that there is a logical connection between the Reel topic, the lead magnet, and their paid offer."
+    }
+  ]
+}

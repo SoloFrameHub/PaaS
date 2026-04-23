@@ -1,0 +1,55 @@
+{
+  "lessonId": "10",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Your Conversion Playbook",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the weekly content calendar framework, what should happen every Friday?",
+      "options": [
+        { "id": "a", "text": "Batch-produce the following week's content" },
+        { "id": "b", "text": "Publish your highest-production-value TOFU discovery content" },
+        { "id": "c", "text": "At minimum, mention your offer in BOFU conversion content -- a Story sequence, email, podcast CTA, or sales post" },
+        { "id": "d", "text": "Review analytics and adjust strategy for the following week" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Friday is designated as conversion day in the weekly template. At minimum, you should mention your offer once per week through BOFU content -- whether that is a Story sequence, a direct sales email, a podcast CTA, or a dedicated sales post. Publishing four times a week without ever mentioning your offer is a content hobby, not a business strategy."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to the 90-Day Conversion Plan, what are the benchmarks a creator should hit by Day 60?",
+      "options": [
+        { "id": "a", "text": "10,000 email subscribers and $50,000 in revenue" },
+        { "id": "b", "text": "200-500 new email subscribers, 25-40% landing page conversion rate, and first product sales from the funnel" },
+        { "id": "c", "text": "1,000 social media followers and 3 published blog posts" },
+        { "id": "d", "text": "A complete 30-email nurture sequence and 5 different lead magnets" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "By Day 60, the benchmarks are: 200-500 new email subscribers, a landing page conversion rate of 25-40%, an email open rate of 30-40%, and first product sales from the funnel. These are realistic, achievable targets for a solo creator executing the system consistently."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which metric on the Conversion Dashboard is described as 'the single number that tells you whether your conversion system is working'?",
+      "options": [
+        { "id": "a", "text": "Email list size" },
+        { "id": "b", "text": "Content pieces published per week" },
+        { "id": "c", "text": "Landing page conversion rate" },
+        { "id": "d", "text": "Revenue Per Subscriber (monthly)" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Revenue Per Subscriber is the most important metric because it captures the entire funnel performance in one number. If RPS is growing month over month, your conversion system is working. If it is flat or declining, something in your funnel is broken -- regardless of how many subscribers you have or how much content you publish."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Complete your personal Conversion Playbook: (1) Your chosen discovery channel, (2) Your relationship channel, (3) Your lead magnet concept, (4) Your core offer, (5) Your weekly content cadence, and (6) Your 90-day revenue target. For each choice, briefly explain why it is the right fit for your specific business and audience.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student completes all six components of their playbook with specific, actionable choices rather than vague placeholders. Look for internal consistency (the channels should match their audience, the lead magnet should bridge to their offer, the revenue target should be realistic given their current audience size). This is a capstone reflection -- assess whether they demonstrate synthesis of the entire course."
+    }
+  ]
+}

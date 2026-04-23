@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Karasek's Demand-Control model, which job profile has the HIGHEST risk for mental and physical health problems?",
+            "options": [
+                {"id": "opt1", "text": "Active jobs (high demands + high control)"},
+                {"id": "opt2", "text": "Low-strain jobs (low demands + high control)"},
+                {"id": "opt3", "text": "High-strain jobs (high demands + low control)"},
+                {"id": "opt4", "text": "Passive jobs (low demands + low control)"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "High-strain jobs (high demands + low control) create the highest risk for burnout, depression, anxiety, psychosomatic symptoms, and even cardiovascular disease. High demands drain energy while low control creates learned helplessness — you can't influence the situation, so the stress feels inescapable. This combination is toxic."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does job control (autonomy) affect the mental health impact of high demands?",
+            "options": [
+                {"id": "opt1", "text": "Control has no effect on high demands"},
+                {"id": "opt2", "text": "Control buffers the adverse effects of high demands — when you have autonomy, high demands can be challenging but sustainable"},
+                {"id": "opt3", "text": "Control makes high demands worse"},
+                {"id": "opt4", "text": "Control only matters if demands are low"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Job control buffers the mental health effects of high demands. When demands are high but you also have high autonomy (the 'active job' profile), workers report better mental health outcomes, higher engagement, and lower burnout than high-demand, low-control jobs. Control maintains your sense of agency — the work is hard, but it's not helpless."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is job control (decision latitude)?",
+            "options": [
+                {"id": "opt1", "text": "The volume of work you're assigned"},
+                {"id": "opt2", "text": "Your ability to decide HOW, WHEN, and IN WHAT ORDER you do your work"},
+                {"id": "opt3", "text": "Whether you like your coworkers"},
+                {"id": "opt4", "text": "Your salary and benefits"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Job control (also called decision latitude or autonomy) refers to your ability to decide HOW you do your work (methods, approach), WHEN you do it (schedule, pacing), and IN WHAT ORDER you complete tasks. It's a structural feature of job design — not a perception you can change through positive thinking."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is job control a structural feature rather than just a perception?",
+            "options": [
+                {"id": "opt1", "text": "Because some people are naturally better at feeling in control"},
+                {"id": "opt2", "text": "Because control is determined by job design and management style — if your job is highly scripted or micromanaged, you have objectively low control"},
+                {"id": "opt3", "text": "Because control doesn't actually matter for mental health"},
+                {"id": "opt4", "text": "Because everyone has the same amount of control"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Job control is a structural feature of how work is designed, not a mindset. If your job uses rigid scripts (call center), standardized procedures with no flexibility, or a micromanaging supervisor, you have objectively low control. You can't reframe your way to autonomy — you can only recognize when it's lacking, advocate for more, or make career decisions based on this factor."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "4",
+    "title": "The Demand-Control Model — Autonomy as a Buffer - Quiz"
+}

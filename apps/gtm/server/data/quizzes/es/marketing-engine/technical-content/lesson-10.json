@@ -1,0 +1,142 @@
+{
+  "lessonId": "10",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Imanes de Leads y Contenido Exclusivo",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito principal de un 'Imán de Leads'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vender tu producto más caro de inmediato"
+        },
+        {
+          "id": "b",
+          "text": "Capturar una dirección de email proporcionando contenido educativo de alto valor"
+        },
+        {
+          "id": "c",
+          "text": "Atraer la mayor cantidad de 'Likes' posible en redes sociales"
+        },
+        {
+          "id": "d",
+          "text": "Alojar tu documentación técnica"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un imán de leads es el puente que transforma a un visitante casual en una relación de negocio al intercambiar valor por una dirección de email."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estos es un ejemplo de imán de leads de Tope del Embudo (TOFU)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una prueba gratuita de 14 días de tu software"
+        },
+        {
+          "id": "b",
+          "text": "Una 'Lista de Verificación de 10 Puntos' de ganancia rápida para un problema común"
+        },
+        {
+          "id": "c",
+          "text": "Un ebook de 200 páginas sobre la historia de la industria"
+        },
+        {
+          "id": "d",
+          "text": "Una tabla de precios de tus servicios"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los imanes TOFU deben ser de 'bajo compromiso' y proporcionar una 'ganancia rápida' relevante para el interés educativo amplio del visitante."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué significa la 'Exclusividad Híbrida'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hacer tu contenido disponible en múltiples idiomas"
+        },
+        {
+          "id": "b",
+          "text": "Dar el contenido principal de forma gratuita (SEO) mientras bloqueas una herramienta o plantilla de implementación específica (Leads)"
+        },
+        {
+          "id": "c",
+          "text": "Cobrar por contenido solo en dispositivos móviles"
+        },
+        {
+          "id": "d",
+          "text": "Combinar video y texto en la misma publicación"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La exclusividad híbrida te permite aprovechar los beneficios del alcance SEO mientras sigue proporcionando un incentivo de alto valor para que los lectores serios se unan a tu lista."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Por qué 'Específico > General' es un principio clave en el diseño de imanes de leads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los temas generales atraen demasiado tráfico"
+        },
+        {
+          "id": "b",
+          "text": "Las soluciones específicas resuelven un problema urgente y tangible, lo que lleva a mayor confianza y conversión"
+        },
+        {
+          "id": "c",
+          "text": "Es más fácil escribir contenido específico"
+        },
+        {
+          "id": "d",
+          "text": "El contenido general tiene más probabilidad de volverse viral"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un lector con un dolor específico quiere una solución específica. Una 'Guía Definitiva de Marketing' es abrumadora; una 'Plantilla de Email en Frío para Agencias' es un alivio."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuándo NO deberías bloquear un contenido con acceso exclusivo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuando el contenido es extremadamente valioso"
+        },
+        {
+          "id": "b",
+          "text": "Cuando el objetivo principal es el alcance educativo amplio o el posicionamiento SEO"
+        },
+        {
+          "id": "c",
+          "text": "Cuando tienes demasiados suscriptores de email"
+        },
+        {
+          "id": "d",
+          "text": "Cuando el contenido es un video"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si la información está bloqueada, los motores de búsqueda no pueden rastrearla eficazmente. Usa contenido libre para construir tu audiencia TOFU, luego usa accesos exclusivos para capturarla."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Piensa en tu Pilar #1. ¿Qué 'Plantilla,' 'Lista de Verificación' o 'Herramienta' podrías proporcionar que resuelva un dolor urgente para tu ICP en menos de 10 minutos? ¿Cuál es el título? ¿Cómo los lleva esto hacia tu oferta de pago?",
+      "minLength": 100,
+      "promptForAI": "Evalúa si el imán es una 'Ganancia Rápida.' Si el fundador propone un 'eBook' o una 'Guía,' rechaza la idea y sugiere un activo más tangible como una lista de verificación o una plantilla de hoja de cálculo."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

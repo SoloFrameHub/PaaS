@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three 'levers' of the 24-Hour Sleep System?",
+            "options": [
+                { "id": "opt1", "text": "Diet, exercise, and meditation" },
+                { "id": "opt2", "text": "Light, movement, and caffeine" },
+                { "id": "opt3", "text": "Temperature, darkness, and sound" },
+                { "id": "opt4", "text": "Melatonin, cortisol, and adenosine" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The three powerful daytime levers are: Light (your master circadian switch), Movement (your sleep pressure regulator), and Caffeine (your alertness protocol). Together they create a 24-hour system that works with your body's natural rhythms."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the most powerful signal your brain uses to set its internal clock?",
+            "options": [
+                { "id": "opt1", "text": "Meal timing" },
+                { "id": "opt2", "text": "Exercise" },
+                { "id": "opt3", "text": "Morning light exposure" },
+                { "id": "opt4", "text": "Social interaction" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Light is the single most powerful signal your brain uses to set its internal clock. Morning light exposure tells your brain 'it is daytime,' starting hormonal changes that make you alert during the day and sleepy at night."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should high-intensity exercise ideally be done before 2 PM?",
+            "options": [
+                { "id": "opt1", "text": "It burns more calories in the morning" },
+                { "id": "opt2", "text": "Late high-intensity exercise raises core body temperature and adrenaline, which can keep you awake" },
+                { "id": "opt3", "text": "Muscles recover faster in the morning" },
+                { "id": "opt4", "text": "Morning exercise is more enjoyable" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "High-intensity exercise too late in the day can keep you awake by raising your core body temperature and adrenaline levels. Gentle activities like stretching, walking, and yoga are better options for evenings."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If you drink coffee at 2 PM, approximately how much caffeine is still active at 9 PM?",
+            "options": [
+                { "id": "opt1", "text": "About 10%" },
+                { "id": "opt2", "text": "About 25%" },
+                { "id": "opt3", "text": "About 50%" },
+                { "id": "opt4", "text": "About 75%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Caffeine has an average half-life of about 7 hours. If you drink coffee at 2 PM, about 50% of that caffeine is still circulating in your system at 9 PM, and about 25% remains at 4 AM."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach to implementing the three levers?",
+            "options": [
+                { "id": "opt1", "text": "Change all three simultaneously for maximum effect" },
+                { "id": "opt2", "text": "Start with one lever, master it, then add the next" },
+                { "id": "opt3", "text": "Focus only on the lever that is easiest" },
+                { "id": "opt4", "text": "Alternate between levers each week" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The recommended approach is to start with one lever, master it, and then add the next. Real change happens incrementally, and trying to change everything at once can be overwhelming."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "10",
+    "title": "The 24-Hour Sleep System - Quiz"
+}

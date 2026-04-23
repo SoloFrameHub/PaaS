@@ -1,0 +1,45 @@
+{
+  "id": "sleep-toolkit",
+  "title": "My Sleep Toolkit Card",
+  "description": "Your personal quick-reference card with the sleep strategies that work best for you. Fill it in and download it to keep by your bedside.",
+  "instructions": "Think back through everything you've learned in this course. Write down the specific techniques and routines that resonate most with you. This becomes your personal sleep toolkit — a quick reference for nights when sleep feels difficult.",
+  "items": [
+    {
+      "id": "wind-down",
+      "label": "My wind-down routine starts with:",
+      "type": "text",
+      "placeholder": "e.g., Dim lights at 9pm, herbal tea, 10 min reading"
+    },
+    {
+      "id": "relaxation",
+      "label": "My go-to relaxation technique for falling asleep:",
+      "type": "text",
+      "placeholder": "e.g., 4-7-8 breathing, body scan, progressive muscle relaxation"
+    },
+    {
+      "id": "racing-thoughts",
+      "label": "When racing thoughts keep me up, I will:",
+      "type": "text",
+      "placeholder": "e.g., Worry dump journal, cognitive shuffle, constructive worry time earlier in the day"
+    },
+    {
+      "id": "wake-strategy",
+      "label": "If I wake in the middle of the night:",
+      "type": "text",
+      "placeholder": "e.g., Stay in bed 20 min with body scan, then get up and read in dim light"
+    },
+    {
+      "id": "environment",
+      "label": "My ideal sleep environment setup:",
+      "type": "text",
+      "placeholder": "e.g., 65-68°F, blackout curtains, white noise machine, phone in another room"
+    },
+    {
+      "id": "schedule",
+      "label": "My target sleep schedule:",
+      "type": "text",
+      "placeholder": "e.g., Bed by 10:30pm, wake at 6:30am, even on weekends"
+    }
+  ],
+  "disclaimer": "This card is a personal sleep wellness tool. If you experience persistent sleep difficulties despite consistent good habits, consult a healthcare provider or sleep specialist."
+}

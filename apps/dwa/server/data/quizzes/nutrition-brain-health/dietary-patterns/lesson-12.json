@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the evidence hierarchy for dietary changes that impact mental health, what is ranked as the top priority?",
+            "options": [
+                { "id": "opt1", "text": "Taking psychobiotic supplements" },
+                { "id": "opt2", "text": "Reducing ultra-processed food intake" },
+                { "id": "opt3", "text": "Adding fermented foods to your diet" },
+                { "id": "opt4", "text": "Following a specific named diet plan exactly" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Reducing ultra-processed food intake is the top priority because it has 'convincing' evidence (the highest rating) linking it to 53% higher odds of common mental disorders. UPFs drive inflammation, damage the gut barrier, displace essential nutrients, and hijack reward circuitry — reducing them addresses multiple harmful pathways simultaneously."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does research show about making 1-2 dietary changes at a time versus comprehensive dietary overhauls?",
+            "options": [
+                { "id": "opt1", "text": "Comprehensive overhauls produce better results in both short and long term" },
+                { "id": "opt2", "text": "Gradual change (1-2 changes maintained for 2-4 weeks each) produces significantly higher long-term adherence with similar total improvement at 12 months" },
+                { "id": "opt3", "text": "The number of simultaneous changes does not matter" },
+                { "id": "opt4", "text": "You should make all changes within the first week or not bother at all" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that participants who made 1-2 changes at a time, maintaining each for 2-4 weeks before adding new ones, had significantly higher long-term adherence (12+ months) compared to those attempting comprehensive overhauls. The gradual approach resulted in similar total improvement at 12 months but with far less dropout and psychological distress."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the dose-response principle across all dietary pattern research mean for someone whose diet is far from ideal?",
+            "options": [
+                { "id": "opt1", "text": "They need to achieve a perfect diet before any benefits appear" },
+                { "id": "opt2", "text": "There is no minimum threshold — any incremental improvement in dietary pattern benefits mental health" },
+                { "id": "opt3", "text": "Benefits only appear after six months of strict adherence" },
+                { "id": "opt4", "text": "They should focus exclusively on supplements since diet change takes too long" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The dose-response relationship is consistent across all evidence reviewed in the course — UPF reduction, Mediterranean adherence, DII improvement, and psychobiotic supplementation. There is no threshold effect, meaning every incremental improvement matters. A person who moves from 60% UPF to 45% and increases MEDAS from 4 to 7 will likely experience meaningful improvements even though their diet is far from 'ideal.'"
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 80/20 guideline for sustainable dietary change?",
+            "options": [
+                { "id": "opt1", "text": "Eat 80% of your food in the morning and 20% at night" },
+                { "id": "opt2", "text": "Spend 80% of your food budget on organic foods and 20% on conventional" },
+                { "id": "opt3", "text": "Aim for 80% of food choices to align with your plan, with 20% flexibility for social meals, celebrations, and comfort food" },
+                { "id": "opt4", "text": "Eat only 80% of each meal and leave 20% on the plate" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 80/20 guideline means aiming for 80% of your food choices to align with your evidence-based plan, with the remaining 20% for flexibility — social meals, celebrations, comfort food, travel, or days when your plan is not feasible. This is not cheating; it is sustainability built into the design, preventing the all-or-nothing thinking that derails dietary change."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does the sustainability principle 'add before you subtract' work better than restriction-focused approaches?",
+            "options": [
+                { "id": "opt1", "text": "Because adding foods is cheaper than removing them" },
+                { "id": "opt2", "text": "Because adding nourishing foods naturally crowds out less healthy options without creating feelings of deprivation" },
+                { "id": "opt3", "text": "Because you can never actually remove foods from your diet" },
+                { "id": "opt4", "text": "Because adding foods increases your calorie intake, which improves mood" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Focusing on adding nourishing foods rather than restricting others works because it naturally crowds out less healthy options. For example, adding a large salad before dinner naturally reduces how much processed food you eat — without a rule telling you not to eat it. This avoids the deprivation mindset that often leads to abandoning dietary changes."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "12",
+    "title": "Building Your Evidence-Based Dietary Pattern - Quiz"
+}

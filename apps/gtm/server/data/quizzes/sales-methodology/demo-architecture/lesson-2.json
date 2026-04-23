@@ -1,0 +1,134 @@
+{
+    "lessonId": "2",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "The Tell-Show-Tell Framework",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary psychological problem with a standard 'feature dump' demo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It takes too long to load"
+                },
+                {
+                    "id": "b",
+                    "text": "Cognitive Overload: The prospect is processing too much visual data to hear your words"
+                },
+                {
+                    "id": "c",
+                    "text": "The prospect doesn't like software"
+                },
+                {
+                    "id": "d",
+                    "text": "The colors are distracting"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "When you share your screen, the prospect's brain is flooded with visual noise (buttons, sidebars). If you speak while clicking without context, they miss the point due to 'Cognitive Overload.'"
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the Tell-Show-Tell framework, what is the purpose of the first TELL?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To ask for the sale"
+                },
+                {
+                    "id": "b",
+                    "text": "To act as a 'Cognitive Spotlight' that tells the brain exactly what to look for"
+                },
+                {
+                    "id": "c",
+                    "text": "To stall for time while the page loads"
+                },
+                {
+                    "id": "d",
+                    "text": "To introduce yourself"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The first TELL primes the brain. By saying 'I'm going to show you how to automate reporting,' you direct their attention away from the distractions and toward the relevant feature."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Mouse Hygiene'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cleaning your actual mouse device"
+                },
+                {
+                    "id": "b",
+                    "text": "Moving the mouse constantly to keep energy high"
+                },
+                {
+                    "id": "c",
+                    "text": "Parking the mouse completely still while talking to reduce visual noise"
+                },
+                {
+                    "id": "d",
+                    "text": "Using a red laser pointer effect"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Amateurs wiggle the mouse nervously. Pros 'park' the mouse. Motion attracts the eye; if the mouse is moving while you talk, they are watching the cursor, not listening to you."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the final step of the Tell-Show-Tell loop?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Tie-Down (Tell/Ask)"
+                },
+                {
+                    "id": "b",
+                    "text": "Clicking the next button"
+                },
+                {
+                    "id": "c",
+                    "text": "Refreshing the page"
+                },
+                {
+                    "id": "d",
+                    "text": "Checking your email"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "After showing the feature, you must 'Close the Loop' with a Tie-Down like 'How much time would that save you?' This converts the feature back into business value."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Signposting' critical in a demo with multiple features?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It proves you have a lot of features"
+                },
+                {
+                    "id": "b",
+                    "text": "It creates 'Micro-Closures' so the prospect clearly knows when one topic ends and the next begins"
+                },
+                {
+                    "id": "c",
+                    "text": "It takes up time"
+                },
+                {
+                    "id": "d",
+                    "text": "It allows you to read your notes"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Without signposts (transitions), the demo feels like one long, confusing run-on sentence. Signposting allows the prospect to mentally categorize each 'win' before moving on."
+        }
+    ],
+    "passingScore": 70
+}

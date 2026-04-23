@@ -1,0 +1,72 @@
+{
+  "lessonId": "9",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "Economics: AI Stack vs Junior SDR",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the true all-in monthly cost of a junior SDR, including hidden costs?",
+      "options": [
+        { "id": "a", "text": "$3,300-4,600 (base salary only)" },
+        { "id": "b", "text": "$5,000-6,000 (salary + benefits)" },
+        {
+          "id": "c",
+          "text": "$6,925-9,750 (salary + benefits + tools + management + training + recruiting)"
+        },
+        { "id": "d", "text": "$15,000-20,000" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The true all-in cost is $6,925-9,750/month, which includes base salary ($3,300-4,600), benefits/taxes ($825-1,150), tools per seat ($200-500), management time (12 hrs x $150/hr = $1,800), training ($500-1,000 amortized), and recruiting/turnover ($300-500 amortized). Most founders only consider base salary."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "At what MRR level should a solo founder consider hiring an SDR?",
+      "options": [
+        { "id": "a", "text": "$5K MRR — the sooner the better" },
+        { "id": "b", "text": "$15K MRR — when pipeline is growing" },
+        {
+          "id": "c",
+          "text": "$30K+ MRR, AND AI pipeline is maxed, AND playbook is documented"
+        },
+        { "id": "d", "text": "Never — AI always outperforms humans" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The decision framework requires multiple conditions: MRR > $30K (you can afford the risk), AI pipeline is maxed (capacity constraint, not targeting problem), founder time is the bottleneck, you have 10+ hours/week to manage them, and your playbook is documented so they can execute it."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the average ramp time for a junior SDR to reach full productivity?",
+      "options": [
+        { "id": "a", "text": "1-2 weeks" },
+        { "id": "b", "text": "1 month" },
+        { "id": "c", "text": "3-6 months" },
+        { "id": "d", "text": "12 months" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Junior SDRs take 3-6 months to ramp to full productivity. During that time, you're paying full cost for only 30-60% output. Combined with the fact that average SDR tenure is only 14-18 months and only ~40% consistently hit quota, the economics of early hiring are challenging for solo founders."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Founder-led outreach typically has lower reply rates than SDR outreach because founders aren't trained salespeople.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Founder-led outreach typically achieves 8-18% reply rates versus 5-12% for SDR outreach. Founders can speak with authority about product vision, make real-time pricing decisions, build genuine relationships, and leverage personal credibility — advantages no SDR can replicate."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate your personal AI stack cost versus the projected cost of hiring an SDR. Include tool costs, your time investment (valued at your hourly rate), and the SDR's full loaded cost. At your current revenue, which makes more economic sense and why?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific dollar amounts for both options, accounts for hidden costs (management time, training, benefits for SDR; founder time cost for AI stack), and reaches a conclusion grounded in their current revenue level. Look for understanding that the comparison isn't just tool cost vs salary."
+    }
+  ]
+}

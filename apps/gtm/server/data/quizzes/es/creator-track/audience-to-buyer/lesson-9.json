@@ -1,0 +1,91 @@
+{
+  "lessonId": "9",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "La Ventaja de la Audiencia Cálida",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuáles son los tres mecanismos psicológicos que explican por qué las audiencias cálidas convierten 3-5 veces mejor que el tráfico frío?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reconocimiento de marca, precio más alto y mejor cobertura geográfica"
+        },
+        {
+          "id": "b",
+          "text": "El Efecto de Mera Exposición, Riesgo Percibido Reducido y Autoselección"
+        },
+        {
+          "id": "c",
+          "text": "Retargeting de anuncios, segmentación de correo y optimización SEO"
+        },
+        {
+          "id": "d",
+          "text": "Descuentos de precios, testimonios de clientes y garantías de devolución de dinero"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los tres mecanismos son: (1) El Efecto de Mera Exposición — la exposición repetida genera preferencia y confianza; (2) Riesgo Percibido Reducido — los suscriptores tienen evidencia de tu competencia a través del contenido gratuito; y (3) Autoselección — el contenido filtra a quienes permanecen para que sean prospectos precalificados y alineados con tu enfoque."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "En el marco de nurturing de 30 días, ¿cuál es el propósito principal de la Fase de Confianza (Días 15-25)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Presentar tu oferta de pago y cerrar la venta"
+        },
+        {
+          "id": "b",
+          "text": "Construir conexión personal y abordar proactivamente las objeciones de compra"
+        },
+        {
+          "id": "c",
+          "text": "Enseñar marcos y demostrar expertise técnico"
+        },
+        {
+          "id": "d",
+          "text": "Entregar el imán de prospectos y establecer expectativas de la lista"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Fase de Confianza (Días 15-25) se enfoca en construir conexión personal mediante vulnerabilidad (compartir fracasos o lecciones aprendidas), prueba social (recopilar testimonios y resultados de clientes) y responder las principales objeciones de compra a través de un correo de preguntas frecuentes. Esto prepara al suscriptor para estar emocionalmente listo para la oferta que llega en los Días 26-30."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según el principio de la Cuenta Bancaria de Confianza, ¿cuál es la proporción saludable de correos de valor a correos de ventas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:1 — por cada correo de ventas, envía uno de valor"
+        },
+        {
+          "id": "b",
+          "text": "10:1 — envía 10 correos de valor por cada correo de ventas"
+        },
+        {
+          "id": "c",
+          "text": "3-4:1 — envía 3-4 correos puramente valiosos por cada correo de ventas"
+        },
+        {
+          "id": "d",
+          "text": "La proporción no importa siempre que el contenido sea de alta calidad"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La proporción saludable es de 3-4 correos de valor por cada 1 correo de ventas. Por debajo de 3:1 significa que estás realizando demasiados retiros de tu cuenta bancaria de confianza y los suscriptores se sienten agobiados por las ventas. Por encima de 5:1 podría significar que estás dejando dinero sobre la mesa siendo demasiado cauteloso con las ventas."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Diseña tu secuencia de nurturing de 7 correos (solo la Fase de Bienvenida y Educación). Para cada correo especifica: el día de envío, la línea de asunto, el tema principal y la acción o conclusión clave que quieres que se lleve el suscriptor.",
+      "minLength": 150,
+      "aiPrompt": "Evaluate if the student creates a specific, well-structured 7-email nurture sequence that follows the framework (Welcome Phase Days 1-3 + Education Phase Days 4-14). Check that each email has a clear purpose that builds on the previous one, subject lines are compelling and specific (not generic), and the sequence logically bridges toward their paid offer. Look for specificity over vagueness — 'Teach the 3-step framework for X' is better than 'Send educational content.'"
+    }
+  ]
+}

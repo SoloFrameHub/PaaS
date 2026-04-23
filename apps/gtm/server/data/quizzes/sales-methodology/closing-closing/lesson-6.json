@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Curing Buyer's Remorse Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary psychological driver of Buyer's Remorse in B2B?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They found a cheaper competitor."
+                },
+                {
+                    "id": "b",
+                    "text": "The transition from 'Deal Excitement' (Dopamine) to 'Implementation Stress' (Cortisol), combined with the fear of social judgment from their team."
+                },
+                {
+                    "id": "c",
+                    "text": "They forgot how the product works."
+                },
+                {
+                    "id": "d",
+                    "text": "The contract was too long."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Buying is a social and biological risk. Once the thrill of the deal is over, the buyer focuses on the work ahead and the risk of being 'wrong'. Your job is to re-validate the smartness of their decision immediately."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the goal of the 'Director's Pack'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To sell a more expensive version of the product."
+                },
+                {
+                    "id": "b",
+                    "text": "To give the Champion a pre-written narrative they can use to defend the purchase to internal stakeholders (Shadow Committee)."
+                },
+                {
+                    "id": "c",
+                    "text": "To provide a training manual."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for an early payment."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most deals aren't cancelled because the product is bad; they are cancelled because the buyer couldn't justify the expense to their boss. Shielding your Champion with a concise summary solves this problem."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is a personalized 'Welcome Video' so effective for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It proves the founder is real."
+                },
+                {
+                    "id": "b",
+                    "text": "It re-anchors the relationship to the partnership, shows immediate attention, and demonstrates that the founder is personally invested in the client's success."
+                },
+                {
+                    "id": "c",
+                    "text": "It's cheaper than an email."
+                },
+                {
+                    "id": "d",
+                    "text": "It's harder to ignore than text."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A founder's attention is a high-value asset. Spending 60 seconds on a personalized video immediately transforms the client from a'contract' to a'partner'."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write a 3-bullet point 'Director's Pack' email for your product. Imagine your Champion is an Engineering Manager who just signed your tool. What are the 3 points they should forward to their VP of Eng to justify the decision and silence any late-stage doubt?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the bullets focus on ROI, Launch velocity, and Risk mitigation (Security/Compliance) rather than just features. The tone should be professional and easy to forward."
+        }
+    ]
+}

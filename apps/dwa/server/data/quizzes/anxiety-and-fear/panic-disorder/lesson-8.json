@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the 'R' in the RACES approach for managing a panic attack stand for?",
+            "options": [
+                { "id": "opt1", "text": "Relax your muscles immediately" },
+                { "id": "opt2", "text": "Run to a safe location" },
+                { "id": "opt3", "text": "Recognize that you are having a panic attack" },
+                { "id": "opt4", "text": "Resist the urge to breathe deeply" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "RACES stands for: Recognize ('This is a panic attack. I know exactly what this is.'), Accept ('This is uncomfortable but not dangerous.'), Continue (return to what you were doing), Exhale (use slow diaphragmatic breathing), and Survey the outcome (note that the catastrophe didn't happen)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When a setback occurs during recovery from panic disorder, what does it actually indicate?",
+            "options": [
+                { "id": "opt1", "text": "That the treatment has failed and you need to start over" },
+                { "id": "opt2", "text": "That your nervous system is still sensitive, practices may have slipped, or a new stressor has temporarily lowered your threshold" },
+                { "id": "opt3", "text": "That you will never fully recover from panic disorder" },
+                { "id": "opt4", "text": "That self-help does not work and only medication can help" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Setbacks are a normal part of recovery. They typically mean your nervous system is still sensitive (especially during stress), you may have let some practices slip, a new stressor lowered your threshold temporarily, or your brain needs more repetitions of the new learning. A setback does not erase previous progress."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the first-line pharmacological treatment for panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "Benzodiazepines" },
+                { "id": "opt2", "text": "Beta-blockers" },
+                { "id": "opt3", "text": "SSRIs (Selective Serotonin Reuptake Inhibitors)" },
+                { "id": "opt4", "text": "Antihistamines" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "SSRIs (such as sertraline, paroxetine, and escitalopram) are the first-line pharmacological treatment for panic disorder. They typically take 4-6 weeks for full effect and should be started at low doses. Clinical guidelines specifically recommend against benzodiazepines as first-line or long-term treatment due to risks of dependence and interference with exposure therapy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why are benzodiazepines NOT recommended as first-line or long-term treatment for panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "They are too expensive for most patients" },
+                { "id": "opt2", "text": "They have no effect on panic symptoms" },
+                { "id": "opt3", "text": "They carry risks of dependence, tolerance, withdrawal, cognitive impairment, and can interfere with exposure therapy learning" },
+                { "id": "opt4", "text": "They only work for social anxiety, not panic disorder" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Clinical guidelines (NICE, AAFP) specifically recommend against benzodiazepines for panic disorder because they carry risks of dependence, tolerance, withdrawal, and cognitive impairment. Critically, they can also interfere with the learning that occurs during exposure therapy — the most effective treatment component."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is a sign that you should seek professional help rather than relying solely on self-help?",
+            "options": [
+                { "id": "opt1", "text": "You have experienced any panic attack at all" },
+                { "id": "opt2", "text": "You feel nervous before trying interoceptive exposure" },
+                { "id": "opt3", "text": "Symptoms are not improving after 4-6 weeks of consistently applying the techniques, or you are avoiding significant areas of life" },
+                { "id": "opt4", "text": "You have good days and bad days during recovery" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Professional evaluation is recommended if panic attacks are frequent (weekly+), you are avoiding significant areas of life, symptoms are not improving after 4-6 weeks of consistent self-help, you are experiencing depression alongside panic, you are using substances to cope, or the techniques feel too difficult to practice alone. Seeking help is a strength, not a failure."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "8",
+    "title": "Long-Term Management and Treatment Options - Quiz"
+}

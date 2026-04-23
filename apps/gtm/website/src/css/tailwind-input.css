@@ -1,0 +1,92 @@
+/**
+ * Tailwind CSS Input File
+ * This file imports Tailwind's base, components, and utilities
+ * Vite + PostCSS will process this and output purged, minified CSS
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Custom Base Styles
+ */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-serif-custom {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/**
+ * Custom Component Classes
+ */
+@layer components {
+  /* Hide scrollbar utility */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Gradient border utility */
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(#09090b, #09090b) padding-box,
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) border-box;
+    border: 1px solid transparent;
+  }
+
+  /* Custom details marker removal */
+  details > summary {
+    list-style: none;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/**
+ * Custom Animations
+ */
+@layer utilities {
+  /* Float animation */
+  @keyframes float-subtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float-subtle 6s ease-in-out infinite;
+  }
+
+  /* Gradient animation */
+  @keyframes gradient-xy {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-xy 6s ease infinite;
+  }
+}

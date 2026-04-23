@@ -1,0 +1,214 @@
+[
+  {
+    "name": "API Route: /api/auth/session > POST > should create a mock session when mock auth is enabled",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/auth/session/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/auth/session > POST > should block mock session in production",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/auth/session/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/auth/session > POST > should create a real firebase session when mock auth is disabled",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/auth/session/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/auth/session > POST > should handle errors during session creation",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/auth/session/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/auth/session > DELETE > should delete the session cookie",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/auth/session/route.test.ts"
+  },
+  {
+    "name": "QuizService > loadQuiz > should return null if quiz fails to exist",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/quizService.test.ts"
+  },
+  {
+    "name": "QuizService > loadQuiz > should return quiz without answers for frontend",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/quizService.test.ts"
+  },
+  {
+    "name": "QuizService > evaluateAnswers > should return error if quiz not found",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/quizService.test.ts"
+  },
+  {
+    "name": "QuizService > evaluateAnswers > should evaluate multiple choice questions correctly",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/quizService.test.ts"
+  },
+  {
+    "name": "QuizService > evaluateAnswers > should handle reflections based on length if AI is not used",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/quizService.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/upload > should upload a valid text file successfully",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/upload/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/upload > should reject invalid file types",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/upload/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/upload > should reject mismatched extension and mime type",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/upload/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/upload > should reject large files",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/upload/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/upload > should handle no file uploaded",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/upload/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/analyze > should return cached assessment if already completed",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/analyze/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/analyze > should handle \"analyzing\" state concurrency",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/analyze/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/analyze > should run assessment flow when idle",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/analyze/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/analyze > should trigger website analysis if URL provided",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/analyze/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/analyze > should use fallback mock assessment on flow failure",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/analyze/route.test.ts"
+  },
+  {
+    "name": "API Route: /api/onboarding/analyze > should handle unauthorized access",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/api/onboarding/analyze/route.test.ts"
+  },
+  {
+    "name": "RoleplayService Server > buildRoleplayContext > should throw error if profile not found",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/roleplayService.server.test.ts"
+  },
+  {
+    "name": "RoleplayService Server > buildRoleplayContext > should build context correctly with all data present",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/roleplayService.server.test.ts"
+  },
+  {
+    "name": "RoleplayService Server > saveRoleplaySession > should add session to Firestore and update profile stats",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/roleplayService.server.test.ts"
+  },
+  {
+    "name": "ProfileService > getOrCreateProfile > should delegate to profileCoreService",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/profileService.test.ts"
+  },
+  {
+    "name": "ProfileService > updateProfile > should delegate to profileCoreService",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/profileService.test.ts"
+  },
+  {
+    "name": "ProfileService > getSafeContext > should truncate long fields",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/profileService.test.ts"
+  },
+  {
+    "name": "isRateLimited > should allow requests within limit",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/security.test.ts"
+  },
+  {
+    "name": "isRateLimited > should block requests over limit",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/security.test.ts"
+  },
+  {
+    "name": "isRateLimited > should fallback gracefully when Redis fails",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/security.test.ts"
+  },
+  {
+    "name": "OnboardingService > calculateFounderCategory > should correctly identify reluctant_seller",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/onboardingService.test.ts"
+  },
+  {
+    "name": "OnboardingService > calculateFounderCategory > should correctly identify scaling_struggler",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/onboardingService.test.ts"
+  },
+  {
+    "name": "OnboardingService > calculateDiscProfile > should identify primary and secondary DISC types",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/onboardingService.test.ts"
+  },
+  {
+    "name": "OnboardingService > getIndustries > should return fallback industries in mock mode",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/lib/services/onboardingService.test.ts"
+  },
+  {
+    "name": "LessonQuiz Component > renders loading state initially",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/(default)/academy/components/lesson-quiz.test.tsx"
+  },
+  {
+    "name": "LessonQuiz Component > renders quiz questions after loading",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/(default)/academy/components/lesson-quiz.test.tsx"
+  },
+  {
+    "name": "LessonQuiz Component > validates unanswered questions on submit",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/(default)/academy/components/lesson-quiz.test.tsx"
+  },
+  {
+    "name": "LessonQuiz Component > submits quiz and shows results",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/(default)/academy/components/lesson-quiz.test.tsx"
+  },
+  {
+    "name": "LessonQuiz Component > handles retry functionality",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/app/(default)/academy/components/lesson-quiz.test.tsx"
+  },
+  {
+    "name": "Sidebar Component > renders logo and basic links",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/sidebar.test.tsx"
+  },
+  {
+    "name": "Sidebar Component > renders tracks and courses",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/sidebar.test.tsx"
+  },
+  {
+    "name": "Sidebar Component > handles mobile close button",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/sidebar.test.tsx"
+  },
+  {
+    "name": "Sidebar Component > handles expand/collapse button",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/sidebar.test.tsx"
+  },
+  {
+    "name": "Sidebar Component > highlights active dashboard link",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/sidebar.test.tsx"
+  },
+  {
+    "name": "Header Component > renders all child components",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/header.test.tsx"
+  },
+  {
+    "name": "Header Component > toggles sidebar on hamburger click",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/header.test.tsx"
+  },
+  {
+    "name": "Header Component > opens search modal on click",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/header.test.tsx"
+  },
+  {
+    "name": "Header Component > renders with different variants",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/header.test.tsx"
+  },
+  {
+    "name": "SearchForm Component > renders with default placeholder",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/search-form.test.tsx"
+  },
+  {
+    "name": "SearchForm Component > renders with custom placeholder",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/search-form.test.tsx"
+  },
+  {
+    "name": "SearchForm Component > has a search button with aria-label",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/search-form.test.tsx"
+  },
+  {
+    "name": "Logo Component > renders a link to the home page",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/logo.test.tsx"
+  },
+  {
+    "name": "Logo Component > renders the SVG logo",
+    "file": "/Volumes/ext-data/github/soloframehub-v2/components/ui/logo.test.tsx"
+  }
+]

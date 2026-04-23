@@ -1,0 +1,141 @@
+{
+    "lessonId": "6",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Deploying Proof Strategically Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core principle of strategic social proof deployment?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Put as much social proof as possible on every single page."
+                },
+                {
+                    "id": "b",
+                    "text": "Match the specific piece of proof to the specific objection at that stage."
+                },
+                {
+                    "id": "c",
+                    "text": "Hide social proof on a dedicated page to keep the rest of the site clean."
+                },
+                {
+                    "id": "d",
+                    "text": "Only use video testimonials, as text is no longer effective."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Strategic deployment ensures that evidence is presented exactly where doubts arise, maximizing its impact on conversion."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which type of testimonial is most appropriate for the Pricing Page?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A generic quote about the founder being a nice person."
+                },
+                {
+                    "id": "b",
+                    "text": "A technical quote about the database architecture."
+                },
+                {
+                    "id": "c",
+                    "text": "An ROI-focused quote about the tool paying for itself or saving significant money/time."
+                },
+                {
+                    "id": "d",
+                    "text": "A quote from a celebrity who doesn't use the product."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The pricing page is where 'value for money' objections peak, so ROI-focused testimonials are the most effective at neutralizing those concerns."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Proof After Claim' pattern for sales decks?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Stating your price, then showing your logo."
+                },
+                {
+                    "id": "b",
+                    "text": "Never making a claim about a feature without immediately following it with a customer quote or evidence."
+                },
+                {
+                    "id": "c",
+                    "text": "Placing all social proof at the very end of the presentation."
+                },
+                {
+                    "id": "d",
+                    "text": "Asking the prospect for a testimonial before the demo is finished."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'Proof After Claim' pattern creates a narrative of credibility, ensuring that every promise you make is backed by real-world validation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, where is the best place to use 'Activity Proof' (e.g., 'Join 200+ other founders who signed up this week')?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Only on social media."
+                },
+                {
+                    "id": "b",
+                    "text": "On the Checkout or Signup page to provide last-minute reassurance."
+                },
+                {
+                    "id": "c",
+                    "text": "Hidden in the Terms and Conditions."
+                },
+                {
+                    "id": "d",
+                    "text": "On the 'Contact Us' page."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Activity proof provides 'safety in numbers' at the moment of highest risk—when the user is about to commit their data or money."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why are 'Micro-testimonials' in email P.S. lines effective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are usually funny."
+                },
+                {
+                    "id": "b",
+                    "text": "Because the P.S. is one of the most read sections of an email and provides low-friction trust reinforcement."
+                },
+                {
+                    "id": "c",
+                    "text": "Because they don't count toward the email's word limit."
+                },
+                {
+                    "id": "d",
+                    "text": "Because they hide the fact that you are trying to sell something."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The P.S. is a high-visibility area. Adding a quick win or a link to a testimonial there keeps your value top-of-mind without being intrusive."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Open your website (or a draft of your sales deck). Find one claim you make (e.g., 'our tool is fast' or 'our method works'). What specific piece of social proof do you have (or need to get) to place immediately after that claim?",
+            "minLength": 100,
+            "promptForAI": "The user should identify a specific claim and match it with a corresponding piece of evidence (testimonial, metric, or case study). Evaluate the response for its understanding of the 'Proof After Claim' pattern."
+        }
+    ]
+}

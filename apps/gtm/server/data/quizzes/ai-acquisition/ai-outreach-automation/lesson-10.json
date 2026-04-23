@@ -1,0 +1,81 @@
+{
+  "lessonId": "10",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "Reference Stack 1: Lean Email-First (~$120/month)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the core philosophy behind the Lean Email-First stack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use as many tools as possible for maximum coverage"
+        },
+        {
+          "id": "b",
+          "text": "Master email as the highest-ROI channel before adding complexity — the best stack is the one you'll actually use for 90 days"
+        },
+        { "id": "c", "text": "Always start with LinkedIn before email" },
+        {
+          "id": "d",
+          "text": "Spend at least $500/month for professional results"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Stack Paradox states that the best outreach stack isn't the one with the most features — it's the one you'll actually use consistently for 90 days. Email is the highest-ROI channel for solo founders. Master it before adding complexity."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In the Lean Email-First stack, why is Instantly chosen over Smartlead as the core platform?",
+      "options": [
+        { "id": "a", "text": "Instantly has more features" },
+        {
+          "id": "b",
+          "text": "$2/month cheaper, simpler UI, better built-in A/B testing, and Lead Finder included (saves $39-49/month on Apollo)"
+        },
+        { "id": "c", "text": "Smartlead doesn't support cold email" },
+        { "id": "d", "text": "Instantly has better API integration" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Instantly wins for the lean stack because it's $2/month cheaper, has a simpler UI (faster to learn), better built-in A/B testing, and includes Lead Finder (1,000 B2B leads/month), which saves $39-49/month that would otherwise go to Apollo. Total stack cost: ~$120/month."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How many domains and what daily send volume does the reference stack recommend for getting started?",
+      "options": [
+        { "id": "a", "text": "1 domain, 100 emails/day" },
+        {
+          "id": "b",
+          "text": "3 domains with 3 inboxes each, starting at 25 emails/day per domain after 14 days of warmup"
+        },
+        { "id": "c", "text": "10 domains, 500 emails/day" },
+        { "id": "d", "text": "1 domain, 10 emails/day" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The reference implementation uses 3 domains (main + 2 secondary), starts warmup on Day 1, waits 14 days, then launches at 25 emails/day per domain. By Week 4, this reaches approximately 375 emails per week with safe deliverability."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Most solo founders waste their first $200/month by buying overlapping tools before sending a single email.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson describes the common mistake: buying Lemlist ($99), Apollo ($49), Loom ($15), then adding Instantly ($37) for warmup — reaching $200 with overlapping tools and zero emails sent. The lean approach: start with one core platform, prove the channel works, then scale when revenue justifies it."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your lean email-first stack with a maximum budget of $150/month. List each tool, its monthly cost, and what function it serves. Explain your 30-day ramp plan including warmup timeline and target send volume by week 4.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response stays within $150/month budget, includes core components (email platform, warmup, enrichment), and describes a realistic 30-day ramp plan with specific warmup timeline (14+ days) and gradual volume increase. Look for understanding that warmup must complete before cold sends begin."
+    }
+  ]
+}

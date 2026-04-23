@@ -1,0 +1,64 @@
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { telemetry } from './telemetry';
+import { BigQuery } from '@google-cloud/bigquery';
+
+// Mock BigQuery
+const { mockInsert, mockDataset, mockTable } = vi.hoisted(() => {
+    const insert = vi.fn();
+    const table = vi.fn(() => ({ insert }));
+    const dataset = vi.fn(() => ({ table }));
+    return { mockInsert: insert, mockTable: table, mockDataset: dataset };
+});
+
+vi.mock('@google-cloud/bigquery', () => {
+    return {
+        BigQuery: vi.fn(() => ({
+            dataset: mockDataset,
+            datetime: (d: string | Date) => new Date(d).toISOString(),
+        })),
+    };
+});
+
+describe('telemetry', () => {
+    beforeEach(() => {
+        vi.clearAllMocks();
+        process.env.GOOGLE_CLOUD_PROJECT = 'test-project';
+    });
+
+    afterEach(() => {
+        delete process.env.GOOGLE_CLOUD_PROJECT;
+    });
+
+    it('should log flow event to BigQuery', async () => {
+        const event = {
+            flowName: 'testFlow',
+            input: { foo: 'bar' },
+            output: { result: 'success' },
+            userId: 'user-123'
+        };
+
+        await telemetry.logFlowEvent(event);
+
+        expect(mockDataset).toHaveBeenCalledWith('genkit_analytics');
+        expect(mockTable).toHaveBeenCalledWith('flow_logs');
+        expect(mockInsert).toHaveBeenCalledWith(
+            expect.arrayContaining([
+                expect.objectContaining({
+                    flow_name: 'testFlow',
+                    user_id: 'user-123'
+                })
+            ]),
+            { ignoreUnknownValues: true }
+        );
+    });
+
+    it('should skip logging if GOOGLE_CLOUD_PROJECT is not set', async () => {
+        delete process.env.GOOGLE_CLOUD_PROJECT;
+        // Should verify it falls back to firebase project id or skips
+        // Let's force it to skip by ensuring neither is set
+        delete process.env.FIREBASE_PROJECT_ID;
+
+        await telemetry.logFlowEvent({ flowName: 'test', input: {}, output: {} });
+        expect(mockDataset).not.toHaveBeenCalled();
+    });
+});

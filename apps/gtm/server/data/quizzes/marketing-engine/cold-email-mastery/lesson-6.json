@@ -1,0 +1,142 @@
+{
+    "lessonId": "6",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "The Body - Value Without Pitching Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary mistake solo founders make in the body of a cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using too much white space"
+                },
+                {
+                    "id": "b",
+                    "text": "Treating the email body like a product brochure or listing features"
+                },
+                {
+                    "id": "c",
+                    "text": "Including their contact information"
+                },
+                {
+                    "id": "d",
+                    "text": "Not including enough images"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Prospects are busy and don't care about your technical specs yet. They care about their problems and potential outcomes."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'Outcome Positioning'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Describing exactly how the software was built"
+                },
+                {
+                    "id": "b",
+                    "text": "Focusing on what the customer can DO or ACHIEVE with your product, rather than what the product is"
+                },
+                {
+                    "id": "c",
+                    "text": "Positioning your product as the cheapest in the market"
+                },
+                {
+                    "id": "d",
+                    "text": "Adding a list of testimonials at the bottom"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Outcomes (e.g., 'Safe 10 hours a week') are the reason people buy. Features (e.g., 'AI-powered database') are secondary."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do you establish 'Credibility Without Desperation'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By claiming you are 'The Best' or 'Number One'"
+                },
+                {
+                    "id": "b",
+                    "text": "By sending the email multiple times a day"
+                },
+                {
+                    "id": "c",
+                    "text": "By sharing specific, relevant results or social proof ('We helped X do Y')"
+                },
+                {
+                    "id": "d",
+                    "text": "By offering a deep discount in the first email"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Specific results speak for themselves. Vague claims of greatness sound desperate and marketing-driven."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'Scanning' important in cold email design?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It helps the email get through spam filters"
+                },
+                {
+                    "id": "b",
+                    "text": "Most prospects won't read every word; they will skim the text to see if it's worth their time"
+                },
+                {
+                    "id": "c",
+                    "text": "It allows you to use smaller fonts"
+                },
+                {
+                    "id": "d",
+                    "text": "It is required for accessibility"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The human brain scans for relevance. If you use long paragraphs, the important information (the outcome) gets lost and the email is deleted."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Rule' for translating features into outcomes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ask 'So what?' after every feature you write"
+                },
+                {
+                    "id": "b",
+                    "text": "Always use technical jargon to show your intelligence"
+                },
+                {
+                    "id": "c",
+                    "text": "Make the feature first and the outcome second"
+                },
+                {
+                    "id": "d",
+                    "text": "Never mention the outcome; let the customer guess it"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Asking 'So what?' forces you to identify the actual business value of a technical feature. For example: 'We have a fast API.' (So what?) 'Your devs spend zero time waiting for data to load.'"
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Take one technical feature of your product. Perform the 'So What?' analysis 3 times to get to the core outcome. Draft a 2-sentence value proposition based on that final outcome. Does it sound more compelling than the feature list?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder moves from technical specs to business results. The final value prop should address a pain point or transformation."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

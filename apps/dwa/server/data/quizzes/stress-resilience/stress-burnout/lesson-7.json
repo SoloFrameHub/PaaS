@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the lesson's core principle for making lifestyle changes during burnout?",
+            "options": [
+                { "id": "opt1", "text": "Commit to a complete lifestyle overhaul to see real results" },
+                { "id": "opt2", "text": "Pick one tiny, repeatable change at a time and maintain it for two weeks before adding another" },
+                { "id": "opt3", "text": "Make at least five changes simultaneously for maximum impact" },
+                { "id": "opt4", "text": "Wait until burnout is fully resolved before making any changes" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson's core principle is: pick one change at a time, make it so small it feels almost too easy, attach it to something you already do, do it for two weeks before adding anything else, and if you miss a day, just do it the next day without a guilt spiral. Tiny, repeatable changes beat ambitious overhauls."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does the lesson call sleep the single most impactful lifestyle factor for stress resilience?",
+            "options": [
+                { "id": "opt1", "text": "Because sleep cures burnout completely on its own" },
+                { "id": "opt2", "text": "Because when sleep suffers, mood regulation, concentration, immune function, and stress tolerance all decline" },
+                { "id": "opt3", "text": "Because most people need 10 or more hours of sleep during burnout" },
+                { "id": "opt4", "text": "Because sleep eliminates the need for other stress management strategies" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep is the single most impactful lifestyle factor because when sleep suffers, everything gets harder: mood regulation, concentration, immune function, and stress tolerance all decline. The lesson recommends sleep consistency (same bed and wake time) as the most powerful single change."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the lesson recommend about exercise intensity when you are already depleted from burnout?",
+            "options": [
+                { "id": "opt1", "text": "Push for high-intensity workouts to build mental toughness" },
+                { "id": "opt2", "text": "Avoid all physical activity until you are fully recovered" },
+                { "id": "opt3", "text": "Start with gentle movement like 10-minute walks — your body is already stressed and high intensity adds more cortisol" },
+                { "id": "opt4", "text": "Only do structured gym workouts under professional supervision" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "When you are depleted, do not push intensity. Your body is already stressed, and high-intensity exercise adds more cortisol. Start with walking (10-15 minutes outdoors is the most accessible, evidence-based stress reducer), gentle stretching, or easy movement. If exercise feels like another obligation to fail at, it is adding stress, not reducing it."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does the lesson warn about using alcohol to wind down after stressful days?",
+            "options": [
+                { "id": "opt1", "text": "Because alcohol is illegal in most countries" },
+                { "id": "opt2", "text": "Because it initially relaxes but disrupts sleep quality, increases next-day anxiety, and can gradually build tolerance and dependence" },
+                { "id": "opt3", "text": "Because it has no effect on stress levels at all" },
+                { "id": "opt4", "text": "Because it only causes problems if consumed in large quantities" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While alcohol initially relaxes, it disrupts sleep quality, increases next-day anxiety (sometimes called 'hangxiety'), worsens mood over time, and regular use to 'wind down' can gradually increase tolerance and dependence. If cutting back feels difficult, that is important information worth paying attention to."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does the lesson suggest about failed lifestyle changes?",
+            "options": [
+                { "id": "opt1", "text": "They prove you lack the willpower to change" },
+                { "id": "opt2", "text": "They mean the change was too big, too vague, or not attached to an existing routine" },
+                { "id": "opt3", "text": "You should abandon all change efforts and accept your current state" },
+                { "id": "opt4", "text": "You need professional help before attempting any changes" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Failed changes usually mean the change was too big, too vague, or not attached to an existing routine. Willpower is a depleted resource during burnout, so the lesson recommends designing your changes so they barely require any willpower. One sustainable change beats ten abandoned resolutions."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "stress-burnout",
+    "lessonId": "7",
+    "title": "Sustainable Lifestyle Changes - Quiz"
+}

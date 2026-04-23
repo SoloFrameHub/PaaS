@@ -1,0 +1,75 @@
+{
+  "lessonId": "7",
+  "courseId": "advocacy",
+  "sectionId": "customer-success",
+  "title": "Building a Social Proof Library",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key difference between a Social Proof Library and a random 'testimonials' folder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A library is stored in the cloud instead of locally"
+        },
+        {
+          "id": "b",
+          "text": "A library is organized by deployment context, not just by type or date"
+        },
+        { "id": "c", "text": "A library contains only video testimonials" },
+        { "id": "d", "text": "A library requires a paid tool like Airtable" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A Social Proof Library is organized for deployment — tagged by type, industry, and metric — so you can find the right proof in under 30 seconds. Random folders are organized by how you collected proof, not how you'll use it."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the three axes of the Social Proof Library organization system?",
+      "options": [
+        { "id": "a", "text": "Date, customer name, file format" },
+        {
+          "id": "b",
+          "text": "Proof type, customer context (industry/size), and strength/metric type"
+        },
+        { "id": "c", "text": "Written, video, and screenshot" },
+        { "id": "d", "text": "Awareness, consideration, and decision" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 3-axis system tags every piece of proof by: (1) Proof type (testimonial, case study, video, etc.), (2) Customer context (industry, company size, use case), and (3) Strength/metric type (revenue growth, time saved, churn reduced, etc.)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which type of social proof is most appropriate for the 'Decision' stage of the buyer journey?",
+      "options": [
+        { "id": "a", "text": "Customer logos and headline metrics" },
+        { "id": "b", "text": "Short testimonial quotes" },
+        { "id": "c", "text": "Detailed case studies and video testimonials" },
+        { "id": "d", "text": "Star ratings and review counts" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "At the Decision stage, buyers need detailed proof: full Challenge-Solution-Results case studies and video testimonials that show real people achieving measurable outcomes. Logos and headline metrics are for Awareness, short quotes for Consideration."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Every piece of customer-facing content should include at least one proof element — no exceptions.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The Social Proof Insertion Rule states that every piece of customer-facing content must include at least one proof element. Landing pages with 3+ testimonials convert 34% better than those without."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe how you would set up your Social Proof Library, including the tool you would use, the properties/tags you would track, and the views/filters you would create. What is your plan for populating it during the 90-minute migration sprint?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response selects a specific tool (Notion, Airtable, or Google Sheets), defines tags aligned with the 3-axis system (type, industry, metric), creates deployment-ready views, and outlines a concrete plan for the 90-minute migration sprint (gather, filter, tag, polish, deploy)."
+    }
+  ]
+}

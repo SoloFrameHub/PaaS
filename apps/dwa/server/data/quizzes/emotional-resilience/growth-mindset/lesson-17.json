@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to PISA 2022 data across 73 countries, what percentage of the SES-achievement gap is explained by growth mindset vs. structural factors?",
+            "options": [
+                {"id": "opt1", "text": "50% mindset, 50% structural—equally important"},
+                {"id": "opt2", "text": "2.9-3.2% mindset, 97% structural (income, resources, opportunity, systemic barriers)"},
+                {"id": "opt3", "text": "80% mindset, 20% structural—mindset mostly determines outcomes"},
+                {"id": "opt4", "text": "100% structural—mindset has zero effect"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "PISA 2022 data (N = 507,588+ across 73 countries) found growth mindset accounts for only 2.9–3.2% of variance in the SES-achievement relationship. The remaining 97%+ is explained by structural factors: income, access to resources, educational opportunity, systemic discrimination. This means individual mindset CANNOT overcome structural inequality. Claims that growth mindset can 'buffer poverty' are empirically false and ethically harmful. This is the most important statistic in growth mindset research because it LIMITS its claims. Mindset helps within your sphere of control; it doesn't eliminate systemic barriers."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are structural barriers according to the lesson, and why can't mindset overcome them?",
+            "options": [
+                {"id": "opt1", "text": "Structural barriers are just excuses—mindset can overcome anything"},
+                {"id": "opt2", "text": "Structural barriers are systemic conditions (poverty, discrimination, lack of opportunity) that constrain outcomes regardless of individual effort, strategy, or mindset"},
+                {"id": "opt3", "text": "Structural barriers only affect lazy people"},
+                {"id": "opt4", "text": "Structural barriers don't exist—all outcomes are individual choice"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Structural barriers are SYSTEMIC conditions that constrain outcomes regardless of individual factors: (1) Economic inequality (poverty, wealth gaps, lack of resources), (2) Systemic discrimination (racism, sexism, ableism in institutions), (3) Lack of opportunity (unequal access to education, jobs, networks), (4) Exploitative work conditions. These require SYSTEMIC solutions (policy change, living wages, anti-discrimination enforcement), not individual mindset shifts. Example: you can't 'growth mindset' your way out of food insecurity or hiring discrimination. Individualizing structural problems causes victim-blaming and ignores the 97% of variance that's systemic."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How has corporate deployment of growth mindset been documented according to the lesson?",
+            "options": [
+                {"id": "opt1", "text": "As a universally positive workplace intervention"},
+                {"id": "opt2", "text": "As a tool to frame inadequate pay, unsafe conditions, and excessive workloads as 'development opportunities'—shifting responsibility for structural failures to individual attitudes"},
+                {"id": "opt3", "text": "As irrelevant to workplace culture"},
+                {"id": "opt4", "text": "As eliminating all workplace problems"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Corporate deployment of growth mindset has been widely documented as a tool to SHIFT RESPONSIBILITY from organizational failures to individual attitudes. Example: framing inadequate pay as a 'learning opportunity,' unsafe conditions as 'building resilience,' or excessive workloads as 'stretch assignments.' This is exploitative—it individualizes what are actually structural/organizational problems requiring organizational solutions (better pay, safe conditions, reasonable workloads). The lesson warns: growth mindset must not be used to excuse structural failures or blame individuals for systemic problems."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should a responsible growth mindset course handle structural barriers?",
+            "options": [
+                {"id": "opt1", "text": "Ignore them—only focus on individual mindset"},
+                {"id": "opt2", "text": "Explicitly acknowledge structural barriers, cite the 2.9% finding, distinguish personal responsibility from systemic responsibility, and state clearly that mindset helps with learnable challenges but cannot overcome systemic inequality"},
+                {"id": "opt3", "text": "Claim mindset can overcome all barriers including poverty and discrimination"},
+                {"id": "opt4", "text": "Tell people structural barriers are just limiting beliefs"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson states ANY growth mindset course that doesn't explicitly acknowledge structural barriers risks becoming complicit in victim-blaming. Responsible approach: (1) Cite the 2.9% finding explicitly, (2) Distinguish personal responsibility (what you control: effort, strategy, coping) from systemic responsibility (what organizations/societies must address: inequality, discrimination, opportunity), (3) State clearly: mindset helps you engage effectively with LEARNABLE challenges; it does NOT overcome structural inequality, discrimination, disability, or resource deprivation. This is both scientifically accurate and ethically mandatory."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on a current challenge: Is this primarily within your control (effort, strategy, skills you can build), or does it involve structural barriers (systemic inequality, discrimination, resource constraints outside your control)? How does distinguishing these help you direct energy appropriately (personal agency where you have control, advocacy/systemic change where barriers are structural)?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "17",
+    "title": "Structural Honesty: The Limits of Individual Mindset - Quiz"
+}

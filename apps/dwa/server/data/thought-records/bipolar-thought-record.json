@@ -1,0 +1,122 @@
+{
+  "id": "bipolar-thought-record",
+  "title": "Bipolar Thought Record",
+  "description": "Use this worksheet to examine thoughts that arise during mood episodes — both depressive and elevated. The goal is to check whether your thinking is being colored by your current mood state, and to find a more balanced perspective. This is especially important in bipolar disorder, where mood episodes can powerfully distort how we see ourselves, others, and the future.",
+  "instructions": "When you notice a strong mood shift (high or low), work through each step below. If you can't do it in the moment, fill it in afterward — even hours or days later. Over time, you'll start to recognize your personal patterns of mood-colored thinking.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. What happened? (Stick to observable facts)",
+      "type": "textarea",
+      "placeholder": "e.g., I woke up at 4 AM feeling full of energy and started planning a major home renovation project",
+      "required": true
+    },
+    {
+      "id": "moodState",
+      "label": "2. Current mood state — Are you in a depressive, elevated, or mixed episode?",
+      "type": "select",
+      "options": [
+        { "value": "depressed", "label": "Depressed — low mood, low energy, withdrawal" },
+        { "value": "mildly-depressed", "label": "Mildly depressed — somewhat low but functioning" },
+        { "value": "stable", "label": "Stable — baseline mood" },
+        { "value": "mildly-elevated", "label": "Mildly elevated — more energy and optimism than usual" },
+        { "value": "elevated", "label": "Elevated — clearly hypomanic or manic" },
+        { "value": "mixed", "label": "Mixed — elements of both depression and elevation" }
+      ],
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "3. The hot thought — What went through your mind?",
+      "type": "textarea",
+      "placeholder": "e.g., 'This is the best idea I've ever had — I should start right now' OR 'Nothing will ever get better, I'm a burden to everyone'",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "4. How intense is this mood? (0 = barely noticeable, 100 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "5. Which mood-colored thinking pattern might be at work?",
+      "type": "select",
+      "options": [
+        { "value": "all-or-nothing", "label": "All-or-Nothing — 'Everything is perfect' or 'Everything is hopeless'" },
+        { "value": "grandiosity", "label": "Grandiosity — Overestimating abilities, underestimating risks" },
+        { "value": "catastrophizing", "label": "Catastrophizing — 'This will never end' / 'Everything is ruined'" },
+        { "value": "minimizing-risk", "label": "Minimizing risk — 'Nothing bad will happen' / 'I don't need help'" },
+        { "value": "hopelessness", "label": "Hopelessness — 'Nothing will help' / 'I'll always be like this'" },
+        { "value": "impulsive-reasoning", "label": "Impulsive reasoning — 'I feel it, so I should act on it now'" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "6. Evidence for this thought — What supports it?",
+      "type": "textarea",
+      "placeholder": "e.g., I do have good ideas sometimes. I have been feeling creative. / I have been struggling for weeks and it's hard.",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "7. Evidence against — What would I think when my mood is stable?",
+      "type": "textarea",
+      "placeholder": "e.g., When stable, I'd plan this over weeks and check my budget first. Past episodes like this led to unfinished projects. / When stable, I know episodes pass and I have recovered before.",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "8. Balanced thought — What's a more grounded perspective?",
+      "type": "textarea",
+      "placeholder": "e.g., 'I may have a good idea, but the urgency I feel right now is a mood symptom. I'll write it down and revisit it in a few days when I can evaluate it more clearly.' / 'I feel terrible right now, but I've felt this way before and it passed. I'll focus on one small thing today.'",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "9. How intense is the mood now? (0 = barely noticeable, 100 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "all-or-nothing",
+      "name": "All-or-Nothing Thinking",
+      "description": "Seeing things in black and white extremes. During depression: 'Everything is hopeless.' During mania: 'Everything is perfect and I can't fail.' Reality is almost always somewhere in between."
+    },
+    {
+      "id": "grandiosity",
+      "name": "Grandiosity",
+      "description": "Overestimating your abilities, importance, or invulnerability — common during elevated mood. 'I don't need sleep.' 'I'm the only one who can do this.' 'Normal rules don't apply to me right now.' Check: would I think this when my mood is stable?"
+    },
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Assuming the worst possible outcome is certain — common during depression. 'This will never end.' 'My life is over.' Check: is this a fact, or is my depressed mood making it feel like a fact?"
+    },
+    {
+      "id": "minimizing-risk",
+      "name": "Minimizing Risk",
+      "description": "Downplaying consequences and ignoring warning signs — common during elevated mood. 'It'll be fine.' 'I can handle this.' 'What's the worst that could happen?' Check: am I ignoring information I'd normally take seriously?"
+    },
+    {
+      "id": "hopelessness",
+      "name": "Hopelessness",
+      "description": "Believing nothing will ever improve — a hallmark of bipolar depression. 'What's the point?' 'I'll always be like this.' Reminder: you have recovered from episodes before. Depression lies about the future."
+    },
+    {
+      "id": "impulsive-reasoning",
+      "name": "Impulsive Reasoning",
+      "description": "Treating urgency as proof that action is needed right now. 'I feel like I need to do this immediately.' The feeling of urgency is often a mood symptom, not a genuine signal. Apply the 72-hour rule: if it's truly important, it will still be important in three days."
+    }
+  ],
+  "disclaimer": "This thought record is for educational self-reflection, not a substitute for professional therapy. CBT for bipolar disorder is most effective when guided by a trained therapist alongside medication management. If you are experiencing a severe mood episode, contact your treatment team. If you are having thoughts of ending your life, call or text 988 (Suicide & Crisis Lifeline)."
+}

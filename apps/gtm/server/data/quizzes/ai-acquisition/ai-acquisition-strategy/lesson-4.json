@@ -1,0 +1,94 @@
+{
+  "lessonId": "4",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "Your Lead Scoring Model (1-10 Fit + Signal + Friction)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the formula for the 1-10 lead scoring model?",
+      "options": [
+        { "id": "a", "text": "Score = FIT (0-5) + SIGNAL (0-5)" },
+        {
+          "id": "b",
+          "text": "Score = FIT (0-4) + SIGNAL (0-4) - FRICTION (0-2)"
+        },
+        { "id": "c", "text": "Score = BUDGET + AUTHORITY + NEED + TIMELINE" },
+        { "id": "d", "text": "Score = ENGAGEMENT (0-10)" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The scoring formula is FIT (0-4 points for ICP match) + SIGNAL (0-4 points for buying intent) - FRICTION (0-2 points for barriers to closing). This creates a 1-10 scale with clear action thresholds: 8-10 = immediate personal outreach, 5-7 = automated sequence, 1-4 = nurture or disqualify."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A prospect who changed jobs within the past 90 days is how much more likely to buy than a static contact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No difference — job changes don't affect buying behavior"
+        },
+        { "id": "b", "text": "2x more likely" },
+        { "id": "c", "text": "3x more likely" },
+        { "id": "d", "text": "5x more likely" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Prospects who changed jobs in the past 90 days are 3x more likely to buy. They're building new systems, proving themselves in new roles, and have fresh budget authority — making job changes one of the strongest intent signals you can track."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why does the model subtract FRICTION points instead of just lowering the FIT score?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Friction is the same as poor fit, just measured differently"
+        },
+        {
+          "id": "b",
+          "text": "Because friction is different from fit — a prospect can be a perfect ICP match with strong intent but still be hard to close due to industry or buying process"
+        },
+        { "id": "c", "text": "Subtraction makes the math simpler" },
+        { "id": "d", "text": "Friction only applies to enterprise deals" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Friction measures barriers to closing that are separate from ICP fit. A prospect might be a perfect match (4/4 FIT) with strong intent (3/4 SIGNAL), but if they're in healthcare with a 9-month procurement process, that friction factor needs to be captured independently to inform your outreach strategy."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Lead scoring should be done once when a prospect is added and never updated afterward.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Static scores go stale in weeks. Dynamic scoring uses automated triggers (job change alerts, email engagement, funding announcements, pricing page visits) to update scores in real-time. A lead who was a 5 last month can become a 9 this week when they change jobs and visit your pricing page."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "If you have 200 prospects, approximately how much time does lead scoring save compared to treating everyone equally?",
+      "options": [
+        { "id": "a", "text": "No time savings — scoring adds overhead" },
+        { "id": "b", "text": "About 5 hours saved" },
+        {
+          "id": "c",
+          "text": "About 26-30 hours saved (from 40+ hours down to 8-14 hours)"
+        },
+        { "id": "d", "text": "About 2 hours saved" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Without scoring, 200 leads at equal treatment takes 40+ hours. With scoring: 20-40 hot leads (5-10 hours of personal outreach) + 100-120 warm leads (2-3 hours of sequence setup) + 40-80 cold leads (30 minutes to nurture/archive) = 8-14 hours total, saving approximately 26-30 hours."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Define your personal FIT criteria (4 factors) based on your actual ICP. For each factor, explain what earns a point and give a concrete example of a prospect who would score 4/4 versus one who would score 1/4.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response defines all four FIT factors (industry, title/role, company size, tech stack) with specific criteria for each. Look for concrete examples that demonstrate understanding of ICP matching and realistic differentiation between high-fit and low-fit prospects."
+    }
+  ]
+}

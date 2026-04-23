@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is it important to distinguish bipolar depression from unipolar depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "They have completely different symptoms and are easy to tell apart"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Treatment approaches differ -- some antidepressant strategies can trigger mania in bipolar disorder"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Bipolar depression is not a real form of depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Unipolar depression is always more severe than bipolar depression"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Bipolar depression and unipolar depression share many symptoms, but treatment differs significantly. Some strategies effective for unipolar depression (such as certain antidepressant medications or intense stimulation) can trigger mania or hypomania in people with bipolar disorder. Mood stability must be the guiding principle in treatment."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How should behavioral activation be adapted for bipolar depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Push yourself to do as much as possible to break the cycle quickly"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Only start behavioral activation once the depressive episode has fully resolved"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Start extremely small, build gradually, and monitor for signs of mood switching"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Focus exclusively on intense physical exercise to boost energy"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Behavioral activation for bipolar depression requires a careful, adapted approach: start with extremely small steps (even smaller than you think necessary), build gradually rather than trying to 'make up for lost time,' and monitor for mood switching -- a sudden burst of energy may signal hypomania rather than genuine recovery."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is a safe lifestyle intervention during a bipolar depressive episode?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Sleep deprivation to reset your mood"
+                },
+                {
+                    "id": "opt2",
+                    "text": "High-intensity exercise sessions to generate endorphins"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Gentle movement like walking or stretching, combined with morning light exposure"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Using bright light therapy boxes without consulting your treatment team"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Gentle movement (walking, stretching, yoga) and morning light exposure are safe, evidence-informed interventions for bipolar depression. Sleep deprivation is dangerous because it can trigger mania. Intense exercise and unsupervised bright light therapy also carry risks of mood switching in bipolar disorder."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is an effective way to respond to the depressive thought 'Nothing will ever change'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Accept it as a realistic assessment of your situation"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Force yourself to think only positive thoughts to counteract it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Recognize it as a symptom of depression that distorts time perception, and recall that you have experienced mood shifts before"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Argue with the thought intensely until it goes away"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The thought 'Nothing will ever change' is a hallmark symptom of depression that distorts time perception, making the current state feel permanent. The most effective response is to label it as depression talking (not facts), check the evidence (you have experienced mood shifts before), and remember that depressive episodes do end -- without trying to force positive thinking or argue the thought away."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should someone with bipolar depression seek urgent professional help?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only when they feel 'sick enough' to justify reaching out"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When experiencing suicidal thoughts (even passive ones), self-harm urges, inability to care for themselves, or psychotic symptoms"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only if they have already made a suicide attempt"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only at their next regularly scheduled appointment"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Urgent help should be sought when experiencing suicidal thoughts (even passive ones like 'Everyone would be better off without me'), self-harm urges, inability to care for yourself, psychotic symptoms, or rapid mood shifts suggesting a mixed state. You do not need to be 'sick enough' to reach out -- bipolar depression carries a higher risk of suicidal ideation than unipolar depression."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "bipolar-disorder",
+    "lessonId": "5",
+    "title": "Managing Depressive Episodes - Quiz"
+}

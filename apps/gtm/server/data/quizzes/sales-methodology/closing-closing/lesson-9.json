@@ -1,0 +1,91 @@
+{
+    "lessonId": "9",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Closing Analytics Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Closing Cycle Time' (Drag)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The time it takes to drive to the prospect's office."
+                },
+                {
+                    "id": "b",
+                    "text": "The average number of days between a 'Verbal Yes' and the final contract 'Signature'."
+                },
+                {
+                    "id": "c",
+                    "text": "The time it takes to build the product."
+                },
+                {
+                    "id": "d",
+                    "text": "The length of the sales call."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Drag is a deal killer. The longer the gap between agreement and signature, the more time there is for a 'Shadow Committee' member or a market shift to derail the deal."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'No Decision' (The Ghost Deal) a critical metric to track in 2026?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it shows you need to buy more ads."
+                },
+                {
+                    "id": "b",
+                    "text": "Because losing to 'No Decision' indicates a failure to communicate urgency or a failure to remove late-stage friction, rather than a failure of the product itself."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it means your CRM is broken."
+                },
+                {
+                    "id": "d",
+                    "text": "Because it allows you to blame the customer."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a buyer wants the product but doesn't buy, it's often because the process of buying was too difficult or risky. Tracking 'No Decision' results helps you identify where your closing process is leaking profit."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Evidence-Based Forecasting'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Predicting sales based on your gut feeling."
+                },
+                {
+                    "id": "b",
+                    "text": "Assigning closing probability based on verifiable actions taken by the buyer (e.g., 'IT has approved docs') rather than just their enthusiasm."
+                },
+                {
+                    "id": "c",
+                    "text": "Checking if you have enough money in the bank."
+                },
+                {
+                    "id": "d",
+                    "text": "Copying your competitor's numbers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Enthusiasm is common; commitment is rare. By tracking evidence (Meeting held, redlines received, DSR opened), you get a realistic view of when the deal will actually close."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Look at your last 3 lost deals. What was the 'Evidence' you ignored that suggested they were going to fail? Was it a lack of multi-threading, a legal stall, or a sentiment shift? How will you track that specific evidence marker in your CRM moving forward?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can identify objective markers of failure and proposes a systematic way to track those markers in the future."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "6",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Domain Warming Strategy Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of 'Domain Warming'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the emails load faster"
+                },
+                {
+                    "id": "b",
+                    "text": "To build a reputation of trust with Inbox Service Providers (ISPs) like Google and Microsoft"
+                },
+                {
+                    "id": "c",
+                    "text": "To verify that your credit card is active"
+                },
+                {
+                    "id": "d",
+                    "text": "To rewrite your email content for better clarity"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "ISPs monitor the sending patterns of new domains. Warming simulates natural behavior (opens, replies) to prove the domain isn't a spam bot."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How long is the recommended 'Slow Ramp' protocol for a brand new domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "24 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "1 week"
+                },
+                {
+                    "id": "c",
+                    "text": "2-4 weeks"
+                },
+                {
+                    "id": "d",
+                    "text": "3 months"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A 4-week period is the practitioner standard for ensuring a domain is mature enough for real outbound campaigns without being flagged as suspicious."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should you do once you start sending real outreach to leads?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Turn off the warmup tool to save bandwidth"
+                },
+                {
+                    "id": "b",
+                    "text": "Increase the real outreach to 500 emails per day immediately"
+                },
+                {
+                    "id": "c",
+                    "text": "Keep the warmup tool running indefinitely at a low volume"
+                },
+                {
+                    "id": "d",
+                    "text": "Stop all warming and focus on manual replies"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Warmup interactions act as 'insurance' against spam complaints. Keeping a steady heartbeat of positive interactions helps maintain a high domain health score."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these metrics is the best indicator that your domain health is in the 'Danger Zone'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Inbox Placement rate drops to 60%"
+                },
+                {
+                    "id": "b",
+                    "text": "Open rate is above 20%"
+                },
+                {
+                    "id": "c",
+                    "text": "You receive 2 replies in one day"
+                },
+                {
+                    "id": "d",
+                    "text": "Your domain is 6 months old"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Healthy domains should have 95%+ inbox placement. A drop to 60% indicates that ISPs are filtering your messages into spam or quarantine."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Safe Zone' for daily per-domain volume for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "500-1,000 emails/day"
+                },
+                {
+                    "id": "b",
+                    "text": "30-50 emails/day"
+                },
+                {
+                    "id": "c",
+                    "text": "1-5 emails/day"
+                },
+                {
+                    "id": "d",
+                    "text": "As many as your tool allows"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-precision solo outreach thrives on quality. Sending 30-50 emails per domain keeps you well within safety limits while providing enough volume for consistent conversions."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Explain the concept of 'Heartbeat' interactions in your own words. Why is it more effective to have a constant low-volume warmup than a one-time intensive burst?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder understands that ISPs reward consistency and diverse interaction (replies, opens) over simple volume. The 'insurance' metaphor is a good sign of understanding."
+        }
+    ]
+}

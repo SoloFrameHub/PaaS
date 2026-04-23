@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+apps
+_archive
+docs
+soloframehub-v2
+soloframehub-website-feb
+*.md
+.env.local
+.env
+
+# Re-include manuscript files for book feature (must come after exclusions)
+!docs/manuscript
+!docs/manuscript/*.md

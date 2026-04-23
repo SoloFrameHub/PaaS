@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "The 6 Universal Objection Categories Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which category does the objection 'Call me next quarter' usually fall into?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Price"
+                },
+                {
+                    "id": "b",
+                    "text": "Timing"
+                },
+                {
+                    "id": "c",
+                    "text": "Trust"
+                },
+                {
+                    "id": "d",
+                    "text": "Competition"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Timing objections are often used as polite stalls to signal that the priority isn't high enough at the moment."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "A prospect says 'I'm not sure this tool will work with our specific tech stack.' What is the underlying concern?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Price - they want a discount."
+                },
+                {
+                    "id": "b",
+                    "text": "Need - they already have a solution."
+                },
+                {
+                    "id": "c",
+                    "text": "Trust - they are afraid of failure and uncertainty."
+                },
+                {
+                    "id": "d",
+                    "text": "Authority - they need to talk to their CTO."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Trust objections are about risk. The prospect is afraid the solution won't work or will cause problems, making the investment feel risky."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How can you test if a 'Timing' objection is actually a 'Need' objection in disguise?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By offering a discount if they sign today."
+                },
+                {
+                    "id": "b",
+                    "text": "By asking 'If it were January right now, would this be a priority?'"
+                },
+                {
+                    "id": "c",
+                    "text": "By ignoring them and calling back in three months."
+                },
+                {
+                    "id": "d",
+                    "text": "By asking to speak to their boss immediately."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This 'diagnostic question' isolates the time variable. If they wouldn't do it even if time/budget were available, the problem is that they don't see the value/need."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which strategy is most effective for an 'Authority' objection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Value Amplification - show more ROI."
+                },
+                {
+                    "id": "b",
+                    "text": "Urgency Creation - set a deadline."
+                },
+                {
+                    "id": "c",
+                    "text": "Champion Building - equip the contact with data to sell internally."
+                },
+                {
+                    "id": "d",
+                    "text": "Differentiation - explain why you're better than a competitor."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "If the contact needs approval, your job is to make them look like a hero to their boss by giving them the ammunition to defend the purchase."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Rule of the Mask' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should always hide your true pricing until the end."
+                },
+                {
+                    "id": "b",
+                    "text": "Prospects often use Price or Timing as a polite mask for concerns about Trust or Need."
+                },
+                {
+                    "id": "c",
+                    "text": "You can ignore objections if you have a strong enough brand."
+                },
+                {
+                    "id": "d",
+                    "text": "Objections are always exactly what the prospect says they are."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Detecting the mask is critical. Often, a prospect says 'it's too expensive' because they aren't convinced it works (Trust) or doesn't solve a real problem (Need)."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Select one 'polite stall' you've heard recently (e.g., 'Check back in Q2'). Based on this lesson, what do you suspect was the REAL category behind that mask? What question will you ask next time to uncover the truth?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to identify 'masked' objections. Look for specific подозреваемые categories (Trust, Need, etc.) and a 'diagnostic' question that isolates the time/price variable."
+        }
+    ]
+}

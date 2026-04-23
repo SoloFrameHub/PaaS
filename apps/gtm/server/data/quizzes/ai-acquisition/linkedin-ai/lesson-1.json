@@ -1,0 +1,72 @@
+{
+  "lessonId": "1",
+  "courseId": "linkedin-ai",
+  "sectionId": "ai-acquisition",
+  "title": "LinkedIn's 2026 Automation Policy (What's Banned vs Tolerated)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why is a LinkedIn ban described as a 'business-ending event' for solo founders?",
+      "options": [
+        { "id": "a", "text": "LinkedIn charges a cancellation fee" },
+        {
+          "id": "b",
+          "text": "Your account holds pipeline value ($10K-100K+), years of network equity, reputation capital, and your discovery engine — all erased in 24 hours"
+        },
+        { "id": "c", "text": "You can't create a new account" },
+        { "id": "d", "text": "LinkedIn bans are only temporary" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "For solo founders, a LinkedIn ban erases pipeline value ($10K-100K+), years of relationship-building, social proof and recommendations, content history, and organic discovery. Sarah's story shows $47K in active deals vanishing overnight after installing a 'growth hack' automation tool."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What behavioral fingerprints does LinkedIn use to detect automation?",
+      "options": [
+        { "id": "a", "text": "Only checking for known bot software names" },
+        {
+          "id": "b",
+          "text": "Request velocity, session patterns, action sequences (exact timing), browser fingerprints, and IP behavior"
+        },
+        { "id": "c", "text": "Only monitoring connection request volume" },
+        { "id": "d", "text": "LinkedIn doesn't actively detect automation" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LinkedIn's Trust & Safety team uses behavioral fingerprinting: request velocity (200 requests in 2 hours vs human average of 10-15), session consistency (perfect 9-5 activity with zero variance), action sequences (exactly 3.2 seconds between profile views), browser fingerprints (missing/spoofed headers), and IP behavior (cloud IPs or rapid switching)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How many accounts did LinkedIn suspend in H1 2025 for professional community violations?",
+      "options": [
+        { "id": "a", "text": "100,000" },
+        { "id": "b", "text": "1 million" },
+        { "id": "c", "text": "32 million+" },
+        { "id": "d", "text": "500" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "LinkedIn suspended 32 million+ accounts in H1 2025 for professional community violations, including both spam and automation violations. The 2025 crackdown on Apollo.io and Seamless.AI set a new precedent: LinkedIn actively bans third-party tools that scrape data or automate actions."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The conservative approach to LinkedIn automation always wins for solo founders — if a tool feels risky, it probably is.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson's Solo Founder Safety Doctrine states that the conservative approach always wins. Your LinkedIn account holds irreplaceable business value. One automation mistake can erase years of relationship equity in 24 hours, and recovery means starting from zero with a new account."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Audit your current LinkedIn tool stack. For each tool you use, classify it as safe, grey area, or banned based on the lesson's criteria. If you find any risky tools, describe your plan to replace them with safer alternatives.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response lists specific tools they currently use, correctly classifies each based on the lesson's safety framework (behavioral fingerprint risk, ToS compliance), and provides concrete replacement plans for any risky tools. Look for understanding that the risk calculation must weigh tool benefit against total account value."
+    }
+  ]
+}

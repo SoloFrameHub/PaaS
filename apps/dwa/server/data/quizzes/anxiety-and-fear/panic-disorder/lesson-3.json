@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three core steps of cognitive restructuring for panic?",
+            "options": [
+                { "id": "opt1", "text": "Relax, breathe, and meditate" },
+                { "id": "opt2", "text": "Avoid, escape, and recover" },
+                { "id": "opt3", "text": "Catch the thought, examine the evidence, and generate a balanced alternative" },
+                { "id": "opt4", "text": "Suppress the thought, distract yourself, and move on" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Cognitive restructuring involves three steps: (1) catch the catastrophic thought, (2) examine the evidence for and against it, and (3) generate a balanced, realistic alternative based on your actual track record. This is not thought suppression — it is evidence-based evaluation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which cognitive distortion involves believing that because you feel scared, something must actually be dangerous?",
+            "options": [
+                { "id": "opt1", "text": "Catastrophizing" },
+                { "id": "opt2", "text": "Fortune telling" },
+                { "id": "opt3", "text": "Emotional reasoning" },
+                { "id": "opt4", "text": "Interoceptive bias" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Emotional reasoning is the pattern of believing that because you feel terrified, something terrible must be happening. The key challenge is: feelings are not facts. Fear can exist without actual danger — that is the definition of a false alarm."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does cognitive restructuring differ from 'positive thinking'?",
+            "options": [
+                { "id": "opt1", "text": "They are essentially the same technique with different names" },
+                { "id": "opt2", "text": "Cognitive restructuring uses affirmations while positive thinking uses evidence" },
+                { "id": "opt3", "text": "Positive thinking tries to replace all negative thoughts with optimistic ones" },
+                { "id": "opt4", "text": "Cognitive restructuring examines whether your interpretation is accurate, seeking evidence-based balance rather than forced optimism" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Cognitive restructuring is not about pretending everything is fine or being optimistic. It is about examining whether your automatic catastrophic interpretation is accurate, then finding a more balanced, evidence-based understanding. The goal is accuracy, not positivity."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is it recommended to practice challenging catastrophic thoughts when you are calm, rather than only during panic?",
+            "options": [
+                { "id": "opt1", "text": "Because catastrophic thoughts only occur during calm moments" },
+                { "id": "opt2", "text": "Because practicing when calm makes the skill automatic and available when you need it during panic" },
+                { "id": "opt3", "text": "Because cognitive restructuring is ineffective during actual panic" },
+                { "id": "opt4", "text": "Because you cannot identify thoughts during a panic attack" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cognitive restructuring is a skill that improves with practice. Practicing when calm — like fire drills when there is no fire — builds the neural pathways so that the balanced alternatives are more readily available during actual panic. Trying to learn a new skill in the middle of panic is much harder."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the purpose of an 'evidence record' in managing panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "To document every panic attack for your doctor" },
+                { "id": "opt2", "text": "To prove that you have a real medical condition" },
+                { "id": "opt3", "text": "To build a collection of facts that contradicts your catastrophic beliefs over time" },
+                { "id": "opt4", "text": "To track which medications work best for your symptoms" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "An evidence record is a collection of facts that contradicts your catastrophic beliefs. For example, if you fear a racing heart means a heart attack, your evidence record would note how many times your heart raced and no heart attack occurred. Over time, this builds a powerful case against the catastrophic interpretation."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "3",
+    "title": "Challenging Catastrophic Thoughts - Quiz"
+}

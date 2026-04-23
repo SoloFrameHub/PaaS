@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between introversion and social anxiety?",
+            "options": [
+                { "id": "opt1", "text": "Introverts never enjoy social situations, while people with social anxiety do" },
+                { "id": "opt2", "text": "Introverts prefer less social stimulation (energy management), while people with social anxiety fear social judgment" },
+                { "id": "opt3", "text": "Introversion is a mental health disorder, while social anxiety is a personality trait" },
+                { "id": "opt4", "text": "There is no meaningful difference — they are the same experience" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Introversion is about energy management — introverts recharge through solitude and prefer quieter environments. Social anxiety is about fear of negative evaluation by others. You can be an introvert without social anxiety, and you can be an extrovert with social anxiety. They are fundamentally different experiences."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Approximately what percentage of people experience social anxiety disorder at some point in their lives?",
+            "options": [
+                { "id": "opt1", "text": "1-2%" },
+                { "id": "opt2", "text": "7-13%" },
+                { "id": "opt3", "text": "25-30%" },
+                { "id": "opt4", "text": "Less than 0.5%" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Social anxiety disorder affects approximately 7-13% of people at some point in their lives, making it the third most common mental health condition after depression and alcohol use disorder. It typically begins in the mid-teens but can develop at any age."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which statement about social anxiety disorder is a FACT, not a myth?",
+            "options": [
+                { "id": "opt1", "text": "Social anxiety is just shyness that everyone experiences" },
+                { "id": "opt2", "text": "People with social anxiety are antisocial and don't like people" },
+                { "id": "opt3", "text": "You can overcome it with enough willpower and confidence" },
+                { "id": "opt4", "text": "Social anxiety is one of the most treatable mental health conditions, with CBT producing large, lasting improvements" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Social anxiety is highly treatable. CBT produces large effect sizes (0.9-1.2), with 47-74% of patients showing reliable positive improvement. It is not just shyness, it cannot be overcome through willpower alone, and most people with social anxiety deeply want connection — they avoid situations because of fear, not dislike of people."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a characteristic that distinguishes social anxiety disorder from normal shyness?",
+            "options": [
+                { "id": "opt1", "text": "Feeling slightly nervous when meeting someone new" },
+                { "id": "opt2", "text": "Intense, persistent fear of negative evaluation that causes significant avoidance or impairment in daily life" },
+                { "id": "opt3", "text": "Preferring small groups over large parties" },
+                { "id": "opt4", "text": "Needing time alone to recharge after socializing" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Social anxiety disorder involves marked, persistent fear of being negatively evaluated that is out of proportion to the actual situation, lasting 6 months or more, and causing clinically significant distress or impairment in important areas of life. Mild nervousness with new people (shyness) or preferring solitude (introversion) are different experiences."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why do the physical symptoms of social anxiety (blushing, sweating, trembling) often become part of the problem?",
+            "options": [
+                { "id": "opt1", "text": "Because they indicate a serious underlying medical condition" },
+                { "id": "opt2", "text": "Because they permanently damage social relationships" },
+                { "id": "opt3", "text": "Because the fear that others will notice these symptoms creates more anxiety, which creates more symptoms" },
+                { "id": "opt4", "text": "Because they only occur in people with severe social anxiety, not mild cases" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Physical symptoms like blushing, sweating, and trembling become part of a self-reinforcing cycle: you fear that others will notice your symptoms, which creates more anxiety, which produces more physical symptoms. The symptoms themselves are not dangerous, but the fear of them being visible amplifies the anxiety."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "social-anxiety",
+    "lessonId": "1",
+    "title": "Understanding Social Anxiety vs. Introversion and Shyness - Quiz"
+}

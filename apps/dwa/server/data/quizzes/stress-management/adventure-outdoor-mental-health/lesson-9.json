@@ -1,0 +1,78 @@
+{
+  "quizId": "adventure-outdoor-mental-health-lesson-9",
+  "lessonNumber": 9,
+  "courseId": "adventure-outdoor-mental-health",
+  "pillar": "stress-management",
+  "questions": [
+    {
+      "id": "q1-nature-prescribing-definition",
+      "type": "multiple-choice",
+      "question": "What distinguishes nature prescribing from casual healthcare advice to 'get outside more'?",
+      "options": [
+        "Nature prescribing is the same as casual advice — just different wording",
+        "Nature prescribing involves clinical assessment, structured recommendations with specific duration/frequency, follow-up tracking, and integration with treatment plans",
+        "Nature prescribing only works if the provider goes outdoors with the patient",
+        "Nature prescribing requires wilderness access, not urban parks"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Nature prescribing is a formal clinical practice involving: (1) clinical assessment of patient needs, (2) structured recommendations (specific activity, duration, frequency like '30 min walks 3×/week for 8 weeks'), (3) follow-up tracking like medication compliance, and (4) integration as part of treatment plan. This clinical framework increases adherence and enables outcome measurement beyond casual 'get outside' advice.",
+      "category": "conceptual-knowledge"
+    },
+    {
+      "id": "q2-green-social-prescribing",
+      "type": "multiple-choice",
+      "question": "What does 'green social prescribing' add beyond standard nature prescribing?",
+      "options": [
+        "Nothing — the terms are interchangeable",
+        "Community linkage to organized outdoor groups, peer support, and link workers who help patients access programs and navigate barriers",
+        "It only works in the UK, not other countries",
+        "It requires patients to have a social media account"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Green social prescribing adds three key elements beyond standard nature prescribing: (1) community linkage — connection to organized outdoor groups like walking programs or community gardens, (2) peer support — shared experience with others facing similar health challenges, and (3) link workers — staff who help patients overcome barriers (transportation, safety concerns) and accompany them to initial sessions. This addresses both nature and social isolation.",
+      "category": "conceptual-distinction"
+    },
+    {
+      "id": "q3-evidence-strength",
+      "type": "multiple-choice",
+      "question": "What is the current evidence strength for nature prescribing programs?",
+      "options": [
+        "No evidence — purely theoretical",
+        "Emerging-to-moderate: 2024 RCT showed significant mental health improvements vs. control; NHS pilots promising; needs larger-scale evaluation",
+        "Strong — proven equivalent to medication for all mental health conditions",
+        "Only works as placebo — no real effects"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Evidence is emerging-to-moderate. A 2024 RCT-level study of nature-based social prescribing found significant mental health improvements (depression, anxiety, wellbeing) vs. waitlist control with moderate effect sizes (d = 0.4–0.6). NHS England pilots show promise but full RCT results pending. Larger-scale trials needed before becoming standard-of-care. Not yet proven equivalent to established treatments, but promising adjunctive intervention.",
+      "category": "evidence-literacy"
+    },
+    {
+      "id": "q4-link-worker-role",
+      "type": "multiple-choice",
+      "question": "What role do 'link workers' play in green social prescribing programs?",
+      "options": [
+        "They are park rangers who enforce rules",
+        "They are dedicated staff who help patients navigate barriers, accompany them to first group sessions, address transportation/safety concerns, and maintain connection over weeks",
+        "They replace doctors and therapists",
+        "They only work with wealthy patients who can afford private services"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Link workers are dedicated staff in green social prescribing programs who: (1) help patients navigate practical barriers (transportation, safety concerns, lack of social networks), (2) accompany patients to first 2–3 sessions of outdoor groups to ease anxiety, (3) address access challenges specific to disadvantaged populations, and (4) maintain connection over weeks to support adherence. They're equity tools, particularly helping underserved patients access nature programs.",
+      "category": "implementation-understanding"
+    },
+    {
+      "id": "q5-implementation-challenges",
+      "type": "multiple-choice",
+      "question": "What is a major implementation challenge for scaling nature prescribing programs?",
+      "options": [
+        "Patients universally refuse outdoor activity recommendations",
+        "Access inequity ('green care deserts'), reimbursement/sustainability without insurance coverage, provider training gaps, and seasonal/weather barriers",
+        "There are no challenges — nature prescribing is easy to implement everywhere",
+        "Only the cost of outdoor equipment prevents implementation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Multiple implementation challenges exist: (1) access inequity — patients in green care deserts lack nearby quality parks; (2) reimbursement — without insurance coverage, programs rely on grants (not sustainable); (3) provider training — most lack education in nature prescribing; (4) seasonal barriers — adherence drops in harsh weather. Solutions include policy advocacy for insurance coverage, link worker support for access, EHR integration, and seasonal adaptations.",
+      "category": "systems-thinking"
+    }
+  ]
+}

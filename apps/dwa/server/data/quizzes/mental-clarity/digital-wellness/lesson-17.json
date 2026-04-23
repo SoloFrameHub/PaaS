@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the relationship between technology use and loneliness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "All technology use increases loneliness (STRONG evidence)"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It's complex and context-dependent — technology can both reduce and increase loneliness depending on how it's used (MODERATE evidence)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Technology always reduces loneliness by increasing connection"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no relationship between technology and loneliness"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "MODERATE, context-dependent evidence: Technology can reduce loneliness when it facilitates meaningful connection (video calls with loved ones, supportive communities). It can increase loneliness when it substitutes for in-person connection or promotes passive consumption and comparison."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When does technology use tend to reduce loneliness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "When used passively to scroll through strangers' content"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When it facilitates meaningful connection with existing relationships or supportive communities (video calls, direct messaging, shared activities)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "When used to avoid face-to-face interactions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Technology never reduces loneliness"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Technology reduces loneliness when it supports meaningful connection: video calls with family, direct messages with friends, participation in supportive online communities, or shared online activities. Quality of connection matters."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When might technology use increase loneliness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "When facilitating video calls with close friends and family"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When it replaces in-person connection, promotes passive consumption and social comparison, or creates the illusion of connection without depth"
+                },
+                {
+                    "id": "opt3",
+                    "text": "When used for work collaboration"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Technology never increases loneliness"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Technology may increase loneliness when it substitutes for in-person connection, when use is passive (scrolling, comparing) rather than interactive, or when it creates superficial 'connection' without emotional depth or reciprocity."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the key question to ask yourself about technology and loneliness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "How many online friends do I have?"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Is my technology use bringing me closer to meaningful connection, or is it a substitute that leaves me feeling more isolated?"
+                },
+                {
+                    "id": "opt3",
+                    "text": "How many hours per day am I online?"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Which platform has the most users?"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The critical question: Is technology facilitating meaningful connection (video calls, shared activities, supportive communities), or is it a poor substitute that increases feelings of isolation (passive scrolling, superficial interaction, comparison)?"
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about your technology use over the past week. Did it bring you closer to meaningful connection, or did it leave you feeling more isolated? Give a specific example of each (connection-promoting and isolation-promoting use).",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "17",
+    "title": "Technology and Loneliness - Quiz"
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is cognitive restructuring?",
+            "options": [
+                {"id": "opt1", "text": "The process of identifying, evaluating, and modifying distorted thought patterns"},
+                {"id": "opt2", "text": "Forcing yourself to think positive thoughts instead of negative ones"},
+                {"id": "opt3", "text": "Changing your brain structure through medication"},
+                {"id": "opt4", "text": "Ignoring thoughts that make you uncomfortable"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Correct. Cognitive restructuring is the systematic process of catching automatic thoughts, examining the evidence, identifying distortions, and developing more balanced alternatives. It's the core skill that integrates everything you've learned in CBT."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is cognitive restructuring more than just positive thinking?",
+            "options": [
+                {"id": "opt1", "text": "Because it requires professional training to use effectively"},
+                {"id": "opt2", "text": "Because it's based on evidence and accuracy, not forced optimism"},
+                {"id": "opt3", "text": "Because it only works for people with diagnosed mental health conditions"},
+                {"id": "opt4", "text": "Because it takes longer than positive thinking"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. Cognitive restructuring teaches you to evaluate thoughts like a scientist: 'What's the evidence? What distortions am I making? What would be more accurate?' This leads to realistic thinking that you actually believe, not affirmations that feel hollow."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the relationship between cognitive restructuring and behavioral change?",
+            "options": [
+                {"id": "opt1", "text": "You must change your thoughts before you can change behaviors"},
+                {"id": "opt2", "text": "Behavior change and thought change reinforce each other in a feedback loop"},
+                {"id": "opt3", "text": "Behavioral change is not important — only thoughts matter"},
+                {"id": "opt4", "text": "You should change behaviors first and ignore thoughts"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. Cognitive restructuring makes behavioral experiments feel more doable ('This might go okay' vs. 'I'll definitely fail'). Then the behavioral experiment generates evidence that further challenges the distorted thought. Each strengthens the other."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "SAFETY: When should you NOT use cognitive restructuring on your own?",
+            "options": [
+                {"id": "opt1", "text": "Whenever you feel uncomfortable examining your thoughts"},
+                {"id": "opt2", "text": "For intrusive thoughts in OCD, suicidal ideation, or trauma memories without clinical supervision"},
+                {"id": "opt3", "text": "For any negative thought — you should always use positive affirmations instead"},
+                {"id": "opt4", "text": "Only when you're feeling happy — it doesn't work when you're distressed"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "CRITICAL. For OCD, challenging intrusive thoughts can become compulsive reassurance-seeking (making it worse). For suicidal thoughts, you need crisis support, not self-help. For trauma, you need trauma-specific treatment. These conditions require professional guidance — do not attempt cognitive restructuring solo."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Choose a persistent negative thought you've been working with. Walk through the full cognitive restructuring process: identify the distortion, examine evidence for/against, develop a balanced alternative, and rate your belief in both thoughts (0-100). What changed?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "12",
+    "title": "Cognitive Restructuring - Quiz"
+}

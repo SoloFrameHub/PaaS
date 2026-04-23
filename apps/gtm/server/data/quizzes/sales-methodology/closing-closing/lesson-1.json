@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "The Psychology of the Close Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Decision Fatigue' in the context of a 2026 sales cycle?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When the founder gets tired of making calls."
+                },
+                {
+                    "id": "b",
+                    "text": "A state of cognitive depletion in the buyer where the effort of making a final commitment outweighs the perceived immediate benefit, often leading to stalls."
+                },
+                {
+                    "id": "c",
+                    "text": "When a CRM runs out of storage space."
+                },
+                {
+                    "id": "d",
+                    "text": "The feeling of boredom during a demo."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Modern buyers handle more stakeholders and tools than ever. By the end of a deal, they are often 'decision-exhausted'. Your goal is to simplify the closing process so it requires minimal cognitive effort."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is the time immediately following a 'Verbal Yes' so critical?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's time to celebrate."
+                },
+                {
+                    "id": "b",
+                    "text": "Because sales momentum is a biological state that naturally decays; every hour of delay introduces 'Drag' (Cortisol/Doubt) into the deal."
+                },
+                {
+                    "id": "c",
+                    "text": "To double the price."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for a referral immediately."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Momentum is a buying signal. If you don't provide clear, low-friction next steps while the buyer is in a high-trust state, uncertainty about the process will lead to buyer's remorse or stalling."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is a 'Ghost Deal' in 2026?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A deal with a security company."
+                },
+                {
+                    "id": "b",
+                    "text": "A deal that isn't lost to a competitor, but vanishes due to lack of internal alignment within the buyer's organization."
+                },
+                {
+                    "id": "c",
+                    "text": "A deal that closes automatically."
+                },
+                {
+                    "id": "d",
+                    "text": "A deal where the buyer uses a fake name."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Ghost deals are often the result of'Shadow Committee' friction that the Champion couldn't navigate alone. Documentation like the'Closing Packet' helps prevent this."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think of a deal you recently lost or that stalled at the finish line. Looking back, where was the 'Drag'? Was it a technical hurdle, a legal delay, or a lack of internal alignment? How would providing a 'Closing Packet' or proactive project management have changed that outcome?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student correctly identifies a source of'Drag' (Uncertainty, Friction, Shadow Committee) and proposes a project-management based solution rather than a traditional selling move."
+        }
+    ]
+}

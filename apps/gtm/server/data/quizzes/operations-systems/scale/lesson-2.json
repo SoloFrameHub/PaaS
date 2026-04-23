@@ -1,0 +1,72 @@
+{
+  "lessonId": "2",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "SDR vs AE vs Fractional vs VA: First Hire Matrix",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Before picking a role for your first sales hire, what must you do first?",
+      "options": [
+        { "id": "a", "text": "Check competitor job postings" },
+        {
+          "id": "b",
+          "text": "Name the specific problem you're solving: pipeline, close rate, process, or capacity"
+        },
+        { "id": "c", "text": "Determine the budget" },
+        { "id": "d", "text": "Post on LinkedIn to gauge interest" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every first sales hire solves exactly one problem. Before you pick the role, name the problem: Is it pipeline (not enough meetings), close rate (meetings that don't convert), process (you don't know what's working), or capacity (closing well but can't handle more)?"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the revenue threshold for considering a Fractional Sales Leader?",
+      "options": [
+        { "id": "a", "text": "$0 — any stage" },
+        { "id": "b", "text": "$5K+ MRR" },
+        { "id": "c", "text": "$10K+ MRR" },
+        { "id": "d", "text": "$50K+ MRR" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A Fractional Sales Leader costs $2,000-5,000/month for 5-15 hours/week. You need $10K+ MRR to afford this. They diagnose your process, build your playbook, and coach you — they're a force multiplier, not a replacement."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What was the result of Rachel hiring a fractional sales leader at $15K MRR?",
+      "options": [
+        { "id": "a", "text": "She lost money and fired them" },
+        {
+          "id": "b",
+          "text": "Revenue grew from $15K to $27K MRR in 90 days, then she onboarded a part-time SDR"
+        },
+        { "id": "c", "text": "Nothing changed" },
+        { "id": "d", "text": "She realized she didn't need help" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The fractional helped Rachel document her playbook, set up follow-up cadences, create an objection database, and define her ICP. Revenue grew from $15K to $27K MRR. Then she used the documented process to onboard a part-time SDR."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A founder who needs pipeline should hire a closer (AE) as their first sales hire.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. A founder who needs pipeline should hire an SDR or fractional, not a closer. A founder who needs more meetings hires an SDR. A closer will keep having pipeline problems if pipeline is the bottleneck."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "What is your primary sales constraint right now: pipeline, close rate, process, or capacity? Based on this, which of the four roles (Fractional, PT SDR, FT SDR, FT AE) would be your best first hire and why?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response correctly identifies their specific constraint, matches it to the appropriate role with reasoning from the lesson's matrix, and considers their revenue level relative to the role's cost requirements."
+    }
+  ]
+}

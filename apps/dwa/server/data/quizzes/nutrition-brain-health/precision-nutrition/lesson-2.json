@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the significance of the EASe-GAD Trial in nutritional psychiatry?",
+            "options": [
+                { "id": "opt1", "text": "It was the first study to prove that supplements cure anxiety" },
+                { "id": "opt2", "text": "It was the first randomized controlled trial specifically testing dietary intervention for generalized anxiety disorder" },
+                { "id": "opt3", "text": "It proved that Mediterranean diets prevent all mental health conditions" },
+                { "id": "opt4", "text": "It was a large-scale study of magnesium supplementation for panic disorder" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The EASe-GAD Trial (2023) was the first rigorously designed RCT to test whether a structured dietary intervention could reduce anxiety symptoms in individuals diagnosed with GAD. Prior to this trial, virtually all nutritional psychiatry RCTs focused on depression."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which form of magnesium is preferred for anxiety management, and why?",
+            "options": [
+                { "id": "opt1", "text": "Magnesium oxide, because it has the highest elemental magnesium content" },
+                { "id": "opt2", "text": "Magnesium sulfate, because it is used in hospitals" },
+                { "id": "opt3", "text": "Magnesium carbonate, because it is the most natural form" },
+                { "id": "opt4", "text": "Magnesium glycinate, because it has ~80% bioavailability and glycine provides a synergistic calming effect" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Magnesium glycinate is the preferred form for anxiety. It has approximately 80% bioavailability, and glycine itself is an inhibitory neurotransmitter that provides a synergistic calming effect. By contrast, magnesium oxide has only about 4% bioavailability."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "At what dosage has inositol shown efficacy for panic disorder in clinical trials?",
+            "options": [
+                { "id": "opt1", "text": "500 mg to 1 g per day" },
+                { "id": "opt2", "text": "2-4 g per day" },
+                { "id": "opt3", "text": "12-18 g per day" },
+                { "id": "opt4", "text": "50-100 mg per day" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Inositol at 12-18 g/day reduced panic attack frequency and severity in controlled trials. One crossover study found inositol comparable to fluvoxamine (an SSRI) in reducing panic attacks, with fewer side effects. The therapeutic dose is titrated up gradually from 2-4 g/day."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does reactive hypoglycemia relate to panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "It has no established relationship with panic disorder" },
+                { "id": "opt2", "text": "It produces symptoms physiologically identical to panic — rapid heartbeat, sweating, tremor, dizziness, and dread" },
+                { "id": "opt3", "text": "It only affects people with diabetes" },
+                { "id": "opt4", "text": "It reduces anxiety by lowering cortisol levels" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Reactive hypoglycemia — the blood sugar crash that occurs 2-4 hours after high-glycemic meals — produces symptoms that are physiologically identical to panic. For individuals with panic disorder, these episodes can trigger or exacerbate panic attacks. Stabilizing blood sugar through balanced meals is a foundational intervention."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why was the systematic review finding that magnesium's anxiolytic effect is more pronounced in individuals with low baseline magnesium clinically important?",
+            "options": [
+                { "id": "opt1", "text": "It means magnesium only works as a sedative at very high doses" },
+                { "id": "opt2", "text": "It suggests the benefit is partly corrective, and given that 50-68% of the population may be magnesium-deficient, the practical relevance is substantial" },
+                { "id": "opt3", "text": "It proves that magnesium works equally well for everyone regardless of baseline levels" },
+                { "id": "opt4", "text": "It indicates that magnesium supplements should only be taken with a prescription" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The finding that magnesium supplementation for anxiety is most effective in individuals with low baseline status means the benefit is at least partly corrective (fixing a deficiency). Given that an estimated 50-68% of the general population consumes less than the RDA for magnesium, and stress itself increases magnesium excretion, the practical relevance is substantial."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "2",
+    "title": "Nutrition for Anxiety Disorders - Quiz"
+}

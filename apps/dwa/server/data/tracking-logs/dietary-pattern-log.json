@@ -1,0 +1,112 @@
+{
+  "id": "dietary-pattern-log",
+  "title": "Dietary Pattern Tracking Log",
+  "description": "Track your daily dietary patterns alongside mood and energy to discover which eating habits best support your mental health. Based on Mediterranean Diet Adherence and Dietary Inflammatory Index research.",
+  "instructions": "Complete this log daily. Focus on overall dietary patterns rather than calorie counting. Research shows that tracking dietary patterns for 2-4 weeks reveals meaningful mood connections.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "fruitVegServings",
+      "label": "Fruit and vegetable servings today",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 20,
+      "placeholder": "e.g., 5"
+    },
+    {
+      "id": "wholeGrains",
+      "label": "Did you eat whole grains today?",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "id": "fishOrOmega3",
+      "label": "Did you eat fish or omega-3 rich foods today?",
+      "type": "boolean",
+      "required": false
+    },
+    {
+      "id": "processedFoodLevel",
+      "label": "How much ultra-processed food did you eat today?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "minimal", "label": "Minimal (1-2 items)" },
+        { "value": "moderate", "label": "Moderate (3-4 items)" },
+        { "value": "high", "label": "High (5+ items)" }
+      ]
+    },
+    {
+      "id": "homeCookedMeals",
+      "label": "How many meals were home-cooked today?",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 5,
+      "placeholder": "e.g., 2"
+    },
+    {
+      "id": "moodRating",
+      "label": "Overall mood today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very low",
+        "2": "Low",
+        "3": "Neutral",
+        "4": "Good",
+        "5": "Very good"
+      }
+    },
+    {
+      "id": "anxietyLevel",
+      "label": "Anxiety level today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "None",
+        "2": "Mild",
+        "3": "Moderate",
+        "4": "High",
+        "5": "Severe"
+      }
+    },
+    {
+      "id": "energySteadiness",
+      "label": "How steady was your energy today?",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Many crashes",
+        "2": "Some crashes",
+        "3": "Moderate",
+        "4": "Mostly steady",
+        "5": "Very steady"
+      }
+    },
+    {
+      "id": "observations",
+      "label": "What did you notice about your food-mood connection today?",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., Energy was much steadier after switching to whole grain bread at lunch"
+    }
+  ],
+  "derivedMetrics": [
+    {
+      "id": "dietQualityScore",
+      "label": "Diet Quality Score",
+      "formula": "dietQualityScore",
+      "unit": "points"
+    }
+  ],
+  "disclaimer": "This tracking log is for educational pattern recognition, not calorie counting or restrictive eating. If tracking food triggers anxiety or disordered eating behaviors, please stop and consult a healthcare provider. If you are in crisis, call or text 988."
+}

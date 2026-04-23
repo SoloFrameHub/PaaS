@@ -1,0 +1,72 @@
+{
+  "lessonId": "1",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "The Hire Timing Decision Tree",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the Founder-First Principle, what can only the founder do?",
+      "options": [
+        { "id": "a", "text": "Close deals" },
+        { "id": "b", "text": "Discover the first sales motion" },
+        { "id": "c", "text": "Manage a CRM" },
+        { "id": "d", "text": "Write email sequences" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Only the founder can discover the first sales motion. A hire can optimize and execute a playbook that works. They cannot write the playbook from scratch. If you can't sell it yourself consistently, no one you hire will fix that."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened when David hired an SDR at $4,500/month with only 8 customers?",
+      "options": [
+        { "id": "a", "text": "Revenue doubled in 3 months" },
+        {
+          "id": "b",
+          "text": "The SDR was gone after 3 months and revenue barely moved"
+        },
+        { "id": "c", "text": "The SDR discovered a new market segment" },
+        { "id": "d", "text": "The SDR built the sales playbook from scratch" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "David's SDR left after 3 months with barely any revenue movement. The problem wasn't the hire — it was the timing. David had no written sequences, no objection handling document, no discovery script. He handed a blank page to someone and expected results."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the most common motivation for premature hiring?",
+      "options": [
+        { "id": "a", "text": "Having too much revenue" },
+        {
+          "id": "b",
+          "text": "Hating selling and wanting someone else to do it"
+        },
+        { "id": "c", "text": "Having too many qualified leads" },
+        { "id": "d", "text": "Investor pressure" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The most common premature hiring motivation is 'I hate selling.' But if selling feels miserable, it usually means your pitch isn't refined or your ICP isn't right — problems no hire can fix. Go back and refine the message first."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A sales hire can scale a proven motion but cannot discover one.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. A sales hire can only scale a proven motion. Experienced hires are trained to execute, not discover. An SDR handed ambiguous instructions defaults to generic outreach that doesn't work."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Be honest: what is your real motivation for wanting to hire? Is it because you've proven the motion and need scale, or because you want to escape selling? What prerequisites are you missing?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly examines their motivation (escape vs. scale), assesses whether they have the prerequisites (proven playbook, documented process, sufficient revenue), and identifies what needs to happen before a hire makes sense."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to motivational interviewing research and psychological reactance theory, what happens when a coach argues FOR change while a client expresses resistance?",
+      "options": [
+        {"id": "opt1", "text": "The client is convinced by the coach's arguments and becomes more motivated"},
+        {"id": "opt2", "text": "The client argues AGAINST change (sustain talk), digging in harder because arguing for change activates psychological reactance — humans resist perceived threats to autonomy"},
+        {"id": "opt3", "text": "Resistance disappears immediately"},
+        {"id": "opt4", "text": "The coach-client relationship strengthens through productive debate"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "When YOU argue for change, the client argues against it (sustain talk) — a self-fulfilling cycle. Psychological reactance explains why: humans resist when autonomy feels threatened. MI principle: meet resistance with curiosity and reflection, not confrontation. When resistance is explored rather than argued against, it often dissolves. Example: Client says 'I can't exercise.' Coach arguing ('Yes you can!') strengthens resistance. Coach exploring ('Tell me what makes it feel impossible') opens dialogue."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A client keeps missing commitments despite saying the goal matters to them. They use language like 'I should' and 'I have to' when discussing it. Which source of resistance is this MOST likely indicating?",
+      "options": [
+        {"id": "opt1", "text": "Lack of trust or safety in the coaching relationship"},
+        {"id": "opt2", "text": "Goal misalignment — the goal is externally imposed (someone else's idea) rather than intrinsically motivated"},
+        {"id": "opt3", "text": "The client is lazy or unmotivated"},
+        {"id": "opt4", "text": "Fear or overwhelm about the goal itself"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Obligation language ('should,' 'have to' vs. 'want to,' 'excited to') + lack of follow-through = goal misalignment. The goal is someone else's (doctor's, partner's, boss's), not theirs. Coaching response: 'I'm noticing this keeps getting deprioritized. Is this actually your goal, or what you feel you *should* do?' Give permission to let it go or reframe to align with their true values. Option 3 is judgment (not data). Option 4 would show anxiety, not detachment."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the DESC model, and when is it used in coaching?",
+      "options": [
+        {"id": "opt1", "text": "A goal-setting framework for describing desired outcomes"},
+        {"id": "opt2", "text": "A non-confrontational structure for addressing problematic behavior: Describe the observable behavior, Express the impact, Specify what you need, Consequences (if needed). Used when a pattern needs to be addressed while preserving the relationship."},
+        {"id": "opt3", "text": "A diagnostic tool for identifying mental health conditions"},
+        {"id": "opt4", "text": "A model for escalating consequences when clients don't comply"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "DESC is a feedback model for difficult conversations: (D) Describe specific observable behavior without judgment ('You've been 20 min late to our last 3 sessions'), (E) Express impact using I-statements ('When we start late, we can't dig in fully'), (S) Specify clear request ('I need you to arrive on time or give 24hr notice'), (C) Consequences if pattern continues ('If this continues, we may need to pause coaching'). Use when patterns harm the work or violate boundaries."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "A client becomes hostile during a session, yelling and saying 'You don't know what you're talking about! This is useless!' What is the appropriate response according to boundary enforcement principles?",
+      "options": [
+        {"id": "opt1", "text": "Continue the session normally — unconditional positive regard means accepting all behavior"},
+        {"id": "opt2", "text": "Name it calmly ('The conversation has shifted to personal attacks — that's not okay'), state your boundary ('I won't continue when I'm being yelled at'), offer choice ('Let's take a break or find you another coach'), and end session if it continues"},
+        {"id": "opt3", "text": "Yell back to assert authority"},
+        {"id": "opt4", "text": "Ignore the outburst and change the subject"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "You can hold boundaries (refusing abuse) while valuing the person. Unconditional positive regard ≠ accepting harmful behavior directed at you. Protocol: (1) name it calmly, (2) state boundary, (3) offer choice (break/end session/different coach), (4) end session if abuse continues, (5) seek supervision after. Repeated hostility may mean relationship isn't viable. Option 1 enables abuse. Option 3 escalates. Option 4 avoids but doesn't address."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "According to the lesson, resistance is almost never about what?",
+      "options": [
+        {"id": "opt1", "text": "The client's values, fears, or motivations"},
+        {"id": "opt2", "text": "Trust or safety in the relationship"},
+        {"id": "opt3", "text": "You personally — resistance is information about what's happening for the client, not a personal attack on the coach"},
+        {"id": "opt4", "text": "Goal alignment or approach mismatch"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Core reframe: resistance is almost never personal. It's data about what's happening for the client — lack of trust, goal misalignment, fear, values conflict, or approach mismatch. When coaches take resistance personally ('They're being difficult, they don't respect me'), it activates judgment and frustration. When coaches get curious ('What is this behavior telling me about their experience?'), they can address the actual underlying issue. Depersonalizing resistance prevents defensiveness and enables effective problem-solving."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "9",
+  "title": "Dealing with Resistance and Difficult Conversations - Quiz"
+}

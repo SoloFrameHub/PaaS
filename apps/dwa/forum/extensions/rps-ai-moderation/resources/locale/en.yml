@@ -1,0 +1,39 @@
+rps-ai-moderation:
+  admin:
+    title: AI Content Moderation
+    description: Configure AI-assisted moderation for community safety.
+
+    api_key_label: OpenAI API Key
+    api_key_help: Server-side key for the moderation API. Stored securely.
+
+    api_provider_label: API Provider
+    api_provider_openai: OpenAI (omni-moderation-latest)
+
+    enabled_label: Enable AI Moderation
+    enabled_help: When disabled, all posts are allowed without AI screening.
+
+    threshold_level1_label: "Level 1 Threshold (Sensitive)"
+    threshold_level1_help: "Score above this triggers a soft internal flag. Default: 0.1"
+
+    threshold_level2_label: "Level 2 Threshold (Concerning)"
+    threshold_level2_help: "Score above this holds the post for moderator review. Default: 0.3"
+
+    threshold_level3_label: "Level 3 Threshold (Severe)"
+    threshold_level3_help: "Score above this auto-hides the post and alerts staff. Default: 0.7"
+
+    crisis_message_label: Crisis Resource Message
+    crisis_message_help: Shown to users when their content is held or hidden.
+
+  forum:
+    post_held_title: Your post is being reviewed
+    post_held_message: >
+      Our system detected language that might indicate you're going through
+      something really difficult. A moderator will review this shortly.
+    post_hidden_title: Post under review
+    post_hidden_message: >
+      This post has been temporarily hidden for review by our safety team.
+
+    crisis_banner: >
+      This community is for education and peer support only.
+      If you are in crisis, please contact the 988 Suicide & Crisis Lifeline
+      by calling or texting 988, or chat at 988lifeline.org.

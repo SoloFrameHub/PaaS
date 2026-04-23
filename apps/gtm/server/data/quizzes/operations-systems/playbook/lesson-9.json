@@ -1,0 +1,75 @@
+{
+  "lessonId": "9",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Quarterly Review & Playbook Updates",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How long should you consistently execute an acquisition strategy before evaluating whether to pivot?",
+      "options": [
+        { "id": "a", "text": "2-3 weeks" },
+        { "id": "b", "text": "30 days" },
+        { "id": "c", "text": "60+ days of consistent execution" },
+        { "id": "d", "text": "6+ months" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The 60-day minimum is critical. Cold email takes 2-4 weeks, LinkedIn content 6-8 weeks, referral systems 8-12 weeks. 70% of founders who pivot do so prematurely before 60 days — abandoning strategies just before they would have worked."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What kills most sales strategies?",
+      "options": [
+        { "id": "a", "text": "Bad strategy design" },
+        { "id": "b", "text": "Insufficient budget" },
+        {
+          "id": "c",
+          "text": "Never being reviewed — they die from neglect, not from being wrong"
+        },
+        { "id": "d", "text": "Market competition" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Most sales strategies die not because they were wrong, but because they were never reviewed. Founders execute the January playbook in March without updating it as ICP, messaging, and channel data evolve."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How should your playbook be versioned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Don't version — just update the single document"
+        },
+        {
+          "id": "b",
+          "text": "Like software: v1.0 to v1.1 (30-day refinements) to v2.0 (90-day strategic update)"
+        },
+        { "id": "c", "text": "Create a new document for each quarter" },
+        { "id": "d", "text": "Only version after major pivots" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Version like software: v1.0 at launch, v1.1 for 30-day refinements, v2.0 for 90-day strategic updates. The best playbook isn't the most sophisticated — it's the one you're actually using, updating, and executing against right now."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If your channel isn't producing results after 3 weeks, you should pivot to a different channel immediately.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Most channels have a ramp period where results lag activity. Pivoting at week 3 or 4 means abandoning strategies before they work. Wait 60 days of consistent execution before evaluating whether to change."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "When did you last review and update your acquisition approach? What version is your current playbook? What data from the last 30-60 days would inform your next update?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies when they last reviewed their approach, acknowledges whether they have a versioned playbook, and identifies specific data points from recent execution (reply rates, channel performance, conversion rates) that should inform updates."
+    }
+  ]
+}

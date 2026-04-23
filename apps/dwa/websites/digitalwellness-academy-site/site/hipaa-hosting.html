@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HIPAA-Compliant Hosting & BAA Guide for Mental Health Platforms | Digital Wellness Academy</title>
+  <meta name="description" content="Which cloud providers will sign a HIPAA Business Associate Agreement (BAA)? AWS, Google Cloud, and Azure will. Hostinger, Vercel hobby, and shared hosting won't. Plus: how the DWA platform is designed to deploy to any BAA-signed provider.">
+  <meta name="keywords" content="HIPAA BAA hosting, business associate agreement cloud, HIPAA compliant hosting mental health, AWS HIPAA BAA, Google Cloud HIPAA, Azure HIPAA, mental health platform hosting compliance">
+  <link rel="canonical" href="https://digitalwellness.academy/hipaa-hosting.html">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="HIPAA-Compliant Hosting & BAA Guide | Digital Wellness Academy">
+  <meta property="og:description" content="Which hosting providers will sign a BAA — and which won't. How the DWA platform is designed to deploy to any HIPAA-compliant cloud.">
+  <meta property="og:url" content="https://digitalwellness.academy/hipaa-hosting.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Digital Wellness Academy">
+  <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://digitalwellness.academy/images/og-image.jpg">
+  <meta name="twitter:title" content="HIPAA Hosting & BAA Guide | Digital Wellness Academy">
+  <meta name="twitter:description" content="AWS, GCP, Azure will sign a BAA. Hostinger, shared hosting won't. Here's how to pick the right provider for a clinical mental health platform.">
+
+  <link rel="icon" href="./images/icon.jpg">
+  <link rel="apple-touch-icon" href="./images/icon.jpg">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "HIPAA-Compliant Hosting & BAA Guide for Mental Health Platforms",
+    "url": "https://digitalwellness.academy/hipaa-hosting.html",
+    "description": "Which cloud providers will sign a HIPAA Business Associate Agreement (BAA), which won't, and how the Digital Wellness Academy platform is designed to deploy to any BAA-signed infrastructure.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Digital Wellness Academy",
+      "url": "https://digitalwellness.academy/"
+    },
+    "about": [
+      { "@type": "Thing", "name": "HIPAA Business Associate Agreement" },
+      { "@type": "Thing", "name": "HIPAA-compliant cloud hosting" },
+      { "@type": "Thing", "name": "Amazon Web Services HIPAA" },
+      { "@type": "Thing", "name": "Google Cloud HIPAA" },
+      { "@type": "Thing", "name": "Microsoft Azure HIPAA" }
+    ],
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalwellness.academy/" },
+        { "@type": "ListItem", "position": 2, "name": "Architecture", "item": "https://digitalwellness.academy/architecture.html" },
+        { "@type": "ListItem", "position": 3, "name": "HIPAA Hosting & BAA Guide", "item": "https://digitalwellness.academy/hipaa-hosting.html" }
+      ]
+    },
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which cloud hosting providers will sign a HIPAA BAA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AWS, Google Cloud Platform, Microsoft Azure, DigitalOcean (Business plan), IBM Cloud, Oracle Cloud, and Rackspace all offer HIPAA BAAs. Each requires a separate BAA request — HIPAA compliance is not automatic just by using these platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Hostinger sign a HIPAA BAA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Hostinger does not offer Business Associate Agreements and should not be used to host any application that processes PHI (Protected Health Information) under HIPAA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Vercel sign a HIPAA BAA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vercel Enterprise tier offers a BAA. Vercel Hobby and Pro plans do not. For a HIPAA-covered deployment, you must be on Vercel Enterprise and have a signed BAA in place before going live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is shared hosting HIPAA compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shared hosting (GoDaddy, Bluehost, DreamHost, Hostinger, etc.) is not suitable for HIPAA workloads. These providers share infrastructure across customers, cannot guarantee isolation of PHI, and do not offer BAAs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the Digital Wellness Academy platform run on any cloud provider?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The platform is fully containerized (Docker Compose) and provider-agnostic. It can be deployed to any cloud that provides a BAA — AWS, GCP, Azure, DigitalOcean Business, or a HIPAA-compliant bare-metal provider. The application, database, and AI safety service all run in containers with no provider-specific dependencies."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="css/tailwind.css">
+
+    <!-- Schema: Speakable (GEO/AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".hero-description", "meta[name='description']"]
+      },
+      "url": "https://digitalwellness.academy/hipaa-hosting.html"
+    }
+    </script>
+</head>
+<body class="bg-slate-50">
+
+  <!-- Navigation -->
+  <header class="relative w-full bg-slate-900 z-30" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="shrink-0 mr-4">
+          <a href="./index.html" class="block text-2xl font-bold text-blue-400">Digital Wellness Academy</a>
+        </div>
+        <nav class="hidden xl:flex xl:grow">
+          <ul class="flex grow justify-center flex-wrap items-center">
+            <li class="relative group">
+              <button class="font-medium text-blue-400 px-3 py-2 inline-flex items-center">Platform<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+              <ul class="absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
+                  <li><a href="./platform.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Platform Overview</a></li>
+                  <li><a href="./architecture.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Architecture</a></li>
+                  <li><a href="./hipaa-hosting.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-medium">HIPAA Hosting Guide</a></li>
+                  <li><a href="./framework.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">The Framework</a></li>
+                  <li><a href="./custom-content.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Custom Content</a></li>
+                  <li><a href="./courses.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Course Catalog</a></li>
+                                <li><a href="./marketing-flywheel.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Marketing Flywheel</a></li>
+                                <li><a href="./treatment-integration.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Treatment Integration</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="relative group">
+              <button class="font-medium text-slate-300 hover:text-white px-3 py-2 inline-flex items-center">For<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+              <ul class="absolute left-0 top-full pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                <div class="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
+                  <li><a href="./for-providers.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Psychiatric Providers</a></li>
+                  <li><a href="./for-universities.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Universities & Colleges</a></li>
+                  <li><a href="./for-enterprises.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Enterprises</a></li>
+                  <li><a href="./for-investors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Investors</a></li>
+                </div>
+              </ul>
+            </li>
+            <li><a href="./pricing.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">Pricing</a></li>
+          </ul>
+          <ul class="flex grow justify-end flex-wrap items-center">
+            <li><a href="https://digital-wellness-education.digitalwellness.academy/signin" class="font-medium text-slate-300 hover:text-white px-3 py-2">Sign in</a></li>
+            <li><a href="./contact.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">Apply for Beta →</a></li>
+          </ul>
+        </nav>
+        <button class="xl:hidden text-white" onclick="toggleMobileMenu()" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden xl:hidden fixed inset-0 z-40 bg-white pt-20 px-6 overflow-y-auto">
+    <nav><ul class="space-y-2 pb-12">
+      <li class="pt-4"><div class="font-semibold text-gray-500 uppercase text-xs">Platform</div>
+        <ul class="ml-2 mt-2 space-y-2">
+          <li><a href="./platform.html" class="block text-lg text-gray-800">Overview</a></li>
+          <li><a href="./architecture.html" class="block text-lg text-gray-800">Architecture</a></li>
+          <li><a href="./hipaa-hosting.html" class="block text-lg text-blue-600 font-medium">HIPAA Hosting Guide</a></li>
+          <li><a href="./framework.html" class="block text-lg text-gray-800">The Framework</a></li>
+          <li><a href="./courses.html" class="block text-lg text-gray-800">Course Catalog</a></li>
+        </ul>
+      </li>
+      <li class="pt-4"><div class="font-semibold text-gray-500 uppercase text-xs">For</div>
+        <ul class="ml-2 mt-2 space-y-2">
+          <li><a href="./for-providers.html" class="block text-lg text-gray-800">Psychiatric Providers</a></li>
+          <li><a href="./for-universities.html" class="block text-lg text-gray-800">Universities & Colleges</a></li>
+          <li><a href="./for-enterprises.html" class="block text-lg text-gray-800">Enterprises</a></li>
+          <li><a href="./for-investors.html" class="block text-lg text-gray-800">Investors</a></li>
+        </ul>
+      </li>
+      <li class="pt-4"><a href="./pricing.html" class="block text-lg font-medium text-gray-800">Pricing</a></li>
+      <li><a href="./contact.html" class="block text-lg font-medium text-blue-600">Apply for Beta →</a></li>
+    </ul></nav>
+  </div>
+  <script>function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }</script>
+
+  <!-- Hero -->
+  <section class="bg-slate-800 py-12 px-5">
+    <div class="max-w-7xl mx-auto">
+      <nav class="flex items-center gap-2 text-sm text-slate-400 mb-6">
+        <a href="./index.html" class="hover:text-blue-400 transition">Home</a>
+        <span>/</span>
+        <a href="./architecture.html" class="hover:text-blue-400 transition">Architecture</a>
+        <span>/</span>
+        <span class="text-slate-200">HIPAA Hosting Guide</span>
+      </nav>
+      <div class="max-w-3xl">
+        <span class="inline-block bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">HIPAA Compliance</span>
+        <h1 class="text-4xl font-bold text-white mb-4">HIPAA-Compliant Hosting &amp; the BAA Requirement</h1>
+        <p class="text-slate-300 text-lg leading-relaxed">The Digital Wellness Academy platform is architected for HIPAA compliance — but compliance doesn't activate until your hosting provider signs a Business Associate Agreement (BAA) with your practice. Here's exactly what that means, which providers will sign one, and how the platform is designed to run on any of them.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-5 sm:px-6 py-12 space-y-16">
+
+    <!-- What is a BAA -->
+    <section>
+      <h2 class="text-2xl font-bold text-slate-800 mb-4">What is a BAA and why does it matter?</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="prose max-w-none text-slate-600 space-y-4">
+          <p>Under HIPAA, any vendor that receives, maintains, transmits, or processes Protected Health Information (PHI) on behalf of a covered entity (your practice) is a <strong>Business Associate</strong>. Before that relationship begins, both parties must sign a <strong>Business Associate Agreement</strong> — a contract that specifies how PHI will be protected, what breach notification looks like, and what happens if the vendor is compromised.</p>
+          <p>This applies to your cloud hosting provider. If patient data lives on their servers — even encrypted — they are a Business Associate and a BAA is legally required. Operating without one is a HIPAA violation, regardless of how secure your application code is.</p>
+          <p class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-amber-800 text-sm"><strong>Important:</strong> A signed BAA does not make a provider HIPAA-compliant on its own. It establishes legal responsibility. You still need to configure the platform correctly — encryption at rest, TLS in transit, access controls, audit logging — which the DWA platform does by default.</p>
+        </div>
+        <div class="bg-slate-800 rounded-2xl p-7 text-white">
+          <h3 class="font-bold text-lg mb-4 text-blue-300">The BAA checklist</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>Hosting provider has signed a BAA with your practice (not just with DWA)</span></li>
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>Database encryption at rest enabled (AES-256 minimum)</span></li>
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>TLS 1.2+ enforced on all network connections</span></li>
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>Audit logging active on all PHI-adjacent reads and writes</span></li>
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>Access controls scoped — providers see only their own patients</span></li>
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>Breach notification procedure documented and tested</span></li>
+            <li class="flex gap-3"><span class="text-green-400 font-bold shrink-0">✓</span><span>Third-party APIs that touch PHI also have BAAs (none in DWA — by design)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Provider table -->
+    <section>
+      <h2 class="text-2xl font-bold text-slate-800 mb-2">Which hosting providers will sign a BAA?</h2>
+      <p class="text-slate-500 mb-8">This list covers the most common providers evaluated by healthcare IT teams. Always verify directly with the provider — BAA availability changes, and you need a current signed copy on file.</p>
+
+      <!-- Will sign -->
+      <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span> Providers that will sign a BAA
+      </h3>
+      <div class="overflow-x-auto rounded-2xl border border-slate-200 mb-10">
+        <table class="w-full text-sm">
+          <thead class="bg-slate-50 border-b border-slate-200">
+            <tr>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">Provider</th>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">BAA Availability</th>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">Notes</th>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">Best for DWA</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">Amazon Web Services (AWS)</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Available</span></td>
+              <td class="px-5 py-4 text-slate-600">Self-service BAA via AWS Artifact console. Covers EC2, RDS, S3, ECS, EKS, and most HIPAA-eligible services. Comprehensive compliance program.</td>
+              <td class="px-5 py-4 text-slate-600">EC2 + RDS + S3 for most deployments; ECS/EKS for container orchestration</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">Google Cloud Platform (GCP)</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Available</span></td>
+              <td class="px-5 py-4 text-slate-600">BAA signed online via GCP console. Strong healthcare compliance program (HIPAA, HITRUST). Cloud Run and Cloud SQL are HIPAA-eligible.</td>
+              <td class="px-5 py-4 text-slate-600">Cloud Run (containers) + Cloud SQL (Postgres) + GCS (S3-compatible)</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">Microsoft Azure</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Available</span></td>
+              <td class="px-5 py-4 text-slate-600">BAA included in Microsoft Online Services Terms. Broadest set of HIPAA-eligible services of any major provider. Strong for enterprise buyers already in the Microsoft ecosystem.</td>
+              <td class="px-5 py-4 text-slate-600">Azure App Service + Azure Database for PostgreSQL + Azure Container Instances</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">DigitalOcean</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Business plan</span></td>
+              <td class="px-5 py-4 text-slate-600">BAA available on Business plan ($15/seat/month). Simpler than the hyperscalers. Good option for small practices that want a straightforward managed Postgres + Droplet deployment.</td>
+              <td class="px-5 py-4 text-slate-600">Managed PostgreSQL + Droplet (Docker) + Spaces (S3-compatible)</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">IBM Cloud</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Available</span></td>
+              <td class="px-5 py-4 text-slate-600">BAA available; IBM has a strong healthcare pedigree (Watson Health history). Less common for new deployments but well-suited for enterprise health systems.</td>
+              <td class="px-5 py-4 text-slate-600">Code Engine (containers) + IBM Db2/PostgreSQL</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">Oracle Cloud Infrastructure</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Available</span></td>
+              <td class="px-5 py-4 text-slate-600">BAA available. Strong choice if the practice already uses Oracle for EHR or billing systems. OCI's Always Free tier can cover dev/staging.</td>
+              <td class="px-5 py-4 text-slate-600">Container Instances + Autonomous Database (Postgres-compatible)</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">Rackspace</td>
+              <td class="px-5 py-4"><span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Available</span></td>
+              <td class="px-5 py-4 text-slate-600">Managed cloud with dedicated HIPAA support. Good for practices that want white-glove management rather than self-service infrastructure.</td>
+              <td class="px-5 py-4 text-slate-600">Managed hosting tier</td>
+            </tr>
+            <tr class="bg-white hover:bg-green-50/30 transition">
+              <td class="px-5 py-4 font-semibold text-slate-800">Vercel (Enterprise)</td>
+              <td class="px-5 py-4"><span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-2 py-0.5 rounded-full">✓ Enterprise only</span></td>
+              <td class="px-5 py-4 text-slate-600">BAA only on Vercel Enterprise plan. Vercel Hobby and Pro plans do NOT qualify. For Next.js-native deployments this is the most frictionless path — but Enterprise pricing applies.</td>
+              <td class="px-5 py-4 text-slate-600">Next.js app layer only (pair with a BAA-compliant Postgres/Redis provider for data)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Won't sign -->
+      <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span> Providers that will NOT sign a BAA
+      </h3>
+      <div class="overflow-x-auto rounded-2xl border border-red-100 mb-4">
+        <table class="w-full text-sm">
+          <thead class="bg-red-50 border-b border-red-100">
+            <tr>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">Provider</th>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">BAA Status</th>
+              <th class="text-left px-5 py-3 font-semibold text-slate-700">Why it matters</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-red-50">
+            <tr class="bg-white">
+              <td class="px-5 py-4 font-semibold text-slate-800">Hostinger</td>
+              <td class="px-5 py-4"><span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded-full">✗ No BAA</span></td>
+              <td class="px-5 py-4 text-slate-600">Shared hosting architecture with no HIPAA offering. Cannot be used for any patient-facing application that processes PHI. Suitable for static marketing pages only if no patient data is involved.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-5 py-4 font-semibold text-slate-800">Vercel (Hobby / Pro)</td>
+              <td class="px-5 py-4"><span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded-full">✗ No BAA</span></td>
+              <td class="px-5 py-4 text-slate-600">Free and Pro plans have no BAA option. Common mistake: developers deploy a Next.js app to Vercel Pro thinking the encrypted deployment is HIPAA compliant. It is not — the missing BAA is the gap.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-5 py-4 font-semibold text-slate-800">Netlify</td>
+              <td class="px-5 py-4"><span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded-full">✗ No BAA</span></td>
+              <td class="px-5 py-4 text-slate-600">No BAA available on any plan. Do not use for clinical applications.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-5 py-4 font-semibold text-slate-800">GoDaddy / Bluehost / DreamHost</td>
+              <td class="px-5 py-4"><span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded-full">✗ No BAA</span></td>
+              <td class="px-5 py-4 text-slate-600">Shared hosting providers. No BAA, no dedicated infrastructure, no HIPAA eligibility. Appropriate only for static marketing sites with zero PHI.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-5 py-4 font-semibold text-slate-800">Railway / Render (standard plans)</td>
+              <td class="px-5 py-4"><span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-2 py-0.5 rounded-full">⚠ Verify</span></td>
+              <td class="px-5 py-4 text-slate-600">Popular developer-friendly PaaS options. BAA availability is limited or absent on standard plans — verify directly before any clinical deployment.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 mt-2">Provider BAA policies change. Always verify directly with the vendor and get a current signed copy before go-live. This table reflects information available as of April 2026.</p>
+    </section>
+
+    <!-- Platform portability -->
+    <section>
+      <h2 class="text-2xl font-bold text-slate-800 mb-2">How the DWA platform is designed to be portable</h2>
+      <p class="text-slate-500 mb-8">Every infrastructure choice was made to avoid provider lock-in. A practice that starts on AWS can move to GCP or DigitalOcean without rewriting the application.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2">Fully containerized (Docker)</h3>
+          <p class="text-sm text-slate-600">The entire stack ships as a <code class="bg-slate-100 px-1 rounded text-xs">docker-compose.yml</code>: Next.js app, PostgreSQL, Redis, and the FastAPI DistilBERT service. Any cloud that can run containers can run DWA — no proprietary runtime dependencies.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582 4-8 4m0 5c0 2.21 3.582 4 8 4"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2">Standard PostgreSQL — no proprietary DB</h3>
+          <p class="text-sm text-slate-600">The data layer runs on vanilla PostgreSQL via Drizzle ORM. No Aurora-specific extensions, no Cosmos DB APIs, no Google Spanner. You can run managed Postgres on AWS RDS, GCP Cloud SQL, Azure Database for PostgreSQL, DigitalOcean Managed Databases, or self-hosted — the application doesn't care.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2">S3-compatible object storage</h3>
+          <p class="text-sm text-slate-600">File storage uses the S3 API (via MinIO in dev). In production, point the <code class="bg-slate-100 px-1 rounded text-xs">S3_ENDPOINT</code> env var at AWS S3, GCS (S3-compatible), DigitalOcean Spaces, Backblaze B2, or any other S3-compatible provider. No code change required.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2">AI safety service is self-hosted</h3>
+          <p class="text-sm text-slate-600">The DistilBERT distress classifier runs in its own Docker container — not on a third-party API. This means patient text <em>never crosses an external API boundary</em>, and the classifier moves with the deployment. Swap cloud providers; the safety layer follows.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2">Environment-variable configuration</h3>
+          <p class="text-sm text-slate-600">All provider-specific values — database URL, Redis endpoint, S3 bucket/endpoint, SMTP provider, Stripe keys — are injected via environment variables. Switching providers is a config change, not a code change. No hardcoded provider SDKs in the application layer.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2">Database migrations are versioned</h3>
+          <p class="text-sm text-slate-600">Drizzle ORM manages schema migrations in code. On a new deployment (or a provider migration), the Docker entrypoint runs <code class="bg-slate-100 px-1 rounded text-xs">drizzle-kit push</code> automatically before starting the server. Fresh database, correct schema, zero manual steps.</p>
+        </div>
+
+      </div>
+
+      <!-- Migration path callout -->
+      <div class="bg-slate-800 rounded-2xl p-8 text-white">
+        <h3 class="text-xl font-bold mb-4">Typical migration path when a practice goes live</h3>
+        <div class="grid md:grid-cols-4 gap-4">
+          <div class="bg-slate-700/60 rounded-xl p-4 text-center">
+            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold">1</div>
+            <div class="font-semibold text-sm mb-1">Practice selects provider</div>
+            <div class="text-xs text-slate-400">AWS, GCP, Azure, or DigitalOcean Business — based on existing contracts and budget</div>
+          </div>
+          <div class="bg-slate-700/60 rounded-xl p-4 text-center">
+            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
+            <div class="font-semibold text-sm mb-1">BAA signed</div>
+            <div class="text-xs text-slate-400">Practice signs BAA with cloud provider. DWA provides a template checklist and reviews the scope before go-live approval</div>
+          </div>
+          <div class="bg-slate-700/60 rounded-xl p-4 text-center">
+            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold">3</div>
+            <div class="font-semibold text-sm mb-1">Environment configured</div>
+            <div class="text-xs text-slate-400">DWA provides a production .env template. Practice IT or DWA onboarding team populates provider-specific endpoints</div>
+          </div>
+          <div class="bg-slate-700/60 rounded-xl p-4 text-center">
+            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold">4</div>
+            <div class="font-semibold text-sm mb-1">Deployment verified</div>
+            <div class="text-xs text-slate-400">Smoke tests, distress classifier end-to-end test, provider portal access verification — then go-live</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLM BAA section -->
+    <section>
+      <h2 class="text-2xl font-bold text-slate-800 mb-2">AI coaching &amp; the LLM BAA question</h2>
+      <p class="text-slate-500 mb-8">This is the question every HIPAA-conscious IT team asks — and the answer is more nuanced than most platforms admit.</p>
+
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden mb-6">
+        <div class="bg-slate-700 px-7 py-4">
+          <h3 class="text-white font-bold text-lg">The rule: a BAA is required whenever PHI crosses an API boundary</h3>
+          <p class="text-slate-300 text-sm mt-1">If a coaching prompt contains a patient's name, diagnosis, assessment scores, or any other PHI, the LLM provider receiving that prompt is a Business Associate and must have a signed BAA. The cleanest solution is to not cross any external boundary at all.</p>
+        </div>
+        <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+          <div class="p-6">
+            <div class="text-xs font-bold uppercase tracking-wide text-green-600 mb-2">✓ No BAA required</div>
+            <div class="font-semibold text-slate-800 mb-2">OpenRouter — Optimization School</div>
+            <p class="text-sm text-slate-600">When coaching context contains only course/lesson content (no patient identity, no clinical history, no assessment scores), no PHI crosses the API. OpenRouter works fine here and no BAA is needed with the LLM provider.</p>
+          </div>
+          <div class="p-6 bg-red-50">
+            <div class="text-xs font-bold uppercase tracking-wide text-red-600 mb-2">✗ Cannot use</div>
+            <div class="font-semibold text-slate-800 mb-2">OpenRouter — Therapeutic School + clinical context</div>
+            <p class="text-sm text-slate-600">OpenRouter is a routing proxy and <strong>does not offer a BAA</strong>. If a coaching prompt includes clinical context from the therapeutic school (PHQ-9 scores, provider notes, treatment goals), OpenRouter cannot legally be in the request chain. The platform detects this mode and routes around it.</p>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-bold uppercase tracking-wide text-blue-600 mb-2">✓ BAA available</div>
+            <div class="font-semibold text-slate-800 mb-2">OpenAI / Anthropic direct — Therapeutic School</div>
+            <p class="text-sm text-slate-600">When therapeutic integration is active, the platform bypasses OpenRouter and calls OpenAI or Anthropic directly. Both offer BAAs under their enterprise agreements. The practice's DWA deployment is configured with direct API keys for this mode.</p>
+          </div>
+        </div>
+
+        <!-- Self-hosted option — full width -->
+        <div class="p-6 bg-emerald-50 border-t border-emerald-100">
+          <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <div class="flex-1">
+              <div class="text-xs font-bold uppercase tracking-wide text-emerald-700 mb-2">✓✓ No external API call at all — advanced option</div>
+              <div class="font-semibold text-slate-800 mb-2">Self-hosted LLM (Ollama + Phi-3 Mini or Mistral 7B)</div>
+              <p class="text-sm text-slate-600">The platform supports routing all AI coaching through a small open-source model running locally on the VPS via <strong>Ollama</strong>. When inference happens entirely within your own infrastructure, no PHI crosses any external boundary — and no LLM vendor BAA is required at all.</p>
+            </div>
+            <div class="flex-1">
+              <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">How it works</div>
+              <ul class="text-sm text-slate-600 space-y-1">
+                <li class="flex gap-2"><span class="text-emerald-600">→</span> Fine-tune a 3–7B model on your content using QLoRA — free GPU hours on Kaggle (30hr/week) or Colab are sufficient</li>
+                <li class="flex gap-2"><span class="text-emerald-600">→</span> Deploy quantized GGUF weights via Ollama on any GPU-enabled instance (VPS GPU addon, RunPod serverless, or dedicated inference node)</li>
+                <li class="flex gap-2"><span class="text-emerald-600">→</span> Platform calls an internal endpoint — inference stays within your infrastructure boundary</li>
+                <li class="flex gap-2"><span class="text-emerald-600">→</span> Optimization School continues using OpenRouter (no PHI, no change needed)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 p-4 bg-white border border-emerald-200 rounded-xl text-sm text-slate-600">
+            <strong class="text-slate-800">Important:</strong> Self-hosting the LLM eliminates the AI <em>vendor</em> BAA — but does <strong>not</strong> eliminate the need for a BAA with your <em>hosting provider</em>. PHI at rest and in use on a VPS is still on someone else's hardware. Your cloud/VPS host still needs to sign a BAA (see the provider table above). The win here is removing the AI vendor from the chain entirely, not removing BAAs altogether.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 text-sm text-slate-600">
+        <strong class="text-slate-800">The safest default:</strong> The AI coaching feature ships in <em>PHI-free mode</em> by default — prompts contain only anonymized course/lesson context. Therapeutic clinical context is only injected when the practice has explicitly enabled provider integration AND has a BAA in place with their chosen LLM provider. This means most deployments never hit the LLM BAA question at all. For those that do, the self-hosted option is the cleanest long-term architecture.
+      </div>
+    </section>
+
+    <!-- Zero PII by default -->
+    <section>
+      <h2 class="text-2xl font-bold text-slate-800 mb-2">Zero PII shared by default</h2>
+      <p class="text-slate-500 mb-8">Most mental health platforms share everything with the practice automatically. DWA inverts this: <strong>nothing is shared unless the practice explicitly opts in</strong>. This architecture serves two goals — HIPAA risk containment and learner trust.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white rounded-2xl border border-slate-200 p-7">
+          <div class="inline-block bg-slate-100 text-slate-600 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">Default mode — all users</div>
+          <h3 class="font-bold text-slate-800 mb-3">Platform is a closed loop</h3>
+          <p class="text-sm text-slate-600 mb-4">By default, no patient data flows to the practice. The learner's course activity, assessment scores, mood logs, and distress events stay inside the platform. The practice has no visibility — not because of a technical limitation, but because this is the default state.</p>
+          <ul class="text-sm space-y-2 text-slate-600">
+            <li class="flex gap-2"><span class="text-green-500">✓</span><span>Works for Optimization School — no BAA needed, no clinical oversight required</span></li>
+            <li class="flex gap-2"><span class="text-green-500">✓</span><span>Works for self-directed therapeutic learners who aren't connected to a provider on the platform</span></li>
+            <li class="flex gap-2"><span class="text-green-500">✓</span><span>AI coaching uses PHI-free prompts — OpenRouter is compliant in this mode</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-blue-50 rounded-2xl border border-blue-200 p-7">
+          <div class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">Opt-in — therapeutic integration</div>
+          <h3 class="font-bold text-slate-800 mb-3">Practice enables provider coordination</h3>
+          <p class="text-sm text-slate-600 mb-4">When a practice enables therapeutic integration, a provider-patient relationship is established on the platform. <strong>The patient must consent</strong>. Once linked, the provider gains access to a scoped dashboard showing that patient's PHQ-9/GAD-7 trends, course activity summaries, and distress alerts — nothing else.</p>
+          <ul class="text-sm space-y-2 text-slate-600">
+            <li class="flex gap-2"><span class="text-blue-600">→</span><span>Requires: cloud hosting BAA + DWA BAA + patient consent</span></li>
+            <li class="flex gap-2"><span class="text-blue-600">→</span><span>AI coaching switches to direct OpenAI/Anthropic (bypasses OpenRouter)</span></li>
+            <li class="flex gap-2"><span class="text-blue-600">→</span><span>Provider sees aggregated outcomes — never raw journal text or free-form responses</span></li>
+            <li class="flex gap-2"><span class="text-blue-600">→</span><span>Crisis alerts route to the assigned provider immediately</span></li>
+            <li class="flex gap-2"><span class="text-blue-600">→</span><span>Supports RTM billing: CPT 98975–98978 documentation generated automatically</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- What providers see vs don't see -->
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+        <div class="px-7 py-5 border-b border-slate-100">
+          <h3 class="font-bold text-slate-800">What providers see — and what they never see</h3>
+          <p class="text-sm text-slate-500 mt-1">This applies to the opt-in therapeutic integration mode. In default mode, providers see nothing.</p>
+        </div>
+        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+          <div class="p-7">
+            <div class="text-xs font-bold text-green-700 uppercase tracking-wide mb-3">Providers CAN see (with patient consent)</div>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex gap-2"><span class="text-green-500">✓</span> PHQ-9 / GAD-7 / PCL-5 score trends over time</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Which courses are enrolled and completion status</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> 30-day mood rolling average (numeric, not text)</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Active distress alerts (level + timestamp, no text)</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Days active on platform in last 30 days</li>
+            </ul>
+          </div>
+          <div class="p-7 bg-slate-50">
+            <div class="text-xs font-bold text-red-700 uppercase tracking-wide mb-3">Providers NEVER see</div>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex gap-2"><span class="text-red-400">✗</span> Thought records, journal entries, or free-text responses</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> Lesson content the patient viewed</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> Quiz answers or individual question responses</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> Optimization School activity (isolated by design)</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> Data from other providers' patients</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> Any data if the patient revokes consent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <h2 class="text-2xl font-bold text-slate-800 mb-8">Frequently asked questions</h2>
+      <div class="space-y-4 max-w-3xl">
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <h3 class="font-bold text-slate-800 mb-2">Does DWA sign a BAA with licensee practices?</h3>
+          <p class="text-sm text-slate-600">Yes. Digital Wellness Academy signs a BAA with every licensed practice before go-live. This covers DWA's role as the platform provider. The practice also needs a separate BAA with their chosen cloud hosting provider, since that provider hosts the actual infrastructure.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <h3 class="font-bold text-slate-800 mb-2">Can I run DWA on my own on-premises servers?</h3>
+          <p class="text-sm text-slate-600">Yes. Because the platform is fully containerized with no cloud-specific dependencies, it can be deployed on bare-metal servers in a HIPAA-compliant data center or on-premises. You would still need physical security controls, encrypted storage, and documented breach procedures — but the application itself has no requirement for a specific cloud provider.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <h3 class="font-bold text-slate-800 mb-2">Does the DistilBERT classifier send data to any external API?</h3>
+          <p class="text-sm text-slate-600">No. The classifier runs entirely within your infrastructure. Patient text is sent to an internal FastAPI container, processed in memory, and the text is discarded after inference — only the label and confidence score are stored. No patient text ever crosses an external API boundary.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-amber-200 bg-amber-50 p-6">
+          <h3 class="font-bold text-slate-800 mb-2">What about the AI coaching features — do those send data to OpenAI or Anthropic?</h3>
+          <p class="text-sm text-slate-600 mb-3">This depends on <strong>which school the patient is enrolled in</strong> and <strong>whether the practice has opted into therapeutic integration</strong>.</p>
+          <ul class="text-sm text-slate-600 space-y-2 mb-3">
+            <li class="flex gap-2"><span class="text-green-600 font-bold shrink-0">✓</span><span><strong>Optimization School (default):</strong> No PHI involved. Coaching prompts contain only course/lesson context — no patient name, diagnosis, or clinical history. OpenRouter is fine here; no BAA required with the LLM provider.</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">⚠</span><span><strong>Therapeutic School with practice integration enabled:</strong> If the practice opts into the provider-coordination layer, coaching prompts may include clinical context (assessment scores, treatment goals). In this mode, the system bypasses OpenRouter and calls OpenAI or Anthropic directly — both offer enterprise BAAs. OpenRouter cannot be used for PHI-adjacent LLM calls because OpenRouter does not offer a BAA.</span></li>
+            <li class="flex gap-2"><span class="text-emerald-600 font-bold shrink-0">✓✓</span><span><strong>Self-hosted LLM (advanced):</strong> A fine-tuned open-source model (Phi-3 Mini, Mistral 7B) running on your own VPS via Ollama removes the AI vendor from the equation entirely. No external LLM API call is made, so no LLM vendor BAA is needed. The coaching inference stays within your existing hosting BAA boundary — note that this eliminates the AI <em>vendor</em> BAA, not the hosting provider BAA, which is still required.</span></li>
+          </ul>
+          <p class="text-xs text-slate-500">The AI coaching feature can also be disabled entirely for therapeutic-school deployments that prefer to keep all AI inference on-platform via the DistilBERT classifier only.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <h3 class="font-bold text-slate-800 mb-2">We're already on AWS — how long does BAA setup take?</h3>
+          <p class="text-sm text-slate-600">AWS BAA activation is self-service through the AWS Artifact console and takes under 10 minutes. The main timeline driver is internal legal review on the practice side. Most practices complete BAA setup within 1–3 business days once legal has reviewed the AWS Online Service Terms. DWA provides a go-live checklist that includes BAA verification as a gate.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-700 rounded-2xl p-10 text-center text-white">
+      <h2 class="text-2xl font-bold mb-3">Ready to start the compliance conversation?</h2>
+      <p class="text-blue-200 mb-6 max-w-xl mx-auto">Our onboarding team will walk your IT department through the BAA checklist, provider selection, and deployment architecture. Most practices are live within 30 days.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="./contact.html" class="inline-block bg-white text-blue-700 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition">Apply for Beta Access →</a>
+        <a href="./architecture.html" class="inline-block bg-blue-600 border border-blue-500 text-white font-semibold px-8 py-3 rounded-xl hover:bg-blue-500 transition">Full Architecture Docs</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-white py-12 mt-8" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        <div class="md:col-span-2">
+          <a href="./index.html" class="text-2xl font-bold text-blue-400 block mb-3">Digital Wellness Academy</a>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">Evidence-based mental health education platform for psychiatric practices, universities, and enterprises. HIPAA-compliant, RTM-ready, provider-prescribed.</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-4">Platform</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="./platform.html" class="hover:text-white transition">Platform Overview</a></li>
+            <li><a href="./architecture.html" class="hover:text-white transition">Architecture</a></li>
+            <li><a href="./hipaa-hosting.html" class="hover:text-white transition text-blue-400">HIPAA Hosting Guide</a></li>
+            <li><a href="./framework.html" class="hover:text-white transition">The Framework</a></li>
+            <li><a href="./courses.html" class="hover:text-white transition">Course Catalog</a></li>
+            <li><a href="./pricing.html" class="hover:text-white transition">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-4">For</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="./for-providers.html" class="hover:text-white transition">Psychiatric Providers</a></li>
+            <li><a href="./for-universities.html" class="hover:text-white transition">Universities</a></li>
+            <li><a href="./for-enterprises.html" class="hover:text-white transition">Enterprises</a></li>
+            <li><a href="./contact.html" class="hover:text-white transition">Apply for Beta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <span>&copy; 2026 Digital Wellness Academy. All rights reserved.</span>
+        <span>In crisis? Call or text <a href="tel:988" class="text-slate-300 hover:text-white">988</a>. Platform is education — not a substitute for professional medical advice.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

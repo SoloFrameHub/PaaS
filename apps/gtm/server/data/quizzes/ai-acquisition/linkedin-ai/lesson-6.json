@@ -1,0 +1,126 @@
+{
+    "lessonId": "6",
+    "courseId": "linkedin-ai",
+    "sectionId": "ai-acquisition",
+    "title": "Sales Navigator + AI Workflow",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the #1 highest-converting intent signal in Sales Navigator?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Posted in past 30 days"
+                },
+                {
+                    "id": "b",
+                    "text": "Changed jobs in past 90 days"
+                },
+                {
+                    "id": "c",
+                    "text": "Company headcount growth 10%+"
+                },
+                {
+                    "id": "d",
+                    "text": "Shares mutual connections"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Prospects who changed jobs in the past 90 days are 3x more likely to respond. They're in evaluation mode for new tools and haven't built vendor relationships yet."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How long should you engage with a prospect's content before sending a connection request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Same day (no warm-up needed)"
+                },
+                {
+                    "id": "b",
+                    "text": "1-2 days"
+                },
+                {
+                    "id": "c",
+                    "text": "3-4 days"
+                },
+                {
+                    "id": "d",
+                    "text": "7+ days"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "3-4 days of engagement (likes + comments) increases acceptance rates from 30% to 50%+. It shows genuine interest and makes you familiar before you ask to connect."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you use InMail instead of a connection request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always — InMail has higher open rates"
+                },
+                {
+                    "id": "b",
+                    "text": "For C-level prospects with no mutual connections"
+                },
+                {
+                    "id": "c",
+                    "text": "Never — connection requests are always better"
+                },
+                {
+                    "id": "d",
+                    "text": "Only after they've ignored 3+ connection requests"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "InMail works best for hard-to-reach prospects (C-level, VPs) with no mutual connections or when you need immediate attention (time-sensitive opportunity). Use your 50 monthly credits strategically."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What's the ideal weekly prospecting volume for a solo founder using this workflow?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5-10 prospects"
+                },
+                {
+                    "id": "b",
+                    "text": "25-30 prospects"
+                },
+                {
+                    "id": "c",
+                    "text": "50-75 prospects"
+                },
+                {
+                    "id": "d",
+                    "text": "100+ prospects"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "25-30 prospects per week is sustainable in 2.5-3 hours. Quality over quantity. Each prospect gets AI research, content engagement, and personalized outreach."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "True or False: AI-generated prospect briefs should be used as-is without editing.",
+            "correctAnswer": "b",
+            "explanation": "False. AI briefs save 70-80% of research time, but you must review and highlight the 2-3 key points that matter for YOUR outreach. The AI doesn't know your positioning or offer — you do.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

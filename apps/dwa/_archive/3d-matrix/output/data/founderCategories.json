@@ -1,0 +1,562 @@
+[
+  {
+    "category_id": "reluctant_seller",
+    "display_name": "Reluctant Seller",
+    "short_description": "Technical founders who avoid sales despite product readiness",
+    "background": "Engineers, developers, or product builders who have a working product but avoid customer conversations. Often come from technical roles where they excelled at building but never had to sell. Their product is ready, but they keep finding reasons to delay outreach.",
+    "primary_pain": "Believing that product quality should generate customer interest without active sales; finding elaborate rationalizations to avoid customer conversations",
+    "core_belief": "Good product = no need to sell. If my product is good enough, customers will find me. Selling feels like admitting my product isn't inherently valuable.",
+    "fear": "Being perceived as 'salesy' or manipulative; rejection interpreted as evidence of product or personal failure; cognitive dissonance when engaging in sales",
+    "objection_patterns": [
+      "Delaying outreach with 'product needs more refinement'",
+      "Over-preparing pitches instead of making calls",
+      "Rationalizing inaction as strategic patience",
+      "Avoiding follow-up due to discomfort with 'pushing'"
+    ],
+    "decision_criteria": [
+      "Does the approach feel authentic and non-manipulative?",
+      "Can I frame this as helping rather than selling?",
+      "Is there a systematic process I can follow?",
+      "Does this preserve my identity as a builder, not a salesperson?"
+    ],
+    "communication_style": {
+      "preferred_depth": "deep",
+      "preferred_pace": "slow",
+      "preferred_proof": "data"
+    },
+    "coaching_tone": "Empathetic but action-oriented. Acknowledge their discomfort while emphasizing that customer conversations are product development. Use language like 'gathering feedback', 'validating assumptions', 'helping people buy'. Emphasize imperfect action over perfect preparation.",
+    "avoid_phrases": [
+      "You need to be more aggressive",
+      "Just start closing deals",
+      "Stop overthinking it",
+      "Sales is easy, just do it",
+      "You're being too cautious"
+    ],
+    "motivating_phrases": [
+      "Customer conversations are product development",
+      "You're helping people buy, not convincing them",
+      "Imperfect action beats perfect preparation",
+      "Every call is learning, not performance",
+      "Sales is just organized curiosity about customer problems"
+    ],
+    "default_difficulty": "beginner",
+    "natural_disc_affinity": ["C", "S"],
+    "struggle_disc_types": ["D", "I"],
+    "recommended_courses": [
+      "First 10 Calls Framework",
+      "Discovery as Product Development",
+      "Overcoming Call Reluctance",
+      "Minimum Viable Outreach"
+    ],
+    "milestone_triggers": [
+      "First cold outreach sent without excessive preparation",
+      "First discovery call completed",
+      "First week with consistent daily outreach",
+      "First deal where they asked for the sale"
+    ]
+  },
+  {
+    "category_id": "burned_bootstrapper",
+    "display_name": "Burned Bootstrapper",
+    "short_description": "Founders who've been burned by bad sales advice or aggressive tactics",
+    "background": "Previously attempted sales with manipulative tactics, scripts, or aggressive methodologies that felt inauthentic. May have had bad experiences with sales coaches or hired salespeople who damaged customer relationships. Now deeply skeptical of any sales methodology.",
+    "primary_pain": "Past negative experiences with sales have created deep aversion; associating all sales methods with manipulation they witnessed or tried",
+    "core_belief": "Sales advice is mostly manipulation dressed up in fancy frameworks. I've seen the damage pushy sales tactics do. I'd rather grow slowly than compromise my integrity.",
+    "fear": "Repeating past mistakes; damaging hard-won customer relationships; becoming the 'sleazy salesperson' they've encountered; being manipulated by another sales methodology",
+    "objection_patterns": [
+      "Dismissing sales frameworks as 'manipulation in disguise'",
+      "Over-indexing on past negative experiences",
+      "Refusing to try new approaches because 'I've tried sales training before'",
+      "Conflating all outbound with spam"
+    ],
+    "decision_criteria": [
+      "Is this genuinely different from the manipulative tactics I've seen?",
+      "Does this approach respect customer intelligence?",
+      "Can I verify this works without damaging relationships?",
+      "Does this align with how I'd want to be sold to?"
+    ],
+    "communication_style": {
+      "preferred_depth": "deep",
+      "preferred_pace": "slow",
+      "preferred_proof": "logic"
+    },
+    "coaching_tone": "Validate their skepticism while showing differentiated approach. Acknowledge that most sales advice IS manipulative, then demonstrate consultative, integrity-based methods. Use transparency and invite them to challenge the methodology. Never use high-pressure language.",
+    "avoid_phrases": [
+      "Trust me, this is different",
+      "Just try these scripts",
+      "This technique always works",
+      "You need to be more persistent",
+      "Here's a closing hack"
+    ],
+    "motivating_phrases": [
+      "Your skepticism is warranted—most sales advice is manipulation",
+      "Real sales is helping qualified buyers make good decisions",
+      "The best salespeople are trusted advisors, not closers",
+      "Your integrity IS your competitive advantage",
+      "Let's rebuild sales on your terms"
+    ],
+    "default_difficulty": "intermediate",
+    "natural_disc_affinity": ["C", "S"],
+    "struggle_disc_types": ["D", "I"],
+    "recommended_courses": [
+      "Consultative Selling Fundamentals",
+      "Rebuilding Sales Trust",
+      "Integrity-Based Discovery",
+      "Customer-Led Conversations"
+    ],
+    "milestone_triggers": [
+      "First sales conversation that felt genuinely helpful",
+      "First methodology accepted as 'not manipulative'",
+      "First positive customer feedback on sales experience",
+      "First deal closed without feeling compromised"
+    ]
+  },
+  {
+    "category_id": "technical_purist",
+    "display_name": "Technical Purist",
+    "short_description": "Engineers who believe superior technology should sell itself",
+    "background": "Deep technical expertise with strong opinions about product quality. Often dismissive of marketing and sales as 'unnecessary if the product is good enough'. May have contempt for competitors with inferior products but better sales.",
+    "primary_pain": "Profound belief that technical excellence should be self-evident; frustration watching inferior competitors win through 'marketing fluff'",
+    "core_belief": "The best technology wins. If people can't see the superiority of my solution, they're not sophisticated enough to be my customers. Marketing is for products that can't compete on merit.",
+    "fear": "Diluting technical credibility by engaging in sales; being associated with marketing 'BS'; attracting customers who don't appreciate technical depth",
+    "objection_patterns": [
+      "Over-explaining technical architecture instead of business value",
+      "Dismissing customer objections as 'they don't understand'",
+      "Refusing to simplify messaging ('dumbing it down')",
+      "Targeting only technical evaluators, ignoring business buyers"
+    ],
+    "decision_criteria": [
+      "Does this approach maintain technical credibility?",
+      "Can I demonstrate superiority through proof, not persuasion?",
+      "Will this attract customers who value quality?",
+      "Does this avoid 'marketing speak' I despise?"
+    ],
+    "communication_style": {
+      "preferred_depth": "deep",
+      "preferred_pace": "moderate",
+      "preferred_proof": "data"
+    },
+    "coaching_tone": "Technical peer-to-peer. Acknowledge that their product may genuinely be superior, then explain that technical merit alone has never determined market winners. Use examples like VHS vs Betamax, Windows vs Mac. Frame sales as 'technical translation'—helping non-technical buyers understand value.",
+    "avoid_phrases": [
+      "Dumb it down for customers",
+      "Features don't matter, only benefits",
+      "Stop talking about the technology",
+      "Marketing is just as important as product",
+      "You need to be less technical"
+    ],
+    "motivating_phrases": [
+      "The best technology rarely wins without great distribution",
+      "Sales is technical translation, not dumbing down",
+      "Help customers understand what you've built",
+      "Your technical depth IS a sales advantage—when positioned right",
+      "Great engineers make great salespeople because they solve problems"
+    ],
+    "default_difficulty": "intermediate",
+    "natural_disc_affinity": ["C", "D"],
+    "struggle_disc_types": ["I", "S"],
+    "recommended_courses": [
+      "Technical to Business Translation",
+      "Selling to Non-Technical Buyers",
+      "Distribution Strategy for Technical Products",
+      "Building Technical Champions"
+    ],
+    "milestone_triggers": [
+      "First successful pitch to a non-technical buyer",
+      "First deal closed based on business value, not technical specs",
+      "First customer who said 'you made this easy to understand'",
+      "First simplified messaging that still felt authentic"
+    ]
+  },
+  {
+    "category_id": "time_starved_parent",
+    "display_name": "Time-Starved Parent",
+    "short_description": "Founders juggling startup demands with family responsibilities",
+    "background": "Building a company while managing significant family responsibilities (young children, caregiving, etc.). Limited hours available, high pressure to maximize efficiency. Often working during kids' nap times or after bedtime.",
+    "primary_pain": "Chronic time scarcity creating impossible choices between family and business; guilt about both; can't dedicate 'hustle culture' hours to sales",
+    "core_belief": "I need to be 10x more efficient than other founders. Every hour I spend on sales is an hour away from my family. I can't afford to waste time on approaches that don't work.",
+    "fear": "Wasting precious time on ineffective sales activities; missing family moments for calls that don't convert; being judged for not being 'all in' on the startup",
+    "objection_patterns": [
+      "Skipping discovery to save time (backfires)",
+      "Over-automating personal touches",
+      "Avoiding calls because of scheduling constraints",
+      "Rushing conversations, missing buying signals"
+    ],
+    "decision_criteria": [
+      "Is this the highest-leverage use of my limited time?",
+      "Can I do this in 30-minute blocks?",
+      "Does this approach minimize wasted effort?",
+      "Can I batch or automate parts of this?"
+    ],
+    "communication_style": {
+      "preferred_depth": "surface",
+      "preferred_pace": "fast",
+      "preferred_proof": "testimonials"
+    },
+    "coaching_tone": "Efficiency-focused and judgment-free. Acknowledge the real constraints without suggesting they 'find more time'. Focus on highest-leverage activities. Provide frameworks for 30-minute blocks. Emphasize quality over quantity. Never imply they should sacrifice family time.",
+    "avoid_phrases": [
+      "You need to dedicate more time to sales",
+      "Successful founders make sacrifices",
+      "Wake up earlier / stay up later",
+      "Your competition is outworking you",
+      "Sales requires full commitment"
+    ],
+    "motivating_phrases": [
+      "Efficiency beats hours—work smarter, not longer",
+      "One great call beats ten mediocre ones",
+      "Quality outreach converts; quantity exhausts",
+      "Your constraints force focus—that's an advantage",
+      "30 minutes of strategic sales beats 3 hours of busy work"
+    ],
+    "default_difficulty": "beginner",
+    "natural_disc_affinity": ["D", "C"],
+    "struggle_disc_types": ["I", "S"],
+    "recommended_courses": [
+      "High-Leverage Sales in 30 Minutes",
+      "Efficient Discovery Framework",
+      "Time-Blocked Outreach",
+      "Async Sales Strategies"
+    ],
+    "milestone_triggers": [
+      "First week hitting sales goals within time constraints",
+      "First deal closed primarily through async communication",
+      "First efficient discovery call (under 25 minutes with full qualification)",
+      "First successful batch-processed follow-up sequence"
+    ]
+  },
+  {
+    "category_id": "non_technical",
+    "display_name": "Non-Technical Founder",
+    "short_description": "Business-focused founders without engineering background",
+    "background": "Background in business, marketing, operations, or domain expertise—not engineering. May have a technical co-founder or outsourced development. Understands business value but feels insecure about technical conversations.",
+    "primary_pain": "Imposter syndrome about technical credibility; fear of being exposed as 'not technical enough'; struggling to answer technical questions from prospects",
+    "core_belief": "I understand the business problem we solve, but I'm not credible discussing technical implementation. I need my technical co-founder or team for those conversations.",
+    "fear": "Being asked technical questions they can't answer; losing credibility with technical buyers; being seen as 'just a business person' who doesn't understand the product",
+    "objection_patterns": [
+      "Deferring all technical questions instead of answering at appropriate level",
+      "Over-compensating with business jargon",
+      "Avoiding technical buyers entirely",
+      "Understating product capabilities due to uncertainty"
+    ],
+    "decision_criteria": [
+      "Can I do this without deep technical knowledge?",
+      "Will this approach work with business buyers?",
+      "Do I have support for technical conversations?",
+      "Does this play to my business strengths?"
+    ],
+    "communication_style": {
+      "preferred_depth": "surface",
+      "preferred_pace": "moderate",
+      "preferred_proof": "testimonials"
+    },
+    "coaching_tone": "Confidence-building focused on business value expertise. Acknowledge that technical depth isn't required for effective sales. Teach them to redirect technical questions appropriately. Emphasize that business buyers often prefer non-technical explanations. Build confidence in their unique strengths.",
+    "avoid_phrases": [
+      "You need to understand the technology better",
+      "Learn to code to be credible",
+      "Technical founders are more effective at sales",
+      "You should let your co-founder handle this",
+      "Business people can't sell technical products"
+    ],
+    "motivating_phrases": [
+      "Business buyers prefer business conversations",
+      "Your business acumen IS your sales advantage",
+      "You don't need to explain HOW it works, just WHAT it does",
+      "Redirect technical questions; that's professional, not weak",
+      "Understanding customer problems beats understanding code"
+    ],
+    "default_difficulty": "beginner",
+    "natural_disc_affinity": ["I", "D"],
+    "struggle_disc_types": ["C", "S"],
+    "recommended_courses": [
+      "Selling Technical Products as a Non-Technical Founder",
+      "Business Value Positioning",
+      "Handling Technical Questions",
+      "Building Technical Champions"
+    ],
+    "milestone_triggers": [
+      "First technical question handled confidently with appropriate redirect",
+      "First deal closed without technical co-founder on call",
+      "First positive feedback from technical buyer",
+      "First presentation to technical audience"
+    ]
+  },
+  {
+    "category_id": "scaling_struggler",
+    "display_name": "Scaling Struggler",
+    "short_description": "Founders who can close deals themselves but can't scale or delegate sales",
+    "background": "Successfully closed initial customers through personal relationships and founder credibility. Now struggling to hire salespeople, document processes, or scale beyond personal selling. Tried hiring salespeople who failed.",
+    "primary_pain": "Can close deals personally but can't replicate success through hires; sales hires fail to perform at founder level; bottlenecked by own capacity",
+    "core_belief": "Nobody can sell this product like I can. Customers buy because of me, not because of a sales process. Hiring salespeople is just wasting money.",
+    "fear": "Salespeople will damage customer relationships; can't afford to waste more money on failed hires; will always be bottlenecked by own calendar",
+    "objection_patterns": [
+      "Hovering over sales hires instead of enabling them",
+      "Taking over deals 'to save them'",
+      "Hiring salespeople without documenting what works",
+      "Setting unrealistic expectations based on founder performance"
+    ],
+    "decision_criteria": [
+      "Will this help me scale, not just improve personal selling?",
+      "Can this be documented and taught?",
+      "Will this reduce my bottleneck?",
+      "Can I measure if a hire is succeeding with this approach?"
+    ],
+    "communication_style": {
+      "preferred_depth": "moderate",
+      "preferred_pace": "fast",
+      "preferred_proof": "data"
+    },
+    "coaching_tone": "Process-focused with emphasis on documentation and enablement. Acknowledge their sales success while explaining that founder-led sales doesn't scale. Focus on building repeatable playbooks, hiring profiles, and onboarding processes. Celebrate progress toward independence from founder.",
+    "avoid_phrases": [
+      "Just hire better salespeople",
+      "Good salespeople figure it out",
+      "Stop micromanaging your team",
+      "Let go of control",
+      "Your way isn't the only way"
+    ],
+    "motivating_phrases": [
+      "Your success is proof there's a repeatable process—let's document it",
+      "Founder-led sales success is the foundation for a team",
+      "Great sales leaders build systems, not just close deals",
+      "Your job is to make yourself unnecessary in sales",
+      "A documented playbook is your path to scale"
+    ],
+    "default_difficulty": "advanced",
+    "natural_disc_affinity": ["D", "I"],
+    "struggle_disc_types": ["S", "C"],
+    "recommended_courses": [
+      "Founder-to-Team Sales Transition",
+      "Building a Sales Playbook",
+      "Hiring Your First Salesperson",
+      "Sales Enablement Fundamentals"
+    ],
+    "milestone_triggers": [
+      "First documented sales playbook completed",
+      "First deal closed by a sales hire without founder involvement",
+      "First salesperson who exceeded quota",
+      "First month where founder did less than 50% of selling"
+    ]
+  },
+  {
+    "category_id": "agency_escapee",
+    "display_name": "Agency Escapee",
+    "short_description": "Former agency/consultancy owners transitioning to product",
+    "background": "Built successful agency or consultancy, now transitioning to product business. Expert at selling services through relationships and expertise but struggling with product sales motion. Accustomed to high-touch, custom solutions.",
+    "primary_pain": "Services sales muscle memory doesn't work for products; used to selling themselves, not a product; struggling with lower-touch, higher-volume sales model",
+    "core_belief": "I know how to sell—I built a successful agency. But selling a product feels completely different. I can't customize my pitch for every customer like I used to.",
+    "fear": "Losing the relationship-based selling that built their agency; products feel impersonal compared to services; can't compete with product companies that understand this model",
+    "objection_patterns": [
+      "Over-customizing product positioning for each prospect",
+      "Spending too much time per deal",
+      "Struggling with 'productized' messaging",
+      "Discounting or adding services to close product deals"
+    ],
+    "decision_criteria": [
+      "Does this translate my agency sales skills?",
+      "Can I maintain relationship quality at higher volume?",
+      "Will this approach scale without customization?",
+      "Does this leverage my consultative strengths?"
+    ],
+    "communication_style": {
+      "preferred_depth": "moderate",
+      "preferred_pace": "moderate",
+      "preferred_proof": "authority"
+    },
+    "coaching_tone": "Bridge-building between service and product sales. Acknowledge their existing sales expertise while highlighting key differences. Focus on standardizing messaging while maintaining consultative depth. Help them see products as 'scalable expertise'.",
+    "avoid_phrases": [
+      "Forget everything you learned in agency sales",
+      "Product sales is completely different",
+      "Stop customizing your pitch",
+      "You need to be less consultative",
+      "Just follow the standard process"
+    ],
+    "motivating_phrases": [
+      "Your consultative skills are your advantage—just apply them faster",
+      "Products are your expertise, productized and scalable",
+      "Same discovery skills, different depth",
+      "Relationship selling works in product too—at the right moments",
+      "You're not losing expertise, you're leveraging it differently"
+    ],
+    "default_difficulty": "intermediate",
+    "natural_disc_affinity": ["I", "D"],
+    "struggle_disc_types": ["C", "S"],
+    "recommended_courses": [
+      "Agency to Product Sales Transition",
+      "Productized Positioning",
+      "Scalable Discovery",
+      "Maintaining Relationships at Volume"
+    ],
+    "milestone_triggers": [
+      "First deal closed with standardized (not custom) pitch",
+      "First week with 3x agency-era deal volume",
+      "First customer who bought the product, not the founder relationship",
+      "First successful product demo under 30 minutes"
+    ]
+  },
+  {
+    "category_id": "returning_founder",
+    "display_name": "Returning Founder",
+    "short_description": "Second-time founders with successful exits or significant experience",
+    "background": "Second or third venture, with successful exits or significant operational experience. Understand the importance of sales but may be applying old playbooks to new contexts. Confident, sometimes overconfident.",
+    "primary_pain": "Applying outdated playbooks to changed markets; overconfidence based on past success; difficulty adapting to evolved buyer expectations and channels",
+    "core_belief": "I know what works—I've done this before. My pattern recognition is valuable. First-time founders make mistakes I already learned from.",
+    "fear": "That past success was luck rather than skill; that the market has changed more than they realize; being seen as out of touch",
+    "objection_patterns": [
+      "Dismissing new approaches as 'fads'",
+      "Over-indexing on what worked in previous venture",
+      "Moving too fast without adapting to current market",
+      "Underestimating how much buyer behavior has changed"
+    ],
+    "decision_criteria": [
+      "Does this build on what I already know?",
+      "Is this approach data-driven and measurable?",
+      "Can this help me move faster than a first-time founder?",
+      "Does this account for what's different in current market?"
+    ],
+    "communication_style": {
+      "preferred_depth": "moderate",
+      "preferred_pace": "fast",
+      "preferred_proof": "data"
+    },
+    "coaching_tone": "Peer-to-peer and strategic. Acknowledge their experience and pattern recognition while challenging outdated assumptions. Focus on what's changed in buyer behavior, channels, and competition since their last venture. Provide advanced frameworks that build on their foundation.",
+    "avoid_phrases": [
+      "Let me explain the basics",
+      "Here's how sales works",
+      "You should start from scratch",
+      "Forget everything you know",
+      "First-time founders do it this way"
+    ],
+    "motivating_phrases": [
+      "Let's build on your experience with updated tactics",
+      "Here's what's changed since your last venture",
+      "Your pattern recognition is valuable—let's refine it",
+      "Second-time founders focus on distribution",
+      "Let's optimize what's working and update what isn't"
+    ],
+    "default_difficulty": "advanced",
+    "natural_disc_affinity": ["D", "I"],
+    "struggle_disc_types": ["S", "C"],
+    "recommended_courses": [
+      "Modern Sales Stack Evolution",
+      "Buyer Behavior Changes 2020-2025",
+      "Advanced Discovery Techniques",
+      "Scaling Founder-Led Sales"
+    ],
+    "milestone_triggers": [
+      "First successful adaptation of old playbook to new context",
+      "First deal closed faster than previous venture",
+      "First new channel or technique adopted successfully",
+      "First acknowledgment that market has genuinely changed"
+    ]
+  },
+  {
+    "category_id": "international_founder",
+    "display_name": "International Founder",
+    "short_description": "Non-US founders selling into American markets",
+    "background": "Building from outside the US (Europe, Asia, Latin America, etc.) but targeting American customers. Navigating cultural differences, time zone challenges, and unfamiliar business norms. May have language/accent concerns.",
+    "primary_pain": "Cultural and communication gaps with American buyers; time zone friction; unfamiliarity with US business norms and expectations",
+    "core_belief": "American business culture is different from what I know. I'm at a disadvantage competing against local founders who understand the market better. My accent or communication style might hurt me.",
+    "fear": "Being dismissed as 'foreign' or not understanding the market; cultural miscommunication damaging deals; can't compete with founders who are 'local' to US buyers",
+    "objection_patterns": [
+      "Over-adapting to perceived American style (losing authenticity)",
+      "Under-adapting (ignoring real cultural differences)",
+      "Avoiding phone calls due to accent concerns",
+      "Misjudging appropriate follow-up cadence"
+    ],
+    "decision_criteria": [
+      "Will this work across the cultural gap?",
+      "Can I execute this from my time zone?",
+      "Does this account for American buyer expectations?",
+      "Will my communication style work for this approach?"
+    ],
+    "communication_style": {
+      "preferred_depth": "moderate",
+      "preferred_pace": "moderate",
+      "preferred_proof": "testimonials"
+    },
+    "coaching_tone": "Culturally aware and practical. Acknowledge real cultural differences while emphasizing that international perspective can be an advantage. Provide specific guidance on US business norms without suggesting they abandon their authentic style. Focus on practical adaptations, not wholesale change.",
+    "avoid_phrases": [
+      "Just be more American",
+      "Your accent is a problem",
+      "US buyers prefer local vendors",
+      "You need to relocate to succeed",
+      "International founders can't compete"
+    ],
+    "motivating_phrases": [
+      "Global perspective is an advantage in international deals",
+      "Your different background is memorable and distinctive",
+      "Many successful US companies are led by international founders",
+      "Adapt the small things, keep your authentic approach",
+      "Time zone gaps create focus time—use it strategically"
+    ],
+    "default_difficulty": "intermediate",
+    "natural_disc_affinity": ["C", "S"],
+    "struggle_disc_types": ["D", "I"],
+    "recommended_courses": [
+      "US Business Culture for International Founders",
+      "Cross-Cultural Sales Communication",
+      "Async Sales for Time Zone Gaps",
+      "Building US Market Credibility"
+    ],
+    "milestone_triggers": [
+      "First US deal closed without co-founder or US presence",
+      "First successful handling of cultural miscommunication",
+      "First US customer who cited international perspective as positive",
+      "First week with consistent US outreach despite time zones"
+    ]
+  },
+  {
+    "category_id": "ai_native_builder",
+    "display_name": "AI-Native Builder",
+    "short_description": "Founders building AI products in a rapidly evolving landscape",
+    "background": "Building products with AI/ML at the core, often in fast-moving spaces like LLMs, generative AI, or AI-augmented workflows. May be technical or non-technical but navigating unique challenges of selling AI capabilities.",
+    "primary_pain": "Rapidly evolving technology making positioning unstable; buyer confusion and skepticism about AI claims; differentiation in crowded 'AI-everything' market",
+    "core_belief": "AI is transforming everything, and my product is at the frontier. But every company claims to be 'AI-powered' now. How do I stand out when the technology changes monthly?",
+    "fear": "Being grouped with AI hype and vaporware; technology evolving faster than sales cycles; customers burned by previous AI promises; competitors launching similar features overnight",
+    "objection_patterns": [
+      "Over-promising AI capabilities",
+      "Using jargon buyers don't understand",
+      "Struggling to demonstrate concrete ROI",
+      "Positioning becoming outdated quickly"
+    ],
+    "decision_criteria": [
+      "Is this positioning durable as AI evolves?",
+      "Does this differentiate from AI hype?",
+      "Can I demonstrate concrete value, not just AI magic?",
+      "Will this approach work as technology changes?"
+    ],
+    "communication_style": {
+      "preferred_depth": "moderate",
+      "preferred_pace": "fast",
+      "preferred_proof": "data"
+    },
+    "coaching_tone": "Cutting-edge but grounded. Acknowledge the unique challenges of AI sales—hype cycles, rapid change, buyer skepticism. Focus on demonstrating concrete outcomes rather than AI capabilities. Help them build durable positioning based on problems solved, not technology used.",
+    "avoid_phrases": [
+      "AI sells itself",
+      "Just show them the demo",
+      "Everyone wants AI now",
+      "Your technology is your differentiator",
+      "The model is what matters"
+    ],
+    "motivating_phrases": [
+      "Sell the outcome, not the AI",
+      "Concrete results beat AI magic",
+      "Buyer skepticism is your filter for serious customers",
+      "Durability comes from problems solved, not technology used",
+      "The best AI sales focus on business impact, not model capabilities"
+    ],
+    "default_difficulty": "intermediate",
+    "natural_disc_affinity": ["D", "C"],
+    "struggle_disc_types": ["S", "I"],
+    "recommended_courses": [
+      "Selling AI Without Hype",
+      "Demonstrating AI ROI",
+      "Durable Positioning in Fast-Moving Markets",
+      "Handling AI Skepticism"
+    ],
+    "milestone_triggers": [
+      "First deal closed based on business outcome, not AI capability",
+      "First successful handling of 'just hype' objection",
+      "First positioning that survived a major AI news cycle",
+      "First customer case study with concrete ROI metrics"
+    ]
+  }
+]

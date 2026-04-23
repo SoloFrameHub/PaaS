@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of dietary tryptophan is metabolized through the kynurenine pathway rather than becoming serotonin?",
+            "options": [
+                { "id": "opt1", "text": "About 10-15%" },
+                { "id": "opt2", "text": "About 50%" },
+                { "id": "opt3", "text": "About 90-95%" },
+                { "id": "opt4", "text": "About 25-30%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Roughly 90-95% of dietary tryptophan is metabolized through the kynurenine pathway, while only about 5-10% becomes serotonin. This means most of the tryptophan you eat does not become the 'happiness chemical' — it goes through a pathway that produces a mix of neuroprotective and neurotoxic metabolites."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'tryptophan steal' and why does it matter for depression?",
+            "options": [
+                { "id": "opt1", "text": "Gut bacteria consume all tryptophan before it can be absorbed" },
+                { "id": "opt2", "text": "Inflammation activates the IDO enzyme, diverting tryptophan away from serotonin production toward the kynurenine pathway" },
+                { "id": "opt3", "text": "Other amino acids steal tryptophan's place in protein structures" },
+                { "id": "opt4", "text": "Exercise depletes all tryptophan from the body" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 'tryptophan steal' occurs when chronic inflammation activates the enzyme IDO (indoleamine 2,3-dioxygenase), which dramatically increases the conversion of tryptophan through the kynurenine pathway. This leaves less tryptophan available for serotonin production — meaning you can eat plenty of tryptophan-rich foods and still have reduced brain serotonin if chronic inflammation is present."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does serotonin produced in the gut (90% of the body's supply) not directly improve brain mood?",
+            "options": [
+                { "id": "opt1", "text": "Gut serotonin is a different chemical than brain serotonin" },
+                { "id": "opt2", "text": "Gut serotonin is immediately destroyed after production" },
+                { "id": "opt3", "text": "Gut serotonin cannot cross the blood-brain barrier, so the brain must make its own serotonin" },
+                { "id": "opt4", "text": "Gut serotonin only functions during sleep" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Although 90% of the body's serotonin is produced in the gut, it cannot cross the blood-brain barrier. The brain must make its own serotonin from tryptophan that crosses the barrier. However, gut serotonin can still influence the brain indirectly through vagus nerve signaling."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Under inflammatory conditions, the kynurenine pathway shifts toward producing more of which neurotoxic compound?",
+            "options": [
+                { "id": "opt1", "text": "Kynurenic acid" },
+                { "id": "opt2", "text": "Serotonin" },
+                { "id": "opt3", "text": "Quinolinic acid" },
+                { "id": "opt4", "text": "Melatonin" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Under inflammatory conditions, the kynurenine pathway shifts toward producing more quinolinic acid, which is directly neurotoxic. It overstimulates NMDA receptors in the brain, causing excitotoxicity and contributing to neuronal damage. Meanwhile, the neuroprotective branch (kynurenic acid) does not increase proportionally, creating a harmful imbalance."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why might a balanced meal with both protein and carbohydrates support better brain serotonin production than a very high-protein, low-carb meal?",
+            "options": [
+                { "id": "opt1", "text": "Carbohydrates contain tryptophan that proteins lack" },
+                { "id": "opt2", "text": "High-protein meals cause tryptophan to be destroyed in the stomach" },
+                { "id": "opt3", "text": "Carbohydrates trigger insulin, which clears competing amino acids from the blood, giving tryptophan better access to the brain" },
+                { "id": "opt4", "text": "Protein blocks all amino acid absorption entirely" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Carbohydrate consumption triggers insulin release, which drives competing large neutral amino acids into muscle tissue but does not remove tryptophan (which is bound to albumin). This effectively reduces the competition at the blood-brain barrier, giving tryptophan proportionally greater access to the brain for serotonin production."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "6",
+    "title": "Tryptophan, Serotonin, and the Kynurenine Pathway - Quiz"
+}

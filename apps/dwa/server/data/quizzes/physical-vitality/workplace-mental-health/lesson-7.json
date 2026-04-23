@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to research, how much impact do managers have on employee mental health compared to other factors?",
+            "options": [
+                {"id": "opt1", "text": "Managers have minimal impact — workload is the only factor that matters"},
+                {"id": "opt2", "text": "69% of employees say their manager has the greatest impact on their mental health — on par with their partner and greater than their doctor or therapist"},
+                {"id": "opt3", "text": "Managers only affect mental health if they're actively abusive"},
+                {"id": "opt4", "text": "Manager behavior doesn't matter as long as pay is good"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A survey of 3,400 workers across 10 countries found that 69% of employees said their manager had the greatest impact on their mental health — on par with the impact of their partner (69%), and greater than their doctor (51%) or therapist (41%). Longitudinal studies confirm that fair, empowering, supportive leadership predicts lower rates of anxiety, depression, and burnout."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is Psychosocial Safety Climate (PSC) and how is it different from team psychological safety?",
+            "options": [
+                {"id": "opt1", "text": "PSC and psychological safety are the same thing"},
+                {"id": "opt2", "text": "PSC is the organization's management commitment to protecting workers' psychological health through policy, resources, and accountability — it's set by senior leadership, not team dynamics"},
+                {"id": "opt3", "text": "PSC is about physical safety, not mental health"},
+                {"id": "opt4", "text": "PSC only applies to healthcare organizations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Psychosocial Safety Climate (PSC) is distinct from team psychological safety. PSC is about organizational management commitment to protecting workers' psychological health, reflected in policies, resource allocation, communication, and enforcement. It's set by senior leadership. Team psychological safety is about interpersonal risk-taking within a team. Low PSC is a structural hazard that individual skills cannot fix."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is an example of TOXIC leadership behavior (not just poor communication)?",
+            "options": [
+                {"id": "opt1", "text": "A manager who is occasionally stressed or short-tempered during high-pressure periods"},
+                {"id": "opt2", "text": "A sustained pattern of public humiliation, blaming, micromanagement, or dismissing employee wellbeing concerns"},
+                {"id": "opt3", "text": "A manager with a different communication style than you prefer"},
+                {"id": "opt4", "text": "A manager who gives you constructive critical feedback"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Toxic leadership is a sustained pattern of behavior that creates psychological harm: abusive supervision (yelling, public humiliation, blaming), micromanagement removing autonomy, dismissiveness and neglect, or unfairness and favoritism. It's not occasional stress or different communication styles — it's a pattern that undermines psychological safety, autonomy, fairness, and wellbeing."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If your organization frames mental health as individual responsibility (offers mindfulness apps) but ignores understaffing and toxic leadership, what does this indicate?",
+            "options": [
+                {"id": "opt1", "text": "The organization genuinely cares about employee wellbeing"},
+                {"id": "opt2", "text": "This indicates low Psychosocial Safety Climate — the organization externalizes mental health responsibility to workers rather than addressing structural hazards"},
+                {"id": "opt3", "text": "Mindfulness apps are sufficient to address workplace stress"},
+                {"id": "opt4", "text": "Employees need to be more resilient"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Low Psychosocial Safety Climate is characterized by framing mental health as individual responsibility while ignoring or tolerating structural hazards (understaffing, toxic leadership, harassment, excessive workload). Offering wellness programs without addressing root causes is a red flag. No amount of individual coping will make this environment sustainable long-term."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "7",
+    "title": "Toxic Leadership and Psychological Safety Climate - Quiz"
+}

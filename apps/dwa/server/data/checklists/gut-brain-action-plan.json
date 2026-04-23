@@ -1,0 +1,94 @@
+{
+  "id": "gut-brain-action-plan",
+  "title": "Your Gut-Brain Health Action Plan",
+  "description": "Build your personalized gut-brain health plan based on what you've learned in this course. Check off the strategies you commit to implementing and use the text fields to customize your plan.",
+  "instructions": "Review each evidence-based strategy and check the ones you plan to incorporate into your daily life. Use the text fields to personalize your commitments. Revisit this plan weekly to track your progress.",
+  "items": [
+    {
+      "id": "fiber-goal",
+      "label": "Increase dietary fiber to support SCFA production (target: 25-35g daily)",
+      "type": "checkbox",
+      "category": "Gut-Brain Nutrition"
+    },
+    {
+      "id": "fermented-foods",
+      "label": "Include at least one fermented food daily (yogurt, kefir, sauerkraut, kimchi)",
+      "type": "checkbox",
+      "category": "Gut-Brain Nutrition"
+    },
+    {
+      "id": "plant-diversity",
+      "label": "Aim for 30+ different plant foods per week for microbiome diversity",
+      "type": "checkbox",
+      "category": "Gut-Brain Nutrition"
+    },
+    {
+      "id": "reduce-upf",
+      "label": "Limit ultra-processed foods to 4 or fewer servings daily",
+      "type": "checkbox",
+      "category": "Gut-Brain Nutrition"
+    },
+    {
+      "id": "blood-sugar",
+      "label": "Combine protein, fat, and fiber at meals to stabilize blood sugar",
+      "type": "checkbox",
+      "category": "Blood Sugar Support"
+    },
+    {
+      "id": "regular-meals",
+      "label": "Eat regular meals to avoid long gaps that spike cortisol",
+      "type": "checkbox",
+      "category": "Blood Sugar Support"
+    },
+    {
+      "id": "omega3",
+      "label": "Include omega-3 rich foods at least 2-3 times per week",
+      "type": "checkbox",
+      "category": "Key Nutrients"
+    },
+    {
+      "id": "b-vitamins",
+      "label": "Ensure adequate B vitamin intake (leafy greens, eggs, legumes)",
+      "type": "checkbox",
+      "category": "Key Nutrients"
+    },
+    {
+      "id": "magnesium",
+      "label": "Include magnesium-rich foods (dark chocolate, nuts, seeds, leafy greens)",
+      "type": "checkbox",
+      "category": "Key Nutrients"
+    },
+    {
+      "id": "stress-management",
+      "label": "Practice daily stress management (stress disrupts the gut-brain axis)",
+      "type": "checkbox",
+      "category": "Lifestyle Factors"
+    },
+    {
+      "id": "sleep-priority",
+      "label": "Prioritize 7-9 hours of sleep (poor sleep disrupts gut bacteria)",
+      "type": "checkbox",
+      "category": "Lifestyle Factors"
+    },
+    {
+      "id": "movement",
+      "label": "Get regular physical activity (exercise improves microbial diversity)",
+      "type": "checkbox",
+      "category": "Lifestyle Factors"
+    },
+    {
+      "id": "first-change",
+      "label": "My first change this week will be:",
+      "type": "text",
+      "placeholder": "e.g., Add one serving of fermented food daily"
+    },
+    {
+      "id": "commitment-rating",
+      "label": "Rate your confidence in making these changes (1-10)",
+      "type": "rating",
+      "min": 0,
+      "max": 10
+    }
+  ],
+  "disclaimer": "This checklist is for educational purposes only. All dietary changes should be gradual and sustainable. If you have dietary restrictions, food allergies, or an eating disorder, consult a healthcare provider before making changes. If you are in crisis, call or text 988."
+}

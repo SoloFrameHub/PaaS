@@ -1,0 +1,110 @@
+{
+  "id": "sleep-reflection-log",
+  "title": "Night & Day Reflection Log",
+  "description": "Track how your sleep affects your daytime functioning. Complete this each evening to connect last night's sleep with today's experience.",
+  "instructions": "Reflect on last night's sleep and today's daytime experience. This log helps you see the connection between sleep quality and daily functioning.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "sleepQualityLastNight",
+      "label": "How would you rate last night's sleep?",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very poor",
+        "2": "Poor",
+        "3": "Fair",
+        "4": "Good",
+        "5": "Excellent"
+      }
+    },
+    {
+      "id": "hoursSlept",
+      "label": "Approximately how many hours did you sleep?",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 16,
+      "unit": "hours",
+      "placeholder": "e.g., 7"
+    },
+    {
+      "id": "morningMood",
+      "label": "Morning mood when you woke up",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very low",
+        "2": "Low",
+        "3": "Neutral",
+        "4": "Good",
+        "5": "Great"
+      }
+    },
+    {
+      "id": "daytimeEnergy",
+      "label": "Overall energy level today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Exhausted",
+        "2": "Low energy",
+        "3": "Moderate",
+        "4": "Good energy",
+        "5": "High energy"
+      }
+    },
+    {
+      "id": "focusConcentration",
+      "label": "Focus and concentration today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very poor",
+        "2": "Struggled",
+        "3": "Adequate",
+        "4": "Good",
+        "5": "Sharp and clear"
+      }
+    },
+    {
+      "id": "irritability",
+      "label": "Irritability or emotional reactivity today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very irritable",
+        "2": "Somewhat irritable",
+        "3": "Neutral",
+        "4": "Mostly calm",
+        "5": "Very calm and patient"
+      }
+    },
+    {
+      "id": "physicalSymptoms",
+      "label": "Any physical symptoms today? (headache, fatigue, body aches)",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., Morning headache, afternoon fatigue, or leave blank"
+    },
+    {
+      "id": "sleepHelpersUsed",
+      "label": "What helped or hurt your sleep last night?",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., Reading before bed helped; late coffee made it harder"
+    }
+  ],
+  "derivedMetrics": [],
+  "disclaimer": "This reflection log is an educational self-tracking tool. If you have persistent sleep problems affecting daily functioning, consult a healthcare provider. If you are in crisis, call or text 988."
+}

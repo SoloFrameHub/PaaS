@@ -1,0 +1,142 @@
+{
+    "lessonId": "10",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Lead Magnets and Gated Content Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of a 'Lead Magnet'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To sell your most expensive product immediately"
+                },
+                {
+                    "id": "b",
+                    "text": "To capture an email address by providing high-value educational content"
+                },
+                {
+                    "id": "c",
+                    "text": "To attract as many 'Likes' as possible on social media"
+                },
+                {
+                    "id": "d",
+                    "text": "To host your technical documentation"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A lead magnet is the bridge that transitions a casual visitor into a business relationship by exchanging value for an email address."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is an example of a Top of Funnel (TOFU) lead magnet?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A 14-day free trial of your software"
+                },
+                {
+                    "id": "b",
+                    "text": "A quick-win '10-Point Checklist' for a common problem"
+                },
+                {
+                    "id": "c",
+                    "text": "A 200-page ebook on industry history"
+                },
+                {
+                    "id": "d",
+                    "text": "A pricing table for your services"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "TOFU magnets should be 'low commitment' and provide a 'quick win' relevant to the visitor's broad educational interest."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does 'Hybrid Gating' mean?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Making your content available in multiple languages"
+                },
+                {
+                    "id": "b",
+                    "text": "Giving away the main content for free (SEO) while gating a specific implementation tool or template (Leads)"
+                },
+                {
+                    "id": "c",
+                    "text": "Charging for content only on mobile devices"
+                },
+                {
+                    "id": "d",
+                    "text": "Combining video and text in the same post"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Hybrid gating allows you to reap the benefits of SEO reach while still providing a high-value incentive for serious readers to join your list."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'Specific > General' a key principle of lead magnet design?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "General topics attract too much traffic"
+                },
+                {
+                    "id": "b",
+                    "text": "Specific solutions solve an urgent, tangible problem, leading to higher trust and conversion"
+                },
+                {
+                    "id": "c",
+                    "text": "It is easier to write specific content"
+                },
+                {
+                    "id": "d",
+                    "text": "General content is more likely to go viral"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A reader with a specific pain wants a specific fix. An 'Ultimate Guide to Marketing' is overwhelming; a 'Cold Email Template for Agencies' is a relief."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you NOT gate a piece of content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When the content is extremely valuable"
+                },
+                {
+                    "id": "b",
+                    "text": "When the primary goal is broad educational reach or SEO ranking"
+                },
+                {
+                    "id": "c",
+                    "text": "When you have too many email subscribers"
+                },
+                {
+                    "id": "d",
+                    "text": "When the content is a video"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If information is gated, it cannot be crawled by search engines effectively. Use free content to build your 'TOFU' audience, then use gates to capture them."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think about your Pillar #1. What is one 'Template,' 'Checklist,' or 'Tool' you could provide that solves an urgent pain for your ICP in under 10 minutes? What is the title? How does this lead them toward your paid offer?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the magnet is a 'Quick Win.' If the founder proposes an 'Ebook' or 'Guide,' push back and suggest a more tangible asset like a checklist or spreadsheet template."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

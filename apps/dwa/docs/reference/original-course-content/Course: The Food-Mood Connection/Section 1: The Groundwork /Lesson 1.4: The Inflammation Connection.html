@@ -1,0 +1,176 @@
+<!-- START OF LEARNWORLDS CUSTOM CODE BLOCK FOR LESSON 4 -->
+<style>
+    /* --- RPS Gold Standard Styles - Based on User-Provided Sleep Course Example --- */
+    /* --- Brand Colors & Fonts --- */
+    :root {
+        --brand-primary-blue: #3d70b2;
+        --brand-secondary-blue: #5fa8d3;
+        --brand-light-bg: #f8f9fa;
+        --brand-text-dark: #212529;
+        --brand-text-light: #6c757d;
+        --brand-white: #FFFFFF;
+        --brand-red-dark: #c0392b;
+        --brand-red-light: #e74c3c;
+        --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* --- General & Layout --- */
+    .rps-lesson-4 *, .rps-lesson-4 *::before, .rps-lesson-4 *::after { box-sizing: border-box; }
+    .rps-lesson-4 {
+        font-family: var(--font-family);
+        line-height: 1.7;
+        color: var(--brand-text-dark);
+        background-color: var(--brand-white);
+    }
+    .rps-lesson-4 .content-wrapper { max-width: 850px; margin: 20px auto; padding: 10px; }
+    .rps-lesson-4 .section { padding: 32px 0; border-bottom: 1px solid #e9ecef; }
+    .rps-lesson-4 .section:last-of-type { border-bottom: none; }
+
+    /* --- Typography & Headers (Fixed Pixel Scale) --- */
+    .rps-lesson-4 .lesson-header { text-align: center; margin-bottom: 32px; }
+    .rps-lesson-4 h1 { font-size: 28px; font-weight: 700; color: var(--brand-red-dark); margin-bottom: 8px; }
+    .rps-lesson-4 .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+    .rps-lesson-4 h2 { font-size: 24px; color: var(--brand-red-dark); border-bottom: 2px solid #e9ecef; padding-bottom: 12px; margin-bottom: 24px; }
+    .rps-lesson-4 p { font-size: 18px; color: var(--brand-text-light); margin-bottom: 16px; }
+    .rps-lesson-4 ul { padding-left: 24px; }
+    .rps-lesson-4 li { margin-bottom: 8px; }
+    .rps-lesson-4 strong { color: var(--brand-red-dark); font-weight: 600; }
+
+    /* --- Special Containers --- */
+    .rps-lesson-4 .practitioner-voice { display: flex; align-items: flex-start; gap: 20px; background-color: #eaf5fd; padding: 24px; border-radius: 8px; margin: 24px 0; }
+    .rps-lesson-4 .practitioner-voice blockquote { margin: 0; font-style: italic; color: var(--brand-text-light); border-left: 4px solid var(--brand-secondary-blue); padding-left: 20px; font-size: 17px; }
+    .rps-lesson-4 .highlight-box { background-color: #fdedec; border-left: 5px solid var(--brand-red-dark); padding: 20px; margin-top: 20px; border-radius: 4px; }
+    .rps-lesson-4 .highlight-box h3 { color: var(--brand-red-dark); margin-top: 0; font-size: 18px; }
+
+    /* --- Interactive Activity --- */
+    .rps-lesson-4 .activity-box { background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 24px; margin-top: 24px; }
+    .rps-lesson-4 .plate-activity-container { display: grid; grid-template-columns: 250px 1fr; gap: 32px; margin-top: 24px; align-items: center; }
+    .rps-lesson-4 .food-pool { display: flex; flex-direction: column; gap: 12px; }
+    .rps-lesson-4 .food-item { padding: 12px 20px; background: var(--brand-white); border: 2px solid var(--brand-secondary-blue); border-radius: 8px; cursor: grab; text-align: center; font-weight: 500; font-size: 16px; user-select: none; transition: all 0.2s ease; }
+    .rps-lesson-4 .food-item:active { cursor: grabbing; opacity: 0.7; transform: scale(0.95); }
+    .rps-lesson-4 .food-item.placed { background: #f1f1f1; color: #aaa; border-color: #ddd; cursor: not-allowed; }
+    .rps-lesson-4 .plate-container { display: flex; justify-content: center; }
+    .rps-lesson-4 .plate { position: relative; width: 300px; height: 300px; background: var(--brand-white); border: 4px solid var(--brand-primary-blue); border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+    .rps-lesson-4 .plate-section { border: 2px dashed #e9ecef; padding: 10px; overflow-y: auto; transition: background-color 0.3s; }
+    .rps-lesson-4 .plate-section.drag-over { background-color: #eaf5fd; }
+    .rps-lesson-4 .plate-section h5 { text-align: center; color: var(--brand-text-light); font-size: 14px; font-weight: 600; margin: 0 0 8px 0; }
+    .rps-lesson-4 .plate-section .food-item { font-size: 14px; padding: 8px 12px; border-color: var(--brand-green-light); cursor: default; }
+
+    /* --- Mobile Responsiveness --- */
+    @media (max-width: 768px) {
+        .rps-lesson-4 .plate-activity-container { grid-template-columns: 1fr; }
+        .rps-lesson-4 .food-pool { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    }
+</style>
+
+<div class="rps-lesson-container rps-lesson-4">
+    <div class="content-wrapper">
+        <header class="lesson-header">
+            <h1>Lesson 4: The Inflammation Connection</h1>
+            <p class="lesson-subtitle">From Gut Fire to Brain Fog</p>
+        </header>
+
+        <section class="section">
+            <h2>The Body's Fire Alarm</h2>
+            <p>We've established the gut-brain axis. Now, let's meet the primary villain in this story: **chronic inflammation**. Think of it as a low-level "fire" in your body. While short-term inflammation is a healthy healing response (like when you cut your finger), chronic, body-wide inflammation is like a fire alarm that's stuck on, sending constant stress signals that disrupt every system, especially your brain.</p>
+        </section>
+        
+        <section class="section">
+            <h2>What Fans the Flames?</h2>
+            <p>While chronic stress and poor sleep are major contributors, our modern diet is one of the biggest sources of chronic inflammation. Certain foods can trigger your immune system to stay on high alert. The primary culprits include:</p>
+            <ul>
+                <li><strong>Refined Sugars & Flours:</strong> Cause sharp blood sugar spikes that promote inflammation.</li>
+                <li><strong>Unhealthy Fats:</strong> Industrial seed oils (like soy, corn) and trans fats found in many processed foods.</li>
+                <li><strong>Ultra-Processed Foods:</strong> Products with long ingredient lists of artificial additives can be seen as foreign invaders by your gut.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="highlight-box">
+                <h3>💡 Key Insight: The Depression Link</h3>
+                <p>Groundbreaking research now shows a powerful link between inflammation and depression. Studies have found that people with depression often have higher levels of inflammatory markers in their blood. This suggests that for many, depression isn't just a "chemical imbalance" but may be a symptom of body-wide inflammation affecting the brain.</p>
+            </div>
+        </section>
+
+        <section class="section">
+             <div class="practitioner-voice">
+                <blockquote>"I frequently see patients who feel 'stuck'—their anxiety or depression isn't fully responding to therapy or medication. Often, when we dig into their diet, we find it's high in processed, inflammatory foods. A powerful first step is often to shift focus to an anti-inflammatory diet. It’s not about perfection, but about crowding out the inflammatory foods with delicious, whole, nutrient-dense ones. The change in mood and energy can be remarkable when we calm that internal fire." - Autumn Persinger, PMHNP-BC</blockquote>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Interactive Activity: Build Your Anti-Inflammatory Plate</h2>
+            <div class="activity-box">
+                <h3 style="text-align:center; color: var(--brand-primary-blue); margin-top:0;">Build a Brain-Calming Meal</h3>
+                <p style="text-align:center; margin-top:8px;">Drag the foods from the list onto the correct section of the plate.</p>
+                <div class="plate-activity-container">
+                    <div class="food-pool">
+                        <div class="food-item" draggable="true" id="item1-L4" data-section="protein">🐟 Salmon</div>
+                        <div class="food-item" draggable="true" id="item2-L4" data-section="leafy-greens">🥬 Spinach</div>
+                        <div class="food-item" draggable="true" id="item3-L4" data-section="healthy-fats">🥑 Avocado</div>
+                        <div class="food-item" draggable="true" id="item4-L4" data-section="colorful-veg">🥦 Broccoli</div>
+                        <div class="food-item" draggable="true" id="item5-L4" data-section="protein">🍗 Chicken Breast</div>
+                        <div class="food-item" draggable="true" id="item6-L4" data-section="healthy-fats">🌰 Walnuts</div>
+                    </div>
+                    <div class="plate-container">
+                        <div class="plate">
+                            <div class="plate-section" id="protein-L4"><h5>Lean Protein</h5></div>
+                            <div class="plate-section" id="healthy-fats-L4"><h5>Healthy Fats</h5></div>
+                            <div class="plate-section" id="leafy-greens-L4"><h5>Leafy Greens</h5></div>
+                            <div class="plate-section" id="colorful-veg-L4"><h5>Colorful Veg</h5></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const container = document.querySelector('.rps-lesson-4');
+        if (!container) return;
+
+        const foodItems = container.querySelectorAll('.food-item');
+        const plateSections = container.querySelectorAll('.plate-section');
+
+        foodItems.forEach(item => {
+            item.addEventListener('dragstart', e => {
+                 if (e.target.classList.contains('placed')) {
+                    e.preventDefault();
+                    return;
+                }
+                e.dataTransfer.setData('text/plain', e.target.id);
+                e.target.style.opacity = '0.5';
+            });
+            item.addEventListener('dragend', e => {
+                e.target.style.opacity = '1';
+            });
+        });
+
+        plateSections.forEach(section => {
+            section.addEventListener('dragover', e => {
+                e.preventDefault();
+                section.classList.add('drag-over');
+            });
+            section.addEventListener('dragleave', () => {
+                section.classList.remove('drag-over');
+            });
+            section.addEventListener('drop', e => {
+                e.preventDefault();
+                section.classList.remove('drag-over');
+                const id = e.dataTransfer.getData('text/plain');
+                const draggable = container.querySelector('#' + id);
+                
+                if (!draggable || draggable.classList.contains('placed')) return;
+
+                if (draggable.dataset.section + '-L4' === section.id) {
+                    section.appendChild(draggable);
+                    draggable.classList.add('placed');
+                    draggable.setAttribute('draggable', 'false');
+                }
+            });
+        });
+    })();
+</script>
+<!-- END OF LEARNWORLDS CUSTOM CODE BLOCK FOR LESSON 4 -->

@@ -1,0 +1,261 @@
+{
+  "industry_id": "fintech",
+  "display_name": "FinTech",
+  "parent_category": "technology",
+  "description": "Financial technology companies encompassing payments, lending, banking infrastructure, wealth management, insurance technology, and cryptocurrency/blockchain. Includes both consumer-facing fintech and B2B infrastructure providers serving banks and financial institutions.",
+  "typical_company_sizes": ["11-50", "51-200", "201-500"],
+  "typical_deal_sizes": ["smb", "mid_market", "enterprise"],
+  "sales_cycle_length": "months",
+
+  "pain_points": [
+    {
+      "pain": "Regulatory compliance burden consuming engineering and operational resources",
+      "level": "complex",
+      "context": "Multi-jurisdiction compliance (federal, state, international) requires dedicated teams and constant vigilance for new requirements"
+    },
+    {
+      "pain": "Fraud prevention while maintaining frictionless user experience",
+      "level": "complex",
+      "context": "Every fraud control adds friction that reduces conversion; finding balance is constant challenge"
+    },
+    {
+      "pain": "Security requirements creating development slowdowns",
+      "level": "straightforward",
+      "context": "Security reviews, penetration testing, and compliance audits add weeks to release cycles"
+    },
+    {
+      "pain": "Legacy system integration with banks and financial institutions",
+      "level": "complex",
+      "context": "Partner banks run on decades-old mainframe systems with limited API capabilities and slow change processes"
+    },
+    {
+      "pain": "SOC 2 and security certification costs and timeline",
+      "level": "straightforward",
+      "context": "SOC 2 Type II takes 6-12 months and $50K+ to obtain, required for almost every enterprise deal"
+    },
+    {
+      "pain": "Vendor risk management burden from banking partners",
+      "level": "complex",
+      "context": "Bank partners require extensive due diligence, ongoing monitoring, and documentation that strains small teams"
+    },
+    {
+      "pain": "Chargeback and dispute management complexity",
+      "level": "straightforward",
+      "context": "High chargeback rates threaten payment processing relationships and trigger account termination"
+    },
+    {
+      "pain": "Multi-jurisdiction AML/KYC requirements",
+      "level": "complex",
+      "context": "Each country has different identity verification, sanctions screening, and suspicious activity reporting requirements"
+    }
+  ],
+
+  "buying_triggers": [
+    "Failed regulatory audit with 90-day remediation deadline",
+    "Fraud incident requiring immediate enhanced controls",
+    "New regulation deadline approaching (PCI DSS 4.0, DORA)",
+    "Bank partnership requiring SOC 2 and security documentation",
+    "Series A/B funding requiring compliance infrastructure",
+    "Geographic expansion requiring new jurisdiction compliance",
+    "Vendor unresponsive to compliance documentation requests",
+    "Competitor breach creating board-level security focus"
+  ],
+
+  "budget_cycle": "Enterprise fintech follows annual budget planning in Q4. Compliance and security spending often has separate budget from product development. Regulatory deadlines can trigger off-cycle emergency purchases. Bank partnership requirements bypass normal procurement when deal-critical.",
+
+  "regulatory_concerns": [
+    "SOC 2 Type II certification",
+    "PCI DSS compliance for payment card handling",
+    "AML (Anti-Money Laundering) program requirements",
+    "KYC (Know Your Customer) identity verification mandates",
+    "OFAC sanctions screening",
+    "State money transmitter licenses",
+    "GDPR and data privacy regulations",
+    "SEC regulations for securities and investment products",
+    "FDIC and OCC banking regulations",
+    "Consumer financial protection (CFPB) requirements"
+  ],
+
+  "compliance_language": [
+    "SOC 2 Type II certified",
+    "PCI DSS Level 1 compliant",
+    "AML/KYC program",
+    "sanctions screening",
+    "audit trail",
+    "data encryption at rest and in transit",
+    "incident response plan",
+    "vendor risk assessment",
+    "Business Continuity Planning",
+    "disaster recovery"
+  ],
+
+  "risk_tolerance": "low",
+
+  "terminology": [
+    {
+      "term": "KYC",
+      "definition": "Know Your Customer - the process of verifying customer identity using government IDs, biometrics, and documentation before allowing account opening or transactions",
+      "usage_context": "Onboarding discussion. 'Our KYC flow needs to verify identity in under 2 minutes or we lose customers to competitors.'"
+    },
+    {
+      "term": "AML",
+      "definition": "Anti-Money Laundering - compliance program to detect and prevent money laundering, terrorist financing, and other financial crimes through transaction monitoring and suspicious activity reporting",
+      "usage_context": "Compliance infrastructure. 'Our AML program includes real-time transaction monitoring and quarterly SAR filing.'"
+    },
+    {
+      "term": "PCI-DSS",
+      "definition": "Payment Card Industry Data Security Standard - mandatory security standard for any company handling credit card data, with 12 requirements covering encryption, access control, and monitoring",
+      "usage_context": "Payment security. 'We need PCI DSS Level 1 certification before the card network will approve our application.'"
+    },
+    {
+      "term": "SOX",
+      "definition": "Sarbanes-Oxley Act - federal law requiring public companies to maintain internal controls over financial reporting, with implications for fintech companies handling financial data",
+      "usage_context": "Enterprise compliance. 'Our bank partner requires SOX-compliant financial controls for any vendor touching their ledger.'"
+    },
+    {
+      "term": "ACH",
+      "definition": "Automated Clearing House - the US payment network for electronic bank-to-bank transfers, with next-day settlement for most transactions",
+      "usage_context": "Payment rails. 'ACH is cheaper than cards but the 1-2 day settlement creates cash flow challenges for our customers.'"
+    },
+    {
+      "term": "SWIFT",
+      "definition": "Society for Worldwide Interbank Financial Telecommunication - the global messaging network for international wire transfers between banks",
+      "usage_context": "International payments. 'SWIFT transfers take 2-5 days and cost $25-50 in fees, which is why we're exploring blockchain alternatives.'"
+    },
+    {
+      "term": "Open Banking",
+      "definition": "Regulatory framework and technology allowing third-party access to bank account data and payment initiation through secure APIs, with customer consent",
+      "usage_context": "Data access. 'Open Banking APIs let us pull transaction history directly from the bank instead of relying on screen scraping.'"
+    },
+    {
+      "term": "BaaS",
+      "definition": "Banking as a Service - infrastructure that allows non-bank companies to offer banking products (accounts, cards, lending) through API integration with licensed bank partners",
+      "usage_context": "Product enablement. 'Our BaaS partner handles the banking license and compliance so we can focus on the user experience.'"
+    },
+    {
+      "term": "Embedded Finance",
+      "definition": "Integration of financial services (payments, lending, insurance) directly into non-financial platforms and applications at the point of need",
+      "usage_context": "Product strategy. 'Embedded finance lets us offer buy-now-pay-later right in the checkout flow without redirecting to a bank.'"
+    },
+    {
+      "term": "RegTech",
+      "definition": "Regulatory Technology - software solutions that help financial institutions comply with regulations more efficiently through automation, monitoring, and reporting",
+      "usage_context": "Compliance tooling. 'We use RegTech for automated suspicious activity monitoring instead of manual review.'"
+    },
+    {
+      "term": "Stablecoin",
+      "definition": "Cryptocurrency designed to maintain stable value relative to a reference asset (usually USD), enabling crypto payments without price volatility",
+      "usage_context": "Crypto payments. 'Stablecoins like USDC give us the blockchain rails without the Bitcoin volatility.'"
+    },
+    {
+      "term": "DeFi",
+      "definition": "Decentralized Finance - blockchain-based financial services that operate without traditional intermediaries through smart contracts and decentralized protocols",
+      "usage_context": "Crypto strategy. 'DeFi protocols offer higher yields but the regulatory status is uncertain.'"
+    },
+    {
+      "term": "TradFi",
+      "definition": "Traditional Finance - conventional financial institutions and systems (banks, brokerages, exchanges) as contrasted with DeFi and crypto-native alternatives",
+      "usage_context": "Industry positioning. 'We're bridging TradFi and crypto by offering regulated custody with DeFi yield access.'"
+    },
+    {
+      "term": "Ledger",
+      "definition": "The authoritative record of all financial transactions, typically using double-entry accounting where every transaction has matching debit and credit entries",
+      "usage_context": "System architecture. 'Our ledger system uses double-entry accounting and immutable audit trails for reconciliation.'"
+    },
+    {
+      "term": "Chargeback",
+      "definition": "A disputed credit card transaction where the cardholder's bank reverses the charge, typically costing the merchant the transaction amount plus fees",
+      "usage_context": "Risk management. 'Our chargeback rate hit 1.2% and the payment processor is threatening to terminate our account.'"
+    }
+  ],
+
+  "formality_level": "formal",
+  "decision_making_style": "lengthy_process",
+
+  "common_objections": [
+    {
+      "objection": "Are you SOC 2 Type II certified?",
+      "underlying_concern": "This is a binary gate. Without SOC 2 Type II, enterprise customers and bank partners will not proceed. No exceptions, no workarounds.",
+      "effective_response_approach": "If yes: Provide report immediately (one-click access, not 'contact sales'). If in progress: Share timeline and interim bridge letter. If no: Be honest - this will end most enterprise conversations until certification is complete.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "What happens if you get breached? Who pays for the regulatory fines?",
+      "underlying_concern": "FinTech companies face cascading liability - if a vendor gets breached, the fintech customer may face CFPB/FCA fines. Need clear liability boundaries and indemnification.",
+      "effective_response_approach": "Lead with incident response plan (documented, tested). State breach notification SLA (24-48 hours). Show cyber liability insurance coverage. Discuss indemnification terms openly - most vendors cap liability, so be honest about boundaries.",
+      "level": "complex"
+    },
+    {
+      "objection": "We need to run this through our vendor risk assessment process",
+      "underlying_concern": "Regulators require documented vendor risk management. Every vendor must complete security questionnaires, provide compliance documentation, and undergo ongoing monitoring.",
+      "effective_response_approach": "Provide vendor risk assessment toolkit proactively: SOC 2 report, penetration test results, security questionnaire responses, insurance certificates. Offer to work with their compliance team directly.",
+      "level": "complex"
+    },
+    {
+      "objection": "How does this integrate with our core banking system?",
+      "underlying_concern": "Bank partners run on legacy mainframes (often 30+ years old) with limited API capabilities. Integration projects can take months and require bank IT resources that are always overcommitted.",
+      "effective_response_approach": "Show existing integrations with their specific core banking provider. Provide technical architecture documentation. Offer dedicated integration support. Set realistic timeline expectations (months, not weeks).",
+      "level": "complex"
+    },
+    {
+      "objection": "Our compliance team needs to review the contract terms",
+      "underlying_concern": "Financial services contracts require extensive legal review for liability, indemnification, data handling, and regulatory compliance terms. This process cannot be rushed.",
+      "effective_response_approach": "Accept timeline reality (weeks to months for legal review). Provide redlined contract templates upfront. Be prepared to negotiate - fintech legal teams have specific requirements that may differ from your standard terms.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "What's your audit trail and data retention policy?",
+      "underlying_concern": "Regulators require 5-7 year data retention and complete audit trails for all transactions. If vendor can't prove this, fintech fails their regulatory examination.",
+      "effective_response_approach": "Document specific retention periods (minimum 5 years, 7 years for certain transaction types). Show immutable audit log capabilities. Explain data export and portability for regulatory requests.",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Plaid (banking connectivity)",
+    "Stripe / Adyen (payments)",
+    "Unit / Treasury Prime (BaaS)",
+    "Alloy / Jumio (identity verification)",
+    "Sardine / Socure (fraud prevention)",
+    "Chainalysis / Elliptic (crypto compliance)",
+    "ComplyAdvantage / LexisNexis (AML screening)",
+    "Vanta / Drata (compliance automation)"
+  ],
+
+  "switching_barriers": [
+    "SOC 2 audit of new vendor required before migration",
+    "Bank partner approval needed for any infrastructure change",
+    "Regulatory notification requirements for vendor changes",
+    "Historical transaction data and audit trail continuity",
+    "Integration complexity with core banking systems",
+    "Staff training and process documentation updates"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're a {role} at a {company_size} payments company. Your bank partner just informed you they need SOC 2 documentation within 60 days or they'll terminate the relationship. {trigger_event}. You need to solve {pain_point} before the deadline.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} lending startup. A regulator just issued a 90-day remediation order after finding gaps in your AML program. {trigger_event}. Fixing {pain_point} is now your top priority before the follow-up exam.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} neobank. Your fraud losses doubled last quarter and the board is demanding immediate action. {trigger_event}. You must address {pain_point} without adding friction that hurts conversion.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} crypto company preparing for Series B. Investors are requiring enterprise-grade compliance before they'll close. {trigger_event}. You need to demonstrate {pain_point} is solved in 30 days.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} BaaS provider. A major fintech customer is threatening to leave because your API documentation is outdated and integration support is slow. {trigger_event}. You need to address {pain_point} to save a $500K annual contract.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    }
+  ]
+}

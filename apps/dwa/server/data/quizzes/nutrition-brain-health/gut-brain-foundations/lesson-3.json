@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are 'tight junctions' in the context of intestinal permeability?",
+            "options": [
+                { "id": "opt1", "text": "Muscles that squeeze food through the digestive tract" },
+                { "id": "opt2", "text": "Protein complexes that seal the spaces between intestinal cells, controlling what enters the bloodstream" },
+                { "id": "opt3", "text": "Nerve connections between the gut and brain" },
+                { "id": "opt4", "text": "Immune cells that destroy bacteria on contact" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Tight junctions are protein complexes that seal the spaces between intestinal cells. They act like mortar between bricks, keeping bacteria, toxins, and undigested food particles from leaking through the gut lining into the bloodstream."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is zonulin and what role does it play in gut health?",
+            "options": [
+                { "id": "opt1", "text": "A beneficial bacteria that strengthens the gut barrier" },
+                { "id": "opt2", "text": "A type of dietary fiber that feeds gut microbes" },
+                { "id": "opt3", "text": "A vitamin essential for intestinal cell repair" },
+                { "id": "opt4", "text": "A protein that signals tight junctions to open, increasing intestinal permeability when elevated" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Zonulin is a signaling protein that tells tight junctions to open. When zonulin levels are elevated, tight junctions loosen and intestinal permeability increases. Research has found elevated zonulin levels in people with major depressive disorder and bipolar disorder."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 'leaky gut, leaky brain' hypothesis, what is the connection between gut barrier and brain barrier integrity?",
+            "options": [
+                { "id": "opt1", "text": "The gut barrier and blood-brain barrier are the same physical structure" },
+                { "id": "opt2", "text": "The same factors that increase intestinal permeability can also increase blood-brain barrier permeability through systemic inflammation" },
+                { "id": "opt3", "text": "Brain barrier breakdown causes gut barrier breakdown, but not the other way around" },
+                { "id": "opt4", "text": "There is no connection between the gut barrier and the blood-brain barrier" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that the same factors that increase intestinal permeability can also increase blood-brain barrier permeability. When gut barrier breakdown allows inflammatory molecules into the bloodstream, those inflammatory signals can weaken the blood-brain barrier, allowing substances that should be kept out of the brain to gain access."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is the primary fuel source for the cells that maintain the gut barrier?",
+            "options": [
+                { "id": "opt1", "text": "Glucose from dietary sugars" },
+                { "id": "opt2", "text": "Protein from meat consumption" },
+                { "id": "opt3", "text": "Butyrate produced by gut bacteria from dietary fiber" },
+                { "id": "opt4", "text": "Omega-3 fatty acids from fish oil" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Butyrate, a short-chain fatty acid produced when gut bacteria ferment dietary fiber, is the primary fuel for colonocytes — the cells that maintain the gut barrier. Without adequate butyrate from fiber consumption, these barrier cells are starved and tight junctions can loosen."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following factors does NOT damage the gut barrier?",
+            "options": [
+                { "id": "opt1", "text": "Chronic psychological stress" },
+                { "id": "opt2", "text": "Eating a high-fiber diet with diverse plant foods" },
+                { "id": "opt3", "text": "Excessive alcohol consumption" },
+                { "id": "opt4", "text": "Sleep deprivation" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A high-fiber diet with diverse plant foods actually supports gut barrier integrity by feeding butyrate-producing bacteria. In contrast, chronic stress, excessive alcohol, and sleep deprivation all damage the gut barrier by loosening tight junctions, reducing SCFA production, or impairing overnight barrier repair."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "3",
+    "title": "Intestinal Permeability: When Your Gut Barrier Breaks Down - Quiz"
+}

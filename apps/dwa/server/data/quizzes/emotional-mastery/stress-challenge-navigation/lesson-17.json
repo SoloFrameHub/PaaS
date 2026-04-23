@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the current evidence status for individual-level interventions targeting financial stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "STRONG—specific mindset techniques eliminate financial stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "LIMITED—stress acts as a mediator between financial strain and mental health outcomes, but evidence for individual interventions is weak; structural economic factors are primary"
+                },
+                {
+                    "id": "opt3",
+                    "text": "STRONG for all money mindset interventions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Financial stress is purely psychological with no structural component"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The research brief notes that financial stress is 'heavily influenced by structural factors beyond individual control' and identifies economic precarity as a structural stressor that individual coping cannot fully address. The evidence shows that stress mediates the pathway from financial strain to mental health outcomes—meaning financial insecurity creates stress, which then leads to anxiety/depression. However, evidence for specific individual-level interventions (financial literacy education, money mindset training) improving mental health outcomes is limited. While budgeting skills and financial planning may help when resources exist, they cannot compensate for genuine economic insecurity (insufficient income, debt, job instability). This is a structural issue requiring systemic solutions, not just individual skill-building."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does financial stress affect mental health according to research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Financial stress has no real effect on mental health"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Financial stress is chronic and cumulative, affecting sleep, health behaviors, and mental health through sustained activation of stress response systems and reduced sense of control"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people who are 'bad with money' experience financial stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Financial stress only matters if you are literally homeless"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Financial stress operates differently from many other stressors because it tends to be chronic (ongoing, not time-limited), cumulative (building over months/years), and largely uncontrollable at the individual level. It affects mental health through multiple pathways: chronic activation of stress response systems (cortisol dysregulation, HPA axis), sleep disruption from worry, reduced engagement in health-promoting behaviors (can't afford gym, healthy food, healthcare), reduced sense of control and agency (which increases threat appraisal), and social comparison/shame. Importantly, financial stress is heavily influenced by structural economic factors—wages, cost of living, access to benefits, job security—that individual financial literacy cannot fully address. This is why the research emphasizes realistic expectations about what individual coping can achieve."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the most honest, evidence-aligned message about financial stress for a stress management course?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Just change your money mindset and financial stress disappears"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Financial stress is heavily influenced by structural economic factors; individual skills (budgeting, planning) help when resources exist, but cannot substitute for adequate income or economic security"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Financial stress is entirely your fault for poor money management"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Financial stress can never be reduced by any means"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "This message avoids both overpromising (implying mindset changes solve structural economic problems) and hopelessness (implying nothing helps). The evidence-aligned stance acknowledges that: (1) financial stress is heavily influenced by structural factors—wages, cost of living, economic precarity, systemic inequality, (2) individual skills like budgeting, planning, and resource awareness are helpful when you have resources to manage, but cannot create resources that don't exist, (3) stress management skills (cognitive reappraisal, social support, problem-solving) can help manage the emotional/psychological impact of financial strain without overclaiming they solve the underlying economic problem, and (4) some financial stressors require external support (financial counseling, debt assistance programs, policy advocacy) rather than individual coping alone."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is it problematic to frame financial stress as purely an individual mindset issue?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It's not problematic—financial stress is always about mindset"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because it shifts responsibility from structural economic conditions to individuals, implies poverty results from poor mindset, minimizes real economic insecurity, and delays advocacy for systemic solutions"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Structural factors don't affect financial stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only mindset, not actual money, affects financial stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The research brief explicitly warns against language that 'implies inadequate stress management reflects personal failure' when 'chronic stress is frequently produced by structural conditions—workload, economic precarity, discrimination, caregiving burden—that individual coping cannot address.' Framing financial stress as purely a mindset issue: (1) inappropriately blames people for structural economic problems (low wages, unemployment, medical debt, housing costs), (2) suggests poverty or financial strain result from 'poor money mindset' rather than systemic inequality and inadequate safety nets, (3) minimizes the real impact of economic insecurity on health and well-being, and (4) distracts from necessary advocacy for policy solutions (living wages, affordable healthcare/housing, debt relief programs). Individual coping skills are valuable adjuncts, but not substitutes for economic justice."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When does financial stress require professional support beyond general stress management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Never—all financial stress is self-manageable"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When financial stress leads to clinical depression/anxiety, substance use, relationship breakdown, or when debt/financial complexity exceeds self-management capacity—requires financial counselor, therapist, or legal aid"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only if you file for bankruptcy"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Financial issues never require professional support"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Financial stress requires professional support in several situations: (1) when it contributes to clinical depression or anxiety (persistent hopelessness, sleep/appetite changes, panic attacks)—requires mental health professional, (2) when financial stress leads to substance use, gambling, or other harmful coping—requires addiction specialist or therapist, (3) when financial stress is destroying relationships—couples/family therapy may help, (4) when debt or financial complexity exceeds self-management capacity (bankruptcy consideration, tax issues, predatory lending)—requires certified financial counselor or legal aid, or (5) when financial crisis threatens housing security or safety—requires social services, advocacy resources, emergency assistance programs. General stress management can't substitute for specialized financial or mental health support in these contexts."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "17",
+    "title": "Financial Stress and Money Mindset - Quiz"
+}

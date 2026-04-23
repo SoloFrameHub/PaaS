@@ -1,0 +1,246 @@
+{
+  "industry_id": "professional_services",
+  "display_name": "Professional Services",
+  "parent_category": "services",
+  "description": "Law firms, accounting practices, consulting firms, and other professional service providers typically with 2-50 staff. Characterized by billable hour models, high client confidentiality requirements, formal partner-driven decision making requiring consensus, and sales cycles of 4-8 weeks. Extremely risk-averse due to reputation and liability concerns.",
+  "typical_company_sizes": ["1-10", "11-50"],
+  "typical_deal_sizes": ["smb", "mid_market"],
+  "sales_cycle_length": "weeks",
+
+  "pain_points": [
+    {
+      "pain": "Staff burnout and attrition affecting service quality",
+      "level": "complex",
+      "context": "61% increase in professional burnout creating retention and client service challenges"
+    },
+    {
+      "pain": "Billable hours model conflicting with efficiency tools",
+      "level": "complex",
+      "context": "Tools that save time reduce billable hours unless pricing model changes"
+    },
+    {
+      "pain": "Clients unwilling to pay for technology passed through",
+      "level": "straightforward",
+      "context": "Clients question non-labor charges on invoices"
+    },
+    {
+      "pain": "AI accuracy requirements near 100% for legal/financial work",
+      "level": "complex",
+      "context": "Professional liability means errors are unacceptable"
+    },
+    {
+      "pain": "Partner consensus required for any significant change",
+      "level": "straightforward",
+      "context": "Decision making requires buy-in from multiple partners with different priorities"
+    },
+    {
+      "pain": "Confidentiality concerns with cloud and AI tools",
+      "level": "straightforward",
+      "context": "Client data sensitivity limits technology options"
+    }
+  ],
+
+  "buying_triggers": [
+    "Staff burnout or key personnel attrition",
+    "Major regulatory or compliance changes",
+    "Loss of significant client to competitor",
+    "Partner retirement creating succession planning",
+    "Firm merger or acquisition discussions",
+    "AI competitive pressure from peer firms",
+    "Growth of fractional/virtual service models",
+    "Client demand for technology-enabled services"
+  ],
+
+  "budget_cycle": "Annual budgeting with partner approval for significant expenditures. Technology investments often tied to fiscal year planning or triggered by specific client needs. Conservative approach to spending with preference for proven solutions.",
+
+  "regulatory_concerns": [
+    "Professional licensing and ethics rules",
+    "Client confidentiality and attorney-client privilege",
+    "Industry-specific regulations (SEC, IRS, state bars)",
+    "Professional liability and malpractice exposure",
+    "Data retention requirements",
+    "Anti-money laundering (for accounting)"
+  ],
+
+  "compliance_language": [
+    "Confidentiality certified",
+    "Professional ethics compliant",
+    "Bank-grade security",
+    "Audit trail maintained",
+    "On-premise option available",
+    "SOC 2 Type II certified"
+  ],
+
+  "risk_tolerance": "low",
+
+  "terminology": [
+    {
+      "term": "Billable Hours",
+      "definition": "Time spent on client work that can be invoiced",
+      "usage_context": "Revenue metric. 'Partners are expected to bill 1,800 hours annually.'"
+    },
+    {
+      "term": "Billable Utilization",
+      "definition": "Percentage of available time spent on billable client work",
+      "usage_context": "Efficiency metric. 'Our target billable utilization is 80% for associates.'"
+    },
+    {
+      "term": "Realization Rate",
+      "definition": "Percentage of billed time actually collected from clients",
+      "usage_context": "Collection metric. 'Our realization rate dropped to 85% last quarter.'"
+    },
+    {
+      "term": "Engagement Letter",
+      "definition": "Formal agreement defining scope of professional services",
+      "usage_context": "Contract. 'We need a signed engagement letter before starting work.'"
+    },
+    {
+      "term": "Scope of Services",
+      "definition": "Defined boundaries of what work will be performed",
+      "usage_context": "Agreement terms. 'Tax preparation is in scope but audit representation is not.'"
+    },
+    {
+      "term": "Conflicts Check",
+      "definition": "Process to identify potential conflicts of interest before taking on a client",
+      "usage_context": "Ethics requirement. 'Run a conflicts check before the initial meeting.'"
+    },
+    {
+      "term": "Write-Down",
+      "definition": "Reduction of billed amount before invoicing due to inefficiency or client sensitivity",
+      "usage_context": "Billing adjustment. 'We had to write down 20 hours on that matter.'"
+    },
+    {
+      "term": "Write-Off",
+      "definition": "Billed amount deemed uncollectible after invoicing",
+      "usage_context": "Collection issue. 'We wrote off $15K from that client last year.'"
+    },
+    {
+      "term": "Retainer",
+      "definition": "Advance payment held against future services",
+      "usage_context": "Payment terms. 'We require a $10K retainer before beginning work.'"
+    },
+    {
+      "term": "Contingency Fee",
+      "definition": "Fee based on percentage of recovery rather than hourly billing",
+      "usage_context": "Alternative pricing. 'We take personal injury cases on contingency.'"
+    },
+    {
+      "term": "Blended Rate",
+      "definition": "Average hourly rate across professionals of different seniority levels",
+      "usage_context": "Pricing discussion. 'Our blended rate for the engagement team is $350/hour.'"
+    },
+    {
+      "term": "Value-Based Pricing",
+      "definition": "Fixed fee based on value delivered rather than hours spent",
+      "usage_context": "Alternative pricing. 'We offer value-based pricing for routine transactions.'"
+    },
+    {
+      "term": "Non-Billable Time",
+      "definition": "Time spent on firm activities not chargeable to clients",
+      "usage_context": "Overhead. 'Training and business development are non-billable.'"
+    },
+    {
+      "term": "Matter",
+      "definition": "A specific client engagement or case (legal terminology)",
+      "usage_context": "Work organization. 'Open a new matter number for this litigation.'"
+    },
+    {
+      "term": "WIP",
+      "definition": "Work in Progress - unbilled time and costs on active matters",
+      "usage_context": "Financial metric. 'Our WIP is over $2M which is too high.'"
+    }
+  ],
+
+  "formality_level": "formal",
+  "decision_making_style": "committee",
+
+  "common_objections": [
+    {
+      "objection": "This will reduce our billable hours",
+      "underlying_concern": "Firm economics are built on hourly billing and efficiency threatens revenue",
+      "effective_response_approach": "Reframe as enabling higher-value work or more client capacity. Show how saved time converts to business development or premium services. Support transition to value-based pricing.",
+      "level": "complex"
+    },
+    {
+      "objection": "Our clients won't pay for technology - it comes out of our margin",
+      "underlying_concern": "Technology is seen as overhead rather than value-add",
+      "effective_response_approach": "Show how to position as client benefit. Demonstrate how peers are incorporating into value-based fees. Provide ROI story for partner conversations with clients.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We can't risk client confidentiality with cloud/AI tools",
+      "underlying_concern": "Professional liability and ethical obligations around client data",
+      "effective_response_approach": "Detail specific security measures. Offer on-premise or private cloud options. Provide ethics opinion references. Show similar firm adoptions.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "AI isn't accurate enough for professional work",
+      "underlying_concern": "Professional liability means near-zero tolerance for errors",
+      "effective_response_approach": "Position AI as augmentation not replacement. Show human-in-the-loop workflows. Demonstrate accuracy metrics and validation processes. Start with lower-risk use cases.",
+      "level": "complex"
+    },
+    {
+      "objection": "We don't have time to learn new systems",
+      "underlying_concern": "Learning curve competes with billable work and client demands",
+      "effective_response_approach": "Provide white-glove onboarding. Show minimal time investment with fast payback. Offer training during slow periods. Demonstrate intuitive interface.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Our practice management system doesn't integrate with this",
+      "underlying_concern": "Fragmented systems create inefficiency and data silos",
+      "effective_response_approach": "Map specific integration requirements. Show existing integrations with common platforms. Offer custom integration if deal size warrants.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "I'm interested but my partners will never approve this",
+      "underlying_concern": "Partner consensus is difficult and technology decisions are contentious",
+      "effective_response_approach": "Provide partner-ready materials addressing common concerns. Offer to present at partner meeting. Start with pilot involving progressive partners. Show peer firm adoption.",
+      "level": "complex"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Traditional practice management software (Clio, PracticePanther, etc.)",
+    "Microsoft Office and Outlook",
+    "Industry-specific legacy software",
+    "Paper-based and manual processes",
+    "Spreadsheets for tracking and reporting"
+  ],
+
+  "switching_barriers": [
+    "Client data migration complexity and risk",
+    "Integration with billing and practice management",
+    "Training investment across firm",
+    "Partner approval process",
+    "Professional liability concerns with new tools",
+    "Historical matter data dependencies"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "{{role}} at a {{firm_size}}-person {{firm_type}} firm is struggling with {{pain_point}}. They've lost {{num_staff}} staff in the past {{time_period}} and need to {{goal}}. The managing partner is {{partner_stance}} about technology.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "firm_size", "firm_type", "pain_point", "num_staff", "time_period", "goal", "partner_stance"]
+    },
+    {
+      "template": "A {{firm_type}} firm with {{num_partners}} partners is evaluating {{solution_type}} solutions. {{champion_role}} is championing the purchase but {{blocker_role}} has concerns about {{concern}}. Budget authority is with {{decision_maker}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["firm_type", "num_partners", "solution_type", "champion_role", "blocker_role", "concern", "decision_maker"]
+    },
+    {
+      "template": "{{role}} at a {{firm_type}} practice just learned a competitor firm is using AI for {{use_case}}. They're worried about falling behind but concerned about {{concern}}. They have {{timeline}} before their annual technology budget review.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "firm_type", "use_case", "concern", "timeline"]
+    },
+    {
+      "template": "A {{firm_size}}-person {{firm_type}} firm is going through {{transition}} and needs to modernize operations. The {{role}} has budget of {{budget}} and needs to show partners ROI within {{timeline}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["firm_size", "firm_type", "transition", "role", "budget", "timeline"]
+    },
+    {
+      "template": "{{role}} at a {{firm_type}} firm wants to move from hourly billing to value-based pricing. They believe {{solution_type}} could help but partners are resistant because {{resistance_reason}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "firm_type", "solution_type", "resistance_reason"]
+    }
+  ]
+}

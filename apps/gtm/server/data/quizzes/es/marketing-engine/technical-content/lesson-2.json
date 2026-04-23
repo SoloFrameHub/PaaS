@@ -1,0 +1,142 @@
+{
+  "lessonId": "2",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Arquitectura de Pilares de Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el rol principal de una 'Página Pilar' en una arquitectura de contenido?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ser una actualización breve y diaria de noticias"
+        },
+        {
+          "id": "b",
+          "text": "Actuar como una guía completa de 'eje' que cubre un tema amplio en profundidad"
+        },
+        {
+          "id": "c",
+          "text": "Mostrar los precios de tu producto"
+        },
+        {
+          "id": "d",
+          "text": "Enlazar a los sitios web de tus competidores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las páginas pilares son ejes de alto nivel (2,000-5,000 palabras) que establecen tu autoridad definitiva sobre un tema amplio."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué tres factores deben converger al seleccionar tus pilares de contenido?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bajo costo, alta velocidad y facilidad de escritura"
+        },
+        {
+          "id": "b",
+          "text": "Tu experiencia, un problema urgente del ICP y el volumen/intención de búsqueda"
+        },
+        {
+          "id": "c",
+          "text": "Diseño visual, calidad de video y claridad de audio"
+        },
+        {
+          "id": "d",
+          "text": "Tendencias de LinkedIn, hashtags de Twitter y memes de Reddit"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un pilar sólido debe ser algo que puedas enseñar bien (Experiencia), algo que a tus clientes les importe (Dolor) y algo que la gente busque (Intención)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el beneficio de una estrategia de palabras clave 'Long-Tail' para un fundador en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apunta a más personas a la vez"
+        },
+        {
+          "id": "b",
+          "text": "Te permite competir con empresas multimillonarias ganando en especificidad"
+        },
+        {
+          "id": "c",
+          "text": "Las palabras clave long-tail son más baratas de comprar como anuncios"
+        },
+        {
+          "id": "d",
+          "text": "Requiere menos investigación que los términos principales"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las grandes empresas dominan los términos genéricos. Los fundadores en solitario ganan respondiendo preguntas específicas de nicho que los sistemas de IA y los compradores motivados realmente buscan."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Aproximadamente cuántos artículos de cluster enfocados en un solo pilar se necesitan para empezar a construir 'Autoridad Temática'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-2 artículos"
+        },
+        {
+          "id": "b",
+          "text": "5 artículos"
+        },
+        {
+          "id": "c",
+          "text": "15-20 artículos"
+        },
+        {
+          "id": "d",
+          "text": "500 artículos"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La consistencia y la profundidad importan. Alcanzar el 'umbral de los 20 artículos' le señala a los motores y a las audiencias que eres una autoridad seria en ese nicho."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué es el 'Contenido Cluster' en el modelo de eje y radios?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anuncios que publicas en Facebook"
+        },
+        {
+          "id": "b",
+          "text": "Artículos de subtemas específicos que enlazan de vuelta a la Página Pilar principal"
+        },
+        {
+          "id": "c",
+          "text": "Un grupo de clientes que compran al mismo tiempo"
+        },
+        {
+          "id": "d",
+          "text": "Contenido que eliminas porque es irrelevante"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los clusters son los 'radios' que proporcionan respuestas detalladas a preguntas específicas mientras refuerzan la autoridad del eje central."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Lista tus tres Pilares de Contenido propuestos. Para tu pilar principal (Pilar #1), haz una lluvia de ideas de 3 ideas específicas de clusters Long-Tail. ¿Por qué elegiste estos subtemas específicos? ¿Cómo se conectan con un dolor urgente que siente tu ICP?",
+      "minLength": 100,
+      "promptForAI": "Evalúa si los pilares son demasiado amplios (ej., 'Marketing') vs. específicos (ej., 'Generación de Leads para Agencias'). Asegúrate de que las ideas de clusters se sientan como respuestas 'Long-Tail' a problemas reales."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How many components does the Pittsburgh Sleep Quality Index (PSQI) evaluate?",
+            "options": [
+                { "id": "opt1", "text": "Four" },
+                { "id": "opt2", "text": "Five" },
+                { "id": "opt3", "text": "Seven" },
+                { "id": "opt4", "text": "Ten" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The PSQI evaluates seven distinct components of sleep quality: subjective sleep quality, sleep latency, sleep duration, sleep efficiency, sleep disturbances, use of sleep medication, and daytime dysfunction."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What total PSQI score generally suggests poor sleep quality that could benefit from improvement?",
+            "options": [
+                { "id": "opt1", "text": "Above 3" },
+                { "id": "opt2", "text": "Above 5" },
+                { "id": "opt3", "text": "Above 10" },
+                { "id": "opt4", "text": "Above 15" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A total PSQI score above 5 suggests that your sleep quality could benefit from improvement. Scores of 0-5 indicate good sleep quality, 6-10 indicate poor sleep quality, and 11-21 indicate concerning sleep quality."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does 'sleep efficiency' measure in the PSQI?",
+            "options": [
+                { "id": "opt1", "text": "How quickly you fall asleep" },
+                { "id": "opt2", "text": "How many hours of deep sleep you get" },
+                { "id": "opt3", "text": "The percentage of time in bed that is actually spent sleeping" },
+                { "id": "opt4", "text": "How rested you feel upon waking" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Sleep efficiency measures the percentage of time you spend in bed that is actually spent sleeping. For example, if you are in bed for 8 hours but only sleep for 6, your sleep efficiency is 75%."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does 'sleep latency' refer to?",
+            "options": [
+                { "id": "opt1", "text": "How long you stay asleep during the night" },
+                { "id": "opt2", "text": "How long it takes you to fall asleep" },
+                { "id": "opt3", "text": "How often you wake up during the night" },
+                { "id": "opt4", "text": "How much daytime sleepiness you experience" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep latency refers to the amount of time it takes you to fall asleep each night. A sleep latency of 15 minutes or less is considered ideal."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is the PSQI described as an educational starting point rather than a clinical diagnosis?",
+            "options": [
+                { "id": "opt1", "text": "It is too short to be accurate" },
+                { "id": "opt2", "text": "It was developed for research, not clinical use" },
+                { "id": "opt3", "text": "Only a healthcare professional can diagnose sleep disorders through comprehensive evaluation" },
+                { "id": "opt4", "text": "The scoring system is unreliable" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The simplified educational version of the PSQI helps you reflect on your sleep patterns and build self-awareness, but only a healthcare professional can provide a clinical diagnosis through comprehensive evaluation."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "2",
+    "title": "Pittsburgh Sleep Quality Index - Self-Assessment - Quiz"
+}

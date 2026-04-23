@@ -1,0 +1,78 @@
+{
+  "lessonId": "11",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "Reference Stack 2: Multi-Channel (~$170/month)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "By how much does adding LinkedIn to email-only outreach typically increase reply rates?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "25-35%" },
+        { "id": "c", "text": "100% (doubles reply rates)" },
+        { "id": "d", "text": "No measurable increase" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Going from email-only to email + LinkedIn + voice typically increases reply rates by 25-35%. However, it also increases complexity by 3x and costs 4-5x more ($170/month vs $37/month). The question is whether the extra replies justify the additional cost and management time."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which multi-channel configuration does the lesson recommend for most solo founders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Configuration A: Lemlist Multichannel Expert — all-in-one simplicity beats separated tools"
+        },
+        {
+          "id": "b",
+          "text": "Configuration B: Instantly + HeyReach — best for LinkedIn-heavy strategies"
+        },
+        {
+          "id": "c",
+          "text": "Configuration C: La Growth Machine — best for European markets"
+        },
+        { "id": "d", "text": "All three configurations are equally good" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Configuration A (Lemlist Multichannel Expert at $163/month) wins for most solo founders because all-in-one simplicity beats separated tools. Configuration B is recommended only if you're LinkedIn-heavy, and Configuration C if you're in Europe or need Twitter integration."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When should you upgrade from email-only to multi-channel outreach?",
+      "options": [
+        { "id": "a", "text": "Immediately — multi-channel is always better" },
+        {
+          "id": "b",
+          "text": "After 6 weeks of consistent email results (8%+ reply rate, 3+ meetings/week) when you need incremental pipeline growth"
+        },
+        { "id": "c", "text": "Only when you have a dedicated SDR team" },
+        { "id": "d", "text": "Never — email is always sufficient" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Upgrade to multi-channel after proving email works (6 weeks of consistent results with 8%+ reply rates and 3+ meetings/week). Adding channels before validating email creates complexity without a proven foundation. Multi-channel adds 25-35% more replies but requires 30-40% more management time."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The multi-channel stack requires approximately 30-40% more time to manage sequences across platforms compared to email-only.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Multi-channel outreach increases management complexity by approximately 30-40% because you need to coordinate sequences across email and LinkedIn, manage multiple platform dashboards, and ensure channel-appropriate messaging. The 25-35% reply rate improvement must justify this additional time investment."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Is your outreach currently at the point where multi-channel makes sense? Evaluate your email-only performance (reply rates, meetings booked, consistency) and make the case for or against upgrading to multi-channel right now.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses their current email performance with specific metrics, applies the readiness criteria from the lesson (6 weeks consistent, 8%+ reply rate, 3+ meetings/week), and reaches a justified conclusion. Look for understanding that multi-channel adds complexity and should only be adopted when email is already working."
+    }
+  ]
+}

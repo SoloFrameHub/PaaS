@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "8",
+    "lessonTitle": "LinkedIn Sales Navigator for Prospecting",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between standard LinkedIn search and Sales Navigator search?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sales Nav search is faster."
+                },
+                {
+                    "id": "b",
+                    "text": "Standard search is for finding people; Sales Nav search is for finding 'Business Value' using deep intent and activity filters."
+                },
+                {
+                    "id": "c",
+                    "text": "Standard search only works on mobile."
+                },
+                {
+                    "id": "d",
+                    "text": "Sales Nav search allows you to see people's private messages."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sales Navigator provides specialized filters (like headcount growth and past lead activity) that help you identify prospects with specific business needs and budget signals.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is the 'Changed jobs in the last 90 days' Spotlight filter so valuable for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because new employees have more time to scroll LinkedIn."
+                },
+                {
+                    "id": "b",
+                    "text": "Because people in new roles are in 'Change Mode' and are more likely to implement new solutions and build new vendor relationships."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it means they just got a pay raise and can afford your service."
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't; it's better to target people who have been in their role for 10+ years."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "New decision-makers often want to make an impact quickly. They are more open to new frameworks and tools than someone who is entrenched in an old system.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In Sales Navigator, what is the 'Top-Down' approach to list building?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Adding every CEO in your city to a list."
+                },
+                {
+                    "id": "b",
+                    "text": "Building an 'Account List' of target companies first, then finding the specific 'Leads' (decision-makers) within those companies."
+                },
+                {
+                    "id": "c",
+                    "text": "Starting with the most junior employees and working your way up."
+                },
+                {
+                    "id": "d",
+                    "text": "Searching for terms at the top of the search bar only."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Effective prospecting starts at the organization level. If the company is a'Good Fit' for your solution, you then find the right people to talk to.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What 'Silent Tracking' capability do 'Smart Links' provide?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They automatically record the prospect's screen."
+                },
+                {
+                    "id": "b",
+                    "text": "They tell you which specific prospect viewed your content, when they viewed it, and for how long."
+                },
+                {
+                    "id": "c",
+                    "text": "They send an automated DM to anyone who clicks the link."
+                },
+                {
+                    "id": "d",
+                    "text": "They hide the content until the prospect pays a fee."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Smart Links provide 'Intelligence Without Interaction.' You can see if a prospect is actually reading your proposal or case study before you follow up.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When combining Sales Nav with the 'Trust Pincer,' which group of prospects should you prioritize for connection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "People who have over 10,000 followers."
+                },
+                {
+                    "id": "b",
+                    "text": "People who 'Posted on LinkedIn in the last 30 days.'."
+                },
+                {
+                    "id": "c",
+                    "text": "People who work at the largest companies in the world."
+                },
+                {
+                    "id": "d",
+                    "text": "People who haven't updated their profile in 2 years."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Active users are the only ones who will see your authority-building content (the public arm of the pincer). If they don't use LinkedIn, your content reach is wasted on them.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think about your 'Ideal Customer Profile' (ICP). What is one 'Spotlight' signal (Job Change, Mention in News, Shared Connection, etc.) that would make you feel 100% confident in reaching out to them today? How would you use that specific signal in your connection request to prove you are a practitioner and not a bot?",
+            "promptHints": [
+                "Focus on an 'Event' that triggers the need for your solution.",
+                "Think about the language you would use (e.g., 'Congrats on the new role at [Company]...').",
+                "Consider how you can bridge their recent activity to your area of expertise."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "7"
+        ],
+        "unlocks": [
+            "9"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "LinkedIn Sales Navigator for Prospecting - Quiz"
+}

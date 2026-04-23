@@ -1,0 +1,141 @@
+{
+    "lessonId": "5",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "Handling Timing Objections Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary danger of accepting a 'Call me in six months' objection at face value?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect will think you're lazy."
+                },
+                {
+                    "id": "b",
+                    "text": "You will lose the opportunity to talk to them forever."
+                },
+                {
+                    "id": "c",
+                    "text": "By the time you call back, they've often forgotten you or solved the problem with a competitor."
+                },
+                {
+                    "id": "d",
+                    "text": "It is bad for your CRM hygiene."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Momentum is everything. When you walk away for 6 months, you lose the trust and context you built during the initial call, giving competitors a massive opening."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which question helps you diagnose whether a timing objection is 'Real' or a 'Mask'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Can you give me your boss's phone number?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'If we could snap our fingers and have the implementation finished tonight for $0, would you want to be using the system tomorrow?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'Why are you trying to stall this deal?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'What if I give you a discount today?'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This 'Magic Wand' question isolates the variables of time and money. If they still say 'Maybe' or 'No,' the real issue is that they don't see the value/need."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Cost of Delay' strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Charging the prospect an extra fee if they wait too long to sign."
+                },
+                {
+                    "id": "b",
+                    "text": "Making the invisible loss of waiting visible by calculating the literal dollars or hours the prospect will lose by not acting now."
+                },
+                {
+                    "id": "c",
+                    "text": "Delaying your response to their emails to make yourself seem busy."
+                },
+                {
+                    "id": "d",
+                    "text": "Telling the prospect that your price will double next month."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Helping the prospect realize that 'waiting 6 months' actually costs them $12,000 in wasted labor makes the cost of the tool seem much smaller in comparison."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a 'Legitimate' source of urgency for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'I have a fake limited-time offer that expires tonight.'"
+                },
+                {
+                    "id": "b",
+                    "text": "'Only 3 spots left!' (even though it's a software tool with infinite scale)."
+                },
+                {
+                    "id": "c",
+                    "text": "'I only take on two new implementations per month to ensure quality, and I have one slot left.'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Buy now or I'll tell your competitors what you told me.'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "As a solo founder, your time and bandwidth are genuine limited resources. Highlighting your actual implementation capacity is a powerful and honest source of scarcity."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How can you handle a genuine 'Budget is tapped until January' objection in B2B SaaS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By offering a discount for signing in December."
+                },
+                {
+                    "id": "b",
+                    "text": "By offering 'Deferred Billing'—start the implementation now, but invoice in January."
+                },
+                {
+                    "id": "c",
+                    "text": "By telling them their budget priorities are wrong."
+                },
+                {
+                    "id": "d",
+                    "text": "By walking away immediately."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Deferred billing solves the prospect's cash flow constraint while allowing you to capture their attention and momentum while it's fresh."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think of a deal you recently lost to 'Timing' or that is currently in a 'Check back later' state. Use the 'Cost of Delay' logic to calculate the literal cost to that prospect of waiting 6 months. What is that number, and how will you communicate it to them in your next follow-up?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to quantify opportunity cost. Look for a clear calculation (e.g., '6 months x $1k/mo = $6k loss') and a professional way to communicate this as a 'risk assessment' rather than pressure."
+        }
+    ]
+}

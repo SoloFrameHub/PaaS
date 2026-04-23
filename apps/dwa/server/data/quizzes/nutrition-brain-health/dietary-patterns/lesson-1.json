@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the NOVA classification system, what distinguishes Group 4 (ultra-processed) foods from Group 3 (processed) foods?",
+            "options": [
+                { "id": "opt1", "text": "Group 4 foods contain more calories than Group 3 foods" },
+                { "id": "opt2", "text": "Group 4 foods have shorter shelf lives than Group 3 foods" },
+                { "id": "opt3", "text": "Group 4 foods contain industrial additives like emulsifiers, humectants, and flavor enhancers not found in home kitchens" },
+                { "id": "opt4", "text": "Group 4 foods are always sold frozen while Group 3 foods are sold fresh" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The key distinction of NOVA Group 4 (ultra-processed) foods is the presence of ingredients you would never find in a home kitchen — emulsifiers, humectants, flavor enhancers, colorings, and other cosmetic additives. Group 3 foods use simple methods like canning or fermentation with recognizable ingredients."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the BMJ umbrella review (Lane et al. 2024), what was the increased odds of common mental disorders associated with higher UPF consumption?",
+            "options": [
+                { "id": "opt1", "text": "15% higher odds" },
+                { "id": "opt2", "text": "53% higher odds" },
+                { "id": "opt3", "text": "75% higher odds" },
+                { "id": "opt4", "text": "30% higher odds" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The BMJ umbrella review (Lane et al. 2024, 385,000+ participants) found that higher UPF consumption was associated with 53% higher odds of common mental disorders (anxiety and depression combined). This was graded as 'convincing' evidence — the highest certainty level."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the dose-response relationship between UPF consumption and depression risk mean for practical dietary changes?",
+            "options": [
+                { "id": "opt1", "text": "You must eliminate all ultra-processed foods to see any mental health benefit" },
+                { "id": "opt2", "text": "Benefits only appear after cutting UPF intake by at least 50%" },
+                { "id": "opt3", "text": "There is a safe threshold of UPF consumption below which no risk exists" },
+                { "id": "opt4", "text": "Every 10% reduction in UPF intake is associated with a measurable decrease in depression risk" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The dose-response relationship means risk increases gradually with UPF consumption — and decreases gradually with reduction. Lane et al. (2024) found that for every 10% increase in UPF as a proportion of total energy intake, there was a measurable increase in depression risk. This means small, gradual changes can be meaningful."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What percentage of total energy intake do ultra-processed foods account for in the United States?",
+            "options": [
+                { "id": "opt1", "text": "About 25%" },
+                { "id": "opt2", "text": "About 35%" },
+                { "id": "opt3", "text": "About 45%" },
+                { "id": "opt4", "text": "About 60%" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "In the United States, ultra-processed foods account for approximately 60% of total energy intake. In many high-income countries, UPFs make up 50-60% of total energy intake, meaning most people get the majority of their calories from industrial food formulations."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does the UPF-mental health association persist even after researchers account for confounding factors like income, exercise, and BMI?",
+            "options": [
+                { "id": "opt1", "text": "Because the studies do not actually adjust for these factors" },
+                { "id": "opt2", "text": "Because the relationship between UPFs and mental health is not simply explained by lifestyle differences between UPF consumers and non-consumers" },
+                { "id": "opt3", "text": "Because all UPF consumers happen to have the same income level" },
+                { "id": "opt4", "text": "Because only randomized controlled trials can detect confounding factors" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Most studies adjust for income, education, physical activity, smoking, alcohol use, BMI, calorie intake, and pre-existing conditions. Even after these adjustments, the UPF-mental health association remains significant, meaning the relationship is not simply explained by the fact that UPF consumers tend to exercise less or earn less money."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "1",
+    "title": "Ultra-Processed Foods and Mental Health Risk - Quiz"
+}

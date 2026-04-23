@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the seven components of the Personal Sleep Blueprint?",
+            "options": [
+                { "id": "opt1", "text": "Mattress, pillow, sheets, blanket, temperature, darkness, sound" },
+                { "id": "opt2", "text": "Wake time, morning light, caffeine curfew, movement, digital sunset, wind-down ritual, bad-night protocol" },
+                { "id": "opt3", "text": "Diet, exercise, meditation, journaling, breathing, supplements, therapy" },
+                { "id": "opt4", "text": "Bedtime, nap time, wake time, meal times, exercise time, screen time, social time" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The seven blueprint components cover your full 24-hour cycle: fixed wake-up time, morning light protocol, caffeine curfew, movement plan, digital sunset time, 15-minute wind-down ritual, and 'bad night' protocol."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is described as the single most important anchor for your circadian rhythm?",
+            "options": [
+                { "id": "opt1", "text": "Consistent bedtime" },
+                { "id": "opt2", "text": "Consistent wake-up time" },
+                { "id": "opt3", "text": "Consistent meal timing" },
+                { "id": "opt4", "text": "Consistent exercise schedule" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your consistent wake-up time is the single most important anchor for your circadian rhythm. Even on weekends, staying within 30 minutes of this time helps maintain your body's internal clock."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the four steps of the Review and Refine Loop?",
+            "options": [
+                { "id": "opt1", "text": "Research, Record, Reflect, Repeat" },
+                { "id": "opt2", "text": "Plan, Do, Review, Refine" },
+                { "id": "opt3", "text": "Try, Fail, Learn, Improve" },
+                { "id": "opt4", "text": "Set, Track, Analyze, Adjust" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Review and Refine Loop is: Plan (set your blueprint), Do (follow it for 1-2 weeks), Review (reflect on what worked), Refine (update based on what you learned). Small tweaks compound into big results."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'bad night' protocol in your sleep blueprint?",
+            "options": [
+                { "id": "opt1", "text": "To take sleeping medication when needed" },
+                { "id": "opt2", "text": "To have a pre-planned response for nights when you cannot fall asleep, using tools like the 20-Minute Rule and 3 C's" },
+                { "id": "opt3", "text": "To cancel the next day's activities after poor sleep" },
+                { "id": "opt4", "text": "To extend your time in bed until you fall asleep" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 'bad night' protocol is a pre-planned response for when you cannot fall asleep, using tools like the 20-Minute Rule, the 3 C's technique, the Cognitive Shuffle, and the reminder that lying quietly (NSDR) still has value."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How is the Personal Sleep Blueprint described?",
+            "options": [
+                { "id": "opt1", "text": "A rigid rulebook that must be followed perfectly" },
+                { "id": "opt2", "text": "A living plan that you refine over time as you learn about your unique sleep patterns" },
+                { "id": "opt3", "text": "A one-time exercise that never needs updating" },
+                { "id": "opt4", "text": "A medical prescription from a sleep specialist" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The blueprint is described as a living plan -- not a rigid rulebook. It is your own distillation of what works best for you, refined over time through the Review and Refine Loop as you learn more about your unique sleep patterns."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "11",
+    "title": "Your Personal Sleep Blueprint - Quiz"
+}

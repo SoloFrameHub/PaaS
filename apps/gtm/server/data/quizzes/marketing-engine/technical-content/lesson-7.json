@@ -1,0 +1,142 @@
+{
+    "lessonId": "7",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Content Calendar System Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of a 'Rolling' 12-week calendar versus a static annual plan?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It requires less work to set up initially"
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to stay relevant and adapt to market shifts while maintaining a long-term horizon"
+                },
+                {
+                    "id": "c",
+                    "text": "It is easier to print out"
+                },
+                {
+                    "id": "d",
+                    "text": "A 12-week plan is always more accurate than a 4-week plan"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-level placeholders for the future (Weeks 9-12) keep you strategic, while the rolling Friday update keeps the immediate tasks (Weeks 1-4) realistic."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the 12-week framework, what characterizes 'The Red Zone' (Weeks 1-4)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High detail: specific headlines, outlines, and deadlines"
+                },
+                {
+                    "id": "b",
+                    "text": "Vague ideas you might write about someday"
+                },
+                {
+                    "id": "c",
+                    "text": "Content you have already deleted"
+                },
+                {
+                    "id": "d",
+                    "text": "Ideas from your competitors"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "The Red Zone is for immediate execution. It must be detailed enough that you can start writing without additional 'planning' work."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the purpose of rotating your content pillars weekly?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To keep the founder from getting bored"
+                },
+                {
+                    "id": "b",
+                    "text": "To ensure you build authority across all your 3-5 core topics without ignoring one"
+                },
+                {
+                    "id": "c",
+                    "text": "To trick the social media algorithms"
+                },
+                {
+                    "id": "d",
+                    "text": "To avoid having to write long-form content"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Rotation ensures balanced growth of your topical authority. It prevents you from only posting about the 'easiest' topic."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'Batching' recommended for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It saves money on software"
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to stay in 'Deep Work' by performing similar tasks together rather than switching contexts"
+                },
+                {
+                    "id": "c",
+                    "text": "It makes your website look better"
+                },
+                {
+                    "id": "d",
+                    "text": "Batching is only for video content"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Context switching is expensive for solo founders. Researching 4 pieces at once is faster than doing it 4 separate times across the month."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When is the recommended time to 'Roll' the content calendar forward for next week?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Monday morning right before writing"
+                },
+                {
+                    "id": "b",
+                    "text": "Every Friday afternoon/evening"
+                },
+                {
+                    "id": "c",
+                    "text": "Once a month"
+                },
+                {
+                    "id": "d",
+                    "text": "Only when you run out of ideas"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Performing the planning work on Friday ensures that when you sit down to write on Monday, the decision-making is already done and you can focus 100% on execution."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your upcoming Week 1 and Week 2. What specific 'Source Piece' title will you write for each? Which Pillar does each belong to? What day will you block off as your 'Batching Day' next week?",
+            "minLength": 100,
+            "promptForAI": "Review if the founder is being specific with their headlines. Look for the commitment to a 'Batching Day' as a sign of systematic execution."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

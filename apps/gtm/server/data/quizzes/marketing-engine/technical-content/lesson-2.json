@@ -1,0 +1,142 @@
+{
+    "lessonId": "2",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Content Pillar Architecture Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary role of a 'Pillar Page' in a content architecture?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To be a short, daily update on news"
+                },
+                {
+                    "id": "b",
+                    "text": "To act as a comprehensive, 'hub' guide that covers a broad topic in depth"
+                },
+                {
+                    "id": "c",
+                    "text": "To show your product's pricing"
+                },
+                {
+                    "id": "d",
+                    "text": "To link to your competitors' websites"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Pillar pages are high-level hubs (2,000-5,000 words) that establish your definitive authority on a broad topic."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which three factors should intersect when selecting your content pillars?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Low cost, high speed, and ease of writing"
+                },
+                {
+                    "id": "b",
+                    "text": "Your expertise, an urgent ICP problem, and search volume/intent"
+                },
+                {
+                    "id": "c",
+                    "text": "Visual design, video quality, and audio clarity"
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn trends, Twitter hashtags, and Reddit memes"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A strong pillar must be something you can teach well (Expertise), something your customers care about (Pain), and something people are searching for (Intent)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the benefit of a 'Long-Tail' keyword strategy for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It targets more people at once"
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to compete with multi-billion dollar companies by winning on specificity"
+                },
+                {
+                    "id": "c",
+                    "text": "Long-tail keywords are cheaper to buy as ads"
+                },
+                {
+                    "id": "d",
+                    "text": "It requires less research than head terms"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Large companies own generic terms. Solo founders win by answering specific, niche questions that AI systems and motivated buyers actually search for."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Roughly how many cluster articles focused on a single pillar are needed to start building 'Topical Authority'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2 articles"
+                },
+                {
+                    "id": "b",
+                    "text": "5 articles"
+                },
+                {
+                    "id": "c",
+                    "text": "15-20 articles"
+                },
+                {
+                    "id": "d",
+                    "text": "500 articles"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Consistency and depth matter. Reaching the '20-article threshold' signals to engines and audiences that you are a serious authority in that niche."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is 'Cluster Content' in the hub-and-spoke model?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ads that you run on Facebook"
+                },
+                {
+                    "id": "b",
+                    "text": "Specific subtopic articles that link back to the main Pillar Page"
+                },
+                {
+                    "id": "c",
+                    "text": "A group of customers who buy at the same time"
+                },
+                {
+                    "id": "d",
+                    "text": "Content that you delete because it's irrelevant"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Clusters are the 'spokes' that provide detailed answers to specific questions while reinforcing the authority of the central hub."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "List your three proposed Content Pillars. For your primary (Pillar #1), brainstorm 3 specific Long-Tail cluster ideas. Why did you choose these specific subtopics? How do they connect to an urgent pain your ICP is feeling?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the pillars are too broad (e.g., 'Marketing') vs. specific (e.g., 'Lead Gen for Agencies'). Ensure the cluster ideas feel like 'Long-Tail' answers to real problems."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

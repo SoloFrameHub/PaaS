@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "6",
+    "sectionId": "foundations",
+    "title": "Your Personal Academy Roadmap Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Theory of Constraints' as applied to a solo founder's sales process?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A rule that says you should never work more than 40 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "Identifying the single bottleneck that limits your overall growth"
+                },
+                {
+                    "id": "c",
+                    "text": "Designing a product that has no features"
+                },
+                {
+                    "id": "d",
+                    "text": "A mathematical formula for pricing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In any complex system (like your sales process), there is one bottleneck at any given time. Solving anything *except* that bottleneck provides no real growth."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "If you are in 'The Zero-to-Ten Sprint,' which course is designated as a 'Tier 1' priority for survival?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Course 25: Advanced CRM Setup"
+                },
+                {
+                    "id": "b",
+                    "text": "Course 1: Internal Identity Conflict"
+                },
+                {
+                    "id": "c",
+                    "text": "Course 12: Sales Automation"
+                },
+                {
+                    "id": "d",
+                    "text": "Course 28: Outsourcing & VAs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Mindset is the primary survival factor in the validation phase. Rejection is guaranteed, and Course 1 prepares you for the internal conflict that comes with it."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended ratio of Implementation time to Learning time?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 hour implementation for every 10 hours learning"
+                },
+                {
+                    "id": "b",
+                    "text": "1:1 equal ratio"
+                },
+                {
+                    "id": "c",
+                    "text": "10 hours implementation for every 2 hours learning"
+                },
+                {
+                    "id": "d",
+                    "text": "0 hours implementation until you finish the whole Track"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Solo founders often fall into the 'learning trap' where consumption feels like progress. Real progress only happens when you apply the concepts. The 5:1 ratio ensures you're doing the work."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do if you realize halfway through a course that it no longer solves your primary bottleneck?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Finish it anyway so you don't feel like a quitter"
+                },
+                {
+                    "id": "b",
+                    "text": "Restart the entire track from Lesson 1"
+                },
+                {
+                    "id": "c",
+                    "text": "Stop, archive the course, and pivot to the one that addresses the new bottleneck"
+                },
+                {
+                    "id": "d",
+                    "text": "Ask a friend for their opinion"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Your time is your scarcest resource. Don't fall for the 'Sunk Cost' trap; focus exclusively on the high-leverage activities that solve your current growth block."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the roadmap template for B2B SaaS, which course is prioritized to help drive higher volume to qualified conversations?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Course 18: Proposals & Pricing"
+                },
+                {
+                    "id": "b",
+                    "text": "Course 8: Cold Email Mastery"
+                },
+                {
+                    "id": "c",
+                    "text": "Course 22: Retention"
+                },
+                {
+                    "id": "d",
+                    "text": "Course 24: Customer Advocacy"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Cold email is the most scalable outbound channel for B2B SaaS, making it a critical next step after establishing foundation infrastructure."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Commit to your Top 3 priority courses for the next 90 days. Why did you choose these specifically? What is your current 'Primary Bottleneck' that these courses will help you solve? Be honest about your weekly time availability for both learning and implementation.",
+            "minLength": 100,
+            "promptForAI": "Look for alignment between their bottleneck and their course choices. If they say their bottleneck is 'Visibility' but they chose 'Pricing/Negotiation' courses, point out the discrepancy. Push for a specific weekly time commitment (hours)."
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "lessonId": "1",
+    "courseId": "retention",
+    "sectionId": "customer-success",
+    "title": "Test Your Retention Economics Knowledge",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Acquiring a new customer costs how much more than retaining an existing one?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2-3x more"
+                },
+                {
+                    "id": "b",
+                    "text": "5-25x more"
+                },
+                {
+                    "id": "c",
+                    "text": "10-50x more"
+                },
+                {
+                    "id": "d",
+                    "text": "About the same"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Research from Harvard Business Review and Bain & Company shows acquisition costs 5-25x more than retention."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "A 5% increase in customer retention can increase profits by:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5-10%"
+                },
+                {
+                    "id": "b",
+                    "text": "10-20%"
+                },
+                {
+                    "id": "c",
+                    "text": "25-95%"
+                },
+                {
+                    "id": "d",
+                    "text": "100-200%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Bain & Company research shows a 5% retention increase drives 25-95% profit increase due to compounding effects."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If you acquire 10 customers/month and churn 8, your net growth rate is:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10 customers/month"
+                },
+                {
+                    "id": "b",
+                    "text": "8 customers/month"
+                },
+                {
+                    "id": "c",
+                    "text": "2 customers/month"
+                },
+                {
+                    "id": "d",
+                    "text": "18 customers/month"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Net growth = new customers - churned customers = 10 - 8 = 2. The leaky bucket problem."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these is 'Good Churn' (acceptable)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Customer switched to a competitor"
+                },
+                {
+                    "id": "b",
+                    "text": "Customer never logged in after trial"
+                },
+                {
+                    "id": "c",
+                    "text": "Customer achieved their goal and graduated"
+                },
+                {
+                    "id": "d",
+                    "text": "Customer said product was too expensive"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Graduated customers are natural lifecycle churn. The others are preventable (bad churn)."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "True or False: Retained customers generate revenue at zero acquisition cost.",
+            "correctAnswer": "a",
+            "explanation": "True. You already paid to acquire them once. Every dollar from a retained customer has 100% margin on acquisition.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

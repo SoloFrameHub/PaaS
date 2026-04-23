@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the four dimensions tracked in the Night and Day Reflection Log?",
+            "options": [
+                { "id": "opt1", "text": "Hours slept, caffeine intake, exercise, and screen time" },
+                { "id": "opt2", "text": "Sleep quality, mood and emotions, focus and clarity, and connections noticed" },
+                { "id": "opt3", "text": "Bedtime, wake time, naps, and dreams" },
+                { "id": "opt4", "text": "Stress level, appetite, energy, and pain" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The reflection log tracks four dimensions each day: sleep quality (rate 1-10 or describe), mood and emotions, focus and clarity, and connections noticed between sleep and your day."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How often should you review your reflection log entries to notice patterns?",
+            "options": [
+                { "id": "opt1", "text": "Every day" },
+                { "id": "opt2", "text": "After a week or two" },
+                { "id": "opt3", "text": "Only at the end of 30 days" },
+                { "id": "opt4", "text": "Every month" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "After a week or two, reviewing your entries allows you to start noticing patterns between your sleep quality and your mood, focus, or energy. Weekly review is recommended."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the lesson emphasize matters more than writing detailed entries?",
+            "options": [
+                { "id": "opt1", "text": "Using a digital app to track sleep" },
+                { "id": "opt2", "text": "Consistency in filling out the log" },
+                { "id": "opt3", "text": "Writing at least a full page each day" },
+                { "id": "opt4", "text": "Tracking only on difficult nights" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Consistency matters more than detail. A quick entry like '7/10, calm, focused, slept well' is perfectly useful. The key is building a gentle habit of noticing over time."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is described as the 'most valuable data you have' for sleep improvement?",
+            "options": [
+                { "id": "opt1", "text": "Clinical sleep study results" },
+                { "id": "opt2", "text": "Published sleep research findings" },
+                { "id": "opt3", "text": "Your own personal experience and observations" },
+                { "id": "opt4", "text": "Sleep tracking app data" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Your own experience is the most valuable data you have. The reflection log helps you discover personal patterns that are uniquely yours -- patterns that no textbook could ever teach you."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Who is suggested as someone to share your reflection log with?",
+            "options": [
+                { "id": "opt1", "text": "Your friends and family" },
+                { "id": "opt2", "text": "Your employer" },
+                { "id": "opt3", "text": "Your healthcare provider" },
+                { "id": "opt4", "text": "Social media followers" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "If you are working with a healthcare provider, the reflection log can be an incredibly useful tool to bring to appointments, helping them understand your sleep patterns."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "6",
+    "title": "The Night and Day Reflection Log - Quiz"
+}

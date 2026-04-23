@@ -1,0 +1,142 @@
+{
+    "lessonId": "5",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "One-to-Many Repurposing Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of 'One-to-Many' repurposing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To trick people into thinking you have a huge team"
+                },
+                {
+                    "id": "b",
+                    "text": "To maximize the reach and life of a single core idea across multiple platforms"
+                },
+                {
+                    "id": "c",
+                    "text": "To create as many different ideas as possible"
+                },
+                {
+                    "id": "d",
+                    "text": "To fill up your hard drive with files"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Repurposing ensures that the 5-10 hours you spent on a 'Source Piece' actually reaches the 90% of your audience who missed it the first time you posted."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a 'Source Piece' in the repurposing workflow?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A short tweet you post on Monday"
+                },
+                {
+                    "id": "b",
+                    "text": "A long-form, deeply researched article or video that contains all your main points"
+                },
+                {
+                    "id": "c",
+                    "text": "A list of links to other people's websites"
+                },
+                {
+                    "id": "d",
+                    "text": "A guest post you wrote for someone else"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Source Piece is your 'Master' document. All other social posts, threads, and emails are derived from the research and logic in this one piece."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Copy-Pasting' the same text across all platforms discouraged?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is technically impossible"
+                },
+                {
+                    "id": "b",
+                    "text": "Each platform has different norms, formatting requirements, and audience expectations"
+                },
+                {
+                    "id": "c",
+                    "text": "It makes your computer run slower"
+                },
+                {
+                    "id": "d",
+                    "text": "Google will penalize your website"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A LinkedIn audience expects whitespace and professional stories; a Twitter audience expects punchy lists. Adapting the framing ensures the content feels 'native' to the user."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a 'Zero-Click' summary?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A post that has no text and only an image"
+                },
+                {
+                    "id": "b",
+                    "text": "A content asset that provides all the valuable insights directly in the feed, without requiring a link click"
+                },
+                {
+                    "id": "c",
+                    "text": "A mistake where a link doesn't work"
+                },
+                {
+                    "id": "d",
+                    "text": "An ad that no one clicks on"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Zero-click content builds trust and authority by giving value away immediately. It follows the AEO principle of being the 'answer' where the user is already looking."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the recommended Weekly Sequence, what usually happens on Monday?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Source Piece is published and emailed"
+                },
+                {
+                    "id": "b",
+                    "text": "Nothing; you spend the day researching"
+                },
+                {
+                    "id": "c",
+                    "text": "You post your final 'Hot Take'"
+                },
+                {
+                    "id": "d",
+                    "text": "You delete your old Twitter threads"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Monday is the 'Launch' day. You publish the heavy-lifting content and notify your most direct audience (your email list) first."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think of one 'Source Piece' title for your business. List 3 specific derivative assets you would create from it. How would you change the framing of the core idea for YOUR primary social platform versus your email newsletter?",
+            "minLength": 100,
+            "promptForAI": "Review if the founder understands 'framing.' They should explain a shift in tone or format (e.g., 'Email will be more personal/behind-the-scenes while LinkedIn will focus on the business result')."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

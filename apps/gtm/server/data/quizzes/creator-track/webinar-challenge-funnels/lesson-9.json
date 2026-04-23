@@ -1,0 +1,91 @@
+{
+    "lessonId": "9",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Post-Event Follow-Up Sequences Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what percentage of total launch sales typically happen AFTER the live event ends?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10-20% -- most sales happen during the live presentation"
+                },
+                {
+                    "id": "b",
+                    "text": "30-40% -- roughly a third happen afterward"
+                },
+                {
+                    "id": "c",
+                    "text": "60-80% -- the majority of sales happen in the post-event follow-up window"
+                },
+                {
+                    "id": "d",
+                    "text": "90-95% -- almost nobody buys during the live event"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "60-80% of total sales from a launch event happen after the event ends, not during the live presentation. The live pitch creates desire, but the follow-up sequence is what converts that desire into action. This is why the follow-up sequence is not an afterthought -- it is the second half of the launch."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which email in the 7-day follow-up sequence typically generates 20-40% of total post-event sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Email 1 -- the replay email sent immediately after the event"
+                },
+                {
+                    "id": "b",
+                    "text": "Email 3 -- the objection crusher email"
+                },
+                {
+                    "id": "c",
+                    "text": "Email 5 -- the FAQ/logistics email"
+                },
+                {
+                    "id": "d",
+                    "text": "Email 7 -- the cart close email sent on deadline day"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "The cart close email (Email 7), sent on the morning of the deadline plus a final push 2-4 hours before close, typically generates 20-40% of total post-event sales. People procrastinate, and the hard deadline forces a decision. This is why maintaining a real, non-negotiable deadline is critical."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'moving on' email sent 30 days after the event to non-buyers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To guilt non-buyers into reconsidering the offer"
+                },
+                {
+                    "id": "b",
+                    "text": "To remove them from your email list entirely"
+                },
+                {
+                    "id": "c",
+                    "text": "To remove sales pressure, restore trust, and often trigger a counterintuitive spike in replies and late enrollments"
+                },
+                {
+                    "id": "d",
+                    "text": "To announce a fire sale at a dramatically reduced price"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 'moving on' email explicitly states that you won't be emailing about the program anymore and respects their decision. This counterintuitively generates a spike in replies and late enrollments because removing pressure restores trust and gives people permission to engage on their own terms."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write the subject line and opening paragraph for your Email 3 (the objection crusher). Identify the #1 objection your audience has about purchasing your offer and draft the reframe you would use. Include the 'cost of inaction' calculation for your specific audience.",
+            "minLength": 100,
+            "aiPrompt": "The student should identify a specific, realistic objection (not a generic one) and provide a genuine reframe that addresses it with empathy rather than dismissal. The 'cost of inaction' calculation should use concrete numbers or scenarios relevant to their audience. Evaluate whether the reframe is persuasive without being manipulative, and whether the cost of inaction is quantified realistically rather than inflated."
+        }
+    ]
+}

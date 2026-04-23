@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which part of the brain acts as the 'fear center' and triggers the initial alarm during a panic attack?",
+            "options": [
+                { "id": "opt1", "text": "Prefrontal cortex" },
+                { "id": "opt2", "text": "Hippocampus" },
+                { "id": "opt3", "text": "Amygdala" },
+                { "id": "opt4", "text": "Cerebellum" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The amygdala is the brain's fear center. During a panic attack, it detects a perceived 'threat' and sounds the alarm in milliseconds, before your conscious thinking brain can evaluate whether the threat is real."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the typical timeline for a panic attack to reach peak intensity?",
+            "options": [
+                { "id": "opt1", "text": "5-10 minutes" },
+                { "id": "opt2", "text": "30-60 minutes" },
+                { "id": "opt3", "text": "1-2 hours" },
+                { "id": "opt4", "text": "Several hours" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Panic attack symptoms typically reach their peak intensity within 5-10 minutes. Most symptoms resolve within 30 minutes as the adrenaline is metabolized and the parasympathetic nervous system engages."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What causes the tingling and numbness sensations during a panic attack?",
+            "options": [
+                { "id": "opt1", "text": "Nerve damage from stress hormones" },
+                { "id": "opt2", "text": "Low blood sugar levels" },
+                { "id": "opt3", "text": "Blocked blood vessels" },
+                { "id": "opt4", "text": "Hyperventilation causing temporary changes in blood CO2 levels" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Tingling and numbness during a panic attack are caused by hyperventilation, which temporarily changes blood CO2 levels. This slight shift in blood chemistry is harmless and reverses within minutes."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is required for a diagnosis of panic disorder, beyond having panic attacks?",
+            "options": [
+                { "id": "opt1", "text": "Having at least one panic attack per day" },
+                { "id": "opt2", "text": "Persistent worry about future attacks and behavior changes to avoid them" },
+                { "id": "opt3", "text": "Experiencing panic attacks only in specific locations" },
+                { "id": "opt4", "text": "Having panic attacks triggered exclusively by external threats" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Panic disorder develops when you have recurrent unexpected panic attacks, persistent worry about having more attacks (at least 1 month), and you change your behavior to avoid situations where panic might occur. A single panic attack alone does not constitute panic disorder."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is understanding the physiology of panic attacks considered therapeutic?",
+            "options": [
+                { "id": "opt1", "text": "It eliminates the possibility of ever having another panic attack" },
+                { "id": "opt2", "text": "It allows you to physically control your amygdala" },
+                { "id": "opt3", "text": "It reduces the fear of the panic itself, which is what keeps the cycle going" },
+                { "id": "opt4", "text": "It replaces the need for any other treatment or coping strategies" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research shows that psychoeducation — understanding what panic attacks are — is a powerful first step. When you know your symptoms have physiological explanations and are not dangerous, you reduce the fear of panic itself, which is what maintains the panic cycle."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "1",
+    "title": "What Happens During a Panic Attack - Quiz"
+}

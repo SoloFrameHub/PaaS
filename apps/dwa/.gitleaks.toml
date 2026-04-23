@@ -1,0 +1,41 @@
+title = "mental-health-education-platform gitleaks config"
+
+# Extend the default ruleset — we keep all built-in detectors
+# and add targeted allowlists for known-false-positive patterns.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Project-specific allowlist"
+
+# Paths that never contain real secrets:
+#   - MDX/MD lesson content (React component props with long random-looking strings)
+#   - test fixtures and e2e specs
+#   - archived legacy code we're not deploying
+#   - lockfiles
+#   - the docs we'll purge (tracked separately — remove these lines after the purge)
+paths = [
+  '''server/data/content/.*\.(mdx?|md)$''',
+  '''e2e/.*''',
+  '''.*\.test\.(ts|tsx|js|jsx)$''',
+  '''.*\.spec\.(ts|tsx|js|jsx)$''',
+  '''package-lock\.json$''',
+  '''node_modules/''',
+  '''\.next/''',
+  '''test-results/''',
+  '''playwright-report/''',
+]
+
+# Regex allowlist for specific patterns that look like secrets but aren't:
+#   - persistKey="..."      → interactive component state key (MDX prop)
+#   - data-*="..."          → arbitrary data attributes
+#   - Firebase client keys starting with AIza — these are public-by-design web API keys
+#     (gated by Firebase Security Rules, not secrecy). Safe to commit.
+#     [REMOVE this line once apphosting.yaml is deleted — Firebase is no longer used.]
+regexes = [
+  '''persistKey=["'][^"']+["']''',
+  '''data-[a-z-]+=["'][^"']+["']''',
+]
+
+# Commit SHAs to ignore (populate with: gitleaks detect --log-opts="--all" output)
+# commits = []

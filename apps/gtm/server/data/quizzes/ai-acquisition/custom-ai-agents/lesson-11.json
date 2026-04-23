@@ -1,0 +1,78 @@
+{
+  "lessonId": "11",
+  "courseId": "custom-ai-agents",
+  "sectionId": "ai-acquisition",
+  "title": "Dual-Context: B2B Discovery Prep vs Creator Nurture Agent",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the Universal Prep Agent Pattern (5 steps)?",
+      "options": [
+        { "id": "a", "text": "Research, Write, Review, Edit, Send" },
+        {
+          "id": "b",
+          "text": "Gather context, Identify objective, Generate talking points, Prepare questions, Anticipate objections"
+        },
+        {
+          "id": "c",
+          "text": "Profile view, Connection request, Message, Follow-up, Call"
+        },
+        { "id": "d", "text": "ICP match, Score, Enrich, Personalize, Sequence" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Universal Prep Agent Pattern has five steps that apply to both B2B and creator contexts: gather context (CRM + fresh data), identify objective (what you want from the conversation), generate talking points (tied to their situation), prepare questions (discovery or deepening), and anticipate objections (with responses ready)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the key difference between B2B Discovery Prep and Creator Nurture Agent input sources?",
+      "options": [
+        { "id": "a", "text": "B2B uses more tools while creator uses fewer" },
+        {
+          "id": "b",
+          "text": "B2B needs company data, LinkedIn, and email threads; Creator needs content engagement history, email open/click data, and stated goals from opt-in"
+        },
+        { "id": "c", "text": "They use identical input sources" },
+        { "id": "d", "text": "Creator agents don't need any input data" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "B2B Discovery Prep needs CRM research briefs, calendar events, email threads, fresh LinkedIn activity, and company news. Creator Nurture needs CRM contact records, content engagement history (which articles/videos consumed), email open/click data, and stated goals. Same architecture, different data inputs."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why is mastering the dual-context pattern valuable beyond just B2B and creator use cases?",
+      "options": [
+        { "id": "a", "text": "It saves money on tools" },
+        {
+          "id": "b",
+          "text": "The real skill is adapting the same agent pattern to different contexts — once mastered, you can build prep agents for any conversation type"
+        },
+        { "id": "c", "text": "It's required by LinkedIn's terms of service" },
+        { "id": "d", "text": "It only works for these two specific contexts" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson teaches that B2B and creator businesses have opposite data structures, yet the prep agent architecture is identical. Mastering this pattern means you can adapt it to any context — investor meetings, partnership calls, customer success check-ins — because the five-step pattern is universal."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The B2B Discovery Prep Agent and Creator Nurture Agent use completely different architectures.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Both agents use the same 5-step Universal Prep Agent Pattern. The only difference is what data you feed them and how you frame the output. B2B inputs include company research and email threads; Creator inputs include content engagement and audience data. Same architecture, different context windows."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Choose either the B2B or Creator context and describe how you would configure a prep agent for your next scheduled conversation. What data sources would you connect, what output format would you request, and what questions would you want the agent to prepare?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response chooses a specific context (B2B or Creator), identifies relevant data sources for that context, describes a useful output format, and includes conversation-appropriate questions. Look for understanding that the prep agent should reduce cognitive load before calls, not add complexity."
+    }
+  ]
+}

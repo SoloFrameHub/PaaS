@@ -1,0 +1,193 @@
+{
+    "lessonId": "7",
+    "courseId": "crm-setup",
+    "sectionId": "operations-systems",
+    "title": "CRM Hygiene Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of the weekly 15-minute CRM sweep?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To add more custom fields to your CRM"
+                },
+                {
+                    "id": "b",
+                    "text": "To prevent data decay and keep your pipeline honest"
+                },
+                {
+                    "id": "c",
+                    "text": "To impress investors with a clean interface"
+                },
+                {
+                    "id": "d",
+                    "text": "To practice using CRM features"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The weekly sweep prevents the 30% annual data decay that kills pipeline accuracy. It's about truth, not aesthetics."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "At what point should a deal with no activity be automatically moved to Lost?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "7 days"
+                },
+                {
+                    "id": "b",
+                    "text": "14 days (yellow flag)"
+                },
+                {
+                    "id": "c",
+                    "text": "30 days (red flag)"
+                },
+                {
+                    "id": "d",
+                    "text": "45 days (auto-close)"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "The escalation ladder: 14 days = yellow flag, 30 days = red flag + break-up email, 45 days = auto-close as Lost (unless there's a scheduled future action)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What percentage of the average sales pipeline is typically already dead?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10-20%"
+                },
+                {
+                    "id": "b",
+                    "text": "30-40%"
+                },
+                {
+                    "id": "c",
+                    "text": "60%"
+                },
+                {
+                    "id": "d",
+                    "text": "80-90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Industry research shows 60% of deals in the typical pipeline are already dead. Hygiene brings this down to 20-30%."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "You should keep a backup spreadsheet of your deals 'just in case' your CRM fails.",
+            "correctAnswer": "b",
+            "explanation": "The 'One Source of Truth' rule: if data exists in two places, one is a lie. Your CRM should be the only authority. Parallel spreadsheets guarantee data divergence.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How often should you verify active pipeline contacts (email + LinkedIn check)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Weekly"
+                },
+                {
+                    "id": "b",
+                    "text": "Monthly"
+                },
+                {
+                    "id": "c",
+                    "text": "Quarterly (every 90 days)"
+                },
+                {
+                    "id": "d",
+                    "text": "Annually"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Quarterly verification catches job changes and email decay before they corrupt your pipeline. Weekly is overkill; annually is too late."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "Which of these is NOT a valid reason to merge two contact records?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Same name, same company, different email formats (sarah@co.com vs s.jones@co.com)"
+                },
+                {
+                    "id": "b",
+                    "text": "Same name, different companies (John Smith at Acme vs John Smith at Beta)"
+                },
+                {
+                    "id": "c",
+                    "text": "Same person, work email vs personal email"
+                },
+                {
+                    "id": "d",
+                    "text": "Obvious typo in one record (Sara Chen vs Sarah Chen, same email)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Same name, different companies = likely different people (especially common names like John Smith). Don't merge without verifying they're the same person."
+        },
+        {
+            "id": "q7",
+            "type": "true-false",
+            "question": "Every deal in your pipeline must have a next action with a specific date.",
+            "correctAnswer": "a",
+            "explanation": "This is the core hygiene rule. 'Waiting on them' is not a next action. 'Send follow-up email Friday at 2pm' is. Deals without next actions are dead deals in disguise.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "What's the average job tenure for roles below Director level?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "6 months"
+                },
+                {
+                    "id": "b",
+                    "text": "1 year"
+                },
+                {
+                    "id": "c",
+                    "text": "2.3 years"
+                },
+                {
+                    "id": "d",
+                    "text": "5 years"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Average tenure is 2.3 years. This means your champion might change jobs mid-deal. Quarterly verification catches this before your emails bounce."
+        }
+    ]
+}

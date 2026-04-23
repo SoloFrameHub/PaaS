@@ -1,0 +1,141 @@
+{
+    "lessonId": "8",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "List Hygiene and Maintenance Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the average monthly rate of 'Data Decay' for B2B sales data?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "0.1%"
+                },
+                {
+                    "id": "b",
+                    "text": "2-3%"
+                },
+                {
+                    "id": "c",
+                    "text": "10%"
+                },
+                {
+                    "id": "d",
+                    "text": "Data doesn't decay"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Professional data changes constantly as people move jobs and companies evolve. A 2-3% monthly decay means nearly a third of your list is invalid after one year."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What should be your immediate action when an email 'Hard Bounces' (Invalid Address)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Try to guess a different email format"
+                },
+                {
+                    "id": "b",
+                    "text": "Call the company main office"
+                },
+                {
+                    "id": "c",
+                    "text": "Remove the lead from your CRM and active sequences immediately"
+                },
+                {
+                    "id": "d",
+                    "text": "Wait a week and try again"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Hard bounces damage your domain reputation. Removing them immediately is the only way to protect your ability to reach other prospects."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How often is it recommended to re-verify an 'Active' list that hasn't been messaged recently?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Every week"
+                },
+                {
+                    "id": "b",
+                    "text": "Every 3 months"
+                },
+                {
+                    "id": "c",
+                    "text": "Once a year"
+                },
+                {
+                    "id": "d",
+                    "text": "Never"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A quarterly re-verification cadence catches the natural decay before it accumulates into a dangerous bounce rate."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a 'Global Suppression List'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A list of every country where you can sell"
+                },
+                {
+                    "id": "b",
+                    "text": "A centralized list of people who have unsubscribed or bounced, used to prevent them from being messaged across any of your domains"
+                },
+                {
+                    "id": "c",
+                    "text": "A list of competitors you want to avoid"
+                },
+                {
+                    "id": "d",
+                    "text": "The list of people who have ignored your last email"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Suppression ensures that you honor opt-outs consistently, which is both a best practice for deliverability and a legal requirement."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If your bounce rate hits 5%, what should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep sending; it's just a few bad emails"
+                },
+                {
+                    "id": "b",
+                    "text": "Buy a new list to offset the bad ones"
+                },
+                {
+                    "id": "c",
+                    "text": "Stop all active campaigns and perform a full data cleaning/verification"
+                },
+                {
+                    "id": "d",
+                    "text": "Change your subject line"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A 5% bounce rate is the 'Danger Zone.' Continuing to send will likely result in your domain being blacklisted by Google or Microsoft."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Describe your plan for handling unsubscribes across multiple outreach channels (e.g., Email vs. LinkedIn). How will you ensure that someone who says 'Stop' in an email isn't accidentally messaged on LinkedIn next week?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the 'Cross-Channel' awareness. The founder should mention manual updates to the CRM or using a tool that syncs suppression. The answer should show a high degree of respect for the prospect's request for privacy."
+        }
+    ]
+}

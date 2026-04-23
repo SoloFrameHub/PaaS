@@ -1,0 +1,180 @@
+{
+    "lessonId": "5",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 5: Minimum Viable Marketing Stack",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which tool is recommended for building fast, simple landing pages at the '$0/month Starter Stack' level?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Salesforce Marketing Cloud"
+                },
+                {
+                    "id": "b",
+                    "text": "Carrd"
+                },
+                {
+                    "id": "c",
+                    "text": "Webflow Enterprise"
+                },
+                {
+                    "id": "d",
+                    "text": "Marketo"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Carrd is the go-to recommendation for simple, one-page sites and waitlists due to its speed, simplicity, and low cost (Free to $19/year)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Why does the lesson suggest using 'Native Integrations' over 'Glue' workarounds? (e.g., Zapier)",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Native integrations are usually more expensive."
+                },
+                {
+                    "id": "b",
+                    "text": "Native integrations are faster, more reliable, and have fewer failure points."
+                },
+                {
+                    "id": "c",
+                    "text": "Most tools don't allow Zapier connections."
+                },
+                {
+                    "id": "d",
+                    "text": "Zapier is only for enterprise companies."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Built-in, native integrations between tools are more stable and easier to maintain than chaining tools together with external services like Zapier."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "A founder has $2k/mo in revenue and wants to save time by automating cross-tool data flow. Which addition to their stack is most appropriate according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hiring a full-time marketing manager."
+                },
+                {
+                    "id": "b",
+                    "text": "Zapier Starter or a similar integration tool."
+                },
+                {
+                    "id": "c",
+                    "text": "Upgrading to HubSpot Enterprise."
+                },
+                {
+                    "id": "d",
+                    "text": "Purchasing 10 different specialized Micro-SaaS tools."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "At the '$50/month Professional Stack' level, adding an integration tool like Zapier provides the 'glue' needed to automate data flow between separate systems."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What is the main advantage of 'Consolidating' your tools when possible?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It ensures you have more logins to manage."
+                },
+                {
+                    "id": "b",
+                    "text": "It keeps your data in separate silos for better security."
+                },
+                {
+                    "id": "c",
+                    "text": "It simplifies management and provides a better 'Single Source of Truth' for lead data."
+                },
+                {
+                    "id": "d",
+                    "text": "It increases the number of monthly subscriptions."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Consolidation into an all-in-one tool or a tight-knit ecosystem reduces complexity and gives you a unified view of your leads."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is 'Subscription Creep' and how do you prevent it?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When your traffic increases too fast; prevent by slowing marketing."
+                },
+                {
+                    "id": "b",
+                    "text": "The slow accumulation of unused paid tools; prevent by auditing every 6 months."
+                },
+                {
+                    "id": "c",
+                    "text": "When customers unsubsidize from your newsletter; prevent by removing the 'Unsubscribe' button."
+                },
+                {
+                    "id": "d",
+                    "text": "The cost of hiring new employees."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Subscription creep is the buildup of recurring costs for tools you no longer use. Regular audits and cancellations help keep your bootstrap stack lean."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "difficulty": "conceptual",
+            "xpValue": 15,
+            "question": "For a Digital Creator selling courses globally, why might they choose a 'Merchant of Record' (like LemonSqueezy) over a standard payment processor (like Stripe)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is cheaper."
+                },
+                {
+                    "id": "b",
+                    "text": "It handles global sales tax (VAT) compliance automatically, which is manually impossible for a solo founder."
+                },
+                {
+                    "id": "c",
+                    "text": "It has better colors."
+                },
+                {
+                    "id": "d",
+                    "text": "It allows you to accept crypto only."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Selling digital goods globally triggers VAT tax nexus in dozens of countries. A Merchant of Record (MoR) like LemonSqueezy acts as the reseller, handling all tax liability for you."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Identify ONE tool in your current stack (or one you are considering) that you aren't fully using or could be consolidated. Research if your 'Base' tool (CRM or Email) has a native feature that could replace it. If you were to rebuild your stack today on a $50/month budget, what would be your 3 core tools and why?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's consolidation logic and budget-conscious stack design. Check for redundant tools in their proposed $50 stack. Suggest a specific free trial or tier they can start with for one of their chosen tools."
+        }
+    ]
+}

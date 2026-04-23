@@ -1,0 +1,75 @@
+{
+  "lessonId": "8",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Automating Onboarding with Zapier/Make/n8n",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How many core onboarding automations does a solo founder need?",
+      "options": [
+        { "id": "a", "text": "1-2" },
+        { "id": "b", "text": "5" },
+        { "id": "c", "text": "15-20" },
+        { "id": "d", "text": "47" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "You need exactly 5 core automations: (1) Welcome Sequence Trigger, (2) Milestone Celebration, (3) Stalled User Alert, (4) Day 7 First-Win Check, and (5) Day 45 Check-In Trigger. These handle 80% of your onboarding workflow."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What does the Stalled User Alert automation do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sends a congratulations email when a user hits a milestone"
+        },
+        {
+          "id": "b",
+          "text": "If no login/activity for 5 days after signup, sends a nudge email and alerts the founder"
+        },
+        { "id": "c", "text": "Automatically upgrades users to a higher plan" },
+        { "id": "d", "text": "Sends a weekly product update newsletter" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Stalled User Alert triggers when there's no login or activity for 5 days after signup. It sends a nudge email to the customer, a Slack notification to you, and flags the account in your CRM. This catches 60% of silent churn before it happens."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the lesson, why do behavioral triggers beat time-based drips?",
+      "options": [
+        { "id": "a", "text": "They are cheaper to implement" },
+        {
+          "id": "b",
+          "text": "They send messages based on what the user actually did, at 3:1 effectiveness"
+        },
+        { "id": "c", "text": "They require fewer emails overall" },
+        { "id": "d", "text": "They only work with Zapier, not Make or n8n" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Behavioral triggers outperform time-based drips 3:1 because they respond to what the customer actually did (or didn't do) rather than sending messages on a fixed schedule regardless of the customer's state."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Automated care beats inconsistent personal touch because founders who resist automation often forget to email customers for days.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The Automation Paradox: founders who resist automation because 'it feels impersonal' are often the ones who forget to email customers for 3+ days. Consistent automated care is better than sporadic personal attention."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Choose your automation tool (Zapier, Make, or n8n) and describe how you would build the 5 core onboarding automations for your product. Which automation would you build first and why?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response selects a specific tool with a rationale (budget, technical comfort), outlines all 5 automations with product-specific triggers and actions, and prioritizes which to build first based on their biggest retention gap (e.g., Welcome Sequence if they have none, Stalled User Alert if silent churn is the problem)."
+    }
+  ]
+}

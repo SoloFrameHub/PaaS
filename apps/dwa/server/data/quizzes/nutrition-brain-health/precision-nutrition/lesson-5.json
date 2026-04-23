@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What striking finding did the 2026 SIBO research reveal about psychiatric comorbidity?",
+            "options": [
+                { "id": "opt1", "text": "About 25% of SIBO patients had some anxiety symptoms" },
+                { "id": "opt2", "text": "SIBO patients had lower rates of depression than the general population" },
+                { "id": "opt3", "text": "100% of confirmed SIBO patients met diagnostic criteria for anxiety, depression, or both" },
+                { "id": "opt4", "text": "SIBO was only associated with digestive symptoms, not psychiatric ones" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 2026 research found that in a cohort of individuals with confirmed SIBO, every participant (100%) met diagnostic criteria for anxiety, depression, or both — a dramatically higher prevalence than the 20-30% rate in the general population. This establishes SIBO as a critical differential in treatment-resistant psychiatric conditions."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "By what factor does chronic PPI (proton pump inhibitor) use increase the risk of developing SIBO?",
+            "options": [
+                { "id": "opt1", "text": "No increased risk has been documented" },
+                { "id": "opt2", "text": "2-8 times increased risk" },
+                { "id": "opt3", "text": "50-100 times increased risk" },
+                { "id": "opt4", "text": "Only a 10% increased risk" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic PPI use (greater than 1 year) is associated with a 2-8x increased risk of SIBO. PPIs dramatically reduce stomach acid production, which normally limits bacterial survival in the upper GI tract. The risk increases with dose and duration."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What unique property makes zinc carnosine especially effective for gut barrier repair?",
+            "options": [
+                { "id": "opt1", "text": "It is the cheapest form of zinc available" },
+                { "id": "opt2", "text": "It enhances epithelial cell migration at wound sites by 300% and has a natural affinity for damaged tissue" },
+                { "id": "opt3", "text": "It eliminates the need for any other gut-healing nutrients" },
+                { "id": "opt4", "text": "It completely replaces stomach acid production" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Zinc carnosine accelerated epithelial cell migration by 300% compared to controls and reduced mucosal damage by approximately 75%. It also has a natural affinity for damaged areas of the gut lining, concentrating its effects where repair is most needed."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is L-glutamine considered the foundational nutrient for gut barrier repair?",
+            "options": [
+                { "id": "opt1", "text": "It is the most abundant amino acid in the body and the primary metabolic fuel for enterocytes (intestinal epithelial cells)" },
+                { "id": "opt2", "text": "It directly kills pathogenic bacteria in the gut" },
+                { "id": "opt3", "text": "It is the only amino acid that can cross the blood-brain barrier" },
+                { "id": "opt4", "text": "It increases stomach acid production to prevent SIBO" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "L-glutamine is the most abundant amino acid in the bloodstream and the primary metabolic fuel for enterocytes. While most cells use glucose for energy, enterocytes preferentially use glutamine. It maintains tight junction protein expression, supports enterocyte proliferation, regulates immune function, and supports mucus production."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'gut repair stack' combination for intestinal barrier repair?",
+            "options": [
+                { "id": "opt1", "text": "Vitamin C, probiotics, and fiber only" },
+                { "id": "opt2", "text": "L-glutamine (10-20g/day), zinc carnosine (75mg 2x/day), and collagen peptides (10-20g/day)" },
+                { "id": "opt3", "text": "Magnesium oxide, vitamin D, and fish oil" },
+                { "id": "opt4", "text": "Betaine HCl, digestive enzymes, and ox bile" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The complete gut repair stack combines L-glutamine (10-20g/day as enterocyte fuel and tight junction support), zinc carnosine (75mg twice daily for wound migration and growth factor stimulation), and collagen peptides (10-20g/day for structural repair and glycine anti-inflammation). These three agents are synergistic and address gut barrier repair from complementary angles."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "5",
+    "title": "SIBO, Gut Barrier Healing, and Mental Health - Quiz"
+}

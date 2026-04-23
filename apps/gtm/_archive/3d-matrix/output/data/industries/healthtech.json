@@ -1,0 +1,261 @@
+{
+  "industry_id": "healthtech",
+  "display_name": "HealthTech",
+  "parent_category": "technology",
+  "description": "Healthcare technology companies including digital health platforms, telemedicine, healthcare SaaS, medical devices with software components, clinical decision support tools, and health information systems. Serves both healthcare providers (B2B) and patients/consumers (B2C).",
+  "typical_company_sizes": ["11-50", "51-200", "201-500"],
+  "typical_deal_sizes": ["mid_market", "enterprise"],
+  "sales_cycle_length": "months",
+
+  "pain_points": [
+    {
+      "pain": "HIPAA compliance burden affecting development velocity and feature decisions",
+      "level": "complex",
+      "context": "Every feature touching patient data requires security review, and compliance violations carry severe penalties"
+    },
+    {
+      "pain": "EHR/EMR integration complexity with legacy hospital systems",
+      "level": "complex",
+      "context": "Major health systems run Epic, Cerner, or legacy systems with limited APIs and slow change approval processes"
+    },
+    {
+      "pain": "Clinical validation requirements before provider adoption",
+      "level": "complex",
+      "context": "Clinicians won't use tools without evidence they improve patient outcomes, requiring clinical studies and peer review"
+    },
+    {
+      "pain": "Patient data privacy concerns limiting data utilization",
+      "level": "straightforward",
+      "context": "Even anonymized data carries re-identification risk, limiting analytics and AI training capabilities"
+    },
+    {
+      "pain": "FDA regulatory pathway uncertainty for software as medical device",
+      "level": "complex",
+      "context": "Classification as medical device triggers extensive FDA requirements including 510(k) clearance or PMA approval"
+    },
+    {
+      "pain": "Clinician adoption and workflow integration challenges",
+      "level": "straightforward",
+      "context": "Healthcare professionals have 15 minutes per patient and won't adopt tools that add friction to their workflow"
+    },
+    {
+      "pain": "Multi-stakeholder buying committees slowing sales cycles",
+      "level": "complex",
+      "context": "Clinicians, IT, compliance, finance, and administrators all have veto power, extending cycles to 6-12+ months"
+    },
+    {
+      "pain": "Reimbursement and payer integration complexity",
+      "level": "complex",
+      "context": "Getting paid requires navigating CPT codes, prior authorization, and payer-specific requirements"
+    }
+  ],
+
+  "buying_triggers": [
+    "HIPAA compliance audit failure with remediation deadline",
+    "Telehealth expansion mandate from leadership",
+    "New insurance network requiring specific tool integrations",
+    "Reimbursement rule changes requiring system updates",
+    "EHR vendor contract renewal triggering vendor evaluation",
+    "Clinical workflow bottleneck causing staff burnout complaints",
+    "Competitor health system launching popular patient-facing tool",
+    "Grant funding received for health technology initiatives"
+  ],
+
+  "budget_cycle": "Health systems follow fiscal year planning (often July-June). Major technology purchases require 6-12 month lead time for committee approval. Emergency compliance purchases may bypass normal procurement. Academic medical centers align with academic calendar for some decisions.",
+
+  "regulatory_concerns": [
+    "HIPAA Privacy and Security Rules",
+    "Business Associate Agreement (BAA) requirements",
+    "FDA clearance/approval for medical devices",
+    "State telehealth licensing requirements",
+    "CLIA certification for clinical laboratory testing",
+    "IRB approval for clinical research",
+    "DEA registration for controlled substance prescribing",
+    "Section 508 accessibility compliance",
+    "State data breach notification laws",
+    "HITECH Act requirements"
+  ],
+
+  "compliance_language": [
+    "HIPAA compliant",
+    "BAA available",
+    "PHI encryption",
+    "SOC 2 Type II certified",
+    "HITRUST certified",
+    "FDA 510(k) cleared",
+    "HL7 FHIR compliant",
+    "audit logging",
+    "role-based access control",
+    "breach notification protocol"
+  ],
+
+  "risk_tolerance": "low",
+
+  "terminology": [
+    {
+      "term": "HIPAA",
+      "definition": "Health Insurance Portability and Accountability Act - federal law establishing privacy and security standards for protected health information, with both Privacy Rule (use/disclosure) and Security Rule (technical safeguards) requirements",
+      "usage_context": "Compliance baseline. 'We can't even evaluate your tool until you confirm HIPAA compliance and provide a signed BAA.'"
+    },
+    {
+      "term": "PHI",
+      "definition": "Protected Health Information - any individually identifiable health information including names, medical record numbers, diagnoses, treatment dates, and any data that could identify a patient",
+      "usage_context": "Data classification. 'If your system touches PHI in any way, you need a BAA and HIPAA-compliant data handling.'"
+    },
+    {
+      "term": "BAA",
+      "definition": "Business Associate Agreement - mandatory legal contract between healthcare provider (covered entity) and vendor (business associate) specifying HIPAA compliance duties, breach notification requirements, and liability terms",
+      "usage_context": "Deal requirement. 'We need a signed BAA before we can even pilot your software with real patient data.'"
+    },
+    {
+      "term": "EHR/EMR",
+      "definition": "Electronic Health Record / Electronic Medical Record - comprehensive digital patient records. EHR implies interoperability across organizations; EMR is typically single-organization. Often used interchangeably.",
+      "usage_context": "Integration discussion. 'Does your tool integrate with Epic, Cerner, or other major EHR systems via standard APIs?'"
+    },
+    {
+      "term": "HL7",
+      "definition": "Health Level Seven - organization and standards for healthcare data exchange. HL7 v2 is older messaging standard still widely used; HL7 FHIR is modern REST API standard",
+      "usage_context": "Technical standards. 'We need HL7 FHIR integration for real-time data exchange, not batch HL7 v2 feeds.'"
+    },
+    {
+      "term": "FHIR",
+      "definition": "Fast Healthcare Interoperability Resources - modern HL7 standard for exchanging healthcare data via REST APIs, becoming the required standard for healthcare interoperability",
+      "usage_context": "Modern integration. 'CMS requires FHIR APIs for patient access, so your tool must support FHIR R4.'"
+    },
+    {
+      "term": "FDA Clearance",
+      "definition": "FDA authorization to market a medical device, typically through 510(k) pathway demonstrating substantial equivalence to existing cleared device. Distinct from FDA Approval (PMA) required for high-risk devices.",
+      "usage_context": "Regulatory status. 'Is your diagnostic algorithm FDA cleared, or are you operating under enforcement discretion?'"
+    },
+    {
+      "term": "CLIA",
+      "definition": "Clinical Laboratory Improvement Amendments - federal standards for clinical laboratory testing quality. Labs must be CLIA certified, and some at-home tests require CLIA waiver.",
+      "usage_context": "Lab testing compliance. 'Our at-home testing kit needs CLIA waiver before we can sell it.'"
+    },
+    {
+      "term": "Telehealth",
+      "definition": "Remote healthcare delivery via video, audio, or messaging. Includes synchronous (live) and asynchronous (store-and-forward) modalities. Subject to state licensing and prescribing regulations.",
+      "usage_context": "Care delivery mode. 'Telehealth adoption exploded during COVID and patients now expect virtual visit options.'"
+    },
+    {
+      "term": "RPM",
+      "definition": "Remote Patient Monitoring - technology for collecting patient health data outside clinical settings (blood pressure, glucose, weight) and transmitting to providers for ongoing care management",
+      "usage_context": "Care model. 'RPM programs improve chronic disease outcomes and now have CMS reimbursement codes.'"
+    },
+    {
+      "term": "Clinical Validation",
+      "definition": "Evidence from clinical studies demonstrating that a healthcare technology improves patient outcomes, safety, or care quality. Required for clinician adoption and sometimes for regulatory approval.",
+      "usage_context": "Evidence requirements. 'Our clinical validation study showed 30% reduction in readmissions, which convinced the CMO.'"
+    },
+    {
+      "term": "IRB",
+      "definition": "Institutional Review Board - committee that reviews and approves research involving human subjects to ensure ethical standards and patient safety",
+      "usage_context": "Research governance. 'Any clinical study requires IRB approval before we can enroll patients.'"
+    },
+    {
+      "term": "Prior Authorization",
+      "definition": "Payer requirement to approve treatment before it's provided, confirming medical necessity and coverage. Major administrative burden for providers.",
+      "usage_context": "Revenue cycle. 'Prior auth takes 20 minutes per request - we need automation to reduce this burden.'"
+    },
+    {
+      "term": "CPT Code",
+      "definition": "Current Procedural Terminology - standardized codes for medical procedures and services used for billing and reimbursement",
+      "usage_context": "Billing and reimbursement. 'There's finally a CPT code for remote patient monitoring, which means we can get reimbursed.'"
+    },
+    {
+      "term": "HITRUST",
+      "definition": "Health Information Trust Alliance - comprehensive security framework and certification program that combines HIPAA, SOC 2, and other standards into unified compliance certification",
+      "usage_context": "Enhanced compliance. 'Large health systems increasingly require HITRUST certification, not just SOC 2.'"
+    }
+  ],
+
+  "formality_level": "formal",
+  "decision_making_style": "lengthy_process",
+
+  "common_objections": [
+    {
+      "objection": "Do you have a signed BAA? We can't proceed without one.",
+      "underlying_concern": "HIPAA requires Business Associate Agreements with any vendor handling PHI. No BAA = no deal, and healthcare orgs face severe penalties for non-compliance.",
+      "effective_response_approach": "Have BAA template ready immediately. Offer to execute within 5 business days. Provide clear documentation of data handling practices. Be prepared for legal redlines - healthcare legal teams have specific requirements.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "What happens if there's a breach of patient data?",
+      "underlying_concern": "Healthcare providers face both regulatory fines and patient lawsuits for breaches. They need to understand vendor's incident response, notification timeline (48 hours required), and liability boundaries.",
+      "effective_response_approach": "Document incident response plan with specific timelines. State 48-hour breach notification commitment. Show cyber liability insurance coverage. Discuss indemnification openly - healthcare orgs often demand vendor liability for vendor-caused breaches.",
+      "level": "complex"
+    },
+    {
+      "objection": "Does this integrate with our EHR? We use Epic/Cerner/Athena.",
+      "underlying_concern": "Tools that don't integrate with existing EHR create workflow friction, duplicate data entry, and clinician rejection. Integration is table stakes, not a nice-to-have.",
+      "effective_response_approach": "Lead with specific EHR integrations (Epic App Orchard, Cerner CODE, etc.). Show FHIR/HL7 API documentation. Offer sandbox environment for IT testing. Provide references from customers using the same EHR.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Our clinicians are already overwhelmed - they won't adopt another tool.",
+      "underlying_concern": "Clinicians have 15 minutes per patient and technology fatigue is real. Any tool adding workflow friction will be workaround or ignored.",
+      "effective_response_approach": "Show clinician testimonials and adoption metrics from similar organizations. Demonstrate time savings, not additions. Offer pilot with willing early adopters. Provide on-site training tailored to their workflow.",
+      "level": "complex"
+    },
+    {
+      "objection": "What's your FDA status? Is this a regulated medical device?",
+      "underlying_concern": "If software makes clinical decisions (diagnosis, treatment recommendations), FDA classification as medical device may apply. Providers need clarity on regulatory status and liability.",
+      "effective_response_approach": "State FDA classification clearly (Class I exempt, 510(k) cleared, or enforcement discretion). If cleared, provide 510(k) letter. If exempt, explain why (general wellness, clinical decision support exemptions). Be honest about regulatory status.",
+      "level": "complex"
+    },
+    {
+      "objection": "Where is patient data stored? We have data residency requirements.",
+      "underlying_concern": "Some contracts with payers or states require US data residency. International data transfer raises HIPAA and GDPR concerns. Cloud hosting location matters.",
+      "effective_response_approach": "Document data center locations (AWS region, Azure region). Explain encryption at rest and in transit. Clarify customer-managed encryption key options. Offer dedicated hosting for enterprise customers with strict requirements.",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Epic (EHR dominant in hospitals)",
+    "Cerner (Oracle Health)",
+    "Athenahealth (ambulatory practices)",
+    "PointClickCare (post-acute care)",
+    "Teladoc / Amwell (telehealth)",
+    "Doximity (clinical communication)",
+    "Veracyte / Tempus (diagnostics)",
+    "Livongo / Omada (chronic care management)"
+  ],
+
+  "switching_barriers": [
+    "BAA and compliance documentation requirements",
+    "EHR integration reconfiguration",
+    "Clinical workflow retraining",
+    "Historical patient data migration",
+    "Regulatory notification requirements for system changes",
+    "Multi-stakeholder approval for any vendor change"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're a {role} at a {company_size} digital health company. A regulator just identified HIPAA gaps during an audit and gave you 60 days to remediate. {trigger_event}. Solving {pain_point} is now urgent before the follow-up inspection.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} telehealth platform. A major health system customer requires Epic integration within 90 days or they'll cancel. {trigger_event}. You must address {pain_point} to save a $1M annual contract.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} clinical decision support company. The FDA just asked for documentation about your device classification. {trigger_event}. You need to resolve {pain_point} before your next investor meeting.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} leading product at a {company_size} patient engagement platform. Clinicians at your pilot site are refusing to use the tool because it adds too many clicks. {trigger_event}. You must fix {pain_point} before the pilot review meeting.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} remote patient monitoring company. CMS just announced new reimbursement rules that require system changes. {trigger_event}. Your team must address {pain_point} before the new rules take effect next quarter.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    }
+  ]
+}

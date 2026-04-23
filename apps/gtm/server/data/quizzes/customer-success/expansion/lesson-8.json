@@ -1,0 +1,78 @@
+{
+  "lessonId": "8",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Your Expansion Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the six components of a complete expansion system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pricing, packaging, discounting, billing, invoicing, reporting"
+        },
+        {
+          "id": "b",
+          "text": "NRR baseline, trigger library, outreach playbook, pricing scenarios, monthly review, implementation sprint"
+        },
+        {
+          "id": "c",
+          "text": "Upsell, cross-sell, seat expansion, price increase, renewal, referral"
+        },
+        {
+          "id": "d",
+          "text": "Detection, outreach, negotiation, closing, onboarding, reporting"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The complete expansion system includes: (1) NRR Baseline & Tracking, (2) Expansion Trigger Library (5-8 signals), (3) Outreach Playbook (templates), (4) Pricing Scenarios, (5) Monthly Expansion Review, and (6) 7-Day Implementation Sprint."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to Jordan's case study, how much expansion revenue was left on the table in one year?",
+      "options": [
+        { "id": "a", "text": "$27,000" },
+        { "id": "b", "text": "$67,000" },
+        { "id": "c", "text": "$127,000" },
+        { "id": "d", "text": "$250,000" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Jordan left $127,000 on the table: 12 customers grew seats organically without upgrading, 8 asked about DFY setup that wasn't offered, and 5 churned at renewal because no expansion conversation happened. This demonstrates the cost of having no expansion system."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the recommended monthly expansion review cadence for solo founders?",
+      "options": [
+        { "id": "a", "text": "5 minutes daily" },
+        { "id": "b", "text": "15 minutes monthly" },
+        { "id": "c", "text": "2 hours weekly" },
+        { "id": "d", "text": "Full day quarterly" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A 15-minute monthly expansion review is the recommended ritual. This is enough time to identify and act on expansion opportunities without consuming too much founder time. The system runs on triggers, not constant monitoring."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "An expansion system runs on triggers and data rather than guesswork, integrating into your existing customer success workflow.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. An expansion system is a documented, repeatable process that identifies opportunities through objective triggers (usage data, outcomes, milestones) rather than gut feeling. It runs alongside your weekly CS routine."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Build your expansion trigger library by listing 5 specific signals (mix of usage-based and outcome-based) that indicate a customer in your business is ready to expand. For each trigger, specify what expansion action you would take.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response lists 5 specific, product-relevant triggers (not generic ones), includes a mix of usage-based and outcome-based signals, and pairs each trigger with a concrete expansion action (upgrade offer, seat expansion, DFY pitch, referral ask, etc.)."
+    }
+  ]
+}

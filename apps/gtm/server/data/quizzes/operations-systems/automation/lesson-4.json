@@ -1,0 +1,101 @@
+{
+    "lessonId": "4",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "The Follow-Up Reminder Chain",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of sales require 5+ follow-ups to close?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30%"
+                },
+                {
+                    "id": "b",
+                    "text": "50%"
+                },
+                {
+                    "id": "c",
+                    "text": "65%"
+                },
+                {
+                    "id": "d",
+                    "text": "80%"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "80% of sales require 5+ follow-ups. The Day 3/7/14 chain gets you to 3 follow-ups — a minimum floor. Some deals need 5-8 touchpoints before they respond."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which is NOT a valid stop condition for the follow-up chain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Prospect replied to your email"
+                },
+                {
+                    "id": "b",
+                    "text": "Deal stage advanced beyond Contacted"
+                },
+                {
+                    "id": "c",
+                    "text": "Deal marked as Lost"
+                },
+                {
+                    "id": "d",
+                    "text": "Prospect opened your email but didn't reply"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Email opens are not a valid stop condition. Email open tracking is unreliable, and an open without a reply means the conversation hasn't progressed. Only replies and CRM stage changes should stop the chain."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "The Follow-Up Reminder chain should automatically send the follow-up emails without human review.",
+            "correctAnswer": "b",
+            "explanation": "False. For Days 3 and 7, the automation should create tasks — you review and personalize before sending. This maintains conversation quality and allows you to incorporate new context. Day 14 break-up emails can be considered for auto-send due to their low-risk, templated nature.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the Day 14 break-up email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To aggressively close the deal"
+                },
+                {
+                    "id": "b",
+                    "text": "To give the prospect permission to say 'not now' while keeping the door open"
+                },
+                {
+                    "id": "c",
+                    "text": "To mark the deal as lost in your CRM automatically"
+                },
+                {
+                    "id": "d",
+                    "text": "To transfer the deal to a different sales rep"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The break-up email removes pressure by giving the prospect permission to say 'not now' — which paradoxically often generates replies. It also keeps the door open for future timing."
+        }
+    ]
+}

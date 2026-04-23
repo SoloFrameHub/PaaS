@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Architecture | Digital Wellness Academy</title>
+    <meta name="description" content="How the Digital Wellness Academy platform is built: two-school isolation, HIPAA-compliant infrastructure, DistilBERT safety AI, provider coordination, and the adaptive-learning data pipeline.">
+    <meta property="og:title" content="Platform Architecture | Digital Wellness Academy">
+    <meta property="og:description" content="How the Digital Wellness Academy platform is built: two-school isolation, HIPAA-compliant infrastructure, DistilBERT safety AI, provider coordination, and the adaptive-learning data pipeline.">
+    <meta property="og:url" content="https://digitalwellness.academy/architecture.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Digital Wellness Academy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://digitalwellness.academy/images/og-image.jpg">
+    <meta name="twitter:title" content="Platform Architecture | Digital Wellness Academy">
+    <meta name="twitter:description" content="HIPAA-compliant two-school architecture. DistilBERT safety AI. Zero-knowledge text processing. Adaptive-learning data pipeline.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://digitalwellness.academy/architecture.html">
+    <link rel="icon" href="./images/icon.jpg">
+  <link rel="apple-touch-icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/page.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Platform Architecture — Digital Wellness Academy",
+  "url": "https://digitalwellness.academy/architecture.html",
+  "description": "How the Digital Wellness Academy platform is built: two-school isolation, HIPAA-compliant infrastructure, DistilBERT safety AI, provider coordination, and the adaptive-learning data pipeline.",
+  "publisher": { "@type": "Organization", "name": "Digital Wellness Academy", "url": "https://digitalwellness.academy/" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalwellness.academy/" },
+      { "@type": "ListItem", "position": 2, "name": "Platform", "item": "https://digitalwellness.academy/platform.html" },
+      { "@type": "ListItem", "position": 3, "name": "Architecture", "item": "https://digitalwellness.academy/architecture.html" }
+    ]
+  }
+}
+</script>
+
+    <!-- Schema: Speakable (GEO/AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".hero-description", "meta[name='description']"]
+      },
+      "url": "https://digitalwellness.academy/architecture.html"
+    }
+    </script>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+
+<!-- Header -->
+<header class="relative w-full bg-slate-900 z-30">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+        <div class="flex items-center justify-between h-16 md:h-20">
+            <div class="shrink-0 mr-4">
+                <a href="./index.html" class="block text-2xl font-bold text-blue-400">Digital Wellness Academy</a>
+            </div>
+            <nav class="hidden xl:flex xl:grow">
+                <ul class="flex grow justify-center flex-wrap items-center">
+                    <li class="relative group">
+                        <button class="font-medium text-blue-400 px-3 py-2 inline-flex items-center">Platform
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <ul class="absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                            <div class="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
+                                <li><a href="./platform.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Platform Overview</a></li>
+                                <li><a href="./architecture.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-medium">Architecture</a></li>
+                                <li><a href="./framework.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">The Framework</a></li>
+                                <li><a href="./custom-content.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Custom Content</a></li>
+                                <li><a href="./hipaa-hosting.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">HIPAA Hosting Guide</a></li>
+                                <li><a href="./courses.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Course Catalog</a></li>
+                                <li><a href="./marketing-flywheel.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Marketing Flywheel</a></li>
+                                <li><a href="./treatment-integration.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Treatment Integration</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <button class="font-medium text-slate-300 hover:text-white px-3 py-2 inline-flex items-center">For
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <ul class="absolute left-0 top-full pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                            <div class="bg-white rounded-lg shadow-xl border border-slate-200 py-2">
+                                <li><a href="./for-providers.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Psychiatric Providers</a></li>
+                                <li><a href="./for-universities.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Universities & Colleges</a></li>
+                                <li><a href="./for-enterprises.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Enterprises</a></li>
+                                <li><a href="./for-investors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Investors</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="./pricing.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">Pricing</a></li>
+                </ul>
+                <ul class="flex grow justify-end flex-wrap items-center">
+                    <li><a href="https://digital-wellness-education.digitalwellness.academy/signin" class="font-medium text-slate-300 hover:text-white px-3 py-2">Sign in</a></li>
+                    <li><a href="./contact.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">Apply for Beta →</a></li>
+                </ul>
+            </nav>
+            <button class="xl:hidden text-white" onclick="toggleMobileMenu()" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+<div id="mobile-menu" class="hidden xl:hidden fixed inset-0 z-40 bg-white pt-20 px-6 overflow-y-auto">
+    <nav><ul class="space-y-2 pb-12">
+        <li class="pt-4"><div class="font-semibold text-gray-500 uppercase text-xs">Platform</div>
+            <ul class="ml-2 mt-2 space-y-2">
+                <li><a href="./platform.html" class="block text-lg text-gray-800">Overview</a></li>
+                <li><a href="./architecture.html" class="block text-lg text-blue-600 font-medium">Architecture</a></li>
+                <li><a href="./framework.html" class="block text-lg text-gray-800">The Framework</a></li>
+                <li><a href="./custom-content.html" class="block text-lg text-gray-800">Custom Content</a></li>
+                <li><a href="./courses.html" class="block text-lg text-gray-800">Course Catalog</a></li>
+            </ul></li>
+        <li class="pt-4"><div class="font-semibold text-gray-500 uppercase text-xs">For</div>
+            <ul class="ml-2 mt-2 space-y-2">
+                <li><a href="./for-providers.html" class="block text-lg text-gray-800">Psychiatric Providers</a></li>
+                <li><a href="./for-universities.html" class="block text-lg text-gray-800">Universities & Colleges</a></li>
+                <li><a href="./for-enterprises.html" class="block text-lg text-gray-800">Enterprises</a></li>
+                <li><a href="./for-investors.html" class="block text-lg text-gray-800">Investors</a></li>
+            </ul></li>
+        <li class="pt-4"><a href="./marketing-flywheel.html" class="block text-lg font-medium text-gray-800">Marketing Flywheel</a></li>
+        <li><a href="./treatment-integration.html" class="block text-lg font-medium text-gray-800">Treatment Integration</a></li>
+        <li><a href="./pricing.html" class="block text-lg font-medium text-gray-800">Pricing</a></li>
+        <li><a href="./about.html" class="block text-lg font-medium text-gray-800">About</a></li>
+        <li><a href="https://digital-wellness-education.digitalwellness.academy/signin" class="block text-lg font-medium text-gray-800">Sign in</a></li>
+        <li class="pt-4"><a href="./contact.html" class="block text-lg font-medium text-blue-600">Apply for Beta →</a></li>
+    </ul></nav>
+</div>
+
+<!-- Hero -->
+<section class="relative bg-slate-900 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/40 to-slate-900"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-12 md:pt-16 md:pb-16">
+        <div class="max-w-4xl">
+            <div class="inline-block px-3 py-1 bg-blue-500/20 rounded-full text-blue-300 text-sm font-medium mb-6">PLATFORM ARCHITECTURE</div>
+            <h1 class="h1 font-playfair-display text-white mb-6">The architecture behind a HIPAA-compliant, two-school learning platform</h1>
+            <p class="text-xl text-slate-300 leading-relaxed max-w-3xl">Two course schools on one shared identity layer. A custom distress classifier trained for mental-health context. A provider coordination portal that exposes outcomes without exposing PHI. And a data pipeline that turns every lesson interaction into a signal to improve the next cohort of learners.</p>
+        </div>
+    </div>
+</section>
+
+<!-- System Overview -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl pb-12">
+            <h2 class="h2 font-playfair-display mb-4">System-level view</h2>
+            <p class="text-xl text-slate-600">Four tiers, each designed for a different class of risk and latency.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Tier 1 · Learner Layer</div>
+                <h3 class="h4 mb-3">Next.js 16 app on Node</h3>
+                <p class="text-slate-600 mb-4">Server-rendered learner and provider interfaces. Lucia session-based auth. Routes segmented into <code class="text-sm bg-slate-200 px-1 rounded">/academy/*</code> (therapeutic) and <code class="text-sm bg-slate-200 px-1 rounded">/optimization/*</code> (five pillars) with shared identity but isolated progress tables.</p>
+                <ul class="text-sm space-y-1 text-slate-600">
+                    <li>• Lucia auth + session cookies (no JWT sprawl)</li>
+                    <li>• Server components for lesson content</li>
+                    <li>• Client components for interactive widgets</li>
+                    <li>• Tailwind 4 + MDX for lesson authoring</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Tier 2 · Data Layer</div>
+                <h3 class="h4 mb-3">Postgres + Redis + Drizzle</h3>
+                <p class="text-slate-600 mb-4">Postgres is the durable store (18 tables: users, enrollments, progress, assessments, quiz responses, mood tracking, thought records, distress events, provider relationships, forum posts). Redis handles sessions, rate limiting, and the distress-classifier request queue.</p>
+                <ul class="text-sm space-y-1 text-slate-600">
+                    <li>• Drizzle ORM with typed schema</li>
+                    <li>• Row-level security via provider relationships</li>
+                    <li>• Encryption at rest; TLS in transit</li>
+                    <li>• Audit log on every PHI-adjacent write</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Tier 3 · Safety AI</div>
+                <h3 class="h4 mb-3">DistilBERT distress classifier</h3>
+                <p class="text-slate-600 mb-4">A dedicated FastAPI service hosts a DistilBERT model fine-tuned on a mental-health distress corpus. The learner app calls this service synchronously at every text-input boundary - journals, thought records, forum posts, assessment free-text, onboarding reflections.</p>
+                <ul class="text-sm space-y-1 text-slate-600">
+                    <li>• 66M-parameter DistilBERT base</li>
+                    <li>• Three-level output: crisis / mild / none</li>
+                    <li>• Zero-knowledge: text discarded after inference</li>
+                    <li>• Only <code class="text-sm bg-slate-200 px-1 rounded">{level, confidence, ts}</code> persisted</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Tier 4 · Analytics</div>
+                <h3 class="h4 mb-3">Metabase + adaptive-learning pipeline</h3>
+                <p class="text-slate-600 mb-4">Every lesson view, component interaction, quiz response, and assessment score emits structured events into Postgres. Metabase dashboards surface cohort-level outcomes to the practice. De-identified aggregates feed the adaptive-learning model training runs.</p>
+                <ul class="text-sm space-y-1 text-slate-600">
+                    <li>• Cohort outcome dashboards (practice-scoped)</li>
+                    <li>• Lesson feedback + quiz performance heatmaps</li>
+                    <li>• Training corpus for course sequencing models</li>
+                    <li>• Drop-off risk signals back to provider portal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Two-school isolation -->
+<section class="bg-gradient-to-br from-blue-50 to-blue-50 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl pb-12">
+            <h2 class="h2 font-playfair-display mb-4">Two-school isolation</h2>
+            <p class="text-xl text-slate-600">Shared auth, isolated progress. A therapeutic enrollment never bleeds into optimization analytics, and vice versa.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Therapeutic School · /academy/*</div>
+                    <h3 class="h3 font-playfair-display mb-4">24 courses · 217 lessons</h3>
+                    <p class="text-slate-600 mb-6">Clinical content with symptom-driven routing. Lessons are authored in <code class="text-sm bg-slate-100 px-1 rounded">.md</code>. Enrollments carry a <code class="text-sm bg-slate-100 px-1 rounded">care_context</code> field flagging provider-referred entry. Progress rolls up into PHQ-9/GAD-7 trajectory charts visible to the assigned provider.</p>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>Symptom-based onboarding assessment drives course recommendations</span></li>
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>Thought records, exposure hierarchies, body maps</span></li>
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>All text inputs pass through the distress classifier</span></li>
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>Outcomes dashboard visible only to that patient's provider</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Optimization School · /optimization/*</div>
+                    <h3 class="h3 font-playfair-display mb-4">19 courses · 375 lessons</h3>
+                    <p class="text-slate-600 mb-6">Five-pillar peak-performance content. Lessons are authored in <code class="text-sm bg-slate-100 px-1 rounded">.mdx</code> with embedded interactive components. No clinical assessment gating - anyone can enroll. Progress stays inside optimization tables; nothing surfaces to providers unless the user explicitly opts in.</p>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>Five Pillars: Physical Vitality, Social Connection, Mental Clarity, Emotional Resilience, Purpose</span></li>
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>Keyword-gate safety layer (not DistilBERT) on public inputs</span></li>
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>Public-facing SEO lessons for licensee content marketing</span></li>
+                        <li class="flex"><span class="text-blue-600 mr-2">→</span><span>No provider coordination by default</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 pt-10 border-t border-slate-200">
+                <h4 class="font-bold text-slate-800 mb-3">Why shared auth but isolated progress?</h4>
+                <p class="text-slate-600 leading-relaxed">A patient with panic disorder might also train for a marathon. The platform lets them do both without their wellness-seeking optimization data feeding into the clinical record their provider reviews. Isolation is enforced at the database row level - not by application convention - so a developer mistake can't leak optimization activity into therapeutic analytics.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Distress Classifier Deep-Dive -->
+<section class="bg-gradient-to-br from-blue-900 via-blue-900 to-blue-900 text-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl pb-12">
+            <div class="inline-block px-4 py-2 bg-blue-500/20 rounded-full text-blue-300 text-sm font-bold mb-4">SAFETY AI</div>
+            <h2 class="h2 font-playfair-display mb-4">DistilBERT distress classifier</h2>
+            <p class="text-xl text-blue-200">A domain-specific model wins over a generic LLM here. Smaller, faster, cheaper per call, and trained on the exact language of mental-health distress.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700">
+                <h3 class="h4 mb-4 text-blue-300">How a text input flows through it</h3>
+                <ol class="space-y-4 text-slate-300 text-sm">
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">1</span><span>Learner submits a thought record, journal entry, or forum post.</span></li>
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">2</span><span>Learner app POSTs text to <code class="text-xs bg-slate-900 px-1 rounded">/api/safety/classify</code>.</span></li>
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">3</span><span>API route forwards to FastAPI service; text is held in memory only during inference.</span></li>
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">4</span><span>Model returns <code class="text-xs bg-slate-900 px-1 rounded">{level, confidence}</code>; text is immediately discarded.</span></li>
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">5</span><span>If <em>crisis</em>: 988 modal + provider alert + audit log entry.</span></li>
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">6</span><span>If <em>mild</em>: gentle check-in prompt; metadata logged.</span></li>
+                    <li class="flex"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center mr-3 font-bold">7</span><span>If <em>none</em>: user continues. Only an event counter increments.</span></li>
+                </ol>
+            </div>
+
+            <div class="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700">
+                <h3 class="h4 mb-4 text-blue-300">Why not use a big LLM?</h3>
+                <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+                    <p><strong class="text-white">Latency.</strong> DistilBERT inference on a T4/P100 GPU runs in the 50–200ms range. A hosted LLM API adds hundreds of milliseconds plus variance. The classifier sits on the critical path of every thought record save - it cannot be slow.</p>
+                    <p><strong class="text-white">Cost.</strong> A fine-tuned 66M-param model on our own GPU costs a fraction of a cent per inference. Running every learner utterance through a frontier LLM would be an order of magnitude more expensive, for worse domain accuracy.</p>
+                    <p><strong class="text-white">Predictability.</strong> A classifier emits a bounded output: three labels + a confidence score. An LLM emits free text that you then have to classify again. For a safety-critical path, bounded beats generative.</p>
+                    <p><strong class="text-white">Privacy posture.</strong> A model we host, we control. Learner text never crosses a third-party API boundary.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 bg-slate-900/50 backdrop-blur rounded-2xl p-8 border border-blue-500/30">
+            <h3 class="h4 mb-4 text-center text-blue-300">Target performance envelope</h3>
+            <div class="grid md:grid-cols-4 gap-4 text-center">
+                <div><div class="text-3xl font-bold text-blue-300 mb-1">50–200ms</div><div class="text-xs text-slate-400">Inference, T4/P100 GPU</div></div>
+                <div><div class="text-3xl font-bold text-blue-300 mb-1">&gt;95%</div><div class="text-xs text-slate-400">Crisis-case sensitivity target</div></div>
+                <div><div class="text-3xl font-bold text-blue-300 mb-1">&gt;85%</div><div class="text-xs text-slate-400">Precision target</div></div>
+                <div><div class="text-3xl font-bold text-blue-300 mb-1">0 bytes</div><div class="text-xs text-slate-400">Learner text retained</div></div>
+            </div>
+            <p class="text-xs text-slate-400 text-center mt-4">Sensitivity and precision are validation targets; the platform is in beta with select practices.</p>
+        </div>
+    </div>
+</section>
+
+<!-- HIPAA & privacy stance -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl pb-12">
+            <h2 class="h2 font-playfair-display mb-4">HIPAA posture &amp; privacy stance</h2>
+            <p class="text-xl text-slate-600">What we collect, what we don't, who sees it, and under what agreement.</p>
+            <!-- BAA callout -->
+            <div class="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5 flex gap-4 items-start">
+                <div class="text-amber-500 text-xl shrink-0">⚠</div>
+                <div>
+                    <div class="font-bold text-amber-800 mb-1">Your hosting provider must sign a BAA</div>
+                    <p class="text-sm text-amber-700">The platform code is designed for HIPAA compliance — but compliance doesn't activate until your cloud hosting provider has signed a Business Associate Agreement with your practice. AWS, Google Cloud, and Azure will sign one. Hostinger, Vercel (non-enterprise), and shared hosting providers won't.</p>
+                    <a href="./hipaa-hosting.html" class="inline-block mt-3 text-sm font-semibold text-blue-600 hover:underline">Full BAA provider guide + portability docs →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-blue-50 rounded-2xl p-8">
+                <h3 class="h4 mb-4 text-blue-900">What we store</h3>
+                <ul class="space-y-3 text-slate-700 text-sm">
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✓</span><span>Structured responses: quiz answers, PHQ-9/GAD-7/PCL-5 scores, mood scale entries</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✓</span><span>Progress metadata: lessons viewed, course completion, time-on-task</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✓</span><span>Distress events as <code class="text-xs bg-white px-1 rounded">{level, confidence, timestamp, course, lesson}</code></span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✓</span><span>Provider↔patient relationship records with audit trail</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✓</span><span>Feedback ratings on lessons (not verbatim text unless the user chooses to submit it)</span></li>
+                </ul>
+            </div>
+
+            <div class="bg-blue-50 rounded-2xl p-8">
+                <h3 class="h4 mb-4 text-blue-900">What we never store</h3>
+                <ul class="space-y-3 text-slate-700 text-sm">
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✗</span><span>The text of thought records, journal entries, or forum posts after classification</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✗</span><span>Audio or video recordings</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✗</span><span>Any data sent to a third-party LLM (we don't send any)</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✗</span><span>PHI in analytics aggregates - only de-identified rollups for the adaptive-learning pipeline</span></li>
+                    <li class="flex"><span class="text-blue-600 mr-2 font-bold">✗</span><span>Cross-practice data visibility - each practice sees only their own patients</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-10 bg-slate-50 rounded-2xl p-8">
+            <h3 class="h4 mb-4">Infrastructure posture</h3>
+            <div class="grid md:grid-cols-3 gap-6 text-sm">
+                <div>
+                    <div class="font-bold text-slate-800 mb-2">Hosting</div>
+                    <p class="text-slate-600">Designed for deployment on BAA-compliant cloud (GCP, AWS, Azure). Staging on Dokploy-managed infrastructure. Production migration to a BAA-signed provider is a prerequisite for each licensee launch.</p>
+                </div>
+                <div>
+                    <div class="font-bold text-slate-800 mb-2">Access control</div>
+                    <p class="text-slate-600">Provider accounts scoped to their practice. Patient rows keyed to provider relationship. Audit log captures every PHI-adjacent read and write. Secrets rotate per environment; no shared credentials between practices.</p>
+                </div>
+                <div>
+                    <div class="font-bold text-slate-800 mb-2">Breach posture</div>
+                    <p class="text-slate-600">Because we never store learner text, the blast radius of a database leak is structured metadata, not reflective personal writing. That's a deliberate design choice - not a side effect.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Adaptive learning pipeline -->
+<section class="bg-gradient-to-br from-slate-50 to-blue-50 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl pb-12">
+            <h2 class="h2 font-playfair-display mb-4">Adaptive-learning data pipeline</h2>
+            <p class="text-xl text-slate-600">Every lesson, quiz, and assessment emits a signal. Those signals become training data. That's the moat.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10">
+            <div class="grid md:grid-cols-4 gap-6 mb-10">
+                <div class="text-center">
+                    <div class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-3 font-bold text-xl">1</div>
+                    <div class="font-bold text-slate-800 mb-1">Emit</div>
+                    <div class="text-xs text-slate-600">Lesson view, component interaction, quiz answer, assessment submission</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-3 font-bold text-xl">2</div>
+                    <div class="font-bold text-slate-800 mb-1">Persist</div>
+                    <div class="text-xs text-slate-600">Structured events land in Postgres with user_id + course_id + lesson_id keys</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-3 font-bold text-xl">3</div>
+                    <div class="font-bold text-slate-800 mb-1">Aggregate</div>
+                    <div class="text-xs text-slate-600">De-identified rollups feed cohort dashboards and training datasets</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-3 font-bold text-xl">4</div>
+                    <div class="font-bold text-slate-800 mb-1">Improve</div>
+                    <div class="text-xs text-slate-600">Flagged lessons rewritten; course sequencing retrained; provider dashboards updated</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 pt-6 border-t border-slate-200">
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-2">Quiz-performance heatmap</h4>
+                    <p class="text-sm text-slate-600">Which questions do most learners get wrong on the first try? That's a signal the lesson didn't teach the concept clearly enough - flag it for rewrite.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-2">Drop-off signals</h4>
+                    <p class="text-sm text-slate-600">Which lesson in which course has the highest abandonment rate? Flag for restructuring. Learners who drop there rarely come back.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-2">Outcome correlation</h4>
+                    <p class="text-sm text-slate-600">Pre/post PHQ-9 deltas mapped to course sequences. Which content orderings produce the biggest clinical improvements? Feed back into onboarding recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Provider coordination -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl pb-12">
+            <h2 class="h2 font-playfair-display mb-4">Provider coordination layer</h2>
+            <p class="text-xl text-slate-600">What a clinician sees, what they don't, and how a crisis alert actually arrives.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-50 rounded-2xl p-8">
+                <h3 class="h4 mb-4">Patient roster view</h3>
+                <p class="text-slate-600 mb-4 text-sm">Provider logs into <code class="text-xs bg-white px-1 rounded">/provider/*</code>. The dashboard is scoped to their assigned patients only, verified at the DB row level - not application layer.</p>
+                <ul class="text-sm space-y-2 text-slate-600">
+                    <li>• Trend lines on PHQ-9, GAD-7 (when taken)</li>
+                    <li>• 30-day mood rolling average</li>
+                    <li>• Course activity summary (no lesson text)</li>
+                    <li>• Active distress alerts at the top, ranked by severity</li>
+                    <li>• Acknowledge/resolve workflow with audit trail</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8">
+                <h3 class="h4 mb-4">Crisis alert path</h3>
+                <p class="text-slate-600 mb-4 text-sm">When the classifier fires at <em>crisis</em> level:</p>
+                <ol class="text-sm space-y-2 text-slate-600">
+                    <li>1. Learner immediately sees a 988 resource modal.</li>
+                    <li>2. Assigned provider receives email + in-app notification.</li>
+                    <li>3. Alert payload contains: course, lesson, timestamp, confidence - <strong>no learner text</strong>.</li>
+                    <li>4. Alert appears in the provider's roster until acknowledged.</li>
+                    <li>5. Acknowledgment writes to the audit log: who, when, what action.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-slate-900 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="h3 font-playfair-display text-white mb-4">Want the deeper technical packet?</h2>
+        <p class="text-slate-400 mb-8">Beta applicants receive the full architecture deck, a live demo of the distress classifier, and a walkthrough of the provider portal sandbox.</p>
+        <a href="./contact.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition">Apply for Beta Access →</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+        <div class="grid md:grid-cols-5 gap-8">
+            <div class="md:col-span-2">
+                <div class="text-2xl font-bold text-blue-400 mb-4">Digital Wellness Academy</div>
+                <p class="text-slate-400 text-sm leading-relaxed">HIPAA-compliant mental health education platform licensed by psychiatric practices, universities, and enterprises.</p>
+                <p class="text-slate-500 text-xs mt-4">43 courses · 592 lessons · 22 clinical assessments · DistilBERT-powered AI safety</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm">Platform</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="./platform.html" class="text-slate-400 hover:text-white">Overview</a></li>
+                    <li><a href="./architecture.html" class="text-slate-400 hover:text-white">Architecture</a></li>
+                    <li><a href="./framework.html" class="text-slate-400 hover:text-white">The Framework</a></li>
+                    <li><a href="./custom-content.html" class="text-slate-400 hover:text-white">Custom Content</a></li>
+                    <li><a href="./hipaa-hosting.html" class="text-slate-400 hover:text-white">HIPAA Hosting Guide</a></li>
+                    <li><a href="./courses.html" class="text-slate-400 hover:text-white">Course Catalog</a></li>
+                    <li><a href="./pricing.html" class="text-slate-400 hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm">For Licensees</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="./for-providers.html" class="text-slate-400 hover:text-white">Psychiatric Providers</a></li>
+                    <li><a href="./for-universities.html" class="text-slate-400 hover:text-white">Universities</a></li>
+                    <li><a href="./for-enterprises.html" class="text-slate-400 hover:text-white">Enterprises</a></li>
+                    <li><a href="./for-investors.html" class="text-slate-400 hover:text-white">Investors</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="./marketing-flywheel.html" class="text-slate-400 hover:text-white">Marketing Flywheel</a></li>
+                    <li><a href="./treatment-integration.html" class="text-slate-400 hover:text-white">Treatment Integration</a></li>
+                    <li><a href="./about.html" class="text-slate-400 hover:text-white">About</a></li>
+                    <li><a href="./contact.html" class="text-slate-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p class="text-slate-400 text-sm">&copy; 2026 Digital Wellness Academy. All rights reserved.</p>
+            <p class="text-slate-500 text-xs">In crisis? Call or text <a href="tel:988" class="text-slate-300 hover:text-white">988</a>. Platform is education - not a substitute for professional medical advice.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# Pre-push hook: verify docs/STATE.md auto-metrics are up to date.
+#
+# Regenerates the auto-metrics block via snapshot-platform.ts. If the block
+# changed, blocks the push and asks the developer to commit the update. This
+# prevents hand-maintained counts in STATE.md from drifting away from reality.
+#
+# Install once per clone:
+#   ln -sf ../../scripts/hooks/pre-push .git/hooks/pre-push
+#   chmod +x scripts/hooks/pre-push
+#
+# Bypass (rare, only when snapshot tooling is broken):
+#   git push --no-verify
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+STATE_FILE="$REPO_ROOT/docs/STATE.md"
+
+# If the snapshot script or its deps are unavailable, warn but don't block.
+# Metrics hygiene shouldn't become a reason to skip security pushes.
+if ! command -v npx >/dev/null 2>&1; then
+  echo "[pre-push] npx not found — skipping STATE.md metrics check" >&2
+  exit 0
+fi
+
+if [ ! -f "$REPO_ROOT/scripts/snapshot-platform.ts" ]; then
+  echo "[pre-push] snapshot-platform.ts not found — skipping" >&2
+  exit 0
+fi
+
+# Regenerate; if the script itself errors, warn but don't block.
+if ! (cd "$REPO_ROOT" && npx --no-install tsx scripts/snapshot-platform.ts >/dev/null 2>&1); then
+  echo "[pre-push] snapshot-platform.ts failed — skipping check. Run 'npm run snapshot' to debug." >&2
+  exit 0
+fi
+
+# If STATE.md changed, the committed metrics are stale.
+if ! git -C "$REPO_ROOT" diff --quiet -- "$STATE_FILE"; then
+  echo "" >&2
+  echo "[pre-push] docs/STATE.md metrics are stale." >&2
+  echo "  The auto-metrics block in docs/STATE.md no longer matches the live repo." >&2
+  echo "  This usually means you added/removed lessons, quizzes, endpoints, or DB tables." >&2
+  echo "" >&2
+  echo "  Fix:" >&2
+  echo "    git add docs/STATE.md && git commit -m 'Refresh STATE.md metrics'" >&2
+  echo "    git push" >&2
+  echo "" >&2
+  echo "  Bypass (if tooling is broken):" >&2
+  echo "    git push --no-verify" >&2
+  exit 1
+fi
+
+exit 0

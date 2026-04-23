@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What was the primary mental health finding of the 2025 JAMA Network Open RCT on time-restricted eating?",
+            "options": [
+                { "id": "opt1", "text": "Time-restricted eating significantly reduced depression and anxiety symptoms" },
+                { "id": "opt2", "text": "Time-restricted eating caused increased irritability and food preoccupation" },
+                { "id": "opt3", "text": "Time-restricted eating was psychologically safe — it produced no adverse mood effects compared to standard dietary advice" },
+                { "id": "opt4", "text": "Time-restricted eating cured anxiety disorders in most participants" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The JAMA trial found that time-restricted eating produced no adverse effects on mood, anxiety, depression, or disordered eating behaviors. This is a finding of psychological safety (no harm) rather than efficacy (active benefit). It addresses the legitimate concern that restricting eating windows might worsen mental health."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the 2025 neuroscience study, what specific brain change was observed during intermittent fasting that relates to anxiety?",
+            "options": [
+                { "id": "opt1", "text": "Increased activity in the brain's reward center" },
+                { "id": "opt2", "text": "Reduced amygdala-parahippocampal connectivity — the brain circuits that link environmental contexts to fear" },
+                { "id": "opt3", "text": "Complete shutdown of the amygdala" },
+                { "id": "opt4", "text": "Increased prefrontal cortex size" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2025 neuroscience study found reduced amygdala-parahippocampal connectivity during intermittent fasting. The amygdala is the brain's fear center and the parahippocampus is involved in contextual memory. Hyperconnectivity between these regions is elevated in anxiety disorders, so the reduction suggests a specific neural mechanism for anxiety reduction."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the migrating motor complex (MMC), and why is it relevant to intermittent fasting and mental health?",
+            "options": [
+                { "id": "opt1", "text": "A type of exercise that enhances fasting benefits" },
+                { "id": "opt2", "text": "A gut housekeeping process during fasting periods that sweeps debris from the small intestine, supporting microbiome health and reducing inflammation" },
+                { "id": "opt3", "text": "A brain wave pattern that occurs only during sleep" },
+                { "id": "opt4", "text": "A medication used to enhance the effects of intermittent fasting" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The migrating motor complex (MMC) is a gut housekeeping phase that occurs during fasting periods, sweeping debris and bacteria from the small intestine. This process is disrupted by constant eating. Regular fasting periods support the MMC, which may contribute to a healthier gut microbiome, reduced intestinal permeability, and decreased systemic inflammation — all linked to improved mental health."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does circadian alignment of meal timing matter for mental health?",
+            "options": [
+                { "id": "opt1", "text": "It does not matter — only the total calories consumed affect mental health" },
+                { "id": "opt2", "text": "Eating in sync with circadian rhythms (larger meals earlier, avoiding food before sleep) optimizes insulin sensitivity, sleep quality, and mood outcomes" },
+                { "id": "opt3", "text": "Eating only at night is the best approach for brain health" },
+                { "id": "opt4", "text": "Circadian alignment only matters for people with diagnosed sleep disorders" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Eating in alignment with circadian rhythms — larger meals earlier when insulin sensitivity is highest, and avoiding large meals within 2-3 hours of bedtime — may optimize both metabolic and mental health outcomes. Consistent meal timing supports gut microbiome health and metabolic regularity, and late eating disrupts sleep architecture which affects next-day mood and cognition."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is a warning sign that intermittent fasting has become problematic rather than beneficial?",
+            "options": [
+                { "id": "opt1", "text": "Feeling comfortable eating within a consistent daily window" },
+                { "id": "opt2", "text": "Noticing improved sleep from not eating close to bedtime" },
+                { "id": "opt3", "text": "Feeling a sense of control or superiority from not eating, along with guilt about 'breaking' a fast" },
+                { "id": "opt4", "text": "Occasionally adjusting your eating window for social events" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Increased anxiety around food, preoccupation with eating windows, guilt about 'breaking' a fast, and a sense of control or superiority from not eating are warning signs that intermittent fasting may be fueling disordered eating patterns. These are red flags, not signs of discipline, and warrant reassessment and possible professional consultation."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "10",
+    "title": "Intermittent Fasting and Circadian Mental Health - Quiz"
+}

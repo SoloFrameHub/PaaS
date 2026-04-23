@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most effective nighttime device protocol based on current evidence?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Use blue light glasses while scrolling social media in bed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Complete screen avoidance 1-2 hours before bed, or dimmed screens with calm content only"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Keep your phone on your nightstand but face-down"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Switch to black-and-white mode on all devices"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The strongest evidence supports avoiding screens entirely 1-2 hours before bed. If that's not feasible, dimming screens + avoiding arousing content (news, work, social media) is the next best option."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is charging your phone outside the bedroom recommended?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because phone radiation interferes with brain waves"
+                },
+                {
+                    "id": "opt2",
+                    "text": "To reduce sleep-disruptive notifications and the temptation to check it during the night or immediately upon waking"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because phones emit dangerous electromagnetic fields"
+                },
+                {
+                    "id": "opt4",
+                    "text": "To prevent the phone from overheating and causing fires"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The primary benefit is behavioral: removing the phone prevents notification disruptions and reduces automatic checking behavior. There's no strong evidence for electromagnetic concerns, but there is strong evidence for sleep disruption from notifications and checking."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What type of content is most sleep-disruptive in the hours before bed?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Calm, low-stimulation content like meditation apps or ambient music"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Arousing content: news, social media, work emails, conflict, or high-intensity entertainment"
+                },
+                {
+                    "id": "opt3",
+                    "text": "E-books with night mode enabled"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Audio podcasts with low volume"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Arousing content (news, social media, work, conflict) increases cognitive and emotional activation, making it harder to transition to sleep. The content matters as much as or more than the blue light wavelength."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach if you must use a device before bed?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Use maximum brightness to stay alert"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Dim the screen, enable night mode, set a time limit, and choose calm, low-arousal content"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only use it for checking work emails quickly"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Keep scrolling until you feel tired"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Harm reduction approach: dim screens, enable night/dark mode, set a timer to limit duration, and choose content that won't increase arousal (avoid news, social media, work, conflict)."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "What's one nighttime device protocol you could realistically implement this week? What barrier might prevent you from doing it, and how could you address that barrier?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "5",
+    "title": "Nighttime Device Protocols - Quiz"
+}

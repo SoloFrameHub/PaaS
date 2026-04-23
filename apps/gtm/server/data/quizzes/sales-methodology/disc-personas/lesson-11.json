@@ -1,0 +1,94 @@
+{
+  "lessonId": "11",
+  "courseId": "disc-personas",
+  "sectionId": "sales-methodology",
+  "title": "The Solo Founder DISC Training Protocol",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three tiers of the 15-Minute Daily DISC Routine?",
+      "options": [
+        { "id": "a", "text": "Reading, writing, and practicing" },
+        { "id": "b", "text": "Pre-Flight Triage, Digital Shadow, and AI Spar" },
+        {
+          "id": "c",
+          "text": "Morning review, afternoon calls, evening analysis"
+        },
+        {
+          "id": "d",
+          "text": "Profile detection, script writing, and deal closing"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three tiers are: Pre-Flight Triage (5 min — label your next 3 meetings on LinkedIn), Digital Shadow (5 min — review 10 sent emails for style mismatches), and AI Spar (5 min — roleplay against your opposite DISC quadrant)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is a D-type (Commander) dissonance signal during a sales call?",
+      "options": [
+        { "id": "a", "text": "They start asking for sources and data" },
+        { "id": "b", "text": "They check their watch and start multitasking" },
+        {
+          "id": "c",
+          "text": "They lean back and say 'I need to think about it'"
+        },
+        { "id": "d", "text": "They stop nodding and become overly formal" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "D-type dissonance signals include checking their watch, multitasking, and starting answers with 'Right, but...' These indicate you're wasting their time. The pivot: speak 30% faster and skip to the ROI."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "During the Digital Shadow audit, what should you look for in your recent emails?",
+      "options": [
+        { "id": "a", "text": "Spelling and grammar errors" },
+        {
+          "id": "b",
+          "text": "Whether your email length and tone match the recipient's DISC type"
+        },
+        { "id": "c", "text": "How many emails you sent this week" },
+        { "id": "d", "text": "Whether you used enough bullet points" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Digital Shadow audit reviews whether you sent a C-style 'wall of text' to a D-style executive or a brief bullet-point email to an I-type who wants stories and enthusiasm. If you find a mismatch, send a correction reply to realign."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "During AI Spar practice, you should practice against your same DISC quadrant to reinforce your natural style.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. You should spar against your opposite quadrant to build the most muscle. If you're a High C (Analyst), spar with a High D (Commander). If you're a High D, spar with a High S (Guardian). Practicing your weak side is where growth happens."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What are the four DISC Adaptation Score (DAS) metrics?",
+      "options": [
+        { "id": "a", "text": "Speed, accuracy, volume, and follow-up" },
+        { "id": "b", "text": "Talk Ratio, Accuracy, Velocity, and Empathy" },
+        {
+          "id": "c",
+          "text": "Pitch length, close rate, objection handling, and rapport"
+        },
+        { "id": "d", "text": "Detection, matching, pivoting, and closing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four DAS metrics are: Talk Ratio (did you speak less than 30% against an I?), Accuracy (did you use nouns/numbers against a C?), Velocity (did you keep the pitch under 15 min against a D?), and Empathy (did you allow for pauses against an S?)."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review your last 3 sales calls or prospect interactions. For each, identify the prospect's likely DISC type, describe what dissonance signals (if any) you noticed, and explain how you would adjust your approach if you could redo the interaction.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific DISC types with evidence (behavioral cues, not guesses), recognizes concrete dissonance signals (or explains why there were none), and proposes specific adjustments per DISC type (pace changes, content changes, question style) rather than generic 'be more adaptable' advice."
+    }
+  ]
+}

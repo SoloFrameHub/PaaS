@@ -1,0 +1,168 @@
+{
+    "lessonId": "3",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Case Study Framework Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between a testimonial and a case study?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Testimonials are for B2C; Case studies are for B2B."
+                },
+                {
+                    "id": "b",
+                    "text": "A testimonial is a quote (snapshot of satisfaction); a case study is a story (journey from problem to result)."
+                },
+                {
+                    "id": "c",
+                    "text": "Testimonials are written by the founder; Case studies are written by the customer."
+                },
+                {
+                    "id": "d",
+                    "text": "Testimonials must include video; Case studies are always text-based."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Testimonials provide a quick trust boost, while case studies provide the evidence and context required to prove the product works in a real-world scenario."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the goal of the 'Challenge' section in a case study?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To list every feature of your product."
+                },
+                {
+                    "id": "b",
+                    "text": "To describe the customer's 'Before' state so clearly that prospects see themselves in the story."
+                },
+                {
+                    "id": "c",
+                    "text": "To show how much money you spent on marketing."
+                },
+                {
+                    "id": "d",
+                    "text": "To explain the technical architecture of your backend."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A successful Challenge section agitates the reader's own pain by showing a relatable person/company struggling with the same issues."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When writing about the 'Solution,' what should you focus on to increase credibility?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Making everything sound perfect and effortless."
+                },
+                {
+                    "id": "b",
+                    "text": "Focusing only on your highest-priced features."
+                },
+                {
+                    "id": "c",
+                    "text": "Describing the implementation journey, including how specific obstacles were overcome."
+                },
+                {
+                    "id": "d",
+                    "text": "Copying and pasting your sales brochure."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A realistic Solution section that mentions small obstacles or specific implementation details feels more authentic and trustworthy than a flawless advertisement."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these follows the 'Specificity Principle' for the Results section?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'They increased their revenue a lot after joining.'"
+                },
+                {
+                    "id": "b",
+                    "text": "'The team became much more efficient.'"
+                },
+                {
+                    "id": "c",
+                    "text": "'Their average deal cycle dropped from 47 days to 31 days (a 34% improvement).'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Everyone loved using the new tool.'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Precise metrics (47 to 31 days) are much more believable than round numbers or vague adjectives."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the 'Protagonist' approach to writing case studies, who is the hero of the story?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The founder."
+                },
+                {
+                    "id": "b",
+                    "text": "The product."
+                },
+                {
+                    "id": "c",
+                    "text": "The customer."
+                },
+                {
+                    "id": "d",
+                    "text": "The investor."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The story should be about the customer's success; your product is simply the tool that helped them achieve it."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "How does a 'Transformation Story' (Creator) differ from a standard 'Case Study' (B2B)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It doesn't; they are the same."
+                },
+                {
+                    "id": "b",
+                    "text": "B2B Case Studies focus on ROI/Risk Reduction; Transformation Stories focus on Identity Shifts and belief changes."
+                },
+                {
+                    "id": "c",
+                    "text": "Transformation stories don't need facts."
+                },
+                {
+                    "id": "d",
+                    "text": "Case studies must be shorter."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Creators often sell 'Better Versions of You,' so the story needs to highlight the internal emotional shift ('I felt like a fraud') as much as the external result ('I made $5k').",
+            "difficulty": "conceptual",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify a specific objection your prospects frequently have (e.g., 'It takes too long to set up' or 'I don't have enough data'). Which of your current customers could you interview to tell a story that specifically neutralizes that objection?",
+            "minLength": 100,
+            "promptForAI": "The user should identify a common objection and name a specific customer who overcame that exact obstacle. Evaluate the response for its strategic alignment with the 'Objection Anticipation' technique described in the lesson."
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade and effect size for exercise interventions on perceived stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—no good studies exist"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG—meta-analyses (30+ studies) show physical activity reduces perceived stress with moderate effect size (SMD = -0.61) in student populations"
+                },
+                {
+                    "id": "opt3",
+                    "text": "MODERATE—only small correlational studies"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise has no effect on stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise has STRONG evidence as a stress intervention across multiple meta-analyses. A meta-analysis (Frontiers in Psychology, 2021, 30+ studies) found that regular aerobic exercise significantly reduces both state and trait anxiety. Physical activity interventions reduce perceived stress with moderate effect size (SMD = -0.61) in student populations, which is comparable to many psychological interventions. Exercise is among the most robustly evidenced interventions for stress and anxiety across all behavioral medicine domains, making it a high-priority component of comprehensive stress management."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the primary mechanisms by which exercise reduces stress and improves mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only works through distraction from problems"
+                },
+                {
+                    "id": "opt2",
+                    "text": "BDNF elevation, serotonin and dopamine upregulation, HPA axis normalization, neurogenesis, and lower cardiovascular reactivity to stressors"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise has no biological mechanisms—it's purely psychological"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only weight loss from exercise improves mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise affects stress through multiple well-established biological pathways: (1) BDNF (brain-derived neurotrophic factor) elevation, which promotes neurogenesis and neuroplasticity, (2) upregulation of serotonin, dopamine, and norepinephrine—the same neurotransmitters targeted by antidepressants, (3) HPA axis normalization, helping restore healthy cortisol regulation, (4) neurogenesis in the hippocampus, and (5) direct physiological stress buffering—aerobic fitness leads to lower cardiovascular reactivity to stressors and faster recovery. These mechanisms operate independently of weight loss or fitness level, though regular practice enhances effects."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does aerobic fitness specifically buffer stress from a physiological perspective?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Aerobic fitness increases stress reactivity"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Aerobic fitness leads to lower cardiovascular reactivity to stressors and faster cardiovascular recovery—a direct physiological stress-buffering mechanism"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only strength training, not aerobic exercise, affects stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Fitness has no effect on stress response"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that aerobic fitness creates a direct physiological stress buffer: people with higher aerobic fitness show lower cardiovascular reactivity when exposed to stressors (smaller increases in heart rate and blood pressure) and faster cardiovascular recovery after the stressor ends. This means their bodies mount a less intense stress response and return to baseline more quickly. This is independent of the immediate calming effects of a single exercise session—it's an adaptation from regular aerobic practice that changes how your cardiovascular system responds to stress over time."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is an important evidence-based caveat about exercise and mental health claims?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise cures all mental health conditions and replaces all treatment"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise and sleep are evidence-based adjuncts but not treatments for major depressive disorder; courses should not position exercise as depression management replacement for professional care"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise has no role in mental health treatment"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only medication works for mental health—exercise is irrelevant"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The research brief explicitly states that while exercise and sleep content are evidence-based adjuncts to mental health care, courses should not be positioned as depression management tools or replacements for professional treatment. Exercise has strong evidence for reducing stress and anxiety symptoms and as an adjunct for mild-to-moderate depression, but it is not a standalone treatment for major depressive disorder, severe anxiety, or other clinical conditions. These require professional assessment and evidence-based clinical treatment (therapy, medication, or both), with exercise as a valuable complement—not substitute."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When is exercise NOT sufficient as a standalone intervention for mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise is always sufficient for any mental health condition"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise is NOT sufficient for severe depression, active suicidality, PTSD with significant symptoms, severe anxiety with panic disorder, or any condition causing severe functional impairment"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise never helps mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people without mental health conditions should exercise"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise is a powerful evidence-based adjunct for mental health, but it's not sufficient as standalone treatment for severe depression (inability to function at work/daily life), active suicidality or self-harm, PTSD with significant symptoms, severe anxiety with panic disorder, or any condition causing severe functional impairment. These situations require professional mental health assessment and evidence-based clinical treatment (trauma-focused therapy for PTSD, CBT or medication for severe anxiety/depression). Exercise can be an important complement to professional care—helping with symptom management, stress buffering, and overall well-being—but cannot replace clinical treatment when severity is high."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "12",
+    "title": "Exercise and Physical Activity for Stress Resilience - Quiz"
+}

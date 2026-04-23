@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  distress-classifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: distress-classifier
+    restart: always
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 60s
+    networks:
+      - dokploy-network
+    # Resource limits for safety on shared VPS
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          cpus: '2'
+          memory: 4G
+
+networks:
+  dokploy-network:
+    external: true

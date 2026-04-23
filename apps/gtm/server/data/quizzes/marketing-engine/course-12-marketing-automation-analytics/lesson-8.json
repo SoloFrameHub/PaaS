@@ -1,0 +1,153 @@
+{
+    "lessonId": "8",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 8: Marketing-to-Sales Handoff Process",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "In the context of a solo founder, what is the 'Marketing-to-Sales Handoff'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hiring a salesperson to replace the founder."
+                },
+                {
+                    "id": "b",
+                    "text": "The technical and mental shift from automated nurturing to personalized engagement."
+                },
+                {
+                    "id": "c",
+                    "text": "Moving email subscribers from one list to another."
+                },
+                {
+                    "id": "d",
+                    "text": "Buying a new CRM tool."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Since a solo founder wears both hats, the handoff is the moment you stop letting automation do the talking and step in personally."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What is the recommended 'Response Time Target' for a Hot Lead who has just requested a demo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Within 5 minutes (no matter the time of day)."
+                },
+                {
+                    "id": "b",
+                    "text": "Within 4 hours (during business hours)."
+                },
+                {
+                    "id": "c",
+                    "text": "By the end of the month."
+                },
+                {
+                    "id": "d",
+                    "text": "Whenever you next feel like checking your email."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While enterprise teams aim for minutes, a solo founder's target should be within 4 hours to maintain momentum without sacrificing their sanity."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "Which of these is the most effective approach for a first personal 'Context Bridge' message?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A standard sales pitch: 'I saw you downloaded our guide. Do you want to buy the Pro plan now?'"
+                },
+                {
+                    "id": "b",
+                    "text": "Ignoring their behavior: 'Hi, I'm calling to introduce my company and all our features.'"
+                },
+                {
+                    "id": "c",
+                    "text": "The Value-Add Check-in: Acknowledge their action, provide a relevant resource, and ask a low-friction question."
+                },
+                {
+                    "id": "d",
+                    "text": "Sending a 50-page proposal based on their job title alone."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 3-step framework (Context + Value + Question) builds trust and encourages a reply without sounding pushy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Why should you check a prospect's 'Behavioral Fingerprint' (e.g., pages visited) before reaching out?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find their personal home address."
+                },
+                {
+                    "id": "b",
+                    "text": "To understand if they are interested in technical details, pricing, or high-level benefits, allowing for a tailored conversation."
+                },
+                {
+                    "id": "c",
+                    "text": "To prove to them that your tracking software is very powerful."
+                },
+                {
+                    "id": "d",
+                    "text": "To see if they are a competitor attempting to steal your ideas."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Knowing which pages a lead visited helps you understand their specific concerns and level of intent."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Creepy Tracker' risk mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The risk of your automation software being hacked."
+                },
+                {
+                    "id": "b",
+                    "text": "The risk of sounding like a spy by mentioning exactly every page and second they spent on your site."
+                },
+                {
+                    "id": "c",
+                    "text": "The risk of leads discovering you are a solo founder."
+                },
+                {
+                    "id": "d",
+                    "text": "The risk of your website being too slow."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While you have the data, you should bridge the context naturally (e.g., 'Noticed you looking at the docs') rather than listing their exact web history."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft your first 'Context Bridge' email or DM for a lead who has just downloaded your primary lead magnet. Follow the 3-step framework: 1) Acknowledge the download, 2) Offer ONE specific additional value (e.g., a loom video or case study), and 3) Ask a simple, open-ended question that helps you qualify them further.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's email draft. Check for the three components. Ensure the question is truly low-friction. Suggest one 'Intel' piece from their CRM they could use to make the 'Context Bridge' even more personalized."
+        }
+    ]
+}

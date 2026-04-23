@@ -1,0 +1,91 @@
+{
+    "lessonId": "10",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Closing Playbook Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary objective of the 'Closing Playbook'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the sales cycle longer."
+                },
+                {
+                    "id": "b",
+                    "text": "To transform the final stage of the sale into a repeatable, low-friction project management workflow that minimizes 'Drag' and 'Remorse'."
+                },
+                {
+                    "id": "c",
+                    "text": "To automate the founder out of the process entirely."
+                },
+                {
+                    "id": "d",
+                    "text": "To collect testimonials."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Consistency is key to scaling. By having a playbook, you ensure that every deal receives the same 'Gold Standard' closing experience, which is critical for a solo founder juggling multiple responsibilities."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which asset is most critical for neutralizing 'Post-Agreement Friction' with a Legal/Security department?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A discount coupon."
+                },
+                {
+                    "id": "b",
+                    "text": "The implementation Roadmap."
+                },
+                {
+                    "id": "c",
+                    "text": "The 'Security Trust Bundle' (One-page whitepaper + technical overview)."
+                },
+                {
+                    "id": "d",
+                    "text": "A list of other customers."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Legal and IT are the primary gatekeepers in 2026. Arming them with the technical 'Truth Bundle' immediately after a verbal agreement prevents them from stalling the deal with unexpected discovery questions."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Consultant's Close' mindset?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Charging by the hour for the closing call."
+                },
+                {
+                    "id": "b",
+                    "text": "Viewing your role as a partner helping the buyer navigate their own internal procurement maze to reach the stated goal, rather than just'pushing' for a signature."
+                },
+                {
+                    "id": "c",
+                    "text": "Never asking for the money directly."
+                },
+                {
+                    "id": "d",
+                    "text": "Sending a long report instead of a contract."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Buyers are often as frustrated by their internal bureaucracy as you are. When you partner with them to solve those administrative challenges, you build deeper trust and higher implementation velocity."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Perform an audit of your 'Closing Kit.' Which of the 5 assets (MSA, Trust Bundle, DSR Template, Video Scripts, Roadmap) are you missing? Outline your plan to create the most critical missing asset in the next 7 days.",
+            "minLength": 100,
+            "aiPrompt": "Check if the student identifies a specific missing asset and provides a logical plan for its creation, focusing on how that asset will reduce friction in their specific sales process."
+        }
+    ]
+}

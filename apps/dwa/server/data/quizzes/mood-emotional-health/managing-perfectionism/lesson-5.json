@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why are behavioral experiments particularly effective for challenging perfectionism?",
+            "options": [
+                { "id": "opt1", "text": "They are easier than cognitive restructuring" },
+                { "id": "opt2", "text": "They provide firsthand evidence that challenges years of perfectionistic assumptions" },
+                { "id": "opt3", "text": "They eliminate perfectionism permanently after one attempt" },
+                { "id": "opt4", "text": "They force you to fail so you can see failure is not that bad" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Behavioral experiments are powerful because they provide direct, firsthand evidence from your own experience. While cognitive restructuring helps you think differently, experiments help you experience differently. When you test a perfectionistic rule and discover that the feared outcome does not happen, this real-world evidence is often more convincing than any amount of mental reasoning."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the most important part of a behavioral experiment?",
+            "options": [
+                { "id": "opt1", "text": "Choosing the most challenging experiment possible" },
+                { "id": "opt2", "text": "Making specific predictions before the experiment so you can compare them to reality afterward" },
+                { "id": "opt3", "text": "Making sure nothing goes wrong during the experiment" },
+                { "id": "opt4", "text": "Having someone else observe you during the experiment" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The most important element is making specific predictions before the experiment. This makes the learning explicit — you can directly compare what you feared would happen to what actually happened. Without specific predictions, you may find ways to dismiss the result ('That was not really a test'). Having your prediction in writing makes it harder to discount the evidence."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should you do if a behavioral experiment has a negative outcome?",
+            "options": [
+                { "id": "opt1", "text": "Conclude that your perfectionistic rule was correct all along" },
+                { "id": "opt2", "text": "Never try another experiment" },
+                { "id": "opt3", "text": "Ask whether the outcome was as bad as predicted, whether it was temporary, and whether you coped with it" },
+                { "id": "opt4", "text": "Immediately raise your standards back up" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Even when experiments do not go perfectly, useful questions include: Was the outcome as bad as I predicted? Was it permanent or temporary? Did I cope with it? Does one negative outcome mean the rule is universally valid, or was this an exception? Usually, even negative outcomes are more manageable and temporary than the perfectionist predicted."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does the 80/20 principle suggest about perfectionist effort?",
+            "options": [
+                { "id": "opt1", "text": "You should only work at 80% effort and never try for 100%" },
+                { "id": "opt2", "text": "80% of people are perfectionists and 20% are not" },
+                { "id": "opt3", "text": "Roughly 80% of the value in most tasks comes from the first 20% of effort, meaning perfectionist polishing adds diminishing returns" },
+                { "id": "opt4", "text": "You should spend 80% of your time on important tasks and 20% on routine ones" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 80/20 principle reveals that most of the value in a task is produced early in the process. The additional time spent polishing, rechecking, and perfecting (often 80% of total effort) adds only marginal improvements (roughly 20% more value). Perfectionists spend enormous energy in this zone of diminishing returns, which could be redirected to rest, relationships, or other meaningful work."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is the 'ladder approach' recommended for behavioral experiments?",
+            "options": [
+                { "id": "opt1", "text": "Because you should always start with the most difficult experiment" },
+                { "id": "opt2", "text": "Because starting with low-stakes experiments builds confidence and evidence before tackling higher-stakes situations" },
+                { "id": "opt3", "text": "Because experiments must be done in a specific order to work" },
+                { "id": "opt4", "text": "Because it takes exactly eight experiments to overcome perfectionism" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The ladder approach (similar to exposure hierarchies) starts with low-stakes experiments where the genuine consequences are minimal. Each successful experiment builds confidence and accumulates evidence that imperfection is safe. As you move up the ladder to moderate and then higher-stakes experiments, you bring this accumulated evidence with you, making the harder experiments more manageable."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "managing-perfectionism",
+    "lessonId": "5",
+    "title": "Behavioral Experiments: Testing \"Good Enough\" - Quiz"
+}

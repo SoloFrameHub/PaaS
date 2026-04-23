@@ -1,0 +1,141 @@
+{
+  "lessonId": "5",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Cuantificación del Valor: Probando el ROI",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la mentalidad principal de un comprador B2B según esta lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buscan el software más barato posible"
+        },
+        {
+          "id": "b",
+          "text": "Están haciendo una inversión y esperan un retorno"
+        },
+        {
+          "id": "c",
+          "text": "Quieren tener el stack tecnológico más moderno disponible"
+        },
+        {
+          "id": "d",
+          "text": "Se centran principalmente en la interfaz de usuario y la estética"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Para un comprador de negocios, el software es una inversión. Esperan que el valor (retorno) sea significativamente mayor que el costo de la suscripción."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál balde de ROI implica reducir la cantidad de dinero que un cliente gasta actualmente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crecimiento de Ingresos"
+        },
+        {
+          "id": "b",
+          "text": "Mitigación de Riesgos"
+        },
+        {
+          "id": "c",
+          "text": "Ahorro de Costos Fijos"
+        },
+        {
+          "id": "d",
+          "text": "Tiempo Recuperado"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El Ahorro de Costos Fijos (Dinero que Sale) se trata de reducir los gastos existentes, como una factura de alojamiento en la nube o una suscripción de software heredado."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cómo calculas el ROI de 'Ahorro de Mano de Obra'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horas ahorradas por semana × Tarifa por hora del empleado"
+        },
+        {
+          "id": "b",
+          "text": "Ingresos totales ÷ Número total de empleados"
+        },
+        {
+          "id": "c",
+          "text": "Costo de suscripción ÷ Número de usuarios"
+        },
+        {
+          "id": "d",
+          "text": "Número de características × Puntuación de satisfacción del empleado"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Los ahorros de mano de obra se cuantifican tomando el tiempo recuperado y multiplicándolo por el costo de esa mano de obra. Esto revela el costo 'oculto' del trabajo manual."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué es el 'Costo de la Inacción'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El precio del software del competidor"
+        },
+        {
+          "id": "b",
+          "text": "El costo operativo de mantener tu propio producto"
+        },
+        {
+          "id": "c",
+          "text": "La pérdida o el riesgo medible de quedarse con el 'statu quo' durante los próximos 12 meses"
+        },
+        {
+          "id": "d",
+          "text": "La tarifa de incorporación para nuevos clientes"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El Costo de la Inacción ayuda a crear urgencia mostrando al prospecto cuánto dinero está perdiendo (o qué riesgo está tomando) al no hacer nada."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué deberías hacer si el valor de tu producto es 'creativo' o 'blando'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evitar usar números por completo y centrarte en las emociones"
+        },
+        {
+          "id": "b",
+          "text": "Encontrar una 'Métrica Sustituta' que se pueda medir (ej., tiempo de publicación)"
+        },
+        {
+          "id": "c",
+          "text": "Bajar tu precio para que no sea una decisión racional"
+        },
+        {
+          "id": "d",
+          "text": "Solo vender a clientes que no se preocupan por el ROI"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Incluso los valores 'blandos' tienen métricas subyacentes. Al encontrar un sustituto (como 'tiempo dedicado' o 'volumen de producción'), puedes hablar el lenguaje racional del ROI de negocios incluso para herramientas creativas."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calcula un ROI 'de servilleta' para tu producto. Elige a una persona de tu ICP y estima: ¿Cuántas horas a la semana desperdician? ¿Cuál es su costo por hora? ¿Cuál es el 'desperdicio' anual total que tu producto elimina?",
+      "minLength": 100,
+      "promptForAI": "Evalúa la capacidad del estudiante para cuantificar el valor. Verifica si usaron números específicos para las horas y las tasas de mano de obra. Proporciona retroalimentación sobre si su cálculo de ROI es realista y convincente para su ICP objetivo."
+    }
+  ],
+  "passingScore": 70
+}

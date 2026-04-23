@@ -1,0 +1,209 @@
+{
+    "lessonId": "9",
+    "courseId": "linkedin-ai",
+    "sectionId": "ai-acquisition",
+    "title": "Test Your Strategy Knowledge",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "What's the primary difference between B2B and Creator LinkedIn strategies?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "B2B uses Sales Navigator, Creator doesn't"
+                },
+                {
+                    "id": "b",
+                    "text": "B2B optimizes for depth (conversations), Creator optimizes for breadth (reach)"
+                },
+                {
+                    "id": "c",
+                    "text": "B2B posts 2-3x/week, Creator posts 5-7x/week"
+                },
+                {
+                    "id": "d",
+                    "text": "All of the above"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "All three are true. The core distinction is depth vs breadth, which drives all the other differences (tools, frequency, metrics).",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "When should a solo founder use voice notes in LinkedIn outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "As the first message after connection acceptance"
+                },
+                {
+                    "id": "b",
+                    "text": "After the prospect has replied to a text DM"
+                },
+                {
+                    "id": "c",
+                    "text": "As a cold outreach tactic to stand out"
+                },
+                {
+                    "id": "d",
+                    "text": "Only for warm referrals"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Voice notes work best after initial engagement. They add warmth to an existing conversation, not as a cold outreach tactic.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "What's the correct content mix for B2B strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "60% niche expertise, 30% thought leadership, 10% personal"
+                },
+                {
+                    "id": "b",
+                    "text": "40% stories, 30% how-tos, 20% thought leadership, 10% engagement"
+                },
+                {
+                    "id": "c",
+                    "text": "50% case studies, 50% viral hooks"
+                },
+                {
+                    "id": "d",
+                    "text": "100% educational content, no personal stories"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "B2B strategy prioritizes niche expertise (60%) to build authority with ICP prospects, with supporting thought leadership and minimal personal content.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "What's the primary monetization path for Creator strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "LinkedIn → Sales call → High-ticket deal"
+                },
+                {
+                    "id": "b",
+                    "text": "LinkedIn → DM → Proposal → Close"
+                },
+                {
+                    "id": "c",
+                    "text": "LinkedIn → Email list → Product launch"
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn → Referrals → Warm intros"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Creator strategy builds an audience, converts to email, then monetizes with products. It's a funnel, not a direct sales path.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "When should a solo founder consider the Hybrid approach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediately, to maximize reach"
+                },
+                {
+                    "id": "b",
+                    "text": "After hitting $10K MRR with one strategy"
+                },
+                {
+                    "id": "c",
+                    "text": "Never, pick one and stick with it"
+                },
+                {
+                    "id": "d",
+                    "text": "Only if they have a team"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Hybrid works after $10K MRR when you have cash flow to support both strategies. Trying both too early dilutes effectiveness.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "What's the correct use of AI in LinkedIn content creation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Generate 20 posts, schedule them, never edit"
+                },
+                {
+                    "id": "b",
+                    "text": "Use AI to draft, then apply 3-pass review (facts, voice, sales linter)"
+                },
+                {
+                    "id": "c",
+                    "text": "Only use AI for research, never for content"
+                },
+                {
+                    "id": "d",
+                    "text": "Let AI write everything to save time"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI is a drafting assistant, not the author. The 3-pass review (facts, voice, linter) ensures authenticity and effectiveness.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q7",
+            "question": "What's the primary success metric for B2B strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Follower count"
+                },
+                {
+                    "id": "b",
+                    "text": "Post impressions"
+                },
+                {
+                    "id": "c",
+                    "text": "Meetings booked per week"
+                },
+                {
+                    "id": "d",
+                    "text": "Engagement rate"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "B2B strategy optimizes for conversations that lead to deals. Meetings booked is the leading indicator of revenue.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q8",
+            "question": "What's the biggest mistake in hybrid strategy execution?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Posting too frequently"
+                },
+                {
+                    "id": "b",
+                    "text": "Trying to automate both strategies"
+                },
+                {
+                    "id": "c",
+                    "text": "Using different content for each strategy"
+                },
+                {
+                    "id": "d",
+                    "text": "Allocating 60% to B2B, 40% to Creator"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Automation dilutes both strategies. B2B needs personalization, Creator needs authenticity. Both require human judgment.",
+            "type": "multiple-choice"
+        }
+    ]
+}

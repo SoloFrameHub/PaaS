@@ -1,0 +1,87 @@
+{
+  "id": "supplement-safety-checklist",
+  "title": "Supplement Safety and Medication Interaction Checklist",
+  "description": "Use this checklist before starting any supplement to ensure safety, proper dosing, and compatibility with your current medications. This course emphasizes that supplements should always be discussed with your healthcare provider.",
+  "instructions": "Before starting any new supplement, review each safety item. Check off each step you've completed. Do NOT start supplements without checking medication interactions.",
+  "items": [
+    {
+      "id": "provider-consult",
+      "label": "I have discussed this supplement with my healthcare provider",
+      "type": "checkbox",
+      "category": "Provider Consultation"
+    },
+    {
+      "id": "med-interactions",
+      "label": "I have checked for interactions with my current medications",
+      "type": "checkbox",
+      "category": "Provider Consultation"
+    },
+    {
+      "id": "serotonin-check",
+      "label": "If I take an SSRI/SNRI: I have confirmed this supplement does NOT risk serotonin syndrome (avoid 5-HTP, St. John's Wort, L-tryptophan)",
+      "type": "checkbox",
+      "category": "Critical Safety"
+    },
+    {
+      "id": "maoi-check",
+      "label": "If I take an MAOI: I understand tyramine dietary restrictions and have reviewed supplement compatibility",
+      "type": "checkbox",
+      "category": "Critical Safety"
+    },
+    {
+      "id": "lithium-check",
+      "label": "If I take lithium: I understand sodium, magnesium, and NSAID interactions that affect lithium levels",
+      "type": "checkbox",
+      "category": "Critical Safety"
+    },
+    {
+      "id": "third-party",
+      "label": "The supplement has third-party testing (USP, NSF, or ConsumerLab certification)",
+      "type": "checkbox",
+      "category": "Quality Assurance"
+    },
+    {
+      "id": "dosing",
+      "label": "I am starting with the lowest recommended dose and will titrate up slowly",
+      "type": "checkbox",
+      "category": "Safe Dosing"
+    },
+    {
+      "id": "one-at-time",
+      "label": "I am introducing only one new supplement at a time (wait 2 weeks between additions)",
+      "type": "checkbox",
+      "category": "Safe Dosing"
+    },
+    {
+      "id": "timing",
+      "label": "I know the proper timing for this supplement (with meals, away from medications, etc.)",
+      "type": "checkbox",
+      "category": "Safe Dosing"
+    },
+    {
+      "id": "monitoring",
+      "label": "I have a plan to monitor for effects and side effects over the next 4-8 weeks",
+      "type": "checkbox",
+      "category": "Monitoring"
+    },
+    {
+      "id": "baseline-labs",
+      "label": "I have baseline lab work if applicable (vitamin D, B12, magnesium, iron, etc.)",
+      "type": "checkbox",
+      "category": "Monitoring"
+    },
+    {
+      "id": "supplement-name",
+      "label": "Supplement I am considering:",
+      "type": "text",
+      "placeholder": "e.g., Magnesium glycinate 300mg"
+    },
+    {
+      "id": "reason",
+      "label": "My reason for considering this supplement:",
+      "type": "text",
+      "placeholder": "e.g., To support sleep quality based on research showing magnesium improves insomnia"
+    }
+  ],
+  "disclaimer": "This checklist is for educational purposes only. NEVER start, stop, or change supplements without consulting your healthcare provider, especially if you take psychiatric medications. Some supplement-medication combinations can be dangerous or life-threatening (e.g., serotonin syndrome). If you are in crisis, call or text 988."
+}

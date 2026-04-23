@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Firmographic Targeting - The Basics That Most Skip",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do we start targeting with Firmographics before Psychographics?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are more important for closing the deal"
+                },
+                {
+                    "id": "b",
+                    "text": "Because they describe the emotional state of the buyer"
+                },
+                {
+                    "id": "c",
+                    "text": "Because they are 'filterable' in tools like LinkedIn Sales Navigator"
+                },
+                {
+                    "id": "d",
+                    "text": "Because investors require them"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "You can search for 'Headcount: 50' (Firmographic) in a database. You cannot search for 'Feeling anxious about Q4' (Psychographic). Firmographics allow you to build the initial list."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is a Specific Vertical (Good) vs. a Generic Industry (Bad)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Generic: 'Healthcare' vs. Specific: 'Hospitals'"
+                },
+                {
+                    "id": "b",
+                    "text": "Generic: 'E-commerce' vs. Specific: 'DTC Skincare Brands'"
+                },
+                {
+                    "id": "c",
+                    "text": "Generic: 'SaaS' vs. Specific: 'Tech Companies'"
+                },
+                {
+                    "id": "d",
+                    "text": "Generic: 'Finance' vs. Specific: 'Banks'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "'E-commerce' is too broad—it includes Amazon and a teenager selling stickers. 'DTC Skincare Brands' implies specific inventory, marketing, and regulatory challenges you can speak to."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Growth Stage' often more important than 'Company Size'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It determines their office location"
+                },
+                {
+                    "id": "b",
+                    "text": "It indicates their willingness to burn cash vs. focus on profit"
+                },
+                {
+                    "id": "c",
+                    "text": "It tells you how many employees they have"
+                },
+                {
+                    "id": "d",
+                    "text": "It doesn't matter, size is the only metric"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A bootstrapped company (Profit mode) hates recurring costs. A Series B company (Growth mode) loves tools that help them scale fast, even if expensive. They buy differently."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'Technographic' targeting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Targeting based on the CTO's age"
+                },
+                {
+                    "id": "b",
+                    "text": "Targeting based on the software and tools the company already uses"
+                },
+                {
+                    "id": "c",
+                    "text": "Targeting based on how technical the product is"
+                },
+                {
+                    "id": "d",
+                    "text": "Targeting IT departments only"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Technographics identify the tech stack (e.g., 'Must use Salesforce'). This can create a perfect entry point or 'wedge' for your product."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'SMB Trap' described in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Targeting small businesses that cannot afford your product"
+                },
+                {
+                    "id": "b",
+                    "text": "Using government census categories like 'SMB' which group unrelated businesses together"
+                },
+                {
+                    "id": "c",
+                    "text": "Selling to companies with less than 10 employees"
+                },
+                {
+                    "id": "d",
+                    "text": "Focusing only on local businesses in your city"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'SMB Trap' is treating 'Small and Medium Business' as a target market. It is a statistical category that groups disparate businesses (pizza shops vs. tech startups) that have nothing in common."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "List the 3 most important firmographic criteria for YOUR ideal customer (industry, company size, geography). Explain why each matters for your specific product or service.",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the firmographic criteria are specific enough. Check for: (1) clear industry definition, (2) quantified company size, (3) geographic rationale. Suggest ways to make criteria more precise."
+        }
+    ],
+    "passingScore": 80
+}

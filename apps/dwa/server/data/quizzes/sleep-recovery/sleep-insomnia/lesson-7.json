@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do thoughts often race at night when you're trying to sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Your brain becomes more active at night than during the day"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The prefrontal cortex (rational part) quiets down while the amygdala (emotional alarm) remains active, and without daytime distractions, your mind wanders to worries"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Racing thoughts mean you have a serious mental illness"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Nighttime thoughts are always more important than daytime thoughts"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "At night, your prefrontal cortex (rational, planning part) begins to quiet down while the amygdala (emotional alarm system) remains active. Without the external distractions of daytime, there's nothing to distract you from worries—and they can spiral. This is normal and can be managed with specific techniques."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Worry Time' or 'Brain Dump' technique and when should you do it?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Worry in bed until you fall asleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Set aside 15-20 minutes EARLIER in the evening (not at bedtime) to write down all worries and to-dos, signaling to your brain they're 'stored' for tomorrow"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never think about worries at all"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Wake up in the middle of the night to write down worries"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Worry Time involves setting aside 15-20 minutes earlier in the evening (not at bedtime) to write down everything on your mind. For each item, write one next action. Then close the notebook—this signals to your brain these items are 'stored.' If thoughts return at bedtime, remind yourself they've been addressed."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does 'cognitive shuffling' help with racing thoughts?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It solves all your problems before bed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It interrupts worry patterns by having you visualize random, non-emotional objects (e.g., for each letter of a word), mimicking the brain's natural pre-sleep state"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It involves intense mental math problems"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It's a type of sleep medication"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cognitive shuffling interrupts worry patterns by having you visualize random objects. Pick a word like 'BEACH' and for each letter, visualize random objects starting with that letter (banana, butterfly, balloon...). The randomness mimics the brain's natural pre-sleep state and pulls mental resources away from worry centers."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the correct sequence for Progressive Muscle Relaxation (PMR)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Start with your head and work down to your feet"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start with your feet and work up: tense muscles for 5-10 seconds, release suddenly, notice the contrast, rest, then move to the next group"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Tense all muscles at once for 5 minutes"
+                },
+                {
+                    "id": "opt4",
+                    "text": "PMR doesn't involve muscle tension"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "PMR works by systematically tensing and releasing muscle groups: Start with feet (curl toes for 5-10 seconds), release suddenly and notice the contrast (warmth, heaviness), rest 10-20 seconds, then progress upward through calves, thighs, abdomen, chest, hands, arms, shoulders, and face."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is 'paradoxical intention' and why can it help with insomnia?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Trying extremely hard to fall asleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Trying to STAY awake instead of trying to sleep - this removes performance anxiety and paradoxically often allows sleep to come"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleeping during the day instead of night"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Taking medication to force sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Paradoxical intention involves trying to stay awake instead of trying to sleep. Lie comfortably with eyes closed and tell yourself 'I'm going to try to stay awake as long as possible.' This removes the performance anxiety of 'I HAVE to sleep' and paradoxically, sleep often comes easily when you stop fighting for it."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "7",
+    "title": "Quieting the Racing Mind - Quiz"
+}

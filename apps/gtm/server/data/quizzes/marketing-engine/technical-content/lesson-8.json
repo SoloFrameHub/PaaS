@@ -1,0 +1,142 @@
+{
+    "lessonId": "8",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Sales Linter for Content Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary function of the 'Sales Linter' for content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To check for spelling and grammar errors"
+                },
+                {
+                    "id": "b",
+                    "text": "To identify and fix 'conversion errors' that prevent content from generating leads"
+                },
+                {
+                    "id": "c",
+                    "text": "To automatically post your content to social media"
+                },
+                {
+                    "id": "d",
+                    "text": "To search for keywords that improve SEO"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A sales linter ensures your content is structurally sound for business results, not just grammatical correctness."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Where should 'Audience Clarity' be established in a piece of content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "In the final summary"
+                },
+                {
+                    "id": "b",
+                    "text": "Within the first 50 words"
+                },
+                {
+                    "id": "c",
+                    "text": "In the fine print at the bottom of the page"
+                },
+                {
+                    "id": "d",
+                    "text": "Only in the title"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Modern readers (and AI answer engines) need to know immediately who the content is for. If they have to hunt for relevance, they will leave."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'Value/Ask Balance' for solo founder content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "50% Value / 50% Ask"
+                },
+                {
+                    "id": "b",
+                    "text": "10% Value / 90% Ask"
+                },
+                {
+                    "id": "c",
+                    "text": "90% Value / 10% Ask"
+                },
+                {
+                    "id": "d",
+                    "text": "100% Value / 0% Ask"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "By over-delivering on value first, you earn the right to make a small, logical 'ask' at the end. Leading with the ask builds resistance; leading with value builds trust."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What characterizes a 'Soft CTA'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "An aggressive demand to 'Buy Now!'"
+                },
+                {
+                    "id": "b",
+                    "text": "A low-pressure, natural next step that provides more value (e.g., 'Check out this free guide')"
+                },
+                {
+                    "id": "c",
+                    "text": "A link that doesn't work"
+                },
+                {
+                    "id": "d",
+                    "text": "A CTA that is hidden and hard to see"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Soft CTAs nurture the relationship without demanding a purchase. They are perfect for in-line placement in TOFU or MOFU content."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Objection Handling' included in the Sales Linter checklist?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To argue with people in the comments section"
+                },
+                {
+                    "id": "b",
+                    "text": "To anticipate and address common hesitations the reader might have before they even reach the CTA"
+                },
+                {
+                    "id": "c",
+                    "text": "To tell the reader why they are wrong"
+                },
+                {
+                    "id": "d",
+                    "text": "To explain why your software is the most expensive"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Effective sales content handles objections silently. If you address a pain or cost hesitation early, the reader is much more likely to click the final CTA."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Audit your most recent content draft or idea. Give it a score (1-5) on 'Audience Clarity' and 'Soft CTA.' What specific sentence could you add or change to improve these two scores? Why did you pick that specific improvement?",
+            "minLength": 100,
+            "promptForAI": "Review if the founder is being objective about their scoring. They should identify a specific 'Fix' (e.g., 'I will change the first sentence to specifically mention CTOs at Series A startups')."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

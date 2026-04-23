@@ -1,0 +1,106 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { logger } from '../../logger';
+
+const LinkedinAnalysisInput = z.object({
+    url: z.string().url(),
+    businessModel: z.enum(['b2b-saas', 'creator-coach', 'service', 'marketplace', 'other']),
+});
+
+const LinkedinAnalysisOutput = z.object({
+    professionalBio: z.string().nullable(),
+    experienceHighlights: z.array(z.string()),
+    skills: z.array(z.string()),
+    authorityIndicators: z.array(z.string()),
+    perceivedExpertise: z.string().nullable(),
+    audienceFit: z.string().nullable(),
+    confidence: z.number().min(0).max(100),
+});
+
+export type LinkedinAnalysisInput = z.infer<typeof LinkedinAnalysisInput>;
+export type LinkedinAnalysisOutput = z.infer<typeof LinkedinAnalysisOutput>;
+
+export const analyzeLinkedinFlow = ai.defineFlow(
+    {
+        name: 'analyzeLinkedin',
+        inputSchema: LinkedinAnalysisInput,
+        outputSchema: LinkedinAnalysisOutput,
+    },
+    async (input: LinkedinAnalysisInput) => {
+        logger.info('Analyzing LinkedIn Profile', { url: input.url });
+
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+            const response = await fetch(input.url, {
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5'
+                },
+                signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+                logger.warn('LinkedIn fetch blocked/failed', { status: response.status });
+                return createEmptyLinkedinAnalysis();
+            }
+
+            const html = await response.text();
+
+            // Simple metadata extraction (often all we get from public profiles without API)
+            const titleMatch = html.match(/<title>(.*?)<\/title>/);
+            const descMatch = html.match(/<meta name="description" content="(.*?)"/);
+
+            const title = titleMatch ? titleMatch[1] : '';
+            const description = descMatch ? descMatch[1] : '';
+
+            // If we got basically nothing, return empty
+            if (!title && !description) {
+                return createEmptyLinkedinAnalysis();
+            }
+
+            // If we have some content, let AI parse it
+            const result = await ai.generate({
+                model: gemini20Flash,
+                prompt: `Analyze this raw HTML/Text from a LinkedIn profile to extract professional details. 
+                
+                CONTENT:
+                Title: ${title}
+                Description: ${description}
+                Raw Snippet: ${html.slice(0, 5000)}
+
+                Extract:
+                - Bio
+                - Experience
+                - Skills
+                - Authority
+                
+                If content is login wall or generic, return nulls.`,
+                output: { format: 'json', schema: LinkedinAnalysisOutput }
+            });
+
+            if (!result.output) return createEmptyLinkedinAnalysis();
+
+            return result.output;
+
+        } catch (error) {
+            logger.warn('LinkedIn analysis error', { error });
+            return createEmptyLinkedinAnalysis();
+        }
+    }
+);
+
+function createEmptyLinkedinAnalysis(): LinkedinAnalysisOutput {
+    return {
+        professionalBio: null,
+        experienceHighlights: [],
+        skills: [],
+        authorityIndicators: [],
+        perceivedExpertise: null,
+        audienceFit: null,
+        confidence: 0,
+    };
+}

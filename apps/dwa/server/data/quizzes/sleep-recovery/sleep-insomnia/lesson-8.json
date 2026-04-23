@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the recommended exercise guidelines for improving sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only on weekends"
+                },
+                {
+                    "id": "opt2",
+                    "text": "4-7 times per week, 30+ minutes per session (150-300 minutes weekly), completing vigorous exercise at least 4 hours before bedtime"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Intense exercise right before bed to tire yourself out"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise has no effect on sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "For optimal sleep benefits: exercise 4-7 times per week, 30+ minutes per session, totaling 150-300 minutes weekly. Complete vigorous exercise at least 4 hours before bedtime (strenuous exercise ending within 4 hours of bed may disrupt sleep). Gentle stretching or yoga close to bedtime is fine."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does morning light exposure affect your sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Morning light has no effect on nighttime sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It advances your circadian clock (earlier sleepiness at night), suppresses morning melatonin, and boosts alertness - get bright light within 30-60 minutes of waking"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Morning light makes you sleepy during the day"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should avoid all light in the morning"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Morning light within 30-60 minutes of waking advances your circadian clock (leading to earlier sleepiness at night), suppresses morning melatonin, and boosts serotonin and alertness. Even cloudy days provide beneficial light. Natural outdoor light before 10 AM is ideal; light boxes work if outdoor light isn't possible."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should you dim lights 2+ hours before bedtime?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "To save electricity"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Bright evening light delays your circadian clock, suppresses melatonin right when you need it, and signals 'daytime' to your brain"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Dimming lights has no effect on sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Bright lights help you sleep better"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Bright evening light delays your circadian clock (making you feel sleepy later), suppresses melatonin production right when you need it rising, and signals 'daytime' to your brain. Minimize bright overhead lights, screen time, and especially blue light in the 2 hours before bed."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the most important principle regarding sleep medication tapering?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Stop all sleep medications immediately for best results"
+                },
+                {
+                    "id": "opt2",
+                    "text": "NEVER stop sleep medications abruptly - taper gradually under healthcare provider supervision; sudden stopping can cause rebound insomnia or withdrawal"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleep medications are impossible to stop"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Increase the dose gradually over time"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Never stop sleep medications abruptly without medical guidance. Stopping suddenly can cause rebound insomnia (temporary worsening of sleep) or withdrawal symptoms. Taper gradually under healthcare provider supervision—typically 25% dose reduction every 1-2 weeks. CBT-I combined with tapering is more effective than tapering alone."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you seek professional help for sleep problems?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only if you haven't slept at all for a month"
+                },
+                {
+                    "id": "opt2",
+                    "text": "If problems persist 4+ weeks despite self-help, you have symptoms of sleep apnea, you're regularly using alcohol/OTC meds to sleep, or mood/functioning are significantly affected"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Professional help is never needed for sleep problems"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only children need professional help for sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Seek professional help if: sleep problems persist 4+ weeks despite consistent self-help efforts; you have symptoms of sleep apnea (snoring, breathing pauses); you're regularly using alcohol or OTC sleep aids; mood changes (depression, anxiety) are significant; or sleep problems are significantly affecting work, relationships, or daily functioning."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "8",
+    "title": "Exercise, Light, and Long-Term Sleep Health - Quiz"
+}

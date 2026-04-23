@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "5",
+    "lessonTitle": "Content Formats That Work",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which LinkedIn format is currently considered 'High Reach' and best for teaching complex frameworks slide-by-slide?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Text-only posts."
+                },
+                {
+                    "id": "b",
+                    "text": "PDF Carousels."
+                },
+                {
+                    "id": "c",
+                    "text": "LinkedIn Articles."
+                },
+                {
+                    "id": "d",
+                    "text": "External links to your blog."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Carousels allow you to break down information into digestible chunks, increasing 'dwell time' which LinkedIn's algorithm rewards.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'White Space' and short paragraphs critical for text-only posts on LinkedIn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because LinkedIn charges more for extra words."
+                },
+                {
+                    "id": "b",
+                    "text": "To avoid 'Walls of Text' that discourage users from reading on mobile devices."
+                },
+                {
+                    "id": "c",
+                    "text": "Because the algorithm prefers shorter posts."
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't; long-form content is always better."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most LinkedIn users are on mobile. Scannability is key to keeping their attention as they scroll.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When using the 'Proof' (P) pillar, what is often more effective than a professional stock photo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A cartoon illustration."
+                },
+                {
+                    "id": "b",
+                    "text": "An authentic, raw screenshot of a dashboard or result."
+                },
+                {
+                    "id": "c",
+                    "text": "No image at all."
+                },
+                {
+                    "id": "d",
+                    "text": "A photo of the founder's office."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Authenticity builds trust. A raw screenshot demonstrates 'Practitioner Evidence' that generic stock photos cannot match.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a mandatory requirement for video content on LinkedIn to ensure it is effective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A Hollywood-style production level."
+                },
+                {
+                    "id": "b",
+                    "text": "Subtitles (Captions), as most users watch with sound off."
+                },
+                {
+                    "id": "c",
+                    "text": "Background music from a popular artist."
+                },
+                {
+                    "id": "d",
+                    "text": "The video must be at least 10 minutes long."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "80% or more of LinkedIn users watch video in 'Mute' mode. Without subtitles, your message is lost.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In a poll, why should you almost always include an 'Other (Comment below)' option?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To trick the algorithm into thinking you have more comments."
+                },
+                {
+                    "id": "b",
+                    "text": "To capture high-value, qualitative data and start direct conversations with engaged prospects."
+                },
+                {
+                    "id": "c",
+                    "text": "Because LinkedIn's poll tool is broken and needs a fallback."
+                },
+                {
+                    "id": "d",
+                    "text": "To make the poll look more professional."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The poll is a conversation starter. The comments gathered from the 'Other' option provide deep insights into your ICP's real-world problems.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at the PAIPS post you drafted earlier. Which specific format (Carousel, Text + Photo, Video, etc.) would best serve the 'Authority' and 'Proof' sections of that post? Why did you choose this format over the others for your specific ICP?",
+            "promptHints": [
+                "Think about where your ICP spends time (Desktop vs Mobile).",
+                "Consider if your proof is visual (numbers/dashboards) or narrative (stories).",
+                "Evaluate your own comfort level and efficiency with different tools."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "4"
+        ],
+        "unlocks": [
+            "6"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Content Formats That Work - Quiz"
+}

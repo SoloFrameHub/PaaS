@@ -1,0 +1,33 @@
+{
+    "name": "rps/flarum-ai-moderation",
+    "description": "AI-assisted content moderation for mental health community safety",
+    "keywords": ["flarum", "moderation", "ai", "safety", "mental-health"],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "authors": [
+        {
+            "name": "SoloFrameHub",
+            "email": "dev@soloframehub.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RPS\\AiModeration\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "AI Content Moderation",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-shield-alt",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        }
+    }
+}

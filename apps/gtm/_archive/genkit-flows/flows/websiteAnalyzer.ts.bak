@@ -1,0 +1,150 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { logger } from '@/lib/logger';
+
+const WebsiteAnalysisInput = z.object({
+    url: z.string().url(),
+    businessModel: z.enum(['b2b-saas', 'creator-coach', 'service', 'marketplace', 'other']),
+    stage: z.enum(['idea', 'pre-launch', 'pre-revenue', '0-10k', '10k-100k', 'scaling']),
+});
+
+const WebsiteAnalysisOutput = z.object({
+    icpSummary: z.string().nullable(),
+    valueProposition: z.string().nullable(),
+    competitivePositioning: z.string().nullable(),
+    pricingStructure: z.string().nullable(),
+    industryVertical: z.string().nullable(),
+    commonObjections: z.array(z.string()),
+    typicalUseCases: z.array(z.string()),
+    competitorMentions: z.array(z.string()),
+    confidence: z.object({
+        icpClarity: z.number().min(0).max(100),
+        positioningStrength: z.number().min(0).max(100),
+        messagingConsistency: z.number().min(0).max(100),
+        valueArticulation: z.number().min(0).max(100),
+    }),
+});
+
+export type WebsiteAnalysisInput = z.infer<typeof WebsiteAnalysisInput>;
+export type WebsiteAnalysisOutput = z.infer<typeof WebsiteAnalysisOutput>;
+
+/**
+ * Genkit flow for fetching and analyzing a website URL.
+ * Extracts positioning, competitive landscape, and customer acquisition metrics.
+ */
+export const analyzeWebsiteFlow = ai.defineFlow(
+    {
+        name: 'analyzeWebsite',
+        inputSchema: WebsiteAnalysisInput,
+        outputSchema: WebsiteAnalysisOutput,
+    },
+    async (input: WebsiteAnalysisInput) => {
+        // Fetch website content
+        let websiteText = '';
+        try {
+            const controller = new AbortController();
+            // increased timeout for slower SMB sites
+            const timeoutId = setTimeout(() => controller.abort(), 30000);
+
+            const response = await fetch(input.url, {
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Cache-Control': 'no-cache'
+                },
+                signal: controller.signal,
+                redirect: 'follow'
+            });
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+                logger.warn('Website fetch failed', { status: response.status, url: input.url });
+                return createEmptyAnalysis();
+            }
+
+            const contentType = response.headers.get('content-type');
+            if (!contentType || !contentType.includes('text/html')) {
+                logger.warn('Invalid content type', { contentType, url: input.url });
+                return createEmptyAnalysis();
+            }
+
+            const htmlText = await response.text();
+
+            // Limit input size to prevent ReDoS/Perf issues
+            const html = htmlText.slice(0, 200000); // 200KB limit
+
+            // Basic HTML to text extraction (Improved)
+            websiteText = html
+                .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+                .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '')
+                .replace(/<[^>]+>/g, ' ')
+                .replace(/&[a-z]+;/gi, ' ') // Remove entities
+                .replace(/\s+/g, ' ')
+                .trim()
+                .slice(0, 50000); // Limit context for AI
+
+        } catch (error) {
+            logger.error('Website fetch error', { url: input.url, error });
+            return createEmptyAnalysis();
+        }
+
+        if (!websiteText || websiteText.length < 100) {
+            return createEmptyAnalysis();
+        }
+
+        // Analyze with Gemini
+        let result;
+        try {
+            result = await ai.generate({
+                model: gemini20Flash,
+                prompt: `You are a B2B marketing analyst examining a ${input.businessModel} company's website.
+    
+    WEBSITE CONTENT:
+    ${websiteText}
+    
+    BUSINESS CONTEXT:
+    - Business Model: ${input.businessModel}
+    - Stage: ${input.stage}
+    
+    TASK: Extract customer acquisition intelligence.`,
+                output: {
+                    format: 'json',
+                    schema: WebsiteAnalysisOutput,
+                },
+                config: {
+                    temperature: 0.3,
+                    maxOutputTokens: 2000,
+                },
+            });
+        } catch (aiError) {
+            logger.error('Gemini Analysis Error', { error: aiError, url: input.url });
+            return createEmptyAnalysis();
+        }
+
+        if (!result.output) {
+            return createEmptyAnalysis();
+        }
+
+        return result.output;
+    }
+);
+
+function createEmptyAnalysis(): WebsiteAnalysisOutput {
+    return {
+        icpSummary: null,
+        valueProposition: null,
+        competitivePositioning: null,
+        pricingStructure: null,
+        industryVertical: null,
+        commonObjections: [],
+        typicalUseCases: [],
+        competitorMentions: [],
+        confidence: {
+            icpClarity: 0,
+            positioningStrength: 0,
+            messagingConsistency: 0,
+            valueArticulation: 0,
+        },
+    };
+}

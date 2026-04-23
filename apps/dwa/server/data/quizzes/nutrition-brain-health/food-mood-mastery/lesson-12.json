@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which interventions belong to Tier 1 (strongest evidence) in the nutritional psychiatry evidence hierarchy?",
+            "options": [
+                { "id": "opt1", "text": "Ketogenic therapy, time-restricted eating, and nutrigenomics" },
+                { "id": "opt2", "text": "Mediterranean dietary pattern, omega-3 adequacy, reducing ultra-processed food, and micronutrient adequacy" },
+                { "id": "opt3", "text": "MIND diet, L-methylfolate, and prebiotic supplementation" },
+                { "id": "opt4", "text": "Anti-inflammatory protocols and personalized genetic diets" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Tier 1 (strong evidence) interventions include the Mediterranean dietary pattern (multiple RCTs, ISNPR-endorsed), omega-3 fatty acid adequacy (strong meta-analytic evidence), reducing ultra-processed food intake (consistent large prospective studies), and ensuring adequate micronutrient status (folate, B12, D, iron, zinc, magnesium). These form the foundation of any nutritional psychiatry plan."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to follow-up analyses from dietary intervention trials, what happens to mental health benefits when participants return to pre-intervention dietary patterns?",
+            "options": [
+                { "id": "opt1", "text": "The mental health benefits persist permanently regardless of diet changes" },
+                { "id": "opt2", "text": "Benefits increase even further after stopping the dietary intervention" },
+                { "id": "opt3", "text": "Depressive symptoms return, supporting a causal rather than coincidental relationship between diet and mental health" },
+                { "id": "opt4", "text": "There is no data on long-term outcomes from dietary trials" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Follow-up analyses show that participants who maintained dietary improvements showed sustained mental health benefits, while those who returned to pre-intervention dietary patterns also showed return of depressive symptoms. This dose-response relationship strengthens causal inference — consistency matters more than perfection."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach to implementing dietary changes for mental health?",
+            "options": [
+                { "id": "opt1", "text": "Overhaul your entire diet immediately for maximum impact" },
+                { "id": "opt2", "text": "Only make changes if a doctor prescribes them" },
+                { "id": "opt3", "text": "A phased approach — 1-2 changes in month 1, building gradually, with focus on sustainability over perfection" },
+                { "id": "opt4", "text": "Follow the strictest possible protocol for 30 days, then return to normal eating" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Sustainable change happens gradually through a phased timeline: Month 1 (foundation — 1-2 Tier 1 changes), Month 2 (build — add more changes), Month 3 (refine based on what works), Months 4-6 (sustain and deepen), then long-term maintenance. Research shows sustained moderate improvement produces better outcomes than short bursts of strict adherence."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should you stop or modify your nutritional plan and seek professional help?",
+            "options": [
+                { "id": "opt1", "text": "Only if you experience a physical medical emergency" },
+                { "id": "opt2", "text": "If you notice increasing food anxiety, social isolation due to dietary choices, or signs of orthorexia" },
+                { "id": "opt3", "text": "Never — once you start a nutritional plan, you should stick with it no matter what" },
+                { "id": "opt4", "text": "Only if a blood test shows abnormal results" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Red flags that warrant stopping or modifying your plan include: increasing anxiety or obsession about food quality, restricting food groups beyond what is recommended, social isolation due to dietary choices, worsening mood despite dietary improvements, rapid weight loss or gain, and signs of orthorexia. The goal of nutritional psychiatry is to reduce distress, not create new sources of it."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is the principle 'consistency matters more than perfection' central to a Food-Mood Mastery plan?",
+            "options": [
+                { "id": "opt1", "text": "Because perfect dietary adherence is physically impossible" },
+                { "id": "opt2", "text": "Because research shows sustained moderate dietary improvement produces better mental health outcomes than short bursts of strict adherence followed by return to old patterns" },
+                { "id": "opt3", "text": "Because nutrition does not actually affect mental health very much" },
+                { "id": "opt4", "text": "Because doctors recommend this approach for legal liability reasons" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research from dietary intervention trial follow-ups demonstrates that sustained moderate improvements in diet quality produce better mental health outcomes than short bursts of strict adherence followed by return to old patterns. Building a plan you can maintain consistently is more effective than pursuing an impressive but unsustainable protocol."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "12",
+    "title": "Your Personalized Food-Mood Mastery Plan - Quiz"
+}

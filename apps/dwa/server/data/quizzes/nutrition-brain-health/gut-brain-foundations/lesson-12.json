@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the Stanford University study, insulin resistance has what effect on the risk of developing major depressive disorder?",
+            "options": [
+                { "id": "opt1", "text": "It has no effect on depression risk" },
+                { "id": "opt2", "text": "It reduces depression risk by improving brain energy supply" },
+                { "id": "opt3", "text": "It approximately doubles the risk of developing MDD" },
+                { "id": "opt4", "text": "It increases depression risk by about 10%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A landmark Stanford University study found that insulin resistance approximately doubled the risk of developing major depressive disorder, even after controlling for BMI, physical activity, and other metabolic factors. This suggests insulin resistance is an independent risk factor for depression."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Research using continuous glucose monitors found that which aspect of blood sugar is most important for mood stability?",
+            "options": [
+                { "id": "opt1", "text": "Having the lowest possible average blood sugar at all times" },
+                { "id": "opt2", "text": "Blood sugar stability — avoiding large spikes and crashes — even when average levels are normal" },
+                { "id": "opt3", "text": "Having consistently high blood sugar for maximum brain energy" },
+                { "id": "opt4", "text": "The total number of meals eaten per day, regardless of blood sugar response" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research found that glycemic variability (the size and frequency of blood sugar swings) was significantly associated with worse mood, more anxiety, and lower energy — even in people with normal average blood sugar levels. Blood sugar stability itself matters more than the absolute level."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which simple strategy can reduce post-meal blood sugar spikes by up to 30-40%?",
+            "options": [
+                { "id": "opt1", "text": "Drinking a glass of fruit juice before the meal" },
+                { "id": "opt2", "text": "Eating dessert first to prepare the digestive system" },
+                { "id": "opt3", "text": "Eating vegetables or fiber-rich foods at the beginning of the meal before other foods" },
+                { "id": "opt4", "text": "Eating as quickly as possible to limit glucose absorption time" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Eating vegetables or fiber-rich foods at the beginning of a meal reduces the blood sugar spike from the rest of the meal by up to 30-40%. Starting with a salad, some vegetables, or legumes before the main dish is one of the simplest and most effective blood sugar stability strategies."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does insulin resistance connect to the gut-brain axis pathways covered throughout this course?",
+            "options": [
+                { "id": "opt1", "text": "Insulin resistance is completely separate from gut health and brain function" },
+                { "id": "opt2", "text": "It drives depression only through psychological effects of weight gain" },
+                { "id": "opt3", "text": "It activates NF-kB inflammatory pathways, disrupts the gut microbiome, impairs brain insulin signaling, and dysregulates the HPA axis" },
+                { "id": "opt4", "text": "It only affects the gut and has no effect on brain chemistry" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Insulin resistance connects to the gut-brain axis through multiple overlapping mechanisms: it activates NF-kB and elevates the same inflammatory mediators that disrupt neurotransmitter function, it impairs brain insulin signaling needed for neuroplasticity and memory, it dysregulates the HPA stress axis, and it reduces gut microbial diversity — the same patterns seen in depression."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "The gut-brain-metabolism triangle concept means that intervening at any one vertex creates what effect?",
+            "options": [
+                { "id": "opt1", "text": "It has no effect on the other two vertices" },
+                { "id": "opt2", "text": "It makes the other two vertices worse as resources are diverted" },
+                { "id": "opt3", "text": "Positive ripple effects throughout the entire system — improving one area supports the others" },
+                { "id": "opt4", "text": "It only helps if you simultaneously address all three vertices at once" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Every vertex of the gut-brain-metabolism triangle influences the other two, creating either virtuous or vicious cycles. Intervening at any point creates positive ripple effects throughout the system. Improving your diet improves gut, metabolism, and brain health. Reducing stress benefits all three. This means you do not need to address everything at once — starting anywhere creates momentum."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "12",
+    "title": "Blood Sugar, Insulin Resistance, and Your Mental Health - Quiz"
+}

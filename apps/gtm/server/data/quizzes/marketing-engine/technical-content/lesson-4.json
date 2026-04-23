@@ -1,0 +1,142 @@
+{
+    "lessonId": "4",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Documentation-as-Content Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which company is famous for using 'Radical Transparency' to turn internal documents into viral content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Apple"
+                },
+                {
+                    "id": "b",
+                    "text": "Buffer"
+                },
+                {
+                    "id": "c",
+                    "text": "HubSpot"
+                },
+                {
+                    "id": "d",
+                    "text": "Slack"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Buffer published their salary formulas and hiring processes, demonstrating that internal documentation is highly valuable to an outside audience."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the first step in the 'Documentation-to-Content' transformation pipeline?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Wait for a professional writer to review it"
+                },
+                {
+                    "id": "b",
+                    "text": "Capture it: Write the internal documentation accurately for yourself/your team"
+                },
+                {
+                    "id": "c",
+                    "text": "Publish it immediately to social media"
+                },
+                {
+                    "id": "d",
+                    "text": "Anonymize the names and logos"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You start with your normal internal workflow (Capture). The efficiency comes from not having to 'restart' the work for the public version."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "An internal document titled 'Bug Fix LOG: Auth Timeout issue' could be transformed into which educational content title?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Our Auth system is broken again"
+                },
+                {
+                    "id": "b",
+                    "text": "Why we are better than the competition"
+                },
+                {
+                    "id": "c",
+                    "text": "How to debug authentication timeouts in [Niche] applications"
+                },
+                {
+                    "id": "d",
+                    "text": "Meet our development team"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Troubleshooting internal bugs provides the exact 'Step-by-Step' value that technical audiences search for."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Generous but Protective' rule?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Give away the product but protect the documentation"
+                },
+                {
+                    "id": "b",
+                    "text": "Share your knowledge and frameworks but protect specific customer data and sensitive trade secrets"
+                },
+                {
+                    "id": "c",
+                    "text": "Be generous with your time but protective of your money"
+                },
+                {
+                    "id": "d",
+                    "text": "Never share anything until you have a patent"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Expertise builds trust; sensitivity prevents liability. You build authority by being an open book about how you think and work, without compromising your competitive moat."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Internal Process Documentation' valuable to your ICP?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They want to build a competing business"
+                },
+                {
+                    "id": "b",
+                    "text": "They want to hire your employees"
+                },
+                {
+                    "id": "c",
+                    "text": "It demonstrates that you are a systematic expert and provides them with a 'proven' way to do something"
+                },
+                {
+                    "id": "d",
+                    "text": "It doesn't; only sales pitches matter"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When you show how you do something, you prove you actually know how to do it. It transitions you from 'someone making a claim' to 'someone showing a result'."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "What is one internal process or decision you documented this week? How could you help your ICP by sharing it? What is the one thing you would need to ANONYMIZE to make it safe to publish?",
+            "minLength": 100,
+            "promptForAI": "Review if the founder understands the 'transformation' needed. Look for specificity in the 'what should I anonymize' part to ensure they are thinking about data privacy."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

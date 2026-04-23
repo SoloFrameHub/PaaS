@@ -1,0 +1,159 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "11",
+    "lessonTitle": "Monetizing Owning the Community",
+    "track": "marketing-engine",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is it risky to build your entire business on 'Rented Land' (Social Media) without owning a community?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Social media is too expensive."
+                },
+                {
+                    "id": "b",
+                    "text": "The algorithm can change overnight and kill your reach, whereas you control the access to your own community."
+                },
+                {
+                    "id": "c",
+                    "text": "You can't post videos on social media."
+                },
+                {
+                    "id": "d",
+                    "text": "Owned land is free."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Rented land (LinkedIn/Twitter) is for attention. Owned land (Email/Community) is for retention. A change in algorithm can wipe out your 'Top of Funnel,' but it can't touch your community.",
+            "difficulty": "conceptual",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between a SaaS Community and a Creator Community?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "SaaS communities are for features/support; Creator communities are often the paid product itself (transformation)."
+                },
+                {
+                    "id": "b",
+                    "text": "SaaS communities are smaller."
+                },
+                {
+                    "id": "c",
+                    "text": "Creator communities have no rules."
+                },
+                {
+                    "id": "d",
+                    "text": "SaaS communities are only for developers."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "In SaaS, the software is the value. In a Creator business, the *peer group and access to the creator* is often the value users pay for.",
+            "difficulty": "conceptual",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which platform is described as 'Facebook Groups meets Course Hosting' and is ideal for gamified learning?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Slack"
+                },
+                {
+                    "id": "b",
+                    "text": "Discord"
+                },
+                {
+                    "id": "c",
+                    "text": "Skool"
+                },
+                {
+                    "id": "d",
+                    "text": "Telegram"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Skool is designed specifically for 'Community-Powered Learning' with built-in leaderboards and course hosting, making it the current favorite for creators.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Community Flywheel' described in this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Posting on Twitter until you go viral."
+                },
+                {
+                    "id": "b",
+                    "text": "Public Content -> Free Bridge Community -> Paid 'Inner Circle' Community."
+                },
+                {
+                    "id": "c",
+                    "text": "Cold emailing people to join your Discord."
+                },
+                {
+                    "id": "d",
+                    "text": "Paying for Facebook ads."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The flywheel moves people from 'Attention' (Public) to 'Nurture' (Free Community) to 'Monetization' (Paid Community), creating a sustainable machine.",
+            "difficulty": "strategic",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the '90-9-1' rule of community participation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "90% of people post, 9% reply, 1% lurk."
+                },
+                {
+                    "id": "b",
+                    "text": "90% lurk (read only), 9% contribute, 1% create (you/mods). This is normal."
+                },
+                {
+                    "id": "c",
+                    "text": "90% of your members will leave in month 1."
+                },
+                {
+                    "id": "d",
+                    "text": "You need 90 admins."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founders often panic when 'everyone isn't posting.' But the vast majority of members (90%) are 'Lurkers' who get value just by reading. Do not optimize only for the noisy 10%.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Audit the top 3 'Competitor Communities' in your space. Are they using Skool, Circle, or Discord? What is their 'Hook' (e.g., 'The #1 place to learn X')? Based on this, which platform 'Vibe' fits your specific audience best?",
+            "minimumWords": 50,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 100,
+    "sectionId": "marketing-engine",
+    "title": "Monetizing Owning the Community - Quiz"
+}

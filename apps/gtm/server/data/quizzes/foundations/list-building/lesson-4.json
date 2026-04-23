@@ -1,0 +1,141 @@
+{
+    "lessonId": "4",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Free Research Methods Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of manual research compared to using a bulk database?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is faster than using an automated tool"
+                },
+                {
+                    "id": "b",
+                    "text": "It provides deep context and motivation for why a prospect might need your help"
+                },
+                {
+                    "id": "c",
+                    "text": "It is the only legal way to find prospects"
+                },
+                {
+                    "id": "d",
+                    "text": "Databases don't include job titles"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Databases are good for filters, but manual research reveals what a prospect is actually saying, asking, and doing, which is critical for effective personalization."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which Google search operator would you use to narrow results to ONLY the LinkedIn domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "url:linkedin.com"
+                },
+                {
+                    "id": "b",
+                    "text": "in:linkedin.com"
+                },
+                {
+                    "id": "c",
+                    "text": "site:linkedin.com/in"
+                },
+                {
+                    "id": "d",
+                    "text": "@linkedin.com"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 'site:' operator limits Google results to a specific domain. Adding '/in' specifically targets individual profiles rather than companies or posts."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Where is the best place to find 'unfiltered buyer pain' for free?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A company's official press releases"
+                },
+                {
+                    "id": "b",
+                    "text": "LinkedIn profile bios"
+                },
+                {
+                    "id": "c",
+                    "text": "Subreddits or niche Slack communities where users ask for help"
+                },
+                {
+                    "id": "d",
+                    "text": "The Nasdaq website"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Public forums and Slack communities are where professionals go to vent or ask for solutions to their real-world problems. This is gold for finding high-intent prospects."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should be included in a 'Prospect Dossier' for a high-value target?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Just their name and email"
+                },
+                {
+                    "id": "b",
+                    "text": "Details from their website, recent blog posts, and LinkedIn commentary"
+                },
+                {
+                    "id": "c",
+                    "text": "Their home address and personal phone number"
+                },
+                {
+                    "id": "d",
+                    "text": "A list of their competitors' prices"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A dossier should provide a holistic view of the prospect's current priorities and public statements, allowing for a hyper-personalized outreach."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How can you use Product Hunt as a free research method?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By buying the Product Hunt database"
+                },
+                {
+                    "id": "b",
+                    "text": "By messaging everyone who upvotes your own product"
+                },
+                {
+                    "id": "c",
+                    "text": "By identifying founders who just launched (high energy/need for growth) and upvoters who show interest in your niche"
+                },
+                {
+                    "id": "d",
+                    "text": "Product Hunt is only for paying customers"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A launch is a signal of activity. Founders who just launched are often in 'acquisition mode' and might need tools or services that help them scale."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Pick one community (Slack, Reddit, or Forum) where your ICP hangs out. What is one specific question or 'pain point' you've seen mentioned there recently? How would you frame a reaching-out message that references this context without being creepy?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the 'Creepiness Factor.' The message should bridge the gap (e.g., 'Saw your thread on r/sales about CRM fatigue...') without sounding like they've been stalking the person for months. Look for empathy and value-first framing."
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+  "lessonId": "2",
+  "courseId": "analytics",
+  "sectionId": "operations-systems",
+  "title": "Funnel Dashboard: Leads to Wins",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the benchmark MQL to SQL conversion rate for B2B SaaS?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "20-30%" },
+        { "id": "c", "text": "50-60%" },
+        { "id": "d", "text": "70-80%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The benchmark MQL to SQL conversion rate is 20-30%. Below 20% means your ICP targeting is too broad. Above 35% may mean you're being too conservative with MQL definitions."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Sarah had 127 leads and only 3 clients. What was her primary problem?",
+      "options": [
+        { "id": "a", "text": "She didn't have enough leads" },
+        {
+          "id": "b",
+          "text": "She had no funnel dashboard to identify where deals were dying"
+        },
+        { "id": "c", "text": "Her pricing was too high" },
+        { "id": "d", "text": "She was in the wrong market" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's primary problem was the lack of a funnel dashboard. Without tracking conversion rates between stages (leads to calls, calls to proposals, proposals to wins), every lost deal was a mystery. The funnel dashboard reveals bottlenecks."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "A funnel dashboard tracks two key dimensions at each stage. What are they?",
+      "options": [
+        { "id": "a", "text": "Revenue and profit" },
+        { "id": "b", "text": "Volume and conversion rate" },
+        { "id": "c", "text": "Time and effort" },
+        { "id": "d", "text": "Inbound and outbound" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your funnel dashboard tracks volume (how many deals at each stage) and conversion rate (what percentage move from one stage to the next). Together these reveal exactly where deals are getting stuck."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If your MQL to SQL conversion rate is above 35%, you should always celebrate because it means your targeting is exceptional.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. A conversion rate above 35% could mean you're crushing it, OR it could mean you're being too conservative with who you mark as an MQL. You might be leaving qualified leads out of your pipeline by setting the bar too high."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe your current sales funnel stages. Where do you suspect deals are dying, and what specific data would confirm or disprove that suspicion?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific funnel stages, articulates a hypothesis about where the bottleneck is, and describes what data or conversion rate they would need to validate it. Look for specificity rather than vague statements."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "lessonId": "13",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: El Embudo del Creador",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuáles son las tres capas del 'Embudo del Creador de Stack Completo'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Twitter, LinkedIn e Instagram"
+        },
+        {
+          "id": "b",
+          "text": "Descubrimiento (TOFU), Confianza (MOFU) y Ventas (BOFU)"
+        },
+        {
+          "id": "c",
+          "text": "Video, Audio y Texto"
+        },
+        {
+          "id": "d",
+          "text": "Éxitos Virales, Memes y Debates"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un embudo completo necesita llegar a nuevas personas (Descubrimiento), construir autoridad (Confianza) y convertirlas (Ventas)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué tipo de contenido construye el 'Banco de Confianza'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TOFU (Ganchos virales)"
+        },
+        {
+          "id": "b",
+          "text": "MOFU (Educativo/Cómo Hacer)"
+        },
+        {
+          "id": "c",
+          "text": "BOFU (Pitches de Ventas)"
+        },
+        {
+          "id": "d",
+          "text": "Videos de gatos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El contenido de Medio del Embudo (MOFU) enseña el 'Cómo' y demuestra tu competencia. Aquí es donde se construyen las relaciones."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la mezcla '70-20-10' recomendada para los creadores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "70% Ventas, 20% Confianza, 10% Descubrimiento"
+        },
+        {
+          "id": "b",
+          "text": "70% Confianza, 20% Descubrimiento, 10% Ventas"
+        },
+        {
+          "id": "c",
+          "text": "70% Descubrimiento, 20% Ventas, 10% Confianza"
+        },
+        {
+          "id": "d",
+          "text": "33% de cada uno"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Dedica la mayor parte de tu tiempo (70%) a ser útil (Confianza). Usa el 20% para crecer en alcance (Descubrimiento), y gánate el derecho de vender el 10% del tiempo."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué sucede si publicas un 90% de contenido TOFU (Descubrimiento) y un 0% de contenido de Ventas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Te vuelves rico"
+        },
+        {
+          "id": "b",
+          "text": "Te conviertes en un 'Influencer' con muchos seguidores pero sin dinero"
+        },
+        {
+          "id": "c",
+          "text": "Te expulsan"
+        },
+        {
+          "id": "d",
+          "text": "Tu audiencia se enoja"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las visitas no pagan el alquiler. Si nunca haces una oferta (BOFU), simplemente estás entreteniendo a personas de forma gratuita indefinidamente."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la función de un 'CTA Puente'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedir a las personas que den like y se suscriban"
+        },
+        {
+          "id": "b",
+          "text": "Mover a las personas de una etapa del embudo a la siguiente (ej., de Redes Sociales a Email)"
+        },
+        {
+          "id": "c",
+          "text": "Terminar una publicación con gracia"
+        },
+        {
+          "id": "d",
+          "text": "Enlazar a una empresa constructora de puentes"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El CTA Puente le dice explícitamente al usuario el siguiente paso: 'Si te gustó esto (TOFU), lee mi newsletter (MOFU).' Captura la atención que acabas de generar."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Audita tus últimas 3 publicaciones. ¿A qué capa pertenecía cada una (Descubrimiento, Confianza o Ventas)? ¿Qué capa estás descuidando más, y cuál es UNA publicación que podrías escribir mañana para corregir esa brecha?",
+      "minLength": 100,
+      "promptForAI": "Evalúa el diagnóstico del estudiante. ¿Identifica correctamente una brecha? ¿La 'corrección' propuesta coincide con la capa faltante? (ej., si les falta Ventas, deben proponer una publicación de Oferta)."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

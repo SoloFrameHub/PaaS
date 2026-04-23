@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Your Community Sales Playbook",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the 90-day community launch timeline, what is the purpose of the Beta Cohort phase (days 14-21)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To generate maximum revenue before the public launch"
+                },
+                {
+                    "id": "b",
+                    "text": "To test the platform's technical features under load"
+                },
+                {
+                    "id": "c",
+                    "text": "To have 5-10 trusted contacts go through the experience at a discount in exchange for feedback and testimonials that fuel the public launch"
+                },
+                {
+                    "id": "d",
+                    "text": "To create urgency by showing that spots are already filling up"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The beta cohort (5-10 trusted contacts at 50-75% off) serves two critical purposes: gathering honest feedback to improve the community experience before the public sees it, and generating real testimonials and member wins that become your launch marketing material."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, why does the playbook recommend starting with TWO tiers (free + paid) instead of three at launch?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Three tiers are too expensive to set up on most platforms"
+                },
+                {
+                    "id": "b",
+                    "text": "You do not yet have enough data to know what members value most, so starting with two lets you observe behavior before splitting tiers"
+                },
+                {
+                    "id": "c",
+                    "text": "Free members will not understand the difference between three paid tiers"
+                },
+                {
+                    "id": "d",
+                    "text": "Two tiers generate more total revenue than three tiers"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "At launch, you do not have enough member data to know what your audience values most highly. Starting with two tiers (free and paid) lets you observe member behavior, gather feedback, and understand willingness to pay before adding a premium tier. After 90 days of data, you can make an informed decision about splitting your paid tier."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "At the 90-day mark, what is the key question that determines whether your community business model is working?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Whether you have recovered your platform investment costs"
+                },
+                {
+                    "id": "b",
+                    "text": "Whether your content library has more than 50 resources"
+                },
+                {
+                    "id": "c",
+                    "text": "Whether the community is growing organically -- adding 5+ members per week through referrals and organic content"
+                },
+                {
+                    "id": "d",
+                    "text": "Whether you have hired a community manager"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "If you are adding 5+ members per week through referrals, organic content, and platform discovery at the 90-day mark, the business is working -- your value proposition resonates and members are enthusiastic enough to spread the word. If you still rely on manual outreach for every new member, you need to revisit your value proposition and engagement strategy."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write your founding member outreach message -- the personal email or DM you would send to your top 10 prospects to invite them as founding members of your community. Include: who the community is for, what they will get, the founding member benefit, and a specific call to action. Then list the names (or descriptions) of 10 specific people you would send this to.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has written a compelling, personal outreach message that clearly communicates the community's value proposition, founding member benefits, and a specific call to action. The message should feel personal and genuine, not like a mass marketing template. Check that they have identified 10 specific people (by name or clear description) and that these people represent their target audience. If the message sounds too salesy or too vague, suggest specific improvements."
+        }
+    ]
+}

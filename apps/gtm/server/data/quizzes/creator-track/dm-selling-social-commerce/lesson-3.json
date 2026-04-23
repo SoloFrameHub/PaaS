@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "Messenger Selling Scripts",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the 5-Message DM Sales Framework, what is the primary function of Message 2 (Acknowledge and Diagnose)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To present your offer and state the price"
+                },
+                {
+                    "id": "b",
+                    "text": "To validate the prospect's situation by restating their problem and then dig one level deeper with a follow-up question"
+                },
+                {
+                    "id": "c",
+                    "text": "To send a voice message introducing yourself"
+                },
+                {
+                    "id": "d",
+                    "text": "To share a testimonial from a previous client"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Message 2 serves two purposes: first, restating their problem to show you actually read their message (which most sellers skip), and second, asking a deeper follow-up question to understand their urgency and what they have already tried. The person who asks the questions controls the conversation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why should you keep voice messages under 60 seconds when DM selling?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because Instagram and Facebook limit voice messages to 60 seconds"
+                },
+                {
+                    "id": "b",
+                    "text": "Because anything longer feels like a monologue rather than a conversational exchange, and shorter messages feel more authentic"
+                },
+                {
+                    "id": "c",
+                    "text": "Because voice messages over 60 seconds are automatically deleted by the platform"
+                },
+                {
+                    "id": "d",
+                    "text": "Because longer voice messages use more mobile data"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Voice messages work because they feel personal and conversational. When they exceed 60 seconds, they shift from feeling like a friendly exchange to feeling like an unsolicited monologue. The goal is to sound like a friend sharing quick advice, not a lecturer delivering a presentation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When a prospect in your DMs says 'I need to think about it,' what is the recommended approach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send them the payment link immediately with a deadline to create urgency"
+                },
+                {
+                    "id": "b",
+                    "text": "Respect their timing, offer a specific detail that addresses their likely hesitation, and set a follow-up date"
+                },
+                {
+                    "id": "c",
+                    "text": "Stop responding and wait for them to come back on their own"
+                },
+                {
+                    "id": "d",
+                    "text": "Offer a steep discount to close the deal before they leave"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson teaches a specific script for this situation: acknowledge their need for time, share one additional detail or bonus that addresses their likely hesitation, and agree on a specific follow-up date. This respects their autonomy while keeping the conversation alive. Pressuring or discounting destroys trust."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write your personalized Message 3 (Share Insight and Qualify) for the 5-Message Framework. What is the specific diagnosis or counterintuitive insight you can share that demonstrates your expertise to a prospect? How would you phrase the qualifying question that naturally transitions toward presenting your offer?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner's Message 3 follows the framework structure: a specific diagnosis of the prospect's situation, a counterintuitive insight that demonstrates expertise, and a permission-asking question that transitions toward the offer. The insight should be genuine and specific to their niche, not generic advice. Check that the qualifying question feels natural rather than salesy."
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the HALT check help you assess before reacting to anger?",
+            "options": [
+                { "id": "opt1", "text": "Whether you should Hesitate, Acknowledge, Listen, and Talk" },
+                { "id": "opt2", "text": "Whether you are Hungry, Angry (already), Lonely, or Tired — factors that lower your anger threshold" },
+                { "id": "opt3", "text": "Whether the other person is being Hostile, Aggressive, Loud, or Threatening" },
+                { "id": "opt4", "text": "Whether you should stop all communication permanently" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The HALT check is a quick daily practice: before reacting to anger, ask if you're Hungry, Angry (already about something else), Lonely, or Tired. If any of these are true, your anger threshold is lower than normal and you're more reactive, which you should factor in before responding."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the correct sequence of the escalation chain?",
+            "options": [
+                { "id": "opt1", "text": "Behavior, urge, trigger, interpretation, aftermath" },
+                { "id": "opt2", "text": "Trigger, interpretation, physiological arousal, urge, behavior, aftermath" },
+                { "id": "opt3", "text": "Arousal, trigger, behavior, urge, interpretation" },
+                { "id": "opt4", "text": "Interpretation, trigger, aftermath, behavior, arousal" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The escalation chain follows a specific sequence: a trigger occurs, your brain assigns an interpretation ('They're disrespecting me'), physiological arousal activates (heart rate, muscle tension), you feel an urge to act, you choose a behavior, and then you deal with the aftermath. Intervention is possible at multiple points in this chain."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why are internal triggers (like fatigue or stress) important to recognize?",
+            "options": [
+                { "id": "opt1", "text": "Because they are the only real triggers for anger" },
+                { "id": "opt2", "text": "Because they dramatically lower your threshold for anger, making the same external event trigger a much stronger reaction" },
+                { "id": "opt3", "text": "Because internal triggers are more dangerous than external ones" },
+                { "id": "opt4", "text": "Because they can only be addressed with medication" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Internal triggers like fatigue, hunger, pain, stress, and emotional depletion dramatically lower your anger threshold. The same external event — like a partner asking for help — can trigger very different reactions depending on your internal state. When you're well-rested and connected, you handle frustrations much more easily."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a physical early warning sign of anger?",
+            "options": [
+                { "id": "opt1", "text": "Feeling relaxed and calm" },
+                { "id": "opt2", "text": "Decreased heart rate" },
+                { "id": "opt3", "text": "Jaw clenching, fists tightening, and heat rising in your face" },
+                { "id": "opt4", "text": "Feeling sleepy and unfocused" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Your body starts reacting before your conscious mind fully registers anger. Physical warning signs include jaw clenching, fists tightening, heat rising in the face or chest, heart beating faster, muscle tension in shoulders and neck, and stomach tightening. Learning to read these signals is your early warning system for catching anger at a 3-4 instead of a 7-8."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is the interpretation step so important in the escalation chain?",
+            "options": [
+                { "id": "opt1", "text": "Because interpretations are always accurate reflections of reality" },
+                { "id": "opt2", "text": "Because your interpretation — not the event itself — determines how angry you get" },
+                { "id": "opt3", "text": "Because you should always interpret events in the most negative way possible" },
+                { "id": "opt4", "text": "Because interpretations only matter for mild anger, not intense anger" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your brain immediately assigns meaning to events: 'They're disrespecting me,' 'This shouldn't be happening,' 'They did this on purpose.' This interpretation — not the event itself — determines how angry you get. Considering a different explanation between the trigger and your interpretation is one of the key intervention points in the escalation chain."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "anger-management",
+    "lessonId": "2",
+    "title": "Your Anger Patterns: Triggers, Warning Signs, and Escalation - Quiz"
+}

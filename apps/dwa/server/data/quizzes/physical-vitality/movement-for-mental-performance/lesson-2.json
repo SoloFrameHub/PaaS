@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for exercise as an intervention for depression, and what are the key studies?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Weak evidence from only a few small studies"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG evidence from the 2024 BMJ meta-analysis (218 RCTs, 14,170 participants) and 2026 Cochrane review (73 RCTs, ~5,000 adults)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "No scientific evidence exists"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Evidence only supports exercise for anxiety, not depression"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Depression has STRONG evidence from two major reviews: the 2024 BMJ meta-analysis covering 218 RCTs with 14,170 participants, and the 2026 Cochrane review examining 73 RCTs with ~5,000 adults. Both found moderate-to-large effect sizes (SMD = −0.62 to −0.97) for exercise in reducing depressive symptoms."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which exercise modalities showed the strongest effects for depression in the BMJ 2024 meta-analysis?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only high-intensity interval training (HIIT) works"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Walking/jogging (g = −0.62), yoga (g = −0.55), and strength training (g = −0.49) all showed moderate-to-large effects"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Swimming is the only effective modality"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No specific modality showed any effect"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The BMJ 2024 analysis found walking/jogging (Hedges' g = −0.62), yoga (g = −0.55), strength training (g = −0.49), mixed aerobic exercise (g = −0.43), and tai chi/qigong (g = −0.42) all produced moderate reductions in depression. Yoga and strength training had the best tolerability profiles."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the minimum effective dose and optimal dose of exercise for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "5 minutes once a week"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Minimum: ~320 MET-min/week; Optimal: ~860 MET-min/week (which aligns with WHO guidelines of 150-300 min/week moderate intensity)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "You must exercise 2+ hours every day"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Any amount of exercise is equally effective"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows a dose-response relationship: the minimum clinically meaningful dose is approximately 320 MET-min/week, with optimal results around 860 MET-min/week. This aligns with WHO recommendations of 150-300 minutes per week of moderate-intensity activity. The relationship is U-shaped — more isn't always better."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When is exercise NOT sufficient as a standalone treatment for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise is always sufficient for any level of depression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise is NOT sufficient for severe depression, active suicidality, or significant functional impairment (inability to work/care for self) — these require professional treatment"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise never works for depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise only works if combined with medication in all cases"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise is explicitly NOT recommended as sole treatment for severe depression per RACGP HANDI clinical guidelines. Severe symptoms (suicidal ideation, inability to function, severe anhedonia) require psychiatric evaluation and professional treatment. Exercise can be part of the treatment plan, but not the only intervention."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the most consistently evidence-supported exercise protocol for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Solo running 7 days a week"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Supervised group exercise, 30-40 minutes, 3 times per week, for a minimum of 9-12 weeks"
+                },
+                {
+                    "id": "opt3",
+                    "text": "5 minutes of stretching daily"
+                },
+                {
+                    "id": "opt4",
+                    "text": "High-intensity training every other day"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The most consistently supported protocol is supervised group exercise, 30-40 minutes, 3 times per week, for a minimum of 9-12 weeks. Supervised group format provides both structure and social support, which are independent predictors of better outcomes. Solo exercise works too, but group settings show stronger adherence and effects."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "2",
+    "title": "Depression and the Movement Prescription - Quiz"
+}

@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "5",
+    "lessonTitle": "Entity Authority and E-E-A-T",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is an 'Entity' in the context of modern search and AI?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A specific keyword you want to rank for."
+                },
+                {
+                    "id": "b",
+                    "text": "A uniquely identifiable person, organization, or thing that the machine can track across the web."
+                },
+                {
+                    "id": "c",
+                    "text": "A type of computer virus."
+                },
+                {
+                    "id": "d",
+                    "text": "A ghostwriter who writes your blog posts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Search engines have moved from matching strings (keywords) to identifying things (entities). Building 'Entity Authority' means making sure the machine knows exactly who you are and why you are a trusted source.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the E-E-A-T letters is considered the most critical for overall search quality and safety?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Experience"
+                },
+                {
+                    "id": "b",
+                    "text": "Expertise"
+                },
+                {
+                    "id": "c",
+                    "text": "Authoritativeness"
+                },
+                {
+                    "id": "d",
+                    "text": "Trustworthiness"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "While all factors are important, Trustworthiness is the ceiling. If a site is not trusted (due to security issues, lacks of transparency, or misleading info), high expertise or experience will not save its rankings.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does a solo founder build 'Topical Authority' effectively?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By writing 100 short posts about 100 different topics."
+                },
+                {
+                    "id": "b",
+                    "text": "By writing a 'Cluster' of deep, interrelated content (20+ articles) that covers every angle of a specific niche topic."
+                },
+                {
+                    "id": "c",
+                    "text": "By buying backlinks from news websites."
+                },
+                {
+                    "id": "d",
+                    "text": "By changing their name to match a popular keyword."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Topical Authority is earned through depth. When an AI sees that you have covered a specific problem from every possible angle, it identifies your site as the definitive source for that entity.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'Disambiguation' and why is it important for your personal brand?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It means excluding competitors from your search results."
+                },
+                {
+                    "id": "b",
+                    "text": "It is the process of ensuring that your name and identity are consistent across the web so AI models don't confuse you with others."
+                },
+                {
+                    "id": "c",
+                    "text": "It is a technical way to hide your location from Google."
+                },
+                {
+                    "id": "d",
+                    "text": "It means using complex language to sound more intelligent."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If your identity is fragmented across different names or handles, AI assistants might fail to give you credit for all your contributions. Consistency helps the machine build a complete profile of your 'Entity.'",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "A solo founder shares a detailed story of a major mistake they made and how they fixed it. Which part of E-E-A-T does this primarily build?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Experience (First-hand, personal proof)"
+                },
+                {
+                    "id": "b",
+                    "text": "Authoritativeness (Being the go-to source)"
+                },
+                {
+                    "id": "c",
+                    "text": "Disambiguation"
+                },
+                {
+                    "id": "d",
+                    "text": "Schema Markup"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "First-hand 'Experience' is the newest part of E-E-A-T. AI models prioritize content that shows the writer actually 'did the work' rather than just summarizing it. Sharing mistakes is a high-signal indicator of experience.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your primary acquisition channel (e.g., your blog or LinkedIn). If I were to remove your name and logo, would a reader still know this content came from a genuine practitioner in your niche? What 'Experience' or 'Expertise' signals could you add to your next 3 posts to make your 'Entity' undeniable?",
+            "promptHints": [
+                "Include more specific data or metrics.",
+                "Reference a recent client conversation or problem.",
+                "Share a specific decision and the 'Why' behind it."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "4"
+        ],
+        "unlocks": [
+            "6"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Entity Authority and E-E-A-T - Quiz"
+}

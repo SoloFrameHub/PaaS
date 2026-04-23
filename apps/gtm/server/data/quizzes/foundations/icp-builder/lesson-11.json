@@ -1,0 +1,141 @@
+{
+    "lessonId": "11",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "The 'Why Now' - Creating Urgency & The Cost of Inaction",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Nice to Have' trap?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When your product is too nice."
+                },
+                {
+                    "id": "b",
+                    "text": "When the prospect agrees you solve a problem, but doesn't solve it *today*. They delay indefinitely."
+                },
+                {
+                    "id": "c",
+                    "text": "When you have too many features."
+                },
+                {
+                    "id": "d",
+                    "text": "When the customer is polite."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a problem isn't burning (Urgent), prospects will prioritize other things. You must move from Nice to Have to Must Have."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a 'Compelling Event'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A really good story."
+                },
+                {
+                    "id": "b",
+                    "text": "A specific date on the calendar that forces a decision (e.g., Regulatory Deadline, Contract Renewal)."
+                },
+                {
+                    "id": "c",
+                    "text": "Your product launch."
+                },
+                {
+                    "id": "d",
+                    "text": "Lunch time."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Compelling events are external deadlines. If the date passes without action, there is a consequence."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do you calculate 'Cost of Inaction' (COI)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ask them how much money they have."
+                },
+                {
+                    "id": "b",
+                    "text": "Quantify the waste: (Hours blocked x Hourly Rate) + Lost Revenue per month."
+                },
+                {
+                    "id": "c",
+                    "text": "Guess a big number."
+                },
+                {
+                    "id": "d",
+                    "text": "Use a random number generator."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "COI puts a price tag on doing nothing. 'Every month you wait costs you $5,000 in manual labor.'"
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which psychological driver is stronger in sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hope of Gain (Making money)."
+                },
+                {
+                    "id": "b",
+                    "text": "Fear of Loss (Losing money/status)."
+                },
+                {
+                    "id": "c",
+                    "text": "Desire for friendship."
+                },
+                {
+                    "id": "d",
+                    "text": "Curiosity."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Humans are risk-averse. We fight harder to keep $100 than to make $100. Frame the problem as 'Losing Market Share' rather than 'Gaining Efficiency'."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If a prospect says 'Let's revisit this in 6 months,' what have you failed to establish?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Urgency."
+                },
+                {
+                    "id": "b",
+                    "text": "Pricing."
+                },
+                {
+                    "id": "c",
+                    "text": "Friendship."
+                },
+                {
+                    "id": "d",
+                    "text": "Your website URL."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "A 6-month delay means the pain isn't bad enough right now. You failed to prove that waiting is expensive."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "What is your Cost of Inaction (COI) messaging? Describe the specific pain your prospects experience by NOT solving the problem your product addresses.",
+            "minLength": 100,
+            "promptForAI": "Assess the COI messaging. Check for: (1) quantified costs, (2) emotional impact, (3) urgency creation. Suggest ways to strengthen the cost of inaction argument."
+        }
+    ]
+}

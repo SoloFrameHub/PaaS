@@ -1,0 +1,134 @@
+{
+    "lessonId": "1",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "Escaping the Presentation Trap",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Presentation Trap' (or 'Premature Offer Trap')?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using a slide deck that is too long"
+                },
+                {
+                    "id": "b",
+                    "text": "Showing features before understanding the prospect's desired outcomes"
+                },
+                {
+                    "id": "c",
+                    "text": "Forgetting to share your screen on Zoom"
+                },
+                {
+                    "id": "d",
+                    "text": "Charging too little for your product"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Presentation Trap occurs when founders focus on 'how' the product works (features) rather than the 'destination' (business outcomes). This forces the prospect to do the hard work of translating tech into value."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is a 'Feature Dump' comparable to in the technical world?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A clean, intuitive UI"
+                },
+                {
+                    "id": "b",
+                    "text": "Handing a non-technical user a full Swagger/API documentation"
+                },
+                {
+                    "id": "c",
+                    "text": "A well-written README file"
+                },
+                {
+                    "id": "d",
+                    "text": "A bug-free production release"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A feature dump is technically accurate but practically useless to a buyer who just wants to solve a problem. It provides too much 'under-the-hood' detail without enough context on ROI."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of the 'So What?' Filter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find bugs in your code"
+                },
+                {
+                    "id": "b",
+                    "text": "To ensure every feature you show maps directly to a business outcome or emotional benefit"
+                },
+                {
+                    "id": "c",
+                    "text": "To check if your product is compatible with other software"
+                },
+                {
+                    "id": "d",
+                    "text": "To make the demo longer and more impressive"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a feature doesn't have a strong 'So What?' (a reason the prospect should care about their own time/money), it should be removed from the demo to maintain focus on value."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the main difference between a 'Tour Guide' and a 'Value Architect'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Tour Guide has a better camera"
+                },
+                {
+                    "id": "b",
+                    "text": "The Value Architect focuses on the 'Compelling Event' and skips irrelevant features"
+                },
+                {
+                    "id": "c",
+                    "text": "The Tour Guide shows more technical architecture"
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; they are both sales roles"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Tour Guide follows a rigid, linear path through the product. The Value Architect tailors the demo to solve the specific 'pain' uncovered in discovery, value-mapping the experience."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why should the feature with the highest 'Emotional Impact' be showed first?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's usually the most expensive"
+                },
+                {
+                    "id": "b",
+                    "text": "To hook the prospect's attention immediately and prove the 'Why' before the 'How'"
+                },
+                {
+                    "id": "c",
+                    "text": "To get the hardest part of the demo out of the way"
+                },
+                {
+                    "id": "d",
+                    "text": "Because it's the newest feature in the product"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Showing the 'Wow' moment first earns you the right to show the necessary but 'boring' parts of the product later. It anchors the demo in high value from the start."
+        }
+    ],
+    "passingScore": 70
+}

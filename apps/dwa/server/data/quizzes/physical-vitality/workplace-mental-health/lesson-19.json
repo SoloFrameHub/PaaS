@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the highest-risk job profile in the JD-R model?",
+            "options": [
+                {"id": "opt1", "text": "High demands + high resources (active job)"},
+                {"id": "opt2", "text": "High demands + low resources (stretched without support)"},
+                {"id": "opt3", "text": "Low demands + high resources (supported but under-challenged)"},
+                {"id": "opt4", "text": "All job profiles have equal risk"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "High demands + low resources is the highest-risk profile for burnout. You're stretched by excessive workload or pressure without adequate autonomy, support, feedback, or other resources to cope. This requires immediate attention: either resource addition (organizational), demand reduction (organizational), or exit."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When assessing your workplace, which factors indicate low Psychosocial Safety Climate (PSC)?",
+            "options": [
+                {"id": "opt1", "text": "Organization genuinely prioritizes mental health through policy, resources, and accountability"},
+                {"id": "opt2", "text": "Organization frames mental health as individual responsibility, punishes boundaries, tolerates toxic leadership, or ignores structural stressors"},
+                {"id": "opt3", "text": "PSC doesn't affect mental health"},
+                {"id": "opt4", "text": "All organizations have high PSC"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Low PSC indicators: organization frames mental health as individual responsibility (offers wellness programs but ignores understaffing), punishes employees who raise wellbeing concerns, tolerates toxic leadership or harassment, expects chronic overwork as cultural norm. Low PSC is a deal-breaker — individual coping won't make this sustainable long-term."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you consider workplace exit as the most protective response?",
+            "options": [
+                {"id": "opt1", "text": "Never — you should always try to make it work"},
+                {"id": "opt2", "text": "When: severe burnout/mental health impact, harassment with no organizational response, structural unsustainability (chronic understaffing), or when you've advocated/escalated and nothing changes"},
+                {"id": "opt3", "text": "After the first stressful day"},
+                {"id": "opt4", "text": "Exit is never an appropriate response"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exit is appropriate when: experiencing severe burnout or mental health symptoms, harassment/bullying with inadequate organizational response, structural unsustainability (chronic understaffing with no plan to fix it), or when you've advocated, escalated through appropriate channels, and the organization is dismissive or retaliatory. Recognizing when exit is protective prevents prolonged harm."
+        },
+        {
+            "id": "q4",
+            "type": "reflection",
+            "question": "Based on your self-assessment, what is ONE individual action you'll take this week, ONE advocacy/escalation step if appropriate, and your decision criteria: What would need to change for you to stay long-term? What would signal it's time to exit?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "19",
+    "title": "Building Your Workplace Mental Health Assessment - Quiz"
+}

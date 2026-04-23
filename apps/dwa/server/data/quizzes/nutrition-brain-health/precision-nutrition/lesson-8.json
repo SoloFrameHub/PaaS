@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2025 meta-analysis of 20 RCTs find regarding vitamin D supplementation and depression?",
+            "options": [
+                { "id": "opt1", "text": "No significant effect was found" },
+                { "id": "opt2", "text": "A significant reduction in depressive symptoms with SMD = -0.36 and p < 0.00001" },
+                { "id": "opt3", "text": "Vitamin D only helped people under age 30" },
+                { "id": "opt4", "text": "Vitamin D worsened depressive symptoms in most participants" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2025 meta-analysis of 20 RCTs found a small-to-moderate but highly significant effect: SMD = -0.36 with p < 0.00001. The effect was moderated by baseline vitamin D status, dose (2000+ IU/day more effective), and duration (8+ weeks). This is the most definitive evidence to date."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What was the paradoxical finding in the 2023 vitamin D meta-analysis?",
+            "options": [
+                { "id": "opt1", "text": "Vitamin D supplementation caused anxiety in all participants" },
+                { "id": "opt2", "text": "Only vitamin D2 was effective, not D3" },
+                { "id": "opt3", "text": "Participants with adequate baseline vitamin D levels showed a stronger antidepressant response than those with deficient levels" },
+                { "id": "opt4", "text": "Men responded to vitamin D supplementation but women did not" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 2023 meta-analysis found that participants with adequate baseline vitamin D (>50 nmol/L) showed a paradoxically stronger antidepressant response to supplementation than those with deficient levels. This may be because those starting from adequate levels reach the optimal therapeutic range (75-100 nmol/L) more quickly, or because chronic deficiency downregulates vitamin D receptors."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should vitamin K2 (MK-7) be co-supplemented with high-dose vitamin D?",
+            "options": [
+                { "id": "opt1", "text": "K2 increases the absorption of vitamin D in the gut" },
+                { "id": "opt2", "text": "K2 activates proteins that direct calcium to bones and prevent arterial calcification, since vitamin D increases calcium absorption" },
+                { "id": "opt3", "text": "K2 prevents vitamin D from being converted to its active form too quickly" },
+                { "id": "opt4", "text": "K2 is required to prevent vitamin D from causing skin rashes" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Vitamin D increases calcium absorption from the gut. K2 activates two proteins — osteocalcin (directs calcium to bone) and matrix Gla-protein (prevents arterial calcification) — that ensure calcium goes where it is needed. Without K2, increased calcium from vitamin D can deposit in arteries and soft tissues."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the optimal serum 25(OH)D range for mental health, according to the lesson?",
+            "options": [
+                { "id": "opt1", "text": "30-50 nmol/L (12-20 ng/mL)" },
+                { "id": "opt2", "text": "50-75 nmol/L (20-30 ng/mL)" },
+                { "id": "opt3", "text": "75-100 nmol/L (30-40 ng/mL)" },
+                { "id": "opt4", "text": "150-200 nmol/L (60-80 ng/mL)" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The optimal range for mental health is 75-100 nmol/L (30-40 ng/mL). Below 50 nmol/L is considered deficiency, while 50-75 nmol/L is insufficiency. Above 150 nmol/L is potentially excessive, and above 375 nmol/L carries toxicity risk."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is magnesium considered essential for vitamin D supplementation to be effective?",
+            "options": [
+                { "id": "opt1", "text": "Magnesium prevents vitamin D from being excreted too quickly" },
+                { "id": "opt2", "text": "Magnesium is required for the conversion of vitamin D3 through its metabolic pathway to the active form, 1,25(OH)2D" },
+                { "id": "opt3", "text": "Magnesium makes vitamin D taste better when taken as a supplement" },
+                { "id": "opt4", "text": "Magnesium and vitamin D must always be taken at exactly the same time" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The pathway from supplemental vitamin D3 to 25(OH)D to 1,25(OH)2D (the active form) requires adequate magnesium. Without addressing magnesium, vitamin D supplementation may produce suboptimal metabolite conversion. This is one reason the 2023 paradoxical finding may have occurred — magnesium deficiency frequently co-occurs with vitamin D deficiency."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "8",
+    "title": "Vitamin D: Testing, Supplementation, and Mental Health - Quiz"
+}

@@ -1,0 +1,153 @@
+{
+    "lessonId": "4",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 4: Marketing Automation Basics",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Trigger' in a marketing automation workflow?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The email that is sent to the customer."
+                },
+                {
+                    "id": "b",
+                    "text": "The event that starts the entire workflow."
+                },
+                {
+                    "id": "c",
+                    "text": "The delay between two emails."
+                },
+                {
+                    "id": "d",
+                    "text": "The button the founder clicks to stop the system."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A trigger is the 'When X happens' part of an automation—the event that signifies a workflow should begin."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of the following is an example of an 'Action' in an automation sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A user visiting the pricing page."
+                },
+                {
+                    "id": "b",
+                    "text": "A subscriber opening an email."
+                },
+                {
+                    "id": "c",
+                    "text": "Sending a Slack notification to the founder."
+                },
+                {
+                    "id": "d",
+                    "text": "A lead score reaching a threshold of 50."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Actions are what the system actually *does* (e.g., sending an email, adding a tag, or sending a notification) in response to a trigger."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "What is the primary benefit of using 'Conditional Logic' (If/Then branches) in your automation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes the automation run faster."
+                },
+                {
+                    "id": "b",
+                    "text": "It ensures everyone receives exactly the same experience to maintain brand consistency."
+                },
+                {
+                    "id": "c",
+                    "text": "It allows you to personlize the experience based on user behavior without manual work."
+                },
+                {
+                    "id": "d",
+                    "text": "It reduces the cost of the automation tool."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Conditional logic allows you to branch workflows so that engaged leads get different content than unengaged leads, enabling personalization at scale."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "In an 'Engagement Re-activator' workflow, what is the typical trigger?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A new email subscription."
+                },
+                {
+                    "id": "b",
+                    "text": "No email opens for a specified period (e.g., 60-90 days)."
+                },
+                {
+                    "id": "c",
+                    "text": "A purchase completion."
+                },
+                {
+                    "id": "d",
+                    "text": "A visit to the pricing page."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Re-activation workflows target dormant subscribers who haven't engaged recently, trying to bring them back or clean them from the list."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Why does the lesson recommend placing your automation 'brain' where your data lives?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To save on monthly subscription costs."
+                },
+                {
+                    "id": "b",
+                    "text": "To avoid complex 'glue' tools like Zapier for basic functions and reduce failure points."
+                },
+                {
+                    "id": "c",
+                    "text": "Because most tools don't allow external integrations."
+                },
+                {
+                    "id": "d",
+                    "text": "To ensure the AI coach can't access your data."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Using native automation within your CRM or email tool is generally more reliable and easier to manage than chaining multiple external tools for simple tasks."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft the logic for one 'If/Then' branch in your welcome sequence. What behavior will trigger the branch (e.g., clicking a specific case study)? What will the 'Yes' path do? What will the 'No' path do? How does this branch help qualify the lead?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's branching logic. Ensure the 'Yes' and 'No' actions are logically distinct and serve a qualification purpose. Suggest one 'Action' they could automate on the 'Yes' path to notify themselves of a high-interest lead."
+        }
+    ]
+}

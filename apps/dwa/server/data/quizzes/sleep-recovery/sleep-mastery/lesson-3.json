@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What brain network activates at bedtime, causing worries to feel louder in a quiet, dark room?",
+            "options": [
+                { "id": "opt1", "text": "The sympathetic nervous system" },
+                { "id": "opt2", "text": "The default mode network (DMN)" },
+                { "id": "opt3", "text": "The reticular activating system" },
+                { "id": "opt4", "text": "The prefrontal cortex" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The default mode network (DMN) activates when you are not focused on the external world. It specializes in self-referential thinking, planning, and rumination -- which is why worries feel louder at bedtime."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the three steps of the '3 C's' technique for managing racing thoughts?",
+            "options": [
+                { "id": "opt1", "text": "Count, Control, Calm" },
+                { "id": "opt2", "text": "Catch, Check, Change the Channel" },
+                { "id": "opt3", "text": "Close, Center, Clear" },
+                { "id": "opt4", "text": "Contain, Challenge, Choose" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 3 C's are: Catch the thought (notice it without judgment), Check the thought (ask if it is helpful right now), and Change the Channel (redirect attention to something calming)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does Scheduled Worry Time help with nighttime anxiety?",
+            "options": [
+                { "id": "opt1", "text": "It suppresses worries completely" },
+                { "id": "opt2", "text": "It gives worries a designated appointment earlier in the day so the brain can let go at night" },
+                { "id": "opt3", "text": "It trains you to never worry again" },
+                { "id": "opt4", "text": "It replaces worries with positive thoughts" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Scheduled Worry Time works by giving your worries a designated appointment earlier in the day. At bedtime, you can remind yourself the worry will be handled at the next scheduled time, giving your brain permission to let go."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does Progressive Muscle Relaxation (PMR) help quiet racing thoughts?",
+            "options": [
+                { "id": "opt1", "text": "It tires out the muscles so the body falls asleep faster" },
+                { "id": "opt2", "text": "It activates the parasympathetic nervous system and gives the brain a non-threatening focus" },
+                { "id": "opt3", "text": "It raises heart rate to burn off nervous energy" },
+                { "id": "opt4", "text": "It blocks the default mode network entirely" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "PMR works on two levels: physically, it activates the parasympathetic nervous system (rest and digest mode); mentally, focusing on each muscle group gives the brain something specific and non-threatening to attend to, displacing anxious thinking."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does the Cognitive Shuffle technique help with sleep?",
+            "options": [
+                { "id": "opt1", "text": "It forces the brain to solve complex puzzles" },
+                { "id": "opt2", "text": "It occupies the mind with random, unconnected imagery, signaling there is nothing important to process" },
+                { "id": "opt3", "text": "It increases melatonin production" },
+                { "id": "opt4", "text": "It activates the sympathetic nervous system" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Cognitive Shuffle occupies the mind with random, unconnected imagery (like visualizing words starting with a letter). Because the images are meaningless, the brain signals that nothing important is happening and eventually loses interest, allowing sleep to come."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "3",
+    "title": "Quieting the Racing Mind - Quiz"
+}

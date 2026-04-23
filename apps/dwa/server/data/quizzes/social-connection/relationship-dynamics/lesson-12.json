@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "When are communication skills CONTRAINDICATED (inappropriate and potentially dangerous)?",
+      "options": [
+        {"id": "opt1", "text": "In all relationships — communication skills are always helpful"},
+        {"id": "opt2", "text": "When there is intimate partner violence or coercive control — skills can be weaponized by abusers and delay safety action"},
+        {"id": "opt3", "text": "Only in relationships lasting less than 6 months"},
+        {"id": "opt4", "text": "Communication skills are never dangerous"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Communication skills are CONTRAINDICATED in IPV/coercive control contexts. Abusers can weaponize communication language ('I feel disrespected when you see friends' to justify isolation), teaching 'better communication' blames victims for abuse, and focusing on skills delays appropriate safety action. The lesson explicitly distinguishes healthy conflict (mutual safety, ability to disagree without fear) from coercive control (systematic patterns of power, surveillance, intimidation). If control/fear is present, contact National DV Hotline: 1-800-799-7233."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What did meta-analysis find about communication skills over time?",
+      "options": [
+        {"id": "opt1", "text": "Skills remain perfectly stable forever once learned"},
+        {"id": "opt2", "text": "Communication gains deteriorated substantially by follow-up without sustained practice — skills fade without ongoing use"},
+        {"id": "opt3", "text": "Skills never work at all"},
+        {"id": "opt4", "text": "One-time learning is sufficient for permanent change"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Meta-analysis of Couple Communication Program (16 studies) found critical limitation: communication gains deteriorated substantially by follow-up. Skills fade without sustained practice and environmental reinforcement (both partners practicing). One-time learning is insufficient. Government-funded meta-analysis found small effect sizes (d=0.114), indicating skills help but are not magic bullets. Maintenance requires ongoing intentional practice."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What can communication skills do vs. what they cannot do?",
+      "options": [
+        {"id": "opt1", "text": "Skills solve all relationship problems including fundamental incompatibility and abuse"},
+        {"id": "opt2", "text": "Skills improve communication process (reduce escalation, increase clarity) but cannot fix fundamental incompatibility, abuse, or untreated mental illness"},
+        {"id": "opt3", "text": "Skills are completely useless in all contexts"},
+        {"id": "opt4", "text": "Skills only work in relationships shorter than 2 years"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Communication skills improve PROCESS (reduce escalation, increase clarity, create structure) and show small-to-moderate effect sizes for satisfaction. BUT: they don't strongly predict long-term satisfaction (compatibility, values, attachment matter as much), cannot fix fundamental incompatibility (differing life goals), cannot address abuse/coercive control (assumes good faith), and cannot substitute for mental health treatment. Skills are appropriate when miscommunication is PRIMARY issue in safe, compatible relationship."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the difference between healthy conflict and coercive control?",
+      "options": [
+        {"id": "opt1", "text": "There is no difference — all conflict is abuse"},
+        {"id": "opt2", "text": "Healthy conflict = mutual safety, ability to disagree without fear, repair possible; Coercive control = systematic power/surveillance/intimidation, fear of consequences, inability to exit safely"},
+        {"id": "opt3", "text": "Healthy conflict means never disagreeing"},
+        {"id": "opt4", "text": "Coercive control only involves physical violence"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The lesson provides explicit safety distinction: Healthy conflict involves mutual safety (both can disagree without fear), both can express needs, both can leave conversation/relationship, conflict is about specific issues, and repair/reconnection is possible. Coercive control involves one partner controlling what other can say/think/do, expressing needs triggers intimidation/punishment, one partner prevents exit, control is systematic pattern across all life domains, and fear/walking on eggshells persists. If coercive control is present, safety planning (not communication skills) is needed."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What does research show about communication skills and long-term relationship success?",
+      "options": [
+        {"id": "opt1", "text": "Communication skills alone guarantee relationship success"},
+        {"id": "opt2", "text": "Skills improve process but don't strongly predict long-term satisfaction — compatibility, values alignment, and attachment security matter as much or more"},
+        {"id": "opt3", "text": "Communication has no relationship to satisfaction"},
+        {"id": "opt4", "text": "Only communication matters — compatibility is irrelevant"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Longitudinal research (Lavner et al.) shows communication skills improve how relationships function (process) but don't strongly predict long-term satisfaction or longevity. Compatibility, values alignment, attachment security, and life stress management matter just as much. Communication is necessary but not sufficient. Government-funded meta-analysis found small effect sizes (d=0.114), indicating modest population-level benefits. Skills help but are not magic bullets."
+    }
+  ],
+  "sectionId": "social-connection",
+  "courseId": "relationship-dynamics",
+  "lessonId": "12",
+  "title": "Communication Skills That Work (and Their Limits) - Quiz"
+}

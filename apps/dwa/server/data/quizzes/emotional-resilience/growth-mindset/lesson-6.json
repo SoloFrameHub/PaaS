@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core distinction between mastery goals and performance goals in achievement goal theory?",
+            "options": [
+                {"id": "opt1", "text": "Mastery goals are for students; performance goals are for professionals"},
+                {"id": "opt2", "text": "Mastery goals focus on developing competence and improvement; performance goals focus on demonstrating competence and outperforming others"},
+                {"id": "opt3", "text": "Mastery goals are about effort; performance goals are about natural talent"},
+                {"id": "opt4", "text": "There is no meaningful distinction—they predict identical outcomes"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Achievement goal theory (40+ years evidence) distinguishes mastery/learning orientation (focused on developing competence, intrinsic motivation, personal improvement: 'Am I getting better?') from performance orientation (focused on demonstrating competence, social comparison, proving ability: 'Am I better than others?'). Both can predict short-term achievement, but mastery goals consistently predict better wellbeing, deeper learning, intrinsic motivation, and sustained engagement. Performance goals increase anxiety and make failures catastrophic (threaten your standing)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How do mastery-oriented individuals differ from performance-oriented individuals in their response to errors?",
+            "options": [
+                {"id": "opt1", "text": "Mastery-oriented individuals avoid errors; performance-oriented individuals welcome them"},
+                {"id": "opt2", "text": "Mastery-oriented individuals view errors as valuable learning information; performance-oriented individuals view errors as threats to competence evaluation"},
+                {"id": "opt3", "text": "Both respond identically to errors"},
+                {"id": "opt4", "text": "Performance-oriented individuals learn more from errors"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently shows mastery-oriented individuals view errors as valuable learning data—they process errors deeply for improvement (neuroimaging shows larger error-related brain signals). Performance-oriented individuals view errors as threats to their competence evaluation—errors trigger shame, defensiveness, and hiding mistakes rather than learning from them. This error tolerance is why mastery orientation supports deeper learning and skill development. When errors feel like failures (performance), you avoid challenges that risk exposure; when errors feel like information (mastery), you seek challenges."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to self-determination theory and achievement goal research, which outcome is most consistently associated with mastery goal orientation?",
+            "options": [
+                {"id": "opt1", "text": "Higher test scores in all populations"},
+                {"id": "opt2", "text": "Intrinsic motivation—doing something because it's inherently interesting, not for external rewards"},
+                {"id": "opt3", "text": "Better ability to outcompete peers"},
+                {"id": "opt4", "text": "Lower effort expenditure"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Mastery orientation consistently predicts intrinsic motivation—engagement driven by inherent interest and enjoyment rather than external rewards, evaluation, or social comparison. This is psychologically healthier and more sustainable than extrinsic motivation. When you're mastery-oriented, setbacks don't collapse your motivation (you're learning, not performing). Performance goals make motivation contingent on positive evaluation—if you're not 'winning,' motivation disappears. Intrinsic motivation is one of the most robust findings in 40+ years of achievement goal research and is central to wellbeing."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the relationship between performance-approach goals and anxiety according to the research?",
+            "options": [
+                {"id": "opt1", "text": "Performance goals eliminate anxiety by providing clear benchmarks"},
+                {"id": "opt2", "text": "Performance goals are associated with higher evaluation anxiety and harmful social comparison, even while sometimes predicting short-term achievement"},
+                {"id": "opt3", "text": "Performance goals have no relationship to anxiety"},
+                {"id": "opt4", "text": "Only performance-avoidance goals create anxiety, not performance-approach"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows performance-approach goals (trying to demonstrate superior competence) are associated with higher anxiety and harmful social comparison even while sometimes boosting short-term achievement. Performance orientation creates a zero-sum mindset—someone else's success threatens your standing. It also makes evaluation situations threatening (your worth is on the line). Longitudinal studies show performance orientation predicts higher anxiety in school and workplace settings. Performance-avoidance goals (trying not to look incompetent) are even more strongly linked to anxiety, but approach goals aren't anxiety-free."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify a current goal or challenge in your life. Write down: (1) the performance-oriented question you might ask ('How will I compare to others? Will I look competent?'), (2) the mastery-oriented question you could ask instead ('Am I improving? What am I learning?'), and (3) how shifting from performance to mastery framing might change your engagement with that goal.",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "6",
+    "title": "Learning Orientation and Mastery Goals - Quiz"
+}

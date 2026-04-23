@@ -1,0 +1,172 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "1",
+    "lessonTitle": "LinkedIn as Lead Generation Channel",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Trust Pincer' strategy in the context of LinkedIn lead generation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using automated tools to send 500 messages a day."
+                },
+                {
+                    "id": "b",
+                    "text": "Combining direct outreach/connection with public authority building through content."
+                },
+                {
+                    "id": "c",
+                    "text": "Hiding your profile so only customers can see it."
+                },
+                {
+                    "id": "d",
+                    "text": "Asking friends and family to like your posts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Trust Pincer uses two 'arms': one that reaches out directly to prospective customers and another that builds public trust so they know who you are when you reach out.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is LinkedIn considered a 'Bridge' channel compared to cold email and SEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's cheaper than paying for a website."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it allows you to scale your personality like social media while being as targeted as cold email."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it was built by a bridge engineer."
+                },
+                {
+                    "id": "d",
+                    "text": "Because it doesn't require any effort from the founder."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LinkedIn offers the best of both worlds: high intentionality (like cold email) and high trust signals/authority (like SEO/Social).",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the most important metric for a solo founder's success on LinkedIn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The number of followers they have."
+                },
+                {
+                    "id": "b",
+                    "text": "The number of likes on their most viral post."
+                },
+                {
+                    "id": "c",
+                    "text": "The quality of the pipeline and relationships with their Ideal Customer Profile (ICP)."
+                },
+                {
+                    "id": "d",
+                    "text": "The color of their profile picture."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Virality is often a vanity metric. For founders, LinkedIn is an acquisition engine, which means success is measured by the business results it generates.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is being a 'Solo Practitioner' an advantage on LinkedIn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because you don't have to pay for employees."
+                },
+                {
+                    "id": "b",
+                    "text": "Because people prefer to buy from authentic people who understand their struggle rather than faceless corporations."
+                },
+                {
+                    "id": "c",
+                    "text": "Because solo founders can post more often than companies."
+                },
+                {
+                    "id": "d",
+                    "text": "Because there is no competition for solo founders on LinkedIn."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trust is easier to build with a person than a brand. Your practitioner voice and unique 'Build in Public' journey are powerful signals that cut through noise.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If your last 50 connections are not your Ideal Customer Profile (ICP), what does this indicate about your engine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You are winning at networking."
+                },
+                {
+                    "id": "b",
+                    "text": "Your engine is 'Imprecise' and your reach is being wasted on the wrong audience."
+                },
+                {
+                    "id": "c",
+                    "text": "You need to buy LinkedIn Premium."
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn is the wrong platform for your business."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Precise targeting is the foundation of a lead generation engine. If you are connecting with the wrong people, your content will never reach the right customers.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your own LinkedIn history. Are you currently using it as a 'Resume Graveyard' or a 'Lead Generation Engine'? If you wanted to move toward the 'Trust Pincer' strategy today, what is the #1 change you'd make to your profile or posting habit?",
+            "promptHints": [
+                "Think about your headline and who it targets.",
+                "Consider if you're sharing 'Practitioner' insights or generic tips.",
+                "Evaluate the quality of your most recent connection requests."
+            ],
+            "minimumWords": 50,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "8-10 minutes",
+        "prerequisiteQuizzes": [],
+        "unlocks": [
+            "2"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "LinkedIn as Lead Generation Channel - Quiz"
+}

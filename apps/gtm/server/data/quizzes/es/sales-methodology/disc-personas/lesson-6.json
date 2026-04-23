@@ -1,0 +1,133 @@
+{
+  "title": "Quiz de la Lección 6",
+  "questions": [
+    {
+      "question": "¿Cuáles son las dos preguntas binarias que necesitas responder para diagnosticar un tipo DISC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¿Son ricos o pobres? ¿Son inteligentes o no?"
+        },
+        {
+          "id": "b",
+          "text": "¿Qué tan rápido es su motor (Ritmo)? ¿Hacia dónde apunta su brújula (Enfoque)?"
+        },
+        {
+          "id": "c",
+          "text": "¿Les caigo bien? ¿Me odian?"
+        },
+        {
+          "id": "d",
+          "text": "¿Son técnicos? ¿Son de negocios?"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La matriz DISC se forma por la intersección de Ritmo (Rápido/Medido) y Enfoque (Tarea/Personas).",
+      "id": "q1",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "Conoces a un prospecto que habla despacio, hace pausas frecuentes y hace preguntas sobre 'cómo esto afecta al equipo'. ¿Qué tipo es probablemente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dominante (D)"
+        },
+        {
+          "id": "b",
+          "text": "Influyente (I)"
+        },
+        {
+          "id": "c",
+          "text": "Estable (S)"
+        },
+        {
+          "id": "d",
+          "text": "Concienzudo (C)"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Ritmo Lento/Medido + Enfoque en Personas = Estable (S). Les importa el equipo y la estabilidad.",
+      "id": "q2",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "Un prospecto te envía un email de una línea: 'Envía el mazo de precios. Reunión confirmada para el martes.' ¿De qué tipo es?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dominante (D)"
+        },
+        {
+          "id": "b",
+          "text": "Influyente (I)"
+        },
+        {
+          "id": "c",
+          "text": "Estable (S)"
+        },
+        {
+          "id": "d",
+          "text": "Concienzudo (C)"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Corto, directo, orientado a tareas, sin relleno. Esta es la comunicación clásica del Alto D.",
+      "id": "q3",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Por qué se considera 'Zona de Peligro' la relación 'Diagonal' (ej., C vendiendo a I)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque son demasiado similares"
+        },
+        {
+          "id": "b",
+          "text": "Porque son opuestos en AMBOS Ritmo y Enfoque"
+        },
+        {
+          "id": "c",
+          "text": "Porque compiten por la dominancia"
+        },
+        {
+          "id": "d",
+          "text": "Porque ambos quieren hablar de sentimientos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un C es Lento+Tarea. Un I es Rápido+Personas. No comparten ningún terreno común de forma natural. El C piensa que el I es superficial; el I piensa que el C es aburrido.",
+      "id": "q4",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Qué tan rápido deberías apuntar a diagnosticar el tipo DISC principal en una llamada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dentro de los primeros 2 minutos (120 segundos)"
+        },
+        {
+          "id": "b",
+          "text": "Al final de la llamada"
+        },
+        {
+          "id": "c",
+          "text": "Después de la tercera reunión"
+        },
+        {
+          "id": "d",
+          "text": "Antes de que comience la llamada, usando solo LinkedIn"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Necesitas conocer el tipo *antes* de comenzar tu pitch principal, para poder adaptarte. Los primeros 2 minutos de charla (o la ausencia de ella) proporcionan las señales.",
+      "id": "q5",
+      "type": "multiple-choice"
+    }
+  ],
+  "sectionId": "sales-methodology",
+  "courseId": "disc-personas",
+  "lessonId": "6"
+}

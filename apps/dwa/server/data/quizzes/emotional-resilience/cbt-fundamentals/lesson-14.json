@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a behavioral experiment in CBT?",
+            "options": [
+                {"id": "opt1", "text": "Trying new behaviors randomly to see what happens"},
+                {"id": "opt2", "text": "Testing the accuracy of a specific thought or prediction through real-world action"},
+                {"id": "opt3", "text": "Forcing yourself to do things that scare you without planning"},
+                {"id": "opt4", "text": "Observing other people's behavior to learn social skills"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. A behavioral experiment is structured hypothesis testing: 'I predict X will happen if I do Y. Let me test it and see what actually happens.' This generates evidence that either confirms or contradicts your thought, making beliefs testable rather than assumed."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why do you make a specific prediction before conducting a behavioral experiment?",
+            "options": [
+                {"id": "opt1", "text": "To make the experiment more scientific and formal"},
+                {"id": "opt2", "text": "To create a clear standard for evaluating whether the thought was accurate"},
+                {"id": "opt3", "text": "To guarantee the experiment will succeed"},
+                {"id": "opt4", "text": "To convince yourself the negative thought is definitely wrong"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. If your thought is 'Everyone will judge me if I speak up,' you predict 'At least 3 people will visibly react negatively.' After the experiment, you compare prediction to reality. This prevents your brain from reinterpreting the outcome to match the original fear."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should you do if the outcome of a behavioral experiment confirms your negative prediction?",
+            "options": [
+                {"id": "opt1", "text": "Give up — this proves the negative thought was right all along"},
+                {"id": "opt2", "text": "Ignore the outcome and pretend it didn't happen"},
+                {"id": "opt3", "text": "Examine what happened objectively: was it as catastrophic as feared? What can you learn?"},
+                {"id": "opt4", "text": "Immediately repeat the experiment to prove it was a fluke"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Exactly. Sometimes the negative outcome does happen — but it's rarely as catastrophic as predicted. Ask: 'How bad was it really? How did I cope? What would I do differently next time?' Even 'negative' experiments teach you that you can handle discomfort and learn from setbacks."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How do behavioral experiments differ from exposure therapy?",
+            "options": [
+                {"id": "opt1", "text": "They are the same thing — just different names"},
+                {"id": "opt2", "text": "Behavioral experiments test specific predictions; exposure focuses on habituation to feared stimuli"},
+                {"id": "opt3", "text": "Behavioral experiments are easier and less anxiety-provoking"},
+                {"id": "opt4", "text": "Exposure therapy doesn't work; behavioral experiments are the only effective approach"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Behavioral experiments ask 'What will happen if I do this?' and collect data on a specific thought. Exposure therapy builds tolerance to anxiety through repeated, graduated contact with feared situations. Both are valuable; they serve different purposes."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Design a behavioral experiment for a thought you've been working with. What's the specific prediction? What will you do to test it? What outcome would contradict the negative thought? How will you measure the result?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "14",
+    "title": "Behavioral Experiments - Quiz"
+}

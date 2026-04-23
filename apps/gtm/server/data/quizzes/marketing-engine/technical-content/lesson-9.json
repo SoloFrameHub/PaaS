@@ -1,0 +1,142 @@
+{
+    "lessonId": "9",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Content Distribution Checklist Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does 'Publish and Pray' mean in the context of content marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A strategy where you post content and hope for the best without active distribution"
+                },
+                {
+                    "id": "b",
+                    "text": "A religious content strategy"
+                },
+                {
+                    "id": "c",
+                    "text": "A way to use SEO to get traffic"
+                },
+                {
+                    "id": "d",
+                    "text": "Posting content only on weekends"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Publish and Pray is the most common founder mistake—writing good content but failing to proactively ensure it reaches the target audience."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is considered an 'Owned' distribution channel?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Reddit"
+                },
+                {
+                    "id": "b",
+                    "text": "A niche Facebook group"
+                },
+                {
+                    "id": "c",
+                    "text": "Your Email List"
+                },
+                {
+                    "id": "d",
+                    "text": "Hacker News"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "You own your email list. No algorithm change can take it away or charge you to reach your subscribers. It is your most valuable acquisition asset."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Zero-Click' principle for social media distribution?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Posting content that no one clicks on"
+                },
+                {
+                    "id": "b",
+                    "text": "Providing the full value/lesson directly in the post/thread so users don't have to click away from the platform"
+                },
+                {
+                    "id": "c",
+                    "text": "Using a link shortener to track clicks"
+                },
+                {
+                    "id": "d",
+                    "text": "Removing all images from a post"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Platforms reward content that keeps users on their site. By giving the value away in the feed, you build more trust and often get more total reach than with a 'Link-only' post."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How long should the 'Execution Window' for distributing a single source piece last?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 hour"
+                },
+                {
+                    "id": "b",
+                    "text": "24 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "At least 7+ days"
+                },
+                {
+                    "id": "d",
+                    "text": "Forever"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Staggering distribution (Day 1 email, Day 2 thread, Day 4 community sharing) ensures your content stays in the 'conversation' for a week or more, rather than being a 24-hour flash."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When sharing in 'Earned' communities like Reddit or Discord, what is the most important rule?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Post the link as many times as possible"
+                },
+                {
+                    "id": "b",
+                    "text": "Provide 'Value-First' participation and follow the community rules"
+                },
+                {
+                    "id": "c",
+                    "text": "Ask everyone to follow your Twitter"
+                },
+                {
+                    "id": "d",
+                    "text": "Argue with anyone who disagrees"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Spam is ignored. Genuine, practitioner-led value (e.g., 'Here is what I learned from [X]') is rewarded with trust and traffic."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "List 3 'Earned Communities' where your ICP currently hangs out (Slack, Discord, Subreddits, etc). Draft a 'Value-First' intro for one of your recent content ideas. How will you answer the 'What's in it for them?' question without being spammy?",
+            "minLength": 100,
+            "promptForAI": "Review if the founder is being specific. They should identify subreddits or specific groups, and their intro should feel like a 'lesson' rather than a 'pitch'."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

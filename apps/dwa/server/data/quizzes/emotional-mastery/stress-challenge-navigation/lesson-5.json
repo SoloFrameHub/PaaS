@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for cognitive reappraisal as a resilience-building strategy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—only anecdotal evidence exists"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG—a 2024 meta-analysis found r=0.47 between cognitive reappraisal and resilience (medium-to-large effect), and habitual reappraisal predicts better mental health outcomes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "MODERATE—only small studies with inconsistent results"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No evidence—reappraisal is just positive thinking"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cognitive reappraisal has STRONG evidence as an emotion regulation strategy. A 2024 meta-analysis (Stover et al., Clinical Psychology Review) found r=0.47 between cognitive reappraisal and resilience—a medium-to-large effect by Cohen's conventions. Habitual reappraisal users show fewer depressive symptoms, better relationships, and greater quality of life compared to habitual suppressors. Multiple studies confirm that reappraisal reduces emotional distress, improves performance under pressure, and predicts better mental health outcomes. This makes it one of the most teachable and evidence-supported skills in the entire stress management literature."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the critical difference between cognitive reappraisal (adaptive) and emotional suppression (maladaptive)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "There is no difference—they're the same strategy"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Reappraisal changes the meaning you assign before the emotion fully develops; suppression tries to push down an emotion that's already occurred—and suppression predicts worse outcomes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Suppression is more effective than reappraisal"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Both are equally harmful"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The distinction is both temporal and mechanistic. Reappraisal involves changing the meaning you assign to a situation before the emotional response fully develops—it's a cognitive intervention that reduces emotional intensity without suppressing feelings. Suppression, by contrast, tries to push down or hide an emotional response that has already occurred. Research consistently shows that habitual reappraisal users have better mental health outcomes, while habitual suppressors show increased physiological stress, impaired memory, damaged relationships, and higher rates of depression. The outcome difference is substantial and well-replicated."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does catastrophizing increase stress from a stress appraisal perspective?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Catastrophizing has no effect on stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Catastrophizing inflates demand appraisal (threat feels enormous) and deflates resource appraisal (feels unmanageable), triggering a threat state"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Catastrophizing only affects people with anxiety disorders"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Catastrophizing actually reduces stress by preparing for the worst"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Catastrophizing—jumping to the worst possible outcome without evidence—directly impacts both stages of stress appraisal. It inflates primary appraisal by making the threat seem enormous and certain (\"I made a mistake—I'm going to get fired, lose my house, and end up alone\"), and it deflates secondary appraisal by making coping feel impossible. This combination drives a threat state response rather than a challenge state. The reframe involves reality-testing: \"What's the realistic worst case? What's most likely to happen? What can I do to address it?\" This brings appraisal back to evidence-based assessment rather than catastrophic projection."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does research tell us about reappraisal capacity vs. habitual use?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Capacity and habitual use are the same thing"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Reappraisal capacity (can you do it when asked?) is NOT significantly related to mental health; habitual use (do you spontaneously reach for it?) predicts better outcomes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only capacity matters—habitual use is irrelevant"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Neither capacity nor habitual use matters for mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "This is a critical research finding for course design. Pooled data (N=512, 6 independent studies) shows that reappraisal capacity—whether you CAN reappraise when explicitly asked—is not significantly related to depression or anxiety symptoms. What predicts mental health is habitual use—whether you spontaneously and automatically reach for reappraisal as a strategy in everyday situations. This means the course goal cannot be just teaching the technique through demonstrations; it must support learners in building automatic, habitual application through repeated practice assignments and follow-up prompts."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which cognitive distortion involves rigid rules about how you or others 'should' behave, and why does it create stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Catastrophizing—it creates stress by inflating threats"
+                },
+                {
+                    "id": "opt2",
+                    "text": "'Should' statements—they create guilt, shame, and self-criticism by setting up conflict between reality and rigid expectations"
+                },
+                {
+                    "id": "opt3",
+                    "text": "All-or-nothing thinking—it creates stress through extreme standards"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Mind reading—it creates stress through social anxiety"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "\"Should\" statements (identified by Aaron Beck as a common cognitive distortion) impose rigid rules: \"I should be able to handle this without feeling stressed—something's wrong with me.\" This creates stress through multiple pathways: it generates guilt and shame when reality doesn't match the \"should,\" promotes self-criticism rather than self-compassion, and sets up an adversarial relationship with your own emotional experience. The reframe involves replacing \"should\" with \"it would be helpful if\" or acknowledging reality: \"It's understandable that I feel stressed given the circumstances—what would be helpful right now?\" This reduces the added stress layer created by fighting your own response."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "5",
+    "title": "Cognitive Reframing Techniques: Challenge vs. Threat - Quiz"
+}

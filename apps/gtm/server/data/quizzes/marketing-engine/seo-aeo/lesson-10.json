@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "10",
+    "lessonTitle": "Link Building for Solo Founders",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In 2025, how should a solo founder prioritize their link-building efforts?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Focus on getting as many links as possible, regardless of source."
+                },
+                {
+                    "id": "b",
+                    "text": "Focus on getting a small number of high-quality, relevant citations from authoritative sites in their niche."
+                },
+                {
+                    "id": "c",
+                    "text": "Avoid link building entirely; it's no longer a ranking factor."
+                },
+                {
+                    "id": "d",
+                    "text": "Buy links from automated marketplaces to save time."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Search engines and AI models now prioritize 'Relevance' and 'Authority.' A few links from trusted experts in your field do more to build your 'Entity Authority' than thousands of low-quality links.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'Digital PR' in the context of SEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Paying influencers to post about your brand on Instagram."
+                },
+                {
+                    "id": "b",
+                    "text": "The practice of providing value to journalists and creators to earn featured quotes and high-authority backlinks."
+                },
+                {
+                    "id": "c",
+                    "text": "Writing press releases about your new office space."
+                },
+                {
+                    "id": "d",
+                    "text": "Creating automated chatbots to respond to customer queries."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Digital PR is about being a 'Primary Source' for experts and reporters. When they use your quote or data, they link to you as the source, which is a powerful trust signal for search engines.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these content types is the most effective 'Link Magnet' for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A list of the author's favorite movies."
+                },
+                {
+                    "id": "b",
+                    "text": "Original data, benchmark reports, or unique practitioners' insights."
+                },
+                {
+                    "id": "c",
+                    "text": "A generic 500-word blog post about 'Business Tips'."
+                },
+                {
+                    "id": "d",
+                    "text": "A gallery of stock photos found online."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Proprietary data and unique research make you the 'Authority Entity.' Other sites are forced to link to you to accurately attribute the information you've discovered.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is buying links from 'Link Farms' dangerous for your long-term rankings?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's too expensive for a solo founder."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it's a 'Black Hat' tactic that search engines can easily detect, resulting in penalties or shadowbanning."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it makes your website load slower."
+                },
+                {
+                    "id": "d",
+                    "text": "Because the links are only valid for 30 days."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Google and other search engines have sophisticated systems (like 'SpamBrain') to identify unnatural link patterns. Buying links is a direct violation of their guidelines and risks your entire site's visibility.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How can a 'Vendor Case Study' provide a link-building win for a founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By charging the vendor for your time."
+                },
+                {
+                    "id": "b",
+                    "text": "By providing a testimonial to a tool you use, which the vendor often hosts on their high-authority site with a link back to you."
+                },
+                {
+                    "id": "c",
+                    "text": "By asking the vendor to give you their customer list."
+                },
+                {
+                    "id": "d",
+                    "text": "It doesn't; vendors rarely link back to their customers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Vendors love social proof. Providing a legitimate case study or testimonial is a 'Win-Win' where you get an authority link from a trusted brand in exchange for helping their marketing.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify one tool or service you use in your business that you genuinely love. If you were to reach out to their marketing team today to offer a case study, what is the 'One Paragraph Success Story' you would share and how would you explain the value you've gotten from their tool?",
+            "promptHints": [
+                "Focus on specific results (e.g., 'X% increase in leads').",
+                "Keep it professional and enthusiastic.",
+                "Think about a unique way you use the tool that others might find helpful."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "9"
+        ],
+        "unlocks": [
+            "11"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Link Building for Solo Founders - Quiz"
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "7",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Referral Program Design Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is 'Social Currency' a powerful psychological driver for referrals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because people only refer products if they get paid in cash."
+                },
+                {
+                    "id": "b",
+                    "text": "Because recommending a high-quality, useful product makes the referrer look smart and helpful to their peers."
+                },
+                {
+                    "id": "c",
+                    "text": "Because referring others helps customers spend their built-up points."
+                },
+                {
+                    "id": "d",
+                    "text": "Because social currency is a type of cryptocurrency."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Helping a peer solve a problem with a great recommendation boosts the referrer's own reputation and social standing."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of a 'Double-Sided' incentive structure?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It costs half as much to run as a single-sided program."
+                },
+                {
+                    "id": "b",
+                    "text": "It rewards both the referrer and the new customer, making the referral feel like a 'gift' rather than a kickback."
+                },
+                {
+                    "id": "c",
+                    "text": "It allows you to get two referrals for the price of one."
+                },
+                {
+                    "id": "d",
+                    "text": "It doubles the amount of work required to manage the program."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Double-sided incentives remove the awkwardness of the referral by ensuring that the person being referred also receives a clear benefit, such as a discount or bonus."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, why is 'Service Credit' often better for SaaS companies than cash rewards?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because cash is harder to track."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it keeps the value within your ecosystem and reinforces product usage/retention."
+                },
+                {
+                    "id": "c",
+                    "text": "Because customers don't actually like receiving cash."
+                },
+                {
+                    "id": "d",
+                    "text": "Because service credit isn't taxable anywhere in the world."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Rewarding customers with credits for your own service keeps them engaged with your product and has zero marginal cost for you, while providing high perceived value to the user."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What was the key insight from the Dropbox case study regarding their referral program?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They gave away too much storage and almost went bankrupt."
+                },
+                {
+                    "id": "b",
+                    "text": "Referrals only worked for them once they started using Google Ads."
+                },
+                {
+                    "id": "c",
+                    "text": "By tying the reward (extra storage) directly to the product's core value, they grew from 100k to 4M users in 15 months."
+                },
+                {
+                    "id": "d",
+                    "text": "Referral programs don't work for free-to-use products."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Dropbox proved that a simple, double-sided referral program where the reward enhances the product experience can create an explosive viral loop."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of these tools is specifically recommended for SaaS companies using Stripe to manage referrals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Stripe Atlas"
+                },
+                {
+                    "id": "b",
+                    "text": "Rewardful"
+                },
+                {
+                    "id": "c",
+                    "text": "SparkLoop"
+                },
+                {
+                    "id": "d",
+                    "text": "Google Analytics"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Rewardful is a specialized tool that integrates deeply with Stripe to track and manage affiliate and referral programs for SaaS businesses."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Draft a 'Give [X] and Get [Y]' offer for your own business. What is the [X] (benefit for the new customer) and what is the [Y] (reward for the referrer)? Why did you choose these specific incentives?",
+            "minLength": 100,
+            "promptForAI": "The user should define a double-sided incentive structure and explain the rationale behind their choices (e.g., cost, perceived value, alignment with product usage). Evaluate the response for its strategic clarity and its focus on double-sided wins."
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "lessonId": "10",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 10: Your Scaling Playbook",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "What are the four phases of the 12-month scaling roadmap in order?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hiring, Training, Launching, Optimizing"
+                },
+                {
+                    "id": "b",
+                    "text": "Foundation (document process), First Hire (setter), Closer Integration, Scale and Optimize"
+                },
+                {
+                    "id": "c",
+                    "text": "Planning, Building, Selling, Managing"
+                },
+                {
+                    "id": "d",
+                    "text": "Solo Sales, Group Launch, Team Building, Exit Strategy"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The four phases are: Foundation (months 1-3, documenting what works and building infrastructure), First Hire (months 4-6, bringing on a setter), Closer Integration (months 7-9, hiring and onboarding a closer), and Scale and Optimize (months 10-12, removing yourself from routine sales and launching the group program)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "According to the hire vs. automate framework, which of the following tasks should be AUTOMATED rather than handled by a human?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Handling complex objections on a sales call when the prospect is hesitant"
+                },
+                {
+                    "id": "b",
+                    "text": "Sending appointment reminders, no-show follow-up texts, and CRM pipeline stage updates"
+                },
+                {
+                    "id": "c",
+                    "text": "Qualifying a prospect whose situation does not fit standard criteria"
+                },
+                {
+                    "id": "d",
+                    "text": "Coaching a client through a difficult business decision in a live group call"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson states to automate tasks that are repetitive and follow predictable patterns (reminders), where consistency matters more than personalization (CRM updates), and that are time-sensitive but do not require judgment (no-show texts). Objection handling, edge-case qualification, and live coaching all require human judgment, empathy, and real-time adaptation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "A creator completes the Scale Readiness Audit and scores 72 out of 100. Their lowest categories are Sales Process (12/25) and Infrastructure (13/25), while Offer Validation (24/25) and Lead Generation (23/25) are strong. What does the scoring guide recommend?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Scale now -- 72 is close enough to 80 and their offer and leads are strong"
+                },
+                {
+                    "id": "b",
+                    "text": "Focus on product-market fit -- the score is below 80 which means the offer needs more work"
+                },
+                {
+                    "id": "c",
+                    "text": "Spend 30-60 days strengthening Sales Process and Infrastructure (their lowest categories) before hiring"
+                },
+                {
+                    "id": "d",
+                    "text": "Start over with the Foundation phase because any score below 80 requires 90 days of groundwork"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A score of 60-79 means 'you are close' and the recommendation is to identify the lowest-scoring categories and spend 30-60 days strengthening them before hiring. Their offer and leads are excellent, but they need to document their sales process (record calls, write scripts, define qualification criteria) and build infrastructure (CRM, financial clarity, training capacity) before adding team complexity."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Complete the Scale Readiness Audit from the lesson. Score yourself honestly (1-5) on all 20 questions across the four categories (Offer Validation, Sales Process, Lead Generation, Infrastructure). Share your total score and your three lowest individual question scores. Based on the scoring guide, what is your recommended next action, and what specific steps will you take in the next 30 days to address your weakest areas?",
+            "minLength": 100,
+            "promptForAI": "This is the capstone reflection for the entire course. Evaluate whether the student has completed the audit honestly and with specificity. A perfect 100 score is suspicious -- probe gently. Focus on whether their 30-day action plan addresses their actual weakest areas (not just the areas they find interesting). The plan should be concrete, time-bound, and realistic given their current situation. If their score is below 40, gently redirect them to the earlier courses in the track. If above 80, validate their readiness and encourage them to begin Phase 2 immediately. Celebrate their completion of the course and emphasize that the audit should be retaken every 90 days."
+        }
+    ]
+}

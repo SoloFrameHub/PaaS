@@ -1,0 +1,75 @@
+{
+  "lessonId": "11",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Final System Documentation",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three purposes of system documentation?",
+      "options": [
+        { "id": "a", "text": "Marketing, branding, and PR" },
+        { "id": "b", "text": "Hiring, scaling, and reliability" },
+        { "id": "c", "text": "Compliance, legal protection, and auditing" },
+        {
+          "id": "d",
+          "text": "Investor reporting, board updates, and fundraising"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Documentation serves three purposes: Hiring (new sales hires need a system to follow), Scaling (replicating your system in new markets requires a documented starting point), and Reliability (if you're sick for a week, the system can run without you)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the test for a good SOP (Standard Operating Procedure)?",
+      "options": [
+        { "id": "a", "text": "It's at least 10 pages long" },
+        {
+          "id": "b",
+          "text": "Someone who has never done this before can follow it and get the right result"
+        },
+        { "id": "c", "text": "It uses professional legal language" },
+        { "id": "d", "text": "It's approved by a manager" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The test for a good SOP: can someone who has never done this before follow it and get the right result? If not, it's missing steps, context, or common failure modes."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How should you treat your system documentation over time?",
+      "options": [
+        { "id": "a", "text": "Write it once and never change it" },
+        { "id": "b", "text": "Rewrite it from scratch every month" },
+        {
+          "id": "c",
+          "text": "Review and update it quarterly, dating every version"
+        },
+        { "id": "d", "text": "Only update when something breaks" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Set a calendar reminder to review and update quarterly. Date every version. A dated, imperfect document that reflects reality beats a beautiful document from 6 months ago that no longer applies. It's a living document."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Founders who skip documentation stay in founder-led sales forever.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Without documented processes, you can't hand off sales activities to a hire. You remain the only person who knows how things work, which means you can never truly scale beyond your personal capacity."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Draft the purpose statement and channel stack for your System Architecture Document. What tools does each layer (Acquisition, Conversion, Retention) use, and how do they connect?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a clear purpose statement, lists specific tools for each of the three layers (Acquisition, Conversion, Retention), and describes how the tools connect to each other (data flows, automations, integrations)."
+    }
+  ]
+}

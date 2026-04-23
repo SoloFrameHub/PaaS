@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do compulsions make OCD worse over time?",
+            "options": [
+                { "id": "opt1", "text": "Because they take too much physical energy" },
+                { "id": "opt2", "text": "Because they teach your brain that the obsession was a real threat and the ritual was necessary for safety" },
+                { "id": "opt3", "text": "Because they cause physical damage to the brain" },
+                { "id": "opt4", "text": "Because other people notice and judge the behavior" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Compulsions provide short-term relief but long-term reinforcement. When you perform a compulsion and anxiety drops, your brain learns: 'I was in danger, I did the ritual, I'm safe now.' The brain never learns that you were never in real danger in the first place, so the cycle strengthens each time."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does avoidance function in OCD?",
+            "options": [
+                { "id": "opt1", "text": "It is a healthy coping strategy that reduces OCD symptoms" },
+                { "id": "opt2", "text": "It has no effect on OCD either way" },
+                { "id": "opt3", "text": "It functions exactly like a compulsion — reinforcing OCD and shrinking your world" },
+                { "id": "opt4", "text": "It only becomes a problem if you avoid more than five things" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Avoidance is a hidden compulsion. When you avoid a trigger, your brain concludes 'That was dangerous — good thing we avoided it,' making the trigger even more frightening. You never learn that you could handle it, and your world shrinks as more things feel off-limits."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does reassurance-seeking backfire as a coping strategy for OCD?",
+            "options": [
+                { "id": "opt1", "text": "Because other people always give wrong information" },
+                { "id": "opt2", "text": "Because it only works for contamination OCD, not other types" },
+                { "id": "opt3", "text": "Because the relief gets shorter each time, it trains your brain not to trust itself, and the need becomes addictive" },
+                { "id": "opt4", "text": "Because it makes other people develop OCD too" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Reassurance-seeking becomes addictive — you need it more and more often, the relief gets shorter each time, and it trains your brain that you can't trust your own judgment. It outsources your sense of safety to other people, which is not sustainable and strains relationships."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What happens to anxiety when you resist a compulsion over time?",
+            "options": [
+                { "id": "opt1", "text": "Anxiety stays at the same high level indefinitely" },
+                { "id": "opt2", "text": "Anxiety keeps increasing until you have a panic attack" },
+                { "id": "opt3", "text": "Anxiety peaks and then naturally decreases — a process called habituation" },
+                { "id": "opt4", "text": "Anxiety immediately disappears without any discomfort" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "When you resist a compulsion, anxiety initially increases — sometimes significantly. But your body physically cannot maintain high anxiety indefinitely. Anxiety peaks and then naturally decreases, a process called habituation. This is the core principle behind ERP treatment: the compulsion interrupts this natural process by ending the exposure too early."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is an example of a mental compulsion?",
+            "options": [
+                { "id": "opt1", "text": "Washing your hands in a specific pattern" },
+                { "id": "opt2", "text": "Checking door locks repeatedly" },
+                { "id": "opt3", "text": "Trying to figure out 'what the thought really means' through mental analysis" },
+                { "id": "opt4", "text": "Asking a family member for reassurance" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Mental compulsions include analyzing ('what does this thought mean?'), mental reviewing, neutralizing ('replacing a bad thought with a good one'), mental checking, and self-reassurance. These are just as reinforcing as visible rituals — they provide temporary relief and strengthen OCD in exactly the same way."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "4",
+    "title": "Why Compulsions Make OCD Worse - Quiz"
+}

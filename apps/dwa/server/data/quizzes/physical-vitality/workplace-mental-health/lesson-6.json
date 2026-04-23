@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to boundary theory, what predicts wellbeing better than the objective separation between work and personal life?",
+            "options": [
+                {"id": "opt1", "text": "The number of hours you work per week"},
+                {"id": "opt2", "text": "Boundary control — your ability to DECIDE when work enters personal time"},
+                {"id": "opt3", "text": "Whether you work from home or in an office"},
+                {"id": "opt4", "text": "How much you enjoy your job"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that boundary control — your perceived ability to decide when work ends and personal life begins — is more important than the objective amount of separation. High control + high permeability (work-life integration by choice) can be protective, while low control + high permeability (work-life invasion) is harmful. Control is the key variable."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'psychological detachment' and why does it matter?",
+            "options": [
+                {"id": "opt1", "text": "Psychological detachment means not caring about your work"},
+                {"id": "opt2", "text": "Psychological detachment is the ability to mentally disengage from work during non-work time, and it predicts recovery, sleep quality, and reduced exhaustion"},
+                {"id": "opt3", "text": "Psychological detachment is a mental health disorder"},
+                {"id": "opt4", "text": "Psychological detachment only matters for people with anxiety"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Psychological detachment is the ability to mentally disengage from work during off-hours — to stop thinking about work problems, tasks, or stressors. Research shows it's a robust predictor of recovery, sleep quality, and reduced exhaustion. It's teachable through transition rituals, hobbies, physical separation, and boundary-setting practices."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When is 'flexible work' protective for mental health, and when is it harmful?",
+            "options": [
+                {"id": "opt1", "text": "Flexible work is always beneficial"},
+                {"id": "opt2", "text": "Flexible work is always harmful"},
+                {"id": "opt3", "text": "Flexible work is protective when it's voluntary and employee-controlled; it's harmful when it's involuntary and employer-controlled (unpredictable schedules)"},
+                {"id": "opt4", "text": "Flexible work only matters for parents"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research shows that voluntary, employee-controlled flexibility is associated with reduced stress and higher job satisfaction. However, involuntary or unpredictable flexibility — where work hours are variable and controlled by the employer, not the employee — is associated with worse mental health outcomes including exhaustion and emotional distress. Employee control is the key."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following boundary challenges is STRUCTURAL (organizational) rather than individual (skills-based)?",
+            "options": [
+                {"id": "opt1", "text": "You have permission to disconnect but struggle with anxiety about missing messages"},
+                {"id": "opt2", "text": "Your organization punishes employees who don't respond to emails within minutes, even on weekends"},
+                {"id": "opt3", "text": "You need scripts for communicating boundaries assertively"},
+                {"id": "opt4", "text": "Expectations are unclear, so you default to over-availability"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "If your organization's culture punishes boundaries or expects constant availability (and penalizes those who don't comply), that's a structural Psychosocial Safety Climate problem. Individual boundary-setting skills won't solve this — it requires organizational policy change or, if the organization won't change, exit. The other options are individual skills challenges."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "6",
+    "title": "Work-Life Boundaries — Evidence-Based Strategies - Quiz"
+}

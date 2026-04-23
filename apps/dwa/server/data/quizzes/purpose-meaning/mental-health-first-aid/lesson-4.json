@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "You encounter someone who is pacing, speaking loudly to themselves, and appears agitated in a public place. They're not threatening anyone. What is the most appropriate first step?",
+      "options": [
+        {"id": "opt1", "text": "Approach quickly and tell them to calm down and stop disturbing people"},
+        {"id": "opt2", "text": "Immediately call 911 — anyone talking to themselves and agitated is dangerous"},
+        {"id": "opt3", "text": "Assess from a distance first. If they seem safe to approach, introduce yourself calmly, maintain 3-6 feet distance, and ask if they're okay"},
+        {"id": "opt4", "text": "Ignore it — it's not your responsibility to get involved"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Following the de-escalation protocol, you should assess safety from a distance FIRST (is there a weapon? Are they threatening violence?). If no immediate danger, approach calmly (not quickly), introduce yourself, maintain safe distance (3-6 feet), and use an open question ('Are you okay?'). This respects their space, signals helpful intent, and gives them control. Agitation alone ≠ danger. Telling them to 'calm down' typically escalates. Calling 911 prematurely can result in unnecessary (and potentially traumatic) police involvement. While you're not obligated to help, MHFA training equips you to support when safe."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which of the following is a core verbal de-escalation technique supported by crisis intervention guidelines?",
+      "options": [
+        {"id": "opt1", "text": "Match the person's energy level to build rapport and show empathy"},
+        {"id": "opt2", "text": "Validate their feelings ('I can see you're upset. That makes sense'), offer choices, and use simple, calm language"},
+        {"id": "opt3", "text": "Tell them to 'calm down' firmly and set clear ultimatums ('Calm down or I'm calling the cops')"},
+        {"id": "opt4", "text": "Argue with their beliefs to help them see reality and reduce their distress"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Verbal de-escalation techniques include: staying calm yourself, using simple/clear language, validating feelings (not actions), offering choices to restore control, and maintaining safe distance. Validation + choices reduces defensiveness and agitation. Matching their energy escalates the situation (you model regulation, not chaos). 'Calm down' commands rarely work and often escalate. Ultimatums increase threat perception. Arguing with delusions (in psychosis) or agitated beliefs escalates conflict — instead, acknowledge their experience without agreeing: 'I can see you believe that; I don't see it, but that sounds frightening.'"
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "In which of the following situations should you immediately call 911 rather than attempt verbal de-escalation?",
+      "options": [
+        {"id": "opt1", "text": "Someone is experiencing a panic attack with rapid heart rate and fear of dying"},
+        {"id": "opt2", "text": "Someone has a weapon and is threatening self-harm or harm to others"},
+        {"id": "opt3", "text": "Someone is talking to themselves and appears confused but not threatening"},
+        {"id": "opt4", "text": "Someone discloses they've been feeling depressed for the past month"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "A weapon + threat of violence (to self or others) requires IMMEDIATE 911 escalation. Create distance, call 911, do not approach or attempt de-escalation. Panic attacks (option 1) typically do NOT require 911 unless first-time chest pain in someone with cardiac risk factors (rule out heart attack) — otherwise, de-escalation with breathing/grounding works. Talking to self / confusion (option 3) may indicate psychosis but is not inherently dangerous — assess safety first. Depression disclosure (option 4) requires MHFA support and professional referral, but not emergency services unless suicidal plan/intent is present."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "According to research, what is the evidence base for verbal de-escalation techniques in mental health crisis situations?",
+      "options": [
+        {"id": "opt1", "text": "STRONG RCT evidence from multiple high-quality trials in community settings"},
+        {"id": "opt2", "text": "MODERATE evidence from consensus guidelines, psychiatric emergency settings, and CIT programs; EMERGING RCT evidence for community settings"},
+        {"id": "opt3", "text": "No credible evidence — de-escalation is based solely on anecdotal reports"},
+        {"id": "opt4", "text": "STRONG evidence that de-escalation prevents all violence and eliminates need for emergency services"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Verbal de-escalation has MODERATE evidence from consensus-based guidelines (SAMHSA, Crisis Intervention Team / CIT models, psychological first aid frameworks) and psychiatric emergency settings. Core principles (stay calm, simple language, validate, offer choices, safe distance) are supported by trauma-informed care literature. However, high-quality RCT evidence specifically in community settings is EMERGING, not yet robust. Most research comes from hospital/police CIT contexts. De-escalation reduces risk but does NOT guarantee safety or eliminate need for emergency services — when danger is imminent (weapon, violence), 911 is required regardless of de-escalation attempts."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "After responding to a mental health crisis, what is the most important self-care step for the helper?",
+      "options": [
+        {"id": "opt1", "text": "Immediately respond to another crisis to build resilience and prevent overthinking"},
+        {"id": "opt2", "text": "Suppress your feelings about the experience to remain professional and avoid burdening others"},
+        {"id": "opt3", "text": "Debrief with someone you trust, monitor yourself for vicarious trauma signs (intrusive thoughts, hypervigilance, sleep disruption), and seek support if needed"},
+        {"id": "opt4", "text": "Crisis response is part of MHFA training — no special self-care is needed"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Witnessing or responding to a mental health crisis is emotionally and physiologically taxing and can cause vicarious trauma (secondary traumatic stress). Post-crisis self-care protocol includes: debrief with someone you trust (do NOT carry it alone), monitor yourself for vicarious trauma signs (intrusive thoughts, avoidance, hypervigilance, sleep disruption), document what happened, regulate your body (move, breathe, hydrate), and seek counselor support if the experience was traumatic. Suppressing feelings increases trauma impact. Repeated crisis exposure without support leads to burnout. Self-care after crisis is not optional — it's essential for sustainable helping."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "4",
+  "title": "De-Escalation and Crisis Intervention - Quiz"
+}

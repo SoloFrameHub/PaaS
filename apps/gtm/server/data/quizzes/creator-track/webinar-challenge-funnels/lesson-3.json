@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Webinar Registration & Show-Up Optimization Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the expected show-up rate benchmark for registrants who came from Facebook or Instagram ads?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "40-50% is average"
+                },
+                {
+                    "id": "b",
+                    "text": "50-60% is average"
+                },
+                {
+                    "id": "c",
+                    "text": "20-25% is average, with 40%+ being great"
+                },
+                {
+                    "id": "d",
+                    "text": "10-15% is average"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "For cold traffic from Facebook/Instagram ads, 20-25% is the average show-up rate, 30-35% is considered good, and 40%+ is great. This is lower than warm traffic sources because these registrants have less existing trust and relationship with the presenter."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, which single addition to the confirmation page can increase show-up rates by 8-12%?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A countdown timer showing hours until the event"
+                },
+                {
+                    "id": "b",
+                    "text": "An upsell offer for a VIP ticket"
+                },
+                {
+                    "id": "c",
+                    "text": "Add-to-calendar links for Google Calendar, Apple Calendar, and Outlook"
+                },
+                {
+                    "id": "d",
+                    "text": "A video trailer of the webinar content"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Including Google Calendar, Apple Calendar, and Outlook add-to-calendar links on the confirmation page can increase show-up rates by 8-12%. Calendar events create a persistent reminder that cuts through the noise of email inboxes."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach to webinar replays?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never offer a replay -- it reduces urgency to attend live"
+                },
+                {
+                    "id": "b",
+                    "text": "Offer the replay indefinitely to maximize views"
+                },
+                {
+                    "id": "c",
+                    "text": "Offer the replay within 30 minutes of the event ending with a 48-hour availability window to create urgency"
+                },
+                {
+                    "id": "d",
+                    "text": "Only send the replay to people who did not attend live"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The recommended approach is to send the replay within 30 minutes of the live event ending (while interest is high) and make it available for a limited time (typically 48 hours). This prevents 'I'll watch it later' from turning into 'I'll never watch it' while still recovering revenue from non-attendees."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write a complete registration page headline for your next webinar or challenge using the formula: 'How to [desirable outcome] in [timeframe] without [pain point they want to avoid].' Then list 3-4 bullet points of specific takeaways that would appear on the registration page. Explain why each element creates curiosity or desire.",
+            "minLength": 100,
+            "aiPrompt": "The student should produce a headline following the specified formula with a specific outcome, realistic timeframe, and relevant pain point. The bullet points should promise concrete takeaways (not vague benefits). Evaluate whether the headline passes the 'so what' test and whether the bullets create genuine curiosity. The explanation should demonstrate understanding of why specificity outperforms vagueness."
+        }
+    ]
+}

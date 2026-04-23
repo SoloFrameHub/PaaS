@@ -1,0 +1,117 @@
+{
+  "id": "recovery-practices",
+  "title": "Recovery Practices Checklist",
+  "description": "Track your weekly recovery practices across the four evidence-based recovery experiences: psychological detachment, relaxation, mastery, and control over leisure time. Check off the practices you've done this week.",
+  "instructions": "Review each item and check off the recovery practices you engaged in this week. The goal is not to check every box — it's to ensure you're getting some recovery in each of the four categories. Revisit weekly to track your progress and adjust your recovery plan.",
+  "items": [
+    {
+      "id": "detach-logoff",
+      "label": "I had a clear end-of-work time and stopped working after it",
+      "type": "checkbox",
+      "category": "Psychological Detachment"
+    },
+    {
+      "id": "detach-no-email",
+      "label": "I did not check work email or messages during off-hours",
+      "type": "checkbox",
+      "category": "Psychological Detachment"
+    },
+    {
+      "id": "detach-transition",
+      "label": "I used an end-of-day transition ritual (walk, change clothes, close laptop)",
+      "type": "checkbox",
+      "category": "Psychological Detachment"
+    },
+    {
+      "id": "detach-redirect",
+      "label": "When work thoughts intruded during off-hours, I redirected my attention",
+      "type": "checkbox",
+      "category": "Psychological Detachment"
+    },
+    {
+      "id": "relax-nature",
+      "label": "I spent time in nature or outdoors for enjoyment",
+      "type": "checkbox",
+      "category": "Relaxation"
+    },
+    {
+      "id": "relax-music",
+      "label": "I listened to music, a podcast, or audiobook for pleasure",
+      "type": "checkbox",
+      "category": "Relaxation"
+    },
+    {
+      "id": "relax-body",
+      "label": "I did a relaxation practice (breathing, PMR, warm bath, gentle stretching)",
+      "type": "checkbox",
+      "category": "Relaxation"
+    },
+    {
+      "id": "relax-low-stimulation",
+      "label": "I had at least one evening with low stimulation (no intense TV, no scrolling)",
+      "type": "checkbox",
+      "category": "Relaxation"
+    },
+    {
+      "id": "mastery-learn",
+      "label": "I spent time learning something new or practicing a skill (unrelated to work)",
+      "type": "checkbox",
+      "category": "Mastery"
+    },
+    {
+      "id": "mastery-creative",
+      "label": "I engaged in a creative or hands-on activity (cooking, drawing, building, writing)",
+      "type": "checkbox",
+      "category": "Mastery"
+    },
+    {
+      "id": "mastery-physical",
+      "label": "I did a physical activity that challenged me in a positive way (sport, exercise, dance)",
+      "type": "checkbox",
+      "category": "Mastery"
+    },
+    {
+      "id": "mastery-absorbing",
+      "label": "I did something absorbing that made me lose track of time (in a good way)",
+      "type": "checkbox",
+      "category": "Mastery"
+    },
+    {
+      "id": "control-choice",
+      "label": "I had at least one evening or block of time where I chose how to spend it",
+      "type": "checkbox",
+      "category": "Control Over Leisure"
+    },
+    {
+      "id": "control-no-obligations",
+      "label": "I protected some free time from obligations, chores, or scheduling",
+      "type": "checkbox",
+      "category": "Control Over Leisure"
+    },
+    {
+      "id": "control-said-no",
+      "label": "I said no to a social or personal obligation that felt draining",
+      "type": "checkbox",
+      "category": "Control Over Leisure"
+    },
+    {
+      "id": "control-spontaneous",
+      "label": "I did something spontaneous or unplanned that I enjoyed",
+      "type": "checkbox",
+      "category": "Control Over Leisure"
+    },
+    {
+      "id": "social-connection",
+      "label": "I connected with someone I care about (call, text, in person)",
+      "type": "checkbox",
+      "category": "Bonus: Connection & Play"
+    },
+    {
+      "id": "play-fun",
+      "label": "I did something purely for fun — not for productivity or achievement",
+      "type": "checkbox",
+      "category": "Bonus: Connection & Play"
+    }
+  ],
+  "disclaimer": "This checklist is for self-tracking purposes. Recovery looks different for everyone — focus on what actually restores you, not on checking every box. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

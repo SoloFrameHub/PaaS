@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What key finding did the cMIND study (2026) reveal about the relationship between MIND diet adherence and cognitive protection?",
+            "options": [
+                { "id": "opt1", "text": "Only perfect adherence provides any cognitive benefit" },
+                { "id": "opt2", "text": "The relationship is nonlinear — the greatest benefit comes from moving from low to moderate adherence" },
+                { "id": "opt3", "text": "Higher adherence actually increased cognitive impairment risk" },
+                { "id": "opt4", "text": "The MIND diet only benefits people under age 60" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The cMIND study found a nonlinear relationship between diet adherence and cognitive protection — the greatest benefit came from moving from low to moderate adherence. This means you do not need perfect adherence to benefit; even modest dietary improvements provide meaningful cognitive protection."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why are standard serum B12 blood tests potentially unreliable for older adults?",
+            "options": [
+                { "id": "opt1", "text": "B12 tests are not available for patients over 65" },
+                { "id": "opt2", "text": "Serum B12 levels can appear normal even when functional B12 status is inadequate, because B12 may be bound to inactive carriers" },
+                { "id": "opt3", "text": "Older adults' blood is too thick for accurate B12 measurement" },
+                { "id": "opt4", "text": "B12 is not important for brain function in older adults" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Standard serum B12 levels can appear normal even when functional B12 status is inadequate, because a significant portion of serum B12 may be bound to haptocorrin (an inactive carrier) rather than transcobalamin (the active carrier). More reliable markers include methylmalonic acid (MMA) and homocysteine levels."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which common class of medications significantly impairs absorption of B12, magnesium, calcium, and iron?",
+            "options": [
+                { "id": "opt1", "text": "SSRIs (selective serotonin reuptake inhibitors)" },
+                { "id": "opt2", "text": "Antibiotics" },
+                { "id": "opt3", "text": "Proton pump inhibitors (PPIs)" },
+                { "id": "opt4", "text": "Blood pressure medications (ACE inhibitors)" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Proton pump inhibitors (PPIs), widely prescribed acid-reducing medications, significantly impair absorption of vitamin B12, magnesium, calcium, and iron — all critical for brain function. Long-term PPI use has also been independently associated with increased risk of dementia."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does the Mini Nutritional Assessment - Short Form (MNA-SF) evaluate, and what score indicates risk of malnutrition?",
+            "options": [
+                { "id": "opt1", "text": "It measures depression severity; scores of 8-11 indicate moderate depression" },
+                { "id": "opt2", "text": "It assesses nutritional status through 6 items; scores of 8-11 indicate risk of malnutrition" },
+                { "id": "opt3", "text": "It evaluates medication side effects; scores of 8-11 indicate dangerous interactions" },
+                { "id": "opt4", "text": "It screens for eating disorders; scores of 8-11 indicate active disordered eating" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The MNA-SF is a validated six-item screening tool that assesses nutritional status in older adults — including food intake decline, weight loss, mobility, psychological stress, and neuropsychological problems. Scores of 0-7 indicate malnutrition, 8-11 indicate risk of malnutrition, and 12-14 indicate normal nutritional status."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the US MIND Diet study (2024), which population showed a stronger risk reduction for cognitive decline?",
+            "options": [
+                { "id": "opt1", "text": "Men showed a 10% greater risk reduction than women" },
+                { "id": "opt2", "text": "Adults under 60 showed the strongest benefit" },
+                { "id": "opt3", "text": "Women showed a stronger 6% risk reduction compared to 4% overall" },
+                { "id": "opt4", "text": "There was no difference between any subgroups" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 2024 US MIND study found a 4% overall reduced risk of cognitive decline, with a stronger 6% risk reduction observed in women specifically. This gender difference may relate to hormonal changes during menopause that affect brain metabolism, where the MIND diet's anti-inflammatory foods may partially compensate."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "7",
+    "title": "Older Adults: MIND Diet, Polypharmacy, and Brain Health - Quiz"
+}

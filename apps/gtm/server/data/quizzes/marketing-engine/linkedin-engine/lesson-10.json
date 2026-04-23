@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "10",
+    "lessonTitle": "From Connection to Conversation",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the '3-Touch Rule' for LinkedIn prospecting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sending the same message three times until they reply."
+                },
+                {
+                    "id": "b",
+                    "text": "Having at least 3 'Value Interactions' (Connect, Engage, Validate) before asking for a meeting."
+                },
+                {
+                    "id": "c",
+                    "text": "Calling the prospect's office three times a day."
+                },
+                {
+                    "id": "d",
+                    "text": "Tagging the prospect in three different posts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trust is built over time. By having multiple low-pressure interactions first, you prove you are a practitioner interested in their success, not just a salesperson chasing a quota.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of a 'Soft Bridge' message?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To get the prospect to sign a contract immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "To offer a low-friction 'Micro-Value' asset (like a guide or audit) with permission-based outreach."
+                },
+                {
+                    "id": "c",
+                    "text": "To explain the entire history of your company."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for a 1-hour discovery call on the first DM."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A Soft Bridge is permission-based. It asks 'Mind if I send this?' which is much easier for a busy prospect to say yes to than a 30-minute meeting request.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is a 'Micro-Value' asset a powerful transition tool?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's easier to create than big assets."
+                },
+                {
+                    "id": "b",
+                    "text": "Because small wins earn the right to ask for a larger commitment (like a call)."
+                },
+                {
+                    "id": "c",
+                    "text": "Because LinkedIn's algorithm promotes people who share PDFs in DMs."
+                },
+                {
+                    "id": "d",
+                    "text": "Prospected prefer to read rather than talk."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you can solve a small problem for a prospect for free through a checklist or video, they are far more likely to trust you to solve a bigger problem for a fee.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If a prospect says 'Not right now' to a meeting request, what should be your next move in the LinkedIn engine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Remove them from your network."
+                },
+                {
+                    "id": "b",
+                    "text": "Move them into a 'Long-Term Nurture Loop' by continuing to engage with their content and staying top-of-mind."
+                },
+                {
+                    "id": "c",
+                    "text": "Send them a message every Monday until they say yes."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask them to introduce you to their boss instead."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Timing is often the #1 reason for a 'No.' By staying in their orbit through the 'Public' arm of the Trust Pincer, you are the first person they think of when the timing is right.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'No-Pitch Audit' strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A way to trick prospects into a sales call."
+                },
+                {
+                    "id": "b",
+                    "text": "An offer to provide a 15-minute specific solution walkthrough that focuses on giving value rather than a hard pitch."
+                },
+                {
+                    "id": "c",
+                    "text": "A call where you don't talk at all."
+                },
+                {
+                    "id": "d",
+                    "text": "A technical check of the prospect's computer."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'No-Pitch Audit' lowers the barrier to entry. It frames the call as a consultation between two practitioners rather than a sales pitch.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think of one 'Micro-Value' asset you could create in less than 30 minutes (e.g., a checklist of the top 3 mistakes in your niche). How would you phrase a 'Soft Bridge' DM to a high-value prospect using this asset? What is the specific 'Trigger' or 'Context' you would use to make it feel deeply relevant to them?",
+            "promptHints": [
+                "Focus on 'Permission-based' outreach ('Mind if I send...').",
+                "Connect it to a recent post or a common industry pain point.",
+                "Ensure the asset provides a 'Small Win' immediately."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "15-20 minutes",
+        "prerequisiteQuizzes": [
+            "9"
+        ],
+        "unlocks": [
+            "course-complete"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "From Connection to Conversation - Quiz"
+}

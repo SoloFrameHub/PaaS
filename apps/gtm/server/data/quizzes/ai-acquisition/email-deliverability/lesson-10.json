@@ -1,0 +1,87 @@
+{
+  "lessonId": "10",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "Incident Playbook: When a Domain Hits Spam",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the four causes of a sudden inbox placement drop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bad internet, server outage, tool malfunction, billing issue"
+        },
+        {
+          "id": "b",
+          "text": "Spam trap hit, complaint spike, content filter trigger, IP/domain reputation drop"
+        },
+        {
+          "id": "c",
+          "text": "Gmail update, Outlook update, Yahoo update, DNS expiration"
+        },
+        {
+          "id": "d",
+          "text": "Sending too few emails, not enough warmup, wrong time zone, holiday period"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four causes are: spam trap hit (sending to recycled or pristine trap addresses), complaint spike (multiple spam reports in a short window), content filter trigger (matching spam patterns), and IP/domain reputation drop (accumulated negative signals crossing a threshold)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is a spam trap and why is it dangerous?",
+      "options": [
+        { "id": "a", "text": "A tool that filters spam from your inbox" },
+        {
+          "id": "b",
+          "text": "An email address that exists only to catch spammers — no real person uses it, so sending to one proves you're not validating your list"
+        },
+        {
+          "id": "c",
+          "text": "A feature in Gmail that catches suspicious emails"
+        },
+        { "id": "d", "text": "A virus in email attachments" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Spam traps are email addresses that exist only to catch spammers. They come in two types: pristine (never used by a real person) and recycled (abandoned for 12+ months then repurposed). Sending to one proves to ISPs that you're not properly validating your email list, triggering immediate reputation penalties."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What separates professionals from amateurs when it comes to spam incidents?",
+      "options": [
+        { "id": "a", "text": "Professionals never hit spam" },
+        {
+          "id": "b",
+          "text": "Professionals detect incidents within 24 hours and execute a recovery protocol; amateurs don't know they're in spam for weeks"
+        },
+        { "id": "c", "text": "Professionals use more expensive tools" },
+        { "id": "d", "text": "Professionals send fewer emails" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every sender hits spam eventually. The difference is detection speed (within 24 hours vs weeks of unknowing) and having a recovery protocol. Professionals monitor placement daily, detect drops immediately, and execute specific recovery steps that can resolve issues in 48 hours vs losing domains permanently."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Every sender hits spam eventually — the difference between success and failure is having a detection and recovery system in place.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Spam incidents are inevitable regardless of how careful you are. The lesson emphasizes that incident response capability — fast detection, accurate diagnosis, and proven recovery protocols — is what separates professionals from amateurs."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your spam incident response plan. What monitoring would you check first if you suspected a deliverability problem? What are the first three actions you would take within 60 minutes of detecting a drop in inbox placement?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific monitoring tools (Google Postmaster, Instantly health check, SNDS), describes a logical diagnostic sequence (check authentication, review recent sends, check complaint rates), and lists concrete first-60-minute actions (pause sends, check spam trap databases, review content). Look for a structured, actionable plan."
+    }
+  ]
+}

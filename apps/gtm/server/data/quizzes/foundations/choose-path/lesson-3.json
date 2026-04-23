@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "3",
+    "sectionId": "foundations",
+    "title": "Creator/Coach Acquisition Path Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core 'Trust Equation' for the Creator/Coach acquisition model?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Advertising + Landing Page = Sales"
+                },
+                {
+                    "id": "b",
+                    "text": "Content builds Trust → Trust enables Conversation → Conversation leads to Sales"
+                },
+                {
+                    "id": "c",
+                    "text": "Partnerships + Referrals = Growth"
+                },
+                {
+                    "id": "d",
+                    "text": "Features + Speed = Conversion"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For creators and coaches, sales are built on a foundation of trust earned through consistent content. This trust opens the door for conversations (DMs, calls), which ultimately lead to conversions."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "A creator selling a $2,500 executive coaching program is having lots of discovery calls but only 10% are converting. What is the most likely issue?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They need to lower their price"
+                },
+                {
+                    "id": "b",
+                    "text": "Their content is too good and giving away too much"
+                },
+                {
+                    "id": "c",
+                    "text": "Poor qualification (leading to calls with wrong-fit people)"
+                },
+                {
+                    "id": "d",
+                    "text": "They need a better logo"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-ticket offers require deep qualification. If enrollment rates are below 50% for discovery calls, the creator is likely letting 'anybody' book a call rather than qualifying for fit and budget beforehand. Course 14 helps solve this."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the 'Zero-Click' content principle suggest?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Don't ever include links in your posts"
+                },
+                {
+                    "id": "b",
+                    "text": "Content should provide full value within the social feed itself, not just tease a link"
+                },
+                {
+                    "id": "c",
+                    "text": "Users shouldn't have to click to buy your product"
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn algorithm hates links, so use QR codes instead"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Zero-click content respects the user's time by delivering the key insight or 'payoff' within the feed. This earns trust and authority, making users *more* likely to eventually visit your profile or join your list."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which set of courses is designated as 'Tier 1' for a Creator/Coach founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Courses 4, 8, and 14"
+                },
+                {
+                    "id": "b",
+                    "text": "Courses 7, 9, and 13"
+                },
+                {
+                    "id": "c",
+                    "text": "Courses 5, 10, and 14"
+                },
+                {
+                    "id": "d",
+                    "text": "Courses 11, 18, and 22"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "For creators, the priorities are Course 5 (Content Engine), Course 10 (Email Nurture/Owned Assets), and Course 14 (Discovery/Enrollment)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the 'Product Ladder' concept, what is the role of a 'Low-Ticket' ($50-$200) product?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To be the main driver of revenue"
+                },
+                {
+                    "id": "b",
+                    "text": "To build 'Buyer Trust' and qualify people for higher-ticket offers"
+                },
+                {
+                    "id": "c",
+                    "text": "To replace the need for an email list"
+                },
+                {
+                    "id": "d",
+                    "text": "To act as a lead magnet you give away for free"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Low-ticket products move the relationship from 'follower' to 'customer.' It's easier to sell a $5,000 program to someone who already paid $100 and got value than to a complete stranger."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Map your Content-to-Customer path. Identify your primary platform, three main content pillars, your lead magnet concept, and your ultimate high-ticket transformation offer. How do these pieces fit together to build trust?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the creator's path is logically consistent. Do the content pillars lead naturally to the lead magnet? Does the transformation offer justify the 'trust' built earlier? Look for 'The Pivot' — where does free content end and the invitation to buy begin?"
+        }
+    ]
+}

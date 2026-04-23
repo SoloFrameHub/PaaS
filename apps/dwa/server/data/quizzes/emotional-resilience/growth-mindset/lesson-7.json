@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three core components of self-compassion according to Kristin Neff's research?",
+            "options": [
+                {"id": "opt1", "text": "Positive thinking, self-esteem, and confidence"},
+                {"id": "opt2", "text": "Self-kindness, common humanity, and mindfulness"},
+                {"id": "opt3", "text": "Self-criticism, isolation, and over-identification"},
+                {"id": "opt4", "text": "Optimism, persistence, and resilience"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Neff's self-compassion framework has three components: (1) Self-kindness—treating yourself with warmth and understanding (vs. harsh self-judgment), (2) Common humanity—recognizing that struggle and imperfection are part of shared human experience (vs. isolation: 'only I fail'), (3) Mindfulness—holding painful experiences in balanced awareness without suppression or over-identification (vs. rumination or avoidance). These are distinct from self-esteem (which is contingent on success/comparison) and from toxic positivity (which dismisses pain)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the 2023 meta-analyses cited in the lesson, what are the evidence-based effects of self-compassion interventions?",
+            "options": [
+                {"id": "opt1", "text": "No significant effects on any mental health outcomes"},
+                {"id": "opt2", "text": "56 RCTs show small-to-medium effects on reducing depression, anxiety, and stress (immediate posttest); effects persist at follow-up; another meta-analysis found SMD = −0.53 for anxiety reduction"},
+                {"id": "opt3", "text": "Large effects (d > 1.0) but only in adolescent populations"},
+                {"id": "opt4", "text": "Self-compassion worsens depression by reducing motivation"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Self-compassion has one of the strongest evidence bases for wellbeing. Meta-analysis of 56 RCTs showed small-to-medium effects on depression, anxiety, and stress reduction at posttest; effects were smaller but present at follow-up (durability). Another 2023 meta-analysis of 42 RCTs found anxiety reduction SMD = −0.53 (moderate effect) persisting to 6 months. This is substantially stronger evidence than growth mindset interventions and makes self-compassion the most well-evidenced approach for failure recovery specifically."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does self-compassion outperform self-criticism for motivation and goal pursuit?",
+            "options": [
+                {"id": "opt1", "text": "Self-compassion makes people complacent and lower their standards"},
+                {"id": "opt2", "text": "Self-criticism is more effective for motivation—self-compassion reduces effort"},
+                {"id": "opt3", "text": "Self-compassion allows acknowledgment of mistakes without threatening self-worth, making it psychologically safe to try again; self-criticism activates threat, shame, and avoidance"},
+                {"id": "opt4", "text": "They are equally effective for motivation"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research contradicts the belief that self-criticism is motivating. Self-criticism activates threat responses—shame, defensiveness, withdrawal—and is associated with fear of failure, procrastination, and reduced intrinsic motivation. Self-compassion allows you to acknowledge mistakes without feeling worthless, creating psychological safety to try again. Longitudinal studies show self-compassionate individuals set HIGHER personal standards and work harder toward mastery goals. They're not complacent—they're freed from the paralysis of shame. Self-kindness supports learning; self-punishment blocks it."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does self-compassion differ from self-esteem in supporting wellbeing?",
+            "options": [
+                {"id": "opt1", "text": "They are identical constructs with different names"},
+                {"id": "opt2", "text": "Self-esteem is contingent on success and social comparison (fragile); self-compassion is unconditional and acknowledges common humanity (stable)"},
+                {"id": "opt3", "text": "Self-esteem is evidence-based; self-compassion is not"},
+                {"id": "opt4", "text": "Self-compassion only works for people with low self-esteem"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Self-esteem is your evaluation of your worth relative to others—it's contingent on success, comparison, and achievement. When you fail or someone else succeeds, self-esteem drops. Self-compassion is treating yourself kindly REGARDLESS of success/failure—it's unconditional. Research shows self-esteem is fragile (drops during setbacks) while self-compassion is stable (persists through difficulty). Self-compassion is more protective during failure specifically because it doesn't depend on 'being better.' You can have both, but self-compassion is more reliable for failure recovery."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a recent mistake or failure. Write a self-compassionate response using all three components: (1) Self-kindness—what would you say to a friend in this situation? Say that to yourself. (2) Common humanity—how is this struggle part of being human, not evidence you're uniquely defective? (3) Mindfulness—acknowledge the pain without ruminating or suppressing. What shifts when you practice this?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "7",
+    "title": "Self-Compassion: The Evidence for Failure Recovery - Quiz"
+}

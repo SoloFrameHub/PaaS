@@ -1,0 +1,32 @@
+# Dependencies (reinstalled in Docker)
+node_modules
+
+# Source docs (not needed in image)
+docs/
+*.md
+!README.md
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+
+# Tests
+tests/
+e2e/
+playwright.config.ts
+test-results/
+playwright-report/
+
+# Dev config
+.env*.local
+.env.example
+.claude/
+tailwind-templates/
+
+# OS files
+.DS_Store
+Thumbs.db

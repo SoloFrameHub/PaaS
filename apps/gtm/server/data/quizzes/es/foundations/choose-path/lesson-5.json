@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "5",
+    "sectionId": "foundations",
+    "title": "Quiz del Sprint de Cero a Diez",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "¿Cuál es el objetivo singular del 'Sprint de Cero a Diez'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Construir una máquina de ventas automatizada y escalable"
+                },
+                {
+                    "id": "b",
+                    "text": "Validar la oferta y obtener 10 clientes de pago lo más rápido posible"
+                },
+                {
+                    "id": "c",
+                    "text": "Levantar capital de riesgo"
+                },
+                {
+                    "id": "d",
+                    "text": "Perfeccionar tu marca y sitio web"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "La fase de Cero a Diez se trata completamente de validación y prueba de valor. La eficiencia y la automatización vienen después; ahora mismo necesitas prueba de que alguien pagará."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "¿Por qué se recomienda la 'Honestidad Brutal' como herramienta de ventas en esta fase?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Porque te hace parecer una gran empresa"
+                },
+                {
+                    "id": "b",
+                    "text": "Porque a las personas les gusta ser parte de una 'construcción' y te ayudarán si pides su experiencia"
+                },
+                {
+                    "id": "c",
+                    "text": "Porque no puedes meterte en problemas por mentir si eres honesto"
+                },
+                {
+                    "id": "d",
+                    "text": "No lo es; siempre debes fingir estar más establecido de lo que estás"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Posicionar a los primeros prospectos como 'socios de diseño' o colaboradores genera un tipo diferente de confianza. Se sienten involucrados en el resultado y a menudo están más dispuestos a perdonar errores o brechas tempranas a cambio de tener voz en el producto."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "¿En qué debería invertirse la mayor parte de tu esfuerzo (70%) durante el sprint?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Escribir publicaciones de blog"
+                },
+                {
+                    "id": "b",
+                    "text": "Contactos directos y manuales a objetivos de ICP"
+                },
+                {
+                    "id": "c",
+                    "text": "Ajustar las características del producto"
+                },
+                {
+                    "id": "d",
+                    "text": "Hacer networking en grandes conferencias"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "El outreach manual calculado es la forma más rápida de obtener retroalimentación. En esta etapa, necesitas conversaciones uno a uno, no una audiencia amplia."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Durante una llamada de 'Entrevista de Problema', un fundador descubre que el prospecto en realidad no tiene el dolor que esperaba. ¿Cuál es el movimiento correcto?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Intentar convencerlos de que sí tienen el dolor"
+                },
+                {
+                    "id": "b",
+                    "text": "Terminar la llamada lo más rápido posible"
+                },
+                {
+                    "id": "c",
+                    "text": "Usarlo como datos para refinar el ICP o el enunciado del problema (Iteración)"
+                },
+                {
+                    "id": "d",
+                    "text": "Ofrecerles un producto diferente por completo"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Cada 'no' o 'no para mí' es información valiosa. Te dice que tu segmentación está mal o que tu definición del problema es incorrecta. Usa esta retroalimentación para iterar de inmediato."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "¿Cuándo debe un fundador salir del contexto de Sprint de Cero a Diez?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cuando llegan a 100 en su lista de email"
+                },
+                {
+                    "id": "b",
+                    "text": "Cuando tienen 10 clientes de pago y una oferta validada"
+                },
+                {
+                    "id": "c",
+                    "text": "Después de 3 meses, independientemente de los resultados"
+                },
+                {
+                    "id": "d",
+                    "text": "Cuando terminan todos los cursos del Track 1"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "10 clientes es el punto de referencia arbitrario pero efectivo para la 'Tracción Inicial.' En este punto, has demostrado que alguien pagará, y puedes comenzar a mirar caminos de adquisición más escalables (SaaS, Creador o Servicio)."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "¿Cuál es tu estado de validación actual? ¿Cuántos clientes de pago tienes? Según la Lección 5, ¿cuál es la distracción #1 que actualmente te impide hacer 10 contactos manuales al día?",
+            "minLength": 100,
+            "promptForAI": "Evalúa la honestidad del fundador. ¿Están 'jugando a los negocios' (enfocándose en logos/automatización) o 'haciendo negocios' (outreach manual)? Empújalos a comprometerse con un volumen específico de outreach e identificar sus 'Objetivos 10' para mañana."
+        }
+    ]
+}

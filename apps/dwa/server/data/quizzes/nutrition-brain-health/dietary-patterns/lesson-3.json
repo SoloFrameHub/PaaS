@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What was the key finding of the SMILES Trial (Jacka et al. 2017) regarding dietary change and depression?",
+            "options": [
+                { "id": "opt1", "text": "Diet had no significant effect on depression symptoms" },
+                { "id": "opt2", "text": "32% of participants in the dietary support group achieved full remission from depression, compared to 8% in the social support group" },
+                { "id": "opt3", "text": "Only participants who combined diet with medication showed improvement" },
+                { "id": "opt4", "text": "The dietary intervention worked only for mild depression, not moderate or severe" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The SMILES Trial was the first RCT to test diet as a treatment for active depression. 32% of participants following the ModiMedDiet achieved full remission (MADRS score below 10), compared to just 8% in the social support control group — a four-fold difference. The diet group showed an average improvement of 7.1 points on the MADRS scale."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following is NOT one of the mechanisms through which the Mediterranean diet protects brain health?",
+            "options": [
+                { "id": "opt1", "text": "Anti-inflammatory effects from olive oil, fatty fish, and nuts" },
+                { "id": "opt2", "text": "Microbiome support through high fiber content" },
+                { "id": "opt3", "text": "Elimination of all carbohydrates to reduce blood sugar" },
+                { "id": "opt4", "text": "Blood sugar stability from whole grains and legumes" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Mediterranean diet does not eliminate carbohydrates — it emphasizes whole grains, legumes, and fruit as key components. Its brain-protective mechanisms include anti-inflammatory effects, microbiome support through high fiber, nutrient density, blood sugar stability from fiber-rich foods, and oxidative stress protection from polyphenols."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What surprising finding emerged about the cost of the SMILES Trial dietary intervention?",
+            "options": [
+                { "id": "opt1", "text": "It was three times more expensive than participants' previous diets" },
+                { "id": "opt2", "text": "It cost the same as participants' previous diets" },
+                { "id": "opt3", "text": "It was actually less expensive than participants' previous eating patterns" },
+                { "id": "opt4", "text": "The cost was not measured in the trial" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "One of the most unexpected findings from the SMILES Trial was that the Mediterranean-style dietary intervention cost less than what participants were previously spending on food. Cutting back on energy drinks, takeout, packaged snacks, and sugary beverages offset the cost of adding olive oil, canned fish, legumes, and vegetables."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the Chowdhury et al. 2024 comprehensive review, what is true about the Mediterranean diet's protective effect against depression?",
+            "options": [
+                { "id": "opt1", "text": "It only works for people living in Mediterranean countries" },
+                { "id": "opt2", "text": "It requires strict adherence for at least one year before any benefits appear" },
+                { "id": "opt3", "text": "It consistently showed the strongest protective association against depression across cultures worldwide" },
+                { "id": "opt4", "text": "It was less effective than taking a daily multivitamin" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Chowdhury et al. (2024) confirmed that Mediterranean and Mediterranean-style dietary patterns consistently showed the strongest protective association against depression and anxiety across cultures, countries, age groups, and methodological approaches. The SMILES Trial itself was conducted in Australia using an adapted version (ModiMedDiet), proving the pattern works outside the Mediterranean region."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What behavioral approach did the SMILES Trial dietitians use to help participants change their eating patterns?",
+            "options": [
+                { "id": "opt1", "text": "Strict meal plans with no flexibility" },
+                { "id": "opt2", "text": "Motivational interviewing — asking rather than telling, exploring ambivalence, and building self-efficacy" },
+                { "id": "opt3", "text": "Calorie counting and daily weigh-ins" },
+                { "id": "opt4", "text": "Group lectures on nutrition science" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The SMILES Trial dietitians used motivational interviewing (MI), a counseling approach that strengthens a person's own motivation for change. Key MI principles included asking rather than telling, exploring ambivalence, building self-efficacy through highlighting past successes, and rolling with resistance by collaboratively exploring barriers rather than pushing harder."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "3",
+    "title": "The Mediterranean Diet: A Mental Health Prescription - Quiz"
+}

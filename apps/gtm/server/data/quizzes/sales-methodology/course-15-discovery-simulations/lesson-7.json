@@ -1,0 +1,153 @@
+{
+    "lessonId": "7",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 7: Multi-Stakeholder Discovery Scenarios",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary motivation of the 'Economic Buyer' in a sales conversation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Understanding the exact lines of code in your application."
+                },
+                {
+                    "id": "b",
+                    "text": "Learning about your personal company history."
+                },
+                {
+                    "id": "c",
+                    "text": "Return on Investment (ROI), risk mitigation, and competitive advantage."
+                },
+                {
+                    "id": "d",
+                    "text": "Getting a free demo and some stickers."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Economic buyers focus on the 'business case' and how a purchase will affect the company's bottom line or strategic goals."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of these is a 'Technical Gatekeeper' most likely to ask during discovery?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'What's the three-year ROI for this tool?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'How does this solution integrate with our current AWS stack and what are your security standards?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'How will this improve our brand's reputation in the market?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Can you give me a discount if I sign today?'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Technical gatekeepers focus on the 'How' and the 'Safety' of a solution, ensuring it doesn't break or compromise their existing infrastructure."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "How do you define a 'Champion' according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Anyone who is nice to you on the call."
+                },
+                {
+                    "id": "b",
+                    "text": "The person with the highest job title in the company."
+                },
+                {
+                    "id": "c",
+                    "text": "The founder of the company."
+                },
+                {
+                    "id": "d",
+                    "text": "Someone who has power, a personal stake in solving the problem, and will advocate for you when you aren't in the room."
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "A true champion has both the motivation (personal stake) and the ability (access to power) to help you close the deal internally."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What is the 'Test Question' revealed in the lesson to identify if someone is a potential champion?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Do you like me?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'If I put together a business case for this project, would you be willing to review it with me and present it to [The Decision Maker]?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'Are you the one who signs the checks?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'How soon can we start?'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Asking for an internal commitment to present a business case tests whether they are willing to put their reputation on the line for your solution."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the best way to handle a discovery call with both a business lead and a technical lead present?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ignore the technical lead and only talk to the business lead."
+                },
+                {
+                    "id": "b",
+                    "text": "Talk only about technical specs for the entire 30 minutes."
+                },
+                {
+                    "id": "c",
+                    "text": "Acknowledge the split needs, allocate time to both, and use 'Context Bridges' to link technical features to business impacts."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask them to fight it out and let you know who wins."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Respecting both perspectives and bridging the gap between tech and business ensures all stakeholders feel their needs are being addressed."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Identify the three stakeholder types (Economic, Technical, User) for your specific business. Draft one tailored discovery question for each that directly addresses their likely primary motivation. Who is most often your 'Champion' in your current sales cycles, and how can you use the 'Test Question' to verify them in your next call?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's stakeholder mapping. Review their drafted questions for role-alignment. For the 'Champion' section, check if they correctly identify who has the most 'personal pain' to solve in their typical sales cycle."
+        }
+    ]
+}

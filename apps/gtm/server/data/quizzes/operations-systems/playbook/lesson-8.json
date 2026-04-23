@@ -1,0 +1,78 @@
+{
+  "lessonId": "8",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "The 90-Day Commitment Contract",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does behavioral psychology identify as the most powerful factor in following through on a commitment?",
+      "options": [
+        { "id": "a", "text": "Knowing the right strategy" },
+        { "id": "b", "text": "Strong motivation and desire" },
+        {
+          "id": "c",
+          "text": "External accountability (sharing the commitment with someone)"
+        },
+        { "id": "d", "text": "Having a financial stake" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "External accountability increases goal achievement by 65% (ASTD research). Motivation fades. Strategy doesn't create behavior. Accountability to another person creates social commitment, which is far harder to rationalize away."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What does the 90-Day Commitment Contract transform?",
+      "options": [
+        { "id": "a", "text": "Your pricing strategy" },
+        {
+          "id": "b",
+          "text": "Your one-page system from a strategy document into a behavioral contract"
+        },
+        { "id": "c", "text": "Your CRM configuration" },
+        { "id": "d", "text": "Your product roadmap" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The contract transforms your one-page acquisition system from a strategy document into a behavioral contract with specific daily activities, explicit boundaries, accountability mechanisms, and review checkpoints."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the gap the 90-Day Contract is designed to close?",
+      "options": [
+        { "id": "a", "text": "The gap between revenue and expenses" },
+        {
+          "id": "b",
+          "text": "The gap between knowing what to do and actually doing it consistently"
+        },
+        {
+          "id": "c",
+          "text": "The gap between product features and market needs"
+        },
+        { "id": "d", "text": "The gap between free users and paid users" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The gap is between knowing and doing. You know you should send cold emails, post on LinkedIn, review metrics every Friday. But you don't do it consistently. The commitment contract closes this gap with formal behavioral promises."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Strong motivation is a reliable system for ensuring consistent execution over 90 days.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Motivation fades — it's a feeling, not a system. External accountability is far more reliable. Accountability to another person creates social commitment that sustains action when motivation inevitably drops."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Who would you choose as your accountability partner for a 90-day commitment? What specific daily activities would you commit to? How would you handle the inevitable weeks where you want to skip?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response names a specific accountability partner (or describes how they'd find one), lists concrete daily activities from their playbook, and has a realistic plan for maintaining commitment during difficult weeks (not just relying on willpower)."
+    }
+  ]
+}

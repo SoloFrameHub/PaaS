@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the CBT Triangle show about thoughts, feelings, and actions?",
+            "options": [
+                { "id": "opt1", "text": "They are completely independent of each other" },
+                { "id": "opt2", "text": "They are connected in a continuous cycle -- change one and you can change them all" },
+                { "id": "opt3", "text": "Only thoughts matter; feelings and actions follow automatically" },
+                { "id": "opt4", "text": "Actions determine thoughts but not feelings" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The CBT Triangle shows that thoughts, feelings, and actions are all connected in a continuous cycle. When one changes, the others change too. This means you can break negative cycles by changing just one piece."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a 'balanced thought' in CBT?",
+            "options": [
+                { "id": "opt1", "text": "A thought that is always positive and optimistic" },
+                { "id": "opt2", "text": "A realistic thought that accounts for all the evidence, not overly positive or negative" },
+                { "id": "opt3", "text": "A thought that ignores all feelings" },
+                { "id": "opt4", "text": "A thought that suppresses anxiety completely" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Balanced thoughts are not overly positive -- they are realistic and account for all the evidence. For example, 'I'm nervous, but I'm prepared. It's normal to feel anxious' acknowledges the feeling while being realistic."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which characteristic of automatic anxious thoughts makes them particularly powerful?",
+            "options": [
+                { "id": "opt1", "text": "They appear slowly and can be easily controlled" },
+                { "id": "opt2", "text": "They appear instantly, feel completely true, and drive avoidance behaviors" },
+                { "id": "opt3", "text": "They are always based on factual evidence" },
+                { "id": "opt4", "text": "They only occur at night" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Automatic anxious thoughts are powerful because they appear instantly (before you realize it), feel completely true (even without evidence), trigger strong emotions, and drive avoidance behaviors."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In the work presentation scenario, what is the key difference between the anxious cycle and the balanced cycle?",
+            "options": [
+                { "id": "opt1", "text": "The balanced cycle eliminates all nervousness" },
+                { "id": "opt2", "text": "The balanced cycle uses a realistic thought ('I'm nervous but prepared') instead of a catastrophic one" },
+                { "id": "opt3", "text": "The balanced cycle avoids the situation entirely" },
+                { "id": "opt4", "text": "The balanced cycle requires medication" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Same situation, different thought, completely different outcome. The balanced thought ('I'm nervous, but I'm prepared') replaces the catastrophic one ('I'm going to freeze up'), leading to manageable feelings and constructive actions."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What analogy is used to describe the relationship between thoughts and weather?",
+            "options": [
+                { "id": "opt1", "text": "Thoughts are like storms that can never be stopped" },
+                { "id": "opt2", "text": "Thoughts are like clouds passing through the sky -- they come and go" },
+                { "id": "opt3", "text": "Thoughts are like permanent fixtures in the sky" },
+                { "id": "opt4", "text": "Thoughts are like earthquakes that shake your foundation" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Thoughts are compared to clouds passing through the sky. Anxious thoughts may currently feel like a storm blocking everything else, but you can learn to watch those clouds drift by without getting caught in the rain."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit-foundations",
+    "lessonId": "4",
+    "title": "The CBT Triangle: Your Thoughts, Feelings, and Actions - Quiz"
+}

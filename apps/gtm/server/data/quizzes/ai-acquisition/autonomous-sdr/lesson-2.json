@@ -1,0 +1,78 @@
+{
+  "lessonId": "2",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Autopilot vs Copilot Modes",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key difference between Autopilot and Copilot mode for AI SDRs?",
+      "options": [
+        { "id": "a", "text": "Autopilot is cheaper than Copilot" },
+        {
+          "id": "b",
+          "text": "Autopilot runs independently with minimal review; Copilot generates outputs for human approval before execution"
+        },
+        { "id": "c", "text": "Copilot sends more emails than Autopilot" },
+        { "id": "d", "text": "Autopilot only works on LinkedIn" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Autopilot mode means the AI runs independently — selecting prospects, writing emails, sending, handling replies, and booking meetings. Copilot mode means the AI generates outputs (research, drafts, suggestions) but a human approves before execution. For solo founders, Copilot is almost always safer."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why is full Autopilot mode dangerous for solo founders?",
+      "options": [
+        { "id": "a", "text": "It's too expensive" },
+        {
+          "id": "b",
+          "text": "You're sending 50-150/day, still testing messaging, have no backup team, and one angry prospect could kill a $10K deal"
+        },
+        { "id": "c", "text": "It doesn't work with email" },
+        { "id": "d", "text": "LinkedIn doesn't allow it" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Full Autopilot is dangerous for solo founders because of low volume (50-150/day means each email matters more), untested messaging, no backup team to handle errors, and high impact per prospect. A $75K deal was lost in the opening story when the AI misclassified a warm prospect's reply."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What happened in the $75,000 autopilot disaster?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The AI sent too many emails and got the domain banned"
+        },
+        {
+          "id": "b",
+          "text": "The AI misclassified a warm prospect's 'not right now' as 'not interested' and auto-sent a breakup email, killing a $75K deal"
+        },
+        { "id": "c", "text": "The AI booked meetings with the wrong people" },
+        { "id": "d", "text": "The platform crashed and lost all data" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's AI SDR misclassified a warm prospect's polite 'not right now' as 'not interested' and automatically sent a breakup email, killing a $75,000 deal. This illustrates why reply classification in autopilot mode is one of the highest-risk functions for solo founders."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Solo founders should start with Copilot mode and only graduate to selective Autopilot after 30+ days of validated performance.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson recommends starting in Copilot mode (human approves everything) and gradually moving to selective Autopilot only for low-risk functions (like follow-up emails to unresponsive prospects) after 30+ days of validated performance. Full Autopilot should be reserved for proven, high-volume playbooks."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Which specific AI SDR functions would you trust in Autopilot mode from day one, and which would you keep in Copilot mode? Explain your reasoning for each based on the risk-to-reward ratio.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response differentiates between low-risk functions (warmup, data enrichment, follow-up scheduling) suitable for Autopilot and high-risk functions (first-touch sends, reply classification, meeting booking) that need Copilot. Look for understanding that the risk is proportional to brand damage potential."
+    }
+  ]
+}

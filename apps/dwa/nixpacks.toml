@@ -1,0 +1,9 @@
+# Pin Node 20 and explicit install/build so Coolify Nixpacks build succeeds
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm run start"

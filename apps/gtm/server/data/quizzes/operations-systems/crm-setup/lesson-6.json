@@ -1,0 +1,134 @@
+{
+    "lessonId": "6",
+    "courseId": "crm-setup",
+    "sectionId": "operations-systems",
+    "title": "Test Your Understanding",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "What is the 'Would I Act on This?' test?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A test to see if a field triggers a decision or automation"
+                },
+                {
+                    "id": "b",
+                    "text": "A test to see if a field looks professional"
+                },
+                {
+                    "id": "c",
+                    "text": "A test to see if a field is required by the CRM"
+                },
+                {
+                    "id": "d",
+                    "text": "A test to see if a field can be auto-filled"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Every custom field must pass this test: if the answer doesn't trigger a decision or automation, delete it. Solo founders don't have time for vanity metrics.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "Why are free-text notes problematic for AI agents?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They take too long to write"
+                },
+                {
+                    "id": "b",
+                    "text": "They're invisible to AI — agents can't extract structured insights"
+                },
+                {
+                    "id": "c",
+                    "text": "They're not searchable"
+                },
+                {
+                    "id": "d",
+                    "text": "They require too much storage"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Free-text notes like 'Had a good call' are subjective and unstructured. AI agents need categorical fields (event_type, event_outcome, next_action) to reason on.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "What's the benefit of logging events in a timeline (vs. just updating deal stage)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It looks more professional"
+                },
+                {
+                    "id": "b",
+                    "text": "It creates a reasoning chain for AI agents to predict outcomes"
+                },
+                {
+                    "id": "c",
+                    "text": "It's required by most CRMs"
+                },
+                {
+                    "id": "d",
+                    "text": "It makes reports prettier"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A timeline of events (email_sent → email_received → call → meeting) tells a story. AI agents read stories to predict outcomes and suggest next actions.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "Why use snake_case field names (e.g., 'fit_score') instead of 'Fit Score'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's a CRM best practice"
+                },
+                {
+                    "id": "b",
+                    "text": "It's required for API compatibility and Course 27 agent integration"
+                },
+                {
+                    "id": "c",
+                    "text": "It saves storage space"
+                },
+                {
+                    "id": "d",
+                    "text": "It's easier to type"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "snake_case with category prefixes (fit_score, deal_priority, health_days_since_contact) makes fields machine-readable for AI agents and API integrations.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "Which of these is a 'health indicator' field?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Deal Name"
+                },
+                {
+                    "id": "b",
+                    "text": "Days Since Last Contact"
+                },
+                {
+                    "id": "c",
+                    "text": "Lead Source"
+                },
+                {
+                    "id": "d",
+                    "text": "Competitor Mentioned"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Health indicators are auto-calculated signals like 'Days Since Last Contact,' 'Engagement Trend,' and 'Avg Response Time.' They give AI agents real-time deal health data.",
+            "type": "multiple-choice"
+        }
+    ]
+}

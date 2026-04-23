@@ -1,0 +1,141 @@
+{
+  "lessonId": "6",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Estrategia de Calentamiento de Dominio",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito principal del 'Calentamiento de Dominio'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para hacer que los correos carguen más rápido"
+        },
+        {
+          "id": "b",
+          "text": "Para construir una reputación de confianza con los Proveedores de Servicio de Bandeja de Entrada (ISPs) como Google y Microsoft"
+        },
+        {
+          "id": "c",
+          "text": "Para verificar que tu tarjeta de crédito está activa"
+        },
+        {
+          "id": "d",
+          "text": "Para reescribir el contenido de tu correo para mayor claridad"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los ISPs monitorean los patrones de envío de los nuevos dominios. El calentamiento simula comportamiento natural (aperturas, respuestas) para demostrar que el dominio no es un bot de spam."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuánto tiempo dura el protocolo recomendado de 'Rampa Lenta' para un dominio completamente nuevo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 horas"
+        },
+        {
+          "id": "b",
+          "text": "1 semana"
+        },
+        {
+          "id": "c",
+          "text": "2-4 semanas"
+        },
+        {
+          "id": "d",
+          "text": "3 meses"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Un período de 4 semanas es el estándar de practicante para garantizar que un dominio esté lo suficientemente maduro para campañas de outbound reales sin ser marcado como sospechoso."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué deberías hacer una vez que empiezas a enviar outreach real a los leads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apagar la herramienta de calentamiento para ahorrar ancho de banda"
+        },
+        {
+          "id": "b",
+          "text": "Aumentar el outreach real a 500 correos por día de inmediato"
+        },
+        {
+          "id": "c",
+          "text": "Mantener la herramienta de calentamiento funcionando indefinidamente a bajo volumen"
+        },
+        {
+          "id": "d",
+          "text": "Detener todo el calentamiento y enfocarse en las respuestas manuales"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Las interacciones de calentamiento actúan como 'seguro' contra las quejas de spam. Mantener un ritmo constante de interacciones positivas ayuda a mantener una puntuación alta de salud del dominio."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estas métricas es el mejor indicador de que la salud de tu dominio está en la 'Zona de Peligro'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tasa de entrega a bandeja de entrada cae al 60%"
+        },
+        {
+          "id": "b",
+          "text": "La tasa de apertura es superior al 20%"
+        },
+        {
+          "id": "c",
+          "text": "Recibes 2 respuestas en un día"
+        },
+        {
+          "id": "d",
+          "text": "Tu dominio tiene 6 meses de antigüedad"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Los dominios saludables deben tener un 95%+ de entrega a bandeja de entrada. Una caída al 60% indica que los ISPs están filtrando tus mensajes a spam o cuarentena."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la 'Zona Segura' de volumen diario por dominio para un fundador en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "500-1,000 correos/día"
+        },
+        {
+          "id": "b",
+          "text": "30-50 correos/día"
+        },
+        {
+          "id": "c",
+          "text": "1-5 correos/día"
+        },
+        {
+          "id": "d",
+          "text": "Tantos como permita tu herramienta"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El outreach en solitario de alta precisión prospera con la calidad. Enviar 30-50 correos por dominio te mantiene dentro de los límites de seguridad mientras proporciona suficiente volumen para conversiones consistentes."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Explica el concepto de interacciones de 'Latido del Corazón' con tus propias palabras. ¿Por qué es más efectivo tener un calentamiento constante de bajo volumen que una ráfaga intensiva única?",
+      "minLength": 100,
+      "promptForAI": "Evalúa si el fundador entiende que los ISPs recompensan la consistencia y la interacción diversa (respuestas, aperturas) por encima del simple volumen. La metáfora del 'seguro' es una buena señal de comprensión."
+    }
+  ]
+}

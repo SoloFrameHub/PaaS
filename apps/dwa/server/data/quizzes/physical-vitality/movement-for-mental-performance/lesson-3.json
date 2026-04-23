@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for exercise as an intervention for anxiety disorders?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "STRONG — equally well-supported as depression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE — with important caveats about study quality and distinction between anxiety symptoms vs. diagnosed anxiety disorders"
+                },
+                {
+                    "id": "opt3",
+                    "text": "No evidence exists"
+                },
+                {
+                    "id": "opt4",
+                    "text": "WEAK — exercise worsens anxiety"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Anxiety has MODERATE evidence. Many positive studies used anxiety as a secondary outcome rather than primary, which can inflate effect sizes. A critical Duke University review raised concerns about study quality. The evidence is stronger for generalized anxiety symptoms than for specific anxiety disorder diagnoses (panic disorder, GAD, social anxiety, OCD, PTSD)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does exercise affect the HPA axis (stress response system)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise activates the HPA axis permanently, increasing chronic stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise has no effect on stress hormones"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Regular aerobic exercise is associated with lower HPA axis reactivity and blunted cortisol response to psychosocial stressors — a form of stress inoculation"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only meditation affects the HPA axis, not exercise"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Regular aerobic exercise produces 'cross-stressor adaptation' — aerobically fit individuals show blunted cortisol and adrenaline responses to non-exercise stressors. A 30-minute moderate session before a stressor can reduce cortisol response by 40-50%. Exercise essentially recalibrates your stress thermostat, making you less reactive."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'marketing red flag' about exercise and anxiety mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise is completely ineffective for anxiety"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Presenting exercise as a primary treatment for specific anxiety disorders (panic disorder, GAD, social anxiety, OCD, PTSD) at the same confidence level as for depression is not supported by current evidence"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise always cures anxiety immediately"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only medication works for anxiety, never exercise"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The red flag is overstating exercise as a primary treatment for diagnosed anxiety disorders with the same confidence as for depression. Generalized anxiety symptom reduction is well-supported, but disorder-specific treatment-level efficacy (especially for panic disorder, OCD, PTSD, social anxiety) requires specialist evaluation and hasn't been established with the same strength as for depression."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What type of exercise is recommended for people with severe anxiety?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "High-intensity interval training (HIIT) to 'push through' the anxiety"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Gentle-to-moderate intensity exercise like yoga, walking, or tai chi — overly intense exercise can feel too activating for severe anxiety"
+                },
+                {
+                    "id": "opt3",
+                    "text": "No exercise is recommended for anxiety"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only competitive sports"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "For severe anxiety, gentle-to-moderate intensity exercise (yoga, gentle aerobic, tai chi) is better than high-intensity. Intense exercise can increase heart rate and arousal to levels that feel threatening to someone with severe anxiety or panic disorder. Mind-body practices that include breathing and grounding are often better tolerated."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What mechanism explains why exercise helps with stress resilience even outside of exercise sessions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only helps during the workout itself"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Cross-stressor adaptation: aerobically fit individuals show diminished physiological stress responses (lower cortisol, ACTH, sympathetic activation) to non-exercise stressors"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise makes you too tired to notice stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no carryover effect"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The cross-stressor adaptation hypothesis is well-established: regular physical training teaches your body to regulate stress responses more efficiently. When you encounter a psychosocial stressor (work deadline, conflict, public speaking), your HPA axis and sympathetic nervous system are less reactive because they've been 'trained' through exercise adaptation. It's a form of stress inoculation."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "3",
+    "title": "Anxiety Disorders and Movement Therapy - Quiz"
+}

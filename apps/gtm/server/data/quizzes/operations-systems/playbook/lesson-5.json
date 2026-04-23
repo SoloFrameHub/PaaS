@@ -1,0 +1,78 @@
+{
+  "lessonId": "5",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Playbook: Creator with Audience",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the most common mistake creators make when trying to monetize their audience?",
+      "options": [
+        { "id": "a", "text": "Launching products too early" },
+        {
+          "id": "b",
+          "text": "Creating pure value content that trains followers to consume for free"
+        },
+        { "id": "c", "text": "Using the wrong social platform" },
+        { "id": "d", "text": "Setting prices too high" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Creating pure value content that solves the problem for free trains followers to consume but never buy. When everything valuable is free, there's no perceived benefit to paying. The solution is 'bridge content' that positions the paid product as the implementation tool."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What percentage of a creator's audience will ever buy from them?",
+      "options": [
+        { "id": "a", "text": "1-5%" },
+        { "id": "b", "text": "10-15%" },
+        { "id": "c", "text": "25-30%" },
+        { "id": "d", "text": "50%+" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Only 1-5% of your audience will ever buy. That's not failure — that's the creator economy. A creator with 10,000 subscribers at 2% conversion and $500 AOV generates $100,000. The playbook focuses on identifying and converting that 2-5%."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is 'bridge content'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Content that bridges two social media platforms"
+        },
+        {
+          "id": "b",
+          "text": "Content that provides the what and why for free, positioning the paid product as the how"
+        },
+        {
+          "id": "c",
+          "text": "A content format that works across all platforms"
+        },
+        { "id": "d", "text": "Content created by AI tools" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Bridge content teaches the what and why for free, then positions the paid product as the implementation tool (the how). You demonstrate the framework publicly; customers pay for the guided implementation."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A creator with 15,000 subscribers but only $3,000/month revenue has an audience problem.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. They don't have an audience problem — they have a conversion pathway problem. They've built a massive free value machine with no system to convert followers into buyers. The fix is creating bridge content and conversion systems, not more audience."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "If you have an audience, what percentage of your content is pure value vs. bridge content? How would you restructure your content to create a conversion pathway from free follower to paying customer?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response assesses their content mix (pure value vs bridge content), identifies the gap in their conversion pathway, and proposes a specific restructuring plan that teaches the what/why for free while positioning paid offerings as the how."
+    }
+  ]
+}

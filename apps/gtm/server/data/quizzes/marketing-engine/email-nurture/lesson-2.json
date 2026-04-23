@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "2",
+    "lessonTitle": "Email Capture Strategy",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'One Problem Rule' for lead magnets?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your lead magnet should solve every problem your ICP has."
+                },
+                {
+                    "id": "b",
+                    "text": "Your lead magnet must solve ONE specific, urgent problem related to your paid offering."
+                },
+                {
+                    "id": "c",
+                    "text": "You should only create one lead magnet ever."
+                },
+                {
+                    "id": "d",
+                    "text": "Lead magnets should be as general as possible to appeal to more people."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Specificity wins. A lead magnet that solves one urgent problem will convert better than a broad, generic resource because it provides immediate, actionable value.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which popup trigger typically has the highest conversion rate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediate popup when page loads."
+                },
+                {
+                    "id": "b",
+                    "text": "Exit intent popup (triggers when mouse moves toward close button)."
+                },
+                {
+                    "id": "c",
+                    "text": "Popup that appears every 10 seconds."
+                },
+                {
+                    "id": "d",
+                    "text": "Popup that covers the entire screen with no close button."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Exit intent popups convert at 5-10% because they catch visitors at the moment they're about to leave, offering one last chance to provide value without interrupting their reading experience.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is a 'Content Upgrade' and why does it convert better than generic lead magnets?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A more expensive version of your product."
+                },
+                {
+                    "id": "b",
+                    "text": "A blog post-specific lead magnet that is directly related to the content the reader is already consuming, creating higher relevance and conversion."
+                },
+                {
+                    "id": "c",
+                    "text": "An upgraded email template with better design."
+                },
+                {
+                    "id": "d",
+                    "text": "A premium newsletter tier."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Content upgrades work because they're hyper-relevant. If someone is reading about cold email, offering them 'Cold Email Templates' is far more compelling than a generic 'Marketing Guide.'",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are the 6 essential elements of a high-converting landing page?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Logo, navigation menu, sidebar, footer, ads, and a form."
+                },
+                {
+                    "id": "b",
+                    "text": "Clear headline, subheadline, benefits bullets, social proof, minimal form, and strong CTA."
+                },
+                {
+                    "id": "c",
+                    "text": "Video, testimonials, pricing table, FAQ, blog links, and contact info."
+                },
+                {
+                    "id": "d",
+                    "text": "Header image, company history, team photos, awards, press mentions, and a phone number."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A landing page should have singular focus. These 6 elements work together to communicate value, build trust, and make it easy to convert without distractions.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the difference between a TOFU and MOFU lead magnet?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "TOFU is for beginners; MOFU is for experts."
+                },
+                {
+                    "id": "b",
+                    "text": "TOFU (Top of Funnel) addresses broad problems for large audiences; MOFU (Middle of Funnel) addresses specific problems for qualified, closer-to-purchase audiences."
+                },
+                {
+                    "id": "c",
+                    "text": "TOFU is free; MOFU costs money."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; they are the same thing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "TOFU lead magnets cast a wide net (e.g., 'SEO Checklist'), while MOFU lead magnets target people further along the buying journey with more specific needs (e.g., 'SaaS Pricing Calculator').",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Complete the practice exercise: Identify the ONE specific, urgent problem your ICP faces that you can solve in 10 minutes or less. Choose a format (PDF, checklist, template, mini-course, tool) and write the headline and 3 benefit bullets for your landing page. Why would your ICP trade their email for this?",
+            "promptHints": [
+                "Focus on a problem that causes daily frustration.",
+                "Make the benefit immediate and actionable.",
+                "Consider what you wish someone had given you when you faced this problem."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "1"
+        ],
+        "unlocks": [
+            "3"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Email Capture Strategy - Quiz"
+}

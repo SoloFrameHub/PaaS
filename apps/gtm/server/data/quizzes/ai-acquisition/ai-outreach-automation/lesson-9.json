@@ -1,0 +1,78 @@
+{
+  "lessonId": "9",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "The Never Automate Rules",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three categories of outreach actions in the automation framework?",
+      "options": [
+        { "id": "a", "text": "Easy, Medium, Hard" },
+        {
+          "id": "b",
+          "text": "Always Automate (zero-judgment tasks), Automate with Human Gates (AI drafts, human approves), Never Automate (high-stakes moments)"
+        },
+        { "id": "c", "text": "Email, LinkedIn, Phone" },
+        { "id": "d", "text": "Research, Draft, Send" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three categories are: Category 1 (Always Automate) for repetitive zero-judgment tasks like DNS setup and bounce handling; Category 2 (Automate with Human Gates) for AI-drafted content that humans validate; Category 3 (Never Automate) for high-stakes moments like first replies, objection handling, and pricing discussions."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why should first replies from prospects NEVER be automated?",
+      "options": [
+        { "id": "a", "text": "First replies are too short for AI to process" },
+        {
+          "id": "b",
+          "text": "First replies reveal intent, objections, and buying signals that no AI can fully parse — and they're the moment trust is won or lost"
+        },
+        { "id": "c", "text": "Email tools don't support automated replies" },
+        {
+          "id": "d",
+          "text": "First replies are usually spam and should be ignored"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "First replies are the critical trust-building moment. They reveal intent, objections, questions, and buying signals that require human judgment to interpret. An automated response to a genuine question signals 'you're talking to a bot,' which destroys the relationship before it begins."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What did the $127,000 mistake in the lesson illustrate about automation risk?",
+      "options": [
+        { "id": "a", "text": "AI tools are too expensive for solo founders" },
+        {
+          "id": "b",
+          "text": "A VP detected automated outreach and cancelled consideration of a $127K annual contract — proving that what you automate matters more than how well you automate"
+        },
+        { "id": "c", "text": "You should never use any automation" },
+        { "id": "d", "text": "Enterprise prospects don't respond to email" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A Fortune 500 VP detected automated outreach and said 'This approach tells me everything I need to know about how you treat customers.' That single prospect represented $127K in annual revenue. The lesson: the better your automation gets, the more critical it becomes to know what should never be automated."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "DNS setup, warmup emails, and bounce handling are examples of tasks that should always be automated with no human review needed.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. DNS setup, warmup emails, list imports, bounce handling, and unsubscribe processing are Category 1 (Always Automate) tasks. They are repetitive, zero-judgment tasks where no human should waste time. The risk of error is low and easily correctable."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "List three outreach actions you currently automate (or plan to). For each, classify it into Category 1 (Always Automate), Category 2 (Automate with Human Gate), or Category 3 (Never Automate). If any are miscategorized in your current setup, explain what changes you need to make.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response lists three specific outreach actions, correctly categorizes each with reasoning, and identifies any current miscategorizations. Look for understanding that high-stakes moments (first replies, pricing, objections) belong in Category 3, and that most AI-generated content belongs in Category 2 with human review gates."
+    }
+  ]
+}

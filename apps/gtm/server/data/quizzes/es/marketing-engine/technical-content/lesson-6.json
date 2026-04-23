@@ -1,0 +1,167 @@
+{
+  "lessonId": "6",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Construir en Público",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia principal entre el 'BIP Estratégico' y el 'Narcisismo de Mirarse el Ombligo'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El BIP Estratégico usa más emojis"
+        },
+        {
+          "id": "b",
+          "text": "El BIP Estratégico filtra las actualizaciones a través de la pregunta '¿Mi ICP encontraría esto útil?'"
+        },
+        {
+          "id": "c",
+          "text": "El BIP Estratégico es solo para startups respaldadas por capital de riesgo"
+        },
+        {
+          "id": "d",
+          "text": "No hay diferencia; todo compartir es bueno"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si no ofrece una lección, un resultado o un marco que ayude a tu cliente, es solo una entrada de diario. El BIP estratégico es transparencia con un propósito."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Según la lección, ¿qué tipo de persona es más probable que atraiga a un cliente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La persona que constantemente pide una venta"
+        },
+        {
+          "id": "b",
+          "text": "La persona que pide consejos o retroalimentación sobre su proceso"
+        },
+        {
+          "id": "c",
+          "text": "La persona que nunca comparte nada interno"
+        },
+        {
+          "id": "d",
+          "text": "La persona con la marca más costosa"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Compartir tu viaje y pedir retroalimentación invita a los clientes potenciales a tu 'laboratorio,' generando confianza y autoridad antes de que se mencione una venta."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estas cosas generalmente NO deberías compartir al construir en público?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu lista de verificación interna para la incorporación de clientes"
+        },
+        {
+          "id": "b",
+          "text": "Un error que cometiste que te costó un cliente"
+        },
+        {
+          "id": "c",
+          "text": "Datos de clientes sensibles y no anonimizados o detalles de contratos privados"
+        },
+        {
+          "id": "d",
+          "text": "El conjunto de herramientas que usas para gestionar tu negocio"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El 'Límite de Autenticidad' protege tu responsabilidad y a tus clientes. Sé transparente sobre tu lógica y proceso, pero nunca a expensas de la privacidad o la seguridad competitiva."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el objetivo principal de una publicación de 'Ciclo de Retroalimentación'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quejarse de una tarea difícil"
+        },
+        {
+          "id": "b",
+          "text": "Validar una necesidad del mercado o función del producto involucrando a tu audiencia en la decisión"
+        },
+        {
+          "id": "c",
+          "text": "Obtener la mayor cantidad posible de 'Me gusta'"
+        },
+        {
+          "id": "d",
+          "text": "Demostrar que eres la persona más inteligente de la sala"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Publicaciones como '¿Estoy pensando en construir [X], es esto un problema para ti?' sirven tanto como investigación de mercado como adquisición en etapa temprana."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué plataforma es más adecuada para el 'Director's Cut' — reflexiones detalladas y sin filtros para tu audiencia más leal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Twitter/X"
+        },
+        {
+          "id": "b",
+          "text": "LinkedIn"
+        },
+        {
+          "id": "c",
+          "text": "Tu Newsletter"
+        },
+        {
+          "id": "d",
+          "text": "TikTok"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Mientras las plataformas sociales son para el alcance amplio, tu newsletter es para la profundidad. Es el mejor lugar para compartir las perspectivas más detalladas con quienes ya confían en ti."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "question": "En el Stack de Transparencia del Creador, ¿qué es el 'Meta-Método'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quejarse de los anuncios de Facebook"
+        },
+        {
+          "id": "b",
+          "text": "Compartir CÓMO estás construyendo lo que estás vendiendo (ej., tu configuración de grabación)"
+        },
+        {
+          "id": "c",
+          "text": "Publicar frases motivacionales"
+        },
+        {
+          "id": "d",
+          "text": "Copiar el embudo de tu competidor"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El Meta-Método (practicar lo que predicas) genera enorme confianza. Si vendes un curso de productividad, mostrar tu propio y caótico-pero-efectivo espacio de Notion demuestra que eres un practicante, no solo un teórico."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Piensa en tu trabajo de las últimas 2 semanas. ¿Cuál es una 'Victoria,' 'Derrota' o 'Momento eureka' que tuviste? Redacta un gancho de 3 oraciones para una publicación BIP que se enfoque en el VALOR para tu ICP. ¿Qué consejo pedirías en esta publicación?",
+      "minLength": 100,
+      "promptForAI": "Evalúa si el fundador identifica correctamente una actualización 'Estratégica' vs. 'Narcisista'. El gancho debe estar centrado en el lector, y la pregunta debe ser una invitación genuina al engagement."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

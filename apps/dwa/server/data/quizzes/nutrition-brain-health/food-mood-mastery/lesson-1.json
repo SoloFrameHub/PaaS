@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How are nutritional interventions positioned within the ISNPR 2024 guidelines?",
+            "options": [
+                { "id": "opt1", "text": "As standalone treatments that can replace psychotherapy and medication" },
+                { "id": "opt2", "text": "As alternative therapies for those who prefer natural approaches" },
+                { "id": "opt3", "text": "As adjunctive interventions that work alongside conventional treatments like psychotherapy and medication" },
+                { "id": "opt4", "text": "As preventive measures only, with no role in active treatment" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The ISNPR 2024 guidelines explicitly position nutritional interventions as adjunctive — meaning they work alongside, not instead of, conventional treatments like psychotherapy and medication. This is a core principle of the guidelines."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the Dietary Inflammatory Index (DII) measure?",
+            "options": [
+                { "id": "opt1", "text": "The caloric density of your overall diet" },
+                { "id": "opt2", "text": "Your adherence to the Mediterranean dietary pattern" },
+                { "id": "opt3", "text": "The degree of food processing in your diet" },
+                { "id": "opt4", "text": "The inflammatory potential of your overall diet" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The Dietary Inflammatory Index (DII) quantifies the inflammatory potential of an individual's overall diet. Higher DII scores indicate a more pro-inflammatory diet, which has been consistently associated with increased risk for depression."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the stepped-care model, what level of intervention is recommended for someone in active treatment with moderate symptoms and identifiable dietary gaps?",
+            "options": [
+                { "id": "opt1", "text": "Step 1 — Universal dietary guidance" },
+                { "id": "opt2", "text": "Step 2 — Structured dietary assessment and targeted recommendations" },
+                { "id": "opt3", "text": "Step 3 — Specialized nutritional intervention with a dietitian" },
+                { "id": "opt4", "text": "Step 4 — Intensive nutritional therapy under medical supervision" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Step 2 involves formal dietary assessment using validated tools and specific dietary recommendations based on identified gaps. It is the appropriate level for individuals with moderate symptoms or those not responding adequately to first-line treatments who have identifiable dietary issues."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How were the 49 recommendations in the ISNPR 2024 guidelines developed?",
+            "options": [
+                { "id": "opt1", "text": "Through a single large randomized controlled trial" },
+                { "id": "opt2", "text": "By a single lead researcher summarizing published studies" },
+                { "id": "opt3", "text": "Through a rigorous Delphi consensus process with 18 international experts" },
+                { "id": "opt4", "text": "By surveying patients about their dietary preferences" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The ISNPR guidelines were developed through a modified Delphi consensus process involving 18 international experts across psychiatry, nutrition science, dietetics, and public health. This method requires multiple rounds of anonymous voting and discussion until the panel reaches consensus."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is MEDAS, and what does a score of 9 or above indicate?",
+            "options": [
+                { "id": "opt1", "text": "A 28-item depression scale; a score of 9+ indicates moderate depression" },
+                { "id": "opt2", "text": "A food processing classification system; a score of 9+ indicates high ultra-processed food intake" },
+                { "id": "opt3", "text": "A 14-item Mediterranean Diet Adherence Screener; a score of 9+ indicates good adherence" },
+                { "id": "opt4", "text": "A metabolic assessment tool; a score of 9+ indicates good metabolic health" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Mediterranean Diet Adherence Screener (MEDAS) is a 14-item questionnaire that takes about five minutes to complete. It evaluates adherence to Mediterranean dietary patterns, and a score of 9 or above typically indicates good adherence."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "1",
+    "title": "Clinical Practice Integration: Nutritional Psychiatry Guidelines - Quiz"
+}

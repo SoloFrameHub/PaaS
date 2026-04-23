@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFYRWNQKZG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-SFYRWNQKZG");
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020408">
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/src/css/fonts.css">
+    <title>AI That Knows Your Business: How RAG Search Powers GTM OS Coaching | SoloFrameHub</title>
+    <meta name="description" content="Generic AI advice is worthless. Your AI coach needs to know your ICP, your pipeline, your documents, and your exact gap. Here's how we built that with pgvector RAG inside the GTM OS.">
+    <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+    <link rel="canonical" href="https://soloframehub.com/blog-ai-coaching-rag.html"/>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soloframehub.com/blog-ai-coaching-rag.html">
+    <meta property="og:title" content="AI That Knows Your Business: How RAG Search Powers GTM OS Coaching">
+    <meta property="og:description" content="Generic AI advice is worthless. Your AI coach needs to know your ICP, your pipeline, your documents, and your exact gap. Here's how we built that.">
+    <meta property="og:image" content="https://soloframehub.com/assets/images/integrated-intelligence.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI That Knows Your Business: How RAG Search Powers GTM OS Coaching">
+    <meta name="twitter:description" content="Generic AI advice is worthless. Your AI coach needs to know your ICP, your pipeline, your documents, and your exact gap. Here's how we built that.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "AI That Knows Your Business: How RAG Search Powers GTM OS Coaching",
+      "datePublished": "2026-03-30",
+      "dateModified": "2026-03-30",
+      "author": {"@id": "https://soloframehub.com/#mike-sullivan", "@type": "Person", "name": "Mike Sullivan", "image": "https://soloframehub.com/assets/images/academy/mike-sullivan-author-creator-solo-founder.webp", "sameAs": ["https://linkedin.com/in/michaeljsullivan", "https://www.linkedin.com/company/soloframehub", "https://x.com/soloframehub"]},
+      "publisher": {"@type": "Organization", "name": "SoloFrameHub", "url": "https://soloframehub.com"},
+      "url": "https://soloframehub.com/blog-ai-coaching-rag.html",
+      "description": "Generic AI advice is worthless. Your AI coach needs to know your ICP, your pipeline, your documents, and your exact gap. Here's how we built that with pgvector RAG inside the GTM OS."
+    }
+    </script>
+    <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    <style>body { font-family: 'Inter', sans-serif; } .font-serif-custom { font-family: 'Newsreader', serif; }</style>
+</head>
+<body class="bg-[#020408] min-h-screen flex flex-col items-center text-zinc-300">
+    <main class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+        <!-- Navigation -->
+        <nav class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-6 md:px-12 flex items-center justify-between">
+            <a href="index.html"><img src="assets/images/soloframeHubLogo.png" alt="GTM OS" width="200" height="50" class="h-12 w-auto object-contain"></a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="founders-ai-customer-acquisition-playbook.html" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Book</a>
+                <a href="gtm-os.html" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">OS</a>
+                <a href="https://soloframehub.com/certified" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Certified</a>
+                <div class="group relative px-2 py-1">
+                    <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Platform menu" aria-haspopup="true">Platform</button>
+                    <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                            <a href="https://soloframehub.com/readiness-score" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Readiness Score</a>
+                            <a href="https://soloframehub.com/compare" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Compare</a>
+                            <a href="platform-architecture.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Architecture</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative px-2 py-1">
+                    <button class="text-lg font-medium text-white transition-colors" aria-label="Resources menu" aria-haspopup="true">Resources</button>
+                    <div class="absolute top-full left-0 pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                            <a href="blog-ai-coaching-rag.html" class="block px-4 py-3 text-sm text-white bg-white/5 rounded-xl">AI That Knows Your Business: RAG Coaching</a>
+                            <a href="blog-byok-integrations.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">6 BYOK Integrations</a>
+                            <a href="blog-quick-win-path.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Quick Win Path: First Win in 90 Minutes</a>
+                            <a href="blog-certified-gtm.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Certified GTM Practitioner Badge</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="es/index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">ES</a>
+            </div>
+            <a href="https://forms.soloframehub.com/forms/beta-tester" class="hidden sm:flex px-6 py-3 rounded-full bg-zinc-900 border border-white/10 text-sm font-medium text-white hover:bg-zinc-800 transition-all items-center gap-2">Start Free Beta</a>
+        </nav>
+
+        <!-- Article -->
+        <article class="max-w-2xl mx-auto px-6 py-16 md:py-24 w-full">
+            <div class="mb-10">
+                <p class="text-xs font-mono text-sky-400 mb-4">MARCH 30, 2026 · AI FEATURES</p>
+                <h1 class="text-3xl md:text-4xl font-serif-custom text-white mb-4 leading-tight">AI That Knows Your Business: How RAG Search Powers GTM OS Coaching</h1>
+                <p class="text-lg text-zinc-400 leading-relaxed">Generic AI advice is worthless. Your AI coach needs to know your ICP, your pipeline, your documents, and your exact gap. Here's how we built that.</p>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-8 text-sm md:text-base leading-relaxed text-zinc-300">
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">The problem with generic AI coaching</h2>
+                <p>ChatGPT gives you advice for any business. It doesn't know your ICP. It doesn't know your pipeline. It doesn't know you've been stuck on the same objection for three weeks or that your positioning statement is still a rough draft. It starts from zero every time.</p>
+                <p>Your AI coach should give advice for YOUR business. The difference is context - and context is exactly what most AI tools strip out to stay general. We built the opposite. The coaching inside GTM OS pulls from everything you've put into the platform before it says a word.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">How RAG works inside the OS</h2>
+                <p>RAG stands for Retrieval-Augmented Generation. Before the AI responds to your question, it runs a similarity search across a vector database of everything relevant to you - your documents, your course lessons, your profile data.</p>
+                <p>The technical details: we use pgvector with OpenAI's <code class="text-sky-400 bg-zinc-800 px-1.5 py-0.5 rounded text-xs">text-embedding-3-small</code> model, which generates 1536-dimensional embeddings for every chunk of content. When you ask a question, that question gets embedded into the same vector space. The database then runs a cosine distance search - chunks with a distance score below 0.3 are considered semantically close enough to be relevant and get passed to the AI as context.</p>
+                <p>Your uploaded documents and all 487 lessons in the curriculum get vectorized. The retrieval step happens before every coaching response, so the AI always has the most relevant material in front of it when it answers you.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">What your AI coach actually knows</h2>
+                <p>The RAG pipeline pulls from multiple sources tied to your account. At coaching time, the AI has access to:</p>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Your ICP document.</strong> The full ideal customer profile you built in the ICP Builder, including firmographic filters, pain points, and trigger events.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Your positioning statement.</strong> The one-sentence and expanded versions you drafted in the Positioning course.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Your DISC profile.</strong> Your communication style, natural tendencies, and selling strengths from the DISC assessment.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Your pipeline stage.</strong> Where your active deals sit, how long they've been there, and recent activity signals.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Your course history.</strong> Which lessons you've completed, what scores you earned, and which tracks you haven't touched yet.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Your assessment scores.</strong> Readiness score results across all 8 dimensions, graded roleplay transcripts, and exercise feedback.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Uploaded pitch decks and proposals.</strong> Any documents you upload get chunked, embedded, and made searchable. The AI references specific passages - not just the file name.</span></li>
+                    </ul>
+                </div>
+                <p>When you ask "why am I losing deals at the demo stage," the AI doesn't answer generically. It cross-references your pipeline data, your DISC profile, and relevant demo course lessons before responding.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">13 AI task types</h2>
+                <p>The coaching layer handles more than free-form chat. There are 13 distinct task types built into the OS, each with its own prompt structure and context window:</p>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Coaching chat.</strong> Open-ended questions answered with your context loaded.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Roleplay conversation.</strong> Simulated buyer conversations using your ICP and a chosen persona.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Assessment grading.</strong> Written exercise responses scored against lesson rubrics with specific feedback.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">ICP validation.</strong> Structured critique of your ICP document against market fit criteria.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Workshop exercises.</strong> Guided step-by-step completion of lesson exercises with AI facilitation.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Voice TTS/STT.</strong> Text-to-speech playback of coaching responses and speech-to-text input for hands-free sessions.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Artifact feedback.</strong> Line-by-line review of your cold email drafts, proposals, and positioning statements.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Discovery call prep.</strong> Pre-call briefs built from your CRM data and ICP, including suggested questions.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Email sequence generation.</strong> Multi-step outreach sequences written to your ICP, positioning, and chosen channel.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Objection handling.</strong> Specific responses to named objections pulled from the objections course and your deal data.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Positioning analysis.</strong> Side-by-side comparison of your positioning against competitor statements.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Daily nudges.</strong> Proactive recommendations surfaced each day based on your data patterns.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Readiness scoring.</strong> Ongoing recalculation of your 8-dimension readiness score as you complete work.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">AI coaching nudges</h2>
+                <p>The daily nudge system is not generic motivation. It doesn't tell you to "keep going" or "stay focused." It notices patterns in your actual data and surfaces specific, actionable recommendations tied to what the numbers show.</p>
+                <p>If you haven't logged any outreach activity in three days, the nudge references that gap directly and links to the pipeline management lesson most relevant to your current stage. If your ICP score came back low on the specificity dimension, the nudge points you to Course 2 and tells you which exercise to prioritize. If your roleplay scores are consistently lower on discovery questions than on closing, the nudge flags that pattern and queues up the discovery simulation.</p>
+                <p>Each nudge is generated fresh from your current data - not templated. The AI reads your profile state, identifies the highest-leverage gap, and writes one specific recommendation. One thing. Not a list of ten suggestions that overwhelm and get ignored.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">The book connection</h2>
+                <p>The 98,000-word Customer Acquisition Playbook is indexed in the same RAG pipeline as the course lessons. Every chapter, framework, and case study is chunked and vectorized.</p>
+                <p>When you ask your AI coach about the MAGNETS framework or DISC-based selling, it retrieves the relevant passages from the book alongside the matching course lessons and synthesizes them into a single response. You're not getting a generic summary - you're getting the specific section that applies to your question, alongside the lesson that teaches the skill.</p>
+                <p>The book and the platform are the same knowledge base. The RAG search doesn't distinguish between them. It finds what's most relevant regardless of where that content lives.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Live support</h2>
+                <p>The AI handles coaching, grading, roleplay, and content retrieval. But when you have a question about the platform itself - a feature you can't find, a billing issue, something that isn't working - that's not a job for AI.</p>
+                <p>We use Chatwoot for live chat and help center support at <a href="https://support.soloframehub.com" class="text-sky-400 hover:text-sky-300 transition-colors">support.soloframehub.com</a>. Real human support, not a bot trying to deflect your question into an FAQ article. When you need a person, you get a person.</p>
+
+                <div class="border-t border-white/5 pt-8 mt-12">
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 mb-6">
+                        <p class="text-[10px] font-mono text-sky-400 mb-2">BUILT WITH CLAUDE CODE</p>
+                        <p class="text-sm text-zinc-300 leading-relaxed">The entire GTM OS was built by a founder using Claude Code. No engineering team. No agency. Self-hosted on a single VPS for under $100/month. <a href="index.html" class="text-sky-400 hover:text-sky-300">Learn the full story.</a></p>
+                    </div>
+                    <p class="text-xs text-zinc-500 mb-4">FILED UNDER: AI · COACHING · RAG · PRODUCT</p>
+                    <a href="https://forms.soloframehub.com/forms/beta-tester" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sky-700 hover:bg-sky-600 text-white text-sm font-medium transition-colors">Start Free Beta <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Related posts -->
+        <section class="border-t border-white/5 px-6 md:px-12 py-12 max-w-2xl mx-auto w-full">
+            <p class="text-xs font-mono text-zinc-500 mb-6">MORE FROM THE BLOG</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="blog-five-layers.html" class="bg-zinc-900/40 border border-white/8 rounded-xl p-5 hover:border-white/20 transition-colors">
+                    <p class="text-xs text-zinc-500 mb-2">MARCH 30, 2026</p>
+                    <p class="text-sm font-medium text-white">The Five Layers of the GTM OS</p>
+                </a>
+                <a href="blog-quick-win-path.html" class="bg-zinc-900/40 border border-white/8 rounded-xl p-5 hover:border-white/20 transition-colors">
+                    <p class="text-xs text-zinc-500 mb-2">MARCH 27, 2026</p>
+                    <p class="text-sm font-medium text-white">Quick Win Path: First Win in 90 Minutes</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black/50 border-t border-white/5 py-12 px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="assets/images/soloframeHubLogo.png" alt="GTM OS" width="200" height="50" class="h-6 w-auto object-contain"><span class="text-sm text-zinc-400 ml-2">© 2026</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400">
+                    <a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a>
+                    <a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="https://soloframehub.com/certified" class="hover:text-white transition-colors">Certified</a>
+                    <a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

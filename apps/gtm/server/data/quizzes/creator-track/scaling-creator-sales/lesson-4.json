@@ -1,0 +1,99 @@
+{
+    "lessonId": "4",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 4: Training Sales Help on Your Voice",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "According to the lesson, what does 'voice' mean in the context of training sales help?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The literal tone and pitch of your speaking voice on sales calls"
+                },
+                {
+                    "id": "b",
+                    "text": "Language patterns, values, pace, empathy style, and boundaries -- your complete selling personality"
+                },
+                {
+                    "id": "c",
+                    "text": "The specific sales script your closer must memorize word-for-word"
+                },
+                {
+                    "id": "d",
+                    "text": "Your brand colors, logo, and visual identity as presented in sales materials"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson defines voice broadly as five elements: language patterns (specific words and metaphors), values (what you stand for), pace (conversation speed), empathy style (how you acknowledge pain), and boundaries (what you will and will not say). It explicitly states that voice is not just tone of voice."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "When building your training library, the lesson recommends recording 15 calls in three categories. What are those categories?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5 short calls, 5 medium calls, and 5 long calls"
+                },
+                {
+                    "id": "b",
+                    "text": "5 calls that resulted in yes, 5 calls that resulted in no but felt right, and 5 calls with strong objection handling"
+                },
+                {
+                    "id": "c",
+                    "text": "5 discovery calls, 5 demo calls, and 5 follow-up calls"
+                },
+                {
+                    "id": "d",
+                    "text": "5 inbound calls, 5 outbound calls, and 5 referral calls"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The training library requires 5 calls resulting in a yes (showing the full process to close), 5 calls resulting in a no but where the conversation felt right (showing how to handle rejection gracefully), and 5 calls with strong objection handling (showing how to address price, timing, and other hesitations)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "Your closer has been running calls independently for three weeks. Prospect feedback scores have dropped from 8.5 to 7.2, and you notice on reviewed calls that they have started using phrases like 'this is a no-brainer' and 'you would be crazy not to do this.' What is happening and what system should you activate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The closer has improved their technique -- higher-pressure language increases close rates"
+                },
+                {
+                    "id": "b",
+                    "text": "Brand drift is occurring -- activate the weekly call review and apply the 'Would I Say This?' test"
+                },
+                {
+                    "id": "c",
+                    "text": "The closer needs a raise to stay motivated and engaged with the brand"
+                },
+                {
+                    "id": "d",
+                    "text": "This is normal -- all closers eventually develop their own style that replaces the creator's voice"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson identifies 'this is a no-brainer' and 'you would be crazy not to do this' as explicit examples of phrases the creator would never use. The declining prospect feedback score confirms brand drift. The lesson prescribes four drift-prevention systems: weekly call review, the 'Would I Say This?' test, prospect feedback loops, and quarterly script refreshes."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft a mini Voice Guide for your own business. Write down: (1) three phrases you always use on sales calls, (2) three phrases you would never use, and (3) how you typically respond when a prospect says 'I need to think about it.' Explain why each element reflects your brand's values and your audience's expectations.",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student's Voice Guide elements are specific and authentic rather than generic. The phrases they 'always use' should sound natural and distinctive, not like textbook sales language. The phrases they 'never use' should reveal genuine brand boundaries. Their objection response should demonstrate empathy and respect for the prospect's autonomy. If any element feels generic, ask them to make it more specific to their personal style and audience."
+        }
+    ]
+}

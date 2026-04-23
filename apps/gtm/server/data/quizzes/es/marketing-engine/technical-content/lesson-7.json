@@ -1,0 +1,142 @@
+{
+  "lessonId": "7",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Sistema de Calendario de Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el beneficio principal de un calendario 'Rodante' de 12 semanas frente a un plan anual estático?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Requiere menos trabajo para configurarlo inicialmente"
+        },
+        {
+          "id": "b",
+          "text": "Te permite mantenerte relevante y adaptarte a los cambios del mercado mientras mantienes un horizonte a largo plazo"
+        },
+        {
+          "id": "c",
+          "text": "Es más fácil de imprimir"
+        },
+        {
+          "id": "d",
+          "text": "Un plan de 12 semanas siempre es más preciso que uno de 4 semanas"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los marcadores de posición de alto nivel para el futuro (Semanas 9-12) te mantienen estratégico, mientras que la actualización rodante del viernes mantiene las tareas inmediatas (Semanas 1-4) realistas."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "En el marco de 12 semanas, ¿qué caracteriza a 'La Zona Roja' (Semanas 1-4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alto detalle: titulares específicos, esquemas y plazos"
+        },
+        {
+          "id": "b",
+          "text": "Ideas vagas sobre las que podrías escribir algún día"
+        },
+        {
+          "id": "c",
+          "text": "Contenido que ya has eliminado"
+        },
+        {
+          "id": "d",
+          "text": "Ideas de tus competidores"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La Zona Roja es para ejecución inmediata. Debe ser lo suficientemente detallada como para que puedas empezar a escribir sin trabajo adicional de 'planificación'."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito de rotar tus pilares de contenido semanalmente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para evitar que el fundador se aburra"
+        },
+        {
+          "id": "b",
+          "text": "Para garantizar que construyas autoridad en todos tus 3-5 temas centrales sin ignorar ninguno"
+        },
+        {
+          "id": "c",
+          "text": "Para engañar a los algoritmos de redes sociales"
+        },
+        {
+          "id": "d",
+          "text": "Para evitar tener que escribir contenido de formato largo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La rotación garantiza un crecimiento equilibrado de tu autoridad temática. Evita que solo publiques sobre el tema 'más fácil'."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Por qué se recomienda la 'Agrupación' para los fundadores en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ahorra dinero en software"
+        },
+        {
+          "id": "b",
+          "text": "Te permite estar en 'Trabajo Profundo' al realizar tareas similares juntas en lugar de cambiar de contexto"
+        },
+        {
+          "id": "c",
+          "text": "Hace que tu sitio web se vea mejor"
+        },
+        {
+          "id": "d",
+          "text": "La agrupación es solo para contenido de video"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El cambio de contexto es costoso para los fundadores en solitario. Investigar 4 piezas a la vez es más rápido que hacerlo 4 veces separadas durante el mes."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuándo es el momento recomendado para 'Rotar' el calendario de contenido hacia adelante para la próxima semana?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El lunes por la mañana justo antes de escribir"
+        },
+        {
+          "id": "b",
+          "text": "Cada viernes por la tarde/noche"
+        },
+        {
+          "id": "c",
+          "text": "Una vez al mes"
+        },
+        {
+          "id": "d",
+          "text": "Solo cuando te quedas sin ideas"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Realizar el trabajo de planificación el viernes garantiza que cuando te sientes a escribir el lunes, la toma de decisiones ya esté hecha y puedas enfocarte al 100% en la ejecución."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Mira tu próxima Semana 1 y Semana 2. ¿Qué título específico de 'Pieza Fuente' escribirás para cada una? ¿A qué Pilar pertenece cada una? ¿Qué día bloquearás como tu 'Día de Agrupación' la próxima semana?",
+      "minLength": 100,
+      "promptForAI": "Revisa si el fundador está siendo específico con sus titulares. Busca el compromiso con un 'Día de Agrupación' como señal de ejecución sistemática."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

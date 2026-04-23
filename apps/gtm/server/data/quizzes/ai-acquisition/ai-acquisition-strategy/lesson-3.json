@@ -1,0 +1,87 @@
+{
+  "lessonId": "3",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "Enrichment Workflows: From Raw Data to Scored Leads",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key difference between having 10,000 names and having 200 profiles, as illustrated in the opening story?",
+      "options": [
+        { "id": "a", "text": "Names are free while profiles cost money" },
+        {
+          "id": "b",
+          "text": "Raw contact data is worthless without enrichment — knowing who they are, what signals they show, and how they score against your ICP"
+        },
+        {
+          "id": "c",
+          "text": "Smaller lists always perform better than larger lists"
+        },
+        {
+          "id": "d",
+          "text": "Profiles include profile photos while names do not"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson's core truth is that raw contact data is worthless. Enriched, scored, segmented data is the entire game. Jake's 200 enriched profiles (with funding signals, hiring data, tech stacks) outperformed Sarah's 10,000 raw names because he knew who to target and what to say."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In the three-tier enrichment strategy, how much time should you invest in a Tier 2 (middle 50%) lead?",
+      "options": [
+        { "id": "a", "text": "20-30 minutes of deep manual research" },
+        { "id": "b", "text": "3-5 minutes of AI-assisted enrichment" },
+        { "id": "c", "text": "30 seconds of template application" },
+        { "id": "d", "text": "No time — skip directly to sending" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Tier 2 leads (scored 5-7, good ICP fit with some signals) deserve 3-5 minutes of AI-assisted enrichment including email verification, job title confirmation, job change detection, and one personalization hook. This is the cost-effective middle ground between deep research and template-only approaches."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the five layers of intelligence that enrichment adds to a contact record?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Name, email, phone, address, social media links"
+        },
+        {
+          "id": "b",
+          "text": "Firmographic enrichment, behavioral signals, contact validation, personalization fuel, scoring inputs"
+        },
+        {
+          "id": "c",
+          "text": "Revenue, employee count, industry, location, founding date"
+        },
+        {
+          "id": "d",
+          "text": "LinkedIn profile, Twitter handle, blog URL, podcast appearances, conference list"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The five enrichment layers are: firmographic enrichment (company size, revenue, tech stack), behavioral signals (job changes, funding, engagement), contact data validation (email verification, LinkedIn matching), personalization fuel (recent posts, podcast appearances), and scoring inputs (fit, signal, friction scores)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The output of a proper enrichment workflow is a decision-ready profile that tells you whether to reach out, what to say, when to reach out, and which sequence to use.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson describes the enrichment output as a decision-ready profile answering four questions: Should I reach out (score 8-10 = yes, 1-4 = no), What should I say (personalization hooks), When should I reach out (trigger timing), and Which sequence to use (segment assignment)."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Think about a recent outreach campaign you ran (or would like to run). How would applying the three-tier enrichment strategy change your approach? Describe how you would allocate your time across Tier 1, 2, and 3 leads differently from what you do now.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response demonstrates understanding of the three tiers (Tier 1: deep research 20-30 min, Tier 2: AI-assisted 3-5 min, Tier 3: template only 30 sec). Look for specific examples of how they would change their current behavior and realistic time allocation estimates."
+    }
+  ]
+}

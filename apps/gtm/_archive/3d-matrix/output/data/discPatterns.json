@@ -1,0 +1,335 @@
+[
+  {
+    "disc_type": "D",
+    "full_name": "Dominant",
+    "verbal_cues": [
+      "Fast, clipped, energetic speech pace",
+      "Interrupts when bored or excited",
+      "Bottom-line language: 'ROI', 'timeline', 'efficiency', 'results', 'execute'",
+      "Immediately states constraints: 'I have 15 minutes—make it count'",
+      "Shifts to 'what's the impact?' and 'how fast?' rather than exploratory questions",
+      "Dismissive signals: 'That sounds fine but...' or 'Interesting, next question?'"
+    ],
+    "email_patterns": [
+      "No greeting ('Johnson, here's the opportunity...')",
+      "Bullet points only",
+      "Urgency markers ('This moves the needle' or 'Results in 30 days')",
+      "Single, direct call-to-action",
+      "Signs off without pleasantries",
+      "Subject lines are bare minimum, no preamble: 'Next steps?' or 'Timeline?'"
+    ],
+    "meeting_behaviors": [
+      "States timeline and expectations upfront in first minute",
+      "May test your confidence with skepticism",
+      "Challenges every claim, asks for proof, mentions competitors",
+      "If interested, pivots to implementation: 'When could we start?'",
+      "Questions move from 'why?' to 'how?' and 'when?' when convinced"
+    ],
+    "body_language": [
+      "Hand gestures animated and expansive (fists fly, points forcefully)",
+      "Eye contact direct and intense",
+      "Lean-in posture when interested; back-off when disengaged",
+      "Vocal volume slightly elevated; speaks over others if excited"
+    ],
+    "diagnostic_question": "What's most important to you in making this decision?",
+    "diagnostic_response": "ROI and speed. Bottom line: will it work and can we launch in 90 days?",
+    "objection_style": {
+      "how_they_say_no": [
+        "I'm not convinced this ROI is real. Prove it.",
+        "Why should I choose you over [competitor]?",
+        "This doesn't move the needle enough for me.",
+        "Can you prove this works in 30 days?"
+      ],
+      "underlying_driver": "D's are naturally skeptical and competitive. Objections are tests of your credibility, not rejections. D respects push-back and data-driven arguments.",
+      "effective_response": "Don't apologize or soft-pedal. Match their directness: 'Fair challenge. Here's the proof: [data].' Lead with results and acknowledge risk head-on. End with a timeline request."
+    },
+    "buying_signals": {
+      "verbal_signals": [
+        "What's your implementation timeline?",
+        "How much does this cost?",
+        "What's your SLA guarantee?",
+        "I need to decide by [date]"
+      ],
+      "behavioral_signals": [
+        "Fast response times to emails (was slow, now immediate)",
+        "Escalated to CFO/CEO for approval",
+        "Asking about pilots or phased rollout",
+        "Asks their technical team to validate (delegation = confidence)"
+      ],
+      "what_they_need_to_commit": "D's move fast once convinced. Keep momentum high; propose pilot or contract within 1 week. They need ROI proof and competitive positioning."
+    },
+    "pitch_adaptation": {
+      "ideal_pace": "fast",
+      "ideal_structure": "Bottom-line first, then details only if asked. '30 seconds upfront: [your solution] reduces CAC by 30% in 90 days.' State ROI immediately; skip pleasantries.",
+      "proof_type_preferred": "Data, benchmarks, ROI calculators, competitive comparisons, short payback windows",
+      "avoid_phrases": [
+        "Let me walk you through all our features",
+        "I think this might help",
+        "When you have time",
+        "No pressure",
+        "Let me tell you a story"
+      ],
+      "power_phrases": [
+        "Bottom line",
+        "30% ROI in 90 days",
+        "Here's the proof",
+        "Results in 30 days",
+        "127 similar companies achieved",
+        "When can we start?"
+      ]
+    },
+    "email_template_style": "No greeting, benefits-first, numbers-driven, single ask, direct close. Example: 'Johnson, Bottom line: We reduce CAC by 30% in 90 days. Proof: 127 similar companies, 28% avg improvement. Next: 15-min call Wed 2pm to confirm fit. —[Name]'",
+    "call_opening_approach": "I know you're busy. 30 seconds upfront: [your solution] reduces [metric] by [X%] in [timeframe]. Acknowledge their time constraint directly.",
+    "follow_up_cadence": "Immediate follow-up within 4 hours. Short, action-oriented. Include specific next step with date/time. D's respect persistence but hate wasted time."
+  },
+  {
+    "disc_type": "I",
+    "full_name": "Influential",
+    "verbal_cues": [
+      "Fast, animated speech with wide vocal inflection variety",
+      "Enthusiasm words: 'That's awesome!' 'I love that idea!' 'Tell me more!'",
+      "Storytelling inclinations: 'Let me tell you about...'",
+      "Name-dropping: References other customers, colleagues, or social connections",
+      "Goes on tangents; tells anecdotes; loses focus easily but with charm",
+      "Inclusive language: 'We', 'us', 'team', 'culture'"
+    ],
+    "email_patterns": [
+      "Warm greeting: 'Hi [Name]!'",
+      "Exclamation points and enthusiasm markers (!!!)",
+      "Personal anecdotes or compliments ('Love your article on...')",
+      "Name-drops and relationship building",
+      "Social proof focus ('Show me who else is doing this')",
+      "Relational close ('Can't wait to connect!')"
+    ],
+    "meeting_behaviors": [
+      "Builds rapport immediately in first minute",
+      "May ask about your personal background or company culture",
+      "Asks about vision, possibilities, and other customers",
+      "Questions like 'What's the coolest success you've seen?'",
+      "If interested, wants to loop in others: 'Can I set up a call with my VP Marketing?'"
+    ],
+    "body_language": [
+      "Hand gestures frequent and animated, even on video calls",
+      "Wide facial expressions; smiling frequently",
+      "Leans forward when engaged; uses first names",
+      "Vocal enthusiasm; fills silence with energy"
+    ],
+    "diagnostic_question": "How do you typically evaluate new solutions?",
+    "diagnostic_response": "I'd want to talk to other customers and see what success looks like. Social proof is huge for me.",
+    "objection_style": {
+      "how_they_say_no": [
+        "Hmm, I'd like to talk to [other customer] first.",
+        "This sounds great, but can I check with my team?",
+        "I love this solution, but [concern] worries me.",
+        "Who else is using this? What did they achieve?"
+      ],
+      "underlying_driver": "I's are motivated by social proof and consensus. Objections often mask FOMO or fear of being seen as making a risky decision without team buy-in. They want to be heroes, not risk-takers.",
+      "effective_response": "Lean on social proof immediately. 'Great question! [Customer Name] just achieved [success]. Want to hear directly from them?' Make team involvement easy and address the feeling, not just the fact."
+    },
+    "buying_signals": {
+      "verbal_signals": [
+        "I want to introduce you to my team",
+        "I'm telling everyone about this solution",
+        "Can I get a case study I can share internally?",
+        "When can we set up a team call?"
+      ],
+      "behavioral_signals": [
+        "Email frequency increases; they initiate contact",
+        "Forward your emails to colleagues with commentary",
+        "Ask for more case studies and customer stories",
+        "Request community/user group information"
+      ],
+      "what_they_need_to_commit": "I's become internal champions and refer others. Keep energy high, move fast, provide social proof ammunition they can use internally."
+    },
+    "pitch_adaptation": {
+      "ideal_pace": "moderate",
+      "ideal_structure": "Build rapport first, paint the vision, lead with customer stories. 'Imagine growing revenue 40% with the right customer acquisition playbook.' Use social proof throughout.",
+      "proof_type_preferred": "Case studies, customer testimonials, success stories, team involvement, community/social proof",
+      "avoid_phrases": [
+        "Let me show you the technical specs",
+        "Here's the data analysis",
+        "The methodology is...",
+        "Let's focus on just you for now",
+        "We don't need to involve others yet"
+      ],
+      "power_phrases": [
+        "You're going to love this",
+        "[Customer Name] achieved amazing results",
+        "Your team will be excited",
+        "Let me connect you with other customers",
+        "This could be transformational",
+        "Who else should we bring into this conversation?"
+      ]
+    },
+    "email_template_style": "Warm greeting, compliment, story/vision, social proof, enthusiasm, relational close. Example: 'Hi Maria, Saw your recent post on customer acquisition—your perspective is fantastic! I thought of you because we're working with brands like [company], and they just increased pipeline 40% in 90 days. You'd probably love their story. Looking forward to connecting! —[Name]'",
+    "call_opening_approach": "Build rapport: 'I saw your article on [topic]—really impressive approach.' Paint the vision: 'Imagine growing revenue 40% with the right playbook.' Create excitement about possibilities.",
+    "follow_up_cadence": "Follow up with enthusiasm and social proof. Share additional success stories. Suggest team involvement. I's appreciate warmth and relationship-building in follow-ups."
+  },
+  {
+    "disc_type": "S",
+    "full_name": "Steady",
+    "verbal_cues": [
+      "Slow, measured, deliberate speech with comfortable pauses",
+      "Risk language: 'I'm concerned about...' 'Will this disrupt our team?'",
+      "Relational: 'What kind of support do you provide?' 'Will you stick with us?'",
+      "Consensus focus: 'I need to check with the team'",
+      "Process clarity: 'Can you walk me through this step-by-step?'",
+      "Warmth signals: 'How are you doing?' 'Thanks for your time.' Uses first names"
+    ],
+    "email_patterns": [
+      "Formal but warm greeting: 'Hi [Name],'",
+      "Thanks and appreciation language ('Thank you for taking the time...')",
+      "Emphasis on support and partnership",
+      "Risk mitigation focus ('Here's how we ensure stability...')",
+      "Relational closing ('Looking forward to working together...')",
+      "Follows up personally with additional resources"
+    ],
+    "meeting_behaviors": [
+      "Builds relationship before business in first minute",
+      "'Thank you for taking the time' or asks personal question first",
+      "Asks about support, team impact, and transition stability",
+      "'What does implementation look like?' 'Will our team be supported?'",
+      "If interested, asks about ongoing partnership: 'Will you be here for us?'"
+    ],
+    "body_language": [
+      "Calm, even vocal tone without emotional lilt",
+      "Moderate volume, consistent throughout",
+      "Listens actively; comfortable with silence",
+      "Nods frequently; takes notes",
+      "Relaxed posture; no aggressive leaning"
+    ],
+    "diagnostic_question": "How do you typically evaluate new solutions?",
+    "diagnostic_response": "I want to understand the transition, make sure it's stable, and know you'll support us through changes.",
+    "objection_style": {
+      "how_they_say_no": [
+        "I'm worried this will disrupt our team.",
+        "How do we know this won't break our current processes?",
+        "I need to see how this works before committing.",
+        "Will you be here to support us through the transition?"
+      ],
+      "underlying_driver": "S's are risk-averse and change-resistant by nature. Objections are real concerns about stability and team impact—not pretexts. Dismissing them destroys rapport.",
+      "effective_response": "Validate the concern as legitimate: 'That's a really important question. Stability and team continuity matter to us too.' Lead with ongoing support. Show precedent with similar companies. Offer phased approach."
+    },
+    "buying_signals": {
+      "verbal_signals": [
+        "Will you walk us through the transition?",
+        "What does your support look like?",
+        "When could we start?",
+        "My team is ready when you are"
+      ],
+      "behavioral_signals": [
+        "Response time improves (was slow, now consistent)",
+        "Reads case studies thoroughly; asks detailed follow-ups",
+        "Uses first name in emails; relationship deepening",
+        "Introduces you to team members (building consensus)"
+      ],
+      "what_they_need_to_commit": "S's move slowly but become loyal long-term customers. Patience is required; consistent touchpoints build trust. They need support guarantees and smooth transition proof."
+    },
+    "pitch_adaptation": {
+      "ideal_pace": "slow",
+      "ideal_structure": "Warm greeting, establish safety, acknowledge their situation. 'Thank you so much for taking time today. We work closely with our customers to ensure transitions go smoothly.' Emphasize ongoing support throughout.",
+      "proof_type_preferred": "Case studies of smooth transitions, testimonials emphasizing support, rollout guarantees, ongoing partnership language, regular touchpoint commitments",
+      "avoid_phrases": [
+        "Let's move fast on this",
+        "Sign today for the discount",
+        "This is a no-brainer",
+        "Don't overthink it",
+        "Your competitors are already using this"
+      ],
+      "power_phrases": [
+        "We're here for you every step of the way",
+        "Let's take our time with this",
+        "Here's how we minimize disruption",
+        "We provide hands-on support",
+        "We've worked with [company] for 4 years",
+        "Would a phased rollout feel comfortable?"
+      ]
+    },
+    "email_template_style": "Formal greeting, thanks, relationship emphasis, risk mitigation, support language, patient close. Example: 'Hi Maria, Thank you so much for taking the time to chat with me. I really appreciated your thoughtfulness about how changes impact the team. Based on our conversation, I wanted to share some resources on successful transitions. We provide hands-on support every step of the journey. Looking forward to working together, [Name]'",
+    "call_opening_approach": "Warm greeting: 'Thank you so much for taking time today.' Establish safety: 'We work closely with our customers to ensure transitions go smoothly.' Acknowledge their situation: 'Change can be stressful. I want to make sure we do this right.'",
+    "follow_up_cadence": "Patient, consistent follow-ups. Share resources proactively. Reference relationship building. S's need time but appreciate reliability. Don't pressure; demonstrate partnership."
+  },
+  {
+    "disc_type": "C",
+    "full_name": "Conscientious",
+    "verbal_cues": [
+      "Slow, methodical, deliberate speech; thinks before speaking",
+      "Precision: 'I want to understand the specifics...' 'How exactly does this work?'",
+      "Data requests: 'Show me the data.' Skepticism: 'Where's the proof?'",
+      "Risk language: 'What could go wrong?' 'What are the risks?' 'How do we mitigate this?'",
+      "Formality: Uses titles, last names; prefers professional distance",
+      "Process focus: 'Let me think about this' or 'I need to review the details'"
+    ],
+    "email_patterns": [
+      "Formal greeting with title: 'Dear [Name],'",
+      "Structured, numbered lists",
+      "Data-heavy: Links to case studies, attachments, spreadsheets",
+      "Caveated language ('Based on available data...' 'Assuming these variables...')",
+      "Risk analysis: 'Potential concerns: [list]. Mitigation: [list].'",
+      "Professional closing without personal touches"
+    ],
+    "meeting_behaviors": [
+      "Asks precise questions immediately in first minute",
+      "'Before we start, can you clarify your methodology?'",
+      "Digs into specifics: 'You said 30% improvement—on what metric exactly? Over what timeframe?'",
+      "If interested, asks for documentation: 'Send me your case studies, compliance reports, and ROI model'",
+      "Takes detailed notes throughout"
+    ],
+    "body_language": [
+      "Flat, even vocal tone; no emotional inflection",
+      "Audible note-taking (pen clicking, keyboard typing)",
+      "Limited facial expression; professional demeanor",
+      "Formal eye contact; thinks between sentences"
+    ],
+    "diagnostic_question": "What's most important to you in making this decision?",
+    "diagnostic_response": "Making sure the data is sound, the methodology is rigorous, and we understand all the risks.",
+    "objection_style": {
+      "how_they_say_no": [
+        "I need to see the data proving this claim.",
+        "How exactly does implementation work? Walk me through every step.",
+        "What's your compliance and security posture? Show me your audit reports.",
+        "I need to review your financial statements and viability."
+      ],
+      "underlying_driver": "C's are naturally skeptical of unverified claims and want to independently assess risk. Objections are logical risk assessment, not emotional hesitation. Provide comprehensive data or lose credibility permanently.",
+      "effective_response": "Lead with data immediately: 'Absolutely. Here's our detailed ROI analysis. Let me walk you through the methodology.' Acknowledge the rigor of their concern. Provide all requested proof. Invite independent verification."
+    },
+    "buying_signals": {
+      "verbal_signals": [
+        "Can we run a trial/POC?",
+        "Send me your case studies and compliance reports",
+        "I want reference calls with existing customers",
+        "What are your SLAs and exit clauses?"
+      ],
+      "behavioral_signals": [
+        "Questions become more detailed and technical",
+        "Procurement and legal teams get involved (due diligence)",
+        "Contract review begins",
+        "Response time improves; engagement deepens"
+      ],
+      "what_they_need_to_commit": "C's take longest to decide (6-12 weeks) but rarely reverse once committed. Support documentation thoroughly; be patient. They need comprehensive data, risk analysis, and trial options."
+    },
+    "pitch_adaptation": {
+      "ideal_pace": "slow",
+      "ideal_structure": "Be precise about your solution and methodology. Set expectations: 'I've prepared detailed analysis for you. Let's walk through it thoroughly.' Lead with data and walk through methodology. Address risk analytically.",
+      "proof_type_preferred": "Data analysis, detailed case studies, ROI models with transparent assumptions, audit reports, compliance certifications, trial/POC option",
+      "avoid_phrases": [
+        "Trust me on this",
+        "Everyone's doing it",
+        "Don't worry about the details",
+        "Let's just get started",
+        "The numbers speak for themselves"
+      ],
+      "power_phrases": [
+        "Here's the detailed analysis",
+        "Let me walk you through the methodology",
+        "Based on 127 customers, 28.4% average, 95% confidence interval",
+        "Here's our risk mitigation approach",
+        "Take time to review everything",
+        "What questions come up as you dig in?"
+      ]
+    },
+    "email_template_style": "Formal greeting, structured numbered format, data attachments, specific metrics with caveats, risk analysis, professional close. Example: 'Dear Johnson, Per our discussion, here is a comprehensive breakdown: 1. Implementation Timeline: 6 weeks 2. Expected CAC Reduction: 30% based on your metrics 3. Risk Assessment: Low (SOC2 compliant, 99.9% uptime SLA) 4. Benchmark Data: 127 similar companies, 28.4% average reduction. Attached: Full case study analysis, compliance documentation. Regards, [Name]'",
+    "call_opening_approach": "Be precise: 'We help [your type of customer] reduce [metric] by [X%] through [specific mechanism].' Set expectations: 'I've prepared detailed analysis for you. Let's walk through it thoroughly.' State the process: 'I'll send you documentation after. Take time to review.'",
+    "follow_up_cadence": "Patient, substantive follow-ups with additional data and documentation. Don't pressure. C's appreciate thoroughness and will reach out when they've completed their analysis. Provide answers proactively."
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "lessonId": "2",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Playbook: Starting from Zero",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "At what customer count should you switch from the 'Starting from Zero' playbook to a more systematic approach?",
+      "options": [
+        { "id": "a", "text": "After your first customer" },
+        { "id": "b", "text": "After 10 customers" },
+        { "id": "c", "text": "After 50 customers" },
+        { "id": "d", "text": "After 100 customers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "10 customers is the threshold. At 10, you have enough signal to know what's working, who's buying, and why. Before 10, every conversation is still discovery. After 10, you can start building repeatable systems."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'zero trap'?",
+      "options": [
+        { "id": "a", "text": "Having zero revenue for too long" },
+        {
+          "id": "b",
+          "text": "Building systems and optimizing tools instead of having real conversations"
+        },
+        { "id": "c", "text": "Pricing too low at launch" },
+        { "id": "d", "text": "Not having a website" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The zero trap is optimizing for the appearance of doing sales (setting up Apollo, writing sequences, installing CRM) while avoiding actually talking to people. Before 50 conversations, you don't know enough to build a system."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What should the Starting from Zero playbook focus on?",
+      "options": [
+        { "id": "a", "text": "Scaling automation and sequences" },
+        {
+          "id": "b",
+          "text": "Conversations — manual hustle, courage, and direct outreach"
+        },
+        { "id": "c", "text": "Building a content marketing engine" },
+        { "id": "d", "text": "Hiring a sales team" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your first 10 customers come from hustle, courage, and manual effort — not systems. Do not try to automate a process you haven't validated by hand. The playbook is about conversations, not infrastructure."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should set up a fully automated outreach system before making your first sale.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Before you've had 50 real conversations with your target customer, you don't know enough to build a system. You're guessing. Validate by hand first, then systematize what works."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Where are you on the 0-10 customer journey? What are you doing right now that might be the 'zero trap' (building systems instead of having conversations)? What 3 conversations could you have this week?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses their customer count and identifies specific 'zero trap' behaviors (tool setup, sequence writing, dashboard building), then commits to 3 specific, named conversations they could initiate this week."
+    }
+  ]
+}

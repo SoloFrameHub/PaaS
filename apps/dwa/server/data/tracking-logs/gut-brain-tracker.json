@@ -1,0 +1,115 @@
+{
+  "id": "gut-brain-tracker",
+  "title": "Gut-Brain Connection Tracker",
+  "description": "Track daily connections between your gut health, diet, and mood. Research suggests 2-week tracking reveals meaningful patterns between dietary habits and mental health outcomes.",
+  "instructions": "Complete this log daily, ideally in the evening. Rate your gut health, mood, and note what you ate. Over 2+ weeks, patterns will emerge showing how your gut and brain communicate.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "overallMood",
+      "label": "Overall mood today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very low",
+        "2": "Low",
+        "3": "Neutral",
+        "4": "Good",
+        "5": "Very good"
+      }
+    },
+    {
+      "id": "gutComfort",
+      "label": "Gut comfort level today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very uncomfortable",
+        "2": "Uncomfortable",
+        "3": "Neutral",
+        "4": "Comfortable",
+        "5": "Very comfortable"
+      }
+    },
+    {
+      "id": "energyLevel",
+      "label": "Energy level today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Exhausted",
+        "2": "Low energy",
+        "3": "Moderate",
+        "4": "Good energy",
+        "5": "High energy"
+      }
+    },
+    {
+      "id": "brainFog",
+      "label": "Did you experience brain fog today?",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "id": "fiberRichFoods",
+      "label": "How many servings of fiber-rich foods did you eat?",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 15,
+      "placeholder": "e.g., 5"
+    },
+    {
+      "id": "fermentedFoods",
+      "label": "Did you eat fermented foods today?",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "id": "processedFoods",
+      "label": "Ultra-processed food servings today",
+      "type": "number",
+      "required": false,
+      "min": 0,
+      "max": 20,
+      "placeholder": "e.g., 2"
+    },
+    {
+      "id": "stressLevel",
+      "label": "Stress level today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very low",
+        "2": "Low",
+        "3": "Moderate",
+        "4": "High",
+        "5": "Very high"
+      }
+    },
+    {
+      "id": "notes",
+      "label": "Observations about gut-mood connections today",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., Noticed mood dipped after fast food lunch, felt better after evening walk"
+    }
+  ],
+  "derivedMetrics": [
+    {
+      "id": "gutMoodCorrelation",
+      "label": "Gut-Mood Alignment",
+      "formula": "gutMoodCorrelation",
+      "unit": "points"
+    }
+  ],
+  "disclaimer": "This tracking log is an educational self-monitoring tool. It is not a substitute for professional medical advice. If tracking your food intake causes anxiety or disordered eating patterns, please stop and consult a healthcare provider. If you are in crisis, call or text 988."
+}

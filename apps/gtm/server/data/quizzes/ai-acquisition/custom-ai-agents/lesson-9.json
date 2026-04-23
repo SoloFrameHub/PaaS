@@ -1,0 +1,134 @@
+{
+    "lessonId": "9",
+    "courseId": "custom-ai-agents",
+    "sectionId": "ai-acquisition",
+    "title": "Token Economics",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "You're processing 200 prospects/week with a research agent. Each call uses 1,600 input tokens and 800 output tokens. Using Claude Sonnet 4 ($3/1M input, $15/1M output), what's your monthly cost?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$3.84"
+                },
+                {
+                    "id": "b",
+                    "text": "$14.40"
+                },
+                {
+                    "id": "c",
+                    "text": "$38.40"
+                },
+                {
+                    "id": "d",
+                    "text": "$144.00"
+                }
+            ],
+            "explanation": "200/week × 4 weeks = 800 calls. (800 × 1,600 × $3 + 800 × 800 × $15) / 1,000,000 = $14.40/month.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q2",
+            "question": "Which agent should use Claude Haiku instead of Sonnet?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Meeting prep (requires strategic reasoning)"
+                },
+                {
+                    "id": "b",
+                    "text": "Email first draft (needs voice matching)"
+                },
+                {
+                    "id": "c",
+                    "text": "CRM enrichment (structured data extraction)"
+                },
+                {
+                    "id": "d",
+                    "text": "Post-call summary (nuanced action items)"
+                }
+            ],
+            "explanation": "CRM enrichment is pure structured data extraction — perfect for Haiku at 1/12th the cost of Sonnet.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q3",
+            "question": "Your AI costs are $200/month and you close 4 deals/month at $5K each. What's your AI cost as % of revenue?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1%"
+                },
+                {
+                    "id": "b",
+                    "text": "4%"
+                },
+                {
+                    "id": "c",
+                    "text": "10%"
+                },
+                {
+                    "id": "d",
+                    "text": "20%"
+                }
+            ],
+            "explanation": "$200 / ($5,000 × 4) = $200 / $20,000 = 1%. Healthy benchmark is &lt;5%.",
+            "type": "multiple-choice",
+            "correctAnswer": "a"
+        },
+        {
+            "id": "q4",
+            "question": "Prompt caching (Claude) saves 90% on cached tokens. You have a 1,400-token template used in 100 calls/day. What's the monthly savings vs no caching?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$1.26"
+                },
+                {
+                    "id": "b",
+                    "text": "$12.60"
+                },
+                {
+                    "id": "c",
+                    "text": "$126.00"
+                },
+                {
+                    "id": "d",
+                    "text": "$378.00"
+                }
+            ],
+            "explanation": "Without caching: 100 × 30 × 1,400 × $3/1M = $126. With caching: first call $0.0042, then 2,999 calls × $0.00042 = $1.26. Savings: $126 - $1.26 = ~$126/month.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q5",
+            "question": "When should you migrate from SaaS (n8n cloud) to self-hosted (VPS)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediately — always cheaper"
+                },
+                {
+                    "id": "b",
+                    "text": "When you hit 1,000+ agent executions/month"
+                },
+                {
+                    "id": "c",
+                    "text": "Never — SaaS is always better"
+                },
+                {
+                    "id": "d",
+                    "text": "Only if you're a DevOps expert"
+                }
+            ],
+            "explanation": "Break-even is around 1,000 executions/month or when you need custom features. Below that, SaaS simplicity wins.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        }
+    ]
+}

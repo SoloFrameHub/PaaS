@@ -1,0 +1,141 @@
+{
+    "lessonId": "6",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "Handling Authority & Need Objections Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'What Will They Ask?' diagnostic for Authority objections?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking the prospect for their boss's salary."
+                },
+                {
+                    "id": "b",
+                    "text": "Asking the prospect to anticipate their boss's top 2-3 concerns so you can help them prepare."
+                },
+                {
+                    "id": "c",
+                    "text": "Asking the prospect if they are actually the one in charge."
+                },
+                {
+                    "id": "d",
+                    "text": "Asking the prospect to record the conversation with their boss."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "By helping the prospect anticipate the pushback they'll get internally, you become a partner (Champion) rather than a vendor, and you ensure they have the right data to win."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'We're fine' considered a dangerous response in a sales call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It means the prospect is being rude."
+                },
+                {
+                    "id": "b",
+                    "text": "It signals that you haven't uncovered a 'Must Have' problem yet."
+                },
+                {
+                    "id": "c",
+                    "text": "It means you should stop the call immediately."
+                },
+                {
+                    "id": "d",
+                    "text": "It means they are out of money."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "'Fine' is the enemy of change. If the status quo is 'good enough,' the prospect won't endure the friction of buying and implementing a new solution."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Champion Enablement'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hiring a professional athlete to endorse your product."
+                },
+                {
+                    "id": "b",
+                    "text": "Providing your contact with specific materials (like a business case or executive summary) so they can sell your product internally."
+                },
+                {
+                    "id": "c",
+                    "text": "Telling your contact they are doing a great job."
+                },
+                {
+                    "id": "d",
+                    "text": "Giving your contact a free account forever."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your contact wants to solve their problem, but they don't want to risk their reputation. Champion enablement minimizes their risk and does the heavy lifting for them."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you respond when a prospect says their dev team can 'build this in a weekend'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Agree and tell them you hope it goes well."
+                },
+                {
+                    "id": "b",
+                    "text": "Challenge the long-term maintenance/opportunity cost: Will they patches/support it for years, or would they rather build their own core product?"
+                },
+                {
+                    "id": "c",
+                    "text": "Tell them their dev team isn't skilled enough."
+                },
+                {
+                    "id": "d",
+                    "text": "Immediately offer a 50% discount to make building seem more expensive."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Building a tool is easy; maintaining it is hard. Highlighting the opportunity cost (what else could those devs be doing?) is the most effective way to counter the 'Build vs. Buy' objection."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is 'Problem Amplification'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Exaggerating the problem to scare the prospect."
+                },
+                {
+                    "id": "b",
+                    "text": "Making the secondary consequences of a 'small' problem (like data loss or revenue gap) visible to the prospect."
+                },
+                {
+                    "id": "c",
+                    "text": "Telling the prospect their business is failing."
+                },
+                {
+                    "id": "d",
+                    "text": "Recording the prospect's complaints."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Many problems feel small to a prospect until you show them the math of the secondary impact (e.g., 'that manual error costs you 1 lead a day, which is $50k a year')."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think of a 'Champion' you are currently working with. What is the one specific document or data point you could send them today to make their conversation with their 'Economic Buyer' easier? Draft the copy for that email now.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to create 'Hero' materials for a champion. Look for focus on business outcomes (ROI, risk reduction, efficiency) rather than just features."
+        }
+    ]
+}

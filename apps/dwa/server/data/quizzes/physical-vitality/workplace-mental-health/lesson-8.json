@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2024 Cochrane review find about mindfulness interventions for burnout reduction in general employee populations?",
+            "options": [
+                {"id": "opt1", "text": "Mindfulness completely eliminates burnout for all employees"},
+                {"id": "opt2", "text": "For general populations not selected for distress, effects on exhaustion were small and often not statistically significant"},
+                {"id": "opt3", "text": "Mindfulness is more effective than organizational interventions"},
+                {"id": "opt4", "text": "Mindfulness works for everyone equally"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2024 Cochrane review found that for general employee populations (not selected for elevated distress), mindfulness interventions showed small effects on exhaustion that often didn't reach statistical significance. Effects were stronger for employees with elevated baseline distress — but even then, they don't substitute for organizational interventions addressing workload and resources."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When is mindfulness MOST appropriate as a workplace mental health intervention?",
+            "options": [
+                {"id": "opt1", "text": "As a substitute for reducing excessive workload"},
+                {"id": "opt2", "text": "As an adjunct for employees with elevated stress who also have adequate job resources and organizational support for wellbeing"},
+                {"id": "opt3", "text": "As the primary response to toxic leadership"},
+                {"id": "opt4", "text": "As mandatory training for all employees regardless of their needs"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Mindfulness is most appropriate as an adjunct (not primary intervention) for employees with elevated stress who ALSO have adequate job resources and organizational support. It can help with emotion regulation and stress reactivity, but it doesn't fix excessive workload, understaffing, toxic management, or low Psychosocial Safety Climate."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the PRIMARY concern with employer-mandated mindfulness programs?",
+            "options": [
+                {"id": "opt1", "text": "Mindfulness is dangerous"},
+                {"id": "opt2", "text": "Mandatory mindfulness frames mental health as individual responsibility and can be perceived as blame-shifting when structural problems (workload, staffing) remain unaddressed"},
+                {"id": "opt3", "text": "Mindfulness is too expensive"},
+                {"id": "opt4", "text": "Employees don't like meditation"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Mandatory mindfulness programs are problematic when they frame mental health as individual responsibility while ignoring structural workplace stressors. This can be perceived as blame-shifting: 'You're burned out because you don't meditate enough' rather than 'We need to address understaffing and workload.' Voluntary, well-designed mindfulness programs can be helpful, but they're not substitutes for organizational change."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does the research show about mindfulness for clinical conditions like severe depression or PTSD?",
+            "options": [
+                {"id": "opt1", "text": "Mindfulness is the best treatment for all mental health conditions"},
+                {"id": "opt2", "text": "Mindfulness is NOT a substitute for professional treatment — severe depression, PTSD, and clinical anxiety require evidence-based clinical care (therapy, medication)"},
+                {"id": "opt3", "text": "Mindfulness cures severe depression and PTSD"},
+                {"id": "opt4", "text": "Mindfulness apps replace the need for therapists"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Mindfulness is not a treatment for clinical mental health conditions. Severe depression, PTSD, panic disorder, and other clinical conditions require evidence-based professional treatment (CBT, medication, trauma-focused therapy). Mindfulness can be an adjunct in clinical care, but it's not a standalone treatment for severe conditions."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "8",
+    "title": "Mindfulness at Work — Evidence, Scope, and Limits - Quiz"
+}

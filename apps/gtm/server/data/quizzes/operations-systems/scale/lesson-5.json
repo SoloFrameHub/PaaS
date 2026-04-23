@@ -1,0 +1,75 @@
+{
+  "lessonId": "5",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "Compensation: Base + Variable Models",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the two compensation mistakes that destroy most first sales hires?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paying too much base and offering too much equity"
+        },
+        {
+          "id": "b",
+          "text": "Underpaying base with too much commission, OR overpaying base with too little variable"
+        },
+        { "id": "c", "text": "Not offering benefits and not having an office" },
+        { "id": "d", "text": "Using hourly pay instead of salary" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Low base + high commission attracts desperate applicants. High base + low variable removes performance incentive. Great comp does three things: attracts the right candidate, aligns incentives with revenue, and feels fair when they perform well."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the market rate for SDR base salary in 2025-2026?",
+      "options": [
+        { "id": "a", "text": "$25,000-35,000/year" },
+        { "id": "b", "text": "$40,000-55,000/year" },
+        { "id": "c", "text": "$70,000-90,000/year" },
+        { "id": "d", "text": "$100,000+/year" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "SDR base salary market rate is $40,000-55,000/year. Solo founders should start in the $42,000-48,000 range. Higher base signals stability; below $42K requires transparency about why and higher equity to compensate."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the Incentive Alignment Principle, the best comp plans feel:",
+      "options": [
+        { "id": "a", "text": "Generous at all attainment levels" },
+        {
+          "id": "b",
+          "text": "Generous when the hire performs well and fair when they don't"
+        },
+        { "id": "c", "text": "Aggressive to maximize motivation" },
+        { "id": "d", "text": "Conservative to minimize risk" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The best comp plans feel generous when hitting 100% of quota and fair when missing. If they hit quota and feel underpaid, they'll leave. If they miss and feel hopeless about catching up, they'll stop trying."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "SDR variable compensation should pay on the outputs they directly control, like meetings booked.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. SDRs are measured on activity and pipeline generation — meetings booked, qualified leads, or SQLs. Their variable pay should be tied to outputs they directly control, not downstream metrics like closed revenue."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design a comp plan for your first sales hire. What base, variable structure, and quota would you set? Does the plan feel fair at 50%, 100%, and 150% attainment?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response specifies a base salary within market range, designs a variable structure tied to controllable outputs, sets a realistic quota, and tests the plan at different attainment levels (50%, 100%, 150%) to ensure it feels fair at each."
+    }
+  ]
+}

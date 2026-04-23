@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+    <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFYRWNQKZG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SFYRWNQKZG');
+</script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#020408">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.iconify.design; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://forms.soloframehub.com;">
+        <link rel="preload" href="../assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="../src/css/fonts.css">
+        <title>Arquitectura de Plataforma de Cursos Nativa de IA | Por Qué Construimos Nuestro Propio LMS | SoloFrameHub</title>
+        <meta name="description" content="Por qué SoloFrameHub construyó una plataforma de cursos nativa de IA en lugar de usar Teachable. Currículo vivo, roleplay de persona 3D, sprints de cohorte con grupos de responsabilidad, comunidad NodeBB y artefactos de negocio — no insignias.">
+        <meta name="keywords" content="AI course platform, custom LMS architecture, NodeBB cohort learning, solo founder education platform, AI sales coaching platform, living curriculum, business artifacts">
+        <!-- Site Icon -->
+        <link rel="icon" type="image/png" href="../assets/images/soloframehub-site-icon.png">
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://soloframehub.com/es/platform-architecture.html"/>
+        <link rel="alternate" hreflang="en" href="https://soloframehub.com/platform-architecture.html"/>
+        <link rel="alternate" hreflang="es" href="https://soloframehub.com/es/platform-architecture.html"/>
+        <link rel="alternate" hreflang="x-default" href="https://soloframehub.com/platform-architecture.html"/>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://soloframehub.com/es/platform-architecture.html">
+        <meta property="og:title" content="Arquitectura de Plataforma de Cursos Nativa de IA | SoloFrameHub">
+        <meta property="og:description" content="Nativo de IA desde cero. Currículo vivo, sprints de cohorte, grupos de responsabilidad y artefactos de negocio. Construido por un bootstrapper, para bootstrappers.">
+        <meta property="og:image" content="https://soloframehub.com/assets/images/academy/caa-student-dashboard.webp">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://soloframehub.com/es/platform-architecture.html">
+        <meta property="twitter:title" content="AI-Native Course Plataforma Architecture | SoloFrameHub">
+        <meta property="twitter:description" content="Nativo de IA desde cero. Currículo vivo, sprints de cohorte, grupos de responsabilidad y artefactos de negocio.">
+        <meta property="twitter:image" content="https://soloframehub.com/assets/images/academy/caa-student-dashboard.webp">
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "AI-Native Course Plataforma Architecture",
+            "description": "Por qué SoloFrameHub construyó una plataforma de cursos nativa de IA con currículo vivo, sprints de cohorte, grupos de responsabilidad y artefactos de negocio en lugar de usar plataformas LMS tradicionales.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "SoloFrameHub",
+              "url": "https://soloframehub.com"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Mike Sullivan",
+              "jobTitle": "Founder & Creator",
+              "description": "30+ years enterprise tech and sales leadership. VP at Intel-funded startups. $3.7M+ enterprise deals. 325% quota attainment. 2 wireless security patents. Author, entrepreneur, and sales practitioner.",
+              "image": "https://soloframehub.com/assets/images/academy/mike-sullivan-author-creator-solo-founder.webp",
+              "sameAs": [
+                "https://linkedin.com/in/michaeljsullivan",
+                "https://x.com/soloframehub"
+              ]
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soloframehub.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Plataforma Architecture",
+                "item": "https://soloframehub.com/platform-architecture.html"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Por qué SoloFrameHub construyó su propia plataforma de cursos en lugar de usar Teachable o Kajabi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Las plataformas LMS tradicionales optimizan para la entrega de contenido — videos estáticos, cuestionarios e insignias. SoloFrameHub necesitaba una arquitectura nativa de IA donde la IA es el motor de enseñanza: coaching personalizado, roleplay de persona 3D, incorporación impulsada por evaluación y currículo vivo que se actualiza a partir de señales de los aprendices. Esto no podía atornillarse a una plataforma existente."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo funcionan los sprints de cohorte y los grupos de responsabilidad?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Los sprints de cohorte mensuales de 4 semanas rotan a través de pistas en un ciclo de 6 meses. Cada sprint agrupa de 8 a 25 aprendices, que se organizan además en grupos de responsabilidad de 4 a 5 fundadores. Los grupos colaboran en trabajo real — revisión entre pares de ICPs, co-desarrollo de guiones, práctica de roleplay juntos — con un ritmo semanal estructurado: lanzamiento el lunes, revisiones entre pares el miércoles, victorias y conversaciones reales el viernes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué hace diferente a la IA de SoloFrameHub de los complementos de chatbot?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La IA de SoloFrameHub mantiene el contexto completo de tu negocio en cada interacción. Usa RAG para hacer referencia a tus pitch decks, propuestas y documentos subidos. El sistema de persona 3D crea compradores realistas que coinciden con tu mercado objetivo (categoría de fundador × industria × superposición DISC). Esto no es un chatbot que responde preguntas frecuentes — es un motor de coaching consciente del contexto."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why NodeBB for community instead of Circle.so or Mighty Networks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Propiedad completa de datos (auto-alojado), costo marginal de $0/mes, integración completa de API a través de Write API para gestión automatizada del ciclo de vida de cohortes, y sin riesgo de plataforma. La integración SSO con autenticación Firebase significa inicio de sesión sin problemas. Como plataforma bootstrapped, no pagamos tarifas por miembro a un SaaS de comunidad."
+                }
+              }
+            ]
+          }
+        ]
+        </script>
+        <script async defer src='https://app.visitortracking.com/assets/js/tracer.js'></script>
+        <script>
+        function init_tracer() {
+            var tracer = new Tracer({
+                websiteId: "84fd60c3-2e70-4228-afaa-720e209dbdd3",
+                async: true,
+                debug: false
+            });
+        }
+        </script>
+        <style>body { font-family: 'Inter', sans-serif; } .font-serif-custom { font-family: 'Newsreader', serif; } .gradient-border { position: relative; background: linear-gradient(#020408, #020408) padding-box,
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) border-box; border: 1px solid transparent; }</style>
+        <link href="../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js" integrity="sha384-6w0TbqQyJ5y8F+7HAVTitSSVeSDGefw81KA7qo6lKUX7JfU8HX6w8j2qRf1PMZZ8f" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body class="bg-[#020408] min-h-screen flex flex-col items-center selection:bg-indigo-500/30 selection:text-indigo-200 text-zinc-300">
+        <!-- Background Grid -->
+        <div class="fixed inset-0 w-full h-full pointer-events-none z-0 flex justify-between px-4 md:px-12 opacity-10">
+            <div class="w-px h-full bg-white/5"></div>
+            <div class="w-px h-full bg-white/5 hidden sm:block"></div>
+            <div class="w-px h-full bg-white/5 hidden md:block"></div>
+            <div class="w-px h-full bg-white/5"></div>
+        </div>
+        <!-- Main Container -->
+        <main class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 backdrop-blur-xl lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+            <!-- Navigation -->
+            <nav class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-6 md:px-12 flex items-center justify-between">
+                <a href="../index.html" class="flex items-center gap-4"> <img src="../assets/images/soloframehub-logo-sm.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-12 w-auto object-contain"> </a>
+                <div class="hidden md:flex items-center gap-10">
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Libros menu" aria-expanded="false">Libros</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl"><a href="solo-founders-ai-customer-acquisition-playbook.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Playbook</a><a href="solo-founders-ai-60-day-roadmap-book.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Revolución IA</a><a href="8-gtm-frameworks-compounding-growth-book.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Dominio IA</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Academias menu" aria-expanded="false">Academias</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl"><a href="solo-founders-ai-startup-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Academia de Startups</a><a href="solo-founders-ai-customer-acquisition-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Lead Generation & Sales Academy</a><a href="solo-founders-ai-gtm-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Academia GTM</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Plataforma menu" aria-expanded="false">Plataforma</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                                <a href="community-forums.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Comunidad</a>
+                                <a href="platform-architecture.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Course Plataforma</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://content.soloframehub.com" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Blog</a>
+                    <a href="../platform-architecture.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">EN</a>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="solo-founders-ai-customer-acquisition-academy.html" class="hidden sm:flex group relative px-8 py-4 rounded-full bg-zinc-900 border border-white/10 text-base font-medium text-white hover:bg-zinc-800 transition-all items-center gap-3">
+                    Comenzar a Aprender  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg> </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-zinc-300 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-0 z-[100] hidden flex-col p-8" style="background-color: #06050B !important;">
+                <div class="flex justify-between items-center mb-12">
+                    <div class="flex items-center gap-4"> 
+                        <img src="../assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-10 w-auto object-contain"> 
+                    </div>
+                    <button id="close-menu" aria-label="Cerrar menú móvil">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-8 overflow-y-auto">
+                    <div class="space-y-4">
+                        <h3 class="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Academias</h3>
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Lead Generation & Sales Academy</a>
+                        <a href="solo-founders-ai-startup-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Academia de Startups</a>
+                        <a href="solo-founders-ai-gtm-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Academia GTM</a>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Libros</h3>
+                        <a href="solo-founders-ai-customer-acquisition-playbook.html" class="block text-2xl font-serif-custom text-white mobile-link">AI Playbook</a>
+                        <a href="solo-founders-ai-60-day-roadmap-book.html" class="block text-2xl font-serif-custom text-white mobile-link">Revolución IA</a>
+                        <a href="8-gtm-frameworks-compounding-growth-book.html" class="block text-2xl font-serif-custom text-white mobile-link">Dominio IA</a>
+                    </div>
+                    <div class="pt-8 border-t border-white/5 space-y-6">
+                        <a href="https://sales-suite.soloframehub.com/" class="block text-lg text-zinc-300 mobile-link">Apps</a>
+                        <a href="platform-architecture.html" class="block text-lg text-zinc-300 mobile-link">Plataforma</a>
+                        <a href="community-forums.html" class="block text-lg text-zinc-300 mobile-link">Comunidad</a>
+                        <a href="https://content.soloframehub.com" class="block text-lg text-zinc-300 mobile-link">Blog</a>
+                    <a href="../platform-architecture.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">EN</a>
+                    </div>
+                </nav>
+                <div class="mt-auto pt-8">
+                    <a href="solo-founders-ai-customer-acquisition-academy.html" class="w-full flex items-center justify-center h-14 rounded-full bg-white text-black font-bold mobile-link">
+                    Comenzar — $49/mo </a>
+                </div>
+            </div>
+            <!-- Hero Section -->
+            <section class="px-6 md:px-12 py-16 md:py-24 border-b border-white/5">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-medium mb-8">
+                        <span class="iconify" data-icon="lucide:sparkles" data-width="16"></span>
+                        Not Another Course Plataforma
+                    </div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-sans font-bold text-white mb-6 leading-tight tracking-tight">
+                    Por Qué Construí Esto En Lugar de Usar Teachable </h1>
+                    <p class="text-lg md:text-xl text-zinc-300 max-w-3xl mx-auto leading-relaxed">
+                    La mayoría de las plataformas de cursos fueron construidas para una era diferente. Graba videos, súbelos, gotea contenido en un horario, entrega insignias de finalización. Ese modelo funcionó cuando "curso en línea" significaba replicar una experiencia de aula digitalmente. </p>
+                </div>
+            </section>
+            <!-- Quick Navigation Control Center -->
+            <nav id="jump-nav" class="sticky top-[88px] z-40 border-b border-white/5 bg-[#020408]/95 backdrop-blur-md px-6 py-6 transition-all duration-300">
+                <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                    <a href="#problem" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" x2="12" y1="8" y2="12"/>
+                            <line x1="12" x2="12.01" y1="16" y2="16"/>
+                        </svg>
+                        El Problema </a>
+                    <a href="#ai-native" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:cpu" data-width="20"></span>
+                        Arquitectura IA </a>
+                    <a href="#curriculum" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:refresh-cw" data-width="20"></span>
+                        Currículo Vivo </a>
+                    <a href="#cohort" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:users" data-width="20"></span>
+                        Aprendizaje de Cohorte </a>
+                    <a href="#community" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:message-circle" data-width="20"></span>
+                        Comunidad </a>
+                    <a href="#courses" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:layout-grid" data-width="20"></span>
+                        Cursos </a>
+                    <a href="#artifacts" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:file-text" data-width="20"></span>
+                        Artefactos </a>
+                    <a href="#comparison" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:git-compare" data-width="20"></span>
+                        Comparación </a>
+                </div>
+            </nav>
+            <!-- Problem Statement -->
+            <section id="problem" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <h2 class="font-sans font-serif-custom mb-6 text-2xl text-white md:text-3xl">El Problema con el que Seguía Encontrándome </h2>
+                        <div class="space-y-4 text-zinc-300 leading-relaxed">
+                            <p>Construí cinco cursos en LearnWorlds usando lecciones HTML5 interactivas personalizadas—codificadas en mi editor, luego pegadas en su plataforma. Funcionó mejor que producir videos o cuestionarios estáticos, pero expuso el problema fundamental:</p>
+                            <p>Estaba pasando más tiempo luchando con una plataforma SaaS propietaria que realmente ayudando a los fundadores a construir sus negocios.</p>
+                            <p>Cada actualización de contenido significaba navegar el sistema de otra persona. Cada elemento interactivo requería soluciones alternativas. Y aun con todo ese esfuerzo, los estudiantes aún no estaban obteniendo lo que realmente necesitaban: coaching de IA en tiempo real que genera artefactos utilizables, se adapta a sus desafíos específicos y mide resultados de negocio reales—no solo finalizaciones de lecciones.</p>
+                            <p>Las plataformas LMS tradicionales optimizan para la entrega de contenido. Los fundadores independientes necesitan un sistema que los ayude a construir mientras aprenden.</p>
+                            <p class="text-white font-medium pt-4">Así que construí lo que necesitaba.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- AI-Native Architecture -->
+            <section id="ai-native" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Nativo de IA desde el Primer Día </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Esto no es IA atornillada a una plataforma de cursos tradicional. La IA es el motor de enseñanza. </p>
+                        <p class="text-lg text-zinc-300">Construido sobre una arquitectura de IA agnóstica de modelos que selecciona el modelo correcto para cada tarea, la verdadera ventaja de SoloFrameHub no es qué LLM llama—son las miles de páginas de investigación curada, marcos y contexto que impulsan cada interacción. El sistema de coaching de IA usa RAG para entender tus pitch decks, planes de negocio, propuestas y emails—generando marcos personalizados, versionando artefactos a medida que tu negocio evoluciona y conectando cada lección con hacer trabajo real.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Traditional Plataformas -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="flex items-start gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m15 9-6 6"/>
+                                    <path d="m9 9 6 6"/>
+                                </svg>
+                                <h3 class="text-lg font-medium text-white">Plataformas Tradicionales</h3>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Contenido de video pregrabado
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Complementos de chatbot para Q&A
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Currículo único para todos
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Actualizaciones de contenido manuales
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Insignias de finalización
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- SoloFrameHub -->
+                        <div class="gradient-border bg-sky-500/5 rounded-2xl p-6 border-sky-500/20">
+                            <div class="flex items-start gap-3 mb-4">
+                                <span class="iconify text-sky-400 mt-1" data-icon="lucide:check-circle" data-width="24"></span>
+                                <h3 class="text-lg font-medium text-white">SoloFrameHub</h3>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Contenido generado por IA, personalizado
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Coaching de IA durante cada
+                                    lección
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Consciente del contexto de tu negocio
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Auto-actualización desde señales del aprendiz
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Artefactos de negocio que puedes usar
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CTA #1 -->
+                    <div class="mt-12 max-w-2xl mx-auto gradient-border bg-sky-500/5 border-sky-500/20 rounded-3xl p-8 flex flex-col items-center text-center gap-6">
+                        <p class="text-zinc-300 text-lg">Ve el coaching de IA en acción — 3 pistas en vivo ahora, 4 más lanzándose en marzo de 2026</p>
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="px-8 py-4 rounded-full bg-white text-black font-bold text-sm hover:bg-zinc-200 transition-all flex items-center gap-2 group">
+                        Explorar la Academia <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                    </div>
+                    <div class="mt-12 gradient-border bg-indigo-500/5 rounded-2xl p-8 border-indigo-500/20">
+                        <div class="flex items-start gap-4">
+                            <span class="iconify text-indigo-400 mt-1" data-icon="lucide:zap" data-width="24"></span>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Lo Que Esto Significa Para Ti</h3>
+                                <p class="text-sm text-zinc-300 leading-relaxed">Cuando practicas una llamada de ventas, la IA orquesta una conversación de múltiples turnos con respuestas específicas de personalidad. Cuando construyes un ICP, evalúa tu trabajo contra marcos probados y sugiere mejoras. Cuando subes un pitch deck, analiza cada diapositiva y proporciona retroalimentación específica. La infraestructura soporta respuestas en streaming, salidas estructuradas y contexto persistente entre sesiones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Living Curriculum -->
+            <section id="curriculum" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Un Currículo Que Se Actualiza Solo </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Los cursos estáticos se deterioran. Los mercados cambian, las herramientas evolucionan, lo que funcionó el año pasado podría estar desactualizado hoy. </p>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Cinco Fuentes de Señales que Impulsan la Mejora Continua </h3>
+                        <!-- Living Curriculum Diagram -->
+                        <div class="mb-12 py-8 bg-zinc-900/40 rounded-2xl border border-white/5 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#38bdf8 0.5px, transparent 0.5px); background-size: 24px 24px;">
+</div>
+                            <div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full px-8">
+                                    <div class="space-y-4">
+                                        <div class="gradient-border bg-sky-500/10 p-4 rounded-xl border-sky-500/20">
+                                            <p class="text-xs font-semibold text-sky-400 uppercase tracking-widest mb-1">
+                                            Fuente</p>
+                                            <p class="text-sm text-white">Actualizaciones de Manuscrito</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2 pl-4 border-l-2 border-sky-500/20">
+                                            <div class="text-[10px] text-zinc-300 uppercase tracking-tighter">Agregando
+                                                Señales
+</div>
+                                            <div class="text-[10px] text-zinc-300">Patrones de Finalización</div>
+                                            <div class="text-[10px] text-zinc-300">Conversaciones de IA</div>
+                                            <div class="text-[10px] text-zinc-300">Discusiones del Foro</div>
+                                            <div class="text-[10px] text-zinc-300">Datos de Evaluación</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center">
+                                        <div class="w-32 h-32 rounded-full bg-sky-500/10 border-2 border-sky-500/30 flex items-center justify-center relative">
+                                            <div class="absolute inset-0 rounded-full border border-sky-400/20 animate-ping opacity-20">
+</div>
+                                            <span class="iconify text-sky-400" data-icon="lucide:brain" data-width="48"></span>
+                                        </div>
+                                        <p class="mt-4 text-sm font-medium text-white">Motor de Contenido</p>
+                                        <p class="text-[10px] text-zinc-400">Regenerando Lecciones</p>
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex flex-col items-center">
+                                    <span class="iconify text-sky-500/40" data-icon="lucide:arrow-down" data-width="24"></span>
+                                    <div class="mt-4 gradient-border bg-emerald-500/10 p-4 rounded-xl border-emerald-500/20 text-center">
+                                        <p class="text-sm font-medium text-white">Resultados Mejorados del Aprendiz</p>
+                                        <p class="text-[10px] text-emerald-400">Bucle de Retroalimentación Continua</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-emerald-400" data-icon="lucide:trending-down" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Patrones de Finalización</h4>
+                                    <p class="text-sm text-zinc-300">Cuando el 40% de los aprendices abandonan en la misma lección, el sistema la marca para regeneración con diferentes enfoques.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-violet-400" data-icon="lucide:messages-square" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Conversaciones de Coaching con IA</h4>
+                                    <p class="text-sm text-zinc-300">Cuando los aprendices hacen las mismas preguntas repetidamente, revela brechas en el currículo que se abordan automáticamente.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-sky-400" data-icon="lucide:users" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Discusiones de la Comunidad</h4>
+                                    <p class="text-sm text-zinc-300">Las preguntas y discusiones del foro indican dónde la enseñanza no está llegando. Los grupos de confusión surgen automáticamente.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-amber-400" data-icon="lucide:target" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Rendimiento de Evaluación</h4>
+                                    <p class="text-sm text-zinc-300">Trabajo estratégico evaluado por IA, no cuestionarios de opción múltiple. Cuando las puntuaciones bajan en competencias específicas, el contenido relacionado se mejora.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 md:col-span-2">
+                                <div class="w-10 h-10 rounded-lg bg-rose-500/10 flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Actualizaciones del Manuscrito Fuente</h4>
+                                    <p class="text-sm text-zinc-300">Cada academia se mapea a uno de mis tres libros. Cuando actualizo el manuscrito basándome en nuevos aprendizajes, el currículo hereda esos cambios automáticamente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How This Works in Practice -->
+                    <div class="gradient-border bg-sky-500/5 rounded-3xl p-8 md:p-12 border-sky-500/20 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Cómo Funciona Esto en la Práctica</h3>
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-4">
+                                <p class="text-zinc-300 leading-relaxed italic">
+                                "Imagina que el 40% de los fundadores abandonan durante la lección del Constructor de ICP. El sistema detecta este patrón, analiza las conversaciones de coaching con IA para encontrar dónde se agrupan las confusiones, identifica que los fundadores luchan traduciendo datos de comportamiento en criterios de segmentación." </p>
+                                <div class="space-y-2">
+                                    <p class="text-sm text-white font-medium">Dentro de 24 horas, la lección se regenera con: </p>
+                                    <ul class="text-xs text-zinc-300 space-y-1">
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> Nueva guía paso a paso
+                                        </li>
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> Ejemplos concretos de 3
+                                            mercados diferentes
+                                        </li>
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> Indicaciones de coaching con IA
+                                            ajustadas para detectar confusión temprano
+                                        </li>
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> Escenarios de práctica
+                                            adicionales
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-xs text-zinc-300 italic">La lección actualizada se despliega automáticamente a todos
+                                los usuarios—incluyendo aquellos que ya la completaron.</p>
+                            </div>
+                            <div class="bg-zinc-900/40 p-6 rounded-2xl border border-white/5 space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded bg-rose-500/10 flex items-center justify-center text-[10px] font-bold text-rose-400">
+                                        40%
+</div>
+                                    <div class="h-1 flex-1 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-rose-500" style="width: 40%"></div>
+                                    </div>
+                                    <div class="text-[10px] text-zinc-400">Abandono</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-sky-400" data-icon="lucide:search" data-width="16"></span>
+                                    <div class="text-[10px] text-zinc-300">Análisis de IA encontrando grupos de confusión...</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-emerald-400" data-icon="lucide:refresh-cw" data-width="16"></span>
+                                    <div class="text-[10px] text-zinc-300">Regenerando contenido para objetivo de 85% de finalización
+</div>
+                                </div>
+                                <div class="pt-4 border-t border-white/5">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <div class="text-[10px] text-zinc-300 uppercase">Resultado</div>
+                                        <div class="text-[10px] text-emerald-400 font-bold">85% Completado</div>
+                                    </div>
+                                    <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-emerald-500" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <h4 class="text-sm font-medium text-white mb-1">Nivel de Usuario</h4>
+                            <p class="text-xs text-zinc-300">Personalizado según tu progreso y contexto de negocio</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-emerald-400 mb-2" data-icon="lucide:users" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Nivel de Cohorte</h4>
+                            <p class="text-xs text-zinc-300">Ajustado según el rendimiento del grupo de pares</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-violet-400 mb-2" data-icon="lucide:globe" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Nivel de Plataforma</h4>
+                            <p class="text-xs text-zinc-300">Mejoras globales a partir de señales agregadas</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-amber-400 mb-2" data-icon="lucide:book-marked" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Nivel de Fuente</h4>
+                            <p class="text-xs text-zinc-300">Actualizaciones de revisiones del manuscrito</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Cohort Learning Architecture -->
+            <section id="cohort" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Aprende Más Rápido Juntos </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Acceso a tu propio ritmo a todos los cursos más sprints de cohorte mensuales donde los fundadores colaboran, construyen juntos y se hacen responsables mutuamente. </p>
+                    </div>
+                    <!-- Hybrid Model -->
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Arquitectura de Aprendizaje Híbrida</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center">
+                                        <span class="iconify text-sky-400" data-icon="lucide:book-open" data-width="20"></span>
+                                    </div>
+                                    <h4 class="text-white font-medium">Fundación a Tu Propio Ritmo</h4>
+                                </div>
+                                <ul class="space-y-2 text-sm text-zinc-300">
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Acceso a los 21 cursos en 3 pistas en vivo en cualquier momento</li>
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Coaching con IA disponible 24/7 — sin esperar horarios de oficina</li>
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Construye artefactos a tu propio ritmo</li>
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Formato de consumo rápido — aprende un marco, practica, construye</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                                        <span class="iconify text-emerald-400" data-icon="lucide:users" data-width="20"></span>
+                                    </div>
+                                    <h4 class="text-white font-medium">Sprints de Cohorte Mensuales</h4>
+                                </div>
+                                <ul class="space-y-2 text-sm text-zinc-300">
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Sprints de 4 semanas rotando a través de pistas en ciclo de 6 meses</li>
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Inscripción continua — únete al siguiente sprint en cualquier momento</li>
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> 8-25 aprendices por sprint, colaboración estructurada</li>
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Experiencias de aprendizaje compartidas — no estudio aislado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Three-Tier Depth -->
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="gradient-border bg-indigo-500/5 rounded-2xl p-6 border-indigo-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-indigo-400" data-icon="lucide:user-check" data-width="24"></span>
+                            </div>
+                            <h4 class="text-lg font-medium text-white mb-2">Grupos de Responsabilidad</h4>
+                            <p class="text-sm text-zinc-300 mb-3">4-5 fundadores — tamaño de grupo óptimo respaldado por investigación</p>
+                            <ul class="space-y-1 text-xs text-zinc-400">
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Revisión entre pares de ICPs y guiones</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Practicar roleplay juntos</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Co-desarrollar campañas de alcance</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Reuniones semanales de responsabilidad</li>
+                            </ul>
+                        </div>
+                        <div class="gradient-border bg-emerald-500/5 rounded-2xl p-6 border-emerald-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-emerald-400" data-icon="lucide:calendar-range" data-width="24"></span>
+                            </div>
+                            <h4 class="text-lg font-medium text-white mb-2">Sprint de Cohorte</h4>
+                            <p class="text-sm text-zinc-300 mb-3">8-25 aprendices — sprints mensuales enfocados de 4 semanas</p>
+                            <ul class="space-y-1 text-xs text-zinc-400">
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Experiencias de aprendizaje compartidas cada mes</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Lanzamiento lunes &rarr; Revisiones entre pares miércoles &rarr; Victorias viernes</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Sesiones colaborativas de resolución de problemas</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Inmersiones profundas enfocadas en pistas</li>
+                            </ul>
+                        </div>
+                        <div class="gradient-border bg-sky-500/5 rounded-2xl p-6 border-sky-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-sky-400" data-icon="lucide:globe" data-width="24"></span>
+                            </div>
+                            <h4 class="text-lg font-medium text-white mb-2">Comunidad Completa</h4>
+                            <p class="text-sm text-zinc-300 mb-3">Todos los miembros — foro persistente y victorias compartidas</p>
+                            <ul class="space-y-1 text-xs text-zinc-400">
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Foros de discusión específicos por pista</li>
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Espacio de victorias y celebraciones</li>
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Conexiones entre cohortes</li>
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Red de exalumnos y referencias</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Weekly Rhythm -->
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <h3 class="text-xl font-medium text-white mb-6">Aprendizaje Colaborativo por Diseño</h3>
+                        <p class="text-sm text-zinc-300 mb-6 leading-relaxed">
+                        Esto no es una "comunidad" atornillada a un curso — la colaboración está integrada en cada semana. Los grupos hacen trabajo real juntos: revisando las grabaciones de llamadas de descubrimiento de cada uno, co-desarrollando secuencias de alcance, dando retroalimentación honesta sobre ICPs. La colaboración estructurada entre pares significa que no solo estás aprendiendo marcos — estás construyendo con personas que entienden tus limitaciones. </p>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="flex gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-emerald-400" data-icon="lucide:message-square" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Retroalimentación Entre Pares Obligatoria</h4>
+                                    <p class="text-xs text-zinc-400">Cada artefacto recibe revisión del grupo antes de estar "terminado". Retroalimentación real de personas que entienden tus limitaciones.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-violet-400" data-icon="lucide:handshake" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Artefactos Compartidos</h4>
+                                    <p class="text-xs text-zinc-400">Co-desarrollar guiones, plantillas y manuales. Lo que un fundador construye, el grupo lo mejora juntos.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-sky-400" data-icon="lucide:phone-call" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Compromiso Proactivo</h4>
+                                    <p class="text-xs text-zinc-400">Reuniones dirigidas por fundadores, responsabilidad a nivel de grupo, alcance personal para cualquiera que se quede atrás.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Comunidad Infrastructure -->
+            <section id="community" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Infraestructura de Comunidad </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Foro NodeBB auto-alojado — propiedad completa de datos, riesgo cero de plataforma, integración perfecta. </p>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Por Qué NodeBB, No Circle.so o Mighty Networks</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-emerald-400" data-icon="lucide:database" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Propiedad Completa de Datos</h4>
+                                        <p class="text-sm text-zinc-300">Auto-alojado significa que poseemos cada publicación, cada hilo, cada interacción de miembro. Sin bloqueo de plataforma, sin riesgo de migración.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-sky-400" data-icon="lucide:key" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Integración SSO</h4>
+                                        <p class="text-sm text-zinc-300">Autenticación Firebase &rarr; grupos NodeBB. Un inicio de sesión para cursos, comunidad y coaching con IA. Sin cuentas separadas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-violet-400" data-icon="lucide:workflow" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Ciclo de Vida Automatizado</h4>
+                                        <p class="text-sm text-zinc-300">Flujos de trabajo n8n vía API Write de NodeBB para creación de cohortes, asignación de grupos, transiciones de sprint y gestión de miembros.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-amber-400" data-icon="lucide:wallet" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Economía Bootstrap</h4>
+                                        <p class="text-sm text-zinc-300">$0/mes costo marginal por miembro. Sin precios por asiento de un SaaS de comunidad. Escala con la plataforma.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Four Forum Spaces -->
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-indigo-400 mb-2" data-icon="lucide:coffee" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Sala de Cohorte</h4>
+                            <p class="text-xs text-zinc-400">Coordinación de sprint, ritmo semanal, discusiones de grupo</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-sky-400 mb-2" data-icon="lucide:layout-grid" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Foros de Pista</h4>
+                            <p class="text-xs text-zinc-400">Discusiones de cursos, compartir artefactos, preguntas de estrategia</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-emerald-400 mb-2" data-icon="lucide:trophy" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Victorias y Celebraciones</h4>
+                            <p class="text-xs text-zinc-400">Comparte resultados reales — primer cliente, acuerdo cerrado, hito de pipeline</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-amber-400 mb-2" data-icon="lucide:hand-metal" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Presentaciones</h4>
+                            <p class="text-xs text-zinc-400">Quién eres, qué estás construyendo, con qué necesitas ayuda</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course Architecture -->
+            <section id="courses" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        7 Pistas, No 49 Cursos Aleatorios </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Cada pista sirve a un tipo y etapa específicos de fundador. Los cursos están diseñados para consumo rápido — aprende un marco, practica con IA, construye un artefacto. No conferencias de video pasivas. </p>
+                    </div>
+                    <!-- Track Grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="gradient-border bg-emerald-500/5 rounded-2xl p-6 border-emerald-500/20">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="text-white font-medium">Pistas 1-3: En Vivo Ahora</h4>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">EN VIVO</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> <strong class="text-white">Fundamentos</strong> (5 cursos) — Marcos principales para todos los fundadores</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> <strong class="text-white">Motor de Marketing</strong> (8 cursos) — Contenido, SEO, AEO, generación de demanda</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> <strong class="text-white">Metodología de Ventas</strong> (8 cursos) — DISC, MVQ, descubrimiento, cierre</li>
+                            </ul>
+                            <p class="text-xs text-zinc-400 mt-3">21 cursos &middot; 165,000+ palabras de currículo</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="text-white font-medium">Pistas 4-7: Marzo 2026</h4>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">MAR 2026</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Adquisición Impulsada por IA</strong> (7 cursos) — Alcance con IA a escala</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Economía del Creador</strong> (8 cursos) — Audiencia, lanzamientos, escalera de productos</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Éxito del Cliente</strong> (4 cursos) — Retención, expansión, defensa</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Operaciones y Sistemas</strong> (9 cursos) — Escalado, delegación, automatización</li>
+                            </ul>
+                            <p class="text-xs text-zinc-400 mt-3">28 cursos adicionales &middot; Diferentes pistas para diferentes tipos de fundadores</p>
+                        </div>
+                    </div>
+                    <!-- Lesson Flow -->
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Cómo Funciona Realmente una Lección</h3>
+                        <p class="text-sm text-zinc-300 mb-6">Cada lección sigue el mismo bucle de hacer-mientras-aprendes. Sin conferencias de video pasivas — estás construyendo desde el minuto uno.</p>
+                        <div class="grid md:grid-cols-4 gap-4">
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mx-auto mb-3 text-sky-400 text-sm font-bold">1</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Lee</h4>
+                                <p class="text-xs text-zinc-400">Introducción al marco — concisa, accionable, consciente del contexto de tu negocio</p>
+                            </div>
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-3 text-emerald-400 text-sm font-bold">2</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Practica</h4>
+                                <p class="text-xs text-zinc-400">Cuestionarios con IA (opción múltiple + texto libre) con retroalimentación personalizada</p>
+                            </div>
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mx-auto mb-3 text-violet-400 text-sm font-bold">3</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Construye</h4>
+                                <p class="text-xs text-zinc-400">Crea un artefacto real — ICP, manual, guion, secuencia de alcance</p>
+                            </div>
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mx-auto mb-3 text-amber-400 text-sm font-bold">4</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Itera</h4>
+                                <p class="text-xs text-zinc-400">Coaching con IA + retroalimentación del grupo refinan tu trabajo hasta que sea utilizable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Screenshots -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl overflow-hidden">
+                            <img src="../assets/images/academy/caa-lesson-page.webp" alt="Página de lección de SoloFrameHub mostrando contenido interactivo con barra lateral de coaching con IA" width="800" height="500" loading="lazy" class="w-full h-auto">
+                            <div class="p-4">
+                                <p class="text-sm text-zinc-300">Contenido de lección con barra lateral de ayuda con IA — haz preguntas sobre cualquier concepto mientras aprendes</p>
+                            </div>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl overflow-hidden">
+                            <img src="../assets/images/academy/lesson-quizes.webp" alt="Interfaz de cuestionario de SoloFrameHub con respuestas calificadas por IA" width="800" height="500" loading="lazy" class="w-full h-auto">
+                            <div class="p-4">
+                                <p class="text-sm text-zinc-300">Cuestionarios calificados por IA — opción múltiple más texto libre con retroalimentación de coaching personalizada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Business Artifacts -->
+            <section id="artifacts" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Artefactos de Negocio, No Insignias </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        La mayoría de los cursos terminan con una insignia que puedes publicar en LinkedIn. Vivimos en una era de hacer, crear, construir. El resultado aquí son artefactos de negocio reales que puedes usar mañana. </p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <!-- Sales Academy -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-sky-400" data-icon="lucide:handshake" data-width="24"></span>
+                            </div>
+                            <h3 class="text-lg font-medium text-white mb-3">Sales Academy</h3>
+                            <ul class="space-y-2 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Ideal Customer Profiles
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Sales Playbooks
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Discovery Frameworks
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Demo Scripts
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Pipeline Definitions
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Academia de Startups -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-emerald-400" data-icon="lucide:rocket" data-width="24"></span>
+                            </div>
+                            <h3 class="text-lg font-medium text-white mb-3">Academia de Startups</h3>
+                            <ul class="space-y-2 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>Business Model Canvas
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>60-Day Launch Sprint
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>PROOF Validation Docs
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>MVP Specifications
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>GTM Strategy Briefs
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Academia GTM -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-violet-400" data-icon="lucide:trending-up" data-width="24"></span>
+                            </div>
+                            <h3 class="text-lg font-medium text-white mb-3">Academia GTM</h3>
+                            <ul class="space-y-2 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Positioning Documents
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Distribution Blueprints
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Content Systems
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Buyer Journey Maps
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>GTM Scorecards
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gradient-border bg-indigo-500/5 rounded-2xl p-8 border-indigo-500/20">
+                        <h3 class="text-xl font-medium text-white mb-4">Every Artifact Is:</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:git-branch" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Versioned</h4>
+                                    <p class="text-sm text-zinc-300">Full history, compare changes, restore previous
+                                    versions</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:brain" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">AI-Evaluated</h4>
+                                    <p class="text-sm text-zinc-300">Strategic feedback on quality and completeness</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:download" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Exportable</h4>
+                                    <p class="text-sm text-zinc-300">PDF, Google Docs, formats your tools accept</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:link" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Integrated</h4>
+                                    <p class="text-sm text-zinc-300">Referenced by the AI coach in future conversations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-zinc-300 mt-6 leading-relaxed">
+                        When you do a practice sales call, the AI references your actual ICP and playbook. When you work
+                        on positioning, it pulls from your validated customer data. The artifacts aren't just
+                        assignments—they're the foundation the entire system builds on. </p>
+                    </div>
+                    <!-- Business Artifact Mockup -->
+                    <div class="mt-12 gradient-border bg-zinc-900/40 rounded-3xl overflow-hidden border-white/5">
+                        <div class="bg-zinc-900/60 px-6 py-4 border-b border-white/5 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="flex gap-1.5">
+                                    <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                                    <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                                    <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                                </div>
+                                <span class="ml-4 text-xs text-zinc-300 font-mono italic">ICP-Builder-Draft-v3.2</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button class="text-xs text-zinc-300 flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 hover:bg-white/5">
+                                    <span class="iconify" data-icon="lucide:download" data-width="14"></span> Export
+                                </button>
+                                <button class="text-xs text-white bg-sky-500/20 border border-sky-500/30 px-3 py-1.5 rounded-lg flex items-center gap-2">
+                                    <span class="iconify" data-icon="lucide:history" data-width="14"></span> History
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 h-[400px]">
+                            <div class="md:col-span-2 p-8 overflow-hidden relative">
+                                <div class="space-y-6 blur-[2px] opacity-40">
+                                    <div class="h-8 bg-white/10 rounded w-1/3"></div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="h-24 bg-white/5 rounded"></div>
+                                        <div class="h-24 bg-white/5 rounded"></div>
+                                    </div>
+                                    <div class="h-4 bg-white/10 rounded w-full"></div>
+                                    <div class="h-4 bg-white/10 rounded w-5/6"></div>
+                                    <div class="h-32 bg-white/5 rounded w-full"></div>
+                                </div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="../assets/images/icp-builder-mockup.png">
+                                </div>
+                            </div>
+                            <div class="bg-indigo-500/5 border-l border-white/5 p-6 flex flex-col gap-4">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></div>
+                                    <span class="text-xs font-bold text-sky-400 uppercase tracking-widest">AI
+                                    Coaching</span>
+                                </div>
+                                <div class="bg-indigo-500/10 p-4 rounded-xl text-[11px] text-zinc-300 leading-relaxed border border-indigo-500/20">
+                                    Your psychographic data suggests a high pain-point in the "Time to ROI" category. Have
+                                    you considered adding a specific objection-handler for the 3-month transition period?
+</div>
+                                <div class="mt-auto pt-4 border-t border-white/5">
+                                    <div class="bg-white/5 rounded-lg p-2 flex items-center gap-2">
+                                        <div class="flex-1 h-2 bg-white/10 rounded-full"></div>
+                                        <span class="iconify text-zinc-500" data-icon="lucide:send" data-width="12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-zinc-900/60 px-8 py-4 border-t border-white/5 text-center">
+                            <p class="text-xs text-zinc-300 italic">Every artifact is versioned, AI-evaluated, and
+                            integrated with your coaching sessions</p>
+                        </div>
+                    </div>
+                    <!-- CTA #2 -->
+                    <div class="mt-12 max-w-2xl mx-auto gradient-border bg-sky-500/5 border-sky-500/20 rounded-3xl p-8 flex flex-col items-center text-center gap-6">
+                        <p class="text-zinc-300">Ready to start building your first ICP and sales playbook?</p>
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="px-8 py-3 rounded-full bg-white text-black font-bold text-sm hover:bg-zinc-200 transition-all flex items-center gap-2">
+                        Start Doing — $49/mo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Plataforma Comparison -->
+            <section id="comparison" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        How This Compares </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        A side-by-side look at what makes SoloFrameHub fundamentally different </p>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-white/5">
+                                        <th class="text-left p-4 font-medium text-white">Capability</th>
+                                        <th class="text-left p-4 font-medium text-zinc-300">Teachable / Kajabi</th>
+                                        <th class="text-left p-4 font-medium text-zinc-300">Thinkific</th>
+                                        <th class="text-left p-4 font-medium text-zinc-300">Skool</th>
+                                        <th class="text-left p-4 font-medium text-sky-400 bg-sky-500/5">SoloFrameHub</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-zinc-300">
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:video" data-width="18"></span>
+                                        Content Model </td>
+                                        <td class="p-4">Static video/text</td>
+                                        <td class="p-4">Static video/text</td>
+                                        <td class="p-4">Static + community</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:sparkles" data-width="14"></span>
+                                                Dynamic AI-generated
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:message-square" data-width="18"></span>
+                                        AI Integration </td>
+                                        <td class="p-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="m15 9-6 6"/>
+                                                <path d="m9 9 6 6"/>
+                                            </svg>
+                                        </td>
+                                        <td class="p-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="m15 9-6 6"/>
+                                                <path d="m9 9 6 6"/>
+                                            </svg>
+                                        </td>
+                                        <td class="p-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="m15 9-6 6"/>
+                                                <path d="m9 9 6 6"/>
+                                            </svg>
+                                        </td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:brain" data-width="14"></span>
+                                                Core teaching engine
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:upload" data-width="18"></span>
+                                        Content Updates </td>
+                                        <td class="p-4">Manual</td>
+                                        <td class="p-4">Manual</td>
+                                        <td class="p-4">Manual</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:refresh-cw" data-width="14"></span>
+                                                Signal-triggered
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:calendar" data-width="18"></span>
+                                        Personalization </td>
+                                        <td class="p-4">None</td>
+                                        <td class="p-4">None</td>
+                                        <td class="p-4">None</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify text-sky-400" data-icon="lucide:target" data-width="14"></span>
+                                                Consciente del contexto
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:award" data-width="18"></span>
+                                        Salida Principal </td>
+                                        <td class="p-4">Insignia</td>
+                                        <td class="p-4">Insignia</td>
+                                        <td class="p-4">Puntos + insignias</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify text-sky-400" data-icon="lucide:file-text" data-width="14"></span>
+                                                Artefactos de negocio
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:check-square" data-width="18"></span>
+                                        Evaluación </td>
+                                        <td class="p-4">Cuestionarios</td>
+                                        <td class="p-4">Tareas</td>
+                                        <td class="p-4">Revisión entre pares</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify text-sky-400" data-icon="lucide:brain" data-width="14"></span>
+                                                Estrategia evaluada por IA
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:users" data-width="18"></span>
+                                        Modelo de Comunidad </td>
+                                        <td class="p-4">Tablero de discusión</td>
+                                        <td class="p-4">Tablero de discusión</td>
+                                        <td class="p-4">Puntos + tablas de clasificación</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:users" data-width="14"></span>
+                                                Sprints de cohorte + grupos
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:database" data-width="18"></span>
+                                        Propiedad de Datos </td>
+                                        <td class="p-4">Bloqueado por plataforma</td>
+                                        <td class="p-4">Bloqueado por plataforma</td>
+                                        <td class="p-4">Bloqueado por plataforma</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:download" data-width="14"></span>
+                                                Auto-alojado, exportar todo
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="group hover:bg-zinc-900/40 transition-colors">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:dollar-sign" data-width="18"></span>
+                                        Modelo de Precios </td>
+                                        <td class="p-4">Tarifa + %</td>
+                                        <td class="p-4">Tarifa de plataforma</td>
+                                        <td class="p-4">Mensual</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">Solo suscripción</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Comparison Pull Quote -->
+                </div>
+            </section>
+            <!-- Bootstrap Economics -->
+            <!-- Built Using Own Frameworks -->
+            <section id="frameworks" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <div class="flex items-start gap-4 mb-6">
+                            <span class="iconify text-sky-400 mt-1 flex-shrink-0" data-icon="lucide:hammer" data-width="32"></span>
+                            <h2 class="text-2xl md:text-3xl font-serif-custom text-white">
+                            Construido Usando Mis Propios Marcos </h2>
+                        </div>
+                        <div class="space-y-4 text-zinc-300 leading-relaxed">
+                            <p>Una cosa que aprendí construyendo esto: la mejor manera de validar un marco es usarlo
+                            tú mismo.</p>
+                            <p>SoloFrameHub fue construido usando las mismas metodologías que enseño en las tres academias. Los marcos de la Academia de Startups dieron forma al proceso de validación y al alcance del MVP. Los principios de la Academia de Ventas informaron la estrategia de posicionamiento y página de destino. Los sistemas de la Academia GTM impulsan el enfoque de lanzamiento y crecimiento.</p>
+                            <p>Solo la documentación técnica es 260KB en 14 archivos de especificación—especificaciones completas escritas antes de una línea de código. Ese es el marco DECIDE del Manual de IA en práctica. </p>
+                            <p class="text-white font-medium pt-4">Cuando digo que estos marcos funcionan, no estoy teorizando. Estoy
+                            en la arena, usando las mismas herramientas que te pido que uses.</p>
+                            <p class="text-sm text-zinc-300 pt-4">Tenía tres manuscritos listos para publicar en octubre de 2025, pero decidí pausar la publicación para probar mis marcos construyendo aplicaciones del mundo real—comenzando con esta plataforma de creación de cursos. Mientras había comenzado a crear la Academia de Startups (y una Plataforma de Educación de Bienestar Mental en asociación con la oficina de una Enfermera Practicante Psiquiátrica) en LearnWorlds, me di cuenta de que aunque LearnWorlds tiene un gran módulo de editor de código para lecciones HTML interactivas, crear, actualizar y mantener cursos no era escalable. Más importante aún, no podía proporcionar el nivel de compromiso estudiantil, inteligencia de plataforma y actualizaciones casi en tiempo real que quería. Así que decidí construir mi propia plataforma nativa de IA (no IA atornillada). Los manuscritos continúan evolucionando basándose en lo que aprendo durante la construcción. Esto es lo que significa construido por un practicante.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Credibility Section -->
+            <section class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">30+ Años Construyendo Tecnología
+                        Empresarial</h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">De roles de VP a fundador bootstrapped</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-sky-400 mb-1">30+ Años</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Experiencia en Tecnología Empresarial</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-emerald-400 mb-1">14 Archivos</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Documentación Técnica</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-violet-400 mb-1">260KB</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Especificaciones Antes del Código</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-amber-400 mb-1">3 Libros</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Emparejados con Academias</p>
+                        </div>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <div class="space-y-6 text-zinc-300 leading-relaxed max-w-3xl mx-auto text-center">
+                            <p>Mi carrera ha abarcado la evolución de la tecnología empresarial, la ciberseguridad y la innovación móvil. He trabajado en la intersección de la investigación tecnológica y el desarrollo de mercados - traduciendo lo que los ingenieros podían construir en soluciones que los clientes comprarían. Desde concebir productos y encontrar primeros adoptantes hasta cerrar acuerdos y negociar asociaciones, he llevado ideas del concepto a los ingresos para startups de Silicon Valley. En el camino, escribí dos patentes en tecnología de seguridad inalámbrica.</p>
+                            <p>Para octubre de 2025 había completado la escritura de una serie de 3 manuscritos, pero pausé la publicación de todo lo demás para construir SoloFrameHub. No quería
+                            solo escribir otro libro; quería construir la plataforma que demuestra que estos marcos funcionan
+                            para fundadores bootstrapped primero.</p>
+                            <p>Cada línea de código en esta plataforma siguió 260KB de especificaciones técnicas en 14
+                            archivos distintos—escritas antes de que comenzara cualquier desarrollo. Esta es la disciplina de una
+                            plataforma construida por un practicante.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Who This Is For -->
+            <section class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Qué Significa Esto Para Ti </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Si has llegado hasta aquí, probablemente estás evaluando si SoloFrameHub vale tu tiempo
+                        y dinero. </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Perfect Fit -->
+                        <div class="gradient-border bg-emerald-500/5 rounded-2xl p-8 border-emerald-500/20">
+                            <h3 class="text-lg font-medium text-white mb-6 flex items-center gap-3"> <span class="iconify text-emerald-400" data-icon="lucide:check-circle" data-width="24"></span>
+                            Esta plataforma está construida para fundadores que... </h3>
+                            <ul class="space-y-4 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Quieren marcos
+                                    sistemáticos, no contenido motivacional</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Necesitan generar
+                                    artefactos de negocio reales, no solo aprender conceptos</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Prefieren coaching
+                                    con IA sobre consumo pasivo de video</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Están construyendo
+                                    negocios bootstrapped sin pista de VC</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Valoran la profundidad sobre
+                                    la amplitud en su aprendizaje</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Not the Right Fit -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8">
+                            <h3 class="text-lg font-medium text-white mb-6 flex items-center gap-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m15 9-6 6"/>
+                                    <path d="m9 9 6 6"/>
+                                </svg>
+                            Probablemente esto no es para ti si... </h3>
+                            <ul class="space-y-4 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>Quieres producción de video
+                                    pulida e instructores famosos</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>Buscas
+                                    networking casual sin resultados de aprendizaje estructurados</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>Necesitas
+                                    certificaciones de nivel empresarial para avance profesional</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>Prefieres
+                                    exploración autodirigida sobre caminos estructurados</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Risk Reversal Section -->
+            <section id="guarantee" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">Sin Riesgo para Fundadores</h2>
+                        <p class="text-lg text-zinc-300">Construido para bootstrappers, por un bootstrapper</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Cancel Anytime -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8 group hover:bg-zinc-900/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <span class="iconify text-sky-400" data-icon="lucide:shield-check" data-width="28"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Cancela en Cualquier Momento</h3>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Sin contratos a largo plazo
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Sin tarifas de cancelación
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Conserva los artefactos incluso si cancelas
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Month-to-Month -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8 group hover:bg-zinc-900/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <span class="iconify text-emerald-400" data-icon="lucide:calendar-check" data-width="28"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Precios Mensuales</h3>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Paga según uses
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Pausa la suscripción en cualquier momento
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Sin presión para comprometerte por adelantado
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Your Data -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8 group hover:bg-zinc-900/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <span class="iconify text-violet-400" data-icon="lucide:download" data-width="28"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Tus Datos, Tus Artefactos</h3>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Exporta todo lo que creas
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     PDF, Google Docs, Texto Plano
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Sin bloqueo de proveedor
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Final CTA Section -->
+            <section id="launch" class="px-6 md:px-12 py-20 md:py-32 relative overflow-hidden bg-zinc-900/40">
+                <div class="max-w-4xl mx-auto text-center relative z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-8">
+                        <span class="iconify" data-icon="lucide:check-circle" data-width="16"></span>
+                        3 Pistas en Vivo Ahora
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-sans font-bold text-white mb-6 tracking-tight">
+                    Deja de Recolectar Insignias. Comienza a Construir Tu Negocio. </h2>
+                    <p class="text-xl text-zinc-300 mb-12 max-w-2xl mx-auto">
+                    Los miembros fundadores obtienen precios de $49/mes — bloqueados de por vida. 7 pistas, coaching con IA, sprints de cohorte, grupos de responsabilidad, y cada artefacto que construyas es tuyo para conservar. </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="px-10 py-5 rounded-full bg-white text-black font-bold text-lg hover:bg-zinc-200 transition-all flex items-center justify-center gap-3 group">
+                        Comenzar la Academia <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                        <a href="solo-founders-ai-customer-acquisition-playbook.html" class="px-10 py-5 rounded-full border border-white/10 text-white font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+                        Leer el Manual </a>
+                    </div>
+                    <div class="mt-12 pt-8 border-t border-white/5">
+                        <p class="text-zinc-300 text-sm font-medium tracking-wider uppercase mb-6">Academias Próximas</p>
+                        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm">
+                            <a href="solo-founders-ai-startup-academy.html" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-2"> <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            Academia de Startups (Primavera 2026) </a>
+                            <a href="solo-founders-ai-gtm-academy.html" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-2"> <span class="w-2 h-2 rounded-full bg-violet-500"></span>
+                            Academia GTM (Primavera 2026) </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="bg-black/50 border-t border-white/5 py-12 px-6 md:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-4 text-zinc-400">
+                        <img src="../assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" class="w-14 h-14 object-contain">
+                        <span class="text-sm ml-2">© 2026</span>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400"><a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a><a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a><a href="legal/cookie-policy.html" class="hover:text-white transition-colors">Cookies</a><a href="legal/refund-policy.html" class="hover:text-white transition-colors">Refunds</a><a href="legal/ai-disclaimer.html" class="hover:text-white transition-colors">AI Disclaimer</a><a href="legal/acceptable-use-policy.html" class="hover:text-white transition-colors">Acceptable Use</a><a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            document.body.classList.toggle('overflow-hidden');
+        };
+
+        mobileMenuBtn?.addEventListener('click', toggleMenu);
+        closeMenuBtn?.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+
+        // Jump Nav Scroll Logic
+        const jumpNav = document.getElementById('jump-nav');
+        const jumpLinks = document.querySelectorAll('.jump-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        // Smooth scroll
+        jumpLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const navHeight = 88; // Main nav height
+                    const jumpNavHeight = jumpNav.offsetHeight;
+                    const offsetPosition = targetElement.offsetTop - navHeight - jumpNavHeight + 10;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for Active State
+        const observerOptions = {
+            root: null,
+            rootMargin: '-150px 0px -70% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    jumpLinks.forEach(link => {
+                        const icon = link.querySelector('.iconify');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('text-white', 'bg-white/10', 'border-white/20');
+                            link.classList.remove('text-zinc-300', 'border-transparent');
+                            if (icon) icon.classList.add('text-sky-400');
+                        } else {
+                            link.classList.remove('text-white', 'bg-white/10', 'border-white/20');
+                            link.classList.add('text-zinc-300', 'border-transparent');
+                            if (icon) icon.classList.remove('text-sky-400');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+    </body>
+</html>

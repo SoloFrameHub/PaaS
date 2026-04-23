@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 7-step action plan framework for building psychological flexibility?",
+            "options": [
+                {"id": "opt1", "text": "Just think positive and everything will work out"},
+                {"id": "opt2", "text": "(1) Identify values/motivation, (2) Assess baseline, (3) Choose focus domains, (4) Select core practices, (5) Identify barriers/solutions, (6) Create 4-week plan, (7) Commit and track"},
+                {"id": "opt3", "text": "No structure needed—random practice is equally effective"},
+                {"id": "opt4", "text": "Complete all lessons once and you're done forever"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 7-step framework synthesizes course learning into actionable practice: (1) Identify WHY (values + motivation), (2) Assess baseline (where are you now? which lessons resonated?), (3) Choose 1-2 focus domains (anxiety, emotion, self-compassion, challenge-response, failure recovery, goal flexibility, mastery orientation), (4) Select 3-5 specific practices (daily, weekly, as-needed), (5) Identify barriers + solutions, (6) Create 4-week implementation plan (Week 1: baseline, Week 2: habit, Week 3: expand, Week 4: assess/adjust), (7) Commit with tracking. Implementation intentions (specific if-then plans) significantly increase follow-through vs. vague intentions."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what should you track weekly to measure progress?",
+            "options": [
+                {"id": "opt1", "text": "Only outcome goals (do I feel completely better?)"},
+                {"id": "opt2", "text": "Process goals (practice consistency), challenge approach rate, skill application, and subjective wellbeing—track process more than just outcomes"},
+                {"id": "opt3", "text": "Nothing—tracking is unnecessary"},
+                {"id": "opt4", "text": "Only compare yourself to others"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Track: (1) Practice consistency (Did I complete daily practice? Target: 5+ days/week), (2) Challenge approach rate (How many challenges approached vs. avoided?), (3) Skill application (What situations did I use skills in? Which skills?), (4) Subjective wellbeing (1-10 flexibility rating—track trend not daily fluctuation). Process goals (did I practice?) are more controllable than outcome goals (do I feel better?). Results lag practice—celebrate practicing consistently, that's the success. Gradual upward trend matters more than week-to-week fluctuation (setbacks are normal)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based approach for managing anxiety and avoidance according to the domain-specific action plans?",
+            "options": [
+                {"id": "opt1", "text": "Daily affirmations: 'I am fearless. Anxiety has no power over me.'"},
+                {"id": "opt2", "text": "Build anxiety self-efficacy through graduated exposure + defusion + behavioral activation—approach despite anxiety, don't wait for it to disappear"},
+                {"id": "opt3", "text": "Avoid all anxiety-provoking situations until you've mastered anxiety management skills"},
+                {"id": "opt4", "text": "Force yourself into the most anxiety-provoking situation immediately (flooding)"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Evidence-aligned anxiety approach: (1) Defusion with anxiety thoughts ('I'm having the thought I'll fail'), (2) Graduated exposure ladder (start manageable, build up—not flooding), (3) Behavioral activation (approach despite anxiety—action creates confidence, not reverse). Research: exposure + acceptance-based approaches = gold standard for anxiety. NOT: positive affirmations without behavior (ineffective), avoiding until you feel ready (maintains avoidance indefinitely), or flooding (too aggressive for self-guided practice). You don't master anxiety in the abstract—you build anxiety self-efficacy BY approaching anxiety-provoking situations systematically."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are common obstacles to maintaining practice, and what are evidence-based solutions?",
+            "options": [
+                {"id": "opt1", "text": "No obstacles exist if you have enough willpower"},
+                {"id": "opt2", "text": "Obstacles: forgetting (solution: implementation intentions/habit stacking), expecting immediate results (solution: track process not just outcome), setbacks (solution: self-compassion + resume without self-punishment)"},
+                {"id": "opt3", "text": "If you encounter obstacles, you should quit entirely"},
+                {"id": "opt4", "text": "Obstacles mean the course doesn't work"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Common obstacles + solutions: (1) 'I forget to practice' → Implementation intentions ('After [existing habit], I will [practice]'), anchor to routine, (2) 'I don't see immediate results' → Track PROCESS (am I practicing?) not just outcome, skills compound over weeks-months, (3) 'I had setback and stopped' → Self-compassion on practice itself ('I missed a week, that's normal, I can restart now'), one setback doesn't erase progress, (4) 'Feels awkward' → All new skills feel awkward initially (that's NEW, not wrong), competence develops with practice. Implementation intentions significantly increase goal achievement vs. vague intentions."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Create your personal 4-week commitment: What will be your PRIMARY focus domain? What are 3 specific practices you'll implement (what, when, how often)? What's one barrier you anticipate and your solution? What's the smallest valued action you'll take THIS WEEK to start building psychological flexibility?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "20",
+    "title": "Building Your Psychological Flexibility Action Plan - Quiz"
+}

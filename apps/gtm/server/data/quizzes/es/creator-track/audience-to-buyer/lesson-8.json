@@ -1,0 +1,79 @@
+{
+  "lessonId": "8",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Diseño de Imanes de Prospectos para Creadores",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué significa el principio 'útil pero incompleto' en el diseño de imanes de prospectos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El imán de prospectos debe tener páginas faltantes que obliguen al usuario a comprar el producto completo"
+        },
+        {
+          "id": "b",
+          "text": "El imán de prospectos debe entregar valor real y una victoria rápida, mientras revela un sistema más grande que proporciona el producto de pago"
+        },
+        {
+          "id": "c",
+          "text": "El imán de prospectos debe ser intencionalmente de baja calidad para que el producto de pago se sienta más valioso"
+        },
+        {
+          "id": "d",
+          "text": "El imán de prospectos debe incluir instrucciones incompletas que requieran una llamada de coaching para implementar"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un buen imán de prospectos es genuinamente útil — el suscriptor puede implementarlo y obtener un resultado tangible. Pero resuelve estratégicamente un problema específico mientras revela un sistema más grande. El suscriptor piensa: 'Si lo gratuito es así de bueno, el programa de pago debe ser asombroso.'"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué tipo de imán de prospectos tiene la mayor fuerza de conversión para vender ofertas con precio de $200 o más?",
+      "options": [
+        { "id": "a", "text": "Listas de verificación y hojas de referencia" },
+        { "id": "b", "text": "Plantillas y archivos de referencia" },
+        {
+          "id": "c",
+          "text": "Talleres gratuitos o grabaciones de masterclass"
+        },
+        { "id": "d", "text": "Kits de herramientas y bibliotecas de recursos" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los talleres gratuitos o grabaciones de masterclass tienen la mayor fuerza de conversión para ofertas de $200+ porque tienen la mayor percepción de valor, construyen confianza significativa a través de la enseñanza extendida y crean un puente natural hacia las ofertas de pago. Requieren 10-20 horas de producción pero entregan los resultados de ventas más sólidos."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "En la auditoría del imán de prospectos de 90 días, ¿qué indica una tasa de conversión de prospecto a venta por debajo del 2%?",
+      "options": [
+        { "id": "a", "text": "Tu precio es demasiado alto para tu mercado" },
+        {
+          "id": "b",
+          "text": "Tu plataforma de correo tiene problemas de entregabilidad"
+        },
+        {
+          "id": "c",
+          "text": "El imán de prospectos está atrayendo a las personas equivocadas o no está sirviendo de puente efectivamente hacia tu oferta"
+        },
+        {
+          "id": "d",
+          "text": "Necesitas aumentar la frecuencia de publicación de tu contenido"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Una tasa de conversión de prospecto a venta por debajo del 2% señala que el imán de prospectos está atrayendo a personas que no son tus compradores ideales (audiencia equivocada), o que el imán de prospectos no sirve de puente efectivamente hacia tu oferta de pago (mal posicionamiento). La solución es una mejor segmentación de audiencia o una conexión más fuerte entre el tema del imán de prospectos y tu producto."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Diseña un imán de prospectos para tu negocio usando el principio 'útil pero incompleto'. Describe: el formato (plantilla, mini-curso, taller, etc.), el problema específico que resuelve, la victoria rápida que entrega y cómo revela naturalmente la brecha que llena tu producto de pago.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student creates a specific, well-designed lead magnet concept that follows the 'useful but incomplete' principle. The lead magnet should solve a real, specific problem (not a vague topic), deliver a concrete quick win, and have a clear logical bridge to their paid offer. Check that the format choice matches their offer price point as outlined in the lesson."
+    }
+  ]
+}

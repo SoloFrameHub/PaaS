@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what defines whether an experience is traumatic?",
+            "options": [
+                { "id": "opt1", "text": "The severity of the event as measured by external criteria" },
+                { "id": "opt2", "text": "Whether the event involved physical harm" },
+                { "id": "opt3", "text": "Your personal experience of the event and how it overwhelmed your ability to cope" },
+                { "id": "opt4", "text": "Whether a medical professional diagnoses it as traumatic" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Trauma is defined by your experience of the event, not by the event itself. Two people can experience the same event and be affected very differently. There is no 'right' or 'wrong' reaction to trauma."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the four symptom clusters of PTSD?",
+            "options": [
+                { "id": "opt1", "text": "Anxiety, depression, anger, and dissociation" },
+                { "id": "opt2", "text": "Fight, flight, freeze, and fawn" },
+                { "id": "opt3", "text": "Denial, bargaining, anger, and acceptance" },
+                { "id": "opt4", "text": "Re-experiencing, avoidance, changes in thoughts and mood, and changes in arousal and reactivity" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "PTSD symptoms fall into four categories: re-experiencing (intrusion), avoidance, changes in thoughts and mood, and changes in arousal and reactivity. These are distinct from the stress responses (fight, flight, freeze, fawn) discussed separately in the lesson."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "The course describes trauma responses (such as hypervigilance and flashbacks) as:",
+            "options": [
+                { "id": "opt1", "text": "Signs of personal weakness that need to be overcome" },
+                { "id": "opt2", "text": "Rare reactions that most people don't experience" },
+                { "id": "opt3", "text": "Character flaws that develop after traumatic events" },
+                { "id": "opt4", "text": "Protective mechanisms — the brain's natural survival systems doing their job" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The core message of the course is 'what happened TO you, not what's wrong WITH you.' Trauma responses are your brain's natural protective mechanisms that remain active after the danger has passed. They are not weaknesses or character flaws."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is NOT one of the four stress responses described in the lesson?",
+            "options": [
+                { "id": "opt1", "text": "Fight" },
+                { "id": "opt2", "text": "Fawn" },
+                { "id": "opt3", "text": "Focus" },
+                { "id": "opt4", "text": "Freeze" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The four stress responses are fight, flight, freeze, and fawn. 'Focus' is not one of the stress responses. The fawn response involves pleasing or appeasing others to stay safe, while freeze involves going still and being unable to move or think."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is this course designed to provide, and what is it NOT?",
+            "options": [
+                { "id": "opt1", "text": "It is a complete trauma therapy program that processes traumatic memories" },
+                { "id": "opt2", "text": "It provides psychoeducation and coping tools, but it is not a replacement for professional trauma therapy" },
+                { "id": "opt3", "text": "It is an exposure-based treatment that helps you relive trauma safely" },
+                { "id": "opt4", "text": "It is an EMDR protocol that can be completed without a therapist" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The course provides psychoeducation (information about trauma and its effects), normalization, and skill-building (grounding, coping, and stabilization techniques). It is NOT processing traumatic memories, exposure-based treatment, EMDR, CPT, PE, or a replacement for professional trauma therapy."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "trauma-recovery",
+    "lessonId": "1",
+    "title": "Understanding Trauma and PTSD - Quiz"
+}

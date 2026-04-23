@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "LinkedIn Message Selling",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the Connection-to-Conversation Framework, what should you do immediately after someone accepts your LinkedIn connection request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send them your offer with a link to your sales page within the first hour"
+                },
+                {
+                    "id": "b",
+                    "text": "Wait 24-48 hours, then send a brief welcome message that compliments something specific about their work and asks an open-ended question about their priorities"
+                },
+                {
+                    "id": "c",
+                    "text": "Add them to your email list and start an automated email sequence"
+                },
+                {
+                    "id": "d",
+                    "text": "Wait for them to message you first to avoid seeming aggressive"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The framework recommends waiting 24-48 hours after acceptance, then sending a welcome message that includes a specific compliment (not generic flattery) and an open-ended question about their current priorities. This earns the right to continue the conversation without violating LinkedIn's cultural expectation that you should not pitch immediately after connecting."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why do personalized LinkedIn messages get 3-4x higher response rates than template messages?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because LinkedIn's algorithm promotes personalized messages higher in the inbox"
+                },
+                {
+                    "id": "b",
+                    "text": "Because referencing specific details about someone's content or work proves you paid attention, which breaks through the noise of generic outreach that fills most LinkedIn inboxes"
+                },
+                {
+                    "id": "c",
+                    "text": "Because personalized messages are longer, and LinkedIn rewards longer messages"
+                },
+                {
+                    "id": "d",
+                    "text": "Because template messages are automatically flagged as spam by LinkedIn"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LinkedIn inboxes are flooded with generic, template-based outreach. When you reference something specific -- a post they wrote, a point they made, a project they are working on -- it signals that you invested time in understanding them. This breaks through the noise and creates a sense of genuine human connection, which dramatically increases the likelihood of a response."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended length and structure for a high-converting LinkedIn InMail?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "500+ words with a detailed explanation of your offer, pricing, and testimonials"
+                },
+                {
+                    "id": "b",
+                    "text": "75-100 words with three parts: a specific observation about them, a value statement, and a low-commitment ask"
+                },
+                {
+                    "id": "c",
+                    "text": "A single sentence asking them to schedule a call"
+                },
+                {
+                    "id": "d",
+                    "text": "200-300 words with a company overview and your resume highlights"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-converting InMail is typically 75-100 words and follows a 3-part structure: (1) a specific observation that proves you researched them, (2) a value statement about what insight or resource you can offer, and (3) a low-commitment ask such as a question or brief exchange -- not a call booking request. Shorter, more focused InMail consistently outperforms longer messages."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write a complete LinkedIn connection note (200 characters max) and a follow-up welcome message for a specific type of prospect in your target market. Explain who this prospect is, why you are connecting with them, and how your welcome message sets up a natural path toward eventually discussing your offer.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner's connection note is under 200 characters, references something specific (not generic flattery), and avoids pitching. Check that the welcome message includes a specific compliment and an open-ended question about the prospect's priorities. The overall approach should demonstrate the patience required by LinkedIn's culture -- building relationship before business."
+        }
+    ]
+}

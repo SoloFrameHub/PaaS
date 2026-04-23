@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "Why Objections Are Opportunities Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Objection Paradox' described in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The more objections you hear, the less likely you are to close."
+                },
+                {
+                    "id": "b",
+                    "text": "Silence is more dangerous than an objection because silence implies no engagement."
+                },
+                {
+                    "id": "c",
+                    "text": "Objections should be avoided by pitching more effectively early on."
+                },
+                {
+                    "id": "d",
+                    "text": "Prospects who object are usually trying to get a lower price."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Engagement is key. A prospect who objects is mentally engaging with the product's fit in their world. Silence often means they've already checked out."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When a prospect says 'It's too expensive,' what is often the 'underlying meaning'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They literally have zero dollars in their bank account."
+                },
+                {
+                    "id": "b",
+                    "text": "They are trying to insult your intelligence as a founder."
+                },
+                {
+                    "id": "c",
+                    "text": "They don't see enough value yet to justify the risk of the spend."
+                },
+                {
+                    "id": "d",
+                    "text": "They want you to offer a 50% discount immediately."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Price is relative to value. If they don't see the ROI or the magnitude of the problem you're solving, any price feels too high."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why do technical founders often struggle with the 'Personal Identification Trap'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they don't understand basic accounting principles."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they identify so closely with their solution that criticism of the product feels like a personal attack."
+                },
+                {
+                    "id": "c",
+                    "text": "Because they aren't 'natural' salespeople."
+                },
+                {
+                    "id": "d",
+                    "text": "Because they haven't automated their sales process yet."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "When you build the product yourself, it's an extension of your effort and intellect. Learning to depersonalize objections is critical to staying objective."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What percentage of objections typically fall into just 6 categories?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "20%"
+                },
+                {
+                    "id": "b",
+                    "text": "50%"
+                },
+                {
+                    "id": "c",
+                    "text": "80%"
+                },
+                {
+                    "id": "d",
+                    "text": "100%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pattern recognition is the founder's secret weapon. Most objections boil down to Price, Timing, Authority, Need, Trust, or Competition."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the B2B SaaS example, how did the founder reframe the objection 'We already use Jira'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By explaining why Jira's UI is outdated."
+                },
+                {
+                    "id": "b",
+                    "text": "By offering a price that was 20% lower than Jira."
+                },
+                {
+                    "id": "c",
+                    "text": "By asking if Jira was handling 100% of the specific technical deep-dive their tool specialized in."
+                },
+                {
+                    "id": "d",
+                    "text": "By ignoring the objection and continuing the demo."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The founder moved the conversation away from 'general replacement' toward 'specialized gap filling,' making the objection an invitation to differentiate."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think of the last time you heard an objection that made you feel defensive. How would your response have changed if you had viewed it as a 'request for more confidence' rather than a rejection? Describe what you would say differently using a curious, diagnostic tone.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to shift from a defensive tone to a diagnostic/curious tone. Look for phrases that imply validation ('That's a fair point') or curiosity ('Tell me more about...')."
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "anxiety-thought-record",
+  "title": "Anxiety Thought Record",
+  "description": "Use this worksheet to identify and challenge anxious thoughts using cognitive restructuring.",
+  "instructions": "When you notice your anxiety rising, pause and work through each step below. Start by describing the situation, then identify the automatic thought that triggered your anxiety. Rate your emotions, identify any thinking traps, examine the evidence, and create a more balanced perspective.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What happened? Where were you? Who was there?",
+      "type": "textarea",
+      "placeholder": "Describe the situation that triggered your anxiety...",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. Automatic Thought — What went through your mind?",
+      "type": "textarea",
+      "placeholder": "What was the thought or image that popped into your head?",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. Emotions — How intense were your feelings? (0 = none, 100 = most intense)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. Thinking Trap — Which cognitive distortion best fits?",
+      "type": "select",
+      "options": [
+        { "value": "catastrophizing", "label": "Catastrophizing" },
+        { "value": "mind-reading", "label": "Mind Reading" },
+        { "value": "fortune-telling", "label": "Fortune Telling" },
+        { "value": "black-white", "label": "Black-and-White Thinking" },
+        { "value": "overgeneralization", "label": "Overgeneralization" },
+        { "value": "mental-filter", "label": "Mental Filter" },
+        { "value": "disqualifying-positive", "label": "Disqualifying the Positive" },
+        { "value": "should-statements", "label": "Should Statements" },
+        { "value": "labeling", "label": "Labeling" },
+        { "value": "personalization", "label": "Personalization" },
+        { "value": "magnification", "label": "Magnification / Minimization" },
+        { "value": "emotional-reasoning", "label": "Emotional Reasoning" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Evidence For — What supports this thought?",
+      "type": "textarea",
+      "placeholder": "What facts or experiences support this thought being true?",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Evidence Against — What contradicts this thought?",
+      "type": "textarea",
+      "placeholder": "What facts, past experiences, or alternative explanations contradict this thought?",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. Balanced Thought — What is a more realistic perspective?",
+      "type": "textarea",
+      "placeholder": "Based on the evidence, write a more balanced and realistic thought...",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. Re-rate Emotions — How intense are your feelings now? (0 = none, 100 = most intense)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Imagining the worst possible outcome and treating it as likely or inevitable."
+    },
+    {
+      "id": "mind-reading",
+      "name": "Mind Reading",
+      "description": "Assuming you know what others are thinking, usually something negative about you."
+    },
+    {
+      "id": "fortune-telling",
+      "name": "Fortune Telling",
+      "description": "Predicting the future negatively without evidence to support the prediction."
+    },
+    {
+      "id": "black-white",
+      "name": "Black-and-White Thinking",
+      "description": "Seeing things in only two categories (all good or all bad) with no middle ground."
+    },
+    {
+      "id": "overgeneralization",
+      "name": "Overgeneralization",
+      "description": "Drawing broad conclusions from a single event, using words like 'always' or 'never'."
+    },
+    {
+      "id": "mental-filter",
+      "name": "Mental Filter",
+      "description": "Focusing only on the negative details while ignoring the positive aspects of a situation."
+    },
+    {
+      "id": "disqualifying-positive",
+      "name": "Disqualifying the Positive",
+      "description": "Dismissing positive experiences by insisting they 'don't count' for some reason."
+    },
+    {
+      "id": "should-statements",
+      "name": "Should Statements",
+      "description": "Using 'should', 'must', or 'ought to' statements that create unrealistic expectations."
+    },
+    {
+      "id": "labeling",
+      "name": "Labeling",
+      "description": "Assigning a fixed, global label to yourself or others instead of describing the behavior."
+    },
+    {
+      "id": "personalization",
+      "name": "Personalization",
+      "description": "Blaming yourself for events outside your control, or taking things personally."
+    },
+    {
+      "id": "magnification",
+      "name": "Magnification / Minimization",
+      "description": "Exaggerating the importance of negative events or minimizing positive ones."
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Assuming that because you feel a certain way, it must be true ('I feel anxious, so something bad must be about to happen')."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional mental health treatment. If you are in crisis, contact the 988 Suicide & Crisis Lifeline by calling or texting 988."
+}

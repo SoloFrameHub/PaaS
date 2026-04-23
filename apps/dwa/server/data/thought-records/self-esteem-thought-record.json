@@ -1,0 +1,123 @@
+{
+  "id": "self-esteem-thought-record",
+  "title": "Self-Esteem Thought Record",
+  "description": "Use this worksheet to identify, examine, and reframe self-critical thoughts. By separating facts from feelings and looking at the evidence, you can develop a more balanced and compassionate relationship with yourself.",
+  "instructions": "When you notice a self-critical thought or a dip in self-worth, pause and work through each step below. Start by describing the situation, then capture the exact self-critical thought. Rate your emotions, identify the cognitive distortion at work, examine the evidence on both sides, and create a kinder, more balanced alternative.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What was happening?",
+      "type": "textarea",
+      "placeholder": "Describe the event, interaction, or moment that triggered the self-critical thought...",
+      "required": true
+    },
+    {
+      "id": "selfCriticalThought",
+      "label": "2. Self-Critical Thought — What did your inner critic say?",
+      "type": "textarea",
+      "placeholder": "Write the exact self-critical thought, e.g., 'I'm not good enough', 'I'll never get this right'",
+      "required": true
+    },
+    {
+      "id": "emotion",
+      "label": "3. Emotion — What did you feel?",
+      "type": "select",
+      "options": [
+        { "value": "ashamed", "label": "Ashamed" },
+        { "value": "worthless", "label": "Worthless" },
+        { "value": "guilty", "label": "Guilty" },
+        { "value": "anxious", "label": "Anxious" },
+        { "value": "sad", "label": "Sad" },
+        { "value": "angry", "label": "Angry" },
+        { "value": "disgusted", "label": "Disgusted" }
+      ],
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "4. Emotion Intensity — How strong was the feeling? (0 = none, 100 = most intense)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "distortion",
+      "label": "5. Cognitive Distortion — Which thinking pattern is at work?",
+      "type": "select",
+      "options": [
+        { "value": "all-or-nothing", "label": "All-or-Nothing Thinking" },
+        { "value": "mental-filter", "label": "Mental Filter" },
+        { "value": "disqualifying-positive", "label": "Disqualifying the Positive" },
+        { "value": "emotional-reasoning", "label": "Emotional Reasoning" },
+        { "value": "labeling", "label": "Labeling" },
+        { "value": "should-statements", "label": "Should Statements" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "6. Evidence For — What supports this self-critical thought?",
+      "type": "textarea",
+      "placeholder": "List specific facts (not feelings) that seem to support the thought...",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "7. Evidence Against — What contradicts this thought?",
+      "type": "textarea",
+      "placeholder": "List facts, past successes, things others have said, or alternative explanations...",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "8. Balanced Thought — What would you say to a friend in this situation?",
+      "type": "textarea",
+      "placeholder": "Write a kinder, more balanced alternative that accounts for the full picture...",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "9. Re-rate Emotion — How intense is the feeling now? (0 = none, 100 = most intense)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "all-or-nothing",
+      "name": "All-or-Nothing Thinking",
+      "description": "Seeing yourself in black-and-white terms: 'I'm a total failure' or 'I'm perfect.' No room for the messy, human middle ground."
+    },
+    {
+      "id": "mental-filter",
+      "name": "Mental Filter",
+      "description": "Only noticing the negatives — a single criticism drowns out a dozen compliments. The positive evidence gets filtered out entirely."
+    },
+    {
+      "id": "disqualifying-positive",
+      "name": "Disqualifying the Positive",
+      "description": "Dismissing achievements, compliments, or positive experiences as luck, timing, or 'not counting' — keeping the negative self-view intact."
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Treating feelings as facts: 'I feel worthless, so I must be worthless.' Emotions are real, but they are not always accurate reflections of reality."
+    },
+    {
+      "id": "labeling",
+      "name": "Labeling",
+      "description": "Defining your entire self by a single event or behavior: 'I'm stupid,' 'I'm a loser,' 'I'm broken' — rather than describing what happened."
+    },
+    {
+      "id": "should-statements",
+      "name": "Should Statements",
+      "description": "Rigid rules about how you 'should' be: 'I should be further along,' 'I shouldn't need help,' 'I should be able to handle this.' These create guilt and shame."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional mental health treatment. If self-critical thoughts are persistent and distressing, consider working with a therapist trained in CBT or compassion-focused therapy. If you are experiencing thoughts of self-harm or suicide, contact the 988 Suicide & Crisis Lifeline by calling or texting 988."
+}

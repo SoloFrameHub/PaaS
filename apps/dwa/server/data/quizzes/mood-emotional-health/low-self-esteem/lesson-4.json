@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are core beliefs in the context of CBT and self-esteem?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Temporary opinions that change daily based on mood"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Deep, fundamental assumptions about the self, others, and the world that feel like absolute truths and are typically formed in childhood"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Conscious, rational decisions people make about their identity"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Beliefs that can only be identified through brain imaging"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Core beliefs are the deepest level of cognition in the CBT model. They are fundamental assumptions about the self ('I'm defective'), others ('People will reject me'), and the world ('The world is unsafe') that typically form in childhood and feel like absolute, unquestionable truths rather than interpretations. They operate largely outside conscious awareness."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In schema therapy, the 'defectiveness/shame' schema is central to low self-esteem. What does it involve?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A realistic assessment of one's flaws and limitations"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A deep-seated belief that one is fundamentally flawed, bad, or unworthy, and that if others truly knew you they would reject you"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A temporary feeling of embarrassment after making a mistake"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A belief that only applies to people with personality disorders"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The defectiveness/shame schema involves a pervasive sense of being fundamentally flawed, defective, bad, or unworthy. People with this schema often believe that if others truly saw them — their 'real' self — they would be rejected. This drives concealment, people-pleasing, and avoidance of authentic self-expression."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the three coping modes people use to manage painful core beliefs?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Fight, flight, and freeze"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Denial, anger, and acceptance"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Surrender (accepting the belief as true), avoidance (avoiding situations that trigger it), and overcompensation (behaving as if the opposite is true)"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Thinking, feeling, and behaving"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Schema therapy identifies three coping modes: Surrender (acting as if the belief is true, e.g., staying in abusive relationships because 'I deserve it'), Avoidance (avoiding situations that might activate the schema, e.g., never applying for promotions), and Overcompensation (behaving as if the opposite is true, e.g., becoming a perfectionist to prove 'I'm not defective'). All three maintain the schema."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'downward arrow technique' used for in working with core beliefs?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Reducing the intensity of emotions by counting backwards"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Repeatedly asking 'If that were true, what would it mean about me?' to uncover the deeper core belief beneath surface-level automatic thoughts"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Ranking negative thoughts from least to most distressing"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Drawing arrows on paper to connect thoughts to behaviors"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The downward arrow technique uncovers core beliefs by following a chain of meaning. Starting with an automatic thought (e.g., 'I made a mistake at work'), you repeatedly ask 'If that were true, what would it mean about me?' until you reach the underlying core belief (e.g., 'I made a mistake' -> 'People will think I'm incompetent' -> 'I'll lose my job' -> 'I'm fundamentally not good enough')."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the purpose of a 'positive data log' in changing core beliefs?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "To keep a record of everything that goes wrong so you can fix it"
+                },
+                {
+                    "id": "opt2",
+                    "text": "To systematically collect evidence that contradicts your negative core belief, counteracting the confirmation bias that maintains it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "To write down positive affirmations and repeat them daily"
+                },
+                {
+                    "id": "opt4",
+                    "text": "To compare yourself favorably with others"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A positive data log is a structured daily practice of recording experiences, actions, and feedback that contradict your negative core belief. Because the confirmation bias of low self-esteem causes you to automatically filter out positive information, the log forces you to actively notice and record it. Over time, this builds a body of evidence that weakens the old belief and strengthens a healthier alternative."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "low-self-esteem",
+    "lessonId": "4",
+    "title": "Core Beliefs: Where Self-Esteem Comes From - Quiz"
+}

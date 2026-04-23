@@ -1,0 +1,134 @@
+{
+    "lessonId": "5",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "Handling In-Demo Objections",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the difference between an objection and a rejection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "There is no difference"
+                },
+                {
+                    "id": "b",
+                    "text": "An objection is a request for more information or reassurance; a rejection is a hard 'No'"
+                },
+                {
+                    "id": "c",
+                    "text": "Objections are rude"
+                },
+                {
+                    "id": "d",
+                    "text": "Rejections happen early, objections happen late"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founders panic at objections. But an objection ('Is this secure?') is actually a buying signal. It means they are mentally trying to buy it but hit a roadblock."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Parking Lot' technique used for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Finding a place to park your car"
+                },
+                {
+                    "id": "b",
+                    "text": "Deferring a distracting question until the end of the demo without being rude"
+                },
+                {
+                    "id": "c",
+                    "text": "Ending the meeting early"
+                },
+                {
+                    "id": "d",
+                    "text": "Ignoring the question completely"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a prospect derails your flow ('Does this export to XML?'), put it in the 'Parking Lot' to keep control of the narrative, then address it later."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How should you handle the 'Price' question if it comes up 2 minutes into the demo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Answer it immediately with the exact price"
+                },
+                {
+                    "id": "b",
+                    "text": "Give a range to satisfy curiosity, but defer the specific quote until value is established"
+                },
+                {
+                    "id": "c",
+                    "text": "Refuse to answer"
+                },
+                {
+                    "id": "d",
+                    "text": "Hang up"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you give the price before value, you lose. If you refuse, you are annoying. The middle ground is giving a 'bracket' ($5k-$10k) and pivoting back to the demo."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Clarify and Isolate' strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Isolating the prospect in a room"
+                },
+                {
+                    "id": "b",
+                    "text": "Asking 'Aside from money, is there anything else holding you back?' to find the real hidden objection"
+                },
+                {
+                    "id": "c",
+                    "text": "Repeating the question loudly"
+                },
+                {
+                    "id": "d",
+                    "text": "Clarifying your pricing tier"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Prospects often throw up smoke screens ('It's too expensive'). The Judo Move is to isolate that objection to see if it's the *only* one. Usually, it's not."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Competitor Trap'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying your competitor's product"
+                },
+                {
+                    "id": "b",
+                    "text": "Bashing your competitor when asked, which makes you look insecure"
+                },
+                {
+                    "id": "c",
+                    "text": "Forgetting who your competitors are"
+                },
+                {
+                    "id": "d",
+                    "text": "Being sued"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Never trash the competition. Instead, validate them ('They are a great tool for X') and then differentiate ('But we focus on Y'). This builds trust."
+        }
+    ],
+    "passingScore": 70
+}

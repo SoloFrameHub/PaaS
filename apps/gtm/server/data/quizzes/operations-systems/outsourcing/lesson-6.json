@@ -1,0 +1,66 @@
+{
+  "lessonId": "6",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "Hiring, Onboarding, and Managing a VA",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the #1 reason VA relationships fail in the first month?",
+      "options": [
+        { "id": "a", "text": "The VA lacked skills" },
+        { "id": "b", "text": "The founder hired before SOPs existed" },
+        { "id": "c", "text": "Timezone differences" },
+        { "id": "d", "text": "Language barriers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Most VA relationships fail because the founder didn't have documented procedures. Without SOPs, you're not hiring a VA — you're hiring a confused person. All three SOPs (inbox triage, CRM updates, prospect research) must be written before posting a job."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What should your VA budget fit within as a percentage of MRR?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "15-20%" },
+        { "id": "c", "text": "30-40%" },
+        { "id": "d", "text": "50%+" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your VA budget should fit within 15-20% of your MRR. If any of the prerequisites are missing (SOPs, clear hours needed, budget within range), finish them before hiring."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is 'Mistake 2' that kills VA relationships?",
+      "options": [
+        { "id": "a", "text": "Paying too much" },
+        { "id": "b", "text": "Too much autonomy too fast" },
+        { "id": "c", "text": "Not having video calls" },
+        { "id": "d", "text": "Hiring from the wrong platform" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Giving too much autonomy too fast means handing a VA a folder and expecting professional output in week one. When quality is inconsistent, you either micromanage or give up. Build autonomy gradually through a structured 4-week onboarding."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should post a VA job listing before completing all three SOPs from lessons 3-5.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Prerequisites for hiring: (1) All three SOPs written and documented, (2) Clear weekly hours needed, (3) Budget within 15-20% of MRR. A VA given an incomplete SOP will make mistakes in exactly that area."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Are all three of your SOPs (inbox triage, CRM updates, prospect research) complete and documented? What platform would you use to hire, and what test task would you design to filter candidates?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses SOP completeness, selects a hiring platform appropriate for their budget and needs, and designs a specific test task that tests the skills needed for their delegation use case."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three phases of the social anxiety cycle identified by researchers?",
+            "options": [
+                { "id": "opt1", "text": "Trigger, panic, recovery" },
+                { "id": "opt2", "text": "Anticipatory processing (before), in-situation processing (during), and post-event rumination (after)" },
+                { "id": "opt3", "text": "Avoidance, exposure, habituation" },
+                { "id": "opt4", "text": "Thought, feeling, behavior" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Researchers Clark & Wells (1995) and Rapee & Heimberg (1997) identified a three-phase cycle: anticipatory processing (worrying before the event), in-situation processing (self-focused attention during the event), and post-event rumination (replaying and critiquing afterward). Each phase feeds the next, creating a self-perpetuating loop."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does self-focused attention during social situations actually create the outcome you fear?",
+            "options": [
+                { "id": "opt1", "text": "Because focusing on yourself makes your physical symptoms visible to everyone" },
+                { "id": "opt2", "text": "Because self-monitoring takes attention away from the conversation, making you seem less engaged — which is exactly what you fear" },
+                { "id": "opt3", "text": "Because people can sense when you are self-conscious and they judge you for it" },
+                { "id": "opt4", "text": "Because self-focus triggers a visible physiological response that others cannot ignore" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "By focusing inward — monitoring your heart rate, checking for blushing, analyzing your words — you actually create the very outcome you fear. You seem less engaged because you ARE less engaged; your attention is on yourself rather than the conversation. Meanwhile, you miss friendly smiles and interested nods from others."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does research show about the relationship between post-event rumination and social anxiety?",
+            "options": [
+                { "id": "opt1", "text": "Rumination helps people learn from social mistakes and improves future performance" },
+                { "id": "opt2", "text": "Rumination has no measurable effect on social anxiety levels" },
+                { "id": "opt3", "text": "A meta-analysis found a moderate correlation (r = .45) between post-event rumination and social anxiety severity, with rumination distorting memories more negatively over time" },
+                { "id": "opt4", "text": "Rumination only affects people who have been diagnosed with social anxiety disorder" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A meta-analysis of 35 studies (over 10,000 participants) found a moderate correlation between post-event rumination and social anxiety severity. While rumination feels productive ('learning from mistakes'), it actually distorts memories to be more negative than reality, reinforces negative self-beliefs, and increases anticipatory anxiety for future events."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When a social situation goes well despite your anxiety, how do safety behaviors prevent you from benefiting?",
+            "options": [
+                { "id": "opt1", "text": "Safety behaviors make the situation go well, so there is nothing to learn" },
+                { "id": "opt2", "text": "You attribute the success to the safety behavior rather than to reality, preventing you from learning you would have been fine anyway" },
+                { "id": "opt3", "text": "Safety behaviors make the situation worse, confirming your fears" },
+                { "id": "opt4", "text": "Safety behaviors cause other people to treat you differently" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When things go well after using a safety behavior, you think 'It was only okay because I avoided eye contact' or 'It was only fine because I had a drink first.' This prevents you from learning the most important lesson: you would have been fine anyway. The success gets credited to the crutch, not to your actual capability."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is breaking the social anxiety cycle at any single point considered effective?",
+            "options": [
+                { "id": "opt1", "text": "Because social anxiety only operates in one phase at a time" },
+                { "id": "opt2", "text": "Because the phases are independent and do not influence each other" },
+                { "id": "opt3", "text": "Because the three phases feed into each other, so disrupting one weakens the entire cycle" },
+                { "id": "opt4", "text": "Because breaking one phase permanently eliminates social anxiety" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The social anxiety cycle is self-perpetuating — each phase feeds the next. Anticipatory anxiety increases self-focus during the event, which triggers post-event rumination, which worsens anticipatory anxiety for the next event. Because the phases are interconnected, breaking the cycle at any single point creates improvements across all phases."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "social-anxiety",
+    "lessonId": "2",
+    "title": "The Social Anxiety Cycle - Quiz"
+}

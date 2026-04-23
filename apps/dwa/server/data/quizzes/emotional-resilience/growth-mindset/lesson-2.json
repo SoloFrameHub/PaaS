@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'evidence bifurcation' in growth mindset research?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset works for students but not adults"},
+                {"id": "opt2", "text": "Correlational studies show consistent moderate associations between growth mindset and wellbeing (r = −0.22 to −0.25), but intervention evidence for achievement is weak after bias correction (d = 0.02)"},
+                {"id": "opt3", "text": "Growth mindset improves mental health but not academic performance"},
+                {"id": "opt4", "text": "Old studies show positive effects; new studies show negative effects"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The evidence bifurcation refers to the sharp divide between correlational findings (people with growth mindsets tend to report better wellbeing, r = −0.22 to −0.25 for distress) and intervention findings (teaching growth mindset doesn't reliably improve achievement—d = 0.02 in general populations after bias correction). Correlation doesn't equal causation: healthy people may develop growth mindsets as a result of wellbeing, not a cause. This distinction is critical for understanding what growth mindset actually delivers."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, which adjacent framework has the strongest evidence base for mental health outcomes?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset interventions (d = 0.60 for all populations)"},
+                {"id": "opt2", "text": "ACT psychological flexibility (meta-analysis g = 0.72 for transitional-age youth on psychopathology and wellbeing)"},
+                {"id": "opt3", "text": "Grit and perseverance (no significant mental health effects)"},
+                {"id": "opt4", "text": "Positive thinking and affirmations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "ACT (Acceptance and Commitment Therapy) psychological flexibility has very strong evidence: a 2025 meta-analysis of 65 studies (n = 5,283) found Hedges' g = 0.72 on psychopathology, wellbeing, and coping in transitional-age youth. This is substantially larger and more robust than growth mindset intervention evidence. ACT includes acceptance of uncomfortable internal experiences, not just reframing them—a critical difference from growth mindset's predominantly reappraisal-based approach. This is one of several frameworks with stronger evidence than 'growth mindset' as a standalone intervention."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "The lesson states that growth mindset accounts for what percentage of the variance in socioeconomic status (SES) effects on achievement across 73 countries?",
+            "options": [
+                {"id": "opt1", "text": "47%—nearly half of SES effects can be buffered by mindset"},
+                {"id": "opt2", "text": "22%—mindset has a small but meaningful moderating effect"},
+                {"id": "opt3", "text": "2.9–3.2%—the remaining 97% is explained by structural factors (income, access, resources, systemic barriers)"},
+                {"id": "opt4", "text": "0%—mindset has no relationship to SES effects"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "PISA 2022 data (N = 507,588+ across 73 countries) found growth mindset accounts for only 2.9–3.2% of the variance in SES effects on achievement. The remaining 97% is structural—income, educational opportunity, resources, systemic discrimination. This evidence directly contradicts claims that growth mindset can 'buffer poverty' or overcome structural inequality. Individual mindset cannot compensate for systemic disadvantage, and claiming otherwise is both scientifically inaccurate and ethically problematic (victim-blaming)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the PISA 78-country analysis mentioned in the lesson, what happens to the growth mindset-wellbeing relationship in societies with fixed-mindset cultural norms?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset is even more beneficial in those cultures"},
+                {"id": "opt2", "text": "Growth mindset shows no relationship to wellbeing in those cultures"},
+                {"id": "opt3", "text": "Growth mindset is associated with negative wellbeing—holding a growth mindset in a system that punishes failure creates a double bind"},
+                {"id": "opt4", "text": "Cultural norms have no effect on mindset-wellbeing relationships"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Critical cross-cultural finding: in societies with fixed-mindset cultural norms (where failure is stigmatized and ability is treated as fixed), growth mindset is associated with NEGATIVE psychological wellbeing. Holding a growth mindset while living in a system that doesn't support it creates cognitive dissonance and psychological burden. This means growth mindset is not universally beneficial—context and cultural fit matter enormously. Mandatory positivity in punishing environments causes harm, not benefit."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "The lesson presents four possible responses to learning that growth mindset intervention evidence is weak: dismissing it entirely, ignoring the limitations, extracting evidence-backed skills while abandoning unsupported claims, or recognizing context-dependent effects. Which approach resonates with you and why? How will you integrate this nuanced evidence into your own development?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "2",
+    "title": "The Evidence Landscape: What Research Really Says - Quiz"
+}

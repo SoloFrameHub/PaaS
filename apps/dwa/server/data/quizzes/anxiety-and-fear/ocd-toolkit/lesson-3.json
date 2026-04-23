@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the five steps of the OCD cycle in the correct order?",
+            "options": [
+                { "id": "opt1", "text": "Obsession, trigger, compulsion, distress, relief" },
+                { "id": "opt2", "text": "Trigger, compulsion, obsession, relief, distress" },
+                { "id": "opt3", "text": "Trigger, obsession, distress, compulsion, temporary relief" },
+                { "id": "opt4", "text": "Distress, obsession, trigger, avoidance, relief" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The OCD cycle follows five predictable steps: a trigger activates an obsession, which produces distress, which drives a compulsion, which provides temporary relief. This relief then teaches the brain that the compulsion was necessary, making OCD stronger each time the cycle completes."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'negative reinforcement' in the context of the OCD cycle?",
+            "options": [
+                { "id": "opt1", "text": "Punishing yourself for having intrusive thoughts" },
+                { "id": "opt2", "text": "When removing something unpleasant (anxiety) strengthens the behavior (compulsion) that removed it" },
+                { "id": "opt3", "text": "When someone criticizes you for performing rituals" },
+                { "id": "opt4", "text": "Thinking negative thoughts about yourself after a compulsion" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Negative reinforcement occurs when the compulsion reduces anxiety, teaching your brain: 'That worked -- do it again next time.' By removing something unpleasant (anxiety), the behavior that removed it (the compulsion) is strengthened. This is one of the most powerful learning mechanisms in the brain and a key reason the OCD cycle is self-reinforcing."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'certainty trap' in OCD?",
+            "options": [
+                { "id": "opt1", "text": "Being certain that you have OCD" },
+                { "id": "opt2", "text": "Feeling trapped in a certain location due to OCD" },
+                { "id": "opt3", "text": "The fact that checking and analyzing never produce lasting certainty, so doubt rushes back stronger" },
+                { "id": "opt4", "text": "Being certain that treatment will not work" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The certainty trap is one of the mechanisms that keeps the OCD cycle spinning. OCD demands certainty ('Are you SURE the door is locked?'), but checking and analyzing never produce lasting certainty. The moment you stop the compulsion, doubt rushes back — often stronger than before — demanding more checking."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the central paradox of the OCD cycle?",
+            "options": [
+                { "id": "opt1", "text": "OCD makes you feel anxious even when you are safe" },
+                { "id": "opt2", "text": "The things you do to feel safe are the things that keep you stuck" },
+                { "id": "opt3", "text": "OCD is both a mental and physical condition" },
+                { "id": "opt4", "text": "Having OCD means you are both brave and afraid" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The central paradox of OCD is that the things you do to feel safe are exactly what keeps you stuck. Checking teaches your brain that you need to check, washing teaches that you're in danger, avoiding teaches that you can't handle triggers, and reassurance-seeking teaches that you can't trust yourself."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What tends to happen to untreated OCD over time?",
+            "options": [
+                { "id": "opt1", "text": "It naturally fades away as you get older" },
+                { "id": "opt2", "text": "It stays exactly the same without changing" },
+                { "id": "opt3", "text": "It only affects your mood, not your behavior" },
+                { "id": "opt4", "text": "It expands to more triggers, more situations, and more elaborate rituals" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Untreated OCD tends to grow through 'expanding territory.' It starts with one trigger and one ritual, then gradually expands to more triggers, more situations, and more elaborate rituals. The cycle is progressive if left unchecked, which is why early treatment is important."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "3",
+    "title": "The OCD Cycle - Quiz"
+}

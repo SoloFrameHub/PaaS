@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does blue light from screens affect sleep according to the mechanism-based evidence?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Blue light heats up the brain, making it harder to fall asleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Blue light activates intrinsically photosensitive retinal ganglion cells (ipRGCs) → signals suprachiasmatic nucleus → suppresses melatonin"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Blue light damages the retina, causing eye strain that prevents sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Blue light has no effect on sleep — it's a myth"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The mechanism is STRONG evidence: Blue light (460-480nm) → ipRGCs → suprachiasmatic nucleus (circadian clock) → melatonin suppression. This is well-established neuroscience, not contested."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the evidence quality for blue light blocking glasses improving sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "STRONG — consistent, replicated evidence"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE-MIXED — some studies show benefit, others show minimal effect"
+                },
+                {
+                    "id": "opt3",
+                    "text": "WEAK — no evidence supporting blue light glasses"
+                },
+                {
+                    "id": "opt4",
+                    "text": "STRONG — proven to cure insomnia"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While the mechanism is clear, actual sleep outcomes from blue light glasses are MODERATE-MIXED. Some studies show benefit, others show minimal effect. The mechanism is real, but the practical impact of glasses varies."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which intervention has STRONGER evidence for improving sleep than blue light blocking alone?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Using blue light glasses while scrolling social media in bed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Avoiding screens 1-2 hours before bed (or dimming screens + avoiding arousing content)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Switching all screens to grayscale mode"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Using night mode on all devices"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Complete screen avoidance before bed (or combined dim + content strategies) has stronger evidence than blue light blocking alone. The arousal from content (news, social media, work emails) may matter more than blue light wavelength."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What time frame does research suggest for blue light suppressing melatonin?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only in the first 30 minutes of exposure"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Primarily in the 2-3 hours before bedtime, when the circadian system is most sensitive"
+                },
+                {
+                    "id": "opt3",
+                    "text": "All day — any blue light exposure ruins sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Blue light only affects sleep if you fall asleep with a screen in your hand"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The circadian system is most sensitive to light in the evening (2-3 hours before typical bedtime). Blue light during the day is less problematic and may even support circadian rhythm. Timing matters."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "How much screen time do you typically have in the 2 hours before bed? What's one specific change you could make to reduce blue light or arousing content exposure during that window?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "4",
+    "title": "Sleep and Screens: Blue Light Mechanism - Quiz"
+}

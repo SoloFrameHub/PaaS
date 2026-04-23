@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is magnesium oxide NOT recommended for anxiety or other neuropsychiatric purposes?",
+            "options": [
+                { "id": "opt1", "text": "It is too expensive compared to other forms" },
+                { "id": "opt2", "text": "It has only approximately 4% bioavailability, meaning 96% of what you swallow provides no systemic benefit" },
+                { "id": "opt3", "text": "It causes dangerous spikes in blood magnesium levels" },
+                { "id": "opt4", "text": "It is no longer available for purchase" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Magnesium oxide has only approximately 4% bioavailability, meaning you would need about 16 tablets to match the absorbed magnesium from a single therapeutic dose of glycinate. Despite being the most commonly sold and cheapest form, it is essentially ineffective for neuropsychiatric purposes. Its only appropriate use is as a laxative."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What makes magnesium threonate unique compared to other magnesium forms?",
+            "options": [
+                { "id": "opt1", "text": "It has the highest elemental magnesium content per capsule" },
+                { "id": "opt2", "text": "It is the cheapest form available" },
+                { "id": "opt3", "text": "It specifically crosses the blood-brain barrier and increases brain magnesium concentrations" },
+                { "id": "opt4", "text": "It provides a strong laxative effect" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Magnesium threonate was specifically formulated to cross the blood-brain barrier and increase brain magnesium concentrations. The 2024 RCT showed that 12 weeks of supplementation produced significant improvements in executive function, working memory, and attention through enhanced synaptic plasticity."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does magnesium function as a natural NMDA receptor antagonist?",
+            "options": [
+                { "id": "opt1", "text": "It permanently blocks all NMDA receptor activity" },
+                { "id": "opt2", "text": "Magnesium ions sit in the NMDA receptor channel and block excessive calcium influx when the neuron is at resting potential, providing voltage-dependent neuroprotection" },
+                { "id": "opt3", "text": "It destroys NMDA receptors over time" },
+                { "id": "opt4", "text": "It converts NMDA receptors into GABA receptors" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Magnesium naturally sits in the NMDA receptor channel, blocking calcium influx when the neuron is at resting potential. This voltage-dependent block prevents excessive calcium entry and neuronal overexcitation when magnesium is adequate. This is the same pathway that ketamine targets as a rapid antidepressant — magnesium provides a gentler, physiological version."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which magnesium test accurately reflects body magnesium status, and why?",
+            "options": [
+                { "id": "opt1", "text": "Serum magnesium, because it is the standard test ordered by most providers" },
+                { "id": "opt2", "text": "Hair analysis, because it measures long-term magnesium intake" },
+                { "id": "opt3", "text": "RBC (red blood cell) magnesium, because serum magnesium reflects only 1% of total body stores and can appear normal even with significant tissue depletion" },
+                { "id": "opt4", "text": "Urine magnesium, because it shows how much is being excreted" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "RBC magnesium measures intracellular stores and is far more accurate than serum magnesium, which reflects only 1% of total body magnesium. A 'normal' serum magnesium level does not rule out deficiency. The optimal RBC magnesium range is 5.0-6.5 mg/dL."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is combining magnesium threonate and magnesium glycinate recommended for comprehensive neuropsychiatric benefit?",
+            "options": [
+                { "id": "opt1", "text": "They are cheaper when purchased together" },
+                { "id": "opt2", "text": "Threonate provides brain-specific benefit by crossing the blood-brain barrier, while glycinate provides systemic magnesium repletion and calming effects from glycine" },
+                { "id": "opt3", "text": "One form cancels out the side effects of the other" },
+                { "id": "opt4", "text": "It is only a marketing recommendation with no clinical basis" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Threonate specifically crosses the blood-brain barrier for cognitive/brain-specific benefit but provides only ~144mg elemental magnesium (insufficient for systemic repletion). Glycinate provides ~80% bioavailable systemic magnesium repletion plus calming effects from the glycine amino acid. Together, they address both cognitive and anxiolytic/systemic needs."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "9",
+    "title": "Magnesium Forms: Choosing the Right One for Your Brain - Quiz"
+}

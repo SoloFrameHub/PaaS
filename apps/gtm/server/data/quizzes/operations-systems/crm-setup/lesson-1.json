@@ -1,0 +1,72 @@
+{
+  "lessonId": "1",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "CRM Philosophy: System of Action, Not Just a Database",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the lesson, what question should every CRM custom field answer?",
+      "options": [
+        { "id": "a", "text": "What does this person look like?" },
+        { "id": "b", "text": "What should I do next?" },
+        { "id": "c", "text": "How much money have they spent?" },
+        { "id": "d", "text": "What's their social media presence?" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every field must answer: 'What should I do next?' If a field can't trigger an action, automation, or decision, it shouldn't exist. Marcus ran a $30K MRR business with only 8 custom fields because each one drove action."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Sarah had 47 custom fields per contact. What was the result?",
+      "options": [
+        { "id": "a", "text": "She had the best CRM in her industry" },
+        {
+          "id": "b",
+          "text": "She spent 2 hours/week updating fields and zero hours selling, with pipeline stuck at $40K for 3 months"
+        },
+        { "id": "c", "text": "Her conversion rates doubled" },
+        { "id": "d", "text": "Her team adopted the CRM quickly" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah spent 2 hours a week updating fields and zero hours actually selling. Her pipeline sat at $40K for three months. Over-engineering a CRM is one of the three failure modes — it treats the CRM as a data warehouse instead of an action system."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What happened when Maria chose Salesforce as a solo founder?",
+      "options": [
+        { "id": "a", "text": "She scaled to $100K MRR in 6 months" },
+        {
+          "id": "b",
+          "text": "She spent 3 weeks in training and gave up after 2 months, going back to Gmail + Sheets"
+        },
+        { "id": "c", "text": "She became a Salesforce consultant" },
+        { "id": "d", "text": "She hired a team to manage it" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Maria chose Salesforce because 'that's what real companies use.' She spent 3 weeks learning territory planning and campaign management. Her actual need was tracking 50 leads and setting reminders. She abandoned it after 2 months — a case of under-using by picking an enterprise tool."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Your CRM should be treated as a museum for contact information.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Your CRM isn't a museum for contact information. It's a system that tells you who to call, what to say, and when to follow up. If it's not doing that, you're building a very expensive address book."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Audit your current CRM setup (or planned setup). How many custom fields do you have? For each field, can you explain how it triggers an action or decision? Which fields should be removed?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses their current CRM setup, applies the 'What should I do next?' test to their fields, identifies specific fields that don't drive action, and proposes a simplified field set focused on action triggers."
+    }
+  ]
+}

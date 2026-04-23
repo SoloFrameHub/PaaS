@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the difference between 'challenge stress' and 'threat stress' in the CBT framework?",
+            "options": [
+                {"id": "opt1", "text": "Challenge stress is easy; threat stress is hard"},
+                {"id": "opt2", "text": "Challenge stress = 'I can handle this with my resources'; threat stress = 'I can't handle this, demands exceed my resources'"},
+                {"id": "opt3", "text": "Challenge stress is always good; threat stress is always bad"},
+                {"id": "opt4", "text": "There is no difference"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Challenge stress occurs when you perceive you have the resources (skills, support, time) to meet the demand — it's difficult but manageable. Threat stress occurs when you perceive demands exceed your resources — you feel overwhelmed and helpless. The two create different physiological responses: challenge stress improves performance, threat stress impairs it. Reframing can help IF you genuinely have resources."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are common cognitive distortions that amplify workplace stress?",
+            "options": [
+                {"id": "opt1", "text": "Positive thinking and gratitude"},
+                {"id": "opt2", "text": "All-or-nothing thinking, catastrophizing, mind-reading, personalization, and 'should' statements"},
+                {"id": "opt3", "text": "Problem-solving and planning"},
+                {"id": "opt4", "text": "Asking for help and setting boundaries"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Common workplace cognitive distortions include: all-or-nothing thinking (black-and-white extremes), catastrophizing (assuming worst-case outcomes), mind-reading (assuming others judge you negatively), personalization (taking excessive responsibility), and 'should' statements (rigid unrealistic expectations). Recognizing these patterns helps you challenge and reframe them."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the limits of CBT-informed cognitive reframing for workplace stress?",
+            "options": [
+                {"id": "opt1", "text": "Cognitive reframing can fix any workplace problem"},
+                {"id": "opt2", "text": "Cognitive reframing can help manage stress when stressors are manageable, but it CANNOT fix excessive workload, toxic leadership, or burnout — those require organizational change"},
+                {"id": "opt3", "text": "Cognitive reframing doesn't work for anyone"},
+                {"id": "opt4", "text": "Cognitive reframing replaces the need for therapy"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "CBT skills can help you manage stress-related thoughts and emotions when stressors are manageable. They CANNOT fix excessive workload, understaffing, toxic leadership, or severe burnout. They don't substitute for professional mental health treatment if you're experiencing clinical depression or anxiety. They're useful adjuncts, not substitutes for structural change."
+        },
+        {
+            "id": "q4",
+            "type": "reflection",
+            "question": "Think of a recent work stressor that triggered stress or anxiety. What was your automatic thought about the situation? Now try to generate an alternative thought that's more balanced or realistic. Does this reframe change how you feel about the situation?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "12",
+    "title": "CBT-Informed Stress Skills — Cognitive Reframing - Quiz"
+}

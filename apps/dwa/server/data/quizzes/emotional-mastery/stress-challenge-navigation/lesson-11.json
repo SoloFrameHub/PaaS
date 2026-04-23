@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for Progressive Muscle Relaxation (PMR) for stress, anxiety, and depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—only anecdotal evidence exists"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG—a 2024 systematic review of 46 publications across 16 countries (3,402+ adults) found consistent significant reduction in stress, anxiety, and depression"
+                },
+                {
+                    "id": "opt3",
+                    "text": "MODERATE—only small studies with mixed results"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No scientific evidence exists for PMR"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Progressive Muscle Relaxation has STRONG evidence. A 2024 systematic review covering 46 publications across 16 countries with over 3,402 adults found consistent significant reduction in stress, anxiety, and depression in the PMR group. The review also found enhanced efficacy when PMR was combined with other interventions like guided imagery, music therapy, or mindfulness. PMR produces both psychological and physiological relaxation in controlled conditions, and along with applied relaxation, has the most consistent long-term anxiety-reduction evidence in landmark systematic reviews of relaxation training."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for slow-paced breathing interventions for stress reduction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "STRONG with no caveats—all breathing techniques work equally well"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE—a 2023 meta-analysis (12 studies, N=785) found significant stress reduction vs. no intervention, but most RCTs lack adequately matched placebo controls"
+                },
+                {
+                    "id": "opt3",
+                    "text": "WEAK—no good studies exist"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Breathing interventions have been disproven by research"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Slow-paced breathing has MODERATE evidence. A 2023 meta-analysis (Fincham et al., Scientific Reports, 12 studies, N=785) found that breathwork—particularly slow-paced approaches—yielded significant post-intervention reduction in self-reported stress compared to non-breathwork controls, with secondary effects on anxiety and depression. However, a critical caveat exists: the largest RCT of coherent breathing (N=400) found no significant difference from a well-designed attention placebo. Most breathwork RCTs lack adequately matched controls, making it difficult to separate specific mechanisms from regression to the mean and attention effects."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does slow breathing affect heart rate variability (HRV) and what does this indicate?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Slow breathing decreases HRV, indicating higher stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Slow breathing consistently increases HRV by activating the baroreflex reflex arc and augmenting vagal tone—a marker of autonomic balance and stress recovery"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Breathing has no effect on HRV"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only meditation, not breathing, affects HRV"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A systematic review (Laborde et al., 2022, Neuroscience & Biobehavioral Reviews) found that slow breathing consistently increases heart rate variability (HRV) by activating the baroreflex reflex arc and augmenting vagal tone. HRV is a measurable indicator of autonomic balance—higher HRV generally indicates better capacity for flexible stress response and recovery (parasympathetic activation). Diaphragmatic breathing also reduces salivary cortisol in RCT conditions. This physiological pathway is well-established, even though the psychological stress reduction evidence has methodological limitations around placebo controls."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What important limitation exists for relaxation training claims?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Relaxation training cures all mental health conditions"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Relaxation training (PMR, breathing) should NOT be claimed to produce the same effects as clinical treatment for anxiety disorders or depression"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Relaxation training has no limitations"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Relaxation is always better than professional treatment"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While PMR and breathing practices have evidence for stress reduction and are valuable self-management tools, they are not treatments for clinical anxiety disorders or depression. The research brief explicitly states: 'Do not claim that relaxation practice produces the same effects as clinical anxiety treatment.' These practices are effective for general stress management and as adjuncts to professional care, but they cannot replace clinical assessment and treatment when anxiety or depression reach clinical severity. This distinction is critical for setting appropriate expectations and ensuring people seek professional help when needed."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should breathing exercises and body-focused relaxation techniques be approached with caution or avoided without professional guidance?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Never—breathing exercises are universally safe for everyone"
+                },
+                {
+                    "id": "opt2",
+                    "text": "For people with panic disorder, PTSD, or severe anxiety—unguided breathwork can trigger panic attacks or dysregulation; proceed gently, stop if distressed, and consult a provider if uncertain"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people with heart disease need to be cautious"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Breathing exercises should never be taught in any context"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "In panic disorder, focusing on body sensations (including breath) can trigger panic attacks because interoceptive awareness of bodily changes is a panic trigger. In PTSD, breathwork can activate trauma responses, dissociation, or flashbacks—the VA/DoD 2023 clinical practice guideline emphasizes that trauma-focused therapy (CPT, PE, EMDR) is required, and unguided somatic practices may be counterproductive. For severe anxiety, intensive breath focus without clinical supervision can increase distress. The appropriate guidance is: if you have these conditions, proceed gently with breathing exercises, stop if you feel distressed, return to normal breathing, and consult a healthcare provider before undertaking intensive practice."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "11",
+    "title": "Relaxation and Stress Relief Techniques - Quiz"
+}

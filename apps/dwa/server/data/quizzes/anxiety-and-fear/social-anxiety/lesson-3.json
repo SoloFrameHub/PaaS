@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'spotlight effect' in social anxiety?",
+            "options": [
+                { "id": "opt1", "text": "A therapeutic technique where you visualize a calming spotlight" },
+                { "id": "opt2", "text": "The tendency to overestimate how much others notice about you, feeling like your flaws and anxiety are under a spotlight" },
+                { "id": "opt3", "text": "A lighting condition that triggers panic attacks" },
+                { "id": "opt4", "text": "The experience of being the center of attention at a social event" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The spotlight effect is the tendency to dramatically overestimate how much others notice about you. Research showed that people estimated 50% of others would notice an embarrassing shirt, but only about 25% actually did. Other people are not paying nearly as much attention to you as you think — the 'spotlight' is largely in your mind."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When you think 'They think I'm boring' in a social situation, which cognitive distortion is this an example of?",
+            "options": [
+                { "id": "opt1", "text": "Catastrophizing" },
+                { "id": "opt2", "text": "Probability overestimation" },
+                { "id": "opt3", "text": "Mind-reading" },
+                { "id": "opt4", "text": "Perfectionism" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Mind-reading is assuming you know what others are thinking — and the assumption is always negative. When you believe 'they think I'm boring,' what is usually happening is that YOU think you are boring, and you project that self-criticism onto others. These 'predictions' are not insider knowledge; they are projections."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the 'illusion of transparency' mean, and what does research say about it?",
+            "options": [
+                { "id": "opt1", "text": "It means other people can always tell when you are being dishonest" },
+                { "id": "opt2", "text": "It is the belief that your internal anxiety is visible on the outside, but studies show internal states are far less visible than we believe" },
+                { "id": "opt3", "text": "It means that anxious people appear physically transparent to others" },
+                { "id": "opt4", "text": "It is a rare phenomenon that only affects severely anxious individuals" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The illusion of transparency is the belief that your internal state — anxiety, nervousness, discomfort — is visible on the outside. Studies consistently show that internal states are far less visible than we believe. Even trained observers have difficulty detecting anxiety in others. The anxiety that feels like a flashing neon sign to you is barely a flicker to everyone else."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which cognitive distortion involves dismissing positive social experiences — for example, thinking 'They were just being polite' when someone laughs at your joke?",
+            "options": [
+                { "id": "opt1", "text": "Fortune telling" },
+                { "id": "opt2", "text": "Probability overestimation" },
+                { "id": "opt3", "text": "The spotlight effect" },
+                { "id": "opt4", "text": "Disqualifying the positive" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Disqualifying the positive means dismissing positive social experiences: someone laughed? 'They were being nice.' Invited you to lunch? 'They felt obligated.' This pattern ensures that no amount of positive experience can update your negative beliefs, because every piece of contradicting evidence gets invalidated."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "According to the lesson, which cognitive patterns feed into the post-event rumination phase of the social anxiety cycle?",
+            "options": [
+                { "id": "opt1", "text": "Only perfectionism" },
+                { "id": "opt2", "text": "Only mind-reading and catastrophizing" },
+                { "id": "opt3", "text": "All of the cognitive distortions — they distort memories of what happened during rumination" },
+                { "id": "opt4", "text": "None of them — rumination is purely emotional, not cognitive" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "All the cognitive distortions feed into post-event rumination. During rumination, the spotlight effect magnifies how noticed you were, mind-reading fills in what others 'thought,' catastrophizing inflates minor moments into disasters, and perfectionism judges your performance against impossible standards. Together, they distort the memory of what actually happened."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "social-anxiety",
+    "lessonId": "3",
+    "title": "Cognitive Patterns in Social Anxiety - Quiz"
+}

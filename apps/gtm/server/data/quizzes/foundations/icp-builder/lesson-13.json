@@ -1,0 +1,116 @@
+{
+    "lessonId": "13",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "The Creator Audience Persona: From Follower to Buyer",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the Creator Awareness Spectrum, what characterizes the 'Struggling Student' stage?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are completely oblivious to any problems."
+                },
+                {
+                    "id": "b",
+                    "text": "They are ready to buy your high-ticket program immediately."
+                },
+                {
+                    "id": "c",
+                    "text": "They know they have a problem but believe more free information is the solution."
+                },
+                {
+                    "id": "d",
+                    "text": "They are a former customer who has already achieved the transformation."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Struggling Students are problem-aware but stuck in the 'free content' loop. Your task is to prove that your system/implementation is the missing piece, not just more data."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Transformation Bridge' in a creator sales context?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A physical bridge built for a video shoot."
+                },
+                {
+                    "id": "b",
+                    "text": "The content and offers that move a follower from their 'Current Hell' to their 'Desired Heaven'."
+                },
+                {
+                    "id": "c",
+                    "text": "A software feature that exports data to Excel."
+                },
+                {
+                    "id": "d",
+                    "text": "A technical certification for students."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Transformation is what you are actually selling. The bridge consists of the lessons, coaching, and tools that facilitate that shift from state A to state B."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which Awareness Spectrum stage requires 'Educational Bridge' content to reveal unrecognized problems?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Oblivious Fan"
+                },
+                {
+                    "id": "b",
+                    "text": "Qualified Applicant"
+                },
+                {
+                    "id": "c",
+                    "text": "Alumni"
+                },
+                {
+                    "id": "d",
+                    "text": "Power User"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Oblivious Fans enjoy your content but don't see the business need yet. Educational bridge content highlights the gap between where they are and where they could be."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is an example of a 'Low-Ticket Wedge' for a creator?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A $10,000 corporate retreat."
+                },
+                {
+                    "id": "b",
+                    "text": "A $47 workshop or $97 template bundle."
+                },
+                {
+                    "id": "c",
+                    "text": "A free newsletter subscription."
+                },
+                {
+                    "id": "d",
+                    "text": "A lifetime access pass to all future products for $5,000."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A low-ticket wedge reduces the friction of the first transaction, moving someone from 'User/Fan' to 'Customer' and establishing trust for future high-ticket sales."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Map the 'Transformation Journey' for your target student/follower. What is their specific 'Current Hell' (Internal and External), and what does their 'Desired Heaven' look like after completing your program?",
+            "minLength": 150,
+            "promptForAI": "Evaluate the transformation mapping. (1) Is the Current Hell visceral and specific? (2) Is the Desired Heaven a clear business/life outcome? (3) Is the gap bridgeable by the user's specific expertise?"
+        }
+    ]
+}

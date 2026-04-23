@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does ERP stand for, and what does it involve?",
+            "options": [
+                { "id": "opt1", "text": "Emotional Regulation Practice — learning to control your emotions" },
+                { "id": "opt2", "text": "Exposure and Response Prevention — gradually facing feared triggers while resisting compulsions" },
+                { "id": "opt3", "text": "Extended Recovery Program — a long-term meditation practice" },
+                { "id": "opt4", "text": "Evidence-based Relaxation Protocol — using breathing exercises to eliminate intrusive thoughts" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "ERP stands for Exposure and Response Prevention. Exposure means intentionally and gradually facing feared triggers, while Response Prevention means resisting the urge to perform compulsions during and after the exposure. The combination teaches your brain that obsessions are uncomfortable but not dangerous."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does an exposure hierarchy work in ERP?",
+            "options": [
+                { "id": "opt1", "text": "You face your worst fear immediately to get it over with" },
+                { "id": "opt2", "text": "You only work on triggers rated below a 3 on the distress scale" },
+                { "id": "opt3", "text": "You and your therapist list and rate triggers, then work from manageable to challenging gradually" },
+                { "id": "opt4", "text": "Your therapist decides which exposures to do without your input" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "In an exposure hierarchy, you and your therapist collaboratively identify triggers, rate them on a distress scale from 0-10, sort them from easiest to hardest, and work upward gradually. You start with manageable exposures and move to harder ones as lower-level ones become easier. The pace is collaborative."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What new lesson does ERP teach the brain compared to the OCD cycle?",
+            "options": [
+                { "id": "opt1", "text": "That intrusive thoughts can be permanently eliminated" },
+                { "id": "opt2", "text": "That the obsession was uncomfortable but not dangerous, and you were okay without the ritual" },
+                { "id": "opt3", "text": "That anxiety never appears if you practice enough" },
+                { "id": "opt4", "text": "That compulsions should be replaced with different compulsions" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The OCD cycle teaches: 'I was in danger and the ritual protected me.' ERP teaches a different lesson: 'I didn't do the ritual, and I was okay. The obsession was uncomfortable, not dangerous.' This new learning breaks OCD's power by allowing the brain to discover that the feared outcomes don't occur."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What role can SSRIs play in OCD treatment?",
+            "options": [
+                { "id": "opt1", "text": "SSRIs alone cure OCD for most people" },
+                { "id": "opt2", "text": "SSRIs are not recommended for OCD at all" },
+                { "id": "opt3", "text": "SSRIs can reduce anxiety intensity, making ERP easier to engage with, and often require higher doses and longer trials than for depression" },
+                { "id": "opt4", "text": "SSRIs replace the need for ERP therapy entirely" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "SSRIs can reduce the intensity of obsessions and anxiety, making ERP more accessible. However, OCD typically requires higher SSRI doses (often at the top of the range) and longer trials (8-12 weeks) than depression. Medication alone is less effective than ERP for most people, but the combination of ERP + SSRI often produces the best outcomes."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does 'inhibitory learning' mean in the context of ERP?",
+            "options": [
+                { "id": "opt1", "text": "Learning to inhibit all emotional responses" },
+                { "id": "opt2", "text": "Your brain forgets the original fear completely" },
+                { "id": "opt3", "text": "Building new associations that compete with the old fear — learning 'I can handle this'" },
+                { "id": "opt4", "text": "Preventing new thoughts from entering your mind" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Inhibitory learning is a mechanism through which ERP works. Rather than forgetting the fear, you build new associations that compete with the old ones. You learn a new, competing response: 'I can handle this.' The old fear doesn't disappear, but the new learning becomes stronger over time."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "5",
+    "title": "Introduction to ERP Concepts - Quiz"
+}

@@ -1,0 +1,134 @@
+{
+    "lessonId": "7",
+    "courseId": "ai-lead-research",
+    "sectionId": "ai-acquisition",
+    "title": "Segment Tagging Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the primary difference between a scoring agent and a segment tagging agent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Scoring is for prioritization, tagging is for message customization"
+                },
+                {
+                    "id": "b",
+                    "text": "Scoring is automated, tagging is manual"
+                },
+                {
+                    "id": "c",
+                    "text": "Scoring uses AI, tagging uses rules"
+                },
+                {
+                    "id": "d",
+                    "text": "Scoring is for B2B, tagging is for B2C"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Scoring ranks leads by priority (1-10). Tagging categorizes them by context to drive different messages."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which segment dimension is MOST important for determining message tone and complexity?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Company Stage"
+                },
+                {
+                    "id": "b",
+                    "text": "Buyer Role"
+                },
+                {
+                    "id": "c",
+                    "text": "Pain Priority"
+                },
+                {
+                    "id": "d",
+                    "text": "Urgency Level"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Buyer Role determines WHO you're talking to — economic buyers need ROI, champions need team benefits, end-users need ease of use."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "You have 200 qualified leads. Your tagging agent assigns 180 of them to 'growth_stage + economic_buyer'. What's the problem?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your ICP is too narrow"
+                },
+                {
+                    "id": "b",
+                    "text": "Your segments are too broad — you're not really segmenting"
+                },
+                {
+                    "id": "c",
+                    "text": "Your tagging agent is broken"
+                },
+                {
+                    "id": "d",
+                    "text": "This is normal and fine"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If 90% of leads get the same tag, you're labeling your ICP, not segmenting. Refine your dimensions to create more actionable distinctions."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these is a BAD segment tag?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'attribution_gap' — based on missing tech stack tool + LinkedIn post"
+                },
+                {
+                    "id": "b",
+                    "text": "'high_value' — based on 'looks like a good fit'"
+                },
+                {
+                    "id": "c",
+                    "text": "'active_evaluation' — based on recent funding + hiring signals"
+                },
+                {
+                    "id": "d",
+                    "text": "'economic_buyer' — based on VP title + budget authority"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "'High_value' is subjective and not tied to observable data. Good tags are data-backed and actionable."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How many message variants should you write for 3 dimensions with 3 tags each (27 possible combinations)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "27 — one for every combination"
+                },
+                {
+                    "id": "b",
+                    "text": "9 — one for each tag"
+                },
+                {
+                    "id": "c",
+                    "text": "3-5 — only for the most common combinations"
+                },
+                {
+                    "id": "d",
+                    "text": "1 — segmentation doesn't require different messages"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Start with 3-5 variants for the most common tag combinations (those appearing in >10% of leads). Don't over-engineer before you have data."
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "anger-episode-log",
+  "title": "Anger Episode Log",
+  "description": "Track your anger episodes to identify patterns in triggers, warning signs, thoughts, and behaviors. Over time, this log will reveal what sets you off most, when you're most vulnerable, and where in the escalation chain you have the most room to intervene.",
+  "instructions": "Each time you experience noticeable anger (roughly a 4+ on a 0-10 scale), log it here as soon as you can afterward. The more honestly you record, the more useful your patterns will become.",
+  "frequency": "Per episode",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date and time",
+      "type": "text",
+      "placeholder": "e.g., Monday 3:30 PM",
+      "required": true
+    },
+    {
+      "id": "situation",
+      "label": "What happened? (Who, what, where)",
+      "type": "textarea",
+      "placeholder": "e.g., My partner criticized how I loaded the dishwasher in front of their parents",
+      "required": true
+    },
+    {
+      "id": "trigger-category",
+      "label": "Primary trigger type",
+      "type": "select",
+      "options": [
+        { "value": "disrespect", "label": "Feeling disrespected or dismissed" },
+        { "value": "unfairness", "label": "Unfairness or double standards" },
+        { "value": "control", "label": "Feeling controlled or micromanaged" },
+        { "value": "criticism", "label": "Criticism or judgment" },
+        { "value": "broken-expectation", "label": "Broken promise or unmet expectation" },
+        { "value": "frustration", "label": "Everyday frustration (traffic, hassles, incompetence)" },
+        { "value": "accumulation", "label": "Last straw — many small things building up" },
+        { "value": "internal", "label": "Internal state (tired, hungry, stressed, anxious)" },
+        { "value": "other", "label": "Other" }
+      ],
+      "required": true
+    },
+    {
+      "id": "body-signs",
+      "label": "Body warning signs you noticed",
+      "type": "textarea",
+      "placeholder": "e.g., Clenched jaw, heat in face, tight fists, racing heart",
+      "required": true
+    },
+    {
+      "id": "hot-thought",
+      "label": "The main thought fuelling your anger",
+      "type": "textarea",
+      "placeholder": "e.g., 'They're doing this on purpose to humiliate me', 'They should know better', 'I can't stand this'",
+      "required": true
+    },
+    {
+      "id": "intensity",
+      "label": "Peak anger intensity (0 = calm, 10 = most angry ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 10,
+      "required": true
+    },
+    {
+      "id": "behavior",
+      "label": "What did you do? (Your actual response)",
+      "type": "textarea",
+      "placeholder": "e.g., Raised my voice, walked away, used breathing, said something hurtful, took a time-out",
+      "required": true
+    },
+    {
+      "id": "outcome",
+      "label": "What happened afterward? How did you feel later?",
+      "type": "textarea",
+      "placeholder": "e.g., We didn't speak for the rest of the evening. I felt guilty and frustrated with myself. We talked the next morning.",
+      "required": false
+    }
+  ]
+}

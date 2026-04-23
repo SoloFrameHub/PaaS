@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Schroder and colleagues' research, which domain-specific mindset most strongly buffers the link between stressful life events and psychological distress?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset of intelligence—believing you can get smarter"},
+                {"id": "opt2", "text": "Growth mindset of anxiety—believing anxiety can be managed and reduced"},
+                {"id": "opt3", "text": "Growth mindset of social skills—believing you can improve relationships"},
+                {"id": "opt4", "text": "Growth mindset of personality—believing traits can change"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Schroder et al. (2015) found that growth mindset of anxiety specifically buffers the link between stressful life events and psychological distress—it's associated with weaker relationships between stress and PTSD, depression, and maladaptive coping. This domain-specific mindset matters more for stress resilience than intelligence mindset. The research principle: mindsets most strongly predict outcomes in their specific domain. For managing stress and anxiety, believing anxiety can be managed is more protective than believing intelligence can grow."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What did the Schleider & Weisz 2018 RCT find about growth mindset of personality interventions in at-risk adolescents?",
+            "options": [
+                {"id": "opt1", "text": "No significant effects on any outcomes"},
+                {"id": "opt2", "text": "Significant reductions in parent-reported depression (d = 0.60) and youth-reported depression (d = 0.32) at 9-month follow-up"},
+                {"id": "opt3", "text": "Improved academic achievement but no mental health effects"},
+                {"id": "opt4", "text": "Effects only lasted 2 weeks post-intervention"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Schleider & Weisz 2018 RCT (n = 96, 9-month follow-up) found that a 30-minute computerized growth mindset of personality intervention significantly reduced parent-reported depression (d = 0.60), anxiety (d = 0.28), and youth-reported depression (d = 0.32). This is some of the strongest intervention evidence for growth mindset—but note it's specifically growth mindset of PERSONALITY (belief that personality can change), tested in at-risk adolescents, not a general adult population course. The evidence is promising but domain- and population-specific."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which domain-specific mindset is most relevant for developing healthier emotion regulation strategies (more reappraisal, less suppression)?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset of intelligence"},
+                {"id": "opt2", "text": "Growth mindset of emotion—believing emotions are controllable and changeable"},
+                {"id": "opt3", "text": "Growth mindset of physical fitness"},
+                {"id": "opt4", "text": "Growth mindset of willpower"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows people with a growth mindset of emotion (believing emotions are controllable and changeable) use healthier emotion regulation strategies—specifically, greater use of cognitive reappraisal and less emotional suppression. If you feel emotions 'happen to you' and you're powerless to influence them (fixed emotion mindset), you're more likely to suppress or avoid them. If you believe emotions can be managed (growth emotion mindset), you're more likely to use adaptive regulation strategies. This is directly relevant for psychological wellbeing."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When developing a growth-oriented belief system for adult wellbeing, which domain focus does the lesson recommend prioritizing?",
+            "options": [
+                {"id": "opt1", "text": "Intelligence malleability—focus on getting smarter"},
+                {"id": "opt2", "text": "Coping capacity, emotional changeability, and skill development—domains directly relevant to stress and wellbeing"},
+                {"id": "opt3", "text": "Physical appearance and attractiveness"},
+                {"id": "opt4", "text": "All domains equally, since mindsets are universal"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson explicitly states that a course on growth mindset for adult wellbeing should focus on implicit theories of coping capacity, emotional changeability, and skill development—NOT primarily intelligence malleability. Intelligence mindset is most relevant for academic performance; for psychological wellbeing, mindsets about anxiety, emotion, personality, and coping are more important. This domain-specificity principle has direct implications: develop growth-oriented beliefs in the domains that actually matter for your wellbeing goals."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Review the five domain-specific mindsets discussed (intelligence, personality, emotion, anxiety, social ability). Which domain feels most fixed for you right now ('I just am this way')? What evidence or experiences created that fixed belief? What would it look like to develop a more growth-oriented view of that specific domain?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "3",
+    "title": "Domain Specificity: Why Context Matters - Quiz"
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the purpose of building a personal CBT toolkit?",
+            "options": [
+                {"id": "opt1", "text": "To collect as many techniques as possible regardless of usefulness"},
+                {"id": "opt2", "text": "To identify the specific CBT skills that work best for you and make them easily accessible"},
+                {"id": "opt3", "text": "To impress others with your knowledge of CBT"},
+                {"id": "opt4", "text": "To prove you've completed the course"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Your personal toolkit is the set of skills you've tested and found effective for your specific challenges. Not every CBT technique works equally well for everyone — your toolkit contains what actually helps you, organized so you can access it when you need it."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which factors should guide what you include in your personal CBT toolkit?",
+            "options": [
+                {"id": "opt1", "text": "Only include the most complex, advanced techniques"},
+                {"id": "opt2", "text": "Include skills that: (a) you've practiced, (b) work for your specific symptoms, (c) are realistic to use regularly"},
+                {"id": "opt3", "text": "Include every technique you've learned about, whether you've used it or not"},
+                {"id": "opt4", "text": "Only include skills your therapist recommends"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. Your toolkit should be practical and personalized: skills you've actually used (not just read about), that address your symptoms (exposure for anxiety, behavioral activation for depression), and that fit your life (5-minute breathing exercise beats 30-minute meditation if you won't do the latter)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is it important to document specific examples of CBT skills working for you?",
+            "options": [
+                {"id": "opt1", "text": "To prove to others that CBT works"},
+                {"id": "opt2", "text": "Because when you're distressed, specific memories of past success make skills feel more believable and accessible"},
+                {"id": "opt3", "text": "Because therapists require documentation"},
+                {"id": "opt4", "text": "Documentation isn't important — just remembering the skill is enough"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. When you're anxious, your brain says 'CBT won't work this time.' But if your toolkit includes 'Thought record on 3/15: anxiety dropped from 85 to 40 after challenging catastrophizing about presentation,' that concrete evidence makes the skill feel real and worth trying again."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you organize your CBT toolkit for maximum usefulness?",
+            "options": [
+                {"id": "opt1", "text": "Alphabetically by skill name"},
+                {"id": "opt2", "text": "By symptom or situation (anxiety → grounding + thought records; low motivation → behavioral activation)"},
+                {"id": "opt3", "text": "By difficulty level, easiest to hardest"},
+                {"id": "opt4", "text": "Organization doesn't matter as long as everything is written down"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Organizing by symptom or trigger makes the toolkit usable in the moment: 'I'm feeling anxious → go to anxiety section → try grounding exercise first, then thought record if needed.' This removes decision-making when you're distressed and increases the chance you'll actually use the skills."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Design your personal CBT toolkit. List 3-5 skills that have worked best for you (or seem most promising if you're just starting). For each, note: what symptom/situation it addresses, how to use it (brief steps), and one example of it working (or how you'll test it). Where will you keep this toolkit?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "20",
+    "title": "Personal CBT Toolkit - Quiz"
+}

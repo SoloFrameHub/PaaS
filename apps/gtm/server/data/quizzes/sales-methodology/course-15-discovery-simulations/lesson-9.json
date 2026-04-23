@@ -1,0 +1,153 @@
+{
+    "lessonId": "9",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 9: Session Review and Pattern Analysis",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary purpose of 'Analyzing the Tape' after a simulation session?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To celebrate how good you are at sales."
+                },
+                {
+                    "id": "b",
+                    "text": "To identify behavioral patterns and technical flaws that aren't visible in the heat of the moment."
+                },
+                {
+                    "id": "c",
+                    "text": "To memorize exactly what the AI said so you can repeat it."
+                },
+                {
+                    "id": "d",
+                    "text": "To find reasons to blame the AI for a bad call."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Reflection and analysis are essential for moving from accidental success to repeatable mastery in discovery."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "If your talk-time ratio consistently spikes to 60/40 when facing a resistant prospect, what is the most likely diagnosis?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You are becoming a more efficient communicator under pressure."
+                },
+                {
+                    "id": "b",
+                    "text": "The prospect is talking too much."
+                },
+                {
+                    "id": "c",
+                    "text": "You have a 'defensive pitching' habit—trying to save the call by explaining features instead of diagnosing pain."
+                },
+                {
+                    "id": "d",
+                    "text": "Your internet connection is slow."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pressure often forces founders to revert to 'pitching' as a defense mechanism, which actually reduces their authority."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "How can you fix a 'PID Gap' where you consistently forget to ask about the 'Decision' process?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Try to remember harder in the next call."
+                },
+                {
+                    "id": "b",
+                    "text": "Quit sales and hire a salesperson."
+                },
+                {
+                    "id": "c",
+                    "text": "Use a physical or digital checklist on your screen during calls until the behavior becomes muscle memory."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask about the decision process 20 times per call to make up for it."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Checklists are simple but powerful tools for engineering your environment to support better habits."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What should you look for in your 'Momentum Spikes' from the AI feedback?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Where the prospect got bored and stayed silent."
+                },
+                {
+                    "id": "b",
+                    "text": "Where the prospect's interest and energy increased, often due to an insight or empathetic question."
+                },
+                {
+                    "id": "c",
+                    "text": "When the call ended early."
+                },
+                {
+                    "id": "d",
+                    "text": "How many times you used the word 'um'."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Identifying where you successfully connected with the prospect helps you double down on your most effective questioning styles."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Three-Follow-Up Rule' for avoiding reactionary pitching?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Pitch the solution three times in a row."
+                },
+                {
+                    "id": "b",
+                    "text": "Never offer a solution until you've asked at least three deep follow-up questions about the prospect's pain."
+                },
+                {
+                    "id": "c",
+                    "text": "Call the prospect three times after the discovery call."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask the same question three times in different ways."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The three-follow-up rule ensures you have a deep understanding of the pain before you attempt to prescribe a solution."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Identify your 'DISC Nemesis' (the personality type you find most difficult). Based on the lesson, what is one specific 'Sales Linter' or friction point you often encounter with that type? Create a 1-month 'Growth Map' focusing on how you will use the simulator and audit rhythm to neutralize that weakness.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's self-awareness regarding their DISC nemesis. Review their growth map for practicality and consistency (e.g., weekly audit). Suggest one specific 'Open Question' that would work well against their nemesis."
+        }
+    ]
+}

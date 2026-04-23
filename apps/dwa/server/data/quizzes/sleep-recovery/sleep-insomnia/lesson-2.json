@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is keeping a sleep diary important for treating insomnia?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It's only useful for research purposes"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It establishes your baseline, identifies patterns, measures progress, and guides treatment decisions like your sleep restriction window"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It helps you fall asleep faster by tiring you out"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It's required by insurance companies"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The sleep diary is the foundation of effective insomnia treatment. It establishes your actual baseline (vs. what it feels like), identifies patterns in your sleep, provides objective data to measure progress, and guides treatment decisions—particularly determining your sleep restriction window."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How do you calculate sleep efficiency?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Hours slept divided by hours you wanted to sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "(Total Sleep Time ÷ Time in Bed) × 100"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Number of awakenings multiplied by 10"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Time in bed minus time awake"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep efficiency is calculated as: (Total Sleep Time ÷ Time in Bed) × 100. For example, if you're in bed for 8 hours (480 minutes) but only sleep 6 hours (360 minutes), your sleep efficiency is (360 ÷ 480) × 100 = 75%. The goal is 85% or higher."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is a common mistake people make when keeping a sleep diary?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Filling it out in the morning"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Constantly watching the clock to get exact times, which increases anxiety and makes sleep worse"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Using estimates instead of exact times"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Tracking for two weeks"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Clock-watching is a common and counterproductive mistake. Constantly checking the time increases anxiety and makes sleep worse. It's better to estimate times in the morning—rough estimates are good enough. The diary should help, not harm, your sleep."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If someone has a sleep efficiency of 72%, what does this indicate?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Excellent sleep that needs no improvement"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Good sleep with only minor adjustments needed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleep efficiency needs improvement; sleep restriction therapy is recommended"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sleep efficiency cannot be calculated without a sleep study"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A sleep efficiency of 72% is below the 85% target and below the 75% threshold that indicates sleep restriction is recommended. This means too much time is spent in bed awake, and consolidating sleep through sleep restriction therapy would likely help."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you complete your sleep diary?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Right before bed each night"
+                },
+                {
+                    "id": "opt2",
+                    "text": "During each nighttime awakening"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Every morning, within 30 minutes of waking"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Once a week, summarizing the whole week"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Complete your sleep diary every morning, within 30 minutes of waking. Don't fill it out during the night (this wakes you up further) or right before bed. Filling it out in the morning captures the whole night while the information is still fresh."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "2",
+    "title": "Sleep Tracking and Finding Patterns - Quiz"
+}

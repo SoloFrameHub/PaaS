@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is content curation in the context of digital wellness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Passively consuming whatever appears in your feed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Actively shaping what content you see by following, unfollowing, muting, and training algorithms to align with your wellbeing and values"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only consuming content created by influencers"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Avoiding all social media platforms"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Content curation means intentionally shaping your digital environment by choosing who to follow, what to mute or unfollow, and training algorithms (through engagement) to prioritize content that supports your wellbeing and values."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does content curation matter for mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because all content affects everyone the same way"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because repeated exposure to comparison triggers, negative news, or values-misaligned content can increase anxiety, envy, and dissatisfaction"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It doesn't — you can't control what you see online"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because algorithms are completely random"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "What you consume repeatedly shapes your thoughts and emotions. Feeds filled with comparison triggers, outrage, or values-misaligned content can worsen anxiety, envy, and dissatisfaction. Curating toward supportive content can reduce these effects."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How can you 'train' social media algorithms to show you better content?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "You can't — algorithms are fixed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Engage with (like, comment, save, share) content you want more of; scroll past, hide, or select 'not interested' for content you want less of"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Report every post you don't like"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Delete and recreate your account weekly"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Algorithms learn from your behavior: engage with (like, comment, save, share) content you want more of. Scroll past, hide, or mark 'not interested' for content you want less of. Active curation shapes your feed over time."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do if you notice an account consistently triggers negative feelings (envy, inadequacy, anger)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Keep following to 'toughen up' and overcome the feelings"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Unfollow or mute the account — your feed should support your wellbeing, not undermine it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Engage more with their content to understand why you feel that way"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Report them for inappropriate content"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "If an account consistently triggers negative emotions without providing value, unfollow or mute it. You're not obligated to expose yourself to content that harms your wellbeing. Curate for what supports you."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Review the accounts you follow on one social media platform. Are there 3-5 accounts that consistently make you feel worse (comparison, envy, anger, inadequacy)? What would happen if you unfollowed or muted them for two weeks?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "14",
+    "title": "Content Curation - Quiz"
+}

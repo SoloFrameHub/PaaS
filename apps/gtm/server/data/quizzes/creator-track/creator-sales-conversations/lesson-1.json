@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Enrollment Calls vs Discovery Calls Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the fundamental difference between a B2B discovery call and a creator enrollment call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "B2B calls are shorter while enrollment calls are longer."
+                },
+                {
+                    "id": "b",
+                    "text": "B2B calls are logic-driven around business ROI, while enrollment calls are identity-driven around personal transformation."
+                },
+                {
+                    "id": "c",
+                    "text": "B2B calls require video while enrollment calls are phone-only."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no meaningful difference; the same frameworks work for both."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "B2B discovery calls center on diagnosing business problems and demonstrating ROI to a buying committee. Creator enrollment calls center on personal aspiration, identity change, and helping someone feel safe enough to invest in their own transformation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is a creator's primary competition on an enrollment call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Other coaching programs and courses in the same niche."
+                },
+                {
+                    "id": "b",
+                    "text": "Free content available on YouTube and social media."
+                },
+                {
+                    "id": "c",
+                    "text": "Inaction — the prospect deciding to do nothing and stay where they are."
+                },
+                {
+                    "id": "d",
+                    "text": "The prospect's spouse or partner who controls the budget."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Unlike B2B sales where prospects compare multiple vendors, creator enrollment prospects are primarily choosing between investing in themselves and doing nothing. Your competition is inaction, not another program."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is one of the five phases of an enrollment conversation outlined in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Budget Qualification — determining how much the prospect can spend."
+                },
+                {
+                    "id": "b",
+                    "text": "Aspiration — exploring where the prospect wants to be, including lifestyle and identity goals."
+                },
+                {
+                    "id": "c",
+                    "text": "Competitive Analysis — positioning your offer against alternatives."
+                },
+                {
+                    "id": "d",
+                    "text": "Committee Mapping — identifying all stakeholders in the decision."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The five phases are Connection, Situation, Aspiration, The Gap, and The Invitation. The Aspiration phase explores where the prospect wants to be — not just in revenue terms, but in lifestyle and identity terms. This is the key element that B2B discovery frameworks completely miss."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think about your current sales or enrollment approach. Where do you catch yourself slipping into B2B-style selling (over-qualifying, leading with features, avoiding money conversations)? What specific change will you make on your next enrollment call based on what you learned in this lesson?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student identifies a specific B2B habit they default to and proposes a concrete alternative. Look for self-awareness about their current approach and a specific, actionable change rather than vague intentions like 'I will be more empathetic.' Strong answers reference specific concepts from the lesson such as the enrollment mindset shifts or the five phases."
+        }
+    ]
+}

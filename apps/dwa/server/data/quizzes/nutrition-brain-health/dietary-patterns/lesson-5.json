@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does research on plant-based diets and mental health show mixed results?",
+            "options": [
+                { "id": "opt1", "text": "Because plant-based diets are always harmful to mental health" },
+                { "id": "opt2", "text": "Because a well-planned whole-food plant-based diet is fundamentally different from a processed vegan diet in its mental health effects" },
+                { "id": "opt3", "text": "Because all studies on plant-based diets are poorly designed" },
+                { "id": "opt4", "text": "Because mental health cannot be measured accurately" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The conflicting findings reflect a crucial distinction: a well-planned plant-based diet rich in legumes, whole grains, nuts, seeds, fruits, and vegetables has very different mental health effects than a processed vegan diet of white bread, chips, sugary cereals, and vegan junk food. Diet quality matters more than the label."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is vitamin B12 supplementation considered non-negotiable for people following a fully vegan diet?",
+            "options": [
+                { "id": "opt1", "text": "B12 is found in many plant foods but in hard-to-absorb forms" },
+                { "id": "opt2", "text": "B12 is only needed for physical health, not brain function" },
+                { "id": "opt3", "text": "B12 is found almost exclusively in animal products and is essential for myelin production, neurotransmitter synthesis, and nerve function" },
+                { "id": "opt4", "text": "B12 supplements are cheaper than buying plant foods" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Vitamin B12 is essential for myelin production (nerve insulation), neurotransmitter synthesis, and homocysteine regulation. There is no reliable plant source of B12. Deficiency causes fatigue, cognitive impairment, depression, and potentially irreversible nerve damage. Anyone on a fully vegan diet must supplement with 250 mcg daily or 2,500 mcg weekly."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the conversion efficiency problem with plant-based omega-3 fatty acids?",
+            "options": [
+                { "id": "opt1", "text": "Plants contain no omega-3s at all" },
+                { "id": "opt2", "text": "Plant omega-3s (ALA) convert to the brain-beneficial EPA and DHA at less than 5-10% efficiency" },
+                { "id": "opt3", "text": "Plant omega-3s are identical to fish omega-3s" },
+                { "id": "opt4", "text": "The body converts plant omega-3s at 90% efficiency but they are less effective" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Plants contain ALA (alpha-linolenic acid), which the body must convert to EPA and DHA — the omega-3s most directly beneficial for brain health. This conversion is very inefficient, typically less than 5-10%. An algae-based EPA/DHA supplement (250-500 mg daily) provides direct access to these brain-critical fats without animal products."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended target for plant food diversity per week, and why does it matter for mental health?",
+            "options": [
+                { "id": "opt1", "text": "10 different plants; it provides enough calories" },
+                { "id": "opt2", "text": "50 different plants; more plants always means better mental health" },
+                { "id": "opt3", "text": "30 different plants; it supports microbiome diversity, which is directly linked to mental health outcomes" },
+                { "id": "opt4", "text": "5 different plants; the type matters more than the number" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Aiming for 30 different plant foods per week supports microbiome diversity, which is directly linked to mental health outcomes. This includes all fruits, vegetables, grains, legumes, nuts, seeds, herbs, and spices — every distinct plant type counts. This target applies regardless of whether you eat animal products."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How can people following a plant-based diet improve their absorption of non-heme iron from plant foods?",
+            "options": [
+                { "id": "opt1", "text": "By eating iron-rich foods on an empty stomach only" },
+                { "id": "opt2", "text": "By combining iron-rich plant foods with vitamin C sources like citrus and bell peppers" },
+                { "id": "opt3", "text": "By taking calcium supplements with every iron-rich meal" },
+                { "id": "opt4", "text": "By drinking coffee immediately after eating iron-rich foods" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Plant foods contain non-heme iron, which is absorbed at only 2-20% efficiency compared to 15-35% for heme iron from animal sources. Combining iron-rich plant foods (lentils, spinach, tofu) with vitamin C sources (citrus, bell peppers, tomatoes) enhances absorption. Tea and coffee should be avoided with iron-rich meals, as tannins reduce absorption."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "5",
+    "title": "Plant-Based Diets: Mental Health Benefits and Risks - Quiz"
+}

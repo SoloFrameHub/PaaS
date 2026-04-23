@@ -1,0 +1,91 @@
+{
+  "lessonId": "7",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Dominio de la Higiene del CRM",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito principal del barrido semanal de 15 minutos del CRM?",
+      "options": [
+        "Añadir más campos personalizados a tu CRM",
+        "Prevenir la degradación de datos y mantener el pipeline honesto",
+        "Impresionar a los inversores con una interfaz limpia",
+        "Practicar el uso de funcionalidades del CRM"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El barrido semanal previene la degradación anual del 30% de los datos que destruye la precisión del pipeline. Se trata de veracidad, no de estética."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿En qué momento debería un trato sin actividad pasar automáticamente a Perdido?",
+      "options": [
+        "7 días",
+        "14 días (señal amarilla)",
+        "30 días (señal roja)",
+        "45 días (cierre automático)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La escalera de escalación: 14 días = señal amarilla, 30 días = señal roja + correo de ruptura, 45 días = cierre automático como Perdido (a menos que haya una acción futura programada)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué porcentaje del pipeline de ventas promedio ya está muerto?",
+      "options": ["10-20%", "30-40%", "60%", "80-90%"],
+      "correctAnswer": 2,
+      "explanation": "La investigación de la industria muestra que el 60% de los tratos en el pipeline típico ya están muertos. La higiene reduce esto al 20-30%."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Deberías mantener una hoja de cálculo de respaldo de tus tratos 'por si acaso' tu CRM falla.",
+      "correctAnswer": false,
+      "explanation": "La regla de 'Una Fuente de Verdad': si los datos existen en dos lugares, uno es una mentira. Tu CRM debería ser la única autoridad. Las hojas de cálculo paralelas garantizan divergencia de datos."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Con qué frecuencia deberías verificar los contactos activos del pipeline (verificación de correo + LinkedIn)?",
+      "options": [
+        "Semanalmente",
+        "Mensualmente",
+        "Trimestralmente (cada 90 días)",
+        "Anualmente"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La verificación trimestral detecta cambios de trabajo y degradación de correos antes de que corrompan tu pipeline. Semanal es excesivo; anual es demasiado tarde."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estos NO es una razón válida para fusionar dos registros de contacto?",
+      "options": [
+        "Mismo nombre, misma empresa, diferentes formatos de correo (sarah@co.com vs s.jones@co.com)",
+        "Mismo nombre, diferentes empresas (John Smith en Acme vs John Smith en Beta)",
+        "Misma persona, correo de trabajo vs correo personal",
+        "Error tipográfico obvio en un registro (Sara Chen vs Sarah Chen, mismo correo)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mismo nombre, diferentes empresas = probablemente personas diferentes (especialmente con nombres comunes como John Smith). No fusiones sin verificar que son la misma persona."
+    },
+    {
+      "id": "q7",
+      "type": "true-false",
+      "question": "Cada trato en tu pipeline debe tener una próxima acción con una fecha específica.",
+      "correctAnswer": true,
+      "explanation": "Esta es la regla de higiene fundamental. 'Esperando por ellos' no es una próxima acción. 'Enviar correo de seguimiento el viernes a las 2pm' sí lo es. Los tratos sin próximas acciones son tratos muertos disfrazados."
+    },
+    {
+      "id": "q8",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la antigüedad promedio en el cargo para roles por debajo del nivel de Director?",
+      "options": ["6 meses", "1 año", "2.3 años", "5 años"],
+      "correctAnswer": 2,
+      "explanation": "La antigüedad promedio es de 2.3 años. Esto significa que tu campeón podría cambiar de trabajo a mitad del trato. La verificación trimestral detecta esto antes de que tus correos reboten."
+    }
+  ]
+}

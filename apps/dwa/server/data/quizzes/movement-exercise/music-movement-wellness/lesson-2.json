@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key difference between dance/movement therapy (DMT) and self-guided movement practices?",
+      "options": [
+        {"id": "opt1", "text": "DMT is more expensive"},
+        {"id": "opt2", "text": "DMT is delivered by board-certified therapists (BC-DMT) with clinical assessment, treatment planning, and outcome monitoring; self-guided practices draw on DMT principles for wellness but are not formal therapy"},
+        {"id": "opt3", "text": "DMT requires special equipment"},
+        {"id": "opt4", "text": "There is no difference—they're the same thing"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Dance/movement therapy is a licensed psychotherapeutic approach delivered by BC-DMT therapists, involving biopsychosocial assessment, individualized goals, and documented outcomes. Self-guided movement practices use similar principles (body awareness, expressive movement, rhythm) for wellness and self-care, but they're not clinical therapy. Understanding this boundary is essential for safety and appropriate expectations."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to the 'window of tolerance' concept, which movement practice is most effective for regulating hyperarousal (anxiety, panic)?",
+      "options": [
+        {"id": "opt1", "text": "High-intensity jumping jacks to burn off the anxious energy"},
+        {"id": "opt2", "text": "Sitting completely still and trying to force yourself to calm down"},
+        {"id": "opt3", "text": "Slow, rhythmic walking with grounding focus (feeling feet on floor, matching breath to steps)"},
+        {"id": "opt4", "text": "Fast, aggressive movements like punching to release the tension"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "When you're hyperaroused (anxious, panicked), slow, rhythmic, grounding movement activates the parasympathetic nervous system and brings you back into your window of tolerance. Fast, intense movements can increase arousal further. Forced stillness can feel impossible when your body has excess energy. Grounding movement (feeling feet, rhythmic pace) provides the optimal regulation pathway."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is 'interoception' and why is it important for movement-based emotional regulation?",
+      "options": [
+        {"id": "opt1", "text": "The ability to sense internal body states (heartbeat, muscle tension, temperature)—it's the foundation for noticing and shifting emotional states through movement"},
+        {"id": "opt2", "text": "The ability to read other people's emotions"},
+        {"id": "opt3", "text": "A type of meditation practice"},
+        {"id": "opt4", "text": "The medical term for flexibility"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Interoception is sensing internal states—heartbeat, muscle tension, breath, temperature, and emotional sensations in the body. Before you can use movement therapeutically, you need to notice what's happening in your body (e.g., 'I feel tension in my shoulders' or 'My chest feels tight'). Building interoceptive awareness through body scans and mindful movement is the foundation of movement-based regulation."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for dance/movement therapy (DMT) in reducing depression when delivered by licensed therapists?",
+      "options": [
+        {"id": "opt1", "text": "LIMITED—no meaningful evidence"},
+        {"id": "opt2", "text": "MODERATE—medium effect sizes (d≈0.60-0.72) at 3-month follow-up as adjunctive treatment"},
+        {"id": "opt3", "text": "STRONG—cures depression in all cases"},
+        {"id": "opt4", "text": "EMERGING—only anecdotal evidence"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "DMT delivered by BC-DMT therapists shows MODERATE evidence for depression reduction, with medium effect sizes (d≈0.60-0.72) at 3-month follow-up when added to treatment-as-usual. This is meaningful clinical benefit, though it's adjunctive (not standalone) and more RCTs are needed. The evidence is promising but not yet 'strong' given study heterogeneity."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should you seek professional support instead of relying on self-guided movement practices?",
+      "options": [
+        {"id": "opt1", "text": "When you want to learn new dance moves"},
+        {"id": "opt2", "text": "When you have moderate-to-severe depression, PTSD, trauma-related symptoms, or when movement triggers overwhelming distress or flashbacks"},
+        {"id": "opt3", "text": "When you prefer structured movement over free expression"},
+        {"id": "opt4", "text": "Never—self-guided movement is always sufficient"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Self-guided movement is appropriate for general wellness, stress relief, and emotional exploration. However, if you have PTSD, complex trauma, moderate-to-severe depression, eating disorders, or if movement triggers flashbacks or overwhelming distress, you should work with a licensed therapist (ideally trauma-informed or DMT-trained). Self-guided work can be destabilizing for these conditions without proper support."
+    }
+  ],
+  "sectionId": "movement-exercise",
+  "courseId": "music-movement-wellness",
+  "lessonId": "2",
+  "title": "Movement Therapy Foundations and Principles - Quiz"
+}

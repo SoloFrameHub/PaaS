@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for digital creative tools and mental health benefits?",
+      "options": [
+        {"id": "opt1", "text": "STRONG—digital tools are proven as effective as traditional creative practices"},
+        {"id": "opt2", "text": "EMERGING—some promising studies on accessibility and engagement, but limited research on long-term outcomes and optimal use"},
+        {"id": "opt3", "text": "NO EVIDENCE—digital creative tools have no mental health benefits"},
+        {"id": "opt4", "text": "MODERATE—digital tools are proven better than analog practices"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Evidence for digital creative tools is EMERGING: Some studies show benefits (accessibility, reduced performance anxiety from undo function, engagement), but research is limited and newer. Less known about long-term outcomes, optimal 'dose' of screen-based creativity, or how digital vs. analog practices differ in their effects. Balance benefits with mindful tech use."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are key benefits of digital creative tools compared to traditional analog practices?",
+      "options": [
+        {"id": "opt1", "text": "Digital tools are always better than analog in every way"},
+        {"id": "opt2", "text": "Accessibility (low cost, no supplies needed), undo function (reduces performance anxiety), portability, variety of media in one device, privacy control"},
+        {"id": "opt3", "text": "Digital tools require professional training and are only for experts"},
+        {"id": "opt4", "text": "There are no real benefits—analog is always superior"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Digital creative tools offer: accessibility (no expensive supplies, free/low-cost apps), undo/edit function (reduces fear of mistakes), portability (create anywhere on phone/tablet), variety (drawing, writing, music on one device), and privacy control (work stays on device unless you share). These lower barriers to entry, especially for beginners or people without access to traditional art supplies."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are significant drawbacks and risks of digital creative practices?",
+      "options": [
+        {"id": "opt1", "text": "There are no drawbacks—digital is risk-free"},
+        {"id": "opt2", "text": "Screen time burden (eye strain, digital fatigue, sleep disruption), privacy/data security concerns, comparison culture on social platforms, digital overwhelm from too many options"},
+        {"id": "opt3", "text": "Digital tools are too expensive for most people"},
+        {"id": "opt4", "text": "Digital creativity is inherently harmful to mental health"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Digital creative practices have costs: adds to total screen time (eye strain, fatigue, blue light sleep disruption), privacy risks (data collection, cloud breaches, especially for sensitive content), social media comparison culture (likes/validation-seeking undermines intrinsic motivation), and digital overwhelm (too many app choices, subscription fatigue, tech troubleshooting). Balance benefits with these risks."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "When should you prioritize analog creative practices over digital?",
+      "options": [
+        {"id": "opt1", "text": "Always—digital should never be used for creative expression"},
+        {"id": "opt2", "text": "When screen time is already high (8+ hours/day), creating sensitive/traumatic content needing privacy, feeling digitally fatigued, or finding analog more regulating/grounding"},
+        {"id": "opt3", "text": "Only if you can't afford a smartphone or tablet"},
+        {"id": "opt4", "text": "Never—digital is always the better choice"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Prioritize analog when: baseline screen time is already high (adding digital creativity increases burden), working with sensitive/traumatic content (physical journal has no data breach risk), experiencing digital fatigue (analog provides sensory break), or when you notice analog feels more regulating/grounding for you personally. Match tool to context and your needs."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What are important considerations for using AI creative tools (DALL-E, Midjourney, ChatGPT, etc.) for wellbeing?",
+      "options": [
+        {"id": "opt1", "text": "AI tools are proven to be as therapeutic as hands-on creating"},
+        {"id": "opt2", "text": "VERY EMERGING evidence—may lower skill barriers and increase accessibility, but concerns include: less embodied than hands-on work, ethical issues (artist consent, environmental cost), authenticity questions"},
+        {"id": "opt3", "text": "AI creative tools should replace all traditional creative practices"},
+        {"id": "opt4", "text": "AI tools have no mental health applications whatsoever"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "AI creative tools have VERY EMERGING evidence. Potential benefits: lower skill barriers (generate art/music without training), accessibility. Concerns: typing prompts is less embodied than hands-on creating (may lose some regulatory benefits), ethical issues (AI trained on artists' work without consent, high energy use), authenticity questions (is it 'yours' if AI generated it?). Use as tool for inspiration, not replacement for hands-on work."
+    }
+  ],
+  "sectionId": "stress-management",
+  "courseId": "creative-expression",
+  "lessonId": "19",
+  "title": "Integrating Technology in Creative Expression - Quiz"
+}

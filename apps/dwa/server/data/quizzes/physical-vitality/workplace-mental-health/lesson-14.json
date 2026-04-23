@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What factors should you consider when deciding whether to disclose mental health information to your manager?",
+            "options": [
+                {"id": "opt1", "text": "You should always disclose everything to your manager"},
+                {"id": "opt2", "text": "Consider: psychological safety at your workplace, your manager's trustworthiness, whether you need accommodations, and potential career consequences"},
+                {"id": "opt3", "text": "You should never disclose mental health information at work"},
+                {"id": "opt4", "text": "Disclosure decisions don't matter"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Disclosure decisions depend on: workplace psychological safety (supportive vs. stigmatizing culture), manager quality (empathetic and trustworthy vs. dismissive), whether you need accommodations or time off, and legal protections. Partial disclosure is an option ('managing a health issue') without naming mental health specifically. There's no universal right answer — it depends on context."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are recommended communication strategies when talking to your manager about stress or burnout?",
+            "options": [
+                {"id": "opt1", "text": "Apologize repeatedly and downplay your needs"},
+                {"id": "opt2", "text": "Be specific about symptoms and impact, focus on solutions, frame as performance/sustainability issue, and clearly state what you need"},
+                {"id": "opt3", "text": "Never mention mental health at work"},
+                {"id": "opt4", "text": "Demand accommodations without explanation"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Effective communication strategies include: being specific about symptoms and functional impact, focusing on solutions (not just complaints), framing as a performance and sustainability issue, clearly stating what you need (workload adjustment, time off, accommodations), and avoiding over-apologizing or minimizing. Use 'I' statements and facts, not blame."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you access EAP (Employee Assistance Program) support?",
+            "options": [
+                {"id": "opt1", "text": "Only when you're in crisis"},
+                {"id": "opt2", "text": "For confidential counseling, stress management, mental health assessment, referral to specialists, or when you're unsure what support you need"},
+                {"id": "opt3", "text": "Never — EAP isn't confidential"},
+                {"id": "opt4", "text": "Only after telling your manager first"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "EAP is appropriate for: confidential counseling (typically 3-8 sessions), stress and anxiety management, mental health assessment, referral to therapists or psychiatrists, legal/financial consultation, or when you're unsure what support you need. EAP is confidential — your employer doesn't know you used it unless you choose to disclose. You don't need to tell your manager first."
+        },
+        {
+            "id": "q4",
+            "type": "reflection",
+            "question": "Think about your current workplace's psychological safety. If you needed to talk to your manager about stress, burnout, or mental health, would you feel safe doing so? Why or why not? What would make disclosure feel safer?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "14",
+    "title": "Communication Skills for Workplace Mental Health - Quiz"
+}

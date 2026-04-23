@@ -1,0 +1,126 @@
+{
+    "lessonId": "3",
+    "courseId": "advocacy",
+    "sectionId": "customer-success",
+    "title": "Test Your Understanding",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the ideal length for a mini case study?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "50-100 words"
+                },
+                {
+                    "id": "b",
+                    "text": "200-400 words"
+                },
+                {
+                    "id": "c",
+                    "text": "1,000-1,500 words"
+                },
+                {
+                    "id": "d",
+                    "text": "2,000+ words"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Mini case studies are 200-400 words. They're read 5x more than full case studies (1,500+ words) while still providing enough detail to be persuasive."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which Results statement is strongest?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They saw great results and were very happy"
+                },
+                {
+                    "id": "b",
+                    "text": "Revenue increased significantly"
+                },
+                {
+                    "id": "c",
+                    "text": "Reduced churn from 8% to 3% monthly in 90 days, saving $4,500/month"
+                },
+                {
+                    "id": "d",
+                    "text": "Performance improved across the board"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Specific metrics with timeframes and context are 3x more persuasive than vague claims. 'Reduced churn from 8% to 3% monthly in 90 days, saving $4,500/month' is concrete and measurable."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should the Solution section focus on?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Feature names and product capabilities"
+                },
+                {
+                    "id": "b",
+                    "text": "Your company's history and credentials"
+                },
+                {
+                    "id": "c",
+                    "text": "The approach or methodology the customer used"
+                },
+                {
+                    "id": "d",
+                    "text": "Technical specifications and integrations"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Solution section should describe the approach or methodology, not list features. Buyers care about what changed in the customer's workflow, not what your product is called."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "You can publish a case study without customer approval as long as you're using information they already shared in a testimonial.",
+            "correctAnswer": "b",
+            "explanation": "False. Always get written permission before publishing a case study, even if the customer gave you a testimonial. A case study is more detailed and public. Get explicit sign-off.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How many deployment surfaces should a single case study have?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 (just the website)"
+                },
+                {
+                    "id": "b",
+                    "text": "2-3 (website and email)"
+                },
+                {
+                    "id": "c",
+                    "text": "5-10 (website, email, proposals, LinkedIn, webinars, etc.)"
+                },
+                {
+                    "id": "d",
+                    "text": "Case studies should only live on a dedicated case studies page"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A single case study should be deployed across 5-10 surfaces: website, sales emails, proposals, LinkedIn posts, webinar decks, landing pages, and more. Maximize the ROI of each case study you create."
+        }
+    ]
+}

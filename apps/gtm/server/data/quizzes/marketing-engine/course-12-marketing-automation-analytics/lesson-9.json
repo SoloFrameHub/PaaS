@@ -1,0 +1,153 @@
+{
+    "lessonId": "9",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 9: Marketing Metrics Dashboard",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which of these is considered a 'Vanity Metric' that provides little direct insight into business health?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Monthly Recurring Revenue (MRR)"
+                },
+                {
+                    "id": "b",
+                    "text": "Total Number of Website Page Views"
+                },
+                {
+                    "id": "c",
+                    "text": "Customer Acquisition Cost (CAC)"
+                },
+                {
+                    "id": "d",
+                    "text": "Lead Velocity Rate (LVR)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Page views tell you people are arriving, but without conversion context, they don't predict revenue or business growth."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "How do you calculate Customer Acquisition Cost (CAC)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "(Average Sale Price) x (Number of Customers)"
+                },
+                {
+                    "id": "b",
+                    "text": "(Total Sales & Marketing Spend) / (Number of New Customers Acquired)"
+                },
+                {
+                    "id": "c",
+                    "text": "(Total Traffic) / (Total Leads)"
+                },
+                {
+                    "id": "d",
+                    "text": "(Revenue) - (Expenses)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "CAC is the average amount of money spent to acquire a single customer during a specific period."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "What is the primary significance of a high 'Lead Velocity Rate' (LVR)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It means your website is loading faster than average."
+                },
+                {
+                    "id": "b",
+                    "text": "It is a leading indicator that revenue will likely increase in the coming months."
+                },
+                {
+                    "id": "c",
+                    "text": "It means you are spending too much on advertising."
+                },
+                {
+                    "id": "d",
+                    "text": "It indicates that customers are unsubscribing from your emails."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LVR tracks the growth of qualified leads. Since leads precede sales, a growing LVR predicts future revenue growth."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "According to the lesson, what is the 'target' LTV:CAC ratio for a healthy, scalable business?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1:1"
+                },
+                {
+                    "id": "b",
+                    "text": "2:1"
+                },
+                {
+                    "id": "c",
+                    "text": "3:1 or higher"
+                },
+                {
+                    "id": "d",
+                    "text": "100:1"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "An LTV:CAC of 3:1 means you make $3 back for every $1 you spend on acquisition, which is the standard benchmark for profitability."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which dashboard 'Level' is recommended for founders with fewer than 100 leads per month?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Level 1: The Simple & Manual Google Sheet"
+                },
+                {
+                    "id": "b",
+                    "text": "Level 2: The Unified Notion Database"
+                },
+                {
+                    "id": "c",
+                    "text": "Level 3: The Automated Looker Studio Engine"
+                },
+                {
+                    "id": "d",
+                    "text": "Level 4: Hiring a Data Scientist"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "At lower volumes, the act of manually entering data into a sheet forces the founder to engage with and understand their numbers."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Identify your 'North Star' metric—the one number that matters most in your business right now. Why did you choose it? Calculate your current estimated LTV and CAC. Is your LTV:CAC ratio above or below the 3:1 target? What is one specific action you can take to improve it?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's North Star choice and LTV:CAC calculation. Check if they have a realistic plan to improve the ratio (either by lowering CAC or increasing LTV). Provide a tactical suggestion for their specific business type (SaaS vs Coach)."
+        }
+    ]
+}

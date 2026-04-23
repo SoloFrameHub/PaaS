@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to meta-analytic research on therapeutic alliance, why does the quality of the helping relationship matter so much for outcomes?",
+      "options": [
+        {"id": "opt1", "text": "The relationship doesn't actually matter — only the specific techniques and interventions used"},
+        {"id": "opt2", "text": "The alliance accounts for significant variance in outcomes even after controlling for treatment type, meaning HOW you relate matters as much as WHAT techniques you use"},
+        {"id": "opt3", "text": "The therapeutic alliance only matters in psychotherapy, not in coaching or mentoring contexts"},
+        {"id": "opt4", "text": "A good relationship makes people feel better temporarily but doesn't actually change long-term outcomes"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Therapeutic alliance research across 295 studies found that the quality of the collaborative relationship predicts outcomes even when controlling for treatment modality. This finding extends beyond therapy to coaching and mentoring: trust, perceived understanding, and collaborative goal-setting are mechanisms through which all helping techniques work. You cannot coach someone who doesn't trust you."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A client shares: 'I didn't follow through on my goal this week. I'm such a procrastinator — I always do this.' Which response best demonstrates empathic reflection (one of Carl Rogers' core conditions)?",
+      "options": [
+        {"id": "opt1", "text": "'Don't be so hard on yourself! You're not a procrastinator — you just had a busy week.'"},
+        {"id": "opt2", "text": "'It sounds like you're feeling really disappointed in yourself, and maybe frustrated that this pattern keeps happening.'"},
+        {"id": "opt3", "text": "'I procrastinate too sometimes. Last week I had this project I kept putting off...'"},
+        {"id": "opt4", "text": "'Why do you think you procrastinate? What's the root cause from your childhood?'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Empathy is accurately understanding the person's internal experience from their frame of reference and reflecting it back. Option 2 reflects both the emotion (disappointment, frustration) and the meaning (pattern recognition) without correcting, reassuring, or probing. Option 1 invalidates their experience. Option 3 shifts focus to you (breaks congruence). Option 4 is clinical probing outside coaching scope. Empathic reflection deepens trust and activates psychological safety."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the Supportive Accountability Model (Mohr et al., 2011), what three qualities must a coach be perceived as having for accountability to improve engagement?",
+      "options": [
+        {"id": "opt1", "text": "Authority, expertise, and strictness"},
+        {"id": "opt2", "text": "Trustworthiness, benevolence, and domain expertise"},
+        {"id": "opt3", "text": "Warmth, flexibility, and availability"},
+        {"id": "opt4", "text": "Certification, years of experience, and client testimonials"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The Supportive Accountability Model specifies that coaches must be perceived as (1) trustworthy — person believes you have their best interests at heart, (2) benevolent — you demonstrate genuine care without judgment, and (3) having domain expertise — you are credible and competent. Without these three, accountability structures fail to improve engagement. Authority and strictness (opt1) can activate defensiveness. Credentials (opt4) matter less than perceived trustworthiness and care."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "According to polyvagal theory, what must happen neurobiologically before someone can engage in reflective problem-solving, goal pursuit, or behavior change?",
+      "options": [
+        {"id": "opt1", "text": "The person must be in a sympathetic (fight-flight) state to have enough energy for change"},
+        {"id": "opt2", "text": "The ventral vagal pathway (social engagement, safety state) must be activated — threat responses must be downregulated first"},
+        {"id": "opt3", "text": "The person must experience some level of stress or discomfort to motivate change"},
+        {"id": "opt4", "text": "Neurobiology doesn't actually affect coaching effectiveness — mindset is all that matters"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Polyvagal theory (Porges) shows that the ventral vagal pathway — associated with social engagement, calm connection, and safety — must be online before higher-order reflection and learning can occur. When someone is in sympathetic activation (fight-flight) or dorsal vagal shutdown (freeze), no coaching technique will work because the nervous system is in survival mode. Your job: create conditions for ventral vagal activation through empathy, validation, and removing perceived threat."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "You offered advice that seemed helpful, but the client responds tersely: 'Yeah, I tried that already. It didn't work.' Their tone has shifted — they sound irritated. This is a trust rupture. What's the most effective repair strategy?",
+      "options": [
+        {"id": "opt1", "text": "Defend your advice: 'I think it could work if you gave it a real try. A lot of people find this approach helpful.'"},
+        {"id": "opt2", "text": "Quickly move on: 'Okay, so what do you think would work better then?'"},
+        {"id": "opt3", "text": "Acknowledge the rupture directly: 'I'm hearing frustration — I think I jumped to advice before really understanding where you're at. Can we back up? Tell me more about what you've already tried.'"},
+        {"id": "opt4", "text": "Apologize profusely and explain why you suggested it to show you meant well"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Effective rupture repair: (1) name what you're noticing (frustration), (2) take responsibility for the misstep (premature advice), (3) re-invite the person into collaborative connection (curiosity). This restores safety. Defending (opt1) deepens the rupture. Moving on (opt2) doesn't address the relational disconnect. Over-apologizing (opt4) centers your feelings, not theirs. Skilled coaches repair ruptures quickly by acknowledging, owning, and reconnecting."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "2",
+  "title": "Building Trust and Psychological Safety - Quiz"
+}

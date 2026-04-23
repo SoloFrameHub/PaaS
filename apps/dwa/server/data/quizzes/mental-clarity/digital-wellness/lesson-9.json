@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is upward social comparison on social media?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Comparing yourself to people who are worse off than you"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Comparing yourself unfavorably to people who appear more successful, attractive, or happy — often leading to envy and low self-esteem"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Scrolling upward through your feed"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Posting content to make others envious"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Upward social comparison means comparing yourself to people who appear better off (more successful, attractive, happy), often leading to feelings of inadequacy, envy, and lower self-esteem."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does research show about the relationship between social media use and body image?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Social media has no impact on body image"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exposure to idealized images, beauty filters, and appearance-focused content correlates with body dissatisfaction, especially in adolescents (MODERATE evidence)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Social media always improves body image by showing diverse representations"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people with eating disorders are affected by social media images"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "MODERATE evidence shows correlations between exposure to idealized, filtered, appearance-focused content and body dissatisfaction, particularly among adolescents and young adults. The effect is strongest with passive consumption and comparison."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which intervention shows promise for reducing social comparison harm?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Spending more time on social media to get desensitized"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Curating your feed to reduce exposure to comparison triggers, practicing gratitude, and limiting passive scrolling"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Following more influencers to learn from them"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Posting more content to compete with others"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Evidence supports active strategies: unfollowing accounts that trigger comparison, curating for positive content, practicing gratitude, and shifting from passive scrolling to intentional use."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why are beauty filters and photo editing particularly problematic for body image?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because they are difficult to use"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because they create unrealistic standards that are literally unattainable (digitally altered), leading to comparisons with impossible ideals"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because they make everyone look the same"
+                },
+                {
+                    "id": "opt4",
+                    "text": "They aren't problematic — they help people feel confident"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Filters create digitally altered, unattainable standards. Comparing yourself to edited images sets an impossible standard, increasing body dissatisfaction and potentially contributing to disordered eating and cosmetic surgery demand."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about your social media feed. Are there specific accounts or types of content that trigger social comparison or negative feelings about yourself? What would happen if you unfollowed or muted them for a week?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "9",
+    "title": "Social Comparison and Body Image - Quiz"
+}

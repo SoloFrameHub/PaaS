@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to motivational interviewing research, what is the ideal ratio of reflections to questions in a coaching conversation?",
+      "options": [
+        {"id": "opt1", "text": "1:2 — one reflection for every two questions (questions are more important)"},
+        {"id": "opt2", "text": "1:1 — equal balance of reflections and questions"},
+        {"id": "opt3", "text": "2:1 — twice as many reflections as questions"},
+        {"id": "opt4", "text": "It doesn't matter — both are equally effective"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Motivational interviewing research recommends a 2:1 ratio — twice as many reflections as questions. Reflections communicate understanding, slow the conversation down for insight, and reduce defensiveness. Too many questions create an interrogation dynamic. When you reflect more than you question, you signal 'I'm here to understand you' rather than 'I'm here to extract information from you.'"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A client says: 'I wanted to exercise this week but I just didn't have the energy. I feel like such a failure.' Which response best demonstrates a complex reflection (reflecting emotion and deeper meaning)?",
+      "options": [
+        {"id": "opt1", "text": "'You didn't exercise this week.' (simple paraphrase)"},
+        {"id": "opt2", "text": "'Don't feel that way! You're not a failure — you just had a tough week.' (reassurance)"},
+        {"id": "opt3", "text": "'It sounds like you're feeling disappointed in yourself and maybe discouraged that this keeps happening.' (complex reflection)"},
+        {"id": "opt4", "text": "'Why do you think you didn't have energy? Are you getting enough sleep?' (questions)"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "A complex reflection goes beyond paraphrasing content — it reflects the emotion (disappointed, discouraged) and the deeper meaning (pattern recognition, self-judgment). This communicates deep understanding and invites the person to explore further. Simple paraphrasing (opt1) is less powerful. Reassurance (opt2) dismisses their experience. Questions (opt4) shift into interrogation rather than demonstrating you heard them."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is 'the righting reflex' and why is it a barrier to effective listening?",
+      "options": [
+        {"id": "opt1", "text": "The urge to correct someone when they're factually wrong — it's not actually a barrier because accuracy matters"},
+        {"id": "opt2", "text": "The automatic urge to fix, rescue, or solve the person's problem immediately — it's a barrier because when you jump to solutions, the person stops talking and doesn't benefit from thinking through the problem themselves"},
+        {"id": "opt3", "text": "The tendency to always take the 'right' moral position — it's a barrier because it makes you seem judgmental"},
+        {"id": "opt4", "text": "The reflex to ask questions instead of making statements — it's a barrier because questions can feel interrogating"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The 'righting reflex' (MI principle: 'Resist the righting reflex') is the automatic urge to fix or solve the person's problem. When you jump to solutions prematurely, you miss critical information and rob the person of the opportunity for self-discovery. Often, by the time you've listened fully, they've identified their own solution — which is more powerful than any advice you could give. Your job is to help them think, not to think for them."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "According to Bandura's self-efficacy theory, how do affirmations (statements recognizing strengths, efforts, or worth) support behavior change?",
+      "options": [
+        {"id": "opt1", "text": "Affirmations don't actually support behavior change — they're just empty cheerleading"},
+        {"id": "opt2", "text": "Affirmations activate verbal persuasion, one of the four sources of self-efficacy, strengthening the person's belief in their own capacity to achieve goals"},
+        {"id": "opt3", "text": "Affirmations work only if they're delivered by someone with professional credentials"},
+        {"id": "opt4", "text": "Affirmations replace the need for actual behavior change by making people feel good about themselves"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Affirmations are not empty praise — they activate verbal persuasion, one of Bandura's four sources of self-efficacy (along with mastery experiences, vicarious experience, and managing emotional arousal). When someone you trust says 'You can do this' or 'That took real courage,' it strengthens your belief in your capacity. Effective affirmations are specific and grounded ('You've shown up three weeks in a row — that's evidence of commitment') rather than generic ('You're amazing!')."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "A client says: 'I'm not sure if this goal is realistic. Part of me wants to do it, but part of me thinks I'm setting myself up for disappointment.' This is ambivalence. What's the most effective MI-informed response?",
+      "options": [
+        {"id": "opt1", "text": "'You need to believe in yourself! Of course it's realistic — I know you can do it!' (cheerleading for change)"},
+        {"id": "opt2", "text": "'It sounds like you're feeling torn — one part is hopeful and wants to try, another part is protecting you from disappointment. Tell me about both sides.' (reflection honoring ambivalence + exploration)"},
+        {"id": "opt3", "text": "'What makes you think you'll be disappointed?' (focus only on negative side)"},
+        {"id": "opt4", "text": "'That's a sign you're not ready. Let's pick a different goal.' (giving up)"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "In MI, ambivalence is normal and expected — not a problem to solve. When you reflect both sides of the ambivalence without trying to resolve it ('You're torn — part hopeful, part protective'), you honor the person's internal conflict and create space for them to explore it. Cheerleading (opt1) often backfires: when you argue for change, the person argues against it (sustain talk). Focusing only on the negative (opt3) misses half the picture. Exploring ambivalence collaboratively helps the person resolve it themselves."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "3",
+  "title": "Active Listening and Powerful Questioning - Quiz"
+}

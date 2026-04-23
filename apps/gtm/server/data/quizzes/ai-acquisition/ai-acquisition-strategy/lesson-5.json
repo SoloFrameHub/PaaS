@@ -1,0 +1,78 @@
+{
+  "lessonId": "5",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "AI Personalization Engines: First Lines That Convert",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does the FASP test stand for, and what is its purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fast, Automated, Scalable, Profitable — measures outreach ROI"
+        },
+        {
+          "id": "b",
+          "text": "Factual, Actually relevant, Specific to this person, Proud if they knew — validates AI personalization quality"
+        },
+        {
+          "id": "c",
+          "text": "Focused, Aligned, Strategic, Personalized — evaluates messaging strategy"
+        },
+        {
+          "id": "d",
+          "text": "First, Approach, Send, Persist — defines email sequence steps"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "FASP stands for Factual (can you verify it?), Actually relevant (does it connect to your value prop?), Specific to this person (not applicable to 100 others?), and Proud if they knew (would you be comfortable explaining how you found it?). It's the quality gate for every AI-generated first line before sending."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In the Draft + Human Gate (DHG) model, what percentage of AI-generated output should humans review for Tier 2 (middle 50%) prospects?",
+      "options": [
+        { "id": "a", "text": "100% — review every email" },
+        { "id": "b", "text": "50% — review half" },
+        { "id": "c", "text": "20-30% — quick skim and spot-check" },
+        { "id": "d", "text": "0% — fully automated" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "For Tier 2 prospects (scored 5-7), AI drafts 100% but humans do a quick skim of 20-30% of the output, spending 30-60 seconds per prospect. This gives a 5-12% expected reply rate while keeping time investment manageable. Tier 1 (top 20%) gets 100% review; Tier 3 gets 10% spot-check."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the time savings when using the DHG system for 200 leads compared to fully manual personalization?",
+      "options": [
+        { "id": "a", "text": "About 2 hours saved (10%)" },
+        { "id": "b", "text": "About 5 hours saved (30%)" },
+        { "id": "c", "text": "About 10.5 hours saved (63%)" },
+        { "id": "d", "text": "About 15 hours saved (90%)" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Without AI, 200 leads at 5 min/lead = 16.7 hours. With the DHG system: Tier 1 (40 leads x 7 min = 4.7 hrs) + Tier 2 (100 leads x 0.75 min = 1.25 hrs) + Tier 3 (60 leads x 0.25 min = 0.25 hrs) = 6.2 hours total. That's 10.5 hours saved (63%), and reply rates are often higher because human time is focused where it matters most."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Hallucinated personalization (AI inventing facts about a prospect) is better than no personalization at all, since at least it shows effort.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Hallucinated personalization is worse than no personalization. The lesson describes a founder who lost opportunities because AI referenced 'recent promotions' for 13 VPs who hadn't been promoted. Those VPs told their networks, damaging the founder's domain reputation for months. Always verify AI-referenced facts."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Write a personalized first line for a real or hypothetical prospect using the FASP test. Then explain how your first line passes each of the four FASP criteria (Factual, Actually relevant, Specific, Proud if they knew).",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes an actual first line (not just a description) and provides a clear explanation of how it passes each FASP criterion. Look for specificity in the personalization (not generic flattery) and a connection between the personalization and a value prop."
+    }
+  ]
+}

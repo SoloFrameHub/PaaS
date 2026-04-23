@@ -1,0 +1,120 @@
+{
+  "id": "social-anxiety-thought-record",
+  "title": "Social Anxiety Thought Challenger",
+  "description": "Use this worksheet to identify and challenge the automatic negative thoughts that drive social anxiety. Work through each step to develop more balanced, realistic interpretations of social situations.",
+  "instructions": "When you notice social anxiety rising — before, during, or after a social situation — work through each step below. Start by describing the situation, identify your automatic thought, examine the evidence, and develop a balanced alternative.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What happened? Where were you? Who was there?",
+      "type": "textarea",
+      "placeholder": "e.g., Walking into a meeting room where people were already talking...",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. Automatic Thought — What went through your mind?",
+      "type": "textarea",
+      "placeholder": "e.g., 'Everyone stopped talking because of me. They were probably talking about me.'",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. Emotion Intensity — How anxious/embarrassed did you feel? (0 = not at all, 100 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. Thinking Trap — Which cognitive pattern best fits?",
+      "type": "select",
+      "options": [
+        { "value": "spotlight-effect", "label": "Spotlight Effect — Overestimating how much others notice" },
+        { "value": "mind-reading", "label": "Mind Reading — Assuming others think negatively of me" },
+        { "value": "probability-overestimation", "label": "Probability Overestimation — 'It WILL go badly'" },
+        { "value": "catastrophizing", "label": "Catastrophizing — Assuming devastating consequences" },
+        { "value": "perfectionism", "label": "Perfectionism — Impossible standards for social performance" },
+        { "value": "illusion-of-transparency", "label": "Illusion of Transparency — 'They can see I'm anxious'" },
+        { "value": "emotional-reasoning", "label": "Emotional Reasoning — 'I feel awkward, so I must seem awkward'" },
+        { "value": "fortune-telling", "label": "Fortune Telling — Predicting negative social outcomes" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Evidence For — What supports this thought? (Use facts, not feelings)",
+      "type": "textarea",
+      "placeholder": "e.g., The room got quieter when I walked in...",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Evidence Against — What contradicts this thought?",
+      "type": "textarea",
+      "placeholder": "e.g., People often pause when someone enters. They smiled at me. No one made negative comments. I've entered rooms many times without being judged.",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. Balanced Thought — What is a more realistic interpretation?",
+      "type": "textarea",
+      "placeholder": "e.g., 'People pausing when someone enters is normal. It doesn't mean they were talking about me. Most people were probably glad to see me.'",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. Re-rate Emotion — How anxious/embarrassed do you feel now? (0 = not at all, 100 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "spotlight-effect",
+      "name": "Spotlight Effect",
+      "description": "Overestimating how much others notice about you — feeling like you're under a spotlight that highlights your flaws and anxiety."
+    },
+    {
+      "id": "mind-reading",
+      "name": "Mind Reading",
+      "description": "Assuming you know what others are thinking about you — almost always assuming negative judgments."
+    },
+    {
+      "id": "probability-overestimation",
+      "name": "Probability Overestimation",
+      "description": "Overestimating the likelihood that feared outcomes will occur, treating 'might' as 'will'."
+    },
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Assuming that if something goes slightly wrong socially, the consequences will be devastating and permanent."
+    },
+    {
+      "id": "perfectionism",
+      "name": "Perfectionism",
+      "description": "Setting unrealistically high standards for social performance — all-or-nothing thinking about social encounters."
+    },
+    {
+      "id": "illusion-of-transparency",
+      "name": "Illusion of Transparency",
+      "description": "Believing your internal anxiety is visible to others — that they can 'see through you'."
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Believing that because you feel anxious or awkward, you must appear that way to others."
+    },
+    {
+      "id": "fortune-telling",
+      "name": "Fortune Telling",
+      "description": "Predicting negative social outcomes without evidence: 'I know the party will go badly.'"
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional mental health treatment. If you are in crisis, contact the 988 Suicide & Crisis Lifeline by calling or texting 988."
+}

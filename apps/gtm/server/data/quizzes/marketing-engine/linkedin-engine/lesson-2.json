@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "2",
+    "lessonTitle": "Personal Brand vs. Company Page",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why should solo founders prioritize their personal profile over their company page for lead generation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because personal profiles are cheaper to maintain."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they typically get 5-10x more reach and higher engagement through social interaction."
+                },
+                {
+                    "id": "c",
+                    "text": "Because LinkedIn will delete company pages that don't have enough followers."
+                },
+                {
+                    "id": "d",
+                    "text": "Because company pages are only for people who have employees."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LinkedIn's algorithm and users both favor human interaction. Personal profiles are the primary 'Engine' for starting conversations and building trust.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary 'Legitimacy' function of a company page for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make you look like you have 100 employees."
+                },
+                {
+                    "id": "b",
+                    "text": "To allow you to link your current role to an organization and display a logo in your Experience section."
+                },
+                {
+                    "id": "c",
+                    "text": "To hide your identity from competitors."
+                },
+                {
+                    "id": "d",
+                    "text": "To automatically post to other social networks."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While growth happens on the personal profile, the company page provides the structural 'Anchor' that gives your business a professional presence on the platform.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Hub and Spoke' strategy, which entity acts as the Hub?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Company Page."
+                },
+                {
+                    "id": "b",
+                    "text": "The Personal Profile."
+                },
+                {
+                    "id": "c",
+                    "text": "The LinkedIn Newsletter."
+                },
+                {
+                    "id": "d",
+                    "text": "Your website."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Personal Profile is the center of interaction (the Hub) where relationships are built and authority is demonstrated.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'Borg Talk' in the context of founder content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A language used by AI bots."
+                },
+                {
+                    "id": "b",
+                    "text": "A generic corporate tone using 'We' and 'Professional' platitudes that lack human personality."
+                },
+                {
+                    "id": "c",
+                    "text": "A specific type of high-tech coding language."
+                },
+                {
+                    "id": "d",
+                    "text": "The official terminology used by LinkedIn's support team."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Borg Talk is the 'faceless' corporate language that founders often use to try and sound 'Big,' which actually destroys the trust and authenticity that a solo practitioner can offer.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the key takeaway regarding 'Entity Authority' for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Entity Authority is found only in patents and trademarks."
+                },
+                {
+                    "id": "b",
+                    "text": "Entity Authority resides in the person (the practitioner) who demonstrates real-world expertise."
+                },
+                {
+                    "id": "c",
+                    "text": "Entity Authority is granted by LinkedIn when you get 5,000 followers."
+                },
+                {
+                    "id": "d",
+                    "text": "Only company pages can have Entity Authority."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For a solo founder, you ARE the entity. Your personal track record and practitioner voice are what the AI and human users trust.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Go to your 'Experience' section on your LinkedIn profile. Is your business entry linked to a page with a logo, or is it a gray placeholder box? If you don't have a logo linked, how will this impact a prospect's initial perception of your 'Legitimacy' arm of the Trust Pincer?",
+            "promptHints": [
+                "Think about the difference between a 'Project' and a 'Business'.",
+                "Consider how a gray box looks compared to a clean, branded logo entry.",
+                "Reflect on the 'Professional Identity' function mentioned in the lesson."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "1"
+        ],
+        "unlocks": [
+            "3"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Personal Brand vs. Company Page - Quiz"
+}

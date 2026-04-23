@@ -1,0 +1,99 @@
+{
+    "lessonId": "2",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 2: The Setter/Closer Model",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "In the setter/closer model, what is the primary function of the setter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To close deals and collect payment from prospects"
+                },
+                {
+                    "id": "b",
+                    "text": "To qualify leads, book appointments, and hand off to the closer with context"
+                },
+                {
+                    "id": "c",
+                    "text": "To create content and generate inbound leads"
+                },
+                {
+                    "id": "d",
+                    "text": "To handle post-sale onboarding and client support"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The setter's role is to respond to inbound leads quickly, qualify them against the Ideal Client Profile, book qualified prospects on the closer's calendar, and provide a warm handoff with context notes so the closer can start the conversation informed."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "According to the lesson, which hire should a creator make FIRST when implementing the setter/closer model, and why?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The closer first, because closing is the harder skill and generates revenue directly"
+                },
+                {
+                    "id": "b",
+                    "text": "The setter first, because improving speed-to-lead and qualification provides the biggest early win"
+                },
+                {
+                    "id": "c",
+                    "text": "Both simultaneously, because the model only works with both roles filled"
+                },
+                {
+                    "id": "d",
+                    "text": "Neither -- start by automating the qualification process with software"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson explicitly states that hiring a setter first solves the biggest bottleneck: lead response time and qualification. Having a setter respond to inquiries within 5 minutes instead of 24 hours can increase booking rates by 30-50%, and the creator can still close calls personally during this phase."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "A creator at $25K/month wants to implement the setter/closer model. They have a 28% close rate, inconsistent lead flow (some weeks 20 leads, some weeks 5), no recorded sales calls, and no CRM. What should they do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hire a setter immediately -- the inconsistent lead flow is exactly why they need help"
+                },
+                {
+                    "id": "b",
+                    "text": "Hire a commission-only closer to minimize risk while they build infrastructure"
+                },
+                {
+                    "id": "c",
+                    "text": "Address the prerequisites first: record sales calls, set up a CRM, stabilize lead flow, then hire a setter"
+                },
+                {
+                    "id": "d",
+                    "text": "Skip the setter/closer model entirely and move directly to a group program"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson lists five prerequisites before hiring: a proven offer with documented close rate, recorded sales calls, consistent lead flow, clear qualification criteria, and a CRM. This creator is missing at least three (no recordings, no CRM, inconsistent leads). Hiring without these prerequisites is a common pitfall that leads to failure."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Review the five prerequisites for implementing the setter/closer model: (1) proven offer with documented close rate, (2) recorded sales process, (3) consistent lead source, (4) clear qualification criteria, (5) CRM or pipeline tool. Score yourself 1-5 on each. Which prerequisite is your weakest, and what specific action will you take in the next 14 days to strengthen it?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's honest assessment of their readiness for the setter/closer model. Look for specific scores on each prerequisite rather than vague statements. If they score themselves high across the board, probe whether they might be overestimating. Focus your feedback on their weakest area and validate whether their proposed 14-day action is realistic and impactful enough to move the needle."
+        }
+    ]
+}

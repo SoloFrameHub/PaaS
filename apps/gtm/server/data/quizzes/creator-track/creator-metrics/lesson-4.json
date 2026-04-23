@@ -1,0 +1,55 @@
+{
+  "lessonId": "4",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Application Funnel Analytics Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "A creator's application funnel shows 400 applications started but only 160 completed. What is the completion rate and what does it indicate?",
+      "options": [
+        { "id": "a", "text": "40% -- below the 60-80% benchmark, indicating the form has significant problems" },
+        { "id": "b", "text": "40% -- acceptable for high-ticket offers where thorough applications are expected" },
+        { "id": "c", "text": "60% -- at the lower end of the healthy range" },
+        { "id": "d", "text": "40% -- above average since most application forms see 20-30% completion" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "160/400 = 40% completion rate. The benchmark is 60-80%, so 40% indicates significant problems with the form. Common causes include too many questions (more than 8-10), open-ended questions requiring long answers early in the form, or technical friction like slow loading or mobile-unfriendly design."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Research shows that leads contacted within 5 minutes of expressing interest are how much more likely to enter the sales process compared to leads contacted after 30 minutes?",
+      "options": [
+        { "id": "a", "text": "3 times more likely" },
+        { "id": "b", "text": "7 times more likely" },
+        { "id": "c", "text": "21 times more likely" },
+        { "id": "d", "text": "10 times more likely" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "According to the InsideSales.com research cited in the lesson, leads contacted within 5 minutes are 21 times more likely to enter the sales process than leads contacted after 30 minutes. This is why speed-to-lead is one of the most underrated metrics in application funnels."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "In the funnel math example, reducing application completion rate from 75% to 40% (with all other stages unchanged) reduced revenue from $130,000 to $70,000 on 1,000 visitors. What does this demonstrate?",
+      "options": [
+        { "id": "a", "text": "Application forms should be eliminated entirely to remove friction" },
+        { "id": "b", "text": "A single leaky stage can cost more than half your potential revenue, making stage-by-stage tracking essential" },
+        { "id": "c", "text": "Close rate is more important than application completion rate" },
+        { "id": "d", "text": "You should only optimize the final stage of the funnel since that directly affects revenue" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The example shows that one weak stage (40% vs 75% completion) caused a $60,000 revenue loss from the same traffic. This demonstrates why tracking every stage matters -- if you only measure end-to-end conversion, you cannot identify which stage is leaking and will waste effort fixing the wrong thing."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Map out your current application or sales funnel stage by stage. For each stage, estimate your conversion rate (even a rough guess is better than nothing). Where is your biggest drop-off, and what is one specific fix you could implement this week to address it?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student identified distinct stages in their funnel with conversion rate estimates. Check if they correctly identified their biggest drop-off point and proposed a specific, actionable fix (not a vague improvement). If they do not have an application funnel, assess whether they identified the equivalent stages in their sales process."
+    }
+  ]
+}

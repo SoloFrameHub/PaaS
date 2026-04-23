@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Testimonial Collection System Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'High-Dopamine Moment' in the context of testimonial collection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The moment you realize you need more social proof for a launch."
+                },
+                {
+                    "id": "b",
+                    "text": "The moment a customer experiences peak satisfaction or a major win."
+                },
+                {
+                    "id": "c",
+                    "text": "The moment you finish building a new feature."
+                },
+                {
+                    "id": "d",
+                    "text": "The moment a customer unsubscribes from your list."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Asking for a testimonial when a customer has just achieved a result or had an 'aha' moment dramatically increases the likelihood of a positive response."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why are 'Generic Praise Testimonials' (e.g., 'Great product!') considered low value?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are too long for landing pages."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they don't address specific objections or show measurable results."
+                },
+                {
+                    "id": "c",
+                    "text": "Because they are usually fake."
+                },
+                {
+                    "id": "d",
+                    "text": "Because customers don't like reading them."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Effective testimonials need to tell a story of transformation, moving from a problem to a specific, measurable outcome."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the friction hierarchy, which of these is the 'Lowest Friction' way to get a testimonial?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking them to write a 3-paragraph email."
+                },
+                {
+                    "id": "b",
+                    "text": "Sending them a link to a video recording tool."
+                },
+                {
+                    "id": "c",
+                    "text": "Drafting a quote based on their previous feedback and asking for permission to use it."
+                },
+                {
+                    "id": "d",
+                    "text": "Scheduling a 15-minute interview call."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Drafting the quote for the customer reduces their mental load to a simple 'yes' or 'no' decision, maximizing response rates."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What was the key finding from the AirDefense case study regarding testimonials?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Testimonials have no impact on customer retention."
+                },
+                {
+                    "id": "b",
+                    "text": "Asking for testimonials actually annoys customers and leads to churn."
+                },
+                {
+                    "id": "c",
+                    "text": "Customers who gave testimonials had 40% higher retention rates."
+                },
+                {
+                    "id": "d",
+                    "text": "Testimonials only work for small companies, not enterprise ones."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The act of providing a testimonial reinforces the customer's own buying decision, making them more committed and likely to stay."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the three-touch sequence, what is the purpose of 'Touch 1: The Warm-Up'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To ask for the testimonial immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "To notify the customer that they owe you a favor."
+                },
+                {
+                    "id": "c",
+                    "text": "To acknowledge a positive signal or win without asking for anything yet."
+                },
+                {
+                    "id": "d",
+                    "text": "To send them an invoice."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The warm-up primes the customer by showing that you value their success, making the actual request 24-48 hours later feel more natural."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify a specific 'High-Dopamine Moment' in your own customer journey (e.g., finishing Module 1, connecting an API, or receiving their first report). How will you automatically or systematically trigger a 'Touch 1' acknowledgment at that exact moment?",
+            "minLength": 100,
+            "promptForAI": "The user should specify a clear milestone in their customer's journey and describe a mechanism (automated email, manual Slack message, in-app notification) for acknowledging that win. Evaluate the response for its understanding of timing and its use of the 'warm-up' concept."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "7",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "CRM Selection and Setup Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary role of a CRM for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To create complex reports for investors"
+                },
+                {
+                    "id": "b",
+                    "text": "Cognitive offloading—acting as a replacement for memory to ensure follow-ups aren't missed"
+                },
+                {
+                    "id": "c",
+                    "text": "To automate the entire sales process so the founder doesn't have to work"
+                },
+                {
+                    "id": "d",
+                    "text": "To store personal photos and notes"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A solo founder's CRM is a tool for personal productivity and focus. Its main job is to free up mental energy by tracking who to contact and when."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Rule of 50' in solo CRM management?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should only have 50 prospects total"
+                },
+                {
+                    "id": "b",
+                    "text": "Keep your CRM simple until you have 50 active opportunities"
+                },
+                {
+                    "id": "c",
+                    "text": "The CRM should cost less than $50/month"
+                },
+                {
+                    "id": "d",
+                    "text": "Every deal should be worth at least $5,000"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Over-complicating a CRM early on is a common form of 'Procrastibuilding.' Simplicity allows you to focus on selling until the volume dictates more complexity."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which CRM is recommended for high-trust, relationship-driven sales (like Coaching or Services)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Close"
+                },
+                {
+                    "id": "b",
+                    "text": "Pipedrive"
+                },
+                {
+                    "id": "c",
+                    "text": "Folk"
+                },
+                {
+                    "id": "d",
+                    "text": "Excel"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Folk is designed for relationship management and context-rich sales, making it ideal for creators and coaches."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Record' or most important field in your CRM?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect's middle name"
+                },
+                {
+                    "id": "b",
+                    "text": "The Company Logo"
+                },
+                {
+                    "id": "c",
+                    "text": "The Next Action Date"
+                },
+                {
+                    "id": "d",
+                    "text": "The date the contact was created"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "If a deal doesn't have a 'Next Action Date,' it is effectively dead. This field drives the momentum of your sales process."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the '15-Minute' CRM routine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To spend as much time as possible in the CRM"
+                },
+                {
+                    "id": "b",
+                    "text": "To ensure data accuracy and momentum with minimal interruption to your primary work"
+                },
+                {
+                    "id": "c",
+                    "text": "To train your employees on how to use the tool"
+                },
+                {
+                    "id": "d",
+                    "text": "To find 15 new leads every day"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The routine ensures the CRM stays useful without becoming a full-time administrative job."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Which CRM tool have you chosen (or are you leaning toward) and why? How will you protect yourself from the 'Procrastibuilding' trap during your setup? Commit to specific days/times for your 15-minute daily routine.",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the tool choice matches their Course 3 context. Check for a specific 'Action Date' mention in their routine commitment. Push back if they describe a setup that sounds overly complex for their current stage."
+        }
+    ]
+}

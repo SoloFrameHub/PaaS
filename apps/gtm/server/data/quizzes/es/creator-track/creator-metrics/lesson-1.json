@@ -1,0 +1,79 @@
+{
+  "lessonId": "1",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz del Panel de Ingresos del Creador",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Un creador tiene 3,000 suscriptores activos de email y generó $12,000 USD (aproximadamente $210,000 MXN) en ingresos durante los últimos 90 días. ¿Cuál es su Ingreso Por Suscriptor (IPS) y cómo se compara con los puntos de referencia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "$4.00 USD/suscriptor/trimestre -- por debajo del promedio para la mayoría de los tipos de creadores"
+        },
+        {
+          "id": "b",
+          "text": "$4.00 USD/suscriptor/trimestre -- sólido, típico para creadores de cursos de precio medio o coaches"
+        },
+        {
+          "id": "c",
+          "text": "$0.40 USD/suscriptor/trimestre -- la lista está fría y necesita reactivación"
+        },
+        {
+          "id": "d",
+          "text": "$12.00 USD/suscriptor/trimestre -- excepcional, indicando un modelo de oferta de alto precio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "IPS = $12,000 / 3,000 = $4.00 USD por suscriptor por trimestre. Según los puntos de referencia, $3-10 USD/suscriptor/trimestre es sólido y típico para creadores con ofertas de precio medio ($500-2,000 USD o $9,000-35,000 MXN) o negocios de coaching."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Según el principio de 'La Única Métrica que Importa', ¿en qué métrica debería enfocarse un creador que gana $8,000 USD/mes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ingreso Por Seguidor (IPS) para maximizar el ROI en redes sociales"
+        },
+        {
+          "id": "b",
+          "text": "Ingreso Promedio Por Transacción (IPPT) para aumentar el valor del pedido"
+        },
+        {
+          "id": "c",
+          "text": "Costo Por Lead Calificado (CPLC) porque la oferta está validada y necesitan adquisición más barata"
+        },
+        {
+          "id": "d",
+          "text": "Tasa de Conversión de Ventas porque necesitan demostrar que pueden cerrar"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "En el rango de $5K-15K USD/mes, la lección recomienda enfocarse en el CPLC. En esta etapa, ya tienes una oferta que funciona (demostrado por los $8K/mes de ingresos), así que la prioridad es reducir el costo de encontrar compradores en lugar de optimizar la conversión o el valor de la transacción."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál de las siguientes es una métrica de vanidad que NO se conecta directamente con los ingresos o la salud del negocio?",
+      "options": [
+        { "id": "a", "text": "Ingreso Por Suscriptor" },
+        { "id": "b", "text": "Costo Por Lead Calificado" },
+        { "id": "c", "text": "Likes y comentarios de Instagram" },
+        { "id": "d", "text": "Tasa de Conversión de Ventas" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los likes y comentarios de Instagram son métricas de vanidad -- te hacen sentir bien pero no se conectan directamente con los ingresos. La lección señala específicamente que el engagement y la intención de compra son comportamientos diferentes, y que parte del contenido con mayor interacción atrae a los peores compradores."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Calcula tu Ingreso Por Suscriptor (IPS) actual usando tus números reales. ¿Cuál es la cifra y qué te dice sobre la alineación entre tu audiencia y tus ofertas? Si tu IPS está por debajo del punto de referencia para tu tipo de creador, ¿qué cambio específico podrías hacer para mejorarlo?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante aplicó correctamente la fórmula del IPS (ingresos de 90 días / suscriptores activos). Verifica si identificó mejoras realistas como limpieza de lista, alineación de oferta, segmentación o aumento de precios. Anima a tomar acciones específicas en lugar de planes vagos."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How long should you try using your sleep toolkit before seeking professional help after a major life change disrupts your sleep?",
+            "options": [
+                { "id": "opt1", "text": "1 week" },
+                { "id": "opt2", "text": "2-3 weeks" },
+                { "id": "opt3", "text": "2-3 months" },
+                { "id": "opt4", "text": "6 months" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "If a significant life change disrupts your sleep and the disruption has not resolved after 2-3 weeks of consistent use of your sleep toolkit, it is recommended to reach out to a healthcare provider."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which symptoms should prompt immediate consultation with a healthcare provider?",
+            "options": [
+                { "id": "opt1", "text": "Occasional difficulty falling asleep" },
+                { "id": "opt2", "text": "Loud snoring, gasping or choking during sleep, and observed pauses in breathing" },
+                { "id": "opt3", "text": "Preferring to sleep with the window open" },
+                { "id": "opt4", "text": "Occasional vivid dreams" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Loud snoring, gasping/choking, and observed pauses in breathing are symptoms of sleep apnea and should be discussed with a healthcare provider as soon as possible. Sleep apnea is treatable and often significantly improves both sleep quality and overall health."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What defines chronic insomnia according to the screening checklist?",
+            "options": [
+                { "id": "opt1", "text": "One week of poor sleep" },
+                { "id": "opt2", "text": "Difficulty sleeping occurring 3+ nights per week for 3+ months" },
+                { "id": "opt3", "text": "Occasionally waking up at night" },
+                { "id": "opt4", "text": "Needing more than 10 minutes to fall asleep" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic insomnia is defined as difficulty falling asleep, staying asleep, or getting restful sleep that occurs 3 or more nights per week and persists for 3 months or longer."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do after a late social night according to the stress test protocol?",
+            "options": [
+                { "id": "opt1", "text": "Sleep in as late as possible to make up for lost sleep" },
+                { "id": "opt2", "text": "Get up at your regular time the next morning to protect your circadian rhythm" },
+                { "id": "opt3", "text": "Take a sleeping pill the next night" },
+                { "id": "opt4", "text": "Skip your morning routine entirely" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "After a late social night, get up at your regular time the next morning. You may be tired, but this protects your circadian rhythm. You will naturally feel sleepier the following evening."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is seeking professional help for persistent sleep difficulties described as wisdom rather than failure?",
+            "options": [
+                { "id": "opt1", "text": "Because professionals are always right" },
+                { "id": "opt2", "text": "Because sleep difficulties often have multiple contributing factors and professional guidance offers additional tools that complement self-help strategies" },
+                { "id": "opt3", "text": "Because self-help never works" },
+                { "id": "opt4", "text": "Because it is required by law" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep difficulties at significant levels often have multiple contributing factors. Professional guidance can offer additional tools -- including evaluation for sleep disorders, medication management, and specialized therapy -- that complement everything learned in the course."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "12",
+    "title": "Your Journey Forward and Sleep Disorder Screening - Quiz"
+}

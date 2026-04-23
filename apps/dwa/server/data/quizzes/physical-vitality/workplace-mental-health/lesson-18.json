@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between voluntary and involuntary remote work in terms of mental health outcomes?",
+            "options": [
+                {"id": "opt1", "text": "All remote work has the same mental health effects"},
+                {"id": "opt2", "text": "Voluntary, employee-controlled remote work is associated with reduced stress; involuntary or unpredictable remote work is associated with worse mental health outcomes"},
+                {"id": "opt3", "text": "Remote work is always beneficial"},
+                {"id": "opt4", "text": "Remote work is always harmful"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Voluntary, employee-controlled remote work is associated with reduced stress and higher job satisfaction. Involuntary or unpredictable remote work (employer-controlled, variable schedules) is associated with worse mental health outcomes including exhaustion and emotional distress. Employee control is the key variable."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the primary mental health risks for remote workers?",
+            "options": [
+                {"id": "opt1", "text": "Remote work has no mental health risks"},
+                {"id": "opt2", "text": "Social isolation, technostress/videoconferencing fatigue, blurred work-life boundaries, and potential surveillance/loss of autonomy"},
+                {"id": "opt3", "text": "Remote workers never experience stress"},
+                {"id": "opt4", "text": "Only physical health is affected by remote work"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Remote work mental health risks include: social isolation and loneliness (lack of peer support), technostress and videoconferencing fatigue, blurred work-life boundaries (difficulty disconnecting), and surveillance/monitoring that removes autonomy. These risks are greatest when remote work is involuntary or poorly supported organizationally."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'compounded burden' faced by employed caregivers (parents, elder care providers)?",
+            "options": [
+                {"id": "opt1", "text": "Caregivers don't face unique workplace challenges"},
+                {"id": "opt2", "text": "Strain-based work-family conflict from juggling competing demands with insufficient organizational support, flexibility, and cultural acceptance"},
+                {"id": "opt3", "text": "Caregiving makes work easier"},
+                {"id": "opt4", "text": "Only parents face this burden"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Employed caregivers face strain-based work-family conflict: juggling work demands and caregiving responsibilities with insufficient organizational support (inflexible schedules, lack of paid leave), cultural penalties (motherhood penalty, caregiver bias), and chronic role overload. This mediates the relationship between caregiver burden and mental health outcomes."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What do early-career professionals (ages 22-28) report about workplace mental health?",
+            "options": [
+                {"id": "opt1", "text": "Early-career professionals have no mental health challenges"},
+                {"id": "opt2", "text": "51% report mental health needs, 45% say work environment impacts mental health, 53% experience weekly burnout"},
+                {"id": "opt3", "text": "Early-career burnout is a myth"},
+                {"id": "opt4", "text": "Only older workers experience burnout"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Early-career professionals (22-28) report high rates of: mental health needs (51%), work environment mental health impacts (45%), and weekly burnout (53%). Stressors include: job insecurity, lack of mentorship, unrealistic expectations, student debt, and unclear career paths. This is not 'paying your dues' — it's a structural mental health crisis in this population."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "18",
+    "title": "Remote Workers, Parents, and Early-Career Professionals - Quiz"
+}

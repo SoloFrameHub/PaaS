@@ -1,0 +1,79 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+/**
+ * Next.js Middleware — runs in Edge Runtime.
+ *
+ * IMPORTANT: Only use Web-API-compatible code here. Node.js modules
+ * (ioredis, pg, fs, etc.) will crash the Edge Runtime. Rate limiting
+ * is handled inside each route handler (Node.js runtime) instead.
+ */
+
+/**
+ * Add security headers to a response
+ */
+function addSecurityHeaders(response: NextResponse): NextResponse {
+    const isProd = process.env.NODE_ENV === 'production';
+
+    response.headers.set('X-DNS-Prefetch-Control', 'on');
+    response.headers.set('X-XSS-Protection', '1; mode=block');
+    response.headers.set('X-Frame-Options', 'SAMEORIGIN');
+    response.headers.set('X-Content-Type-Options', 'nosniff');
+    response.headers.set('Referrer-Policy', 'origin-when-cross-origin');
+
+    // HSTS only in production — Chrome caches it permanently and breaks localhost
+    if (isProd) {
+        response.headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
+    }
+
+    // Finding 11: CSP removed from proxy — next.config.js is the single source of truth
+    // Duplicate CSP definitions caused divergence (frame-src, connect-src, script-src, etc.)
+
+    return response;
+}
+
+export async function proxy(request: NextRequest) {
+    const { pathname } = request.nextUrl;
+    const sessionCookie = request.cookies.get('session')?.value;
+
+    // 1. CSRF Protection for Mutations (POST, PUT, DELETE, PATCH)
+    const mutations = ['POST', 'PUT', 'DELETE', 'PATCH'];
+    if (mutations.includes(request.method) && pathname.startsWith('/api/')) {
+        const origin = request.headers.get('origin');
+        const referer = request.headers.get('referer');
+        const host = request.headers.get('host');
+
+        // Compare hostnames only — avoids http/https mismatch when x-forwarded-proto
+        // is not forwarded by the reverse proxy (Dokploy/Traefik).
+        // Strip port from the host header too so localhost:3111 matches localhost.
+        const getHostname = (url: string) => { try { return new URL(url).hostname; } catch { return null; } };
+        const originHost = origin ? getHostname(origin) : null;
+        const refererHost = referer ? getHostname(referer) : null;
+        const hostName = host ? host.split(':')[0] : null;
+        const isSameOrigin = (originHost && originHost === hostName) || (!originHost && refererHost === hostName);
+
+        if (process.env.NODE_ENV === 'production' && !isSameOrigin) {
+            return new NextResponse(
+                JSON.stringify({ error: 'CSRF Protection: Invalid origin' }),
+                { status: 403, headers: { 'Content-Type': 'application/json' } }
+            );
+        }
+    }
+
+    // 2. Auth redirects — only for routes that don't handle their own auth.
+    //    Pages like /academy, /coach, /community already call getAuthContext()
+    //    and redirect themselves, so the middleware should NOT duplicate that.
+    //
+    //    Finding 21: Removed middlewareProtected array — referenced non-existent routes.
+    //    Actual onboarding steps: /onboarding/goals, /assessment, /welcome, /safety,
+    //    /about-you, /symptoms, /your-experience, /in-your-words.
+    //    All handle their own auth via getAuthContext(), so middleware protection is redundant.
+
+    return addSecurityHeaders(NextResponse.next());
+}
+
+export const config = {
+    matcher: [
+        '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    ],
+};

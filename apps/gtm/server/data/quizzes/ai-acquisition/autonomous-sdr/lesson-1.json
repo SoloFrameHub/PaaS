@@ -1,0 +1,78 @@
+{
+  "lessonId": "1",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "How AI SDR Platforms Actually Work",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the five stages of the AI SDR pipeline?",
+      "options": [
+        { "id": "a", "text": "Research, Write, Send, Track, Close" },
+        {
+          "id": "b",
+          "text": "Ingestion, Research, Sequencing, Sending, Reply Handling"
+        },
+        {
+          "id": "c",
+          "text": "Discovery, Enrichment, Scoring, Personalization, Follow-up"
+        },
+        { "id": "d", "text": "Configure, Launch, Monitor, Optimize, Scale" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every AI SDR platform follows the same five-stage pipeline: Ingestion (ICP and data sources), Research (enrichment and personalization context), Sequencing (email drafting and scheduling), Sending (delivery and warmup), and Reply Handling (classification and response). Understanding these stages is key to successful deployment."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'Garbage In, Garbage Out' rule for AI SDR platforms?",
+      "options": [
+        { "id": "a", "text": "AI SDRs produce garbage emails" },
+        {
+          "id": "b",
+          "text": "If your ICP is vague (e.g., 'small businesses'), the AI will target millions of irrelevant prospects; a tight ICP yields 200-500 highly relevant ones"
+        },
+        { "id": "c", "text": "You need to clean your CRM before using AI" },
+        { "id": "d", "text": "AI SDR data is always unreliable" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "AI SDR platforms amplify your targeting quality. A vague ICP like 'small businesses' produces millions of unfocused results. A tight ICP like 'B2B SaaS founders doing $10K-50K MRR in fintech' yields 200-500 highly relevant prospects. You need a proven ICP before activating an AI SDR."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the lesson, what happened during Sarah's first week using an AI SDR platform?",
+      "options": [
+        { "id": "a", "text": "She booked 20 meetings immediately" },
+        {
+          "id": "b",
+          "text": "500 emails sent, 47 bounced, 3 unsubscribe requests, 1 person who no longer worked at the company listed"
+        },
+        { "id": "c", "text": "The platform crashed and she got a refund" },
+        { "id": "d", "text": "Every prospect responded positively" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's first week showed the reality of AI SDR platforms: 500 emails sent with 47 bounces, 3 removal requests, and 1 person saying they didn't work there anymore. Week 2 required 12 hours of reconfiguration. The lesson: AI SDRs aren't 'set it and forget it' — they require significant calibration."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You need a proven ICP and validated messaging before turning on an AI SDR platform — otherwise, start with manual outreach first.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson emphasizes that AI SDR platforms amplify whatever you feed them. If you're still figuring out who to target or what messaging works, manual outreach (Course 21) is the better starting point. AI SDRs execute playbooks — they don't create them."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe the five stages of the AI SDR pipeline and identify which stage would be the biggest risk for your business if it malfunctioned. What safeguards would you put in place?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response correctly identifies all five pipeline stages (Ingestion, Research, Sequencing, Sending, Reply Handling) and provides a thoughtful risk assessment. Look for specific safeguards tied to the identified risk, such as human review gates, exclusion lists, or send limits."
+    }
+  ]
+}

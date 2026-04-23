@@ -1,0 +1,8 @@
+# Language redirects
+RewriteEngine On
+
+# Redirect /es to /es/index.html
+RewriteRule ^es/?$ /es/index.html [L,R=301]
+
+# If accessing /es/ without trailing slash, redirect to /es/
+RewriteRule ^es$ /es/ [L,R=301]

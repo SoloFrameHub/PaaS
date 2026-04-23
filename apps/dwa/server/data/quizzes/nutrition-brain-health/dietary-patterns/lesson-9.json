@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the Lane et al. 2024 BMJ umbrella review, what is the approximate increase in depression risk associated with the Western dietary pattern?",
+            "options": [
+                { "id": "opt1", "text": "10% higher risk" },
+                { "id": "opt2", "text": "25% higher risk" },
+                { "id": "opt3", "text": "50% higher risk" },
+                { "id": "opt4", "text": "80% higher risk" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Western dietary pattern was consistently associated with approximately 50% higher risk of depression across pooled studies. This was rated as 'convincing' evidence (the highest certainty level) and was independent of socioeconomic status, physical activity, BMI, and other lifestyle factors."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the seven shared principles that traditional dietary patterns across all cultures have in common?",
+            "options": [
+                { "id": "opt1", "text": "Low calorie, low fat, low carb, high protein, supplements, fasting, and organic foods" },
+                { "id": "opt2", "text": "Whole food dominance, high plant diversity, fermented foods, omega-3 rich proteins, abundant fiber, communal eating, and absence of ultra-processed foods" },
+                { "id": "opt3", "text": "Raw foods only, intermittent fasting, juice cleanses, superfoods, detox teas, supplements, and organic certification" },
+                { "id": "opt4", "text": "Meat-heavy, grain-free, dairy-free, sugar-free, low fiber, individual eating, and processed supplements" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Despite enormous cultural differences, traditional dietary patterns worldwide share seven protective principles: whole food dominance, high plant diversity, fermented foods, omega-3 rich protein sources, abundant fiber, communal eating, and the absence of ultra-processed foods. These shared features explain why diverse traditional diets all protect mental health."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does the omega-6 to omega-3 ratio differ between the Western diet and traditional diets, and why does this matter?",
+            "options": [
+                { "id": "opt1", "text": "Western diet: 1:1; Traditional: 15:1 — traditional diets have too many omega-3s" },
+                { "id": "opt2", "text": "Both diets have similar ratios of about 4:1" },
+                { "id": "opt3", "text": "Western diet: 15-20:1; Traditional: 1-4:1 — the Western diet's excess omega-6s promote inflammation" },
+                { "id": "opt4", "text": "The ratio does not affect mental health in any meaningful way" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The omega-6 to omega-3 ratio in traditional diets is typically 1:1 to 4:1, compared to 15:1 or higher in the Western diet. This imbalance in the Western diet promotes chronic inflammation — a key driver of depression and anxiety. Traditional diets maintain an anti-inflammatory balance through fish, pasture-raised animals, or omega-3 rich plant sources."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does the lesson emphasize that the Mediterranean diet's strong research base reflects research infrastructure rather than unique properties?",
+            "options": [
+                { "id": "opt1", "text": "Because the Mediterranean diet is actually less effective than other traditional diets" },
+                { "id": "opt2", "text": "Because traditional Asian, African, and Latin American patterns show similar protective associations — the Mediterranean diet simply received more research funding" },
+                { "id": "opt3", "text": "Because the Mediterranean diet only works in one country" },
+                { "id": "opt4", "text": "Because researchers falsified the Mediterranean diet studies" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Chowdhury et al. 2024 review confirmed that traditional patterns from Asia, Africa, and Latin America show similar protective associations when they maintain their traditional characteristics. The Mediterranean diet has the most research because of research funding and academic infrastructure in Western institutions, not because of unique properties. The shared principles are universally protective."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How much daily fiber does the average Western diet provide compared to traditional diets?",
+            "options": [
+                { "id": "opt1", "text": "Western: 50 grams; Traditional: 15 grams" },
+                { "id": "opt2", "text": "Western: 15 grams; Traditional: 50-100+ grams" },
+                { "id": "opt3", "text": "Both provide about 30 grams per day" },
+                { "id": "opt4", "text": "Western: 100 grams; Traditional: 25 grams" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Western diet provides approximately 15 grams of fiber daily, while traditional diets provide an estimated 50-100+ grams per day in some populations (hunter-gatherer populations). This enormous gap — along with the differences in plant diversity (5-10 species/week vs. 20-60+) — explains much of the difference in microbiome diversity and mental health outcomes."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "9",
+    "title": "Western vs Traditional Diets: A Global Comparison - Quiz"
+}

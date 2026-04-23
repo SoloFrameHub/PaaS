@@ -1,0 +1,142 @@
+{
+    "lessonId": "9",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Personalization at Scale Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the '80/20 Rule' of cold email personalization?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spend 80% of your time on the top 20% of your prospects"
+                },
+                {
+                    "id": "b",
+                    "text": "Personalize only 20% of the emails you send"
+                },
+                {
+                    "id": "c",
+                    "text": "Only 20% of people like personalization"
+                },
+                {
+                    "id": "d",
+                    "text": "80% of personalization should be done by AI"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "You should protect your energy and time by investing the most research into 'Whale' prospects, while using efficient segmentation for the rest."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'Micro-Segmentation' often more effective than 'Individual Personalization' for scaling?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Individual personalization is too difficult for AI"
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to be highly RELEVANT to a group without needing to research 100 individual LinkedIn profiles"
+                },
+                {
+                    "id": "c",
+                    "text": "Micro-segments get past spam filters better"
+                },
+                {
+                    "id": "d",
+                    "text": "Individuals don't like reading their names in emails"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Relevancy (speaking to a specific problem for a specific group) is often more valuable than knowing what college someone went to. It scales much more efficiently."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these is an example of a 'Level 3' (Trigger) personalization?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Hi [First Name]'"
+                },
+                {
+                    "id": "b",
+                    "text": "'I see you are in the [Industry] space'"
+                },
+                {
+                    "id": "c",
+                    "text": "'I noticed [Company] is hiring for [Role] while simultaneously launching [Project]'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Loved your 2021 post about [Individual Topic]'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Trigger-based personalization uses business events (hiring, funding, launches) to signal why your outreach is timely and relevant *right now*."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are 'Dynamic Variables' beyond name and company useful for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Making your subject line shorter"
+                },
+                {
+                    "id": "b",
+                    "text": "Pre-populating specific business data (like tech stack or competitor names) into your sequence"
+                },
+                {
+                    "id": "c",
+                    "text": "Tracking who opened your email"
+                },
+                {
+                    "id": "d",
+                    "text": "Translating the email into different languages"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Custom variables allow you to build body copy that feels unique to each recipient's situational context without hand-writing every single email."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'AI Assistant Protocol' for personalization?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Let the AI send all your emails automatically"
+                },
+                {
+                    "id": "b",
+                    "text": "Never use AI for any part of the process"
+                },
+                {
+                    "id": "c",
+                    "text": "Use AI to research and draft first lines, but always human-audit and rephrase for quality"
+                },
+                {
+                    "id": "d",
+                    "text": "Only use AI for the subject lines"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "AI is great at data collection but often poor at 'tone.' You must be the editor to ensure your outreach doesn't have the 'AI Stench.'"
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Define a 'Micro-Segment' of 20 leads for your business. What is the one 'Niche Truth' (problem or goal) that ALL 20 of these people share? How would you use a dynamic variable to make them feel like you wrote the email specifically for them?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the segment is too broad (e.g., 'all business owners'). It should be specific (e.g., 'solo SaaS founders using Next.js'). Look for a clear connection between the niche truth and the variable."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "3",
+    "lessonTitle": "Community Mapping",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which of these is considered a 'Tier 1' (High Quality) community for lead generation because of its high trust and low noise?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Public Twitter/X threads."
+                },
+                {
+                    "id": "b",
+                    "text": "Niche, high-barrier-to-entry Slack or Circle groups."
+                },
+                {
+                    "id": "c",
+                    "text": "Product Hunt launch feeds."
+                },
+                {
+                    "id": "d",
+                    "text": "Facebook groups with over 100,000 members."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Smaller, private, or gated communities often have a much higher concentration of serious practitioners and decision-makers compared to large public platforms.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary function of the tool 'GummySearch' in the mapping process?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find discounted ad space on Reddit."
+                },
+                {
+                    "id": "b",
+                    "text": "To discover relevant subreddits by topic and track audience sentiment."
+                },
+                {
+                    "id": "c",
+                    "text": "To automatically post your product link to 100 forums."
+                },
+                {
+                    "id": "d",
+                    "text": "To design banners for your community profile."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "GummySearch is a specialized Reddit research tool that helps founders find where their ICP is talking and what problems they are discussing.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Relevance' weighted more heavily than 'Size' in the prioritization framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because smaller communities are easier to manage."
+                },
+                {
+                    "id": "b",
+                    "text": "Because a small group of perfect ICPs is more likely to convert than a large group of generic viewers."
+                },
+                {
+                    "id": "c",
+                    "text": "Size is actually more important for viral reach."
+                },
+                {
+                    "id": "d",
+                    "text": "Relevant communities pay you more for participating."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Acquisition is about efficiency. A highly relevant community with 500 members can generate more business than a low-relevance community with 500,000.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Cultural Immersion' (Lurking) period?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To wait for a moderator role to open up."
+                },
+                {
+                    "id": "b",
+                    "text": "To understand the community's unique language, trust signals, and 'Spam Immune System' before participating."
+                },
+                {
+                    "id": "c",
+                    "text": "To find people to report for breaking rules."
+                },
+                {
+                    "id": "d",
+                    "text": "To gather email addresses of members secretly."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Every community has its own 'Vibe.' If you barge in with the wrong tone, you will be ignored or banned. Immersion ensures your first contribution lands correctly.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which free tool allows you to receive email alerts when your brand or competitor is mentioned on Reddit?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Google Translate"
+                },
+                {
+                    "id": "b",
+                    "text": "F5Bot"
+                },
+                {
+                    "id": "c",
+                    "text": "Reddit Premium"
+                },
+                {
+                    "id": "d",
+                    "text": "Slack Connect"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "F5Bot is a critical monitoring tool for solo founders, allowing them to respond to relevant conversations in real-time without manual scrolling.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Perform a simple Google Site Search right now for your ICP's #1 pain point (e.g., `site:reddit.com 'cold email deliverability'`). What is the first subreddit that appears? Look at the most recent comment—does it sound like a 'Professional Help' request or a 'General Rant'? How would you categorize the 'Intent' of that specific community?",
+            "promptHints": [
+                "Include the specific search query you used.",
+                "Contrast the 'Size' of the sub with the 'Relevance' of the discussion.",
+                "Reflect on whether you could provide a 'Practitioner Tip' to that specific user."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "2"
+        ],
+        "unlocks": [
+            "4"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Community Mapping - Quiz"
+}

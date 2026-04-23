@@ -1,0 +1,94 @@
+{
+  "lessonId": "6",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "The Automation Failure Matrix: What to Never Automate",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the four quadrants of the Automation Failure Matrix?",
+      "options": [
+        { "id": "a", "text": "Easy, Medium, Hard, Impossible" },
+        {
+          "id": "b",
+          "text": "Q1: Automate Now, Q2: Automate + Human Gate, Q3: Keep Human, Q4: Eliminate"
+        },
+        { "id": "c", "text": "Research, Draft, Review, Send" },
+        { "id": "d", "text": "Free, Cheap, Expensive, Enterprise" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The matrix plots Risk of Failure (y-axis) against Time Savings (x-axis) to create four quadrants: Q1 Automate Now (low risk, high savings), Q2 Automate + Human Gate (high risk, high savings), Q3 Keep Human (high risk, low savings), and Q4 Eliminate (low risk, low savings)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the maximum safe number of LinkedIn connection requests per day to avoid account restrictions?",
+      "options": [
+        { "id": "a", "text": "200 per day" },
+        { "id": "b", "text": "100 per day" },
+        { "id": "c", "text": "50-75 per day" },
+        { "id": "d", "text": "500 per day" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "LinkedIn's safe limit for connection requests is approximately 50-75 per day for personal accounts. The lesson warns that automating 200+ requests per day will trigger LinkedIn's detection algorithms within 24-48 hours, risking permanent account ban and loss of all connections and pipeline."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the Google/Yahoo spam complaint rate threshold that will get your domain blocked?",
+      "options": [
+        { "id": "a", "text": "1% complaint rate" },
+        { "id": "b", "text": "0.5% complaint rate" },
+        { "id": "c", "text": "0.3% complaint rate" },
+        { "id": "d", "text": "5% complaint rate" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Google and Yahoo require spam complaint rates below 0.1% (target) and will block domains at 0.3%. If you send 1,000 emails and just 3 people mark you as spam, your domain can be blocked. This makes high-volume automated sending especially risky."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Discovery calls with high-value prospects should be automated using AI chatbots to save time.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Discovery calls belong in Q3 (Keep Human) because they require nuance, rapport, and real-time pivots. Automating them makes prospects feel processed and tanks close rates. The lesson emphasizes that high-stakes relationship moments should never be automated."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which three questions should you ask before automating any acquisition task (the HITL framework)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How much does it cost? How fast is it? Does it scale?"
+        },
+        {
+          "id": "b",
+          "text": "What's the worst case? Can I detect errors before the prospect sees them? What's the recovery cost?"
+        },
+        {
+          "id": "c",
+          "text": "Is there an API? Does it integrate with my CRM? Is there a free tier?"
+        },
+        {
+          "id": "d",
+          "text": "Will it save time? Is it easy to set up? Do competitors use it?"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Human-in-the-Loop (HITL) framework asks: (1) Worst case if the automation makes a mistake? (2) Can I detect the error before the prospect sees it? (3) What's the cost to recover from the mistake? If worst case is permanent damage, keep it human. If recoverable and detectable, automate with a gate."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Map three of your current acquisition tasks to the Automation Failure Matrix quadrants. For each task, explain which quadrant it belongs in and why, including the specific risk and time savings involved.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response correctly applies the 2x2 matrix framework (Risk vs Time Savings) to three real tasks. Look for accurate quadrant placement with reasoning about both the risk dimension (what could go wrong) and the time savings dimension (hours recovered)."
+    }
+  ]
+}

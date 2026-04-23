@@ -1,0 +1,101 @@
+{
+    "lessonId": "2",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "The Lead Catcher",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most important reason to respond to leads within 5 minutes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It looks professional"
+                },
+                {
+                    "id": "b",
+                    "text": "Research shows you're 100x more likely to connect than if you wait an hour"
+                },
+                {
+                    "id": "c",
+                    "text": "Leads get deleted after 10 minutes"
+                },
+                {
+                    "id": "d",
+                    "text": "Your CRM requires it"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "InsideSales.com research shows responding within 5 minutes makes you 100x more likely to connect versus waiting an hour. Speed is the #1 conversion lever the Lead Catcher enables."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which CRM action should you use to prevent duplicate contacts?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Create Contact"
+                },
+                {
+                    "id": "b",
+                    "text": "Create or Update Contact"
+                },
+                {
+                    "id": "c",
+                    "text": "Find Contact"
+                },
+                {
+                    "id": "d",
+                    "text": "Delete and Recreate Contact"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Always use 'Create or Update Contact' (or 'Upsert'). It checks if a contact with that email already exists and updates it instead of creating a duplicate. This is essential for data quality."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "The Lead Catcher should auto-send a response email to the prospect immediately.",
+            "correctAnswer": "b",
+            "explanation": "False. The Lead Catcher notifies YOU so you can respond personally. Auto-responses often feel robotic and reduce conversion. The human response should be personalized — the automation just makes sure you respond within minutes.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which three metadata fields must be set automatically on every new lead?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Name, Email, Phone"
+                },
+                {
+                    "id": "b",
+                    "text": "Lead Source, Pipeline Stage, Date Entered"
+                },
+                {
+                    "id": "c",
+                    "text": "Lead Source, Deal Size, Close Date"
+                },
+                {
+                    "id": "d",
+                    "text": "Company, Role, LinkedIn URL"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Lead Source (for attribution), Pipeline Stage (for funnel tracking), and Date Entered (for velocity tracking) must be set automatically. These feed your Course 41 analytics dashboards."
+        }
+    ]
+}

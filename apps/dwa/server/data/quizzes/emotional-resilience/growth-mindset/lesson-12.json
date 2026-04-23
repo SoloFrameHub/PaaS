@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is growth mindset of anxiety according to Schroder and colleagues' research?",
+            "options": [
+                {"id": "opt1", "text": "Believing anxiety is good and you should never try to reduce it"},
+                {"id": "opt2", "text": "Believing anxiety can be managed, reduced, and learned from (vs. fixed belief that anxiety is an immutable trait)"},
+                {"id": "opt3", "text": "Eliminating all anxiety through positive thinking"},
+                {"id": "opt4", "text": "Believing anxiety doesn't exist"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Growth mindset of anxiety is the belief that anxiety is changeable—you can learn to manage it better and reduce its intensity and impact. This contrasts with fixed anxiety mindset ('I'm just an anxious person; this is who I am'). Schroder et al. (2015) found this domain-specific mindset buffers the link between stressful life events and psychological distress, predicting weaker associations with PTSD, depression, and maladaptive coping. It's not about eliminating anxiety or believing it's good—it's about believing it's manageable and you can develop coping capacity."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does growth mindset of anxiety buffer stress-related distress?",
+            "options": [
+                {"id": "opt1", "text": "By eliminating all stressful life events"},
+                {"id": "opt2", "text": "By weakening the correlation between stressful events and psychological distress—when you believe anxiety is manageable, stress doesn't automatically translate to chronic distress"},
+                {"id": "opt3", "text": "By making you immune to anxiety"},
+                {"id": "opt4", "text": "It doesn't—anxiety mindset has no relationship to stress outcomes"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows growth mindset of anxiety moderates (buffers) the stress-distress relationship. When you believe anxiety is manageable (growth mindset), experiencing stressful life events doesn't automatically lead to chronic psychological distress. You engage coping resources (approach, reappraisal, help-seeking) rather than avoid. This doesn't eliminate stress or anxiety—it changes how you respond to them. Cross-sectional and longitudinal studies confirm anxiety mindset weakens the link between stress exposure and negative mental health outcomes."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the behavioral consequence of a fixed anxiety mindset according to the lesson?",
+            "options": [
+                {"id": "opt1", "text": "Approach coping and graduated exposure to anxiety-provoking situations"},
+                {"id": "opt2", "text": "Avoidance of anxiety-provoking situations, which provides short-term relief but long-term maintains and strengthens anxiety"},
+                {"id": "opt3", "text": "Increased self-efficacy for managing anxiety"},
+                {"id": "opt4", "text": "No behavioral consequences—mindset doesn't affect behavior"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Fixed anxiety mindset ('I can't handle anxiety; anxious situations are threats I must avoid') leads to avoidance coping: avoiding situations that trigger anxiety, using safety behaviors, narrowing life around anxiety management. This produces immediate relief (negative reinforcement) but long-term consequences: anxiety strengthens (avoidance prevents learning that anxiety is tolerable), life shrinks, and self-efficacy for managing anxiety never builds. Research shows avoidance maintains and exacerbates anxiety disorders. Fixed anxiety mindset predicts greater avoidance."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does the lesson emphasize that anxiety mindset is more relevant for mental health than intelligence mindset?",
+            "options": [
+                {"id": "opt1", "text": "Intelligence mindset has no evidence"},
+                {"id": "opt2", "text": "Because mindsets are domain-specific—anxiety mindset most strongly predicts anxiety outcomes, which directly affect psychological wellbeing"},
+                {"id": "opt3", "text": "Because everyone has high intelligence mindset already"},
+                {"id": "opt4", "text": "Intelligence mindset is only for students"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Domain specificity principle (Lesson 3): mindsets most strongly predict outcomes in their specific domain. Anxiety mindset predicts anxiety-related outcomes (distress, PTSD, coping strategies); intelligence mindset predicts academic/learning outcomes. For adult psychological wellbeing, developing growth mindset specifically about anxiety and emotion matters more than general 'growth mindset' or intelligence mindset. The lesson emphasizes: if your goal is mental health and stress management, focus on domain-specific mindsets that actually affect those outcomes."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Assess your current anxiety mindset: Do you think of anxiety as a fixed trait you 'have' or as a changeable experience you can learn to manage? When anxiety arises, do you primarily avoid (fixed mindset pattern) or approach with coping strategies (growth mindset pattern)? What would it look like to develop a more growth-oriented anxiety mindset?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "12",
+    "title": "Growth Mindset of Anxiety - Quiz"
+}

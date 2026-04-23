@@ -1,0 +1,66 @@
+{
+  "id": "ocd-self-check",
+  "title": "OCD Symptoms Self-Check",
+  "description": "A brief educational self-check to help you reflect on experiences that are common in OCD. This is NOT a diagnostic tool — only a licensed mental health professional can diagnose OCD.",
+  "instructions": "For each item below, select the answer that best describes your experience over the past month.",
+  "timeframe": "past month",
+  "questions": [
+    { "id": "q1", "text": "I experience unwanted, repetitive thoughts, images, or urges that feel intrusive and hard to control." },
+    { "id": "q2", "text": "I feel driven to repeat certain behaviors (e.g., washing, checking, arranging, counting) to reduce anxiety or prevent something bad." },
+    { "id": "q3", "text": "These thoughts or rituals take a significant amount of my time (more than 1 hour per day)." },
+    { "id": "q4", "text": "I feel intense guilt, disgust, or fear about thoughts that go against my values (e.g., thoughts about harm, sex, or religion)." },
+    { "id": "q5", "text": "I perform mental rituals (reviewing, counting, analyzing, neutralizing thoughts) to manage my distress." },
+    { "id": "q6", "text": "I avoid certain places, people, objects, or situations because they trigger intrusive thoughts or the urge to ritualize." },
+    { "id": "q7", "text": "I seek reassurance from others about my fears or doubts (e.g., asking 'Did I lock the door?' 'Am I a bad person?')." },
+    { "id": "q8", "text": "My intrusive thoughts or rituals significantly interfere with my daily life, work, relationships, or wellbeing." }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3,
+    "labels": {
+      "0": "Never",
+      "1": "Sometimes",
+      "2": "Often",
+      "3": "Almost always"
+    }
+  },
+  "scoring": {
+    "maxScore": 24,
+    "bands": [
+      {
+        "min": 0,
+        "max": 5,
+        "severity": "minimal",
+        "label": "Low OCD Indicators",
+        "description": "Your answers do not strongly suggest OCD patterns. However, only a professional evaluation can provide clarity. If you have concerns, speaking with a clinician familiar with OCD is always worthwhile.",
+        "color": "green"
+      },
+      {
+        "min": 6,
+        "max": 11,
+        "severity": "mild",
+        "label": "Some OCD-Like Experiences",
+        "description": "Your answers suggest some experiences that are common in OCD. The psychoeducation in this course can help you understand these patterns. Consider seeking an evaluation from a clinician experienced with OCD.",
+        "color": "yellow"
+      },
+      {
+        "min": 12,
+        "max": 17,
+        "severity": "moderate",
+        "label": "Moderate OCD Indicators",
+        "description": "Your answers suggest experiences that are frequently seen in OCD and may be significantly affecting your life. We recommend seeking an evaluation from a therapist trained in ERP (Exposure and Response Prevention).",
+        "color": "orange"
+      },
+      {
+        "min": 18,
+        "max": 24,
+        "severity": "severe",
+        "label": "Strong OCD Indicators",
+        "description": "Your answers suggest experiences that are very common in OCD and appear to be causing significant distress or interference. We strongly recommend seeking an evaluation from an OCD specialist. Effective treatment (ERP) exists and can help.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "Overall, how much do intrusive thoughts, rituals, or avoidance interfere with your ability to function in daily life?"
+  },
+  "disclaimer": "This self-check is for education and self-reflection only. It does NOT provide a diagnosis. OCD can only be diagnosed by a licensed mental health professional. If you are in crisis or need immediate help, please call or text 988 (Suicide & Crisis Lifeline)."
+}

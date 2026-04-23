@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Challenge Content Architecture Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core principle of the 'teach vs sell' framework for challenge content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Withhold all valuable content and only give teasers during the free challenge"
+                },
+                {
+                    "id": "b",
+                    "text": "Give away the 'what and why' (strategy) freely, and save the 'how' (implementation) for the paid offer"
+                },
+                {
+                    "id": "c",
+                    "text": "Teach everything you know so participants feel indebted and buy out of reciprocity"
+                },
+                {
+                    "id": "d",
+                    "text": "Alternate between free content days and paid-offer pitch days"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The teach-vs-sell framework distinguishes between strategic content (what and why) which should be given freely, and implementation content (the how -- step-by-step processes, templates, scripts, feedback) which belongs in the paid offer. People will pay for implementation even after receiving the strategy for free, just as the fitness industry thrives despite everyone knowing the basics of healthy living."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the gap strategy, what type of gap does Day 4 content create?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "An awareness gap -- participants realize they have a problem they didn't understand before"
+                },
+                {
+                    "id": "b",
+                    "text": "A proof gap -- participants see case studies but lack the support system those successful people had"
+                },
+                {
+                    "id": "c",
+                    "text": "A capability gap -- participants create a draft but recognize it needs expert feedback to be truly effective"
+                },
+                {
+                    "id": "d",
+                    "text": "A momentum gap -- participants have energy but are about to lose it when the challenge ends"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Day 4 creates a capability gap. Participants take the framework and proof from earlier days and create something real (a draft, plan, or system), but they recognize that their first version needs expert feedback and refinement to work in the real world. This positions the paid offer as the path to finishing what they started."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended structure for the first 15 minutes of the Day 5 pitch session?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Jump directly into the offer stack to maximize selling time"
+                },
+                {
+                    "id": "b",
+                    "text": "Teach one final lesson to give participants maximum value before the pitch"
+                },
+                {
+                    "id": "c",
+                    "text": "Run a celebration round -- highlight community wins, share participant testimonials, and have 2-3 people share their experience live"
+                },
+                {
+                    "id": "d",
+                    "text": "Run a poll to see how many people are interested in the paid offer"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Day 5 session opens with a 15-minute celebration round that highlights wins from the community, shares participant testimonials, and features 2-3 live shares. This creates an emotional high that primes buying behavior, provides social proof from people in the room, and reminds participants of their own progress."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Map the 5-day gap architecture for your challenge. For each day (1 through 5), describe: (a) the core teaching topic, (b) what specific gap the content creates, and (c) how your paid offer bridges that gap. Ensure each day's gap is distinct and progressive.",
+            "minLength": 100,
+            "aiPrompt": "The student should map all 5 days with distinct gaps that follow the progression: awareness gap, framework gap, proof gap, capability gap, momentum gap. Each day should have a clear teaching topic, a specific gap it creates, and a connection to the paid offer. Evaluate whether the gaps are genuinely distinct (not repetitive), whether they build progressively, and whether the connection to the paid offer is honest rather than manufactured."
+        }
+    ]
+}

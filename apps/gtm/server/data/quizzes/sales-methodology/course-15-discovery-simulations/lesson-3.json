@@ -1,0 +1,153 @@
+{
+    "lessonId": "3",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 3: Comprehensive Discovery with Cooperative Prospects",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What does the PID model stand for in the context of this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Product, Implementation, Distribution"
+                },
+                {
+                    "id": "b",
+                    "text": "Pain, Impact, Decision"
+                },
+                {
+                    "id": "c",
+                    "text": "Pricing, Inventory, Delivery"
+                },
+                {
+                    "id": "d",
+                    "text": "People, Infrastructure, Data"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "PID is a simplified qualification model focusing on the root cause (Pain), the cost of the problem (Impact), and the buying journey (Decision)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What is the primary difference between BANT and PID according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "BANT is for small businesses, PID is for enterprises."
+                },
+                {
+                    "id": "b",
+                    "text": "BANT tells you if someone *can* buy; PID helps you understand if they *will* buy and how to sell to them."
+                },
+                {
+                    "id": "c",
+                    "text": "BANT focus on psychology, PID focuses on finance."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; they are interchangeable."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "PID provides a deeper diagnosis (the 'MRI') compared to the basic qualification gates (the 'X-ray') of BANT."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "When discovering 'Impact' with an analytical (High C) prospect, what is the best way to drive urgency?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using emotional storytelling about your own business journey."
+                },
+                {
+                    "id": "b",
+                    "text": "Offering a limited-time discount that expires in 24 hours."
+                },
+                {
+                    "id": "c",
+                    "text": "Asking them to wait for a 50-page whitepaper."
+                },
+                {
+                    "id": "d",
+                    "text": "Guiding them to quantify the specific cost (in dollars or hours) of their current problem."
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "High C personalities are driven by logic and data. Helping them calculate the specific business impact makes the case for change undeniable."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of these is a key 'Decision Mapping' question?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Do you think you're going to buy this month?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'Besides yourself, who else needs to be comfortable with this solution for it to move forward?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'Can you give me your credit card number now?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'How many people work at your company?'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Mapping the stakeholders and their comfort levels is essential for understanding the actual decision process."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "How should you adapt your communication style for a High C (Conscientious) prospect?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Be fast-paced and skip the details."
+                },
+                {
+                    "id": "b",
+                    "text": "Use lots of high-energy exclamation points in your follow-up."
+                },
+                {
+                    "id": "c",
+                    "text": "Provide specificity, be patient with their thinking time, and follow a logical progression."
+                },
+                {
+                    "id": "d",
+                    "text": "Don't let them talk; just keep pitching until they agree."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High C personalities value detail, logic, and the space to process information before making a decision."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Take a common problem your business solves (Pain). Work through the 'MRI' process: 1) What is the specific Root Cause of that pain? 2) How would you help a prospect calculate the 'Impact' (dollars or hours) of that pain? 3) What are two 'Decision Criteria' a High C prospect would likely have when evaluating your solution?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's ability to move from surface pain to root cause. Check if their 'Impact' calculation logic is sound. Review their 'Decision Criteria' for alignment with the High C personality (e.g., security, compliance, technical documentation)."
+        }
+    ]
+}

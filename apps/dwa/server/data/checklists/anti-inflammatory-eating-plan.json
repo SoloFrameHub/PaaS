@@ -1,0 +1,100 @@
+{
+  "id": "anti-inflammatory-eating-plan",
+  "title": "Anti-Inflammatory Eating Action Plan",
+  "description": "Build your personalized anti-inflammatory dietary pattern based on the evidence from this course. Research shows each unit decrease in the Dietary Inflammatory Index is associated with reduced stress, anxiety, and depression scores.",
+  "instructions": "Review each evidence-based strategy. Check off the habits you currently follow, then focus on adding unchecked items gradually. Customize your plan with the text fields.",
+  "items": [
+    {
+      "id": "med-diet",
+      "label": "Follow a Mediterranean-style eating pattern (whole grains, vegetables, fruits, legumes, olive oil, fish)",
+      "type": "checkbox",
+      "category": "Dietary Pattern"
+    },
+    {
+      "id": "reduce-upf",
+      "label": "Reduce ultra-processed food intake (NOVA classification: limit Group 4 foods)",
+      "type": "checkbox",
+      "category": "Dietary Pattern"
+    },
+    {
+      "id": "sweetener-awareness",
+      "label": "Minimize artificial sweeteners (Nurses' Health Study linked these to depression risk)",
+      "type": "checkbox",
+      "category": "Dietary Pattern"
+    },
+    {
+      "id": "home-cooking",
+      "label": "Cook meals at home using whole ingredients at least 5 days per week",
+      "type": "checkbox",
+      "category": "Dietary Pattern"
+    },
+    {
+      "id": "omega3-foods",
+      "label": "Eat omega-3 rich foods (fatty fish 2x/week, walnuts, flaxseeds)",
+      "type": "checkbox",
+      "category": "Anti-Inflammatory Foods"
+    },
+    {
+      "id": "polyphenols",
+      "label": "Include polyphenol-rich foods daily (berries, dark chocolate, green tea, olive oil)",
+      "type": "checkbox",
+      "category": "Anti-Inflammatory Foods"
+    },
+    {
+      "id": "leafy-greens",
+      "label": "Eat leafy greens daily (spinach, kale, arugula — rich in folate and antioxidants)",
+      "type": "checkbox",
+      "category": "Anti-Inflammatory Foods"
+    },
+    {
+      "id": "fermented",
+      "label": "Include fermented foods for probiotic support (yogurt, kefir, sauerkraut, kimchi)",
+      "type": "checkbox",
+      "category": "Gut Health"
+    },
+    {
+      "id": "prebiotic-fiber",
+      "label": "Eat prebiotic-rich foods (garlic, onions, leeks, asparagus, bananas, oats)",
+      "type": "checkbox",
+      "category": "Gut Health"
+    },
+    {
+      "id": "plant-variety",
+      "label": "Aim for 30+ different plant foods per week for microbiome diversity",
+      "type": "checkbox",
+      "category": "Gut Health"
+    },
+    {
+      "id": "limit-inflammatory",
+      "label": "Limit pro-inflammatory foods (fried foods, excess saturated fat, added sugars)",
+      "type": "checkbox",
+      "category": "Reduce Inflammation"
+    },
+    {
+      "id": "gradual-change",
+      "label": "Make changes gradually — one small swap per week, not a complete overhaul",
+      "type": "checkbox",
+      "category": "Sustainability"
+    },
+    {
+      "id": "cultural-honor",
+      "label": "Honor my cultural food traditions while incorporating anti-inflammatory principles",
+      "type": "checkbox",
+      "category": "Sustainability"
+    },
+    {
+      "id": "biggest-swap",
+      "label": "My biggest dietary swap this week:",
+      "type": "text",
+      "placeholder": "e.g., Replace afternoon chips with nuts and fruit"
+    },
+    {
+      "id": "confidence",
+      "label": "Rate your confidence in sustaining these changes",
+      "type": "rating",
+      "min": 0,
+      "max": 10
+    }
+  ],
+  "disclaimer": "This checklist is for educational purposes only. Dietary changes should complement, not replace, professional mental health treatment. If you have an eating disorder, food allergies, or medical conditions, consult your healthcare team before making changes. If you are in crisis, call or text 988."
+}

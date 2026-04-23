@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What happens when blood sugar crashes during the night after eating sugary foods before bed?",
+            "options": [
+                { "id": "opt1", "text": "You sleep more deeply" },
+                { "id": "opt2", "text": "Your body releases cortisol, which can wake you up between 2-4 AM" },
+                { "id": "opt3", "text": "Melatonin production increases" },
+                { "id": "opt4", "text": "REM sleep is extended" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When blood sugar crashes after a spike, your body releases cortisol (a stress hormone) to bring it back up. This cortisol surge can wake you up -- often between 2 AM and 4 AM -- and make it hard to fall back asleep."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What role does magnesium play in supporting sleep?",
+            "options": [
+                { "id": "opt1", "text": "It increases alertness during the day" },
+                { "id": "opt2", "text": "It regulates the neurotransmitter GABA, relaxes muscles, and supports melatonin production" },
+                { "id": "opt3", "text": "It speeds up caffeine metabolism" },
+                { "id": "opt4", "text": "It raises body temperature for better sleep" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Magnesium helps regulate GABA (which calms nervous system activity), relaxes muscles, and supports your body's natural melatonin production. Food sources include leafy greens, almonds, and dark chocolate."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the average half-life of caffeine?",
+            "options": [
+                { "id": "opt1", "text": "2-3 hours" },
+                { "id": "opt2", "text": "4-5 hours" },
+                { "id": "opt3", "text": "7-9 hours" },
+                { "id": "opt4", "text": "12-14 hours" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Caffeine has an average half-life of 7-9 hours (some studies show 5-9 hours depending on individual metabolism). A coffee at 2 PM can still have half its caffeine active at 10 PM."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does alcohol affect sleep quality?",
+            "options": [
+                { "id": "opt1", "text": "It improves both falling asleep and sleep quality" },
+                { "id": "opt2", "text": "It helps you fall asleep faster but significantly reduces REM sleep quality" },
+                { "id": "opt3", "text": "It has no effect on sleep stages" },
+                { "id": "opt4", "text": "It only affects deep sleep, not REM sleep" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Alcohol is a sedative that can help you fall asleep faster, but as your body metabolizes it during the night, it significantly reduces REM sleep -- the stage critical for emotional processing and memory consolidation."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is tryptophan and why is it important for sleep?",
+            "options": [
+                { "id": "opt1", "text": "A vitamin that increases energy" },
+                { "id": "opt2", "text": "An amino acid that converts to serotonin and then melatonin" },
+                { "id": "opt3", "text": "A mineral that relaxes muscles" },
+                { "id": "opt4", "text": "A hormone released during deep sleep" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Tryptophan is an amino acid that your body converts into serotonin and then melatonin -- the hormone that signals your brain it is time to sleep. Food sources include turkey, oats, nuts, eggs, and tofu."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "9",
+    "title": "Nutrition for Nourishing Sleep - Quiz"
+}

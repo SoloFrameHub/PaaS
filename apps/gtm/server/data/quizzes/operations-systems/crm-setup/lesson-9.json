@@ -1,0 +1,134 @@
+{
+    "lessonId": "9",
+    "courseId": "crm-setup",
+    "sectionId": "operations-systems",
+    "title": "Migration Readiness",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "You're frustrated with your CRM's UI and want something more modern. Is this a good reason to migrate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes — if the UI slows you down, migration is justified"
+                },
+                {
+                    "id": "b",
+                    "text": "No — UI preferences don't justify 20-40 hours of migration work"
+                },
+                {
+                    "id": "c",
+                    "text": "Yes — but only if the new CRM also has better features"
+                },
+                {
+                    "id": "d",
+                    "text": "No — unless you're also hitting feature limits"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "UI frustration is almost never a sufficient reason to migrate. Customize your current CRM's dashboard or learn keyboard shortcuts instead. Migrate only for fundamental feature gaps or economic reasons.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "What's the correct order for importing data into a new CRM?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Contacts → Deals → Companies → Activities"
+                },
+                {
+                    "id": "b",
+                    "text": "Companies → Contacts → Deals → Activities"
+                },
+                {
+                    "id": "c",
+                    "text": "Deals → Contacts → Companies → Activities"
+                },
+                {
+                    "id": "d",
+                    "text": "Activities → Contacts → Deals → Companies"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Import parent records first: Companies → Contacts (associated to companies) → Deals (associated to contacts) → Activities (associated to contacts/deals). This prevents orphaned records.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "Your new CRM shows 847 contacts but your old CRM export had 850. What's the most likely cause?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "3 contacts were corrupted during export"
+                },
+                {
+                    "id": "b",
+                    "text": "The new CRM has a contact limit of 847"
+                },
+                {
+                    "id": "c",
+                    "text": "Auto-dedupe logic merged 3 duplicate records during import"
+                },
+                {
+                    "id": "d",
+                    "text": "You forgot to export 3 contacts"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Small count discrepancies usually come from automatic duplicate detection and merging. Review the new CRM's merge logs to confirm.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "Why should you run old and new CRM in parallel for 30 days?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To compare which CRM you like better"
+                },
+                {
+                    "id": "b",
+                    "text": "To catch migration failures that surface within 2 weeks"
+                },
+                {
+                    "id": "c",
+                    "text": "To train your team on both systems"
+                },
+                {
+                    "id": "d",
+                    "text": "To keep paying for both subscriptions"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most migration failures (missing data, broken mappings, lost context) surface within 2 weeks. Running parallel gives you a safety net to recover any data that didn't transfer cleanly.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "What happens to structured fields (dropdowns, dates, numbers) if you don't recreate them in the new CRM before importing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They import as free-text notes, making them invisible to AI agents"
+                },
+                {
+                    "id": "b",
+                    "text": "They import correctly but lose their dropdown values"
+                },
+                {
+                    "id": "c",
+                    "text": "The import fails with an error"
+                },
+                {
+                    "id": "d",
+                    "text": "They import as blank fields"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "If structured fields don't exist in the new CRM, most import tools flatten them into free-text notes. This destroys AI-readiness. Always recreate custom fields BEFORE importing.",
+            "type": "multiple-choice"
+        }
+    ]
+}

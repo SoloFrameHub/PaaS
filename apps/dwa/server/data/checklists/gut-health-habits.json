@@ -1,0 +1,93 @@
+{
+  "id": "gut-health-habits",
+  "title": "Gut Health Habits Checklist",
+  "description": "Review these evidence-based habits that support your gut-brain connection. Check off each item you are currently following, then work on adding the unchecked ones over time.",
+  "instructions": "Go through each item and honestly check off the ones you are consistently doing. The unchecked items become your improvement targets. Revisit this checklist weekly to track your progress.",
+  "items": [
+    {
+      "id": "diverse-plants",
+      "label": "I eat 20-30 different plant foods per week (fruits, vegetables, grains, nuts, seeds)",
+      "type": "checkbox",
+      "category": "Gut-Friendly Eating"
+    },
+    {
+      "id": "fermented-foods",
+      "label": "I include fermented foods regularly (yogurt, kefir, sauerkraut, kimchi, etc.)",
+      "type": "checkbox",
+      "category": "Gut-Friendly Eating"
+    },
+    {
+      "id": "prebiotic-fiber",
+      "label": "I eat prebiotic-rich foods (garlic, onions, leeks, bananas, oats, asparagus)",
+      "type": "checkbox",
+      "category": "Gut-Friendly Eating"
+    },
+    {
+      "id": "limit-processed",
+      "label": "I limit ultra-processed foods and artificial sweeteners",
+      "type": "checkbox",
+      "category": "Gut-Friendly Eating"
+    },
+    {
+      "id": "adequate-water",
+      "label": "I drink 6-8 glasses of water daily",
+      "type": "checkbox",
+      "category": "Gut-Friendly Eating"
+    },
+    {
+      "id": "omega-3",
+      "label": "I include omega-3 rich foods (fatty fish, walnuts, flaxseeds) at least 2x per week",
+      "type": "checkbox",
+      "category": "Anti-Inflammatory Nutrition"
+    },
+    {
+      "id": "colorful-produce",
+      "label": "I eat colorful fruits and vegetables daily (aim for 5+ servings)",
+      "type": "checkbox",
+      "category": "Anti-Inflammatory Nutrition"
+    },
+    {
+      "id": "limit-sugar",
+      "label": "I limit added sugar to less than 25g (6 tsp) per day",
+      "type": "checkbox",
+      "category": "Anti-Inflammatory Nutrition"
+    },
+    {
+      "id": "regular-meals",
+      "label": "I eat regular meals (not skipping breakfast or going long periods without food)",
+      "type": "checkbox",
+      "category": "Meal Timing & Habits"
+    },
+    {
+      "id": "mindful-eating",
+      "label": "I eat slowly and mindfully (not while distracted by screens)",
+      "type": "checkbox",
+      "category": "Meal Timing & Habits"
+    },
+    {
+      "id": "stop-eating",
+      "label": "I stop eating 2-3 hours before bedtime",
+      "type": "checkbox",
+      "category": "Meal Timing & Habits"
+    },
+    {
+      "id": "stress-management",
+      "label": "I practice stress management (the gut-brain axis is bidirectional)",
+      "type": "checkbox",
+      "category": "Lifestyle Support"
+    },
+    {
+      "id": "sleep-quality",
+      "label": "I prioritize 7-9 hours of quality sleep (poor sleep disrupts gut bacteria)",
+      "type": "checkbox",
+      "category": "Lifestyle Support"
+    },
+    {
+      "id": "regular-movement",
+      "label": "I get regular physical activity (exercise improves gut microbial diversity)",
+      "type": "checkbox",
+      "category": "Lifestyle Support"
+    }
+  ],
+  "disclaimer": "This checklist is for educational purposes only. If you have dietary restrictions, food allergies, or an eating disorder, consult a healthcare provider before making changes. If you are in crisis, call or text 988."
+}

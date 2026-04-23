@@ -1,0 +1,78 @@
+{
+  "lessonId": "7",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "Tools for VA Collaboration",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the total monthly cost of the recommended VA collaboration stack (Slack, Notion, Loom, Google Drive)?",
+      "options": [
+        { "id": "a", "text": "Under $30/month on free tiers" },
+        { "id": "b", "text": "$50-100/month" },
+        { "id": "c", "text": "$200-300/month" },
+        { "id": "d", "text": "$500+/month" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The entire VA collaboration stack runs under $30/month on free tiers. The free tiers are sufficient until the VA relationship is well-established and the ROI of upgrading is obvious."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why should all task-related VA communication go through a dedicated Slack channel rather than DMs?",
+      "options": [
+        { "id": "a", "text": "DMs are too slow" },
+        {
+          "id": "b",
+          "text": "So you have a searchable record and can review conversation history during weekly QA"
+        },
+        { "id": "c", "text": "Because Slack charges extra for DMs" },
+        { "id": "d", "text": "To make the VA feel like part of a team" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Everything goes through #va-channel so you have a searchable record and can review conversation history in your weekly QA. DMs are invisible to QA review and create documentation gaps."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Good collaboration tools enable three things. Which is NOT one of them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VA can work independently without interrupting you"
+        },
+        {
+          "id": "b",
+          "text": "You can monitor quality without reviewing every output"
+        },
+        { "id": "c", "text": "You can update training when processes change" },
+        {
+          "id": "d",
+          "text": "The VA can make strategic decisions autonomously"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Good tools enable: (1) VA works independently without interrupting you, (2) you monitor quality without reviewing everything, (3) you update training without scheduling calls. Strategic decisions remain the founder's responsibility."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should upgrade to paid collaboration tool tiers before your VA relationship is established.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Start free, upgrade when you have a specific reason. The free tiers are sufficient until the relationship is well-established and the ROI of upgrading is obvious."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your VA collaboration stack. Which 4-5 tools will you use, what purpose does each serve, and how will you run weekly QA to maintain quality?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response selects specific tools for communication, documentation, video training, and file sharing, defines each tool's purpose, and describes a concrete weekly QA process (scorecard, channel review, output sampling)."
+    }
+  ]
+}

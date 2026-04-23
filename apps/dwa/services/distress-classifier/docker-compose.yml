@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  distress-classifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mental-health-classifier
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 60s
+    labels:
+      - "com.dokploy.service=distress-classifier"
+      - "com.dokploy.project=mental-health-education"

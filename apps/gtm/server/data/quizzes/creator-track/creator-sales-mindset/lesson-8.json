@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "Your Creator Sales Manifesto",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does research on implementation intentions suggest that a written manifesto is more effective than simply setting goals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because writing things down improves memory retention for exams"
+                },
+                {
+                    "id": "b",
+                    "text": "Because psychologist Peter Gollwitzer's research shows that people who write specific plans ('If X happens, I will do Y') are 2-3x more likely to follow through than people who merely set goals"
+                },
+                {
+                    "id": "c",
+                    "text": "Because manifesto documents are legally binding and create accountability"
+                },
+                {
+                    "id": "d",
+                    "text": "Because writing activates different brain regions than thinking, making ideas feel more real"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Gollwitzer's research on implementation intentions demonstrates that converting vague goals into specific written plans with if-then structure dramatically increases follow-through. A manifesto is essentially a collection of implementation intentions for your sales life -- specific commitments that guide behavior regardless of your emotional state on any given day."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the difference between a 'vague' and 'specific' manifesto principle, and why does specificity matter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Vague principles are shorter and easier to remember, making them more practical"
+                },
+                {
+                    "id": "b",
+                    "text": "There is no meaningful difference -- both serve the same purpose"
+                },
+                {
+                    "id": "c",
+                    "text": "A vague principle like 'I will be authentic' gives no actionable guidance, while a specific principle like 'I will use my natural conversational tone and not adopt a sales voice' tells you exactly what to do on a Tuesday morning before a sales call"
+                },
+                {
+                    "id": "d",
+                    "text": "Specific principles are better for beginners, while vague principles work better for experienced sellers"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Every sentence in your manifesto should be specific enough to guide real decisions in real moments. 'I will be authentic' sounds nice but gives you nothing to act on when you are nervous before a call. 'I will use my natural conversational tone and not adopt a sales voice' tells you exactly how to behave. Specificity is what makes a manifesto a working tool rather than a wish list."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does the manifesto include a 'Growth Edges' section alongside the Non-Negotiable Principles?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To give yourself permission to break your principles when they feel too hard"
+                },
+                {
+                    "id": "b",
+                    "text": "Because naming areas where you are still developing -- with specific improvement plans -- makes the manifesto a living document that evolves with your growth rather than a static list of ideals you eventually ignore"
+                },
+                {
+                    "id": "c",
+                    "text": "Because investors and clients want to see that you are self-aware about your weaknesses"
+                },
+                {
+                    "id": "d",
+                    "text": "To balance out the confidence of the other sections with appropriate humility"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Growth Edges section acknowledges that you are a work in progress and gives you a structured way to improve. By naming specific weaknesses and attaching specific action plans, you prevent the manifesto from becoming an aspirational document you eventually abandon. The 90-day review cycle ensures it keeps evolving as you grow."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write your Sales Identity Statement (Section 1 of the manifesto) and list your top 3 Non-Negotiable Principles (from Section 2). For each principle, explain why it matters to you personally -- not why it is good practice in general, but what specific experience or value from your life makes this principle important to your sales practice.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student's Sales Identity Statement is specific to their actual creative identity and offer, not a generic copy of the template. The three Non-Negotiable Principles should feel personal and grounded in the student's real values and experiences. Look for personal reasoning behind each principle (e.g., 'I never use false scarcity because I once bought a course based on fake urgency and felt manipulated') rather than generic business justifications. The overall tone should feel authentic to the student's voice."
+        }
+    ]
+}

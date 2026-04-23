@@ -1,0 +1,55 @@
+{
+  "lessonId": "8",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Your Metrics Playbook Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "The 5-Metric Friday framework recommends tracking metrics in three categories. What is the correct distribution?",
+      "options": [
+        { "id": "a", "text": "3 Input metrics, 1 Process metric, 1 Output metric" },
+        { "id": "b", "text": "2 Input metrics, 2 Process metrics, 1 Output metric" },
+        { "id": "c", "text": "1 Input metric, 2 Process metrics, 2 Output metrics" },
+        { "id": "d", "text": "1 Input metric, 1 Process metric, 3 Output metrics" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 5-Metric Friday framework uses 2 Input metrics (leading indicators that measure activities driving the business), 2 Process metrics (efficiency measures showing how well inputs convert to outputs), and 1 Output metric (the revenue or revenue-adjacent result). This structure ensures you track the full pipeline, not just the end result."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "The lesson recommends the '10% Rule' for setting targets. A creator has a baseline close rate of 22%. What should their 90-day target be, and what is the projected close rate after 4 quarters of hitting this target?",
+      "options": [
+        { "id": "a", "text": "24.2% at 90 days; approximately 32% after 4 quarters" },
+        { "id": "b", "text": "32% at 90 days; approximately 42% after 4 quarters" },
+        { "id": "c", "text": "25% at 90 days; approximately 30% after 4 quarters" },
+        { "id": "d", "text": "27% at 90 days; approximately 35% after 4 quarters" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The 10% Rule sets each quarter's target at 10% above the current baseline. 22% x 1.10 = 24.2% at 90 days. Compounding: 22% -> 24.2% -> 26.6% -> 29.3% -> 32.2% after 4 quarters. The lesson notes that 10% per quarter compounds to approximately 46% improvement per year, making this approach both achievable and transformative."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the '8-Week Rule' and the optimize vs pivot framework, when should a creator pivot rather than continue optimizing?",
+      "options": [
+        { "id": "a", "text": "After 2 weeks of below-benchmark performance on any metric" },
+        { "id": "b", "text": "When metrics are dramatically below benchmarks after 8+ weeks of optimization and 3+ different changes have failed to move the needle" },
+        { "id": "c", "text": "Whenever a single metric drops below the industry benchmark" },
+        { "id": "d", "text": "After 4 weeks of testing, regardless of results" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson recommends pivoting when metrics are dramatically below benchmarks and have not improved despite 8+ weeks of optimization, multiple metrics are failing simultaneously (suggesting a systemic problem), and you have tested 3+ different optimizations on the same metric with no results. The 8-Week Rule gives 4 weeks to implement and 4 weeks to measure before judging."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Design your personal 5-Metric Friday dashboard using the Input (2) / Process (2) / Output (1) framework. List your 5 specific metrics, explain why you chose each one, and describe the one constraint (bottleneck) you believe is currently limiting your growth. What is the single action you will take next week to address it?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student selected 5 metrics that correctly follow the Input/Process/Output structure and are relevant to their specific business model. Check that the chosen metrics are measurable (not vague like 'engagement') and that they identified a genuine bottleneck based on their metric analysis. The action item should be specific, time-bound, and directly address the bottleneck rather than being a general improvement."
+    }
+  ]
+}

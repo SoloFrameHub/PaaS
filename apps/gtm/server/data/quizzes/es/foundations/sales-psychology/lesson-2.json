@@ -1,0 +1,134 @@
+{
+  "lessonId": "2",
+  "courseId": "sales-psychology",
+  "sectionId": "foundations",
+  "title": "La Matemática Que Tu Cerebro Se Equivoca Sobre el Rechazo",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué es el 'Sesgo de Negatividad'?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Un hábito de quejarse demasiado"
+        },
+        {
+          "id": "opt2",
+          "text": "La tendencia del cerebro a procesar la retroalimentación negativa entre 3 y 5 veces más intensamente que la positiva"
+        },
+        {
+          "id": "opt3",
+          "text": "Un cliente que siempre dice no"
+        },
+        {
+          "id": "opt4",
+          "text": "La probabilidad estadística de que una startup fracase"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Evolutivamente, nuestros cerebros priorizan las señales negativas (amenazas) sobre las positivas. En las ventas, esto nos hace reaccionar de forma exagerada al rechazo."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estos NO es uno de los tres principales 'Cubos de Rechazo'?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Momento Incorrecto"
+        },
+        {
+          "id": "opt2",
+          "text": "Ajuste Incorrecto"
+        },
+        {
+          "id": "opt3",
+          "text": "Persona Incorrecta"
+        },
+        {
+          "id": "opt4",
+          "text": "Personalidad Incorrecta"
+        }
+      ],
+      "correctAnswer": "opt4",
+      "explanation": "Los tres cubos son Momento, Ajuste y Persona. 'Personalidad Incorrecta' suele ser una mala interpretación de 'Ajuste Incorrecto' o una simple preferencia personal."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué un rechazo por 'Ajuste Incorrecto' es en realidad una victoria?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Significa que puedes dejar de trabajar por el día"
+        },
+        {
+          "id": "opt2",
+          "text": "Evita que adquieras un mal cliente que cancelaría y se quejaría"
+        },
+        {
+          "id": "opt3",
+          "text": "Demuestra que tu precio es demasiado alto"
+        },
+        {
+          "id": "opt4",
+          "text": "Te permite hacer pivotar toda tu empresa"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Adquirir a un cliente que claramente no encaja es peor que no tener ningún cliente. Consumen recursos de soporte y eventualmente dañan tu reputación."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Como fundador en solitario, ¿por qué el rechazo se siente más personal?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Porque los fundadores en solitario tienen menos confianza"
+        },
+        {
+          "id": "opt2",
+          "text": "Porque el 'No' se distribuye entre un equipo"
+        },
+        {
+          "id": "opt3",
+          "text": "Porque no hay equipo que amortigüe la retroalimentación, así que Producto = Tú"
+        },
+        {
+          "id": "opt4",
+          "text": "Porque los clientes son más crueles con las empresas pequeñas"
+        }
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Sin amortiguador entre el constructor y el vendedor, los fundadores a menudo equiparan el rechazo de su trabajo con el rechazo de su autoestima."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el único dato que en realidad refleja una brecha en tu producto?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Cubo 1: Momento Incorrecto"
+        },
+        {
+          "id": "opt2",
+          "text": "Cubo 4: Brecha Real Producto/Mercado"
+        },
+        {
+          "id": "opt3",
+          "text": "Cubo 2: Ajuste Incorrecto"
+        },
+        {
+          "id": "opt4",
+          "text": "Cubo 3: Persona Incorrecta"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Solo cuando el Momento, el Ajuste y la Persona son correctos, pero aun así dicen no, indica un problema con tu solución/propuesta de valor."
+    }
+  ],
+  "passingScore": 70
+}

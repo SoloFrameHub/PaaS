@@ -1,0 +1,133 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What physiological mechanism links relationship conflict to chronic disease risk?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Relationship stress has no measurable physiological effects"
+        },
+        {
+          "id": "opt2",
+          "text": "Chronic unresolved conflict activates the HPA axis, elevating cortisol and inflammation markers"
+        },
+        {
+          "id": "opt3",
+          "text": "Only physical abuse affects health; emotional conflict does not"
+        },
+        {
+          "id": "opt4",
+          "text": "Relationship quality affects mental health but not physical health"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Meta-analytic research shows that chronic relationship conflict activates the HPA axis (hypothalamic-pituitary-adrenal) and increases cortisol, inflammation (C-reactive protein), and cardiovascular risk. The effect is dose-dependent: chronic unresolved conflict produces chronic physiological dysregulation. Acute conflict is normal and manageable; chronic stress is the health risk."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is 'emotional flooding' and why does it matter for conflict management?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Feeling too many emotions at once, which is a sign of weakness"
+        },
+        {
+          "id": "opt2",
+          "text": "When heart rate exceeds 100 bpm during conflict, the prefrontal cortex goes offline and productive conversation becomes impossible"
+        },
+        {
+          "id": "opt3",
+          "text": "Crying during an argument, which always resolves the conflict"
+        },
+        {
+          "id": "opt4",
+          "text": "A technique for expressing all your emotions without holding back"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Gottman's research shows that when heart rate exceeds 100 bpm during conflict (physiological flooding), the prefrontal cortex (rational thinking, empathy, perspective-taking) goes offline and the amygdala (threat detection) dominates. You lose access to communication skills and problem-solving. The most important conflict skill is recognizing flooding and taking a 20-minute break to allow autonomic downregulation — cortisol and heart rate need ~20 minutes to return to baseline."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How does depression affect relationship functioning according to research?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Depression has no effect on relationships — only communication skills matter"
+        },
+        {
+          "id": "opt2",
+          "text": "Depression reduces emotional availability, increases withdrawal and irritability, and creates negative interpretation bias"
+        },
+        {
+          "id": "opt3",
+          "text": "Depression only affects the individual, not their partner or relationship"
+        },
+        {
+          "id": "opt4",
+          "text": "If your partner truly loved you, you wouldn't be depressed"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows depression significantly impairs relationship functioning through reduced emotional availability and responsiveness, withdrawal from intimacy, increased irritability and conflict reactivity, negative interpretation bias (perceiving neutral partner behavior as rejection), and decreased sexual desire. The bidirectional trap: depression impairs relationship functioning → relationship distress worsens depression → cycle continues. Individual depression treatment (CBT, medication) is often needed before or alongside relationship work."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the difference between co-regulation and co-dysregulation in couples?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "There is no difference — they're the same concept"
+        },
+        {
+          "id": "opt2",
+          "text": "Co-regulation is when partners' emotional states converge and dampen toward equilibrium; co-dysregulation is when emotions amplify away from equilibrium"
+        },
+        {
+          "id": "opt3",
+          "text": "Co-regulation only happens in therapy; co-dysregulation is the normal state"
+        },
+        {
+          "id": "opt4",
+          "text": "Co-regulation means always agreeing; co-dysregulation means any conflict"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "In satisfying relationships, partners' emotional states converge and dampen toward equilibrium (co-regulation) — one partner's regulated presence can calm the other's stress response. This is measurable: couples' cortisol levels synchronize, and secure attachment predicts faster stress recovery. In distressed relationships, partners' emotions amplify away from equilibrium (co-dysregulation), creating a positive feedback loop where one partner's stress escalates the other's. Relationship education focuses on building co-regulation skills."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should individual therapy be prioritized before or alongside relationship work?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Never — all relationship problems should be addressed in couples therapy"
+        },
+        {
+          "id": "opt2",
+          "text": "When depression, anxiety, PTSD, substance use, or severe emotion dysregulation significantly impairs functioning"
+        },
+        {
+          "id": "opt3",
+          "text": "Only if you're experiencing suicidal ideation; otherwise couples work is sufficient"
+        },
+        {
+          "id": "opt4",
+          "text": "Individual therapy is only for people without partners"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Individual mental health treatment should be prioritized when depression, anxiety, PTSD, substance use, trauma, or severe emotion dysregulation significantly impairs functioning. These conditions require specialized clinical treatment that relationship education cannot address. Once individual symptoms improve, relationship work becomes more effective. The hybrid approach (both individual therapy and couples therapy simultaneously) is often most effective: individual therapy addresses personal mental health, while couples therapy addresses relational patterns."
+    }
+  ],
+  "sectionId": "social-connection",
+  "courseId": "relationship-dynamics",
+  "lessonId": "2",
+  "title": "The Relationship-Health Bidirectional Link - Quiz"
+}

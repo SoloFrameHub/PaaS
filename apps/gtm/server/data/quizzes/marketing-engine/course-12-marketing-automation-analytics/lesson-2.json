@@ -1,0 +1,153 @@
+{
+    "lessonId": "2",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 2: Lead Capture Systems",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Golden Rule of Forms' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "More fields provide better quality leads and should always be used."
+                },
+                {
+                    "id": "b",
+                    "text": "Fewer fields result in higher conversion rates."
+                },
+                {
+                    "id": "c",
+                    "text": "Every form must ask for a phone number."
+                },
+                {
+                    "id": "d",
+                    "text": "Forms should only be placed on the 'Contact Us' page."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Every field added to a form acts as friction, reducing the likelihood of completion. Starting with fewer fields (like just email) maximizes conversion."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of the following is a key design element that distinguishes a high-converting landing page from a standard homepage?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A detailed navigation menu with links to 'About', 'Blog', and 'Services'."
+                },
+                {
+                    "id": "b",
+                    "text": "A 'one-way street' approach with zero navigation and a single CTA."
+                },
+                {
+                    "id": "c",
+                    "text": "As much text as possible to explain every feature of the business."
+                },
+                {
+                    "id": "d",
+                    "text": "Multiple competing offers to give the visitor more choices."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Landing pages succeed by removing distractions and focusing the user on one specific action."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "Why is '7 Cold Email Subject Lines that Got a 40% Reply Rate' a better lead magnet than 'The Ultimate Guide to Marketing'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is longer and more impressive."
+                },
+                {
+                    "id": "b",
+                    "text": "It focuses on specificity and immediate value rather than broad, overwhelming education."
+                },
+                {
+                    "id": "c",
+                    "text": "It costs more to produce."
+                },
+                {
+                    "id": "d",
+                    "text": "It doesn't require an email address to download."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Specificity and immediate value (the 'Aha!' moment) are the keys to successful lead magnets that build trust quickly."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "When is an 'Exit-Intent' popup triggered?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Exactly 30 seconds after the page loads."
+                },
+                {
+                    "id": "b",
+                    "text": "When the user scrolls to the bottom of the page."
+                },
+                {
+                    "id": "c",
+                    "text": "When the user moves their cursor toward the browser's close button or address bar."
+                },
+                {
+                    "id": "d",
+                    "text": "Only when a user clicks 'Unsubscribe'."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Exit-intent technology captures users who are about to leave your site by offering them one last value proposition."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which capture mechanism is describe as 'the respectful ask' and is usually embedded within content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sticky Bar"
+                },
+                {
+                    "id": "b",
+                    "text": "Inline Form"
+                },
+                {
+                    "id": "c",
+                    "text": "Full-screen Takeover"
+                },
+                {
+                    "id": "d",
+                    "text": "Timed Popup"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Inline forms are non-intrusive and appear naturally within the flow of reading content, often yielding high-quality leads."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Think about your current lead magnet or the one you plan to create. Evaluate it against the three principles: Specificity, Immediate Value, and Strategic Alignment. How could you refine the title and scope of your lead magnet to better convert visitors? Describe the 'Aha!' moment it provides.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's lead magnet concept. Check if it's too broad or misaligned with their core offer. Provide a 'Specific + Result' headline suggestion based on their input."
+        }
+    ]
+}

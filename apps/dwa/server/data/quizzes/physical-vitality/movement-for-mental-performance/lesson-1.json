@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is BDNF and why is it called the brain's 'Miracle-Gro'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "BDNF is a hormone that regulates appetite during exercise"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Brain-derived neurotrophic factor (BDNF) is a protein that promotes neurogenesis, synaptogenesis, and neuroplasticity — essentially helping the brain grow new neurons and connections"
+                },
+                {
+                    "id": "opt3",
+                    "text": "BDNF is a type of antidepressant medication"
+                },
+                {
+                    "id": "opt4",
+                    "text": "BDNF only affects muscle growth, not brain function"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "BDNF (brain-derived neurotrophic factor) acts like fertilizer for your brain. It promotes neurogenesis (growth of new neurons), synaptogenesis (formation of new connections), and neuroplasticity (the brain's ability to adapt and rewire). Depression is associated with reduced BDNF, and exercise increases it."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the three-tier framework, what is the appropriate claim for exercise and mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise cures depression and replaces all need for medication"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise is a powerful wellness tool and evidence-based adjunct to professional mental health care, with some studies showing comparable effects to medication for mild-to-moderate depression"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise has no real effect on mental health; it's just a placebo"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise only works for physical health, not mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The responsible claim (Tiers 1 and 2) is that exercise is a powerful wellness and adjunctive self-management tool. For mild-to-moderate depression, some studies show comparable effects to medication, but exercise is NOT a replacement for professional assessment and treatment in severe or complex cases."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which neurotransmitters does exercise help regulate, and how does this relate to antidepressant medications?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only affects adrenaline, which has no connection to mood"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise increases serotonin, dopamine, and norepinephrine — the same neurotransmitters targeted by antidepressant medications, though through different pathways"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise decreases all neurotransmitters, which is why it causes fatigue"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise has no effect on brain chemistry"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise increases serotonin (mood and emotional stability), dopamine (motivation and reward), and norepinephrine (alertness and stress response). These are the same neurotransmitters that antidepressant medications target, though exercise works through different mechanisms than SSRIs or other medications."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for exercise as an intervention for depression vs. anxiety?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Both depression and anxiety have equally STRONG evidence"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Depression has STRONG evidence (218 RCTs, moderate-to-large effects); anxiety has MODERATE evidence with important caveats about study quality"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Neither has any scientific evidence"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Anxiety has STRONG evidence; depression has weak evidence"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Depression has STRONG evidence from the 2024 BMJ meta-analysis (218 RCTs) and 2026 Cochrane review (73 RCTs), with moderate-to-large effect sizes. Anxiety has MODERATE evidence — many studies used anxiety as a secondary outcome, and a Duke University review raised concerns about study quality when anxiety is the primary target."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When is exercise NOT sufficient as a standalone intervention?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise is always sufficient for any mental health condition"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise is never helpful for mental health"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise is NOT sufficient for severe depression, active suicidality, or severe functional impairment — these require professional assessment and treatment"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise should only be used by professional athletes"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Exercise is a powerful adjunct, but it's NOT sufficient as standalone treatment for severe depression (inability to work/function), active suicidality, severe anxiety with panic disorder, PTSD with significant symptoms, or any condition causing severe functional impairment. These situations require professional mental health assessment and treatment. Exercise can complement professional care, but not replace it."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "1",
+    "title": "The Science of Exercise as Medicine - Quiz"
+}

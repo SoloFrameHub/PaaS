@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is toxic positivity and how does it differ from genuine resilience-building?",
+            "options": [
+                {"id": "opt1", "text": "Toxic positivity is validation + reappraisal; genuine resilience is denial"},
+                {"id": "opt2", "text": "Toxic positivity is compulsory dismissal of negative emotions and forced optimism; genuine resilience is validation + adaptive coping without denying suffering"},
+                {"id": "opt3", "text": "They are identical approaches"},
+                {"id": "opt4", "text": "Toxic positivity is evidence-based; genuine resilience is not"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Toxic positivity is the overgeneralization of a positive mindset that INVALIDATES genuine suffering and demands compulsory optimism ('Just stay positive!' 'Good vibes only!'). It dismisses pain, blocks emotional processing, creates shame for struggling. Genuine resilience VALIDATES suffering ('This is hard, you're not alone') AND supports adaptive coping—holds both pain and agency without denying either. Authentic growth mindset says 'This is difficult AND I can develop skills' (validation + agency). Toxic positivity says 'Just believe and everything will be fine!' (denial + blame)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to research, why is emotional validation a prerequisite for effective reappraisal?",
+            "options": [
+                {"id": "opt1", "text": "Validation is actually harmful—skip straight to reframing"},
+                {"id": "opt2", "text": "Suppressing or minimizing emotions before processing them produces worse outcomes; you must acknowledge pain before you can work with it adaptively"},
+                {"id": "opt3", "text": "Validation and reappraisal are unrelated"},
+                {"id": "opt4", "text": "Only weak people need validation"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows emotional validation (acknowledging pain as real and understandable) is a prerequisite for effective reappraisal. You can't skip validation and jump to 'look on the bright side'—that's toxic positivity. Suppressing or minimizing emotions before processing produces worse outcomes. The sequence is: (1) Validate ('This is painful and that's understandable'), (2) Process (allow emotional experience), THEN (3) Reappraise when appropriate ('What else could this mean? What can I learn?'). Both/and: 'This is painful AND I can learn'—not 'Don't be sad, be positive!' Validation is a core therapeutic skill across CBT, DBT, and ACT."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the relationship between toxic positivity and structural barriers according to the lesson?",
+            "options": [
+                {"id": "opt1", "text": "Toxic positivity acknowledges structural barriers clearly"},
+                {"id": "opt2", "text": "Toxic positivity individualizes structural problems ('just think positive!'), dismissing real obstacles like poverty, discrimination, and systemic inequality"},
+                {"id": "opt3", "text": "Structural barriers are always just mindset problems"},
+                {"id": "opt4", "text": "Toxic positivity and structural analysis are unrelated"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Toxic positivity (false growth mindset) individualizes structural problems: 'If you're struggling, you don't have the right mindset!' This dismisses REAL obstacles—poverty, discrimination, trauma, disability, systemic barriers—and blames individuals for structural failures. Example: telling someone in an abusive workplace 'just stay positive!' rather than acknowledging abuse requires leaving/reporting. This causes victim-blaming and shame. Authentic growth mindset acknowledges: mindset helps you engage effectively with LEARNABLE challenges, but it cannot overcome structural inequality (Lesson 17: 2.9% variance)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is compulsory optimism psychologically harmful according to trauma-informed care principles?",
+            "options": [
+                {"id": "opt1", "text": "Optimism is always helpful in all contexts"},
+                {"id": "opt2", "text": "Forcing 'everything happens for a reason' messaging invalidates trauma, blocks necessary processing, and violates trauma-informed principles of validation, safety, and choice"},
+                {"id": "opt3", "text": "Trauma survivors benefit most from forced positivity"},
+                {"id": "opt4", "text": "Trauma-informed care emphasizes toxic positivity"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Trauma-informed care principles emphasize validation, safety, and choice—the OPPOSITE of 'everything happens for a reason' compulsory optimism. For trauma survivors, being told suffering is a 'growth opportunity' is invalidating and harmful. Trauma requires: (1) Validation of pain as real, (2) Safety in processing at own pace, (3) Choice in meaning-making (not forced narratives). Compulsory reframing ('this happened for a reason') blocks necessary grief/anger processing and implies the trauma was somehow deserved or beneficial. Genuine support validates suffering first, offers hope without denial."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on a time you received toxic positivity ('just be positive!' when you were genuinely struggling) vs. a time you received genuine support (validation + compassion). How did each response affect you? What's the difference between 'This is hard AND you're capable' (both/and) vs. 'Don't feel bad, just be positive!' (denial)?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "16",
+    "title": "Building Resilience Without Toxic Positivity - Quiz"
+}

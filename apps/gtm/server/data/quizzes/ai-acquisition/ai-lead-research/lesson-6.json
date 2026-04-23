@@ -1,0 +1,75 @@
+{
+  "lessonId": "6",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "ICP-Fit Scoring Agent (1-10 Model)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why do humans fail at manual lead scoring, according to the lesson?",
+      "options": [
+        { "id": "a", "text": "Humans don't understand ICP criteria" },
+        {
+          "id": "b",
+          "text": "Manual scoring is inconsistent — the same profile gets different scores on Monday morning vs Friday afternoon when you're tired"
+        },
+        { "id": "c", "text": "Humans score too quickly to be accurate" },
+        { "id": "d", "text": "Manual scoring requires expensive tools" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Human scoring is inconsistent due to fatigue, mood, and cognitive bias. Prospect #47 gets a 'maybe' on Monday morning but the same profile gets a 'no' on Friday afternoon. An AI scoring agent evaluates every prospect consistently in 3 seconds, assigning a 1-10 score and routing to the right action."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to research cited in the lesson, what percentage of marketing leads are actually sales-ready?",
+      "options": [
+        { "id": "a", "text": "75%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "25%" },
+        { "id": "d", "text": "10%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Only 25% of marketing leads are actually sales-ready (Gleanster Research), yet most founders spend equal time on all of them. Companies with lead scoring convert 20-30% more leads by focusing effort where it matters, and AI-based scoring is 40-60% more accurate than rule-based systems."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "If you send 100 emails to unscored leads at 3% reply rate, versus 40 emails to top-scored leads at 12% reply rate, which approach generates more conversations?",
+      "options": [
+        { "id": "a", "text": "Unscored (3 conversations vs 4.8)" },
+        {
+          "id": "b",
+          "text": "Scored leads win: 4.8 conversations in 60% less time vs 3 conversations"
+        },
+        { "id": "c", "text": "Both generate equal conversations" },
+        {
+          "id": "d",
+          "text": "Unscored leads always perform better due to larger volume"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "100 unscored emails at 3% = 3 conversations. 40 scored emails at 12% = 4.8 conversations in 60% less time. Scoring focuses your effort on high-probability leads, resulting in more conversations with less work."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The FIT + SIGNAL + FRICTION scoring model from Course 21 should be executed manually rather than automated with an AI agent.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. This lesson teaches you to automate the FIT + SIGNAL + FRICTION model with an AI scoring agent. Manual scoring takes 2-5 minutes per lead and is inconsistent. An AI agent scores consistently in 3 seconds, handling hundreds of leads without fatigue or bias."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "How would you calibrate your AI scoring agent to ensure it matches your judgment? Describe the process of testing the agent's scores against your manual assessments and what adjustments you would make if the agent consistently over-scores or under-scores certain prospect types.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response describes a calibration process (scoring a sample manually, comparing to AI scores, identifying patterns of disagreement). Look for understanding that calibration is iterative and that specific prompt adjustments address specific scoring biases."
+    }
+  ]
+}

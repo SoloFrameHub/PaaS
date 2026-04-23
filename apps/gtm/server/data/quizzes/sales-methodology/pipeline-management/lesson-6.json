@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Pipeline Pulse Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most critical requirement for a deal to stay in your 'Active' pipeline during a Weekly Pulse?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect has a high-quality logo."
+                },
+                {
+                    "id": "b",
+                    "text": "The founder feels good about it."
+                },
+                {
+                    "id": "c",
+                    "text": "It has a 'Specific, Dated Next Step' (e.g., a booked meeting or a pending document due on a certain date)."
+                },
+                {
+                    "id": "d",
+                    "text": "The deal value is over $5,000."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "If a deal has no next step, it's not a deal; it's a hope. Proper hygiene requires that every live opportunity has a defined path forward, otherwise it should be moved to 'Stalled' or 'Archived'."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'Sales Debt'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Money you owe to your CRM provider."
+                },
+                {
+                    "id": "b",
+                    "text": "The accumulation of unrecorded notes, unanswered follow-ups, and missing next steps that degrades pipeline accuracy and slows down velocity."
+                },
+                {
+                    "id": "c",
+                    "text": "The money you haven't made yet."
+                },
+                {
+                    "id": "d",
+                    "text": "A loan taken out for marketing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Admin work is the hidden killer of sales. If you don't clean your 'debt' weekly, your pipeline becomes a source of stress and confusion rather than a tool for growth. Zero Sales Debt ensures you are always ready for a high-stakes closing conversation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should you perform your 'Clean & Kill' on Friday afternoon?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To clear your mental workspace for the weekend and identify exactly which high-velocity outreach tasks need to happen on Monday morning."
+                },
+                {
+                    "id": "b",
+                    "text": "Because prospects are more likely to answer on Fridays."
+                },
+                {
+                    "id": "c",
+                    "text": "Because CRMs are faster on Fridays."
+                },
+                {
+                    "id": "d",
+                    "text": "To hide your numbers from your team."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Success on Monday starts on Friday. By flushing the ghosts and updating the next steps before the weekend, you can start the next week with absolute clarity and momentum."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Commit to a 30-minute block on your calendar for your 'Weekly Pipeline Pulse.' Describe the 3 specific criteria you will use to decide if a deal should be 'Killed' (Archived) this week.",
+            "minLength": 100,
+            "aiPrompt": "Check if the student uses objective criteria (Silent for 14 days, Failed'Close the Loop' email, No confirmed next step) rather than emotional ones."
+        }
+    ]
+}

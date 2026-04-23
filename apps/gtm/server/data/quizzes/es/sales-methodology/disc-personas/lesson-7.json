@@ -1,0 +1,135 @@
+{
+  "lessonId": "7",
+  "courseId": "disc-personas",
+  "sectionId": "sales-methodology",
+  "title": "DISC en Conversaciones de Ventas",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la filosofía central de la 'Venta Camaleón'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cambiar tu producto para adaptarlo al cliente"
+        },
+        {
+          "id": "b",
+          "text": "Mantener el producto igual, pero cambiar tu interfaz de comunicación (estilo) para que coincida con el comprador"
+        },
+        {
+          "id": "c",
+          "text": "Actuar de forma falsa"
+        },
+        {
+          "id": "d",
+          "text": "Usar muchos colores en tu presentación"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si haces el pitch a un tipo C con un pitch de tipo I (toda visión, sin datos), pierdes. Debes adaptar tu 'Interfaz de Usuario' al sistema operativo del cerebro del comprador."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Al abrir una llamada con un Alto D (Dominante), ¿cuál es la mejor estrategia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pasar 5 minutos en charla para construir rapport"
+        },
+        {
+          "id": "b",
+          "text": "Salta los temas triviales, declara la agenda/objetivo de ROI de inmediato y pide confirmación"
+        },
+        {
+          "id": "c",
+          "text": "Espera a que hablen primero"
+        },
+        {
+          "id": "d",
+          "text": "Muestra un video largo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los Altos D respetan el tiempo y la competencia. '¿Cómo va tu martes?' es molesto. 'Quiero mostrarte cómo ahorrar $40k' es valioso."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Al hacer el pitch a un Alto I (Influyente), ¿en qué debes enfocarte?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Especificaciones técnicas y cumplimiento"
+        },
+        {
+          "id": "b",
+          "text": "Seguridad y reducción de riesgos"
+        },
+        {
+          "id": "c",
+          "text": "Estatus, Visión y Prueba Social (¿Quién más lo usa?)"
+        },
+        {
+          "id": "d",
+          "text": "El descuento de precio"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los Altos I compran estatus. Quieren ser el héroe que trajo la 'nueva tecnología cool'. Muéstrales cómo esto los hace ver inteligentes ante su jefe."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "El cierre del 'Paso Asumido' funciona mejor para qué tipo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alto D"
+        },
+        {
+          "id": "b",
+          "text": "Alto S (Estable)"
+        },
+        {
+          "id": "c",
+          "text": "Alto C"
+        },
+        {
+          "id": "d",
+          "text": "Ninguno de ellos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los tipos Alto S temen tomar una decisión equivocada. Necesitan una Guía. Un cierre asumido ('El siguiente paso lógico es configurar un sandbox') elimina la presión de tener que iniciarlo."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Si preguntas '¿Cómo ha ido tu semana?' y responden 'Bien. Empecemos.', probablemente son:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alto I"
+        },
+        {
+          "id": "b",
+          "text": "Alto S"
+        },
+        {
+          "id": "c",
+          "text": "Alto D"
+        },
+        {
+          "id": "d",
+          "text": "Groseros"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Esta brevedad es una señal clásica del D. Están indicando que quieren enfocarse en los negocios, no en la relación.",
+      "passingScore": 70
+    }
+  ],
+  "passingScore": 70
+}

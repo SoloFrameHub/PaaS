@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core characteristic of all-or-nothing (dichotomous) thinking?",
+            "options": [
+                {"id": "opt1", "text": "Viewing situations in extreme categories with no middle ground—either perfect or terrible, success or failure"},
+                {"id": "opt2", "text": "Always thinking negative thoughts about yourself"},
+                {"id": "opt3", "text": "Being indecisive and unable to choose between options"},
+                {"id": "opt4", "text": "Overthinking every decision until you're paralyzed"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "All-or-nothing thinking (also called dichotomous or black-and-white thinking) involves dividing experiences into two extreme categories—either perfect or terrible, success or failure, good or bad—with no recognition of the middle ground where most reality exists. It's not about negativity or indecisiveness, but about forcing nuanced situations into rigid binary categories."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is continuum thinking more helpful than dichotomous thinking?",
+            "options": [
+                {"id": "opt1", "text": "It makes you feel better by ignoring problems"},
+                {"id": "opt2", "text": "It recognizes that most outcomes fall on a spectrum rather than at extremes, allowing for more accurate and balanced evaluation"},
+                {"id": "opt3", "text": "It eliminates all negative thoughts"},
+                {"id": "opt4", "text": "It means you never have to make decisions"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Continuum thinking (also called dimensional thinking) recognizes that reality rarely exists at the extremes—most outcomes fall somewhere on a spectrum. Using scales (0-100) or shades of gray allows you to evaluate situations more accurately based on evidence, rather than forcing complex realities into oversimplified binary categories. This leads to more balanced emotions and adaptive behaviors."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which situation demonstrates effective use of continuum thinking to counter all-or-nothing distortion?",
+            "options": [
+                {"id": "opt1", "text": "Thought: 'I ate dessert so I ruined my diet' → Response: 'One dessert doesn't erase a week of healthy eating. On a 0-100 scale of healthy eating this week, I'm at about 85'"},
+                {"id": "opt2", "text": "Thought: 'I'm terrible at this' → Response: 'I should just think positive thoughts instead'"},
+                {"id": "opt3", "text": "Thought: 'This is all bad' → Response: 'Actually everything is perfect'"},
+                {"id": "opt4", "text": "Thought: 'I failed' → Response: 'Failure doesn't exist, everyone wins'"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Effective continuum thinking involves recognizing the middle ground and rating the situation on a scale rather than forcing it into extremes. The dessert example shows someone acknowledging that one meal doesn't define their entire week, and rating their overall eating at 85/100—a nuanced, evidence-based appraisal. The other options involve toxic positivity, denial, or unrealistic reframing rather than genuine continuum thinking."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In which areas is all-or-nothing thinking particularly common and problematic?",
+            "options": [
+                {"id": "opt1", "text": "Only in academic performance"},
+                {"id": "opt2", "text": "Performance contexts (work/school), self-evaluation, relationships, and health/habit formation—especially where perfectionism is present"},
+                {"id": "opt3", "text": "Only in people with diagnosed mental illness"},
+                {"id": "opt4", "text": "It's equally common in all life domains and not particularly problematic"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "All-or-nothing thinking is particularly prevalent in performance contexts, self-evaluation ('I'm either competent or worthless'), relationship judgments ('people are either for me or against me'), and health/habit formation ('I'm either perfect with my routine or I've failed'). It's especially common in perfectionism and contributes to depression and anxiety. Anyone can experience this distortion—it's not limited to diagnosed conditions, but it is more problematic in certain domains."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify one recent situation where you engaged in all-or-nothing thinking. What were the two extreme categories you used? How would you evaluate that situation on a 0-100 continuum instead? What percentage would you honestly assign, and why?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "5",
+    "title": "All-or-Nothing Thinking: Breaking Black-and-White - Quiz"
+}

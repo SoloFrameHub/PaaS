@@ -1,0 +1,142 @@
+{
+  "lessonId": "8",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Linter de Ventas para Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la función principal del 'Linter de Ventas' para el contenido?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verificar errores de ortografía y gramática"
+        },
+        {
+          "id": "b",
+          "text": "Identificar y corregir 'errores de conversión' que impiden que el contenido genere leads"
+        },
+        {
+          "id": "c",
+          "text": "Publicar automáticamente tu contenido en redes sociales"
+        },
+        {
+          "id": "d",
+          "text": "Buscar palabras clave que mejoren el SEO"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un linter de ventas garantiza que tu contenido sea estructuralmente sólido para los resultados del negocio, no solo para la corrección gramatical."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Dónde debe establecerse la 'Claridad de Audiencia' en una pieza de contenido?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En el resumen final"
+        },
+        {
+          "id": "b",
+          "text": "Dentro de las primeras 50 palabras"
+        },
+        {
+          "id": "c",
+          "text": "En la letra pequeña al pie de la página"
+        },
+        {
+          "id": "d",
+          "text": "Solo en el título"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los lectores modernos (y los motores de respuesta de IA) necesitan saber de inmediato para quién es el contenido. Si tienen que buscar la relevancia, se irán."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el 'Equilibrio Valor/Petición' recomendado para el contenido de fundadores en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50% Valor / 50% Petición"
+        },
+        {
+          "id": "b",
+          "text": "10% Valor / 90% Petición"
+        },
+        {
+          "id": "c",
+          "text": "90% Valor / 10% Petición"
+        },
+        {
+          "id": "d",
+          "text": "100% Valor / 0% Petición"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Al sobreofrecer valor primero, te ganas el derecho de hacer una pequeña 'petición' lógica al final. Comenzar con la petición genera resistencia; comenzar con el valor genera confianza."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué caracteriza a un 'CTA Suave'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una demanda agresiva de '¡Compra Ahora!'"
+        },
+        {
+          "id": "b",
+          "text": "Un paso siguiente natural y de baja presión que proporciona más valor (ej., 'Consulta esta guía gratuita')"
+        },
+        {
+          "id": "c",
+          "text": "Un enlace que no funciona"
+        },
+        {
+          "id": "d",
+          "text": "Un CTA que está oculto y es difícil de ver"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los CTAs suaves nutren la relación sin exigir una compra. Son perfectos para la colocación en línea en contenido TOFU o MOFU."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué se incluye el 'Manejo de Objeciones' en la lista de verificación del Linter de Ventas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para discutir con personas en la sección de comentarios"
+        },
+        {
+          "id": "b",
+          "text": "Para anticipar y abordar las dudas comunes que el lector podría tener antes de llegar al CTA"
+        },
+        {
+          "id": "c",
+          "text": "Para decirle al lector por qué está equivocado"
+        },
+        {
+          "id": "d",
+          "text": "Para explicar por qué tu software es el más caro"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El contenido de ventas efectivo maneja las objeciones en silencio. Si abordas una duda de dolor o costo con anticipación, el lector tiene mucha más probabilidad de hacer clic en el CTA final."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Audita tu borrador de contenido o idea más reciente. Dale una puntuación (1-5) en 'Claridad de Audiencia' y 'CTA Suave.' ¿Qué oración específica podrías agregar o cambiar para mejorar estas dos puntuaciones? ¿Por qué elegiste esa mejora específica?",
+      "minLength": 100,
+      "promptForAI": "Revisa si el fundador es objetivo en su puntuación. Debe identificar una 'Corrección' específica (ej., 'Cambiaré la primera oración para mencionar específicamente a los CTOs en startups en Serie A')."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

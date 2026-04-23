@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the primary distinction between coaching and psychotherapy that makes coaching legally and ethically different?",
+      "options": [
+        {"id": "opt1", "text": "Coaching costs less money and takes less time than therapy"},
+        {"id": "opt2", "text": "Coaching is future-focused and non-clinical, working with non-distressed populations on goals and development, while therapy involves assessment, diagnosis, and treatment of mental health conditions by licensed clinicians"},
+        {"id": "opt3", "text": "Coaching uses positive psychology while therapy focuses only on problems and pathology"},
+        {"id": "opt4", "text": "Coaching is more effective than therapy for most people's problems"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Coaching is explicitly non-clinical: it does not diagnose, assess, or treat mental health conditions. Therapy is a licensed clinical practice for individuals with psychiatric diagnoses or significant distress. Understanding this boundary is legally critical — coaches who cross into clinical territory risk criminal charges for practicing medicine without a license."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A potential client says: 'I've been experiencing panic attacks daily for three months and my doctor suggested therapy, but I think coaching would be better because it's more positive.' What is the most appropriate response?",
+      "options": [
+        {"id": "opt1", "text": "Agree to work with them but focus on 'stress management' rather than explicitly addressing the panic attacks"},
+        {"id": "opt2", "text": "Warmly communicate role limits: daily panic attacks are a clinical symptom requiring professional assessment and treatment, which is outside coaching scope. Offer to help identify appropriate clinical resources and support their connection to care"},
+        {"id": "opt3", "text": "Refer them to therapy and end the conversation immediately"},
+        {"id": "opt4", "text": "Assess their anxiety severity using a questionnaire to determine if coaching is appropriate"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Daily panic attacks for three months is a clinical presentation requiring licensed professional care. Coaches cannot treat psychiatric symptoms. The appropriate response warmly acknowledges the person's needs, clearly states your scope limits, and actively supports connection to appropriate care without abandoning them. Reframing as 'stress management' (opt1) is scope creep; abrupt referral (opt3) lacks warmth; assessment (opt4) is clinical work outside coaching scope."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to meta-analytic research on coaching psychology, what outcome has the STRONGEST evidence base?",
+      "options": [
+        {"id": "opt1", "text": "Reducing symptoms of depression and anxiety (large effect sizes across multiple RCTs)"},
+        {"id": "opt2", "text": "Goal attainment (effect size g = 1.29), with moderate-to-large effects on self-efficacy (g = 0.59)"},
+        {"id": "opt3", "text": "Healing trauma and processing childhood wounds"},
+        {"id": "opt4", "text": "All mental health outcomes show equally strong evidence for coaching"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Coaching psychology has STRONG evidence for goal attainment (g = 1.29) and self-efficacy (g = 0.59), with MODERATE evidence for wellbeing (g = 0.28). Evidence for symptom reduction (depression/anxiety) is rated LOW CERTAINTY — small effects, high bias risk, limited long-term follow-up. Trauma processing (opt3) requires licensed clinical training. Coaches should confidently claim their support for goal achievement and self-efficacy, while never positioning coaching as treatment for clinical conditions."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What does the peer support research evidence tell us about appropriate outcomes to emphasize when providing peer support?",
+      "options": [
+        {"id": "opt1", "text": "Peer support should be marketed primarily for symptom reduction since it shows strong evidence for treating depression and anxiety"},
+        {"id": "opt2", "text": "Peer support shows MODERATE evidence for personal recovery outcomes (hope, empowerment, engagement) and should be framed around connection and recovery journey, not clinical symptom treatment"},
+        {"id": "opt3", "text": "Peer support is just as effective as professional therapy and can replace clinical care in most situations"},
+        {"id": "opt4", "text": "There is no evidence for peer support effectiveness, so it should not be recommended"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Peer support meta-analyses show MODERATE evidence for personal recovery outcomes (SMD = 0.20 for hope/empowerment/engagement) and WEAK TO MODERATE evidence for symptom reduction. The strongest and most consistent findings are around connection, reduced isolation, and recovery-oriented growth — not clinical symptom change. Peer support complements but does not replace clinical care. Accurately representing the evidence protects both you and the people you support."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Research on youth mentoring relationships found that dissolved or poorly terminated mentoring relationships were associated with what outcome?",
+      "options": [
+        {"id": "opt1", "text": "No significant difference compared to youth who were never mentored"},
+        {"id": "opt2", "text": "Slightly better outcomes than no mentoring, though not as good as continuous relationships"},
+        {"id": "opt3", "text": "Worse outcomes than no mentoring at all, including lower self-esteem and greater depressed mood, particularly for boys"},
+        {"id": "opt4", "text": "The research did not examine relationship endings, only continuous mentoring"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Critical finding from Dewit et al. (2016): dissolved mentoring relationships — especially for boys — were associated with WORSE outcomes than no mentoring, including lower peer self-esteem and greater depressed mood. This demonstrates that starting supportive relationships you cannot sustain, or ending them poorly, can cause real harm. Relationship continuity and ethical endings are not optional — they are safety-critical competencies you will learn in this course."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "1",
+  "title": "The Science of Effective Coaching and Mentoring - Quiz"
+}

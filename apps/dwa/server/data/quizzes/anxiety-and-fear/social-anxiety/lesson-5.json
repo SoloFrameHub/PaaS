@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does avoiding feared social situations ultimately maintain social anxiety?",
+            "options": [
+                { "id": "opt1", "text": "Because avoidance causes your social skills to permanently deteriorate" },
+                { "id": "opt2", "text": "Because avoidance prevents you from discovering that your catastrophic predictions are wrong" },
+                { "id": "opt3", "text": "Because avoidance makes other people judge you more harshly" },
+                { "id": "opt4", "text": "Because avoidance leads to depression, which then causes social anxiety" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When you avoid social situations because you predict negative outcomes, you never get to learn that your predictions are wrong. Avoidance preserves fear by preventing disconfirmation. Exposure breaks this pattern by giving you direct evidence that the feared catastrophe usually does not happen."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When building a fear hierarchy for social anxiety, what SUDS range should you aim to start with?",
+            "options": [
+                { "id": "opt1", "text": "80-100 — face your biggest fear first" },
+                { "id": "opt2", "text": "0-10 — only do things with zero anxiety" },
+                { "id": "opt3", "text": "30-40 — manageable situations that still create some anxiety" },
+                { "id": "opt4", "text": "50-60 — moderate difficulty is always the best starting point" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Start with situations rated 30-40 on your SUDS scale — manageable enough to attempt but still challenging enough to produce learning. If even this feels too big, break it down further. The key is building confidence through gradual success before moving up the hierarchy."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is it important to stay in a feared social situation until your anxiety has naturally decreased, rather than leaving at peak anxiety?",
+            "options": [
+                { "id": "opt1", "text": "Because leaving requires too much energy when anxiety is high" },
+                { "id": "opt2", "text": "Because leaving at peak anxiety teaches your brain the situation was dangerous, while staying teaches it that anxiety peaks and then falls on its own" },
+                { "id": "opt3", "text": "Because other people will judge you for leaving early" },
+                { "id": "opt4", "text": "Because anxiety does not actually peak during social situations" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Leaving a situation at peak anxiety teaches your brain that the situation was dangerous and escape was necessary. Staying until anxiety naturally decreases — which typically takes 20-45 minutes — teaches your brain the crucial lesson that anxiety peaks and then falls on its own without you needing to escape."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "During a graduated exposure exercise, why is it crucial to drop safety behaviors?",
+            "options": [
+                { "id": "opt1", "text": "Because safety behaviors make you more visible to others" },
+                { "id": "opt2", "text": "Because safety behaviors are physically harmful" },
+                { "id": "opt3", "text": "Because using safety behaviors during exposure means you are not getting the full benefit — the learning you need is 'I can handle this without my safety net'" },
+                { "id": "opt4", "text": "Because therapists require that all safety behaviors be eliminated before starting exposure" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "If you are 'exposing' yourself to a situation but relying on safety behaviors (avoiding eye contact, rehearsing lines, holding your phone), you are not getting the full benefit. The critical learning is: 'I can handle this situation WITHOUT my safety net.' With safety behaviors, any success gets attributed to the crutch, not to your actual capability."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should you do if a social exposure genuinely does not go well?",
+            "options": [
+                { "id": "opt1", "text": "Stop all exposure practice and return to avoidance" },
+                { "id": "opt2", "text": "Conclude that your social anxiety was justified all along" },
+                { "id": "opt3", "text": "Examine it realistically, extract what you can learn, and continue with your hierarchy — one setback does not erase progress" },
+                { "id": "opt4", "text": "Repeat the exact same exposure immediately until it goes perfectly" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Sometimes social interactions do not go well — and that happens to everyone, not just people with social anxiety. The response should be to avoid catastrophizing the setback, examine it realistically (was it truly as bad as it feels?), extract the learning, and continue with your hierarchy. One bad interaction does not erase months of progress."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "social-anxiety",
+    "lessonId": "5",
+    "title": "Gradual Exposure to Social Situations - Quiz"
+}

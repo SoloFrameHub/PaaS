@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 4: Your Thought Record</title>
+        <style>:root { --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0; --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568; --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6; --success-green: #2e7d32; --success-bg: #e8f5e9; --warning-orange: #f57c00; --warning-bg: #fff3e0; } body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--gentle-text); margin: 0; padding: 20px; background-color: var(--light-sage); } .container { max-width: 900px; margin: 0 auto; } .gentle-header { background: linear-gradient(135deg, var(--calming-teal) 0%, var(--soft-blue) 100%); color: white; padding: 25px 30px; text-align: center; border-radius: 12px; margin-bottom: 30px; } .gentle-header h1 { font-size: 1.8em; margin: 0 0 10px 0; } .gentle-header p { font-size: 1em; margin: 0; opacity: 0.95; } .safe-space-container { background: var(--soft-white); border-radius: 12px; padding: 30px 40px; border: 1px solid var(--light-teal); box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15); margin-bottom: 30px; } .intro-block { border-left: 5px solid var(--sage-green); padding: 20px 25px; background: #f7fbf8; margin-bottom: 30px; border-radius: 0 8px 8px 0; } .intro-block h2 { color: var(--deep-teal); font-size: 1.6em; margin-top: 0; } .download-block { text-align: center; padding: 20px; background: var(--light-teal); border-radius: 8px; margin-bottom: 40px; } .btn-download { background: var(--deep-teal); color: white; border: none; padding: 12px 25px; font-size: 1em; font-weight: 600; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s; } .btn-download:hover { background-color: var(--calming-teal); transform: translateY(-2px); } .step { background: var(--soft-white); padding: 25px; border-radius: 12px; margin-bottom: 25px; border: 2px solid #e8f4f6; position: relative; } .step.completed { border-color: var(--success-green); background: #f8fff9; } .step-number { position: absolute; top: -12px; left: 20px; background: var(--soft-blue); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; font-weight: bold; } .step.completed .step-number { background: var(--success-green); } .step.completed .step-number::after { content: '✓'; font-size: 0.7em; } .step label { display: block; font-size: 1.3em; font-weight: 600; color: var(--deep-teal); margin: 10px 0; } .step .description { font-size: 0.95em; color: var(--warm-gray); margin-bottom: 15px; } .step textarea { width: 100%; min-height: 80px; border: 2px solid #e8f4f6; border-radius: 8px; padding: 12px; font-family: 'Segoe UI', sans-serif; font-size: 1em; line-height: 1.6; color: var(--gentle-text); transition: border-color 0.3s; resize: vertical; } .step textarea:focus { outline: none; border-color: var(--soft-blue); box-shadow: 0 0 0 3px rgba(107, 163, 208, 0.2); } .intensity-container { margin: 15px 0; } .slider-container { display: flex; align-items: center; gap: 15px; margin: 10px 0; } .slider { flex-grow: 1; height: 6px; border-radius: 3px; background: #e0e0e0; outline: none; cursor: pointer; -webkit-appearance: none; } .slider::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: var(--calming-teal); cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.2); } .intensity-value { font-weight: bold; color: var(--deep-teal); min-width: 60px; text-align: center; } .traps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; } .trap-option { display: flex; align-items: flex-start; background: var(--light-teal); padding: 15px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; border: 2px solid transparent; } .trap-option:hover { background-color: #dceaf5; transform: translateY(-1px); } .trap-option.selected { border-color: var(--calming-teal); background-color: #d4edda; } .trap-option input { margin: 2px 12px 0 0; width: 18px; height: 18px; accent-color: var(--calming-teal); } .trap-title { font-weight: 600; color: var(--deep-teal); margin-bottom: 4px; } .trap-desc { font-size: 0.85em; color: var(--warm-gray); } .helper-tip { background: var(--warning-bg); border: 1px solid var(--warning-orange); border-radius: 6px; padding: 12px 15px; margin-top: 15px; font-size: 0.9em; } .helper-tip strong { color: var(--warning-orange); } .submit-section { text-align: center; margin-top: 30px; } .btn-submit { background: var(--sage-green); color: white; border: none; padding: 15px 30px; font-size: 1.1em; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.3s; } .btn-submit:hover { background-color: #769a59; transform: translateY(-2px); } .completion-message { text-align: center; padding: 40px; margin-top: 30px; background: var(--success-bg); border: 2px solid var(--success-green); border-radius: 12px; display: none; } .completion-message h2 { color: var(--success-green); margin-top: 0; font-size: 1.8em; } .celebration { font-size: 3em; margin-bottom: 15px; } @media (max-width: 768px) { body {  padding: 15px; }  .safe-space-container {  padding: 20px 25px; }  .traps-grid {  grid-template-columns: 1fr; } }</style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="gentle-header">
+                <h1>Lesson 4: Your Thought Record</h1>
+                <p>A practical tool to bring all your new skills together.</p>
+            </header>
+            <main class="safe-space-container">
+                <section class="intro-block">
+                    <h2>Putting Knowledge Into Practice</h2>
+                    <p><strong>A note from Autumn:</strong> "In the past few lessons, we've learned to identify the Thought-Feeling-Action cycle and spot common Thinking Traps. Now, it's time to use those skills in a structured way. A Thought Record isn't about judgment; it's a powerful tool for building awareness and proving to yourself that you can change how you feel by shifting how you think."</p>
+                </section>
+                <form id="thoughtRecordForm">
+                    <p style="text-align: center; font-style: italic; margin-bottom: 30px;">
+                    Complete all steps below, then submit your completed thought record. </p>
+                    <!-- Step 1: Situation -->
+                    <div class="step" id="step1">
+                        <div class="step-number">1</div>
+                        <label>Step 1: The Situation</label>
+                        <p class="description">Describe a recent situation that triggered an anxious or negative feeling. Be specific: Who, what, where, when?</p>
+                        <textarea id="situation" placeholder="e.g., Yesterday afternoon, my manager emailed me asking for a 'quick chat' about my project." required></textarea>
+                        <div class="helper-tip"><strong>Tip:</strong> Focus on facts rather than interpretations. What actually happened?
+                        </div>
+                    </div>
+                    <!-- Step 2: Emotions -->
+                    <div class="step" id="step2">
+                        <div class="step-number">2</div>
+                        <label>Step 2: Your Emotions</label>
+                        <p class="description">What emotions did you feel? Rate the intensity of your strongest emotion.</p>
+                        <textarea id="emotions" placeholder="e.g., Anxious, worried, scared, embarrassed..." required></textarea>
+                        <div class="intensity-container">
+                            <label>Intensity of strongest emotion:</label>
+                            <div class="slider-container"><span>Mild</span>
+                                <input type="range" id="intensity" class="slider" min="1" max="10" value="5"><span>Intense</span>
+                                <div class="intensity-value" id="intensityValue">5/10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3: Automatic Thought -->
+                    <div class="step" id="step3">
+                        <div class="step-number">3</div>
+                        <label>Step 3: The Automatic Thought</label>
+                        <p class="description">What was the first thought that popped into your head? Write it down exactly as it occurred.</p>
+                        <textarea id="automaticThought" placeholder="e.g., 'Oh no, I've messed something up. She's unhappy with my work and I'm in trouble.'" required></textarea>
+                        <div class="helper-tip"><strong>Tip:</strong> Write the thought as if it's speaking to you directly. Use "I" statements.
+                        </div>
+                    </div>
+                    <!-- Step 4: Thinking Traps -->
+                    <div class="step" id="step4">
+                        <div class="step-number">4</div>
+                        <label>Step 4: Identify the Thinking Trap(s)</label>
+                        <p class="description">Look at your automatic thought. Which traps might apply here? (Select all that apply)</p>
+                        <div class="traps-grid">
+                            <div class="trap-option" onclick="toggleTrap(this)">
+                                <input type="checkbox" name="trap" value="catastrophizing">
+                                <div>
+                                    <div class="trap-title">Catastrophizing</div>
+                                    <div class="trap-desc">Expecting the worst possible outcome</div>
+                                </div>
+                            </div>
+                            <div class="trap-option" onclick="toggleTrap(this)">
+                                <input type="checkbox" name="trap" value="mind-reading">
+                                <div>
+                                    <div class="trap-title">Mind Reading</div>
+                                    <div class="trap-desc">Assuming you know what others are thinking</div>
+                                </div>
+                            </div>
+                            <div class="trap-option" onclick="toggleTrap(this)">
+                                <input type="checkbox" name="trap" value="all-or-nothing">
+                                <div>
+                                    <div class="trap-title">All-or-Nothing</div>
+                                    <div class="trap-desc">Seeing things in black and white</div>
+                                </div>
+                            </div>
+                            <div class="trap-option" onclick="toggleTrap(this)">
+                                <input type="checkbox" name="trap" value="emotional-reasoning">
+                                <div>
+                                    <div class="trap-title">Emotional Reasoning</div>
+                                    <div class="trap-desc">"I feel it, so it must be true"</div>
+                                </div>
+                            </div>
+                            <div class="trap-option" onclick="toggleTrap(this)">
+                                <input type="checkbox" name="trap" value="should-statements">
+                                <div>
+                                    <div class="trap-title">"Should" Statements</div>
+                                    <div class="trap-desc">Rigid expectations about how things "should" be</div>
+                                </div>
+                            </div>
+                            <div class="trap-option" onclick="toggleTrap(this)">
+                                <input type="checkbox" name="trap" value="labeling">
+                                <div>
+                                    <div class="trap-title">Labeling</div>
+                                    <div class="trap-desc">Defining yourself or others with negative labels</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 5: Balanced Response -->
+                    <div class="step" id="step5">
+                        <div class="step-number">5</div>
+                        <label>Step 5: Create a Balanced Response</label>
+                        <p class="description">Challenge that automatic thought. What's a more realistic, balanced, or compassionate way to see this?</p>
+                        <textarea id="balancedThought" placeholder="e.g., 'A 'quick chat' could be about anything. It might be a simple question. I won't know until the meeting. My work has been good lately.'" required></textarea>
+                        <div class="helper-tip"><strong>Tip:</strong> Look for evidence that supports AND contradicts your automatic thought. What's a more balanced perspective?
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                        <button type="submit" class="btn-submit">🎉 Complete My Thought Record</button>
+                    </div>
+                </form>
+                <div id="completionMessage" class="completion-message">
+                    <div class="celebration">🎉</div>
+                    <h2>Excellent Work!</h2>
+                    <p>You've successfully completed a Thought Record. This is one of the most powerful skills in managing anxiety. Each time you do this, you weaken the power of automatic negative thoughts and strengthen your ability to find balance.</p>
+                    <p><strong>Your balanced thought is now your new mental tool.</strong> Try to recall it when similar situations arise.</p>
+                    <p>Keep this practice up. You're building a new mental muscle!</p>
+                </div>
+            </main>
+        </div>
+        <script>
+        // Update intensity value display
+        document.getElementById('intensity').addEventListener('input', function() {
+            document.getElementById('intensityValue').textContent = this.value + '/10';
+        });
+
+        // Toggle thinking traps
+        function toggleTrap(element) {
+            const checkbox = element.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+            
+            if (checkbox.checked) {
+                element.classList.add('selected');
+            } else {
+                element.classList.remove('selected');
+            }
+        }
+
+        // Mark steps as completed when they have content
+        function checkStepCompletion() {
+            const steps = [
+                { id: 'step1', input: 'situation' },
+                { id: 'step2', input: 'emotions' },
+                { id: 'step3', input: 'automaticThought' },
+                { id: 'step4', input: null }, // Special case for checkboxes
+                { id: 'step5', input: 'balancedThought' }
+            ];
+
+            steps.forEach(step => {
+                const stepElement = document.getElementById(step.id);
+                let isComplete = false;
+
+                if (step.input) {
+                    const input = document.getElementById(step.input);
+                    isComplete = input.value.trim().length > 5;
+                } else {
+                    // Check if any thinking traps are selected
+                    const selectedTraps = document.querySelectorAll('input[name="trap"]:checked');
+                    isComplete = selectedTraps.length > 0;
+                }
+
+                if (isComplete) {
+                    stepElement.classList.add('completed');
+                } else {
+                    stepElement.classList.remove('completed');
+                }
+            });
+        }
+
+        // Add event listeners to check completion
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.addEventListener('input', checkStepCompletion);
+        });
+
+        document.querySelectorAll('input[name="trap"]').forEach(checkbox => {
+            checkbox.addEventListener('change', checkStepCompletion);
+        });
+
+        // Handle form submission
+        document.getElementById('thoughtRecordForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Hide form and show completion message
+            this.style.display = 'none';
+            document.getElementById('completionMessage').style.display = 'block';
+            
+            // Scroll to completion message
+            document.getElementById('completionMessage').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+
+        // Auto-resize textareas
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = Math.min(this.scrollHeight, 200) + 'px';
+            });
+        });
+    </script>
+    </body>
+</html>

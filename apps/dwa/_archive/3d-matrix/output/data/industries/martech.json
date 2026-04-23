@@ -1,0 +1,255 @@
+{
+  "industry_id": "martech",
+  "display_name": "MarTech / AdTech",
+  "parent_category": "technology",
+  "description": "Marketing technology and advertising technology companies focused on digital marketing automation, advertising platforms, analytics, attribution, and customer data management. Encompasses demand-side platforms, customer data platforms, attribution tools, programmatic advertising, and marketing automation solutions.",
+  "typical_company_sizes": ["11-50", "51-200", "201-500"],
+  "typical_deal_sizes": ["smb", "mid_market"],
+  "sales_cycle_length": "weeks",
+
+  "pain_points": [
+    {
+      "pain": "Attribution chaos - inability to accurately track which marketing channels drive conversions",
+      "level": "complex",
+      "context": "Multi-touch attribution models are breaking down as privacy regulations tighten and third-party cookies deprecate"
+    },
+    {
+      "pain": "Cookie deprecation threatening existing targeting and measurement strategies",
+      "level": "complex",
+      "context": "Chrome's third-party cookie phase-out requires fundamental shifts in data collection and audience targeting approaches"
+    },
+    {
+      "pain": "Ad fraud draining budget with fake clicks and impressions",
+      "level": "straightforward",
+      "context": "Estimated 20-30% of digital ad spend lost to fraudulent traffic and bot activity"
+    },
+    {
+      "pain": "Platform dependency on Meta and Google creating business risk",
+      "level": "complex",
+      "context": "Algorithm changes, policy updates, or account suspensions can devastate revenue overnight"
+    },
+    {
+      "pain": "ROI measurement becoming increasingly difficult across fragmented channels",
+      "level": "complex",
+      "context": "Customer journeys span 6-8 touchpoints across multiple platforms, making true attribution nearly impossible"
+    },
+    {
+      "pain": "First-party data collection and activation gaps",
+      "level": "straightforward",
+      "context": "Companies struggle to build robust first-party data infrastructure as third-party data becomes unreliable"
+    },
+    {
+      "pain": "CTV/OTT measurement fragmentation across streaming platforms",
+      "level": "complex",
+      "context": "Each streaming platform has different measurement standards, making cross-platform comparison difficult"
+    },
+    {
+      "pain": "Rising CPMs reducing campaign efficiency",
+      "level": "straightforward",
+      "context": "Increased competition and privacy changes driving up cost per thousand impressions across major platforms"
+    }
+  ],
+
+  "buying_triggers": [
+    "Failed campaign with unexplained poor performance",
+    "New CMO or VP Marketing joins and wants to prove impact",
+    "Board asking for better marketing ROI accountability",
+    "Major platform policy change (iOS ATT, cookie deprecation)",
+    "Competitor gaining market share through better targeting",
+    "Series A/B funding requiring marketing scalability",
+    "Q4 planning season with budget allocation decisions",
+    "Post-campaign audit revealing measurement gaps"
+  ],
+
+  "budget_cycle": "Annual planning in Q4 for following year, with quarterly reallocation common. Marketing teams often have discretionary budget for tools under $25K that can be approved within the quarter.",
+
+  "regulatory_concerns": [
+    "GDPR compliance for EU audience targeting",
+    "CCPA/CPRA data privacy requirements in California",
+    "ePrivacy Directive for cookie consent",
+    "FTC guidelines on advertising disclosures",
+    "COPPA restrictions on targeting minors",
+    "State-level privacy laws proliferating across US"
+  ],
+
+  "compliance_language": [
+    "consent management platform",
+    "first-party data",
+    "privacy-safe measurement",
+    "contextual targeting",
+    "data clean rooms",
+    "privacy sandbox",
+    "consent mode",
+    "server-side tracking"
+  ],
+
+  "risk_tolerance": "medium",
+
+  "terminology": [
+    {
+      "term": "ROAS",
+      "definition": "Return On Ad Spend - revenue generated per dollar spent on advertising, typically expressed as a ratio (e.g., 4:1 means $4 revenue per $1 spent)",
+      "usage_context": "The primary success metric for performance marketing. 'We need at least 3:1 ROAS to justify continued spend on this channel.'"
+    },
+    {
+      "term": "CPM",
+      "definition": "Cost Per Mille - the cost to reach 1,000 impressions or ad views",
+      "usage_context": "Used for brand awareness campaigns and media buying negotiations. 'CPMs on Meta jumped 40% this quarter.'"
+    },
+    {
+      "term": "CPA",
+      "definition": "Cost Per Acquisition - the cost to acquire one customer or conversion",
+      "usage_context": "Critical for evaluating channel efficiency. 'Our CPA on Google is $45 but only $28 on TikTok.'"
+    },
+    {
+      "term": "CPL",
+      "definition": "Cost Per Lead - the cost to generate one qualified lead",
+      "usage_context": "B2B marketing benchmark. 'LinkedIn CPLs are higher but lead quality justifies the premium.'"
+    },
+    {
+      "term": "MQL",
+      "definition": "Marketing Qualified Lead - a lead that marketing has vetted as meeting basic qualification criteria and worth sales follow-up",
+      "usage_context": "Handoff point between marketing and sales. 'We generated 500 MQLs but only 50 converted to SQLs.'"
+    },
+    {
+      "term": "SQL",
+      "definition": "Sales Qualified Lead - a lead that sales has accepted and confirmed as a genuine opportunity worth pursuing",
+      "usage_context": "Revenue team alignment metric. 'Our MQL to SQL conversion rate dropped to 12% this month.'"
+    },
+    {
+      "term": "Multi-touch Attribution",
+      "definition": "Attribution model that distributes conversion credit across multiple touchpoints in the customer journey, rather than first or last touch only",
+      "usage_context": "Analytics sophistication indicator. 'We moved from last-click to multi-touch attribution and discovered email was undervalued.'"
+    },
+    {
+      "term": "First-party Data",
+      "definition": "Data collected directly from your own customers and website visitors, as opposed to third-party data purchased from external sources",
+      "usage_context": "Privacy-era priority. 'Our first-party data strategy is critical now that third-party cookies are going away.'"
+    },
+    {
+      "term": "Cookie Deprecation",
+      "definition": "The phasing out of third-party cookies by browsers, eliminating traditional cross-site tracking and retargeting capabilities",
+      "usage_context": "Industry disruption topic. 'Cookie deprecation is forcing us to completely rethink our retargeting strategy.'"
+    },
+    {
+      "term": "CTV/OTT",
+      "definition": "Connected TV/Over-The-Top - streaming video content delivered over the internet, bypassing traditional cable distribution",
+      "usage_context": "Emerging channel discussion. 'We're shifting 20% of TV budget to CTV for better targeting and measurement.'"
+    },
+    {
+      "term": "Programmatic",
+      "definition": "Automated buying and selling of digital advertising through real-time bidding and algorithmic optimization",
+      "usage_context": "Media buying approach. 'We run 80% of display through programmatic to optimize in real-time.'"
+    },
+    {
+      "term": "DSP",
+      "definition": "Demand-Side Platform - technology platform that allows advertisers to buy digital ad inventory across multiple exchanges through a single interface",
+      "usage_context": "Ad buying infrastructure. 'We consolidated our programmatic buying onto a single DSP for better frequency management.'"
+    },
+    {
+      "term": "CDP",
+      "definition": "Customer Data Platform - software that unifies customer data from multiple sources into a single, coherent customer profile for activation",
+      "usage_context": "Data infrastructure discussion. 'Our CDP finally connects our email, website, and purchase data into unified profiles.'"
+    },
+    {
+      "term": "Attribution Window",
+      "definition": "The time period after an ad interaction during which a conversion will be credited to that ad",
+      "usage_context": "Measurement methodology. 'Meta's 7-day click attribution window means we're missing conversions that take longer.'"
+    },
+    {
+      "term": "Incrementality",
+      "definition": "The additional conversions or revenue that advertising generates above what would have happened organically without the ad spend",
+      "usage_context": "Advanced measurement approach. 'Incrementality testing showed our brand campaigns drive 30% lift over baseline.'"
+    }
+  ],
+
+  "formality_level": "professional",
+  "decision_making_style": "committee",
+
+  "common_objections": [
+    {
+      "objection": "How do I know this will actually improve our ROAS?",
+      "underlying_concern": "Previous tools promised ROI improvements but failed to deliver measurable results, creating skepticism about marketing technology claims",
+      "effective_response_approach": "Offer a paid pilot with specific success metrics defined upfront. Share case studies with similar company profiles showing exact before/after ROAS improvements. Propose a 60-day measurement period with agreed-upon benchmarks.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We've already invested heavily in our current stack and can't justify another integration",
+      "underlying_concern": "Marketing tech sprawl has created integration fatigue and fear of adding complexity. Team is stretched thin managing existing tools.",
+      "effective_response_approach": "Lead with integration simplicity - show native connectors to their existing tools. Quantify time savings that offset integration effort. Position as consolidation opportunity rather than addition.",
+      "level": "complex"
+    },
+    {
+      "objection": "What happens to our data? Privacy regulations are a minefield.",
+      "underlying_concern": "Legal and compliance teams are increasingly scrutinizing marketing tools for GDPR/CCPA violations. CMO doesn't want to be responsible for a data breach.",
+      "effective_response_approach": "Lead with privacy certifications (SOC 2, GDPR compliance). Explain data handling in plain terms. Offer to include legal team in technical review. Provide sample DPA and privacy documentation upfront.",
+      "level": "complex"
+    },
+    {
+      "objection": "We're locked into a contract with [competitor] for another 8 months",
+      "underlying_concern": "Budget is committed and switching costs seem high. Don't want to run parallel systems.",
+      "effective_response_approach": "Offer extended trial that aligns with contract end. Propose running as complement rather than replacement initially. Calculate total cost of staying vs. switching including opportunity cost.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "My team doesn't have bandwidth to learn another tool right now",
+      "underlying_concern": "Team is already overwhelmed with existing responsibilities. Fear of implementation dragging on and creating more work.",
+      "effective_response_approach": "Offer white-glove onboarding with dedicated success manager. Show time-to-value metrics (e.g., 'most teams see results in 2 weeks'). Provide training resources and certification programs.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "How does this work as cookies go away? We need future-proof solutions.",
+      "underlying_concern": "Investment in tools that rely on deprecated technology would be wasted. Need confidence solution will remain effective post-cookie.",
+      "effective_response_approach": "Explain first-party data and privacy-safe measurement architecture. Show roadmap for privacy sandbox integration. Demonstrate current customers successfully operating in cookieless environments.",
+      "level": "complex"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Google Analytics / GA4",
+    "HubSpot Marketing Hub",
+    "Salesforce Marketing Cloud",
+    "Adobe Analytics / Adobe Experience Cloud",
+    "Segment",
+    "Mixpanel / Amplitude",
+    "The Trade Desk",
+    "Meta Business Suite"
+  ],
+
+  "switching_barriers": [
+    "Historical data and reporting continuity concerns",
+    "Existing integrations with CRM and sales tools",
+    "Team training and familiarity with current interface",
+    "Custom dashboards and reports that would need rebuilding",
+    "Contractual commitments with current vendors",
+    "Fear of measurement gaps during transition"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're a {role} at a {company_size} marketing analytics company. {trigger_event}. Your main concern is {pain_point}, and your CEO is asking why marketing can't prove its impact on revenue.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} AdTech startup. Your largest client just asked about your cookie deprecation strategy. {trigger_event}. You need a solution that addresses {pain_point} before your next QBR.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} leading growth at a {company_size} MarTech company. {trigger_event}. The board wants to see {pain_point} resolved before approving next quarter's budget, and you have 3 weeks to present a plan.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} programmatic advertising platform. Meta just changed their API again, breaking your attribution. {trigger_event}. You need to address {pain_point} without disrupting live campaigns.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} who just joined a {company_size} performance marketing agency. The previous marketing stack is a mess with 12 different tools. {trigger_event}. Your priority is fixing {pain_point} to prove your value in the first 90 days.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    }
+  ]
+}

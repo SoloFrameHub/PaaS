@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "3",
+    "lessonTitle": "Profile Optimization",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary psychological function of your LinkedIn profile for lead generation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To list every job you've had since college."
+                },
+                {
+                    "id": "b",
+                    "text": "To act as a 'Landing Page' that builds trust and demonstrates expertise within 3 seconds."
+                },
+                {
+                    "id": "c",
+                    "text": "To show your competitors what you are working on."
+                },
+                {
+                    "id": "d",
+                    "text": "To help LinkedIn's AI find you a job."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In an acquisition engine, your profile is a sales tool. It must immediately communicate your value proposition to an ICP who clicks on your name.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which section of your profile is considered your 'Billboard'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The About section."
+                },
+                {
+                    "id": "b",
+                    "text": "The Experience section."
+                },
+                {
+                    "id": "c",
+                    "text": "The Banner (Cover Photo)."
+                },
+                {
+                    "id": "d",
+                    "text": "The Recommendations section."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The banner is the largest visual element. It should be used to state your value proposition and show authority signals immediately.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 'Headline Hook' strategy, what should your headline focus on?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your most impressive job title."
+                },
+                {
+                    "id": "b",
+                    "text": "Your education and certifications."
+                },
+                {
+                    "id": "c",
+                    "text": "Outcomes for your ICP (Helping X achieve Y without Z)."
+                },
+                {
+                    "id": "d",
+                    "text": "A funny quote or personal catchphrase."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Prosects care about results. A headline that speaks to their specific problem or desired outcome is far more likely to get a connection accepted.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should the 'About' section be written to maximize conversion?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "In the third person, like a professional biography."
+                },
+                {
+                    "id": "b",
+                    "text": "As a chronological list of accomplishments."
+                },
+                {
+                    "id": "c",
+                    "text": "In the first person, using a 'Problem/Solution' narrative that addresses the ICP's pain."
+                },
+                {
+                    "id": "d",
+                    "text": "It shouldn't be written; just use bullet points of your skills."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Human-to-human connection is built through stories and empathy. Starting with the prospect's problem shows you are a practitioner who understands their world.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Featured' section in the Elite Profile Framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To show your personal vacation photos."
+                },
+                {
+                    "id": "b",
+                    "text": "To move from 'Claims' to 'Evidence' by showcasing lead magnets, case studies, and authority posts."
+                },
+                {
+                    "id": "c",
+                    "text": "To list your favorite skills and endorsements."
+                },
+                {
+                    "id": "d",
+                    "text": "To link to your competitors' websites."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Featured section is your portfolio. It's where you provide the 'Proof' that back up the claims you made in your headline and banner.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at the first 40 characters of your current LinkedIn headline. If a stranger received a connection request from you on their phone, what is the single most important 'Outcome' or 'Identity' signal they would see? Does it make them want to click 'Accept' or 'Ignore'?",
+            "promptHints": [
+                "Check how your headline appears on the mobile app notification.",
+                "Think about what an ICP would find most intriguing.",
+                "Consider if you sound like a 'Service Provider' or a 'Strategic Partner'."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "2"
+        ],
+        "unlocks": [
+            "4"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Profile Optimization - Quiz"
+}

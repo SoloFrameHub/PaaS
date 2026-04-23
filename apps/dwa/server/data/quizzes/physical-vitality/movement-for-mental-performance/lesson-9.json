@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What was the effect size for resistance training in the 2024 BMJ meta-analysis, and how does this compare to other modalities?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Resistance training showed no effect on depression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Resistance training produced g = -0.49 for depression (moderate effect), comparable to yoga and mixed aerobic, with excellent tolerability and low dropout rates"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Resistance training was the least effective modality tested"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Resistance training only works for building muscle, not mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Resistance training produced a moderate effect size (g = -0.49) for depression, comparable to yoga and mixed aerobic exercise. Importantly, it had excellent tolerability — among the best-tolerated modalities with low dropout rates. This makes it an equally valid path to mental health benefits as cardio, especially for those who find cardio boring or overwhelming."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does strength training build self-efficacy, and why does this matter for mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Strength training doesn't affect self-efficacy"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Strength training builds self-efficacy through mastery experiences — visible, measurable progress (more weight, more reps) provides concrete proof of capability, countering depression's helplessness narrative"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Self-efficacy only matters for athletes, not people with depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You need to lift very heavy weights for self-efficacy to build"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Self-efficacy (belief in your ability to succeed) is the strongest predictor of exercise adherence. Strength training builds self-efficacy faster than many modalities because progress is observable and quantifiable: you lift 10 lbs this week, 12 lbs next week, 20 lbs next month. This concrete proof of capability counters depression's narrative of helplessness. The mechanism is similar to exposure therapy — graduated challenges that prove capability."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the principle of progressive overload, and why is it important for both physical and mental health benefits?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Progressive overload means always doing the same workout so your body adapts"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Progressive overload means systematically increasing weight, reps, or sets over time to maintain challenge — this builds strength AND self-efficacy through visible progress"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Progressive overload is dangerous and should be avoided"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Progressive overload only applies to professional bodybuilders"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Progressive overload means each week, you increase ONE of the following: weight (add 2.5-5 lbs), reps (do 1-2 more per set), or sets (add one more set). This maintains challenge and drives adaptation (you get stronger). For mental health, progressive overload provides visible, measurable progress every session — proof of capability that builds self-efficacy. Example: Week 5 squat 20 lbs × 10 reps → Week 6 squat 20 lbs × 12 reps → Week 7 squat 25 lbs × 10 reps."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the 2025 meta-analysis, which population showed the strongest cognitive benefits from resistance training?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Young athletes only"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Older adults (65+) showed selective improvements in working memory, verbal learning, and spatial memory from resistance training"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Resistance training has no cognitive benefits for any population"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only children benefit cognitively from resistance training"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A 2025 meta-analysis found that resistance training in older adults (65+) produced selective cognitive improvements: working memory (holding and manipulating information), verbal learning (encoding and recalling words), and spatial memory (navigating and remembering locations). The mechanism involves IGF-1 and BDNF increases, which promote neuroplasticity in the prefrontal cortex and hippocampus. Combined aerobic + resistance showed the strongest overall cognitive effects."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Set one concrete, measurable strength goal you could work toward in the next 8 weeks. Make it specific and achievable (e.g., '10 full push-ups,' 'Deadlift 100 lbs,' '30-second plank without shaking,' 'Complete full-body workout 2x/week for 8 weeks'). Why did you choose this goal?",
+            "minLength": 50,
+            "explanation": "This reflection applies the lesson's emphasis on concrete goals and self-efficacy building. Strength training provides built-in measurable targets, unlike abstract goals like 'get fit.' A specific goal creates clear success criteria and makes progress undeniable. Your reflection should identify a goal that's challenging but achievable given your current capacity, and explain why this particular goal matters to you (intrinsic motivation)."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "9",
+    "title": "Strength Training for Self-Esteem - Quiz"
+}

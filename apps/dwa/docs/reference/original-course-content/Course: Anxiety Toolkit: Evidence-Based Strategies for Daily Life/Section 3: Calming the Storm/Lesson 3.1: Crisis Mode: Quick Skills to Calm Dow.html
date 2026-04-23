@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.1: The TIPP Skill for Crisis Moments</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+            --danger-red: #c62828; --danger-bg: #ffebee; --danger-border: #ef9a9a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        .gentle-header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, #477e8f 100%);
+            color: white; padding: 25px 30px; text-align: center;
+            border-radius: 12px; margin-bottom: 30px;
+        }
+        .gentle-header h1 { font-size: 1.8em; margin: 0 0 10px 0; color: white; }
+        .gentle-header p { font-size: 1.1em; margin: 0; opacity: 0.95; }
+
+        .safe-space-container {
+            background: var(--soft-white); border-radius: 12px;
+            padding: 30px 40px; border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15);
+            margin-bottom: 30px;
+        }
+        
+        .intro-block {
+            border-left: 5px solid var(--calming-teal); padding: 20px 25px;
+            background: var(--light-teal); margin-bottom: 30px; border-radius: 0 8px 8px 0;
+        }
+        .intro-block h2 { color: var(--deep-teal); font-size: 1.6em; margin-top: 0; }
+        .intro-block p { font-size: 1.1em; }
+        .intro-block .provider-note { font-style: italic; color: var(--warm-gray); }
+
+        /* TIPP Acronym Section */
+        .tipp-container {
+            display: flex; justify-content: space-around; align-items: center;
+            margin: 40px 0; text-align: center; flex-wrap: wrap; gap: 20px;
+        }
+        .tipp-letter {
+            font-size: 3.5em; font-weight: 800; color: var(--soft-blue);
+            transition: all 0.3s;
+        }
+        .plus-sign { font-size: 2em; color: var(--warm-gray); }
+
+        /* Accordion for TIPP details */
+        .accordion { margin-top: 20px; }
+        .accordion-item {
+            background: var(--soft-white); border: 1px solid var(--light-teal);
+            border-radius: 8px; margin-bottom: 10px; overflow: hidden;
+        }
+        .accordion-header {
+            background: var(--light-teal); padding: 15px 20px;
+            cursor: pointer; display: flex; justify-content: space-between;
+            align-items: center; transition: background-color 0.3s;
+        }
+        .accordion-header:hover { background-color: #dceaf5; }
+        .accordion-header h3 { margin: 0; color: var(--deep-teal); font-size: 1.3em; }
+        .accordion-header .icon {
+            font-size: 1.5em; color: var(--soft-blue);
+            transition: transform 0.3s;
+        }
+        .accordion-item.active .icon { transform: rotate(45deg); }
+        .accordion-content {
+            padding: 20px; display: none; /* Hidden by default */
+            border-top: 1px solid var(--light-teal);
+            animation: fadeIn 0.5s;
+        }
+        .accordion-content p { margin: 0 0 15px 0; }
+        .accordion-content .how-to-box {
+            background: var(--light-sage); padding: 15px;
+            border-radius: 6px; border-left: 4px solid var(--sage-green);
+        }
+        .how-to-box ul { list-style: none; padding-left: 0; margin: 0; }
+        .how-to-box li { padding-left: 25px; position: relative; }
+        .how-to-box li::before {
+            content: '✓'; position: absolute; left: 0; color: var(--sage-green);
+        }
+        
+        .safety-warning {
+            padding: 15px; margin-top: 15px; background: var(--danger-bg);
+            border: 1px solid var(--danger-border); color: var(--danger-red);
+            border-radius: 6px; font-weight: 500;
+        }
+        
+        .btn {
+            display: block; margin: 30px auto 0 auto; background: var(--sage-green);
+            color: white; border: none; padding: 12px 30px; font-size: 1.1em;
+            font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.3s;
+        }
+        .btn:hover { background-color: #769a59; transform: translateY(-2px); }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="gentle-header">
+            <h1>Lesson 3.1: Crisis Mode: Quick Skills to Calm Down Fast</h1>
+            <p>Your first-aid kit for emotional emergencies.</p>
+        </header>
+
+        <main class="safe-space-container">
+            <section class="intro-block">
+                <h2>The TIPP Skill</h2>
+                <p>When you're in an emotional crisis—like a panic attack or feeling completely overwhelmed—your body's 'gas pedal' is floored. Before you can think clearly, you need to change your body's chemistry. The TIPP skill is a powerful, fast-acting way to do just that.</p>
+                <p class="provider-note"><strong>A note from Phillip:</strong> "Think of this as pressing the emergency brake. It's not designed to solve the problem, but to get you out of the red zone so you can think clearly enough to use your other skills."</p>
+            </section>
+            
+            <div class="tipp-container">
+                <div class="tipp-letter">T</div> <div class="plus-sign">+</div>
+                <div class="tipp-letter">I</div> <div class="plus-sign">+</div>
+                <div class="tipp-letter">P</div> <div class="plus-sign">+</div>
+                <div class="tipp-letter">P</div>
+            </div>
+
+            <p style="text-align: center; font-weight: 500; margin-top: 30px;">Click on each section below to learn what each letter means and how to use it.</p>
+
+            <section class="accordion">
+                <!-- Temperature -->
+                <div class="accordion-item" id="item-t">
+                    <div class="accordion-header" onclick="toggleAccordion('item-t')">
+                        <h3>T = Temperature</h3>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>What it does:</strong> Drastically changes your body's chemistry by activating the "dive response," which is hard-wired in mammals to slow the heart rate when the face is submerged in cold water.</p>
+                        <div class="how-to-box">
+                            <strong>How to do it safely:</strong>
+                            <ul>
+                                <li>Fill a bowl with cold water (and ice, if you can).</li>
+                                <li>Hold your breath and dip your face into the water for 15-30 seconds.</li>
+                                <li>Alternatively, hold a cold pack or a bag of frozen vegetables on your eyes and cheeks.</li>
+                            </ul>
+                        </div>
+                        <div class="safety-warning">
+                            <strong>Safety First:</strong> Do not try this if you have a heart condition or any medical issue that could be affected by sudden temperature changes without consulting your doctor.
+                        </div>
+                    </div>
+                </div>
+                <!-- Intense Exercise -->
+                <div class="accordion-item" id="item-i">
+                    <div class="accordion-header" onclick="toggleAccordion('item-i')">
+                        <h3>I = Intense Exercise</h3>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>What it does:</strong> Burns off the intense energy created by adrenaline. It helps your body match its physical state to your emotional state, which helps expend the anxious energy more quickly.</p>
+                        <div class="how-to-box">
+                            <strong>How to do it safely:</strong>
+                            <ul>
+                                <li>Engage in brief, vigorous exercise for a few minutes.</li>
+                                <li>Examples: Run in place, do jumping jacks, walk up and down stairs quickly, or do a fast-paced walk.</li>
+                                <li>The goal is to get your heart rate up even higher, just for a moment, to burn off the fuel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paced Breathing -->
+                <div class="accordion-item" id="item-p1">
+                    <div class="accordion-header" onclick="toggleAccordion('item-p1')">
+                        <h3>P = Paced Breathing</h3>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>What it does:</strong> Directly activates your "brake pedal" (parasympathetic nervous system). Slowing down your exhale tells your brain that the danger has passed and it's safe to calm down.</p>
+                        <div class="how-to-box">
+                            <strong>How to do it:</strong>
+                            <ul>
+                                <li>Breathe in slowly through your nose for a count of 4.</li>
+                                <li>Breathe out even more slowly through your mouth for a count of 6 (or longer).</li>
+                                <li>Focus only on the counting and the sensation of your breath. Repeat for at least one minute.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paired Muscle Relaxation -->
+                <div class="accordion-item" id="item-p2">
+                    <div class="accordion-header" onclick="toggleAccordion('item-p2')">
+                        <h3>P = Paired Muscle Relaxation</h3>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>What it does:</strong> Forces your muscles to relax by first tensing them. When you tense a muscle group and then release it, it becomes more relaxed than it was before.</p>
+                        <div class="how-to-box">
+                            <strong>How to do it:</strong>
+                            <ul>
+                                <li>While breathing in, intensely tense a muscle group (like your hands, shoulders, or legs) for 5-10 seconds. Notice the tension.</li>
+                                <li>As you breathe out, release the tension completely and suddenly.</li>
+                                <li>Notice the difference between the feeling of tension and the feeling of relaxation. Move through different muscle groups in your body.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <button class="btn" onclick="alert('Proceeding to the next lesson!')">I Understand the TIPP Skill</button>
+        </main>
+    </div>
+
+    <script>
+        function toggleAccordion(itemId) {
+            const item = document.getElementById(itemId);
+            const content = item.querySelector('.accordion-content');
+            
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
+                content.style.display = 'none';
+            } else {
+                // Optional: Close other items when one opens
+                document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.accordion-content').style.display = 'none';
+                });
+                
+                item.classList.add('active');
+                content.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

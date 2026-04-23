@@ -1,0 +1,141 @@
+{
+    "lessonId": "9",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Data Enrichment - Turning Domain Names into Data",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary risk of sending emails to an unverified list?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The emails might be too long."
+                },
+                {
+                    "id": "b",
+                    "text": "High bounce rates will damage your domain reputation, causing future emails to go to spam."
+                },
+                {
+                    "id": "c",
+                    "text": "You might annoy verified people."
+                },
+                {
+                    "id": "d",
+                    "text": "It costs too much money."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Domain reputation is fragile. Bouncing >5% of emails signals verification algorithms that you are a spammer."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a 'Waterfall' enrichment strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sending emails while standing under a waterfall."
+                },
+                {
+                    "id": "b",
+                    "text": "Using multiple data providers sequentially (if A fails, try B, then C) to maximize coverage."
+                },
+                {
+                    "id": "c",
+                    "text": "Enriching all data at once with the most expensive provider."
+                },
+                {
+                    "id": "d",
+                    "text": "Washing your data with soap."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "No single provider has 100% data. Waterfalling allows you to cascade through providers to fill in the gaps."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How should you handle 'Catch-All' (Accept All) email statuses?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Treat them as Valid and send immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "Delete them all."
+                },
+                {
+                    "id": "c",
+                    "text": "Treat them as Risky. Only send to high-value (Tier 1) accounts, ideally from a burner domain, or verify with specialized tools."
+                },
+                {
+                    "id": "d",
+                    "text": "Call them instead."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Catch-Alls are risky because they don't bounce immediately but can still damage reputation. Proceed with caution."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'Contextual Enrichment' (e.g., using Clay)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Finding the prospect's home address."
+                },
+                {
+                    "id": "b",
+                    "text": "Scraping the web for specific data points (e.g., 'Do they use Shopify?', 'Recent LinkedIn Post') to enable personalization."
+                },
+                {
+                    "id": "c",
+                    "text": "Adding colorful fonts to your spreadsheet."
+                },
+                {
+                    "id": "d",
+                    "text": "Checking if the email is valid."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Contextual enrichment goes beyond contact info. It gathers intelligence to make your outreach relevant."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why should you avoid buying huge static lists (annual contracts)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are too heavy to download."
+                },
+                {
+                    "id": "b",
+                    "text": "Data decays. People change jobs constantly, so old lists become inaccurate quickly."
+                },
+                {
+                    "id": "c",
+                    "text": "They are illegal."
+                },
+                {
+                    "id": "d",
+                    "text": "Spreadsheets confuse computers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "B2B data has a high decay rate (~30%/year). Buying credits 'as you go' ensures you get fresh data."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "What data enrichment sources would you use to turn a basic company name into a full prospect profile? List at least 3 sources and what data they provide.",
+            "minLength": 100,
+            "promptForAI": "Assess data enrichment strategy. Check for: (1) variety of sources, (2) practical applicability, (3) data quality considerations. Suggest additional enrichment tools or techniques."
+        }
+    ]
+}

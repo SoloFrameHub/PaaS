@@ -1,0 +1,69 @@
+{
+  "lessonId": "4",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "System Assembly: Discovery + Proposals + Closing",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What single element did Julia add to her proposals that increased her close rate from 18% to 34%?",
+      "options": [
+        { "id": "a", "text": "More testimonials and case studies" },
+        {
+          "id": "b",
+          "text": "A 'Your ROI' section with the prospect's specific numbers from discovery"
+        },
+        { "id": "c", "text": "Better visual design and branding" },
+        { "id": "d", "text": "A money-back guarantee" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Julia cut her proposal from 15 pages to 3 and added a personalized ROI section using numbers from the discovery call. Proposals close with clarity of value and specificity of outcome, not volume of information."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Solo founders who document their discovery, proposal, and closing processes close what percentage more deals?",
+      "options": [
+        { "id": "a", "text": "5%" },
+        { "id": "b", "text": "10%" },
+        { "id": "c", "text": "28%" },
+        { "id": "d", "text": "50%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Solo founders with documented conversion processes close 28% more deals than those who wing it. Building the document forces you to think through every step, identify failures, and pre-solve objections."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How quickly should a proposal be sent after a discovery call?",
+      "options": [
+        { "id": "a", "text": "Within 1 week" },
+        { "id": "b", "text": "Within 3 days" },
+        { "id": "c", "text": "Within 24 hours" },
+        { "id": "d", "text": "After the prospect follows up to request it" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Proposals should go out within 24 hours of the discovery call. This is non-negotiable. Delays allow enthusiasm to cool and second thoughts to form. If you can't send in 24 hours, send a placeholder email with a timeline."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "When adapting to a D-style (Dominant) buyer, you should spend extra time building rapport before getting to outcomes.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. D-style buyers are direct, fast, and results-focused. Skip the rapport-building and get to outcomes immediately. They want a one-page executive summary with specific ROI numbers, not a long relationship-building conversation."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review your last 3-5 proposals. What was your proposal-to-close rate? What patterns do you see in lost proposals? What one change would most improve your conversion?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes actual proposal-to-close data, identifies specific patterns in lost deals (pricing, timing, ghosting), and proposes one concrete improvement such as adding an ROI section, shortening the proposal, or improving follow-up cadence."
+    }
+  ]
+}

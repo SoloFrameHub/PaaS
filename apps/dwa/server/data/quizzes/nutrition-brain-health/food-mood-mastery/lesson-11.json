@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the EAT-Lancet 2025 update, what are the projected benefits of widespread adoption of the planetary health diet?",
+            "options": [
+                { "id": "opt1", "text": "Preventing 1 million premature deaths and saving $500 billion" },
+                { "id": "opt2", "text": "Preventing 15 million premature deaths, saving $5 trillion, and reducing food system emissions by more than 50%" },
+                { "id": "opt3", "text": "Eliminating all chronic diseases and reversing climate change entirely" },
+                { "id": "opt4", "text": "Preventing 5 million premature deaths and reducing emissions by 10%" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The EAT-Lancet 2025 update estimates that widespread adoption of the planetary health diet could prevent approximately 15 million premature deaths annually, save an estimated $5 trillion in healthcare and productivity costs, and reduce food system greenhouse gas emissions by more than 50%."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is dietary acculturation, and how does it affect mental health?",
+            "options": [
+                { "id": "opt1", "text": "Learning to cook food from other cultures, which improves mental health through diversity" },
+                { "id": "opt2", "text": "The shift from traditional dietary patterns to Westernized diets, which is associated with increased rates of psychiatric disorders" },
+                { "id": "opt3", "text": "The process of adapting nutritional supplements to different cultures" },
+                { "id": "opt4", "text": "Teaching nutrition science in schools across different countries" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Dietary acculturation is the shift from traditional dietary patterns to Westernized diets. This process has been documented in immigrant populations and developing countries, and is associated with increased rates of psychiatric disorders through both nutritional pathways (more ultra-processed food, less fiber and omega-3s) and cultural pathways (disruption of social bonds and food traditions)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How much higher are rates of depression and anxiety among adults experiencing food insecurity compared to food-secure adults?",
+            "options": [
+                { "id": "opt1", "text": "About the same — food insecurity does not affect mental health" },
+                { "id": "opt2", "text": "About 20% higher" },
+                { "id": "opt3", "text": "2-3 times higher" },
+                { "id": "opt4", "text": "10 times higher" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Adults experiencing food insecurity have 2-3 times higher rates of depression and anxiety compared to food-secure adults. The relationship operates through both nutritional pathways (poor dietary quality) and psychosocial pathways (chronic stress, shame, social exclusion), and is bidirectional — each worsens the other."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is food sovereignty, and why does it matter for mental health?",
+            "options": [
+                { "id": "opt1", "text": "A government policy requiring all food to be locally grown" },
+                { "id": "opt2", "text": "The right of peoples to define their own food systems using sustainable methods — it supports empowerment, cultural identity, and social connection" },
+                { "id": "opt3", "text": "A trade agreement between countries about food imports" },
+                { "id": "opt4", "text": "A type of diet that eliminates all imported foods" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Food sovereignty is the right of peoples to healthy and culturally appropriate food produced through sustainable methods, and their right to define their own food and agriculture systems. For mental health, it matters because control over food systems is empowering, traditional food systems often support brain health, community food systems build social connections, and self-determined food practices support cultural identity."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How does the planetary health diet relate to the dietary patterns recommended for mental health throughout this track?",
+            "options": [
+                { "id": "opt1", "text": "They are completely different — brain-healthy diets are high in meat and processed food" },
+                { "id": "opt2", "text": "The planetary health diet is too restrictive to support brain health" },
+                { "id": "opt3", "text": "They closely align — both emphasize plant-forward eating, whole grains, legumes, nuts, fish, and minimal ultra-processed food" },
+                { "id": "opt4", "text": "The planetary health diet only focuses on environmental impact and ignores nutrition" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The dietary pattern that best supports mental health (Mediterranean, MIND, traditional whole-food diets) closely mirrors the planetary health diet. Both emphasize fruits and vegetables, whole grains, legumes, nuts, fish, and minimal ultra-processed food. What is good for your brain is remarkably similar to what is good for the planet."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "11",
+    "title": "Sustainability, Planetary Health, and Global Mental Wellness - Quiz"
+}

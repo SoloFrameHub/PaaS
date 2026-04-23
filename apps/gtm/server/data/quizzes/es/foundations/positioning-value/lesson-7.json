@@ -1,0 +1,141 @@
+{
+  "lessonId": "7",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Análisis de Alternativas Competitivas",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estas opciones se considera una 'Alternativa Competitiva' para un producto de software?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un competidor directo de software"
+        },
+        {
+          "id": "b",
+          "text": "Una hoja de cálculo manual"
+        },
+        {
+          "id": "c",
+          "text": "El prospecto que no hace nada (inercia)"
+        },
+        {
+          "id": "d",
+          "text": "Todas las anteriores"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Los competidores no son solo otras empresas. Incluyen a cualquier persona o cosa que resuelva (u oculte) el problema, incluyendo procesos manuales y la simple inercia."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Para qué se usa el marco 'Pero vs. Y'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para codificar sentencias lógicas en Python"
+        },
+        {
+          "id": "b",
+          "text": "Para posicionar tu producto frente a un competidor sin hablar mal de ellos"
+        },
+        {
+          "id": "c",
+          "text": "Para comparar dos características diferentes de tu propio producto"
+        },
+        {
+          "id": "d",
+          "text": "Para calcular el costo de bienes vendidos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El marco 'Pero vs. Y' te permite validar la fortaleza de un competidor (ej., 'Son excelentes para empresas') mientras pivoteas hacia tu valor único (ej., 'Pero para fundadores en solitario, son demasiado complejos')."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué una 'Tabla de Comparación de Marcas de Verificación' suele ser una mala idea para un fundador en solitario de nicho?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es demasiado difícil de diseñar en CSS"
+        },
+        {
+          "id": "b",
+          "text": "Invita al cliente a elegir el producto con más características (potencialmente irrelevantes)"
+        },
+        {
+          "id": "c",
+          "text": "Las marcas de verificación no son compatibles con la mayoría de los navegadores web"
+        },
+        {
+          "id": "d",
+          "text": "Las tablas no son compatibles con el SEO móvil"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las tablas de características convierten tu producto en un commodity. Si compites por cantidad de características, casi siempre perderás frente a los gigantes establecidos."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué significa 'Software con Opinión' (Opinionated Software)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Software que pide frecuentemente la opinión del usuario"
+        },
+        {
+          "id": "b",
+          "text": "Software que deliberadamente elige resolver un problema de una manera específica y no estándar"
+        },
+        {
+          "id": "c",
+          "text": "Software que escribe reseñas de otros productos"
+        },
+        {
+          "id": "d",
+          "text": "Software que es agresivo y ruidoso"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El software con opinión toma una postura. Puede eliminar características o limitar opciones para ofrecer una experiencia mejor, más rápida o más especializada para un ICP específico."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la mejor forma de competir contra una 'Alternativa Manual' (como una hoja de cálculo)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Construir un producto que se vea exactamente como una hoja de cálculo"
+        },
+        {
+          "id": "b",
+          "text": "Enfocarte en la eficiencia, la reducción de errores y el dolor del trabajo manual"
+        },
+        {
+          "id": "c",
+          "text": "Bajar tu precio para que sea más barato que Excel"
+        },
+        {
+          "id": "d",
+          "text": "Ignorarlo; las hojas de cálculo no son competidores reales"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Para ganarle a una hoja de cálculo, debes destacar los riesgos (errores, pérdida de datos) y los costos (horas de trabajo manual) asociados con los procesos manuales."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Aplica el marco 'Pero vs. Y' a tu mayor competidor directo. Completa: '[Competidor] es excelente para [Tipo X], pero como nosotros estamos construidos específicamente para [Tu ICP], nosotros [Beneficio Único].'",
+      "minLength": 100,
+      "promptForAI": "Evalúa el uso del marco 'Pero vs. Y' del estudiante. Asegúrate de que no estén hablando mal del competidor, sino que estén definiendo una 'sala' o 'contexto' diferente donde su producto es la opción superior."
+    }
+  ],
+  "passingScore": 70
+}

@@ -1,0 +1,72 @@
+{
+  "lessonId": "5",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Email Logging & Contact Enrichment",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why is automatic email logging considered non-negotiable for sales operations?",
+      "options": [
+        { "id": "a", "text": "It looks impressive on dashboards" },
+        {
+          "id": "b",
+          "text": "Every unlogged email is a lesson you'll never learn from and data an AI agent will never see"
+        },
+        { "id": "c", "text": "It's required by law" },
+        { "id": "d", "text": "It reduces email storage costs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your CRM is the institutional memory of your sales operation. Every unlogged email is a lesson lost and data invisible to AI agents. Marcus discovered 200 unlogged emails for his top 10 prospects that revealed critical patterns about what drove closes."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What critical pattern did Marcus discover only after enabling full email sync?",
+      "options": [
+        { "id": "a", "text": "His emails were too long" },
+        {
+          "id": "b",
+          "text": "Prospects who asked about integrations in email 2 closed 3x faster"
+        },
+        { "id": "c", "text": "Morning emails got more replies" },
+        { "id": "d", "text": "His subject lines were too generic" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "With full email sync, Marcus discovered that prospects mentioning integrations in email 2 closed 3x faster, and deals going silent after pricing emails had a 70% loss rate. None of this was visible when only 40% of emails were logged."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What percentage of sales emails should be logged in your CRM?",
+      "options": [
+        { "id": "a", "text": "Only important ones (about 40%)" },
+        { "id": "b", "text": "At least 60%" },
+        { "id": "c", "text": "At least 80% — below this you're flying blind" },
+        { "id": "d", "text": "100% of outbound, none of inbound" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Below 80% email logging, you're flying blind. You lose context for follow-ups, can't recognize patterns across deals, and AI agents can't personalize. Full automatic sync (100%) is the recommended approach."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "BCC logging is as reliable and complete as full email sync for CRM email tracking.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. BCC logging is manual and catches only outbound emails you remember to BCC. You'll miss inbound replies, forget to BCC on rushed emails, and have no tracking for LinkedIn or other channel messages. Full email sync automatically captures both sent and received emails."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "What percentage of your sales emails are currently logged in your CRM? What patterns might you be missing? Describe how you would set up automatic email logging and what you expect to discover.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses their current email logging percentage, identifies specific patterns they might be missing (conversation context, objection patterns, timing insights), and describes a concrete plan for implementing automatic email sync."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the goal of advanced thought challenging in CBT?",
+            "options": [
+                {"id": "opt1", "text": "To prove all negative thoughts are false"},
+                {"id": "opt2", "text": "To develop balanced, evidence-based alternative thoughts"},
+                {"id": "opt3", "text": "To eliminate all negative emotions"},
+                {"id": "opt4", "text": "To convince yourself that everything will be fine"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Advanced thought challenging isn't about forced positivity. It's about accuracy: 'What's a more balanced way to think about this that fits the actual evidence?' Sometimes the balanced thought is still concerned — but it's realistic, not catastrophic."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the downward arrow technique used for?",
+            "options": [
+                {"id": "opt1", "text": "To make yourself feel worse by finding the most negative thought possible"},
+                {"id": "opt2", "text": "To uncover the core belief underlying your automatic thoughts"},
+                {"id": "opt3", "text": "To identify which emotion is strongest"},
+                {"id": "opt4", "text": "To practice accepting negative thoughts without questioning them"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. By asking 'If that were true, what would it mean about me?' repeatedly, you follow the chain from surface thought ('I made a mistake') to core belief ('I'm incompetent'). Identifying the core belief helps you understand why certain situations trigger such strong reactions."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do you evaluate evidence for and against a thought in advanced thought challenging?",
+            "options": [
+                {"id": "opt1", "text": "Focus only on evidence that contradicts the negative thought"},
+                {"id": "opt2", "text": "List all evidence supporting the thought, then all evidence contradicting it, then weigh both"},
+                {"id": "opt3", "text": "Ignore evidence and rely on how the thought feels"},
+                {"id": "opt4", "text": "Ask friends what they think and accept their opinion as evidence"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. CBT treats thoughts like hypotheses: you gather data on both sides, then ask 'What does the full picture say?' This prevents confirmation bias (only seeing evidence that matches your mood) and leads to more accurate conclusions."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What makes an alternative thought effective in CBT?",
+            "options": [
+                {"id": "opt1", "text": "It makes you feel immediately happy and optimistic"},
+                {"id": "opt2", "text": "It's believable, based on evidence, and reduces emotional intensity"},
+                {"id": "opt3", "text": "It contradicts your original thought completely"},
+                {"id": "opt4", "text": "It's the most positive interpretation possible"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. An effective alternative thought passes three tests: (1) you actually believe it (not just saying it), (2) it's supported by evidence, and (3) it shifts your emotion to something more manageable. 'I might do okay' works better than 'I'll definitely ace this' if the latter feels fake."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Take one of your automatic thoughts from a recent thought record. Use the downward arrow technique: 'If that were true, what would it mean about me?' Keep asking until you reach a core belief. What did you discover?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "10",
+    "title": "Advanced Thought Challenging - Quiz"
+}

@@ -1,0 +1,55 @@
+{
+  "lessonId": "2",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Owned vs Rented Media Strategy",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the Owned Media Pyramid, what should be the foundation layer that receives the most investment of effort?",
+      "options": [
+        { "id": "a", "text": "Social media content for discovery" },
+        { "id": "b", "text": "Paid advertising for amplification" },
+        { "id": "c", "text": "Email list" },
+        { "id": "d", "text": "Podcast and long-form content" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The email list is the foundation of the Owned Media Pyramid and should receive roughly 40% of your effort. An email list of 2,000 engaged subscribers is worth more than 100,000 Instagram followers because you own the data, delivery is guaranteed, and revenue scales directly."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the Platform Migration Rate, and what is the target benchmark?",
+      "options": [
+        { "id": "a", "text": "The rate at which you switch between social platforms; aim to switch no more than once per year" },
+        { "id": "b", "text": "The percentage of new social followers who become email subscribers within 30 days; aim for at least 10%" },
+        { "id": "c", "text": "The percentage of email subscribers who also follow you on social media; aim for 50%" },
+        { "id": "d", "text": "The speed at which you can move your content to a new platform; aim for under 48 hours" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Platform Migration Rate is calculated as (New email subscribers / New social followers) x 100. The target is to convert at least 10% of new social followers into email subscribers within their first 30 days. Below 5% means your bridge between rented and owned media is broken."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the 'Two-Platform Rule,' what should a solo creator focus on?",
+      "options": [
+        { "id": "a", "text": "Two paid advertising platforms for maximum reach" },
+        { "id": "b", "text": "One discovery platform (social media) and one relationship platform (email, podcast, or community)" },
+        { "id": "c", "text": "Two social media platforms from different categories (one video, one text)" },
+        { "id": "d", "text": "Two email service providers for redundancy" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Two-Platform Rule states that creators need one discovery platform (where new people find them) and one relationship platform (where they deepen trust). Excellence on two platforms beats mediocrity on seven."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Audit your current media presence. What percentage of your total audience is on owned channels (email, SMS) vs rented channels (social media)? What specific steps will you take in the next 30 days to shift this balance toward more owned media?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student provides specific numbers or estimates for their owned vs rented audience split, and outlines concrete action steps (not just intentions) for building their owned media presence. Look for evidence they understand the risk of platform dependency."
+    }
+  ]
+}

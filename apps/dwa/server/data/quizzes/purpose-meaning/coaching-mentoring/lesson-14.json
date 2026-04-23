@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is Goal Attainment Scaling (GAS), and why is it particularly useful in coaching contexts?",
+      "options": [
+        {"id": "opt1", "text": "GAS is a standardized test that measures everyone the same way"},
+        {"id": "opt2", "text": "GAS is a method of scoring progress toward individualized goals on a standardized scale (-2 to +2), where clients define their own success criteria. It's more sensitive to change than standardized measures because it captures what matters to each specific person."},
+        {"id": "opt3", "text": "GAS is only useful for workplace coaching, not personal development"},
+        {"id": "opt4", "text": "GAS measures only quantitative outcomes and ignores qualitative progress"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Goal Attainment Scaling (GAS) allows clients to define 5 levels of attainment for their specific goals: -2 (much worse), -1 (somewhat worse), 0 (baseline), +1 (somewhat better), +2 (much better). This individualized approach is more sensitive to change than standardized scales because it measures what matters to THIS client. For example, 'work-life balance' means different things to different people — GAS lets each client define their own success criteria."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'measurement paradox' in coaching, and how should coaches navigate it?",
+      "options": [
+        {"id": "opt1", "text": "Measurement paradox: what gets measured gets managed, but over-measurement can kill intrinsic motivation. Navigate it by measuring outcomes the client cares about, using methods they find meaningful, at a frequency that supports (not burdens) their work."},
+        {"id": "opt2", "text": "There is no paradox — more measurement is always better"},
+        {"id": "opt3", "text": "Never measure anything because it destroys intrinsic motivation"},
+        {"id": "opt4", "text": "Only use quantitative metrics to avoid the paradox"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "The measurement paradox: tracking progress is motivating and demonstrates value, BUT over-emphasis on metrics can undermine intrinsic motivation if perceived as external control. Balance is key: (1) measure what the CLIENT cares about (not what you think they should track), (2) use methods THEY find meaningful (numbers for some, stories for others), (3) track at a frequency that supports without burdening (weekly check-ins vs. daily scrutiny). Measurement should serve the client's growth, not become the goal itself."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why should coaches use BOTH quantitative (numbers) and qualitative (stories) measures rather than relying on just one?",
+      "options": [
+        {"id": "opt1", "text": "You should only use quantitative measures because numbers are more credible"},
+        {"id": "opt2", "text": "You should only use qualitative measures because stories are more meaningful"},
+        {"id": "opt3", "text": "Use both: numbers show movement and are convincing to stakeholders, while stories capture meaning, context, and unexpected benefits. Together they provide richer understanding than either alone."},
+        {"id": "opt4", "text": "It doesn't matter which you use — they're equally effective"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Quantitative measures (GAS ratings, frequency counts, percentages) show concrete movement and are convincing to numbers-focused stakeholders (employers, funders). Qualitative measures (reflection prompts, before/after narratives, meaning-making) capture context, unexpected wins, and why the change matters. Example: A client might rate work-life balance at +2 (quantitative), but the story of 'I was present when my daughter scored her first goal' (qualitative) shows the MEANING of that number. Use both: numbers for progress tracking and ROI, stories for depth and unexpected insights."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What are the three main types of data sources for measuring coaching progress, and what are the key differences?",
+      "options": [
+        {"id": "opt1", "text": "Self-report (client's own assessment), behavioral observation (objective evidence from others), and standardized scales (validated questionnaires). Self-report is easy but biased; behavioral observation is less biased but requires others' involvement; standardized scales are research-backed but may miss individualized progress."},
+        {"id": "opt2", "text": "Only self-report matters — other data sources are unnecessary"},
+        {"id": "opt3", "text": "All three types measure exactly the same thing in different formats"},
+        {"id": "opt4", "text": "Standardized scales are always better than self-report or observation"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Three data sources: (1) Self-report: client's own tracking (journals, weekly ratings). Pros: immediate, captures subjective experience. Cons: subject to bias, social desirability. (2) Behavioral observation: feedback from managers, partners, or concrete outcomes like promotions. Pros: less biased, verifiable. Cons: requires others' involvement, privacy concerns. (3) Standardized scales: validated questionnaires (self-efficacy, life satisfaction). Pros: research-backed, comparable to norms. Cons: generic, may miss what THIS client cares about. Best practice: use multiple sources for richer understanding."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "A corporate client asks for ROI data to justify continuing coaching for their employees. What's the most appropriate response?",
+      "options": [
+        {"id": "opt1", "text": "Refuse to provide ROI data because coaching isn't about numbers"},
+        {"id": "opt2", "text": "Offer multiple metrics: (1) Goal Attainment Scaling ratings showing progress, (2) behavioral outcomes (promotions, project completions, retention), (3) standardized wellbeing/engagement scores, and (4) qualitative testimonials. Frame in business terms: productivity, retention cost savings, leadership development pipeline."},
+        {"id": "opt3", "text": "Make up impressive-sounding statistics to satisfy the client"},
+        {"id": "opt4", "text": "Tell them coaching ROI can't be measured and they should just trust the process"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Corporate stakeholders need ROI evidence. Provide: (1) Quantitative: GAS ratings, engagement/wellbeing scores, retention rates, absenteeism reduction. (2) Behavioral: promotions, completed projects, 360 feedback improvements. (3) Qualitative: employee testimonials, manager observations. (4) Frame in business language: 'Coaching cohort showed 23% improvement in leadership competency scores and 15% higher retention than non-coached peers.' Combine hard numbers (opt2) with stories. Don't refuse (opt1) — measurement is legitimate. Don't fabricate (opt3) — unethical and damages credibility. Don't avoid measurement (opt4) — stakeholders have valid reasons to want data."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "14",
+  "title": "Measuring Progress and Outcomes - Quiz"
+}

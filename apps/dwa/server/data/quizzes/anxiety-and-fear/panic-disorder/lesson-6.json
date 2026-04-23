@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do safety behaviors maintain panic disorder even though they seem to help in the moment?",
+            "options": [
+                { "id": "opt1", "text": "They cause physical harm to the nervous system over time" },
+                { "id": "opt2", "text": "They prevent you from learning that panic attacks resolve on their own without the safety behavior" },
+                { "id": "opt3", "text": "They increase the frequency of panic attacks" },
+                { "id": "opt4", "text": "They make medications less effective" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When a panic attack passes after using a safety behavior, you think 'I survived because of the safety behavior.' But the truth is you survived because panic attacks always pass on their own. Safety behaviors prevent you from learning this critical fact, keeping the danger belief alive."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What did research find about using 'concentrating on something' (distraction) as a safety behavior during CBT for panic?",
+            "options": [
+                { "id": "opt1", "text": "It is the most effective coping strategy available" },
+                { "id": "opt2", "text": "It has no effect on treatment outcomes" },
+                { "id": "opt3", "text": "It predicts a lack of response to CBT — meaning it can interfere with recovery" },
+                { "id": "opt4", "text": "It works well as a short-term strategy but not long-term" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research found that using 'concentrating on something' as a safety behavior actually predicts a lack of response to CBT. In other words, distraction as a coping strategy can actively interfere with recovery because it prevents the direct learning that panic sensations are not dangerous."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is a SUDS rating used for in building an exposure hierarchy?",
+            "options": [
+                { "id": "opt1", "text": "Measuring your blood pressure during panic" },
+                { "id": "opt2", "text": "Rating how dangerous a situation actually is on an objective scale" },
+                { "id": "opt3", "text": "Rating your Subjective Units of Distress (0-100) for each feared situation to rank them from least to most challenging" },
+                { "id": "opt4", "text": "Tracking how many panic attacks you have per week" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "SUDS (Subjective Units of Distress) is a 0-100 self-rating scale used to rank feared situations in your exposure hierarchy. By rating each situation, you can order them from least to most distressing and start with items rated around 30-40, building confidence before tackling harder challenges."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is an example of a subtle safety behavior that many people with panic disorder might not recognize?",
+            "options": [
+                { "id": "opt1", "text": "Calling 911 during every panic attack" },
+                { "id": "opt2", "text": "Always sitting near the exit or checking for the nearest hospital before going somewhere" },
+                { "id": "opt3", "text": "Refusing to leave the house entirely" },
+                { "id": "opt4", "text": "Taking prescribed medication as directed by a doctor" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Subtle safety behaviors are often unrecognized because they seem like 'normal caution.' Always sitting near the exit, checking for the nearest hospital, wearing loose clothing to prevent overheating, or eating lightly before going out are all examples of safety behaviors that maintain the belief that panic situations are dangerous."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "During exposure practice, what should you do if your anxiety rises significantly while in a feared situation?",
+            "options": [
+                { "id": "opt1", "text": "Leave the situation immediately to prevent a full panic attack" },
+                { "id": "opt2", "text": "Use a safety behavior to bring the anxiety down quickly" },
+                { "id": "opt3", "text": "Stay in the situation until your anxiety decreases naturally, even partially" },
+                { "id": "opt4", "text": "Take medication and try again another day" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The key exposure principle is to stay in the situation until your anxiety naturally decreases, even if only partially. Leaving at peak anxiety teaches your brain that the situation was dangerous. Staying teaches it that anxiety peaks and then falls on its own — building real evidence that you can cope."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "6",
+    "title": "Reducing Avoidance and Safety Behaviors - Quiz"
+}

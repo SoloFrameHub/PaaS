@@ -1,0 +1,142 @@
+{
+    "lessonId": "11",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Deliverability Management Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary danger of using your main business domain (e.g., acme.com) for cold outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes your company look too small"
+                },
+                {
+                    "id": "b",
+                    "text": "If you get blacklisted for spam, your primary business emails (to customers, partners, and team) will also land in spam"
+                },
+                {
+                    "id": "c",
+                    "text": "It is illegal in most countries"
+                },
+                {
+                    "id": "d",
+                    "text": "It costs more than using a secondary domain"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Protecting your primary domain is goal #1. Cold outreach should always happen on secondary 'Look-alike' domains."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these technical settings 'signs' your email to prove it wasn't tampered with?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "SPF"
+                },
+                {
+                    "id": "b",
+                    "text": "DKIM"
+                },
+                {
+                    "id": "c",
+                    "text": "DMARC"
+                },
+                {
+                    "id": "d",
+                    "text": "DNS"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "DKIM (DomainKeys Identified Mail) provides a digital signature that verifies the authenticity of the sender."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Domain Warmup'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Heating your computer to increase processing speed"
+                },
+                {
+                    "id": "b",
+                    "text": "The process of gradually increasing email volume on a new domain to build a positive reputation with providers"
+                },
+                {
+                    "id": "c",
+                    "text": "Sending emails only during the warmest part of the day"
+                },
+                {
+                    "id": "d",
+                    "text": "Paying a fee to Gmail to skip the spam filter"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Providers are suspicious of new domains sending high volume. Warmup mimics natural, healthy behavior to earn trust."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended maximum daily volume per outreach domain to maintain health?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10 emails"
+                },
+                {
+                    "id": "b",
+                    "text": "30-50 emails"
+                },
+                {
+                    "id": "c",
+                    "text": "500-1,000 emails"
+                },
+                {
+                    "id": "d",
+                    "text": "As many as you can send"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sending more than 50 emails a day from a single domain significantly increases your risk of being flagged as a bulk spammer."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Data Cleaning' (Bounce Verification) essential before a campaign?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It helps you find more leads"
+                },
+                {
+                    "id": "b",
+                    "text": "A high bounce rate (over 3%) is a major signal to providers that you are a spammer using poor quality lists"
+                },
+                {
+                    "id": "c",
+                    "text": "It makes your subject lines more effective"
+                },
+                {
+                    "id": "d",
+                    "text": "It is required by the SPF protocol"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A high bounce rate suggests you are 'Scraping and Spraying' rather than carefully selecting your outreach targets. Providers will penalize your domain for this."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Do you currently have SPF, DKIM, and DMARC set up on your outreach domain? If not, what is your plan for implementing them this week? Why is this task more important than writing your next 50 email drafts?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder prioritizes technical health over volume. The answer should acknowledge that a dead domain means all subsequent copy work is wasted."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

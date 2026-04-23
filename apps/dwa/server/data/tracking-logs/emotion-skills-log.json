@@ -1,0 +1,87 @@
+{
+  "id": "emotion-skills-log",
+  "title": "Daily Emotion & Skills Log",
+  "description": "Track your emotions, intensity levels, and DBT skill use each day. This log helps you recognize patterns in your emotional reactivity and build awareness of which skills work best for you. Over time, you'll see the connection between skill practice and emotional stability.",
+  "instructions": "Complete this log daily, ideally in the evening. Record your strongest emotion of the day, its intensity, what triggered it, and any skills you used. Be honest — this is for your awareness, not for judgment.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "text",
+      "placeholder": "e.g., Monday, Feb 10",
+      "required": true
+    },
+    {
+      "id": "primary-emotion",
+      "label": "Strongest emotion today",
+      "type": "select",
+      "options": [
+        { "value": "sadness", "label": "Sadness" },
+        { "value": "anger", "label": "Anger" },
+        { "value": "fear", "label": "Fear / Anxiety" },
+        { "value": "shame", "label": "Shame" },
+        { "value": "guilt", "label": "Guilt" },
+        { "value": "frustration", "label": "Frustration" },
+        { "value": "loneliness", "label": "Loneliness" },
+        { "value": "jealousy", "label": "Jealousy / Envy" },
+        { "value": "joy", "label": "Joy / Happiness" },
+        { "value": "numbness", "label": "Numbness / Emptiness" },
+        { "value": "overwhelm", "label": "Overwhelm" },
+        { "value": "other", "label": "Other" }
+      ],
+      "required": true
+    },
+    {
+      "id": "intensity",
+      "label": "Emotion intensity (0 = barely noticeable, 10 = most intense ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 10,
+      "required": true
+    },
+    {
+      "id": "trigger",
+      "label": "What triggered this emotion? (situation, person, thought)",
+      "type": "textarea",
+      "placeholder": "e.g., Argument with partner, critical thought about myself, rejection email, no clear trigger",
+      "required": true
+    },
+    {
+      "id": "skills-used",
+      "label": "DBT skills I used today (if any)",
+      "type": "textarea",
+      "placeholder": "e.g., Wise Mind check-in, TIPP (cold water), opposite action, DEAR MAN with boss, paced breathing",
+      "required": false
+    },
+    {
+      "id": "skill-helpfulness",
+      "label": "How helpful were the skills? (0 = not at all, 10 = extremely helpful)",
+      "type": "rating",
+      "min": 0,
+      "max": 10,
+      "required": false
+    },
+    {
+      "id": "urges",
+      "label": "Did you have urges to act impulsively? (self-harm, lashing out, avoidance, substance use)",
+      "type": "select",
+      "options": [
+        { "value": "none", "label": "No urges" },
+        { "value": "mild", "label": "Mild urges — I noticed them but they passed" },
+        { "value": "moderate", "label": "Moderate urges — I had to actively use skills to manage them" },
+        { "value": "strong", "label": "Strong urges — I struggled significantly" },
+        { "value": "acted-on", "label": "I acted on an urge" }
+      ],
+      "required": false
+    },
+    {
+      "id": "notes",
+      "label": "Notes (anything else relevant)",
+      "type": "textarea",
+      "placeholder": "e.g., Noticed I'm more reactive when tired, the cold water technique really helped, need to practice DEAR MAN more",
+      "required": false
+    }
+  ],
+  "disclaimer": "This log is for personal self-awareness and skill tracking. It is not a clinical tool and does not replace professional DBT treatment. If you are experiencing urges to harm yourself, please reach out: call or text 988 (Suicide & Crisis Lifeline) or text HOME to 741741 (Crisis Text Line)."
+}

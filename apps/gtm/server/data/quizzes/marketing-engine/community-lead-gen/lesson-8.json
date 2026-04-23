@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "8",
+    "lessonTitle": "Twitter/X Building in Public",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of 'Building in Public' (BIP) for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It hides your competitors from your progress."
+                },
+                {
+                    "id": "b",
+                    "text": "It creates a 'Magnet Effect' by building trust through consistent transparency and documentary-style progress."
+                },
+                {
+                    "id": "c",
+                    "text": "It allows you to get more ads for free."
+                },
+                {
+                    "id": "d",
+                    "text": "It automatically generates a product roadmap for you."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "BIP allows potential customers to 'live the journey' with you, building a level of deep trust that traditional marketing cannot achieve.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is considered a 'Strategic Transparency' rule?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Share every single line of code you write."
+                },
+                {
+                    "id": "b",
+                    "text": "Post your personal bank balance daily."
+                },
+                {
+                    "id": "c",
+                    "text": "Share trends and milestones (like MRR %) rather than sensitive competitive secrets or exact private data."
+                },
+                {
+                    "id": "d",
+                    "text": "Never mention failures."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Transparency is a tool for building trust, but it must be balanced with professional privacy and competitive intelligence safety.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why do 'Threads' typically outperform single posts on Twitter/X?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are harder to read."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they allow for deeper storytelling, provide more value, and the algorithm favors them for retention."
+                },
+                {
+                    "id": "c",
+                    "text": "Because you can link to more websites."
+                },
+                {
+                    "id": "d",
+                    "text": "They don't; single posts are always better."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Threads enable a founder to share a full narrative (Problem -> Story -> Lesson), which captures attention and provides more value than a single character-limited post.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Reply Strategy' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Automatically replying 'Great post!' to everyone."
+                },
+                {
+                    "id": "b",
+                    "text": "Finding 20 'A-List' thinkers in your niche and contributing unique practitioner insights to their conversations daily."
+                },
+                {
+                    "id": "c",
+                    "text": "DMing everyone who likes a post."
+                },
+                {
+                    "id": "d",
+                    "text": "Replying to your own posts to make them look busy."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Replies are the 'outer edge' of your acquisition engine. By being helpful in high-traffic threads, you earn visibility and authority without needing a huge initial following.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which type of BIP content is often the MOST engaging for the 'Tech Twitter' community?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A standard feature release announcement."
+                },
+                {
+                    "id": "b",
+                    "text": "Sharing a 'Post-Mortem' of a failure or a hard lesson learned."
+                },
+                {
+                    "id": "c",
+                    "text": "A generic motivational quote."
+                },
+                {
+                    "id": "d",
+                    "text": "A link to your pricing page."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Vulnerability is authentic. Sharing a failure and how you solved it proves you are a practitioner who deeply cares about the work and the users.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify one 'Micro-Win' and one 'Mini-Fail' you've experienced in the last 14 days. If you were to share them as a single 'BIP Lesson' on Twitter, what would the title of that post be? (Focus on the transformation: e.g., 'From [Fail] to [Win] in 48 hours').",
+            "promptHints": [
+                "Include a specific metric if possible (time saved, bugs fixed, etc.).",
+                "Explain the 'Human' feeling behind the event.",
+                "End with a 'Lesson for other founders'."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "7"
+        ],
+        "unlocks": [
+            "9"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Twitter/X Building in Public - Quiz"
+}

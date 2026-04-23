@@ -1,0 +1,97 @@
+{
+    "id": "food-mood-awareness",
+    "title": "Food-Mood Connection Awareness Check",
+    "description": "This self-check helps you understand how well you currently recognize and manage the connection between what you eat and how you feel.",
+    "instructions": "For each statement below, rate how true it is for you over the past 2 weeks.",
+    "timeframe": "past 2 weeks",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "I notice how different foods affect my energy levels throughout the day"
+        },
+        {
+            "id": "q2",
+            "text": "I eat regular meals rather than skipping meals or grazing all day"
+        },
+        {
+            "id": "q3",
+            "text": "I can distinguish between physical hunger and emotional hunger"
+        },
+        {
+            "id": "q4",
+            "text": "I include a variety of whole foods (fruits, vegetables, whole grains, protein) in my diet"
+        },
+        {
+            "id": "q5",
+            "text": "I notice when my mood changes after eating certain foods"
+        },
+        {
+            "id": "q6",
+            "text": "I stay adequately hydrated throughout the day"
+        },
+        {
+            "id": "q7",
+            "text": "I am aware of how caffeine, sugar, and alcohol affect my mood and sleep"
+        },
+        {
+            "id": "q8",
+            "text": "I make food choices based on how they make me feel, not just taste or convenience"
+        },
+        {
+            "id": "q9",
+            "text": "I can manage stress without relying heavily on comfort eating"
+        },
+        {
+            "id": "q10",
+            "text": "I have a balanced, non-judgmental relationship with food"
+        }
+    ],
+    "scale": {
+        "min": 0,
+        "max": 3,
+        "labels": {
+            "0": "Not at all true",
+            "1": "Slightly true",
+            "2": "Mostly true",
+            "3": "Very true"
+        }
+    },
+    "scoring": {
+        "maxScore": 30,
+        "bands": [
+            {
+                "min": 0,
+                "max": 9,
+                "severity": "minimal",
+                "label": "Building Awareness",
+                "description": "You're just starting to explore the food-mood connection. This course will help you develop foundational awareness of how nutrition affects your mental health. Small changes can make a meaningful difference.",
+                "color": "red"
+            },
+            {
+                "min": 10,
+                "max": 17,
+                "severity": "mild",
+                "label": "Developing Awareness",
+                "description": "You have some awareness of the food-mood connection but there's room to deepen your understanding and practice. Focus on the areas where you scored lowest — those represent your biggest opportunities for improvement.",
+                "color": "orange"
+            },
+            {
+                "min": 18,
+                "max": 24,
+                "severity": "moderate",
+                "label": "Good Awareness",
+                "description": "You have a solid foundation of food-mood awareness. This course can help you fine-tune your approach and address any remaining gaps in your nutritional wellbeing.",
+                "color": "yellow"
+            },
+            {
+                "min": 25,
+                "max": 30,
+                "severity": "high",
+                "label": "Strong Awareness",
+                "description": "You demonstrate strong awareness of how food affects your mood and wellbeing. This course can help you maintain these healthy patterns and explore more advanced nutritional strategies for mental health.",
+                "color": "green"
+            }
+        ]
+    },
+    "disclaimer": "This is an educational self-awareness tool, not a clinical assessment. It is designed to help you reflect on your current food-mood awareness. For personalized nutrition advice, consult a registered dietitian. If you are in crisis, call or text 988."
+}

@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the BMJ 2024 meta-analysis, how does exercise compare to psychotherapy and antidepressants for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise is much less effective"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise was equally effective as psychotherapy and antidepressants for reducing depression symptoms"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise only works for mild cases"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The study found exercise made depression worse"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The BMJ 2024 network meta-analysis (218 studies, 14,170 participants) found that exercise was equally effective as psychotherapy and antidepressants for reducing depression symptoms. For mild-to-moderate depression, exercise is a legitimate first-line treatment option."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which types of exercise showed the best combination of effectiveness AND acceptability (low dropout rates)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only high-intensity interval training"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Yoga and strength training showed both good effectiveness and high acceptability (low dropout)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Running marathons"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise type doesn't matter at all"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While walking/jogging showed the largest effect size, yoga and strength training demonstrated both good effectiveness AND high acceptability (lowest dropout rates). This makes them excellent options for people who need sustainable approaches they'll stick with."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach for someone who feels 'too tired' to exercise when depressed?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Wait until energy returns before attempting exercise"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start with just 5 minutes - depression fatigue is different from physical fatigue, and activity often increases energy"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Take energy supplements first"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only exercise when you have a full 8 hours of energy"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Depression fatigue is different from physical fatigue. Counter-intuitively, movement often increases energy. Use the 5-minute rule - commit to just 5 minutes. Exercise in the morning when energy may be slightly higher, and remember: activity creates energy, not the other way around."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are the biological mechanisms through which exercise helps depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only helps through distraction"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Endorphins, increased serotonin, BDNF (brain growth factor), cortisol regulation, and reduced inflammation"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise works purely through social effects"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There are no known biological mechanisms"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise helps depression through multiple biological mechanisms: endorphins (mood-boosting chemicals), increased serotonin (feel-good neurotransmitter), BDNF (supports brain health and neuroplasticity), cortisol regulation (stress hormones), and reduced inflammation (linked to depression)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the key principle for exercise and depression: consistency or intensity?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Intensity is all that matters - only extreme workouts help"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Consistency over intensity - regular moderate exercise beats occasional intense exercise"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Neither matters"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You need both perfect consistency AND maximum intensity"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "For depression specifically, consistency beats intensity. Regular moderate exercise (3-5 times per week) is more beneficial than occasional intense workouts. Build the habit first, then gradually increase intensity. Something is always better than nothing."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "depression-action",
+    "lessonId": "6",
+    "title": "Exercise and Movement for Mood - Quiz"
+}

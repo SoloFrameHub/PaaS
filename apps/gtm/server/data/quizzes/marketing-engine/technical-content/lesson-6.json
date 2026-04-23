@@ -1,0 +1,167 @@
+{
+    "lessonId": "6",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Building in Public Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between 'Strategic BIP' and 'Narcissistic Navel-Gazing'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Strategic BIP uses more emojis"
+                },
+                {
+                    "id": "b",
+                    "text": "Strategic BIP filters updates through the lens of 'Would my ICP find this useful?'"
+                },
+                {
+                    "id": "c",
+                    "text": "Strategic BIP is only for venture-backed startups"
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; all sharing is good"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If it doesn't offer a lesson, a result, or a framework that helps your customer, it's just a diary entry. Strategic BIP is transparency with a purpose."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, which type of person is more likely to attract a customer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The person constantly asking for a sale"
+                },
+                {
+                    "id": "b",
+                    "text": "The person asking for advice or feedback on their process"
+                },
+                {
+                    "id": "c",
+                    "text": "The person who never shares anything internal"
+                },
+                {
+                    "id": "d",
+                    "text": "The person with the most expensive branding"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sharing your journey and asking for feedback invites potential customers into your 'laboratory,' building trust and authority before a sale is even mentioned."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these should you generally NOT share when building in public?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your internal checklist for customer onboarding"
+                },
+                {
+                    "id": "b",
+                    "text": "A mistake you made that cost you a client"
+                },
+                {
+                    "id": "c",
+                    "text": "Sensitive, non-anonymized customer data or private contract details"
+                },
+                {
+                    "id": "d",
+                    "text": "The tool stack you use to run your business"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 'Authenticity Boundary' protects your liability and your customers. Be transparent about your logic and process, but never at the expense of privacy or competitive security."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of a 'Feedback Loop' post?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To complain about a difficult task"
+                },
+                {
+                    "id": "b",
+                    "text": "To validate a market need or product feature by involving your audience in the decision"
+                },
+                {
+                    "id": "c",
+                    "text": "To get as many 'Likes' as possible"
+                },
+                {
+                    "id": "d",
+                    "text": "To prove that you are the smartest person in the room"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Posts like 'I'm thinking of building [X], is this a pain for you?' serve as both market research and early-stage acquisition."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which platform is best suited for the 'Director's Cut'—detailed, raw reflections for your most loyal audience?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Twitter/X"
+                },
+                {
+                    "id": "b",
+                    "text": "LinkedIn"
+                },
+                {
+                    "id": "c",
+                    "text": "Your Newsletter"
+                },
+                {
+                    "id": "d",
+                    "text": "TikTok"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "While social platforms are for broad reach, your newsletter is for depth. It's the best place to share the most detailed insights for those who already trust you."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "In the Creator's Transparency Stack, what is the 'Meta-Method'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Complaining about Facebook ads"
+                },
+                {
+                    "id": "b",
+                    "text": "Sharing HOW you are building the thing you are selling (e.g., your recording setup)"
+                },
+                {
+                    "id": "c",
+                    "text": "Posting motivational quotes"
+                },
+                {
+                    "id": "d",
+                    "text": "Copying your competitor's funnel"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Meta-Method (practicing what you preach) builds immense trust. If you sell a course on productivity, showing your own messy-but-effective Notion setup proves you are a practitioner, not just a theorist."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think back on your work from the last 2 weeks. What is one 'Win,' 'Loss,' or 'A-ha moment' you had? Draft a 3-sentence hook for a BIP post that focuses on the VALUE to your ICP. What advice would you be asking for in this post?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder correctly identifies a 'Strategic' vs 'Narcissistic' update. The hook must be reader-focused, and the question should be a genuine invitation for engagement."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

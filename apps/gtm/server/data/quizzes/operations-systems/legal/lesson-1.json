@@ -1,0 +1,72 @@
+{
+  "lessonId": "1",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "Contract Types: MSA, SOW, SaaS Terms, Engagement Letters",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of small business disputes arise from poorly defined scope?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "40%" },
+        { "id": "c", "text": "60%" },
+        { "id": "d", "text": "80%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "60% of small business disputes arise from poorly defined scope — not bad intent or dishonest clients, but contracts that left too much to interpretation. The right contract type is the first line of defense."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "When should you use an MSA + SOW combination?",
+      "options": [
+        { "id": "a", "text": "For one-time product purchases" },
+        {
+          "id": "b",
+          "text": "When you expect multiple projects or an ongoing engagement with the same client"
+        },
+        { "id": "c", "text": "Only for enterprise clients" },
+        { "id": "d", "text": "When a handshake agreement isn't enough" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Use an MSA when you expect multiple projects with the same client. Sign the MSA once (covering liability, IP, confidentiality), then each new project gets a lightweight SOW with specific scope, timeline, and price."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What does a Statement of Work (SOW) define that an MSA does not?",
+      "options": [
+        { "id": "a", "text": "Liability limits and IP ownership" },
+        {
+          "id": "b",
+          "text": "Project-specific scope, deliverables, timeline, and payment"
+        },
+        { "id": "c", "text": "Confidentiality and dispute resolution" },
+        { "id": "d", "text": "Governing law and force majeure" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A SOW defines project-specific details: scope, deliverables, timeline, milestones, and payment. The broader relationship terms (liability, IP, confidentiality) come from the MSA it references."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "SaaS Terms of Service accepted by clicking 'I agree' are not legally binding.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Click-wrap agreements (clicking 'I agree') are legally binding in all major jurisdictions. SaaS Terms of Service typically cover subscription terms, data handling, uptime SLAs, acceptable use, and termination."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Based on your business model, which contract type(s) do you need? Do you currently use formal contracts? If not, what risks are you exposed to?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response correctly identifies the appropriate contract type for their business model (MSA+SOW for ongoing services, engagement letter for short projects, SaaS ToS for software), assesses their current contract situation honestly, and identifies specific risks from informal agreements."
+    }
+  ]
+}

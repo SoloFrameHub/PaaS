@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Lazarus & Folkman's Transactional Model of Stress and Coping, what is the key distinction between challenge and threat appraisals?",
+            "options": [
+                {"id": "opt1", "text": "Challenge appraisals mean the situation is easy; threat appraisals mean it's difficult"},
+                {"id": "opt2", "text": "Challenge appraisals see demands as manageable and growth-producing; threat appraisals see demands as exceeding resources and potentially harmful"},
+                {"id": "opt3", "text": "Challenge appraisals are always accurate; threat appraisals are always irrational"},
+                {"id": "opt4", "text": "Challenge appraisals ignore danger; threat appraisals acknowledge reality"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Primary appraisal in the stress model asks: Is this a threat or a challenge? Challenge appraisals interpret high-demand situations as manageable and potentially growth-producing (resources match demands). Threat appraisals interpret situations as exceeding available resources and potentially harmful. Both involve difficulty—the difference is perceived manageability and outcome expectation. Challenge appraisals generate better performance and emotional outcomes than threat appraisals. Critically, this framework acknowledges that REAL threats should be appraised as threats—not all stress is reframeable."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What physiological difference is associated with challenge vs. threat appraisals?",
+            "options": [
+                {"id": "opt1", "text": "Challenge appraisals eliminate all stress hormones; threat appraisals increase cortisol"},
+                {"id": "opt2", "text": "Challenge appraisals produce cardiovascular activation patterns more conducive to performance (increased cardiac output); threat appraisals produce constricted patterns"},
+                {"id": "opt3", "text": "There are no measurable physiological differences"},
+                {"id": "opt4", "text": "Challenge appraisals suppress the autonomic nervous system completely"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows challenge and threat appraisals produce different cardiovascular reactivity patterns—both involve arousal, but challenge appraisals are associated with increased cardiac output and better blood flow to muscles (mobilization for action), while threat appraisals produce more vasoconstriction and less efficient cardiovascular responses. These patterns are measurable via heart rate, blood pressure, and vascular resistance. Challenge appraisals support performance; threat appraisals can impair it even at identical arousal levels. This is not about 'no stress'—it's about the type of physiological response."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to Bandura's self-efficacy research, what predicts whether high-demand situations are appraised as challenge or threat?",
+            "options": [
+                {"id": "opt1", "text": "Personality type—extroverts see challenges, introverts see threats"},
+                {"id": "opt2", "text": "Self-efficacy beliefs—confidence in your ability to execute the required behavior"},
+                {"id": "opt3", "text": "Intelligence level—smarter people appraise more situations as challenges"},
+                {"id": "opt4", "text": "Age—younger people see challenges, older people see threats"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Bandura's self-efficacy theory (one of the most robust frameworks in psychology) shows that self-efficacy—task-specific confidence in your ability to execute a behavior—is central to secondary appraisal (What coping resources do I have?). High self-efficacy predicts challenge appraisals; low self-efficacy predicts threat appraisals when demands are high. This is domain-specific: you might have high self-efficacy for public speaking (appraise it as a challenge) but low self-efficacy for social events (appraise as threat). Building self-efficacy (especially through mastery experiences) shifts appraisal patterns."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When is challenge reappraisal NOT appropriate or adaptive?",
+            "options": [
+                {"id": "opt1", "text": "When the situation involves any difficulty or discomfort"},
+                {"id": "opt2", "text": "When the situation is genuinely dangerous, abusive, or threatening and requires protective action—not all stress is reframeable"},
+                {"id": "opt3", "text": "When you're feeling anxious about a performance situation"},
+                {"id": "opt4", "text": "Challenge reappraisal is always appropriate in all situations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Critical boundary: Challenge reappraisal is adaptive when a situation is genuinely learnable and your appraisal of threat is disproportionate to actual danger (exam anxiety, public speaking, skill-building challenges). It is NOT adaptive—and can be harmful—when threats are REAL (abuse, harassment, unsafe conditions, discrimination). The lesson explicitly warns: not all stress is reframeable. Reframing a genuinely dangerous situation as a 'growth opportunity' delays necessary protective action (leaving, reporting, seeking help). The framework is realistic about when threat appraisals are accurate."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a recent situation you appraised as threatening (anxious, avoidant response). Looking back, was the threat appraisal accurate (genuine danger requiring protective action) or disproportionate (learnable challenge misappraised as threat)? If disproportionate, what would a challenge reappraisal have looked like? If accurate, what protective action did you take or need to take?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "4",
+    "title": "Challenge vs. Threat Appraisal - Quiz"
+}

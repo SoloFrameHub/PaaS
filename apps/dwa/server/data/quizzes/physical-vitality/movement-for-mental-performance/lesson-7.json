@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is BDNF and how does exercise affect it?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "BDNF is a type of blood cell that carries oxygen to muscles"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Brain-derived neurotrophic factor (BDNF) acts like 'brain fertilizer,' promoting neurogenesis and synaptogenesis; exercise increases BDNF levels with a moderate effect size (g = 0.46 for acute effects)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "BDNF is a hormone that only affects appetite during exercise"
+                },
+                {
+                    "id": "opt4",
+                    "text": "BDNF decreases with exercise, which is why people feel tired afterward"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "BDNF is a protein that acts like 'Miracle-Gro for the brain.' It promotes neurogenesis (new neuron growth) and synaptogenesis (new connections between neurons). Depression is associated with reduced hippocampal volume; BDNF-driven neurogenesis reverses this. A single exercise session increases peripheral BDNF with a moderate effect (g = 0.46), and chronic training amplifies resting BDNF even further."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does exercise affect the three monoamine neurotransmitter systems (serotonin, dopamine, norepinephrine)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only affects serotonin, not dopamine or norepinephrine"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise boosts all three monoamine systems (serotonin for mood stability, dopamine for motivation/reward, norepinephrine for alertness/focus) — the same systems targeted by antidepressants"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise decreases these neurotransmitters, which is harmful"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise has no effect on neurotransmitter levels"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise activates all three monoamine systems: serotonin (mood, anxiety, sleep regulation), dopamine (motivation, pleasure, reward sensitivity), and norepinephrine (alertness, focus, stress response). This is the same mechanism targeted by antidepressant medications (SSRIs, SNRIs, bupropion), but exercise works through multiple pathways simultaneously — creating robust and redundant effects."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'runner's high' and what causes it?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A myth with no scientific basis"
+                },
+                {
+                    "id": "opt2",
+                    "text": "An endocannabinoid surge (2-3x baseline) during sustained aerobic exercise, producing euphoria, reduced pain, and anxiety relief — similar to cannabis but produced naturally by the body"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only caused by extreme exhaustion and dehydration"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A dangerous state that should be avoided"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 'runner's high' is primarily driven by endocannabinoids (like anandamide), not endorphins as previously thought. Sustained aerobic exercise (20-60 minutes, moderate-to-vigorous intensity) increases endocannabinoid levels 2-3x baseline. These molecules bind to the same receptors as THC (cannabis), producing euphoria, pain relief, anxiety reduction, and enhanced social connection — but through the body's natural mechanisms."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is the multi-pathway model important for understanding exercise's mental health benefits?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only works through one mechanism, making it simple to understand"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise works through multiple converging mechanisms (BDNF, monoamines, endocannabinoids, HPA axis, behavioral activation) — creating redundancy and synergy that's hard to replicate with a single drug or therapy"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Multiple pathways make exercise less effective than medication"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The multi-pathway model is just a theory with no evidence"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise's power comes from redundancy and synergy. If one pathway is impaired (e.g., you're a genetic non-responder to serotonin increases), other pathways still work (BDNF, dopamine, behavioral activation). And the pathways amplify each other: BDNF upregulation enhances monoamine receptor sensitivity, HPA axis modulation protects hippocampal neurons (allowing BDNF to work better), behavioral activation increases self-efficacy (improving adherence). This is why exercise is so hard to replicate with a single intervention."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Which neurobiological pathway from this lesson resonates most with you (BDNF/brain growth, monoamines/mood chemistry, endocannabinoids/runner's high, HPA axis/stress resilience, or behavioral activation)? Why does that one stand out, and how might understanding it help motivate your movement practice?",
+            "minLength": 50,
+            "explanation": "This reflection helps you connect the science to your personal experience and motivation. Different pathways may resonate based on your symptoms (brain fog → BDNF/cognition; anhedonia → dopamine/reward; anxiety → HPA axis/stress) or goals (seeking flow states → endocannabinoids; need for structure → behavioral activation). Understanding the mechanism that matters most to you can strengthen intrinsic motivation."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "7",
+    "title": "The Neuroscience of Movement and Mood - Quiz"
+}

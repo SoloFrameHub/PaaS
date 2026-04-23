@@ -1,0 +1,133 @@
+{
+    "title": "Lesson 2 Quiz",
+    "questions": [
+        {
+            "question": "What does BANT stand for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying, Asking, Needs, Telling"
+                },
+                {
+                    "id": "b",
+                    "text": "Budget, Authority, Need, Timeline"
+                },
+                {
+                    "id": "c",
+                    "text": "Business, Action, Numbers, Time"
+                },
+                {
+                    "id": "d",
+                    "text": "Budget, Action, Need, Team"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "BANT is the classic acronym for Qualification: Budget, Authority, Need, and Timeline.",
+            "id": "q1",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "Which BANT component is critical to prevent 'Deals drifting forever'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Budget"
+                },
+                {
+                    "id": "b",
+                    "text": "Authority"
+                },
+                {
+                    "id": "c",
+                    "text": "Need"
+                },
+                {
+                    "id": "d",
+                    "text": "Timeline"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Timeline creates urgency. If there is no specific date by which they need the solution (Compelling Event), the prospect has no reason to sign *now*.",
+            "id": "q2",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "If a prospect says 'I need to check with my boss', how would you score their Authority?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Strong"
+                },
+                {
+                    "id": "b",
+                    "text": "Weak (Influencer only)"
+                },
+                {
+                    "id": "c",
+                    "text": "Zero"
+                },
+                {
+                    "id": "d",
+                    "text": "Irrelevant"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "They are an Influencer or Champion, but not the Economic Buyer. You need to gain access to the boss to secure the deal.",
+            "id": "q3",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "Why is BANT sometimes considered outdated for complex enterprise sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because enterprises don't have budgets"
+                },
+                {
+                    "id": "b",
+                    "text": "Because Authority is now distributed across committees, not just one person"
+                },
+                {
+                    "id": "c",
+                    "text": "Because nobody uses IBM anymore"
+                },
+                {
+                    "id": "d",
+                    "text": "Because startup founders are too smart for it"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In complex sales, 'Authority' is rarely a single person. BANT is too simple to map the complex political landscape of an enterprise deal (which is why we use MEDDIC).",
+            "id": "q4",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "A prospect says: 'We have a huge problem with our database crashing, but we have a spending freeze until next year.' Is this a qualified BANT opportunity?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, because the Need is strong"
+                },
+                {
+                    "id": "b",
+                    "text": "No, because the Timeline and Budget are blocked"
+                },
+                {
+                    "id": "c",
+                    "text": "Yes, because they will find the money"
+                },
+                {
+                    "id": "d",
+                    "text": "Maybe"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Even with a high Need, if they arguably cannot buy (Budget/Timeline frozen), it is not a *current* sales opportunity. It creates a 'Nurture' lead.",
+            "id": "q5",
+            "type": "multiple-choice"
+        }
+    ],
+    "sectionId": "sales-methodology",
+    "courseId": "discovery-framework",
+    "lessonId": "2"
+}

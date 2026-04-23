@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is balanced thinking in CBT?",
+            "options": [
+                {"id": "opt1", "text": "Thinking positively to counteract negative thoughts"},
+                {"id": "opt2", "text": "Acknowledging both strengths and limitations based on evidence"},
+                {"id": "opt3", "text": "Avoiding strong emotions by staying neutral about everything"},
+                {"id": "opt4", "text": "Splitting your time equally between positive and negative thoughts"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Balanced thinking means accuracy, not neutrality. It's 'I've succeeded before and struggled before; this will be challenging but manageable' rather than 'Everything will be fine' or 'I'll definitely fail.' You acknowledge reality without catastrophizing or dismissing concerns."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is balanced thinking more sustainable than forced positive thinking?",
+            "options": [
+                {"id": "opt1", "text": "Because positive thinking doesn't work for anyone"},
+                {"id": "opt2", "text": "Because balanced thoughts are believable and match your actual experience"},
+                {"id": "opt3", "text": "Because balanced thinking eliminates all negative emotions"},
+                {"id": "opt4", "text": "Because you don't have to examine evidence for balanced thoughts"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. When you tell yourself 'I'll definitely succeed' but don't believe it, the thought bounces off — or worse, makes you feel like a failure for not feeling better. A balanced thought like 'I'm prepared and have handled challenges before' feels true and actually reduces anxiety."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'both/and' technique in balanced thinking?",
+            "options": [
+                {"id": "opt1", "text": "Accepting that two contradictory thoughts can both have truth"},
+                {"id": "opt2", "text": "Believing both the negative and positive thought at the same time"},
+                {"id": "opt3", "text": "Splitting your attention between two tasks simultaneously"},
+                {"id": "opt4", "text": "Agreeing with everyone to avoid conflict"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Exactly. 'Both/and' replaces black-and-white thinking: 'I made a mistake AND I'm still competent,' 'This is hard AND I can handle it,' 'I feel anxious AND the situation isn't actually dangerous.' This reduces all-or-nothing distortions and creates more flexible thinking."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How do you know if a balanced thought is working?",
+            "options": [
+                {"id": "opt1", "text": "You feel completely calm and confident immediately"},
+                {"id": "opt2", "text": "Your emotion shifts to something more manageable, and you can take effective action"},
+                {"id": "opt3", "text": "Other people agree with your new thought"},
+                {"id": "opt4", "text": "The thought rhymes or sounds wise"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. A balanced thought doesn't eliminate difficult emotions — it makes them proportional to reality. Anxiety might drop from 90/100 to 40/100, which is still uncomfortable but workable. If you can re-engage with the situation, the thought is effective."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a situation where you're stuck in black-and-white thinking (all good or all bad). What would a balanced 'both/and' thought sound like? How does this shift change what you might do next?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "11",
+    "title": "Balanced Thinking - Quiz"
+}

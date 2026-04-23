@@ -1,0 +1,72 @@
+{
+  "lessonId": "6",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "The 30-Day Onboarding Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of failed sales hires fail because of poor onboarding, not poor hiring?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "40%" },
+        { "id": "c", "text": "60%" },
+        { "id": "d", "text": "80%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "60% of failed sales hires fail because of poor onboarding. SDRs with structured onboarding ramp 50% faster. The first 30 days determine the first 90 days, and the first 90 days determine whether the hire works at all."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What should a new sales hire do in their first 3 days of onboarding?",
+      "options": [
+        { "id": "a", "text": "Start making cold calls immediately" },
+        {
+          "id": "b",
+          "text": "Listen to a library of 10+ recorded discovery calls"
+        },
+        { "id": "c", "text": "Set up their CRM from scratch" },
+        { "id": "d", "text": "Write their own outreach sequences" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The first 3 days should be spent listening to recorded calls — 10 discovery calls and 5 closing calls minimum. Your sales motion works because of the way you say things, and that doesn't live in a document. It lives in recordings."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the Day 30 bar for your new hire?",
+      "options": [
+        { "id": "a", "text": "Hitting full quota" },
+        { "id": "b", "text": "Closing their first deal" },
+        {
+          "id": "c",
+          "text": "Independently sending sequences, handling first 10 min of discovery, and fielding basic objections"
+        },
+        { "id": "d", "text": "Being able to present at a conference" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "By Day 30, your hire should independently send outreach sequences, handle the first 10 minutes of a discovery call, and field basic objections. Not quota attainment. Not closing deals. Independence on the activities they own."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "'Just read the playbook' is sufficient onboarding for a new sales hire.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Documentation alone isn't enough. Your sales motion works because of timing, phrasing, and instinct that only live in actual call recordings. Build a call library and make listening to it the first 3 days of onboarding."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Do you have a library of recorded sales calls? If not, what calls would you record this month? Design a Week 1 onboarding agenda for your first sales hire.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response assesses their current call library (or plans to build one), designs a realistic Week 1 agenda with specific activities per day, and focuses on voice transfer and immersion before any outreach activity begins."
+    }
+  ]
+}

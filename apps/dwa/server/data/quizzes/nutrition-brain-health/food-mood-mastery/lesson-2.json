@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the role of the MTHFR enzyme in brain health?",
+            "options": [
+                { "id": "opt1", "text": "It breaks down dopamine and norepinephrine in the prefrontal cortex" },
+                { "id": "opt2", "text": "It converts folate into its active form, L-methylfolate, which is needed to produce serotonin, dopamine, and norepinephrine" },
+                { "id": "opt3", "text": "It regulates omega-3 fatty acid metabolism in neural tissue" },
+                { "id": "opt4", "text": "It controls the absorption of vitamin B12 from the gut" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The MTHFR enzyme converts folate (vitamin B9) into its active form, L-methylfolate, which the brain needs to produce serotonin, dopamine, and norepinephrine. When this enzyme works less efficiently due to genetic variants, neurotransmitter production can be affected."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why might L-methylfolate be preferred over standard folic acid for individuals with the MTHFR C677T TT genotype?",
+            "options": [
+                { "id": "opt1", "text": "Folic acid is toxic for people with MTHFR variants" },
+                { "id": "opt2", "text": "L-methylfolate is cheaper and more widely available" },
+                { "id": "opt3", "text": "L-methylfolate is the already-active form that bypasses the impaired MTHFR enzyme entirely" },
+                { "id": "opt4", "text": "Standard folic acid cannot be absorbed from the digestive tract" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "L-methylfolate (5-MTHF) is the already-active form of folate that bypasses the MTHFR enzyme entirely. For individuals whose MTHFR enzyme works at reduced capacity (like TT carriers at ~30% activity), standard folic acid must go through impaired conversion steps, while L-methylfolate delivers the needed nutrient directly."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does the COMT Met/Met genotype affect someone's response to caffeine and stress?",
+            "options": [
+                { "id": "opt1", "text": "It has no effect on caffeine sensitivity or stress response" },
+                { "id": "opt2", "text": "It clears catecholamines quickly, making people more resilient to stress and tolerant of caffeine" },
+                { "id": "opt3", "text": "It clears catecholamines slowly, potentially causing greater sensitivity to caffeine and vulnerability to stress" },
+                { "id": "opt4", "text": "It increases caffeine absorption in the gut, leading to higher blood levels" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "People with the COMT Met/Met genotype break down catecholamines (dopamine, epinephrine, norepinephrine) more slowly, leading to higher baseline levels. This can mean better cognitive performance under normal conditions but greater vulnerability to stress and increased sensitivity to catechol-containing compounds like caffeine."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What did the Papakostas et al. (2012) study find about L-methylfolate as an adjunct to SSRI treatment in resistant depression?",
+            "options": [
+                { "id": "opt1", "text": "L-methylfolate was as effective as SSRIs alone and could replace them" },
+                { "id": "opt2", "text": "L-methylfolate significantly improved response rates, with a number needed to treat of approximately six" },
+                { "id": "opt3", "text": "L-methylfolate showed no significant benefit over placebo when added to SSRIs" },
+                { "id": "opt4", "text": "L-methylfolate only worked for patients with confirmed MTHFR mutations" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Papakostas et al. (2012) study published in the American Journal of Psychiatry found that L-methylfolate at 15 mg/day significantly improved response rates when added to SSRI treatment in resistant depression, with a number needed to treat of approximately six. This demonstrates that addressing a nutritional bottleneck can significantly enhance antidepressant treatment response."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is an epigenetic mechanism through which diet can influence gene expression?",
+            "options": [
+                { "id": "opt1", "text": "Altering the DNA sequence through nutrient exposure" },
+                { "id": "opt2", "text": "DNA methylation, which requires adequate folate, B12, B6, and choline" },
+                { "id": "opt3", "text": "Permanently deleting genes that are not needed" },
+                { "id": "opt4", "text": "Replacing damaged chromosomes with dietary amino acids" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "DNA methylation is an epigenetic mechanism that requires adequate folate, B12, B6, and choline. These nutrients provide the methyl groups that regulate gene expression by turning genes on or off without changing the DNA sequence itself. Deficiencies can lead to hypomethylation, which has been linked to depression."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "2",
+    "title": "Genetic Considerations: MTHFR, COMT, and Personalized Nutrition - Quiz"
+}

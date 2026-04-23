@@ -1,0 +1,88 @@
+{
+  "lessonId": "5",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Métricas de Lanzamiento vs Evergreen",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En un lanzamiento típico de 7 días, ¿qué porcentaje del total de ventas suele ocurrir el último día (día de cierre del carrito)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10-15% -- la mayoría de las ventas se distribuyen uniformemente durante la semana"
+        },
+        { "id": "b", "text": "15-20% -- un ligero repunte el último día" },
+        {
+          "id": "c",
+          "text": "30-40% -- la mayor concentración de ventas ocurre en la fecha límite"
+        },
+        {
+          "id": "d",
+          "text": "50-60% -- casi todas las ventas ocurren en las últimas horas"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La curva típica de urgencia de cierre de carrito muestra que el 30-40% del total de ventas ocurre el último día de un lanzamiento de 7 días. Combinado con el Día 1 (25-35%), esto significa que el 55-75% de todas las ventas ocurren solo en el primer y último día, con una 'zona muerta' en el medio. Si no ves un pico en el último día, tu fecha límite no es creíble."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Un creador con un embudo evergreen promedia 0.5 ventas por día de un producto de $2,000 USD. ¿Cuáles son sus ingresos mensuales proyectados y cuál es la métrica clave que debería rastrear diariamente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "$15,000 USD/mes; rastrear la tasa diaria de opt-in"
+        },
+        {
+          "id": "b",
+          "text": "$30,000 USD/mes; rastrear las Ventas Por Día (VPD) como la métrica 'pulso' del evergreen"
+        },
+        {
+          "id": "c",
+          "text": "$30,000 USD/mes; rastrear la tasa de conversión de la página de carrito diariamente"
+        },
+        {
+          "id": "d",
+          "text": "$60,000 USD/mes; rastrear la tasa de visualización del webinar automatizado"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "0.5 ventas/día x $2,000 x 30 días = $30,000 USD/mes (aproximadamente $525,000 MXN/mes). Las Ventas Por Día (VPD) se identifican en la lección como la métrica evergreen más importante -- el 'pulso' de tu embudo. Te dice de un vistazo si el embudo está saludable. Rastréalo con un promedio móvil de 7 y 30 días para suavizar la varianza diaria."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según la lección, ¿cuándo debería un creador cambiar de un modelo de lanzamiento a un modelo evergreen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De inmediato -- el evergreen siempre es superior porque genera ingresos consistentes"
+        },
+        {
+          "id": "b",
+          "text": "Después de su primer lanzamiento exitoso que demuestra que la oferta funciona"
+        },
+        {
+          "id": "c",
+          "text": "Después de 2-3 lanzamientos exitosos con la misma oferta, cuando tienen datos probados y pueden generar 20+ opt-ins diarios"
+        },
+        {
+          "id": "d",
+          "text": "Solo cuando su lista de email supere los 50,000 suscriptores"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La lección recomienda cambiar a evergreen después de al menos 2-3 lanzamientos exitosos con la misma oferta, cuando la audiencia es lo suficientemente grande para generar opt-ins diarios consistentes (20+ por día). Necesitas datos probados de lanzamiento para construir un embudo evergreen -- el webinar, la secuencia de emails y las tasas de conversión deben estar validados antes de automatizar."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "¿Actualmente estás usando un modelo de lanzamiento, evergreen o híbrido? Basándote en los criterios de esta lección, ¿es tu modelo actual el correcto para la etapa de tu negocio? Si solo haces lanzamientos, ¿cuántos de los criterios de 'Cambiar a Evergreen' cumples? ¿Qué tendría que cambiar para que hagas la transición?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante evaluó con precisión su modelo actual y comparó honestamente su situación con los criterios de transición. Busca evidencia específica (número de lanzamientos exitosos, tamaño de lista, volumen diario de opt-ins) en lugar de afirmaciones vagas. Anima a los estudiantes que cumplen los criterios a planificar una transición, y a los que no los cumplen a enfocarse en mejorar su desempeño de lanzamiento primero."
+    }
+  ]
+}

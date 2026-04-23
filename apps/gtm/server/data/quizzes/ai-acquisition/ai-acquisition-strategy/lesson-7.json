@@ -1,0 +1,69 @@
+{
+  "lessonId": "7",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "Your AI Acquisition Weekly Rhythm",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does the 60/40 rule mean for AI-assisted acquisition?",
+      "options": [
+        { "id": "a", "text": "60% of budget on tools, 40% on content" },
+        {
+          "id": "b",
+          "text": "60% of time on high-judgment human activities, 40% on AI-assisted execution"
+        },
+        { "id": "c", "text": "60% email, 40% LinkedIn" },
+        { "id": "d", "text": "60% prospecting, 40% closing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 60/40 rule means spending 60% of your acquisition time on high-judgment human activities (calls, creative outreach, relationship building) and 40% on AI-assisted execution (research, drafting, data work, follow-ups). Going 100% automated produces mediocre 2-5% reply rates; the hybrid approach achieves 8-15%."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which day in the weekly rhythm has the highest human-to-AI ratio (94% human / 6% AI)?",
+      "options": [
+        { "id": "a", "text": "Monday — Research & List Building" },
+        { "id": "b", "text": "Tuesday — AI-Draft + Human Review" },
+        { "id": "c", "text": "Thursday — Discovery Calls + Warm Outreach" },
+        { "id": "d", "text": "Friday — Metrics + Strategy" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Thursday's discovery calls and warm outreach block is 94% human / 6% AI. This is the highest-leverage hour of the week because reading between the lines, building rapport, and qualifying prospects in real-time are skills AI cannot replicate. The lesson emphasizes protecting this block ruthlessly."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the recommended total weekly time investment for sustainable AI-assisted acquisition?",
+      "options": [
+        { "id": "a", "text": "2-3 hours per week" },
+        { "id": "b", "text": "5-7 hours per week" },
+        { "id": "c", "text": "15-20 hours per week" },
+        { "id": "d", "text": "40 hours per week" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson recommends 5-7 hours per week distributed across five sessions: Monday research (90 min), Tuesday drafting (60 min), Wednesday follow-up (45 min), Thursday calls (90 min), and Friday metrics (45 min). This is sustainable long-term and produces 3-5 conversations per week."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The 'batch processing' approach — doing all research in one session, all drafting in another — is less efficient than handling each prospect end-to-end one at a time.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Batch processing is significantly more efficient because it eliminates context switching, which makes each task take 2-3x longer. The batch pattern (research 20 prospects in one session, draft 20 emails in another, review all 20 together) is one of AI's key efficiency multipliers."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your personal weekly acquisition rhythm. For each of the five sessions (Monday-Friday), specify the exact time block, target output, and tools you will use. Explain how you will match high-judgment activities to your peak energy hours.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes all five daily sessions with specific time blocks (not just 'morning'), concrete target outputs (not just 'do research'), and tool selections. Look for energy-task matching — are discovery calls scheduled during peak hours? Is data work during lower-energy windows?"
+    }
+  ]
+}

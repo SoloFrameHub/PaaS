@@ -1,0 +1,166 @@
+{
+    "lessonId": "4",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Feature → Benefit → Outcome Translation",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a 'Feature' in the context of this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The emotional transformation of the customer"
+                },
+                {
+                    "id": "b",
+                    "text": "A factual statement about what the product is or has"
+                },
+                {
+                    "id": "c",
+                    "text": "The amount of money a customer saves using the product"
+                },
+                {
+                    "id": "d",
+                    "text": "A marketing tagline used on the homepage"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A Feature is a technical reality or factual statement (e.g., '128-bit encryption'). It describes what the product is, but not yet why it matters."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which question helps you translate a Feature into a Benefit?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "How much does this cost?"
+                },
+                {
+                    "id": "b",
+                    "text": "So what?"
+                },
+                {
+                    "id": "c",
+                    "text": "Now what?"
+                },
+                {
+                    "id": "d",
+                    "text": "Who is the hero?"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Asking 'So what?' forces you to explain the functional advantage of a feature. (e.g., Feature: 'Real-time sync' → So what? → Benefit: 'Your team always sees the latest updates.')"
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary characteristic of an 'Outcome'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is a technical specification"
+                },
+                {
+                    "id": "b",
+                    "text": "It describes how well the product works"
+                },
+                {
+                    "id": "c",
+                    "text": "It is a measurable business or personal transformation (Time, Money, Risk)"
+                },
+                {
+                    "id": "d",
+                    "text": "It is the brand's mission statement"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Outcomes are about the result for the customer, typically measured in terms of time saved, money made/saved, or risk reduced. This is what prospects actually buy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Dollar/Clock' test mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A method for timing how long a sales call lasts"
+                },
+                {
+                    "id": "b",
+                    "text": "Checking if the customer can measure the result in Time or Money"
+                },
+                {
+                    "id": "c",
+                    "text": "A way to calculate the cost of development"
+                },
+                {
+                    "id": "d",
+                    "text": "Comparing your price to the competitor's clock speed"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a benefit cannot be measured with a 'dollar sign' (money) or a 'clock icon' (time), you haven't yet reached the 'Outcome' level of messaging."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is selling Outcomes better than selling Features for high-ticket products?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes the product seem more complex"
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to anchor the price to the value created, not the cost of software"
+                },
+                {
+                    "id": "c",
+                    "text": "It prevents competitors from stealing your technical secrets"
+                },
+                {
+                    "id": "d",
+                    "text": "Outcomes are easier for developers to build"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "When you sell outcomes, you become a partner rather than a commodity. You can justify a higher price because that price is relative to the massive value or savings the customer achieves."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "In the 'Transformation Bridge' framework for creators, what should 80% of your messaging focus on?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The modules and templates in your course"
+                },
+                {
+                    "id": "b",
+                    "text": "Point A (Current Hell) and Point B (Desired Heaven)"
+                },
+                {
+                    "id": "c",
+                    "text": "Your personal credentials and experience"
+                },
+                {
+                    "id": "d",
+                    "text": "The price and payment options"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Transformation Bridge teaches that you should spend 80% of your messaging on the pain (Point A) and the destination (Point B), and only 20% on the 'how' (your offer). Let them FEEL the transformation first."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Pick one core feature of your product. Translate it through the three stages: Feature → Benefit → Outcome. Ensure the outcome passes the 'Dollar/Clock' test.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's ability to translate a feature into a measurable outcome. Check if the final outcome clearly mentions time saved, money gained/saved, or risk reduced. Provide feedback if they get stuck at the 'Benefit' level."
+        }
+    ],
+    "passingScore": 70
+}

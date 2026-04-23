@@ -1,0 +1,94 @@
+{
+  "lessonId": "10",
+  "courseId": "retention",
+  "sectionId": "customer-success",
+  "title": "Your Retention Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "By how much can a solo founder with 50-200 customers reduce churn in 90 days with a proactive retention system?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "15-20%" },
+        { "id": "c", "text": "25-40%" },
+        { "id": "d", "text": "50-60%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A solo founder with 50-200 customers can reduce churn by 25-40% in 90 days with a proactive system that requires only 2-3 hours per week. The key is shifting from reactive firefighting to systematic detection, intervention, and escalation."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the four components of a proactive retention system?",
+      "options": [
+        { "id": "a", "text": "Survey, respond, fix, repeat" },
+        {
+          "id": "b",
+          "text": "Detect risk early, intervene automatically, escalate strategically, learn continuously"
+        },
+        { "id": "c", "text": "Monitor, alert, discount, retain" },
+        { "id": "d", "text": "Onboard, support, upsell, renew" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four components are: (1) Detect risk early via health scores and signal tracking, (2) Intervene automatically with reactivation sequences and feature nudges, (3) Escalate strategically with save plays for high-value accounts, and (4) Learn continuously through monthly retrospectives and playbook updates."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What does the Retention Paradox state?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The more customers you have, the more churn you experience"
+        },
+        {
+          "id": "b",
+          "text": "The less time you spend on retention, the better your retention gets — because systems scale, panic doesn't"
+        },
+        { "id": "c", "text": "Retention is more expensive than acquisition" },
+        {
+          "id": "d",
+          "text": "High-paying customers churn less than low-paying customers"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Retention Paradox: the less time you spend on retention (through better systems), the better your retention gets. Systems scale predictably, while reactive panic-based retention doesn't. A 2-3 hour/week systematic approach beats 20 hours of firefighting."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The retention playbook should be built once and never modified after the initial 14-day implementation sprint.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The playbook is a living system with monthly retrospectives to learn from churn patterns and quarterly updates to refine triggers, scripts, and automation recipes. Continuous iteration is what separates proactive retention from one-time projects."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "In the 14-day retention system build, what is the focus of Days 1-3 (Foundation)?",
+      "options": [
+        { "id": "a", "text": "Writing reactivation email sequences" },
+        {
+          "id": "b",
+          "text": "Setting up health scoring, churn signal tracking, and benchmark analysis"
+        },
+        { "id": "c", "text": "Building save play scripts" },
+        { "id": "d", "text": "Launching feature adoption campaigns" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Days 1-3 focus on the foundation: building your health scoring spreadsheet, setting up the 7-signal tracker with alerts, calculating your baseline churn rate and NRR, running a cohort analysis, and comparing against SMB SaaS benchmarks."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Create your 14-day retention system build plan. For each phase (Foundation Days 1-3, Automation Days 4-7, Playbooks Days 8-10, Launch Days 11-14), list the specific deliverables you will produce and the tools you will use.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response covers all four phases with specific, product-relevant deliverables (health scoring setup, automation recipes, save play scripts, measurement dashboard), names specific tools they will use, and prioritizes based on their biggest retention gap."
+    }
+  ]
+}

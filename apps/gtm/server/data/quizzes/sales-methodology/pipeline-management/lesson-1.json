@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Pipeline Physics Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the Sales Velocity equation, which variable is often the easiest for a solo founder to optimize for rapid revenue growth?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Opportunities (Getting more leads)."
+                },
+                {
+                    "id": "b",
+                    "text": "Deal Value (Doubling prices immediately)."
+                },
+                {
+                    "id": "c",
+                    "text": "Win Rate (Attempting to close everyone)."
+                },
+                {
+                    "id": "d",
+                    "text": "Length of Sales Cycle (Reducing the time between first contact and close)."
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Increasing volume or value often requires significant marketing or product shifts. Reducing cycle length by removing internal friction (Legal/Security prep) allows you to process more deals through your limited time as a founder."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does a high 'Leakage Rate' in the middle of your pipeline usually indicate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The leads are bad."
+                },
+                {
+                    "id": "b",
+                    "text": "Your product is too expensive."
+                },
+                {
+                    "id": "c",
+                    "text": "A 'Qualification Gap'—you are allowing unqualified prospects into the pipeline, causing effort to be wasted on deals that will never close."
+                },
+                {
+                    "id": "d",
+                    "text": "You need a better CRM."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "If deals fall out early, it means your ICP/Discovery filters aren't sharp enough. Tightening qualification reduces the number of deals but increases the quality and velocity of the ones that remain."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Inverted Hourglass' pipeline shape?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A pipeline that is narrow at the top and wide at the bottom."
+                },
+                {
+                    "id": "b",
+                    "text": "A model where you have broad outreach (Top), brutal qualification (Middle), and deep expansion/upselling (Bottom)."
+                },
+                {
+                    "id": "c",
+                    "text": "A pipeline that runs out of time."
+                },
+                {
+                    "id": "d",
+                    "text": "A pipeline where everyone is a high-value whale."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In 2026, the real profit for solo founders is in high-trust expansion. The'Inverted Hourglass' emphasizes that the journey doesn't end at the first sale; the widest part of your revenue should come from growing accounts."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Calculate your current 'Sales Velocity' using rough numbers. (Oreo x Deal Value x Win Rate / Cycle Length). Which one of these 4 variables, if improved by just 10%, would have the biggest impact on your stress levels AND your bank account? Why?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can accurately apply the velocity formula and if they prioritize'Cycle Length' or'Win Rate' as a way to reduce founder effort while maintaining revenue."
+        }
+    ]
+}

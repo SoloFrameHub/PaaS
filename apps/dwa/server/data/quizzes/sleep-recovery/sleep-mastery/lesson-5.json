@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "After poor sleep, how much more reactive does the amygdala become to negative stimuli?",
+            "options": [
+                { "id": "opt1", "text": "Up to 20% more reactive" },
+                { "id": "opt2", "text": "Up to 40% more reactive" },
+                { "id": "opt3", "text": "Up to 60% more reactive" },
+                { "id": "opt4", "text": "Up to 80% more reactive" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "After poor sleep, the amygdala (your emotional alarm system) becomes up to 60% more reactive to negative stimuli, making you more irritable, anxious, and emotionally volatile."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What happens to the prefrontal cortex after sleep deprivation?",
+            "options": [
+                { "id": "opt1", "text": "It becomes hyperactive" },
+                { "id": "opt2", "text": "Its connection to the amygdala weakens, reducing emotional regulation" },
+                { "id": "opt3", "text": "It produces more melatonin" },
+                { "id": "opt4", "text": "It shuts down completely" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep deprivation weakens the connection between the prefrontal cortex and amygdala. This means your rational, calming voice becomes quieter, making it harder to regulate emotions, make decisions, or think clearly."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What causes 'brain fog' after poor sleep?",
+            "options": [
+                { "id": "opt1", "text": "Increased blood sugar levels" },
+                { "id": "opt2", "text": "Reduced prefrontal cortex activity, incomplete memory consolidation, and less flexible thinking" },
+                { "id": "opt3", "text": "Too much melatonin remaining in the system" },
+                { "id": "opt4", "text": "Overactivity of the parasympathetic nervous system" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Brain fog results from reduced prefrontal cortex activity (difficulty concentrating), incomplete memory consolidation during deep sleep (forgetting things), and reduced cognitive flexibility (less creative problem-solving)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'upward spiral' concept in sleep science?",
+            "options": [
+                { "id": "opt1", "text": "Sleeping longer each night leads to needing less sleep" },
+                { "id": "opt2", "text": "Better sleep leads to calmer mood, clearer focus, more energy, and even better sleep" },
+                { "id": "opt3", "text": "REM sleep stages get progressively longer each night" },
+                { "id": "opt4", "text": "Your circadian rhythm speeds up over time" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The upward spiral means improvements in sleep compound: better sleep leads to calmer mood, which leads to clearer focus, which leads to more energy, which leads to even better sleep."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does sleep help with emotional regulation?",
+            "options": [
+                { "id": "opt1", "text": "Sleep eliminates all negative emotions" },
+                { "id": "opt2", "text": "Sleep restores the prefrontal cortex's ability to regulate the amygdala, keeping emotional responses proportionate" },
+                { "id": "opt3", "text": "Sleep reduces the size of the amygdala permanently" },
+                { "id": "opt4", "text": "Sleep replaces negative memories with positive ones" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "After restorative sleep, the connection between the prefrontal cortex and amygdala is fully restored. This means your rational mind can effectively regulate emotions, support clear decision-making, and maintain composure under stress."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "5",
+    "title": "Sleep for Mood, Focus, and Productivity - Quiz"
+}

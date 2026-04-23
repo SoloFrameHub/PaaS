@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Post-Close Handoff Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Implementation Lag'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When the internet is slow."
+                },
+                {
+                    "id": "b",
+                    "text": "The time between contract signature and the 'First Moment of Value' for the customer, which is a primary predictor of churn."
+                },
+                {
+                    "id": "c",
+                    "text": "The time it takes to send an invoice."
+                },
+                {
+                    "id": "d",
+                    "text": "When the founder forgets to call the client."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If a buyer waits weeks to see results, they regret the purchase. Reducing this lag through a 'Success Roadmap' and automated check-ins is critical for retention."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How can a solo founder turn their 'Small Team' status into a competitive advantage during handoff?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By pretending to have a larger team."
+                },
+                {
+                    "id": "b",
+                    "text": "By charging extra for personal access."
+                },
+                {
+                    "id": "c",
+                    "text": "By framing it as a 'Direct Founder Relationship' where the client gets high-stakes accountability and expert-level partnership that big firms can't provide."
+                },
+                {
+                    "id": "d",
+                    "text": "By apologizing for being slow."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Big companies often have poor handoffs to junior staff. A founder's personal involvement is a premium benefit that ensures the client feels prioritized and secure in their investment."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of the 'Success Roadmap'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To show the prospect that you are busy."
+                },
+                {
+                    "id": "b",
+                    "text": "To move the buyer from 'What now?' to a state of clarity where they know exactly what milestones to expect in the first 30 days."
+                },
+                {
+                    "id": "c",
+                    "text": "To ask for more money."
+                },
+                {
+                    "id": "d",
+                    "text": "To provide a manual for the software."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Clarity reduces stress. A simple 5-step roadmap ensures the client feels the implementation is a managed process rather than a chaotic scramble."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Draft the '30-Day Success Roadmap' for your product. What are the 5 specific milestones (Day 1, Day 3, Day 7, etc.) that your typical customer needs to hit to feel they have successfully implemented your solution?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the milestones are logical and focused on'Outcome' (e.g.,'First data import completed') rather than just'Task' (e.g.,'Settings configured')."
+        }
+    ]
+}

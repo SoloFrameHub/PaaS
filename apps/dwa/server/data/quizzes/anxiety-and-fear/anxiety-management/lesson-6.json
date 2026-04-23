@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How much moderate exercise per week is recommended for anxiety reduction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "30 minutes total per week"
+                },
+                {
+                    "id": "opt2",
+                    "text": "150 minutes per week (about 30 minutes, 5 days)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "4 hours per day"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise doesn't affect anxiety"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that 150 minutes of moderate exercise per week (about 30 minutes, 5 days per week) is associated with nearly 25% reduced risk of depression and anxiety. Exercise effects can rival psychotherapy and medication for mild-to-moderate anxiety."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why should you avoid caffeine in the afternoon if you have anxiety?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Caffeine is only effective in the morning"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Caffeine can disrupt sleep, and poor sleep increases anxiety"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Afternoon caffeine tastes different"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It's more expensive in the afternoon"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Caffeine should be avoided at least 6 hours before bed (generally after 2pm) because it can disrupt sleep. Since poor sleep increases anxiety, and anxiety disrupts sleep, caffeine can worsen this cycle. Caffeine also directly increases anxiety by blocking the relaxation neurotransmitter adenosine."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What type of diet is associated with reduced anxiety according to research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "High-sugar, processed food diet"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Mediterranean-style diet (fruits, vegetables, fish, olive oil, whole grains)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Liquid-only diet"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Diet has no effect on mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that Mediterranean diet adherence is inversely correlated with anxiety and depression. This diet emphasizes fruits, vegetables, whole grains, fish (especially fatty fish for omega-3s), olive oil, nuts, and legumes while limiting processed foods and refined sugars."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does using alcohol to 'take the edge off' backfire for anxiety?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Alcohol has no effect on anxiety"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It provides temporary relief but causes rebound anxiety ('hangxiety'), disrupts sleep, and increases dependence risk"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It only backfires if you drink too much"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Alcohol is always helpful for anxiety"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While alcohol may temporarily reduce anxiety, it creates rebound anxiety as it wears off ('hangxiety'), disrupts sleep quality, changes neurotransmitter levels, and significantly increases the risk of alcohol dependence—people with anxiety disorders have a 5x higher risk of developing dependence."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Worry Dump' technique for improving sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Throwing away all your worries in the trash"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Before bed, spend 10 minutes writing down every worry to get them out of your head and onto paper"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Telling someone else all your problems"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Avoiding any thoughts before bed"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Worry Dump technique involves spending 10 minutes before bed writing down every worry on your mind—big or small. Don't try to solve them; just capture them on paper. This signals to your brain that the worries have been recorded and can be addressed tomorrow, allowing you to let go and sleep."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-management",
+    "lessonId": "6",
+    "title": "Daily Habits That Reduce Anxiety - Quiz"
+}

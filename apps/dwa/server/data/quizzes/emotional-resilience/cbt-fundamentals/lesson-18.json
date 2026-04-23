@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is relapse prevention in CBT?",
+            "options": [
+                {"id": "opt1", "text": "Avoiding all situations that might trigger negative emotions"},
+                {"id": "opt2", "text": "Developing a plan to recognize early warning signs and respond effectively to prevent symptom escalation"},
+                {"id": "opt3", "text": "Accepting that relapse is inevitable and there's nothing you can do"},
+                {"id": "opt4", "text": "Staying in therapy forever to prevent symptoms from returning"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Relapse prevention teaches you to identify your personal warning signs (sleep changes, negative thought patterns, withdrawal) and respond early with skills you've learned. Early intervention prevents small setbacks from becoming full relapses."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is it important to identify early warning signs of relapse?",
+            "options": [
+                {"id": "opt1", "text": "So you can panic and assume the worst is happening"},
+                {"id": "opt2", "text": "Because intervening early when symptoms are mild is much easier than waiting until they're severe"},
+                {"id": "opt3", "text": "To prove that you'll never get better"},
+                {"id": "opt4", "text": "Warning signs don't matter — relapses happen randomly"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. When you catch yourself skipping workouts, isolating, or ruminating excessively, you can use CBT skills to course-correct. Waiting until you're in a full depressive episode or panic spiral makes intervention much harder. Early detection = early intervention."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should a relapse prevention plan include?",
+            "options": [
+                {"id": "opt1", "text": "A list of people to blame if symptoms return"},
+                {"id": "opt2", "text": "Your personal warning signs, specific coping skills, and emergency contacts/resources"},
+                {"id": "opt3", "text": "A promise to never experience symptoms again"},
+                {"id": "opt4", "text": "Instructions to avoid all stress and challenging situations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. A good plan includes: (1) warning signs you've noticed before (sleep disruption, negative thoughts), (2) specific skills to use (thought records, behavioral activation), and (3) support resources (therapist, crisis line, trusted friend). This creates a roadmap for when you need it most."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the difference between a lapse and a relapse?",
+            "options": [
+                {"id": "opt1", "text": "There is no difference — both mean complete failure"},
+                {"id": "opt2", "text": "A lapse is a brief return of symptoms; a relapse is sustained symptom escalation"},
+                {"id": "opt3", "text": "A lapse is worse than a relapse"},
+                {"id": "opt4", "text": "Lapses only happen to people who didn't learn CBT properly"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. A lapse is temporary (a bad day, a setback) and is normal and expected. A relapse is when symptoms return to previous severity for an extended period. Recognizing this difference prevents catastrophizing: 'I had a rough week' doesn't mean 'I've lost all my progress.' Lapses are learning opportunities."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Create a personal relapse prevention plan: What are your early warning signs (thoughts, behaviors, physical symptoms)? What CBT skills would you use first? Who would you contact if you needed support? Where would you keep this plan?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "18",
+    "title": "Relapse Prevention - Quiz"
+}

@@ -1,0 +1,78 @@
+{
+  "lessonId": "12",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "Your Outreach Stack Blueprint",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is 'integration debt' in the context of building an outreach stack?",
+      "options": [
+        { "id": "a", "text": "The cost of API subscriptions" },
+        {
+          "id": "b",
+          "text": "Every tool you add creates connections that need maintaining — Instantly + Clay needs Zapier, adding a CRM needs reply routing automation, etc."
+        },
+        { "id": "c", "text": "The time it takes to learn new tools" },
+        { "id": "d", "text": "The cost of switching between tools" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Integration debt means every additional tool creates connection points that need configuration and maintenance. Instantly + Clay needs Zapier to connect them, adding HeyReach means two inboxes to monitor, adding a CRM requires reply routing automation. The goal is minimum viable stack, not maximum tool coverage."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the four phases of stack assembly?",
+      "options": [
+        { "id": "a", "text": "Plan, Buy, Configure, Launch" },
+        {
+          "id": "b",
+          "text": "Core Platform Selection, Essential Integrations, Optional Enhancements, Operational Workflow"
+        },
+        { "id": "c", "text": "Research, Compare, Purchase, Optimize" },
+        { "id": "d", "text": "Email, LinkedIn, Phone, CRM" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four assembly phases are: Core Platform Selection (the foundation where sequences live), Essential Integrations (what must connect to your core), Optional Enhancements (nice-to-haves if budget allows), and Operational Workflow (how you actually use it daily). Building in this order prevents integration debt."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why is the $200 budget constraint described as a 'feature, not a bug'?",
+      "options": [
+        { "id": "a", "text": "Because it makes the tools cheaper" },
+        {
+          "id": "b",
+          "text": "Budget limits force prioritization — a $2,000/month stack with 12 tools creates more problems than it solves for solo founders"
+        },
+        { "id": "c", "text": "Because all good tools cost under $200" },
+        {
+          "id": "d",
+          "text": "Because investors look favorably on lean spending"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Constraint breeds clarity. A $2,000/month stack with 12 tools creates operational chaos for solo founders — too many dashboards, too many integrations, too much context switching. The $200 limit forces you to choose only the tools that directly serve your strategy."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The first decision in stack assembly is whether to go email-only or multi-channel — everything else builds on this choice.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The email-only vs multi-channel decision is the first fork in the road because it determines your core platform (Instantly/Smartlead for email-only, Lemlist/La Growth Machine for multi-channel) and shapes every subsequent tool selection, budget allocation, and operational workflow."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Build your complete outreach stack blueprint. List your core platform, essential integrations, and any optional enhancements. Show total monthly cost, and describe your daily operational workflow (what you do each morning to manage the stack).",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a specific core platform choice with reasoning, lists essential integrations with connection methods (Zapier, native, etc.), stays within $200/month total budget, and describes a realistic daily operational workflow. Look for awareness of integration debt and prioritization of simplicity."
+    }
+  ]
+}

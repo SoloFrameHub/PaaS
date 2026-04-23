@@ -1,0 +1,72 @@
+{
+  "lessonId": "1",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "What Changed: 2025-2026 Bulk Sender Rules",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What happened on February 1, 2024 that changed cold email forever?",
+      "options": [
+        { "id": "a", "text": "Email was declared illegal for marketing" },
+        {
+          "id": "b",
+          "text": "Google and Yahoo simultaneously began enforcing mandatory SPF/DKIM/DMARC authentication and spam complaint rate limits"
+        },
+        { "id": "c", "text": "All email providers merged into one platform" },
+        { "id": "d", "text": "Cold email open rates doubled" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Google and Yahoo simultaneously enforced requirements that had been 'recommendations' for years: SPF/DKIM/DMARC authentication became mandatory for bulk senders, one-click unsubscribe headers were required, and spam complaint rates above 0.3% would result in domain blocking."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the target spam complaint rate that Google recommends?",
+      "options": [
+        { "id": "a", "text": "Below 1%" },
+        { "id": "b", "text": "Below 0.5%" },
+        { "id": "c", "text": "Below 0.1% (domain blocked at 0.3%)" },
+        { "id": "d", "text": "Below 5%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Google's target spam complaint rate is below 0.1%. At 0.3%, Google starts blocking your domain entirely. This means if you send 1,000 emails and just 3 people mark you as spam, you risk losing access to Gmail inboxes."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why did a founder's 200 perfectly researched emails get zero replies?",
+      "options": [
+        { "id": "a", "text": "The offer was weak" },
+        {
+          "id": "b",
+          "text": "58% of emails never made it to the inbox — silently filtered to spam by Outlook with no bounce notification"
+        },
+        { "id": "c", "text": "The prospects were on vacation" },
+        { "id": "d", "text": "The emails were too long" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The opening story illustrates 'silent filtering' — 58% of emails vanished into spam folders without any bounce or warning. The founder's offer and targeting were fine; the problem was missing authentication records, making the domain look suspicious to email providers."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If you send fewer than 5,000 emails per day, you don't need SPF, DKIM, and DMARC authentication.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Even at 200-400 emails/day, full authentication is needed because reputation is shared across volume tiers, silent filtering is worse than rejection (you never know you're in spam), and one complaint from an unauthenticated domain is a bigger red flag than from an authenticated one."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Check your current email setup: Do you have SPF, DKIM, and DMARC configured on all your sending domains? If you're not sure, describe the steps you would take to verify this and what you would do if any records are missing.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response demonstrates awareness of how to check authentication records (mail-tester.com, DNS lookup tools, Google Postmaster), provides specific steps for verification, and describes remediation steps for missing records. Look for understanding that authentication is foundational to deliverability."
+    }
+  ]
+}

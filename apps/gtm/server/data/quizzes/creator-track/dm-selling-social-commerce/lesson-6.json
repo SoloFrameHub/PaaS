@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "Short-Form Content to Offers",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between viral content and DM bait content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Viral content is on Instagram while DM bait content is only on LinkedIn"
+                },
+                {
+                    "id": "b",
+                    "text": "Viral content attracts broad attention from a general audience, while DM bait content attracts specific intent from qualified prospects who are likely to buy"
+                },
+                {
+                    "id": "c",
+                    "text": "DM bait content always gets more views than viral content"
+                },
+                {
+                    "id": "d",
+                    "text": "There is no meaningful difference -- all content can generate DMs equally well"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The fundamental distinction is attention vs. intent. Viral content is broad and triggers emotional reactions from a wide audience, generating views and likes but rarely sales. DM bait content is narrow and speaks directly to a specific buyer about a specific problem, generating fewer views but far more qualified conversations. A reel with 5,000 views and 50 DMs can outperform a viral video with 500,000 views and 0 DMs."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Qualification Frame' component in DM bait content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the content feel exclusive and create artificial scarcity"
+                },
+                {
+                    "id": "b",
+                    "text": "To narrow the audience so that qualified prospects feel seen while unqualified viewers self-select out, saving both your time and theirs"
+                },
+                {
+                    "id": "c",
+                    "text": "To increase view count by making people curious about whether they qualify"
+                },
+                {
+                    "id": "d",
+                    "text": "To comply with advertising regulations on social media platforms"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Qualification Frame (e.g., 'If you are a coach doing at least $3K/month...') serves two purposes: it makes qualified prospects feel personally addressed ('that is exactly me'), and it makes unqualified viewers self-select out before entering your DMs. This ensures your DM conversations are with people who actually have the need, urgency, and capacity to buy."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, why should you give away genuine insights in your content rather than teasing them?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because platform algorithms punish content that withholds information"
+                },
+                {
+                    "id": "b",
+                    "text": "Because the insight is not the product -- the insight makes people realize they have a problem, while your product provides the implementation, system, and accountability they need to solve it"
+                },
+                {
+                    "id": "c",
+                    "text": "Because giving away everything for free builds such strong goodwill that people will always buy eventually"
+                },
+                {
+                    "id": "d",
+                    "text": "Because teasers are illegal under consumer protection laws in most countries"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "People pay for execution, not information. Sharing a genuine insight demonstrates your expertise and helps the viewer realize they have a problem worth solving. Your paid offer then provides the structured implementation -- the step-by-step system, the coaching, the accountability -- that the insight alone cannot deliver. This approach builds trust and positions you as a generous expert."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write a complete DM bait content script using the 4-component formula: (1) a Problem Hook for your niche that would only resonate with your ideal buyer, (2) a brief Insight Body with a counterintuitive teaching, (3) a Qualification Frame that filters for your target audience, and (4) a specific DM Call-to-Action with a trigger word and clear deliverable.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether all four components are present and well-executed. The Problem Hook should name a specific symptom, not a vague aspiration. The Insight Body should teach something genuinely useful, not just tease. The Qualification Frame should describe a specific audience segment. The CTA should include a distinctive trigger word, a specific deliverable, and a sense of immediacy. Provide feedback on which components are strongest and which could be more specific."
+        }
+    ]
+}

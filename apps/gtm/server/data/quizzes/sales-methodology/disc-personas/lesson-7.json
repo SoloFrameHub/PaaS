@@ -1,0 +1,134 @@
+{
+    "lessonId": "7",
+    "courseId": "disc-personas",
+    "sectionId": "sales-methodology",
+    "title": "DISC in Sales Conversations",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core philosophy of 'Chameleon Selling'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Changing your product to fit the customer"
+                },
+                {
+                    "id": "b",
+                    "text": "Keeping the product the same, but changing your communication interface (style) to match the buyer"
+                },
+                {
+                    "id": "c",
+                    "text": "Acting fake"
+                },
+                {
+                    "id": "d",
+                    "text": "Using many colors in your deck"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you pitch a C-type with an I-type pitch (all vision, no data), you lose. You must adapt your 'User Interface' to their brain's operating system."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When opening a call with a High-D (Driver), what is the best strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spend 5 minutes on small talk to build rapport"
+                },
+                {
+                    "id": "b",
+                    "text": "Skip the weather, state the agenda/ROI goal immediately, and ask for agreement"
+                },
+                {
+                    "id": "c",
+                    "text": "Wait for them to speak first"
+                },
+                {
+                    "id": "d",
+                    "text": "Show a long video"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-Ds respect time and competence. 'How is your Tuesday?' is annoying. 'I want to show you how to save $40k' is valuable."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When pitching a High-I (Influencer), what should you focus on?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Technical specs and compliance"
+                },
+                {
+                    "id": "b",
+                    "text": "Safety and risk reduction"
+                },
+                {
+                    "id": "c",
+                    "text": "Status, Vision, and Social Proof (Who else is using it?)"
+                },
+                {
+                    "id": "d",
+                    "text": "The price discount"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-Is buy status. They want to be the hero who brought in the 'cool new tech'. Show them how this makes them look smart to their boss."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "The 'Assumptive Step' close works best for which type?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High-D"
+                },
+                {
+                    "id": "b",
+                    "text": "High-S (Steady)"
+                },
+                {
+                    "id": "c",
+                    "text": "High-C"
+                },
+                {
+                    "id": "d",
+                    "text": "None of them"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-S types fear making a wrong decision. They need a Guide. An assumptive close ('The next logical step is to set up a sandbox') removes the pressure of having to initiate."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If you ask 'How has your week been?' and they reply 'Fine. Let's get started.', they are likely:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High-I"
+                },
+                {
+                    "id": "b",
+                    "text": "High-S"
+                },
+                {
+                    "id": "c",
+                    "text": "High-D"
+                },
+                {
+                    "id": "d",
+                    "text": "Rude"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "This brevity is a classic D cue. They are signaling that they want to focus on business, not relationship."
+        }
+    ],
+    "passingScore": 70
+}

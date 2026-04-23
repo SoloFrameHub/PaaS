@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a key distinguishing feature between normal sadness and clinical depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Normal sadness lasts exactly one day"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Clinical depression persists most of the day, nearly every day, for 2+ weeks and significantly impairs functioning"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Normal sadness never involves crying"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Clinical depression only happens to people who have experienced trauma"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Clinical depression is characterized by symptoms persisting most of the day, nearly every day, for at least 2 weeks, causing significant impairment in functioning. Normal sadness is typically temporary, proportional to circumstances, and doesn't significantly impair daily life."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the 'I' stand for in the SIGECAPS mnemonic for depression symptoms?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Irritability"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Interest - markedly diminished interest or pleasure in activities"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Insomnia"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Isolation"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "In SIGECAPS, the 'I' stands for Interest - specifically, markedly diminished interest or pleasure in activities (anhedonia). This is one of the two core symptoms required for a depression diagnosis (along with depressed mood)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What PHQ-2 score suggests the need for further depression evaluation?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any score above 0"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A score of 3 or higher"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only a perfect score of 6"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The PHQ-2 doesn't have score thresholds"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A PHQ-2 score of 3 or higher (out of 6 possible points) suggests the need for further evaluation, typically using the full PHQ-9. Scores below 3 indicate depression is less likely, though clinical judgment should always be applied."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a characteristic of NORMAL sadness (not clinical depression)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Persists for months without relief"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Includes thoughts of suicide"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Allows for moments of happiness or relief and is responsive to support"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Prevents all daily functioning"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Normal sadness typically allows for moments of happiness or relief and is responsive to support and time. It's usually proportional to the triggering event and temporary. Clinical depression, in contrast, is pervasive and doesn't easily lift with support."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should you do if you're experiencing thoughts about being better off dead or hurting yourself?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Wait a few weeks to see if it passes"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Reach out for help immediately - call 988, text HOME to 741741, or go to an emergency room"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Keep it to yourself so others don't worry"
+                },
+                {
+                    "id": "opt4",
+                    "text": "These thoughts are too common to be concerning"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Thoughts of death or suicide always warrant immediate attention. The 988 Suicide & Crisis Lifeline (call or text 988), Crisis Text Line (text HOME to 741741), and emergency services are available 24/7. These thoughts are a critical distinguishing feature of depression that requires professional support."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "depression-action",
+    "lessonId": "1",
+    "title": "Recognizing Depression vs. Normal Sadness - Quiz"
+}

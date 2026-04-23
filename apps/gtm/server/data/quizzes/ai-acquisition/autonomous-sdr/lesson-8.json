@@ -1,0 +1,75 @@
+{
+  "lessonId": "8",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "The Automation Failure Matrix for AI SDRs",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the AI SDR context, what belongs in Q1 (Automate Now)?",
+      "options": [
+        { "id": "a", "text": "Writing personalized first-touch emails" },
+        {
+          "id": "b",
+          "text": "Data enrichment, email verification, CRM updates, and warmup management"
+        },
+        { "id": "c", "text": "Reply classification and response" },
+        { "id": "d", "text": "Pricing negotiations" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Q1 (Low Risk, High Time Savings) includes data enrichment, email verification, CRM field updates, warmup management, and bounce handling. These are safe to fully automate because errors are low-impact and easily caught, while they consume significant time if done manually."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What cost Sarah an estimated $75,000 in lost pipeline?",
+      "options": [
+        { "id": "a", "text": "Using the wrong AI SDR platform" },
+        {
+          "id": "b",
+          "text": "Skipping her 15-minute daily review just once — the AI sent 47 emails with hallucinated funding data"
+        },
+        { "id": "c", "text": "Sending too many emails in one day" },
+        { "id": "d", "text": "Not upgrading to the enterprise plan" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah skipped her daily review 'just this once' and the AI sent 47 emails referencing funding rounds that never happened. Three prospects forwarded the emails publicly, domain reputation dropped 40 points, and two warm deals went cold. The 15 minutes she saved cost an estimated $75,000."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why is the Automation Failure Matrix described as 'survival' for solo founders rather than optional?",
+      "options": [
+        { "id": "a", "text": "Because AI SDR platforms are unreliable" },
+        {
+          "id": "b",
+          "text": "Because solo founders have no backup team — one automation failure can burn email infrastructure, destroy brand, or lose the best prospect"
+        },
+        { "id": "c", "text": "Because regulators require it" },
+        { "id": "d", "text": "Because it reduces platform costs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Unlike teams with backup SDRs and managers, solo founders have no safety net. One automation failure can permanently damage email deliverability, destroy brand reputation in a tight-knit industry, or lose a prospect that represents a significant portion of pipeline. The matrix isn't optional — it's survival."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "First-touch email personalization for enterprise prospects should be in Q2 (Automate + Human Gate), not Q1 (Automate Now).",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. First-touch personalization for high-value prospects belongs in Q2 because hallucinations or tone issues can permanently damage relationships. The AI drafts but a human must review before sending. This is especially critical for enterprise prospects where one bad email can cost $50K+ in lost deals."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Apply the Automation Failure Matrix to your outreach workflow. List two tasks for each quadrant (Q1 Automate Now, Q2 Automate + Gate, Q3 Keep Human, Q4 Eliminate) and explain your reasoning.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response correctly places two tasks in each of the four quadrants with clear reasoning about risk level and time savings. Look for understanding that the matrix shifts based on prospect value — the same task might be Q2 for enterprise prospects but Q1 for lower-tier ones."
+    }
+  ]
+}

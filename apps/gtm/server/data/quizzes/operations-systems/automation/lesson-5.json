@@ -1,0 +1,101 @@
+{
+    "lessonId": "5",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "Contract & Invoice Chaser",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How long does the average B2B SMB contract take to sign?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-3 days"
+                },
+                {
+                    "id": "b",
+                    "text": "5-14 days"
+                },
+                {
+                    "id": "c",
+                    "text": "30-60 days"
+                },
+                {
+                    "id": "d",
+                    "text": "90+ days"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Average B2B SMB contract signing time is 5-14 days. Beyond 14 days, the deal is at significant risk of stalling or losing momentum to competing priorities."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What should the Day 3 Contract Chaser action be?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Auto-send a follow-up email to the prospect"
+                },
+                {
+                    "id": "b",
+                    "text": "Internal reminder to you only — don't contact the prospect yet"
+                },
+                {
+                    "id": "c",
+                    "text": "Call the prospect directly"
+                },
+                {
+                    "id": "d",
+                    "text": "Cancel the proposal and resend it"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Day 3 is normal. An internal reminder only — you decide if action is needed. Auto-sending a follow-up at Day 3 is premature and can feel pushy."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "A deal that has been in 'Proposal Sent' stage for 21 days is a strong pipeline asset.",
+            "correctAnswer": "b",
+            "explanation": "False. A deal unsigned for 21+ days is not a reliable pipeline asset — it inflates your forecast with deals that are likely stalled or dead. The Contract Chaser's Day 14 escalation should trigger a decision: identify the blocker or close as Lost.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What additional automation should you trigger when a contract is signed?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — the chaser stops automatically"
+                },
+                {
+                    "id": "b",
+                    "text": "Another follow-up sequence"
+                },
+                {
+                    "id": "c",
+                    "text": "A Deal Won trigger: CRM update + celebration notification + onboarding tasks"
+                },
+                {
+                    "id": "d",
+                    "text": "A new proposal for a bigger deal"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When the contract is signed, trigger: Slack celebration, CRM stage update to Closed Won, and a new customer onboarding task list. The 'happy path' automation handles completion just as the Contract Chaser handles delays."
+        }
+    ]
+}

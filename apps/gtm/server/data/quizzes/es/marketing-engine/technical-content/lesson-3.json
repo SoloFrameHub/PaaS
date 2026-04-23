@@ -1,0 +1,142 @@
+{
+  "lessonId": "3",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: La Mezcla de Contenido 80/20",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el principal inconveniente de enfocarse demasiado en el contenido 'De Actualidad'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es demasiado costoso de producir"
+        },
+        {
+          "id": "b",
+          "text": "Tiene una corta 'vida media' y deja de generar valor poco después de su publicación"
+        },
+        {
+          "id": "c",
+          "text": "Los motores de búsqueda se niegan a indexarlo"
+        },
+        {
+          "id": "d",
+          "text": "Es demasiado técnico para la mayoría de los lectores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El contenido de actualidad (noticias, tendencias) es relevante hoy pero muerto mañana. Te obliga a estar en una rueda del hámster de contenido para mantener la visibilidad."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estos es un ejemplo de contenido 'Evergreen'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un hilo de tuits en vivo de una conferencia de la industria"
+        },
+        {
+          "id": "b",
+          "text": "Una 'Opinión Caliente' sobre las noticias tecnológicas de esta mañana"
+        },
+        {
+          "id": "c",
+          "text": "Una guía exhaustiva sobre 'Manejo de Objeciones de Clientes'"
+        },
+        {
+          "id": "d",
+          "text": "Una publicación deseando a todos un Feliz Año Nuevo"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los problemas fundamentales (como el manejo de objeciones) son evergreen. Una guía sobre este tema será igual de útil dentro de un año que hoy."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la mezcla de contenido recomendada para un fundador en la etapa 'Pre-Tracción (Cero a Diez)'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50% Evergreen, 50% De Actualidad"
+        },
+        {
+          "id": "b",
+          "text": "20% Evergreen, 80% De Actualidad"
+        },
+        {
+          "id": "c",
+          "text": "100% Evergreen"
+        },
+        {
+          "id": "d",
+          "text": "100% De Actualidad"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "En las primeras etapas, tu tiempo es extremadamente limitado. Debes enfocar el 100% de tu esfuerzo de contenido en activos que construirán una base a largo plazo y continúen atrayendo leads mientras estás ocupado construyendo."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cómo puedes reencuadrar una reacción de noticias 'De Actualidad' en contenido 'Evergreen'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agregando más imágenes"
+        },
+        {
+          "id": "b",
+          "text": "Enfocándote en el marco o principio subyacente que representan las noticias"
+        },
+        {
+          "id": "c",
+          "text": "Publicándolo en una plataforma diferente"
+        },
+        {
+          "id": "d",
+          "text": "No puedes; las noticias solo pueden ser de actualidad"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "En lugar de solo reaccionar a las noticias, explica cómo esas noticias cambian el 'Cómo Hacer' fundamental de tu nicho. Esto convierte un pensamiento temporal en un activo educativo duradero."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué es el 'Efecto Compuesto' del marketing de contenidos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La forma en que múltiples personas editando una publicación la mejoran"
+        },
+        {
+          "id": "b",
+          "text": "La forma en que una biblioteca de activos evergreen continúa generando tráfico con el tiempo sin nuevo esfuerzo"
+        },
+        {
+          "id": "c",
+          "text": "La forma en que los algoritmos de redes sociales penalizan a los publicadores consistentes"
+        },
+        {
+          "id": "d",
+          "text": "El aumento en los costos de publicidad a medida que obtienes más tráfico"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Cada publicación evergreen es un 'trabajador' que nunca duerme. A medida que construyes una biblioteca, el tráfico total de las publicaciones 'antiguas' crece, eventualmente superando el tráfico de las más nuevas."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Piensa en tu nicho. ¿Cuál es un 'problema fundamental' que tu ICP siempre tiene (Evergreen)? ¿Cuál es un 'tema en tendencia' en tu industria ahora mismo (De Actualidad)? ¿Cómo podrías combinarlos para crear una pieza de contenido que genere atención inmediata pero que siga siendo valiosa durante un año?",
+      "minLength": 100,
+      "promptForAI": "Revisa si el fundador identifica correctamente la diferencia entre los dos tipos. Busca un 'Reencuadre' creativo donde el gancho de actualidad conduce a una lección evergreen."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

@@ -1,0 +1,69 @@
+{
+  "lessonId": "8",
+  "courseId": "analytics",
+  "sectionId": "operations-systems",
+  "title": "Building Dashboards in Sheets, CRM, or Metabase",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the 5-Metric Rule, what should you do if a dashboard metric doesn't change your next action?",
+      "options": [
+        { "id": "a", "text": "Keep it for historical context" },
+        { "id": "b", "text": "Move it to a secondary dashboard" },
+        { "id": "c", "text": "Delete it" },
+        { "id": "d", "text": "Track it monthly instead of weekly" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "If you can't explain why a metric changes your next action, delete it. Your dashboard should have 5-7 metrics maximum. Pattern recognition requires seeing all metrics simultaneously without noise."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the recommended dashboard tool for a solo founder managing fewer than 50 deals per month?",
+      "options": [
+        { "id": "a", "text": "Metabase" },
+        { "id": "b", "text": "Google Sheets" },
+        { "id": "c", "text": "Tableau" },
+        { "id": "d", "text": "Power BI" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "With under 50 deals/month, Google Sheets is the best choice. Manual data entry takes only 10-15 minutes weekly, it gives you full control, costs nothing, and is easy to share. Automate later if you scale."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why should a Google Sheets dashboard use a 5-tab structure rather than putting everything on one tab?",
+      "options": [
+        { "id": "a", "text": "Google Sheets has a row limit per tab" },
+        {
+          "id": "b",
+          "text": "Separation of concerns prevents accidental overwrites and makes debugging easier"
+        },
+        { "id": "c", "text": "Multiple tabs load faster" },
+        { "id": "d", "text": "It impresses investors during presentations" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Separating raw data, calculations, dashboard view, historical archive, and config prevents accidental formula overwrites and makes debugging easier. Each tab has a clear purpose."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Your dashboard should show only the current week's numbers without historical trends.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Every metric should show the current value, the trend (last 4-8 weeks), and a benchmark or target. Without historical tracking, you can't identify trends or measure improvement."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Choose which dashboard tool you will use (Sheets, CRM, or Metabase) and explain why it matches your deal volume, technical comfort, and budget. What 5 metrics will you track on your dashboard?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response selects a specific tool with a clear rationale tied to their deal volume, technical skills, and budget. Check that they list approximately 5 specific, actionable metrics (not vanity metrics) and explain why each one drives a decision."
+    }
+  ]
+}

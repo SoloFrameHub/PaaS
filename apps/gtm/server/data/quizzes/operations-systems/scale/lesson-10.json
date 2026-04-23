@@ -1,0 +1,69 @@
+{
+  "lessonId": "10",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "Your Hiring Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much time does the second sales hire take with a documented Hiring Playbook?",
+      "options": [
+        { "id": "a", "text": "Same as the first (20-30 hours)" },
+        { "id": "b", "text": "8-10 hours" },
+        { "id": "c", "text": "1-2 hours" },
+        { "id": "d", "text": "Zero — it's fully automated" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "First hire takes 20-30 hours. With a documented playbook, the second hire takes 8-10 hours. The third takes 4-5. By hire four, it's nearly routine. Documentation creates a repeatable system."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the average time to fill an SDR role?",
+      "options": [
+        { "id": "a", "text": "1 week" },
+        { "id": "b", "text": "2 weeks" },
+        { "id": "c", "text": "30-45 days" },
+        { "id": "d", "text": "3-6 months" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Average time to fill an SDR role is 30-45 days. A Hiring Playbook reduces the per-hire time investment but the calendar time to source, screen, interview, and onboard remains consistent."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What does the complete Hiring Playbook contain?",
+      "options": [
+        { "id": "a", "text": "Just the job description" },
+        { "id": "b", "text": "JD plus interview questions" },
+        {
+          "id": "c",
+          "text": "All nine lesson artifacts: readiness checklist, role matrix, JD, interview framework, comp plan, onboarding, ramp expectations, management cadence, and off-boarding"
+        },
+        { "id": "d", "text": "A link to an HR template" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Hiring Playbook compiles all nine lesson artifacts into one living document. It includes everything from hiring readiness checklist through off-boarding. A founder who documents the hiring process creates a repeatable system."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A founder who doesn't document the hiring process starts from scratch every time and makes the same mistakes.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The work in Lessons 1-9 was for this hire. The playbook in Lesson 10 is for every hire after this one. Without documentation, you recreate the process from scratch and repeat the same mistakes each time."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Which of the nine Hiring Playbook sections do you have documented? Which are missing? How would you update the playbook based on your first hire experience?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly inventories each of the nine sections (readiness, role matrix, JD, interview, comp, onboarding, ramp, management, off-boarding), identifies gaps, and describes how they'd update the playbook with learnings from their actual hiring experience."
+    }
+  ]
+}

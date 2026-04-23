@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "Comment-to-DM Automation",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does the comment-to-DM flow work as both a sales mechanism and a growth mechanism simultaneously?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because Instagram pays creators for every comment they receive"
+                },
+                {
+                    "id": "b",
+                    "text": "Because every comment boosts the post algorithmically, increasing reach, while also initiating a sales conversation in DMs"
+                },
+                {
+                    "id": "c",
+                    "text": "Because ManyChat automatically reposts your content to new audiences"
+                },
+                {
+                    "id": "d",
+                    "text": "Because comments count as email opt-ins under GDPR regulations"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The comment-to-DM flow is uniquely powerful because comments signal engagement to the platform algorithm (increasing organic reach), while simultaneously triggering a DM that starts a sales conversation. You grow your audience and your pipeline with the same piece of content."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following is a correctly designed trigger word according to the rules covered in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'YES' -- because it is simple and everyone knows how to type it"
+                },
+                {
+                    "id": "b",
+                    "text": "'I would love to receive the free pricing framework please' -- because it is detailed"
+                },
+                {
+                    "id": "c",
+                    "text": "'BLUEPRINT' -- because it is one word, relates to the outcome, and is distinctive enough to avoid accidental triggers"
+                },
+                {
+                    "id": "d",
+                    "text": "'PDF' -- because it describes the exact deliverable they will receive"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A good trigger word follows four rules: one word (easy to type), relates to the desired outcome (not the file format), avoids common words that could accidentally trigger the automation, and feels distinctive. BLUEPRINT meets all four criteria, while YES is too common, PDF describes the format rather than the outcome, and a full sentence creates too much friction."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the approximate daily limit for new automated DM conversations on Instagram before risking spam detection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10-15 conversations per day"
+                },
+                {
+                    "id": "b",
+                    "text": "50-80 conversations per day"
+                },
+                {
+                    "id": "c",
+                    "text": "500+ conversations per day with no limit"
+                },
+                {
+                    "id": "d",
+                    "text": "200-300 conversations per day"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Instagram limits automated DM conversations to approximately 50-80 per day before triggering rate limiting or temporary restrictions. Exceeding this threshold can result in account restrictions, which is why understanding platform compliance rules is essential before scaling your automation."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design a comment-to-DM flow for your current offer. Write out: (1) the trigger word you would use and why, (2) the CTA you would include in your content, and (3) the first automated DM message that would be sent, including a value delivery and a conversation-opening question.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner has applied the trigger word design rules (one word, outcome-oriented, distinctive) and whether their automated DM message follows the lesson's structure: deliver the promised value first, then ask a question that opens a conversation loop. Check that the CTA clearly tells the audience what to do and what they will receive."
+        }
+    ]
+}

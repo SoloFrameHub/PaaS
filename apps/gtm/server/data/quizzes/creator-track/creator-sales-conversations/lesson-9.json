@@ -1,0 +1,91 @@
+{
+    "lessonId": "9",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Application-to-Call Pipeline Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does the lesson recommend including the question 'On a scale of 1-10, how committed are you to changing your current situation?' in the application form?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To filter out anyone who scores below a 7, since they will never buy."
+                },
+                {
+                    "id": "b",
+                    "text": "Because the act of choosing a high number creates a psychological commitment that makes it harder for the prospect to back out later."
+                },
+                {
+                    "id": "c",
+                    "text": "To collect data for a marketing research report on audience engagement."
+                },
+                {
+                    "id": "d",
+                    "text": "To determine which sales script to use — aggressive for low scores, gentle for high scores."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This is classified as a 'psychological selling question' in the lesson. The self-assessment creates commitment: when someone tells you (and themselves) they are a 9 out of 10 committed, it becomes harder to contradict that stated commitment later. It also gives you useful pre-call intelligence about their urgency level."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the most effective way to reduce no-show rates according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Charging a non-refundable deposit to book the call."
+                },
+                {
+                    "id": "b",
+                    "text": "A three-step sequence: immediate confirmation email (signaling personal preparation), a 24-hour reminder with a prep question, and a 2-hour SMS reminder."
+                },
+                {
+                    "id": "c",
+                    "text": "Threatening to blacklist prospects who do not show up."
+                },
+                {
+                    "id": "d",
+                    "text": "Only booking calls within 2 hours of the initial application."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson outlines a three-step no-show prevention sequence. The confirmation email signals that a real person is preparing for their call (making it harder to blow off). The 24-hour reminder gives them homework, creating psychological investment. The 2-hour SMS is a practical reminder with the meeting link. This approach can reduce no-show rates from 20-40% to under 10%."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If your show-to-close rate is low but your other pipeline metrics are healthy, what does the lesson recommend?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Increase your ad spend to drive more applications and compensate with volume."
+                },
+                {
+                    "id": "b",
+                    "text": "Shorten your enrollment calls to 15 minutes so you can do more of them."
+                },
+                {
+                    "id": "c",
+                    "text": "Go back to Lessons 2-7 and strengthen your enrollment call skills, since a low close rate points to weak call execution."
+                },
+                {
+                    "id": "d",
+                    "text": "Lower your price until more people say yes."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson outlines five pipeline metrics and explains that when one drops, it tells you exactly where the problem is. Low application volume is a marketing problem. High no-shows are a confirmation sequence problem. But a low show-to-close rate indicates that the enrollment call itself needs work — which means revisiting the C.L.O.S.E.R. framework, transformation selling, objection handling, and pricing delivery."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Draft the three most important questions you would include in your enrollment application form. For each question, explain what category it falls into (qualifying, intelligence, or psychological selling) and what specific information or effect it is designed to produce.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has chosen questions from different categories (not all three from the same category) and whether they clearly understand the purpose of each. Qualifying questions should filter out poor-fit prospects. Intelligence questions should gather information that makes the call more personalized. Psychological selling questions should advance the enrollment mindset. Flag if any questions are too generic or if the student cannot articulate why each question matters."
+        }
+    ]
+}

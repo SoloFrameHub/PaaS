@@ -1,0 +1,85 @@
+{
+  "lessonId": "2",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Estrategia de Medios Propios vs. Alquilados",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la distinción crítica entre medios propios y medios alquilados?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los medios propios son gratuitos; los medios alquilados cuestan dinero"
+        },
+        {
+          "id": "b",
+          "text": "En los medios propios controlas la distribución y los datos completamente; en los medios alquilados la plataforma controla quién ve tu contenido y puede cambiar o revocar el acceso en cualquier momento"
+        },
+        {
+          "id": "c",
+          "text": "Los medios propios tienen más alcance que los medios alquilados"
+        },
+        {
+          "id": "d",
+          "text": "Los medios propios requieren más habilidades técnicas para gestionar"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "En los medios alquilados (Instagram, TikTok, YouTube), la plataforma puede cambiar su algoritmo, sus términos de servicio, o incluso cerrar tu cuenta — borrando tu acceso a la audiencia de la noche a la mañana. Los medios propios (correo, SMS, tu sitio web) te pertenecen: puedes exportar tu lista y contactar a tu audiencia en cualquier momento sin permiso de terceros."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la Regla del 10% en la estrategia de migración de plataformas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dedica el 10% de tu tiempo a los medios propios y el 90% a las redes sociales"
+        },
+        {
+          "id": "b",
+          "text": "Convierte al menos el 10% de nuevos seguidores en suscriptores de correo dentro de sus primeros 30 días"
+        },
+        {
+          "id": "c",
+          "text": "Publica al menos el 10% de tu contenido exclusivamente en tu lista de correo"
+        },
+        {
+          "id": "d",
+          "text": "Invierte el 10% de tus ingresos en publicidad para hacer crecer tu lista de correo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Regla del 10% te indica que deberías convertir al menos el 10% de los nuevos seguidores en suscriptores de correo dentro de sus primeros 30 días. Si tu Tasa de Migración de Plataforma está por debajo del 5%, tu puente de contenido-a-lista está roto y necesitas un mejor imán de prospectos o una CTA más clara."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según la Pirámide de Medios Propios, ¿cuál debería ser la división de esfuerzo ideal de un creador?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10% correo, 25% formato largo, 25% social, 40% medios pagados"
+        },
+        { "id": "b", "text": "90% redes sociales, 10% correo" },
+        {
+          "id": "c",
+          "text": "40% correo, 25% formato largo, 25% descubrimiento social, 10% amplificación pagada"
+        },
+        { "id": "d", "text": "50% correo, 50% redes sociales" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La Pirámide de Medios Propios está invertida respecto a lo que hacen la mayoría de los creadores. El correo (medios propios) debe recibir el 40% del esfuerzo porque tiene el impacto más directo en los ingresos. El contenido de formato largo construye relaciones profundas. Las redes sociales alimentan el embudo. Los medios pagados amplifican lo que ya funciona."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Audita tu división de medios actual. ¿Qué porcentaje de tu audiencia total está en canales propios (correo, SMS, comunidad) versus alquilados (redes sociales)? Elige tus dos plataformas principales (una de descubrimiento, una de relación) y diseña el puente específico que usarás para migrar seguidores de la plataforma de descubrimiento a tu canal propio.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student honestly calculates their owned vs rented split (not an idealized version) and makes a justified platform choice based on their actual audience and content strengths. The bridge design should be specific and actionable, not vague."
+    }
+  ]
+}

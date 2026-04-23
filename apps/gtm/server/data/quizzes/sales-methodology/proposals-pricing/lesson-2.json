@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Proposal Structure That Sells Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is it recommended to write the Executive Summary LAST, even though it appears first?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's the least important part of the proposal."
+                },
+                {
+                    "id": "b",
+                    "text": "Because you can only accurately summarize the solution and outcomes after you've refined them in the body of the document."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it's usually the longest section to write."
+                },
+                {
+                    "id": "d",
+                    "text": "Because executives prefer it to be written after business hours."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Executive Summary is a condensation of everything else in the proposal. You need to have the details of the solution and the ROI logic finalized before you can write a punchy, effective summary."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Situation Analysis' section?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To list your company's history and mission statement."
+                },
+                {
+                    "id": "b",
+                    "text": "To demonstrate that you deeply understand the prospect's specific pain and the cost of their current problem."
+                },
+                {
+                    "id": "c",
+                    "text": "To describe the technical architecture of your product."
+                },
+                {
+                    "id": "d",
+                    "text": "To list the features you plan to build in the future."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trust is built when the prospect feels understood. Using their language and quantify the cost of their problem proves you were listening and that you are focused on their goals."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, how should 'Features' be presented in the 'Proposed Solution' section?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "As a comprehensive list alphabetically ordered."
+                },
+                {
+                    "id": "b",
+                    "text": "As a technical specification document attached to the end."
+                },
+                {
+                    "id": "c",
+                    "text": "Mapped directly to the specific problems/goals identified in the Situation Analysis."
+                },
+                {
+                    "id": "d",
+                    "text": "Features shouldn't be mentioned at all; only outcomes."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A feature without a corresponding 'why' is just noise. The most effective way to sell a feature is to explain exactly which pain point it eliminates."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Goldilocks' length for a B2B proposal for deals under $50,000?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 page (one-pager)"
+                },
+                {
+                    "id": "b",
+                    "text": "3-5 pages"
+                },
+                {
+                    "id": "c",
+                    "text": "10-15 pages to show thoroughness"
+                },
+                {
+                    "id": "d",
+                    "text": "As long as it takes to list every single feature"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "3-5 pages provides enough detail to be credible and persuasive without overwhelming the reader or creating a high cognitive load that leads to delay."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why should you avoid using words like 'Cost' or 'Price' in the final section?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are too academic."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they frame the money as an expense to be minimized; 'Investment' frames it as capital deployed for a return."
+                },
+                {
+                    "id": "c",
+                    "text": "Because those words are trademarked by competitors."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no reason; it's just personal preference."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Psychological framing matters. An investment implies a future positive return, which makes the number easier to accept than a pure 'cost' which is just money leaving the pocket."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Look at Section 3 (Proposed Solution). If you were to map your most powerful feature to a prospect's most painful problem using the formula 'Because you mentioned [Problem], we will use [Feature] to [Outcome],' what would that sentence look like for your business?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user follows the Problem -> Feature -> Outcome structure. Provide feedback on how to make the 'Outcome' part more quantifiable or emotional based on their input."
+        }
+    ]
+}

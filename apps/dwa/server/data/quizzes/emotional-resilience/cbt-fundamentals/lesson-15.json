@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary mechanism by which exposure therapy works?",
+            "options": [
+                {"id": "opt1", "text": "It proves that your fears were completely irrational"},
+                {"id": "opt2", "text": "Repeated contact with feared stimuli leads to habituation and reduces anxiety over time"},
+                {"id": "opt3", "text": "It distracts you from anxiety by keeping you busy"},
+                {"id": "opt4", "text": "It forces you to confront fears until you stop caring about them"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Exposure works through habituation: when you stay in contact with a feared stimulus without avoiding or using safety behaviors, your nervous system learns 'this isn't actually dangerous' and the anxiety response decreases. This requires repeated, graduated exposure — not one-time 'flooding.'"
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is a fear hierarchy important in exposure therapy?",
+            "options": [
+                {"id": "opt1", "text": "To prove you can handle the scariest situation first"},
+                {"id": "opt2", "text": "To create a graduated ladder from least to most anxiety-provoking exposures"},
+                {"id": "opt3", "text": "To avoid ever facing the most feared situation"},
+                {"id": "opt4", "text": "To compare your fears to other people's fears"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. A fear hierarchy organizes exposures from manageable (anxiety 30/100) to challenging (70-80/100). You start with lower-level exposures to build confidence and skills before moving up. Jumping to the top of the hierarchy creates overwhelming anxiety that doesn't lead to learning."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are safety behaviors, and why do they interfere with exposure therapy?",
+            "options": [
+                {"id": "opt1", "text": "Safety behaviors are healthy coping skills that should always be used during exposure"},
+                {"id": "opt2", "text": "Safety behaviors are subtle avoidance strategies that prevent you from learning the feared outcome won't happen"},
+                {"id": "opt3", "text": "Safety behaviors are unnecessary — exposure therapy has no risks"},
+                {"id": "opt4", "text": "Safety behaviors are only a problem if you use them more than once"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Safety behaviors (gripping the armrest on a plane, rehearsing what to say, checking your phone during a social event) maintain the belief that 'I only survived because I used the safety behavior.' True habituation requires facing the fear without these crutches, so your brain learns 'I'm safe even without them.'"
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "SAFETY: When should exposure therapy be conducted with clinical supervision rather than self-directed?",
+            "options": [
+                {"id": "opt1", "text": "Exposure therapy is always safe to do on your own for any fear"},
+                {"id": "opt2", "text": "For trauma-related fears, severe phobias, OCD, or situations requiring specialized protocols"},
+                {"id": "opt3", "text": "Only if you have a diagnosed anxiety disorder"},
+                {"id": "opt4", "text": "Whenever you feel uncomfortable — all exposure should be supervised"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "CRITICAL. Trauma exposure requires specialized protocols (prolonged exposure, EMDR) to prevent retraumatization. OCD requires response prevention, not reassurance. Severe phobias (driving after an accident) may need graded in-vivo support. For these, work with a trained clinician. Self-directed exposure is appropriate for mild-moderate fears (public speaking, social anxiety)."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Create a fear hierarchy for a mild-moderate fear you'd like to work on (NOT trauma, OCD, or severe phobia). List 5-8 steps from least (30/100 anxiety) to most challenging (70-80/100). What would be a good first exposure to start with?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "15",
+    "title": "Exposure Therapy Principles - Quiz"
+}

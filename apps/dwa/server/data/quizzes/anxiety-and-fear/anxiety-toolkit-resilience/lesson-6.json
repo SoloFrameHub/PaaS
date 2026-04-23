@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'habit stacking'?",
+            "options": [
+                { "id": "opt1", "text": "Doing many new habits at the same time" },
+                { "id": "opt2", "text": "Linking a new habit to an existing one using 'After/Before [current habit], I will [new habit]'" },
+                { "id": "opt3", "text": "Stacking books about habits on your desk" },
+                { "id": "opt4", "text": "Tracking all your habits in a spreadsheet" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Habit stacking makes new habits easier by linking them to ones you already do automatically. The formula is: 'After/Before [My Current Habit], I will [My New Habit].'"
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the three evidence-based resilience habits from this lesson?",
+            "options": [
+                { "id": "opt1", "text": "Journaling, exercise, and socializing" },
+                { "id": "opt2", "text": "Mindfulness, gratitude, and intentional self-compassion" },
+                { "id": "opt3", "text": "Reading, writing, and arithmetic" },
+                { "id": "opt4", "text": "Diet, sleep, and exercise" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The three evidence-based resilience habits are: mindfulness (paying attention to the present without judgment), gratitude (shifting focus to what is good), and intentional self-compassion (treating yourself with the kindness you would give a friend)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is starting 'absurdly small' recommended for new habits?",
+            "options": [
+                { "id": "opt1", "text": "Because small habits do not work" },
+                { "id": "opt2", "text": "Making the habit so easy you cannot say no builds momentum and consistency" },
+                { "id": "opt3", "text": "Because you do not have time for bigger habits" },
+                { "id": "opt4", "text": "Because large habits are dangerous" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Starting absurdly small (even 10 seconds of mindfulness) makes the habit so easy you cannot say no. The goal is building momentum and consistency. You can always increase the duration later."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How much brain training does a daily 3-minute mindfulness practice add up to in a year?",
+            "options": [
+                { "id": "opt1", "text": "About 3 hours" },
+                { "id": "opt2", "text": "About 10 hours" },
+                { "id": "opt3", "text": "Over 18 hours" },
+                { "id": "opt4", "text": "About 36 hours" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A daily 3-minute mindfulness practice adds up to over 18 hours of brain training in a year. This is the compound effect -- small daily investments building into something substantial over time."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How does gratitude practice specifically help with anxiety?",
+            "options": [
+                { "id": "opt1", "text": "It makes you forget about problems" },
+                { "id": "opt2", "text": "It intentionally shifts your focus from scanning for threats to noticing what is good, rewiring your brain" },
+                { "id": "opt3", "text": "It replaces anxiety with happiness permanently" },
+                { "id": "opt4", "text": "It proves that nothing is wrong in your life" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Anxiety forces your brain to scan for threats and focus on what is wrong. Gratitude practice intentionally shifts your focus to what is good, rewiring your brain to notice positives more easily over time."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit-resilience",
+    "lessonId": "6",
+    "title": "Building a Resilience Routine - Quiz"
+}

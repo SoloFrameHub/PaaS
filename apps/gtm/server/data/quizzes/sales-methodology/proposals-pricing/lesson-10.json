@@ -1,0 +1,141 @@
+{
+    "lessonId": "10",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Your Proposal Playbook Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of building a 'Personal Asset Library' for proposals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To show the client how much work you've done for others."
+                },
+                {
+                    "id": "b",
+                    "text": "To move faster and maintain high quality by using proven templates, snippets, and proof points."
+                },
+                {
+                    "id": "c",
+                    "text": "To avoid having to talk to customers at all."
+                },
+                {
+                    "id": "d",
+                    "text": "To store old contracts you no longer need."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Standardizing your process with an asset library ensures consistency and professional polish across every deal while saving you hours of repetitive drafting."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is a key item on the 'Proposal QC Checklist'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Is the proposal at least 20 pages long?"
+                },
+                {
+                    "id": "b",
+                    "text": "Have I used at least three specific phrases or metrics the prospect mentioned in discovery?"
+                },
+                {
+                    "id": "c",
+                    "text": "Did I include my company's origin story in detail?"
+                },
+                {
+                    "id": "d",
+                    "text": "Does the proposal use as much technical jargon as possible?"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Mirroring the prospect's language proves you were listening and makes the solution feel tailor-made for their specific situation, building deep trust."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should you do during a 'Post-Mortem' after LOSING a deal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Delete all records of the deal and move on immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "Email the prospect and tell them they made a mistake."
+                },
+                {
+                    "id": "c",
+                    "text": "Analyze whether the loss was about price, solution fit, or priority, and refine your next proposal based on those findings."
+                },
+                {
+                    "id": "d",
+                    "text": "Lower your prices for all future customers."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Every loss contains data that can improve your future process. Understanding the 'why' behind a rejection helps you avoid the same mistake in the next deal."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In a 'Value Trade Menu,' what is a 'Get' you might ask for in exchange for a discount?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A free lunch."
+                },
+                {
+                    "id": "b",
+                    "text": "A longer commitment (e.g., 2-year contract) or 100% upfront payment."
+                },
+                {
+                    "id": "c",
+                    "text": "More features added for free."
+                },
+                {
+                    "id": "d",
+                    "text": "A promise to be friends."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Protecting your business means ensuring that every dollar you concede in margin is replaced with value in cash flow (upfront payment) or stability (commitment)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the ultimate goal of following this entire 'Proposals, Pricing & Negotiation' course?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To become a professional lawyer."
+                },
+                {
+                    "id": "b",
+                    "text": "To stop being a 'salesperson' and start being a 'Partner-in-Success' who protects their value while solving real problems."
+                },
+                {
+                    "id": "c",
+                    "text": "To learn how to manipulate customers into paying more than they should."
+                },
+                {
+                    "id": "d",
+                    "text": "To avoid having to do any more sales calls."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A professional sales process is about mutual value. By quantifying your impact and holding firm on your price, you establish yourself as a high-value partner rather than a commodity vendor."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Review the Proposal QC Checklist in Lesson 10. Which ONE of those 10 items do you currently struggle with the most, and what is one specific step you will take today to fix it in your next proposal?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies a specific weak point (e.g., 'Mirroring' or 'Next Steps'). Provide encouragement on how fixing that single point will have a disproportionate impact on their closing rate."
+        }
+    ]
+}

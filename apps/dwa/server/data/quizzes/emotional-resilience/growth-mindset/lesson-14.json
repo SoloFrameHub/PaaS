@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the behavioral activation principle regarding motivation and action?",
+            "options": [
+                {"id": "opt1", "text": "Wait until you feel motivated/confident/ready, then take action"},
+                {"id": "opt2", "text": "Action creates motivation/confidence/readiness, not the reverse—you don't wait for discomfort to disappear before approaching challenges"},
+                {"id": "opt3", "text": "Motivation and action are unrelated"},
+                {"id": "opt4", "text": "Only naturally motivated people can take action"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Behavioral activation (evidence-based treatment for depression) operates on the principle that ACTION creates emotional states, not the reverse. The common belief 'I'll act when I feel ready' is backwards—you act DESPITE not feeling ready, and readiness/motivation/confidence follow engagement. Behavioral activation doesn't wait for mood to improve; it uses activity engagement to improve mood. This is why 'wait until you feel confident' maintains avoidance indefinitely—approach generates the conditions for confidence to build."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What distinguishes approach behaviors from avoidance behaviors in the challenge-response framework?",
+            "options": [
+                {"id": "opt1", "text": "Approach is easy; avoidance is difficult"},
+                {"id": "opt2", "text": "Approach moves toward valued goals despite discomfort (builds self-efficacy long-term); avoidance reduces immediate discomfort by withdrawing (maintains anxiety long-term)"},
+                {"id": "opt3", "text": "Approach is always comfortable; avoidance is always uncomfortable"},
+                {"id": "opt4", "text": "Avoidance is always the healthier choice"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Approach behaviors move you toward valued goals, learning, or growth even when they trigger discomfort (trying difficult tasks, hard conversations, anxiety-provoking situations). Short-term: uncomfortable. Long-term: builds self-efficacy, expands capacity. Avoidance behaviors reduce immediate discomfort by withdrawing (procrastinating, declining opportunities, staying in comfort zone). Short-term: relief. Long-term: maintains anxiety, prevents skill-building, life shrinks. Key insight: approach is uncomfortable initially but gets easier; avoidance is easy initially but gets harder (life becomes increasingly limited)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does the avoidance cycle maintain and strengthen anxiety over time?",
+            "options": [
+                {"id": "opt1", "text": "Because people who avoid are naturally more anxious"},
+                {"id": "opt2", "text": "Because avoidance provides temporary relief (negative reinforcement) but prevents learning that anxiety is tolerable, so sensitivity to discomfort increases and life shrinks"},
+                {"id": "opt3", "text": "Avoidance actually reduces anxiety permanently"},
+                {"id": "opt4", "text": "The avoidance cycle has no effect on anxiety"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Avoidance cycle: Discomfort → Avoid → Temporary relief (negative reinforcement—removal of discomfort reinforces avoidance) → Reinforced avoidance pattern → Never learn that anxiety is tolerable → Increased sensitivity to discomfort → Life shrinks around what you can avoid. Research shows avoidance maintains and exacerbates anxiety disorders. You never build self-efficacy for managing anxiety because you never approach. Contrast with approach cycle: approach despite discomfort → tolerate → build efficacy → reduced future discomfort → life expands."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the evidence base for behavioral activation as a treatment approach?",
+            "options": [
+                {"id": "opt1", "text": "Weak—only tested in small studies"},
+                {"id": "opt2", "text": "Strong—behavioral activation is an evidence-based treatment for depression with effect sizes comparable to cognitive therapy"},
+                {"id": "opt3", "text": "No evidence—it's just a theory"},
+                {"id": "opt4", "text": "Only works for anxiety, not depression"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Behavioral activation has strong evidence as a treatment for depression, with effect sizes comparable to cognitive therapy. It operationalizes the action-emotion principle: engaging in valued activities despite low motivation or negative emotions actually improves mood. This isn't just motivational advice—it's a validated clinical intervention. The lesson uses this evidence to support challenge-response skills: you don't wait to feel better before acting; action is the mechanism that generates feeling better. This applies beyond depression to any avoidance pattern."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify a challenge you're currently avoiding (waiting until you 'feel ready'). Design a behavioral activation plan: What's the smallest valued action you could take THIS WEEK despite discomfort? How will you notice if motivation/confidence follows action rather than preceding it? What self-compassion will you use when it feels uncomfortable?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "14",
+    "title": "Challenge-Response Skills in Practice - Quiz"
+}

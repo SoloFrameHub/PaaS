@@ -1,0 +1,75 @@
+{
+  "lessonId": "11",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "B2B vs Creator Infra Templates",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why did Jordan's deliverability crash when mixing B2B cold outreach with creator newsletter infrastructure?",
+      "options": [
+        { "id": "a", "text": "The newsletter content was low quality" },
+        {
+          "id": "b",
+          "text": "B2B cold outreach (200-400 personalized sends/day to non-opted-in contacts) and creator broadcasts (5,000-50,000 sends to opted-in subscribers) have incompatible requirements — mixing them destroys both"
+        },
+        { "id": "c", "text": "Jordan didn't have enough domains" },
+        { "id": "d", "text": "The newsletter was sent at the wrong time" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "B2B cold outreach and creator broadcasts have opposite characteristics: different volumes, personalization levels, opt-in status, success metrics, and reputation-building mechanisms. Mixing them on the same infrastructure confuses ISP reputation systems, causing both to fail."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the fundamental difference between B2B cold outreach and creator broadcast email models?",
+      "options": [
+        { "id": "a", "text": "B2B uses HTML while creator uses plain text" },
+        {
+          "id": "b",
+          "text": "B2B: 200-400 personalized sends/day, recipients didn't opt in, success = 5-10% reply rate. Creator: 5,000-50,000 same content to opted-in subscribers, success = 20-40% open rate"
+        },
+        { "id": "c", "text": "They use the same model but different tools" },
+        { "id": "d", "text": "Creator broadcasts are more expensive" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "B2B cold outreach involves 200-400 highly personalized 1:1 sends per day to non-opted-in contacts, with success measured by reply rate. Creator broadcasts involve 5,000-50,000 identical sends to opted-in subscribers, with success measured by open rate. These opposite patterns require completely separate infrastructure."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How much did Jordan's infrastructure mixing mistake cost in total?",
+      "options": [
+        { "id": "a", "text": "$500" },
+        {
+          "id": "b",
+          "text": "$4,800 in lost pipeline (B2B deals that went cold during 8-week recovery) plus 4 new domains and complete infrastructure rebuild"
+        },
+        { "id": "c", "text": "$50" },
+        { "id": "d", "text": "No cost — the issue resolved itself" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Jordan's recovery took 8 weeks, required purchasing 4 new domains, and cost $4,800 in lost B2B pipeline (deals that went cold during the blackout). Within 72 hours of mixing, inbox placement dropped from 92% to 34%, and all four sending domains were soft-blocked."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If you run both a B2B product and a creator newsletter, you should use completely separate email infrastructure for each.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. B2B and creator infrastructure must be completely separate: different domains, different IP addresses, different sending tools, and different monitoring dashboards. There are almost no cases where sharing infrastructure safely is possible, and the risk of cross-contamination is too high."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Do you currently run (or plan to run) both B2B outreach and any form of broadcast email (newsletter, announcements, marketing)? If so, describe how you would separate the infrastructure to prevent cross-contamination, including specific domains, tools, and monitoring for each.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies whether they have both use cases, describes complete infrastructure separation (separate domains, separate sending tools, separate monitoring), and understands why mixing is dangerous. Look for concrete tool and domain recommendations for each use case."
+    }
+  ]
+}

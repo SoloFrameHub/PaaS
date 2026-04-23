@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "Investment Mindset vs Expense Mindset",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do prospects default to the Expense Mindset when evaluating your offer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are cheap and do not value education"
+                },
+                {
+                    "id": "b",
+                    "text": "Because loss aversion makes the pain of losing money twice as intense as the pleasure of gaining it, and solo founders feel every dollar personally after often being burned by past purchases"
+                },
+                {
+                    "id": "c",
+                    "text": "Because your marketing materials are not persuasive enough"
+                },
+                {
+                    "id": "d",
+                    "text": "Because they need to consult with their business partner first"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Kahneman and Tversky's research on loss aversion shows that losing $100 hurts about twice as much as gaining $100 feels good. For solo founders spending their own money, this bias is amplified by personal financial sensitivity and skepticism from past purchases that did not deliver results."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Cost of Inaction' technique and why is it effective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A fear-based tactic that pressures prospects into buying by scaring them"
+                },
+                {
+                    "id": "b",
+                    "text": "A technique where you refuse to let the prospect leave the call until they buy"
+                },
+                {
+                    "id": "c",
+                    "text": "Helping the prospect calculate the real dollar cost of continuing to do nothing, which leverages loss aversion by making the ongoing losses feel more concrete than the one-time investment"
+                },
+                {
+                    "id": "d",
+                    "text": "A pricing strategy where you increase the price every day they delay their decision"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Cost of Inaction technique helps prospects quantify what their problem is already costing them. This is not fear-mongering -- it is helping them do math they have been avoiding. Because loss aversion makes losses feel more intense than gains, making ongoing losses visible is more motivating than selling the upside."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the Value Stack technique?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To inflate the perceived value of your offer with made-up numbers"
+                },
+                {
+                    "id": "b",
+                    "text": "To communicate the full scope of value beyond the core deliverable -- including saved time, avoided mistakes, framework IP, and ongoing applicability -- so the price feels proportionate to total value"
+                },
+                {
+                    "id": "c",
+                    "text": "To add as many bonuses as possible so the prospect feels overwhelmed and buys"
+                },
+                {
+                    "id": "d",
+                    "text": "To justify raising your prices above market rate"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most creators undervalue their offer because they only present the tip of the iceberg -- the deliverable (e.g., '8 coaching calls'). The Value Stack reveals the full iceberg: the proprietary framework, the hundreds of hours of trial-and-error the client skips, the network access, and the years of ongoing applicability. This is not inflation -- it is accurate communication."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Take your primary offer and build a complete Value Stack for it. List at least four layers of value beyond the core deliverable (such as saved time, avoided mistakes, framework/IP, network access, and ongoing applicability). For each layer, estimate a realistic dollar value and explain your reasoning.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student has created a specific, honest Value Stack for their actual offer -- not a generic template. Look for at least four distinct value layers with reasonable dollar estimates and clear reasoning. The estimates should be grounded in real-world logic (e.g., hours saved multiplied by an hourly rate, or cost of common mistakes avoided) rather than arbitrary inflated numbers."
+        }
+    ]
+}

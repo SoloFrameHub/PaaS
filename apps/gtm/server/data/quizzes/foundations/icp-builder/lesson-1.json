@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Why Most Founders Target Wrong",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core problem with trying to sell to 'everyone'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It costs too much money in marketing"
+                },
+                {
+                    "id": "b",
+                    "text": "You cannot write messaging that resonates deeply with any specific group"
+                },
+                {
+                    "id": "c",
+                    "text": "Your product becomes too complex"
+                },
+                {
+                    "id": "d",
+                    "text": "You need to hire too many salespeople"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "When targeting everyone, your messaging becomes generic. Cold outreach only works when the message resonates 100% with the recipient—you cannot write a message that resonates with a 22-year-old YouTuber AND a 50-year-old CTO."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the THREE hidden costs of poor targeting mentioned in this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hiring costs, software costs, office costs"
+                },
+                {
+                    "id": "b",
+                    "text": "The Outreach Tax, The Feedback Debt, and Diluted Positioning"
+                },
+                {
+                    "id": "c",
+                    "text": "Time, money, and reputation"
+                },
+                {
+                    "id": "d",
+                    "text": "Lead costs, conversion costs, support costs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The three hidden costs are: (1) Outreach Tax (wasteful outreach), (2) Feedback Debt (wrong product direction), and (3) Diluted Positioning (commoditization)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Segment' in terms of ICP targeting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The largest possible market segment"
+                },
+                {
+                    "id": "b",
+                    "text": "The segment with the highest pain, easiest access, and where you have right-to-win"
+                },
+                {
+                    "id": "c",
+                    "text": "Enterprise companies with big budgets"
+                },
+                {
+                    "id": "d",
+                    "text": "The segment recommended by investors"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Golden Segment is your Beachhead Market—where pain is high (they need you NOW), access is easy (you can find their emails), and budget is available (they pay for tools)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does 'Diluted Positioning' signal to potential buyers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "That you are an expert specialist"
+                },
+                {
+                    "id": "b",
+                    "text": "That you are a commodity with no unique value"
+                },
+                {
+                    "id": "c",
+                    "text": "That you have a large total addressable market"
+                },
+                {
+                    "id": "d",
+                    "text": "That your product is enterprise-ready"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Generic positioning involves broad claims like 'we save you time' which signals you are a commodity. Specific positioning signals expertise and relevance."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'The Feedback Debt' so dangerous for product-led founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it makes the code base messy"
+                },
+                {
+                    "id": "b",
+                    "text": "Because it forces you to build features for people who will never make you rich"
+                },
+                {
+                    "id": "c",
+                    "text": "Because bad reviews are hard to delete"
+                },
+                {
+                    "id": "d",
+                    "text": "Because non-technical users are harder to support"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you sell to the wrong people, they give you the wrong feature requests. This pulls your product roadmap away from the high-value 'Golden Segment' and toward low-ROI work."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Think about your current customer base or target market. Describe ONE specific segment that you believe could be your 'Golden Segment' and explain why they have high pain, easy access, and available budget.",
+            "minLength": 100,
+            "promptForAI": "Evaluate if this reflection describes a specific, viable Golden Segment. Check if they address: (1) a specific pain point, (2) how they would access this segment, (3) evidence of budget availability. Provide constructive feedback on how to sharpen their ICP focus."
+        }
+    ],
+    "passingScore": 70
+}

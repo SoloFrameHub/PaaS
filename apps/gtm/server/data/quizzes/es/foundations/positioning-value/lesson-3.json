@@ -1,0 +1,141 @@
+{
+  "lessonId": "3",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Marco de Mensajes StoryBrand",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En el marco StoryBrand, ¿quién es el héroe de la historia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu empresa (La Marca)"
+        },
+        {
+          "id": "b",
+          "text": "El Fundador (Tú)"
+        },
+        {
+          "id": "c",
+          "text": "El Cliente"
+        },
+        {
+          "id": "d",
+          "text": "El Mercado"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Uno de los cambios más críticos en StoryBrand es hacer al cliente el héroe, no a tu empresa. Tú eres Yoda (el Guía), y el cliente es Luke Skywalker (el Héroe)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuáles son los dos componentes necesarios para ser un 'Guía' exitoso en la mensajería?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Innovación y Velocidad"
+        },
+        {
+          "id": "b",
+          "text": "Empatía y Autoridad"
+        },
+        {
+          "id": "c",
+          "text": "Precio Bajo y Alto Valor"
+        },
+        {
+          "id": "d",
+          "text": "Experiencia y Características"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un guía necesita Empatía (demostrar que entiendes su dolor) y Autoridad (demostrar que tienes la competencia para resolverlo)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué es un 'Problema Interno' en el modelo StoryBrand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un error en tu base de código interna"
+        },
+        {
+          "id": "b",
+          "text": "Cómo el problema externo hace sentir al cliente (ej., frustrado, preocupado)"
+        },
+        {
+          "id": "c",
+          "text": "Un problema con la cultura interna de tu empresa"
+        },
+        {
+          "id": "d",
+          "text": "Un desacuerdo filosófico con los competidores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si bien el problema externo es el problema a nivel superficial, el problema interno es cómo lo hace sentir al cliente. Las personas compran soluciones a los problemas internos más a menudo que a los externos."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Por qué es tan importante 'El Plan' (3-4 pasos simples) en la mensajería?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demuestra que tienes una metodología compleja"
+        },
+        {
+          "id": "b",
+          "text": "Elimina la confusión y hace que el 'camino de compra' se sienta seguro"
+        },
+        {
+          "id": "c",
+          "text": "Ayuda a organizar tu equipo interno"
+        },
+        {
+          "id": "d",
+          "text": "Te permite justificar un precio más alto"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "En el momento en que un prospecto se siente confundido, deja de comprar. Un plan simple de 3 pasos reduce la carga cognitiva y le dice al cliente exactamente qué sucede a continuación, haciéndolo sentir seguro para proceder."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué sucede si una historia (o tu mensajería) no tiene 'Apuestas'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se convierte en un documento técnico profesional"
+        },
+        {
+          "id": "b",
+          "text": "Se vuelve más fácil de entender para todos"
+        },
+        {
+          "id": "c",
+          "text": "Se vuelve ignorable y no logra impulsar la acción"
+        },
+        {
+          "id": "d",
+          "text": "Atrae a compradores empresariales que gestionan el riesgo"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Sin apuestas (Éxito vs. Fracaso), no hay razón para que el héroe actúe. La mensajería sin apuestas es aburrida y no crea la urgencia necesaria para una venta."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Redacta una 'Frase Resumen' StoryBrand para tu negocio siguiendo la fórmula 'Problema + Solución + Resultado'. Mantente en menos de 30 palabras y enfócate en un punto de dolor interno.",
+      "minLength": 100,
+      "promptForAI": "Evalúa la frase resumen StoryBrand del estudiante. Verifica si identifica: (1) un problema/dolor claro, (2) el enfoque de la solución/guía, (3) un resultado/transformación específico. Proporciona retroalimentación sobre claridad y economía de palabras."
+    }
+  ],
+  "passingScore": 70
+}

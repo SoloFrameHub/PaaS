@@ -1,0 +1,205 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { buildRoleplaySystemPrompt } from '../../services/roleplayPromptBuilder';
+import { RoleplayContext } from '../../services/roleplayService';
+
+// --- Hardened Roleplay Schemas ---
+
+const DiscTypeEnum = z.enum(['D', 'I', 'S', 'C']);
+
+const FounderCategorySchema = z.object({
+    category_id: z.string(),
+    display_name: z.string(),
+    short_description: z.string(),
+    background: z.string(),
+    primary_pain: z.string(),
+    core_belief: z.string(),
+    fear: z.string(),
+    objection_patterns: z.array(z.string()),
+    decision_criteria: z.array(z.string()),
+    communication_style: z.object({
+        preferred_depth: z.enum(['surface', 'moderate', 'deep']),
+        preferred_pace: z.enum(['fast', 'moderate', 'slow']),
+        preferred_proof: z.enum(['testimonials', 'data', 'logic', 'authority']),
+    }),
+    coaching_tone: z.string(),
+    avoid_phrases: z.array(z.string()),
+    motivating_phrases: z.array(z.string()),
+    default_difficulty: z.enum(['beginner', 'intermediate', 'advanced']),
+    natural_disc_affinity: z.array(DiscTypeEnum),
+    struggle_disc_types: z.array(DiscTypeEnum),
+    recommended_courses: z.array(z.string()),
+    milestone_triggers: z.array(z.string()),
+});
+
+const IndustrySchema = z.object({
+    industry_id: z.string(),
+    display_name: z.string(),
+    parent_category: z.enum(['technology', 'commerce', 'services', 'traditional']),
+    description: z.string(),
+    typical_company_sizes: z.array(z.enum(['1-10', '11-50', '51-200', '201-500', '500+'])),
+    typical_deal_sizes: z.array(z.enum(['transactional', 'smb', 'mid_market', 'enterprise'])),
+    sales_cycle_length: z.enum(['days', 'weeks', 'months', 'quarters']),
+    pain_points: z.array(z.object({
+        pain: z.string(),
+        level: z.enum(['straightforward', 'complex']),
+        context: z.string().optional(),
+    })),
+    buying_triggers: z.array(z.string()),
+    budget_cycle: z.string(),
+    regulatory_concerns: z.array(z.string()),
+    compliance_language: z.array(z.string()),
+    risk_tolerance: z.enum(['low', 'medium', 'high']),
+    terminology: z.array(z.object({
+        term: z.string(),
+        definition: z.string(),
+        usage_context: z.string(),
+    })),
+    formality_level: z.enum(['casual', 'professional', 'formal']),
+    decision_making_style: z.enum(['fast_individual', 'committee', 'lengthy_process']),
+    common_objections: z.array(z.object({
+        objection: z.string(),
+        underlying_concern: z.string(),
+        effective_response_approach: z.string(),
+        level: z.enum(['straightforward', 'complex']),
+    })),
+    typical_incumbent_solutions: z.array(z.string()),
+    switching_barriers: z.array(z.string()),
+    scenario_templates: z.array(z.object({
+        template: z.string(),
+        complexity: z.enum(['single_stakeholder', 'multi_stakeholder']),
+        variables: z.array(z.string()),
+    })),
+});
+
+const ClientRoleSchema = z.object({
+    role_id: z.string(),
+    base_role_id: z.string(),
+    display_name: z.string(),
+    role_category: z.enum(['technical', 'business', 'executive', 'operations', 'finance']),
+    seniority_level: z.enum(['individual_contributor', 'manager', 'director', 'vp', 'c_suite']),
+    typical_responsibilities: z.array(z.string()),
+    reports_to: z.array(z.string()),
+    manages: z.array(z.string()),
+    budget_authority: z.enum(['none', 'small', 'departmental', 'significant', 'unlimited']),
+    decision_role: z.enum(['user', 'influencer', 'champion', 'decision_maker', 'economic_buyer']),
+    typical_buying_committee_role: z.string(),
+    measured_on: z.array(z.string()),
+    gets_promoted_by: z.array(z.string()),
+    gets_fired_for: z.array(z.string()),
+    role_specific_pains: z.array(z.string()),
+    time_constraints: z.string(),
+    preferred_meeting_length: z.enum(['15min', '30min', '45min', '60min']),
+    preferred_communication: z.array(z.enum(['email', 'phone', 'video', 'in_person', 'slack'])),
+    response_time_expectation: z.enum(['immediate', 'same_day', 'within_week']),
+    role_objections: z.array(z.object({
+        objection: z.string(),
+        context: z.string(),
+        effective_counter: z.string(),
+    })),
+    typical_questions: z.array(z.string()),
+    hidden_concerns: z.array(z.string()),
+    disc_type: DiscTypeEnum,
+    disc_overlay: z.object({
+        behavioral_description: z.string(),
+        communication_tips: z.array(z.string()),
+        email_style: z.string(),
+        meeting_behavior: z.string(),
+        objection_style: z.string(),
+        buying_signals: z.array(z.string()),
+        warning_signs: z.array(z.string()),
+    }),
+    applicable_industries: z.array(z.string()),
+});
+
+const DiscPatternSchema = z.object({
+    disc_type: DiscTypeEnum,
+    full_name: z.string(),
+    verbal_cues: z.array(z.string()),
+    email_patterns: z.array(z.string()),
+    meeting_behaviors: z.array(z.string()),
+    body_language: z.array(z.string()),
+    diagnostic_question: z.string(),
+    diagnostic_response: z.string(),
+    objection_style: z.object({
+        how_they_say_no: z.array(z.string()),
+        underlying_driver: z.string(),
+        effective_response: z.string(),
+    }),
+    buying_signals: z.object({
+        verbal_signals: z.array(z.string()),
+        behavioral_signals: z.array(z.string()),
+        what_they_need_to_commit: z.string(),
+    }),
+    pitch_adaptation: z.object({
+        ideal_pace: z.enum(['fast', 'moderate', 'slow']),
+        ideal_structure: z.string(),
+        proof_type_preferred: z.string(),
+        avoid_phrases: z.array(z.string()),
+        power_phrases: z.array(z.string()),
+    }),
+    email_template_style: z.string(),
+    call_opening_approach: z.string(),
+    follow_up_cadence: z.string(),
+});
+
+const RagSignalsSchema = z.object({
+    aggregatedInsights: z.string(),
+    valuePropSignals: z.array(z.string()),
+    icpSignals: z.array(z.string()),
+});
+
+const Roleplay3DInput = z.object({
+    context: z.object({
+        founder: FounderCategorySchema,
+        industry: IndustrySchema,
+        clientRole: ClientRoleSchema,
+        discPattern: DiscPatternSchema,
+        scenario: z.string(),
+        difficulty: z.enum(['beginner', 'intermediate', 'advanced']),
+        ragSignals: RagSignalsSchema.nullable().optional(),
+    }),
+    userMessage: z.string().transform(val => val.replace(/[\n\r]/g, ' ').trim()),
+    conversationHistory: z.array(z.object({
+        role: z.enum(['user', 'assistant']),
+        content: z.string(),
+    })),
+});
+
+export type Roleplay3DInput = z.infer<typeof Roleplay3DInput>;
+
+export const salesRoleplay3DFlow = ai.defineFlow(
+    {
+        name: 'salesRoleplay3D',
+        inputSchema: Roleplay3DInput,
+    },
+    async (input: Roleplay3DInput) => {
+        // Context is now fully validated with comprehensive schemas
+        const systemPrompt = buildRoleplaySystemPrompt(input.context as unknown as RoleplayContext);
+
+
+        // Limit history to last 20 messages to prevent token explosion
+        const recentHistory = input.conversationHistory.slice(-20);
+
+        const historyText = recentHistory
+            .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'SELLER' : 'PROSPECT'}: ${m.content}`)
+            .join('\n');
+
+        // Mock response for E2E tests
+        if (process.env.NODE_ENV === 'test' || !process.env.GOOGLE_GENAI_API_KEY) {
+            return `I understand you're looking for help with ${input.context.industry.display_name}. As a ${input.context.clientRole.display_name}, I'm interested but need more data on ROI. (Mock AI Response)`;
+        }
+
+        const result = await ai.generate({
+            model: gemini20Flash,
+            system: systemPrompt,
+            prompt: `${historyText}\nSELLER: ${input.userMessage}\nPROSPECT:`,
+            config: {
+                temperature: 0.8,
+                maxOutputTokens: 500,
+            },
+        });
+
+        return result.text;
+    }
+);

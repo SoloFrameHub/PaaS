@@ -1,0 +1,81 @@
+{
+  "lessonId": "6",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Upgraded Retainer Conversations",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Which of the following is a signal that a retainer needs upgrading?",
+      "options": [
+        { "id": "a", "text": "The client pays invoices on time" },
+        {
+          "id": "b",
+          "text": "You're consistently delivering more than the original agreement with scope creep"
+        },
+        { "id": "c", "text": "The client's business size hasn't changed" },
+        { "id": "d", "text": "The client asks fewer questions over time" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Scope creep — consistently delivering more than the original agreement, with 'quick favors' becoming regular deliverables — is a top signal. Other signals include client growth, results that justify more investment, and the client requesting expanded scope."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How should you frame a retainer upgrade conversation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I need to charge you more because my costs increased"
+        },
+        {
+          "id": "b",
+          "text": "Let's review what we've accomplished and discuss what's next"
+        },
+        {
+          "id": "c",
+          "text": "Other clients are paying more for the same work"
+        },
+        { "id": "d", "text": "I can't continue at the current rate" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The retainer upgrade isn't a surprise attack — it's a scheduled review framed around accomplishments and what's next. Leading with results and future value rather than your need for more money maintains trust and positions the upgrade positively."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What does the 'Resentment Test' indicate about a client retainer?",
+      "options": [
+        { "id": "a", "text": "The client is unhappy with your work" },
+        {
+          "id": "b",
+          "text": "The value exchange is misaligned and an upgrade conversation is needed"
+        },
+        { "id": "c", "text": "You should fire the client" },
+        { "id": "d", "text": "The retainer should be downgraded" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "If you feel resentful about the work you're doing for a client, the value exchange is misaligned. It doesn't mean the client is bad — it means the scope or pricing needs to be recalibrated through an upgrade conversation."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should schedule a retainer review call 60 days in advance, before you need the upgrade, rather than bringing it up when you're already frustrated.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Schedule the review proactively at a natural milestone (6-month anniversary, quarter-end, annual renewal). This prevents frustration from building up and frames the conversation as a professional review rather than a reactive demand."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Identify one client where you're currently delivering more value than you're being paid for. Describe the scope creep, calculate the value gap, and draft the opening of your retainer review email to schedule the conversation.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies a specific client with concrete examples of scope creep (extra deliverables, additional hours), quantifies the value gap in dollar terms, and drafts a professional, non-confrontational review email that leads with accomplishments rather than complaints."
+    }
+  ]
+}

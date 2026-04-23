@@ -1,0 +1,78 @@
+{
+  "lessonId": "2",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "Gmail & Yahoo Requirements (SPF/DKIM/DMARC)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Using the airport security analogy, what does each authentication layer represent?",
+      "options": [
+        { "id": "a", "text": "SPF = ticket, DKIM = passport, DMARC = visa" },
+        {
+          "id": "b",
+          "text": "SPF = boarding pass (proves you're allowed to send), DKIM = passport (proves the message wasn't tampered with), DMARC = security checkpoint (tells receivers what to do with failures)"
+        },
+        { "id": "c", "text": "SPF = luggage, DKIM = ID, DMARC = customs" },
+        { "id": "d", "text": "All three do the same thing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "SPF is your boarding pass (proves your sending server is authorized for this domain), DKIM is your passport (cryptographic signature proving the message wasn't altered in transit), and DMARC is the security checkpoint (tells receiving servers what to do when SPF or DKIM fail — none, quarantine, or reject)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened when Sarah sent an onboarding email from an unauthenticated domain?",
+      "options": [
+        { "id": "a", "text": "It arrived in the spam folder" },
+        {
+          "id": "b",
+          "text": "Microsoft Outlook silently filtered it into the void — no bounce, no notification, no spam folder — it simply disappeared"
+        },
+        { "id": "c", "text": "The client received it normally" },
+        { "id": "d", "text": "It bounced back immediately" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's onboarding email for a $40K client was silently filtered by Outlook because her domain had zero authentication records. The email wasn't in spam or anywhere — Outlook dropped it completely. She lost 6 hours rebuilding trust and had to resend from a personal Gmail account."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What does Microsoft's May 2025 enforcement add to the authentication landscape?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing — Microsoft doesn't enforce authentication"
+        },
+        {
+          "id": "b",
+          "text": "Microsoft adopted identical requirements to Google and Yahoo, meaning all three major providers now require full authentication"
+        },
+        { "id": "c", "text": "Microsoft only requires SPF" },
+        { "id": "d", "text": "Microsoft banned cold email entirely" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Microsoft followed Google and Yahoo in May 2025 with identical SPF/DKIM/DMARC requirements. This means all three major B2B email providers (covering 90%+ of business inboxes) now enforce full authentication. Non-compliant senders are automatically spam-foldered or rejected."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Silent filtering (emails disappearing without any bounce notification) is a bigger problem than hard bounces because you never know your emails aren't being delivered.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Silent filtering is worse than bouncing because you get no feedback. Your sending tool reports 'delivered,' your recipient never sees the email, and you think your messaging is the problem when it's actually infrastructure. This can waste weeks of outreach before you discover the issue."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe the three-layer authentication stack (SPF, DKIM, DMARC) in your own words. For each layer, explain what it does, why it matters, and what happens if it's missing from your sending domain.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response accurately describes all three authentication layers in their own words (not just copying definitions), explains the consequence of each missing layer, and demonstrates understanding that all three work together as a system. Look for awareness of silent filtering as a specific risk of missing authentication."
+    }
+  ]
+}

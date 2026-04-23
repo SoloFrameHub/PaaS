@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does time scarcity create stress from a stress appraisal perspective?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Time scarcity doesn't affect stress—only actual workload matters"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Time scarcity creates a perception of low resources, which shifts appraisal toward threat and reduces capacity for thoughtful coping"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people with poor time management skills experience time scarcity"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Time scarcity is always objective, not perceptual"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Time scarcity affects stress through the stress appraisal mechanism. When you perceive time as scarce (a critical resource), you appraise demands as exceeding resources, triggering a threat state. This isn't just about objective hours available—research shows that perceived scarcity narrows cognitive bandwidth, forcing focus on immediate urgencies at the expense of important long-term priorities. Additionally, when you feel rushed, recovery time feels 'unproductive' so you skip it, which compounds stress. How you spend your time (aligned with values vs. fragmented by reactive demands) predicts well-being more powerfully than how much time you have."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What distinguishes 'urgent' tasks from 'important' tasks in the Eisenhower Matrix?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Urgent tasks demand immediate attention and are time-sensitive; important tasks contribute to long-term goals and values but are easy to defer"
+                },
+                {
+                    "id": "opt2",
+                    "text": "All urgent tasks are also important"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Important tasks are always more stressful than urgent tasks"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no meaningful difference—the terms are interchangeable"
+                }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "The Eisenhower Matrix makes a critical distinction: urgent tasks demand immediate attention, are time-sensitive, and often driven by others' priorities (ringing phone, urgent email, looming deadline)—they create pressure and reactivity. Important tasks contribute to long-term goals, values, health, or relationships and are often self-directed (exercise, strategic planning, relationship time)—they feel meaningful but are easy to defer because there's no immediate consequence. The stress trap is that most people spend majority time on urgent tasks (many not important) and defer important tasks until they become urgent crises."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which quadrant of the Eisenhower Matrix should be your largest time allocation for stress reduction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Quadrant 1: Urgent + Important (crisis management)"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Quadrant 2: Important but Not Urgent (strategic priorities like exercise, relationship-building, recovery, deep work)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Quadrant 3: Urgent but Not Important (interruptions, other people's priorities)"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Quadrant 4: Neither Urgent nor Important (time wasters)"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Quadrant 2 (Important but Not Urgent) should be your largest time allocation because these are the highest-leverage activities for long-term well-being and performance: exercise, preventive health, relationship maintenance, strategic planning, skill development, rest and recovery, deep work on meaningful projects. These activities have no immediate deadline so they're easy to defer, but when you invest here, you prevent Quadrant 1 crises and reduce overall stress. If you don't proactively schedule and protect this time, Quadrants 1 and 3 will consume it, leaving you in constant reactive crisis mode."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based caveat about time management interventions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "All time management techniques work equally well"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Time management interventions that focus solely on efficiency without addressing values or recovery can paradoxically increase stress"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Time management has no effect on stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people in high-stress jobs benefit from time management"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "This is a critical research finding: time management approaches that focus purely on efficiency and productivity (\"pack more into each day\") without addressing values alignment or recovery time can actually increase stress. The evidence shows that effective time management combines prioritization frameworks (like the Eisenhower Matrix) with values alignment (spending time on what matters to you) and deliberate recovery time protection. Simply becoming more efficient at reactive tasks doesn't reduce stress if you're not investing time in restorative and meaningful activities. The evidence grade is MODERATE—observational evidence is strong, but RCT evidence for specific interventions is limited."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is protecting time for recovery activities (Quadrant 2) essential for stress management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Recovery time is optional—only productive work matters"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because chronic time pressure without recovery is a significant occupational stressor associated with burnout and cardiovascular disease; recovery prevents crisis escalation"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people with diagnosed conditions need recovery time"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Recovery time is only important on weekends"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic time pressure without adequate recovery is associated with burnout, exhaustion, and cardiovascular disease in the occupational stress literature. When you feel chronically rushed, rest feels 'unproductive' so you skip it—but this compounds stress by preventing physiological and psychological recovery. Recovery activities (sleep, exercise, social connection, meaningful rest) are Quadrant 2 activities: important but not urgent, which means they're easy to defer. However, when you protect this time proactively, you build resilience, prevent Quadrant 1 crises from escalating, and maintain the capacity for sustained performance and well-being."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "7",
+    "title": "Time Management and Priority Setting - Quiz"
+}

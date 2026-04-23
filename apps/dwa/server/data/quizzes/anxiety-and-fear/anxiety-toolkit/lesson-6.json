@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does SUDS stand for, and what is it used for in a Fear Ladder?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Systematic Urge and Distress Scale — used to measure how much you want to avoid something"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Subjective Units of Distress Scale — used to rate each step's anxiety level from 0 to 10"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sequential Urge and Discomfort Score — used to track progress across sessions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Safety and Urgency Detection System — used to decide whether exposure is safe to begin"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "SUDS stands for Subjective Units of Distress Scale. It is a 0-to-10 rating where 0 means completely calm and 10 means maximum distress. You use it to rate each step on your Fear Ladder so you can arrange them in order from easiest to hardest."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the recommended way to frame your Fear Ladder goal?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "As something you want to stop doing, like 'stop being afraid of public speaking'"
+                },
+                {
+                    "id": "opt2",
+                    "text": "As a broad life aspiration, like 'become a more confident person'"
+                },
+                {
+                    "id": "opt3",
+                    "text": "As a specific, meaningful, positive goal — something you want to move toward, not away from"
+                },
+                {
+                    "id": "opt4",
+                    "text": "As whatever your therapist suggests, since personal goals are not reliable"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A good Fear Ladder goal is specific, meaningful, and framed positively — moving toward something you genuinely want. Instead of 'stop being afraid of public speaking,' try 'I want to confidently share my ideas in a team meeting.' This framing keeps you motivated and gives you a clear finish line."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, how large should the gap in difficulty be between each rung on your Fear Ladder?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "As large as possible to build resilience quickly"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exactly 3 SUDS points to maintain a consistent challenge"
+                },
+                {
+                    "id": "opt3",
+                    "text": "No more than 1 to 2 SUDS points so each step feels challenging but doable"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There are no rules about gaps — build whatever feels right"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Keeping gaps between rungs to just 1 to 2 SUDS points is the key to an effective Fear Ladder. Each step should feel challenging but doable — never a terrifying jump. If a step feels too hard, add easier steps between the rungs."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should you move from one rung of the Fear Ladder to the next?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "After completing the step once successfully"
+                },
+                {
+                    "id": "opt2",
+                    "text": "After practicing the current step multiple times until your anxiety has noticeably decreased"
+                },
+                {
+                    "id": "opt3",
+                    "text": "After a set amount of time, regardless of anxiety levels"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only when you feel zero anxiety about the current step"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Do not move to the next rung until you have practiced the current one multiple times and your anxiety has noticeably decreased while doing it. Your brain needs repetition to form new associations — each time you stay in the situation and nothing catastrophic happens, your amygdala recalibrates."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "What is one specific, meaningful goal you would like to work toward using your own Fear Ladder? Why does this goal matter to you, and what would the very first rung — your easiest step — look like?",
+            "explanation": "The most powerful Fear Ladders are deeply personal. When the goal connects to something you genuinely care about — a relationship, a career, a freedom — the discomfort of each step feels worth it. The first rung should feel almost too easy, and that is exactly right."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit",
+    "lessonId": "6",
+    "title": "Building Your Fear Ladder - Quiz"
+}

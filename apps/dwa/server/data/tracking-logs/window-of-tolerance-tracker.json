@@ -1,0 +1,71 @@
+{
+  "id": "window-of-tolerance-tracker",
+  "title": "Window of Tolerance Tracker",
+  "description": "Track your daily nervous system state to build awareness of your window of tolerance — the zone where you can think clearly, feel emotions without being overwhelmed, and function effectively.",
+  "instructions": "Complete this check-in once daily, ideally at the same time each day. There are no right or wrong answers — this is about building self-awareness of your nervous system patterns.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date and time of check-in",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Monday 8:00 PM"
+    },
+    {
+      "id": "overallState",
+      "label": "Overall nervous system state right now",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "hyperarousal", "label": "Hyperarousal — anxious, on edge, racing thoughts, irritable, can't relax" },
+        { "value": "window", "label": "Window of Tolerance — calm enough to think, present, able to function" },
+        { "value": "hypoarousal", "label": "Hypoarousal — numb, disconnected, shut down, foggy, can't feel much" }
+      ]
+    },
+    {
+      "id": "arousalLevel",
+      "label": "Arousal level (1 = completely shut down, 5 = calm and present, 10 = extremely activated/overwhelmed)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "bodySignals",
+      "label": "What body signals do you notice?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., tight shoulders, racing heart, heavy limbs, relaxed muscles, stomach tension, numb hands"
+    },
+    {
+      "id": "triggersToday",
+      "label": "Did anything push you outside your window today?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., loud noise startled me, argument at work, news report, nightmare last night, nothing specific"
+    },
+    {
+      "id": "copingUsed",
+      "label": "What coping or grounding strategies did you use today?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., 5-4-3-2-1 grounding, slow breathing, went for a walk, called a friend, none today"
+    },
+    {
+      "id": "sleepQuality",
+      "label": "How was your sleep last night? (1 = terrible, 10 = excellent)",
+      "type": "rating",
+      "required": false,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "notes",
+      "label": "Anything else you want to note about today?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., good day overall, felt more present than usual, anniversary coming up so expecting harder days"
+    }
+  ]
+}

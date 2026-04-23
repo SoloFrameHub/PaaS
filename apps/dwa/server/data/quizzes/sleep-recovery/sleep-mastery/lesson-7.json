@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the two branches of the autonomic nervous system?",
+            "options": [
+                { "id": "opt1", "text": "Central and peripheral" },
+                { "id": "opt2", "text": "Sympathetic (fight or flight) and parasympathetic (rest and digest)" },
+                { "id": "opt3", "text": "Voluntary and involuntary" },
+                { "id": "opt4", "text": "Somatic and sensory" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your autonomic nervous system has two branches: the sympathetic system (fight or flight, the 'gas pedal') and the parasympathetic system (rest and digest, the 'brake pedal'). Sleep is essential for engaging the repair mode."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "By how much can one night of poor sleep reduce T-cell function?",
+            "options": [
+                { "id": "opt1", "text": "Up to 20%" },
+                { "id": "opt2", "text": "Up to 40%" },
+                { "id": "opt3", "text": "Up to 70%" },
+                { "id": "opt4", "text": "Up to 90%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research shows that even one night of poor sleep can reduce T-cell function by up to 70%, significantly weakening your immune defense against infections."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are cytokines and what role do they play during sleep?",
+            "options": [
+                { "id": "opt1", "text": "Hormones that promote wakefulness" },
+                { "id": "opt2", "text": "Signaling proteins that coordinate immune response, produced in greater quantities during sleep" },
+                { "id": "opt3", "text": "Brain chemicals that cause dreaming" },
+                { "id": "opt4", "text": "Enzymes that break down adenosine" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cytokines are signaling proteins that coordinate your immune response. They are produced in greater quantities during sleep and help direct immune cells to sites of infection and inflammation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is sleep described as the most powerful tool for engaging your body's repair mode?",
+            "options": [
+                { "id": "opt1", "text": "Because it increases your heart rate" },
+                { "id": "opt2", "text": "Because it is the primary time your body spends in parasympathetic mode, enabling deep repair, restoration, and immune strengthening" },
+                { "id": "opt3", "text": "Because it raises cortisol levels" },
+                { "id": "opt4", "text": "Because it activates the sympathetic nervous system" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep is your body's primary time in parasympathetic mode. This is when deep repair, restoration, and immune strengthening happen, including tissue repair, hormone release, and immune cell production."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why might getting good rest before and after vaccinations be beneficial?",
+            "options": [
+                { "id": "opt1", "text": "It reduces side effects" },
+                { "id": "opt2", "text": "Antibody production increases during sleep, improving vaccine effectiveness" },
+                { "id": "opt3", "text": "It prevents allergic reactions" },
+                { "id": "opt4", "text": "It speeds up the injection site healing" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Antibody production increases during sleep, which is why getting good rest before and after vaccinations can improve their effectiveness. Sleep supports your immune system's ability to respond to the vaccine."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "7",
+    "title": "Sleep for Physical Resilience - Quiz"
+}

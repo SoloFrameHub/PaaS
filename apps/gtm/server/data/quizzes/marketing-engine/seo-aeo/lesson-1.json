@@ -1,0 +1,172 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "1",
+    "lessonTitle": "The Zero-Click Reality",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of Google searches on mobile devices now end without a click to any website?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "45%"
+                },
+                {
+                    "id": "b",
+                    "text": "60%"
+                },
+                {
+                    "id": "c",
+                    "text": "77%"
+                },
+                {
+                    "id": "d",
+                    "text": "90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "While 60% of all searches are zero-click, on mobile devices, this number jumps to 77%. This highlights the importance of Answer Engine Optimization (AEO).",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does Google's role shift from 'Librarian' to 'Professor' impact content creators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Content creators get more traffic because Google refers more books."
+                },
+                {
+                    "id": "b",
+                    "text": "Google now gives the answer directly rather than just pointing to the source, potentially reducing clicks."
+                },
+                {
+                    "id": "c",
+                    "text": "Google only ranks websites that use academic language."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no impact; SEO remains the same as it was in 2010."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "As a 'Professor,' Google reads the content and provides the answer directly in the search results (AI Overviews), which can satisfy the user's intent without them needing to click through to a website.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why did the 'Winner' in our case study see an increase in citations despite the rise of AI Overviews?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They spent more on Google Ads."
+                },
+                {
+                    "id": "b",
+                    "text": "They published generic 'how-to' content."
+                },
+                {
+                    "id": "c",
+                    "text": "They provided proprietary data that AI models cannot hallucinate or replicate easily."
+                },
+                {
+                    "id": "d",
+                    "text": "They had a more catchy domain name."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Proprietary data and original research are unique moats. AI systems must cite the original source for specific, fresh data to maintain accuracy.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does E-E-A-T stand for in the context of search quality?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Efficiency, Effectiveness, Authority, Trust"
+                },
+                {
+                    "id": "b",
+                    "text": "Experience, Expertise, Authoritativeness, Trustworthiness"
+                },
+                {
+                    "id": "c",
+                    "text": "Engagement, Exposure, Analytics, Tracking"
+                },
+                {
+                    "id": "d",
+                    "text": "Expertise, Excellence, Authority, Transformation"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "E-E-A-T stands for Experience, Expertise, Authoritativeness, and Trustworthiness. These are the core signals AI systems use to identify high-quality, citable sources.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between traditional SEO and AEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "SEO is for Google, AEO is for Bing."
+                },
+                {
+                    "id": "b",
+                    "text": "SEO focuses on getting clicks; AEO focuses on getting cited by AI models."
+                },
+                {
+                    "id": "c",
+                    "text": "SEO is free; AEO requires a subscription."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; they are different names for the same thing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Traditional SEO aims to rank well to drive clicks to a site. AEO focuses on structuring content so that AI assistants trust it enough to cite it as the primary answer.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Looking at your business (B2B SaaS or Creator), identifying one piece of 'Proprietary Data' or 'Practitioner Experience' you possess that a generic content farm could never replicate. How could this be the foundation of a 'Citable' content piece?",
+            "promptHints": [
+                "Think about specific client results you've achieved.",
+                "Consider internal data or benchmarks only you can see.",
+                "Identify a unique methodology or 'angle' you've developed."
+            ],
+            "minimumWords": 50,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "8-10 minutes",
+        "prerequisiteQuizzes": [],
+        "unlocks": [
+            "2"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "The Zero-Click Reality - Quiz"
+}

@@ -1,0 +1,166 @@
+{
+    "lessonId": "10",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Elevator Pitch Workshop",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary sign that a 'Cocktail Party' pitch has failed?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The listener asks 'How does that work?'"
+                },
+                {
+                    "id": "b",
+                    "text": "The listener punches you"
+                },
+                {
+                    "id": "c",
+                    "text": "The listener says 'Oh, that's nice' and changes the subject"
+                },
+                {
+                    "id": "d",
+                    "text": "The listener asks for your business card"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "'Oh, that's nice' is polite code for 'I have no idea what you said, or I don't care.' A good pitch triggers curiosity and a follow-up question."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which pitch duration is used when you are just meeting someone casually?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30 Seconds"
+                },
+                {
+                    "id": "b",
+                    "text": "2 Minutes"
+                },
+                {
+                    "id": "c",
+                    "text": "5 Minutes"
+                },
+                {
+                    "id": "d",
+                    "text": "20 Minutes"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "The 30-second pitch is for high-level intros. Don't hold someone hostage with a 5-minute monologue before you know if they are interested."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How should you adapt your pitch for an Investor vs. a Customer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You shouldn't; keep it exactly the same."
+                },
+                {
+                    "id": "b",
+                    "text": "Tell the investor about the product features; tell the customer about the market size."
+                },
+                {
+                    "id": "c",
+                    "text": "Tell the investor about the Market Opportunity; tell the customer about the Outcome/Solution."
+                },
+                {
+                    "id": "d",
+                    "text": "Lie to the investor; tell the truth to the customer."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Investors buy equity (future growth/market size). Customers buy solutions (immediate pain relief). Tailor the value proposition to what they are buying."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a common mistake technical founders make in pitches?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They speak too slowly."
+                },
+                {
+                    "id": "b",
+                    "text": "They focus too much on the technology stack (React, Python, AI) instead of the problem."
+                },
+                {
+                    "id": "c",
+                    "text": "They wear suits."
+                },
+                {
+                    "id": "d",
+                    "text": "They don't have a business card."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "No customer cares that your backend is in Rust. They care that it doesn't crash. Focusing on specs instead of outcomes is the #1 technical founder trap."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is it important to 'Practice Out Loud'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To annoy your neighbors"
+                },
+                {
+                    "id": "b",
+                    "text": "Because reading in your head is different than speaking; you need to build muscle memory."
+                },
+                {
+                    "id": "c",
+                    "text": "So you can memorize it word-for-word like a robot"
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't important; improvising is better."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Phrases that look good on paper often twist your tongue when spoken. You must practice the physical act of speaking the pitch to make it sound natural."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "What is the correct structure of the Creator Mission Statement formula?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "I am a [Title] who has [Years of Experience] in [Industry]."
+                },
+                {
+                    "id": "b",
+                    "text": "I help [Specific Audience] go from [Point A Pain] to [Point B Transformation] through [Your Unique Method]."
+                },
+                {
+                    "id": "c",
+                    "text": "I sell [Product Type] for [Price] to [Anyone Who Will Pay]."
+                },
+                {
+                    "id": "d",
+                    "text": "I am passionate about [Topic] and love helping people."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Creator Mission Statement must be specific (who you help), have emotional stakes (the pain and destination), and set a clear expectation (your method). Generic 'passion' statements don't convert."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Write your 30-Second 'Cocktail Party' pitch. Follow the 'Hook -> Pivot -> Proof' structure.",
+            "minLength": 50,
+            "promptForAI": "Evaluate the pitch. Does it sound like a human conversation? Is it clear what the person does? Does it include a specific proof point?"
+        }
+    ],
+    "passingScore": 70
+}

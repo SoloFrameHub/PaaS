@@ -1,0 +1,97 @@
+{
+  "id": "nutrient-awareness-check",
+  "title": "Nutrient Status Awareness Check",
+  "description": "Reflect on signs and symptoms that may suggest nutrient insufficiencies affecting your mental health. This is not a diagnostic tool — it helps you identify areas to discuss with your healthcare provider.",
+  "instructions": "Over the past month, how often have you experienced the following?",
+  "timeframe": "past month",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Low energy or fatigue not explained by sleep problems"
+    },
+    {
+      "id": "q2",
+      "text": "Muscle cramps, twitches, or restless legs"
+    },
+    {
+      "id": "q3",
+      "text": "Difficulty concentrating or brain fog"
+    },
+    {
+      "id": "q4",
+      "text": "Low mood that doesn't fully respond to other treatments"
+    },
+    {
+      "id": "q5",
+      "text": "Increased anxiety or nervousness"
+    },
+    {
+      "id": "q6",
+      "text": "Poor wound healing or frequent infections"
+    },
+    {
+      "id": "q7",
+      "text": "Hair thinning or brittle nails"
+    },
+    {
+      "id": "q8",
+      "text": "Numbness or tingling in hands or feet"
+    },
+    {
+      "id": "q9",
+      "text": "Bone or joint pain without clear cause"
+    },
+    {
+      "id": "q10",
+      "text": "Difficulty sleeping despite good sleep hygiene"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3,
+    "labels": {
+      "0": "Not at all",
+      "1": "Occasionally",
+      "2": "Frequently",
+      "3": "Almost constantly"
+    }
+  },
+  "scoring": {
+    "maxScore": 30,
+    "bands": [
+      {
+        "min": 0,
+        "max": 7,
+        "severity": "minimal",
+        "label": "Few Nutrient-Related Concerns",
+        "description": "You report few symptoms commonly associated with nutrient insufficiencies. Continue maintaining a balanced diet. This course will help you understand which nutrients are most important for mental health and how to ensure you're getting enough.",
+        "color": "green"
+      },
+      {
+        "min": 8,
+        "max": 14,
+        "severity": "mild",
+        "label": "Some Potential Nutrient Concerns",
+        "description": "You're experiencing some symptoms that can be associated with nutrient insufficiencies. Research shows that deficiencies in vitamin D, B vitamins, magnesium, omega-3s, and zinc can affect mental health. Consider discussing baseline nutrient testing with your healthcare provider.",
+        "color": "yellow"
+      },
+      {
+        "min": 15,
+        "max": 22,
+        "severity": "moderate",
+        "label": "Notable Nutrient-Related Symptoms",
+        "description": "Multiple symptoms suggest your nutrient status may warrant attention. Studies show that correcting deficiencies in key nutrients can significantly improve mental health outcomes. We recommend discussing comprehensive nutrient testing with your healthcare provider.",
+        "color": "orange"
+      },
+      {
+        "min": 23,
+        "max": 30,
+        "severity": "high",
+        "label": "Significant Symptoms — See Your Provider",
+        "description": "You're experiencing frequent symptoms that may reflect nutrient insufficiencies or other medical conditions. Please discuss these symptoms with your healthcare provider for proper evaluation and testing. Do not self-treat with high-dose supplements without medical guidance.",
+        "color": "red"
+      }
+    ]
+  },
+  "disclaimer": "This is an educational awareness tool, not a medical diagnostic. Many of these symptoms can have multiple causes unrelated to nutrition. Always consult a healthcare provider before starting supplements, especially if you take medications. If you are in crisis, call or text 988."
+}

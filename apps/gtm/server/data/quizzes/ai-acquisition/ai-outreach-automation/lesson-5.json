@@ -1,0 +1,201 @@
+{
+    "lessonId": "5",
+    "courseId": "ai-outreach-automation",
+    "sectionId": "ai-acquisition",
+    "title": "Creator Outreach Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the primary difference between B2B cold outreach and creator outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Creators prefer email over LinkedIn"
+                },
+                {
+                    "id": "b",
+                    "text": "Creators evaluate pitches through the lens of 'Would my audience respect this?'"
+                },
+                {
+                    "id": "c",
+                    "text": "Creators respond faster"
+                },
+                {
+                    "id": "d",
+                    "text": "Creators don't care about personalization"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Creators think in public. Every partnership is evaluated through audience perception, not just personal benefit."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the '3 Before You Ask' rule, what should you do BEFORE pitching a creator?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send 3 emails"
+                },
+                {
+                    "id": "b",
+                    "text": "Consume content, engage publicly, provide value"
+                },
+                {
+                    "id": "c",
+                    "text": "Connect on 3 platforms"
+                },
+                {
+                    "id": "d",
+                    "text": "Wait 3 weeks"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The framework is: (1) Consume their content, (2) Engage publicly, (3) Provide value first, (4) Then make the ask."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What's the expected response rate for warm DMs to creators (after engagement) vs. cold emails?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5-10% vs. 15-30%"
+                },
+                {
+                    "id": "b",
+                    "text": "15-30% vs. 5-10%"
+                },
+                {
+                    "id": "c",
+                    "text": "Both are 5-10%"
+                },
+                {
+                    "id": "d",
+                    "text": "Both are 15-30%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Warm DMs (after engagement) achieve 15-30% response rates, while cold emails to creators get 5-10%."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "For Instagram creators, what's the recommended warm-up period before sending a DM?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-3 days"
+                },
+                {
+                    "id": "b",
+                    "text": "5-7 days"
+                },
+                {
+                    "id": "c",
+                    "text": "10-14 days"
+                },
+                {
+                    "id": "d",
+                    "text": "No warm-up needed"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Instagram filters DMs from non-followers into 'Message Requests.' A 10-14 day warm-up period (follow + engage) dramatically increases open rates."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "True or False: For creator outreach, email-only sequences outperform multi-channel sequences.",
+            "correctAnswer": "b",
+            "explanation": "False. Multi-channel sequences (platform-native engagement + email) achieve 15-25% response rates vs. 5-10% for email-only. Quality beats quantity with creators.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "Which phrase is a red flag in creator outreach (according to the Creator Outreach Linter)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Your video on [topic] at timestamp 12:34 resonated with me'"
+                },
+                {
+                    "id": "b",
+                    "text": "'I love your content!'"
+                },
+                {
+                    "id": "c",
+                    "text": "'I noticed you mentioned [specific point] in your last newsletter'"
+                },
+                {
+                    "id": "d",
+                    "text": "'I have data on this topic that might be useful for a future post'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "'I love your content!' is a generic compliment with no substance. It signals you didn't actually engage deeply with their work."
+        },
+        {
+            "id": "q7",
+            "type": "multiple-choice",
+            "question": "A creator replies: 'I already have sponsors for this.' What's the best response?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Our solution is better than theirs'"
+                },
+                {
+                    "id": "b",
+                    "text": "'Can I send you our pricing anyway?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'That makes sense. I noticed [specific gap]. Would a chat about [specific improvement] be useful? No pitch — genuinely curious.'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Let me know if anything changes'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Acknowledge their current setup, identify a specific gap or opportunity, and frame it as curiosity (not a pitch). This keeps the door open without being pushy."
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "What's the 'Screenshot Test' for creator outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always include a screenshot in your outreach"
+                },
+                {
+                    "id": "b",
+                    "text": "Screenshot their content before messaging"
+                },
+                {
+                    "id": "c",
+                    "text": "Ask yourself: 'If they screenshot my message and post it publicly, would I be proud or embarrassed?'"
+                },
+                {
+                    "id": "d",
+                    "text": "Take a screenshot of your message for your records"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Screenshot Test reminds you that creator outreach is never truly private. If you'd be embarrassed by your message being public, rewrite it."
+        }
+    ]
+}

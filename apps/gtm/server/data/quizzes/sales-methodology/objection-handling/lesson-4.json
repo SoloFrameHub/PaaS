@@ -1,0 +1,141 @@
+{
+    "lessonId": "4",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "Handling Price Objections Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is 'reflexive discounting' considered dangerous for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes your website look unprofessional."
+                },
+                {
+                    "id": "b",
+                    "text": "It erodes your margin and signals that your original price was arbitrary."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes it impossible to use credit card processors."
+                },
+                {
+                    "id": "d",
+                    "text": "It is illegal in some jurisdictions."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Discounting too quickly tells the prospect that you don't actually believe in your price, which erodes trust and reduces your long-term profitability."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of asking 'Too expensive compared to what?'",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the prospect feel ashamed of their budget."
+                },
+                {
+                    "id": "b",
+                    "text": "To identify their 'Anchor' so you can respond with the correct strategy."
+                },
+                {
+                    "id": "c",
+                    "text": "To prove that your competitors are worse."
+                },
+                {
+                    "id": "d",
+                    "text": "To stall for time."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Understanding what they are comparing you to (DIY, competitor, or nothing) allows you to tailor your value proposition to that specific comparison."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If a prospect truly cannot afford the full price, but you don't want to lower your rate, what should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tell them to call back when they have more money."
+                },
+                {
+                    "id": "b",
+                    "text": "Reduce the price anyway—a deal is a deal."
+                },
+                {
+                    "id": "c",
+                    "text": "Reduce the scope or 'unbundle' the solution so it fits their budget while maintaining your rate."
+                },
+                {
+                    "id": "d",
+                    "text": "Offer them a 50% discount but only for 24 hours."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Unbundling allows you to lead with a lower total cost without devaluing the individual components of your service. It solves their cash flow issue while protecting your unit price."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Rule of the Give and Get' in discounting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "If you give a discount, you must get something in return (like an annual commitment or case study)."
+                },
+                {
+                    "id": "b",
+                    "text": "You should give a discount every time a prospect asks for one."
+                },
+                {
+                    "id": "c",
+                    "text": "You should get the money upfront before giving any access."
+                },
+                {
+                    "id": "d",
+                    "text": "You should give them more features for the same price."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "A discount is a professional trade. By requiring a 'Get' (like a testimonial or long-term commitment), you preserve the value of the transaction."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How did the founder respond to the student who said they could find the info for free on YouTube?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By telling them those YouTube videos were incorrect."
+                },
+                {
+                    "id": "b",
+                    "text": "By offering a discount to compete with free."
+                },
+                {
+                    "id": "c",
+                    "text": "By pivoting from 'Information' to 'Implementation Speed and Feedback'."
+                },
+                {
+                    "id": "d",
+                    "text": "By ignoring them."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Free information is ubiquitous. The value of a course or coach is the curation, speed, and feedback—things that YouTube cannot provide."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Calculate the ROI of your own product or service for a typical customer. If they pay you $X, how many hours or dollars do they save in return? Write out exactly how you would explain this 'Math of Value' to a skeptical prospect.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to perform ROI math. Look for specific numbers (hours saved, revenue increased) and a clear comparison between the cost of the tool and the magnitude of the problem."
+        }
+    ]
+}

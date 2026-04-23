@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the Dietary Inflammatory Index (DII) measure?",
+            "options": [
+                { "id": "opt1", "text": "The total calorie content of your diet" },
+                { "id": "opt2", "text": "How many servings of fruits and vegetables you eat per day" },
+                { "id": "opt3", "text": "The overall inflammatory potential of your entire diet based on 45 food parameters" },
+                { "id": "opt4", "text": "The amount of protein in your diet relative to carbohydrates" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The DII is a literature-derived scoring tool that rates the inflammatory potential of your entire diet based on 45 food parameters. Negative scores indicate anti-inflammatory diets, scores near zero are neutral, and positive scores indicate pro-inflammatory diets. It was developed by reviewing nearly 2,000 peer-reviewed studies."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the NHANES analysis of 70,190 participants, people with the most pro-inflammatory diets had what increased odds of depression?",
+            "options": [
+                { "id": "opt1", "text": "12% higher odds" },
+                { "id": "opt2", "text": "35% higher odds" },
+                { "id": "opt3", "text": "55% higher odds" },
+                { "id": "opt4", "text": "82% higher odds" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The NHANES analysis of 70,190 participants found that people in the highest DII quartile (most pro-inflammatory diets) had 82% higher odds of depression compared to the lowest quartile. The relationship was present across genders, age groups, and racial/ethnic groups."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is the dose-response relationship between DII scores and depression considered particularly strong evidence?",
+            "options": [
+                { "id": "opt1", "text": "It means only people with the worst diets need to worry about depression" },
+                { "id": "opt2", "text": "It means every incremental improvement in dietary inflammation is associated with a proportional reduction in depression risk" },
+                { "id": "opt3", "text": "It proves that diet is the only cause of depression" },
+                { "id": "opt4", "text": "It means you must achieve a perfect anti-inflammatory diet to see any benefit" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The dose-response relationship means each increment in dietary inflammation is associated with a proportional increase in depression risk — and conversely, every improvement helps. You do not need a perfect diet to benefit. This linear, proportional pattern is one of the strongest indicators of a causal relationship in epidemiology."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which dietary pattern consistently scores as the most anti-inflammatory in DII analyses?",
+            "options": [
+                { "id": "opt1", "text": "A high-protein, zero-carbohydrate diet" },
+                { "id": "opt2", "text": "A diet consisting entirely of supplements and meal replacement shakes" },
+                { "id": "opt3", "text": "The Mediterranean diet — emphasizing olive oil, vegetables, fruits, fish, legumes, and nuts" },
+                { "id": "opt4", "text": "A diet focused exclusively on organic meat and dairy" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Mediterranean diet, with its emphasis on olive oil, vegetables, fruits, fish, legumes, nuts, and moderate wine, consistently scores as one of the most anti-inflammatory patterns in DII analyses. It aligns naturally with gut-brain supportive eating and is associated with lower depression risk."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'shift, don't switch' approach to lowering dietary inflammation?",
+            "options": [
+                { "id": "opt1", "text": "Completely overhaul your diet overnight to eliminate all pro-inflammatory foods" },
+                { "id": "opt2", "text": "Focus on adding anti-inflammatory foods gradually rather than dramatic elimination, since even modest improvements reduce depression risk" },
+                { "id": "opt3", "text": "Only eat raw foods for 30 days to reset your inflammatory markers" },
+                { "id": "opt4", "text": "Take anti-inflammatory supplements instead of changing your diet" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 'shift, don't switch' approach recommends gradual additions of anti-inflammatory foods rather than overnight overhauls. Research shows that even modest improvements in DII score are associated with reduced depression risk. When you add more anti-inflammatory foods, they naturally displace some pro-inflammatory ones without the psychological burden of deprivation."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "11",
+    "title": "Dietary Inflammation and the DII Score - Quiz"
+}

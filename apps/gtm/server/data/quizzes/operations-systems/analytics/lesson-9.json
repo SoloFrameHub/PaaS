@@ -1,0 +1,69 @@
+{
+  "lessonId": "9",
+  "courseId": "analytics",
+  "sectionId": "operations-systems",
+  "title": "Weekly Metrics Review Ritual",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the minimum number of weeks of data needed before making decisions based on metrics patterns?",
+      "options": [
+        { "id": "a", "text": "1 week" },
+        { "id": "b", "text": "2 weeks" },
+        { "id": "c", "text": "4 weeks" },
+        { "id": "d", "text": "12 weeks" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "You need 4 weeks minimum to see patterns. Week 1 might be an outlier. Week 4 confirms a trend. The rule: observe for 3 weeks, then act in week 4."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to the lesson, what increased Jake's follow-through rate from 40% to 85%?",
+      "options": [
+        { "id": "a", "text": "Buying a more expensive CRM" },
+        { "id": "b", "text": "Working longer hours" },
+        {
+          "id": "c",
+          "text": "Texting his 3 action items to his advisor every Friday"
+        },
+        { "id": "d", "text": "Hiring a part-time analyst" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "External accountability was the key. Jake texted his 3 action items to his advisor every Friday. Research shows written accountability increases goal achievement by 42%. The act of reporting creates discipline."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How many action items should you identify at the end of each weekly review?",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "10" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Maximum 3 actions per week. More than 3 means you won't do any of them. Each action must be specific, measurable, and based on data from the review — not vague aspirations."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should only review metrics when things feel bad to avoid wasting time during good weeks.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Reviewing only when things feel bad creates panic-driven decisions. Review every Friday — good weeks and bad weeks. Consistency reveals patterns that panic obscures."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your weekly metrics review ritual. When will you do it? What 5 parts will you cover? Who will be your accountability partner, and how will you share your action items with them?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response specifies a fixed day and time for the review, covers the 5-part agenda (funnel, velocity, forecast, channel, actions), identifies a specific accountability partner or mechanism, and commits to a minimum 8-week trial period."
+    }
+  ]
+}

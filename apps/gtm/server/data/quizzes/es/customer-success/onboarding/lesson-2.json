@@ -1,0 +1,97 @@
+{
+  "lessonId": "2",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Pon a prueba tus habilidades de mapeo de hitos",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia principal entre una función y un hito?",
+      "options": [
+        "Las funciones son técnicas, los hitos son resultados de negocio",
+        "Las funciones son lo que hace tu producto, los hitos son lo que logra tu cliente",
+        "Las funciones son para desarrolladores, los hitos son para clientes",
+        "Las funciones son medibles, los hitos son subjetivos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los hitos se centran en los resultados del cliente, no en las capacidades del producto. 'Generó el primer informe' (hito) vs 'Tiene una función de informes' (función)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Según la lección, ¿qué % de la fuga en SaaS ocurre en los primeros 90 días?",
+      "options": ["20-30%", "40-60%", "70-80%", "90%+"],
+      "correctAnswer": 1,
+      "explanation": "El 40-60% de toda la fuga en SaaS ocurre en los primeros 90 días, haciendo del onboarding la inversión de retención de mayor apalancamiento."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el objetivo de Tiempo hasta el Primer Valor (TTFV) para los productos SaaS de autoservicio?",
+      "options": [
+        "Menos de 1 hora",
+        "Menos de 24 horas",
+        "Menos de 7 días",
+        "Menos de 30 días"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El SaaS de autoservicio debería apuntar a un TTFV menor a 24 horas. Cada hora que reduces el TTFV mejora la retención en un 2-5%."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Un cliente se registró hace 8 días, completó la configuración el Día 1, pero no ha vuelto a iniciar sesión. ¿Cómo deberías clasificarlo?",
+      "options": [
+        "En curso",
+        "Estancado (necesita empujón)",
+        "En riesgo (necesita contacto personal)",
+        "Perdido"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Cero engagement después de la configuración inicial en el Día 8 = en riesgo. Esto requiere contacto personal, no solo un empujón automatizado."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la longitud óptima para una lista de verificación de onboarding en la app?",
+      "options": [
+        "1-2 elementos",
+        "3-5 elementos",
+        "7-10 elementos",
+        "Los que sean necesarios para cubrir todas las funciones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Máximo 3-5 elementos. Más que eso abruma a los usuarios y reduce las tasas de completado. Céntrate en los hitos, no en las funciones."
+    },
+    {
+      "id": "q6",
+      "type": "true-false",
+      "question": "Verdadero o Falso: Los usuarios de prueba gratuita y los clientes de pago deberían recibir experiencias de onboarding idénticas.",
+      "correctAnswer": false,
+      "explanation": "Falso. El onboarding por niveles es más eficiente para los fundadores en solitario. Automatiza las pruebas gratuitas, agrega un toque personal para los clientes de pago según el ARPU."
+    },
+    {
+      "id": "q7",
+      "type": "multiple-choice",
+      "question": "Según la lección, ¿cuántas veces más probabilidades tienen los usuarios que completan una lista de verificación de onboarding de convertirse en clientes a largo plazo?",
+      "options": ["1.5x", "2x", "3x", "5x"],
+      "correctAnswer": 2,
+      "explanation": "3 veces más probabilidades. Las listas crean una sensación de progreso y dan a los usuarios un camino claro hacia el valor."
+    },
+    {
+      "id": "q8",
+      "type": "multiple-choice",
+      "question": "¿Qué es el concepto del 'número mágico' en el onboarding SaaS?",
+      "options": [
+        "El número de funciones que un usuario debe probar",
+        "El número de días hasta el primer pago",
+        "Un umbral de acción específico que predice la retención",
+        "El número de tickets de soporte antes de la fuga"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El número mágico es un umbral de acción que predice la retención (p.ej., los 2,000 mensajes de Slack, o 3 proyectos creados en 14 días)."
+    }
+  ]
+}

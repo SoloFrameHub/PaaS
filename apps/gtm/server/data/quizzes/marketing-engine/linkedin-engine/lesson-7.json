@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "7",
+    "lessonTitle": "Engagement Strategy",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Top 10' commenting strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To become friends with famous influencers."
+                },
+                {
+                    "id": "b",
+                    "text": "To 'Steal Relevance' by appearing in the feeds of your ICP who follow those influencers."
+                },
+                {
+                    "id": "c",
+                    "text": "To annoy your competitors."
+                },
+                {
+                    "id": "d",
+                    "text": "To get more likes from strangers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "By leaving high-value comments on posts where your ICP is already hanging out, you expose your brand and expertise to the right audience without needing your own massive reach.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the '3-Tier Reply System,' what is the correct action for a 'Tier 3' (High-Intent) comment?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Simply 'Like' the comment and move on."
+                },
+                {
+                    "id": "b",
+                    "text": "Reply with a deep-dive answer and then move to a DM to continue the conversation privately."
+                },
+                {
+                    "id": "c",
+                    "text": "Ignore it to avoid sounding desperate."
+                },
+                {
+                    "id": "d",
+                    "text": "Delete the comment to prevent competitors from seeing the lead."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-intent comments are a signal that the prospect is ready for a more personal interaction. Transitioning to DMs (with permission) is the first step toward a sales conversation.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Contextual Permission' in the context of LinkedIn DMs?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A legal document signed by the user."
+                },
+                {
+                    "id": "b",
+                    "text": "Using a recent interaction (like a comment on your post) as a relevant reason to start a private conversation."
+                },
+                {
+                    "id": "c",
+                    "text": "Asking LinkedIn's support team for permission to message someone."
+                },
+                {
+                    "id": "d",
+                    "text": "The permission you get when someone accepts your connection request."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Contextual permission removes the 'Cold' from 'Cold Outreach.' It makes your message feel like a natural extension of a previous interaction rather than a random pitch.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is a high-value comment (5+ words) worth more than a 'Like' in the LinkedIn algorithm?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it takes longer to write."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it signals deep interest and starts a dialogue, which the algorithm prioritizes for distribution."
+                },
+                {
+                    "id": "c",
+                    "text": "It isn't; likes are the most important metric."
+                },
+                {
+                    "id": "d",
+                    "text": "Because comments aren't affected by AI."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Dialogue is the lifeblood of a social network. The algorithm wants to show users content that sparks conversation, not just passive agreement.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Who should be included in your '90-Day Bump' engagement strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Only new prospects you've never met."
+                },
+                {
+                    "id": "b",
+                    "text": "Past clients, lost leads, and existing connections who have 'gone cold'."
+                },
+                {
+                    "id": "c",
+                    "text": "Random people with a 'Premium' LinkedIn account."
+                },
+                {
+                    "id": "d",
+                    "text": "Only people who have more followers than you."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Nurturing existing connections is a low-effort, high-reward lead gen strategy. A simple comment reminds them you are still the trusted practitioner they once considered.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify one influencer in your niche right now. What is the #1 'Pain Point' they posted about recently? If you were to leave a 'Practitioner-level' comment on that post today, what specific insight from your experience would you share to attract their audience to your profile?",
+            "promptHints": [
+                "Find a post with high engagement from your ICP.",
+                "Think of a nuance or 'Hard Truth' the influencer missed.",
+                "Ensure your comment adds value rather than just agreeing."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "6"
+        ],
+        "unlocks": [
+            "8"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Engagement Strategy - Quiz"
+}

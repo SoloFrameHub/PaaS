@@ -1,0 +1,141 @@
+{
+    "lessonId": "3",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "The LARA Framework Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the 'L' in LARA stand for, and why is it critical?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Leads - you should focus on getting more leads."
+                },
+                {
+                    "id": "b",
+                    "text": "Leverage - you should use the objection to leverage more information."
+                },
+                {
+                    "id": "c",
+                    "text": "Listen - you must fully hear the prospect without interrupting to avoid looking defensive."
+                },
+                {
+                    "id": "d",
+                    "text": "logic - you should use logical arguments to win the debate."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Interrupting makes you look defensive and desperate. Listening fully builds trust and ensures you address the actual concern, not just your assumption of it."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which word should you avoid using immediately after 'Acknowledging' an objection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "And"
+                },
+                {
+                    "id": "b",
+                    "text": "But"
+                },
+                {
+                    "id": "c",
+                    "text": "Understand"
+                },
+                {
+                    "id": "d",
+                    "text": "Fair"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The word 'But' is an eraser. It negates your acknowledgment and signals to the prospect that you didn't actually value their input."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Acknowledge' step in the LARA framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To agree with the prospect that your price is too high."
+                },
+                {
+                    "id": "b",
+                    "text": "To stall for time while you think of an answer."
+                },
+                {
+                    "id": "c",
+                    "text": "To defuse tension by validating that their concern makes sense from their perspective."
+                },
+                {
+                    "id": "d",
+                    "text": "To show the prospect that you are smarter than them."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Acknowledgment defuses the 'fight or flight' response in the prospect. Once they feel heard and respected, they are more open to your actual response."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why should you always end your response with an 'Ask'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the prospect feel slightly uncomfortable."
+                },
+                {
+                    "id": "b",
+                    "text": "To reclaim the lead and check if the concern has been resolved."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it's a rule of sales that you must always ask for money."
+                },
+                {
+                    "id": "d",
+                    "text": "To summarize the entire conversation again."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Questions lead the conversation. Ending on a statement leaves the door open for silence or unresolved doubt. An 'Ask' checks if the objection is actually 'dead'."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the 'LARA in Practice' scenario for Timing, how did the founder 'Respond' to 'Call me in six months'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By agreeing and scheduling a call for 6 months out."
+                },
+                {
+                    "id": "b",
+                    "text": "By offering a discount for signing now."
+                },
+                {
+                    "id": "c",
+                    "text": "By explaining that implementing now during their migration would actually save them time through automation."
+                },
+                {
+                    "id": "d",
+                    "text": "By telling the prospect that waiting 6 months was a bad business decision."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The founder used the context of the migration (the very thing causing the delay) as the reason why implementing *now* was actually the superior strategy."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "The lesson mentions the 'Golden Silence' (waiting 2-3 seconds after an objection). Why is this particularly difficult for solo founders, and how will you hold yourself accountable to practicing it in your next three calls?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's self-awareness regarding 'reactive' communication. Look for an understanding of the relationship between anxiety and silence, and a concrete plan for accountability (e.g., 'I will count to 3 in my head' or 'I will keep my hand over my mouth')."
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "lessonId": "5",
+    "courseId": "onboarding",
+    "sectionId": "customer-success",
+    "title": "Day 7 Email Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of customers who achieve a meaningful outcome in the first 7 days are still active at Day 60?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "45%"
+                },
+                {
+                    "id": "b",
+                    "text": "60%"
+                },
+                {
+                    "id": "c",
+                    "text": "75%"
+                },
+                {
+                    "id": "d",
+                    "text": "85%"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "85% of customers who hit their first win within 7 days remain active at Day 60, compared to only 15% of those who don't."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What's the primary difference between a 'First Win' email and a 'Stalled' email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "First Win is longer and more detailed"
+                },
+                {
+                    "id": "b",
+                    "text": "First Win celebrates achievement; Stalled removes friction"
+                },
+                {
+                    "id": "c",
+                    "text": "Stalled emails should be sent earlier"
+                },
+                {
+                    "id": "d",
+                    "text": "First Win emails should include upsells"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "First Win emails celebrate what the customer achieved and point to the next milestone. Stalled emails identify blockers and provide the easiest path to first value."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which trigger type typically gets higher engagement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Time-based (Day 7 regardless of behavior)"
+                },
+                {
+                    "id": "b",
+                    "text": "Behavioral (triggered by specific actions)"
+                },
+                {
+                    "id": "c",
+                    "text": "Both perform equally"
+                },
+                {
+                    "id": "d",
+                    "text": "Neither — customers ignore onboarding emails"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Behavioral triggers get 3-5x higher engagement because they're contextually relevant — the email arrives right when the customer completes an action."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "True or False: Day 7 emails should be signed with the company name, not the founder's name, to appear more professional.",
+            "correctAnswer": "b",
+            "explanation": "False. Emails from the founder's personal name get 20-30% higher open rates. Day 7 is a relationship moment, not a brand moment.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "A customer logged in 4 times but hasn't completed their first milestone. Which email should they receive?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "First Win email"
+                },
+                {
+                    "id": "b",
+                    "text": "Stalled but Active email (help offer)"
+                },
+                {
+                    "id": "c",
+                    "text": "Stalled Ghost email (re-engagement)"
+                },
+                {
+                    "id": "d",
+                    "text": "No email — wait until Day 14"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This customer is engaged but stuck. They need the Stalled email with a direct offer to help, not a celebration or a generic re-engagement message."
+        }
+    ]
+}

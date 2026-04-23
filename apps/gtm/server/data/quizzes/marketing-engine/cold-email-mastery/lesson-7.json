@@ -1,0 +1,142 @@
+{
+    "lessonId": "7",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "The CTA - Getting Responses Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of a cold email CTA (Call to Action)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To close a contract on the spot"
+                },
+                {
+                    "id": "b",
+                    "text": "To get the prospect to visit your website"
+                },
+                {
+                    "id": "c",
+                    "text": "To start a conversation and get a low-friction reply"
+                },
+                {
+                    "id": "d",
+                    "text": "To get them to sign up for your newsletter"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Cold emails are about building relationships. Attempting to skip straight to a meeting or a sale is 'High Friction' and leads to lower response rates."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is sending a 'Calendar Link' (like Calendly) in a first cold email discouraged?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect might not have a calendar"
+                },
+                {
+                    "id": "b",
+                    "text": "It is considered arrogant and puts the 'work' of scheduling on the prospect before rapport is built"
+                },
+                {
+                    "id": "c",
+                    "text": "Calendar links are usually broken"
+                },
+                {
+                    "id": "d",
+                    "text": "Google blocks all emails with links"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You are a stranger asking for their time. Forcing them to navigate your schedule before they've even agreed to a chat is perceived as self-important and high effort."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is a 'Binary Question' in a CTA?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A question about computer programming"
+                },
+                {
+                    "id": "b",
+                    "text": "A question that requires a long, detailed essay to answer"
+                },
+                {
+                    "id": "c",
+                    "text": "A simple question that can be answered with a clear 'Yes' or 'No' or 'Not right now'"
+                },
+                {
+                    "id": "d",
+                    "text": "A question with two different parts"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Binary questions lower the cognitive load for the recipient. It takes 2 seconds to reply 'Yes, send it over' vs. 10 minutes to explain why they aren't interested."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these is a 'Permission-Based' CTA?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Please reply to this email immediately"
+                },
+                {
+                    "id": "b",
+                    "text": "I have a quick video showing how this works—mind if I send it over?"
+                },
+                {
+                    "id": "c",
+                    "text": "Buy my product at the link below"
+                },
+                {
+                    "id": "d",
+                    "text": "Let me know your thoughts on this"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Permission-based asks build micro-commitments. Once a prospect says 'Yes' to a small thing (like an information resource), they are more likely to say 'Yes' to a larger thing (like a meeting)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Let me know your thoughts' considered a weak CTA?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's too aggressive"
+                },
+                {
+                    "id": "b",
+                    "text": "It's too vague and requires the prospect to do all the work of deciding the next step"
+                },
+                {
+                    "id": "c",
+                    "text": "It implies you don't have thoughts of your own"
+                },
+                {
+                    "id": "d",
+                    "text": "It is a spam trigger word"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A good CTA is specific. 'Let me know your thoughts' is an open-ended burden. 'Would you find this useful?' is a specific query."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Write a 'Low-Friction' CTA for your business. Then, write a 'High-Friction' one. Why would a prospect who is 'on the fence' reply to the low-friction one but ignore the high-friction one?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder understands the cognitive load difference. The low-friction CTA should definitely NOT include a meeting link."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

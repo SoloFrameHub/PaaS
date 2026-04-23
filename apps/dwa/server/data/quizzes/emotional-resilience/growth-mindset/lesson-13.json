@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is growth mindset of emotion and how does it relate to emotion regulation strategies?",
+            "options": [
+                {"id": "opt1", "text": "Believing you should never feel negative emotions"},
+                {"id": "opt2", "text": "Believing emotions are controllable and changeable, which predicts greater use of cognitive reappraisal (adaptive) and less suppression (maladaptive)"},
+                {"id": "opt3", "text": "Believing emotions don't matter and should be ignored"},
+                {"id": "opt4", "text": "Believing only positive emotions are acceptable"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Growth mindset of emotion is the belief that emotions are controllable and changeable—you can learn to influence and manage them. Research shows people with growth emotion mindset use healthier regulation strategies: more cognitive reappraisal (changing interpretation to change emotion, r = 0.47 with resilience) and less suppression (pushing feelings down, which is maladaptive). If you believe emotions are fixed ('they just happen to me'), you won't try regulating them skillfully. If you believe they're changeable, you engage active regulation strategies."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the key distinction between growth mindset of emotion and toxic positivity?",
+            "options": [
+                {"id": "opt1", "text": "They are identical—both require staying positive always"},
+                {"id": "opt2", "text": "Growth emotion mindset acknowledges emotions AND believes you can regulate them; toxic positivity dismisses negative emotions and demands forced optimism"},
+                {"id": "opt3", "text": "Growth mindset is for happy people; toxic positivity is for sad people"},
+                {"id": "opt4", "text": "Toxic positivity is evidence-based; growth mindset is not"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Critical distinction: Growth mindset of emotion says 'emotions are real experiences I can learn to influence' (validation + agency). Toxic positivity says 'don't feel negative emotions, just be positive!' (denial + suppression). Growth mindset doesn't mean you can force yourself to feel happy or eliminate sadness—it means you have agency over how you interpret situations, how long you stay in emotional states, and how much emotions drive behavior. This is about regulation skills, not emotional denial."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is emotional suppression considered maladaptive according to research?",
+            "options": [
+                {"id": "opt1", "text": "Suppression is actually the most effective emotion regulation strategy"},
+                {"id": "opt2", "text": "Suppression increases physiological arousal, impairs memory, damages relationships, and doesn't actually reduce negative emotion long-term"},
+                {"id": "opt3", "text": "Suppression only harms people with anxiety disorders"},
+                {"id": "opt4", "text": "Suppression has no psychological effects"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently shows suppression (pushing emotions down, hiding expression) is maladaptive: it increases physiological arousal even while hiding outward signs, impairs memory formation, damages social relationships (people perceive emotional inauthenticity), and paradoxically doesn't reduce negative emotion long-term. You still have the threat appraisal generating emotion—you're just hiding the reaction. Reappraisal, by contrast, changes the interpretation generating emotion, which is why it's more effective and healthier."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what does having a growth mindset of emotion allow you to influence?",
+            "options": [
+                {"id": "opt1", "text": "Whether you feel emotions at all—you can eliminate negative feelings"},
+                {"id": "opt2", "text": "How you interpret emotional situations (reappraisal), how long you stay in emotional states (regulation), and how much emotions drive behavior (psychological flexibility)"},
+                {"id": "opt3", "text": "Other people's emotions"},
+                {"id": "opt4", "text": "Nothing—emotions are completely uncontrollable"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Growth mindset of emotion is about agency over regulation, not control over feelings. You can't force yourself to feel happy or eliminate sadness entirely. But you CAN influence: (1) How you interpret situations (reappraisal—'this is feedback' vs. 'this is failure'), (2) How long you stay in emotional states (regulation strategies shorten duration), (3) How much emotions drive behavior (psychological flexibility—feeling anxious AND acting on values anyway). This realistic view avoids both helplessness ('emotions just happen') and toxic positivity ('never feel bad')."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on your current emotion mindset: Do you tend to think emotions 'happen to you' (fixed) or that you can influence them through interpretation and regulation (growth)? Pick a recent strong emotion and practice: What was the automatic interpretation? What alternative interpretation could you generate? How might that change the emotional experience?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "13",
+    "title": "Growth Mindset of Emotion - Quiz"
+}

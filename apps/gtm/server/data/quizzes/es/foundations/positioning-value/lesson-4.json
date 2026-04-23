@@ -1,0 +1,166 @@
+{
+  "lessonId": "4",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Traducción Característica → Beneficio → Resultado",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué es una 'Característica' en el contexto de esta lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La transformación emocional del cliente"
+        },
+        {
+          "id": "b",
+          "text": "Una declaración factual sobre lo que el producto es o tiene"
+        },
+        {
+          "id": "c",
+          "text": "La cantidad de dinero que un cliente ahorra usando el producto"
+        },
+        {
+          "id": "d",
+          "text": "Un eslogan de marketing usado en la página de inicio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Una Característica es una realidad técnica o declaración factual (ej., 'cifrado de 128 bits'). Describe qué es el producto, pero todavía no por qué importa."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué pregunta te ayuda a traducir una Característica en un Beneficio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¿Cuánto cuesta esto?"
+        },
+        {
+          "id": "b",
+          "text": "¿Y qué?"
+        },
+        {
+          "id": "c",
+          "text": "¿Y ahora qué?"
+        },
+        {
+          "id": "d",
+          "text": "¿Quién es el héroe?"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Preguntar '¿Y qué?' te obliga a explicar la ventaja funcional de una característica. (ej., Característica: 'Sincronización en tiempo real' → ¿Y qué? → Beneficio: 'Tu equipo siempre ve las últimas actualizaciones.')"
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la característica principal de un 'Resultado'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es una especificación técnica"
+        },
+        {
+          "id": "b",
+          "text": "Describe qué tan bien funciona el producto"
+        },
+        {
+          "id": "c",
+          "text": "Es una transformación de negocio o personal medible (Tiempo, Dinero, Riesgo)"
+        },
+        {
+          "id": "d",
+          "text": "Es la declaración de misión de la marca"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los Resultados son sobre el resultado para el cliente, típicamente medidos en términos de tiempo ahorrado, dinero ganado/ahorrado o riesgo reducido. Esto es lo que los prospectos realmente compran."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué es la prueba del 'Dólar/Reloj' mencionada en la lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un método para cronometrar cuánto dura una llamada de ventas"
+        },
+        {
+          "id": "b",
+          "text": "Verificar si el cliente puede medir el resultado en Tiempo o Dinero"
+        },
+        {
+          "id": "c",
+          "text": "Una forma de calcular el costo de desarrollo"
+        },
+        {
+          "id": "d",
+          "text": "Comparar tu precio con la velocidad del reloj del competidor"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si un beneficio no puede medirse con un 'signo de dólar' (dinero) o un 'ícono de reloj' (tiempo), aún no has llegado al nivel de 'Resultado' de la mensajería."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué vender Resultados es mejor que vender Características para productos de alto valor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hace que el producto parezca más complejo"
+        },
+        {
+          "id": "b",
+          "text": "Te permite anclar el precio al valor creado, no al costo del software"
+        },
+        {
+          "id": "c",
+          "text": "Evita que los competidores roben tus secretos técnicos"
+        },
+        {
+          "id": "d",
+          "text": "Los Resultados son más fáciles de construir para los desarrolladores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Cuando vendes resultados, te conviertes en un socio en lugar de un commodity. Puedes justificar un precio más alto porque ese precio es relativo al enorme valor o ahorro que logra el cliente."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "question": "En el marco del 'Puente de Transformación' para creadores, ¿en qué debería centrarse el 80% de tu mensajería?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los módulos y plantillas de tu curso"
+        },
+        {
+          "id": "b",
+          "text": "El Punto A (Infierno Actual) y el Punto B (Cielo Deseado)"
+        },
+        {
+          "id": "c",
+          "text": "Tus credenciales y experiencia personal"
+        },
+        {
+          "id": "d",
+          "text": "El precio y las opciones de pago"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El Puente de Transformación enseña que deberías pasar el 80% de tu mensajería en el dolor (Punto A) y el destino (Punto B), y solo el 20% en el 'cómo' (tu oferta). Haz que SIENTAN la transformación primero."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Elige una característica principal de tu producto. Tradúcela a través de las tres etapas: Característica → Beneficio → Resultado. Asegúrate de que el resultado supere la prueba del 'Dólar/Reloj'.",
+      "minLength": 100,
+      "promptForAI": "Evalúa la capacidad del estudiante para traducir una característica en un resultado medible. Verifica si el resultado final menciona claramente tiempo ahorrado, dinero ganado/ahorrado o riesgo reducido. Proporciona retroalimentación si se quedan atascados en el nivel de 'Beneficio'."
+    }
+  ],
+  "passingScore": 70
+}

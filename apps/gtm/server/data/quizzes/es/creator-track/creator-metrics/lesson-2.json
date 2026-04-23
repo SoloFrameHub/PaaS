@@ -1,0 +1,88 @@
+{
+  "lessonId": "2",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Optimización de Tasa de Asistencia",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Un creador realiza un webinar en vivo con 600 registrados y 180 asisten. ¿Cuál es su tasa de asistencia y cómo se compara con los puntos de referencia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30% -- excelente, por encima del promedio para webinars en vivo"
+        },
+        {
+          "id": "b",
+          "text": "30% -- promedio, dentro del rango típico de 25-35% sin optimización"
+        },
+        {
+          "id": "c",
+          "text": "30% -- pobre, muy por debajo del objetivo de 45-55% para webinars en vivo"
+        },
+        { "id": "d", "text": "33% -- bueno, en el rango saludable de 35-45%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "180/600 = 30%, lo cual cae en el rango 'promedio' de 25-35% para webinars en vivo. Es donde la mayoría de los creadores quedan sin optimización específica. Tasas de asistencia buenas (35-45%) requieren un fuerte engagement previo al evento y secuencias de recordatorios optimizadas."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Según el marco de recordatorios PACE, ¿qué significa la 'C' y por qué es importante?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calendario -- recordarles que agreguen el evento a su calendario aumenta el compromiso"
+        },
+        {
+          "id": "b",
+          "text": "Consecuencia -- recordarles lo que les cuesta seguir estancados crea urgencia para asistir"
+        },
+        {
+          "id": "c",
+          "text": "Comunidad -- mostrar cuántas personas asistirán proporciona prueba social"
+        },
+        {
+          "id": "d",
+          "text": "Confirmación -- pedirles que confirmen asistencia refuerza el compromiso"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "En el marco PACE, la C significa Consecuencia -- recordar a los prospectos lo que les cuesta seguir estancados. Por ejemplo: 'Cada semana sin este sistema es otra semana adivinando.' Esto crea urgencia emocional que los recordatorios genéricos ('¡No olvides lo de mañana!') no logran generar."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué táctica individual puede aumentar la tasa de asistencia a webinars en un 10-15% según la lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enviar más de 10 emails recordatorios en la semana antes del evento"
+        },
+        {
+          "id": "b",
+          "text": "Ofrecer una repetición a todos los que se registren pero no puedan asistir"
+        },
+        {
+          "id": "c",
+          "text": "Agregar recordatorios por SMS/WhatsApp a tu secuencia"
+        },
+        {
+          "id": "d",
+          "text": "Hacer el webinar los sábados por la mañana en lugar de entre semana por la noche"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La lección establece que los recordatorios por SMS por sí solos pueden aumentar la tasa de asistencia en un 10-15%. Es uno de los cambios individuales de mayor impacto que un creador puede hacer. La lección recomienda recopilar números de teléfono al registrarse y enviar recordatorios por SMS o WhatsApp 60 minutos y 15 minutos antes."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Describe tu secuencia actual de recordatorios para tu evento más reciente (webinar, taller, llamada, etc.). ¿Cuántos puntos de contacto existen entre el registro y el evento? Basándote en la secuencia optimizada de esta lección, ¿qué puntos de contacto específicos te faltan y cuál agregarías primero?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante identificó brechas específicas en su secuencia de recordatorios. Busca conciencia sobre los puntos de contacto del mismo día, recordatorios por SMS/WhatsApp y micro-pasos de compromiso. Anímalo a priorizar la adición individual de mayor impacto en lugar de intentar implementar todo a la vez."
+    }
+  ]
+}

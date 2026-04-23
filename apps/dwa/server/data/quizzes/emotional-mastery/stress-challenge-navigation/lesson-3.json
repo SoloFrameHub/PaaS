@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the biopsychosocial model (BPSM) of challenge and threat states?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A model that says all stress is harmful and should be avoided"
+                },
+                {
+                    "id": "opt2",
+                    "text": "In motivated performance situations, challenge states (resources match/exceed demands) produce efficient cardiovascular responses and better performance; threat states (demands exceed resources) produce inefficient responses and impair performance"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A theory that only applies to professional athletes"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A model that says personality type determines stress response"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The BPSM (developed by Blascovich and colleagues) distinguishes challenge states from threat states based on resource-to-demand ratio. In challenge states, where you appraise your resources as matching or exceeding demands, your body produces an efficient cardiovascular profile (increased cardiac output, decreased peripheral resistance) that facilitates performance. In threat states, where demands are appraised as exceeding resources, the CV profile is less efficient and performance suffers. A 2025 meta-analysis (62 studies, N=7,418) confirmed these patterns with small but reliable effect sizes across education and sport domains."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for challenge-threat reframing interventions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "No evidence—it's just motivational speaking"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE to STRONG—meta-analytic evidence (62 studies) shows small but reliable effects on performance when resources are reappraised"
+                },
+                {
+                    "id": "opt3",
+                    "text": "WEAK—only one small study supports it"
+                },
+                {
+                    "id": "opt4",
+                    "text": "STRONG for all types of pressure in all situations"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Challenge-threat reframing has MODERATE to STRONG evidence in motivated performance situations. The 2025 updated systematic review and meta-analysis covering 62 studies (N=7,418, 2017–2024) found that individuals in challenge states achieve better performance outcomes than those in threat states, with small but reliable effect sizes and generally low risk of bias. Importantly, resource appraisals can be manipulated—instructional reframing shifts cardiovascular reactivity from threat to challenge patterns. However, this is NOT universal: it works for motivated performance tasks where the person has relevant skills, not for overwhelming structural adversity or demands that genuinely exceed reasonable coping capacity."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When does challenge reframing NOT work as an intervention?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Challenge reframing works universally for all types of pressure"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When demands genuinely exceed coping resources (overwhelming structural adversity, trauma, situations requiring skills you don't have)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Challenge reframing never works—it's just positive thinking"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only when you're not trying hard enough"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Challenge reframing is evidence-based for motivated performance situations—tasks where you have relevant skills, engagement, and evaluable demands. It does NOT transfer to situations involving overwhelming structural adversity, trauma, harassment, or demands that genuinely exceed any reasonable coping capacity. You cannot simply reframe your way out of unsafe working conditions, chronic abuse, or situations where you lack the necessary skills or resources. This limitation is critical: framing all stress as individually manageable through reappraisal minimizes structural stressors and inappropriately places responsibility on the individual."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is Stress Inoculation Training (SIT), and what is its evidence base?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A medical vaccine that prevents stress; no evidence"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A three-phase program (conceptualization, skill acquisition, graduated exposure) with MODERATE to STRONG evidence (37 studies, N=1,837) for reducing performance anxiety and enhancing stress performance"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A relaxation technique with weak evidence"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A cognitive-behavioral intervention that only works for PTSD"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Stress Inoculation Training (SIT), developed by Meichenbaum, is a structured three-phase program: 1) conceptualization (understanding stress response), 2) skill acquisition (learning coping strategies), and 3) application under graduated exposure (practicing skills in progressively challenging situations). A meta-analysis of 37 studies (N=1,837) found SIT effective for reducing performance anxiety, state anxiety, and enhancing performance under stress, with no significant limitations across settings or trainer types. This makes it one of the most robustly validated self-management frameworks available and well-suited for digital course delivery."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What safety consideration applies when teaching breathwork or body-focused exercises?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "No safety considerations—breathing exercises are safe for everyone"
+                },
+                {
+                    "id": "opt2",
+                    "text": "People with panic disorder or PTSD may experience dysregulation with unguided breathwork and should proceed carefully or consult a provider"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people with heart conditions need to be cautious"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Breathwork should never be taught in any context"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While slow breathing and body-focused practices have evidence for stress reduction in general populations, they can trigger dysregulation in people with panic disorder or PTSD. In panic disorder, focusing on body sensations (including breath) can trigger panic attacks. In PTSD, breathwork can activate trauma responses or dissociation. The VA/DoD 2023 clinical practice guideline notes that trauma-focused therapy (CPT, PE, EMDR) is required for PTSD, and unguided somatic practices may be counterproductive. Responsible courses must include clear guidance: proceed gently, stop if distressed, return to normal breathing, and consult a healthcare provider if uncertain."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "3",
+    "title": "The Stress-Challenge Spectrum: Appraisal Analysis - Quiz"
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three pillars of the physical foundation for anxiety resilience?",
+            "options": [
+                { "id": "opt1", "text": "Therapy, medication, and support groups" },
+                { "id": "opt2", "text": "Sleep, nutrition, and movement" },
+                { "id": "opt3", "text": "Breathing, grounding, and meditation" },
+                { "id": "opt4", "text": "Journaling, talking, and reading" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The three pillars are sleep (when your brain processes emotions and resets), nutrition (what you eat impacts brain chemistry through the gut-brain axis), and movement (burns off stress hormones and releases endorphins)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does poor sleep increase anxiety?",
+            "options": [
+                { "id": "opt1", "text": "Because you have more time to worry" },
+                { "id": "opt2", "text": "A lack of quality sleep leaves your amygdala (brain's alarm) on high alert" },
+                { "id": "opt3", "text": "Because sleep deprivation makes you hungry" },
+                { "id": "opt4", "text": "Because you miss your morning routine" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep is when your brain processes emotions, consolidates memories, and resets your nervous system. Without quality sleep, your amygdala (brain's alarm system) stays on high alert, making you more susceptible to anxiety."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the gut-brain axis?",
+            "options": [
+                { "id": "opt1", "text": "A type of exercise for your core muscles" },
+                { "id": "opt2", "text": "A powerful connection where an unhealthy gut can send stress signals to the brain" },
+                { "id": "opt3", "text": "A meditation technique focusing on the stomach" },
+                { "id": "opt4", "text": "The brain's control over appetite" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The gut-brain axis is a powerful connection between your digestive system and brain. An unhealthy gut can send stress signals to the brain, making what you eat directly impact your mood and brain chemistry."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What principle does the lesson emphasize about physical wellness habits?",
+            "options": [
+                { "id": "opt1", "text": "Intensity over consistency" },
+                { "id": "opt2", "text": "Consistency over intensity -- small daily actions beat occasional intense efforts" },
+                { "id": "opt3", "text": "You need at least 2 hours of exercise daily" },
+                { "id": "opt4", "text": "Diet changes are the only thing that matters" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Consistency over intensity is the key principle. A short walk every day is more beneficial for anxiety than one intense workout once a week. Small, sustainable changes build a strong foundation."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why are rhythmic movements like walking, swimming, or dancing particularly effective for anxiety?",
+            "options": [
+                { "id": "opt1", "text": "They burn the most calories" },
+                { "id": "opt2", "text": "They are particularly effective at soothing the nervous system" },
+                { "id": "opt3", "text": "They require no equipment" },
+                { "id": "opt4", "text": "They can be done indoors" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Rhythmic movements like walking, jogging, swimming, or dancing are particularly effective at soothing the nervous system. The repetitive, predictable nature of these activities has a calming effect on anxiety."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit-resilience",
+    "lessonId": "5",
+    "title": "The Physical Foundation - Quiz"
+}

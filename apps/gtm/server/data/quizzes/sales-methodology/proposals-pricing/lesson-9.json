@@ -1,0 +1,141 @@
+{
+    "lessonId": "9",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Proposal Tools and Delivery Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Hand-Delivery' strategy for proposals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Physically printing the proposal and mailing it via FedEx."
+                },
+                {
+                    "id": "b",
+                    "text": "Scheduling a brief 'Proposal Review' call to walk the prospect through the document before they read it alone."
+                },
+                {
+                    "id": "c",
+                    "text": "Hand-delivering the proposal to the CEO's home."
+                },
+                {
+                    "id": "d",
+                    "text": "Hand-writing the entire proposal on legal pads."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Reviewing the proposal together ensures you maintain control of the narrative, explain the ROI logic, and address immediate questions before they focus solely on the price."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a major advantage of using 'Interactive' proposal tools (like PandaDoc or Proposify) over a standard PDF?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are always cheaper to use."
+                },
+                {
+                    "id": "b",
+                    "text": "They provide real-time tracking of when the prospect opens the document and which pages they spend time on."
+                },
+                {
+                    "id": "c",
+                    "text": "They automatically sign the contract for the client."
+                },
+                {
+                    "id": "d",
+                    "text": "They are easier for lawyers to edit."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sales intelligence (tracking engagement) allows you to time your follow-ups perfectly and understand the prospect's hidden concerns (e.g., if they spend 10 minutes on the Terms page)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If you see a prospect has re-opened a proposal multiple times in a single morning after weeks of silence, what does this usually indicate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They have accidentally clicked the link multiple times."
+                },
+                {
+                    "id": "b",
+                    "text": "They are likely in a meeting or actively discussing the deal internally right now."
+                },
+                {
+                    "id": "c",
+                    "text": "They are trying to hack your system."
+                },
+                {
+                    "id": "d",
+                    "text": "They have forgotten who you are."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A sudden burst of activity usually signals internal movement. This is a high-leverage time to send a helpful, non-pushy follow-up email."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the purpose of a 'Breakup' email in your follow-up cadence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To tell the prospect you never want to speak to them again."
+                },
+                {
+                    "id": "b",
+                    "text": "To professionally close the file, which often triggers a response from a prospect who was simply busy but still interested."
+                },
+                {
+                    "id": "c",
+                    "text": "To complain about how much time you've wasted."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for a date."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Psychologically, people don't like losing access to a solution. The breakup email gives them a graceful way to either re-engage or confirm the deal is dead so you can move on."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you send your first follow-up email after delivering a proposal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "One hour later."
+                },
+                {
+                    "id": "b",
+                    "text": "Approximately 2 days later, to check for delivery and answer initial questions."
+                },
+                {
+                    "id": "c",
+                    "text": "One month later."
+                },
+                {
+                    "id": "d",
+                    "text": "Never; wait for them to contact you."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "48 hours gives them enough time to review the document internally without you appearing over-eager or desperate."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Choose a deal that recently 'ghosted' you (stopped responding after you sent a proposal). If you had known exactly which pages they read and for how long, how would your follow-up have changed?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies how engagement data (e.g., 'They spent 5 minutes on price but 0 on ROI') would have allowed for a more targeted, value-driven follow-up."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "9",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Partnership Development Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between an 'Affiliate' and a 'Strategic' partnership?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Affiliates are for B2B; Strategic is for B2C."
+                },
+                {
+                    "id": "b",
+                    "text": "Affiliate is passive (commission-based); Strategic is active (collaboration-based)."
+                },
+                {
+                    "id": "c",
+                    "text": "Affiliate partners must be companies; Strategic partners must be individuals."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference between them."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Affiliate partnerships are transaction-focused, while strategic partnerships involve deeper collaboration to provide bundled value to a shared audience."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In identifying complementary partners, what does it mean to look 'Upstream'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Finding partners who have more money than you."
+                },
+                {
+                    "id": "b",
+                    "text": "Finding partners who serve the customer right before they are ready for your product."
+                },
+                {
+                    "id": "c",
+                    "text": "Finding partners who are based in the same city as you."
+                },
+                {
+                    "id": "d",
+                    "text": "Finding partners who are your direct competitors."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Upstream partners (like a web design agency for a SEO tool) are in a perfect position to recommend your product as the logical next step for their clients."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the biggest mistake founders make when pitching a partnership?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Offering too much value."
+                },
+                {
+                    "id": "b",
+                    "text": "Talking too much about their own features instead of the partner's audience's success."
+                },
+                {
+                    "id": "c",
+                    "text": "Using email instead of a phone call."
+                },
+                {
+                    "id": "d",
+                    "text": "Pitching to partners who are too small."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A successful pitch must be audience-centric. You must show the partner how your collaboration makes *their* product or service more valuable to *their* customers."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Filter' for evaluating a potential partnership?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Do they have more than 10,000 followers?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'Will this partnership make me famous?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'If my customer used both products together, would they be significantly more successful than if they used each alone?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Are they willing to pay me for the intro?'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "True partnerships are built on 'bundled value'—the idea that the combination of products/services is greater than the sum of its parts."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which co-marketing activity is considered the 'highest-converting' for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying a banner ad on the partner's site."
+                },
+                {
+                    "id": "b",
+                    "text": "A joint webinar or high-value educational workshop."
+                },
+                {
+                    "id": "c",
+                    "text": "A Twitter shout-out."
+                },
+                {
+                    "id": "d",
+                    "text": "Being listed in the 'Resource' section of their website."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Webinars provide a high-engagement environment where you can demonstrate your expertise and the combined value of the partnership to a qualified audience."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify one 'Upstream' partner for your business. What specific 'Gap' do their customers experience right before they are ready for your tool, and what value-first asset (e.g., a guide, a free audit, a template) could you offer that partner to fill that gap?",
+            "minLength": 100,
+            "promptForAI": "The user should identify a logical partner and a specific, valuable asset they could offer. Evaluate the response for its understanding of the 'Gap Identification' and 'Value-First Offer' framework."
+        }
+    ]
+}

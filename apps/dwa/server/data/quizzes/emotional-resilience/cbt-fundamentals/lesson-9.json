@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of a thought record in CBT?",
+            "options": [
+                {"id": "opt1", "text": "To vent your feelings and get them out on paper"},
+                {"id": "opt2", "text": "To catch automatic thoughts and examine them with evidence"},
+                {"id": "opt3", "text": "To track your mood changes throughout the day"},
+                {"id": "opt4", "text": "To replace negative thoughts with positive affirmations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. A thought record helps you identify the specific thought creating your emotion, then test it against reality. This creates distance between you and the thought, making it an object you can examine rather than an absolute truth."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why do you record the situation and emotion before identifying the thought?",
+            "options": [
+                {"id": "opt1", "text": "Because emotions are more important than thoughts"},
+                {"id": "opt2", "text": "Because context and emotional intensity help you find the specific thought that triggered the feeling"},
+                {"id": "opt3", "text": "Because you should always work backwards from feelings to thoughts"},
+                {"id": "opt4", "text": "Because the situation directly causes emotions without thoughts"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. The situation gives context ('What was happening?'), and the emotion tells you which thought to look for ('What thought would create anxiety vs. sadness?'). This makes it easier to identify the automatic thought rather than a general worry."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is an automatic thought?",
+            "options": [
+                {"id": "opt1", "text": "A thought that comes involuntarily and feels true in the moment"},
+                {"id": "opt2", "text": "A thought you deliberately choose to think"},
+                {"id": "opt3", "text": "A thought that is always false and should be ignored"},
+                {"id": "opt4", "text": "A thought that only occurs in people with mental health conditions"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Exactly. Automatic thoughts pop up reflexively, often so quickly you don't notice them. They feel like facts ('I'm going to fail this test') rather than interpretations. Thought records train you to catch these thoughts and evaluate them consciously."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In a basic thought record, what do you do after identifying the automatic thought?",
+            "options": [
+                {"id": "opt1", "text": "Immediately replace it with a positive thought"},
+                {"id": "opt2", "text": "Look for evidence that supports and contradicts the thought"},
+                {"id": "opt3", "text": "Ignore the thought and distract yourself"},
+                {"id": "opt4", "text": "Rate how much you believe the thought without examining evidence"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. CBT teaches you to evaluate thoughts like a scientist: 'What evidence supports this? What evidence contradicts it?' This helps you develop a more balanced perspective based on reality rather than mood-driven assumptions."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Try completing a thought record for a recent moment of strong emotion. What was the situation? What emotion did you feel (0-100)? What automatic thought went through your mind? What evidence supports or contradicts that thought?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "9",
+    "title": "Basic Thought Records - Quiz"
+}

@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Handling 'I Need to Think About It' Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what happens to conversion probability when a prospect leaves an enrollment call saying 'I need to think about it'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It stays the same — about 50% will still buy within a week."
+                },
+                {
+                    "id": "b",
+                    "text": "It drops to under 10%, because emotional urgency fades and rationalization takes over."
+                },
+                {
+                    "id": "c",
+                    "text": "It increases, because prospects who take time to deliberate are more committed buyers."
+                },
+                {
+                    "id": "d",
+                    "text": "It depends entirely on the quality of your follow-up emails."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Industry data shows that when a prospect leaves saying 'I need to think about it,' the chance of eventually buying drops to under 10%. This happens because the emotional urgency fades, life takes over, and rationalization sets in. Compare this with the 50-70% close rate achievable when the decision is made on the call."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'isolation technique' used to uncover the real objection behind 'I need to think about it'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking the prospect to sit in silence for 60 seconds until they reveal what they are really thinking."
+                },
+                {
+                    "id": "b",
+                    "text": "Systematically asking yes/no questions about fit, methodology, investment, and trust to find the one area where they hesitate."
+                },
+                {
+                    "id": "c",
+                    "text": "Telling the prospect that the offer expires if they do not decide on the call."
+                },
+                {
+                    "id": "d",
+                    "text": "Asking them to write down their concerns and email them to you later."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The isolation technique involves asking a series of targeted yes/no questions: 'Do you believe this can help you? Is the investment giving you pause? Do you feel comfortable with me as your guide?' The prospect's hesitation on one of these questions reveals the real concern, which you can then address directly."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'pre-close' technique for preventing 'I need to think about it' before it happens?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Requiring a non-refundable deposit before the enrollment call begins."
+                },
+                {
+                    "id": "b",
+                    "text": "Setting expectations at the start of the call that the prospect will give a clear yes or no rather than a 'maybe,' by normalizing both outcomes."
+                },
+                {
+                    "id": "c",
+                    "text": "Telling the prospect that the offer is only available during this one call."
+                },
+                {
+                    "id": "d",
+                    "text": "Having the prospect sign a commitment letter before the call."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The pre-close frame is set at the beginning of the call: you explain that by the end they will either be excited to start, decide it is not the right fit (which is fine), or have questions for a follow-up. You ask them to give a real answer rather than 'I need to think about it.' This normalizes saying no (reducing pressure) while gently eliminating the vague middle ground."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write out your complete response sequence for when a prospect says 'I need to think about it.' Include your 'what specifically' question, how you would handle each of the four possible underlying concerns (money, timing, fit, trust), and at what point you would let them go gracefully.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student provides a structured response that starts with the 'what specifically' question and then branches into handling for each possible underlying concern. Look for empathy in their language rather than pressure tactics. Strong answers also include a clear threshold for when they would gracefully let the prospect go, demonstrating that they understand the line between helpful persistence and aggressive closing."
+        }
+    ]
+}

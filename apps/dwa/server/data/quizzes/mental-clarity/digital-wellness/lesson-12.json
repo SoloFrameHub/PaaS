@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is problematic smartphone use?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any smartphone use over 2 hours per day"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Smartphone use that causes significant distress, functional impairment, and inability to cut back despite negative consequences"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Using your smartphone for social media"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A formally recognized addiction in the DSM-5"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Problematic smartphone use is defined by negative consequences (distress, interference with life domains, relationship strain) and inability to reduce use — not by total hours. It's not formally recognized as an addiction in DSM-5."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'smartphone addiction' a contested term?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because addiction doesn't exist"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because it's not a formal DSM-5 diagnosis, the mechanisms differ from substance addiction, and most heavy use doesn't meet clinical criteria"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because everyone is equally addicted to smartphones"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because smartphones are not actually engaging"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The term is contested because: (1) it's not in DSM-5, (2) behavioral patterns differ from substance addiction, (3) most heavy users don't meet clinical impairment thresholds, and (4) the term may pathologize normal behavior."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the Karolinska study (n=2,265), what predicts smartphone-related problems better than total use time?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "What brand of smartphone you use"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The experience of harm and functional impairment — not just heavy involvement"
+                },
+                {
+                    "id": "opt3",
+                    "text": "How many apps you have installed"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Your age and gender"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Karolinska study found that many heavy users reported no problems. What predicted issues was the experience of negative consequences (distress, interference, inability to stop) — quality of relationship matters more than quantity."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which intervention shows MODERATE evidence for reducing problematic smartphone use?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Switching to a flip phone permanently"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Environmental modifications (app limits, grayscale, removing apps from home screen) + self-monitoring + addressing underlying needs"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Willpower alone"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Using the phone more to build tolerance"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "MODERATE evidence supports combined approaches: environmental design (friction, limits, visual changes), self-monitoring (screen time tracking), and addressing underlying needs (boredom, loneliness, anxiety) that drive use."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on your smartphone use. Do you experience any signs of problematic use (difficulty cutting back, interference with responsibilities, distress when unable to use it)? What underlying need might your smartphone use be meeting?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "12",
+    "title": "Problematic Smartphone Use - Quiz"
+}

@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do stress triggers vary so widely between people?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because some people are naturally weaker than others"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because stress is determined by appraisal—one person may appraise public speaking as a challenge (energizing), while another appraises it as a threat (terrifying)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Stress triggers don't actually vary—everyone finds the same things stressful"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people with anxiety disorders have stress triggers"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Stress triggers are highly individual because stress is a person-environment transaction shaped by appraisal, not objective events alone. The same situation (like public speaking) can be appraised as a challenge by one person (leading to excitement and focus) or as a threat by another (leading to fear and avoidance). These differences stem from past experiences, skills, current resources, and how you interpret the situation—not from inherent weakness or strength."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the key appraisal question for work and performance stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "\"Am I better at this than my colleagues?\""
+                },
+                {
+                    "id": "opt2",
+                    "text": "\"Do I have the resources, skills, and support to meet these demands?\""
+                },
+                {
+                    "id": "opt3",
+                    "text": "\"Can I avoid this task entirely?\""
+                },
+                {
+                    "id": "opt4",
+                    "text": "\"Is my boss unreasonable?\""
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The key appraisal question for occupational stress is whether you have the resources, skills, and support to meet the demands you're facing. This directly maps to the secondary appraisal process: evaluating your coping resources relative to demands. Job strain (high demands combined with low control/resources) is a strong predictor of chronic health problems, which is why this resource-focused question is so important for identifying when stress is likely to become harmful."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What distinguishes modifiable stressors from structural stressors?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Modifiable stressors can be addressed through individual coping strategies; structural stressors (like workplace abuse, systemic inequality) require organizational or systemic intervention"
+                },
+                {
+                    "id": "opt2",
+                    "text": "All stressors are modifiable if you have the right mindset"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Modifiable stressors are minor; structural stressors are major"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no meaningful difference between these categories"
+                }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "This distinction is critical for setting realistic expectations about what stress management skills can address. Modifiable stressors are those you can influence through personal coping strategies—like managing your response to a tight deadline or improving communication skills. Structural stressors, by contrast, are produced by organizational or systemic conditions (chronic workplace harassment, unsafe environments, discrimination, economic precarity) that cannot be 'coped' away through individual skills alone. Recognizing this difference prevents self-blame and helps you identify when advocacy, organizational change, or external support is needed rather than just personal skill-building."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does identifying your personal stress signature (cognitive, somatic, emotional, or behavioral) matter for stress management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "So you can diagnose yourself with a specific disorder"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because different stress signatures respond best to different intervention strategies—cognitive signatures benefit from reappraisal, somatic from body-based techniques like PMR"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It doesn't matter—all stress management techniques work the same for everyone"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people with a behavioral stress signature need stress management"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Understanding your dominant stress signature helps you choose the most effective tools for your specific response pattern. If you experience stress primarily as racing thoughts and worst-case scenarios (cognitive signature), you'll likely benefit most from cognitive reappraisal and structured problem-solving. If stress shows up as physical tension, tight chest, or stomach knots (somatic signature), body-based regulation like progressive muscle relaxation and breathing exercises will be most helpful. Matching intervention to your signature makes your practice more efficient and effective."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based purpose of stress trigger identification?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "To eliminate all triggers from your life"
+                },
+                {
+                    "id": "opt2",
+                    "text": "To identify patterns so you can respond intentionally rather than reactively, and to distinguish modifiable from structural stressors"
+                },
+                {
+                    "id": "opt3",
+                    "text": "To prove that your stress is someone else's fault"
+                },
+                {
+                    "id": "opt4",
+                    "text": "To avoid all situations that cause stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The goal of trigger identification is not avoidance or elimination—some stress is adaptive and unavoidable. Research in CBT-based stress management shows that self-monitoring of stress precursors improves coping effectiveness by building awareness needed for intervention. Identifying patterns helps you catch stress early (before it escalates), choose appropriate responses (rather than reacting automatically), and distinguish modifiable stressors (which respond to personal coping) from structural ones (which require systemic intervention). This awareness is the foundation of effective stress management."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "2",
+    "title": "Identifying Personal Stress Triggers and Patterns - Quiz"
+}

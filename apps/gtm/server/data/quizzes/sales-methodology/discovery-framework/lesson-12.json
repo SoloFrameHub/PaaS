@@ -1,0 +1,133 @@
+{
+    "title": "Lesson 12 Quiz",
+    "questions": [
+        {
+            "question": "Which framework is best for an Enterprise deal ($100k+)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "BANT"
+                },
+                {
+                    "id": "b",
+                    "text": "MEDDIC"
+                },
+                {
+                    "id": "c",
+                    "text": "None, just demo"
+                },
+                {
+                    "id": "d",
+                    "text": "Chatbot"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "MEDDIC provides the depth needed to navigate committees, legal reviews, and complex ROI calculations.",
+            "id": "q1",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "For a 'Rabbit' deal (<$10k), what is the primary goal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Deep relationship building"
+                },
+                {
+                    "id": "b",
+                    "text": "Speed and friction removal"
+                },
+                {
+                    "id": "c",
+                    "text": "Meeting the CEO"
+                },
+                {
+                    "id": "d",
+                    "text": "Writing a business case"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For small deals, time kills profitability. You want to qualify quickly, remove friction, and get them to the credit card page.",
+            "id": "q2",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "What is the 'Dead Zone'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A place with no cell service"
+                },
+                {
+                    "id": "b",
+                    "text": "Deals that have Low ACV (Price) but High Complexity (Legal/Sales Effort)"
+                },
+                {
+                    "id": "c",
+                    "text": "Deals that are too big"
+                },
+                {
+                    "id": "d",
+                    "text": "Deals with no competition"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "These deals kill startups. You spend resources like it's a whale hunt, but the payout is a minnow. Avoid them.",
+            "id": "q3",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "With a high-value Enterprise deal, how many calls does Discovery take?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 call (15 mins)"
+                },
+                {
+                    "id": "b",
+                    "text": "1 call (30 mins)"
+                },
+                {
+                    "id": "c",
+                    "text": "Multiple calls over weeks/months"
+                },
+                {
+                    "id": "d",
+                    "text": "Zero calls"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "You cannot map an entire organization, define metrics, and vet security in one call. Discovery is an ongoing 'Campaign' throughout the deal cycle.",
+            "id": "q4",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "If a $49/mo prospect asks for a 1-hour live demo, what should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Do it, every customer matters"
+                },
+                {
+                    "id": "b",
+                    "text": "Send a recorded Loom/Video instead"
+                },
+                {
+                    "id": "c",
+                    "text": "Fly to their office"
+                },
+                {
+                    "id": "d",
+                    "text": "Give it to them for free"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your CAC cannot support manual sales for low LTV customers. Automate the demo.",
+            "id": "q5",
+            "type": "multiple-choice"
+        }
+    ],
+    "sectionId": "sales-methodology",
+    "courseId": "discovery-framework",
+    "lessonId": "12"
+}

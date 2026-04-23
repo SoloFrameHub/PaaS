@@ -1,0 +1,141 @@
+{
+    "lessonId": "3",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "StoryBrand Messaging Framework",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the StoryBrand framework, who is the hero of the story?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your company (The Brand)"
+                },
+                {
+                    "id": "b",
+                    "text": "The Founder (You)"
+                },
+                {
+                    "id": "c",
+                    "text": "The Customer"
+                },
+                {
+                    "id": "d",
+                    "text": "The Marketplace"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "One of the most critical shifts in StoryBrand is making the customer the hero, not your company. You are the Yoda (Guide), and the customer is the Luke Skywalker (Hero)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the two components required to be a successful 'Guide' in messaging?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Innovation and Speed"
+                },
+                {
+                    "id": "b",
+                    "text": "Empathy and Authority"
+                },
+                {
+                    "id": "c",
+                    "text": "Low Price and High Value"
+                },
+                {
+                    "id": "d",
+                    "text": "Experience and Features"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A guide needs Empathy (demonstrating that you understand their pain) and Authority (demonstrating that you have the competence to solve it)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is an 'Internal Problem' in the StoryBrand model?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A bug in your internal codebase"
+                },
+                {
+                    "id": "b",
+                    "text": "How the external problem makes the customer feel (e.g., frustrated, worried)"
+                },
+                {
+                    "id": "c",
+                    "text": "A problem with your company's internal culture"
+                },
+                {
+                    "id": "d",
+                    "text": "A philosophical disagreement with competitors"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While the external problem is the surface-level issue, the internal problem is how it makes them feel. People buy solutions to internal problems more often than external ones."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'The Plan' (3-4 simple steps) so important in messaging?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It proves that you have a complex methodology"
+                },
+                {
+                    "id": "b",
+                    "text": "It removes confusion and makes the 'buying journey' feel safe"
+                },
+                {
+                    "id": "c",
+                    "text": "It helps you organize your internal team"
+                },
+                {
+                    "id": "d",
+                    "text": "It allows you to justify a higher price point"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The moment a prospect feels confused, they stop buying. A simple 3-step plan removes cognitive load and tells the customer exactly what happens next, making them feel safe to proceed."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What happens if a story (or your messaging) has no 'Stakes'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It becomes a professional whitepaper"
+                },
+                {
+                    "id": "b",
+                    "text": "It becomes easier for everyone to understand"
+                },
+                {
+                    "id": "c",
+                    "text": "It becomes ignorable and fails to drive action"
+                },
+                {
+                    "id": "d",
+                    "text": "It attracts enterprise buyers who manage risk"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Without stakes (Success vs. Failure), there is no reason for the hero to act. Messaging without stakes is boring and fails to create the urgency needed for a sale."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft a StoryBrand 'One-Liner' for your business following the 'Problem + Solution + Result' formula. Keep it under 30 words and focus on an internal pain point.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's StoryBrand one-liner. Check if it identifies: (1) a clear problem/pain, (2) the solution/guide's approach, (3) a specific result/transformation. Provide feedback on clarity and word economy."
+        }
+    ],
+    "passingScore": 70
+}

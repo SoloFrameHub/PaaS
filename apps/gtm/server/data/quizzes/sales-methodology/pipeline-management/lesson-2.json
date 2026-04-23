@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Pipeline Hygiene Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary danger of keeping 'Ghost Deals' in your CRM?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They cost too much in CRM storage fees."
+                },
+                {
+                    "id": "b",
+                    "text": "They create 'Pipeline Optimism', providing a false sense of security that prevents the founder from doing necessary new prospecting."
+                },
+                {
+                    "id": "c",
+                    "text": "They make the sales forecast look too accurate."
+                },
+                {
+                    "id": "d",
+                    "text": "The prospect will eventually get annoyed."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If your pipeline looks full of fake deals, your brain thinks you don't need to prospect. When those ghost deals inevitably fail to close, you are left with an empty pipeline and months of revenue gap."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the goal of the 'Close the Loop' email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To force the prospect to sign immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "To give the prospect permission to say 'No', thereby flushing the deal out of your active mental space and focusing your energy on real opportunities."
+                },
+                {
+                    "id": "c",
+                    "text": "To ask for a referral."
+                },
+                {
+                    "id": "d",
+                    "text": "To complain about their lack of response."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Permission to say NO is a trust-builder. It shows you value your time and theirs. It either restarts the deal momentum or provides a clean break so you can move on."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the '30-Day Expiry Rule', what should happen to a deal that has not moved for a month?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It should be given a 50% discount."
+                },
+                {
+                    "id": "b",
+                    "text": "The founder should call the CEO of the target company."
+                },
+                {
+                    "id": "c",
+                    "text": "It should be moved to 'Archive/Lost - No Response' to protect the founder's mental clarity and pipeline accuracy."
+                },
+                {
+                    "id": "d",
+                    "text": "It should stay in the CRM forever to show 'historical data'."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Modern sales requires focus. Keeping dead deals in your view is like keeping trash in your workshop—it gets in the way of the quality work. Archive them and move back to prospecting."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Perform a 'Fear Audit' on your current pipeline. Identify the 3 oldest deals. Why haven't they closed? If you sent the 'Close the Loop' email today and they all said 'No,' how would that change your prospecting plan for next week?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can objectively identify dead weight and if they recognize that flushing dead deals creates a healthy'urgency' to find new leads."
+        }
+    ]
+}

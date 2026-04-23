@@ -1,0 +1,55 @@
+{
+  "lessonId": "8",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Lead Magnet Design for Creators",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does the 'useful but incomplete' principle mean in lead magnet design?",
+      "options": [
+        { "id": "a", "text": "The lead magnet should have missing pages that force the user to buy the full product" },
+        { "id": "b", "text": "The lead magnet should deliver real value and a quick win, while revealing a larger system that the paid product provides" },
+        { "id": "c", "text": "The lead magnet should be intentionally low quality so the paid product feels more valuable" },
+        { "id": "d", "text": "The lead magnet should include incomplete instructions that require a coaching call to implement" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A good lead magnet is genuinely useful -- the subscriber can implement it and get a tangible result. But it strategically solves one specific problem while revealing a larger system. The subscriber thinks: 'If the free stuff is this good, the paid program must be amazing.'"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which lead magnet type has the highest conversion strength for selling offers priced at $200 or more?",
+      "options": [
+        { "id": "a", "text": "Checklists and cheat sheets" },
+        { "id": "b", "text": "Templates and swipe files" },
+        { "id": "c", "text": "Free workshops or masterclass recordings" },
+        { "id": "d", "text": "Toolkits and resource libraries" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Free workshops or masterclass recordings have the highest conversion strength for $200+ offers because they have the highest value perception, build significant trust through extended teaching, and create a natural bridge to paid offers. They require 10-20 hours to produce but deliver the strongest sales results."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "In the 90-day lead magnet audit, what does a lead-to-sale conversion rate below 2% indicate?",
+      "options": [
+        { "id": "a", "text": "Your pricing is too high for your market" },
+        { "id": "b", "text": "Your email platform has deliverability issues" },
+        { "id": "c", "text": "The lead magnet is attracting the wrong people or not bridging effectively to your offer" },
+        { "id": "d", "text": "You need to increase your content publishing frequency" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A lead-to-sale conversion rate below 2% signals that either the lead magnet is attracting people who are not your ideal buyers (wrong audience), or the lead magnet does not effectively bridge to your paid offer (poor positioning). The fix is better audience targeting or a stronger connection between the lead magnet topic and your product."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Design a lead magnet for your business using the 'useful but incomplete' principle. Describe: the format (template, mini-course, workshop, etc.), the specific problem it solves, the quick win it delivers, and how it naturally reveals the gap that your paid product fills.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student creates a specific, well-designed lead magnet concept that follows the 'useful but incomplete' principle. The lead magnet should solve a real, specific problem (not a vague topic), deliver a concrete quick win, and have a clear logical bridge to their paid offer. Check that the format choice matches their offer price point as outlined in the lesson."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "food-mood-mastery-check",
+  "title": "Food-Mood Mastery Readiness Check",
+  "description": "Assess your current knowledge, habits, and readiness for applying nutritional psychiatry principles in your life. This helps identify where to focus your learning in this advanced course.",
+  "instructions": "Rate how much each statement applies to you right now.",
+  "timeframe": "current",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "I understand how specific nutrients affect my brain chemistry and mood"
+    },
+    {
+      "id": "q2",
+      "text": "I am aware of how my medications may interact with nutrients or supplements"
+    },
+    {
+      "id": "q3",
+      "text": "I practice mindful eating and pay attention to hunger and fullness cues"
+    },
+    {
+      "id": "q4",
+      "text": "I can identify when I am eating in response to emotions rather than hunger"
+    },
+    {
+      "id": "q5",
+      "text": "I understand the role of genetics (like MTHFR) in nutrition and mental health"
+    },
+    {
+      "id": "q6",
+      "text": "I consider the environmental and sustainability impact of my food choices"
+    },
+    {
+      "id": "q7",
+      "text": "I am confident discussing nutrition with my healthcare providers"
+    },
+    {
+      "id": "q8",
+      "text": "I can distinguish between evidence-based nutrition advice and diet fads"
+    },
+    {
+      "id": "q9",
+      "text": "I have a healthy relationship with food, free from guilt or rigid rules"
+    },
+    {
+      "id": "q10",
+      "text": "I feel empowered to make dietary changes that support my mental health"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3,
+    "labels": {
+      "0": "Not at all",
+      "1": "A little",
+      "2": "Moderately",
+      "3": "Very much"
+    }
+  },
+  "scoring": {
+    "maxScore": 30,
+    "bands": [
+      {
+        "min": 0,
+        "max": 7,
+        "severity": "minimal",
+        "label": "Beginning Your Journey",
+        "description": "You're at the start of understanding how food and mood connect at an advanced level. This course will build your knowledge from the ground up, covering genetics, mindful eating, special populations, and emerging research. Every expert started where you are now.",
+        "color": "yellow"
+      },
+      {
+        "min": 8,
+        "max": 14,
+        "severity": "mild",
+        "label": "Building Knowledge",
+        "description": "You have some foundational knowledge about nutrition and mental health. This course will deepen your understanding with advanced topics like nutrigenomics, clinical practice guidelines, and specialized approaches for different life stages and populations.",
+        "color": "green"
+      },
+      {
+        "min": 15,
+        "max": 22,
+        "severity": "moderate",
+        "label": "Solid Foundation",
+        "description": "You have a good understanding of food-mood connections and are ready for advanced material. This course will challenge you with clinical integration, genetic considerations, emerging research on ketogenic diets and intermittent fasting, and global health perspectives.",
+        "color": "green"
+      },
+      {
+        "min": 23,
+        "max": 30,
+        "severity": "high",
+        "label": "Advanced Practitioner",
+        "description": "You demonstrate strong knowledge and healthy practices around nutritional psychiatry. This course will provide you with the latest research (2024-2026), clinical guidelines from ISNPR, and cutting-edge topics to stay at the forefront of this rapidly evolving field.",
+        "color": "green"
+      }
+    ]
+  },
+  "disclaimer": "This is an educational self-reflection tool to guide your learning, not a clinical assessment. If you are struggling with your relationship with food or experiencing mental health challenges, please consult a healthcare provider. If you are in crisis, call or text 988."
+}

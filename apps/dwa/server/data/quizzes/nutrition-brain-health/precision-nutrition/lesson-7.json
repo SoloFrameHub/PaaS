@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What effect size (SMD) did EPA-major formulations (>60% EPA) produce in the 2019 meta-analysis for depression?",
+            "options": [
+                { "id": "opt1", "text": "SMD = -0.10 (negligible effect)" },
+                { "id": "opt2", "text": "SMD = -0.50 (moderate effect)" },
+                { "id": "opt3", "text": "SMD = -1.03 (large effect, comparable to some antidepressant medications)" },
+                { "id": "opt4", "text": "SMD = -2.50 (very large effect)" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "EPA-major formulations (>60% EPA in total omega-3 content) produced an SMD of -1.03 in studies using validated depression rating scales — a large effect size that is clinically meaningful and comparable to some antidepressant medications. Pure DHA formulations showed no significant antidepressant effect."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does EPA have antidepressant effects while DHA does not, despite both being omega-3 fatty acids?",
+            "options": [
+                { "id": "opt1", "text": "DHA is toxic to brain cells while EPA is not" },
+                { "id": "opt2", "text": "EPA works through active anti-inflammatory pathways (resolvin production, IDO inhibition, cytokine reduction) while DHA is primarily a structural membrane component" },
+                { "id": "opt3", "text": "DHA is not actually an omega-3 fatty acid" },
+                { "id": "opt4", "text": "EPA and DHA have identical effects; the meta-analysis was flawed" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "EPA's antidepressant effects operate through active, functional mechanisms: it is a precursor to pro-resolving mediators, competes with arachidonic acid to reduce inflammatory eicosanoids, inhibits IDO enzyme activation (preserving the tryptophan-to-serotonin pathway), and modulates endocannabinoid signaling. DHA is primarily a structural membrane component with diminishing returns once incorporated."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the total omega-3 daily intake threshold above which bleeding risk becomes clinically significant?",
+            "options": [
+                { "id": "opt1", "text": "500 mg/day" },
+                { "id": "opt2", "text": "1000 mg/day" },
+                { "id": "opt3", "text": "3000 mg/day" },
+                { "id": "opt4", "text": "10,000 mg/day" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Above 3000 mg total omega-3 per day, the bleeding risk becomes clinically relevant due to antiplatelet effects. Omega-3 supplements should be discontinued 7-10 days before planned surgery, and the combination with anticoagulant or antiplatelet medications requires medical supervision."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is the triglyceride form of omega-3 supplements preferred over the ethyl ester form?",
+            "options": [
+                { "id": "opt1", "text": "Triglyceride form is always cheaper" },
+                { "id": "opt2", "text": "Ethyl ester form has more EPA per capsule" },
+                { "id": "opt3", "text": "Triglyceride form is approximately 50-70% better absorbed than ethyl ester form" },
+                { "id": "opt4", "text": "There is no difference between the two forms" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The triglyceride form is better absorbed than the ethyl ester form, with approximately 50-70% better absorption. Look for 'triglyceride form' or 'rTG' on the label. Additionally, taking omega-3s with a fat-containing meal increases absorption by up to 300%."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does EPA supplementation do to brain N-acetyl-aspartate (NAA) levels, and why does this matter?",
+            "options": [
+                { "id": "opt1", "text": "EPA decreases NAA, which helps reduce brain inflammation" },
+                { "id": "opt2", "text": "EPA has no effect on NAA levels" },
+                { "id": "opt3", "text": "EPA increases brain NAA levels — a marker of neuronal integrity — suggesting it supports fundamental neuronal recovery, not just symptom suppression" },
+                { "id": "opt4", "text": "EPA converts NAA into serotonin directly" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "EPA supplementation increases brain N-acetyl-aspartate (NAA) levels, a marker of neuronal integrity and mitochondrial function. NAA is consistently reduced in depression and bipolar disorder. Its restoration suggests that EPA supports fundamental neuronal recovery — not merely symptom suppression — reinforcing the importance of sustained, consistent EPA supplementation."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "7",
+    "title": "Omega-3 Dosing: EPA vs DHA for Mental Health - Quiz"
+}

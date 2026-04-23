@@ -1,0 +1,141 @@
+{
+    "lessonId": "7",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Analysis of Competitive Alternatives",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which of these is considered a 'Competitive Alternative' for a software product?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A direct software competitor"
+                },
+                {
+                    "id": "b",
+                    "text": "A manual spreadsheet"
+                },
+                {
+                    "id": "c",
+                    "text": "The prospect doing nothing (inertia)"
+                },
+                {
+                    "id": "d",
+                    "text": "All of the above"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Competitors aren't just other companies. They include anyone or anything else that solves (or hides) the problem, including manual processes and simple inertia."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'But vs. And' framework used for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Coding logical statements in Python"
+                },
+                {
+                    "id": "b",
+                    "text": "Positioning your product against a competitor without trash-talking them"
+                },
+                {
+                    "id": "c",
+                    "text": "Comparing two different features of your own product"
+                },
+                {
+                    "id": "d",
+                    "text": "Calculating the cost of goods sold"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'But vs. And' framework allows you to validate a competitor's strength (e.g., 'They are great for enterprises') while pivoting to your unique value (e.g., 'But for solo founders, they are too complex')."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is a 'Checkmark Comparison Table' often a bad idea for a niche solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's too difficult to design in CSS"
+                },
+                {
+                    "id": "b",
+                    "text": "It invites the customer to pick the product with the most (potentially irrelevant) features"
+                },
+                {
+                    "id": "c",
+                    "text": "Checkmarks aren't supported by most web browsers"
+                },
+                {
+                    "id": "d",
+                    "text": "Tables aren't compatible with mobile SEO"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Feature tables turn your product into a commodity. If you fight on number of features, you will almost always lose to the established giants."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does 'Opinionated Software' mean?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Software that asks for the user's opinion frequently"
+                },
+                {
+                    "id": "b",
+                    "text": "Software that deliberate chooses to solve a problem in a specific, non-standard way"
+                },
+                {
+                    "id": "c",
+                    "text": "Software that writes reviews for other products"
+                },
+                {
+                    "id": "d",
+                    "text": "Software that is loud and aggressive"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Opinionated software takes a stand. It might remove features or limit choices to provide a better, faster, or more specialized experience for a specific ICP."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the best way to compete against a 'Manual Alternative' (like a spreadsheet)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Build a product that looks exactly like a spreadsheet"
+                },
+                {
+                    "id": "b",
+                    "text": "Focus on efficiency, error reduction, and the pain of manual labor"
+                },
+                {
+                    "id": "c",
+                    "text": "Lower your price so it's cheaper than Excel"
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore it; spreadsheets aren't real competitors"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "To beat a spreadsheet, you must highlight the risks (errors, data loss) and the costs (hours of manual work) associated with manual processes."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Apply the 'But vs. And' framework to your biggest direct competitor. Fill in: '[Competitor] is great for [Type X], but because we are built specifically for [Your ICP], we [Unique Benefit].'",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's use of the 'But vs. And' framework. Ensure they aren't trash-talking the competitor but instead defining a different 'room' or 'context' where their product is the superior choice."
+        }
+    ],
+    "passingScore": 70
+}

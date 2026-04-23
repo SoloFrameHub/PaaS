@@ -1,0 +1,142 @@
+{
+  "lessonId": "5",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Reutilización de Uno a Muchos",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el objetivo principal de la reutilización 'De Uno a Muchos'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Engañar a las personas haciéndoles creer que tienes un equipo enorme"
+        },
+        {
+          "id": "b",
+          "text": "Maximizar el alcance y la vida de una idea central única en múltiples plataformas"
+        },
+        {
+          "id": "c",
+          "text": "Crear la mayor cantidad de ideas diferentes posible"
+        },
+        {
+          "id": "d",
+          "text": "Llenar tu disco duro con archivos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La reutilización garantiza que las 5-10 horas que pasaste en una 'Pieza Fuente' lleguen realmente al 90% de tu audiencia que se la perdió la primera vez que la publicaste."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué es una 'Pieza Fuente' en el flujo de trabajo de reutilización?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un tuit corto que publicas el lunes"
+        },
+        {
+          "id": "b",
+          "text": "Un artículo o video de formato largo, profundamente investigado, que contiene todos tus puntos principales"
+        },
+        {
+          "id": "c",
+          "text": "Una lista de enlaces a sitios web de otras personas"
+        },
+        {
+          "id": "d",
+          "text": "Un artículo de invitado que escribiste para alguien más"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Pieza Fuente es tu documento 'Maestro'. Todas las demás publicaciones sociales, hilos y correos electrónicos se derivan de la investigación y la lógica en esta única pieza."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué se desaconseja 'Copiar y Pegar' el mismo texto en todas las plataformas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es técnicamente imposible"
+        },
+        {
+          "id": "b",
+          "text": "Cada plataforma tiene diferentes normas, requisitos de formato y expectativas de la audiencia"
+        },
+        {
+          "id": "c",
+          "text": "Hace que tu computadora funcione más lenta"
+        },
+        {
+          "id": "d",
+          "text": "Google penalizará tu sitio web"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Una audiencia de LinkedIn espera espacios en blanco e historias profesionales; una audiencia de Twitter espera listas concisas. Adaptar el encuadre garantiza que el contenido se sienta 'nativo' para el usuario."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué es un resumen de 'Cero Clics'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una publicación que no tiene texto y solo una imagen"
+        },
+        {
+          "id": "b",
+          "text": "Un activo de contenido que proporciona todas las perspectivas valiosas directamente en el feed, sin requerir un clic en un enlace"
+        },
+        {
+          "id": "c",
+          "text": "Un error donde un enlace no funciona"
+        },
+        {
+          "id": "d",
+          "text": "Un anuncio en el que nadie hace clic"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El contenido de cero clics genera confianza y autoridad al dar valor de inmediato. Sigue el principio AEO de ser la 'respuesta' donde el usuario ya está buscando."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "En la Secuencia Semanal recomendada, ¿qué suele ocurrir el lunes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La Pieza Fuente se publica y se envía por correo"
+        },
+        {
+          "id": "b",
+          "text": "Nada; pasas el día investigando"
+        },
+        {
+          "id": "c",
+          "text": "Publicas tu 'Opinión Caliente' final"
+        },
+        {
+          "id": "d",
+          "text": "Eliminas tus hilos de Twitter antiguos"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "El lunes es el día de 'Lanzamiento'. Publicas el contenido de trabajo pesado y notificas primero a tu audiencia más directa (tu lista de correo)."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Piensa en un título de 'Pieza Fuente' para tu negocio. Lista 3 activos derivados específicos que crearías a partir de ella. ¿Cómo cambiarías el encuadre de la idea central para TU plataforma social principal versus tu newsletter por correo?",
+      "minLength": 100,
+      "promptForAI": "Revisa si el fundador entiende el 'encuadre'. Deben explicar un cambio en tono o formato (ej., 'El email será más personal/detrás de escenas mientras que LinkedIn se enfocará en el resultado empresarial')."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

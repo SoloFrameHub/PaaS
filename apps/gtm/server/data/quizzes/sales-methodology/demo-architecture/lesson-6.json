@@ -1,0 +1,134 @@
+{
+    "lessonId": "6",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "Trial Closes: Checking for Pulse",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a 'Trial Close'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking for the credit card"
+                },
+                {
+                    "id": "b",
+                    "text": "A low-stakes question to check the prospect's temperature and understanding"
+                },
+                {
+                    "id": "c",
+                    "text": "Ending the meeting early"
+                },
+                {
+                    "id": "d",
+                    "text": "Sending a contract via email"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A Trial Close isn't 'Buy this now.' It's 'Does this make sense so far?' or 'How would your team use this?' It prevents you from talking for 30 mins to a zombie."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is a classic Trial Close question?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "What is your credit card number?"
+                },
+                {
+                    "id": "b",
+                    "text": "Can you sign this today?"
+                },
+                {
+                    "id": "c",
+                    "text": "How does this compare to what you are currently using?"
+                },
+                {
+                    "id": "d",
+                    "text": "Do you like the color blue?"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "This question forces the prospect to verbalize the value gap between their status quo and your solution."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'The Silent Pause' important after a Trial Close?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It gives you time to drink water"
+                },
+                {
+                    "id": "b",
+                    "text": "It creates pressure for the prospect to speak the truth"
+                },
+                {
+                    "id": "c",
+                    "text": "It allows the internet to buffer"
+                },
+                {
+                    "id": "d",
+                    "text": "It keeps the meeting short"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founders are afraid of silence. But if you ask 'How does that sound?' and then keep talking, you learn nothing. Ask, then Zip It."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do if a Trial Close reveals the prospect is confused?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep moving faster"
+                },
+                {
+                    "id": "b",
+                    "text": "Stop, pivot, and re-explain or ask more discovery questions"
+                },
+                {
+                    "id": "c",
+                    "text": "End the demo"
+                },
+                {
+                    "id": "d",
+                    "text": "Argue with them"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Confusion is a deal killer. A negative response to a trial close is a gift—it allows you to fix the misunderstanding before the end of the call."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How often should you use Trial Closes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Once at the end"
+                },
+                {
+                    "id": "b",
+                    "text": "After every major feature block (every 5-8 mins)"
+                },
+                {
+                    "id": "c",
+                    "text": "Every 30 seconds"
+                },
+                {
+                    "id": "d",
+                    "text": "Never"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trial closes are 'Checkpoints'. You need to clear the checkpoint of 'Does this make sense?' before moving to the next level of the demo."
+        }
+    ],
+    "passingScore": 70
+}

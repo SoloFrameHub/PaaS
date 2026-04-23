@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "LinkedIn Sales Navigator Mastery Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which Sales Navigator tier is recommended for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Basic (Free)"
+                },
+                {
+                    "id": "b",
+                    "text": "Core ($99/mo)"
+                },
+                {
+                    "id": "c",
+                    "text": "Advanced ($149/mo)"
+                },
+                {
+                    "id": "d",
+                    "text": "Team ($1,600/yr)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sales Navigator Core provides 100% of the prospecting power needed by a solo founder, including advanced filters, lead lists, and 50 InMails."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In Boolean logic, which operator would you use to narrow results to find someone with BOTH of two specific keywords?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "OR"
+                },
+                {
+                    "id": "b",
+                    "text": "NOT"
+                },
+                {
+                    "id": "c",
+                    "text": "AND"
+                },
+                {
+                    "id": "d",
+                    "text": "NEAR"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "AND narrows results by requiring both keywords to be present. OR broadens, and NOT excludes."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is the 'Changed Jobs in Past 90 Days' spotlight filter so effective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "New employees have more time to read emails"
+                },
+                {
+                    "id": "b",
+                    "text": "Automated sequences work better on new job titles"
+                },
+                {
+                    "id": "c",
+                    "text": "New executives are 3x more likely to buy new services/tools to make an impact"
+                },
+                {
+                    "id": "d",
+                    "text": "It filters out people who are likely to quit soon"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Executive turnover is a primary 'Buying Trigger.' New hires are looking to solve old problems in new ways and have a mandate for change."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a 'Boolean String' used for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A piece of code to scrape LinkedIn data"
+                },
+                {
+                    "id": "b",
+                    "text": "A combination of keywords and operators used to filter search results with precision"
+                },
+                {
+                    "id": "c",
+                    "text": "A type of referral request"
+                },
+                {
+                    "id": "d",
+                    "text": "A password for Sales Navigator"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Boolean strings are the 'language' you use to tell the database exactly who to include and exclude from your results."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the primary danger of using heavy automated scraping tools on LinkedIn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The data is usually inaccurate"
+                },
+                {
+                    "id": "b",
+                    "text": "It costs too much money"
+                },
+                {
+                    "id": "c",
+                    "text": "Risk of account suspension for violating Terms of Service"
+                },
+                {
+                    "id": "d",
+                    "text": "It makes your profile look unprofessional"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "LinkedIn is aggressive about protecting its proprietary data. Heavy automation can trigger security flags and result in permanent account bans."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Build a Boolean search string for your most ideal 'Champion.' Explain why you chose each keyword and operator. Which of the 'Spotlight' filters do you think will be most effective for YOUR business and why?",
+            "minLength": 100,
+            "promptForAI": "Review the Boolean string for technical accuracy (proper quotes, logic). Evaluate if the spotlight choice aligns with their business model (e.g., 'Follows Company' for established brands vs. 'Job Change' for tool replacements)."
+        }
+    ]
+}

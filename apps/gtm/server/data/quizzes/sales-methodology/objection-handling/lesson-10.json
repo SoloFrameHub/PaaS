@@ -1,0 +1,141 @@
+{
+    "lessonId": "10",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "Building Your Objection Database Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of an Objection Handling Database for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To keep track of how many people said 'No'."
+                },
+                {
+                    "id": "b",
+                    "text": "To turn institutional knowledge into a scaleable asset that can be used by future hires."
+                },
+                {
+                    "id": "c",
+                    "text": "To prove to yourself that sales is difficult."
+                },
+                {
+                    "id": "d",
+                    "text": "To store prospect email addresses."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "As you scale, you need to replicate your success. A database ensures that your best responses are documented and usable by anyone representing your company."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which field is NOT included in the 'Anatomy of an Objection Record' described in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Raw Objection"
+                },
+                {
+                    "id": "b",
+                    "text": "The Category"
+                },
+                {
+                    "id": "c",
+                    "text": "The Prospect's Credit Score"
+                },
+                {
+                    "id": "d",
+                    "text": "The Evidence/Asset Link"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "An objection record focuses on the objection, its classification, the response, evidence to support the response, and personality pivots."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is a 'Gold Standard' script according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A script that is at least 1,000 words long."
+                },
+                {
+                    "id": "b",
+                    "text": "A script that meet specific criteria: evidence-based, actionable (ends in an 'Ask'), concise, and empathetic."
+                },
+                {
+                    "id": "c",
+                    "text": "A script that guarantees a sale every time."
+                },
+                {
+                    "id": "d",
+                    "text": "A script written by a famous copywriter."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Quality over quantity. A gold standard script is a high-performance, refined response that has been tested in real-world situations."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If an objection is being raised by 50% of your prospects, what does the lesson suggest you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Practice your objection handling even more."
+                },
+                {
+                    "id": "b",
+                    "text": "Ignore those prospects."
+                },
+                {
+                    "id": "c",
+                    "text": "Move the response to your website's FAQ or sales deck to 'pre-empt' it before it's raised."
+                },
+                {
+                    "id": "d",
+                    "text": "Shut down the business."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Recurring objections are market feedback. If everyone asks the same thing, it means your marketing or positioning isn't clear. Pre-empting it stops it from becoming an objection later."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How often should you perform a maintenance review of your Objection Database?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Every day."
+                },
+                {
+                    "id": "b",
+                    "text": "Once a year."
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly—reviewing lost deals to see if new objections have emerged."
+                },
+                {
+                    "id": "d",
+                    "text": "Never—scripts don't expire."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Markets and competitors change. A monthly review ensures your database stays relevant and that your responses are actually working in the current landscape."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Choose one platform (Notion, Airtable, CRM, or Doc) to host your database. Why did you choose that specifically for your workflow, and what is the 'First Column' you will create to stay organized?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to plan for scalability. Look for a logical connection between the chosen tool and their current tech stack (e.g., 'I use Notion for everything else' or 'HubSpot is where I live')."
+        }
+    ]
+}

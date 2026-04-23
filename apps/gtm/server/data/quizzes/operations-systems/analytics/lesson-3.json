@@ -1,0 +1,126 @@
+{
+    "lessonId": "3",
+    "courseId": "analytics",
+    "sectionId": "operations-systems",
+    "title": "Pipeline Velocity Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the pipeline velocity formula?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Velocity = Opportunities × Win Rate"
+                },
+                {
+                    "id": "b",
+                    "text": "Velocity = (Opportunities × Win Rate × Deal Size) / Cycle Length"
+                },
+                {
+                    "id": "c",
+                    "text": "Velocity = Deal Size / Cycle Length"
+                },
+                {
+                    "id": "d",
+                    "text": "Velocity = Win Rate × Cycle Length"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Pipeline velocity is a compound metric: (N × W × D) / L. All four variables matter."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Responding to a lead within 5 minutes makes you how much more likely to connect vs. 30 minutes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2x more likely"
+                },
+                {
+                    "id": "b",
+                    "text": "10x more likely"
+                },
+                {
+                    "id": "c",
+                    "text": "50x more likely"
+                },
+                {
+                    "id": "d",
+                    "text": "100x more likely"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Research shows 100x improvement. Speed-to-lead is the #1 velocity advantage."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "A proposal sitting unanswered for 14+ days has what typical close rate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "35%"
+                },
+                {
+                    "id": "b",
+                    "text": "20%"
+                },
+                {
+                    "id": "c",
+                    "text": "8%"
+                },
+                {
+                    "id": "d",
+                    "text": "2%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "After 14 days, close rate drops to ~8%. After 30 days, it's ~2%. Stalled deals are dead deals."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "Improving each velocity lever (opportunities, win rate, deal size, cycle length) by 10% results in roughly 10% total revenue improvement.",
+            "correctAnswer": "b",
+            "explanation": "False. The levers compound. 10% improvement in each = ~46% total improvement due to multiplication.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which velocity lever is LEAST effective for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Increase opportunities (more pipeline volume)"
+                },
+                {
+                    "id": "b",
+                    "text": "Increase win rate (close more deals)"
+                },
+                {
+                    "id": "c",
+                    "text": "Increase deal size (charge more)"
+                },
+                {
+                    "id": "d",
+                    "text": "Decrease cycle length (move faster)"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Solo founders are time-constrained. Adding more volume is hard. Focus on win rate, deal size, and cycle length first."
+        }
+    ]
+}

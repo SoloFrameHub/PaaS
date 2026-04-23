@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are automatic thoughts, and why do they matter for emotional wellbeing?",
+            "options": [
+                {"id": "opt1", "text": "They're deliberate, conscious thoughts you choose — they matter because you can control them"},
+                {"id": "opt2", "text": "They're rapid, involuntary interpretations that drive emotions — often without your awareness"},
+                {"id": "opt3", "text": "They're always negative and should be suppressed"},
+                {"id": "opt4", "text": "They're background noise that doesn't significantly affect your mood"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Automatic thoughts are the mental commentary that runs constantly in response to situations. They feel like facts, not interpretations, which makes them highly believable — and highly influential on how you feel."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'mind-reading,' and why is it considered a cognitive distortion?",
+            "options": [
+                {"id": "opt1", "text": "Accurately perceiving others' emotions through body language and tone"},
+                {"id": "opt2", "text": "Assuming you know what others are thinking, usually that they're judging you negatively, without evidence"},
+                {"id": "opt3", "text": "A useful skill for avoiding conflict by anticipating others' needs"},
+                {"id": "opt4", "text": "Believing that others can read your thoughts"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. Mind-reading is when you treat your assumptions about others' thoughts as facts ('they think I'm incompetent'), often generating anxiety or shame based on interpretations you haven't verified."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the purpose of thought monitoring in CBT?",
+            "options": [
+                {"id": "opt1", "text": "To stop automatic thoughts from occurring"},
+                {"id": "opt2", "text": "To catch automatic thoughts as they occur, write them down, and identify distortions"},
+                {"id": "opt3", "text": "To analyze your childhood experiences and understand where negative thoughts came from"},
+                {"id": "opt4", "text": "To replace all negative thoughts with positive affirmations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. Thought monitoring builds awareness. You can't challenge a thought you haven't noticed. By catching and recording automatic thoughts, you make them visible and testable."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is an example of 'catastrophizing'?",
+            "options": [
+                {"id": "opt1", "text": "'I made a mistake in that email — my boss will think I'm careless'"},
+                {"id": "opt2", "text": "'I didn't get the job — I'll never find work and I'll end up homeless'"},
+                {"id": "opt3", "text": "'I failed this test — I'm bad at this subject'"},
+                {"id": "opt4", "text": "'I feel anxious, so this situation must be dangerous'"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes, this is catastrophizing. You're predicting the worst possible outcome (homelessness) from a single event (not getting one job) and treating it as inevitable."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a recent situation where you felt a strong negative emotion (anxiety, sadness, frustration). What was your automatic thought in that moment? Can you identify which cognitive distortion it reflected?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "2",
+    "title": "Automatic Thoughts: Mental Background Noise - Quiz"
+}

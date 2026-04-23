@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What level of evidence does the 2024 bipolar II ketogenic diet case study represent?",
+            "options": [
+                { "id": "opt1", "text": "Strong evidence from a large randomized controlled trial" },
+                { "id": "opt2", "text": "Moderate evidence from a meta-analysis of multiple studies" },
+                { "id": "opt3", "text": "Limited evidence — a single case study that is hypothesis-generating but cannot establish efficacy" },
+                { "id": "opt4", "text": "Definitive proof that ketogenic diets cure bipolar disorder" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The bipolar II case study is a single case report. While the results were striking (symptom scores improved to normal ranges), case studies are valuable for generating hypotheses but cannot establish that the treatment is effective for the broader population. Randomized controlled trials are needed before clinical recommendations can be made."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which proposed mechanism explains how ketogenic diets might help with conditions like bipolar disorder by shifting the balance of brain signaling?",
+            "options": [
+                { "id": "opt1", "text": "Increasing glutamate (excitatory) activity in the brain" },
+                { "id": "opt2", "text": "Shifting the glutamate/GABA balance toward GABA (inhibitory), reducing neural excitability" },
+                { "id": "opt3", "text": "Completely shutting down all neurotransmitter activity" },
+                { "id": "opt4", "text": "Replacing all brain glucose with ketone bodies permanently" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Many psychiatric conditions involve too much excitation relative to inhibition in the brain (excess glutamate vs. GABA). The ketogenic diet shifts this balance toward GABA (the primary inhibitory neurotransmitter), which may explain both its antiseizure properties and its potential psychiatric benefits. This mechanism overlaps with how medications like lithium and valproate work."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What was a major limitation of the 2023 pilot study that found 56% of respondents reported psychiatric improvement on ketogenic diets?",
+            "options": [
+                { "id": "opt1", "text": "The study used invalid measurement tools" },
+                { "id": "opt2", "text": "Self-selection and survivorship bias — respondents chose to try and continue the diet, and those who did not respond likely dropped out before being counted" },
+                { "id": "opt3", "text": "The study was funded by a pharmaceutical company" },
+                { "id": "opt4", "text": "The study only lasted one week" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The pilot study had significant limitations including self-selection bias (people chose to try ketogenic diets), survivorship bias (those who did not respond or experienced adverse effects may have dropped out before being counted), self-reported outcomes without clinician verification, and no control group for comparison."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is eating disorder screening critical before starting a ketogenic diet for psychiatric purposes?",
+            "options": [
+                { "id": "opt1", "text": "Because the ketogenic diet requires expensive specialty foods" },
+                { "id": "opt2", "text": "Because the significant food restriction involved can trigger or worsen disordered eating patterns" },
+                { "id": "opt3", "text": "Because people with eating disorders cannot enter ketosis" },
+                { "id": "opt4", "text": "Because the ketogenic diet is only effective for people without eating disorders" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A ketogenic diet is generally contraindicated in active eating disorders because the significant food restriction involved can trigger or worsen disordered eating patterns. Potential psychological effects include increased food preoccupation, social isolation around meals, and development of disordered eating behaviors."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How do the proposed mechanisms of ketogenic diets relate to existing psychiatric medications?",
+            "options": [
+                { "id": "opt1", "text": "They work through completely different and unrelated pathways" },
+                { "id": "opt2", "text": "They are identical to SSRIs in every way" },
+                { "id": "opt3", "text": "They overlap — ketone bodies affect ion channels and neurotransmitter balance similarly to medications like lithium, valproate, and lamotrigine" },
+                { "id": "opt4", "text": "Ketogenic diets block all medication effects, making them incompatible" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The proposed mechanisms of ketogenic diets overlap significantly with how established psychiatric medications work. Ketone bodies influence ion channels that regulate neuronal excitability (similar to lithium, valproate, and lamotrigine), shift the glutamate/GABA balance, and address oxidative stress and mitochondrial dysfunction — biological targets shared with several existing treatments."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "9",
+    "title": "Ketogenic Diet and Metabolic Psychiatry - Quiz"
+}

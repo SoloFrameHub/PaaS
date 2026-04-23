@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Someone on a bus starts breathing rapidly, clutching chest, sweating, saying 'I can't breathe, I'm dying.' What's the best response?",
+      "options": [
+        {"id": "opt1", "text": "Yell 'CALM DOWN! You're fine, nothing's wrong!'"},
+        {"id": "opt2", "text": "Stay calm, speak gently: 'This looks like panic attack. Terrifying but not dangerous. Let's breathe together. Will pass in ~10 min.'"},
+        {"id": "opt3", "text": "Immediately call 911 — chest pain is always medical emergency"},
+        {"id": "opt4", "text": "Hand them paper bag to breathe into"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Correct panic attack response: stay calm (model regulation), name it ('panic attack'), validate ('terrifying'), reassure ('not dangerous, will pass'), guide breathing. Yelling 'calm down' escalates. 911 premature for classic panic (monitor 30 min first; call if doesn't resolve or cardiac risk factors). Paper bag is outdated/dangerous (reduces oxygen)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the key difference between normal anxiety and clinical anxiety disorder?",
+      "options": [
+        {"id": "opt1", "text": "Normal anxiety is proportional/time-limited/motivating; clinical anxiety is disproportionate/persistent (6+ mo)/paralyzing/impairs functioning"},
+        {"id": "opt2", "text": "Normal anxiety affects adults; clinical anxiety only affects children"},
+        {"id": "opt3", "text": "No meaningful difference — all anxiety is pathological"},
+        {"id": "opt4", "text": "Normal anxiety requires treatment; clinical anxiety resolves on its own"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Normal anxiety: proportional to threat, time-limited (resolves when stressor passes), motivating, doesn't impair functioning. Clinical anxiety: out of proportion, persistent (6+ months per DSM), paralyzing, impairs work/relationships/daily life. Clinical anxiety requires professional treatment (CBT, medication) and doesn't resolve without intervention."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why does avoidance worsen anxiety over time, and what should MHFA responders do about it?",
+      "options": [
+        {"id": "opt1", "text": "Avoidance doesn't affect anxiety — it's a healthy coping mechanism"},
+        {"id": "opt2", "text": "Avoidance provides short-term relief but grows fear long-term (you never learn the feared thing is safe); gently point out pattern and encourage CBT/exposure therapy"},
+        {"id": "opt3", "text": "Force the person to immediately confront their fear without support"},
+        {"id": "opt4", "text": "Avoidance is fine — people should never do things that make them anxious"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Avoidance reinforces anxiety: you feel relief immediately (negative reinforcement) but never learn the feared situation is safe, so fear GROWS. Common examples: not driving after panic attack, skipping social events. MHFA approach: gently name pattern without judgment ('I've noticed you avoid X — understandable, but avoidance usually worsens anxiety. Open to seeing specialist?'). Encourage CBT/exposure therapy (STRONG evidence). Don't force immediate confrontation (that's harmful)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What does research show about anxiety disorder treatment and the treatment gap?",
+      "options": [
+        {"id": "opt1", "text": "STRONG evidence for CBT/exposure therapy; but only ~37% receive treatment despite high prevalence (19% annual, 31% lifetime)"},
+        {"id": "opt2", "text": "Anxiety is untreatable — no effective interventions exist"},
+        {"id": "opt3", "text": "90% of people with anxiety receive excellent care"},
+        {"id": "opt4", "text": "Anxiety disorders are rare (1% prevalence) so treatment gap doesn't matter"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Anxiety disorders: most common mental health condition (19% annual, 31% lifetime = ~40M U.S. adults). STRONG evidence for CBT (d = 0.7-1.0), exposure therapy for phobias/OCD, SSRIs. BUT severe treatment gap: only ~37% receive treatment, many get inadequate care. MHFA role: recognize anxiety, normalize treatment, reduce barriers, connect to evidence-based care."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should you call 911 for someone experiencing panic attack symptoms?",
+      "options": [
+        {"id": "opt1", "text": "Immediately — all panic symptoms require emergency services"},
+        {"id": "opt2", "text": "Never — panic attacks are not medical emergencies under any circumstances"},
+        {"id": "opt3", "text": "If: first-time chest pain in person 40+ with cardiac risk factors, symptoms don't resolve in 30 min, loss of consciousness, or unsure if panic vs. medical"},
+        {"id": "opt4", "text": "Only if the person explicitly asks you to call"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Call 911 if: (1) first-time chest pain in person 40+ or with cardiac risk factors (rule out heart attack — can mimic panic), (2) symptoms don't resolve within 30 minutes (typical panic peaks ~10 min), (3) loss of consciousness/seizure, or (4) you're unsure if panic vs. medical emergency. Better to err on caution. Most panic attacks don't require 911, but these scenarios do. Don't wait for explicit permission if person is unconscious or in medical crisis."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "8",
+  "title": "Anxiety Disorders and Panic Attack Response - Quiz"
+}

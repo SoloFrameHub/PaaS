@@ -1,0 +1,85 @@
+{
+  "lessonId": "3",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "El Pipeline Contenido-a-Conversión",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En la mezcla de contenido 70/20/10, ¿qué representa cada porcentaje?",
+      "options": [
+        { "id": "a", "text": "70% video, 20% escrito, 10% audio" },
+        {
+          "id": "b",
+          "text": "70% TOFU (descubrimiento), 20% MOFU (nurturing), 10% BOFU (conversión)"
+        },
+        {
+          "id": "c",
+          "text": "70% contenido original, 20% reutilizado, 10% generado por usuarios"
+        },
+        {
+          "id": "d",
+          "text": "70% contenido gratuito, 20% adelantos de pago, 10% anuncios"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La mezcla de contenido 70/20/10 significa 70% de contenido de descubrimiento en la parte superior del embudo, 20% de contenido de nurturing en la parte media, y 10% de contenido de conversión en la parte inferior. La mayoría de los creadores que luchan tienen una división 95/5/0, que es por qué tienen audiencias pero sin ingresos."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el error más común que cometen los creadores con su Escalera de Valor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tener demasiados productos en diferentes rangos de precio"
+        },
+        {
+          "id": "b",
+          "text": "Saltar del contenido gratuito directamente a un curso de $497 sin peldaños intermedios"
+        },
+        { "id": "c", "text": "Poner precios demasiado altos para su nicho" },
+        {
+          "id": "d",
+          "text": "Ofrecer demasiados recursos gratuitos que canibalicen las ventas de productos de pago"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La mayoría de los creadores omiten los pasos intermedios (ofertas de bajo precio entre $9-$49) que construyen los micro-compromisos necesarios para una compra de alto valor. Añadir al menos un peldaño de transición entre lo gratuito y tu oferta principal crea una progresión natural que construye confianza."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué distingue al contenido BOFU (parte inferior del embudo) del contenido TOFU (parte superior)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El contenido BOFU es más largo y detallado que el TOFU"
+        },
+        {
+          "id": "b",
+          "text": "El contenido BOFU está optimizado para la audiencia existente, la confianza y la disposición para comprar; el TOFU está optimizado para algoritmos y descubrimiento"
+        },
+        {
+          "id": "c",
+          "text": "El contenido BOFU siempre es en video mientras que el TOFU es en texto"
+        },
+        {
+          "id": "d",
+          "text": "El contenido BOFU se publica con menos frecuencia que el TOFU"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El contenido BOFU está optimizado para tu audiencia existente, incluye prueba social y CTAs claras, y habla con personas que ya confían en ti. El contenido TOFU está optimizado para algoritmos, compartibilidad y llegar a nuevas personas que nunca han escuchado de ti."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Audita tus últimos 30 días de contenido en todas las plataformas. ¿Aproximadamente qué porcentaje fue TOFU, MOFU y BOFU? ¿Qué pieza específica de contenido BOFU de conversión podrías crear esta semana y a qué oferta conectaría?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student honestly assesses their content mix with approximate percentages and identifies the imbalance. Look for a specific, actionable BOFU content idea (not vague) that connects to a real offer they have or are building."
+    }
+  ]
+}

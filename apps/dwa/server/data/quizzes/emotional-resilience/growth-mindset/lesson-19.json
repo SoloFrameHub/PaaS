@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the scope of this growth mindset course, and what is it NOT?",
+            "options": [
+                {"id": "opt1", "text": "This course IS mental health treatment and can replace therapy"},
+                {"id": "opt2", "text": "This course IS educational content about psychological flexibility and challenge-response skills; it is NOT mental health treatment or a substitute for professional care"},
+                {"id": "opt3", "text": "This course is appropriate for all mental health conditions including severe depression and PTSD"},
+                {"id": "opt4", "text": "This course provides diagnosis and personalized treatment planning"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Critical scope distinction: This course IS educational content about psychological flexibility, resilience, and challenge-response skills (based on CBT, ACT, self-compassion research). It IS appropriate for personal development and navigating normal life challenges. It is NOT: mental health treatment, a substitute for therapy/counseling/psychiatric care, appropriate for crisis states or severe symptoms, supervised by a mental health professional, or able to provide diagnosis or safety monitoring. Correlational evidence (r = −0.22 between mindset and distress) does NOT establish growth mindset as a treatment mechanism."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are red flags that indicate you need professional mental health support rather than self-guided educational content?",
+            "options": [
+                {"id": "opt1", "text": "Feeling stressed about a deadline or having a bad day"},
+                {"id": "opt2", "text": "Persistent low mood/loss of interest for 2+ weeks, excessive anxiety interfering with functioning, intrusive trauma memories, or thoughts of self-harm"},
+                {"id": "opt3", "text": "Any negative emotion whatsoever"},
+                {"id": "opt4", "text": "Professional help is never necessary—courses are always sufficient"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Red flags requiring professional help: (1) Depression—persistent low mood, loss of interest/pleasure, sleep/appetite changes, thoughts of death/suicide for 2+ weeks, (2) Anxiety—excessive worry/fear most days for 6+ months, panic attacks, avoidance interfering with life, (3) Trauma—intrusive memories, flashbacks, hypervigilance, persistent negative changes in thoughts/mood, (4) Crisis—suicidal thoughts, self-harm, immediate danger. These require clinical assessment and evidence-based treatment (CBT, medication, trauma-focused therapy), not self-guided courses. Self-guided content has limits—professional support provides diagnosis, personalized treatment, and safety monitoring."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is self-guided reappraisal content potentially harmful for active PTSD or complex trauma?",
+            "options": [
+                {"id": "opt1", "text": "Because trauma survivors can't learn anything"},
+                {"id": "opt2", "text": "Because 'reframing challenges as opportunities' can invalidate trauma responses and conflict with trauma-informed care principles (validation, safety, choice)—trauma requires professional trauma-focused treatment"},
+                {"id": "opt3", "text": "Self-guided content is actually the best approach for trauma"},
+                {"id": "opt4", "text": "Trauma and reappraisal are unrelated"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Trauma requires trauma-informed clinical care (trauma-focused CBT, EMDR, prolonged exposure). Self-guided content about 'reframing challenges' can be invalidating or harmful for trauma survivors—compulsory reframing of traumatic experiences as 'growth opportunities' violates trauma-informed principles: (1) Validation (pain is real and understandable), (2) Safety (processing at own pace with professional support), (3) Choice (meaning-making is personal, not forced). 'Everything happens for a reason' messaging blocks necessary grief/anger processing. Trauma is NOT a learnable challenge—it's a clinical condition requiring professional treatment."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what should you do if you're experiencing significant distress, persistent symptoms, or thoughts of self-harm?",
+            "options": [
+                {"id": "opt1", "text": "Just complete this course and you'll be fine"},
+                {"id": "opt2", "text": "Seek professional mental health support immediately; call 988 (Suicide & Crisis Lifeline) for crisis; contact therapist or psychiatrist for persistent symptoms"},
+                {"id": "opt3", "text": "Wait until symptoms get much worse before seeking help"},
+                {"id": "opt4", "text": "Ignore the symptoms and practice positive thinking"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "If experiencing significant distress, persistent symptoms, or thoughts of self-harm: SEEK PROFESSIONAL SUPPORT. Crisis: call/text 988 (Suicide & Crisis Lifeline) immediately. Persistent symptoms (depression, anxiety interfering with functioning): contact therapist, counselor, or psychiatrist for clinical assessment. This course cannot replace clinical care. Help-seeking is a STRENGTH, not a failure. The lesson includes standard referral language explicitly directing people to professional support when needed. Depression, anxiety disorders, trauma, and crisis states require evidence-based treatment, not educational courses."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Honestly assess: Are you currently experiencing any red flags that indicate professional support is needed (persistent low mood, anxiety interfering with life, trauma symptoms, thoughts of self-harm)? If yes, what barriers prevent you from seeking help (stigma, access, cost), and what's one step you could take toward getting support? If no, what would trigger you to seek professional help in the future?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "19",
+    "title": "When Professional Help Is Needed - Quiz"
+}

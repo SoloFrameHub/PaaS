@@ -1,0 +1,232 @@
+{
+  "industry_id": "agencies",
+  "display_name": "Agencies & Consultancies",
+  "parent_category": "services",
+  "description": "Marketing agencies, creative studios, development shops, and consultancies typically with 3-50 people. Characterized by project-based work with values ranging from $1K-$10K, thin margins (15-20%), and owner-driven fast decision making. High sensitivity to cash flow and immediate ROI requirements.",
+  "typical_company_sizes": ["1-10", "11-50"],
+  "typical_deal_sizes": ["transactional", "smb"],
+  "sales_cycle_length": "days",
+
+  "pain_points": [
+    {
+      "pain": "Thin margins (15-20%) leaving no room for tool investments",
+      "level": "straightforward",
+      "context": "Agencies operate on tight margins with pressure from both clients and costs"
+    },
+    {
+      "pain": "Scope creep destroying project profitability",
+      "level": "complex",
+      "context": "Clients continuously expand requirements without corresponding budget increases"
+    },
+    {
+      "pain": "Cash flow volatility from project-based revenue",
+      "level": "complex",
+      "context": "Feast or famine cycles make subscription commitments feel risky"
+    },
+    {
+      "pain": "Clients unwilling to pay for tools passed through in billing",
+      "level": "straightforward",
+      "context": "Clients question any line items beyond direct labor"
+    },
+    {
+      "pain": "AI commoditization threatening service value",
+      "level": "complex",
+      "context": "Clients believe AI can replace agency services or demand AI-powered pricing"
+    },
+    {
+      "pain": "Team utilization and billable rate optimization",
+      "level": "straightforward",
+      "context": "Balancing capacity across projects while maximizing billable hours"
+    }
+  ],
+
+  "buying_triggers": [
+    "Losing a major client representing 20%+ of revenue",
+    "Client budget cuts requiring efficiency improvements",
+    "Ad platform policy changes affecting service delivery",
+    "AI commoditization pressure from clients",
+    "Cash flow crisis requiring operational changes",
+    "Scope creep incidents destroying multiple project margins",
+    "Team scaling requiring better processes",
+    "Competitor agencies winning deals with new capabilities"
+  ],
+
+  "budget_cycle": "Project-based budgeting with quarterly reviews. Discretionary spending often tied to new client wins or retained earnings. Strong preference for monthly subscriptions over annual commitments due to cash flow concerns.",
+
+  "regulatory_concerns": [
+    "Client data confidentiality and NDAs",
+    "Industry-specific regulations for client sectors",
+    "Advertising platform compliance (Meta, Google)",
+    "Data privacy for client customer data"
+  ],
+
+  "compliance_language": [
+    "Client data security",
+    "NDA-compliant processes",
+    "Platform-certified",
+    "White-label capability",
+    "SOC 2 for enterprise clients"
+  ],
+
+  "risk_tolerance": "high",
+
+  "terminology": [
+    {
+      "term": "Retainer",
+      "definition": "Recurring monthly fee for ongoing services, providing predictable revenue",
+      "usage_context": "Revenue model. 'We have 8 clients on monthly retainers averaging $5K.'"
+    },
+    {
+      "term": "SOW",
+      "definition": "Statement of Work - document defining project scope, deliverables, timeline, and cost",
+      "usage_context": "Contract document. 'We need to finalize the SOW before kicking off.'"
+    },
+    {
+      "term": "Value-Based Pricing",
+      "definition": "Pricing based on value delivered rather than time spent",
+      "usage_context": "Pricing strategy. 'We moved to value-based pricing for strategy work.'"
+    },
+    {
+      "term": "Scope Creep",
+      "definition": "Gradual expansion of project requirements beyond original agreement",
+      "usage_context": "Project risk. 'Scope creep killed our margin on that project.'"
+    },
+    {
+      "term": "Change Order",
+      "definition": "Formal request to modify scope with associated budget adjustment",
+      "usage_context": "Process. 'Any additions need to go through a change order.'"
+    },
+    {
+      "term": "Utilization Rate",
+      "definition": "Percentage of available time spent on billable work",
+      "usage_context": "Efficiency metric. 'Our target utilization rate is 75%.'"
+    },
+    {
+      "term": "Billable Rate",
+      "definition": "Hourly rate charged to clients for work performed",
+      "usage_context": "Pricing. 'Our blended billable rate is $150/hour.'"
+    },
+    {
+      "term": "ROAS",
+      "definition": "Return on Ad Spend - revenue generated per dollar spent on advertising",
+      "usage_context": "Performance metric. 'We delivered 4x ROAS on their Meta campaigns.'"
+    },
+    {
+      "term": "MER",
+      "definition": "Marketing Efficiency Ratio - total revenue divided by total marketing spend",
+      "usage_context": "Efficiency metric. 'Their MER improved from 3x to 5x under our management.'"
+    },
+    {
+      "term": "White-Label SaaS",
+      "definition": "Software resold under the agency's brand to clients",
+      "usage_context": "Revenue model. 'We white-label their dashboard and charge clients $500/month.'"
+    },
+    {
+      "term": "Rev-Share",
+      "definition": "Revenue sharing arrangement where compensation is tied to client results",
+      "usage_context": "Pricing model. 'We do rev-share deals with e-commerce clients.'"
+    },
+    {
+      "term": "Client Churn",
+      "definition": "Rate at which clients end their relationship with the agency",
+      "usage_context": "Retention metric. 'Our client churn is 15% annually.'"
+    },
+    {
+      "term": "Blended Rate",
+      "definition": "Average hourly rate across team members of different seniority levels",
+      "usage_context": "Pricing. 'Our blended rate for the project team is $125/hour.'"
+    },
+    {
+      "term": "Discovery Phase",
+      "definition": "Initial paid engagement to understand requirements before main project",
+      "usage_context": "Sales process. 'We always start with a paid discovery phase.'"
+    }
+  ],
+
+  "formality_level": "professional",
+  "decision_making_style": "fast_individual",
+
+  "common_objections": [
+    {
+      "objection": "Our margins are too thin to add another subscription",
+      "underlying_concern": "Every cost directly impacts already slim profit margins",
+      "effective_response_approach": "Show direct margin improvement from efficiency gains. Calculate break-even in billable hours saved. Position as investment with measurable ROI within 30-60 days.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Clients won't pay for this - it'll come out of our margin",
+      "underlying_concern": "Agency can't pass through costs and absorbs all tool expenses",
+      "effective_response_approach": "Show how to build into project pricing invisibly. Demonstrate client-facing value that justifies higher rates. Provide white-label options.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We already have too many subscriptions we barely use",
+      "underlying_concern": "Subscription fatigue and concern about adding to software bloat",
+      "effective_response_approach": "Audit their current stack and show consolidation opportunity. Demonstrate immediate daily usage value. Offer to replace existing tools.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "This will just lead to more scope creep with clients",
+      "underlying_concern": "New capabilities create client expectations without budget increases",
+      "effective_response_approach": "Show how tool actually helps document and enforce scope. Provide change order templates. Demonstrate how it supports value-based pricing.",
+      "level": "complex"
+    },
+    {
+      "objection": "I can't commit to annual pricing with our cash flow",
+      "underlying_concern": "Project-based revenue makes long-term commitments risky",
+      "effective_response_approach": "Offer monthly pricing option. Show how tool actually improves cash flow through efficiency. Provide flexible pause options during slow periods.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "My team won't actually use this",
+      "underlying_concern": "Past tool purchases have gone unused after initial enthusiasm",
+      "effective_response_approach": "Provide adoption playbook specific to agencies. Offer team training. Show usage data from similar agencies. Tie to specific daily workflow.",
+      "level": "complex"
+    },
+    {
+      "objection": "With AI, clients expect everything to be faster and cheaper",
+      "underlying_concern": "AI is commoditizing agency services and compressing rates",
+      "effective_response_approach": "Position tool as way to capture AI efficiency gains for agency rather than client. Show how to reposition services as higher-value. Demonstrate AI-augmented premium offerings.",
+      "level": "complex"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Spreadsheets for project management and tracking",
+    "Basic project management tools (Asana, Monday, Trello)",
+    "Manual time tracking and reporting",
+    "Free tiers of marketing tools",
+    "Platform-native tools (Meta Business Suite, Google Analytics)"
+  ],
+
+  "switching_barriers": [
+    "Client reporting dependencies on current tools",
+    "Team familiarity and training investment",
+    "Historical data and benchmarks in current systems",
+    "Workflow integration with existing processes",
+    "Low switching costs but high adoption friction"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "{{agency_type}} agency owner with {{team_size}} team members just lost a client representing {{revenue_percent}}% of revenue. They need to {{goal}} to survive the next {{timeline}}.",
+      "complexity": "single_stakeholder",
+      "variables": ["agency_type", "team_size", "revenue_percent", "goal", "timeline"]
+    },
+    {
+      "template": "{{role}} at a {{agency_type}} agency is dealing with {{pain_point}}. They have {{num_clients}} clients and their current utilization rate is {{utilization}}%. Budget for tools is {{budget}}/month.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "agency_type", "pain_point", "num_clients", "utilization", "budget"]
+    },
+    {
+      "template": "A {{agency_size}} {{agency_type}} agency is scaling from {{current_size}} to {{target_size}} people. The owner needs to improve {{operational_area}} before growth creates chaos. Decision will be made by {{decision_maker}}.",
+      "complexity": "single_stakeholder",
+      "variables": ["agency_size", "agency_type", "current_size", "target_size", "operational_area", "decision_maker"]
+    },
+    {
+      "template": "{{role}} runs a {{agency_type}} agency and clients are pressuring them about AI. They're worried about {{ai_concern}} and looking for ways to {{goal}}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "agency_type", "ai_concern", "goal"]
+    }
+  ]
+}

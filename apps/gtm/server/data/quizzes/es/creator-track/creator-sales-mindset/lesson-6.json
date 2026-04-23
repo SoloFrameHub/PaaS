@@ -1,0 +1,91 @@
+{
+  "lessonId": "6",
+  "courseId": "creator-sales-mindset",
+  "sectionId": "creator-track",
+  "title": "El Marco de Confianza del Creador",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuáles son los Tres Pilares de la Confianza en Ventas descritos en el Marco de Confianza del Creador?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pensamiento positivo, visualización y afirmaciones"
+        },
+        {
+          "id": "b",
+          "text": "Confianza Basada en Evidencia (construida sobre pruebas y trayectoria), Confianza Basada en la Preparación (reducir la incertidumbre mediante preparación específica) y Confianza Basada en Rituales (gestión del estado pre-actuación)"
+        },
+        {
+          "id": "c",
+          "text": "Confianza en los precios, confianza en el producto y confianza en el mercado"
+        },
+        {
+          "id": "d",
+          "text": "Autoconfianza, confianza social y confianza técnica"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los tres pilares son: (1) Confianza Basada en Evidencia, construida sobre pruebas concretas como resultados, testimonios y horas de experiencia, no sobre el pensamiento positivo; (2) Confianza Basada en la Preparación, que reduce la ansiedad preparando objeciones, escribiendo aperturas y estudiando prospectos; y (3) Confianza Basada en Rituales, usando rituales pre-llamada consistentes para activar estados mentales óptimos."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué es la técnica de la 'Pausa del Precio' y por qué es la habilidad más difícil en ventas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esperar 24 horas antes de enviar una propuesta para crear anticipación"
+        },
+        {
+          "id": "b",
+          "text": "Decir tu precio y luego dejar de hablar por completo, permitiendo que el prospecto responda — porque la mayoría de los creadores instintivamente llenan el silencio con descuentos y calificaciones que socavan su confianza"
+        },
+        {
+          "id": "c",
+          "text": "Hacer una pausa a mitad de la frase para crear efecto dramático al hablar de precios"
+        },
+        {
+          "id": "d",
+          "text": "Retrasar la discusión sobre precios hasta el final de la llamada"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Pausa del Precio significa decir tu precio y luego quedarte en silencio. La mayoría de los creadores inmediatamente llenan el silencio con 'Pero puedo hacer un plan de pagos, o un paquete más pequeño...' — cada palabra es un retiro de su cuenta de confianza. El silencio no es incómodo; es profesional, y señala que te sientes cómodo con el número."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estos se identifica como una 'Pérdida de Confianza' que sabotea silenciosamente el rendimiento en ventas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pasar demasiado tiempo preparándose para las llamadas"
+        },
+        {
+          "id": "b",
+          "text": "Tener demasiados testimonios para revisar"
+        },
+        {
+          "id": "c",
+          "text": "Apego al Resultado — definir una 'buena llamada' como aquella que resulta en una venta, lo que pone una enorme presión en cada conversación"
+        },
+        {
+          "id": "d",
+          "text": "Practicar tu declaración de precio con demasiada frecuencia"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El Apego al Resultado significa equiparar una 'buena llamada' con un trato cerrado. Esto crea una inmensa presión en cada conversación y lleva a la desesperación que los prospectos pueden percibir. El reencuadre es que una 'buena llamada' es aquella en la que diagnosticaste con precisión la situación del prospecto y presentaste tu oferta con claridad. El resultado depende de ellos."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Diseña tu Ritual Pre-Llamada personal de 15 Minutos completando los detalles específicos para cada bloque de tiempo: Minutos 0-5 (Revisión de Evidencia), Minutos 5-10 (Preparación del Prospecto), Minutos 10-13 (Reinicio del Estado Físico) y Minutos 13-15 (Establecimiento de Intención). Incluye tu frase ancla específica y explica por qué la elegiste. Comprométete a usar este ritual en tus próximas cinco conversaciones de ventas.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student has created a specific, actionable pre-call ritual rather than a vague plan. Each time block should contain concrete activities (e.g., 'review my top 3 client testimonials' not just 'review evidence'). The anchor phrase should be personal and grounded, not generic motivational language. Look for evidence that the student has thought about what specifically causes them anxiety before calls and designed the ritual to address those triggers."
+    }
+  ]
+}

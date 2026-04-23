@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core principle of stimulus control for sleep?",
+            "options": [
+                { "id": "opt1", "text": "Exercise vigorously in bed before sleeping" },
+                { "id": "opt2", "text": "Your bed should be strongly associated with sleep and intimacy only" },
+                { "id": "opt3", "text": "Keep all electronics within arm's reach" },
+                { "id": "opt4", "text": "Spend as much time in bed as possible" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Stimulus control rebuilds the brain's automatic association between your bed and sleep by removing competing activities. Your bed should be used only for sleep and intimacy -- nothing else."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the ideal bedroom temperature range for sleep according to research?",
+            "options": [
+                { "id": "opt1", "text": "72-76°F (22-24°C)" },
+                { "id": "opt2", "text": "65-68°F (18-20°C)" },
+                { "id": "opt3", "text": "60-62°F (15-17°C)" },
+                { "id": "opt4", "text": "78-80°F (25-27°C)" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently shows that the ideal sleeping temperature is between 65-68°F (18-20°C). Your core body temperature needs to drop slightly to initiate sleep, and a cooler room supports this natural process."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the 20-Minute Rule instruct you to do if you cannot fall asleep?",
+            "options": [
+                { "id": "opt1", "text": "Take a sleeping pill" },
+                { "id": "opt2", "text": "Watch TV in bed until you feel sleepy" },
+                { "id": "opt3", "text": "Get up, go to another room, and do something quiet until you feel sleepy, then return to bed" },
+                { "id": "opt4", "text": "Stay in bed and try harder to fall asleep" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 20-Minute Rule prevents your brain from associating the bed with frustration and wakefulness. If you are not asleep after about 20 minutes, get up and do something quiet and boring in dim light, then return when sleepy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why should you reduce screen exposure 1-2 hours before bed?",
+            "options": [
+                { "id": "opt1", "text": "Screens are too stimulating for the eyes" },
+                { "id": "opt2", "text": "Blue light from screens delays melatonin release and pushes bedtime later" },
+                { "id": "opt3", "text": "The content on screens is always stressful" },
+                { "id": "opt4", "text": "Screens drain the battery on your phone" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Blue light from screens tells your brain it is still daytime, delaying melatonin release and pushing your natural bedtime later. Reducing screen exposure 1-2 hours before bed supports natural sleep onset."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which sense is considered the most important to optimize for better sleep according to the 5 Senses Audit?",
+            "options": [
+                { "id": "opt1", "text": "Smell -- calming scents like lavender" },
+                { "id": "opt2", "text": "Sound -- complete silence" },
+                { "id": "opt3", "text": "Sight -- darkness that suppresses melatonin disruption" },
+                { "id": "opt4", "text": "Touch -- the heaviest blanket possible" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Even small amounts of light can suppress melatonin production. Optimizing darkness (using blackout curtains or a sleep mask) is one of the most impactful environmental changes for better sleep."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "4",
+    "title": "Building Your Sleep Sanctuary - Quiz"
+}

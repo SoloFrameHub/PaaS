@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "6",
+    "lessonTitle": "Email Segmentation",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core purpose of email segmentation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make your email tool more organized."
+                },
+                {
+                    "id": "b",
+                    "text": "To send the right message to the right person at the right time, improving relevance and engagement."
+                },
+                {
+                    "id": "c",
+                    "text": "To send more emails per day without triggering spam filters."
+                },
+                {
+                    "id": "d",
+                    "text": "To track which subscribers have the most money to spend."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Segmentation is about relevance. When an email feels written specifically for the reader, they engage. When it's generic, they ignore it. The goal is delivering the right message to the right person.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'Minimum Viable Segmentation' for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "At least 10 segments to cover all possible subscriber types."
+                },
+                {
+                    "id": "b",
+                    "text": "2-3 segments maximum: By lead magnet source, by engagement level, and optionally by primary interest."
+                },
+                {
+                    "id": "c",
+                    "text": "No segmentation—treat all subscribers the same."
+                },
+                {
+                    "id": "d",
+                    "text": "One segment per individual subscriber for maximum personalization."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Over-segmentation creates complexity without benefit. Start with 2-3 segments you can actually serve with differentiated content. Add more only when justified.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should you remove unengaged subscribers from your list?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To save money on email tool costs."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they actively hurt your deliverability—email providers track engagement, and low rates damage your sender reputation."
+                },
+                {
+                    "id": "c",
+                    "text": "Because unengaged subscribers are more likely to complain."
+                },
+                {
+                    "id": "d",
+                    "text": "It's not necessary—more subscribers is always better."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email providers watch engagement rates. Consistently sending to people who never open trains the algorithm to treat you as spam. Removing unengaged subscribers protects your reputation and helps engaged subscribers see your emails.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the advantage of 'tags' over 'lists' in modern email tools?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tags are visible to subscribers; lists are hidden."
+                },
+                {
+                    "id": "b",
+                    "text": "A subscriber can have multiple tags (source, interest, engagement level) allowing flexible querying of combinations, whereas lists are rigid."
+                },
+                {
+                    "id": "c",
+                    "text": "Tags improve email deliverability; lists don't."
+                },
+                {
+                    "id": "d",
+                    "text": "Tags are free; lists cost extra money."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Tags provide flexibility. One subscriber can be tagged as [Source: Calculator], [Interest: Churn], and [Engagement: High]. You can then query any combination to send targeted content. Lists force subscribers into one bucket.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is a practical first step for implementing 'trigger-based tagging'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Manually review each subscriber's behavior and add tags."
+                },
+                {
+                    "id": "b",
+                    "text": "Set up automations that add tags based on behavior: clicked [Link] → add [Interest: Topic] tag."
+                },
+                {
+                    "id": "c",
+                    "text": "Ask subscribers to self-tag when they sign up."
+                },
+                {
+                    "id": "d",
+                    "text": "Wait until you have 10,000 subscribers before implementing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trigger-based tagging automates the process. When a subscriber clicks a cold email link, they automatically get an [Interest: Cold Email] tag. This builds your segmentation data without manual effort.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Design your initial segmentation strategy: What 2-3 segments will you create? What triggers each segment (lead magnet source, click behavior, engagement level)? How will your content differ for each segment?",
+            "promptHints": [
+                "Start simple—complexity without content is waste.",
+                "Consider which differences actually matter for your messaging.",
+                "Think about your current (or planned) lead magnets as starting points."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "5"
+        ],
+        "unlocks": [
+            "7"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Email Segmentation - Quiz"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "grief-wave-log",
+  "title": "Grief Wave Log",
+  "description": "Track your grief waves and triggers over time. This log helps you identify patterns, notice what helps, and build confidence that waves — even intense ones — do pass. You don't need to log every wave, just the ones that feel significant enough to note.",
+  "instructions": "When you experience a significant grief wave, log it here as soon as you're able. There are no right or wrong entries. Over time, this log becomes a record of both your pain and your resilience.",
+  "frequency": "Per wave",
+  "fields": [
+    {
+      "id": "date",
+      "label": "When did the wave happen?",
+      "type": "text",
+      "placeholder": "e.g., Tuesday morning, Saturday evening at dinner",
+      "required": true
+    },
+    {
+      "id": "trigger",
+      "label": "What triggered it? (if you know)",
+      "type": "textarea",
+      "placeholder": "e.g., Heard their favorite song, saw a photo, their birthday approaching, an ordinary moment reminded me of them, no clear trigger",
+      "required": true
+    },
+    {
+      "id": "trigger-type",
+      "label": "Type of trigger",
+      "type": "select",
+      "options": [
+        { "value": "anniversary-date", "label": "Anniversary or meaningful date" },
+        { "value": "sensory", "label": "Sensory reminder (song, smell, voice, place)" },
+        { "value": "object", "label": "Object or photo" },
+        { "value": "milestone", "label": "Life milestone they're missing" },
+        { "value": "ordinary-moment", "label": "Ordinary moment (setting the table, driving their route)" },
+        { "value": "conversation", "label": "Something someone said" },
+        { "value": "no-trigger", "label": "No clear trigger — it just arrived" },
+        { "value": "other", "label": "Other" }
+      ],
+      "required": true
+    },
+    {
+      "id": "feelings",
+      "label": "What feelings showed up?",
+      "type": "textarea",
+      "placeholder": "e.g., Intense sadness, longing, anger, guilt, numbness, a mix of sadness and gratitude",
+      "required": true
+    },
+    {
+      "id": "intensity",
+      "label": "How intense was the wave? (0 = mild ripple, 10 = overwhelming)",
+      "type": "rating",
+      "min": 0,
+      "max": 10,
+      "required": true
+    },
+    {
+      "id": "body",
+      "label": "How did your body react?",
+      "type": "textarea",
+      "placeholder": "e.g., Tight chest, tears, exhaustion, heaviness, couldn't move, restless",
+      "required": false
+    },
+    {
+      "id": "coping",
+      "label": "What did you do? What helped (or what might help next time)?",
+      "type": "textarea",
+      "placeholder": "e.g., Cried, called a friend, went for a walk, sat with it, did breathing exercises, nothing seemed to help but it passed on its own",
+      "required": false
+    },
+    {
+      "id": "duration",
+      "label": "Roughly how long did the wave last?",
+      "type": "text",
+      "placeholder": "e.g., A few minutes, about an hour, most of the day",
+      "required": false
+    }
+  ]
+}

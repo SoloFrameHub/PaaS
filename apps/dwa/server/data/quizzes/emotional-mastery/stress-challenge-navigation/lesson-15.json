@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the current evidence status for digital wellness interventions targeting stress reduction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "STRONG—all digital interventions work equally well"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE—digital interventions (like guided courses, dCBT-I, structured programs) show promise when combined with skill-building; standalone apps without structure have weaker evidence"
+                },
+                {
+                    "id": "opt3",
+                    "text": "WEAK—no digital interventions have any evidence"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Digital interventions are always inferior to in-person treatment"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Digital wellness interventions have MODERATE evidence that varies significantly by type and structure. Well-designed digital interventions with structured learning components show benefit: digital CBT for insomnia (dCBT-I) has STRONG evidence; online MBSR and cognitive-behavioral stress reduction (CBSR) both show significant effects in RCTs; remote HRV biofeedback shows medium effect sizes. However, standalone mindfulness apps without structured learning components have weaker evidence, and many consumer wellness apps lack rigorous evaluation. The key differentiator is whether the digital tool provides structured skill-building and psychoeducation or just passive content consumption."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the relationship between screen time, technology use, and stress according to research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "All screen time causes stress equally"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The relationship is complex and context-dependent—passive social media scrolling and constant connectivity are associated with increased stress; purposeful digital tool use (like structured courses) can support stress management"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Technology has no effect on stress whatsoever"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only young people are affected by technology-related stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows the technology-stress relationship is nuanced and depends on how technology is used. Passive social media scrolling, constant connectivity (email/messaging expectation), social comparison on platforms, and doomscrolling news are associated with increased stress, anxiety, and reduced well-being. Conversely, purposeful digital tool use—structured online courses (like dCBT-I), HRV biofeedback apps, evidence-based mental health platforms, connection with support networks—can support stress management. The critical variables are: passive vs. active use, social comparison vs. skill-building, constant availability vs. bounded engagement, and whether technology displaces sleep, exercise, or in-person social connection."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What digital behaviors are most consistently associated with increased stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Using any technology for any purpose"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Constant connectivity and availability expectations, passive social media scrolling with social comparison, technology use displacing sleep or physical activity"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only video games cause stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Digital behaviors never affect stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Several digital behaviors consistently correlate with increased stress: (1) Constant connectivity and availability expectations (feeling obligated to respond to emails/messages immediately, inability to disconnect from work), (2) Passive social media scrolling with upward social comparison (seeing curated highlight reels of others' lives), (3) Technology use displacing critical recovery behaviors like sleep (screens before bed disrupting circadian rhythm) or physical activity, (4) News/social media doomscrolling (chronic exposure to threatening information without action capacity), and (5) Fragmented attention and task-switching driven by notifications. These patterns create cognitive overload, erode boundaries, and interfere with stress recovery."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based approach to technology and digital wellness in a stress management course?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Recommend complete technology elimination"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Teach intentional technology use: set boundaries (work hours, notification management), use technology purposefully (structured learning, connection) vs. passively (scrolling), protect sleep and recovery time from screens"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Technology is fine in unlimited amounts"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only young people need digital wellness guidance"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The evidence-aligned approach focuses on intentional, bounded technology use rather than elimination (which is unrealistic for most people). Key strategies include: (1) Setting boundaries—designated work hours, turning off non-essential notifications, creating tech-free zones/times, (2) Purposeful vs. passive use—using technology for skill-building, meaningful connection, or specific tasks rather than mindless scrolling, (3) Protecting recovery—no screens 1 hour before bed, ensuring technology doesn't displace sleep, exercise, or in-person social connection, (4) Managing social comparison—curating feeds, limiting comparison-inducing platforms, and (5) Building awareness of your patterns—tracking when/how technology use increases vs. decreases stress. This is about conscious choice, not total avoidance."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When does technology use become a mental health concern requiring professional support?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any technology use is a mental health concern"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When technology use significantly impairs daily functioning, relationships, work/school performance, sleep, or is used to escape distressing emotions despite negative consequences—this may indicate problematic use or underlying anxiety/depression"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Technology use never requires professional help"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only gaming addiction, not other technology use, requires help"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Technology use becomes a clinical concern when it significantly impairs functioning or indicates underlying mental health issues: inability to reduce use despite wanting to and experiencing negative consequences; technology use causing relationship damage, work/school performance problems, or sleep disruption; using technology primarily to escape or avoid distressing emotions (avoidant coping); anxiety or panic when separated from devices; or compulsive checking/use that interferes with daily activities. These patterns may indicate problematic technology use itself, or they may be symptoms of underlying anxiety, depression, or other conditions using technology as an avoidance mechanism. Professional evaluation can clarify whether this is a primary issue or secondary to other mental health concerns."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "15",
+    "title": "Technology and Digital Wellness for Stress - Quiz"
+}

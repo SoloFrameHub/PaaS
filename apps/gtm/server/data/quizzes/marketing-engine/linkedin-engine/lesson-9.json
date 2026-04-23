@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "9",
+    "lessonTitle": "Analytics and Optimization",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary danger of focusing on 'Impressions' as your main LinkedIn metric?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "LinkedIn will charge you more for high impressions."
+                },
+                {
+                    "id": "b",
+                    "text": "It is a vanity metric that doesn't tell you if the 'Right' people are seeing your content or if they are taking action."
+                },
+                {
+                    "id": "c",
+                    "text": "High impressions cause the algorithm to hide your future posts."
+                },
+                {
+                    "id": "d",
+                    "text": "It makes your profile look unprofessional."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Reach without relevance is noise. For a solo founder, a small number of views from high-intent ICPs is infinitely more valuable than a million views from an unrelated audience.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the 'Drift Score' (Profile Views per Post) measure?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "How fast you are growing your follower count."
+                },
+                {
+                    "id": "b",
+                    "text": "How effective your content/comments are at intriguing a user enough to click your name and visit your 'Landing Page' (Profile)."
+                },
+                {
+                    "id": "c",
+                    "text": "The number of likes you get on average."
+                },
+                {
+                    "id": "d",
+                    "text": "The technical speed of your LinkedIn app."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The profile visit is the transition point between 'Seeing a Post' and 'Considering a Relationship.' A high drift score means your authority/insight signals are working.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If your 'Top Job Titles' demographics show 'Recruiters' and 'Students' instead of your ICP, what is the most likely 'Fix'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Delete those users from your network."
+                },
+                {
+                    "id": "b",
+                    "text": "Use more niche-specific practitioner keywords and remove broad/generic hashtags."
+                },
+                {
+                    "id": "c",
+                    "text": "Stop posting content altogether."
+                },
+                {
+                    "id": "d",
+                    "text": "Pay for LinkedIn Premium."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Generic content attracts a generic audience. To reach decision-makers, you must speak the specific language of their pain and industry.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the probable cause of 'High Engagement but No Profile Views'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your posts are too long."
+                },
+                {
+                    "id": "b",
+                    "text": "Your content is 'Entertaining' or 'Relatable' but lacks enough 'Authority' (A) or 'Proof' (P) to make the reader curious about your expertise."
+                },
+                {
+                    "id": "c",
+                    "text": "Your profile is set to private."
+                },
+                {
+                    "id": "d",
+                    "text": "You are posting at the wrong time of day."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "People like relatable posts, but they visit the profiles of experts. Ensure you are balancing relatability with deep practitioner insight.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Dwell Time' (the amount of time a user spends looking at a post) important for your algorithm reach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It isn't; only likes matter."
+                },
+                {
+                    "id": "b",
+                    "text": "LinkedIn's algorithm treats long dwell time as a signal of high-quality content and shows it to more people."
+                },
+                {
+                    "id": "c",
+                    "text": "It automatically converts the user into a lead."
+                },
+                {
+                    "id": "d",
+                    "text": "It helps you win the 'Creator of the Year' award."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This is why carousels and well-structured long-form text are so powerful—they force the user to stop and engage with your authority for longer.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Assume you have a post with 1,000 views. 50% are 'Founders' (Your ICP) and 50% are 'Entry Level Developers'. How would you adjust your 'Hook' or 'Authority' signal in your next post to increase the % of Founders while maintaining or increasing the total views? What specific 'Founder Pain' would you lean into?",
+            "promptHints": [
+                "Think about language that an entry-level person wouldn't understand but a founder would.",
+                "Focus on 'Budget', 'Strategy', or 'Growth' over 'Technical' implementation.",
+                "Consider using a hook that specifically addresses a founder's unique pressure (e.g., 'The cost of a bad hire...')."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "8"
+        ],
+        "unlocks": [
+            "10"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Analytics and Optimization - Quiz"
+}

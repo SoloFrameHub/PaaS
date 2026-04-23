@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the four-branch model of emotional intelligence (Mayer & Salovey), what is the first foundational branch?",
+      "options": [
+        {"id": "opt1", "text": "Managing emotions effectively in yourself and others"},
+        {"id": "opt2", "text": "Perceiving emotions accurately in yourself, others, and the environment through facial expressions, tone, body language, and context"},
+        {"id": "opt3", "text": "Understanding emotional patterns, triggers, and progressions"},
+        {"id": "opt4", "text": "Using emotions strategically to facilitate different types of thinking"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Perceiving emotions is the foundational first branch — you cannot understand, use, or manage emotions if you can't accurately identify them. This involves noticing emotional cues in facial expressions, tone of voice, body language, and context, both in others and in yourself. Without this skill, coaches miss critical information about what's actually happening in a conversation."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A client says 'I'm fine' but their tone is flat, posture is slumped, and they're avoiding eye contact. What is this an example of, and how should you respond?",
+      "options": [
+        {"id": "opt1", "text": "Congruent communication — their words and body language match, so accept 'I'm fine' at face value"},
+        {"id": "opt2", "text": "Incongruent communication — body language conflicts with words. Trust the body over the words. Coach should name what they notice: 'Your words say fine, but I'm noticing your energy seems low. What's really going on?'"},
+        {"id": "opt3", "text": "The client is lying — confront them directly about being dishonest"},
+        {"id": "opt4", "text": "Ignore the nonverbal cues and continue with the planned agenda"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "When words and body language conflict (incongruence), always trust the nonverbal cues — they're harder to fake and more reliable indicators of true emotional state. The coaching response: name what you're noticing without judgment and check in. This demonstrates emotional perceptiveness and creates space for the person to share what's actually happening, rather than performing 'fine.'"
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "A client is anxious and overwhelmed, ruminating about everything that could go wrong. According to emotional intelligence principles, what's the MOST effective first response?",
+      "options": [
+        {"id": "opt1", "text": "Jump immediately to problem-solving: 'Here's what you need to do to fix this'"},
+        {"id": "opt2", "text": "Help them regulate their nervous system first by slowing the pace, grounding them ('Let's take a breath together'), and breaking overwhelm into smaller pieces — THEN problem-solve once they're calmer"},
+        {"id": "opt3", "text": "Dismiss the anxiety: 'Don't worry, you'll be fine!'"},
+        {"id": "opt4", "text": "Add cognitive complexity: 'Let's create a detailed 30-day plan with contingencies for every scenario'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "When someone is in sympathetic nervous system activation (anxiety/overwhelm), higher-order thinking is offline. Jumping to problem-solving (opt1) or adding complexity (opt4) doesn't work because they can't process it. Dismissing (opt3) invalidates their experience. First: regulate (slow pace, ground, breathe, break overwhelm into small pieces). Once calmer, THEN problem-solve. You're using emotions to facilitate thinking (Branch 2)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the key difference between emotional regulation and emotional suppression?",
+      "options": [
+        {"id": "opt1", "text": "There is no difference — they're the same thing"},
+        {"id": "opt2", "text": "Emotional regulation is modulating the intensity and duration of emotions so they're useful rather than overwhelming; emotional suppression is denying or eliminating emotions entirely. Regulation is healthy; suppression leads to burnout and inauthenticity."},
+        {"id": "opt3", "text": "Emotional regulation is for clients; emotional suppression is for coaches (coaches should suppress all emotions to stay professional)"},
+        {"id": "opt4", "text": "Emotional suppression is healthier because emotions interfere with rational thinking"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Regulation ≠ suppression. Regulation means modulating intensity so the emotion is informative and manageable (e.g., lowering anxiety from a 9/10 to a 5/10 so you can think clearly). Suppression means denying the emotion exists or forcing it underground. Suppression creates inauthenticity (clients sense it), accumulates emotional residue (burnout), and prevents you from using emotions as data. Coaches need regulation skills, not suppression."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "A client starts crying when discussing a major setback. What is the MOST emotionally intelligent response?",
+      "options": [
+        {"id": "opt1", "text": "Immediately try to cheer them up: 'Don't cry! It's not that bad — you'll bounce back!'"},
+        {"id": "opt2", "text": "Allow space for the emotion: 'It's okay to cry. Take your time.' Offer tissue, validate the loss or disappointment, and be comfortable with silence. When they're ready, ask 'What would help right now?'"},
+        {"id": "opt3", "text": "Look away or change the subject to avoid discomfort"},
+        {"id": "opt4", "text": "Make it about you: 'I feel so bad seeing you upset'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Tears are a healthy emotional release. Rushing to stop them (opt1), avoiding them (opt3), or centering yourself (opt4) all communicate that the emotion is unacceptable. The emotionally intelligent response: create space ('It's okay to cry'), normalize it (offering tissue without comment), validate the underlying experience ('This is a real loss'), and be present without trying to fix. This builds trust and allows the person to process the emotion rather than suppress it."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "7",
+  "title": "Emotional Intelligence in Coaching - Quiz"
+}

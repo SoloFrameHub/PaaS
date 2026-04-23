@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is moral injury, and how is it different from burnout?",
+            "options": [
+                {"id": "opt1", "text": "Moral injury and burnout are the same thing"},
+                {"id": "opt2", "text": "Moral injury is psychological harm from actions/inactions that violate core values (unable to provide adequate care); burnout is exhaustion and disengagement from chronic stress"},
+                {"id": "opt3", "text": "Moral injury only affects military personnel"},
+                {"id": "opt4", "text": "Moral injury is less serious than burnout"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Moral injury is psychological harm from acting (or failing to act) in ways that violate deeply held moral or ethical values. In healthcare: being unable to provide adequate care, witnessing preventable harm, prioritizing efficiency over ethics. Burnout is about energy depletion and disengagement. They can co-occur, but moral injury is specifically about value violation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the primary organizational drivers of moral injury in healthcare?",
+            "options": [
+                {"id": "opt1", "text": "Individual lack of resilience"},
+                {"id": "opt2", "text": "Chronic understaffing, inadequate resources, inability to provide adequate care, witnessing preventable harm, and lack of management support"},
+                {"id": "opt3", "text": "Moral injury is caused by personal weakness"},
+                {"id": "opt4", "text": "Moral injury only happens to bad clinicians"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Moral injury in healthcare is caused by structural failures: chronic understaffing (unsafe patient ratios), inadequate resources preventing quality care, being forced to prioritize volume over safety, witnessing preventable patient harm, and lack of management support for worker health and safety. These are organizational problems, not individual resilience issues."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the national VA study, what percentage of frontline healthcare workers were at risk for moral injury?",
+            "options": [
+                {"id": "opt1", "text": "5%"},
+                {"id": "opt2", "text": "39% at risk for moral injury, 41% for PTSD, 27% for depression, 25% for persistent burnout"},
+                {"id": "opt3", "text": "100%"},
+                {"id": "opt4", "text": "Less than 1%"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A national study of 2,004 frontline healthcare workers at 21 US VA medical centers found 39% at risk for moral injury, 41% for PTSD, 27% for depression, and 25% for persistent burnout. These are serious mental health burdens resulting from structural workplace problems, not individual inadequacy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What type of professional help is needed for moral injury and trauma exposure?",
+            "options": [
+                {"id": "opt1", "text": "General stress management is sufficient"},
+                {"id": "opt2", "text": "Trauma-specialized therapy (Cognitive Processing Therapy, Prolonged Exposure, EMDR) — general counseling is insufficient"},
+                {"id": "opt3", "text": "Moral injury doesn't require professional help"},
+                {"id": "opt4", "text": "Mindfulness apps are enough"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Moral injury and PTSD require specialized trauma-focused therapy: Cognitive Processing Therapy (CPT), Prolonged Exposure (PE), or EMDR. General counseling or stress management is insufficient. Look for trauma-specialized therapists. EAP can provide initial assessment and referral. Moral injury also requires organizational accountability — adequate staffing and resources."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "17",
+    "title": "Healthcare Workers and Moral Injury - Quiz"
+}

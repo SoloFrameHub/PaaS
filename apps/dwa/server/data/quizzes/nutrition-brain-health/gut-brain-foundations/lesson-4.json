@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most consistent finding in microbiome-depression research?",
+            "options": [
+                { "id": "opt1", "text": "People with depression have too many gut bacteria overall" },
+                { "id": "opt2", "text": "Reduced bacterial diversity — fewer different species of bacteria in the gut" },
+                { "id": "opt3", "text": "Complete absence of all bacteria in the gut" },
+                { "id": "opt4", "text": "An overabundance of beneficial probiotic strains" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The most consistent finding in microbiome-depression research is reduced bacterial diversity. People with MDD tend to have fewer different species of bacteria, which matters because microbial diversity is associated with ecosystem resilience — the ability to withstand stressors, maintain barrier integrity, and produce beneficial metabolites."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Faecalibacterium prausnitzii is consistently depleted in people with depression. Why is this bacterium particularly important?",
+            "options": [
+                { "id": "opt1", "text": "It produces alcohol that sterilizes the gut" },
+                { "id": "opt2", "text": "It is one of the most important butyrate producers in the human gut and is considered a biomarker of gut health" },
+                { "id": "opt3", "text": "It directly produces serotonin that crosses into the brain" },
+                { "id": "opt4", "text": "It is responsible for digesting all dietary protein" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Faecalibacterium prausnitzii is one of the most important butyrate producers in the human gut and is considered a biomarker of gut health. Its depletion in depression means less butyrate, a weaker gut barrier, and more inflammation — contributing to the vicious cycle between gut dysfunction and depression."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What happens in fecal microbiota transplant (FMT) studies when gut bacteria from depressed humans are transferred to germ-free mice?",
+            "options": [
+                { "id": "opt1", "text": "The mice become physically ill but show no behavioral changes" },
+                { "id": "opt2", "text": "The mice show no effects because bacteria cannot influence behavior" },
+                { "id": "opt3", "text": "The mice develop depressive-like behaviors including social withdrawal and reduced pleasure-seeking" },
+                { "id": "opt4", "text": "The mice develop improved mood and increased social behavior" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "When gut bacteria from depressed humans are transplanted into germ-free mice, the mice develop depressive-like behaviors — reduced exploration, social withdrawal, learned helplessness, and altered stress responses. Mice receiving bacteria from healthy donors do not develop these behaviors, providing strong causal evidence that the microbiome contributes to depression."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the American Gut Project, how many different plant foods per week are associated with significantly greater microbial diversity?",
+            "options": [
+                { "id": "opt1", "text": "5 or more" },
+                { "id": "opt2", "text": "10 or more" },
+                { "id": "opt3", "text": "15 or more" },
+                { "id": "opt4", "text": "30 or more" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The American Gut Project found that people who ate 30 or more different plant foods per week had significantly greater microbial diversity than those who ate 10 or fewer. 'Plant foods' includes vegetables, fruits, whole grains, legumes, nuts, seeds, herbs, and spices — making 30 per week more achievable than it sounds."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which approach was found to increase microbial diversity more effectively than a high-fiber diet alone over a 10-week period?",
+            "options": [
+                { "id": "opt1", "text": "Taking antibiotics to reset the microbiome" },
+                { "id": "opt2", "text": "Eating fermented foods daily" },
+                { "id": "opt3", "text": "Fasting for extended periods" },
+                { "id": "opt4", "text": "Drinking more water" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Stanford Microbiome Study (2021) found that eating fermented foods increased microbial diversity more effectively than a high-fiber diet alone over a 10-week period. Examples include yogurt, kefir, sauerkraut, kimchi, miso, and kombucha."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "4",
+    "title": "Your Microbiome and Depression: The Bacterial Connection - Quiz"
+}

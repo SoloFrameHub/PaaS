@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three phases of burnout recovery?",
+            "options": [
+                { "id": "opt1", "text": "Awareness, acceptance, and action" },
+                { "id": "opt2", "text": "Rest, therapy, and medication" },
+                { "id": "opt3", "text": "Stabilization, re-evaluation, and gradual re-engagement" },
+                { "id": "opt4", "text": "Diagnosis, treatment, and prevention" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Burnout recovery has three phases: stabilization (reducing acute demands and meeting basic needs), re-evaluation (understanding what happened and what needs to change), and gradual re-engagement (returning to sustainable functioning by increasing responsibilities slowly with protected boundaries)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the number one predictor of burnout relapse?",
+            "options": [
+                { "id": "opt1", "text": "Having a high-stress job" },
+                { "id": "opt2", "text": "Not exercising enough during recovery" },
+                { "id": "opt3", "text": "Removing boundaries after recovery because you feel better" },
+                { "id": "opt4", "text": "Returning to the same workplace after time off" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The number one predictor of burnout relapse is removing boundaries after recovery. When you feel better, your brain forgets how bad it was and starts rationalizing new commitments. Feeling better is evidence your boundaries are working, not a signal to remove them."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does burnout differ from depression?",
+            "options": [
+                { "id": "opt1", "text": "They are exactly the same condition with different names" },
+                { "id": "opt2", "text": "Burnout is primarily work-related and you may still enjoy non-work activities; depression affects all areas of life and involves loss of interest in most things" },
+                { "id": "opt3", "text": "Depression is more serious while burnout is minor" },
+                { "id": "opt4", "text": "Burnout requires medication while depression does not" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Burnout is primarily work-related, and you may still enjoy non-work activities. Depression affects all areas of life and involves persistent sadness, emptiness, and loss of interest in most things. Burnout involves feeling 'I am ineffective at work' while depression involves 'I am worthless as a person.' They can overlap and benefit from integrated care."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does the lesson recommend a graded return to work rather than jumping back at full capacity?",
+            "options": [
+                { "id": "opt1", "text": "Because employers legally require a graded return" },
+                { "id": "opt2", "text": "Because it gives time to re-evaluate what happened, set boundaries, and monitor warning signs before pressure rebuilds" },
+                { "id": "opt3", "text": "Because working at reduced capacity permanently is the goal" },
+                { "id": "opt4", "text": "Because a few weeks of rest always fully cures burnout" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A graded return gives you time to re-evaluate what happened, set boundaries before the pressure rebuilds, and monitor your warning signs. Rushing back to full capacity is the fastest route to relapse. Real recovery is not just about rest — it is about restructuring how you work."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What core practices should be maintained even after you start feeling better from burnout?",
+            "options": [
+                { "id": "opt1", "text": "Intensive therapy sessions and daily medication" },
+                { "id": "opt2", "text": "Boundaries, recovery time, sleep consistency, movement, and social connection" },
+                { "id": "opt3", "text": "Complete avoidance of all work-related tasks" },
+                { "id": "opt4", "text": "Only the practices your employer requires" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Even when feeling better, you should maintain five foundational practices: boundaries (work-end time, email limits, saying no), recovery time (detachment, relaxation, mastery, control), sleep consistency, movement (even minimal), and social connection (not withdrawing when stress increases). These are what made you feel better in the first place."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "stress-burnout",
+    "lessonId": "8",
+    "title": "Rebuilding After Burnout and Preventing Relapse - Quiz"
+}

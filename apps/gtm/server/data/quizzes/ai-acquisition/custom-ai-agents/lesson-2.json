@@ -1,0 +1,134 @@
+{
+    "lessonId": "2",
+    "courseId": "custom-ai-agents",
+    "sectionId": "ai-acquisition",
+    "title": "Orchestrator Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "You're a non-technical founder with a $20/month budget. Which orchestrator should you choose?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "n8n self-hosted (requires DevOps knowledge)"
+                },
+                {
+                    "id": "b",
+                    "text": "Trigger.dev (requires TypeScript)"
+                },
+                {
+                    "id": "c",
+                    "text": "Make Core ($10/month, visual builder)"
+                },
+                {
+                    "id": "d",
+                    "text": "Zapier Professional ($49/month)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Make Core ($10/month) is the best fit: visual builder (no code), affordable, and more powerful than Zapier. n8n requires technical skills, Trigger.dev requires coding, and Zapier is too expensive.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "What workflow pattern should you use for an agent that enriches contacts from multiple APIs (Apollo, Clearbit, LinkedIn) simultaneously?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Linear Pipeline"
+                },
+                {
+                    "id": "b",
+                    "text": "Conditional Branch"
+                },
+                {
+                    "id": "c",
+                    "text": "Parallel Enrichment"
+                },
+                {
+                    "id": "d",
+                    "text": "Human-in-the-Loop"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Parallel Enrichment runs multiple API calls simultaneously, then merges results. This is faster and maximizes data coverage compared to sequential (linear) enrichment.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "You're building an email-sending agent. Which workflow pattern is essential?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Linear Pipeline (trigger → AI → send)"
+                },
+                {
+                    "id": "b",
+                    "text": "Parallel Enrichment (multiple data sources)"
+                },
+                {
+                    "id": "c",
+                    "text": "Human-in-the-Loop (AI draft → human review → send)"
+                },
+                {
+                    "id": "d",
+                    "text": "Conditional Branch (IF/ELSE logic)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Human-in-the-Loop is critical for email sending. AI can hallucinate or make tone mistakes. Always review before sending customer-facing messages.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "At 50 prospects/week with 5 agents, how many workflow runs per month?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "250 (50 × 5)"
+                },
+                {
+                    "id": "b",
+                    "text": "1,000 (50 × 4 weeks × 5 agents)"
+                },
+                {
+                    "id": "c",
+                    "text": "200 (50 × 4 weeks)"
+                },
+                {
+                    "id": "d",
+                    "text": "500 (50 × 10)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "50 prospects/week × 4 weeks = 200 prospects/month. Each prospect triggers 5 agents = 200 × 5 = 1,000 runs/month.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "What's the #1 security mistake solo founders make with orchestrators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Not using 2FA"
+                },
+                {
+                    "id": "b",
+                    "text": "Hardcoding API keys in workflows"
+                },
+                {
+                    "id": "c",
+                    "text": "Not setting up error notifications"
+                },
+                {
+                    "id": "d",
+                    "text": "Using free tiers"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Hardcoding API keys in workflows is the most dangerous mistake. If someone gains access to your orchestrator, they have your keys. Always use credentials vaults or environment variables.",
+            "type": "multiple-choice"
+        }
+    ]
+}

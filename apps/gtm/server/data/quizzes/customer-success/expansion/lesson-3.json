@@ -1,0 +1,84 @@
+{
+  "lessonId": "3",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Outcome-Based Expansion Triggers",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How do outcome-based triggers differ from usage-based triggers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outcome triggers track product usage; usage triggers track business results"
+        },
+        {
+          "id": "b",
+          "text": "Outcome triggers track client progress and results; usage triggers track product behavior"
+        },
+        {
+          "id": "c",
+          "text": "Outcome triggers only work for SaaS; usage triggers work for services"
+        },
+        { "id": "d", "text": "There is no meaningful difference between them" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Outcome-based triggers track client progress and business results (like hitting revenue milestones or achieving ROI), while usage-based triggers track how the customer uses the product (seats, storage, API calls). Outcome triggers are essential for services and coaching."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What conversion rate do service businesses achieve when they upsell at outcome milestones versus time-based upsells?",
+      "options": [
+        { "id": "a", "text": "15-25% for both approaches" },
+        {
+          "id": "b",
+          "text": "45-60% at outcome milestones vs. 15-25% for time-based"
+        },
+        {
+          "id": "c",
+          "text": "30-40% at outcome milestones vs. 30-40% for time-based"
+        },
+        {
+          "id": "d",
+          "text": "70-80% at outcome milestones vs. 50-60% for time-based"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Service businesses that upsell at outcome milestones convert at 45-60% vs. 15-25% for time-based upsells. Timing the ask to a measurable win makes it feel like solving the natural next problem rather than selling."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the key question that generates 3x more expansion revenue than waiting for clients to ask?",
+      "options": [
+        { "id": "a", "text": "Would you like to upgrade your plan?" },
+        { "id": "b", "text": "What's next?" },
+        { "id": "c", "text": "Can we increase the retainer?" },
+        { "id": "d", "text": "Are you interested in additional services?" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 'What's next?' question generates 3x more expansion revenue because it focuses on the client's natural next challenge after achieving success. You're not selling — you're solving the problem that success creates."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "In services and coaching, every client outcome is a fork in the road: celebrate and move on, or celebrate and ask 'what's next?' — and the second path is where expansion revenue lives.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Every client outcome creates a natural expansion opportunity. Success proves the system works, and clients who have just achieved results are most receptive to taking the next step because they have confidence in your ability to deliver."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe 3 outcome-based milestones that your clients or customers might achieve. For each milestone, explain what logical next step or expansion path it opens up, and draft the conversation opener you would use.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies concrete, measurable outcome milestones (not vague ones), connects each to a logical expansion path that solves the next problem success creates, and drafts a conversational opener that leads with the client's success rather than the founder's need for revenue."
+    }
+  ]
+}

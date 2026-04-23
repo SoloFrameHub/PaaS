@@ -1,0 +1,66 @@
+{
+  "lessonId": "3",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "Payment Terms: Net 7/14/30 and Late Fees",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "On average, how many days past terms do clients actually pay Net 30 invoices?",
+      "options": [
+        { "id": "a", "text": "On time (30 days)" },
+        { "id": "b", "text": "34 days" },
+        { "id": "c", "text": "38 days" },
+        { "id": "d", "text": "45 days" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Net 30 means 38 days on average — clients pay 8 days past terms on average. Plan for the actual float, not the contractual terms."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What payment terms are recommended as the default for most solo founder service businesses?",
+      "options": [
+        { "id": "a", "text": "Due on Receipt" },
+        { "id": "b", "text": "Net 7" },
+        { "id": "c", "text": "Net 14" },
+        { "id": "d", "text": "Net 30" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Net 14 is the recommended default for most solo founder service businesses. Short enough to maintain cash flow, long enough that clients can process internally. Only accept Net 30+ when required by the client's size or procurement process."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What percentage of small businesses have experienced cash flow problems due to late payments?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "40%" },
+        { "id": "c", "text": "60%" },
+        { "id": "d", "text": "80%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "60% of small businesses have experienced cash flow problems due to late payments. This is largely self-inflicted — they set Net 30 without understanding actual float, skipped deposits, and had no late fee mechanism."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Solo/small startup clients should be offered Net 30 terms as a standard courtesy.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. For solo/small startup clients, the recommendation is Net 14 with a 50% upfront deposit and 1.5%/month late fee. Net 30 should only be used for mid-market or enterprise clients who require it."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "What payment terms do you currently use? Have you experienced late payments? What specific changes to your payment terms (net period, deposits, late fees) would improve your cash flow?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies their current payment terms, acknowledges any late payment experiences, and proposes specific improvements (shorter net terms, upfront deposits, late fee clauses) based on the payment terms matrix for their client types."
+    }
+  ]
+}

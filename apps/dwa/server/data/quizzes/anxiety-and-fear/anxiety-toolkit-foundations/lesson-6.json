@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three detective questions for challenging anxious thoughts?",
+            "options": [
+                { "id": "opt1", "text": "Why me? What now? Who cares?" },
+                { "id": "opt2", "text": "What is the evidence? Is there another way to look at this? What would I tell a friend?" },
+                { "id": "opt3", "text": "Is it true? Is it important? Can I change it?" },
+                { "id": "opt4", "text": "When did it start? How long will it last? What caused it?" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The three detective questions are: What is the evidence? (look for facts, not feelings), Is there another way to look at this? (generate alternatives), and What would I tell a friend? (access your compassionate self)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is the 'friend test' (What would I tell a friend?) effective?",
+            "options": [
+                { "id": "opt1", "text": "Friends always give the best advice" },
+                { "id": "opt2", "text": "We are often much kinder to friends than to ourselves, so it accesses our compassionate, wise side" },
+                { "id": "opt3", "text": "Friends understand anxiety better than we do" },
+                { "id": "opt4", "text": "Talking to friends cures anxiety" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "We are often much kinder to our friends than to ourselves. The friend test helps you access the compassionate, wise part of yourself that anxiety tends to silence. If you would not say it to a friend, do not say it to yourself."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What distinguishes a balanced thought from forced positivity?",
+            "options": [
+                { "id": "opt1", "text": "A balanced thought is always negative" },
+                { "id": "opt2", "text": "A balanced thought acknowledges your feelings while looking at the facts, without forcing false optimism" },
+                { "id": "opt3", "text": "Forced positivity is more effective than balanced thinking" },
+                { "id": "opt4", "text": "There is no difference between them" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A balanced thought acknowledges your feeling ('Even though I feel nervous...'), recognizes uncertainty, and offers constructive action. It is not forced positivity -- it is realistic and fact-based."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When examining evidence for an anxious thought, what should you focus on?",
+            "options": [
+                { "id": "opt1", "text": "How strongly you feel the emotion" },
+                { "id": "opt2", "text": "Cold, hard facts -- not feelings or assumptions" },
+                { "id": "opt3", "text": "What other people might think" },
+                { "id": "opt4", "text": "Your past experiences with similar situations" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When examining evidence, look for cold, hard facts -- not feelings, not assumptions. When you examine actual evidence, you often find anxious thoughts are built on assumptions rather than facts."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the main goal of the three detective questions?",
+            "options": [
+                { "id": "opt1", "text": "To prove that anxious thoughts are always wrong" },
+                { "id": "opt2", "text": "To reduce the thought's intensity and stop the runaway train of catastrophic thinking" },
+                { "id": "opt3", "text": "To eliminate all anxiety permanently" },
+                { "id": "opt4", "text": "To replace all thoughts with positive ones" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The goal is to reduce the thought's intensity and stop the runaway train of catastrophic thinking. By finding a more balanced view, you apply the 'brake' to the emotional spiral."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit-foundations",
+    "lessonId": "6",
+    "title": "Your Thought Detective Toolkit: Finding Balance - Quiz"
+}

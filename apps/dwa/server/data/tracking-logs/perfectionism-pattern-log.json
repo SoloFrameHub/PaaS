@@ -1,0 +1,83 @@
+{
+  "id": "perfectionism-pattern-log",
+  "title": "Perfectionism Pattern Log",
+  "description": "Track perfectionism episodes to identify your patterns, triggers, and the impact of rigid standards on your daily life.",
+  "instructions": "When you notice a perfectionism pattern in action — such as overworking, checking excessively, procrastinating due to fear of imperfection, or being harsh with yourself — record the episode here.",
+  "frequency": "per-event",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Monday, Feb 10"
+    },
+    {
+      "id": "situation",
+      "label": "What was the situation?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Preparing a report for work, cooking dinner for guests"
+    },
+    {
+      "id": "perfectionisticRule",
+      "label": "What perfectionistic rule was activated?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., 'This report must be flawless or my boss will think I'm incompetent'"
+    },
+    {
+      "id": "behavior",
+      "label": "What did you do in response?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "overworked", "label": "Overworked or spent excessive time on the task" },
+        { "value": "checked-repeatedly", "label": "Checked or revised work repeatedly" },
+        { "value": "procrastinated", "label": "Procrastinated or avoided starting" },
+        { "value": "sought-reassurance", "label": "Sought reassurance from others" },
+        { "value": "gave-up", "label": "Gave up or abandoned the task" },
+        { "value": "criticized-self", "label": "Was harsh with myself (self-criticism)" },
+        { "value": "controlled-others", "label": "Tried to control how others did things" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    {
+      "id": "distressLevel",
+      "label": "How distressed did you feel? (0 = no distress, 10 = extreme distress)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "timeSpent",
+      "label": "How much extra time did this pattern cost you?",
+      "type": "select",
+      "required": false,
+      "options": [
+        { "value": "none", "label": "No extra time" },
+        { "value": "15-30min", "label": "15-30 minutes" },
+        { "value": "30-60min", "label": "30-60 minutes" },
+        { "value": "1-2hrs", "label": "1-2 hours" },
+        { "value": "2plus-hrs", "label": "More than 2 hours" },
+        { "value": "avoided-entirely", "label": "Avoided the task entirely" }
+      ]
+    },
+    {
+      "id": "outcome",
+      "label": "What actually happened? (Did the feared outcome occur?)",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., 'The report was fine. My boss said it was good. Nobody noticed the section I was worried about.'"
+    },
+    {
+      "id": "notes",
+      "label": "Any other observations or reflections",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., 'I noticed the perfectionism was stronger when I was tired. The actual outcome was much better than I feared.'"
+    }
+  ],
+  "disclaimer": "This log is an educational self-tracking tool. It is not a diagnostic instrument or a substitute for professional mental health care. Please avoid including names or other identifying information in your entries."
+}

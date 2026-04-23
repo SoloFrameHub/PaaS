@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "The DM Revenue Channel",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the typical DM conversion rate to a purchase or booked call for well-executed DM selling, compared to cold landing page traffic?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "DMs convert at 1-3%, similar to landing pages"
+                },
+                {
+                    "id": "b",
+                    "text": "DMs convert at 15-25%, compared to 1-3% for cold landing page traffic"
+                },
+                {
+                    "id": "c",
+                    "text": "DMs convert at 50-75%, making them virtually guaranteed sales"
+                },
+                {
+                    "id": "d",
+                    "text": "DMs convert at 5-8%, slightly better than landing pages"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "DM conversations typically convert at 15-25% to a purchase or booked call, which is 3-10x higher than cold landing page traffic at 1-3%. This is due to the intimacy effect, attention lock, and reciprocity trigger that DMs provide."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the Permission Architecture, what is the purpose of Layer 2 (The Trigger)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To close the sale directly in the comment section"
+                },
+                {
+                    "id": "b",
+                    "text": "To create the moment of permission where the prospect raises their hand by commenting a keyword, replying to a story, or clicking a link"
+                },
+                {
+                    "id": "c",
+                    "text": "To send unsolicited DMs to people who viewed your profile"
+                },
+                {
+                    "id": "d",
+                    "text": "To collect email addresses for a traditional email funnel"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Trigger layer is the moment of permission. The prospect takes a small, voluntary step -- commenting a keyword, replying to a story, or clicking a link -- which signals their interest and gives you permission to continue the conversation in DMs."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which category on the DM Selling Spectrum converts at the highest rate and why?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cold DMs, because they reach the most people through high volume"
+                },
+                {
+                    "id": "b",
+                    "text": "Warm DMs, because the prospect has shown a signal of interest"
+                },
+                {
+                    "id": "c",
+                    "text": "Permission-based DMs, because the prospect explicitly asked to be contacted"
+                },
+                {
+                    "id": "d",
+                    "text": "All three convert at roughly the same rate when scripted properly"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Permission-based DMs convert highest because the prospect has self-selected -- they explicitly asked to hear from you by commenting a keyword, replying to a story, or clicking a DM trigger. The entire course architecture is built around moving people into this permission-based zone."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Look at your last 10 pieces of content across all platforms. How many included a clear invitation for someone to DM you? Based on the DM Selling Spectrum covered in this lesson, where does your current approach fall (cold, warm, or permission-based), and what specific change could you make to move toward the permission-based end of the spectrum?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner has honestly assessed their current content and DM approach. Look for specific references to the Permission Architecture layers and the DM Selling Spectrum. Encourage them to identify one concrete action they can take to add DM-driving CTAs to their existing content strategy."
+        }
+    ]
+}

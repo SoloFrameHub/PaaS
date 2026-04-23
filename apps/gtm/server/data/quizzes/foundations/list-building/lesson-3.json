@@ -1,0 +1,141 @@
+{
+    "lessonId": "3",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Apollo and Data Enrichment Tools Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of data enrichment?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make your LinkedIn profile look better"
+                },
+                {
+                    "id": "b",
+                    "text": "To turn a prospect's identity (Name/Company) into contact information (Email/Phone)"
+                },
+                {
+                    "id": "c",
+                    "text": "To increase the price of your product"
+                },
+                {
+                    "id": "d",
+                    "text": "To automate your product's features"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Enrichment bridges the gap between seeing who someone is and having a way to contact them directly."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the acceptable 'Hard Bounce' rate for a healthy cold email domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "<2%"
+                },
+                {
+                    "id": "b",
+                    "text": "<10%"
+                },
+                {
+                    "id": "c",
+                    "text": "It doesn't matter"
+                },
+                {
+                    "id": "d",
+                    "text": "<20%"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "A hard bounce rate above 2% signals to ISPs like Google and Microsoft that you are sending spam. Keeping it low is critical for domain health."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you use a tool like Clay instead of Apollo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "For bulk list building of 1,000+ prospects"
+                },
+                {
+                    "id": "b",
+                    "text": "When you need deep, AI-driven research for high-value 'Dream Client' prospects"
+                },
+                {
+                    "id": "c",
+                    "text": "If you want the cheapest possible solution"
+                },
+                {
+                    "id": "d",
+                    "text": "To verify email addresses"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Clay is a high-level research tool used for hyper-personalization. While more expensive, it provides depth that Apollo's database approach cannot match."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a 'Technographic Signal' in prospecting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The geography where the company is located"
+                },
+                {
+                    "id": "b",
+                    "text": "Data about the company's financial health"
+                },
+                {
+                    "id": "c",
+                    "text": "Information about the software and technology a company currently uses"
+                },
+                {
+                    "id": "d",
+                    "text": "The job title of the person you're targeting"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Technographics tell you what's in their stack. For example, if you sell a Shopify app, targeting companies that already use Shopify is a technographic signal."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Verification' (using a tool like MillionVerifier) mandatory?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because enrichment databases like Apollo always have 100% accurate data"
+                },
+                {
+                    "id": "b",
+                    "text": "To protect your domain reputation by preventing hard bounces"
+                },
+                {
+                    "id": "c",
+                    "text": "To find more prospects"
+                },
+                {
+                    "id": "d",
+                    "text": "Because it's a legal requirement in all countries"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Even the best databases have 10-20% stale data. Verification tools provide a real-time check to ensure the inbox still exists before you hit send."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Choose your primary enrichment tool (Apollo, Clay, or similar) and explain why it fits your budget and target account list size. If you discover a 10% bounce rate on a new list, what is your immediate plan of action?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the choice of tool based on context. Apollo is great for volume/SaaS; Clay for high-ticket/Consulting. The response to a 10% bounce rate should be 'STOP, redo verification, and identify the stale source.'"
+        }
+    ]
+}

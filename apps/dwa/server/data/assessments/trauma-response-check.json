@@ -1,0 +1,67 @@
+{
+  "id": "trauma-response-check",
+  "title": "Trauma Response Self-Check",
+  "description": "A brief self-awareness tool to help you recognize common trauma responses in your daily life. This is NOT a diagnostic tool — it helps you understand which responses you're experiencing so you can focus your learning.",
+  "instructions": "For each item below, select the answer that best describes your experience over the past month.",
+  "timeframe": "past month",
+  "questions": [
+    { "id": "q1", "text": "How often have you had unwanted, distressing memories of a traumatic event that seemed to come out of nowhere?" },
+    { "id": "q2", "text": "How often have you had nightmares or disturbing dreams related to a traumatic experience?" },
+    { "id": "q3", "text": "How often have you felt suddenly upset or had a strong physical reaction (racing heart, sweating, shaking) when something reminded you of a traumatic event?" },
+    { "id": "q4", "text": "How much have you tried to avoid thoughts, feelings, or memories related to a traumatic experience?" },
+    { "id": "q5", "text": "How much have you avoided places, people, or situations that remind you of a traumatic experience?" },
+    { "id": "q6", "text": "How often have you felt emotionally numb, disconnected, or unable to feel positive emotions?" },
+    { "id": "q7", "text": "How often have you felt constantly on edge, easily startled, or like you had to watch out for danger?" },
+    { "id": "q8", "text": "How much difficulty have you had concentrating, sleeping, or carrying out your daily activities because of trauma-related symptoms?" }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "A little bit",
+      "2": "Moderately",
+      "3": "Quite a bit",
+      "4": "Extremely"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 7,
+        "severity": "minimal",
+        "label": "Minimal Trauma Responses",
+        "description": "Your responses suggest minimal trauma-related difficulties at this time. The psychoeducation in this course can help you understand trauma and build resilience.",
+        "color": "green"
+      },
+      {
+        "min": 8,
+        "max": 15,
+        "severity": "mild",
+        "label": "Mild Trauma Responses",
+        "description": "Your responses suggest some trauma-related symptoms. The coping strategies and grounding techniques in this course may be helpful. Continue learning at your own pace.",
+        "color": "yellow"
+      },
+      {
+        "min": 16,
+        "max": 23,
+        "severity": "moderate",
+        "label": "Moderate Trauma Responses",
+        "description": "Your responses suggest moderate trauma symptoms that may be affecting your daily life. The stabilization skills in this course are a good starting point, and we recommend considering professional trauma therapy for further support.",
+        "color": "orange"
+      },
+      {
+        "min": 24,
+        "max": 32,
+        "severity": "severe",
+        "label": "Significant Trauma Responses",
+        "description": "Your responses suggest significant trauma symptoms. Please consider reaching out to a trauma-informed therapist or counselor. The skills in this course can help alongside professional support, but they are not a substitute for therapy.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "Overall, how much are trauma-related symptoms interfering with your ability to function in daily life?"
+  },
+  "disclaimer": "This is an educational self-awareness tool, NOT a clinical assessment or diagnosis. It is designed to help you recognize common trauma responses discussed in this lesson. If you are struggling with trauma symptoms, please seek support from a licensed mental health professional. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

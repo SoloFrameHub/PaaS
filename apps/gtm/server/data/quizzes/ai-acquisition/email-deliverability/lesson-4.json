@@ -1,0 +1,251 @@
+{
+    "lessonId": "4",
+    "courseId": "email-deliverability",
+    "sectionId": "ai-acquisition",
+    "title": "Domain Strategy Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason for never sending cold email from your main domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's more expensive"
+                },
+                {
+                    "id": "b",
+                    "text": "One spam complaint can destroy your brand's email reputation"
+                },
+                {
+                    "id": "c",
+                    "text": "It's harder to track metrics"
+                },
+                {
+                    "id": "d",
+                    "text": "ISPs block main domains automatically"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your main domain handles all customer communications, support emails, and transactional messages. One spam complaint from cold outreach can flag your entire domain, causing legitimate emails to land in spam. Recovery takes 30-90 days and can cost tens of thousands in lost revenue."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How many sending domains should a solo founder targeting 200-400 emails/day use?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 (just the main domain)"
+                },
+                {
+                    "id": "b",
+                    "text": "2 (main + 1 sending)"
+                },
+                {
+                    "id": "c",
+                    "text": "3-5 (main + 3-5 sending)"
+                },
+                {
+                    "id": "d",
+                    "text": "10+ (maximum redundancy)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "3-5 sending domains (plus your main domain) provides the right balance of redundancy, scalability, and manageability. This allows you to rotate domains, have backups ready, and scale to 300-400+ emails/day safely."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What domain extension should you use for cold outreach domains?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": ".io (modern and tech-focused)"
+                },
+                {
+                    "id": "b",
+                    "text": ".xyz (cheap and available)"
+                },
+                {
+                    "id": "c",
+                    "text": ".com (highest trust score)"
+                },
+                {
+                    "id": "d",
+                    "text": ".co (short and memorable)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": ".com domains have the highest trust score with email filters. .io, .xyz, and other alternative extensions are associated with temporary/throwaway domains and trigger spam filters more aggressively."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How long should you wait before sending cold emails from a brand-new domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "0 days (start immediately)"
+                },
+                {
+                    "id": "b",
+                    "text": "3-5 days (minimal wait)"
+                },
+                {
+                    "id": "c",
+                    "text": "14+ days (recommended minimum)"
+                },
+                {
+                    "id": "d",
+                    "text": "90 days (maximum safety)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "New domains need minimum 14 days to age before sending cold emails. This allows DNS records to propagate globally and gives ISPs time to build an initial sender profile. Sending from a domain younger than 14 days significantly increases spam placement risk."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you immediately stop sending from a domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When open rates drop by 10%"
+                },
+                {
+                    "id": "b",
+                    "text": "When complaint rate exceeds 0.1%"
+                },
+                {
+                    "id": "c",
+                    "text": "When you've been sending for 6 months"
+                },
+                {
+                    "id": "d",
+                    "text": "When you get your first unsubscribe"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A complaint rate above 0.1% is Google and Yahoo's danger threshold. At 0.3%, they begin blocking your domain entirely. If you hit 0.1%, stop sending immediately, investigate the cause, and rest the domain for 60-90 days."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "What's the recommended maximum number of inboxes per sending domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 inbox (one domain, one inbox)"
+                },
+                {
+                    "id": "b",
+                    "text": "2-3 inboxes (recommended)"
+                },
+                {
+                    "id": "c",
+                    "text": "5-10 inboxes (maximize volume)"
+                },
+                {
+                    "id": "d",
+                    "text": "Unlimited (no restrictions)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "2-3 inboxes per domain is the sweet spot. More than 3-4 inboxes per domain starts to look suspicious to ISPs and increases the risk of the entire domain being flagged if one inbox has issues."
+        },
+        {
+            "id": "q7",
+            "type": "true-false",
+            "question": "True or False: You should use your main domain in your email signature even when sending from a sending domain.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "True. Your email signature should always reference your main domain (e.g., acme.com), not the sending domain (e.g., getacme.com). This builds brand consistency and legitimacy. The sending domain is just infrastructure — your brand is your main domain."
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "What should you do with a sending domain that has been flagged for spam?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Delete it immediately and buy a new one"
+                },
+                {
+                    "id": "b",
+                    "text": "Reduce sending volume by 50% and continue"
+                },
+                {
+                    "id": "c",
+                    "text": "Rest it for 60-90 days while using a backup domain"
+                },
+                {
+                    "id": "d",
+                    "text": "Switch to a different email provider"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Rest the flagged domain for 60-90 days to allow reputation recovery. Switch to your backup domain immediately to continue sending. Never delete a domain — you can recover it with time. Reducing volume doesn't fix reputation damage."
+        },
+        {
+            "id": "q9",
+            "type": "multiple-choice",
+            "question": "What's the estimated monthly cost for a complete multi-domain infrastructure (4 domains, 11 inboxes)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$20-30/month"
+                },
+                {
+                    "id": "b",
+                    "text": "$50-60/month"
+                },
+                {
+                    "id": "c",
+                    "text": "$80-90/month"
+                },
+                {
+                    "id": "d",
+                    "text": "$150-200/month"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "4 domains × $1/month = $4. 11 inboxes × $7.20/month (Google Workspace) = $79.20. Total: ~$83/month. This is the insurance cost to protect your main domain and scale safely to 300-400 emails/day."
+        },
+        {
+            "id": "q10",
+            "type": "multiple-choice",
+            "question": "Which domain naming pattern is most legitimate for cold outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "acme-sales.com"
+                },
+                {
+                    "id": "b",
+                    "text": "acme123.com"
+                },
+                {
+                    "id": "c",
+                    "text": "getacme.com"
+                },
+                {
+                    "id": "d",
+                    "text": "acme.xyz"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "getacme.com follows the best practice of adding a prefix (get-, try-, hi-, use-) to your brand name with a .com extension. This looks like a legitimate brand variation. Hyphens, numbers, and alternative extensions (.xyz) trigger spam filters."
+        }
+    ]
+}

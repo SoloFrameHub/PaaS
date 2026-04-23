@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three components of active listening?",
+      "options": [
+        {"id": "opt1", "text": "Talking, interrupting, and defending yourself"},
+        {"id": "opt2", "text": "Receiving (full attention to content + emotion), Reflecting (mirroring back), Validating (acknowledging legitimacy)"},
+        {"id": "opt3", "text": "Nodding silently while planning your rebuttal"},
+        {"id": "opt4", "text": "Immediately problem-solving before partner finishes speaking"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Active listening requires three components: (1) Receiving — full attention to BOTH content (facts) and emotion (feelings), noticing nonverbal cues; (2) Reflecting — paraphrase what you heard, name emotion you sense, ask for confirmation; (3) Validating — acknowledge their perspective makes sense (not agreement, just legitimacy). All three are necessary: receiving without reflecting = partner doesn't know you understood; reflecting without validating = feels mechanical; validating without accurate receiving = you're validating something they didn't say."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is validation in communication?",
+      "options": [
+        {"id": "opt1", "text": "Agreeing with everything your partner says"},
+        {"id": "opt2", "text": "Acknowledging someone's feelings/perspective as legitimate given their experience — even if you disagree with their conclusion"},
+        {"id": "opt3", "text": "Telling your partner they're wrong"},
+        {"id": "opt4", "text": "Silence and nodding"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Validation is acknowledging someone's internal experience as legitimate — without necessarily agreeing with their interpretation or complying with their request. Formula: 'It makes sense that you feel [emotion] given [context].' You're not judging whether they 'should' feel that way — you're acknowledging they DO. Example: 'It makes sense you're frustrated that we have less time together' ≠ 'You're right and I'm wrong.' Validation ≠ agreement. All emotions are valid responses to subjective experience."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is a common validation mistake?",
+      "options": [
+        {"id": "opt1", "text": "Validating feeling while immediately dismissing it with 'but' ('I hear you're upset, BUT you're overreacting')"},
+        {"id": "opt2", "text": "Fully listening to your partner's perspective"},
+        {"id": "opt3", "text": "Acknowledging legitimacy without agreeing"},
+        {"id": "opt4", "text": "Reflecting back what you heard"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "The most common validation mistake: 'I hear you're upset, BUT you're overreacting' or 'I understand you feel that way, BUT you're wrong.' The 'but' erases the validation. Other mistakes: validating feeling while dismissing need ('I see you're frustrated, so just deal with it'), validating to manipulate (appearing to validate to get partner to stop complaining), over-validating without boundaries ('You're absolutely right about everything!'). Effective validation: acknowledge feeling + maintain boundary if needed + problem-solve collaboratively."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "When is validation contraindicated or potentially harmful?",
+      "options": [
+        {"id": "opt1", "text": "Validation is always helpful in all contexts"},
+        {"id": "opt2", "text": "In coercive control relationships where abusers demand you 'validate' their false narratives or use listening language to appear reasonable while maintaining control"},
+        {"id": "opt3", "text": "Validation is never appropriate"},
+        {"id": "opt4", "text": "Only in relationships shorter than 1 year"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "In coercively controlling relationships, abusers may weaponize validation: using active listening language to appear reasonable while refusing to change controlling behavior, demanding you 'validate' false narratives ('Validate that I'm not controlling — I just care about you'), or punishing you for not 'listening' correctly. Red flags: listening is one-directional (you must validate them; they never validate you), 'understanding' is defined as compliance ('If you understood, you'd do what I say'), expressing your needs is framed as 'not listening.' If this pattern exists, the issue is coercive control (not communication). National DV Hotline: 1-800-799-7233."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "How do you validate a partner's feeling while maintaining a boundary?",
+      "options": [
+        {"id": "opt1", "text": "Dismiss their feeling entirely"},
+        {"id": "opt2", "text": "'I understand you feel [emotion] given [context]. AND here's what I can/cannot do. Can we problem-solve together?' — balancing empathy with boundaries"},
+        {"id": "opt3", "text": "Agree to everything they request immediately"},
+        {"id": "opt4", "text": "Tell them their feeling is invalid"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Effective validation with boundary: 'I understand you're frustrated that I work late [validation]. I'm also in a position where I can't reduce hours right now [boundary]. Can we find other ways to connect this week? [problem-solving].' This acknowledges feeling as legitimate, maintains necessary boundary, and invites collaboration. You can validate 'It makes sense you feel hurt' without agreeing 'You're right to be hurt' and without complying with unreasonable requests. Validation doesn't mean you must say yes to everything — it means acknowledging their internal experience while maintaining your own needs."
+    }
+  ],
+  "sectionId": "social-connection",
+  "courseId": "relationship-dynamics",
+  "lessonId": "13",
+  "title": "Active Listening and Validation - Quiz"
+}

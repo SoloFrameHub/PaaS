@@ -1,0 +1,134 @@
+{
+    "lessonId": "2",
+    "courseId": "sales-psychology",
+    "sectionId": "foundations",
+    "title": "The Math Your Brain Gets Wrong About Rejection",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Negativity Bias'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A habit of complaining too much"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The brain's tendency to process negative feedback 3-5x more intensely than positive"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A customer who always says no"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The statistical probability of failing a startup"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Evolutionarily, our brains prioritize negative signals (threats) over positive ones. In sales, this causes us to overreact to rejection."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is NOT one of the three main 'Rejection Buckets'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Wrong Timing"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Wrong Fit"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Wrong Person"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Wrong Personality"
+                }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The three buckets are Timing, Fit, and Person. 'Wrong Personality' is usually a misinterpretation of 'Wrong Fit' or simple personal preference."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is a rejection due to 'Wrong Fit' actually a victory?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It means you can stop working for the day"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It prevents you from acquiring a bad customer who would churn and complain"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It proves your pricing is too high"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It allows you to pivot your entire company"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Acquiring a strict 'non-fit' customer is worse than no customer. They consume support resources and eventually damage your reputation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "As a solo founder, why does rejection feel more personal?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because solo founders are less confident"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because the 'No' is distributed across a team"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because there is no team to dilute the feedback, so Product = You"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because customers are meaner to small companies"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "With no buffer between the builder and the seller, founders often equate rejection of their work with rejection of their self-worth."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the only data point that actually reflects a gap in your product?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Bucket 1: Wrong Timing"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Bucket 4: Actual Product/Market Gap"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Bucket 2: Wrong Fit"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Bucket 3: Wrong Person"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Only when the Timing, Fit, and Person are right, but they STILL say no, does it indicate a problem with your solution/value proposition."
+        }
+    ],
+    "passingScore": 70
+}

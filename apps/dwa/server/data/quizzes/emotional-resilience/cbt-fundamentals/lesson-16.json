@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the first step in effective problem-solving in CBT?",
+            "options": [
+                {"id": "opt1", "text": "Immediately brainstorm solutions to fix the problem"},
+                {"id": "opt2", "text": "Clearly define the problem in specific, concrete terms"},
+                {"id": "opt3", "text": "Decide which solution is best and implement it"},
+                {"id": "opt4", "text": "Ask others what they think you should do"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Vague problems ('Everything is overwhelming') can't be solved. Specific problems can ('I have three deadlines next week and no plan'). CBT teaches you to define problems clearly so you can develop targeted solutions rather than ruminating on how hard everything feels."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why do you generate multiple solutions before evaluating any of them?",
+            "options": [
+                {"id": "opt1", "text": "Because the first solution is always the worst one"},
+                {"id": "opt2", "text": "To prevent prematurely dismissing options and to increase the chance of finding an effective solution"},
+                {"id": "opt3", "text": "To make the process take longer and feel more thorough"},
+                {"id": "opt4", "text": "Because you should always choose the last solution you think of"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. If you evaluate solutions as you generate them, you'll criticize and discard options before exploring fully. Brainstorming first, then evaluating, allows creative and unconventional solutions to emerge. This prevents 'I've tried everything' when you've only tried two things."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What criteria should you use to evaluate potential solutions?",
+            "options": [
+                {"id": "opt1", "text": "Choose the easiest solution that requires the least effort"},
+                {"id": "opt2", "text": "Choose the solution most likely to impress other people"},
+                {"id": "opt3", "text": "Evaluate feasibility, effectiveness, and alignment with your values"},
+                {"id": "opt4", "text": "Choose the solution that feels right emotionally"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Correct. The best solution is (1) realistic (you can actually do it), (2) effective (likely to solve the problem), and (3) value-aligned (consistent with who you want to be). A solution that fails any of these tests won't work or won't feel worth the effort."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do if your first solution doesn't work?",
+            "options": [
+                {"id": "opt1", "text": "Give up — this proves the problem is unsolvable"},
+                {"id": "opt2", "text": "Review what happened, adjust the approach, and try the next solution on your list"},
+                {"id": "opt3", "text": "Blame yourself for choosing the wrong solution"},
+                {"id": "opt4", "text": "Immediately try a completely different problem-solving method"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. Problem-solving is iterative, not one-and-done. When a solution doesn't work, ask: 'What did I learn? What would I adjust?' Then move to the next option. This prevents all-or-nothing thinking ('It didn't work, so I failed') and builds resilience through adaptive trial-and-error."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Choose a current problem you're facing. Define it specifically, then generate at least five possible solutions (don't evaluate yet). Now evaluate each: which is most feasible, effective, and value-aligned? What's your first step?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "16",
+    "title": "Problem-Solving Strategies - Quiz"
+}

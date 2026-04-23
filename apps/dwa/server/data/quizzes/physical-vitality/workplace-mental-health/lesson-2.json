@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does the WHO ICD-11 classify burnout?",
+            "options": [
+                {"id": "opt1", "text": "As a medical diagnosis under mental health disorders"},
+                {"id": "opt2", "text": "As an occupational phenomenon under 'Factors influencing health status' — not a medical diagnosis"},
+                {"id": "opt3", "text": "As a type of major depressive disorder"},
+                {"id": "opt4", "text": "As a personality disorder"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The WHO classifies burnout as an occupational phenomenon under 'Factors influencing health status or contact with health services' (QD85) — NOT as a medical diagnosis. This means burnout describes a work-generated syndrome requiring primarily organizational responses (change the work conditions), not just individual treatment."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the three dimensions of burnout according to the WHO definition?",
+            "options": [
+                {"id": "opt1", "text": "Anxiety, depression, and fatigue"},
+                {"id": "opt2", "text": "Emotional exhaustion, cynicism/depersonalization, and reduced professional efficacy"},
+                {"id": "opt3", "text": "Workload, time pressure, and role conflict"},
+                {"id": "opt4", "text": "Physical illness, mental illness, and social withdrawal"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Burnout has three specific dimensions: (1) emotional exhaustion (energy depletion), (2) cynicism/mental distance/depersonalization (psychological withdrawal from work), and (3) reduced professional efficacy (self-doubt about competence). Exhaustion is the most empirically robust core dimension."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the key difference between burnout and major depressive disorder?",
+            "options": [
+                {"id": "opt1", "text": "Burnout is more severe than depression"},
+                {"id": "opt2", "text": "Burnout is work-context-specific; depression is pervasive across all life domains"},
+                {"id": "opt3", "text": "Burnout affects only physical health; depression affects only mental health"},
+                {"id": "opt4", "text": "There is no difference — they are the same condition"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Burnout is work-context-specific — symptoms occur primarily in relation to your job. Depression is pervasive across all life domains — you lose interest and pleasure in most activities, including things you used to love outside of work. The two can co-occur, and burnout is a risk factor for developing depression."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should you seek professional evaluation for burnout?",
+            "options": [
+                {"id": "opt1", "text": "Only if you have a diagnosed mental health condition"},
+                {"id": "opt2", "text": "Never — burnout is something you should manage on your own"},
+                {"id": "opt3", "text": "If you experience exhaustion not relieved by rest, functional impairment, symptoms lasting 4-6+ weeks, pervasive low mood, or thoughts of self-harm"},
+                {"id": "opt4", "text": "Only if your supervisor recommends it"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Severe burnout warrants professional evaluation. Seek help if you experience: exhaustion not relieved by rest, functional impairment (difficulty completing work or daily tasks), symptoms lasting 4-6+ weeks without improvement, pervasive low mood or loss of pleasure (possible depression), or any thoughts of self-harm or suicide. Burnout's exhaustion dimension is independently associated with suicidal ideation."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "2",
+    "title": "What Burnout Is (and Isn't) — WHO Classification - Quiz"
+}

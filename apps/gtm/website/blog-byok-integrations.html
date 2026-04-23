@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020408">
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/src/css/fonts.css">
+    <title>8 BYOK Integrations Inside the Solo GTM OS - Your Keys, Your Data | SoloFrameHub</title>
+    <meta name="description" content="The Solo GTM OS connects 8 external tools via BYOK (Bring Your Own Key): AI providers, Attio CRM, email, LinkedIn, calendar, Metabase analytics, NodeBB community, and S3 storage. No SaaS tax, no data lock-in.">
+    <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+    <link rel="canonical" href="https://soloframehub.com/blog-byok-integrations.html"/>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soloframehub.com/blog-byok-integrations.html">
+    <meta property="og:title" content="8 BYOK Integrations Inside the Solo GTM OS">
+    <meta property="og:description" content="AI providers, CRM, email, LinkedIn, calendar, analytics, community, and storage - all connected via Bring Your Own Key. No markup, no data lock-in.">
+    <meta property="og:image" content="https://soloframehub.com/assets/images/customer-acquisition-playbook-cover.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="8 BYOK Integrations Inside the Solo GTM OS">
+    <meta name="twitter:description" content="AI, CRM, email, LinkedIn, calendar, analytics, community, storage - all BYOK. Your keys, your data.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "8 BYOK Integrations Inside the Solo GTM OS",
+      "datePublished": "2026-03-27",
+      "dateModified": "2026-04-01",
+      "author": {"@type": "Person", "name": "Mike Sullivan"},
+      "publisher": {"@type": "Organization", "name": "SoloFrameHub", "url": "https://soloframehub.com"},
+      "url": "https://soloframehub.com/blog-byok-integrations.html",
+      "description": "The Solo GTM OS connects 8 external tools via BYOK: AI providers, Attio CRM, email outreach, LinkedIn, calendar, Metabase analytics, NodeBB community, and S3/MinIO storage."
+    }
+    </script>
+    <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    <style>body { font-family: 'Inter', sans-serif; } .font-serif-custom { font-family: 'Newsreader', serif; }</style>
+</head>
+<body class="bg-[#020408] min-h-screen flex flex-col items-center text-zinc-300">
+    <main class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+        <!-- Navigation -->
+        <nav class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-6 md:px-12 flex items-center justify-between">
+            <a href="index.html"><img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-12 w-auto object-contain"></a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="solo-founders-ai-customer-acquisition-playbook.html" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Book</a>
+                <a href="solo-gtm-os.html" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">OS</a>
+                <div class="group relative px-2 py-1">
+                    <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Platform menu" aria-haspopup="true">Platform</button>
+                    <div class="absolute top-full left-0 pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                            <p class="px-4 pt-2 pb-1 text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Platform</p>
+                            <a href="https://ai-solo-gtm-os.soloframehub.com" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Launch the OS</a>
+                            <a href="platform-architecture.html#architecture" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Platform Architecture</a>
+                            <a href="https://ai-solo-gtm-os.soloframehub.com/readiness-score" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Readiness Score</a>
+                            <a href="https://ai-solo-gtm-os.soloframehub.com/compare" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Compare</a>
+                            <div class="my-2 border-t border-white/5"></div>
+                            <p class="px-4 pt-2 pb-1 text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Deep Dives</p>
+                            <a href="blog-byok-integrations.html" class="block px-4 py-2 text-sm text-white bg-white/5 rounded-xl">BYOK Integrations</a>
+                            <a href="blog-quick-win-path.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Quick Win Path</a>
+                            <a href="blog-certified-solo-gtm.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Certified Solo GTM</a>
+                            <a href="blog-accountability-pods.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Accountability Pods</a>
+                            <a href="blog-ai-coaching.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Coaching</a>
+                            <a href="blog-five-layers.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Five Layers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative px-2 py-1">
+                    <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Blog menu" aria-haspopup="true">Blog</button>
+                    <div class="absolute top-full right-0 pt-4 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                            <a href="blog-solo-founder-customer-acquisition.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Customer Acquisition for Solo Founders</a>
+                            <a href="blog-first-10-customers.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">How to Get Your First 10 Customers</a>
+                            <a href="blog-cold-email-startups.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Cold Email for Startups</a>
+                            <a href="blog-solo-gtm-strategy.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Solo Founder GTM Strategy</a>
+                            <a href="blog-icp-template-startups.html" class="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">ICP Template for Startups</a>
+                            <div class="my-2 border-t border-white/5"></div>
+                            <a href="blog-solo-founder-customer-acquisition.html" class="block px-4 py-2 text-xs text-zinc-400 hover:text-white transition-colors rounded-xl">View all posts &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="es/blog-integraciones-byok.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">ES</a>
+            </div>
+            <a href="https://forms.soloframehub.com/forms/beta-tester" class="hidden sm:flex px-6 py-3 rounded-full bg-zinc-900 border border-white/10 text-sm font-medium text-white hover:bg-zinc-800 transition-all items-center gap-2">Apply for Beta</a>
+        </nav>
+
+        <!-- Article -->
+        <article class="max-w-2xl mx-auto px-6 py-16 md:py-24 w-full">
+            <div class="mb-10">
+                <p class="text-xs font-mono text-sky-400 mb-4">MARCH 27, 2026 · PRODUCT UPDATE</p>
+                <h1 class="text-3xl md:text-4xl font-serif-custom text-white mb-4 leading-tight">8 BYOK Integrations Inside the Solo GTM OS</h1>
+                <p class="text-lg text-zinc-400 leading-relaxed">Every external tool the OS connects to uses Bring Your Own Key. Here is each integration, what it does, and why BYOK matters for it.</p>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-8 text-sm md:text-base leading-relaxed text-zinc-300">
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">The problem with bundled tools</h2>
+                <p>Most platforms bundle external services and mark them up. You pay a premium for data you may not need, you cannot see the underlying source, and your data sits in someone else's system. Worse, if you leave the platform, your integrations disappear.</p>
+                <p>We took a different approach. The Solo GTM OS uses BYOK - Bring Your Own Key - for every external connection. You plug in your own accounts, your own API keys, and your own credentials. We proxy the calls on your behalf with encrypted key storage. You pay each provider directly at their own pricing. We charge nothing extra for the integration layer.</p>
+                <p>When you disconnect a key, it is deleted from our system. No lock-in. No markup. No data we should not have.</p>
+
+                <!-- Integration count summary -->
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-8">
+                    <p class="text-xs font-mono text-sky-400 mb-3">8 BYOK INTEGRATIONS</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">AI</p><p class="text-[10px] text-zinc-500 mt-0.5">3 providers</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">CRM</p><p class="text-[10px] text-zinc-500 mt-0.5">Attio</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">Email</p><p class="text-[10px] text-zinc-500 mt-0.5">SMTP/API</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">LinkedIn</p><p class="text-[10px] text-zinc-500 mt-0.5">AI-assisted</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">Calendar</p><p class="text-[10px] text-zinc-500 mt-0.5">Scheduling</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">Analytics</p><p class="text-[10px] text-zinc-500 mt-0.5">Metabase</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">Community</p><p class="text-[10px] text-zinc-500 mt-0.5">NodeBB</p></div>
+                        <div class="bg-zinc-800/50 rounded-lg p-3"><p class="text-lg font-bold text-white">Storage</p><p class="text-[10px] text-zinc-500 mt-0.5">S3/MinIO</p></div>
+                    </div>
+                </div>
+
+                <!-- 1. AI Provider -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="ai-provider">1. AI Provider (OpenAI / Anthropic Claude / OpenRouter)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-violet-400 mb-3">CORE AI ENGINE</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-violet-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Multi-provider architecture.</strong> The OS supports three AI providers out of the box: OpenAI, Anthropic Claude, and OpenRouter. You choose which one powers your coaching, assessment grading, and roleplay sessions by setting a single environment variable.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-violet-400 mt-0.5">&#8594;</span> <span><strong class="text-white">What it powers.</strong> The AI coach (Solo Advisor) uses your provider for context-aware guidance that references your ICP, DISC profile, deal pipeline, and uploaded documents. Assessment grading uses AI to evaluate strategic thinking - not just multiple choice. The roleplay simulator runs full discovery call and objection handling sessions scored on 12 dimensions.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-violet-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> AI API costs vary dramatically by model and usage. With BYOK, you pick the model tier that fits your budget. Use GPT-4o for deep coaching and a lighter model for quick assessments. OpenRouter gives you access to dozens of models through a single key. No per-seat AI surcharge from us.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-violet-400 mt-0.5">&#8594;</span> <span><strong class="text-white">RAG pipeline included.</strong> The platform uses pgvector embeddings over 200+ lesson chunks plus your uploaded documents. Your AI provider handles the generation; we handle the retrieval and context assembly.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 2. CRM (Attio) -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="crm-attio">2. CRM (Attio)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-sky-400 mb-3">PIPELINE SYNC</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Bi-directional pipeline sync.</strong> Deals you track in the OS push to Attio automatically. Stage changes you make in Attio (or via Attio automations) flow back into your OS pipeline view. Every deal stage transition is tracked in both systems.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">&#8594;</span> <span><strong class="text-white">On-demand contact enrichment.</strong> Click "Enrich" on any deal card and the OS pulls Attio's firmographic data - company size, industry, tech stack, funding stage, employee count, LinkedIn URL - inline, without leaving the app.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Deal stage tracking.</strong> The OS pipeline uses stages: Lead, Contacted, Meeting, Proposal, Won, Lost. Loss reason logging and conversion rate calculations happen automatically. Attio mirrors this structure so your reporting stays consistent across both tools.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> You own your CRM data. If you outgrow the OS or switch platforms, your Attio data stays intact. Attio's free plan includes enrichment and solid B2B SaaS coverage, so you can start without additional cost.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 3. Email -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="email">3. Email (SMTP/API + Hunter.io)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-amber-400 mb-3">OUTREACH & DELIVERABILITY</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Hunter.io domain search.</strong> Enter a company domain in the ICP Builder or List Building lesson tools and Hunter returns verified email addresses for that company - without opening a separate tab. Results exist in your browser session only. We do not write email addresses to any database.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Outreach sequence sending.</strong> The Cold Email track (Track 4) teaches you to build sequences and then send them through your own email provider. Connect your SMTP credentials or email API key and sequences send directly from your domain - not ours.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Deliverability stays yours.</strong> Because emails send from your domain with your credentials, your sender reputation belongs to you. No shared IP pools, no platform-mandated sending limits, no surprise domain blocks because another customer sent spam.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> Email deliverability is the single biggest variable in outbound. Shared email infrastructure means shared risk. With BYOK, your reputation is entirely in your control. Hunter's free tier gives you 25 searches/month - enough to build a first prospect list without paying anything.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 4. LinkedIn -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="linkedin">4. LinkedIn (Manual + AI-Assisted)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-blue-400 mb-3">PROFILE & CONNECTION STRATEGY</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Profile optimization.</strong> The LinkedIn AI track (Course 26 in Track 4) walks you through optimizing your LinkedIn profile for inbound leads. The AI coach reviews your current headline, summary, and experience sections and generates specific rewrite suggestions based on your ICP.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Connection strategies.</strong> The OS generates personalized connection request templates and follow-up message sequences based on your target buyer personas. These are drafted inside the platform and you copy them to LinkedIn manually - we do not automate LinkedIn actions to protect your account from restrictions.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">&#8594;</span> <span><strong class="text-white">LinkedIn analysis during onboarding.</strong> If you provide your LinkedIn URL during onboarding, the platform extracts business signals - industry, positioning, network size - to calibrate your AI coaching from day one.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> LinkedIn automation tools that use your credentials carry real account risk. Our approach keeps you in control: the AI generates the strategy and the copy, you execute it manually. Your LinkedIn account, your actions, your reputation.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 5. Calendar -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="calendar">5. Calendar (Meeting Scheduling)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-green-400 mb-3">DISCOVERY CALL BOOKING</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Discovery call booking.</strong> When your outreach converts to a meeting request, the OS integrates with your calendar for scheduling. Link your scheduling tool and booked meetings automatically update your deal card in the pipeline tracker.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Pipeline stage automation.</strong> A booked meeting can automatically move a deal from "Contacted" to "Meeting" in your pipeline, keeping your Kanban board accurate without manual updates.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Pre-call prep.</strong> The Sales Methodology track (Track 3) teaches discovery frameworks including BANT, MEDDIC, and SPIN. Before a scheduled call, the AI coach can generate a prep brief based on the deal's enriched company data and your discovery playbook artifact.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-green-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> You already have a calendar and a scheduling link. We do not force you onto a specific scheduling tool or charge extra for calendar integration. Your existing setup stays intact.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 6. Analytics (Metabase) -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="analytics">6. Analytics (Metabase)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-orange-400 mb-3">CUSTOM DASHBOARDS</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Custom dashboards.</strong> Metabase connects to the platform's PostgreSQL database to provide analytics beyond what the built-in dashboard shows. Build custom queries for cohort analysis, course completion funnels, outreach performance trends, and deal velocity metrics.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Cohort analytics.</strong> Track how your pod and cohort are performing. Compare your outreach-to-meeting conversion rate against cohort benchmarks. See which curriculum tracks correlate with faster pipeline movement across the community.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Forum and engagement data.</strong> Metabase can query forum activity data synced from NodeBB, giving you visibility into community engagement patterns, post frequency, and pod health scores.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> Metabase is open-source and self-hosted. Your analytics data never leaves your infrastructure. You can build whatever dashboards and reports you need without waiting for us to add a chart type to the product.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 7. Community (NodeBB) -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="community">7. Community (NodeBB Forum)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-emerald-400 mb-3">POD DISCUSSIONS & PEER REVIEWS</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">&#8594;</span> <span><strong class="text-white">DISC-matched pod discussions.</strong> NodeBB powers the cohort forum where pods of up to 6 founders collaborate. Pods are matched by DISC personality type diversity, deal-size clustering, industry mix, and curriculum stage alignment. Each pod gets a private category for focused discussion.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">&#8594;</span> <span><strong class="text-white">AI bot personas.</strong> Four AI personas participate in each pod - Alex (the Skeptic), Jordan (the Builder), Morgan (the Perfectionist), and Sam (the Mentor). They challenge assumptions, encourage action, refine details, and provide guidance. Bot activity fades out as human engagement increases past 90%.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Peer review of artifacts.</strong> Post your ICP document, positioning statement, or email sequence in your pod for review. Other founders and the AI personas provide structured feedback. This is where your artifacts get pressure-tested before you use them in real outreach.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> NodeBB is self-hosted on our infrastructure via Docker. Your community data, conversations, and peer feedback are not locked inside a third-party community platform. The forum runs on the same internal network as the OS, so pod creation and user provisioning happen automatically.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 8. Storage (S3/MinIO) -->
+                <h2 class="text-xl font-medium text-white mt-10 mb-3" id="storage">8. Storage (S3/MinIO)</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <p class="text-xs font-mono text-rose-400 mb-3">DOCUMENTS & RAG</p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-rose-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Document uploads.</strong> Upload pitch decks, case studies, competitor analyses, pricing sheets, or any reference material. Files are stored in S3-compatible object storage (MinIO, self-hosted) and are accessible from your dashboard and the AI coach.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-rose-400 mt-0.5">&#8594;</span> <span><strong class="text-white">RAG-enabled coaching.</strong> Uploaded documents are embedded and indexed via pgvector. When you ask the AI coach a question, it retrieves relevant chunks from your documents alongside lesson content. This means the coach can reference your actual pitch deck when helping you prep for a call - not just generic advice.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-rose-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Artifact versioning.</strong> The platform stores the last 5 versions of each artifact type. Your ICP document, email sequences, and playbook evolve as you learn. Every version is timestamped and course-associated so you can see how your thinking has changed.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-rose-400 mt-0.5">&#8594;</span> <span><strong class="text-white">Why BYOK matters.</strong> MinIO is S3-compatible and self-hosted. Your documents, pitch decks, and artifacts never pass through a third-party storage provider. If you need to migrate, standard S3 tooling works out of the box.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">The BYOK principle</h2>
+                <p>Every integration follows the same pattern: connect your key in Settings, we proxy on your behalf with encrypted storage, results flow back to your browser, and disconnecting deletes the key. We never mark up third-party pricing. We never persist data we should not have.</p>
+                <p>The OS is the orchestration layer. The tools are yours. The data is yours. That is the deal.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">What is next</h2>
+                <p>Notion export is already live for artifact and playbook export. We are watching which integrations get used most before building more. If you are connected and have feedback, reply directly to any OS email or post in your cohort pod.</p>
+
+                <div class="border-t border-white/5 pt-8 mt-12">
+                    <p class="text-xs text-zinc-500 mb-4">FILED UNDER: PRODUCT · INTEGRATIONS · BYOK · AI · CRM · EMAIL · LINKEDIN · STORAGE</p>
+                    <a href="https://forms.soloframehub.com/forms/beta-tester" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sky-700 hover:bg-sky-600 text-white text-sm font-medium transition-colors">Join the Beta - Free Access <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Related posts -->
+        <section class="border-t border-white/5 px-6 md:px-12 py-12 max-w-2xl mx-auto w-full">
+            <p class="text-xs font-mono text-zinc-500 mb-6">MORE FROM THE BLOG</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="blog-quick-win-path.html" class="bg-zinc-900/40 border border-white/8 rounded-xl p-5 hover:border-white/20 transition-colors">
+                    <p class="text-xs text-zinc-500 mb-2">MARCH 27, 2026</p>
+                    <p class="text-sm font-medium text-white">Quick Win Path: First Win in 90 Minutes</p>
+                </a>
+                <a href="blog-certified-solo-gtm.html" class="bg-zinc-900/40 border border-white/8 rounded-xl p-5 hover:border-white/20 transition-colors">
+                    <p class="text-xs text-zinc-500 mb-2">MARCH 27, 2026</p>
+                    <p class="text-sm font-medium text-white">Introducing the Certified Solo GTM Practitioner Badge</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black/50 border-t border-white/5 py-12 px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-6 w-auto object-contain"><span class="text-sm text-zinc-400 ml-2">© 2026</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400">
+                    <a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a>
+                    <a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

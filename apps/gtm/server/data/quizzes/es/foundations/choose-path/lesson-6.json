@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "6",
+    "sectionId": "foundations",
+    "title": "Quiz de Tu Hoja de Ruta Personal de la Academia",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "¿Qué es la 'Teoría de las Restricciones' aplicada al proceso de ventas de un fundador en solitario?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Una regla que dice que nunca debes trabajar más de 40 horas"
+                },
+                {
+                    "id": "b",
+                    "text": "Identificar el único cuello de botella que limita tu crecimiento general"
+                },
+                {
+                    "id": "c",
+                    "text": "Diseñar un producto sin características"
+                },
+                {
+                    "id": "d",
+                    "text": "Una fórmula matemática para los precios"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "En cualquier sistema complejo (como tu proceso de ventas), hay un cuello de botella en un momento dado. Resolver cualquier cosa *excepto* ese cuello de botella no proporciona un crecimiento real."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Si estás en 'El Sprint de Cero a Diez', ¿qué curso está designado como prioridad de 'Nivel 1' para la supervivencia?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Curso 25: Configuración Avanzada de CRM"
+                },
+                {
+                    "id": "b",
+                    "text": "Curso 1: Conflicto de Identidad Interno"
+                },
+                {
+                    "id": "c",
+                    "text": "Curso 12: Automatización de Ventas"
+                },
+                {
+                    "id": "d",
+                    "text": "Curso 28: Externalización y VAs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "La mentalidad es el factor de supervivencia principal en la fase de validación. El rechazo está garantizado, y el Curso 1 te prepara para el conflicto interno que viene con él."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "¿Cuál es el ratio recomendado de tiempo de Implementación a tiempo de Aprendizaje?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 hora de implementación por cada 10 horas de aprendizaje"
+                },
+                {
+                    "id": "b",
+                    "text": "Ratio 1:1 igual"
+                },
+                {
+                    "id": "c",
+                    "text": "10 horas de implementación por cada 2 horas de aprendizaje"
+                },
+                {
+                    "id": "d",
+                    "text": "0 horas de implementación hasta terminar todo el Track"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Los fundadores en solitario a menudo caen en la 'trampa del aprendizaje' donde el consumo se siente como progreso. El progreso real solo ocurre cuando aplicas los conceptos. El ratio 5:1 asegura que estás haciendo el trabajo."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "¿Qué debes hacer si te das cuenta a mitad de un curso de que ya no resuelve tu cuello de botella principal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Terminarlo de todos modos para no sentirte rendidor"
+                },
+                {
+                    "id": "b",
+                    "text": "Reiniciar todo el track desde la Lección 1"
+                },
+                {
+                    "id": "c",
+                    "text": "Detenerte, archivar el curso y pivotar hacia el que aborda el nuevo cuello de botella"
+                },
+                {
+                    "id": "d",
+                    "text": "Pedirle su opinión a un amigo"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Tu tiempo es tu recurso más escaso. No caigas en la trampa del 'Costo Hundido'; enfócate exclusivamente en las actividades de alto apalancamiento que resuelven tu bloqueo de crecimiento actual."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "En la plantilla de hoja de ruta para B2B SaaS, ¿qué curso se prioriza para ayudar a generar mayor volumen de conversaciones calificadas?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Curso 18: Propuestas y Precios"
+                },
+                {
+                    "id": "b",
+                    "text": "Curso 8: Dominio del Cold Email"
+                },
+                {
+                    "id": "c",
+                    "text": "Curso 22: Retención"
+                },
+                {
+                    "id": "d",
+                    "text": "Curso 24: Defensa del Cliente"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "El cold email es el canal de outbound más escalable para el B2B SaaS, lo que lo convierte en un siguiente paso crítico después de establecer la infraestructura base."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Comprométete con tus 3 cursos prioritarios para los próximos 90 días. ¿Por qué elegiste estos específicamente? ¿Cuál es tu 'Cuello de Botella Principal' actual que estos cursos te ayudarán a resolver? Sé honesto sobre tu disponibilidad de tiempo semanal tanto para el aprendizaje como para la implementación.",
+            "minLength": 100,
+            "promptForAI": "Busca alineación entre su cuello de botella y sus elecciones de cursos. Si dicen que su cuello de botella es la 'Visibilidad' pero eligieron cursos de 'Precios/Negociación', señala la discrepancia. Insiste en un compromiso específico de tiempo semanal (en horas)."
+        }
+    ]
+}

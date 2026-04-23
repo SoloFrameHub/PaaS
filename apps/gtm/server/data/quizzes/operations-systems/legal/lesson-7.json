@@ -1,0 +1,69 @@
+{
+  "lessonId": "7",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "Your Contract Templates Library",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much faster do founders with templated contracts close compared to those who draft from scratch?",
+      "options": [
+        { "id": "a", "text": "10-15% faster" },
+        { "id": "b", "text": "25-40% faster" },
+        { "id": "c", "text": "50-60% faster" },
+        { "id": "d", "text": "80-90% faster" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Solo founders with templated contracts close 25-40% faster. Across 20 deals per year, that's roughly 100 hours of contract prep time saved."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How many contract templates does a solo founder need?",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "5" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "15" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "You need exactly 5 templates: Mutual NDA, Engagement Letter, MSA, SOW, and SaaS Terms of Service. Not fifteen, not two. Five covers every standard scenario a solo founder encounters."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When should you use an Engagement Letter instead of a full MSA + SOW?",
+      "options": [
+        { "id": "a", "text": "For enterprise deals over $100K" },
+        {
+          "id": "b",
+          "text": "For services engagements under $10K — coaching, short consulting, workshops"
+        },
+        { "id": "c", "text": "Only for government contracts" },
+        { "id": "d", "text": "When the client doesn't have a legal team" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Engagement Letters (2-3 pages) are for services engagements under $10K — coaching, short consulting projects, workshops, audits. They're simpler than MSA + SOW but still provide protection for scope, payment, and terms."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The Mutual NDA template is one where a freely available online template is almost always sufficient.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The Mutual NDA is highly standardized. A downloaded template from LawDepot or Bonsai is almost always sufficient — it's the one template where custom drafting is rarely necessary."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Audit your current contract situation. Do you have all 5 templates ready to use? Which are missing? How long does it currently take you to send a contract after verbal agreement, and how would templates improve this?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response inventories their current templates against the 5-template set, identifies specific missing templates, estimates their current contract preparation time, and projects how templates would reduce that time."
+    }
+  ]
+}

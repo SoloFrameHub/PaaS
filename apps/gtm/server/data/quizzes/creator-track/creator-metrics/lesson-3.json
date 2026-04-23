@@ -1,0 +1,55 @@
+{
+  "lessonId": "3",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Call-to-Close Ratios Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "A creator sells a $5,000 coaching package and closes 4 out of 20 qualified sales calls this month. What is their qualified close rate and how does it benchmark?",
+      "options": [
+        { "id": "a", "text": "20% -- healthy range for a $3,000-$5,000 offer (benchmark: 15-25%)" },
+        { "id": "b", "text": "20% -- below average for a $5,000 offer and needs immediate improvement" },
+        { "id": "c", "text": "20% -- exceptional, above the 10-20% benchmark for $5,000+ offers" },
+        { "id": "d", "text": "25% -- strong performance well above the typical range" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "4/20 = 20% qualified close rate. For $3,000-$5,000 offers, the healthy range is 15-25%, so 20% is solidly in the healthy zone. This creator is performing well and could focus on optimizing other parts of the funnel or testing a price increase."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A creator has high Connection and Discovery scores but consistently low Close scores on their sales calls. What is the most likely root cause?",
+      "options": [
+        { "id": "a", "text": "Wrong people on calls -- a qualification issue bringing unfit prospects" },
+        { "id": "b", "text": "Weak pre-sell -- prospects arrive without enough context about the offer" },
+        { "id": "c", "text": "Poor call structure -- the SPIN framework is not being followed" },
+        { "id": "d", "text": "Closing weakness -- a confidence issue where the creator avoids asking for the sale" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "High Connection and Discovery scores with a low Close score is the classic pattern of a closing confidence issue. The creator can build rapport and diagnose problems effectively but flinches at the moment of asking for money. The fix involves practicing the transition sentence, stating the price clearly, and embracing silence after the price reveal."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "If a creator improves their close rate from 15% to 25% while maintaining 20 calls per month on a $5,000 offer, what is the annual revenue increase?",
+      "options": [
+        { "id": "a", "text": "$50,000 per year" },
+        { "id": "b", "text": "$60,000 per year" },
+        { "id": "c", "text": "$120,000 per year" },
+        { "id": "d", "text": "$100,000 per year" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "At 15% close rate: 20 calls x 0.15 = 3 sales/month x $5,000 = $15,000/month. At 25% close rate: 20 calls x 0.25 = 5 sales/month x $5,000 = $25,000/month. The difference is $10,000/month or $120,000/year -- from the same number of calls with no additional ad spend."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Using the Call Quality Score framework (Connection, Discovery, Presentation, Objection Handling, Close -- each scored 1-5), rate your last sales call. What was your total score out of 25, which dimension scored lowest, and what specific action will you take to improve that dimension?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student provided honest self-assessment with specific scores for each dimension. Check that their improvement action is concrete and directly addresses their weakest dimension. Encourage them to practice the specific skill (not just 'get better') and to track the score on their next 5 calls to measure improvement."
+    }
+  ]
+}

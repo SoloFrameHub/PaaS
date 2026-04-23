@@ -1,0 +1,75 @@
+{
+  "lessonId": "10",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Week 4 Execution & Review",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the two jobs of Week 4?",
+      "options": [
+        { "id": "a", "text": "Wind down and celebrate" },
+        {
+          "id": "b",
+          "text": "Keep executing and start documenting sprint evidence"
+        },
+        { "id": "c", "text": "Plan the next sprint and hire help" },
+        { "id": "d", "text": "Focus only on closing existing deals" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Week 4 has two jobs: keep executing at the same volume as Week 3 (don't coast) and start documenting your sprint evidence for your certification portfolio. The leads generated in Week 4 build the pipeline for the month after."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What should be included in the Sprint ROI calculation?",
+      "options": [
+        { "id": "a", "text": "Only tool costs and ad spend" },
+        {
+          "id": "b",
+          "text": "Time cost (hours x hourly rate), tool costs, and total revenue return (closed + probability-weighted pipeline)"
+        },
+        { "id": "c", "text": "Only closed revenue" },
+        { "id": "d", "text": "Revenue minus office rent" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sprint ROI includes total investment (time cost at your hourly rate + tool costs) divided into total return (closed revenue + probability-weighted pipeline value). This tells you the actual ROI per hour invested in acquisition activities."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "After the sprint ends, what should become permanent weekly habits?",
+      "options": [
+        { "id": "a", "text": "Sprint-level intensity forever" },
+        { "id": "b", "text": "Nothing — sprints are one-time events" },
+        {
+          "id": "c",
+          "text": "Sustainable outreach volume, weekly pipeline review, CRM hygiene, and systematic referral asks"
+        },
+        { "id": "d", "text": "Only referral asks" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Some sprint activities become permanent habits: sustainable outreach volume, weekly pipeline reviews, 15-minute CRM hygiene sweeps, and referral asks at customer milestones. The sprint was a burst; the steady-state system continues."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The most important artifact of the sprint is the revenue generated.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The most important artifact is what you now know that you didn't know before — which channels work, which message variants convert, how long the sales cycle really is, and what your actual conversion rates are. Knowledge compounds; a single deal doesn't."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Summarize what you would expect to learn from a 30-day sprint. What are the top 3 things that would 'work' and the top 3 things that might 'not work'? What single biggest insight would you hope to gain?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response demonstrates understanding of the sprint as a learning exercise, identifies realistic wins and failures, and articulates a single compelling insight about their acquisition system (e.g., pipeline lag, channel ROI differences, or the compounding effect of consistent execution)."
+    }
+  ]
+}

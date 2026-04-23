@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the key criteria for evaluating the quality and safety of mental health apps?",
+      "options": [
+        {"id": "opt1", "text": "Price, popularity, and app store ratings"},
+        {"id": "opt2", "text": "Clinical expertise (created with licensed professionals), research evidence (published studies), privacy protections (HIPAA-compliance, clear privacy policy), and stated limitations (acknowledges what app cannot do)"},
+        {"id": "opt3", "text": "Number of downloads and social media followers"},
+        {"id": "opt4", "text": "Fancy graphics and animations"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Quality app evaluation requires: (1) Clinical expertise—created by or with licensed therapists, music therapists, researchers; (2) Research evidence—published peer-reviewed studies showing effectiveness; (3) Privacy—HIPAA-compliant if handling health data, transparent privacy policy, no data selling; (4) Stated limitations—acknowledges it's for support/self-care, not treatment, directs users to professional help when needed. Price, popularity, and graphics don't indicate clinical quality or safety."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "You have moderate anxiety and want to use technology for support. Which approach is most effective?",
+      "options": [
+        {"id": "opt1", "text": "Download 10 different anxiety apps and try them all simultaneously"},
+        {"id": "opt2", "text": "Choose one evidence-based app (e.g., Headspace), commit to 10 minutes daily for 4 weeks, track anxiety levels, complement with therapy if symptoms persist"},
+        {"id": "opt3", "text": "Rely entirely on free YouTube videos and avoid professional help"},
+        {"id": "opt4", "text": "Pay for the most expensive app assuming cost equals quality"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "✓ Correct. Strategic app use: (1) choose quality over quantity (1-2 evidence-based apps), (2) commit to consistent practice (daily for several weeks), (3) monitor effectiveness (track symptoms), (4) recognize when professional help is needed (moderate anxiety may benefit from CBT or therapy). Too many apps creates overwhelm. Free resources are valuable but don't replace clinical care for moderate symptoms. Cost doesn't correlate with quality—evaluate based on evidence."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the most significant limitation of mental health apps compared to human therapy?",
+      "options": [
+        {"id": "opt1", "text": "Apps cost too much"},
+        {"id": "opt2", "text": "Apps cannot replace human clinical judgment, therapeutic relationship, nuanced assessment of complex presentations, or crisis intervention—they follow algorithms, not individualized professional expertise"},
+        {"id": "opt3", "text": "Apps require internet connection"},
+        {"id": "opt4", "text": "Apps are harder to use than therapy"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The core limitation: apps follow algorithms and cannot replicate human clinical judgment, therapeutic relationship, or nuanced assessment. They can't detect subtle suicidal ideation cues, adjust interventions for complex comorbidities, or provide the relational healing central to therapy. Apps are valuable tools for self-management and skill-building, but they complement rather than replace human expertise. Most effective when used as adjuncts to professional care."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for digital mental health interventions (apps, online platforms) in reducing depression and anxiety symptoms?",
+      "options": [
+        {"id": "opt1", "text": "LIMITED—no meaningful research"},
+        {"id": "opt2", "text": "MODERATE—digital CBT and mindfulness apps show moderate evidence for reducing depression/anxiety in mild-moderate cases; EMERGING for music-specific apps"},
+        {"id": "opt3", "text": "STRONG—apps cure all mental health conditions"},
+        {"id": "opt4", "text": "NEGATIVE—apps worsen mental health"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Digital interventions have MODERATE evidence: well-designed CBT and mindfulness apps reduce depression/anxiety symptoms comparably to in-person interventions for mild-moderate cases. Music-specific apps have EMERGING evidence (promising but fewer rigorous RCTs). Apps work best as adjuncts to professional care. Not all apps have evidence—most lack rigorous validation. Evaluate apps individually rather than assuming all digital tools are evidence-based."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should you NOT rely on apps and instead seek immediate professional help?",
+      "options": [
+        {"id": "opt1", "text": "When you want to track your mood"},
+        {"id": "opt2", "text": "When experiencing suicidal thoughts, self-harm urges, psychosis, severe panic, or acute mental health crisis—apps cannot provide crisis intervention"},
+        {"id": "opt3", "text": "When you prefer one app over another"},
+        {"id": "opt4", "text": "Apps can handle all situations including crises"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Apps are NOT crisis services. For suicidal thoughts, self-harm urges, psychosis, severe panic, or acute crisis, call 988 Suicide & Crisis Lifeline, Crisis Text Line (HOME to 741741), or emergency services. Apps cannot provide the immediate human intervention, safety assessment, and clinical judgment needed in crisis. Apps are for general wellness and mild-moderate symptom management between therapy sessions, not emergency situations."
+    }
+  ],
+  "sectionId": "movement-exercise",
+  "courseId": "music-movement-wellness",
+  "lessonId": "15",
+  "title": "Technology and Apps for Music Therapy - Quiz"
+}

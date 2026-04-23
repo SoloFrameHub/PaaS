@@ -1,0 +1,141 @@
+{
+    "lessonId": "7",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Handling Discount Requests Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Value Trade' principle in negotiation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Trading your product for another company's product."
+                },
+                {
+                    "id": "b",
+                    "text": "Never giving a price concession without receiving a concession (e.g., terms, commitment, or marketing rights) in return."
+                },
+                {
+                    "id": "c",
+                    "text": "Giving the customer exactly what they want so they like you."
+                },
+                {
+                    "id": "d",
+                    "text": "Trading features for a higher price."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you give a discount without a trade, you signal that your original price was arbitrary. A trade maintains the integrity of your pricing while providing the prospect with a 'win'."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is considered a 'Low-Cost, High-Value' get for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A public case study and agreement to be a reference."
+                },
+                {
+                    "id": "b",
+                    "text": "A handwritten thank-you note from the CEO."
+                },
+                {
+                    "id": "c",
+                    "text": "A 5% higher price but with double the support hours."
+                },
+                {
+                    "id": "d",
+                    "text": "A free company t-shirt."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Social proof (case studies) is incredibly valuable for future lead generation and closing, yet it costs the prospect very little to provide once they are a happy customer."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the risk of simply saying 'Sure, I can do 10% off' without a trade?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The prospect will feel bad for you."
+                },
+                {
+                    "id": "b",
+                    "text": "It inadvertently signals that your original price was inflated and invites further negotiation."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes the proposal too short."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no risk; it's a standard business practice."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Immediate discounting tells the buyer that your price is a 'negotiable suggestion' rather than a reflection of value. It teaches them to keep pushing for more."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If a prospect wants a lower price and you decide to 'Reduce Scope,' what are you doing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Removing certain features or services to match their lower budget."
+                },
+                {
+                    "id": "b",
+                    "text": "Giving them the full product but charging them less."
+                },
+                {
+                    "id": "c",
+                    "text": "Adding more features for the same price."
+                },
+                {
+                    "id": "d",
+                    "text": "Ignoring their request and sending the same proposal again."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Scope reduction is the most logical form of pricing flexibility. 'If you can't afford the full solution, we can start with a smaller part of it.'"
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "A discount request is often considered a 'Buying Signal' because:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "People who don't want to buy don't bother negotiating the terms."
+                },
+                {
+                    "id": "b",
+                    "text": "It proves the customer is running out of money."
+                },
+                {
+                    "id": "c",
+                    "text": "It shows the customer is trying to distract you."
+                },
+                {
+                    "id": "d",
+                    "text": "It is a requirement in some industries."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Negotiation requires effort. A prospect only invests that effort if they see a future where they use your product. They are essentially asking for a way to say 'yes' that fits their internal constraints."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Identify one 'Low-Cost, High-Value' item (e.g., a testimonial, an annual payment, or a referral) that would be specifically valuable for your business right now. How would you phrase the 'Value Trade' for it?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies a specific trade item and uses 'If/Then' language (e.g., 'If I do X, then will you do Y?'). Provide feedback on how this trade protects their perceived value."
+        }
+    ]
+}

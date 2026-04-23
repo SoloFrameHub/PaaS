@@ -1,0 +1,166 @@
+{
+  "lessonId": "10",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "El Taller del Discurso de Ascensor",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la señal principal de que un discurso de 'Cóctel' ha fallado?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El oyente pregunta '¿Cómo funciona eso?'"
+        },
+        {
+          "id": "b",
+          "text": "El oyente te golpea"
+        },
+        {
+          "id": "c",
+          "text": "El oyente dice 'Ah, qué bien' y cambia el tema"
+        },
+        {
+          "id": "d",
+          "text": "El oyente te pide tu tarjeta de presentación"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "'Ah, qué bien' es un código educado para 'No entendí lo que dijiste, o no me importa'. Un buen discurso despierta curiosidad y genera una pregunta de seguimiento."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué duración de discurso se usa cuando estás conociendo a alguien de manera casual?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 Segundos"
+        },
+        {
+          "id": "b",
+          "text": "2 Minutos"
+        },
+        {
+          "id": "c",
+          "text": "5 Minutos"
+        },
+        {
+          "id": "d",
+          "text": "20 Minutos"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "El discurso de 30 segundos es para presentaciones de alto nivel. No retengas a alguien con un monólogo de 5 minutos antes de saber si está interesado."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cómo deberías adaptar tu discurso para un Inversor vs. un Cliente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No deberías; mantenlo exactamente igual."
+        },
+        {
+          "id": "b",
+          "text": "Cuéntale al inversor sobre las características del producto; cuéntale al cliente sobre el tamaño del mercado."
+        },
+        {
+          "id": "c",
+          "text": "Cuéntale al inversor sobre la Oportunidad de Mercado; cuéntale al cliente sobre el Resultado/Solución."
+        },
+        {
+          "id": "d",
+          "text": "Miente al inversor; dile la verdad al cliente."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los inversores compran participación accionaria (crecimiento futuro/tamaño de mercado). Los clientes compran soluciones (alivio inmediato del dolor). Adapta la propuesta de valor a lo que cada uno está comprando."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es un error común que cometen los fundadores técnicos en sus discursos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hablan demasiado lento."
+        },
+        {
+          "id": "b",
+          "text": "Se enfocan demasiado en la pila tecnológica (React, Python, IA) en lugar del problema."
+        },
+        {
+          "id": "c",
+          "text": "Usan trajes."
+        },
+        {
+          "id": "d",
+          "text": "No tienen tarjeta de presentación."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Ningún cliente se preocupa de que tu backend esté en Rust. Les importa que no falle. Enfocarse en especificaciones en lugar de resultados es la trampa número 1 del fundador técnico."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué es importante 'Practicar en Voz Alta'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para molestar a tus vecinos"
+        },
+        {
+          "id": "b",
+          "text": "Porque leer en tu cabeza es diferente a hablar; necesitas construir memoria muscular."
+        },
+        {
+          "id": "c",
+          "text": "Para memorizarlo palabra por palabra como un robot"
+        },
+        {
+          "id": "d",
+          "text": "No es importante; improvisar es mejor."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las frases que se ven bien en papel a menudo se enredan al hablarlas. Debes practicar el acto físico de pronunciar el discurso para que suene natural."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la estructura correcta de la fórmula de la Declaración de Misión del Creador?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Soy un [Título] que tiene [Años de Experiencia] en [Industria]."
+        },
+        {
+          "id": "b",
+          "text": "Ayudo a [Audiencia Específica] a pasar de [Dolor en el Punto A] a [Transformación en el Punto B] a través de [Tu Método Único]."
+        },
+        {
+          "id": "c",
+          "text": "Vendo [Tipo de Producto] por [Precio] a [Cualquiera Que Pague]."
+        },
+        {
+          "id": "d",
+          "text": "Me apasiona [Tema] y me encanta ayudar a las personas."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Declaración de Misión del Creador debe ser específica (a quién ayudas), tener una carga emocional (el dolor y el destino) y establecer una expectativa clara (tu método). Las declaraciones genéricas de 'pasión' no convierten."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Escribe tu discurso de 'Cóctel' de 30 Segundos. Sigue la estructura 'Gancho → Pivote → Prueba'.",
+      "minLength": 50,
+      "promptForAI": "Evalúa el discurso. ¿Suena como una conversación humana? ¿Está claro qué hace la persona? ¿Incluye un punto de prueba específico?"
+    }
+  ],
+  "passingScore": 70
+}

@@ -1,0 +1,153 @@
+{
+    "lessonId": "2",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 2: Qualification with Cooperative Prospects (BANT-Style)",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary danger of practicing with a 'Cooperative' prospect?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They might get angry and end the call abruptly."
+                },
+                {
+                    "id": "b",
+                    "text": "Falling into the 'Happy Ears' trap—mistaking friendliness for buying intent."
+                },
+                {
+                    "id": "c",
+                    "text": "The prospect will likely ask too many technical questions you can't answer."
+                },
+                {
+                    "id": "d",
+                    "text": "They will refuse to answer any questions about themselves."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Because the conversation is pleasant, founders often assume the prospect is qualified, even if they haven't verified budget or timeline."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Instead of asking 'Are you the decision-maker?', which of these is the recommended approach for mapping authority?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Who at your company actually has the power to sign checks?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'I need to talk to your boss before we continue this call.'"
+                },
+                {
+                    "id": "c",
+                    "text": "'Walk me through how decisions like this typically get made at your company. Who else would need to be comfortable with this solution?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'If you're not the one deciding, I'm wasting my time here.'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Asking for the 'map' of the decision process is respectful and yields more accurate information than a direct challenge to their authority."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "When qualifying 'Need', why is it important to ask a question that uncovers the 'Trigger'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find out how much money they have in their bank account."
+                },
+                {
+                    "id": "b",
+                    "text": "To determine why they decided that *today* was the day to look for a solution, which helps gauge actual urgency."
+                },
+                {
+                    "id": "c",
+                    "text": "To identify their software development lifecycle."
+                },
+                {
+                    "id": "d",
+                    "text": "To verify their company's physical address."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A problem without a trigger is a 'want,' whereas a problem with a specific driver for change is a 'need' with a timeline."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "In a simulation with a 'High I' (Influencer) cooperative prospect, what is the founder's most critical task?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To match their energy and talk even more than they do."
+                },
+                {
+                    "id": "b",
+                    "text": "To pivot the conversation into a deep-dive technical demo within the first 5 minutes."
+                },
+                {
+                    "id": "c",
+                    "text": "To build rapport through 15 minutes of social chitchat."
+                },
+                {
+                    "id": "d",
+                    "text": "To gently steer the conversation back to the BANT checklist whenever the prospect goes on a tangent."
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Influencers often enjoy the conversation so much they forget to provide the qualification data you need. You must manage the frame."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the recommended approach for qualifying 'Budget' without being interrogative?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Guess their budget based on their LinkedIn profile."
+                },
+                {
+                    "id": "b",
+                    "text": "Avoid the topic of money until the third or fourth call."
+                },
+                {
+                    "id": "c",
+                    "text": "Ask if they have already earmarked funds or if they are in an 'exploratory phase' needing a business case."
+                },
+                {
+                    "id": "d",
+                    "text": "Demand to see their internal financial statements before the call begins."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Providing a 'safe' option like the 'exploratory phase' lets the prospect be honest about their budget status without feeling pressured."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Think about a recent 'nice' conversation you had with a prospect that didn't lead to a deal. Looking back through the BANT lens, which element did you assume was present but didn't actually verify? (e.g., did they have 'Need' but no 'Budget'?). Draft one 'Consultative Style' question for each of the four BANT elements that feels natural for your specific business.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's ability to diagnose a past failure using the BANT framework. Review their drafted questions for 'Consultative' phrasing (e.g., 'Walk me through...' or 'How does this affect...'). Provide one suggestion to make their 'Budget' question even softer."
+        }
+    ]
+}

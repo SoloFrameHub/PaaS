@@ -1,0 +1,55 @@
+{
+  "lessonId": "1",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "The Audience-Revenue Gap",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the Revenue Per Subscriber (RPS) benchmark for solo creators, what is the target monthly RPS range?",
+      "options": [
+        { "id": "a", "text": "$0.10 - $0.50 per subscriber per month" },
+        { "id": "b", "text": "$1 - $3 per subscriber per month" },
+        { "id": "c", "text": "$5 - $10 per subscriber per month" },
+        { "id": "d", "text": "$15 - $25 per subscriber per month" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The benchmark for solo creators is $1-$3 per subscriber per month. If you have 2,000 subscribers and earn $0.10/subscriber/month, you have a conversion problem, not an audience problem."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'Content Hamster Wheel' failure mode?",
+      "options": [
+        { "id": "a", "text": "Creating content that is too short to be useful" },
+        { "id": "b", "text": "Publishing constantly but never selling anything, creating goodwill but no commercial relationship" },
+        { "id": "c", "text": "Reposting the same content across multiple platforms" },
+        { "id": "d", "text": "Outsourcing content creation to AI tools without editing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Content Hamster Wheel is when a creator publishes constantly but never sells anything. Their content creates goodwill but no commercial relationship -- essentially operating as a free media company."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why does moving UP the monetization spectrum (from ad revenue toward coaching/consulting) deliver exponentially more revenue?",
+      "options": [
+        { "id": "a", "text": "Higher-priced offers require less marketing effort" },
+        { "id": "b", "text": "Algorithms favor creators who sell high-ticket products" },
+        { "id": "c", "text": "Each step up requires more trust but delivers exponentially more revenue per fan" },
+        { "id": "d", "text": "Consulting clients always refer more new customers than course students" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Every step up the monetization spectrum requires more trust but delivers exponentially more revenue. A creator with 5,000 followers selling a $497 course to 2% of their email list earns more than a creator with 500,000 followers relying on ad revenue."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Which of the five failure modes (Content Hamster Wheel, Audience-Offer Mismatch, Platform Trap, Trust Deficit, or Price Floor) most applies to your current creator business? Describe specifically how it shows up in your day-to-day operations and what you plan to do differently after this lesson.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student demonstrates honest self-assessment of their monetization challenges and identifies a specific failure mode with concrete examples from their own business. Look for actionable next steps rather than vague intentions."
+    }
+  ]
+}

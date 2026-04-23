@@ -1,0 +1,55 @@
+{
+  "lessonId": "7",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Substack & Newsletter Monetization",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the 4-week trust-building email cadence, what is the sequence of weekly themes?",
+      "options": [
+        { "id": "a", "text": "Sell, Prove, Teach, Connect" },
+        { "id": "b", "text": "Teach, Prove, Connect, Sell" },
+        { "id": "c", "text": "Connect, Teach, Sell, Prove" },
+        { "id": "d", "text": "Prove, Sell, Teach, Connect" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 4-week cadence is Teach (share a framework), Prove (share a case study), Connect (share a personal story), then Sell (present your offer). This creates a rhythm where subscribers receive 3 weeks of pure value before a sales pitch, maintaining the trust bank account."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "For the paid newsletter model on Substack, how many free subscribers do you typically need to generate $10,000/month from paid subscriptions alone?",
+      "options": [
+        { "id": "a", "text": "1,000-2,000 free subscribers" },
+        { "id": "b", "text": "5,000-8,000 free subscribers" },
+        { "id": "c", "text": "15,000-20,000 free subscribers" },
+        { "id": "d", "text": "50,000-75,000 free subscribers" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "To earn $10,000/month from paid subscriptions, you need approximately 1,000 paid subscribers at $10/month. With a typical free-to-paid conversion rate of 5-7%, this requires a free subscriber base of 15,000-20,000. This is why most solo creators are better served using the newsletter as a sales engine for their own products."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the recommended free-to-paid content ratio for Substack newsletters with a paid tier?",
+      "options": [
+        { "id": "a", "text": "90% free, 10% paid -- keep almost everything accessible" },
+        { "id": "b", "text": "60% free, 40% paid -- free posts must be genuinely valuable, not thin teasers" },
+        { "id": "c", "text": "30% free, 70% paid -- most content should be behind the paywall" },
+        { "id": "d", "text": "50% free, 50% paid -- an even split works best" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The optimal ratio is approximately 60% free and 40% paid. Free posts serve as your marketing -- they must be genuinely valuable to attract and retain subscribers. Paid posts go significantly deeper and include exclusive resources that justify the subscription."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Choose a newsletter monetization model (free, paid, or hybrid) for your business and justify your decision. Include: your current audience size, what your newsletter would cover, how it connects to your core offer, and your revenue projection for 12 months.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student makes a justified strategic decision based on their specific situation (audience size, niche, existing offers) rather than picking the model that sounds most appealing. Look for realistic revenue projections backed by the benchmarks from the lesson, and a clear connection between the newsletter and their broader business model."
+    }
+  ]
+}

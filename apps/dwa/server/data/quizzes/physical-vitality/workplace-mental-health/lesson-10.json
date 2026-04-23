@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is chronic understaffing NOT an individual workload management problem?",
+            "options": [
+                {"id": "opt1", "text": "Because some people are better at time management than others"},
+                {"id": "opt2", "text": "Because chronic understaffing means the volume of work consistently exceeds staff capacity to complete it to acceptable standards — even with efficient time management. It's an organizational resource allocation failure."},
+                {"id": "opt3", "text": "Because understaffing only affects lazy employees"},
+                {"id": "opt4", "text": "Because understaffing doesn't really impact mental health"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic understaffing occurs when work volume consistently exceeds staff capacity to complete it to acceptable standards, even with efficient time management. This is an organizational resource allocation failure determined by hiring decisions, budgets, and capacity planning. No individual coping strategy can substitute for adequate staffing levels."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does understaffing affect job resources, and why does this matter for burnout risk?",
+            "options": [
+                {"id": "opt1", "text": "Understaffing only increases demands, it doesn't affect resources"},
+                {"id": "opt2", "text": "Understaffing increases demands AND depletes resources (removes autonomy, eliminates peer support, prevents recovery) — creating the highest-risk profile in the JD-R model"},
+                {"id": "opt3", "text": "Understaffing improves job resources by creating team bonding"},
+                {"id": "opt4", "text": "Resources don't matter when you're understaffed"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Understaffing doesn't just increase demands — it simultaneously depletes critical job resources. You lose autonomy (everything is urgent, you're constantly reactive), peer support (everyone is too overwhelmed to help), and efficacy (you can't meet standards). High demands + low resources is the highest-risk profile for burnout in the JD-R model."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is moral injury in the context of understaffing, particularly in healthcare?",
+            "options": [
+                {"id": "opt1", "text": "Moral injury means feeling bad about your job"},
+                {"id": "opt2", "text": "Moral injury is psychological harm from being unable to provide adequate care or service due to inadequate resources — violating professional and ethical values"},
+                {"id": "opt3", "text": "Moral injury only affects military personnel"},
+                {"id": "opt4", "text": "Moral injury is the same as burnout"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Moral injury is psychological harm that occurs when you're unable to provide the quality of care or service you're trained and ethically committed to deliver — due to system failures like understaffing. In healthcare, this includes watching patients deteriorate due to inadequate staffing, prioritizing volume over safety, or being unable to meet professional standards. It's distinct from burnout: burnout is about exhaustion; moral injury is about value violation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the appropriate organizational response to chronic understaffing?",
+            "options": [
+                {"id": "opt1", "text": "Teach employees better time management skills"},
+                {"id": "opt2", "text": "Hire adequate staff, redistribute workload, or adjust service/output expectations to match available capacity"},
+                {"id": "opt3", "text": "Offer mindfulness programs"},
+                {"id": "opt4", "text": "Tell employees to work harder"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The appropriate organizational response to chronic understaffing is to: hire adequate staff to match workload, redistribute work more equitably if hiring isn't possible, or adjust service/output expectations to match actual staff capacity. Time management training, wellness programs, or individual resilience training do not address the structural problem and can be perceived as blame-shifting."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "10",
+    "title": "Staffing and Resource Allocation — Systemic Issues - Quiz"
+}

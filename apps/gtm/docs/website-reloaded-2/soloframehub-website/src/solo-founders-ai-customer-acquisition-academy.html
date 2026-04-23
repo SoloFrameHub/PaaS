@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#020408">
+        <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="/src/css/fonts.css">
+        <title>Customer Acquisition Academy - 49 Courses for Solo Founders | SoloFrameHub</title>
+        <meta name="description" content="Master customer acquisition with 49 systematic courses across 7 tracks. Built for technical founders who need frameworks, not personality transformations. Now Beta Testing.">
+        <meta name="keywords" content="customer acquisition academy, sales training for founders, bootstrap marketing, AI sales coaching, DISC buyer personas, cold email mastery, discovery call training, sales pipeline management, solo founder">
+        <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+        <link rel="canonical" href="https://soloframehub.com/solo-founders-ai-customer-acquisition-academy.html"/>
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://soloframehub.com/solo-founders-ai-customer-acquisition-academy.html">
+        <meta property="og:title" content="Customer Acquisition Academy - 49 Courses for Solo Technical Founders">
+        <meta property="og:description" content="Stop guessing, start closing. 49 systematic courses covering marketing, sales, AI-powered acquisition, and retention. Built for bootstrapped founders.">
+        <meta property="og:image" content="https://soloframehub.com/assets/images/customer-acquisition-academy.webp">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Customer Acquisition Academy - 49 Courses">
+        <meta property="twitter:description" content="A systematic approach to customer acquisition for technical founders. 49 courses across 7 tracks.">
+        <script type="application/ld+json">
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "SoloFrameHub",
+            "url": "https://soloframehub.com",
+            "logo": "https://soloframehub.com/assets/images/soloframehub-site-icon.png"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Solo Founder's Customer Acquisition Academy",
+            "description": "49 systematic courses covering marketing, sales, AI-powered acquisition, and customer success for solo technical founders. 7 tracks: Foundations, Marketing Engine, Sales Methodology, AI-Powered Acquisition, Creator Economy, Customer Success, Operations & Systems.",
+            "provider": {
+              "@type": "Organization",
+              "name": "SoloFrameHub",
+              "sameAs": "https://soloframehub.com"
+            },
+            "courseMode": "online",
+            "numberOfCredits": "49 courses",
+            "educationalLevel": "Professional",
+            "offers": {
+              "@type": "Offer",
+              "price": "49",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "validFrom": "2026-01-04"
+            }
+          }
+        ]
+        </script>
+        <style>body { font-family: 'Inter', sans-serif; } .font-serif-custom { font-family: 'Newsreader', serif; } .font-geist { font-family: 'Geist', sans-serif; } .gradient-border { position: relative; background: linear-gradient(#020408, #020408) padding-box,
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) border-box; border: 1px solid transparent; } .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); } .course-card { transition: all 0.3s ease; } .course-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.2); } .track-marker { writing-mode: vertical-rl; text-orientation: mixed; } .coming-soon { position: relative; overflow: hidden; } .coming-soon::after { content: 'FEB 2026'; position: absolute; top: 12px; right: -32px; background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; font-size: 9px; font-weight: 700; padding: 4px 40px; transform: rotate(45deg); letter-spacing: 0.5px; } .launch-badge { position: relative; overflow: hidden; } .launch-badge::before { content: 'READY'; position: absolute; top: 12px; right: -28px; background: linear-gradient(135deg, #10b981, #059669); color: white; font-size: 9px; font-weight: 700; padding: 4px 36px; transform: rotate(45deg); letter-spacing: 0.5px; }</style>
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/src/css/tailwind-input.css">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    </head>
+    <body class="bg-[#020408] min-h-screen flex flex-col items-center selection:bg-indigo-500/30 selection:text-indigo-200 text-zinc-300">
+        <!-- Background Grid -->
+        <div class="fixed inset-0 w-full h-full pointer-events-none z-0 flex justify-between px-4 md:px-12 opacity-10">
+            <div class="w-px h-full bg-white/5"></div>
+            <div class="w-px h-full bg-white/5 hidden sm:block"></div>
+            <div class="w-px h-full bg-white/5 hidden md:block"></div>
+            <div class="w-px h-full bg-white/5 hidden lg:block"></div>
+            <div class="w-px h-full bg-white/5"></div>
+        </div>
+        <!-- Main Container -->
+        <main class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 backdrop-blur-xl lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+            <!-- Navigation -->
+            <nav class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-6 md:px-12 flex items-center justify-between"><a href="index.html" class="flex items-center gap-4"> <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-12 w-auto object-contain"> </a>
+                <div class="hidden md:flex items-center gap-10">
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Books menu" aria-expanded="false">Books</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                                <a href="solo-founders-ai-customer-acquisition-playbook.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Customer Acquisition Playbook</a>
+                                <a href="solo-founders-ai-60-day-roadmap-book.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Revolution</a>
+                                <a href="8-gtm-frameworks-compounding-growth-book.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Dominance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Academies menu" aria-expanded="false">Academies</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                                <a href="solo-founders-ai-startup-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Startup Academy</a>
+                                <a href="solo-founders-ai-customer-acquisition-academy.html" class="block px-4 py-3 text-sm text-white hover:bg-white/5 rounded-xl">Customer Acquisition Academy</a>
+                                <a href="solo-founders-ai-gtm-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">GTM Academy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Platform menu" aria-expanded="false">Platform</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl"><a href="community-forums.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Community</a><a href="platform-architecture.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Course Platform</a>
+                            </div>
+                        </div>
+                    </div><a href="https://content.soloframehub.com" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Blog</a>
+                </div>
+                <div class="flex items-center gap-6"><a href="#pricing" class="hidden sm:flex group relative px-8 py-4 rounded-full bg-zinc-900 border border-white/10 text-base font-medium text-white hover:bg-zinc-800 transition-all items-center gap-3">
+                    Start Learning  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg> </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-zinc-300 hover:text-white transition-colors" aria-label="Open mobile menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-0 z-[100] hidden flex-col p-8" style="background-color: #06050B !important;">
+                <div class="flex justify-between items-center mb-12">
+                    <div class="flex items-center gap-4"> 
+                        <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-10 w-auto object-contain"> 
+                    </div>
+                    <button id="close-menu" aria-label="Close mobile menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-8 overflow-y-auto">
+                    <div class="space-y-4">
+                        <h3 class="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Academies</h3><a href="solo-founders-ai-customer-acquisition-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Customer Acquisition Academy</a><a href="solo-founders-ai-startup-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Startup Academy</a><a href="solo-founders-ai-gtm-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">GTM Academy</a>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Books</h3><a href="solo-founders-ai-customer-acquisition-playbook.html" class="block text-2xl font-serif-custom text-white mobile-link">Customer Acquisition Playbook</a><a href="solo-founders-ai-60-day-roadmap-book.html" class="block text-2xl font-serif-custom text-white mobile-link">AI Revolution</a><a href="8-gtm-frameworks-compounding-growth-book.html" class="block text-2xl font-serif-custom text-white mobile-link">AI Dominance</a>
+                    </div>
+                    <div class="pt-8 border-t border-white/5 space-y-6"><a href="https://sales-suite.soloframehub.com/" class="block text-lg text-zinc-300 mobile-link">Apps</a><a href="platform-architecture.html" class="block text-lg text-zinc-300 mobile-link">Platform</a><a href="community-forums.html" class="block text-lg text-zinc-300 mobile-link">Community</a><a href="https://content.soloframehub.com" class="block text-lg text-zinc-300 mobile-link">Blog</a>
+                    </div>
+                </nav>
+                <div class="mt-auto pt-8"><a href="#pricing" class="w-full flex items-center justify-center h-14 rounded-full bg-white text-black font-bold mobile-link">
+                    Get Started — $49/mo </a>
+                </div>
+            </div>
+            <!-- Hero Section -->
+            <section class="px-6 md:px-12 pt-16 pb-24 relative border-b border-white/5 overflow-hidden">
+                <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-indigo-500/10 blur-[120px] rounded-full"></div>
+                <div class="max-w-4xl mx-auto text-center relative z-10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[10px] font-medium tracking-wide mb-6 uppercase">
+                        49 Courses · 7 Tracks · Complete Customer Acquisition System
+</div>
+                    <h1 class="text-4xl md:text-7xl font-serif-custom font-normal text-white tracking-tight mb-6 leading-[0.95]">
+                        Customer<br><span class="italic text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-sky-400">Acquisition Academy</span> </h1>
+                    <p class="text-lg md:text-xl leading-relaxed font-light text-zinc-300 max-w-2xl mx-auto mb-8">
+                        From complete stranger to loyal customer. 49 systematic courses covering marketing, sales, AI-powered acquisition, creator economy, and retention for solo technical founders. </p>
+                    <!-- Launch Timeline -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10">
+                        <div class="flex items-center gap-3 px-6 py-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/20">
+                            <span class="iconify text-emerald-400" data-icon="lucide:check-circle" data-width="20"></span>
+                            <div class="text-left">
+                                <p class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest">Now Beta Testing</p>
+                                <p class="text-white font-semibold">First 21 Courses Ready</p>
+                            </div>
+                            <span class="text-xs text-emerald-400 font-bold ml-2">21 Courses</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-6 py-3 rounded-2xl bg-indigo-500/10 border border-indigo-500/20">
+                            <span class="iconify text-indigo-400" data-icon="lucide:calendar" data-width="20"></span>
+                            <div class="text-left">
+                                <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-widest">Complete Academy</p>
+                                <p class="text-white font-semibold">February 2026</p>
+                            </div>
+                            <span class="text-xs text-indigo-400 font-bold ml-2">28 More Courses</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://ai-customer-acquisition-academy.soloframehub.com/forms/caa-waitlist" class="w-full sm:w-auto px-10 h-14 rounded-full bg-white text-black text-sm font-bold hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 shadow-xl shadow-white/5">
+                            Join the Beta Waitlist </a>
+                        <a href="#curriculum" class="w-full sm:w-auto h-14 px-10 rounded-full border border-white/10 text-white text-sm font-medium hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+                            View All 49 Courses </a>
+                    </div>
+                    <!-- Paired with Book -->
+                    <div class="mt-10 pt-6 border-t border-white/5">
+                        <p class="text-xs text-zinc-300 mb-3">PAIRED WITH</p><a href="solo-founders-ai-customer-acquisition-playbook.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-zinc-900/50 border border-white/5 hover:border-sky-500/30 transition-colors"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                            </svg> <span class="text-sm text-white">Solo Founder's AI Powered Customer Acquisition Playbook</span> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 7 Track Framework Overview -->
+            <section class="py-20 px-6 md:px-12 bg-zinc-950/50">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-5xl font-serif-custom text-white mb-4">7 Tracks. Complete System.</h2>
+                        <p class="text-zinc-300 text-lg">From positioning to scaling—every stage of customer acquisition covered.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                        <!-- Track 1: Foundations -->
+                        <div class="gradient-border bg-zinc-900/20 p-6 rounded-2xl flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 font-bold text-lg border border-indigo-500/20">01</div>
+                            <h3 class="text-lg font-bold text-white mb-2">Foundations</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">Sales psychology, ICP, positioning, acquisition path, list building.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-indigo-400 font-bold">5 Courses</p>
+                            </div>
+                        </div>
+                        <!-- Track 2: Marketing Engine -->
+                        <div class="gradient-border bg-sky-500/5 p-6 rounded-2xl flex flex-col h-full border-sky-500/20 relative">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-sky-700 text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase tracking-tighter">Largest Track</div>
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 mb-4 font-bold text-lg border border-sky-500/20">02</div>
+                            <h3 class="text-lg font-bold text-white mb-2">Marketing Engine</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">Content, SEO/AEO, LinkedIn, cold email, community, nurture, social proof, automation.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-sky-400 font-bold">8 Courses</p>
+                            </div>
+                        </div>
+                        <!-- Track 3: Sales Methodology -->
+                        <div class="gradient-border bg-zinc-900/20 p-6 rounded-2xl flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 font-bold text-lg border border-emerald-500/20">03</div>
+                            <h3 class="text-lg font-bold text-white mb-2">Sales Methodology</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">DISC selling, discovery, demos, objections, proposals, negotiation, closing, pipeline.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-emerald-400 font-bold">8 Courses</p>
+                            </div>
+                        </div>
+                        <!-- Track 4: AI-Powered Acquisition (NEW) -->
+                        <div class="gradient-border bg-cyan-500/5 p-6 rounded-2xl flex flex-col h-full border-cyan-500/20 relative">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-full uppercase tracking-tighter">New Track</div>
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-4 font-bold text-lg border border-cyan-500/20">04</div>
+                            <h3 class="text-lg font-bold text-white mb-2">AI-Powered Acquisition</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">AI strategy, deliverability, lead research, outreach, LinkedIn AI, AI SDRs, custom agents.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-cyan-400 font-bold">7 Courses</p>
+                            </div>
+                        </div>
+                        <!-- Track 5: Creator Economy -->
+                        <div class="gradient-border bg-amber-500/5 p-6 rounded-2xl flex flex-col h-full border-amber-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 mb-4 font-bold text-lg border border-amber-500/20">05</div>
+                            <h3 class="text-lg font-bold text-white mb-2">Creator Economy</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">Creator mindset, audience conversion, webinars, DM selling, metrics, scaling.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-amber-400 font-bold">8 Courses</p>
+                            </div>
+                        </div>
+                        <!-- Track 6: Customer Success -->
+                        <div class="gradient-border bg-zinc-900/20 p-6 rounded-2xl flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-400 mb-4 font-bold text-lg border border-rose-500/20">06</div>
+                            <h3 class="text-lg font-bold text-white mb-2">Customer Success</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">Onboarding, retention, churn prevention, expansion, advocacy.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-rose-400 font-bold">4 Courses</p>
+                            </div>
+                        </div>
+                        <!-- Track 7: Operations & Systems -->
+                        <div class="gradient-border bg-zinc-900/20 p-6 rounded-2xl flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4 font-bold text-lg border border-purple-500/20">07</div>
+                            <h3 class="text-lg font-bold text-white mb-2">Operations & Systems</h3>
+                            <p class="text-zinc-300 text-xs leading-relaxed mb-4">CRM, analytics, automation, playbooks, first hire, legal, finance, capstone.</p>
+                            <div class="mt-auto pt-3 border-t border-white/5">
+                                <p class="text-[10px] text-purple-400 font-bold">9 Courses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Full Curriculum Grid -->
+            <section id="curriculum" class="py-24 px-6 md:px-12">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-5xl font-serif-custom text-white mb-4">The Complete Curriculum</h2>
+                        <p class="text-zinc-300 text-lg">49 courses designed for systematic customer acquisition mastery.</p>
+                    </div>
+                    <!-- TRACK 1: Foundations (5 courses) -->
+                    <div class="mb-16">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 font-bold text-lg border border-indigo-500/20">01</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 1: Foundations</h3>
+                                <p class="text-sm text-indigo-400">Build the strategic foundation for your sales efforts</p>
+                            </div>
+                            <div class="ml-auto hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                                <span class="iconify text-emerald-400" data-icon="lucide:check-circle" data-width="14"></span>
+                                <span class="text-emerald-400 text-xs font-bold">5 COURSES READY</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                            <!-- Course 0 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">00</span>
+                                    <span class="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded-full">8 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Solo Founder Sales Psychology</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Master the mindset before the tactics. Overcome sales resistance and impostor syndrome.</p>
+                            </div>
+                            <!-- Course 1 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">01</span>
+                                    <span class="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded-full">13 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">ICP Builder Workshop</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Define your Ideal Customer Profile with precision. Stop targeting everyone.</p>
+                            </div>
+                            <!-- Course 2 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">02</span>
+                                    <span class="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded-full">10 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Positioning & Value Proposition</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Differentiate your offer and articulate value that resonates with your ICP.</p>
+                            </div>
+                            <!-- Course 3 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">03</span>
+                                    <span class="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded-full">6 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Choose Your Acquisition Path</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Identify if you're built for Inbound, Outbound, or Community-led growth.</p>
+                            </div>
+                            <!-- Course 4 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">04</span>
+                                    <span class="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded-full">11 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">List Building & Prospecting</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Build technical systems to find and verify your ideal prospects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRACK 2: Marketing Engine (8 courses) -->
+                    <div class="mb-16">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 font-bold text-lg border border-sky-500/20">02</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 2: Marketing Engine</h3>
+                                <p class="text-sm text-sky-400">Build systematic marketing systems that generate qualified leads</p>
+                            </div>
+                            <div class="ml-auto hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                                <span class="iconify text-emerald-400" data-icon="lucide:check-circle" data-width="14"></span>
+                                <span class="text-emerald-400 text-xs font-bold">8 COURSES READY</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <!-- Course 5 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">05</span>
+                                    <span class="text-[10px] font-bold text-sky-400 bg-sky-500/10 px-2 py-1 rounded-full">13 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Technical Content Engine</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Create content that earns trust of technical buyers and decision-makers.</p>
+                            </div>
+                            <!-- Course 6 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">06</span>
+                                    <span class="text-[10px] font-bold text-sky-400 bg-sky-500/10 px-2 py-1 rounded-full">12 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">SEO & Answer Engine Optimization</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Rank where your customers search, including AI-driven answer engines.</p>
+                            </div>
+                            <!-- Course 7 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">07</span>
+                                    <span class="text-[10px] font-bold text-sky-400 bg-sky-500/10 px-2 py-1 rounded-full">10 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">LinkedIn Growth Engine</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Turn LinkedIn into a professional networking and lead generation powerhouse.</p>
+                            </div>
+                            <!-- Course 8 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">08</span>
+                                    <span class="text-[10px] font-bold text-sky-400 bg-sky-500/10 px-2 py-1 rounded-full">12 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Cold Email Mastery</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Write emails that get replies by focusing on problems, not features.</p>
+                            </div>
+                            <!-- Course 9 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">09</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Community-Based Lead Generation</h4>
+                                <p class="text-xs text-zinc-400">Leverage Reddit, Hacker News, Product Hunt through value-first participation</p>
+                            </div>
+                            <!-- Course 10 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">10</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Email Nurture & Newsletter</h4>
+                                <p class="text-xs text-zinc-400">Convert subscribers to customers through systematic nurture sequences</p>
+                            </div>
+                            <!-- Course 11 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">11</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Social Proof & Referral Systems</h4>
+                                <p class="text-xs text-zinc-400">Systematize collection and deployment of testimonials and referrals</p>
+                            </div>
+                            <!-- Course 12 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">12</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Marketing Automation & Analytics</h4>
+                                <p class="text-xs text-zinc-400">Connect your tools and measure what actually works</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRACK 3: Sales Methodology (8 courses) -->
+                    <div class="mb-16">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-lg border border-emerald-500/20">03</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 3: Sales Methodology</h3>
+                                <p class="text-sm text-emerald-400">Master the art and science of the B2B sales conversation</p>
+                            </div>
+                            <div class="ml-auto hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                                <span class="iconify text-emerald-400" data-icon="lucide:check-circle" data-width="14"></span>
+                                <span class="text-emerald-400 text-xs font-bold">8 COURSES READY</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <!-- Course 13 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">13</span>
+                                    <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-full">11 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Understanding DISC Buyer Personas</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Adapt your communication style to match your buyer's personality.</p>
+                                <div class="mt-4 pt-4 border-t border-white/5">
+                                    <div class="flex items-center gap-2 text-xs text-emerald-400">
+                                        <span class="iconify" data-icon="lucide:cpu" data-width="14"></span>
+                                        <span>AI Roleplay: 4 DISC Types</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 14 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">14</span>
+                                    <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-full">12 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Discovery Framework - BANT/MEDDIC</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Structured frameworks to uncover pain and qualify opportunities.</p>
+                            </div>
+                            <!-- Course 15 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">15</span>
+                                    <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-full">10 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Discovery Call Simulations</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Intensive AI-based practice sessions for discovery calls.</p>
+                                <div class="mt-4 pt-4 border-t border-white/5">
+                                    <div class="flex items-center gap-2 text-xs text-emerald-400">
+                                        <span class="iconify" data-icon="lucide:cpu" data-width="14"></span>
+                                        <span>AI Discovery Roleplay</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course 16 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden launch-badge">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-white/80">16</span>
+                                    <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-full">9 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Demo Architecture</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Conduct value-first demos that map features to customer pain.</p>
+                            </div>
+                            <!-- Course 17 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">17</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Objection Handling Database</h4>
+                                <p class="text-xs text-zinc-400">Prepare for and neutralize the most common sales objections</p>
+                            </div>
+                            <!-- Course 18 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">18</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Proposals, Pricing & Negotiation</h4>
+                                <p class="text-xs text-zinc-400">Close deals with favorable terms and structured proposals</p>
+                            </div>
+                            <!-- Course 19 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">19</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Closing & Next Steps</h4>
+                                <p class="text-xs text-zinc-400">Finalize agreements and transition to implementation</p>
+                            </div>
+                            <!-- Course 20 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden launch-badge">
+                                <span class="text-3xl font-bold text-white/80 mb-2 block">20</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Sales Pipeline Management</h4>
+                                <p class="text-xs text-zinc-400">Maintain hygiene and momentum in your sales cycle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRACK 4: AI-Powered Acquisition (7 courses) - NEW -->
+                    <div class="mb-16">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold text-lg border border-cyan-500/20">04</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 4: AI-Powered Acquisition</h3>
+                                <p class="text-sm text-cyan-400">Deploy AI agents and automation to scale your validated sales process</p>
+                            </div>
+                            <div class="ml-auto hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">
+                                <span class="iconify text-cyan-400" data-icon="lucide:sparkles" data-width="14"></span>
+                                <span class="text-cyan-400 text-xs font-bold">NEW TRACK</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <!-- Course 21 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden coming-soon">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-cyan-500/20">21</span>
+                                    <span class="text-[10px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded-full">11 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">AI Sales Strategy & Landscape</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Build vs buy decisions, platform evaluation, realistic ROI expectations.</p>
+                            </div>
+                            <!-- Course 22 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden coming-soon">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-cyan-500/20">22</span>
+                                    <span class="text-[10px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded-full">12 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">Email Deliverability & Compliance</h4>
+                                <p class="text-sm text-zinc-300 mb-4">SPF/DKIM/DMARC, domain warming, Gmail/Yahoo 2024 rules.</p>
+                            </div>
+                            <!-- Course 23 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden coming-soon">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-cyan-500/20">23</span>
+                                    <span class="text-[10px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded-full">10 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">AI-Powered Lead Research</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Apollo, Clay, n8n workflows, LLM-powered research at scale.</p>
+                            </div>
+                            <!-- Course 24 -->
+                            <div class="course-card gradient-border bg-zinc-900/30 rounded-2xl p-6 relative overflow-hidden coming-soon">
+                                <div class="flex items-start justify-between mb-4">
+                                    <span class="text-4xl font-bold text-cyan-500/20">24</span>
+                                    <span class="text-[10px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded-full">11 Lessons</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-white mb-2">AI-Assisted Outreach</h4>
+                                <p class="text-sm text-zinc-300 mb-4">Human-in-loop personalization, prompt engineering for sales copy.</p>
+                            </div>
+                            <!-- Course 25 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-cyan-500/20 mb-2 block">25</span>
+                                <h4 class="text-sm font-bold text-white mb-1">LinkedIn AI Strategy</h4>
+                                <p class="text-xs text-zinc-400">Safe automation, ban avoidance, hybrid manual+AI workflows</p>
+                            </div>
+                            <!-- Course 26 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-cyan-500/20 mb-2 block">26</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Autonomous AI SDR Systems</h4>
+                                <p class="text-xs text-zinc-400">Agent Frank, AiSDR, Jason AI configuration and monitoring</p>
+                            </div>
+                            <!-- Course 27 -->
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-cyan-500/20 mb-2 block">27</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Building Custom AI Sales Agents</h4>
+                                <p class="text-xs text-zinc-400">n8n, CrewAI, DIY agents for technical founders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRACK 5: Creator Economy (8 courses) -->
+                    <div class="mb-16">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold text-lg border border-amber-500/20">05</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 5: Creator Economy</h3>
+                                <p class="text-sm text-amber-400">Master sales strategies for creators, coaches, and course builders</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">28</span>
+                                <h4 class="text-sm font-bold text-white mb-1">The Creator Sales Mindset</h4>
+                                <p class="text-xs text-zinc-400">Overcome imposter syndrome and sell authentically as a creator</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">29</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Audience to Buyer Conversion</h4>
+                                <p class="text-xs text-zinc-400">Turn followers into paying customers through strategic funnels</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">30</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Webinar & Challenge Funnels</h4>
+                                <p class="text-xs text-zinc-400">Design and execute high-converting webinars and challenge launches</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">31</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Creator Sales Conversations</h4>
+                                <p class="text-xs text-zinc-400">Master enrollment calls, transformation selling, and creator objections</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">32</span>
+                                <h4 class="text-sm font-bold text-white mb-1">DM Selling & Social Commerce</h4>
+                                <p class="text-xs text-zinc-400">Convert social engagement into sales conversations</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">33</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Creator Metrics That Matter</h4>
+                                <p class="text-xs text-zinc-400">Track the right KPIs for launches and evergreen funnels</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">34</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Scaling Creator Sales</h4>
+                                <p class="text-xs text-zinc-400">Build a sales team and transition from 1:1 to group</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-amber-500/20 mb-2 block">35</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Community-Led Sales</h4>
+                                <p class="text-xs text-zinc-400">Monetize communities and use them as retention engines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRACK 6: Customer Success (4 courses) -->
+                    <div class="mb-16">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-400 font-bold text-lg border border-rose-500/20">06</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 6: Customer Success</h3>
+                                <p class="text-sm text-rose-400">Ensure your customers achieve their desired outcomes and become advocates</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-rose-500/20 mb-2 block">36</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Customer Onboarding</h4>
+                                <p class="text-xs text-zinc-400">First 90 days success plan for rapid value realization</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-rose-500/20 mb-2 block">37</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Retention & Churn Prevention</h4>
+                                <p class="text-xs text-zinc-400">Build long-term retention engines to keep customers for life</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-rose-500/20 mb-2 block">38</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Expansion & Upsell</h4>
+                                <p class="text-xs text-zinc-400">Grow account value over time, maximize lifetime value</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-rose-500/20 mb-2 block">39</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Customer Advocacy</h4>
+                                <p class="text-xs text-zinc-400">Turn users into fans and generate viral growth</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRACK 7: Operations & Systems (9 courses) -->
+                    <div class="mb-8">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold text-lg border border-purple-500/20">07</div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Track 7: Operations & Systems</h3>
+                                <p class="text-sm text-purple-400">Optimize your sales and marketing stack for scale and efficiency</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">40</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Advanced CRM Setup</h4>
+                                <p class="text-xs text-zinc-400">Automate your sales ops and build a nerve center</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">41</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Sales Analytics & BI</h4>
+                                <p class="text-xs text-zinc-400">Data-driven sales management and decisions</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">42</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Sales Automation (Non-AI)</h4>
+                                <p class="text-xs text-zinc-400">Scale without adding headcount, eliminate grunt work</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">43</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Outsourcing & VAs</h4>
+                                <p class="text-xs text-zinc-400">When and how to offload tasks, buy back time</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">44</span>
+                                <h4 class="text-sm font-bold text-white mb-1">The Sales Playbook</h4>
+                                <p class="text-xs text-zinc-400">Document your growth engine, create repeatable recipe</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">45</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Scaling to First Sales Hire</h4>
+                                <p class="text-xs text-zinc-400">Successfully delegate sales work, replace yourself</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">46</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Sales Legal & Contracts</h4>
+                                <p class="text-xs text-zinc-400">MSAs, SOWs, redlines - protect your downside</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">47</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Sales Finance & Tax</h4>
+                                <p class="text-xs text-zinc-400">Manage sales cashflow and taxes effectively</p>
+                            </div>
+                            <div class="course-card gradient-border bg-zinc-900/20 rounded-xl p-5 relative overflow-hidden coming-soon">
+                                <span class="text-3xl font-bold text-purple-500/20 mb-2 block">48</span>
+                                <h4 class="text-sm font-bold text-white mb-1">Multi-Million Dollar Capstone</h4>
+                                <p class="text-xs text-zinc-400">Final project and certification for full sales mastery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features Bento Grid -->
+            <section class="py-24 px-6 md:px-12 bg-black/40 border-y border-white/5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-serif-custom text-white mb-4">AI-Powered Learning Tools</h2>
+                        <p class="text-zinc-300">Practice without consequences. Learn faster than trial-and-error.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="md:col-span-2 gradient-border bg-zinc-950 p-10 rounded-3xl overflow-hidden relative">
+                            <div class="relative z-10">
+                                <h3 class="text-2xl font-bold text-white mb-4">AI Roleplay with DISC Personas</h3>
+                                <p class="text-zinc-300 text-sm mb-4">Practice discovery calls, objection handling, and closing with AI prospects modeled on 4 distinct personality types. Real-time feedback on talk-time ratio, questions asked, and methodology adherence.</p>
+                                <ul class="text-xs text-zinc-300 space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>                                                                                                                                                                                                         Dominant buyers who demand ROI
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>                                                                                                                                                                                                         Influential buyers seeking relationships
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>                                                                                                                                                                                                         Steady buyers needing security
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>                                                                                                                                                                                                         Conscientious buyers wanting proof
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gradient-border bg-zinc-950 p-8 rounded-3xl flex flex-col justify-between">
+                            <div>
+                                <span class="iconify text-indigo-400 mb-4" data-icon="lucide:file-text" data-width="32"></span>
+                                <h3 class="text-lg font-bold text-white mb-2">Versioned Sales Artifacts</h3>
+                                <p class="text-xs text-zinc-400">ICP v1 → v3. Playbook v1 → v3. Demo Script v1 → v3. Build your institutional sales knowledge over time.</p>
+                            </div>
+                        </div>
+                        <div class="gradient-border bg-zinc-950 p-8 rounded-3xl flex flex-col justify-between">
+                            <div>
+                                <span class="iconify text-sky-400 mb-4" data-icon="lucide:git-branch" data-width="32"></span>
+                                <h3 class="text-lg font-bold text-white mb-2">7-Stage Pipeline State Machine</h3>
+                                <p class="text-xs text-zinc-400">Prospecting → Qualified → Discovery → Demo → Proposal → Negotiation → Closed. Clear entry/exit criteria for every stage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Pricing Section -->
+            <section id="pricing" class="py-32 px-6 md:px-12 relative overflow-hidden">
+                <div class="absolute inset-0 z-0" style="background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 70%);"></div>
+                <div class="max-w-4xl mx-auto text-center relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-serif-custom text-white mb-6">The complete customer acquisition system.</h2>
+                    <p class="text-zinc-300 text-lg mb-12">49 courses. Unlimited AI practice. One monthly price.</p>
+                    <div class="max-w-md mx-auto relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-sky-500 rounded-[2.5rem] blur opacity-20"></div>
+                        <div class="gradient-border bg-[#09090b] rounded-[2.5rem] p-10 md:p-14 relative group hover:scale-[1.02] transition-transform duration-500">
+                            <div class="mb-8">
+                                <span class="text-sm font-bold text-indigo-400 uppercase tracking-widest">Founding Members</span>
+                                <div class="flex items-center justify-center gap-1 mt-4">
+                                    <span class="text-6xl font-bold text-white">$49</span>
+                                    <span class="text-xl text-zinc-400">/mo</span>
+                                </div>
+                                <p class="text-xs text-zinc-300 mt-2">Lock in this rate before launch</p>
+                            </div>
+                            <ul class="text-left space-y-4 mb-10">
+                                <li class="flex items-center gap-3 text-sm text-zinc-300">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>
+                                    </div>
+                                    All 49 courses (21 ready now, 28 more in February)
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-zinc-300">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>
+                                    </div>
+                                    Unlimited AI Roleplay Simulations
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-zinc-300">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>
+                                    </div>
+                                    AI ICP Builder & Playbook Generator
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-zinc-300">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>
+                                    </div>
+                                    Private Founder Community Access
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-zinc-300">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"/>
+                                        </svg>
+                                    </div>
+                                    47+ Cold Email Templates
+                                </li>
+                            </ul>
+                            <a href="https://ai-customer-acquisition-academy.soloframehub.com/forms/caa-waitlist" class="w-full flex items-center justify-center h-16 rounded-2xl bg-white text-black font-extrabold text-lg hover:bg-zinc-200 transition-all shadow-[0_20px_40px_-15px_rgba(255,255,255,0.1)]">
+                                Join the Beta Waitlist </a>
+                            <p class="mt-6 text-[10px] text-zinc-300 uppercase tracking-widest font-bold">30-Day "Do The Work" Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQs -->
+            <section class="py-24 px-6 md:px-12 bg-zinc-950/30">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-2xl md:text-4xl font-serif-custom text-white mb-12 text-center underline decoration-indigo-500/30 underline-offset-8">
+                        Frequently Asked Questions </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="text-white font-bold mb-3">But I'm an engineer, not a salesperson?</h4>
+                            <p class="text-sm text-zinc-300 leading-relaxed">Exactly why we built this. You don't need charisma; you need a protocol. We teach you how to "debug" buyer pain points using discovery frameworks that work like logic gates.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold mb-3">Why 49 courses across 7 tracks?</h4>
+                            <p class="text-sm text-zinc-300 leading-relaxed">Customer acquisition is a complete system, not a single skill. We cover marketing, sales, AI-powered acquisition, creator economy, and retention—the entire journey. Most founders learn bits and pieces; we give you the complete picture.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold mb-3">What's available now?</h4>
+                            <p class="text-sm text-zinc-300 leading-relaxed">21 courses covering Foundations (5 courses), Marketing Engine (8 courses), and Sales Methodology (8 courses). That's everything you need to go from targeting through closing your first deals. The remaining 28 courses—including the new AI-Powered Acquisition track—will be ready in February 2026.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold mb-3">How does the AI Roleplay work?</h4>
+                            <p class="text-sm text-zinc-300 leading-relaxed">Our AI simulates 4 distinct DISC personality types. Practice handling real objections, and the AI tracks your talk-time ratio, questions asked, and methodology adherence in real-time.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold mb-3">What's the difference from the Playbook?</h4>
+                            <p class="text-sm text-zinc-300 leading-relaxed">The Customer Acquisition Playbook gives you the strategic frameworks. The Academy gives you hands-on practice with AI roleplay, artifact builders, and real-time coaching. Frameworks in the book, execution in the academy.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold mb-3">How is this different from free content?</h4>
+                            <p class="text-sm text-zinc-300 leading-relaxed">Free content teaches tactics. We build systems. The academy includes AI practice tools, versioned artifacts, and frameworks you can repeat. It's the difference between reading about sales and doing sales.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="bg-black/50 border-t border-white/5 py-16 px-6 md:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-12 max-w-6xl mx-auto">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2 text-white">
+                            <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-6 w-auto object-contain">
+                        </div>
+                        <p class="text-xs text-zinc-300 max-w-[200px]">The operating system for solo founders. Built by technical founders, for technical founders.</p>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                        <div class="flex flex-col gap-4">
+                            <h5 class="text-[10px] font-bold text-white uppercase tracking-widest">Academies</h5>
+                            <a href="solo-founders-ai-customer-acquisition-academy.html" class="text-xs text-white hover:text-white transition-colors">Customer Acquisition</a>
+                            <a href="solo-founders-ai-startup-academy.html" class="text-xs text-zinc-300 hover:text-white transition-colors">Startup Academy</a>
+                            <a href="solo-founders-ai-gtm-academy.html" class="text-xs text-zinc-300 hover:text-white transition-colors">GTM Academy</a>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h5 class="text-[10px] font-bold text-white uppercase tracking-widest">Books</h5>
+                            <a href="solo-founders-ai-customer-acquisition-playbook.html" class="text-xs text-zinc-300 hover:text-white transition-colors">Customer Acquisition Playbook</a>
+                            <a href="solo-founders-ai-60-day-roadmap-book.html" class="text-xs text-zinc-300 hover:text-white transition-colors">AI Revolution</a>
+                            <a href="8-gtm-frameworks-compounding-growth-book.html" class="text-xs text-zinc-300 hover:text-white transition-colors">AI Dominance</a>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h5 class="text-[10px] font-bold text-white uppercase tracking-widest">Connect</h5>
+                            <a href="https://x.com/soloframehub" class="text-xs text-zinc-300 hover:text-white transition-colors">Twitter</a>
+                            <a href="https://linkedin.com/company/soloframehub" class="text-xs text-zinc-300 hover:text-white transition-colors">LinkedIn</a>
+                            <a href="community-forums.html" class="text-xs text-zinc-300 hover:text-white transition-colors">Community</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-zinc-400 uppercase tracking-widest font-medium max-w-6xl mx-auto">
+                    <span>© 2026 SoloFrameHub. All rights reserved.</span>
+                    <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400">
+                        <a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a>
+                        <a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a>
+                        <a href="legal/cookie-policy.html" class="hover:text-white transition-colors">Cookies</a>
+                        <a href="legal/refund-policy.html" class="hover:text-white transition-colors">Refunds</a>
+                        <a href="legal/ai-disclaimer.html" class="hover:text-white transition-colors">AI Disclaimer</a>
+                        <a href="legal/acceptable-use-policy.html" class="hover:text-white transition-colors">Acceptable Use</a>
+                        <a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const closeMenuBtn = document.getElementById('close-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            const toggleMenu = () => {
+                if (mobileMenu) {
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenu.classList.toggle('flex');
+                    document.body.classList.toggle('overflow-hidden');
+                }
+            };
+
+            mobileMenuBtn?.addEventListener('click', toggleMenu);
+            closeMenuBtn?.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.classList.remove('overflow-hidden');
+                });
+            });
+
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

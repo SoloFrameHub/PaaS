@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does neuroscience research show about how creative expression helps with emotions?",
+      "options": [
+        {"id": "opt1", "text": "It creates a cathartic release that makes negative emotions disappear"},
+        {"id": "opt2", "text": "Organizing and labeling emotions (affect labeling) increases prefrontal cortex activity while decreasing amygdala reactivity"},
+        {"id": "opt3", "text": "Venting emotions through creative work always reduces distress"},
+        {"id": "opt4", "text": "Creative expression works best when you avoid naming specific emotions"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Neuroscience research on affect labeling (Lieberman et al.) shows that naming emotions increases prefrontal cortex activity (thinking, organizing) while decreasing amygdala reactivity (emotional intensity). The benefit comes from labeling, organizing, and contextualizing emotions—not from cathartic release or venting."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which structured journaling approach shows the strongest evidence for improving mood and reducing anxiety?",
+      "options": [
+        {"id": "opt1", "text": "Unstructured venting about whatever bothers you"},
+        {"id": "opt2", "text": "Writing only about traumatic events in as much detail as possible"},
+        {"id": "opt3", "text": "Gratitude, self-compassion, and strengths-based prompts that connect feelings to context and values"},
+        {"id": "opt4", "text": "Avoiding writing about emotions entirely and only journaling about facts"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Research shows structured journaling with gratitude, self-compassion, and cognitive-reframing prompts produces small-to-moderate improvements in depression and anxiety. These approaches connect feelings to context, values, and coping, which is more effective than unguided venting (which can increase rumination) or trauma-focused writing without clinical support."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why does visual emotion mapping (color wheels, weather metaphors, body maps) support emotional regulation?",
+      "options": [
+        {"id": "opt1", "text": "It distracts you from feelings by focusing on art instead"},
+        {"id": "opt2", "text": "It serves as affect labeling—externalizing internal states creates perspective and organization"},
+        {"id": "opt3", "text": "Visual art is more powerful than words for releasing emotions"},
+        {"id": "opt4", "text": "It requires artistic skill, which builds self-esteem"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Visual emotion mapping serves as a form of affect labeling—using colors, shapes, and metaphors to name and externalize feelings. This creates psychological distance while keeping you connected to what matters, supporting the same regulation mechanism as verbal labeling. No artistic skill is required; even simple shapes and colors provide the labeling benefit."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the recommended approach for expressive writing in a self-help context (not therapy)?",
+      "options": [
+        {"id": "opt1", "text": "Write about your most traumatic experiences in graphic detail to process them"},
+        {"id": "opt2", "text": "Write for 15 minutes about current (not traumatic) stressors, including facts, feelings, values, and potential coping"},
+        {"id": "opt3", "text": "Never write about anything negative or difficult"},
+        {"id": "opt4", "text": "Write as long as possible without any time limits to fully release emotions"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Evidence-based expressive writing for self-help uses time-limited sessions (15 minutes) on current stressors (not major trauma), with prompts encouraging emotion-acceptance and cognitive reappraisal: what happened, how you feel, why it matters, and what you might do or learn. Major trauma processing should be done with clinical support, not self-help."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When is creative expression for emotional awareness NOT appropriate as a self-help approach?",
+      "options": [
+        {"id": "opt1", "text": "Whenever you're feeling any difficult emotion like sadness or anxiety"},
+        {"id": "opt2", "text": "If you don't consider yourself artistic or creative"},
+        {"id": "opt3", "text": "When you're drawn to process major trauma, sexual assault, severe abuse, or if techniques increase rumination rather than helping"},
+        {"id": "opt4", "text": "If you prefer talking to people instead of writing or drawing"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Self-help creative expression is not appropriate for major trauma processing (sexual assault, severe abuse, PTSD)—these require trauma-informed clinical care. Also, if you find techniques increase rumination or distress rather than helping organize emotions, this indicates need for professional support. Feeling difficult emotions is normal; being unable to regulate despite using techniques suggests you need more support."
+    }
+  ],
+  "sectionId": "stress-management",
+  "courseId": "creative-expression",
+  "lessonId": "3",
+  "title": "Basic Techniques for Emotional Awareness - Quiz"
+}

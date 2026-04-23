@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a Fear Ladder (Exposure Hierarchy)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A list of all your fears ranked by how dangerous they are"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A tool that breaks a scary situation into small, manageable steps arranged from least to most anxiety-provoking"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A method for avoiding your biggest fears by focusing on smaller ones"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A breathing exercise designed specifically for phobias"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A Fear Ladder is a personalized tool that breaks down a scary situation into small, manageable steps. Each step is rated by anxiety level (SUDS) and arranged from least to most scary, so you can climb one rung at a time instead of trying to face the full fear all at once."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does SUDS stand for, and how is it used in building a Fear Ladder?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Systematic Understanding of Distress Symptoms -- a diagnostic tool"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Subjective Units of Distress Scale -- a 0 to 10 rating of how anxious each step makes you feel"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Standard Units of Daily Stress -- an objective measurement of cortisol levels"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sequential Undertaking of Desensitization Steps -- a therapy protocol name"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "SUDS stands for Subjective Units of Distress Scale. It is a self-reported rating from 0 (completely calm) to 10 (most anxious you have ever felt). Each step on your Fear Ladder is assigned a SUDS rating so you can arrange them in a gradual, manageable order."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Rule' for climbing your Fear Ladder?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Push through as many rungs as possible in one session"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start low (2-3 out of 10) and go slow -- do not move up until anxiety has noticeably decreased at the current step"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Always start at the hardest step to build maximum courage"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Skip steps that feel too easy and focus on the difficult ones"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Golden Rule is 'Low and Slow.' Start at a step rated around 2-3 out of 10 and do not move to the next rung until you have practiced the current one multiple times and your anxiety has noticeably decreased. Your brain needs repetition to form new associations."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you frame your Fear Ladder goal?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "As something you want to stop doing, like 'stop being afraid'"
+                },
+                {
+                    "id": "opt2",
+                    "text": "As a specific, positive goal -- something you want to move toward, like 'confidently share ideas in a team meeting'"
+                },
+                {
+                    "id": "opt3",
+                    "text": "As a vague aspiration, like 'feel better about social situations'"
+                },
+                {
+                    "id": "opt4",
+                    "text": "As someone else's expectation of you"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your goal should be specific, meaningful, and positively framed -- moving toward something you want rather than away from something you fear. For example, 'I want to confidently share my ideas in a team meeting' is more effective than 'stop being afraid of public speaking.'"
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should you do if a step on your Fear Ladder turns out to be harder or easier than you expected?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Abandon your ladder and start over from scratch"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Adjust the ladder -- move the step, add new steps, or change the rating. The ladder is flexible."
+                },
+                {
+                    "id": "opt3",
+                    "text": "Force yourself to complete the step regardless of how difficult it is"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Remove the step entirely since it was incorrectly rated"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your Fear Ladder is not set in stone. If a step turns out to be harder or easier than expected, you should adjust it -- move it to a different position, add intermediate steps, or change the SUDS rating. Flexibility is key to making the process safe and effective."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit-skills",
+    "lessonId": "6",
+    "title": "Building Your Fear Ladder - Quiz"
+}

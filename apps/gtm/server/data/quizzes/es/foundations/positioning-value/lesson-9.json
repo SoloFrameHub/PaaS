@@ -1,0 +1,141 @@
+{
+  "lessonId": "9",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Tu Declaración de Posicionamiento",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito principal de una 'Declaración de Posicionamiento'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Servir como un eslogan llamativo para tu página de inicio"
+        },
+        {
+          "id": "b",
+          "text": "Ser una 'Estrella del Norte' interna que mantiene la estrategia enfocada"
+        },
+        {
+          "id": "c",
+          "text": "Memorizarse y recitarse a los inversores"
+        },
+        {
+          "id": "d",
+          "text": "Ayudar a los rastreadores de SEO a indexar tu sitio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Una declaración de posicionamiento es principalmente una herramienta interna. Define quién eres y a quién sirves para que puedas tomar decisiones consistentes sobre producto, marketing y ventas."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estas es la fórmula estándar para una declaración de posicionamiento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Somos el Uber para [Industria]."
+        },
+        {
+          "id": "b",
+          "text": "Para [Objetivo] Que [Necesidad], Nuestro Producto es una [Categoría] Que [Beneficio]. A Diferencia de [Alternativa], Nosotros [Diferenciador]."
+        },
+        {
+          "id": "c",
+          "text": "Los detalles no importan mientras suene profesional."
+        },
+        {
+          "id": "d",
+          "text": "Solo lista tus 5 principales características y agrega un precio."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Esta fórmula específica (de 'Crossing the Chasm') te obliga a identificar todos los componentes críticos: Objetivo, Necesidad, Categoría, Beneficio, Alternativa y Diferenciador."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué es la prueba del '¿Y Qué?'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una prueba psicológica para candidatos a empleo"
+        },
+        {
+          "id": "b",
+          "text": "Preguntar '¿Y qué?' repetidamente hasta llegar a un resultado de negocio tangible (dinero, tiempo, riesgo)"
+        },
+        {
+          "id": "c",
+          "text": "Una forma de desestimar las afirmaciones de los competidores"
+        },
+        {
+          "id": "d",
+          "text": "Preguntar a los clientes si les importan tus características"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La prueba del '¿Y qué?' te obliga a ir más allá de las características ('usa IA') hacia los beneficios ('es más rápido') y los resultados ('no perderás clientes')."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cómo debería diferir tu posicionamiento para un 'Titular de Sitio Web' vs. una 'Declaración Interna'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No debería; deberían ser idénticos."
+        },
+        {
+          "id": "b",
+          "text": "El titular del sitio web debe ser más corto (menos de 10 palabras) y enfocarse puramente en el resultado inmediato."
+        },
+        {
+          "id": "c",
+          "text": "El titular del sitio web debe ser más largo para explicar todo de antemano."
+        },
+        {
+          "id": "d",
+          "text": "La declaración interna debe ser más vaga para permitir flexibilidad."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El contexto importa. Una declaración interna proporciona contexto completo. Un titular de sitio web tiene unos 3 segundos para captar la atención, por lo que debe ser corto y orientado al resultado."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué el uso de voz pasiva debilita una declaración de posicionamiento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implica falta de propiedad y autoridad."
+        },
+        {
+          "id": "b",
+          "text": "Es gramaticalmente incorrecto."
+        },
+        {
+          "id": "c",
+          "text": "Hace la oración demasiado corta."
+        },
+        {
+          "id": "d",
+          "text": "La voz pasiva es en realidad preferida en B2B."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La voz activa ('Te ayudamos a...') es fuerte y autoritaria. La voz pasiva ('Las soluciones son proporcionadas por nosotros...') es débil y distante. El posicionamiento requiere confianza."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Redacta la versión 'Titular de Sitio Web' de tu posicionamiento. Mantenla en menos de 10 palabras. Debe responder: '¿Qué obtengo con esto?'",
+      "minLength": 20,
+      "promptForAI": "Evalúa el titular del estudiante. ¿Tiene menos de 10 palabras? ¿Está orientado al resultado o a las características? Sugiere una variación más fuerte y contundente."
+    }
+  ],
+  "passingScore": 70
+}

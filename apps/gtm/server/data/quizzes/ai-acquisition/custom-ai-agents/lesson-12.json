@@ -1,0 +1,78 @@
+{
+  "lessonId": "12",
+  "courseId": "custom-ai-agents",
+  "sectionId": "ai-acquisition",
+  "title": "Your Custom Agent Stack Blueprint",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three foundational decisions that determine your entire agent stack architecture?",
+      "options": [
+        { "id": "a", "text": "Which AI model, which CRM, which email tool" },
+        {
+          "id": "b",
+          "text": "Monthly budget (self-hosted vs hybrid vs SaaS), technical comfort level, and orchestration platform choice"
+        },
+        {
+          "id": "c",
+          "text": "Number of agents, number of prospects, number of emails"
+        },
+        { "id": "d", "text": "Whether to use ChatGPT, Claude, or Gemini" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three decisions are: budget tier (under $50 for self-hosted, $50-200 for hybrid, $200-400 for full SaaS), technical comfort level (APIs and JSON vs visual builders), and orchestration platform (n8n, Make, or Zapier). These decisions cascade through every subsequent tool selection."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the cost of a self-hosted agent stack versus full SaaS?",
+      "options": [
+        { "id": "a", "text": "Self-hosted is more expensive" },
+        {
+          "id": "b",
+          "text": "Self-hosted saves $150-350/month vs SaaS while maintaining full control, but requires medium-high technical comfort"
+        },
+        { "id": "c", "text": "They cost the same" },
+        { "id": "d", "text": "SaaS is always cheaper" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Self-hosted (n8n on Railway at $7/mo + Apollo free + Claude API at $20-30/mo) saves $150-350/month compared to full SaaS alternatives. The tradeoff is that it requires medium-high technical comfort with APIs and JSON. The hybrid path ($50-200/mo) offers 80% of SaaS ease at 40% of the cost."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the two common mistakes founders make when building agent stacks?",
+      "options": [
+        { "id": "a", "text": "Spending too much and using too few agents" },
+        {
+          "id": "b",
+          "text": "Building a Frankenstein's monster of disconnected automations, or over-engineering a 'perfect' system that never ships"
+        },
+        { "id": "c", "text": "Using the wrong AI model and wrong CRM" },
+        { "id": "d", "text": "Not reading enough documentation" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The two common mistakes are building disconnected automations that break constantly (Frankenstein approach) or over-engineering a perfect system that never ships (perfectionist approach). The lesson teaches the middle path: a production-ready stack you can build in 7-14 days and maintain in 2-3 hours per week."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A production-ready custom agent stack should take 3-6 months to build properly.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The lesson prescribes a 7-14 day implementation timeline for a production-ready stack, maintained in 2-3 hours per week. If it takes longer than 14 days, you're over-engineering. Ship a working v1, then iterate based on real usage data."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Using the architecture decision tree from the lesson, determine your agent stack path (self-hosted, hybrid, or SaaS) based on your budget and technical comfort. List the specific tools for each agent you plan to deploy and estimate the total monthly cost.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response follows the decision tree logic (budget tier + technical comfort = architecture path), lists specific tools with costs for each agent, and arrives at a realistic total monthly cost. Look for understanding that the stack should be buildable in 7-14 days, not over-engineered."
+    }
+  ]
+}

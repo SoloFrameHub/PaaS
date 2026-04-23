@@ -1,0 +1,105 @@
+{
+  "id": "nutrient-supplement-log",
+  "title": "Nutrient and Supplement Tracking Log",
+  "description": "Track your supplement intake and any changes in symptoms over time. This helps you and your healthcare provider evaluate whether nutritional interventions are making a difference.",
+  "instructions": "Log daily if you take supplements, or weekly if tracking dietary nutrient intake. Note any symptom changes. Share this log with your healthcare provider at follow-up appointments.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "supplementsTaken",
+      "label": "Which supplements did you take today?",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Omega-3 1000mg EPA, Magnesium glycinate 300mg, Vitamin D 2000IU"
+    },
+    {
+      "id": "adherence",
+      "label": "Did you take all planned supplements today?",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "id": "moodRating",
+      "label": "Overall mood today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very low",
+        "2": "Low",
+        "3": "Neutral",
+        "4": "Good",
+        "5": "Very good"
+      }
+    },
+    {
+      "id": "sleepQuality",
+      "label": "Sleep quality last night",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very poor",
+        "2": "Poor",
+        "3": "Fair",
+        "4": "Good",
+        "5": "Excellent"
+      }
+    },
+    {
+      "id": "energyLevel",
+      "label": "Energy level today",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very low",
+        "2": "Low",
+        "3": "Moderate",
+        "4": "Good",
+        "5": "High"
+      }
+    },
+    {
+      "id": "anxietyLevel",
+      "label": "Anxiety level today",
+      "type": "rating",
+      "required": false,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "None",
+        "2": "Mild",
+        "3": "Moderate",
+        "4": "High",
+        "5": "Severe"
+      }
+    },
+    {
+      "id": "sideEffects",
+      "label": "Any side effects noticed?",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., Mild stomach upset with magnesium, resolved after taking with food"
+    },
+    {
+      "id": "notes",
+      "label": "Additional observations",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., Noticed improved focus this week since starting omega-3"
+    }
+  ],
+  "derivedMetrics": [
+    {
+      "id": "symptomTrend",
+      "label": "Symptom Trend",
+      "formula": "symptomTrend",
+      "unit": "direction"
+    }
+  ],
+  "disclaimer": "This tracking log is for educational and self-monitoring purposes only. Always consult your healthcare provider before starting, changing, or stopping supplements. Never adjust psychiatric medications based on supplement effects without medical guidance. If you experience adverse effects, stop the supplement and contact your provider. If you are in crisis, call or text 988."
+}

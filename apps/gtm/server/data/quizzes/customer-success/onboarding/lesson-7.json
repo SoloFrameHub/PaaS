@@ -1,0 +1,66 @@
+{
+  "lessonId": "7",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Day 45-60 Check-In & Survey Design",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of customers who churn do so because they feel the provider doesn't care about them?",
+      "options": [
+        { "id": "a", "text": "25%" },
+        { "id": "b", "text": "45%" },
+        { "id": "c", "text": "68%" },
+        { "id": "d", "text": "85%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "68% of customers who churn do so because they feel uncared for — not because the product failed or a competitor was better. The Day 45-60 check-in addresses this by showing proactive care after the initial onboarding excitement fades."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "By how much does a simple 'How's it going?' email at Day 45 reduce Month 2-3 churn?",
+      "options": [
+        { "id": "a", "text": "2-5%" },
+        { "id": "b", "text": "10-15%" },
+        { "id": "c", "text": "25-30%" },
+        { "id": "d", "text": "40-50%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A simple check-in email at Day 45 reduces Month 2-3 churn by 10-15%. This is the 'silent churn window' where customers are subconsciously deciding whether to keep paying, and proactive care beats reactive support."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "NPS detractors (scores 0-6) are how many times more likely to churn within 90 days?",
+      "options": [
+        { "id": "a", "text": "2x more likely" },
+        { "id": "b", "text": "3x more likely" },
+        { "id": "c", "text": "5x more likely" },
+        { "id": "d", "text": "10x more likely" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "NPS detractors (scores 0-6) are 5x more likely to churn within 90 days. This is why the Day 45-60 check-in survey is so valuable — it identifies at-risk customers before they silently cancel."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The Day 45-60 window is called the 'silent churn window' because most customers who leave during this period never file a complaint or support ticket.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Silent churn is the most common pattern between Day 45-60. The initial excitement has worn off, the novelty is gone, and customers who haven't built a habit simply leave without warning, complaint, or feedback."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your Day 45 check-in survey with 3 questions. For each question, explain what insight you're trying to capture and how you would act on negative responses within 48 hours.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes exactly 3 concise questions (not a long survey), each designed to capture a specific retention insight (satisfaction, value realization, likelihood to continue), and includes a concrete 48-hour action plan for negative responses (personal outreach, save plays, etc.)."
+    }
+  ]
+}

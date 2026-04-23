@@ -1,0 +1,126 @@
+{
+    "lessonId": "4",
+    "courseId": "crm-setup",
+    "sectionId": "operations-systems",
+    "title": "Pipeline Stages Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "A prospect replies to your cold email saying 'Not interested right now.' What stage should this deal be in?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Contacted (they haven't really engaged)"
+                },
+                {
+                    "id": "b",
+                    "text": "Engaged (any reply counts as engagement)"
+                },
+                {
+                    "id": "c",
+                    "text": "Lost (they said not interested)"
+                },
+                {
+                    "id": "d",
+                    "text": "Meeting (schedule a follow-up)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Any reply = engagement, even if negative. Move to Engaged, then follow up in 90 days with a new trigger. Don't close as Lost unless they explicitly say 'never contact me again.'"
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How long should a deal typically stay in the 'Contacted' stage before you take action?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "3-7 days with follow-ups, then close as Lost if no response by Day 14"
+                },
+                {
+                    "id": "b",
+                    "text": "30 days minimum to give them time to think"
+                },
+                {
+                    "id": "c",
+                    "text": "Keep following up weekly for 90 days"
+                },
+                {
+                    "id": "d",
+                    "text": "Move to Lost immediately if they don't reply in 24 hours"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "The 3-touch rule: follow up at Day 3 and Day 7. If no response by Day 14, move to Lost with reason 'No Response.' You can re-engage later with a new trigger."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What's the most important field to require when closing a deal as Lost?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Deal value"
+                },
+                {
+                    "id": "b",
+                    "text": "Loss reason"
+                },
+                {
+                    "id": "c",
+                    "text": "Competitor name"
+                },
+                {
+                    "id": "d",
+                    "text": "Last contact date"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Loss reason is strategic intelligence. If 60% of your losses are 'went with competitor X,' you have a positioning problem. Track this religiously."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "Solo founders should use separate pipelines for inbound vs. outbound leads.",
+            "correctAnswer": "b",
+            "explanation": "False. Use one pipeline with a 'Lead Source' field. Multiple pipelines fragment your reporting and double your maintenance work.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "A prospect had a great demo call and asked you to send pricing. What stage should this deal move to?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep in Meeting stage until they confirm interest"
+                },
+                {
+                    "id": "b",
+                    "text": "Move to Proposal stage immediately"
+                },
+                {
+                    "id": "c",
+                    "text": "Move to Engaged stage to nurture more"
+                },
+                {
+                    "id": "d",
+                    "text": "Move to Won stage (they're clearly interested)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Pricing sent = Proposal stage. Don't wait. The exit criteria for Meeting stage is 'proposal sent' — move it immediately and create a follow-up task."
+        }
+    ]
+}

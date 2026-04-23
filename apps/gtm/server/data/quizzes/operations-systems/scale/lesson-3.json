@@ -1,0 +1,75 @@
+{
+  "lessonId": "3",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "Writing the Job Description",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What mindset should you have when writing a sales job description?",
+      "options": [
+        { "id": "a", "text": "Writing a requirements document" },
+        {
+          "id": "b",
+          "text": "Writing a sales page — the candidate is the buyer, the job is the product"
+        },
+        { "id": "c", "text": "Writing a legal contract" },
+        { "id": "d", "text": "Copying what enterprise companies do" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your JD is your first sales pitch for the role. The candidate is the buyer. It needs to create desire, establish credibility, and give clear next steps — just like a great sales email."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What language in JDs repels the right sales candidates?",
+      "options": [
+        { "id": "a", "text": "Specific metrics and compensation ranges" },
+        {
+          "id": "b",
+          "text": "'Rockstar sales ninja with a passion for disruption'"
+        },
+        { "id": "c", "text": "Clear description of daily activities" },
+        { "id": "d", "text": "Honest company stage and challenges" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Vague buzzwords like 'rockstar,' 'ninja,' and 'passion for disruption' repel qualified candidates. Specific metrics, honest company context, and clear daily activity descriptions attract people who've actually done the work."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why should your JD include a writing task in the application?",
+      "options": [
+        { "id": "a", "text": "To test their typing speed" },
+        {
+          "id": "b",
+          "text": "To filter for ability to follow instructions, research skills, and writing instincts"
+        },
+        { "id": "c", "text": "To generate free content for your company" },
+        { "id": "d", "text": "Because it's industry standard" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The writing task filters for three things: ability to follow a playbook (did they follow instructions exactly), research skills (is it specific to your ICP), and writing instincts (would a human respond to this)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Requiring '10+ years of B2B sales experience' for a $45K base SDR role is appropriate.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. This is a common anti-pattern that kills your applicant pool. A $45K SDR role should require 1-3 years of relevant experience, not 10+. Mismatched requirements signal that you don't understand the role."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Draft the opening paragraph of your sales hire JD. Does it create desire for the role, establish your company's credibility, and give a clear picture of daily work? What application task would you include?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response creates a compelling opening that sells the role (not just lists requirements), is specific about daily activities, avoids buzzword anti-patterns, and designs a relevant application task that tests research and writing ability."
+    }
+  ]
+}

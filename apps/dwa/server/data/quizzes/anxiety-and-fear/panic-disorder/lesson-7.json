@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is caffeine considered the strongest lifestyle trigger for panic attacks?",
+            "options": [
+                { "id": "opt1", "text": "Caffeine directly causes damage to the amygdala" },
+                { "id": "opt2", "text": "Caffeine creates physical sensations (racing heart, trembling, jitteriness) that mimic panic symptoms and feed the catastrophic misinterpretation cycle" },
+                { "id": "opt3", "text": "Caffeine prevents sleep, which is the only real cause of panic attacks" },
+                { "id": "opt4", "text": "Caffeine depletes serotonin reserves in the brain" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Caffeine creates a perfect storm for panic: it blocks adenosine receptors, releases norepinephrine, and creates physical sensations that mimic panic symptoms (racing heart, trembling, jitteriness, sweating). For someone with panic disorder, the brain then misinterprets these caffeine-induced sensations as danger, triggering the panic cycle."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are nocturnal panic attacks, and what causes them?",
+            "options": [
+                { "id": "opt1", "text": "Panic attacks caused by nightmares during REM sleep" },
+                { "id": "opt2", "text": "Panic attacks that occur during non-REM sleep, not caused by nightmares, and maintained by the same catastrophic misinterpretation cycle" },
+                { "id": "opt3", "text": "Panic attacks caused exclusively by sleep apnea" },
+                { "id": "opt4", "text": "Mild anxiety that occurs during the process of falling asleep" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Nocturnal panic attacks occur during non-REM sleep and are not caused by nightmares. They produce the same symptoms as daytime panic attacks and are maintained by the same catastrophic misinterpretation cycle. The same cognitive and exposure techniques used for daytime panic apply to nocturnal attacks."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is alcohol particularly harmful for people with panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "It permanently damages the parasympathetic nervous system" },
+                { "id": "opt2", "text": "It directly causes panic attacks while you are drinking" },
+                { "id": "opt3", "text": "It creates a dependency cycle: temporary relief while drinking, followed by rebound anxiety worse than before" },
+                { "id": "opt4", "text": "It prevents the amygdala from functioning" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Alcohol initially enhances GABA activity for temporary relaxation, but as it wears off, GABA drops below baseline, causing rebound anxiety often worse than before drinking. This creates a dependency cycle: drink to manage anxiety, get more anxiety from the alcohol, drink more. It also interferes with sleep quality and impairs your ability to use CBT techniques."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is exercise described as both a trigger AND a treatment for panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "Exercise releases both helpful and harmful chemicals simultaneously" },
+                { "id": "opt2", "text": "Exercise is only beneficial if done at very low intensity" },
+                { "id": "opt3", "text": "Exercise produces feared sensations (racing heart, breathlessness) but also serves as natural interoceptive exposure that reduces baseline anxiety" },
+                { "id": "opt4", "text": "Exercise is a trigger for people under 30 and a treatment for people over 30" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "People with panic disorder often avoid exercise because it creates feared sensations like a racing heart and breathlessness. But exercise is actually a form of natural interoceptive exposure — it teaches your body that a racing heart is normal, not dangerous. Regular exercise also reduces baseline anxiety and improves stress resilience."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What role do lifestyle changes play in the overall treatment of panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "They are the only treatment needed and replace cognitive and behavioral techniques" },
+                { "id": "opt2", "text": "They have no significant impact compared to psychological techniques" },
+                { "id": "opt3", "text": "They complement the cognitive and behavioral techniques by reducing biological vulnerability to panic" },
+                { "id": "opt4", "text": "They should only be made under direct medical supervision" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Lifestyle changes — managing caffeine, sleep, alcohol, and exercise — complement but do not replace the cognitive and behavioral techniques (cognitive restructuring, interoceptive exposure, reducing avoidance). They reduce your biological vulnerability to panic, making the psychological techniques more effective."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "7",
+    "title": "Lifestyle Factors and Panic Triggers - Quiz"
+}

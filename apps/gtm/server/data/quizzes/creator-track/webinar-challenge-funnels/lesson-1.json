@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Webinar vs Challenge: Choosing Your Launch Vehicle Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the decision matrix, which launch format has a slight edge for offers priced at $997-$2,997?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Webinar, because a single session creates enough urgency to justify the price"
+                },
+                {
+                    "id": "b",
+                    "text": "Challenge, because the multi-day format provides more touchpoints and trust-building"
+                },
+                {
+                    "id": "c",
+                    "text": "Neither -- this price range requires an application funnel exclusively"
+                },
+                {
+                    "id": "d",
+                    "text": "A hybrid model where you run both simultaneously"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "At the $997-$2,997 price range, the challenge format has a slight edge because higher price points require more trust-building, and the multi-day format provides additional touchpoints to establish that trust."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does the challenge model create the 'endowment effect' in participants?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because challenges are always free, so participants feel they deserve something in return"
+                },
+                {
+                    "id": "b",
+                    "text": "Because the daily homework forces participants to buy before Day 5"
+                },
+                {
+                    "id": "c",
+                    "text": "Because participants invest time, energy, and effort over multiple days, making them reluctant to walk away from the momentum they built"
+                },
+                {
+                    "id": "d",
+                    "text": "Because challenge creators offer bigger discounts than webinar creators"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The endowment effect occurs because by Day 3 or 4, participants have invested real time and energy, gotten small wins, and built community relationships. Walking away from the paid offer feels like abandoning the momentum they already created."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'launch ladder' progression for creator-founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Start with a challenge, graduate to a webinar, then add evergreen"
+                },
+                {
+                    "id": "b",
+                    "text": "Start with an application funnel, then add a webinar, then a challenge"
+                },
+                {
+                    "id": "c",
+                    "text": "Start with a webinar, graduate to a challenge once the offer is validated, then add an application layer for high-ticket"
+                },
+                {
+                    "id": "d",
+                    "text": "Start with evergreen content, then run a challenge, then do live webinars"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The launch ladder starts with webinars (faster setup, lower risk, immediate feedback), graduates to challenges once the offer is validated with 2-3 successful webinar launches, and then adds an application layer when moving upmarket to higher-ticket offers."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Using the five dimensions of the decision matrix (price point, audience temperature, transformation complexity, your energy/capacity, and community fit), evaluate your current or planned offer. Which format -- webinar or challenge -- is the better fit, and why? Be specific about how you scored on each dimension.",
+            "minLength": 100,
+            "aiPrompt": "The student should evaluate their offer across all five dimensions: price point, audience temperature, transformation complexity, energy capacity, and community fit. Look for specific reasoning for each dimension and a clear conclusion about which format they chose. Evaluate whether their reasoning is sound given the frameworks from the lesson."
+        }
+    ]
+}

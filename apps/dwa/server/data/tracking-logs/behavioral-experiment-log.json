@@ -1,0 +1,62 @@
+{
+  "id": "behavioral-experiment-log",
+  "title": "Behavioral Experiment Log",
+  "description": "Track your social exposure experiments — planned activities that test your anxious predictions against reality. Each entry builds evidence about the accuracy of your fears.",
+  "instructions": "Before a social exposure, write your prediction. Afterward, document what actually happened and what you learned.",
+  "frequency": "per-experiment",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "Situation — What did you do? Where? With whom?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Made small talk with a coworker during a coffee break"
+    },
+    {
+      "id": "prediction",
+      "label": "Prediction — What did you think would happen?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., 'I'll run out of things to say and they'll think I'm weird'"
+    },
+    {
+      "id": "predictionLikelihood",
+      "label": "How likely did the feared outcome feel? (0 = not at all, 100 = certain)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    },
+    {
+      "id": "safetyBehaviorsDropped",
+      "label": "Safety behaviors I dropped for this experiment",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., Didn't rehearse what to say, didn't avoid eye contact, didn't check my phone"
+    },
+    {
+      "id": "whatHappened",
+      "label": "What actually happened?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Conversation lasted 3 minutes. They smiled and asked follow-up questions. One pause, but they filled it."
+    },
+    {
+      "id": "whatLearned",
+      "label": "What did I learn?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Conversations can flow naturally. The other person contributes too. One pause doesn't ruin everything."
+    },
+    {
+      "id": "newPredictionRating",
+      "label": "How likely does the feared outcome seem now? (0 = not at all, 100 = certain)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    }
+  ]
+}

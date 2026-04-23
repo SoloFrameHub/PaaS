@@ -1,0 +1,91 @@
+{
+    "lessonId": "10",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Pipeline Mastery Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary indicator of a 'Predictable Revenue Engine'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Having a very large total pipeline value."
+                },
+                {
+                    "id": "b",
+                    "text": "Having a consistent relationship between your 'Weighted Pipeline' and your actual Monthly Revenue, backed by stable 'Sales Velocity'."
+                },
+                {
+                    "id": "c",
+                    "text": "Never losing a deal."
+                },
+                {
+                    "id": "d",
+                    "text": "Sending 100 emails a day."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Predictability comes from math, not hope. If your weighted pipeline always predicts your revenue within a 10% margin, you have a professional system that allows you to make calm, evidence-based business decisions."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why should a founder end every week with 'Zero Sales Debt'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To clear their mind for the weekend."
+                },
+                {
+                    "id": "b",
+                    "text": "To ensure that on Monday morning, they aren't wasting cognitive energy trying to remember 'What happened' and can instead focus on 'What to do next' to move deals forward."
+                },
+                {
+                    "id": "c",
+                    "text": "Because the CRM deletes data over the weekend."
+                },
+                {
+                    "id": "d",
+                    "text": "To impress their team."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Context switching and memory recall are huge cognitive drains. Zero Sales Debt means your database is a perfect reflection of reality, liberating your brain to focus on high-stakes strategy and execution on Monday morning."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 'Mastery Checklist', what is a 'Monthly' ritual?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Responding to emails."
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Cycle Time Audit' to see if the gap between Discovery and Signature is growing or shrinking, and identifying macro-trends in leakage."
+                },
+                {
+                    "id": "c",
+                    "text": "Buying a new CRM."
+                },
+                {
+                    "id": "d",
+                    "text": "Updating your LinkedIn profile."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Daily and Weekly rituals are about execution. Monthly rituals are about strategy. Auditing your cycle time allows you to identify if your market or your process is becoming more or less efficient over time."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Choose one 'Ritual' (Daily, Weekly, or Monthly) that you are currently failing to perform. Describe how committing to that ritual will change the trajectory of your business in the next 90 days. What is the first step you will take to implement it?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can identify a specific discipline gap and if they articulate a clear connection between that ritual and business growth (e.g.,'The Weekly Pulse will prevent me from losing $10k in ghost deals')."
+        }
+    ]
+}

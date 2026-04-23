@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most important thing to look for when choosing an OCD therapist?",
+            "options": [
+                { "id": "opt1", "text": "A therapist who focuses on exploring childhood experiences to find the root cause" },
+                { "id": "opt2", "text": "A therapist with specific training in ERP who does exposures during sessions" },
+                { "id": "opt3", "text": "A therapist who specializes in general anxiety disorders" },
+                { "id": "opt4", "text": "A therapist who provides reassurance that your intrusive thoughts are not real" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Not all therapists are trained in ERP. The most important qualities are specific training in ERP (not just general CBT), experience treating OCD, willingness to do exposures in session, and familiarity with all OCD themes. A therapist who focuses primarily on insight or provides reassurance may actually make OCD worse."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following is a RED FLAG when evaluating an OCD therapist?",
+            "options": [
+                { "id": "opt1", "text": "They use ERP as their primary approach" },
+                { "id": "opt2", "text": "They practice exposures during therapy sessions" },
+                { "id": "opt3", "text": "They focus primarily on exploring 'why' you have intrusive thoughts or analyzing childhood origins as the main approach" },
+                { "id": "opt4", "text": "They are comfortable discussing all OCD themes including taboo thoughts" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A therapist who focuses primarily on 'why' you have intrusive thoughts or explores childhood origins as the main approach is not using evidence-based OCD treatment. While understanding context can be helpful, the active ingredient in OCD treatment is ERP. Other red flags include providing reassurance, avoiding taboo content, and treating OCD the same as generalized anxiety."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the typical structure of ERP treatment?",
+            "options": [
+                { "id": "opt1", "text": "One intensive session that addresses all fears at once" },
+                { "id": "opt2", "text": "12-20 sessions involving assessment, hierarchy building, graduated exposures, and homework practice" },
+                { "id": "opt3", "text": "Unlimited sessions with no specific structure or end point" },
+                { "id": "opt4", "text": "5 sessions of talk therapy followed by medication" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A typical ERP course is 12-20 sessions. The first few sessions involve assessment, psychoeducation, hierarchy building, and goal setting. During active treatment, you work through the hierarchy from easier to harder exposures, with in-session practice and between-session homework. Progress isn't always linear, and the therapist adjusts pace based on your response."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What intensive treatment options exist for severe or treatment-resistant OCD?",
+            "options": [
+                { "id": "opt1", "text": "There are no options beyond standard weekly therapy" },
+                { "id": "opt2", "text": "Intensive Outpatient Programs (IOP), Residential Treatment, and Specialized OCD Clinics" },
+                { "id": "opt3", "text": "Only inpatient psychiatric hospitalization" },
+                { "id": "opt4", "text": "Increasing medication dose is the only option for severe cases" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "For severe or treatment-resistant OCD, options include Intensive Outpatient Programs (IOP) with multiple hours per day, Residential Treatment providing full-time OCD treatment, and Specialized OCD Clinics with therapists who exclusively treat OCD. These can be life-changing for people who haven't responded to standard treatment."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which is a common barrier that prevents people from seeking OCD treatment?",
+            "options": [
+                { "id": "opt1", "text": "OCD treatment is no longer available" },
+                { "id": "opt2", "text": "Shame about OCD themes — especially taboo thoughts — prevents disclosure to therapists" },
+                { "id": "opt3", "text": "OCD can only be treated in children, not adults" },
+                { "id": "opt4", "text": "Treatment is only available in one country" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Shame is one of the biggest barriers to OCD treatment, especially for taboo-thought OCD. People fear judgment about their intrusive thoughts. However, OCD therapists hear these themes every day, will not judge or be shocked, and understand that these are symptoms. Disclosure is often described as the most liberating moment in treatment. Telehealth has also expanded access significantly."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "8",
+    "title": "Professional Treatment and Finding an OCD Specialist - Quiz"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "trigger-response-record",
+  "title": "Trigger Response Record",
+  "description": "Use this worksheet to identify and understand your trauma triggers and responses. This is NOT cognitive restructuring — it's about building awareness of your patterns so you can prepare and cope more effectively.",
+  "instructions": "After a triggered reaction (or when you notice you were triggered), work through each step below. This helps you understand your triggers, recognize patterns, and plan for next time. Go at your own pace.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What happened? Where were you?",
+      "type": "textarea",
+      "placeholder": "e.g., I was at the grocery store when someone behind me raised their voice...",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. Trigger — What specific thing set off the reaction? (sound, smell, sight, touch, feeling, thought)",
+      "type": "textarea",
+      "placeholder": "e.g., The raised voice, a certain cologne, feeling trapped in a crowd, a sudden loud noise",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. Distress Level — How distressed were you? (0 = not at all, 100 = most distressed ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. Response Type — What type of trauma response did you experience?",
+      "type": "select",
+      "options": [
+        { "value": "flashback", "label": "Flashback — felt like I was reliving the event" },
+        { "value": "emotional-flooding", "label": "Emotional Flooding — overwhelming emotions (fear, rage, grief)" },
+        { "value": "hyperarousal", "label": "Hyperarousal — racing heart, shaking, sweating, on high alert" },
+        { "value": "dissociation", "label": "Dissociation — felt disconnected, numb, spaced out, unreal" },
+        { "value": "freeze", "label": "Freeze — couldn't move, speak, or think clearly" },
+        { "value": "avoidance", "label": "Avoidance — had to leave or pull away from the situation" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Body Response — What did you notice in your body?",
+      "type": "textarea",
+      "placeholder": "e.g., Racing heart, tight chest, shaking hands, nausea, felt frozen, shallow breathing",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. What Helped — What grounding or coping strategies did you try? Did they help?",
+      "type": "textarea",
+      "placeholder": "e.g., 5-4-3-2-1 grounding helped me come back to the present, slow breathing calmed the shaking, I left the situation and called a friend",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. Plan for Next Time — What would you do differently, or what do you want to remember?",
+      "type": "textarea",
+      "placeholder": "e.g., This trigger is about loud voices. Next time I'll try to ground immediately — name 5 things I can see. I'll also avoid shopping during peak hours when it's louder.",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. Distress Now — How distressed do you feel now? (0 = not at all, 100 = most distressed ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "flashback",
+      "name": "Flashback",
+      "description": "Reliving the traumatic event — feeling as if it's happening now. May include images, sounds, smells, or physical sensations from the original event."
+    },
+    {
+      "id": "emotional-flooding",
+      "name": "Emotional Flooding",
+      "description": "A sudden, overwhelming wave of emotions (terror, rage, grief, shame) triggered by something in the present that connects to the past."
+    },
+    {
+      "id": "hyperarousal",
+      "name": "Hyperarousal",
+      "description": "Your alarm system activates — racing heart, rapid breathing, muscle tension, sweating, feeling on high alert. Your body is preparing for danger."
+    },
+    {
+      "id": "dissociation",
+      "name": "Dissociation",
+      "description": "Feeling disconnected from your body, surroundings, or emotions. The world may feel unreal, or you may feel like you're watching yourself from outside."
+    },
+    {
+      "id": "freeze",
+      "name": "Freeze Response",
+      "description": "Feeling paralyzed — unable to move, speak, or think clearly. This is your nervous system's 'play dead' response to perceived danger."
+    },
+    {
+      "id": "avoidance",
+      "name": "Avoidance",
+      "description": "The urge to escape the triggering situation, or to avoid it entirely in the future. A protective response that can become limiting over time."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational self-awareness purposes. It helps you recognize and understand your trauma triggers and responses. This is NOT therapy. If you are experiencing frequent or severe trauma responses, please seek support from a trauma-informed therapist. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

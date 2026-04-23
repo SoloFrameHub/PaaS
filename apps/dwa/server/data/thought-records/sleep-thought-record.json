@@ -1,0 +1,108 @@
+{
+    "id": "sleep-thought-record",
+    "title": "Sleep-Related Thought Record",
+    "description": "Use this worksheet to identify and challenge unhelpful thoughts about sleep that may be perpetuating insomnia or sleep anxiety.",
+    "instructions": "When you notice anxious or negative thoughts about sleep — whether at bedtime, during the night, or during the day — complete each section below to examine and reframe those thoughts.",
+    "fields": [
+        {
+            "id": "situation",
+            "label": "1. Situation — When did this thought occur? (e.g., lying in bed, waking at 3 AM, thinking about tonight's sleep)",
+            "type": "textarea",
+            "placeholder": "Describe the situation that triggered your sleep-related thought...",
+            "required": true
+        },
+        {
+            "id": "automaticThought",
+            "label": "2. Automatic Thought — What went through your mind about sleep?",
+            "type": "textarea",
+            "placeholder": "e.g., 'I'll never fall asleep tonight', 'Tomorrow will be ruined if I don't sleep well'",
+            "required": true
+        },
+        {
+            "id": "anxietyRating",
+            "label": "3. Anxiety Level — How anxious or distressed did this thought make you? (0 = none, 100 = extreme)",
+            "type": "rating",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "required": true
+        },
+        {
+            "id": "thinkingTrap",
+            "label": "4. Thinking Trap — Which unhelpful pattern best fits this thought?",
+            "type": "select",
+            "options": [
+                { "value": "catastrophizing", "label": "Catastrophizing ('Tomorrow will be a disaster')" },
+                { "value": "fortune-telling", "label": "Fortune Telling ('I know I won't sleep tonight')" },
+                { "value": "all-or-nothing", "label": "All-or-Nothing ('If I don't get 8 hours, the night is wasted')" },
+                { "value": "overgeneralization", "label": "Overgeneralization ('I never sleep well')" },
+                { "value": "emotional-reasoning", "label": "Emotional Reasoning ('I feel wired, so I won't be able to sleep')" },
+                { "value": "should-statements", "label": "Should Statements ('I should be able to sleep like a normal person')" }
+            ],
+            "required": true
+        },
+        {
+            "id": "evidenceFor",
+            "label": "5. Evidence For — What supports this thought?",
+            "type": "textarea",
+            "placeholder": "What evidence seems to support this sleep-related worry?",
+            "required": true
+        },
+        {
+            "id": "evidenceAgainst",
+            "label": "6. Evidence Against — What contradicts this thought?",
+            "type": "textarea",
+            "placeholder": "Have you managed okay after poor sleep before? Is the predicted outcome guaranteed?",
+            "required": true
+        },
+        {
+            "id": "balancedThought",
+            "label": "7. Balanced Thought — What is a more realistic perspective on this sleep situation?",
+            "type": "textarea",
+            "placeholder": "e.g., 'One bad night won't ruin me. My body knows how to recover. I've coped before.'",
+            "required": true
+        },
+        {
+            "id": "newAnxietyRating",
+            "label": "8. Re-rate Anxiety — How anxious do you feel now? (0 = none, 100 = extreme)",
+            "type": "rating",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "required": true
+        }
+    ],
+    "distortionsList": [
+        {
+            "id": "catastrophizing",
+            "name": "Catastrophizing",
+            "description": "Predicting the worst possible outcome from poor sleep, such as 'My entire week will be ruined.'"
+        },
+        {
+            "id": "fortune-telling",
+            "name": "Fortune Telling",
+            "description": "Predicting you won't sleep before even trying, based on past experiences rather than current evidence."
+        },
+        {
+            "id": "all-or-nothing",
+            "name": "All-or-Nothing Thinking",
+            "description": "Viewing sleep in black-and-white terms: either a 'perfect night' or a 'total failure.'"
+        },
+        {
+            "id": "overgeneralization",
+            "name": "Overgeneralization",
+            "description": "Using words like 'always' or 'never' about sleep patterns based on a few bad nights."
+        },
+        {
+            "id": "emotional-reasoning",
+            "name": "Emotional Reasoning",
+            "description": "Assuming that feeling alert or anxious at bedtime means you definitely won't sleep."
+        },
+        {
+            "id": "should-statements",
+            "name": "Should Statements",
+            "description": "Rigid rules about sleep such as 'I should fall asleep within 10 minutes' or 'I should need exactly 8 hours.'"
+        }
+    ],
+    "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional mental health treatment. If you have persistent sleep problems, consult a healthcare provider or seek CBT-I treatment."
+}

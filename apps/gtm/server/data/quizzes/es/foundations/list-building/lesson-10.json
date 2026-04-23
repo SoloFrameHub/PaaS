@@ -1,0 +1,141 @@
+{
+  "lessonId": "10",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Tu Sistema de Prospección",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la 'Paradoja de la Prospección' que enfrentan frecuentemente los fundadores en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tener demasiados leads y no suficiente tiempo"
+        },
+        {
+          "id": "b",
+          "text": "Prospección intensa durante los períodos de 'sequía' seguida de cero prospección mientras trabajan en los tratos, lo que lleva a un pipeline inconsistente"
+        },
+        {
+          "id": "c",
+          "text": "Gastar dinero en herramientas que no usas"
+        },
+        {
+          "id": "d",
+          "text": "Apuntar a las empresas incorrectas con los mensajes correctos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El ciclo de 'Festín o Hambruna' es el resultado de la prospección esporádica. La consistencia es el único remedio para un pipeline fluctuante."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuándo se recomienda que un fundador en solitario realice su bloque de 'Prospección Activa'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El viernes por la tarde antes del fin de semana"
+        },
+        {
+          "id": "b",
+          "text": "Tarde en la noche cuando está tranquilo"
+        },
+        {
+          "id": "c",
+          "text": "Los primeros 90 minutos de la mañana, antes del correo regular o Slack"
+        },
+        {
+          "id": "d",
+          "text": "Cuando tienen un espacio entre reuniones con clientes"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La prospección requiere alta energía cognitiva y es la más propensa a la evitación. Reservarla primero garantiza que suceda mientras tu energía es más alta y antes de que los 'incendios urgentes' te distraigan."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuántas horas por semana debería esperar pasar en adquisición un fundador de SaaS B2B (contexto de Alto Volumen)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2-4 horas"
+        },
+        {
+          "id": "b",
+          "text": "8-12 horas"
+        },
+        {
+          "id": "c",
+          "text": "15-20 horas"
+        },
+        {
+          "id": "d",
+          "text": "40+ horas"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "En un contexto de SaaS de alto volumen, la adquisición es el principal motor de crecimiento y requiere una porción significativa de la semana del fundador en solitario."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la actividad principal recomendada para el 'Lunes' en la plantilla de Ritmo Semanal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enviar correos masivos"
+        },
+        {
+          "id": "b",
+          "text": "Investigación profunda y construcción de listas (encontrar el 'combustible' para la semana)"
+        },
+        {
+          "id": "c",
+          "text": "Tomar el día libre"
+        },
+        {
+          "id": "d",
+          "text": "Configuración técnica del dominio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Comenzar la semana con 'La Caza' garantiza que tengas una lista limpia y de alta calidad para trabajar durante el resto del outreach de la semana."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué el curso recomienda un compromiso de 90 días antes de evaluar tu sistema de prospección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque lleva 90 días aprender a usar las herramientas"
+        },
+        {
+          "id": "b",
+          "text": "Para permitir tiempo para la normalización de datos, el calentamiento del dominio y que los ciclos de ventas muestren resultados reales"
+        },
+        {
+          "id": "c",
+          "text": "Porque el curso dura 90 días"
+        },
+        {
+          "id": "d",
+          "text": "Para dificultar que los fundadores renuncien"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los resultados del outreach frío son un indicador rezagado. Necesitas 90 días de ejecución consistente para recopilar datos estadísticamente significativos sobre lo que funciona."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Comprométete con tu sprint de prospección de 90 días. ¿Cuál es tu 'Hora Dorada' diaria para el outreach? ¿Cuáles son tus objetivos de volumen semanales para cada uno de tus canales principales? ¿Cómo te harás responsable si fallas un día?",
+      "minLength": 100,
+      "promptForAI": "Revisa el compromiso para verificar especificidad (Tiempo, Volumen, Canal). Evalúa el plan de responsabilidad — debe ser realista (ej., 'Doblar objetivos el sábado' o 'Decírselo a mi co-fundador/pareja')."
+    }
+  ]
+}

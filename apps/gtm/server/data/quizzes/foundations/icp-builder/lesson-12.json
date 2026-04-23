@@ -1,0 +1,141 @@
+{
+    "lessonId": "12",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Capstone - Building the List & Execution",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Valid 100' protocol?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying 100,000 leads and spamming them."
+                },
+                {
+                    "id": "b",
+                    "text": "Starting with a small, highly curated batch of 100 verified contacts to test your messaging before scaling."
+                },
+                {
+                    "id": "c",
+                    "text": "Validating leads by calling their mothers."
+                },
+                {
+                    "id": "d",
+                    "text": "Emailing 100 people at the same company."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Start small. Validate resonance with a controlled batch. Don't burn your Total Addressable Market in one day."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which metric matters most in cold outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Open Rate (which is often inaccurate)."
+                },
+                {
+                    "id": "b",
+                    "text": "The number of emails sent."
+                },
+                {
+                    "id": "c",
+                    "text": "Positive Reply Rate."
+                },
+                {
+                    "id": "d",
+                    "text": "How nice the email looked."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Replies are truth. If people are booking meetings (positive replies), you have product-market fit. Open rates are vanity."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should you send 10 manual emails before launching a sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To test for typos, tone, and technical deliverability errors."
+                },
+                {
+                    "id": "b",
+                    "text": "Because automation is evil."
+                },
+                {
+                    "id": "c",
+                    "text": "To increase your typing speed."
+                },
+                {
+                    "id": "d",
+                    "text": "Because you have nothing else to do."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Manual sending forces you to read your own copy as a human. It catches mistakes that automation hides."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the FIRST step after exporting your list from a database?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Import to CRM."
+                },
+                {
+                    "id": "b",
+                    "text": "Verify/Clean the data (e.g., Debounce)."
+                },
+                {
+                    "id": "c",
+                    "text": "Call them immediately."
+                },
+                {
+                    "id": "d",
+                    "text": "Print it out."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Never put dirty data in your CRM or email tool. Clean it first to protect your domain reputation."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does being a 'Sniper' mean in sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Wearing camouflage."
+                },
+                {
+                    "id": "b",
+                    "text": "Targeting specific people at specific companies with a specific message, leveraging research and timing."
+                },
+                {
+                    "id": "c",
+                    "text": "Shooting emails randomly."
+                },
+                {
+                    "id": "d",
+                    "text": "Being very quiet."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Precision beats volume. Snipers use research (Tier 1) and timing (Signals) to win deals that spammers miss."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Write your complete ICP statement: Who you sell to, what problem you solve, and why they should buy from you specifically. Include firmographic, psychographic, and behavioral criteria.",
+            "minLength": 100,
+            "promptForAI": "This is the capstone. Evaluate the complete ICP for: (1) clarity and specificity, (2) actionability for prospecting, (3) differentiation. Provide comprehensive feedback on the ICP."
+        }
+    ]
+}

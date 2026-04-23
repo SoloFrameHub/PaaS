@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which short-chain fatty acid is considered the most important for gut and brain health, despite being the least abundant?",
+            "options": [
+                { "id": "opt1", "text": "Acetate" },
+                { "id": "opt2", "text": "Propionate" },
+                { "id": "opt3", "text": "Butyrate" },
+                { "id": "opt4", "text": "Lactate" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Butyrate makes up only about 15% of total SCFAs but is arguably the most important for gut and brain health. It modulates the stress response, supports brain cell insulation (myelination), reduces neuroinflammation, and is the primary fuel for gut barrier cells."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How do short-chain fatty acids (SCFAs) trigger biological responses in cells?",
+            "options": [
+                { "id": "opt1", "text": "They directly alter DNA sequences in cells" },
+                { "id": "opt2", "text": "They bind to G-protein coupled receptors (GPCRs) like GPR41 and GPR43" },
+                { "id": "opt3", "text": "They physically destroy harmful bacteria on contact" },
+                { "id": "opt4", "text": "They raise body temperature to kill pathogens" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "SCFAs bind to specific G-protein coupled receptors (GPCRs), particularly GPR41, GPR43, and GPR109A, which are found throughout the gut, immune system, and nervous system. This receptor activation is one of the key mechanisms through which diet influences brain chemistry."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What happens when you cook and then cool starchy foods like potatoes or rice?",
+            "options": [
+                { "id": "opt1", "text": "The food becomes toxic and should not be eaten" },
+                { "id": "opt2", "text": "All nutritional value is lost during the cooling process" },
+                { "id": "opt3", "text": "The food develops more resistant starch, which feeds butyrate-producing bacteria" },
+                { "id": "opt4", "text": "The carbohydrate content is completely eliminated" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Cooking and cooling starchy foods increases their resistant starch content. Resistant starch passes through the small intestine intact and reaches the colon where bacteria ferment it primarily into butyrate — making potato salad and overnight oats excellent sources for supporting brain health."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is eating a variety of different plant foods important for SCFA production?",
+            "options": [
+                { "id": "opt1", "text": "All plant foods produce exactly the same types of SCFAs" },
+                { "id": "opt2", "text": "Variety only matters for taste, not for gut health" },
+                { "id": "opt3", "text": "Only one type of fiber is needed for all SCFA production" },
+                { "id": "opt4", "text": "Different fiber types feed different bacteria and produce different SCFAs, so variety ensures a balanced mix" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Different types of dietary fiber promote different SCFA profiles. For example, resistant starch primarily produces butyrate, pectin produces acetate and propionate, and beta-glucan primarily produces propionate. Eating a variety of plant foods gives your gut bacteria different fibers to work with, producing a balanced mix of all three SCFAs."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is butyrate's 'epigenetic superpower' — its effect beyond receptor binding?",
+            "options": [
+                { "id": "opt1", "text": "It permanently changes DNA sequences to eliminate disease genes" },
+                { "id": "opt2", "text": "It inhibits histone deacetylases (HDACs), turning on genes involved in anti-inflammatory and neuroprotective responses" },
+                { "id": "opt3", "text": "It creates new neurons in the gut to replace damaged ones" },
+                { "id": "opt4", "text": "It produces vitamin supplements that replace the need for dietary nutrients" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Butyrate inhibits histone deacetylases (HDACs), which is an epigenetic effect — influencing how genes are expressed without changing DNA itself. This can 'turn on' genes involved in anti-inflammatory responses, neuroprotection, and brain cell growth. Researchers have described butyrate as a natural HDAC inhibitor with antidepressant-like properties."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "2",
+    "title": "Short-Chain Fatty Acids: Microbial Messengers to Your Brain - Quiz"
+}

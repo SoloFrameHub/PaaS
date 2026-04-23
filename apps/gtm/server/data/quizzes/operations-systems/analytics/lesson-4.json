@@ -1,0 +1,126 @@
+{
+    "lessonId": "4",
+    "courseId": "analytics",
+    "sectionId": "operations-systems",
+    "title": "Test Your Forecasting Knowledge",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "A prospect says 'this looks great, send me a proposal.' How should you classify this deal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Commit — they asked for a proposal"
+                },
+                {
+                    "id": "b",
+                    "text": "Upside — no timeline or budget confirmed"
+                },
+                {
+                    "id": "c",
+                    "text": "Dead — they're just tire-kicking"
+                },
+                {
+                    "id": "d",
+                    "text": "50/50 — weight it at 50% probability"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Asking for a proposal is progress, but it's not commitment. No timeline, no budget discussion, no verbal yes. This is Upside."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "You have $30K in Commit deals and $60K in Upside deals. What should you forecast?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$90K (all deals will close)"
+                },
+                {
+                    "id": "b",
+                    "text": "$30K (only count Commit)"
+                },
+                {
+                    "id": "c",
+                    "text": "$48K (Commit + Upside × 30%)"
+                },
+                {
+                    "id": "d",
+                    "text": "$60K (Commit + Upside × 50%)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "$30K + ($60K × 30%) = $48K. This is the binary commit/upside formula."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "A deal has been in your pipeline for 75 days with no movement. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep it in Upside — it might still close"
+                },
+                {
+                    "id": "b",
+                    "text": "Move it to Commit — it's been there a while"
+                },
+                {
+                    "id": "c",
+                    "text": "Mark it Closed Lost and remove it"
+                },
+                {
+                    "id": "d",
+                    "text": "Send one more follow-up email"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Deals stalled 60+ days have &lt;5% close rate. Remove it from your forecast. You can still send a follow-up, but don't count it in your numbers."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Your forecast accuracy for the last 3 months: 55%, 62%, 58%. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — this is good enough"
+                },
+                {
+                    "id": "b",
+                    "text": "Lower your Upside multiplier to 20%"
+                },
+                {
+                    "id": "c",
+                    "text": "Raise your Upside multiplier to 40%"
+                },
+                {
+                    "id": "d",
+                    "text": "Tighten your Commit criteria"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "55-62% accuracy is below the 70% target, but you need more data before adjusting. Track for 3 more months. If the pattern continues, then tighten Commit criteria or lower Upside multiplier."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "True or False: A deal with a verbal yes, timeline set, and budget approved should be classified as Commit even if you haven't identified a champion.",
+            "correctAnswer": "b",
+            "explanation": "False. All 5 criteria must be met for Commit. No champion = no one internally pushing for this. It's Upside until you have a champion.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

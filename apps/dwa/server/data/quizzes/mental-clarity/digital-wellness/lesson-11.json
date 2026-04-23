@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is cyberbullying?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any disagreement or criticism online"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Repeated, intentional harm delivered through digital platforms — including harassment, threats, exclusion, and public shaming"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Blocking someone on social media"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Reporting inappropriate content"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cyberbullying is repeated, intentional aggression through digital means, including harassment, threats, rumor-spreading, exclusion, impersonation, and public shaming. It differs from one-time conflicts or disagreements."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What makes cyberbullying potentially more harmful than traditional bullying?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It's less common than in-person bullying"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It can be 24/7, reach wider audiences, persist permanently, and offer anonymity to perpetrators"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It only affects people who are weak"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It's easier to stop than in-person bullying"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cyberbullying can follow victims home (24/7 access), reach massive audiences instantly, remain permanently accessible online, and allow perpetrators to remain anonymous — all of which can amplify harm beyond traditional bullying."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does research show about cyberbullying and mental health outcomes?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Cyberbullying has no measurable mental health effects"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Cyberbullying is associated with increased risk of depression, anxiety, self-harm, and suicidal ideation (STRONG evidence)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only adolescents are affected by cyberbullying"
+                },
+                {
+                    "id": "opt4",
+                    "text": "People usually recover immediately without support"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "STRONG evidence shows cyberbullying victims experience elevated rates of depression, anxiety, low self-esteem, self-harm, and suicidal ideation. The effects can be severe and persistent without intervention."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do if you're experiencing cyberbullying?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Respond aggressively to defend yourself"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Document evidence, block perpetrators, report to platforms/authorities, and tell trusted adults or professionals"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Delete all your social media and hide"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Ignore it completely and never tell anyone"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Effective responses include: documenting evidence (screenshots), blocking perpetrators, reporting to platforms and authorities if serious, and telling trusted adults or mental health professionals. Don't face it alone."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Have you ever witnessed or experienced cyberbullying? What happened, and how was it addressed (or not addressed)? If you witnessed it again, what would you do differently to support the person being targeted?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "11",
+    "title": "Cyberbullying - Quiz"
+}

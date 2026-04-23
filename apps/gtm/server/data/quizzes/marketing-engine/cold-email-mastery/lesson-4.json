@@ -1,0 +1,142 @@
+{
+    "lessonId": "4",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Subject Lines That Get Opened Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of recipients open an email based on the subject line alone?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10%"
+                },
+                {
+                    "id": "b",
+                    "text": "25%"
+                },
+                {
+                    "id": "c",
+                    "text": "47%"
+                },
+                {
+                    "id": "d",
+                    "text": "90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Nearly half of your audience decides whether to read your work based solely on the 3-5 words in your subject line."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which psychological state is a major driver of email opens?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Confusion"
+                },
+                {
+                    "id": "b",
+                    "text": "Curiosity"
+                },
+                {
+                    "id": "c",
+                    "text": "Fear of the sender"
+                },
+                {
+                    "id": "d",
+                    "text": "Apathy"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Emails that trigger curiosity (e.g., 'Quick thought about your API docs') are highly effective because the reader wants to know the context."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should you avoid using ALL CAPS and multiple exclamation marks in subject lines?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes the subject too long"
+                },
+                {
+                    "id": "b",
+                    "text": "It is difficult for older screens to display"
+                },
+                {
+                    "id": "c",
+                    "text": "It creates 'Sales Stench' and is a major trigger for spam filters"
+                },
+                {
+                    "id": "d",
+                    "text": "It is considered rude in some countries"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Spam filters (and human brains) associate aggressive formatting with junk mail. To get into the inbox, you must sound like a professional individual, not a marketing bot."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended length for a cold email subject line?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "As long as possible to include all the benefits"
+                },
+                {
+                    "id": "b",
+                    "text": "Exactly 10 words"
+                },
+                {
+                    "id": "c",
+                    "text": "Short enough to fit in a 30-character mobile preview (usually 3-6 words)"
+                },
+                {
+                    "id": "d",
+                    "text": "Empty is best for curiosity"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Since most people check email on mobile, keeping it short ensures the entire subject is visible in the notification and preview window."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is 'A/B Testing' in the context of subject lines?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always Be Testing"
+                },
+                {
+                    "id": "b",
+                    "text": "Writing two different subject lines for the same campaign to see which one gets a higher open rate"
+                },
+                {
+                    "id": "c",
+                    "text": "Alphabetically sorting your lead list"
+                },
+                {
+                    "id": "d",
+                    "text": "Sending emails to both Gmail and Yahoo users"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A/B testing allows you to use data instead of guesswork to optimize your results over time."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Choose your #1 Pillar. Write two different subject lines for a campaign targeting your core ICP. One should be 'Personalized' and one should be a 'Question.' Which do you think will perform better and why?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the quality of the subject lines. They should avoid spam words and be concise. The justification should show an understanding of their specific audience's behavior."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

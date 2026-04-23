@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'titration' in the context of trauma recovery?",
+            "options": [
+                { "id": "opt1", "text": "A medication dosing strategy used by psychiatrists for PTSD treatment" },
+                { "id": "opt2", "text": "A technique for measuring the severity of trauma symptoms" },
+                { "id": "opt3", "text": "Approaching difficult material in small, manageable doses — touching the difficult thing briefly, then returning to safety" },
+                { "id": "opt4", "text": "Completely avoiding all trauma-related content until you feel fully healed" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Titration in trauma recovery means approaching difficult material — triggers, memories, emotions — in small, controlled doses rather than all at once. The principle is to touch the difficult thing briefly, return to safety, then approach again. This prevents re-traumatization while still allowing processing to occur."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why are triggers so powerful in activating trauma responses?",
+            "options": [
+                { "id": "opt1", "text": "Because the person consciously chooses to react to them" },
+                { "id": "opt2", "text": "Because the brain stores traumatic memories with sensory details, and encountering those details activates the amygdala's fear response automatically — faster than conscious thought" },
+                { "id": "opt3", "text": "Because triggers only affect people who haven't tried hard enough to move past their trauma" },
+                { "id": "opt4", "text": "Because triggers are always extreme events that would upset anyone" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your brain stores traumatic memories with their associated sensory details — smells, sounds, sights. When you encounter one of these details in the present, your amygdala activates the same fear response as if the trauma is happening again. This happens automatically, faster than your conscious mind can process."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the difference between 'strategic withdrawal' and 'avoidance'?",
+            "options": [
+                { "id": "opt1", "text": "They are the same thing — both involve leaving triggering situations" },
+                { "id": "opt2", "text": "Strategic withdrawal is unhealthy, while avoidance is a recommended coping skill" },
+                { "id": "opt3", "text": "Strategic withdrawal means temporarily removing yourself to ground and regulate, while avoidance means permanently staying away from all potential triggers" },
+                { "id": "opt4", "text": "Strategic withdrawal is only used in therapy, while avoidance is used in daily life" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Strategic withdrawal is temporarily removing yourself from a triggering situation to ground and regulate — this is a healthy coping skill. Avoidance is permanently staying away from all potential triggers, which maintains PTSD by preventing your brain from processing the experience. The first is adaptive; the second maintains symptoms."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is a written coping plan important for managing triggers?",
+            "options": [
+                { "id": "opt1", "text": "Writing things down makes the trauma less severe" },
+                { "id": "opt2", "text": "It is a legal requirement for anyone receiving mental health treatment" },
+                { "id": "opt3", "text": "When you're triggered, your prefrontal cortex may be offline, making it hard to think clearly — a written plan removes the need to remember what to do" },
+                { "id": "opt4", "text": "It helps your therapist understand your triggers better" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A coping plan is your personal emergency response guide — prepared in advance so you don't have to think clearly in the middle of a triggered response. Since your prefrontal cortex may be offline during a trigger (as learned in Lesson 2), having strategies written down removes the barrier of needing to recall them under stress."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is a sign that you may be pushing too fast in your trauma recovery?",
+            "options": [
+                { "id": "opt1", "text": "Feeling slightly uncomfortable when learning about trauma" },
+                { "id": "opt2", "text": "Increased nightmares, flashbacks, irritability, or numbness beyond your baseline" },
+                { "id": "opt3", "text": "Recognizing your own patterns in the lesson content" },
+                { "id": "opt4", "text": "Feeling motivated to try grounding techniques" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Signs you're pushing too fast include increased nightmares or flashbacks, feeling more irritable or on edge than usual, new sleep difficulties, increasing numbness or dissociation, a strong urge to use substances, or feeling like you're 'falling apart.' These are signals from your nervous system that it needs more safety before proceeding — not signs of failure."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "trauma-recovery",
+    "lessonId": "5",
+    "title": "Understanding Triggers and Building Coping Plans - Quiz"
+}

@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the primary role of Mental Health First Aid according to the ALGEE framework?",
+      "options": [
+        {"id": "opt1", "text": "To provide therapy and clinical treatment for mental health conditions"},
+        {"id": "opt2", "text": "To serve as a bridge to professional care by providing initial support until appropriate help is received"},
+        {"id": "opt3", "text": "To diagnose mental health disorders and recommend medications"},
+        {"id": "opt4", "text": "To replace professional mental health services in the community"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Mental Health First Aid is initial support provided until professional help is received — it is a bridge, not a destination. Just as physical first aid stabilizes someone until medical professionals arrive, MHFA provides compassionate, informed support while facilitating access to appropriate clinical care. It is NOT a substitute for professional treatment."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In the ALGEE framework, what does the first 'E' stand for, and why is it critical?",
+      "options": [
+        {"id": "opt1", "text": "Evaluate — conduct a clinical diagnosis to determine the mental health condition"},
+        {"id": "opt2", "text": "Encourage Appropriate Professional Help — because MHFA is a bridge to clinical care, not a replacement"},
+        {"id": "opt3", "text": "Eliminate — remove all stressors from the person's environment immediately"},
+        {"id": "opt4", "text": "Empathize — show understanding and emotional connection to build rapport"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The first 'E' in ALGEE stands for 'Encourage Appropriate Professional Help.' This is critical because Mental Health First Aid is designed to connect people to professional care, not replace it. Your role is to provide initial support, reduce barriers to help-seeking, and facilitate access to licensed clinicians who can provide diagnosis and treatment. Framing professional help as strength (not weakness) and offering concrete pathways increases the likelihood that someone will follow through."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "A coworker tells you they've been feeling hopeless and have a plan to end their life tonight. According to MHFA scope boundaries, what should you do?",
+      "options": [
+        {"id": "opt1", "text": "Use active listening to work through their feelings and help them see reasons to live"},
+        {"id": "opt2", "text": "Promise to keep it confidential and check in with them tomorrow to see if they're feeling better"},
+        {"id": "opt3", "text": "Immediately escalate to emergency services (call 911 or 988) and do not leave them alone if it's safe to stay"},
+        {"id": "opt4", "text": "Conduct a clinical suicide risk assessment to determine if they're serious"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Active suicidal ideation with a plan is an immediate, life-threatening crisis that EXCEEDS the scope of Mental Health First Aid. You must escalate to emergency services immediately — call 911 or 988 (Suicide & Crisis Lifeline), and do not leave the person alone if it is safe to stay with them. Do NOT attempt to manage this alone, do NOT promise confidentiality when safety is at risk, and do NOT conduct a clinical risk assessment (that's a clinical competency). In crisis situations, rapid professional escalation saves lives."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What does current research evidence show about Mental Health First Aid training's effects?",
+      "options": [
+        {"id": "opt1", "text": "STRONG evidence for reducing community suicide rates and improving recipient mental health"},
+        {"id": "opt2", "text": "STRONG evidence for trainee knowledge gain and confidence; WEAK-TO-ABSENT evidence for recipient mental health outcomes"},
+        {"id": "opt3", "text": "MODERATE evidence that MHFA training causes harm through re-traumatization of learners"},
+        {"id": "opt4", "text": "No credible evidence exists for any benefits of MHFA training"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The 2018 Morgan et al. meta-analysis and 2023 Cochrane systematic review found STRONG evidence for trainee-level outcomes: knowledge gain (d = 0.31–0.72), stigma reduction, confidence, and helping intentions. However, evidence for effects on recipient mental health outcomes is WEAK-TO-ABSENT (very low certainty). This means MHFA demonstrably improves what trainees know and feel prepared to do, but the pathway from that to measurable improvement in recipients' mental health is not yet established by high-quality research. Claims that MHFA 'saves lives' or 'prevents suicide' are not supported by current RCT evidence, though the training's benefits at the trainee level are real and meaningful."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which of the following situations does NOT require immediate escalation to emergency services (911/988)?",
+      "options": [
+        {"id": "opt1", "text": "Someone experiencing acute psychosis with behavioral disorganization and threat to others"},
+        {"id": "opt2", "text": "Someone who appears intoxicated, unresponsive, with slow breathing and blue lips"},
+        {"id": "opt3", "text": "Someone who discloses feeling depressed and hopeless but denies current suicidal thoughts or plans"},
+        {"id": "opt4", "text": "A child who discloses ongoing physical abuse by a parent (mandatory reporting applies)"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Depression with hopelessness (but no active suicidal ideation or plan) does NOT require immediate emergency escalation — it requires compassionate MHFA support (ALGEE framework) and encouragement to see a professional (GP, therapist, 988 for crisis support). All other options represent mandatory emergency escalation situations: acute psychosis with danger requires 911 (safety risk), overdose symptoms require 911 (medical emergency), and child abuse disclosure requires mandatory reporting to Child Protective Services (legal obligation). Always assess for suicidal thoughts directly, but hopelessness alone is not the same as active suicidal crisis."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "1",
+  "title": "Understanding Mental Health First Aid Principles - Quiz"
+}

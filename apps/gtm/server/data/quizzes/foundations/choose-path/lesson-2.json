@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "choose-path",
+    "sectionId": "foundations",
+    "title": "B2B SaaS Acquisition Path Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the recommended B2B SaaS acquisition stack, what percentage of effort should be allocated to LinkedIn activities?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "25%"
+                },
+                {
+                    "id": "b",
+                    "text": "40%"
+                },
+                {
+                    "id": "c",
+                    "text": "60%"
+                },
+                {
+                    "id": "d",
+                    "text": "75%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The recommended starting allocation is LinkedIn at 60%, cold email at 25%, and content/SEO at 15%. LinkedIn covers prospecting, content, and warm outreach—making it the primary platform for most B2B solo founders."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Your champion at a prospect company loves your product, but the deal stalls. Which role is most likely blocking progress?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The champion needs more training on your product"
+                },
+                {
+                    "id": "b",
+                    "text": "Decision-Maker or Procurement roles that you haven't identified or accessed"
+                },
+                {
+                    "id": "c",
+                    "text": "Your pricing is definitely too high"
+                },
+                {
+                    "id": "d",
+                    "text": "The champion doesn't actually want to buy"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Stalled deals often indicate buying committee issues. Your champion may lack the authority to close, or you haven't reached the Decision-Maker or addressed Procurement requirements. Ask: 'Who else needs to be involved?' and 'What's the typical process for bringing in a new tool?'"
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "You're getting less than 5% response rate on your cold emails consistently. What does this most likely indicate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cold email just doesn't work anymore"
+                },
+                {
+                    "id": "b",
+                    "text": "Your messaging or targeting is off and needs adjustment"
+                },
+                {
+                    "id": "c",
+                    "text": "You need to send more volume to see results"
+                },
+                {
+                    "id": "d",
+                    "text": "Your email domain has been blacklisted"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While technical issues like domain blacklisting should be checked, consistently low response rates typically indicate a targeting or messaging problem. Either you're reaching the wrong people, or your message isn't resonating with their pain points."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which academy courses are designated as 'Tier 1' priorities for B2B SaaS founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Courses 5, 6, and 7 (Content, SEO, LinkedIn)"
+                },
+                {
+                    "id": "b",
+                    "text": "Courses 4, 8, and 14 (List Building, Cold Email, Discovery Framework)"
+                },
+                {
+                    "id": "c",
+                    "text": "Courses 9, 10, and 11 (Community, Email Nurture, Social Proof)"
+                },
+                {
+                    "id": "d",
+                    "text": "Courses 13, 17, and 20 (DISC, Objection Handling, Pipeline)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For B2B SaaS, the Tier 1 courses are: Course 4 (List Building & Prospecting Infrastructure), Course 8 (Cold Email Mastery), and Course 14 (Discovery Framework). These establish the foundation for outbound-led acquisition."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the purpose of protecting '90 Minutes of Gold' every morning?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To build product features without interruption"
+                },
+                {
+                    "id": "b",
+                    "text": "To check and respond to customer support tickets"
+                },
+                {
+                    "id": "c",
+                    "text": "Dedicated, uninterrupted time for prospecting and outreach activities"
+                },
+                {
+                    "id": "d",
+                    "text": "To write content for LinkedIn and blog posts"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The '90 Minutes of Gold' is blocked specifically for prospecting and outreach—your highest-leverage acquisition activities. No Slack, no email, no product work. Founders who protect this time consistently outperform those who try to 'fit it in when possible.'"
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Design your ideal B2B weekly rhythm. Which days will you focus on prospecting, outreach, engagement, and content? How will you protect your '90 Minutes of Gold'? What's your target outreach volume (emails/LinkedIn touches per week)?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if this reflection includes: 1) A specific day-by-day breakdown of activities, 2) A concrete plan for protecting prospecting time (when, where, how), 3) Realistic target numbers for outreach volume. Push back if the plan is vague or if the numbers seem unrealistic (either too low to generate results or too high to be sustainable)."
+        }
+    ]
+}

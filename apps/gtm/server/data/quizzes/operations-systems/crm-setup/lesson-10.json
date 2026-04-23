@@ -1,0 +1,259 @@
+{
+    "lessonId": "10",
+    "courseId": "crm-setup",
+    "sectionId": "operations-systems",
+    "title": "CRM Setup Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "crm-setup-q1",
+            "question": "What's the biggest reason solo founders abandon CRMs?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Wrong tool choice"
+                },
+                {
+                    "id": "b",
+                    "text": "Over-engineering (too many fields) or under-using (glorified spreadsheet)"
+                },
+                {
+                    "id": "c",
+                    "text": "Lack of integrations"
+                },
+                {
+                    "id": "d",
+                    "text": "Cost"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most CRM failures come from over-customization (too complex to maintain) or under-adoption (not using it consistently). Tool choice matters less than usage discipline.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q2",
+            "question": "What's the universal 6-stage pipeline?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Prospect → Qualified → Demo → Proposal → Negotiation → Closed"
+                },
+                {
+                    "id": "b",
+                    "text": "Lead → Contacted → Engaged → Meeting → Proposal → Won/Lost"
+                },
+                {
+                    "id": "c",
+                    "text": "Awareness → Interest → Decision → Action → Retention → Advocacy"
+                },
+                {
+                    "id": "d",
+                    "text": "Cold → Warm → Hot → Meeting → Proposal → Won"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Lead → Contacted → Engaged → Meeting → Proposal → Won/Lost works universally because it maps to observable actions, not subjective judgments.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q3",
+            "question": "Why is structured data critical for AI agents?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "AI can't read free-text notes effectively"
+                },
+                {
+                    "id": "b",
+                    "text": "Structured fields enable reasoning, categorization, and prioritization"
+                },
+                {
+                    "id": "c",
+                    "text": "Dropdowns are faster to fill out than text fields"
+                },
+                {
+                    "id": "d",
+                    "text": "Both A and B"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "AI agents need structured, categorical data to reason. Free-text notes are invisible to AI. Structured fields (dropdowns, numbers, dates) enable agents to prioritize, personalize, and recommend actions.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q4",
+            "question": "What's the 'Would I Act on This?' test?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "For every custom field: if the answer is no, delete it"
+                },
+                {
+                    "id": "b",
+                    "text": "For every automation: if it doesn't save time, turn it off"
+                },
+                {
+                    "id": "c",
+                    "text": "For every contact: if they're not ICP-fit, archive them"
+                },
+                {
+                    "id": "d",
+                    "text": "For every deal: if it's not moving, close it"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Every custom field must earn its place by triggering a decision or action. If you wouldn't act on the data, don't track it.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q5",
+            "question": "What's the recommended weekly CRM hygiene routine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Daily: log everything. Weekly: review pipeline. Monthly: dedupe."
+                },
+                {
+                    "id": "b",
+                    "text": "Monday: pipeline review (15 min). Friday: hygiene sweep (15 min). Real-time: log meetings."
+                },
+                {
+                    "id": "c",
+                    "text": "Weekly: update all deals. Monthly: full audit. Quarterly: migration."
+                },
+                {
+                    "id": "d",
+                    "text": "Daily: check for new leads. Weekly: send follow-ups. Monthly: close lost deals."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Monday pipeline review + Friday hygiene sweep + real-time meeting logging is the sustainable rhythm for solo founders. Daily CRM admin is overkill; monthly-only is too infrequent.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q6",
+            "question": "Which CRM is best for high-volume outbound B2B sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Folk (relationship-first)"
+                },
+                {
+                    "id": "b",
+                    "text": "HubSpot Free (limited automation)"
+                },
+                {
+                    "id": "c",
+                    "text": "Close (built-in calling + sequences)"
+                },
+                {
+                    "id": "d",
+                    "text": "Attio (modern UX)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Close is purpose-built for high-volume outbound with built-in calling, SMS, and sequences. Folk is for relationship selling. HubSpot Free lacks automation. Attio is great for AI-readiness but not volume-optimized.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q7",
+            "question": "What's the #1 integration to verify on Day 7?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Calendar sync"
+                },
+                {
+                    "id": "b",
+                    "text": "Email sync (sent and received emails log automatically)"
+                },
+                {
+                    "id": "c",
+                    "text": "Enrichment (Apollo, Clearbit)"
+                },
+                {
+                    "id": "d",
+                    "text": "Zapier/Make automations"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email sync is the foundation. Without it, your CRM has amnesia. Calendar, enrichment, and automations are important but secondary to email logging.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q8",
+            "question": "What's the AI-Readiness Score range for 'Ready for Course 27'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-3"
+                },
+                {
+                    "id": "b",
+                    "text": "4-6"
+                },
+                {
+                    "id": "c",
+                    "text": "7-8"
+                },
+                {
+                    "id": "d",
+                    "text": "9-10"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "7-8 means full AI-ready schema deployed, structured event logging, health indicators present, and 3+ automations running. That's the threshold for building AI agents in Course 27.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q9",
+            "question": "What happens if you delay CRM setup by 1 week after choosing a tool?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — you can set it up anytime"
+                },
+                {
+                    "id": "b",
+                    "text": "Adoption drops 60% for every week of delay"
+                },
+                {
+                    "id": "c",
+                    "text": "You forget which tool you chose"
+                },
+                {
+                    "id": "d",
+                    "text": "Your free trial expires"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Research shows CRM adoption drops 60% for every week of delay after the purchase decision. The 48-hour window is real.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "crm-setup-q10",
+            "question": "What's the primary output artifact of Course 40?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "CRM Comparison Scorecard"
+                },
+                {
+                    "id": "b",
+                    "text": "Pipeline Stage Map"
+                },
+                {
+                    "id": "c",
+                    "text": "AI-Ready Field Schema"
+                },
+                {
+                    "id": "d",
+                    "text": "Complete CRM Setup Checklist (compiles all lesson artifacts)"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "The Complete CRM Setup Checklist is the culminating artifact that compiles your CRM philosophy, tool choice, pipeline, schema, integrations, hygiene routine, and AI-readiness score.",
+            "type": "multiple-choice"
+        }
+    ]
+}

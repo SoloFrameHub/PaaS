@@ -1,0 +1,141 @@
+{
+    "lessonId": "8",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Brand Voice and Tone",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between Brand Voice and Brand Tone?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Voice is for marketing; Tone is for sales"
+                },
+                {
+                    "id": "b",
+                    "text": "Voice is your consistent personality; Tone adapts that personality to the situation"
+                },
+                {
+                    "id": "c",
+                    "text": "Voice is written; Tone is spoken"
+                },
+                {
+                    "id": "d",
+                    "text": "They are exactly the same thing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Voice is who you are (your brand's personality), which remains constant. Tone is how you modify your delivery based on the emotional context (e.g., happy, serious, apologetic)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these words is often a hallmark of generic 'AI Voice'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Refund"
+                },
+                {
+                    "id": "b",
+                    "text": "Specific"
+                },
+                {
+                    "id": "c",
+                    "text": "Leverage"
+                },
+                {
+                    "id": "d",
+                    "text": "Broken"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Words like 'Leverage', 'Unlock', 'Empower', and 'Game-changer' are overused in AI-generated copy and often signal a lack of human thought or specific meaning."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Casual and Simple' often a good voice choice for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it requires less effort to write"
+                },
+                {
+                    "id": "b",
+                    "text": "Because it builds authenticity and trust, unlike 'Corporate Speak'"
+                },
+                {
+                    "id": "c",
+                    "text": "Because enterprises only buy from casual brands"
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't; you should always sound like a Fortune 500 company"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trying to sound like a giant corporation when you are a solo founder creates a 'trust gap.' Being authentic, approachable, and clear usually resonates better with buyers looking for a specific solution."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the best way to 'De-Bot' (humanize) your copy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Use more exclamation points !!!"
+                },
+                {
+                    "id": "b",
+                    "text": "Add spelling errors intentionally"
+                },
+                {
+                    "id": "c",
+                    "text": "Use specific numbers, sensory details, and strong opinions"
+                },
+                {
+                    "id": "d",
+                    "text": "Make the sentences longer"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Specificity is the enemy of AI fluff. Using real numbers ('50ms' vs 'fast') and having a distinct point of view makes writing feel human."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which dimension is NOT part of the standard Voice framework mentioned?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Formal vs. Casual"
+                },
+                {
+                    "id": "b",
+                    "text": "Expensive vs. Cheap"
+                },
+                {
+                    "id": "c",
+                    "text": "Serious vs. Playful"
+                },
+                {
+                    "id": "d",
+                    "text": "Technical vs. Simple"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Price is part of your market positioning, not your voice. The voice dimensions determine the *style* of your communication, not the cost of your product."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Define your Brand Voice using the 'We sound like / We don't sound like' format. Give one specific example of each for your brand.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's voice definition. Check if the 'sound like' and 'don't sound like' examples are distinct and provide clear direction for writing copy."
+        }
+    ],
+    "passingScore": 70
+}

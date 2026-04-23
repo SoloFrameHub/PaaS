@@ -1,0 +1,141 @@
+{
+    "lessonId": "2",
+    "courseId": "choose-path",
+    "sectionId": "foundations",
+    "title": "Quiz del Camino de Adquisición B2B SaaS",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Según el stack de adquisición B2B SaaS recomendado, ¿qué porcentaje del esfuerzo debería asignarse a las actividades de LinkedIn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "25%"
+                },
+                {
+                    "id": "b",
+                    "text": "40%"
+                },
+                {
+                    "id": "c",
+                    "text": "60%"
+                },
+                {
+                    "id": "d",
+                    "text": "75%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "La asignación de inicio recomendada es LinkedIn al 60%, cold email al 25% y contenido/SEO al 15%. LinkedIn cubre prospección, contenido y outreach cálido — convirtiéndolo en la plataforma principal para la mayoría de los fundadores de B2B en solitario."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Tu campeón en una empresa prospecto ama tu producto, pero el acuerdo se estanca. ¿Qué rol está bloqueando más probablemente el progreso?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "El campeón necesita más capacitación en tu producto"
+                },
+                {
+                    "id": "b",
+                    "text": "Roles de Tomador de Decisiones o Compras que no has identificado o al que no has accedido"
+                },
+                {
+                    "id": "c",
+                    "text": "Tu precio es definitivamente demasiado alto"
+                },
+                {
+                    "id": "d",
+                    "text": "El campeón en realidad no quiere comprar"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Los acuerdos estancados a menudo indican problemas con el comité de compra. Tu campeón puede carecer de la autoridad para cerrar, o no has llegado al Tomador de Decisiones o abordado los requisitos de Compras. Pregunta: '¿Quién más necesita estar involucrado?' y '¿Cuál es el proceso típico para incorporar una nueva herramienta?'"
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Obtienes consistentemente menos del 5% de tasa de respuesta en tus correos fríos. ¿Qué indica esto más probablemente?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "El cold email simplemente ya no funciona"
+                },
+                {
+                    "id": "b",
+                    "text": "Tu mensajería o segmentación está mal y necesita ajuste"
+                },
+                {
+                    "id": "c",
+                    "text": "Necesitas enviar más volumen para ver resultados"
+                },
+                {
+                    "id": "d",
+                    "text": "Tu dominio de email ha sido bloqueado"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Si bien los problemas técnicos como el bloqueo del dominio deben verificarse, las tasas de respuesta consistentemente bajas típicamente indican un problema de segmentación o mensajería. O estás llegando a las personas equivocadas, o tu mensaje no está resonando con sus puntos de dolor."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "¿Cuáles cursos de la academia están designados como prioridades de 'Nivel 1' para los fundadores de B2B SaaS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cursos 5, 6 y 7 (Contenido, SEO, LinkedIn)"
+                },
+                {
+                    "id": "b",
+                    "text": "Cursos 4, 8 y 14 (Construcción de Listas, Cold Email, Marco de Descubrimiento)"
+                },
+                {
+                    "id": "c",
+                    "text": "Cursos 9, 10 y 11 (Comunidad, Email Nurture, Prueba Social)"
+                },
+                {
+                    "id": "d",
+                    "text": "Cursos 13, 17 y 20 (DISC, Manejo de Objeciones, Pipeline)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Para B2B SaaS, los cursos de Nivel 1 son: Curso 4 (Construcción de Listas e Infraestructura de Prospección), Curso 8 (Dominio del Cold Email) y Curso 14 (Marco de Descubrimiento). Estos establecen la base para la adquisición liderada por outbound."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "¿Cuál es el propósito de proteger los '90 Minutos de Oro' cada mañana?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Para construir características del producto sin interrupciones"
+                },
+                {
+                    "id": "b",
+                    "text": "Para revisar y responder tickets de soporte al cliente"
+                },
+                {
+                    "id": "c",
+                    "text": "Tiempo dedicado e ininterrumpido para actividades de prospección y outreach"
+                },
+                {
+                    "id": "d",
+                    "text": "Para escribir contenido para LinkedIn y publicaciones de blog"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Los '90 Minutos de Oro' se bloquean específicamente para la prospección y el outreach — tus actividades de adquisición de mayor apalancamiento. Sin Slack, sin email, sin trabajo de producto. Los fundadores que protegen este tiempo superan consistentemente a quienes intentan 'encajarlo cuando es posible'."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Diseña tu ritmo semanal B2B ideal. ¿Qué días te enfocarás en prospección, outreach, engagement y contenido? ¿Cómo protegerás tus '90 Minutos de Oro'? ¿Cuál es tu volumen objetivo de outreach (emails/interacciones en LinkedIn por semana)?",
+            "minLength": 100,
+            "promptForAI": "Evalúa si esta reflexión incluye: 1) Un desglose día a día específico de actividades, 2) Un plan concreto para proteger el tiempo de prospección (cuándo, dónde, cómo), 3) Números objetivo realistas para el volumen de outreach. Rechaza si el plan es vago o si los números parecen poco realistas (ya sea demasiado bajos para generar resultados o demasiado altos para ser sostenibles)."
+        }
+    ]
+}

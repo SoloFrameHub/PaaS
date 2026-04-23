@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Multi-Threaded Management Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does it mean to be 'Single-Threaded' in a sales deal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You are only using one computer to sell."
+                },
+                {
+                    "id": "b",
+                    "text": "You are only talking to one person within the target organization, creating a high risk of deal death if that person loses interest or leaves."
+                },
+                {
+                    "id": "c",
+                    "text": "You only have one product to offer."
+                },
+                {
+                    "id": "d",
+                    "text": "You only send one email per week."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If your only connection to a company is one individual, your deal is fragile. If that individual gets busy, sick, or fired, your momentum evaporates. Multi-threading involves building relationships across the department."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the most effective way to expand your 'Threading' without offending your Champion?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Go around them and email their boss secretly."
+                },
+                {
+                    "id": "b",
+                    "text": "Ask to help them by directly handling the 'Technical/Legal' details with those specific departments to save them time."
+                },
+                {
+                    "id": "c",
+                    "text": "Threaten to stop the trial."
+                },
+                {
+                    "id": "d",
+                    "text": "Wait for the other stakeholders to call you."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A Champion's biggest fear is looking bad to their team. By positioning your multi-threading as 'Saving them time' on technical details, you become a partner rather than a threat to their authority."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the benefit of connecting with a prospect's boss on LinkedIn during a deal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To sell them a separate product."
+                },
+                {
+                    "id": "b",
+                    "text": "To create 'Atmospheric Trust'—your professional content appears in their feed, making your name familiar when your Champion mentions you in internal meetings."
+                },
+                {
+                    "id": "c",
+                    "text": "To see their vacation photos."
+                },
+                {
+                    "id": "d",
+                    "text": "To check if they are hiring."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LinkedIn allows for passive multi-threading. It's a non-intrusive way to build credibility with the'Economic Buyer' without needing a direct meeting immediately."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Identify your highest-value deal. Are you single-threaded? If so, draft the specific email or Slack message you will send to your Champion today to request an introduction to a Technical or Financial stakeholder.",
+            "minLength": 100,
+            "aiPrompt": "Check if the student uses the'Save you time' or'Professional partnership' frame rather than a direct request that might undermine the Champion's authority."
+        }
+    ]
+}

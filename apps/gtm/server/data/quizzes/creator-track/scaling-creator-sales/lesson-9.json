@@ -1,0 +1,99 @@
+{
+    "lessonId": "9",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 9: Systems and SOPs for Sales Teams",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "According to the lesson, which five SOPs are essential for every creator sales team?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Content creation, social media posting, email marketing, website updates, and analytics review"
+                },
+                {
+                    "id": "b",
+                    "text": "Lead response, qualification, no-show recovery, objection handling, and post-close"
+                },
+                {
+                    "id": "c",
+                    "text": "Hiring, training, performance review, termination, and payroll"
+                },
+                {
+                    "id": "d",
+                    "text": "CRM setup, dashboard creation, call recording, team meetings, and client delivery"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The five essential Sales SOPs are: Lead Response (how quickly and what to say), Qualification (exact questions and criteria), No-Show Recovery (follow-up sequence and timing), Objection Handling (top 5-10 objections with response frameworks), and Post-Close (payment, onboarding handoff, CRM updates)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "Your closer's call scorecard shows consistent scores of 4-5 on opening, rapport, offer presentation, and closing, but a score of 2 on discovery depth for three consecutive weeks. Based on the lesson's coaching framework, what should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing -- their overall scores are strong enough and close rate is likely fine"
+                },
+                {
+                    "id": "b",
+                    "text": "Identify discovery depth as a coaching priority in the weekly one-on-one and focus on pattern improvement, not individual incidents"
+                },
+                {
+                    "id": "c",
+                    "text": "Replace the closer with someone who has better discovery skills"
+                },
+                {
+                    "id": "d",
+                    "text": "Remove discovery from the call scorecard since it is the only weak area"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson states to 'focus on patterns, not individual incidents.' A score of 2 on discovery depth for three consecutive weeks is a clear pattern. The correct response is to make it a coaching priority in the weekly one-on-one session, working with the closer to improve their discovery questioning technique."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "Your weekly pipeline review reveals: 40 new leads last week, 15 bookings set, 10 calls happened (5 no-shows), and 3 deals closed. Using the pipeline health metrics from the lesson, which metric is furthest below the target range?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Lead-to-Booking Rate (37.5%) -- target is 30-50%, so this is within range"
+                },
+                {
+                    "id": "b",
+                    "text": "Close Rate (30%) -- target is 25-40%, so this is within range"
+                },
+                {
+                    "id": "c",
+                    "text": "Show Rate (66.7%) -- target is 75-85%, making this the metric furthest below target"
+                },
+                {
+                    "id": "d",
+                    "text": "All metrics are within target range, so no action is needed"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Lead-to-Booking: 15/40 = 37.5% (within 30-50% target). Show Rate: 10/15 = 66.7% (below 75-85% target by 8+ points). Close Rate: 3/10 = 30% (within 25-40% target). The show rate at 66.7% is the metric furthest below its target range, indicating a setter process problem with confirmation, pre-call engagement, or qualification quality."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft your No-Show Recovery SOP. Write the exact sequence of follow-up actions your setter should take when a prospect misses a booked call, including: (1) timing of each follow-up attempt (e.g., 5 minutes after no-show, 24 hours later), (2) the communication channel for each attempt (text, email, call), (3) the tone and key message of each touchpoint, and (4) at what point the lead moves to the nurture sequence instead of active recovery.",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student's No-Show Recovery SOP is specific enough to be handed to a setter and executed without additional interpretation. Check for: timing specificity (not just 'follow up soon'), appropriate channel selection (texts have higher open rates than email for urgent follow-up), tone that is persistent without being aggressive, and a clear cutoff point for moving to nurture. If the SOP is vague, ask them to add specific time intervals and message templates. If it is too aggressive (calling 5 times in one day), coach them toward a balanced approach."
+        }
+    ]
+}

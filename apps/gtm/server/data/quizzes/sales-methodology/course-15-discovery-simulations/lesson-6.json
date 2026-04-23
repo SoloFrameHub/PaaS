@@ -1,0 +1,153 @@
+{
+    "lessonId": "6",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 6: Industry-Specific Discovery Practice",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary benefit of using industry-specific vocabulary (lingo) during discovery?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes your product sound more expensive and exclusive."
+                },
+                {
+                    "id": "b",
+                    "text": "It positions you as a specialist peer rather than a generic vendor, building immediate credibility."
+                },
+                {
+                    "id": "c",
+                    "text": "It confuses the prospect so they stop asking hard questions."
+                },
+                {
+                    "id": "d",
+                    "text": "It allows you to bypass the discovery phase entirely."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Speaking the prospect's language proves you understand their world and the nuances of their daily challenges."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of these follows the 'Symptom-Lead' questioning pattern?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'I'm noticing many [Industry] teams struggling with [Trend]. Is that showing up for you in your [Process]?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'Do you have any problems I can solve for you today?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'Our tool is the best in the [Industry] market. Don't you agree?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Tell me every single thing that is wrong with your company.'"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Citing a vertical trend before asking for validation demonstrates expertise and invites the prospect to share their specific situation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "When configuring an industry-specific simulation, why should you identify 'Vertical-Specific Triggers'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find out when the prospect's birthday is."
+                },
+                {
+                    "id": "b",
+                    "text": "To understand the seasonal or regulatory pressures (like audits or algorithm shifts) that drive urgency for a solution."
+                },
+                {
+                    "id": "c",
+                    "text": "To determine which social media platform the prospect is most active on."
+                },
+                {
+                    "id": "d",
+                    "text": "To identify which competitor is currently winning the market."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Industry-specific triggers provide the 'Why Now?' for a purchase decision, which is critical for qualification."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "In a 'Multi-Stakeholder' industry scenario, what is the 'Technical Gatekeeper' usually concerned with?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The company's social media presence."
+                },
+                {
+                    "id": "b",
+                    "text": "The long-term branding strategy."
+                },
+                {
+                    "id": "c",
+                    "text": "Ease of implementation, stack compatibility, and security/compliance."
+                },
+                {
+                    "id": "d",
+                    "text": "The office floor plan and physical security."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Technical gatekeepers focus on the 'How' and the 'Safety' of a solution, whereas economic buyers focus on return on investment."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is an 'Insight' question in the context of vertical discovery?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A question that reveals a surface-level problem."
+                },
+                {
+                    "id": "b",
+                    "text": "A question that asks the prospect for their personal opinion on the news."
+                },
+                {
+                    "id": "c",
+                    "text": "A question that challenges a common industry assumption to reveal a deeper root cause."
+                },
+                {
+                    "id": "d",
+                    "text": "A question about the prospect's budget."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Insight questions show that you don't just know the industry—you understand the underlying dynamics better than the average vendor."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Identify 5 specific 'Lingo' terms for your primary industry. Draft one 'Symptom-Lead' question using these terms that aims to uncover a common bottleneck in your vertical. Explain why an 'Expert' in your field would ask this question differently than a 'Generalist' salesperson.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's industry-specific lingo choice. Confirm the 'Symptom-Lead' question correctly cites a trend and validates it. Provide one suggestion for a 'Cost of Ignorance' follow-up question."
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How is sleep efficiency calculated?",
+            "options": [
+                { "id": "opt1", "text": "Total sleep time minus time spent awake" },
+                { "id": "opt2", "text": "(Total sleep time / time in bed) × 100" },
+                { "id": "opt3", "text": "Number of sleep cycles completed per night" },
+                { "id": "opt4", "text": "Deep sleep hours divided by total sleep hours" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep efficiency is calculated as (Total Sleep Time / Time in Bed) × 100. For example, sleeping 6.5 hours out of 8 hours in bed gives you about 81% sleep efficiency."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is Non-Sleep Deep Rest (NSDR)?",
+            "options": [
+                { "id": "opt1", "text": "A type of medication for sleep" },
+                { "id": "opt2", "text": "Lying quietly with eyes closed, which is still restorative even without sleeping" },
+                { "id": "opt3", "text": "The deepest stage of NREM sleep" },
+                { "id": "opt4", "text": "A form of vigorous exercise before bed" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Non-Sleep Deep Rest (NSDR) is lying quietly in bed with eyes closed. Research shows this still allows your body to enter parasympathetic mode, reduce cortisol, and support recovery -- even without sleeping."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the most powerful tool for resetting your circadian clock after jet lag?",
+            "options": [
+                { "id": "opt1", "text": "Taking melatonin supplements" },
+                { "id": "opt2", "text": "Morning sunlight at your destination" },
+                { "id": "opt3", "text": "Sleeping as much as possible on arrival" },
+                { "id": "opt4", "text": "Exercising vigorously before bed" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Morning sunlight at your destination is the most powerful tool for rapid adjustment after travel. Light is the strongest signal to reset your circadian clock."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you protect above all else during high-stress periods?",
+            "options": [
+                { "id": "opt1", "text": "Your exercise routine" },
+                { "id": "opt2", "text": "Your wind-down ritual" },
+                { "id": "opt3", "text": "Your caffeine intake" },
+                { "id": "opt4", "text": "Your social calendar" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "During high-stress periods, protecting your wind-down ritual is the most important strategy. It creates a buffer between stress and rest and becomes even more important when your mind is racing."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What are the four categories of your personalized sleep toolkit?",
+            "options": [
+                { "id": "opt1", "text": "Morning, afternoon, evening, and nighttime tools" },
+                { "id": "opt2", "text": "Foundational, mental, environmental, and wellness tools" },
+                { "id": "opt3", "text": "Physical, emotional, social, and spiritual tools" },
+                { "id": "opt4", "text": "Prevention, intervention, recovery, and maintenance tools" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your personalized sleep toolkit spans four categories: foundational tools (sleep diary, sleep window), mental tools (3 C's, Cognitive Shuffle), environmental tools (stimulus control, sleep sanctuary), and wellness tools (nutrition, NSDR)."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "8",
+    "title": "Your Resilient and Adaptable Sleep System - Quiz"
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2024 Oxford University study of 46,336 workers find about individual well-being interventions (mindfulness apps, resilience training)?",
+            "options": [
+                {"id": "opt1", "text": "They completely eliminated burnout in all participants"},
+                {"id": "opt2", "text": "Participants appeared no better off than non-participants on multiple wellbeing indicators"},
+                {"id": "opt3", "text": "They worked perfectly for everyone who tried them"},
+                {"id": "opt4", "text": "They were more effective than organizational interventions"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The landmark 2024 study found that participants in individual well-being interventions appeared no better off than non-participants on multiple well-being indicators. The researchers concluded that individual interventions do not add job resources adequate to counter excessive job demands. Organizations have to change the workplace, not just the worker."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to research, which organizational intervention shows the LARGEST effect on reducing burnout exhaustion?",
+            "options": [
+                {"id": "opt1", "text": "Offering mindfulness programs to employees"},
+                {"id": "opt2", "text": "Workload-targeting interventions (reducing workload volume)"},
+                {"id": "opt3", "text": "Providing free gym memberships"},
+                {"id": "opt4", "text": "Encouraging employees to manage their time better"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A 2023 meta-analysis found that workload-targeting interventions produced the largest effect on reducing exhaustion — larger than work schedule changes, supervisor training, or any other organizational approach. Workload reduction directly addresses the mechanism: excessive workload → sustained energy expenditure → exhaustion → burnout."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the difference between 'challenging demands' and 'hindering demands'?",
+            "options": [
+                {"id": "opt1", "text": "Challenging demands are easy; hindering demands are hard"},
+                {"id": "opt2", "text": "Challenging demands stretch your skills and lead to growth with adequate resources; hindering demands drain energy without contributing to development or achievement"},
+                {"id": "opt3", "text": "Challenging demands are individual problems; hindering demands are organizational problems"},
+                {"id": "opt4", "text": "There is no difference — all demands are harmful"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Challenging demands stretch you and lead to growth when you have adequate resources (they're meaningful, temporary, supported, and growth-oriented). Hindering demands drain energy, create frustration, and interfere with goal achievement without contributing to development (they're chronic, unsupported, frustrating, and imposed). The distinction helps you recognize when demands are genuinely developmental versus depleting."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a STRUCTURAL organizational problem that individuals CANNOT fix through coping skills?",
+            "options": [
+                {"id": "opt1", "text": "Your personal time management habits"},
+                {"id": "opt2", "text": "Chronic understaffing set by organizational resource allocation"},
+                {"id": "opt3", "text": "Your own boundary-setting skills"},
+                {"id": "opt4", "text": "Your personal stress management techniques"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic understaffing is a structural organizational problem determined by resource allocation, hiring decisions, and capacity planning. Individuals cannot compensate for missing staff positions through personal coping, time management, or resilience. This requires organizational action: hire adequate staff, redistribute workload, or adjust service expectations to match capacity."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about a recent stressful experience at work. Was the primary cause something YOU could control (your response, communication, skills), or was it STRUCTURAL (workload set by others, staffing levels, management decisions, organizational policy)? How does this distinction change how you think about the situation?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "3",
+    "title": "Workload and Structural Drivers — Organizational Responsibility - Quiz"
+}

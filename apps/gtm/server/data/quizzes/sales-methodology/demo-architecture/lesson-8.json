@@ -1,0 +1,134 @@
+{
+    "lessonId": "8",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "The Demo Dojo: AI Roleplay",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of the 'Demo Dojo'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To watch movies"
+                },
+                {
+                    "id": "b",
+                    "text": "To practice your demo flow in a low-stakes environment against an AI"
+                },
+                {
+                    "id": "c",
+                    "text": "To record demos for customers"
+                },
+                {
+                    "id": "d",
+                    "text": "To build the product"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You don't want to practice on real leads. That burns cash. The Dojo allows you to get the 'reps' in without risking real opportunities."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When roleplaying, what should you focus on first?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Speed"
+                },
+                {
+                    "id": "b",
+                    "text": "The Structure (Tell-Show-Tell)"
+                },
+                {
+                    "id": "c",
+                    "text": "Being funny"
+                },
+                {
+                    "id": "d",
+                    "text": "Handling objections"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Before you get fancy with humor or objection handling, you must master the core mechanics of the demo structure. Nail the blocks first."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do you know if you are talking too much?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "If the AI interrupts you"
+                },
+                {
+                    "id": "b",
+                    "text": "Review your 'Talk-to-Listen' ratio afterwards (or notice if you haven't asked a question in 5 mins)"
+                },
+                {
+                    "id": "c",
+                    "text": "You get thirsty"
+                },
+                {
+                    "id": "d",
+                    "text": "The internet disconnects"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A healthy demo is a conversation, not a monologue. Tools like Gong (or our AI feedback) will flag if your monologue streaks are top long."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'Game Tape'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A video game"
+                },
+                {
+                    "id": "b",
+                    "text": "Recording your practice sessions (and real calls) to review them objectively"
+                },
+                {
+                    "id": "c",
+                    "text": "Sticky tape for your desk"
+                },
+                {
+                    "id": "d",
+                    "text": "A sales tactic"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Just like athletes watch game tape to fix their form, founders must watch their own demos to spot 'umms', mouse wiggling, and missed buying signals."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If the AI gives you a tough objection, what should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Quit the session"
+                },
+                {
+                    "id": "b",
+                    "text": "Practice the 'Clarify and Isolate' technique"
+                },
+                {
+                    "id": "c",
+                    "text": "Yell at the AI"
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore it"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The point of the Dojo is to simulate the 'Hard Mode'. Use the frameworks you learned (Clarify, Isolate, Reframe) to navigate the objection."
+        }
+    ],
+    "passingScore": 70
+}

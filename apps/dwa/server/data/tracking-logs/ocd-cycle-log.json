@@ -1,0 +1,73 @@
+{
+  "id": "ocd-cycle-log",
+  "title": "OCD Cycle Mapping Log",
+  "description": "Track your OCD episodes by mapping the full cycle: trigger, obsession, distress, compulsion, and the short-term and long-term effects. This builds awareness of your patterns and can be a valuable tool to bring to your therapist.",
+  "instructions": "After an OCD episode (or when you notice yourself in the cycle), complete this log. The goal is awareness, not judgment. You can bring completed logs to your OCD therapist to help guide treatment.",
+  "frequency": "per-episode",
+  "fields": [
+    {
+      "id": "date",
+      "label": "When did this happen?",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Tuesday 2:30 PM"
+    },
+    {
+      "id": "trigger",
+      "label": "Trigger — What situation, sensation, or thought started the cycle?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Leaving the house, touching a doorknob, being near a family member, a random image that popped into my head"
+    },
+    {
+      "id": "obsession",
+      "label": "Obsession — What intrusive thought, image, or urge appeared?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., 'What if I left the stove on?', 'What if I hurt someone?', an unwanted image, a feeling that something isn't 'right'"
+    },
+    {
+      "id": "distressType",
+      "label": "Distress — What emotions did you feel?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "anxiety", "label": "Anxiety — fear, dread, panic" },
+        { "value": "guilt", "label": "Guilt — feeling like a bad person" },
+        { "value": "disgust", "label": "Disgust — feeling contaminated or 'wrong'" },
+        { "value": "incompleteness", "label": "Incompleteness — 'not just right' feeling" },
+        { "value": "uncertainty", "label": "Uncertainty — inability to feel sure enough" },
+        { "value": "multiple", "label": "Multiple emotions" }
+      ]
+    },
+    {
+      "id": "distressLevel",
+      "label": "Distress level (1 = mild discomfort, 10 = worst distress ever)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "compulsion",
+      "label": "Compulsion — What did you do to try to reduce the distress?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Checked the stove 5 times, washed hands for 10 minutes, asked my partner for reassurance, mentally reviewed the event, avoided the situation"
+    },
+    {
+      "id": "shortTermEffect",
+      "label": "Short-term effect — Did the compulsion reduce your distress temporarily?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., Yes, felt relieved for about 20 minutes, then the doubt came back"
+    },
+    {
+      "id": "longTermEffect",
+      "label": "Long-term effect — What did OCD demand next time?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., Next time I needed to check 7 times instead of 5, the avoidance expanded to new situations, I spent even longer on the ritual"
+    }
+  ]
+}

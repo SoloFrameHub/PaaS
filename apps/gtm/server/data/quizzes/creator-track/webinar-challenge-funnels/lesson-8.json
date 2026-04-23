@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Evergreen Webinar Systems Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the minimum number of live webinar runs recommended before transitioning to an evergreen system?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2 live runs to test the basic concept"
+                },
+                {
+                    "id": "b",
+                    "text": "5 live runs to gather initial feedback"
+                },
+                {
+                    "id": "c",
+                    "text": "At least 10 live runs with a consistent 5%+ conversion rate"
+                },
+                {
+                    "id": "d",
+                    "text": "20+ live runs to ensure statistical significance"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson recommends at least 10 live runs before going evergreen. The first 3-5 runs refine timing, stories, and content. Runs 6-10 optimize the pitch and close. You also need a consistent 5%+ conversion rate, because automating a webinar that doesn't convert just scales the failure."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which authenticity principle addresses the backlash against fake urgency in evergreen webinars?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Use more sophisticated countdown timers that look more realistic"
+                },
+                {
+                    "id": "b",
+                    "text": "Replace fake evergreen countdowns with cohort-based deadlines that are real and legitimate"
+                },
+                {
+                    "id": "c",
+                    "text": "Remove all urgency elements entirely since evergreen content should sell itself"
+                },
+                {
+                    "id": "d",
+                    "text": "Add fake chat messages to simulate a live audience and create FOMO"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Instead of fake countdown timers that reset for every visitor, the lesson recommends using cohort-based deadlines: 'The next cohort starts on [date]. Enrollment closes [date].' This creates real urgency that is honest and maintains trust, unlike the fake scarcity tactics that have eroded audience trust across the industry."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Evergreen-to-Live' hybrid model, what role does the automated webinar play?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It replaces all live events entirely"
+                },
+                {
+                    "id": "b",
+                    "text": "It serves as the top of the funnel for education and belief-building, with a CTA to register for the next live event that closes the sale"
+                },
+                {
+                    "id": "c",
+                    "text": "It serves as a backup for people who missed the live event"
+                },
+                {
+                    "id": "d",
+                    "text": "It is shown only to people who have already purchased to reinforce their buying decision"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In the Evergreen-to-Live hybrid model, the automated webinar does the heavy lifting of education and belief-building on autopilot. At the end, instead of (or in addition to) a direct checkout, the CTA directs viewers to register for a live event that provides the energy, social proof, and urgency needed to close the sale."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Assess your readiness for an evergreen webinar system using the four criteria from the lesson (10+ live presentations, 5%+ conversion rate, validated offer, backlog of proof). If you are not yet ready, describe your plan to get there. If you are ready, describe which model you would choose (pure evergreen, on-demand masterclass, or a hybrid) and why it fits your business.",
+            "minLength": 100,
+            "aiPrompt": "The student should honestly assess their readiness against the four criteria. If not ready, they should outline a realistic plan with specific milestones. If ready, they should justify their model choice with reasoning tied to their specific business situation. Evaluate whether the assessment is honest (not aspirational) and whether the chosen model or readiness plan makes sense given the student's described situation."
+        }
+    ]
+}

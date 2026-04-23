@@ -1,0 +1,111 @@
+{
+  "id": "sleep-diary",
+  "title": "Sleep Diary",
+  "description": "Track your sleep patterns daily to identify areas for improvement. Complete each morning within 30 minutes of waking.",
+  "instructions": "Answer the following questions about last night's sleep. Try to be as accurate as possible, but estimates are fine.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "bedTime",
+      "label": "What time did you get into bed?",
+      "type": "time",
+      "required": true
+    },
+    {
+      "id": "trySleepTime",
+      "label": "What time did you try to go to sleep?",
+      "type": "time",
+      "required": true
+    },
+    {
+      "id": "sleepOnsetMinutes",
+      "label": "How long did it take to fall asleep?",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 480,
+      "unit": "minutes",
+      "placeholder": "e.g., 20"
+    },
+    {
+      "id": "awakenings",
+      "label": "How many times did you wake up during the night?",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 20,
+      "placeholder": "e.g., 2"
+    },
+    {
+      "id": "wasoMinutes",
+      "label": "Total time awake during the night (after falling asleep)?",
+      "type": "number",
+      "required": true,
+      "min": 0,
+      "max": 480,
+      "unit": "minutes",
+      "placeholder": "e.g., 30"
+    },
+    {
+      "id": "finalAwakeTime",
+      "label": "What time was your final awakening?",
+      "type": "time",
+      "required": true
+    },
+    {
+      "id": "outOfBedTime",
+      "label": "What time did you get out of bed for the day?",
+      "type": "time",
+      "required": true
+    },
+    {
+      "id": "sleepQuality",
+      "label": "Rate your overall sleep quality",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very poor",
+        "2": "Poor",
+        "3": "Fair",
+        "4": "Good",
+        "5": "Very good"
+      }
+    },
+    {
+      "id": "sleepAids",
+      "label": "Did you use any sleep aids? (medication, alcohol, supplements, etc.)",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., melatonin 3mg, or leave blank if none"
+    }
+  ],
+  "derivedMetrics": [
+    {
+      "id": "timeInBed",
+      "label": "Time in Bed",
+      "formula": "timeInBed",
+      "unit": "min"
+    },
+    {
+      "id": "totalSleepTime",
+      "label": "Total Sleep Time",
+      "formula": "totalSleepTime",
+      "unit": "min"
+    },
+    {
+      "id": "sleepEfficiency",
+      "label": "Sleep Efficiency",
+      "formula": "sleepEfficiency",
+      "unit": "%",
+      "thresholds": [
+        { "min": 90, "max": 100, "label": "Excellent", "color": "green" },
+        { "min": 85, "max": 89, "label": "Good", "color": "yellow" },
+        { "min": 75, "max": 84, "label": "Fair", "color": "orange" },
+        { "min": 0, "max": 74, "label": "Needs Improvement", "color": "red" }
+      ]
+    }
+  ],
+  "disclaimer": "This sleep diary is an educational self-tracking tool. If you have persistent sleep problems, consult a healthcare provider. If you are in crisis, call or text 988."
+}

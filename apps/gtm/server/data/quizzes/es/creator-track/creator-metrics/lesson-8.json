@@ -1,0 +1,91 @@
+{
+  "lessonId": "8",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Tu Manual de Métricas",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "El marco de los 5 Métricas del Viernes recomienda rastrear métricas en tres categorías. ¿Cuál es la distribución correcta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 métricas de Entrada, 1 métrica de Proceso, 1 métrica de Salida"
+        },
+        {
+          "id": "b",
+          "text": "2 métricas de Entrada, 2 métricas de Proceso, 1 métrica de Salida"
+        },
+        {
+          "id": "c",
+          "text": "1 métrica de Entrada, 2 métricas de Proceso, 2 métricas de Salida"
+        },
+        {
+          "id": "d",
+          "text": "1 métrica de Entrada, 1 métrica de Proceso, 3 métricas de Salida"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El marco de los 5 Métricas del Viernes usa 2 métricas de Entrada (indicadores adelantados que miden actividades que impulsan el negocio), 2 métricas de Proceso (medidas de eficiencia que muestran qué tan bien las entradas se convierten en salidas), y 1 métrica de Salida (el resultado de ingresos o adyacente a ingresos). Esta estructura asegura que rastrees todo el pipeline, no solo el resultado final."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "La lección recomienda la 'Regla del 10%' para establecer objetivos. Un creador tiene una tasa de cierre base del 22%. ¿Cuál debería ser su objetivo a 90 días y cuál es la tasa de cierre proyectada después de 4 trimestres de alcanzar este objetivo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24.2% a los 90 días; aproximadamente 32% después de 4 trimestres"
+        },
+        {
+          "id": "b",
+          "text": "32% a los 90 días; aproximadamente 42% después de 4 trimestres"
+        },
+        {
+          "id": "c",
+          "text": "25% a los 90 días; aproximadamente 30% después de 4 trimestres"
+        },
+        {
+          "id": "d",
+          "text": "27% a los 90 días; aproximadamente 35% después de 4 trimestres"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La Regla del 10% establece el objetivo de cada trimestre en un 10% por encima de la línea base actual. 22% x 1.10 = 24.2% a los 90 días. Componiendo: 22% -> 24.2% -> 26.6% -> 29.3% -> 32.2% después de 4 trimestres. La lección señala que un 10% por trimestre se compone a aproximadamente un 46% de mejora por año, haciendo este enfoque tanto alcanzable como transformador."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según la 'Regla de las 8 Semanas' y el marco de optimizar vs pivotar, ¿cuándo debería un creador pivotar en lugar de seguir optimizando?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Después de 2 semanas de desempeño por debajo del referente en cualquier métrica"
+        },
+        {
+          "id": "b",
+          "text": "Cuando las métricas están dramáticamente por debajo de los referentes después de 8+ semanas de optimización y 3+ cambios diferentes no han movido la aguja"
+        },
+        {
+          "id": "c",
+          "text": "Cuando una sola métrica cae por debajo del referente de la industria"
+        },
+        {
+          "id": "d",
+          "text": "Después de 4 semanas de pruebas, sin importar los resultados"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La lección recomienda pivotar cuando las métricas están dramáticamente por debajo de los referentes y no han mejorado a pesar de 8+ semanas de optimización, múltiples métricas están fallando simultáneamente (sugiriendo un problema sistémico), y has probado 3+ optimizaciones diferentes en la misma métrica sin resultados. La Regla de las 8 Semanas da 4 semanas para implementar y 4 semanas para medir antes de juzgar."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Diseña tu panel personal de los 5 Métricas del Viernes usando el marco de Entrada (2) / Proceso (2) / Salida (1). Lista tus 5 métricas específicas, explica por qué elegiste cada una, y describe la única restricción (cuello de botella) que crees que actualmente está limitando tu crecimiento. ¿Cuál es la acción específica que tomarás la próxima semana para abordarla?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante seleccionó 5 métricas que siguen correctamente la estructura Entrada/Proceso/Salida y son relevantes para su modelo de negocio específico. Verifica que las métricas elegidas sean medibles (no vagas como 'engagement') y que hayan identificado un cuello de botella genuino basado en su análisis de métricas. La acción debe ser específica, con plazo definido, y abordar directamente el cuello de botella en lugar de ser una mejora general."
+    }
+  ]
+}

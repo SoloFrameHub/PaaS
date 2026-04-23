@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "The Creator's Sales Identity Crisis",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Creator's Identity Split' described in this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The gap between what creators charge and what they are worth"
+                },
+                {
+                    "id": "b",
+                    "text": "The uncomfortable gap between the Maker Identity (I create things that matter) and the market's demand that you also become a seller"
+                },
+                {
+                    "id": "c",
+                    "text": "The difference between B2B and B2C sales strategies"
+                },
+                {
+                    "id": "d",
+                    "text": "The split between working on your business and working in your business"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Creator's Identity Split is the tension between who you believe you are (a maker whose value comes from creative work) and who the market requires you to become (someone who prices, pitches, and sells that work). This conflict drives much of the sales avoidance creators experience."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the three dysfunctional sales personas avoids selling entirely and hopes the work will sell itself?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Apologizer"
+                },
+                {
+                    "id": "b",
+                    "text": "The Mimic"
+                },
+                {
+                    "id": "c",
+                    "text": "The Ghost"
+                },
+                {
+                    "id": "d",
+                    "text": "The Perfectionist"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Ghost builds an audience and creates content consistently but disappears when it is time to make an offer. Their underlying belief is 'if my work is good enough, people will just buy without me having to ask.' This is one of the most common patterns among creators."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does the lesson reframe the relationship between sales and creation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sales and creation are opposing forces that must be balanced"
+                },
+                {
+                    "id": "b",
+                    "text": "Sales is a necessary evil that creators must learn to tolerate"
+                },
+                {
+                    "id": "c",
+                    "text": "Sales is the final creative act -- the bridge that connects your creation to its intended audience"
+                },
+                {
+                    "id": "d",
+                    "text": "Creators should hire salespeople so they can focus exclusively on creation"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson reframes sales not as the opposite of creation but as its completion. A course on your hard drive helps no one. Sales is the delivery mechanism that connects your work to the people who need it, making it a creative act of service rather than a betrayal of your identity."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Identify which of the three dysfunctional sales personas (Apologizer, Ghost, or Mimic) you most relate to, and describe a specific situation from the last 90 days where this pattern showed up in your behavior. What was the cost of that behavior -- in revenue, in missed opportunities, or in how you felt about yourself afterward?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student honestly identifies their dominant dysfunctional persona and provides a specific, concrete example from their recent experience. Look for self-awareness about the behavioral pattern, not just a generic description. The response should include both the situation and a reflection on its cost (financial, emotional, or opportunity-based)."
+        }
+    ]
+}

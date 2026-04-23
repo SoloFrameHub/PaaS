@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is lipopolysaccharide (LPS) and where does it come from?",
+            "options": [
+                { "id": "opt1", "text": "A vitamin produced by beneficial gut bacteria" },
+                { "id": "opt2", "text": "A component of the outer membrane of gram-negative bacteria in the gut" },
+                { "id": "opt3", "text": "A hormone released by the brain during stress" },
+                { "id": "opt4", "text": "A type of dietary fiber found in vegetables" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "LPS is a large molecule found in the outer membrane of gram-negative bacteria in the gut. Under healthy conditions, it stays contained in the intestinal tract. When the gut barrier weakens, LPS leaks into the bloodstream (endotoxemia), triggering a powerful inflammatory cascade."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does LPS-driven inflammation specifically work against SSRI antidepressant medications?",
+            "options": [
+                { "id": "opt1", "text": "LPS chemically destroys SSRI molecules in the bloodstream" },
+                { "id": "opt2", "text": "LPS prevents SSRIs from being absorbed in the gut" },
+                { "id": "opt3", "text": "LPS and inflammatory cytokines increase serotonin transporter (SERT) activity, removing serotonin from synapses more quickly — the opposite of what SSRIs do" },
+                { "id": "opt4", "text": "LPS causes SSRIs to be excreted too rapidly through the kidneys" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "LPS and inflammatory cytokines increase the activity of the serotonin transporter (SERT), the same protein that SSRI medications target. When SERT is more active, it removes serotonin from the synaptic cleft more quickly — directly working against the mechanism SSRIs are trying to enhance."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What happens when healthy human volunteers receive low-dose LPS injection in research studies?",
+            "options": [
+                { "id": "opt1", "text": "They experience no changes at all" },
+                { "id": "opt2", "text": "They develop permanent depression requiring long-term treatment" },
+                { "id": "opt3", "text": "They develop temporary depressive symptoms, negative mood shifts, and increased sensitivity to social threat within hours" },
+                { "id": "opt4", "text": "They experience improved mood and energy for several days" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Even low-dose LPS injection in healthy volunteers produces temporary depressive symptoms, negative mood shifts, and increased sensitivity to social threat within hours. These effects resolve as the immune response subsides, demonstrating how quickly inflammation can affect mood and behavior without any psychological stressor."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "LPS disrupts both serotonin and dopamine signaling. Which combination of symptoms does this dual disruption help explain?",
+            "options": [
+                { "id": "opt1", "text": "Increased appetite and weight gain" },
+                { "id": "opt2", "text": "Low mood (serotonin-related) combined with reduced motivation and pleasure (dopamine-related)" },
+                { "id": "opt3", "text": "Improved sleep quality and increased social engagement" },
+                { "id": "opt4", "text": "Enhanced memory and faster cognitive processing" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "LPS-driven inflammation increases both serotonin transporter (SERT) and dopamine transporter (DAT) activity, reducing both serotonin and dopamine signaling. This mirrors the core profile of depression: low mood (serotonin) combined with reduced motivation and pleasure, or anhedonia (dopamine)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is chronic NSAID use (like ibuprofen) paradoxically problematic for addressing gut-driven inflammation?",
+            "options": [
+                { "id": "opt1", "text": "NSAIDs are too expensive for long-term use" },
+                { "id": "opt2", "text": "NSAIDs only work for 24 hours and then stop being effective" },
+                { "id": "opt3", "text": "Chronic NSAID use can actually increase gut permeability, potentially worsening LPS translocation" },
+                { "id": "opt4", "text": "NSAIDs kill all gut bacteria, both beneficial and harmful" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "While NSAIDs reduce inflammation, chronic use can paradoxically increase gut permeability, potentially worsening the very problem (LPS translocation) that drives gut-related inflammation. This is why dietary and lifestyle approaches are preferable for long-term gut-brain health."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "7",
+    "title": "Leaky Gut and Inflammation: The LPS Connection - Quiz"
+}

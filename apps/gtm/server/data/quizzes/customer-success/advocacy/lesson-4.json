@@ -1,0 +1,82 @@
+{
+  "lessonId": "4",
+  "courseId": "advocacy",
+  "sectionId": "customer-success",
+  "title": "Video Testimonials on a Budget",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much more effective are video testimonials compared to written testimonials at converting prospects?",
+      "options": [
+        { "id": "a", "text": "50% more effective" },
+        { "id": "b", "text": "2x more effective" },
+        { "id": "c", "text": "5x more effective" },
+        { "id": "d", "text": "10x more effective" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Video testimonials convert 2x better than written testimonials because viewers see real emotion, body language, and authenticity. They're harder to fake, and buyers know it."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What percentage of social videos are watched without sound, making subtitles essential?",
+      "options": [
+        { "id": "a", "text": "30%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "80%" },
+        { "id": "d", "text": "95%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "80% of social videos are watched muted. Adding subtitles is essential for accessibility and engagement — without them, most viewers on social platforms won't understand your video testimonial."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When editing a 10-minute video testimonial, what should you focus on most according to the 80/20 rule?",
+      "options": [
+        { "id": "a", "text": "Adding professional transitions and effects" },
+        { "id": "b", "text": "Removing filler words like 'um' and 'uh'" },
+        {
+          "id": "c",
+          "text": "Cutting to the best moments with specific results and emotion"
+        },
+        { "id": "d", "text": "Adding background music and branded graphics" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "80% of the impact comes from cutting to the strongest moments — specific results, emotional reactions, and clear recommendations. The rest (filler removal, subtitles, lower-thirds) is polish."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You need a professional videographer to create effective video testimonials.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. An iPhone with good lighting is sufficient. Video testimonials are about authenticity, not production value. A real person in a real office, even if slightly imperfect, is more credible than a professionally produced corporate video."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What is the ideal target length for a final edited video testimonial?",
+      "options": [
+        { "id": "a", "text": "15-30 seconds" },
+        { "id": "b", "text": "60-90 seconds" },
+        { "id": "c", "text": "3-5 minutes" },
+        { "id": "d", "text": "10+ minutes" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The target length is 60-90 seconds. This is long enough to cover the challenge, result, and recommendation, but short enough to hold viewer attention across all deployment surfaces."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe which video collection method (Loom, VideoAsk, Zoom, or smartphone) would work best for your customers and why. Include how you would handle a customer who says 'I'm not comfortable on camera.'",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response selects a method appropriate to their customer base's technical comfort level, provides a clear rationale, and demonstrates empathy in handling the camera-shy objection. Look for elements like offering editing control, approval before publishing, and low-pressure alternatives."
+    }
+  ]
+}

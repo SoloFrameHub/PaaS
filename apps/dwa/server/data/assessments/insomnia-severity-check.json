@@ -1,0 +1,86 @@
+{
+    "id": "insomnia-severity-check",
+    "title": "Insomnia Severity Self-Check",
+    "description": "Based on the Insomnia Severity Index (ISI), this self-check helps you understand the current severity of your sleep difficulties.",
+    "instructions": "For each question below, rate how much each has been a problem for you over the past 2 weeks.",
+    "timeframe": "past 2 weeks",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "Difficulty falling asleep"
+        },
+        {
+            "id": "q2",
+            "text": "Difficulty staying asleep"
+        },
+        {
+            "id": "q3",
+            "text": "Waking up too early in the morning"
+        },
+        {
+            "id": "q4",
+            "text": "How satisfied/dissatisfied are you with your current sleep pattern?"
+        },
+        {
+            "id": "q5",
+            "text": "How noticeable to others do you think your sleep problem is (in terms of impairing your quality of life)?"
+        },
+        {
+            "id": "q6",
+            "text": "How worried/distressed are you about your current sleep problem?"
+        },
+        {
+            "id": "q7",
+            "text": "How much does your sleep problem interfere with your daily functioning (fatigue, mood, concentration, memory, ability to function at work/daily tasks)?"
+        }
+    ],
+    "scale": {
+        "min": 0,
+        "max": 4,
+        "labels": {
+            "0": "None / Not at all",
+            "1": "Mild / A little",
+            "2": "Moderate / Somewhat",
+            "3": "Severe / Much",
+            "4": "Very severe / Very much"
+        }
+    },
+    "scoring": {
+        "maxScore": 28,
+        "bands": [
+            {
+                "min": 0,
+                "max": 7,
+                "severity": "minimal",
+                "label": "No Clinically Significant Insomnia",
+                "description": "Your responses suggest minimal or no insomnia. Continue practicing good sleep habits to maintain healthy sleep.",
+                "color": "green"
+            },
+            {
+                "min": 8,
+                "max": 14,
+                "severity": "mild",
+                "label": "Subthreshold Insomnia",
+                "description": "Your responses suggest mild sleep difficulties. The strategies in this course — especially sleep scheduling and stimulus control — can help improve your sleep. Monitor your patterns and implement changes gradually.",
+                "color": "yellow"
+            },
+            {
+                "min": 15,
+                "max": 21,
+                "severity": "moderate",
+                "label": "Moderate Insomnia",
+                "description": "Your responses suggest moderate insomnia that is likely affecting your daily functioning. The techniques in this course can help significantly. Consider also consulting a healthcare provider, especially if symptoms have persisted for more than 3 months.",
+                "color": "orange"
+            },
+            {
+                "min": 22,
+                "max": 28,
+                "severity": "severe",
+                "label": "Severe Insomnia",
+                "description": "Your responses suggest severe insomnia. While this course provides helpful strategies, please consult a healthcare provider for a comprehensive evaluation. Professional CBT-I treatment is strongly recommended for severe insomnia.",
+                "color": "red"
+            }
+        ]
+    },
+    "disclaimer": "This is an educational self-check tool based on the Insomnia Severity Index. It is NOT a clinical diagnosis. For accurate diagnosis and treatment, please consult a healthcare provider or sleep specialist."
+}

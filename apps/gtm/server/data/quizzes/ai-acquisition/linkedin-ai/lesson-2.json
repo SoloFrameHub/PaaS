@@ -1,0 +1,78 @@
+{
+  "lessonId": "2",
+  "courseId": "linkedin-ai",
+  "sectionId": "ai-acquisition",
+  "title": "AI Content Creation: Drafting Posts & Carousels",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the Voice-First Drafting Workflow?",
+      "options": [
+        { "id": "a", "text": "Using voice dictation to write posts" },
+        {
+          "id": "b",
+          "text": "Training AI on 10-20 of your best posts as style samples BEFORE asking it to generate new ones, so it drafts in YOUR voice, not corporate-speak"
+        },
+        { "id": "c", "text": "Recording video content before writing" },
+        { "id": "d", "text": "Reading posts aloud before publishing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Voice-First Workflow means feeding AI 10-20 of your best-performing posts as style samples before generating new ones. The AI learns your sentence rhythm, vocabulary, and tone, then drafts in your voice instead of its default corporate-speak. Most people skip this and get generic output."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How many LinkedIn posts can you generate in 60 minutes using the AI-assisted workflow?",
+      "options": [
+        { "id": "a", "text": "1-2 posts" },
+        { "id": "b", "text": "5-10 posts in your voice" },
+        { "id": "c", "text": "50+ posts" },
+        { "id": "d", "text": "It takes 60 minutes per post" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson promises a repeatable system to generate 5-10 LinkedIn posts in 60 minutes, in your voice, that move prospects toward your offer. This is possible because AI eliminates the 80% of content creation that's friction — blank page, structure decisions, and 'how do I start' paralysis."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the four steps of the Voice Training Protocol?",
+      "options": [
+        { "id": "a", "text": "Write, Edit, Publish, Measure" },
+        {
+          "id": "b",
+          "text": "Collect your best posts (10-20 samples), Identify your voice patterns, Create a voice guide document, Test with a calibration batch"
+        },
+        {
+          "id": "c",
+          "text": "Choose a topic, Ask AI to write, Copy-paste, Post"
+        },
+        {
+          "id": "d",
+          "text": "Research competitors, Copy their style, Adapt slightly, Post daily"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four steps are: collect 10-20 of your best posts by engagement, identify your voice patterns (sentence length, vocabulary, tone, structure, hooks), create a voice guide document for AI reference, and test with a calibration batch to refine. This prevents the generic AI content that plagues most LinkedIn profiles."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Asking ChatGPT to 'write a LinkedIn post about positioning' without voice training will produce content that sounds like your authentic voice.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Without voice training, AI defaults to generic corporate-speak that sounds like every other AI-generated post. The lesson calls this 'using AI backwards.' The pros train AI on their voice first, then generate content that maintains their authentic tone and style."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Find your top 5 LinkedIn posts by engagement. What patterns do you notice in sentence length, vocabulary, tone, structure, and hooks? Write a 3-sentence 'voice guide' that you could give to an AI to help it write in your style.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific patterns from their actual posts (not theoretical), creates a concrete voice guide with 3+ distinct characteristics (sentence length, tone, vocabulary preferences), and demonstrates understanding that voice consistency is what makes AI-generated content feel authentic."
+    }
+  ]
+}

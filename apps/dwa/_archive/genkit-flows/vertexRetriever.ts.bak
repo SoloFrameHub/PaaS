@@ -1,0 +1,121 @@
+import { ai } from './config';
+import { getCache, setCache } from '../redis';
+import { z } from 'zod';
+import { SearchServiceClient } from '@google-cloud/discoveryengine';
+import { Document } from 'genkit';
+
+const projectId = process.env.VERTEX_AI_PROJECT_ID || process.env.FIREBASE_PROJECT_ID;
+const location = process.env.VERTEX_AI_LOCATION || 'global';
+const dataStoreId = process.env.VERTEX_AI_DATA_STORE_ID;
+
+// Initialize Vertex AI Search Client
+const searchClient = new SearchServiceClient({
+    apiEndpoint: location === 'global' ? undefined : `${location}-discoveryengine.googleapis.com`,
+});
+
+interface CachedSearchResponse {
+    documents: Array<{
+        metadata: Record<string, unknown>;
+        content: Array<{ text: string }>;
+    }>;
+}
+
+interface VertexResponseField {
+    stringValue?: string;
+    listValue?: {
+        values?: Array<{
+            structValue?: {
+                fields?: {
+                    snippet?: {
+                        stringValue?: string;
+                    };
+                };
+            };
+        }>;
+    };
+}
+
+/**
+ * Custom Vertex AI Retriever
+ * Implements RAG for customer documents with caching and robust rehydration.
+ */
+export const vertexRetriever = ai.defineRetriever(
+    {
+        name: 'vertexAi/customerDocs',
+        configSchema: z.object({
+            limit: z.number().default(5),
+            filter: z.string().optional(),
+        }),
+    },
+    async (content, options) => {
+        if (!projectId || !dataStoreId) {
+            throw new Error('VERTEX_AI_PROJECT_ID or VERTEX_AI_DATA_STORE_ID is not set');
+        }
+
+        const servingConfig = `projects/${projectId}/locations/${location}/collections/default_collection/dataStores/${dataStoreId}/servingConfigs/default_search`;
+
+        const request = {
+            servingConfig,
+            query: content.text,
+            pageSize: options.limit,
+            filter: options.filter,
+            contentSearchSpec: {
+                snippetSpec: { returnSnippet: true },
+                summarySpec: { summaryResultCount: 5, includeCitations: true },
+            }
+        };
+
+        const cacheKey = `vertex-search:${JSON.stringify({ query: content.text, ...options })}`;
+        const cachedResult = await getCache<CachedSearchResponse>(cacheKey);
+
+        if (cachedResult) {
+            // Rehydrate Documents from JSON (Document class methods might be lost in JSON)
+            return {
+                documents: cachedResult.documents.map(d =>
+                    Document.fromText(d.content?.[0]?.text || '', d.metadata)
+                )
+            };
+        }
+
+        try {
+            const [results] = await searchClient.search(request);
+
+            const response = {
+                documents: (results || []).map((result) => {
+                    // Extract fields from Vertex AI proto-like structure
+                    const fields = (result.document?.derivedStructData?.fields || result.document?.structData?.fields || {}) as Record<string, VertexResponseField>;
+                    const title = fields.title?.stringValue || fields.header?.stringValue || 'Untitled';
+                    const link = fields.link?.stringValue || '';
+
+                    // Extract snippets combined into a single context string
+                    let snippet = '';
+                    const snippets = fields.snippets?.listValue?.values;
+                    if (snippets) {
+                        snippet = snippets
+                            .map(v => v.structValue?.fields?.snippet?.stringValue)
+                            .filter((s): s is string => typeof s === 'string')
+                            .join('\n');
+                    }
+
+                    // Score is mapped from result.rank if score is unavailable for rehydration
+                    const anyResult = result as Record<string, unknown>;
+                    const score = Number(anyResult.score ?? anyResult.rank ?? 0);
+
+                    return Document.fromText(snippet || JSON.stringify(fields), {
+                        title,
+                        source: link,
+                        id: result.id || '',
+                        score,
+                    });
+                }),
+            };
+
+            // Set Cache (1 hour = 3600 seconds)
+            await setCache(cacheKey, response, 3600);
+
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    }
+);

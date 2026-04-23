@@ -1,0 +1,101 @@
+{
+    "lessonId": "7",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "Reply Detection and Routing",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of positive replies go unanswered within 24 hours?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5-10%"
+                },
+                {
+                    "id": "b",
+                    "text": "15-20%"
+                },
+                {
+                    "id": "c",
+                    "text": "30-50%"
+                },
+                {
+                    "id": "d",
+                    "text": "70-80%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "30-50% of positive replies go unanswered within 24 hours. This is the biggest revenue leak in outbound — reply routing automation fixes it."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the most critical step in the reply routing automation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Creating the Slack notification"
+                },
+                {
+                    "id": "b",
+                    "text": "Updating the CRM stage"
+                },
+                {
+                    "id": "c",
+                    "text": "Pausing active outreach sequences"
+                },
+                {
+                    "id": "d",
+                    "text": "Classifying reply sentiment with AI"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pausing active sequences is the most critical step. A positive reply followed by a scheduled follow-up email (because the sequence kept running) is one of the most damaging automation failures."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "AI reply classification should be used to automatically send responses without human review.",
+            "correctAnswer": "b",
+            "explanation": "False. AI classification accuracy is 85-95% — good for routing (creating different tasks) but not reliable enough for auto-responding. Always keep human review in the response step.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which reply type requires the LOWEST urgency response task?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Positive interest expressed"
+                },
+                {
+                    "id": "b",
+                    "text": "Pricing question with team size specified"
+                },
+                {
+                    "id": "c",
+                    "text": "Out-of-office with return date in 90 days"
+                },
+                {
+                    "id": "d",
+                    "text": "Question about case studies"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Out-of-office with a 90-day return date requires a scheduled follow-up task, not an immediate response. The other three all indicate active engagement that warrants a 2-4 hour response."
+        }
+    ]
+}

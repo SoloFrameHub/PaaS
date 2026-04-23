@@ -1,0 +1,72 @@
+{
+  "lessonId": "8",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "Managing Your First Sales Rep",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of sales rep underperformance is due to management gaps, not talent gaps?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "40%" },
+        { "id": "c", "text": "70%" },
+        { "id": "d", "text": "90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "70% of sales rep underperformance is due to management gaps. Before making a fire decision, audit your own management quality. The question isn't always 'is this the right person?' — it's also 'am I managing them the right way?'"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the recommended management cadence for the first 90 days?",
+      "options": [
+        { "id": "a", "text": "Monthly check-ins only" },
+        {
+          "id": "b",
+          "text": "Weekly 30-minute 1:1 plus 2 call reviews per week"
+        },
+        { "id": "c", "text": "Daily hour-long supervision sessions" },
+        { "id": "d", "text": "No scheduled meetings — check in when needed" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Weekly 30-minute 1:1, 2 call reviews per week, and a specific coaching focus each week. Not general 'be better' feedback — one specific skill per week. The first 90 days of management determine the next 9 months."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which of these is the 'Absentee Manager' failure mode?",
+      "options": [
+        { "id": "a", "text": "Reviewing every email before it sends" },
+        {
+          "id": "b",
+          "text": "No weekly 1:1s, no call reviews, just checking meeting count at month end"
+        },
+        { "id": "c", "text": "Changing the playbook every week" },
+        { "id": "d", "text": "Requiring approval for every deal" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Absentee Manager has no 1:1s, no call reviews, no specific feedback. They check the meeting count at month end and wonder why it's low. Without frequent coaching, bad habits solidify in the first 90 days."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Hiring a sales rep frees up your time immediately from Day 1.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Month 1: 5-7 hours/week on onboarding. Month 2: 3-4 hours on supervision and coaching. Month 3+: 1-2 hours if going well. Management time decreases sharply as the hire ramps, but the early investment is necessary."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Which management failure mode are you most likely to fall into: Absentee Manager or Micromanager? What specific management cadence would you establish for your first hire's first 90 days?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly identifies their likely failure mode, designs a specific management cadence (weekly 1:1 time, call review frequency, coaching focus areas), and demonstrates understanding that early management investment prevents later performance problems."
+    }
+  ]
+}

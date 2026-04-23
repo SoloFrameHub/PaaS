@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What six tests make up the essential baseline panel for nutritional psychiatry?",
+            "options": [
+                { "id": "opt1", "text": "CBC, metabolic panel, thyroid, lipids, glucose, HbA1c" },
+                { "id": "opt2", "text": "Testosterone, estrogen, cortisol, DHEA, progesterone, and prolactin" },
+                { "id": "opt3", "text": "Omega-3 index, homocysteine, copper, IL-6, hs-CRP, and stool analysis" },
+                { "id": "opt4", "text": "Vitamin D, B12, folate, RBC magnesium, iron panel (with ferritin), and zinc" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The essential baseline panel includes vitamin D [25(OH)D], vitamin B12, folate (RBC preferred), RBC magnesium, iron panel with ferritin, and zinc. These assess the nutrients most consistently implicated in psychiatric symptoms and are available through standard laboratory services."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is the distinction between 'normal' and 'optimal' lab values critical in nutritional psychiatry?",
+            "options": [
+                { "id": "opt1", "text": "There is no meaningful distinction — normal and optimal are the same" },
+                { "id": "opt2", "text": "Standard lab reference ranges identify pathology, but optimal ranges for brain function are narrower — a 'normal' result (e.g., ferritin of 15 ng/mL) may still be suboptimal for mental health" },
+                { "id": "opt3", "text": "Optimal ranges only apply to athletes, not psychiatric patients" },
+                { "id": "opt4", "text": "Normal ranges are always too strict and should be loosened" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Standard lab reference ranges identify pathology (disease states), not optimal function. For example, a ferritin of 15 ng/mL is 'normal' by lab standards but is associated with fatigue, poor concentration, and restless legs. A vitamin D of 52 nmol/L is 'normal' but suboptimal for mood regulation. Optimal ranges for brain health (e.g., ferritin 50-150 ng/mL, vitamin D 75-100 nmol/L) are significantly narrower."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the omega-3 index measure, and what is the target for mental health?",
+            "options": [
+                { "id": "opt1", "text": "It measures EPA + DHA as a percentage of total RBC fatty acids; the target is above 8%" },
+                { "id": "opt2", "text": "It measures total fat intake; the target is below 20%" },
+                { "id": "opt3", "text": "It measures only DHA in the blood; the target is above 15%" },
+                { "id": "opt4", "text": "It measures ALA levels; the target is above 5%" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "The omega-3 index measures EPA + DHA as a percentage of total red blood cell fatty acids. An index above 8% is associated with optimal mood and cognitive function, below 4% is critical deficiency. It reflects the past 3 months of omega-3 intake, making it a stable and predictive biomarker for mental health."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What did the 2024 omega-3 anti-inflammatory meta-analysis find regarding IL-6 and TNF-alpha?",
+            "options": [
+                { "id": "opt1", "text": "Omega-3s had no effect on inflammatory markers" },
+                { "id": "opt2", "text": "Omega-3s increased IL-6 and TNF-alpha levels" },
+                { "id": "opt3", "text": "Omega-3 supplementation significantly reduced IL-6 (SMD = -0.47) and TNF-alpha (SMD = -0.56), providing the mechanistic link between EPA and antidepressant effects" },
+                { "id": "opt4", "text": "Only DHA reduced inflammation, not EPA" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 2024 meta-analysis found that omega-3 supplementation significantly reduced IL-6 (SMD = -0.47) and TNF-alpha (SMD = -0.56). These are the specific cytokines that activate the IDO enzyme (diverting tryptophan from serotonin), activate microglia, and disrupt the blood-brain barrier — providing the mechanistic bridge between EPA supplementation and the antidepressant effects observed in clinical trials."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When interpreting hs-CRP for mental health, what level indicates moderate inflammation where anti-inflammatory dietary and supplemental strategies are strongly indicated?",
+            "options": [
+                { "id": "opt1", "text": "Below 0.5 mg/L" },
+                { "id": "opt2", "text": "1.0-3.0 mg/L" },
+                { "id": "opt3", "text": "Above 10.0 mg/L" },
+                { "id": "opt4", "text": "hs-CRP has no relevance to mental health" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "An hs-CRP of 1.0-3.0 mg/L indicates moderate inflammation where anti-inflammatory dietary and supplemental strategies are strongly indicated. Below 1.0 mg/L suggests low inflammation (strategies are supportive but may not be the primary driver). Above 3.0 mg/L indicates high inflammation requiring source investigation (gut inflammation, autoimmunity, metabolic syndrome)."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "12",
+    "title": "Biomarker Testing: Your Personalized Nutrition Roadmap - Quiz"
+}

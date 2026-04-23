@@ -1,0 +1,153 @@
+{
+    "lessonId": "5",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 5: Handling Resistant Prospects",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Composure Principle' in sales discovery?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always agreeing with the prospect so they feel comfortable."
+                },
+                {
+                    "id": "b",
+                    "text": "Staying calm and maintaining your methodology when challenged, proving your professional conviction."
+                },
+                {
+                    "id": "c",
+                    "text": "Hiding your emotions so the prospect can't read your true thoughts."
+                },
+                {
+                    "id": "d",
+                    "text": "Admitting that the prospect is right even when they aren't."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your reaction to resistance tells the prospect whether you are a desperate vendor or a confident expert who believe in their solution."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "A prospect says, 'I've got 5 minutes. Get to the point.' What is the most effective response?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Panic and try to explain every feature of your product as fast as possible."
+                },
+                {
+                    "id": "b",
+                    "text": "Apologize profusely and ask to reschedule for a better time."
+                },
+                {
+                    "id": "c",
+                    "text": "Acknowledge the limit and ask one high-impact question about their biggest bottleneck to establish immediate value."
+                },
+                {
+                    "id": "d",
+                    "text": "Tell them that 5 minutes is disrespectful to your expertise."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Directly addressing the time constraint while pivoting to high-value discovery respects their time and shows you can perform under pressure."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "Why is the 'I May Not Be Right For You' reframe so powerful with skeptical prospects?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It tricks them into feeling sorry for you."
+                },
+                {
+                    "id": "b",
+                    "text": "It gives you an excuse to end the call early and avoid hard questions."
+                },
+                {
+                    "id": "c",
+                    "text": "It creates 'negative pull' by showing you aren't desperate for the deal, which paradoxically builds massive trust."
+                },
+                {
+                    "id": "d",
+                    "text": "It makes the prospect feel like they aren't 'good enough' for your product."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Willingness to walk away is a hallmark of an expert. It moves the conversation from 'selling' to 'diagnosing'."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "A prospect says, 'Your tool looks exactly like [Competitor].' How should you respond using the 'Acknowledge, Don't Argue' pattern?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'No, we are 100% different. Let me show you 10 features they don't have.'"
+                },
+                {
+                    "id": "b",
+                    "text": "'That's fair—from the outside, we look similar. The difference usually shows up in [Specific Area]. What's most important to you when comparing tools?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'[Competitor] is actually terrible and we have much better reviews.'"
+                },
+                {
+                    "id": "d",
+                    "text": "'If you like them so much, you should just buy their product.'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Joining their side of the table and providing a logical technical distinction is far more effective than defensive arguing."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "In a simulation with a 'High D' (Dominant) resistant prospect, what is the best strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Be fast-paced, goal-oriented, and don't take their challenges personally."
+                },
+                {
+                    "id": "b",
+                    "text": "Try to talk about their personal life and hobbies to soften them up."
+                },
+                {
+                    "id": "c",
+                    "text": "Wait for them to tell you what to do next."
+                },
+                {
+                    "id": "d",
+                    "text": "Use lots of flowery language and adjectives to describe your product."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "High D personalities respect directness and competence. They communicate through challenge and value outcomes over relationships."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Recall the last time a prospect pushed back or challenged you. Did you capitulate (start pitching), escalate (get defensive), or maintain your composure? Draft a 'neutralizing' response for that specific objection using the Acknowledge-Redirect pattern. How would following this pattern have changed the dynamic of that conversation?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's self-reflection. Confirm their drafted response correctly uses the Acknowledge-Redirect architecture (Agree with the validity of the thought, redirect to a diagnostic question). Suggest one follow-up 'Impact' question they could use to gain further leverage."
+        }
+    ]
+}

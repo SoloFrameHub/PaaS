@@ -1,0 +1,69 @@
+{
+  "lessonId": "9",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Preparación para la Migración",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Estás frustrado con la UI de tu CRM y quieres algo más moderno. ¿Es esta una buena razón para migrar?",
+      "options": [
+        "Sí — si la UI te ralentiza, la migración está justificada",
+        "No — las preferencias de UI no justifican 20-40 horas de trabajo de migración",
+        "Sí — pero solo si el nuevo CRM también tiene mejores funcionalidades",
+        "No — a menos que también estés alcanzando los límites de funcionalidades"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La frustración con la UI casi nunca es razón suficiente para migrar. Personaliza el panel de tu CRM actual o aprende atajos de teclado. Migra solo por brechas fundamentales de funcionalidades o razones económicas."
+    },
+    {
+      "id": "q2",
+      "question": "¿Cuál es el orden correcto para importar datos en un nuevo CRM?",
+      "options": [
+        "Contactos → Tratos → Empresas → Actividades",
+        "Empresas → Contactos → Tratos → Actividades",
+        "Tratos → Contactos → Empresas → Actividades",
+        "Actividades → Contactos → Tratos → Empresas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Importa primero los registros padre: Empresas → Contactos (asociados a empresas) → Tratos (asociados a contactos) → Actividades (asociadas a contactos/tratos). Esto evita registros huérfanos."
+    },
+    {
+      "id": "q3",
+      "question": "Tu nuevo CRM muestra 847 contactos pero tu exportación del CRM antiguo tenía 850. ¿Cuál es la causa más probable?",
+      "options": [
+        "3 contactos se corrompieron durante la exportación",
+        "El nuevo CRM tiene un límite de 847 contactos",
+        "La lógica de deduplicación automática fusionó 3 registros duplicados durante la importación",
+        "Olvidaste exportar 3 contactos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Las pequeñas discrepancias en el conteo suelen venir de la detección y fusión automática de duplicados. Revisa los registros de fusión del nuevo CRM para confirmarlo."
+    },
+    {
+      "id": "q4",
+      "question": "¿Por qué deberías ejecutar el CRM antiguo y el nuevo en paralelo durante 30 días?",
+      "options": [
+        "Para comparar cuál CRM te gusta más",
+        "Para detectar fallos de migración que surgen dentro de las 2 semanas",
+        "Para capacitar a tu equipo en ambos sistemas",
+        "Para seguir pagando ambas suscripciones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La mayoría de los fallos de migración (datos faltantes, mapeos rotos, contexto perdido) surgen dentro de las 2 semanas. Ejecutar en paralelo te da una red de seguridad para recuperar cualquier dato que no se transfirió correctamente."
+    },
+    {
+      "id": "q5",
+      "question": "¿Qué ocurre con los campos estructurados (listas desplegables, fechas, números) si no los recreas en el nuevo CRM antes de importar?",
+      "options": [
+        "Se importan como notas de texto libre, haciéndolos invisibles para los agentes de IA",
+        "Se importan correctamente pero pierden sus valores de lista desplegable",
+        "La importación falla con un error",
+        "Se importan como campos en blanco"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Si los campos estructurados no existen en el nuevo CRM, la mayoría de las herramientas de importación los aplanan en notas de texto libre. Esto destruye la preparación para IA. Siempre recrea los campos personalizados ANTES de importar."
+    }
+  ]
+}

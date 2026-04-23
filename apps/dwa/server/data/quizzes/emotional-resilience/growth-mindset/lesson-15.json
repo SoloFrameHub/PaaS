@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to attribution theory, what is the most adaptive attribution pattern for failure?",
+            "options": [
+                {"id": "opt1", "text": "Internal + Stable + Global: 'I failed because I'm inherently incompetent at everything'"},
+                {"id": "opt2", "text": "Internal + Unstable + Specific: 'I failed because of my strategy (internal), which I can change (unstable), on this particular task (specific)'"},
+                {"id": "opt3", "text": "External + Stable + Global: 'I failed because the world is against me in all ways'"},
+                {"id": "opt4", "text": "Never analyze failures—just move on immediately"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The most adaptive failure attribution is Internal + Unstable + Specific: attribute failure to changeable factors you control (internal), that can be modified (unstable), in specific domains (specific). Example: 'I failed because I used the wrong approach (changeable) on this project (specific).' This preserves agency (internal) without hopelessness (unstable = can change) or catastrophizing (specific = doesn't generalize). The maladaptive pattern is Internal + Stable + Global ('I'm inherently incompetent at everything')—this creates hopelessness. Growth mindset lives in unstable attributions."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the protective factors after failure according to systematic review research?",
+            "options": [
+                {"id": "opt1", "text": "Natural talent and high IQ"},
+                {"id": "opt2", "text": "Higher self-esteem, constructive attributional style, and lower socially-prescribed perfectionism—all supporting learning orientation over rumination"},
+                {"id": "opt3", "text": "Ability to suppress all emotions"},
+                {"id": "opt4", "text": "Avoiding all future challenges"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Systematic review of resilience to failure found strongest protective factors: (1) Higher self-esteem (stable self-worth despite failure), (2) Constructive attributional style (analyze controllable factors without catastrophizing), (3) Lower socially-prescribed perfectionism (failure doesn't equal worthlessness). These all support learning orientation (extract lessons, adjust strategy) over rumination (replay shame) or avoidance (not processing). Self-compassion (56+ RCTs) is the most evidence-backed skill for this—more effective than self-esteem enhancement alone."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does learning-oriented reflection differ from rumination after failure?",
+            "options": [
+                {"id": "opt1", "text": "They are the same process"},
+                {"id": "opt2", "text": "Learning is forward-focused, specific, and time-limited ('What will I do differently?'); rumination is backward-focused, global, and circular ('Why did this happen to me?')"},
+                {"id": "opt3", "text": "Rumination is more helpful for growth"},
+                {"id": "opt4", "text": "Learning requires no reflection—just immediate action"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Critical distinction: Learning-oriented reflection is forward-focused ('What will I do differently next time?'), specific ('This particular strategy didn't work'), problem-solving ('How can I improve?'), and time-limited (process, learn, move forward). Rumination is backward-focused ('Why did this happen to me?'), global ('I always fail,' 'I'm terrible at everything'), blame-focused ('What's wrong with me?'), and circular (endless replaying without resolution). Rumination maintains distress and predicts depression/anxiety. Learning extracts actionable insights."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is self-compassion (56+ RCTs) considered the most well-evidenced approach for post-failure wellbeing?",
+            "options": [
+                {"id": "opt1", "text": "Because it makes you stop caring about failure"},
+                {"id": "opt2", "text": "Because it treats yourself kindly during difficulty (vs. self-criticism), validates suffering without catastrophizing, and supports learning without shame—more effective than self-esteem enhancement"},
+                {"id": "opt3", "text": "Because it eliminates all negative emotions"},
+                {"id": "opt4", "text": "Self-compassion actually has weak evidence"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Self-compassion (meta-analysis of 56 RCTs) shows small-to-medium effects on depression, anxiety, and stress reduction—strongest evidence for post-failure resilience. Why: (1) Self-kindness allows acknowledging mistakes without shame (vs. self-criticism which blocks learning), (2) Common humanity normalizes struggle (vs. isolation: 'only I fail'), (3) Mindfulness holds pain without rumination or suppression. Research shows self-compassion is MORE effective than self-esteem enhancement for failure recovery because it's unconditional (doesn't depend on success). Self-compassion supports both emotional processing AND strategic learning."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Apply the 7-step post-failure protocol to a recent setback: (1) Acknowledge failure and emotions, (2) Separate controllable from uncontrollable factors, (3) Extract specific learning, (4) Distinguish learning from rumination, (5) Make specific adjustment plan, (6) Re-engage with mastery goal, (7) Practice self-compassion throughout. What did you learn? What will you change?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "15",
+    "title": "Reframing Failure: From Threat to Learning - Quiz"
+}

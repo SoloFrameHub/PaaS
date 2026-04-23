@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key difference between 'cultural competence' and 'cultural humility,' and why does the lesson advocate for the humility framework?",
+      "options": [
+        {"id": "opt1", "text": "There is no difference — the terms are interchangeable"},
+        {"id": "opt2", "text": "Cultural competence implies a fixed endpoint ('I'm now competent in [X culture]') and risks stereotyping. Cultural humility is an ongoing practice of lifelong learning, recognizing power imbalances, and being willing to be corrected — you never fully understand another's experience, but you stay curious."},
+        {"id": "opt3", "text": "Cultural competence is the goal; cultural humility is for beginners"},
+        {"id": "opt4", "text": "Cultural humility means avoiding any discussion of cultural differences"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Cultural competence implies you can achieve mastery of another culture through training — but this risks stereotyping ('all [X] people are...') and doesn't account for intersectionality. Cultural humility recognizes you can never fully understand lived experiences you haven't had. The stance: stay curious, admit what you don't know, recognize power dynamics, be willing to be corrected, and center the client's expertise on their own experience. It's a lifelong practice, not a destination."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A coach from an individualist Western culture is working with a client from a collectivist culture. The coach keeps saying 'What do YOU want, independent of what others think?' The client seems uncomfortable. What cultural assumption is the coach likely making?",
+      "options": [
+        {"id": "opt1", "text": "No assumption — this is appropriate coaching for everyone"},
+        {"id": "opt2", "text": "The coach is assuming everyone values independence and self-reliance (individualist value), not recognizing that in collectivist cultures, family interdependence and community input are valued. Better question: 'Who are the important people in your life, and how do their perspectives factor in?'"},
+        {"id": "opt3", "text": "The client is being resistant"},
+        {"id": "opt4", "text": "The coach should avoid asking about the client's desires entirely"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Individualist cultures (Western, especially US) value independence, self-sufficiency, and individual desires over family/community input. Collectivist cultures value family interdependence, community harmony, and collective decision-making. Coaching someone from a collectivist background using individualist frameworks creates values conflict. Adapt: ask how important relationships factor into their decision rather than insisting they ignore others' input. This respects their cultural context."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the lesson, what should you do when you make a cultural misstep or are corrected by a client?",
+      "options": [
+        {"id": "opt1", "text": "Become defensive and explain your intentions"},
+        {"id": "opt2", "text": "Over-apologize and center your own discomfort ('I'm so sorry, I feel terrible, I'm not a bad person...')"},
+        {"id": "opt3", "text": "Acknowledge it briefly ('I just realized I made an assumption, I apologize'), thank them for the correction ('Thank you for pointing that out'), and adjust your behavior going forward — without making them comfort you"},
+        {"id": "opt4", "text": "Ignore it and hope they forget"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "When corrected: (1) acknowledge briefly without over-explaining, (2) thank them for the feedback, (3) adjust behavior going forward. Don't become defensive (makes them regret correcting you) or over-apologize (makes them comfort YOU instead of you repairing harm). People from marginalized groups expend enormous energy deciding whether to correct others. If you react defensively or center yourself, they'll stop correcting you — but harm continues. Make it safe to give feedback."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "A coach notices their client avoids direct eye contact during sessions. In the coach's culture, this would signal disengagement or dishonesty. What is the culturally humble response?",
+      "options": [
+        {"id": "opt1", "text": "Confront the client: 'Why won't you look at me? Are you being dishonest?'"},
+        {"id": "opt2", "text": "Assume the client is disengaged and lower your expectations"},
+        {"id": "opt3", "text": "Recognize that in many cultures, avoiding direct eye contact (especially with authority figures) signals respect, not disengagement. Don't interpret this through your own cultural lens. If concerned, ask: 'I'm noticing you look away sometimes — is that comfortable for you, or would you prefer something different?'"},
+        {"id": "opt4", "text": "Force eye contact by repeatedly asking them to look at you"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Eye contact norms vary dramatically by culture. In some Western cultures, direct eye contact = engagement and honesty. In many Asian, Indigenous, African, and Middle Eastern cultures, avoiding direct eye contact (especially with elders/authority) signals respect; sustained eye contact can be aggressive or challenging. Don't interpret behavior through only your cultural lens. If genuinely unsure what's happening, ask the client with genuine curiosity, not accusation."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which of the following is an example of a class-privilege assumption that coaches should question?",
+      "options": [
+        {"id": "opt1", "text": "Assuming everyone has equal access to time, money, childcare, transportation, and internet when suggesting action steps"},
+        {"id": "opt2", "text": "Asking clients what resources they have available and what barriers they face"},
+        {"id": "opt3", "text": "Offering multiple options that accommodate different resource levels"},
+        {"id": "opt4", "text": "Recognizing that suggestions like 'join a gym,' 'hire help,' or 'take a day off' assume financial and time flexibility not everyone has"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Class-privilege assumption: believing everyone can afford gym memberships, childcare, time off work, private space, or internet access. Coaches with class privilege may not realize their suggestions require resources clients lack. Options 2, 3, and 4 demonstrate awareness. Option 1 is the assumption to question. Always ask: 'What resources do you have available? What gets in the way?' This prevents suggesting solutions the client cannot access and avoids creating shame around economic constraints."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "10",
+  "title": "Cultural Competency and Inclusive Coaching - Quiz"
+}

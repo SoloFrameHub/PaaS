@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the Effort-Reward Imbalance model, what principle is violated when high effort meets low reward?",
+            "options": [
+                {"id": "opt1", "text": "The principle of efficiency"},
+                {"id": "opt2", "text": "The principle of social reciprocity (fair exchange)"},
+                {"id": "opt3", "text": "The principle of competition"},
+                {"id": "opt4", "text": "The principle of hierarchy"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The ERI model is based on social reciprocity — the expectation that social exchanges should be balanced. If you give high effort, you expect fair compensation in return. When this exchange is chronically unbalanced (high effort, low reward), it violates a deep psychological expectation and predicts emotional distress and health consequences."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the three types of reward in the Effort-Reward Imbalance model?",
+            "options": [
+                {"id": "opt1", "text": "Happiness, satisfaction, and joy"},
+                {"id": "opt2", "text": "Money, esteem (recognition/respect), and security (job stability/career advancement)"},
+                {"id": "opt3", "text": "Salary, benefits, and vacation days"},
+                {"id": "opt4", "text": "Praise, promotions, and perks"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The ERI model identifies three types of reward: (1) Money (salary, benefits, fair compensation), (2) Esteem (recognition, respect, feedback, appreciation), and (3) Security (job stability, career prospects, advancement opportunities). Imbalance in ANY of these domains — not just money — can create psychological distress."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the research show about the health effects of effort-reward imbalance?",
+            "options": [
+                {"id": "opt1", "text": "ERI has no measurable health effects"},
+                {"id": "opt2", "text": "ERI predicts cardiovascular disease, mental disorders (depression, anxiety, burnout), and absenteeism"},
+                {"id": "opt3", "text": "ERI only affects physical health, not mental health"},
+                {"id": "opt4", "text": "ERI only matters for low-income workers"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Over 30 years of epidemiological research shows that ERI reliably predicts cardiovascular disease, mental health disorders (depression, anxiety, burnout), and absenteeism. The effect is dose-dependent: larger imbalances predict worse outcomes. This is true across income levels and job types."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'over-commitment' in the ERI model, and how does it affect health?",
+            "options": [
+                {"id": "opt1", "text": "Over-commitment means working too many hours"},
+                {"id": "opt2", "text": "Over-commitment is a personality-like tendency to invest excessively in work, and it amplifies the health impact of effort-reward imbalance"},
+                {"id": "opt3", "text": "Over-commitment protects against burnout"},
+                {"id": "opt4", "text": "Over-commitment only affects people with mental health conditions"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Over-commitment is a personality-like tendency to invest excessively in work — difficulty disengaging, need for approval, and inability to withdraw effort even when unrewarded. It's an amplifying factor: people high in over-commitment experience worse health outcomes when effort-reward imbalance exists. They can't easily reduce effort when rewards are inadequate."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about your current or most recent job. Do you feel your effort is fairly rewarded in all three categories: money (fair pay), esteem (recognition and respect), and security (job stability and career prospects)? If not, which reward type is most lacking? How does this imbalance affect your motivation and wellbeing?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "5",
+    "title": "Effort-Reward Imbalance — When Work Violates Reciprocity - Quiz"
+}

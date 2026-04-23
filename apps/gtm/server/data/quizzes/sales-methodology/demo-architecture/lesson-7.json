@@ -1,0 +1,134 @@
+{
+    "lessonId": "7",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "Demo Production Value",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Does having a 4K camera sell more software?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, always"
+                },
+                {
+                    "id": "b",
+                    "text": "No, but poor audio/video creates 'Subconscious Friction' that lowers trust"
+                },
+                {
+                    "id": "c",
+                    "text": "No, it distracts them"
+                },
+                {
+                    "id": "d",
+                    "text": "Yes, because it looks cool"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You don't need cinema quality, but if you look dark, grainy, and sound tinny, the prospect subconsciously assumes your product is also low-quality."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Eye Level' rule?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Stare at the screen"
+                },
+                {
+                    "id": "b",
+                    "text": "Your camera lens should be at hairline level, so you aren't looking down on the prospect"
+                },
+                {
+                    "id": "c",
+                    "text": "Look at the ceiling"
+                },
+                {
+                    "id": "d",
+                    "text": "Wear glasses"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If your laptop is on a low desk, you are looking down at the camera (the 'Nostril Shot'). This psychologically signals dominance or carelessness. Raise the laptop."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the best way to handle 'Browser Clutter'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It doesn't matter"
+                },
+                {
+                    "id": "b",
+                    "text": "Close all tabs except the specific ones needed for the demo, and use a dedicated 'Clean' browser profile"
+                },
+                {
+                    "id": "c",
+                    "text": "Keep Slack open to show you are busy"
+                },
+                {
+                    "id": "d",
+                    "text": "Use Incognito mode for everything"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A messy browser bar with 50 tabs signals chaos. Notifications popping up signal unprofessionalism. Create a specialized 'Demo Profile' that is pristine."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you start the Zoom call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Camera off until they join"
+                },
+                {
+                    "id": "b",
+                    "text": "Camera ON, smiling, ready 2 minutes early"
+                },
+                {
+                    "id": "c",
+                    "text": "Eating lunch"
+                },
+                {
+                    "id": "d",
+                    "text": "Texting on your phone"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The first 3 seconds set the tone. If they log in and see a black screen or you fumbling with headphones, you start with a trust deficit."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Hardwired Rule'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always use a wired mouse"
+                },
+                {
+                    "id": "b",
+                    "text": "Always use an Ethernet cable if possible, because WiFi lag kills momentum"
+                },
+                {
+                    "id": "c",
+                    "text": "Hardwire your brain"
+                },
+                {
+                    "id": "d",
+                    "text": "Wire money to the prospect"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A lagging screen share is the death of a demo. WiFi is unpredictable. For critical sales calls, being plugged in is an insurance policy."
+        }
+    ],
+    "passingScore": 70
+}

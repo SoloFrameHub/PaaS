@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is 'the righting reflex' in motivational interviewing, and why must you resist it?",
+      "options": [
+        {"id": "opt1", "text": "The urge to correct factual errors — you should resist it because accuracy matters less than empathy"},
+        {"id": "opt2", "text": "The automatic urge to fix, solve, or give advice immediately — you must resist it because when YOU argue for change, the person argues against it (sustain talk), activating psychological reactance and undermining intrinsic motivation"},
+        {"id": "opt3", "text": "The tendency to always take the morally correct position — you should resist it to avoid seeming judgmental"},
+        {"id": "opt4", "text": "The righting reflex is actually beneficial — giving quick advice saves time and shows expertise"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The righting reflex is the automatic urge to fix or rescue by jumping to advice/solutions. Resisting it is critical because when you argue FOR change, you activate psychological reactance — the person defends their current behavior and generates sustain talk. MI flips this: when you explore ambivalence with curiosity, the person talks THEMSELVES into change (change talk), which predicts actual behavior change."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the difference between change talk and sustain talk, and why does it matter?",
+      "options": [
+        {"id": "opt1", "text": "Change talk is positive language; sustain talk is negative language — coaches should eliminate all negative talk"},
+        {"id": "opt2", "text": "Change talk is language favoring change ('I want to...', 'I could...'); sustain talk favors status quo ('I can't...', 'I don't want to give this up'). Research shows change talk predicts behavior change; sustain talk predicts staying the same."},
+        {"id": "opt3", "text": "There's no meaningful difference — all talk is equally predictive of behavior"},
+        {"id": "opt4", "text": "Change talk comes from the coach; sustain talk comes from the client"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Change talk = language moving toward change (desire, ability, reasons, need, commitment, taking steps). Sustain talk = language favoring staying the same. Meta-analyses show change talk predicts actual behavior change; sustain talk predicts no change. Your job: evoke change talk by reflecting it back and asking curious questions. When you hear sustain talk, reflect it without arguing — arguing strengthens it."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "A client says: 'I'm a 6 out of 10 on how important this goal is to me.' What's the most effective MI follow-up question to evoke change talk?",
+      "options": [
+        {"id": "opt1", "text": "'That's not very high. What's holding you back from making it a priority?'"},
+        {"id": "opt2", "text": "'What makes it a 6 and not a 2?' (forces articulation of what DOES matter — change talk)"},
+        {"id": "opt3", "text": "'You should probably make it at least an 8 if you want to succeed.'"},
+        {"id": "opt4", "text": "'Why isn't it higher? What's wrong?'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The importance ruler technique works by asking 'What makes it a [number] and not lower?' This forces the person to articulate reasons it DOES matter (change talk), rather than focusing on why it's not higher (which evokes sustain talk). Option 1 focuses on the negative. Option 3 is prescriptive advice. Option 4 is judgmental and shame-inducing."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "How should you respond when a client expresses ambivalence ('Part of me wants to change, part of me doesn't')?",
+      "options": [
+        {"id": "opt1", "text": "Pick the side favoring change and argue for it: 'But you just said you want to — so let's focus on that!'"},
+        {"id": "opt2", "text": "Reflect both sides without judgment: 'It sounds like you're feeling torn — one part sees the benefits of change, another part is hesitant. Tell me about both sides.' Then explore the ambivalence collaboratively."},
+        {"id": "opt3", "text": "Tell them ambivalence means they're not ready for coaching and should come back later"},
+        {"id": "opt4", "text": "Ignore the ambivalence and move forward with goal-setting anyway"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Ambivalence is normal — not a problem to solve. MI honors BOTH sides of the internal conflict by reflecting it accurately, then inviting exploration. When you argue for one side (opt1), the person defends the other side (psychological reactance). Exploring both sides collaboratively often helps the person resolve the ambivalence themselves — which creates lasting intrinsic motivation."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which of the following situations requires referral to clinical MI treatment rather than MI-informed coaching?",
+      "options": [
+        {"id": "opt1", "text": "A client exploring ambivalence about starting a meditation practice"},
+        {"id": "opt2", "text": "A client considering whether to seek therapy for anxiety (supporting engagement with that decision)"},
+        {"id": "opt3", "text": "A client disclosing active alcohol dependence and asking for support to quit drinking"},
+        {"id": "opt4", "text": "A client working through resistance to starting an exercise routine"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "MI for substance use disorder (alcohol/drug dependence) is clinical treatment requiring specialized training and often medical supervision (withdrawal can be dangerous). MI-informed skills can support non-clinical behavior change (meditation, exercise) and can help someone explore whether to seek therapy. But treating addiction is outside coaching scope — refer to addiction counselor, therapist, or treatment program."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "6",
+  "title": "Motivational Interviewing for Coaches - Quiz"
+}

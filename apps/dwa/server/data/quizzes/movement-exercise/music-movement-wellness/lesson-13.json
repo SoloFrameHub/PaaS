@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the optimal musical characteristics for sleep-supportive music?",
+      "options": [
+        {"id": "opt1", "text": "Fast tempo, complex structure, lyrics"},
+        {"id": "opt2", "text": "60-80 BPM (slow tempo), predictable structure, instrumental, familiar, calming timbre—designed to facilitate cognitive disengagement"},
+        {"id": "opt3", "text": "Any music works equally well for sleep"},
+        {"id": "opt4", "text": "Only silence supports sleep"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Sleep-supportive music has specific features: 60-80 BPM (matches/slows heart rate), predictable structure (repetitive patterns allow mental drift), instrumental (lyrics engage language processing), familiar (novelty engages attention), calming timbre (soft, smooth tones). These characteristics facilitate the physiological conditions for sleep: reduced cortisol, parasympathetic activation, and cognitive disengagement. Music above 90 BPM or with complex changes can maintain alertness."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "It's 2 AM, you woke up anxious with racing thoughts about tomorrow. Which approach is most effective for falling back asleep?",
+      "options": [
+        {"id": "opt1", "text": "Lie in silence forcing yourself to 'just relax and fall asleep'"},
+        {"id": "opt2", "text": "Put on slow instrumental music or rain sounds (60-70 BPM) at low volume, practice 4-7-8 breathing, count sounds in the music without trying to force sleep"},
+        {"id": "opt3", "text": "Turn on bright lights and watch TV"},
+        {"id": "opt4", "text": "Play upbeat music to reset your energy"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "✓ Correct. Gentle attention to sounds/breath pulls you out of anxious rumination without creating performance pressure ('I must sleep!'). Paradoxically, when you stop trying and just listen/breathe, sleep comes more easily. Slow music entrains nervous system to calm. Forcing sleep creates anxiety. Bright lights/screens suppress melatonin. Upbeat music increases arousal. The key is gentle redirection, not force."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why should sleep music be set to stop after 45-60 minutes rather than playing all night?",
+      "options": [
+        {"id": "opt1", "text": "To save battery"},
+        {"id": "opt2", "text": "Continuous music can disrupt natural sleep cycles, especially if it changes unpredictably. Most people fall asleep within 30 minutes—music should facilitate onset, then stop"},
+        {"id": "opt3", "text": "Music should play all night for maximum benefit"},
+        {"id": "opt4", "text": "60 minutes is arbitrary—any duration works"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Music is most helpful for sleep *onset* (falling asleep). Once you're asleep, continuous music—especially with tempo or volume changes—can disrupt natural sleep cycles (REM, deep sleep). Most people fall asleep within 20-30 minutes. Setting music to stop after 45-60 minutes supports the transition to sleep, then allows uninterrupted sleep. Exception: consistent white/pink noise can play continuously because it's unchanging and masks external disruptions."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for music interventions in improving sleep quality and reducing insomnia symptoms?",
+      "options": [
+        {"id": "opt1", "text": "LIMITED—no meaningful research"},
+        {"id": "opt2", "text": "MODERATE—music shows moderate evidence for improving sleep quality, reducing sleep latency, and decreasing nighttime awakenings, especially for stress-related sleep difficulties"},
+        {"id": "opt3", "text": "STRONG—music cures all sleep disorders"},
+        {"id": "opt4", "text": "NEGATIVE—music worsens sleep"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Music interventions for sleep have MODERATE evidence. Studies show improved sleep quality, reduced time to fall asleep (sleep latency), and fewer nighttime awakenings when using slow, calming music as part of sleep hygiene. Evidence is strongest for stress-related sleep difficulties and older adults. Music is most effective within comprehensive sleep hygiene (consistent schedule, dark room, screen reduction). Not a replacement for treating clinical sleep disorders like sleep apnea."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should you seek professional sleep medicine evaluation rather than relying on music alone?",
+      "options": [
+        {"id": "opt1", "text": "After one night of poor sleep"},
+        {"id": "opt2", "text": "When insomnia persists >3 months despite good sleep hygiene, loud snoring with breathing pauses (possible sleep apnea), restless legs, inappropriate daytime sleepiness, or recurring nightmares"},
+        {"id": "opt3", "text": "When you prefer silence over music"},
+        {"id": "opt4", "text": "Never—music solves all sleep problems"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Music supports sleep hygiene but cannot treat clinical sleep disorders. Seek professional evaluation for: chronic insomnia (>3 months), sleep apnea symptoms (snoring, breathing pauses, daytime fatigue), restless legs syndrome, narcolepsy (inappropriate sleep attacks), or trauma-related sleep disruptions (nightmares, night terrors). Clinical treatments: CBT-I (cognitive-behavioral therapy for insomnia—gold standard), sleep restriction, stimulus control, CPAP for apnea, medication when appropriate."
+    }
+  ],
+  "sectionId": "movement-exercise",
+  "courseId": "music-movement-wellness",
+  "lessonId": "13",
+  "title": "Music for Sleep and Relaxation - Quiz"
+}

@@ -1,0 +1,81 @@
+{
+  "lessonId": "3",
+  "courseId": "custom-ai-agents",
+  "sectionId": "ai-acquisition",
+  "title": "Agent 1: Prospect Research Agent",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the five components every research agent needs?",
+      "options": [
+        { "id": "a", "text": "API key, database, prompt, output, feedback" },
+        {
+          "id": "b",
+          "text": "Clear goal, data sources, processing logic, structured output, quality checks"
+        },
+        { "id": "c", "text": "Name, email, company, title, LinkedIn" },
+        { "id": "d", "text": "ChatGPT, Clay, Apollo, Zapier, HubSpot" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The five components are: a clear goal (specific output format, not vague 'research this prospect'), data sources (CRM, LinkedIn, company data, news), processing logic (how to synthesize inputs), structured output (JSON with defined fields), and quality checks (confidence scoring, hallucination detection)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How much time does the prospect research agent save per prospect compared to manual research?",
+      "options": [
+        { "id": "a", "text": "Saves 1 minute per prospect" },
+        {
+          "id": "b",
+          "text": "Saves 13-19 minutes per prospect (from 15-20 minutes manual to 2 minutes AI + review)"
+        },
+        { "id": "c", "text": "No time savings — AI is slower" },
+        { "id": "d", "text": "Saves 1 hour per prospect" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Manual research takes 15-20 minutes per prospect. The AI agent generates a brief in 30-60 seconds, and human review takes about 3 minutes. Total savings: 13-19 minutes per prospect, or 12.5 hours per week at 50 prospects."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What does a 'bad goal' versus 'good goal' look like for a research agent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bad: 'Find their email.' Good: 'Find their phone number.'"
+        },
+        {
+          "id": "b",
+          "text": "Bad: 'Research this prospect.' Good: 'Generate a 1-page brief with prospect overview, 3 pain signals, 2 connection points, and a recommended outreach angle. Score ICP fit 1-10.'"
+        },
+        { "id": "c", "text": "Bad: 'Use GPT-4.' Good: 'Use Claude.'" },
+        {
+          "id": "d",
+          "text": "There is no difference between good and bad goals"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A bad goal is vague ('research this prospect') which produces inconsistent outputs. A good goal is specific about the output format and content: 'Generate a 1-page brief with prospect overview, company context, 3 pain signals, 2 connection points, and a recommended outreach angle. Score ICP fit 1-10.'"
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A research agent that costs $0.01-0.05 per brief can replace all manual prospect research entirely.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The agent does 80% of the work in 2 minutes, but human review (3 minutes) is still required to catch hallucinations, add contextual judgment, and ensure the personalization angle is genuinely relevant. The agent compresses research time — it doesn't eliminate human oversight."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Write a specific goal statement for your prospect research agent. Include the exact output fields you want, the data sources it should use, and how you would handle cases where the agent can't find enough information to generate a complete brief.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a specific, structured goal statement (not vague), names at least 3 data sources, defines output fields clearly, and addresses the edge case of insufficient data (e.g., fallback to template, flag for manual research). Look for understanding that specificity drives consistency."
+    }
+  ]
+}

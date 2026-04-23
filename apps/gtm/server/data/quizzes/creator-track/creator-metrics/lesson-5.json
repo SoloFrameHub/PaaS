@@ -1,0 +1,55 @@
+{
+  "lessonId": "5",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Launch vs Evergreen Metrics Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In a typical 7-day launch, what percentage of total sales typically happen on the final day (cart close day)?",
+      "options": [
+        { "id": "a", "text": "10-15% -- most sales happen evenly throughout the week" },
+        { "id": "b", "text": "15-20% -- a slight bump on the last day" },
+        { "id": "c", "text": "30-40% -- the largest concentration of sales happens at the deadline" },
+        { "id": "d", "text": "50-60% -- nearly all sales happen in the final hours" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The typical cart close urgency curve shows 30-40% of total sales happening on the final day of a 7-day launch. Combined with Day 1 (25-35%), this means 55-75% of all sales occur on just the first and last days, with a 'dead zone' in the middle. If you do not see a final-day spike, your deadline is not credible."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A creator running an evergreen funnel averages 0.5 sales per day of a $2,000 product. What is their projected monthly revenue, and what is the key metric they should track daily?",
+      "options": [
+        { "id": "a", "text": "$15,000/month; track daily opt-in rate" },
+        { "id": "b", "text": "$30,000/month; track Sales Per Day (SPD) as the evergreen 'heartbeat' metric" },
+        { "id": "c", "text": "$30,000/month; track cart page conversion rate daily" },
+        { "id": "d", "text": "$60,000/month; track automated webinar view rate" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "0.5 sales/day x $2,000 x 30 days = $30,000/month. Sales Per Day (SPD) is identified in the lesson as the most important evergreen metric -- your funnel's 'heartbeat.' It tells you at a glance whether the funnel is healthy. Track it on both a rolling 7-day and 30-day average to smooth out daily variance."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the lesson, when should a creator switch from a launch model to an evergreen model?",
+      "options": [
+        { "id": "a", "text": "Immediately -- evergreen is always superior because it generates consistent revenue" },
+        { "id": "b", "text": "After their first successful launch proves the offer works" },
+        { "id": "c", "text": "After 2-3 successful launches with the same offer, when they have proven data and can generate 20+ daily opt-ins" },
+        { "id": "d", "text": "Only when their email list exceeds 50,000 subscribers" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The lesson recommends switching to evergreen after at least 2-3 successful launches with the same offer, when the audience is large enough to generate consistent daily opt-ins (20+ per day). You need proven launch data to build an evergreen funnel from -- the webinar, email sequence, and conversion rates should all be validated before automating."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Are you currently running a launch model, evergreen model, or hybrid? Based on the criteria in this lesson, is your current model the right one for your business stage? If you are launch-only, how many of the 'Switch to Evergreen' criteria do you meet? What would need to change for you to transition?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student accurately assessed their current model and honestly compared their situation to the transition criteria. Look for specific evidence (number of successful launches, list size, daily opt-in volume) rather than vague claims. Encourage students who meet the criteria to plan a transition, and encourage those who do not to focus on improving their launch performance first."
+    }
+  ]
+}

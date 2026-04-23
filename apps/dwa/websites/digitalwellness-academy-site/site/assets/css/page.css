@@ -1,0 +1,23 @@
+/* Typography utilities reused across pages */
+body { font-family: 'Inter', sans-serif; }
+.h1 { font-size: 3.5rem; line-height: 1.1; font-weight: 700; }
+.h2 { font-size: 2.5rem; line-height: 1.2; font-weight: 700; }
+.h3 { font-size: 1.875rem; line-height: 1.3; font-weight: 700; }
+.h4 { font-size: 1.5rem; line-height: 1.4; font-weight: 700; }
+@media (max-width: 768px) {
+    .h1 { font-size: 2.5rem; }
+    .h2 { font-size: 2rem; }
+    .h3 { font-size: 1.5rem; }
+    .h4 { font-size: 1.25rem; }
+}
+
+/* Dropdown nav — ensure hover state works with pt spacer */
+.nav-dropdown { pointer-events: none; }
+.group:hover .nav-dropdown { pointer-events: auto; }
+
+/* Smooth scroll for anchor links */
+html { scroll-behavior: smooth; }
+
+/* Prose styling for long-form pages */
+.prose-custom p { color: #475569; line-height: 1.7; }
+.prose-custom strong { color: #0f172a; font-weight: 600; }

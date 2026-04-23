@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2025 systematic review and meta-analysis find about online exercise compared to in-person exercise for mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Online exercise is significantly inferior to in-person exercise"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Online exercise was superior to no exercise (SMD = 1.08 for depression) AND non-inferior to face-to-face exercise for all tested outcomes — a game-changer for accessibility"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only in-person exercise has any mental health benefits"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Digital exercise programs don't work at all"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A 2025 systematic review (Bhundoo, Pillay, Wilke; 18 RCTs) found online exercise was superior to no exercise for depression (SMD = 1.08), mental wellbeing (SMD = 0.79), self-efficacy (SMD = 1.1), and mood (SMD = 0.47). Critically, online was NON-INFERIOR to face-to-face for all outcomes. This removes the assumption that digital is 'second-best' and has huge implications for accessibility (rural areas, mobility limitations, social anxiety, budget constraints)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What features make digital exercise programs effective for mental health and adherence?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any app or website works equally well"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Effective features: structured sequenced programs (clear progression), social interaction (live classes, group challenges, forums), goal-setting + progress tracking, and motivational messaging (personalized feedback)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Digital programs don't need any specific features to be effective"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only passive tracking matters; structure and social features are irrelevant"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Not all apps/platforms are equal. Evidence points to four key features: (1) Structured, sequenced programs (Week 1 → Week 8 progression builds self-efficacy through graduated challenges); (2) Social interaction (group exercise outperforms solo — live classes, community challenges, forums provide accountability); (3) Goal-setting + progress tracking (visualizing progress builds motivation); (4) Motivational messaging (timely reminders, personalized feedback counter low motivation). What doesn't work: purely passive tracking, generic content, no accountability."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are warning signs that exercise tracking has become counterproductive (hurting more than helping)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Tracking can never be counterproductive"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Red flags: intense guilt/anxiety over missed workouts, obsessive checking (10+ times/day), constant comparison to others, exercising through injury/illness to 'keep the streak,' or tracking increases anxiety rather than reducing it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Everyone should track everything obsessively for best results"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Guilt and anxiety about exercise are always healthy motivators"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson lists five red flags: (1) Intense guilt/anxiety over missed workouts (shame spirals, self-punishment); (2) Obsessive checking (constantly refreshing app, checking heart rate every 5 min); (3) Constant comparison to others (leaderboard obsession, feeling inadequate); (4) Exercising through injury, illness, or burnout to maintain a 'streak'; (5) Tracking increases anxiety rather than providing useful data. If any apply, scale back or eliminate tracking — some people thrive on data, others need intuitive movement."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, how should you use technology for exercise?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Technology should define your worth and control all your exercise decisions"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Use technology as a tool to SUPPORT your goals (make exercise easier, more enjoyable, more sustainable) — NOT as a master that adds stress, obligation, and judgment; if it increases stress, scale back"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never use any technology for exercise tracking"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Obsessively check all metrics constantly for optimal results"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson's core principle: technology is a tool, not a master. Ask yourself: Does this tool make exercise easier, more enjoyable, or more sustainable? Or does it add stress, obligation, and judgment? If the latter, scale back or eliminate it. Recommended boundaries: limit check-ins (morning + post-workout only), turn off non-essential notifications, designate tech-free exercise days, mute leaderboards if they trigger comparison. Some people thrive on data; others need intuitive movement. Both are valid."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "What technology or tracking tools (if any) are you currently using for exercise? How do they make you feel — motivated and supported, or stressed and obligated? Is there one change you could make to improve your relationship with exercise tech?",
+            "minLength": 75,
+            "explanation": "This reflection helps you assess your current tech relationship and identify needed adjustments. Healthy patterns: checking stats occasionally for useful data, feeling motivated by progress visualization, using social features for accountability without comparison. Unhealthy patterns: constant checking (anxiety-driven), guilt over missing metrics, feeling controlled by the app, comparison triggering inadequacy. Possible changes: take a 1-2 week tracking break, turn off leaderboards/comparisons, set specific check-in times only, switch to simpler tracking (pen + paper X for completed days), or eliminate tracking entirely and move intuitively."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "19",
+    "title": "Technology and Exercise Tracking - Quiz"
+}

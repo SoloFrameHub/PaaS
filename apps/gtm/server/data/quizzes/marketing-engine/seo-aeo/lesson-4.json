@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "4",
+    "lessonTitle": "Schema Markup Implementation",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of adding Schema Markup to your website?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes your website's font look more professional."
+                },
+                {
+                    "id": "b",
+                    "text": "It provides structured context to search engines and AI models, removing ambiguity about your content."
+                },
+                {
+                    "id": "c",
+                    "text": "It automatically translates your site into multiple languages."
+                },
+                {
+                    "id": "d",
+                    "text": "It prevents hackers from accessing your site."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Schema markup provides machines with explicit data about your content (e.g., this is a 'Price', this is a 'Review', this is a 'Person'), which helps them trust and cite your information accurately.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is JSON-LD the preferred method for implementing schema for non-developers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it is written in binary code."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it is a standalone block of code that can be easily copied and pasted into the site's header without altering the visual HTML."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it makes images load faster."
+                },
+                {
+                    "id": "d",
+                    "text": "Because it is the only format that works on iPhones."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Unlike other schema methods (like Microdata), JSON-LD doesn't require you to wrap individual elements of your text in tags. You just add the code block to the header, making it much easier to manage.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which schema type is most effective for winning placement in Google's AI Overviews?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "AudioObject Schema"
+                },
+                {
+                    "id": "b",
+                    "text": "Recipe Schema"
+                },
+                {
+                    "id": "c",
+                    "text": "FAQPage Schema"
+                },
+                {
+                    "id": "d",
+                    "text": "Sitemap Schema"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "FAQPage schema explicitly maps common questions to direct answers. This structured Q&A format is exactly what AI Overviews look for when selecting sources for search queries.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should a solo founder use Person and Organization schema together?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They shouldn't use both; they should choose only one."
+                },
+                {
+                    "id": "b",
+                    "text": "By using them to link the 'Expert' (Founder) to the 'Solution' (Company) in the AI's Knowledge Graph."
+                },
+                {
+                    "id": "c",
+                    "text": "By copy-pasting their resume into both fields."
+                },
+                {
+                    "id": "d",
+                    "text": "By using them to hide their identity from search engines."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Linking Person and Organization schema creates 'Entity Authority.' It tells the AI that the reputable expert (you) stands behind the reputable solution (your company), building trust for both.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the correct tool to use before publishing your schema markup?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Google Maps"
+                },
+                {
+                    "id": "b",
+                    "text": "Google Rich Results Test"
+                },
+                {
+                    "id": "c",
+                    "text": "Facebook Ads Manager"
+                },
+                {
+                    "id": "d",
+                    "text": "Grammarly"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Google Rich Results Test allows you to paste your URL or code snippet to verify that it is valid JSON-LD and correctly recognized by Google's systems.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify 3 questions your potential customers ask most frequently. If you were for formulate these as FAQPage schema, what is the 'One-Sentence Answer' for each that provides immediate value without sounding like a sales pitch?",
+            "promptHints": [
+                "Focus on clarity and objectivity.",
+                "Ensure the answer is self-contained.",
+                "Think about what a 'helpful professor' would say."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "3"
+        ],
+        "unlocks": [
+            "5"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Schema Markup Implementation - Quiz"
+}

@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "7",
+    "lessonTitle": "Getting Cited by ChatGPT/Perplexity",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is Retrieval Augmented Generation (RAG) in the context of Answer Engines?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A way for AI to generate random images."
+                },
+                {
+                    "id": "b",
+                    "text": "The process where an AI model searches the live web for current information to answer a user's prompt."
+                },
+                {
+                    "id": "c",
+                    "text": "A system that automatically deletes old blog posts."
+                },
+                {
+                    "id": "d",
+                    "text": "A marketing strategy for social media influencers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "RAG allows LLMs to 'look up' information that wasn't included in their original training data. Being the source retrieved during this process is how you win citations in real-time answers.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the 'Citation Hierarchy', what is an LLM's top priority when choosing a source?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The color scheme of the website."
+                },
+                {
+                    "id": "b",
+                    "text": "Fact-density (Hard numbers, specific steps, clear definitions)."
+                },
+                {
+                    "id": "c",
+                    "text": "The amount of ads on the page."
+                },
+                {
+                    "id": "d",
+                    "text": "The length of the author's biography."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LLMs are looking for 'extractable facts.' Content that is dense with specific data and clear, declarative information is more 'cite-able' than vague or narrative-heavy content.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should you avoid 'Blogger Voice' (e.g., 'I think...', 'In my opinion...') for AEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it makes the text too long."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it's harder for an AI to quote an opinion as a citable fact."
+                },
+                {
+                    "id": "c",
+                    "text": "Because AI models aren't allowed to read opinions."
+                },
+                {
+                    "id": "d",
+                    "text": "Because readers prefer purely technical manuals."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI models prioritize declarative framing because it identifies the information as a statement of fact or a standard methodology, which is easier to synthesize into a direct answer for the user.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Contrarian Advantage' for gaining AI citations?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always agreeing with the majority opinion."
+                },
+                {
+                    "id": "b",
+                    "text": "Providing an 'Alternative Perspective' backed by reasoning or data that challenges the AI's standard training data."
+                },
+                {
+                    "id": "c",
+                    "text": "Writing about topics that no one cares about."
+                },
+                {
+                    "id": "d",
+                    "text": "Blocking AI bots from reading your site."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI models are often trained on outdated or generic 'shared knowledge.' If you provide a well-reasoned contrarian view, the AI is likely to cite you to provide a balanced or more current answer.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How can you measure your 'Share of Model' effectively?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By checking your Instagram followers."
+                },
+                {
+                    "id": "b",
+                    "text": "By asking Perplexity or ChatGPT high-intent queries in your niche and observing if your site is cited."
+                },
+                {
+                    "id": "c",
+                    "text": "By counting the number of pages on your website."
+                },
+                {
+                    "id": "d",
+                    "text": "By running a Google Search Console report for keywords."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Measuring 'Share of Model' is currently a proactive manual process. Testing the AI models directly with potential customer queries is the best way to see if your AEO strategy is working.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Pick a query where you currently *don't* appear in an AI's citations (e.g., Perplexity or ChatGPT). Compare your content to the cited source. What is the 'Citation Gap'? Is their content more fact-dense? Better structured? Or do they have a more authoritative 'Entity' signal?",
+            "promptHints": [
+                "Contrast their header structure with yours.",
+                "Count the number of hard data points they use.",
+                "Check if they use specific terminology you are missing."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "6"
+        ],
+        "unlocks": [
+            "8"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Getting Cited by ChatGPT/Perplexity - Quiz"
+}

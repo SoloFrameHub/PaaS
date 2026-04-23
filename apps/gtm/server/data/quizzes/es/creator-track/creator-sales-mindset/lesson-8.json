@@ -1,0 +1,91 @@
+{
+  "lessonId": "8",
+  "courseId": "creator-sales-mindset",
+  "sectionId": "creator-track",
+  "title": "Tu Manifiesto de Ventas del Creador",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Por qué la investigación sobre intenciones de implementación sugiere que un manifiesto escrito es más efectivo que simplemente establecer objetivos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque escribir las cosas mejora la retención de memoria para los exámenes"
+        },
+        {
+          "id": "b",
+          "text": "Porque la investigación del psicólogo Peter Gollwitzer muestra que las personas que escriben planes específicos ('Si X sucede, haré Y') tienen 2-3 veces más probabilidades de cumplirlos que las personas que simplemente establecen objetivos"
+        },
+        {
+          "id": "c",
+          "text": "Porque los documentos de manifiesto son legalmente vinculantes y crean responsabilidad"
+        },
+        {
+          "id": "d",
+          "text": "Porque escribir activa diferentes regiones del cerebro que el pensamiento, haciendo que las ideas se sientan más reales"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La investigación de Gollwitzer sobre las intenciones de implementación demuestra que convertir objetivos vagos en planes escritos específicos con estructura si-entonces aumenta drásticamente el cumplimiento. Un manifiesto es esencialmente una colección de intenciones de implementación para tu vida de ventas — compromisos específicos que guían el comportamiento independientemente de tu estado emocional en cualquier día dado."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia entre un principio de manifiesto 'vago' y uno 'específico', y por qué importa la especificidad?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los principios vagos son más cortos y más fáciles de recordar, lo que los hace más prácticos"
+        },
+        {
+          "id": "b",
+          "text": "No hay ninguna diferencia significativa — ambos cumplen el mismo propósito"
+        },
+        {
+          "id": "c",
+          "text": "Un principio vago como 'Seré auténtico' no ofrece ninguna orientación accionable, mientras que un principio específico como 'Usaré mi tono conversacional natural y no adoptaré una voz de ventas' te dice exactamente qué hacer un martes por la mañana antes de una llamada de ventas"
+        },
+        {
+          "id": "d",
+          "text": "Los principios específicos son mejores para principiantes, mientras que los principios vagos funcionan mejor para vendedores experimentados"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Cada oración en tu manifiesto debe ser lo suficientemente específica para guiar decisiones reales en momentos reales. 'Seré auténtico' suena bien pero no te da nada en qué actuar cuando estás nervioso antes de una llamada. 'Usaré mi tono conversacional natural y no adoptaré una voz de ventas' te dice exactamente cómo comportarte. La especificidad es lo que hace que un manifiesto sea una herramienta de trabajo en lugar de una lista de deseos."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué el manifiesto incluye una sección de 'Áreas de Crecimiento' junto con los Principios No Negociables?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para darte permiso de romper tus principios cuando se sientan demasiado difíciles"
+        },
+        {
+          "id": "b",
+          "text": "Porque nombrar las áreas donde aún te estás desarrollando — con planes de mejora específicos — hace que el manifiesto sea un documento vivo que evoluciona con tu crecimiento en lugar de una lista estática de ideales que eventualmente ignorarás"
+        },
+        {
+          "id": "c",
+          "text": "Porque los inversores y clientes quieren ver que eres consciente de tus debilidades"
+        },
+        {
+          "id": "d",
+          "text": "Para equilibrar la confianza de las otras secciones con la humildad apropiada"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La sección de Áreas de Crecimiento reconoce que eres un trabajo en progreso y te da una forma estructurada de mejorar. Al nombrar debilidades específicas y adjuntar planes de acción específicos, evitas que el manifiesto se convierta en un documento aspiracional que eventualmente abandonas. El ciclo de revisión de 90 días garantiza que siga evolucionando a medida que creces."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Escribe tu Declaración de Identidad de Ventas (Sección 1 del manifiesto) y lista tus 3 Principios No Negociables principales (de la Sección 2). Para cada principio, explica por qué es importante para ti personalmente — no por qué es una buena práctica en general, sino qué experiencia o valor específico de tu vida hace que este principio sea importante para tu práctica de ventas.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student's Sales Identity Statement is specific to their actual creative identity and offer, not a generic copy of the template. The three Non-Negotiable Principles should feel personal and grounded in the student's real values and experiences. Look for personal reasoning behind each principle (e.g., 'I never use false scarcity because I once bought a course based on fake urgency and felt manipulated') rather than generic business justifications. The overall tone should feel authentic to the student's voice."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+    "lessonId": "10",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Your Launch Playbook Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the recommended timeline for a creator-founder's first webinar launch?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 week from decision to live event"
+                },
+                {
+                    "id": "b",
+                    "text": "3-4 weeks from decision to live event"
+                },
+                {
+                    "id": "c",
+                    "text": "2-3 months of preparation before going live"
+                },
+                {
+                    "id": "d",
+                    "text": "6 months of audience building before considering a launch"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The recommended timeline for a first webinar launch is 3-4 weeks from decision to live event. This provides enough time for offer finalization, content creation, tech setup, and a 2-week registration push, without the momentum-killing delay of over-preparation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the post-launch debrief, what is the most critical insight to capture?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The total number of social media impressions generated during the launch"
+                },
+                {
+                    "id": "b",
+                    "text": "What worked best, what fell flat, what objections were not addressed, and what you would change for next time"
+                },
+                {
+                    "id": "c",
+                    "text": "How your launch compared to industry benchmarks published by competitors"
+                },
+                {
+                    "id": "d",
+                    "text": "The exact number of hours you spent on each phase"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The post-launch debrief should capture what worked best (which content resonated, which emails converted), what fell flat (where you lost people), unaddressed objections, and specific changes for next time. These qualitative insights, combined with metrics, are what drive improvement across successive launches."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does the lesson emphasize that 'the first launch is always the hardest and usually the smallest'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because first launches always have technical failures that prevent sales"
+                },
+                {
+                    "id": "b",
+                    "text": "Because each subsequent launch compounds on the last -- new subscribers, testimonials, refined messaging, and proven content angles all improve results over time"
+                },
+                {
+                    "id": "c",
+                    "text": "Because first launches should intentionally be small to test pricing"
+                },
+                {
+                    "id": "d",
+                    "text": "Because email marketing platforms limit sending volume for new accounts"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Each launch compounds on the previous one. The first launch generates new email subscribers, testimonials, content angle insights, and objection data. Armed with these assets, the second launch performs better, the third even better. The creators who build seven-figure businesses through launches are not the ones who hit a home run on attempt one -- they are the ones who launched, debriefed, improved, and launched again."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Complete the launch playbook starter template for your next webinar or challenge. Include: your offer name, chosen format (webinar or challenge), event date, registration open date, offer price, payment plan details, guarantee, registration goal, expected show-up and conversion rates, revenue target, and the tech tools you will use. Explain the reasoning behind your timeline and revenue expectations.",
+            "minLength": 100,
+            "aiPrompt": "The student should complete a comprehensive launch plan with specific dates, numbers, and tool choices. Evaluate whether: the timeline is realistic (3-4 weeks for webinar, 5-6 weeks for challenge), the expected metrics are grounded in the benchmarks from the course (not wildly optimistic), the revenue target is mathematically sound (registrants x show-up rate x conversion rate x price), and the tech stack is appropriate for a solo founder. The reasoning should demonstrate understanding of the full course material."
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Live Webinar Delivery & Pitch Structure Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach for the transition from teaching to pitching in a webinar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Apologize for the sales portion and quickly rush through the offer details"
+                },
+                {
+                    "id": "b",
+                    "text": "Use a bridge statement that respects the audience's autonomy: acknowledge they can implement on their own, then offer help for those who want it"
+                },
+                {
+                    "id": "c",
+                    "text": "Immediately display the buy link without any transition so people don't realize you're selling"
+                },
+                {
+                    "id": "d",
+                    "text": "End the teaching section and start a completely separate 'sales presentation' with new slides"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The bridge statement respects the audience by acknowledging that some will implement on their own while offering help to those who want it. This approach makes the pitch feel like a natural continuation of the value provided, not an ambush or an apology."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does the 'if/all' close technique work?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You present all features of the product and ask 'if you could have all of this, would you buy?'"
+                },
+                {
+                    "id": "b",
+                    "text": "You state three standalone results, each of which independently justifies the price, then point out the buyer gets all three plus everything in the stack"
+                },
+                {
+                    "id": "c",
+                    "text": "You offer all bonuses for free if the prospect buys within 10 minutes"
+                },
+                {
+                    "id": "d",
+                    "text": "You list all the competitors and explain why your product beats all of them"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'if/all' close presents three different results (financial, time-based, emotional) and asks for each: 'If all this did was [result], would it be worth [price]?' Each standalone result justifies the investment on its own, and the cumulative effect of all three makes not buying feel like the irrational choice."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the #1 rule about time management during a webinar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always run over time to show you are generous with content"
+                },
+                {
+                    "id": "b",
+                    "text": "Spend 80% of the time on content and rush through the pitch in the last 20%"
+                },
+                {
+                    "id": "c",
+                    "text": "If content is running long, cut content rather than cutting the close, because the close is where revenue happens"
+                },
+                {
+                    "id": "d",
+                    "text": "Skip the Q&A entirely to stay within the 60-minute window"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "If the Three Secrets section is running long, the lesson advises cutting content rather than cutting the close. Many creators make the mistake of spending too long teaching and then rushing through the pitch, which undermines the entire purpose of the webinar. The close is where the revenue happens."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write your three 'if/all' close statements for your offer, targeting financial, time, and emotional outcomes. For each, explain why that specific result would independently justify your price point. Then write your bridge statement that transitions from teaching to pitching.",
+            "minLength": 100,
+            "aiPrompt": "The student should write three distinct 'if/all' statements covering financial, time, and emotional dimensions. Each statement should follow the format 'If all this did was [result], would it be worth [price]?' The bridge statement should acknowledge the audience's ability to go it alone while offering help. Evaluate whether the three results are genuinely compelling standalone justifications and whether the bridge statement sounds natural rather than scripted or apologetic."
+        }
+    ]
+}

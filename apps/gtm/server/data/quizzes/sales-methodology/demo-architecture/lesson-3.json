@@ -1,0 +1,134 @@
+{
+    "lessonId": "3",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "Reverse Engineering the WOW",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Inverted Pyramid' of sales demos?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Building up slowly to a climax"
+                },
+                {
+                    "id": "b",
+                    "text": "Starting with the most impactful outcome ('The Wow'), then explaining the 'How'"
+                },
+                {
+                    "id": "c",
+                    "text": "Saving the best features for the end"
+                },
+                {
+                    "id": "d",
+                    "text": "Starting with the pricing first"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Journalists lead with the headline. You should too. If you make them wait 20 minutes for the setup, you lose their attention. Show the result first."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Movie Trailer' technique?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Filming a video of yourself"
+                },
+                {
+                    "id": "b",
+                    "text": "Showing a 60-second 'Highlight Reel' of the end result before starting the detailed workflows"
+                },
+                {
+                    "id": "c",
+                    "text": "Adding dramatic music to your demo"
+                },
+                {
+                    "id": "d",
+                    "text": "Only showing the product for 2 minutes total"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Just like a trailer sells the movie before you watch it, the 'Trailer' technique shows the final dashboard/report upfront to earn the prospect's patience for the step-by-step walkthrough."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Empty State' trap?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Showing a demo account with no data, making the product look broken or useless"
+                },
+                {
+                    "id": "b",
+                    "text": "Forgetting your script"
+                },
+                {
+                    "id": "c",
+                    "text": "Having no prospects in your pipeline"
+                },
+                {
+                    "id": "d",
+                    "text": "A crashing server"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Never show an empty account. Always 'pre-bake' the demo data (The Cooking Show Method) so the prospect sees a fully populated, valuable instance immediately."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "The 'Feature-Benefit-Bridge' links what together?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Two different products"
+                },
+                {
+                    "id": "b",
+                    "text": "A technical feature, the benefit it provides, and the specific pain the prospect mentioned"
+                },
+                {
+                    "id": "c",
+                    "text": "The price and the contract"
+                },
+                {
+                    "id": "d",
+                    "text": "The marketing site and the app"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A generic benefit ('This saves time') is weak. A specific bridge ('This saves time, which specifically solves the late-night data entry problem you mentioned') is powerful."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the 'U-Curve' of a demo, where should the tedious setup steps go?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "At the very beginning"
+                },
+                {
+                    "id": "b",
+                    "text": "At the very end"
+                },
+                {
+                    "id": "c",
+                    "text": "In the middle, sandwiched between high-value 'Wow' moments"
+                },
+                {
+                    "id": "d",
+                    "text": "Nowhere, never show setup"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Start high (The Wow), dip into the necessary 'How' (Setup) in the middle, and end high (The Conclusion). This is the classic U-Curve story arc."
+        }
+    ],
+    "passingScore": 70
+}

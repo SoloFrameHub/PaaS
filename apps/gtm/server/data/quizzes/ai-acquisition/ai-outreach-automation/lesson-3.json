@@ -1,0 +1,126 @@
+{
+    "lessonId": "3",
+    "courseId": "ai-outreach-automation",
+    "sectionId": "ai-acquisition",
+    "title": "Multi-Channel Tool Selection",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "You're selling a $12K/year B2B SaaS product to VPs of Marketing. 85% of your ICP is active on LinkedIn. Your current email-only reply rate is 6%. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Stick with email-only and optimize copy"
+                },
+                {
+                    "id": "b",
+                    "text": "Add Lemlist Multichannel for LinkedIn touches"
+                },
+                {
+                    "id": "c",
+                    "text": "Switch to HeyReach for LinkedIn-first outreach"
+                },
+                {
+                    "id": "d",
+                    "text": "Add LGM Pro for true multi-channel orchestration"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "At $12K ACV with high LinkedIn activity, multi-channel is justified. Lemlist Multichannel ($99/mo) is the simplest path to add LinkedIn without over-complicating. HeyReach is overkill unless you need multiple LinkedIn accounts."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What's the primary risk of LinkedIn automation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's expensive"
+                },
+                {
+                    "id": "b",
+                    "text": "It violates LinkedIn's ToS and can result in account bans"
+                },
+                {
+                    "id": "c",
+                    "text": "It doesn't work as well as email"
+                },
+                {
+                    "id": "d",
+                    "text": "It requires too much technical setup"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "All LinkedIn automation violates ToS. LinkedIn tolerates it inconsistently but can ban accounts. Safe limits: 15-25 connection requests/day, 30-50 messages/day."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which tool has the best LinkedIn safety features and lowest ban rate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Lemlist"
+                },
+                {
+                    "id": "b",
+                    "text": "La Growth Machine"
+                },
+                {
+                    "id": "c",
+                    "text": "HeyReach"
+                },
+                {
+                    "id": "d",
+                    "text": "Instantly"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "HeyReach has the most conservative automation limits, best session management, and lowest ban rate (~8-10%). Lemlist is 15-20%, LGM is 10-12%. Instantly doesn't do LinkedIn."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "You have a $150/mo budget and are selling a $2K/year product to small business owners. Most aren't active on LinkedIn. What's your best stack?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Lemlist Multichannel ($99) + 3 email accounts ($36)"
+                },
+                {
+                    "id": "b",
+                    "text": "Instantly Growth ($37) + 3 email accounts ($36) + Apollo ($49)"
+                },
+                {
+                    "id": "c",
+                    "text": "HeyReach ($79) + Instantly ($37) + 3 email accounts ($36)"
+                },
+                {
+                    "id": "d",
+                    "text": "LGM Pro ($100) + 3 email accounts ($36)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "At $2K ACV with low LinkedIn activity, email-only is the right choice. Instantly ($37) + email accounts ($36) + enrichment tool like Apollo ($49) = $122/mo, leaving budget for validation and other tools."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "True or False: Multi-channel sequences always outperform email-only sequences.",
+            "correctAnswer": "b",
+            "explanation": "False. Multi-channel adds 20-30% more replies on average, but only when the ICP is active on those channels. For low-ticket products or email-native audiences, email-only often has better ROI.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

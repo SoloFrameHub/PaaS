@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "4",
+    "sectionId": "foundations",
+    "title": "Quiz del Camino de Adquisición para Negocio de Servicios",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "¿Cuál es el canal de adquisición principal para los negocios de servicios de alto contacto?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Publicidad de respuesta directa en frío"
+                },
+                {
+                    "id": "b",
+                    "text": "Envío masivo de correos fríos"
+                },
+                {
+                    "id": "c",
+                    "text": "Cultivo de red de referencia y ventas basadas en relaciones"
+                },
+                {
+                    "id": "d",
+                    "text": "Publicar memes en redes sociales"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Los negocios de servicios dependen de la alta confianza. Las referencias y las relaciones existentes tienen la mayor confianza, lo que las convierte en el canal más efectivo para conseguir acuerdos de consultoría o agencia de alto valor."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "¿Por qué el 'Outreach en Frío' generalmente es más difícil para los servicios que para los productos SaaS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Los compradores de servicios no usan email"
+                },
+                {
+                    "id": "b",
+                    "text": "El precio y el compromiso son significativamente más altos, lo que requiere un mayor 'Umbral de Confianza'"
+                },
+                {
+                    "id": "c",
+                    "text": "Los proveedores de servicios son malos escribiendo emails"
+                },
+                {
+                    "id": "d",
+                    "text": "No es más difícil; funciona igual para ambos"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Un proyecto de $20.000 requiere mucha más confianza que una app de $20/mes. Acercarse a alguien en frío para un servicio de alto riesgo a menudo se siente prematuro a menos que te enfoques primero en el diagnóstico y la construcción de relaciones."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "En el contexto de un negocio de servicios, ¿qué es un 'Nodo de Referencia'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Un software que automatiza las referencias"
+                },
+                {
+                    "id": "b",
+                    "text": "Una persona específica bien conectada que te envía negocio de manera consistente"
+                },
+                {
+                    "id": "c",
+                    "text": "Un evento de networking"
+                },
+                {
+                    "id": "d",
+                    "text": "Un término técnico para un lead de ventas"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Los Nodos de Referencia son los 'superconectores' en tu red — ex clientes, pares no competidores o influenciadores de la industria que pueden presentarte a muchos prospectos calificados."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "¿Qué conjunto de cursos debe priorizar primero un fundador de Negocio de Servicios (Nivel 1)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cursos 4, 8 y 14"
+                },
+                {
+                    "id": "b",
+                    "text": "Cursos 5, 10 y 13"
+                },
+                {
+                    "id": "c",
+                    "text": "Cursos 14, 18 y 11"
+                },
+                {
+                    "id": "d",
+                    "text": "Cursos 7, 20 y 22"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Para los servicios, las prioridades son el Curso 14 (Descubrimiento), el Curso 18 (Propuestas/Precios) y el Curso 11 (Prueba Social/Referencias)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "¿Cuál es el enfoque recomendado para el 'Outreach Selectivo' en un negocio de servicios?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Enviar emails masivos a 500 leads de LinkedIn al día"
+                },
+                {
+                    "id": "b",
+                    "text": "Enfocarse en el 'Diagnóstico' y enfoques altamente investigados y personalizados de valor agregado para un pequeño grupo de clientes de ensueño"
+                },
+                {
+                    "id": "c",
+                    "text": "Esperar a que te encuentren"
+                },
+                {
+                    "id": "d",
+                    "text": "Comprar una lista de leads de CEOs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Dado que la confianza es primordial, el outreach selectivo significa hacer la tarea. Mostrarle a un prospecto que ya entiendes su problema específico es la forma más rápida de ganarse el derecho a una conversación más profunda."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identifica tus 3 mejores socios de referencia potenciales (personas que atienden a tu ICP pero no compiten) y un 'Cliente de Ensueño.' Explica por qué estos socios son adecuados para ti y qué valor agregado específico o perspectiva diagnóstica podrías compartir con el cliente de ensueño para iniciar una conversación.",
+            "minLength": 100,
+            "promptForAI": "Verifica la 'Lógica de Referencia' — ¿por qué estos socios atienden a las mismas personas? El valor agregado para el cliente de ensueño debe ser específico y basado en la observación, no solo 'Puedo ayudarte'."
+        }
+    ]
+}

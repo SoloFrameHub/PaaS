@@ -1,0 +1,79 @@
+{
+  "lessonId": "4",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Analíticas del Embudo de Aplicación",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "El embudo de aplicación de un creador muestra 400 aplicaciones iniciadas pero solo 160 completadas. ¿Cuál es la tasa de completado y qué indica?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40% -- por debajo del referente de 60-80%, indicando que el formulario tiene problemas significativos"
+        },
+        {
+          "id": "b",
+          "text": "40% -- aceptable para ofertas de alto precio donde se esperan aplicaciones exhaustivas"
+        },
+        {
+          "id": "c",
+          "text": "60% -- en el extremo inferior del rango saludable"
+        },
+        {
+          "id": "d",
+          "text": "40% -- por encima del promedio ya que la mayoría de los formularios de aplicación ven 20-30% de completado"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "160/400 = 40% de tasa de completado. El referente es 60-80%, así que 40% indica problemas significativos con el formulario. Las causas comunes incluyen demasiadas preguntas (más de 8-10), preguntas abiertas que requieren respuestas largas al inicio del formulario, o fricción técnica como carga lenta o diseño no optimizado para móvil."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Las investigaciones muestran que los leads contactados dentro de los primeros 5 minutos después de expresar interés tienen cuántas más probabilidades de entrar al proceso de ventas comparado con leads contactados después de 30 minutos?",
+      "options": [
+        { "id": "a", "text": "3 veces más probable" },
+        { "id": "b", "text": "7 veces más probable" },
+        { "id": "c", "text": "21 veces más probable" },
+        { "id": "d", "text": "10 veces más probable" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Según la investigación de InsideSales.com citada en la lección, los leads contactados dentro de 5 minutos tienen 21 veces más probabilidades de entrar al proceso de ventas que los leads contactados después de 30 minutos. Por eso la velocidad de contacto es una de las métricas más subestimadas en los embudos de aplicación."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "En el ejemplo de matemáticas del embudo, reducir la tasa de completado de aplicación del 75% al 40% (con todas las demás etapas sin cambios) redujo los ingresos de $130,000 a $70,000 USD con 1,000 visitantes. ¿Qué demuestra esto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los formularios de aplicación deberían eliminarse por completo para remover la fricción"
+        },
+        {
+          "id": "b",
+          "text": "Una sola etapa con fugas puede costar más de la mitad de tus ingresos potenciales, haciendo esencial el seguimiento etapa por etapa"
+        },
+        {
+          "id": "c",
+          "text": "La tasa de cierre es más importante que la tasa de completado de aplicación"
+        },
+        {
+          "id": "d",
+          "text": "Solo deberías optimizar la etapa final del embudo ya que esa afecta directamente los ingresos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El ejemplo muestra que una etapa débil (40% vs 75% de completado) causó una pérdida de $60,000 USD (aproximadamente $1,050,000 MXN) en ingresos con el mismo tráfico. Esto demuestra por qué importa rastrear cada etapa -- si solo mides la conversión de principio a fin, no puedes identificar qué etapa está perdiendo y desperdiciarás esfuerzo arreglando lo incorrecto."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Mapea tu embudo actual de aplicación o ventas etapa por etapa. Para cada etapa, estima tu tasa de conversión (incluso una aproximación es mejor que nada). ¿Dónde está tu mayor caída y cuál es una solución específica que podrías implementar esta semana para abordarla?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante identificó etapas distintas en su embudo con estimaciones de tasa de conversión. Verifica si identificó correctamente su mayor punto de caída y propuso una solución específica y accionable (no una mejora vaga). Si no tiene un embudo de aplicación, evalúa si identificó las etapas equivalentes en su proceso de ventas."
+    }
+  ]
+}

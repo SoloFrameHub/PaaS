@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CBT Triangle: Transform Your Thoughts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-teal: #2dd4bf;
+            --deep-teal: #0f766e;
+            --soft-blue: #38bdf8;
+            --sage-green: #84cc16;
+            --warm-orange: #fb923c;
+            --purple-accent: #a855f7;
+            --gentle-text: #374151;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --success-green: #10b981;
+            --warning-yellow: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            color: var(--gentle-text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--primary-teal) 50%, var(--soft-blue) 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 24px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-header h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-header p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-content {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .intro-section h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            color: var(--gray-600);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Enhanced Triangle Design */
+        .triangle-wrapper {
+            position: relative;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 40px 20px;
+        }
+
+        .triangle-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        .triangle-point {
+            position: absolute;
+            width: 200px;
+            height: 120px;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 3px solid;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .triangle-point:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .triangle-point.active {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        #thought-point {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: var(--purple-accent);
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+
+        #feeling-point {
+            bottom: 0;
+            left: 50px;
+            border-color: var(--warm-orange);
+            background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+        }
+
+        #action-point {
+            bottom: 0;
+            right: 50px;
+            border-color: var(--sage-green);
+            background: linear-gradient(135deg, #f7fee7 0%, #d9f99d 100%);
+        }
+
+        .triangle-point h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        #thought-point h3 { color: var(--purple-accent); }
+        #feeling-point h3 { color: var(--warm-orange); }
+        #action-point h3 { color: var(--sage-green); }
+
+        .triangle-point p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: var(--gray-600);
+        }
+
+        /* Animated Arrows */
+        .arrow {
+            position: absolute;
+            z-index: 5;
+        }
+
+        .arrow svg {
+            width: 60px;
+            height: 60px;
+        }
+
+        .arrow-path {
+            stroke: var(--primary-teal);
+            stroke-width: 3;
+            fill: none;
+            stroke-dasharray: 10;
+            animation: dash 2s linear infinite;
+        }
+
+        .arrow-head {
+            fill: var(--primary-teal);
+        }
+
+        @keyframes dash {
+            to { stroke-dashoffset: -20; }
+        }
+
+        #arrow1 { top: 80px; left: 45%; }
+        #arrow2 { top: 80px; right: 45%; }
+        #arrow3 { bottom: 80px; left: 50%; transform: translateX(-50%); }
+
+        /* Scenario Selection */
+        .scenario-selector {
+            background: var(--gray-100);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .scenario-selector h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--deep-teal);
+        }
+
+        .scenario-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .scenario-btn {
+            background: var(--white);
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .scenario-btn:hover {
+            border-color: var(--primary-teal);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .scenario-btn.active {
+            background: var(--primary-teal);
+            color: white;
+            border-color: var(--primary-teal);
+        }
+
+        /* Interactive Demo */
+        .interactive-demo {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--gray-100) 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .demo-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .demo-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 12px;
+        }
+
+        .situation-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .situation-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--deep-teal);
+            margin-bottom: 8px;
+        }
+
+        .cycle-container {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .step-bubble {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            border-left: 6px solid;
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.6s ease;
+            position: relative;
+        }
+
+        .step-bubble.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .step-bubble.thought { border-color: var(--purple-accent); }
+        .step-bubble.feeling { border-color: var(--warm-orange); }
+        .step-bubble.action { border-color: var(--sage-green); }
+
+        .step-bubble h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .step-bubble.thought h4 { color: var(--purple-accent); }
+        .step-bubble.feeling h4 { color: var(--warm-orange); }
+        .step-bubble.action h4 { color: var(--sage-green); }
+
+        .step-bubble p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        .step-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .thought .step-icon { background: var(--purple-accent); }
+        .feeling .step-icon { background: var(--warm-orange); }
+        .action .step-icon { background: var(--sage-green); }
+
+        .balanced-version {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border-color: var(--success-green);
+        }
+
+        .balanced-version h4 { color: var(--success-green); }
+
+        .control-center {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--primary-teal) 0%, var(--soft-blue) 100%);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 8px;
+            box-shadow: 0 4px 14px 0 rgba(45, 212, 191, 0.39);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px 0 rgba(45, 212, 191, 0.5);
+        }
+
+        .btn:disabled {
+            background: var(--gray-200);
+            color: var(--gray-600);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--sage-green) 0%, #65a30d 100%);
+            box-shadow: 0 4px 14px 0 rgba(132, 204, 22, 0.39);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 8px 20px 0 rgba(132, 204, 22, 0.5);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--gray-200);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-teal) 0%, var(--soft-blue) 100%);
+            width: 0%;
+            transition: width 0.6s ease;
+        }
+
+        /* Personal Input Section */
+        .personal-section {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px 0;
+            border: 2px solid var(--gray-200);
+        }
+
+        .personal-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--gentle-text);
+        }
+
+        .input-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            font-size: 1rem;
+            resize: vertical;
+            min-height: 60px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-teal);
+            box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container { padding: 16px; }
+            .hero-header { padding: 40px 20px; }
+            .main-content { padding: 24px; }
+            
+            .triangle-point {
+                width: 160px;
+                height: 100px;
+                padding: 16px;
+            }
+            
+            .triangle-point h3 { font-size: 1.2rem; }
+            .triangle-point p { font-size: 0.9rem; }
+            
+            #feeling-point { left: 20px; }
+            #action-point { right: 20px; }
+            
+            .scenario-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .arrow-path { animation: none; }
+            .step-bubble { transition: opacity 0.3s ease; }
+            .triangle-point { transition: box-shadow 0.3s ease; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero-header">
+            <h1>The CBT Triangle</h1>
+            <p>Discover how your thoughts, feelings, and actions connect—and learn to break negative cycles</p>
+        </header>
+
+        <main class="main-content">
+            <section class="intro-section">
+                <h2>How Your Mind Shapes Your Reality</h2>
+                <p>Anxiety often starts with a single, automatic thought. Understanding the connection between thoughts, feelings, and actions is the foundation of Cognitive Behavioral Therapy (CBT). When you learn to intervene at any point in this cycle, you can transform your entire experience.</p>
+            </section>
+
+            <!-- Enhanced Triangle Visualization -->
+            <div class="triangle-wrapper">
+                <div class="triangle-container" role="img" aria-label="Interactive diagram showing the relationship between thoughts, feelings, and actions">
+                    <div id="thought-point" class="triangle-point" tabindex="0" role="button" aria-label="Thoughts: What we think affects how we feel and act">
+                        <h3>💭 Thoughts</h3>
+                        <p>What we think affects how we feel and act</p>
+                    </div>
+                    
+                    <div id="feeling-point" class="triangle-point" tabindex="0" role="button" aria-label="Feelings: How we feel affects what we think and do">
+                        <h3>💗 Feelings</h3>
+                        <p>How we feel affects what we think and do</p>
+                    </div>
+                    
+                    <div id="action-point" class="triangle-point" tabindex="0" role="button" aria-label="Actions: What we do affects how we think and feel">
+                        <h3>⚡ Actions</h3>
+                        <p>What we do affects how we think and feel</p>
+                    </div>
+
+                    <!-- Animated Arrows -->
+                    <div id="arrow1" class="arrow">
+                        <svg viewBox="0 0 60 60">
+                            <path class="arrow-path" d="M10 30 L40 10" stroke-linecap="round"/>
+                            <polygon class="arrow-head" points="35,5 45,10 40,15"/>
+                        </svg>
+                    </div>
+                    
+                    <div id="arrow2" class="arrow">
+                        <svg viewBox="0 0 60 60">
+                            <path class="arrow-path" d="M50 30 L20 10" stroke-linecap="round"/>
+                            <polygon class="arrow-head" points="25,5 15,10 20,15"/>
+                        </svg>
+                    </div>
+                    
+                    <div id="arrow3" class="arrow">
+                        <svg viewBox="0 0 60 60">
+                            <path class="arrow-path" d="M10 10 L50 10" stroke-linecap="round"/>
+                            <polygon class="arrow-head" points="45,5 55,10 45,15"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; margin-top: 20px; font-size: 1.1rem; color: var(--gray-600);">
+                    <strong>They're all connected.</strong> Change one, and you can change them all.
+                </p>
+            </div>
+
+            <!-- Scenario Selection -->
+            <div class="scenario-selector">
+                <h3>Choose a situation to explore:</h3>
+                <div class="scenario-buttons">
+                    <div class="scenario-btn active" data-scenario="presentation">
+                        📊 Work Presentation
+                    </div>
+                    <div class="scenario-btn" data-scenario="social">
+                        👥 Social Event
+                    </div>
+                    <div class="scenario-btn" data-scenario="health">
+                        🏥 Medical Appointment
+                    </div>
+                    <div class="scenario-btn" data-scenario="relationship">
+                        💕 Difficult Conversation
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Demo -->
+            <section class="interactive-demo">
+                <div class="demo-header">
+                    <h2>See the Cycle in Action</h2>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="situation-card">
+                    <h3 id="situation-title">The Situation</h3>
+                    <p id="situation-description">You have to give a work presentation tomorrow.</p>
+                </div>
+
+                <div class="cycle-container">
+                    <div id="step1" class="step-bubble thought">
+                        <h4><span class="step-icon">1</span>Anxious Thought</h4>
+                        <p id="thought-content">"I'm going to freeze up and look like an idiot."</p>
+                    </div>
+                    
+                    <div id="step2" class="step-bubble feeling">
+                        <h4><span class="step-icon">2</span>Resulting Feeling</h4>
+                        <p id="feeling-content">Anxiety, dread, panic. Your body's "gas pedal" floors it!</p>
+                    </div>
+                    
+                    <div id="step3" class="step-bubble action">
+                        <h4><span class="step-icon">3</span>Resulting Action</h4>
+                        <p id="action-content">Avoid practicing. Stay up all night worrying. Consider calling in sick.</p>
+                    </div>
+                </div>
+
+                <div class="control-center">
+                    <button id="next-step-btn" class="btn" onclick="revealNextStep()" aria-label="Reveal next step in the cycle">
+                        Start the Cycle
+                    </button>
+                    
+                    <div id="intervention-section" style="display: none;">
+                        <p style="font-size: 1.2rem; margin: 20px 0; font-weight: 600;">
+                            But what if we could interrupt that first thought?
+                        </p>
+                        <button class="btn btn-secondary" onclick="showBalancedThought()" aria-label="Try a more balanced thought approach">
+                            🧠 Try a Balanced Thought
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal Application -->
+            <section class="personal-section" id="personal-section" style="display: none;">
+                <h3>🌟 Apply This to Your Life</h3>
+                <p style="text-align: center; margin-bottom: 30px; color: var(--gray-600);">
+                    Think of a situation that's been causing you stress. Let's work through it together.
+                </p>
+                
+                <div class="input-group">
+                    <label for="personal-situation">Describe your situation:</label>
+                    <textarea id="personal-situation" placeholder="e.g., I have a job interview next week..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="personal-thought">What's your first automatic thought about it?</label>
+                    <textarea id="personal-thought" placeholder="e.g., I'm not qualified enough..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="personal-feeling">How does that thought make you feel?</label>
+                    <textarea id="personal-feeling" placeholder="e.g., Nervous, inadequate, overwhelmed..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="personal-action">What actions do you take when you feel this way?</label>
+                    <textarea id="personal-action" placeholder="e.g., Procrastinate on preparation, avoid thinking about it..."></textarea>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn" onclick="generateBalancedThought()">
+                        ✨ Get a Balanced Perspective
+                    </button>
+                </div>
+                
+                <div id="personal-result" style="display: none; margin-top: 30px; padding: 20px; background: var(--light-bg); border-radius: 12px;">
+                    <h4 style="color: var(--success-green); margin-bottom: 16px;">💡 Here's a more balanced way to think about it:</h4>
+                    <p id="balanced-suggestion" style="font-style: italic; font-size: 1.1rem;"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Scenario data
+        const scenarios = {
+            presentation: {
+                title: "Work Presentation Tomorrow",
+                description: "You have to give an important presentation to your team tomorrow.",
+                thought: "I'm going to freeze up and look like an idiot.",
+                feeling: "Anxiety, dread, panic. Your body's 'gas pedal' floors it!",
+                action: "Avoid practicing. Stay up all night worrying. Consider calling in sick.",
+                balancedThought: "I'm nervous, but I'm prepared. It's normal to feel anxious—it shows I care.",
+                balancedFeeling: "Nervous but capable. Your anxiety becomes manageable energy.",
+                balancedAction: "Practice key points. Get good sleep. Arrive early to settle in."
+            },
+            social: {
+                title: "Social Event This Weekend",
+                description: "You're invited to a party where you won't know many people.",
+                thought: "No one will want to talk to me. I'll just stand there awkwardly.",
+                feeling: "Social anxiety, self-consciousness, dread about going.",
+                action: "Make excuses not to go. Scroll social media instead of preparing.",
+                balancedThought: "Some conversations might be awkward, but that's normal. I can always leave if needed.",
+                balancedFeeling: "Nervous but curious. Open to meeting new people.",
+                balancedAction: "Prepare a few conversation starters. Set a realistic time limit for staying."
+            },
+            health: {
+                title: "Medical Appointment Next Week",
+                description: "You have a doctor's appointment to discuss some concerning symptoms.",
+                thought: "What if it's something terrible? The doctor will find something wrong.",
+                feeling: "Fear, health anxiety, catastrophic worry about the future.",
+                action: "Research symptoms online obsessively. Avoid scheduling the appointment.",
+                balancedThought: "I'm taking care of my health by seeing a professional. Most issues are manageable.",
+                balancedFeeling: "Concerned but proactive. Taking responsible action for my wellbeing.",
+                balancedAction: "Write down symptoms to discuss. Limit internet research. Bring support if needed."
+            },
+            relationship: {
+                title: "Difficult Conversation with Partner",
+                description: "You need to address a recurring issue with your romantic partner.",
+                thought: "This will turn into a huge fight. They'll get defensive and nothing will change.",
+                feeling: "Dread, frustration, fear of conflict or rejection.",
+                action: "Avoid the conversation. Let resentment build up. Give them the silent treatment.",
+                balancedThought: "This conversation is important for our relationship. We can work through this together.",
+                balancedFeeling: "Nervous but hopeful. Committed to improving our connection.",
+                balancedAction: "Choose a calm moment to talk. Use 'I' statements. Listen to their perspective."
+            }
+        };
+
+        // State management
+        let currentStep = 0;
+        let currentScenario = 'presentation';
+
+        // DOM elements
+        const nextStepBtn = document.getElementById('next-step-btn');
+        const interventionSection = document.getElementById('intervention-section');
+        const progressFill = document.getElementById('progress-fill');
+        const personalSection = document.getElementById('personal-section');
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            setupEventListeners();
+            setupAccessibility();
+            updateScenario(currentScenario);
+        });
+
+        function setupEventListeners() {
+            // Scenario selection
+            document.querySelectorAll('.scenario-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.scenario-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentScenario = this.dataset.scenario;
+                    updateScenario(currentScenario);
+                    resetDemo();
+                });
+            });
+
+            // Triangle point interactions
+            document.querySelectorAll('.triangle-point').forEach(point => {
+                point.addEventListener('click', function() {
+                    document.querySelectorAll('.triangle-point').forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Add haptic feedback for mobile
+                    if ('vibrate' in navigator) {
+                        navigator.vibrate(50);
+                    }
+                });
+
+                // Keyboard accessibility
+                point.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        }
+
+        function setupAccessibility() {
+            // Add live region for dynamic content updates
+            const liveRegion = document.createElement('div');
+            liveRegion.setAttribute('aria-live', 'polite');
+            liveRegion.setAttribute('aria-atomic', 'true');
+            liveRegion.className = 'sr-only';
+            liveRegion.id = 'live-region';
+            document.body.appendChild(liveRegion);
+        }
+
+        function announceToScreenReader(message) {
+            const liveRegion = document.getElementById('live-region');
+            if (liveRegion) {
+                liveRegion.textContent = message;
+            }
+        }
+
+        function updateScenario(scenarioKey) {
+            const scenario = scenarios[scenarioKey];
+            document.getElementById('situation-title').textContent = scenario.title;
+            document.getElementById('situation-description').textContent = scenario.description;
+            document.getElementById('thought-content').textContent = scenario.thought;
+            document.getElementById('feeling-content').textContent = scenario.feeling;
+            document.getElementById('action-content').textContent = scenario.action;
+        }
+
+        function resetDemo() {
+            currentStep = 0;
+            document.querySelectorAll('.step-bubble').forEach(bubble => {
+                bubble.classList.remove('visible', 'balanced-version');
+            });
+            nextStepBtn.disabled = false;
+            nextStepBtn.textContent = 'Start the Cycle';
+            interventionSection.style.display = 'none';
+            personalSection.style.display = 'none';
+            updateProgress(0);
+        }
+
+        function revealNextStep() {
+            currentStep++;
+            const stepBubble = document.getElementById(`step${currentStep}`);
+            
+            if (stepBubble) {
+                setTimeout(() => {
+                    stepBubble.classList.add('visible');
+                    updateProgress((currentStep / 3) * 100);
+                    
+                    // Announce to screen readers
+                    const stepType = stepBubble.classList.contains('thought') ? 'thought' : 
+                                   stepBubble.classList.contains('feeling') ? 'feeling' : 'action';
+                    announceToScreenReader(`Step ${currentStep}: ${stepType} revealed`);
+                }, currentStep * 300);
+            }
+
+            if (currentStep === 3) {
+                setTimeout(() => {
+                    nextStepBtn.disabled = true;
+                    nextStepBtn.textContent = 'The Negative Cycle is Complete';
+                    interventionSection.style.display = 'block';
+                    announceToScreenReader('Negative cycle complete. Option to try balanced approach now available.');
+                }, 1000);
+            } else {
+                nextStepBtn.textContent = 'Next Step';
+            }
+        }
+
+        function showBalancedThought() {
+            const scenario = scenarios[currentScenario];
+            
+            // Update thought
+            const thoughtBubble = document.getElementById('step1');
+            thoughtBubble.classList.add('balanced-version');
+            thoughtBubble.querySelector('h4').innerHTML = '<span class="step-icon">✓</span>Balanced Thought';
+            thoughtBubble.querySelector('p').textContent = scenario.balancedThought;
+
+            // Update feeling
+            const feelingBubble = document.getElementById('step2');
+            feelingBubble.classList.add('balanced-version');
+            feelingBubble.querySelector('h4').innerHTML = '<span class="step-icon">✓</span>New Feeling';
+            feelingBubble.querySelector('p').textContent = scenario.balancedFeeling;
+
+            // Update action
+            const actionBubble = document.getElementById('step3');
+            actionBubble.classList.add('balanced-version');
+            actionBubble.querySelector('h4').innerHTML = '<span class="step-icon">✓</span>New Action';
+            actionBubble.querySelector('p').textContent = scenario.balancedAction;
+
+            // Hide intervention and show personal section
+            interventionSection.style.display = 'none';
+            setTimeout(() => {
+                personalSection.style.display = 'block';
+                personalSection.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+
+            announceToScreenReader('Balanced approach applied. Personal application section now available.');
+        }
+
+        function updateProgress(percentage) {
+            progressFill.style.width = percentage + '%';
+        }
+
+        function generateBalancedThought() {
+            const situation = document.getElementById('personal-situation').value;
+            const thought = document.getElementById('personal-thought').value;
+            const feeling = document.getElementById('personal-feeling').value;
+            const action = document.getElementById('personal-action').value;
+
+            if (!situation || !thought) {
+                alert('Please fill in at least the situation and thought fields.');
+                return;
+            }
+
+            // Simple balanced thought generation (in a real app, this might use AI)
+            const balancedSuggestions = [
+                "This situation is challenging, but I have the skills to handle it step by step.",
+                "It's normal to feel uncertain about new situations. I can learn as I go.",
+                "I don't have to be perfect. I just need to do my best with what I have.",
+                "This feeling will pass. I can take it one moment at a time.",
+                "I've handled difficult situations before, and I can handle this one too.",
+                "It's okay to feel nervous—it shows that this matters to me.",
+                "I can ask for help if I need it. I don't have to figure this out alone.",
+                "Even if things don't go perfectly, I'll learn something valuable from the experience."
+            ];
+
+            const randomSuggestion = balancedSuggestions[Math.floor(Math.random() * balancedSuggestions.length)];
+            
+            document.getElementById('balanced-suggestion').textContent = randomSuggestion;
+            document.getElementById('personal-result').style.display = 'block';
+            
+            // Smooth scroll to result
+            document.getElementById('personal-result').scrollIntoView({ behavior: 'smooth' });
+            
+            announceToScreenReader('Balanced perspective generated and displayed.');
+        }
+
+        // Enhanced keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                // Ensure proper tab order
+                return;
+            }
+            
+            if (e.key === 'Escape') {
+                // Reset any active states
+                document.querySelectorAll('.triangle-point').forEach(p => p.classList.remove('active'));
+            }
+        });
+
+        // Add some delightful micro-interactions
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mousedown', function() {
+                this.style.transform = 'translateY(-1px) scale(0.98)';
+            });
+            
+            btn.addEventListener('mouseup', function() {
+                this.style.transform = 'translateY(-2px) scale(1)';
+            });
+        });
+
+        // Performance optimization: Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.triangle-point, .step-bubble').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

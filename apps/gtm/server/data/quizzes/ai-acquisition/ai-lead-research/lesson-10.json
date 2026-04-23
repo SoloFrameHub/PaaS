@@ -1,0 +1,93 @@
+{
+  "lessonId": "10",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "Your Enrichment Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the six components of a complete enrichment playbook?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tools, budget, timeline, team, metrics, reports"
+        },
+        {
+          "id": "b",
+          "text": "Discovery sources, waterfall recipe, scoring rubric, research depth map, quality gates, weekly workflow"
+        },
+        {
+          "id": "c",
+          "text": "ICP, emails, phone numbers, LinkedIn URLs, company data, intent signals"
+        },
+        {
+          "id": "d",
+          "text": "Apollo, Clay, Hunter, Snov.io, MillionVerifier, ChatGPT"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The six playbook components are: Discovery Sources (where you find raw prospects), Waterfall Recipe (enrichment sequence with source priority), Scoring Rubric (calibrated ICP fit agent prompt), Research Depth Map (how much research per tier), Quality Gates (verification and hallucination checks), and Weekly Workflow (exact steps with time estimates)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why is an enrichment playbook necessary rather than ad-hoc enrichment?",
+      "options": [
+        { "id": "a", "text": "It's required by GDPR compliance" },
+        {
+          "id": "b",
+          "text": "Without a playbook, you waste credits on low-fit leads, skip verification, and send to bad emails — a playbook turns enrichment into a repeatable system"
+        },
+        {
+          "id": "c",
+          "text": "Playbooks are only needed for teams, not solo founders"
+        },
+        { "id": "d", "text": "It reduces the cost of enrichment tools" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Without a playbook, enrichment becomes ad-hoc chaos — wasting credits on low-fit leads, skipping verification, and sending to bad emails. A playbook turns enrichment into a repeatable system that you reference every Monday morning, getting better every week through consistent execution."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the purpose of 'trigger-based discovery' in the playbook?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sending automated emails when prospects visit your website"
+        },
+        {
+          "id": "b",
+          "text": "Monitoring for real-time events (job changes, funding announcements) that signal buying intent and automatically adding matching prospects"
+        },
+        { "id": "c", "text": "Setting up automated CRM workflows" },
+        {
+          "id": "d",
+          "text": "Triggering discounts when prospects show interest"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Trigger-based discovery monitors real-time events like job change alerts, funding announcements, and competitor activity to surface prospects at the exact moment they're most likely to buy. These signals create high-intent opportunities that static list-building misses."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Once your enrichment playbook is set up, it should remain unchanged for at least 6 months to maintain consistency.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The playbook should be treated as a living document that improves weekly. As you learn which ICP segments convert best, which enrichment sources provide the best data, and which scoring criteria predict closed deals, you should iterate and refine the playbook continuously."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Draft the first version of your enrichment playbook. Include your primary discovery source with search filters, your waterfall enrichment recipe (at least 3 sources in order), and your quality gates. What will you check every Monday morning?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes all three requested components (discovery source with filters, waterfall recipe with prioritized sources, quality gates). Look for specificity — named tools, concrete filters, and clear verification steps. Check that the Monday morning routine is actionable and time-bounded."
+    }
+  ]
+}

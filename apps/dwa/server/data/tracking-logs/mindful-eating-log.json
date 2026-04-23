@@ -1,0 +1,118 @@
+{
+  "id": "mindful-eating-log",
+  "title": "Mindful Eating Reflection Log",
+  "description": "Track your mindful and intuitive eating practice alongside mood and emotional awareness. Research shows that mindful eating is associated with lower disordered eating, lower depression, and better body image.",
+  "instructions": "Complete this log after at least one mindful meal per day. Focus on awareness and self-compassion rather than judgment. This is about building a healthier relationship with food, not restricting.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "mindfulMeal",
+      "label": "Which meal did you eat mindfully today?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "breakfast", "label": "Breakfast" },
+        { "value": "lunch", "label": "Lunch" },
+        { "value": "dinner", "label": "Dinner" },
+        { "value": "snack", "label": "Snack" },
+        { "value": "multiple", "label": "Multiple meals" }
+      ]
+    },
+    {
+      "id": "hungerBefore",
+      "label": "How hungry were you before eating?",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Not hungry at all",
+        "2": "Slightly hungry",
+        "3": "Moderately hungry",
+        "4": "Very hungry",
+        "5": "Extremely hungry"
+      }
+    },
+    {
+      "id": "emotionalState",
+      "label": "What was your emotional state before eating?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "calm", "label": "Calm / Neutral" },
+        { "value": "happy", "label": "Happy / Content" },
+        { "value": "stressed", "label": "Stressed / Anxious" },
+        { "value": "sad", "label": "Sad / Low" },
+        { "value": "bored", "label": "Bored / Restless" },
+        { "value": "tired", "label": "Tired / Depleted" }
+      ]
+    },
+    {
+      "id": "emotionalEating",
+      "label": "Were you eating in response to emotions rather than physical hunger?",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "id": "presentMoment",
+      "label": "How present were you during the meal? (not distracted by screens, work, etc.)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very distracted",
+        "2": "Mostly distracted",
+        "3": "Somewhat present",
+        "4": "Mostly present",
+        "5": "Fully present"
+      }
+    },
+    {
+      "id": "satisfactionAfter",
+      "label": "How satisfied did you feel after eating?",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Not satisfied",
+        "2": "Slightly satisfied",
+        "3": "Moderately satisfied",
+        "4": "Satisfied",
+        "5": "Deeply satisfied"
+      }
+    },
+    {
+      "id": "selfCompassion",
+      "label": "Were you kind to yourself about your food choices today?",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "ratingLabels": {
+        "1": "Very self-critical",
+        "2": "Somewhat critical",
+        "3": "Neutral",
+        "4": "Mostly compassionate",
+        "5": "Very compassionate"
+      }
+    },
+    {
+      "id": "insight",
+      "label": "What did you notice about your eating experience today?",
+      "type": "text",
+      "required": false,
+      "placeholder": "e.g., I noticed I eat much faster when stressed. When I slowed down, I enjoyed the meal more and felt satisfied sooner."
+    }
+  ],
+  "derivedMetrics": [
+    {
+      "id": "mindfulnessScore",
+      "label": "Mindfulness Score",
+      "formula": "mindfulnessScore",
+      "unit": "points"
+    }
+  ],
+  "disclaimer": "This log is designed to build awareness, not restriction. If tracking your eating triggers guilt, anxiety, or disordered eating patterns, please stop using this tool and consult a healthcare provider. This is not appropriate for individuals with active eating disorders. If you are in crisis, call or text 988."
+}

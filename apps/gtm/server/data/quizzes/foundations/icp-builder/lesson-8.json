@@ -1,0 +1,141 @@
+{
+    "lessonId": "8",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Tiering Your Accounts - The 'Sniper vs. Shotgun' Method",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Peanut Butter Mistake' in sales prospecting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Eating lunch at your desk."
+                },
+                {
+                    "id": "b",
+                    "text": "Spreading your sales effort evenly across all prospects, regardless of their size or potential."
+                },
+                {
+                    "id": "c",
+                    "text": "Using too many sticky notes."
+                },
+                {
+                    "id": "d",
+                    "text": "Sending gifts that people are allergic to."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Treating a 500-person company the same as a 5-person company is inefficient. You must allocate resources based on potential value."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which strategy describes a 'Tier 1' Account approach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Shotgun: Mass automation."
+                },
+                {
+                    "id": "b",
+                    "text": "The Sniper: 100% Manual, Deep Research, Hyper-personalized."
+                },
+                {
+                    "id": "c",
+                    "text": "The Hybrid: Automated template with a custom first line."
+                },
+                {
+                    "id": "d",
+                    "text": "The Lottery: Guessing emails."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Tier 1 accounts are your 'Must Win' high-value targets. They require deep research (podcasts, 10-Ks) and zero automation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the appropriate volume for 'Tier 3' accounts?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The top 5% of your list."
+                },
+                {
+                    "id": "b",
+                    "text": "The bottom 60% of your list (High volume)."
+                },
+                {
+                    "id": "c",
+                    "text": "Zero. Never email them."
+                },
+                {
+                    "id": "d",
+                    "text": "10 companies per week."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Tier 3 accounts are 'Good Enough' fits but low strategic value. Use automation (The Shotgun) to handle them efficiently at volume."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why should you listen to a podcast a CEO was on before emailing them (Tier 1)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To procrastinate."
+                },
+                {
+                    "id": "b",
+                    "text": "To offer them editing services."
+                },
+                {
+                    "id": "c",
+                    "text": "To find a specific quote to prove you did your homework and aren't a bot."
+                },
+                {
+                    "id": "d",
+                    "text": "To see if they have a nice voice."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Quoting a specific insight from a podcast (e.g. at minute 20) is the ultimate proof of work. It builds instant trust."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What happens if you spend 'Tier 1' effort on a 'Tier 3' account?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You guarantee a sale."
+                },
+                {
+                    "id": "b",
+                    "text": "You waste expensive time on a low-value opportunity, destroying your unit economics."
+                },
+                {
+                    "id": "c",
+                    "text": "It is good practice."
+                },
+                {
+                    "id": "d",
+                    "text": "Nothing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Resource allocation is key. Spending 30 minutes researching a tiny account is bad business, even if you win the deal."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Create a simple 3-tier account classification for your target market. What criteria determine whether a prospect is Tier 1 (high-touch), Tier 2 (medium), or Tier 3 (low-touch)?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the tiering criteria. Check for: (1) clear differentiation between tiers, (2) practical criteria, (3) resource allocation logic. Suggest improvements to tiering strategy."
+        }
+    ]
+}

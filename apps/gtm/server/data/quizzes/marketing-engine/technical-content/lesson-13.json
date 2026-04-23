@@ -1,0 +1,142 @@
+{
+    "lessonId": "13",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "The Creator Funnel Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three layers of the 'Full Stack Creator Funnel'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Twitter, LinkedIn, and Instagram"
+                },
+                {
+                    "id": "b",
+                    "text": "Discovery (TOFU), Trust (MOFU), and Sales (BOFU)"
+                },
+                {
+                    "id": "c",
+                    "text": "Video, Audio, and Text"
+                },
+                {
+                    "id": "d",
+                    "text": "Viral Hits, Memes, and Rants"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A complete funnel needs to reach new people (Discovery), build authority (Trust), and convert them (Sales)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which type of content builds the 'Bank of Trust'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "TOFU (Viral hooks)"
+                },
+                {
+                    "id": "b",
+                    "text": "MOFU (Educational/How-To)"
+                },
+                {
+                    "id": "c",
+                    "text": "BOFU (Sales Pitches)"
+                },
+                {
+                    "id": "d",
+                    "text": "Cat videos"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Middle of Funnel (MOFU) content teaches the 'How' and proves your competence. This is where relationships are built."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended '70-20-10' mix for creators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "70% Sales, 20% Trust, 10% Discovery"
+                },
+                {
+                    "id": "b",
+                    "text": "70% Trust, 20% Discovery, 10% Sales"
+                },
+                {
+                    "id": "c",
+                    "text": "70% Discovery, 20% Sales, 10% Trust"
+                },
+                {
+                    "id": "d",
+                    "text": "33% of each"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Spend the majority of your time (70%) being helpful (Trust). Use 20% to grow reach (Discovery), and earn the right to sell 10% of the time."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What happens if you post 90% TOFU (Discovery) content and 0% Sales content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You become rich"
+                },
+                {
+                    "id": "b",
+                    "text": "You become an 'Influencer' with lots of followers but no money"
+                },
+                {
+                    "id": "c",
+                    "text": "You get banned"
+                },
+                {
+                    "id": "d",
+                    "text": "Your audience gets angry"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Views do not pay rent. If you never make an offer (BOFU), you are just endlessly entertaining people for free."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the function of a 'Bridge CTA'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To ask people to like and subscribe"
+                },
+                {
+                    "id": "b",
+                    "text": "To move people from one funnel stage to the next (e.g., from Social to Email)"
+                },
+                {
+                    "id": "c",
+                    "text": "To end a post gracefully"
+                },
+                {
+                    "id": "d",
+                    "text": "To link to a bridge construction company"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Bridge CTA explicitly tells the user the next step: 'If you liked this (TOFU), read my newsletter (MOFU).' It captures the attention you just generated."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Audit your last 3 posts. Which layer were they (Discovery, Trust, or Sales)? Which layer are you neglecting the most, and what is ONE post you could write tomorrow to fix that gap?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's diagnosis. Do they correctly identify a gap? Does their proposed 'fix' match the missing layer? (e.g., if they are missing Sales, they should propose an Offer post)."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

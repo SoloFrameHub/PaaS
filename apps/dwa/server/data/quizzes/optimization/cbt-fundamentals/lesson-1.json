@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "According to the cognitive model, what creates your emotional response to a situation?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "The situation itself \u2014 external events directly cause emotions"
+        },
+        {
+          "id": "opt2",
+          "text": "Your interpretation of the situation \u2014 how you think about it"
+        },
+        {
+          "id": "opt3",
+          "text": "Your past experiences \u2014 emotions are conditioned responses"
+        },
+        {
+          "id": "opt4",
+          "text": "Your personality type \u2014 some people are naturally more emotional"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Correct. Your thought about the event creates your feeling. This is why CBT focuses on examining and testing your interpretations \u2014 changing the thought changes the emotion.",
+      "id": "q1"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Why does CBT focus on thoughts as the primary entry point for change?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Because feelings and behaviors don't matter as much"
+        },
+        {
+          "id": "opt2",
+          "text": "Because you can't change emotions or behaviors directly"
+        },
+        {
+          "id": "opt3",
+          "text": "Because thoughts are observable, testable, and changeable through practice"
+        },
+        {
+          "id": "opt4",
+          "text": "Because changing thoughts is easier than changing behaviors"
+        }
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Exactly. Unlike emotions (which feel absolute and automatic), thoughts are mental habits you can catch, examine, and deliberately practice alternatives for. This makes them the most accessible leverage point for change.",
+      "id": "q2"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In the cognitive triangle, how do behaviors influence thoughts and feelings?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Behaviors don't influence thoughts \u2014 the arrow only goes one direction"
+        },
+        {
+          "id": "opt2",
+          "text": "Avoidance behaviors strengthen negative thoughts; engagement behaviors challenge them"
+        },
+        {
+          "id": "opt3",
+          "text": "Behaviors only matter if they're extreme \u2014 small actions don't influence thoughts"
+        },
+        {
+          "id": "opt4",
+          "text": "Behaviors change feelings but not thoughts"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Yes. When you avoid something (e.g., skip the party), your brain learns 'this is dangerous,' which reinforces anxiety. When you engage (go to the party), you collect evidence that challenges the fear. Behavior shapes belief.",
+      "id": "q3"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the difference between CBT-style thought change and 'positive thinking'?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "There is no difference \u2014 both teach you to think optimistically"
+        },
+        {
+          "id": "opt2",
+          "text": "CBT focuses on realistic, evidence-based thinking; positive thinking forces optimism"
+        },
+        {
+          "id": "opt3",
+          "text": "Positive thinking is more effective than CBT for most people"
+        },
+        {
+          "id": "opt4",
+          "text": "CBT requires professional guidance; positive thinking can be self-taught"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Exactly. CBT teaches you to identify distortions (catastrophizing, mind-reading) and develop balanced thoughts that fit the evidence. If the situation is genuinely difficult, CBT helps you problem-solve \u2014 it doesn't tell you to 'just be positive.'",
+      "id": "q4"
+    },
+    {
+      "type": "reflection",
+      "question": "Think of a situation this week where you experienced a strong emotion. Can you identify the thought that created that feeling? How might a different interpretation have changed how you felt and what you did?",
+      "hint": "Walk through the cognitive triangle: Situation \u2192 Thought \u2192 Feeling \u2192 Behavior. What was your automatic thought? What alternative interpretations were possible?",
+      "id": "q5"
+    }
+  ],
+  "sectionId": "emotional-resilience",
+  "courseId": "cbt-fundamentals",
+  "lessonId": "1",
+  "title": "The Cognitive Triangle: Thoughts, Feelings, and Behaviors - Quiz"
+}

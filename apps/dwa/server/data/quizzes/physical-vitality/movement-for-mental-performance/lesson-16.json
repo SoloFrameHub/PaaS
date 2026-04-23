@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the adherence paradox, and why does it matter for people with mental health conditions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "People with mental health conditions find exercise easier than healthy people"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise is most beneficial for people with mental health symptoms, but mental health symptoms (fatigue, anhedonia, hopelessness, anxiety) make exercise hardest to start and maintain — this is a clinical barrier, not willpower failure"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Mental health has no effect on exercise adherence"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only lazy people struggle with exercise adherence"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The adherence paradox: the people who need exercise most (those with depression, anxiety, trauma) face the greatest barriers to starting and sustaining it. Depression causes fatigue, anhedonia (inability to feel pleasure), and hopelessness — all directly undermining motivation. Anxiety makes public exercise threatening. Trauma makes interoceptive awareness unsafe. This isn't laziness — it's a neurobiological and psychological barrier requiring specific strategies, not willpower shaming."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the principle of 'graded exposure' applied to exercise, and why does it work?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Start with maximum effort immediately to see results faster"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start ridiculously small (below your resistance threshold — e.g., putting on shoes, walking to the door) then gradually increase; each small success builds self-efficacy, which predicts long-term adherence"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Graded exposure doesn't apply to exercise, only anxiety treatment"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should wait until you feel fully motivated before starting"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Graded exposure (from anxiety treatment) applies to exercise: start below your anxiety/resistance threshold with absurdly small steps. Example ladder: Week 1 put on exercise clothes daily (even if you don't exercise), Week 2 add 'walk to front door,' Week 3 add '5-min walk around block.' Each completion builds self-efficacy (belief you CAN do this), which is the strongest predictor of long-term adherence. Small successes matter more than physical dose early on."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the lesson say about the relationship between motivation and action?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "You must feel motivated before you can take action"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Motivation follows action more often than action follows motivation — you start despite low motivation, notice the mood boost afterward, and let that become your motivation for next time (behavioral activation principle)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Motivation is the only thing that matters for exercise"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Action and motivation are completely unrelated"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson teaches: waiting to FEEL motivated before exercising is backwards — you'll almost never feel like it (especially with depression/anxiety). Instead: (1) start despite low motivation (use 2-minute rule or promise to stop after 5 min if unbearable), (2) notice the mood boost afterward (dopamine, endorphins, accomplishment), (3) let that post-exercise feeling become your motivation for next time. This is behavioral activation: action generates motivation, not vice versa."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When is difficulty adhering to exercise a CLINICAL issue requiring professional treatment, not just a willpower issue?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Difficulty adhering to exercise is always just laziness"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When experiencing severe anhedonia (no pleasure from anything), psychomotor retardation (moving through molasses), profound fatigue (sleeping 10-14 hrs still exhausted), or hopelessness — these require professional evaluation, not just discipline"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Everyone can just willpower their way through clinical depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Professional help is never needed for exercise adherence"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson is clear: severe anhedonia, psychomotor retardation, profound fatigue (sleeping 10-14 hrs and still exhausted), and hopelessness are symptoms of clinical depression requiring professional treatment. Trying to 'discipline your way' through severe depression with exercise alone is like running a marathon with a broken leg. Seek professional evaluation — exercise can be part of your treatment plan once stabilized, but it's not sufficient as standalone intervention for severe symptoms."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify your top 2-3 barriers to exercise right now (time, fatigue, self-consciousness, past failures, lack of enjoyment, pain, etc.). For each barrier, what's one small strategy from this lesson you could try (graded exposure, cognitive reappraisal, social support, habit stacking, environmental design)?",
+            "minLength": 75,
+            "explanation": "This reflection applies the lesson's adherence strategies to your specific situation. Common barriers + strategies: Time → habit stacking (attach to existing routine), cognitive reappraisal ('I don't have time NOT to exercise'); Fatigue → start with 3-5 min and see how you feel, choose low-intensity (walking); Self-consciousness → home workouts or beginner-friendly settings; Past failures → reframe as data ('what didn't work teaches me what might'), graded exposure (start smaller this time). The goal is matching strategy to barrier."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "16",
+    "title": "Creating Sustainable Exercise Habits - Quiz"
+}

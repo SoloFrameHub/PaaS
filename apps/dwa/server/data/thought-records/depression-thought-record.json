@@ -1,0 +1,152 @@
+{
+  "id": "depression-thought-record",
+  "title": "Thought Record for Depression",
+  "description": "Use this worksheet to identify, examine, and reframe negative automatic thoughts associated with depression.",
+  "instructions": "When you notice a shift in your mood, complete each column below. Pay special attention to the belief ratings — these help you track how much the restructuring process changes your relationship with the thought.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What happened? What were you doing?",
+      "type": "textarea",
+      "placeholder": "Briefly describe the event, interaction, or moment when your mood changed...",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. Automatic Thought — What went through your mind?",
+      "type": "textarea",
+      "placeholder": "Write the exact thought or image that came to mind...",
+      "required": true
+    },
+    {
+      "id": "beliefRating",
+      "label": "3. Belief in Thought — How much do you believe this thought? (0–100%)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "emotions",
+      "label": "4. Emotions — What did you feel? Rate intensity (0–100%)",
+      "type": "textarea",
+      "placeholder": "e.g., Sadness 80%, Guilt 60%, Hopelessness 70%",
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Evidence For — What supports this thought?",
+      "type": "textarea",
+      "placeholder": "List specific facts (not feelings) that support this thought...",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Evidence Against — What contradicts this thought?",
+      "type": "textarea",
+      "placeholder": "List facts, past experiences, or things others might say that contradict the thought...",
+      "required": true
+    },
+    {
+      "id": "cognitiveDistortion",
+      "label": "7. Cognitive Distortion — Which thinking pattern applies?",
+      "type": "select",
+      "options": [
+        { "value": "all-or-nothing", "label": "All-or-Nothing Thinking" },
+        { "value": "overgeneralization", "label": "Overgeneralization" },
+        { "value": "mental-filter", "label": "Mental Filter" },
+        { "value": "disqualifying-positive", "label": "Disqualifying the Positive" },
+        { "value": "jumping-conclusions", "label": "Jumping to Conclusions" },
+        { "value": "magnification", "label": "Magnification / Minimization" },
+        { "value": "emotional-reasoning", "label": "Emotional Reasoning" },
+        { "value": "should-statements", "label": "Should Statements" },
+        { "value": "labeling", "label": "Labeling" },
+        { "value": "personalization", "label": "Personalization / Blame" },
+        { "value": "catastrophizing", "label": "Catastrophizing" }
+      ],
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "8. Balanced Thought — What is a fairer, more balanced perspective?",
+      "type": "textarea",
+      "placeholder": "Write a thought that accounts for both the evidence for and against...",
+      "required": true
+    },
+    {
+      "id": "newBeliefRating",
+      "label": "9. New Belief Rating — How much do you believe the original thought now? (0–100%)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "outcomeEmotions",
+      "label": "10. Outcome — Re-rate your emotions now (0–100%)",
+      "type": "textarea",
+      "placeholder": "e.g., Sadness 40%, Guilt 30%, Hopelessness 20%",
+      "required": true
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "all-or-nothing",
+      "name": "All-or-Nothing Thinking",
+      "description": "Seeing things in black and white — if something isn't perfect, it's a total failure."
+    },
+    {
+      "id": "overgeneralization",
+      "name": "Overgeneralization",
+      "description": "Drawing sweeping conclusions from a single event: 'This always happens to me.'"
+    },
+    {
+      "id": "mental-filter",
+      "name": "Mental Filter",
+      "description": "Dwelling on negatives while filtering out positives entirely."
+    },
+    {
+      "id": "disqualifying-positive",
+      "name": "Disqualifying the Positive",
+      "description": "Rejecting positive experiences: 'That doesn't count because...'"
+    },
+    {
+      "id": "jumping-conclusions",
+      "name": "Jumping to Conclusions",
+      "description": "Making negative interpretations without evidence (mind reading or fortune telling)."
+    },
+    {
+      "id": "magnification",
+      "name": "Magnification / Minimization",
+      "description": "Blowing negatives out of proportion while shrinking positives."
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Treating feelings as facts: 'I feel worthless, so I must be worthless.'"
+    },
+    {
+      "id": "should-statements",
+      "name": "Should Statements",
+      "description": "Rigid rules about how you or others 'should' behave, leading to guilt or frustration."
+    },
+    {
+      "id": "labeling",
+      "name": "Labeling",
+      "description": "Attaching a fixed label to yourself: 'I'm a failure' instead of 'I made a mistake.'"
+    },
+    {
+      "id": "personalization",
+      "name": "Personalization / Blame",
+      "description": "Holding yourself entirely responsible for things outside your control."
+    },
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Expecting the worst outcome and feeling certain it will happen."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional mental health treatment. If you are experiencing thoughts of self-harm or suicide, contact the 988 Suicide & Crisis Lifeline by calling or texting 988."
+}

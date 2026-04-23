@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the correct sequence for Box Breathing?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Breathe in 4 sec → Breathe out 4 sec → Hold 4 sec → Hold 4 sec"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Breathe in 4 sec → Hold 4 sec → Breathe out 4 sec → Hold 4 sec"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Hold 4 sec → Breathe in 4 sec → Hold 4 sec → Breathe out 4 sec"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Breathe in 8 sec → Breathe out 8 sec"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Box breathing follows a 'square' pattern: Breathe IN for 4 seconds → HOLD for 4 seconds → Breathe OUT for 4 seconds → HOLD (lungs empty) for 4 seconds. This pattern helps activate the parasympathetic nervous system."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the 5-4-3-2-1 grounding technique, what comes after naming 4 things you can touch?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "3 things you can see"
+                },
+                {
+                    "id": "opt2",
+                    "text": "3 things you can smell"
+                },
+                {
+                    "id": "opt3",
+                    "text": "3 things you can hear"
+                },
+                {
+                    "id": "opt4",
+                    "text": "3 things you can taste"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 5-4-3-2-1 sequence is: 5 things you can SEE → 4 things you can TOUCH → 3 things you can HEAR → 2 things you can SMELL → 1 thing you can TASTE. This engages all senses to anchor you in the present moment."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why do grounding techniques work to reduce anxiety?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "They distract you from ever thinking about your problems"
+                },
+                {
+                    "id": "opt2",
+                    "text": "They anchor you in the present moment, interrupting the anxiety loop that pulls you into future worries or past regrets"
+                },
+                {
+                    "id": "opt3",
+                    "text": "They make you tired so you stop worrying"
+                },
+                {
+                    "id": "opt4",
+                    "text": "They release medications in your brain"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Grounding techniques work because anxiety pulls us into worried thoughts about the future or regrets about the past. By focusing on sensory details in the present moment, these techniques interrupt the anxiety loop and bring you back to the here and now."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In Progressive Muscle Relaxation (PMR), what is the two-step process?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Stretch then hold"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Tense the muscles, then release suddenly and completely"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Massage then rest"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Move quickly then stop"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "PMR works through a two-step process: First, you TENSE a muscle group as hard as you can for about 5 seconds. Then you RELEASE suddenly and completely, noticing the difference between tension and relaxation. This teaches body awareness and how to let go of physical tension."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Physiological Sigh' and why is it effective?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A loud sigh of frustration that releases anger"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A double inhale through the nose followed by a long exhale, which rapidly resets the respiratory system and activates calming"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Holding your breath for as long as possible"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Breathing only through your mouth"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Physiological Sigh, researched at Stanford, involves taking a double inhale through the nose (inhale, then another quick inhale) followed by a long, slow exhale through the mouth. This pattern rapidly resets the respiratory system and activates the body's calming response."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-management",
+    "lessonId": "4",
+    "title": "Quick Relief Tools: Breathing, Grounding, Relaxation - Quiz"
+}

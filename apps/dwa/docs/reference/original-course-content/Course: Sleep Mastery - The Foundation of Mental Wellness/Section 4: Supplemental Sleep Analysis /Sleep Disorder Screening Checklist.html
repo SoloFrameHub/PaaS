@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Disorder Screening Checklist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .header .organization {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .urgent-section {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .urgent-section h2 {
+            color: #721c24;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .recommended-section {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .recommended-section h2 {
+            color: #856404;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .category {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-header {
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .sleep-apnea { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+        .insomnia { background: linear-gradient(135deg, #8e44ad, #7d3c98); }
+        .sleepiness { background: linear-gradient(135deg, #f39c12, #e67e22); }
+        .parasomnia { background: linear-gradient(135deg, #2c3e50, #34495e); }
+        .restless-legs { background: linear-gradient(135deg, #27ae60, #229954); }
+        .circadian { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .narcolepsy { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .mental-health { background: linear-gradient(135deg, #1abc9c, #16a085); }
+        
+        .category-content {
+            padding: 20px;
+        }
+        
+        .checklist {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .checklist li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .checklist li:hover {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding-right: 10px;
+        }
+        
+        .checklist input[type="checkbox"] {
+            position: absolute;
+            left: 5px;
+            top: 3px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        
+        .assessment-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .assessment-section h2 {
+            color: #2c3e50;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .rating-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .rating-item label {
+            flex: 1;
+            margin-right: 15px;
+        }
+        
+        .rating-scale {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .rating-scale input[type="radio"] {
+            margin: 0 2px;
+        }
+        
+        .score-display {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f4fd;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .score-interpretation {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .excellent { background: #d4edda; border-left: 4px solid #28a745; }
+        .good { background: #d1ecf1; border-left: 4px solid #17a2b8; }
+        .concerning { background: #fff3cd; border-left: 4px solid #ffc107; }
+        .problematic { background: #f8d7da; border-left: 4px solid #dc3545; }
+        
+        .specialist-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .specialist-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .specialist-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .process-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .process-section h2 {
+            color: #2c3e50;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .process-step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .process-step h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #3498db;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                max-width: none;
+                margin: 0;
+                padding: 15mm;
+            }
+            
+            .category,
+            .assessment-section,
+            .process-section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+            }
+            
+            .specialist-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .specialist-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .rating-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .rating-scale {
+                margin-top: 10px;
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sleep Disorder Screening Checklist</h1>
+        <p class="subtitle">Sleep Mastery Course - Section 4, Lesson 4.2</p>
+        <p class="organization">Real Psychiatric Services Educational Platform</p>
+    </div>
+
+    <div style="background: #e8f4fd; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db; margin-bottom: 25px;">
+        <h3 style="color: #2c3e50; margin-bottom: 10px;">🚨 Important Note</h3>
+        <p>This screening tool helps identify symptoms that warrant professional sleep medicine consultation. <strong>This is not a diagnostic tool</strong> - only qualified healthcare providers can diagnose sleep disorders.</p>
+    </div>
+
+    <div class="urgent-section">
+        <h2>⚠️ IMMEDIATE PROFESSIONAL CONSULTATION REQUIRED</h2>
+        <p style="margin-bottom: 20px;"><strong>Check any that apply to you:</strong></p>
+        
+        <div class="category">
+            <div class="category-header sleep-apnea">
+                Sleep Apnea Warning Signs
+            </div>
+            <div class="category-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="loud-snoring"><label for="loud-snoring"><strong>Loud, chronic snoring</strong> (reported by others)</label></li>
+                    <li><input type="checkbox" id="gasping"><label for="gasping"><strong>Gasping or choking</strong> during sleep (witnessed by others)</label></li>
+                    <li><input type="checkbox" id="breathing-interruptions"><label for="breathing-interruptions"><strong>Breathing interruptions</strong> during sleep (witnessed pauses)</label></li>
+                    <li><input type="checkbox" id="morning-headaches"><label for="morning-headaches"><strong>Severe morning headaches</strong> occurring regularly</label></li>
+                    <li><input type="checkbox" id="extreme-sleepiness"><label for="extreme-sleepiness"><strong>Extreme daytime sleepiness</strong> despite adequate sleep time</label></li>
+                    <li><input type="checkbox" id="falling-asleep-activities"><label for="falling-asleep-activities"><strong>Falling asleep</strong> during conversations, meetings, or while driving</label></li>
+                    <li><input type="checkbox" id="high-bp"><label for="high-bp"><strong>High blood pressure</strong> that's difficult to control</label></li>
+                    <li><input type="checkbox" id="large-neck"><label for="large-neck"><strong>Large neck circumference</strong> (>17" men, >16" women)</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header insomnia">
+                Chronic Insomnia Indicators
+            </div>
+            <div class="category-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="difficulty-falling-asleep"><label for="difficulty-falling-asleep"><strong>3+ months</strong> of difficulty falling asleep (>30 minutes regularly)</label></li>
+                    <li><input type="checkbox" id="frequent-wakings"><label for="frequent-wakings"><strong>3+ months</strong> of frequent night wakings (>3 times per night)</label></li>
+                    <li><input type="checkbox" id="early-awakening"><label for="early-awakening"><strong>3+ months</strong> of early morning awakening (2+ hours before intended)</label></li>
+                    <li><input type="checkbox" id="problems-persist"><label for="problems-persist"><strong>Sleep problems persist</strong> despite good sleep hygiene practices</label></li>
+                    <li><input type="checkbox" id="daytime-impairment"><label for="daytime-impairment"><strong>Significant daytime impairment</strong> due to sleep loss</label></li>
+                    <li><input type="checkbox" id="using-aids"><label for="using-aids"><strong>Using sleep aids</strong> regularly without lasting improvement</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header sleepiness">
+                Dangerous Daytime Sleepiness
+            </div>
+            <div class="category-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="falling-asleep-driving"><label for="falling-asleep-driving"><strong>Falling asleep while driving</strong> or operating machinery</label></li>
+                    <li><input type="checkbox" id="uncontrollable-sleep"><label for="uncontrollable-sleep"><strong>Uncontrollable sleep episodes</strong> during daily activities</label></li>
+                    <li><input type="checkbox" id="microsleep"><label for="microsleep"><strong>Microsleep episodes</strong> (brief, involuntary sleep periods)</label></li>
+                    <li><input type="checkbox" id="multiple-naps"><label for="multiple-naps"><strong>Needing multiple naps</strong> daily to function</label></li>
+                    <li><input type="checkbox" id="cognitive-impairment"><label for="cognitive-impairment"><strong>Severe cognitive impairment</strong> from sleepiness</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header parasomnia">
+                Parasomnia Behaviors (Adults)
+            </div>
+            <div class="category-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="sleepwalking"><label for="sleepwalking"><strong>Sleepwalking</strong> episodes</label></li>
+                    <li><input type="checkbox" id="sleep-talking"><label for="sleep-talking"><strong>Sleep talking</strong> that disrupts others</label></li>
+                    <li><input type="checkbox" id="night-terrors"><label for="night-terrors"><strong>Night terrors</strong> or violent movements during sleep</label></li>
+                    <li><input type="checkbox" id="rem-behavior"><label for="rem-behavior"><strong>REM behavior disorder</strong> (acting out dreams)</label></li>
+                    <li><input type="checkbox" id="sleep-eating"><label for="sleep-eating"><strong>Sleep eating</strong> or other complex behaviors during sleep</label></li>
+                    <li><input type="checkbox" id="injury"><label for="injury"><strong>Injury to self or others</strong> during sleep episodes</label></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommended-section">
+        <h2>🔍 PROFESSIONAL EVALUATION RECOMMENDED</h2>
+        <p style="margin-bottom: 20px;"><strong>Check any that apply to you:</strong></p>
+        
+        <div class="category">
+            <div class="category-header restless-legs">
+                Restless Leg Syndrome/Periodic Limb Movement
+            </div>
+            <div class="category-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="urge-to-move"><label for="urge-to-move"><strong>Irresistible urge to move legs</strong> especially at bedtime</label></li>
+                    <li><input type="checkbox" id="uncomfortable-sensations"><label for="uncomfortable-sensations"><strong>Uncomfortable leg sensations</strong> (crawling, tingling, aching)</label></li>
+                    <li><input type="checkbox" id="symptoms-worsen-rest"><label for="symptoms-worsen-rest"><strong>Symptoms worsen with rest</strong> and improve with movement</label></li>
+                    <li><input type="checkbox" id="symptoms-worse-evening"><label for="symptoms-worse-evening"><strong>Symptoms worse in evening/night</strong></label></li>
+                    <li><input type="checkbox" id="leg-movements-wake"><label for="leg-movements-wake"><strong>Leg movements wake you</strong> or your partner</label></li>
+                    <li><input type="checkbox" id="family-history-rls"><label for="family-history-rls"><strong>Family history</strong> of restless leg syndrome</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header circadian">
+                Circadian Rhythm Disorders
+            </div>
+            <div class="category-content">
+                <ul class="checklist">
+                    <li><input type="checkbox" id="shift-work"><label for="shift-work"><strong>

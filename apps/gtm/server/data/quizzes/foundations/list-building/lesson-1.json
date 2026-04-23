@@ -1,0 +1,166 @@
+{
+    "lessonId": "1",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "List Building Philosophy Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason the course advocates for 100 perfect-fit prospects over 10,000 random contacts?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It costs more money to find 10,000 people"
+                },
+                {
+                    "id": "b",
+                    "text": "Generic lists are more likely to have invalid email addresses"
+                },
+                {
+                    "id": "c",
+                    "text": "Quality leads result in higher response rates and save a solo founder's limited time"
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn only allows you to have 100 contacts"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-quality lists enable diagnostic invitations rather than spam. This leads to higher conversion rates and ensures the founder isn't wasting time on discovery calls with bad-fit prospects."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the concept of 'ICP Translation' refer to?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Translating your website into different languages for global reach"
+                },
+                {
+                    "id": "b",
+                    "text": "Converting abstract ICP characteristics into tactical, searchable criteria like job titles and industries"
+                },
+                {
+                    "id": "c",
+                    "text": "Moving data from a spreadsheet into a CRM"
+                },
+                {
+                    "id": "d",
+                    "text": "Translating technical features into benefits"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Translation is the process of taking your strategic document and turning it into 'nouns' (titles, industries, company sizes) that tools like Apollo or Sales Navigator can actually find."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is an example of an 'Anti-Persona' filter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Excluding 'Recruiters' from a search for Marketing VPs"
+                },
+                {
+                    "id": "b",
+                    "text": "Targeting only Fortune 500 companies"
+                },
+                {
+                    "id": "c",
+                    "text": "Searching for founders in the New York area"
+                },
+                {
+                    "id": "d",
+                    "text": "Using a 'Job Change' filter to find new executives"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "An anti-persona filter explicitly removes people who might match some keywords (like 'VP') but are definitely not your buyer (like a VP of HR when you sell to Marketing)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "You send 50 personalized emails and get 10 interested responses. What is your response rate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5%"
+                },
+                {
+                    "id": "b",
+                    "text": "10%"
+                },
+                {
+                    "id": "c",
+                    "text": "20%"
+                },
+                {
+                    "id": "d",
+                    "text": "50%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "10 divided by 50 is 0.20, or 20%. This is the 'Focused Approach' math described in the lesson."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the difference between 'List Building' and 'Lead Generation' in this context?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are the same thing"
+                },
+                {
+                    "id": "b",
+                    "text": "Lead Generation is finding the names; List Building is sending the emails"
+                },
+                {
+                    "id": "c",
+                    "text": "List Building is the research phase (finding matches); Lead Generation is the execution phase (inviting them to talk)"
+                },
+                {
+                    "id": "d",
+                    "text": "List Building is for B2B; Lead Generation is for Creators"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "List building provides the 'fuel' (the names and contact info). Lead generation uses that fuel to drive conversations. These are distinct activities that require different mindsets."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "In the context of 'Hunt vs. Magnet', what characterizes the 'Inbound Magnet' approach used by creators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying a large email list from a data broker"
+                },
+                {
+                    "id": "b",
+                    "text": "Identifying identity clusters (communities) and earning data by offering value"
+                },
+                {
+                    "id": "c",
+                    "text": "Sending 500 cold emails per day to random companies"
+                },
+                {
+                    "id": "d",
+                    "text": "Using automated bots to scrape LinkedIn profiles"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While B2B tends to 'hunt' for organizational roles, creators use 'magnets' to attract individuals based on identity and shared interests, earning permission rather than just taking it."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your current prospecting efforts. Are you leaning more toward 'Bulk' or 'Focused' approach? Give a specific example of an 'Anti-Persona' you should exclude from your next search and explain why they are a distraction for your business.",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder identifies their current bias (Bulk vs Focused) and if their 'Anti-Persona' exclusion is logical. For example, if they sell to tech founders, excluding 'Small Business Owners' who don't have engineering teams is a good exclusion."
+        }
+    ]
+}

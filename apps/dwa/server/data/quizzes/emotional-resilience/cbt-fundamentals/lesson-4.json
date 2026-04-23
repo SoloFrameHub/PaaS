@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of cognitive restructuring in CBT?",
+            "options": [
+                {"id": "opt1", "text": "To eliminate all negative thoughts and emotions"},
+                {"id": "opt2", "text": "To test whether automatic thoughts are accurate and generate more balanced alternatives"},
+                {"id": "opt3", "text": "To replace negative thoughts with positive affirmations"},
+                {"id": "opt4", "text": "To avoid thinking about situations that cause distress"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. Cognitive restructuring is about examining evidence to determine if your automatic thought is realistic or distorted — and if distorted, generating a more accurate alternative. The goal is truth, not positivity."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the CBT thought record, what is the purpose of examining 'Evidence AGAINST' the automatic thought?",
+            "options": [
+                {"id": "opt1", "text": "To prove that your automatic thought is always wrong"},
+                {"id": "opt2", "text": "To force yourself to think positively even when you don't believe it"},
+                {"id": "opt3", "text": "To counteract confirmation bias and consider evidence your brain may have ignored"},
+                {"id": "opt4", "text": "To suppress negative emotions by denying their validity"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Yes. Your brain naturally seeks evidence that confirms existing beliefs. The 'Evidence AGAINST' step forces you to look for disconfirming evidence — which often exists but was filtered out."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When is cognitive restructuring NOT the appropriate intervention?",
+            "options": [
+                {"id": "opt1", "text": "When your automatic thought is based on a cognitive distortion like catastrophizing or mind-reading"},
+                {"id": "opt2", "text": "When your automatic thought is accurate and the situation requires action, not thought change"},
+                {"id": "opt3", "text": "When your emotion intensity is high"},
+                {"id": "opt4", "text": "When you're experiencing mild sadness or disappointment"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. If your thought is realistic ('I'm in financial trouble') and the emotion is proportionate, restructuring won't help — you need problem-solving. CR is for distortions, not reality."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the difference between cognitive restructuring and 'positive thinking'?",
+            "options": [
+                {"id": "opt1", "text": "There is no difference — both focus on thinking optimistically"},
+                {"id": "opt2", "text": "Cognitive restructuring tests thoughts against evidence; positive thinking forces optimism"},
+                {"id": "opt3", "text": "Positive thinking is more effective for reducing anxiety"},
+                {"id": "opt4", "text": "Cognitive restructuring avoids examining evidence"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. CR is about accuracy, not optimism. You're asking 'Is this thought distorted or realistic?' and 'What interpretation fits the evidence?' — not 'How can I make this sound positive?'"
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Choose a recent automatic thought that caused significant distress. Use the 7-step thought record: (1) Situation, (2) Emotion + intensity, (3) Automatic thought, (4) Evidence FOR, (5) Evidence AGAINST, (6) Balanced alternative, (7) Re-rate emotion. How much did your distress decrease?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "4",
+    "title": "The CBT Model: Evidence-Based Thought Change - Quiz"
+}

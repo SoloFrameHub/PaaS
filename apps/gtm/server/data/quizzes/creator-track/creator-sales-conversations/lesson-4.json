@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "The 4 Core Creator Objections Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "When a prospect says 'I can find this for free online,' what is the recommended first response?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Disagree and explain why your content is unique and cannot be found elsewhere."
+                },
+                {
+                    "id": "b",
+                    "text": "Offer a discount to make the paid program more competitive with free alternatives."
+                },
+                {
+                    "id": "c",
+                    "text": "Agree that the information is available for free, then ask why they are still stuck despite having access to all that free content."
+                },
+                {
+                    "id": "d",
+                    "text": "End the call, since they are clearly not a serious buyer."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The recommended approach is to agree first ('You are absolutely right'), then redirect: 'With all that free information available, why are you still in the same position?' This draws the critical distinction that information is free but transformation — the curation, implementation structure, and accountability — is not."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson's objection resolution principle, what is the real concern behind 'What if it doesn't work for me?'",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They believe the program content is low quality."
+                },
+                {
+                    "id": "b",
+                    "text": "They do not trust themselves to follow through, based on past failures."
+                },
+                {
+                    "id": "c",
+                    "text": "They want a money-back guarantee before committing."
+                },
+                {
+                    "id": "d",
+                    "text": "They are comparing your program to a competitor and think the other one is better."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson explains that 'What if it doesn't work for me?' is almost never about the program's quality. It is a self-efficacy concern — the prospect is scared because they have a history of starting things and not finishing. The real fear is 'I do not trust myself to follow through,' and the response should honor that fear with empathy rather than dismiss it."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When handling the 'I need to talk to my spouse/partner' objection, what is the key isolation question to ask?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'Can I talk to your partner directly to explain the program?'"
+                },
+                {
+                    "id": "b",
+                    "text": "'How much does your partner usually let you spend without asking?'"
+                },
+                {
+                    "id": "c",
+                    "text": "'If your partner said I support whatever you think is best, would you be ready to move forward?'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Do you always need your partner's permission to make business decisions?'"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "This isolation question reveals whether the partner is the genuine concern or a convenient exit. If they say 'Yes, absolutely,' the partner concern is likely real and you should set a specific follow-up. If they hesitate, the partner is not the real objection and you need to probe for the actual concern underneath."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think about the last time a prospect raised an objection on a call or in a DM. What did they say, and what do you now believe the real concern was underneath their stated objection? How would you handle it differently using the frameworks from this lesson?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student demonstrates understanding that the stated objection is rarely the real objection. Look for them to identify a specific past situation, name the surface objection, diagnose the likely deeper concern (fear, self-doubt, trust, or financial anxiety), and propose a specific response that addresses the real concern with empathy. Weak answers simply restate the objection without looking underneath it."
+        }
+    ]
+}

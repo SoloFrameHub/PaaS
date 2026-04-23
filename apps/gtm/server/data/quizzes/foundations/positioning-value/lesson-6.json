@@ -1,0 +1,141 @@
+{
+    "lessonId": "6",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Market Category Strategy",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary function of a Market Category in the mind of a customer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's a way for developers to organize their code"
+                },
+                {
+                    "id": "b",
+                    "text": "It sets a baseline of expectations for features, price, and competition"
+                },
+                {
+                    "id": "c",
+                    "text": "It determines which server the software will run on"
+                },
+                {
+                    "id": "d",
+                    "text": "It is a requirement for filing a business patent"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A category acts as a 'room' that provides context. Once a customer slots you into a category (like 'CRM' vs 'To-Do List'), they immediately have expectations about what you should do and how much you should cost."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which category strategy involves carving out a specific niche where you can be the leader?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Head-to-Head Strategy"
+                },
+                {
+                    "id": "b",
+                    "text": "Big Fish, Small Pond (Sub-Segment) Strategy"
+                },
+                {
+                    "id": "c",
+                    "text": "New Category Strategy"
+                },
+                {
+                    "id": "d",
+                    "text": "The Commodity Strategy"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Big Fish, Small Pond strategy (Sub-segmentation) is about becoming the 'Best [X] for [Y]', which is often the most effective path for solo founders."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is the 'New Category Strategy' (Category Creation) considered risky for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It requires too much custom coding"
+                },
+                {
+                    "id": "b",
+                    "text": "It's illegal in most jurisdictions"
+                },
+                {
+                    "id": "c",
+                    "text": "It's expensive and slow because you have to educate the market on a problem they don't know they have"
+                },
+                {
+                    "id": "d",
+                    "text": "Solo founders aren't allowed to create new categories"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Creating a new category is a 'heavy lift.' It requires significant marketing spend and time to teach people why the old categories are obsolete."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What happens to your 'Pricing Power' when you successfully sub-segment a category?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It decreases because the market is smaller"
+                },
+                {
+                    "id": "b",
+                    "text": "It stays the same regardless of category"
+                },
+                {
+                    "id": "c",
+                    "text": "It increases because you are providing specialized value to a specific group"
+                },
+                {
+                    "id": "d",
+                    "text": "It disappears because you become a commodity"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Specialization leads to higher perceived value. A 'CRM for Dentists' can charge more than a 'Generic CRM' because it solves specific dental business problems."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If customers are telling you that your product is 'too expensive,' what is a likely cause according to this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your server costs are too high"
+                },
+                {
+                    "id": "b",
+                    "text": "You are positioned in a category with a low-price 'anchor'"
+                },
+                {
+                    "id": "c",
+                    "text": "You aren't offering enough features"
+                },
+                {
+                    "id": "d",
+                    "text": "The customer doesn't have a credit card"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Perceived value is relative to the 'room' (category) you are in. If you are slotted into a 'Low-Value' category, your price will be anchored to cheap alternatives."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Perform a 'Category Swap' for your product. Slot it into a Low-Value, Current, and High-Value category. Which one captures the most value while still being 'honest' to what you built?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's category swap exercise. Check if they understand how changing the 'label' changes the expectations. Provide feedback on whether the 'High-Value' category they chose is actually believable given their features."
+        }
+    ],
+    "passingScore": 70
+}

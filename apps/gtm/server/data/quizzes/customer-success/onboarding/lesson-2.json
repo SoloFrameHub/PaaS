@@ -1,0 +1,201 @@
+{
+    "lessonId": "2",
+    "courseId": "onboarding",
+    "sectionId": "customer-success",
+    "title": "Test Your Milestone Mapping Skills",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the primary difference between a feature and a milestone?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Features are technical, milestones are business outcomes"
+                },
+                {
+                    "id": "b",
+                    "text": "Features are what your product does, milestones are what your customer achieves"
+                },
+                {
+                    "id": "c",
+                    "text": "Features are for developers, milestones are for customers"
+                },
+                {
+                    "id": "d",
+                    "text": "Features are measurable, milestones are subjective"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Milestones focus on customer outcomes, not product capabilities. 'Generated first report' (milestone) vs 'Has a reporting feature' (feature)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what % of SaaS churn happens in the first 90 days?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "20-30%"
+                },
+                {
+                    "id": "b",
+                    "text": "40-60%"
+                },
+                {
+                    "id": "c",
+                    "text": "70-80%"
+                },
+                {
+                    "id": "d",
+                    "text": "90%+"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "40-60% of all SaaS churn happens in the first 90 days, making onboarding the highest-leverage retention investment."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What's the target Time-to-First-Value (TTFV) for self-serve SaaS products?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Under 1 hour"
+                },
+                {
+                    "id": "b",
+                    "text": "Under 24 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "Under 7 days"
+                },
+                {
+                    "id": "d",
+                    "text": "Under 30 days"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Self-serve SaaS should target TTFV under 24 hours. Every hour you reduce TTFV improves retention by 2-5%."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "A customer signed up 8 days ago, completed setup on Day 1, but hasn't logged in since. How should you classify them?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "On track"
+                },
+                {
+                    "id": "b",
+                    "text": "Stalled (needs nudge)"
+                },
+                {
+                    "id": "c",
+                    "text": "At risk (needs personal outreach)"
+                },
+                {
+                    "id": "d",
+                    "text": "Churned"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Zero engagement after initial setup by Day 8 = at risk. This requires personal outreach, not just an automated nudge."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What's the optimal length for an in-app onboarding checklist?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2 items"
+                },
+                {
+                    "id": "b",
+                    "text": "3-5 items"
+                },
+                {
+                    "id": "c",
+                    "text": "7-10 items"
+                },
+                {
+                    "id": "d",
+                    "text": "As many as needed to cover all features"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "3-5 items max. More than that overwhelms users and reduces completion rates. Focus on milestones, not features."
+        },
+        {
+            "id": "q6",
+            "type": "true-false",
+            "question": "True or False: Free trial users and paid customers should receive identical onboarding experiences.",
+            "correctAnswer": "b",
+            "explanation": "False. Tiered onboarding is more efficient for solo founders. Automate free trials, add personal touch for paid customers based on ARPU.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q7",
+            "type": "multiple-choice",
+            "question": "According to the lesson, users who complete an onboarding checklist are how much more likely to become long-term customers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1.5x"
+                },
+                {
+                    "id": "b",
+                    "text": "2x"
+                },
+                {
+                    "id": "c",
+                    "text": "3x"
+                },
+                {
+                    "id": "d",
+                    "text": "5x"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "3x more likely. Checklists create a sense of progress and give users a clear path to value."
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "What's the 'magic number' concept in SaaS onboarding?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The number of features a user must try"
+                },
+                {
+                    "id": "b",
+                    "text": "The number of days until first payment"
+                },
+                {
+                    "id": "c",
+                    "text": "A specific action threshold that predicts retention"
+                },
+                {
+                    "id": "d",
+                    "text": "The number of support tickets before churn"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The magic number is a retention-predicting action threshold (e.g., Slack's 2,000 messages, or 3 projects created in 14 days)."
+        }
+    ]
+}

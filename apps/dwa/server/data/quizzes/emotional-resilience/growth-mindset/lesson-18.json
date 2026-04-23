@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did PISA 78-country data (N = 409,287) reveal about growth mindset in different cultural contexts?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset produces identical positive effects across all cultures"},
+                {"id": "opt2", "text": "In societies with fixed-mindset cultural norms, individual growth mindset is associated with NEGATIVE wellbeing—holding growth mindset in a punishing system creates a double bind"},
+                {"id": "opt3", "text": "Growth mindset only works in Asia"},
+                {"id": "opt4", "text": "Cultural context has no effect on mindset-wellbeing relationships"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "PISA 78-country data revealed a critical cultural finding: in societies with FIXED-mindset cultural norms (where effort is devalued, mistakes are punished, intelligence is seen as innate), individual growth mindset is associated with NEGATIVE psychological wellbeing. Mechanism: when your culture says 'effort shows lack of talent, mistakes are shameful' but you believe 'effort matters, mistakes are learning,' you experience cognitive dissonance and distress. This proves growth mindset interventions are NOT universally beneficial—cultural context determines whether they help or harm. Compulsory positivity in punishing environments causes distress."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is WEIRD psychology and why does it matter for growth mindset generalizability?",
+            "options": [
+                {"id": "opt1", "text": "WEIRD means strange—growth mindset is too weird to work"},
+                {"id": "opt2", "text": "WEIRD = Western, Educated, Industrialized, Rich, Democratic populations (~12% of world but 70-90% of psychology research)—growth mindset embeds WEIRD assumptions that don't translate universally"},
+                {"id": "opt3", "text": "WEIRD populations are superior for psychological research"},
+                {"id": "opt4", "text": "All psychology applies equally everywhere"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "WEIRD = Western, Educated, Industrialized, Rich, Democratic populations represent ~12% of world population but 70-90% of psychology research participants. Growth mindset was developed/tested primarily in U.S. educational settings with individualistic values. Problem: theories from WEIRD contexts often embed cultural assumptions that don't generalize globally. Growth mindset assumes individualism ('you can improve through individual effort'), which conflicts with collectivist values (group harmony, fulfilling role). Attribution patterns, conceptions of intelligence, and motivational structures vary culturally. What's adaptive in one culture may be maladaptive in another."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do attribution patterns differ between individualistic (Western) and collectivistic (East Asian) cultures, and what does this mean for growth mindset?",
+            "options": [
+                {"id": "opt1", "text": "Attribution patterns are identical across all cultures"},
+                {"id": "opt2", "text": "Western: success internal, failure external (self-serving bias); East Asian: success external, failure internal (self-critical bias)—where self-critical bias is already the norm, growth mindset may intensify self-criticism"},
+                {"id": "opt3", "text": "Attribution patterns are random and unpredictable"},
+                {"id": "opt4", "text": "Only Western attribution patterns are correct"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Attribution patterns vary culturally: Western individualist cultures show self-serving bias (success = my ability/effort, failure = external factors—protects self-esteem). East Asian often-collectivist cultures show self-critical bias (success = help from others/luck, failure = my inadequacy—motivates improvement, maintains humility). Growth mindset assumes internal attribution for success is adaptive (Western pattern). But in cultures where internal attribution for FAILURE is already the norm, growth mindset doesn't add value and may intensify self-criticism. This shows growth mindset isn't culturally neutral—it reflects WEIRD assumptions."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does cultural humility require when applying psychological interventions like growth mindset?",
+            "options": [
+                {"id": "opt1", "text": "Assuming Western interventions work equally well everywhere"},
+                {"id": "opt2", "text": "Recognizing interventions embed cultural assumptions; assessing cultural fit before applying; acknowledging what's adaptive in one context may be harmful in another"},
+                {"id": "opt3", "text": "Avoiding all psychological interventions in non-Western contexts"},
+                {"id": "opt4", "text": "Ignoring cultural differences entirely"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cultural humility requires: (1) Recognizing interventions embed cultural assumptions (growth mindset assumes individualism, personal control, effort-outcome beliefs), (2) Assessing cultural fit BEFORE applying interventions universally, (3) Acknowledging what's adaptive in one context may be maladaptive in another (growth mindset in fixed-mindset culture creates distress), (4) Adapting interventions to cultural values or using culturally-grounded alternatives. The lesson warns against cultural imperialism—exporting WEIRD psychology without considering local context, values, and needs. This is both scientifically inaccurate (ignores cross-cultural variation) and ethically problematic."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on your cultural context: Does your work/family/community culture emphasize individual achievement and effort (growth-mindset-aligned), or group harmony and role fulfillment (potentially misaligned)? Does your culture punish mistakes (making growth mindset stressful) or celebrate learning from failure (making it supportive)? How does cultural fit affect whether growth mindset feels helpful or burdensome?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "18",
+    "title": "Cultural Context and Cross-Cultural Variation - Quiz"
+}

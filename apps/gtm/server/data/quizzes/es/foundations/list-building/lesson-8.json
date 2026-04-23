@@ -1,0 +1,141 @@
+{
+  "lessonId": "8",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Higiene y Mantenimiento de Listas",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la tasa mensual promedio de 'Decaimiento de Datos' para los datos de ventas B2B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.1%"
+        },
+        {
+          "id": "b",
+          "text": "2-3%"
+        },
+        {
+          "id": "c",
+          "text": "10%"
+        },
+        {
+          "id": "d",
+          "text": "Los datos no decaen"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los datos profesionales cambian constantemente a medida que las personas cambian de trabajo y las empresas evolucionan. Un decaimiento mensual del 2-3% significa que casi un tercio de tu lista es inválida después de un año."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál debe ser tu acción inmediata cuando un correo tiene un 'Rebote Permanente' (Dirección Inválida)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intentar adivinar un formato de correo diferente"
+        },
+        {
+          "id": "b",
+          "text": "Llamar a la oficina principal de la empresa"
+        },
+        {
+          "id": "c",
+          "text": "Eliminar el lead de tu CRM y secuencias activas de inmediato"
+        },
+        {
+          "id": "d",
+          "text": "Esperar una semana e intentar de nuevo"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los rebotes permanentes dañan la reputación de tu dominio. Eliminarlos de inmediato es la única forma de proteger tu capacidad de llegar a otros prospectos."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Con qué frecuencia se recomienda volver a verificar una lista 'Activa' que no ha sido enviada recientemente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cada semana"
+        },
+        {
+          "id": "b",
+          "text": "Cada 3 meses"
+        },
+        {
+          "id": "c",
+          "text": "Una vez al año"
+        },
+        {
+          "id": "d",
+          "text": "Nunca"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Una cadencia de reverificación trimestral captura el decaimiento natural antes de que se acumule en una tasa de rebote peligrosa."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué es una 'Lista de Supresión Global'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una lista de todos los países donde puedes vender"
+        },
+        {
+          "id": "b",
+          "text": "Una lista centralizada de personas que han cancelado su suscripción o rebotado, usada para evitar que reciban mensajes en cualquiera de tus dominios"
+        },
+        {
+          "id": "c",
+          "text": "Una lista de competidores que quieres evitar"
+        },
+        {
+          "id": "d",
+          "text": "La lista de personas que ignoraron tu último correo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La supresión garantiza que honres las cancelaciones de suscripción de manera consistente, lo cual es tanto una buena práctica para la entregabilidad como un requisito legal."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Si tu tasa de rebote llega al 5%, ¿qué deberías hacer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seguir enviando; son solo unos pocos correos malos"
+        },
+        {
+          "id": "b",
+          "text": "Comprar una nueva lista para compensar las malas"
+        },
+        {
+          "id": "c",
+          "text": "Detener todas las campañas activas y realizar una limpieza/verificación completa de datos"
+        },
+        {
+          "id": "d",
+          "text": "Cambiar la línea de asunto"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Una tasa de rebote del 5% es la 'Zona de Peligro'. Continuar enviando probablemente resultará en que Google o Microsoft incluyan tu dominio en la lista negra."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Describe tu plan para manejar las cancelaciones de suscripción en múltiples canales de outreach (ej., Correo vs. LinkedIn). ¿Cómo asegurarás que alguien que dice 'Detente' en un correo no sea contactado accidentalmente en LinkedIn la semana siguiente?",
+      "minLength": 100,
+      "promptForAI": "Evalúa la conciencia 'Multicanal'. El fundador debe mencionar actualizaciones manuales al CRM o el uso de una herramienta que sincronice la supresión. La respuesta debe mostrar un alto grado de respeto por la solicitud de privacidad del prospecto."
+    }
+  ]
+}

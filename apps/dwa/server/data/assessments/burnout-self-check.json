@@ -1,0 +1,70 @@
+{
+  "id": "burnout-self-check",
+  "title": "Burnout Self-Check",
+  "description": "A brief self-awareness tool inspired by the Maslach Burnout framework to help you reflect on where you fall on the stress-to-burnout spectrum. This covers three dimensions: emotional exhaustion, cynicism/detachment, and professional efficacy.",
+  "instructions": "For each item below, select the answer that best describes your experience over the past month at work (or in your primary role, if you're a caregiver, student, etc.).",
+  "timeframe": "past month",
+  "questions": [
+    { "id": "q1", "text": "I feel emotionally drained by my work." },
+    { "id": "q2", "text": "I feel used up at the end of the workday." },
+    { "id": "q3", "text": "I feel tired when I get up in the morning and have to face another day at work." },
+    { "id": "q4", "text": "I feel less connected to or more negative about my work than I used to." },
+    { "id": "q5", "text": "I have become more cynical or detached about whether my work matters." },
+    { "id": "q6", "text": "I find it difficult to care about aspects of my job that used to matter to me." },
+    { "id": "q7", "text": "I feel confident that I am effective at what I do." },
+    { "id": "q8", "text": "I feel I am making an effective contribution through my work." },
+    { "id": "q9", "text": "I can deal effectively with the problems that come up in my work." }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 6,
+    "labels": {
+      "0": "Never",
+      "1": "A few times a year",
+      "2": "Once a month",
+      "3": "A few times a month",
+      "4": "Once a week",
+      "5": "A few times a week",
+      "6": "Every day"
+    }
+  },
+  "scoring": {
+    "maxScore": 54,
+    "bands": [
+      {
+        "min": 0,
+        "max": 13,
+        "severity": "minimal",
+        "label": "Low Burnout Risk",
+        "description": "Your responses suggest you are managing work demands well. Continue practicing the preventive strategies in this course to maintain your resilience.",
+        "color": "green"
+      },
+      {
+        "min": 14,
+        "max": 26,
+        "severity": "mild",
+        "label": "Moderate Stress — Watch Zone",
+        "description": "Your responses suggest building stress that could progress if not addressed. Focus on boundaries, recovery practices, and the lifestyle strategies in this course.",
+        "color": "yellow"
+      },
+      {
+        "min": 27,
+        "max": 39,
+        "severity": "moderate",
+        "label": "Elevated Burnout Risk",
+        "description": "Your responses suggest significant stress and early burnout signs. The strategies in this course are important, and you may also benefit from professional support (therapy, coaching, or talking with your doctor).",
+        "color": "orange"
+      },
+      {
+        "min": 40,
+        "max": 54,
+        "severity": "severe",
+        "label": "High Burnout Risk",
+        "description": "Your responses suggest substantial burnout across multiple dimensions. We strongly recommend seeking professional support alongside the educational content in this course. You deserve help — burnout is about your situation, not your character.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "Overall, how much is work-related stress or burnout affecting your ability to function in daily life?"
+  },
+  "disclaimer": "This is an educational self-awareness tool inspired by burnout research (Maslach framework), not a clinical diagnosis. The Maslach Burnout Inventory (MBI) is a validated clinical tool — this simplified version is for reflection only. If you are in crisis or need immediate help, please call or text 988 (Suicide & Crisis Lifeline)."
+}

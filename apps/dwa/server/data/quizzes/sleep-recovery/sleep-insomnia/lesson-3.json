@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core principle behind stimulus control for insomnia?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Taking sleep medication only when needed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Making the bed a powerful cue for sleep by removing activities that teach the brain to associate the bed with wakefulness"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleeping only on weekends to catch up"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Using technology to track sleep stages"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Stimulus control works by making your bed a strong cue for sleep, not wakefulness. If you spend time in bed awake (watching TV, scrolling phone, worrying), your brain learns to associate the bed with alertness. By removing non-sleep activities and only being in bed when sleepy, you retrain the association."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the important distinction between being 'tired' and being 'sleepy' for stimulus control?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "There is no difference; they mean the same thing"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Tired = fatigued/low energy; Sleepy = actually drowsy with heavy eyes and yawning. You should only go to bed when sleepy, not just tired"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleepy is worse than tired"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should go to bed when tired, not sleepy"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "This distinction is crucial: 'Tired' means fatigued and low energy, while 'sleepy' means actually drowsy—heavy eyelids, yawning, head nodding. Many people with insomnia go to bed when tired but not sleepy, then lie awake. Only go to bed when you're genuinely sleepy."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should you do if you can't fall asleep (or return to sleep) within about 20 minutes?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Stay in bed and try harder to sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Take sleep medication"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Get out of bed, go to another room, do something calm in dim light, and return only when sleepy"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Turn on the TV in bed to help you relax"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "If you can't sleep within about 20 minutes, get out of bed, go to another room, and do something calm and boring in dim light until you feel sleepy again. This prevents the bed from becoming associated with frustration and wakefulness. It feels counterintuitive but is essential for reconditioning."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is a consistent wake time (every day, including weekends) important for stimulus control?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It's not important; you should sleep in whenever possible"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It anchors your circadian rhythm and builds sleep pressure for the next night; sleeping in perpetuates irregular sleep"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It's only important on workdays"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Consistent wake time only matters for children"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A consistent wake time is crucial because it anchors your circadian rhythm and builds sleep pressure for the next night. Sleeping in on weekends disrupts this rhythm and perpetuates the cycle of irregular sleep. Get up at the same time every day, regardless of how much you slept."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommendation for napping during stimulus control treatment?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Nap as much as possible to catch up on sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "No napping is ideal; if you must nap, limit to 20-30 minutes before 3 PM"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only nap after 6 PM"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Napping has no effect on nighttime sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Ideally, no naps during treatment. Naps reduce sleep pressure, making it harder to sleep at night, and provide an 'escape' from the reconditioning process. If you absolutely must nap, keep it to 20-30 minutes maximum and before 3 PM to minimize impact on nighttime sleep."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "3",
+    "title": "Stimulus Control: Bed = Sleep Only - Quiz"
+}

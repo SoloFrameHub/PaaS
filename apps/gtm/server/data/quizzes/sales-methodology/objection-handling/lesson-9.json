@@ -1,0 +1,141 @@
+{
+    "lessonId": "9",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "AI Roleplay: Objection Drilling Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Objection Loop' drill format?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To hold a long, friendly conversation with the AI."
+                },
+                {
+                    "id": "b",
+                    "text": "To build muscle memory by practicing the first 30 seconds of an objection response repeatedly."
+                },
+                {
+                    "id": "c",
+                    "text": "To trick the AI into giving you a high score."
+                },
+                {
+                    "id": "d",
+                    "text": "To test if the AI's logic is accurate."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High-frequency drilling is more effective for building reflexes than long, meandering conversations. You want the LARA framework to become an automatic habit."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the 'LARA Discipline Drill', what word is strictly 'Banned'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "And"
+                },
+                {
+                    "id": "b",
+                    "text": "Therefore"
+                },
+                {
+                    "id": "c",
+                    "text": "But"
+                },
+                {
+                    "id": "d",
+                    "text": "Because"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The word 'But' erases your acknowledgment and creates an adversarial tone. Breaking the 'But' habit is a core objective of the discipline drill."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How should you use AI feedback according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ignore it if you disagree."
+                },
+                {
+                    "id": "b",
+                    "text": "Write it down and read it before your next real sales call."
+                },
+                {
+                    "id": "c",
+                    "text": "Immediately 'Redo the turn' and apply the feedback until your response is a 10/10."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask the AI why it gave you that score."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Applying feedback in the moment (The 'Redo') is how you rewrite your neural pathways. Don't move on until you've executed the correct response perfectly."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When drilling for 'Mixed Stakeholders', what are you trying to achieve?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Talking only to the person with the most power."
+                },
+                {
+                    "id": "b",
+                    "text": "Talking only to the person who likes you more."
+                },
+                {
+                    "id": "c",
+                    "text": "Bridging multiple personas in a single response by addressing different psychological needs (e.g., ROI for a D, Safety for an S)."
+                },
+                {
+                    "id": "d",
+                    "text": "Ignoring objections until they are repeated three times."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "In complex sales, you often face conflicting priorities. Learning to bridge 'Outcome' and 'Security' in a single response is a master-level skill."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Pro Move' suggested for analyzing your roleplay performance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Recording your audio and listening back to the length of your pauses."
+                },
+                {
+                    "id": "b",
+                    "text": "Typing your responses instead of speaking them."
+                },
+                {
+                    "id": "c",
+                    "text": "Using a script during the simulation."
+                },
+                {
+                    "id": "d",
+                    "text": "Doing the simulations late at night."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Listening to yourself allows you to detect nervousness, lack of silence, or 'rushing' that you might not notice while you are in the heat of the drill."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Which specific 'Configuration' (Category, Discipline, or Personality) do you plan to run first in the AI Roleplay tool? Why that one specifically based on your recent call history?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to diagnose their own weak points. Look for a connection between a specific drill (e.g., 'Discipline Drill' because I interrupt too much) and a real-world outcome."
+        }
+    ]
+}

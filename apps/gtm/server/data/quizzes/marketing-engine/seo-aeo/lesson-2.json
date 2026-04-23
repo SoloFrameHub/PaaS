@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "2",
+    "lessonTitle": "SEO Fundamentals for Founders",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which type of keyword usually has the highest conversion rate for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Head Keywords (e.g., 'Marketing')"
+                },
+                {
+                    "id": "b",
+                    "text": "Generic Keywords (e.g., 'Business Tips')"
+                },
+                {
+                    "id": "c",
+                    "text": "Solution-Aware / Comparison Keywords (e.g., 'Apollo vs. Sales Navigator')"
+                },
+                {
+                    "id": "d",
+                    "text": "Short-Tail Keywords (e.g., 'CRM')"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Solution-aware or comparison keywords target users who are ready to buy or make a decision. They have lower volume than head keywords but much higher conversion intent.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the correct rule for using H1 and H2 tags on a page?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Use as many H1s as possible to emphasize importance."
+                },
+                {
+                    "id": "b",
+                    "text": "Use H2s for the main title and H1s for sub-topics."
+                },
+                {
+                    "id": "c",
+                    "text": "Use exactly one H1 for the main topic and H2s for sub-topics/pillars."
+                },
+                {
+                    "id": "d",
+                    "text": "It doesn't matter; search engines ignore header tags."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A page should have exactly one H1 tag that clearly states the main topic. H2 and H3 tags should be used to create a logical hierarchy of sub-topics, helping both users and AI models parse the content.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does Technical SEO primarily serve as a 'Hygiene Factor' in 2025?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It keeps your code clean and readable for your engineer."
+                },
+                {
+                    "id": "b",
+                    "text": "It ensures your site is fast, secure, and mobile-friendly, which are the 'entrance fees' for search visibility."
+                },
+                {
+                    "id": "c",
+                    "text": "It automatically generates content for your blog."
+                },
+                {
+                    "id": "d",
+                    "text": "It prevents users from taking screenshots of your site."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Google and users expect a baseline of performance. If your site is slow, non-secure (no HTTPS), or broken on mobile, you will be penalized in rankings regardless of how good your content is.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which tool is considered the most important 'Free' asset for monitoring your SEO performance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Instagram Insights"
+                },
+                {
+                    "id": "b",
+                    "text": "Google Search Console"
+                },
+                {
+                    "id": "c",
+                    "text": "Microsoft Word Spellcheck"
+                },
+                {
+                    "id": "d",
+                    "text": "ChatGPT"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Google Search Console provides direct data from Google about which queries are driving traffic to your site, your average rankings, and any technical errors found by Google's crawlers.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If you are a Creator/Coach, what should be the primary focus of your On-Page Optimization?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Optimizing for broad keywords like 'Life Coach'."
+                },
+                {
+                    "id": "b",
+                    "text": "Ensuring your course curriculum and outcome pages are optimized for specific transformations and student pains."
+                },
+                {
+                    "id": "c",
+                    "text": "Hiding keywords in white text so search engines find them but users don't."
+                },
+                {
+                    "id": "d",
+                    "text": "Removing all text and using only images to look 'premium'."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For creators, SEO is about demonstrating expertise in a specific niche. Optimizing your curriculum and outcome pages ensures that when a prospect searches for a transformation you provide, you are the visible expert.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Pick one 'Giant' in your industry (a large competitor or established brand). What is one 'Long-Tail' or 'Comparison' query where you could provide a better, more targeted answer than their generic documentation or blog?",
+            "promptHints": [
+                "Think of a specific use case the giant ignores.",
+                "Consider a 'versus' query where you can highlight your unique approach.",
+                "Identify a common frustration users have with the giant's product."
+            ],
+            "minimumWords": 50,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "8-10 minutes",
+        "prerequisiteQuizzes": [
+            "1"
+        ],
+        "unlocks": [
+            "3"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "SEO Fundamentals for Founders - Quiz"
+}

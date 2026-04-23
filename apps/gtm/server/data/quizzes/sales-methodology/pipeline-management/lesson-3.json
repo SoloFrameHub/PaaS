@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Stalled Deal Diagnostic Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary objective of the CPR (Context, Pressure, Resolution) framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To sell a more expensive product."
+                },
+                {
+                    "id": "b",
+                    "text": "To re-anchor the prospect to their initial pain-point while offering a low-risk micro-step to remove the specific blocker causing the stall."
+                },
+                {
+                    "id": "c",
+                    "text": "To complain about the slow progress."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for an early deposit."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Stalls happen because the 'Effort' of moving forward suddenly feels higher than the 'Benefit'. CPR lowers the effort (Resolution) while reminding them of the benefit (Context)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is offering a 'Risk-Free Pilot' or 'Sandbox' run such an effective unstaller in 2026?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's a way to give away the product for free."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it bypasses high-friction approval processes (Legal/Security) by defining a limited, low-stakes scope where the buyer can see value before committing to the full contract."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it makes the prospect feel guilty if they don't buy."
+                },
+                {
+                    "id": "d",
+                    "text": "To delay the close on your own terms."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Modern buyers suffer from 'Commitment Phobia'. A pilot allows them to validate the product in their own environment, which often provides the evidence needed to convince the 'Shadow Committee' gatekeepers."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Complexity Shock'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When the product has too many features."
+                },
+                {
+                    "id": "b",
+                    "text": "The feeling a buyer gets when they realize the internal work required to implement a solution is higher than their current motivation."
+                },
+                {
+                    "id": "c",
+                    "text": "When the code is hard to read."
+                },
+                {
+                    "id": "d",
+                    "text": "When the sales call is too technical."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Complexity kills deals. If a buyer feels the project will take too much time from their team, they will stall. Your job is to simplify the implementation through automation or guided micro-steps."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Identify a deal that is currently 'Stalled.' Apply the CPR framework. What is the specific 'Resolution' (the tiny, low-risk micro-step) you can offer the prospect to get them moving again without requiring a full contract signature today?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student correctly identifies the blocker (IT, Price, Complexity) and proposes a micro-step (Technical bridge, Sandbox, Case study review) that requires minimal effort from the buyer."
+        }
+    ]
+}

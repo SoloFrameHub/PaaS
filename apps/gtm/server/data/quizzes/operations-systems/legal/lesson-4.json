@@ -1,0 +1,66 @@
+{
+  "lessonId": "4",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "E-Signature Workflows and Contract Management",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "By how much do e-signatures reduce contract close time?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "80%" },
+        { "id": "d", "text": "95%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "E-signatures reduce contract close time by 80% — from an average of 5 days to about 1 day. That's deals closed before second thoughts set in."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which e-signature platform is recommended as the budget pick for solo founders?",
+      "options": [
+        { "id": "a", "text": "DocuSign at $25/month" },
+        { "id": "b", "text": "SignWell at $8/month with unlimited envelopes" },
+        { "id": "c", "text": "PandaDoc at $35/month" },
+        { "id": "d", "text": "Adobe Sign at $15/month" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "SignWell at $8/month offers unlimited envelopes, the cleanest UI, and API access. It's impossible to beat for unlimited use at that price point. DocuSign is the industry standard but costs more."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "In how many countries are e-signatures legally recognized?",
+      "options": [
+        { "id": "a", "text": "Only the US and UK" },
+        { "id": "b", "text": "12 countries" },
+        { "id": "c", "text": "44 countries" },
+        { "id": "d", "text": "All countries worldwide" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "44 countries legally recognize e-signatures. In the US, the ESIGN Act (2000) makes them fully enforceable. In the EU, eIDAS provides the same protection. DocuSign processes 1.5+ billion envelopes annually."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If a client says they need a 'wet signature' for a standard services contract, they are likely in a highly regulated industry or stalling.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. E-signatures are legally binding for standard services contracts. If a client insists on a wet signature, they're either in a highly regulated industry (financial services, healthcare) or they're stalling the deal."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe your current contract signing process. How long does it take from verbal agreement to signed contract? What e-signature tool would you implement and what improvement in close time do you expect?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response describes their current process honestly (PDF, print-sign-scan, or already using e-signatures), estimates their current time from verbal yes to signed contract, selects a specific e-signature tool with reasoning, and projects a realistic improvement."
+    }
+  ]
+}

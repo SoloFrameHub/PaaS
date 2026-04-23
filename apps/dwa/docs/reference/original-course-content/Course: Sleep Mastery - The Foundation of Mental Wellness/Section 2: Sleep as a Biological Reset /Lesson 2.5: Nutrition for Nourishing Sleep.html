@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 2.5: Nutrition for Nourishing Sleep</title>
+        <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d; --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8; --brand-text-dark: #1A1A1A; --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF; --brand-green: #4CAF50; --warning-bg: #FFF3E0;
+            --warning-border: #FFC107; --stress-red: #D32F2F; --font-family: 'Segoe UI', 'Roboto', sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family); line-height: 1.6;
+            color: var(--brand-text-dark); background-color: var(--brand-white);
+            margin: 0; padding: 0;
+        }
+        main { max-width: 850px; margin: 20px auto; padding: 10px 20px; }
+        .section { padding: 25px 0; border-bottom: 1px solid #e0e0e0; }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; } .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; }
+        h3 { font-size: 20px; color: var(--brand-secondary-blue); }
+
+        /* --- Interactive & Component Styles --- */
+        .autumns-note { background-color: #f0f7ff; border-left: 5px solid var(--brand-secondary-blue); padding: 20px; font-style: italic; border-radius: 4px; }
+        
+        .bloodsugar-diagram {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;
+        }
+        .bloodsugar-state { padding: 20px; border-radius: 8px; text-align: center; }
+        .spike { border: 2px solid var(--stress-red); }
+        .balance { border: 2px solid var(--brand-green); }
+        .bloodsugar-state h3 { margin-top: 0; font-size: 18px; }
+        .spike h3 { color: var(--stress-red); }
+        .balance h3 { color: var(--brand-green); }
+
+        .flip-card-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; perspective: 1000px;
+        }
+        .flip-card { background-color: transparent; height: 180px; cursor: pointer; }
+        .flip-card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; }
+        .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card-front, .flip-card-back {
+            position: absolute; width: 100%; height: 100%;
+            -webkit-backface-visibility: hidden; backface-visibility: hidden;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 20px; border-radius: 8px;
+        }
+        .flip-card-front { background-color: var(--brand-light-grey); border: 1px solid #ddd; }
+        .flip-card-back { background-color: #e8f5e9; border: 1px solid var(--brand-green); transform: rotateY(180deg); }
+        .flip-card-back ul { list-style: none; padding: 0; text-align: center; }
+
+        .checklist { list-style: none; padding-left: 0; }
+        .checklist-item {
+            display: flex; align-items: flex-start; padding: 12px;
+            background-color: var(--brand-light-grey); border-radius: 5px; margin-bottom: 10px;
+            cursor: pointer; transition: background-color 0.3s;
+        }
+        .checklist-item:hover { background-color: #e9ecef; }
+        .checklist-item.checked { background-color: #e8f5e9; text-decoration: line-through; color: var(--brand-text-light); }
+        .checklist-item input[type="checkbox"] {
+            -webkit-appearance: none; appearance: none; flex-shrink: 0;
+            margin-right: 15px; margin-top: 4px; width: 22px; height: 22px;
+            border: 2px solid var(--brand-secondary-blue); border-radius: 4px; cursor: pointer; position: relative;
+        }
+        .checklist-item input[type="checkbox"]:checked { background-color: var(--brand-green); border-color: var(--brand-green); }
+        .checklist-item input[type="checkbox"]:checked::after {
+            content: '✔'; position: absolute; color: var(--brand-white); font-size: 16px;
+            font-weight: bold; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+
+        .crisis-box {
+            background-color: var(--warning-bg); border: 1px solid var(--warning-border);
+            padding: 15px; margin-top: 40px; border-radius: 4px;
+        }
+        .crisis-box h3 { color: #E65100; margin-top: 0; }
+    </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Lesson 2.5: Nutrition for Nourishing Sleep</h1>
+                <p class="lesson-subtitle">A gentle look at the food-sleep connection with Autumn Persinger, PMHNP-BC</p>
+            </header>
+            <section class="section">
+                <h2>The Gentle Connection Between Food and Rest</h2>
+                <p>Welcome. In this section, we've explored how sleep resets your brain and body on a biological level. Now, I invite you to consider the fuel you provide for this important nightly work. The food-mood connection is real, and so is the **food-sleep connection**.</p>
+                <div class="autumns-note">
+                    <p><strong>An Invitation from Autumn:</strong> My goal here is not to give you a strict diet. It is to foster a gentle awareness. Let's explore, with curiosity, how certain foods and eating patterns can become powerful allies in your sleep journey, while others can be subtle disruptors.</p>
+                </div>
+            </section>
+            <section class="section">
+                <h2>The Blood Sugar Seesaw</h2>
+                <p>Have you ever woken up in the middle of the night feeling anxious or wide awake for no clear reason? It might be your blood sugar. A meal high in sugar or refined carbohydrates before bed can disrupt your sleep architecture.</p>
+                <div class="bloodsugar-diagram">
+                    <div class="spike" style="border-left-color: #000000; border-left-style: double; padding-left: 13px; padding-right: 6px;">
+                        <h3>The Spike & Crash</h3>
+                        <p>A sugary snack causes a blood sugar spike, followed by a crash. This crash triggers stress hormones like cortisol, which can wake you up.</p>
+                    </div>
+                    <div class="balance" style="padding-left: 13px; padding-right: 13px;">
+                        <h3>The Balanced Approach</h3>
+                        <p>Pairing complex carbs with protein and healthy fat (e.g., apple with almond butter) helps keep blood sugar stable through the night, promoting continuous sleep.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h2>Building Blocks for Restful Sleep</h2>
+                <p>Think of these key nutrients as the raw materials your body uses to create the brain chemicals needed for relaxation and sleep. Click on each card to see food sources.</p>
+                <div class="flip-card-grid">
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Magnesium</h3>
+                                <p>The Calming Mineral</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Food Sources</h3>
+                                <ul>
+                                    <li>Leafy Greens</li>
+                                    <li>Almonds & Seeds</li>
+                                    <li>Dark Chocolate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Tryptophan</h3>
+                                <p>The Sleep Precursor</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Food Sources</h3>
+                                <ul>
+                                    <li>Turkey & Chicken</li>
+                                    <li>Oats</li>
+                                    <li>Nuts & Seeds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Vitamin B6</h3>
+                                <p>The Helper Molecule</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Food Sources</h3>
+                                <ul>
+                                    <li>Chickpeas</li>
+                                    <li>Fish (Tuna, Salmon)</li>
+                                    <li>Poultry</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h2>A Mindful Look at Sleep Disruptors</h2>
+                <p>It's also helpful to be aware of common substances that can disrupt your sleep architecture. While they may feel helpful initially, their biological effect can be the opposite.</p>
+                <ul>
+                    <li>
+                        <strong>Caffeine:</strong> As a stimulant, it blocks your natural sleep pressure chemical (adenosine). Its effects can last 8+ hours, reducing the quality of your deep sleep.
+                    </li>
+                    <li>
+                        <strong>Alcohol:</strong> While it may act as a sedative at first, its metabolized byproducts are stimulating. It is particularly disruptive to the emotionally-restorative REM sleep that dominates the second half of the night.
+                    </li>
+                </ul>
+            </section>
+            <section class="section final-cta">
+                <h2>An Invitation to a Gentle Experiment</h2>
+                <p>My invitation to you is not to overhaul your diet overnight. Instead, click to choose **one gentle experiment** for this week. The goal is awareness, not perfection.</p>
+                <ul class="checklist">
+                    <li class="checklist-item" onclick="toggleCheck(this)">
+                        <input type="checkbox" aria-label="Commit to adding one magnesium-rich food."><span>This week, I will explore adding one magnesium-rich food (like a handful of almonds or spinach) to my day.</span>
+                    </li>
+                    <li class="checklist-item" onclick="toggleCheck(this)">
+                        <input type="checkbox" aria-label="Commit to trying a balanced evening snack."><span>This week, if I have an evening snack, I will try pairing a carb with a protein/fat (e.g., apple with peanut butter).</span>
+                    </li>
+                    <li class="checklist-item" onclick="toggleCheck(this)">
+                        <input type="checkbox" aria-label="Commit to mindfully observing caffeine/alcohol impact."><span>This week, I will mindfully notice, without judgment, how I feel the day after consuming caffeine late or having an alcoholic beverage.</span>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <div class="crisis-box">
+                    <h3>Crisis Resources & Immediate Support</h3>
+                    <p>If you're in immediate danger or having thoughts of self-harm:</p>
+                    <ul>
+                        <li>
+                            <strong>Emergency Services:</strong> Call 911
+                        </li>
+                        <li>
+                            <strong>National Suicide Prevention Lifeline:</strong> Call or text 988
+                        </li>
+                        <li>
+                            <strong>Crisis Text Line:</strong> Text HOME to 741741
+                        </li>
+                        <li>
+                            <strong>SAMHSA National Helpline:</strong> Call 1-800-662-4357 (24/7 treatment referral service)
+                        </li>
+                    </ul>
+                    <p><strong>Disclaimer:</strong> This educational material is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+                </div>
+            </footer>
+        </main>
+        <script>
+        function toggleCheck(element) {
+            const checkbox = element.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+            element.classList.toggle('checked', checkbox.checked);
+        }
+    </script>
+    </body>
+</html>

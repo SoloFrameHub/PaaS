@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is doomscrolling?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Scrolling through positive news and uplifting content"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Compulsively consuming negative news or distressing content despite feeling worse, often without clear stopping point"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Reading long-form journalism articles"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Watching educational videos on social media"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Doomscrolling is the compulsive consumption of negative, distressing news and content — continuing to scroll despite feeling anxious, sad, or overwhelmed, often without a clear endpoint."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What psychological mechanism drives doomscrolling behavior?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Purely rational information-gathering"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Negativity bias (evolutionary tendency to prioritize threat information) + algorithmic amplification of engaging (often negative) content"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A desire to feel sad"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Lack of access to positive news"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Doomscrolling is driven by negativity bias (we evolved to prioritize threat information for survival) combined with algorithms that amplify engaging content, which is often negative, outrageous, or fear-inducing."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does research show about the mental health effects of excessive news consumption?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "More news always leads to better understanding and reduced anxiety"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Heavy news consumption correlates with increased anxiety, stress, and feelings of helplessness (MODERATE evidence)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "News consumption has no impact on mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people with anxiety disorders are affected by negative news"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "MODERATE evidence shows that heavy, passive news consumption (especially of distressing content) correlates with increased anxiety, stress, and feelings of helplessness — without proportional increase in actionable understanding."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which strategy is most effective for managing compulsive news consumption?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Check news continuously to stay fully informed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Set specific, limited times for news (e.g., 15 minutes once or twice daily), focus on high-quality sources, and balance with action or rest"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Avoid all news completely and stay uninformed"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only consume news from social media feeds"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Evidence supports intentional, limited news consumption: set specific times (e.g., 15 min 1-2x/day), choose high-quality sources over social media feeds, and balance information with action or rest to manage anxiety."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Do you engage in doomscrolling? When does it typically happen (e.g., before bed, during breaks, when anxious)? How do you feel afterward? What's one boundary you could set around news consumption?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "10",
+    "title": "Doomscrolling and Compulsive News - Quiz"
+}

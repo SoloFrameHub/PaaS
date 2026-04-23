@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the critical distinction between what coaches CAN do and what coaches CANNOT do regarding mental health crises?",
+      "options": [
+        {"id": "opt1", "text": "Coaches can handle any mental health crisis as long as they're empathetic"},
+        {"id": "opt2", "text": "Coaches CAN recognize warning signs, ask directly about safety using safe messaging, provide crisis resources, and make warm referrals. Coaches CANNOT assess suicide risk clinically, provide crisis intervention, diagnose conditions, or take responsibility for keeping someone alive — that's clinical work."},
+        {"id": "opt3", "text": "Coaches should avoid any discussion of mental health crises entirely"},
+        {"id": "opt4", "text": "Coaches and therapists have the same crisis intervention responsibilities"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Your scope: recognize crisis warning signs, ask directly ('Are you thinking about suicide?'), provide resources (988 Lifeline), make warm referrals, and follow up. Outside your scope: clinical risk assessment, crisis intervention/safety planning, diagnosing what's driving the crisis, or taking medical/legal responsibility for someone's safety. If someone discloses active suicidal ideation with plan/intent or is actively self-harming, connect them to 988, 911, or crisis team immediately — don't attempt to 'coach them through' a psychiatric crisis."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to safe messaging research (JED Foundation, VA/DOD), which of the following is the CORRECT way to ask someone if they're considering suicide?",
+      "options": [
+        {"id": "opt1", "text": "Avoid asking directly because it might plant the idea in their head"},
+        {"id": "opt2", "text": "Use vague language: 'Are you thinking about hurting yourself?'"},
+        {"id": "opt3", "text": "Ask directly and clearly: 'Are you thinking about suicide?' Research shows asking does NOT increase risk; it opens the door to help-seeking."},
+        {"id": "opt4", "text": "Wait for them to bring it up — never ask unless they mention it first"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Use direct, clear language: 'Are you thinking about suicide?' NOT vague language like 'hurting yourself.' Research is clear: asking directly does NOT plant the idea or increase risk. Avoiding the topic does NOT protect someone. Direct questions with empathic listening open the door to help. After asking, LISTEN without judgment, validate their pain without validating suicide, and connect them to resources."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is a 'warm referral,' and why is it more effective than just giving someone a phone number?",
+      "options": [
+        {"id": "opt1", "text": "A warm referral is sending them to a therapist you personally know"},
+        {"id": "opt2", "text": "A warm referral means actively helping someone connect to care: providing specific resources, offering to call together, following up to ensure connection was made. It's more effective than handing them a number because it communicates you're not abandoning them and increases likelihood they'll actually connect."},
+        {"id": "opt3", "text": "A warm referral is being nice when you tell them to see a therapist"},
+        {"id": "opt4", "text": "There's no difference between warm and cold referrals — outcomes are the same"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Warm referral: actively facilitate connection rather than just saying 'you should see a therapist.' Steps: (1) express clear concern, (2) provide SPECIFIC resources with phone numbers, (3) offer to help them connect right now ('Can we call together?'), (4) clarify confidentiality limits, (5) follow up to check if connection was made. This prevents referral being experienced as abandonment and dramatically increases follow-through compared to cold referrals (handing over a number and hoping)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "A client says: 'I've been thinking about suicide. I even have a plan.' What is the MOST appropriate immediate response according to safe messaging principles?",
+      "options": [
+        {"id": "opt1", "text": "'Don't think that way! You have so much to live for! Just be positive!'"},
+        {"id": "opt2", "text": "'I'm really glad you told me. That must be incredibly hard. I'm concerned about your safety, and I want to help you connect with someone right now who can support you. Can we call 988 together?'"},
+        {"id": "opt3", "text": "Change the subject to distract them from the thoughts"},
+        {"id": "opt4", "text": "'How could you think that? That's selfish — think about your family!'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Safe messaging response: (1) thank them for telling you (builds trust), (2) validate it's hard without validating suicide as solution, (3) express concern clearly, (4) offer immediate connection to crisis resources (988 Lifeline, local crisis team). Do NOT argue them out of it (opt1), shame them (opt4), or avoid it (opt3). Active suicidal ideation with plan = high risk. Your job: stay present, don't leave them alone if in-person, facilitate connection to crisis support immediately."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "After encountering a client in crisis, what should a coach do to care for themselves and process the experience?",
+      "options": [
+        {"id": "opt1", "text": "Suppress any emotional reaction — coaches should remain unaffected"},
+        {"id": "opt2", "text": "Immediately take on more clients to stay busy and avoid thinking about it"},
+        {"id": "opt3", "text": "Debrief by checking: Did I connect them to resources? Do I need to follow up? How am I feeling? Do I need support/supervision? Watch for compassion fatigue (emotional numbness, intrusive thoughts, difficulty sleeping) and seek own therapy/consultation if needed."},
+        {"id": "opt4", "text": "Tell everyone you know about what happened to process it"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Crisis work is emotionally heavy. Vicarious trauma and compassion fatigue are REAL — hearing about someone's suicidal thoughts/self-harm affects you even if you're 'just the coach.' Post-crisis protocol: (1) verify person connected to resources, (2) plan follow-up, (3) check own emotional state, (4) debrief with supervisor/peer (maintaining confidentiality), (5) watch for compassion fatigue signs, (6) seek own support if needed. Suppressing (opt1) leads to burnout. Staying busy (opt2) avoids processing. Violating confidentiality (opt4) is unethical."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "11",
+  "title": "Crisis Intervention and Mental Health Awareness - Quiz"
+}

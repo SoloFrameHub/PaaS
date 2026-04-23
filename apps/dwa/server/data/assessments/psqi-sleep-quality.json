@@ -1,0 +1,70 @@
+{
+  "id": "psqi-sleep-quality",
+  "title": "Pittsburgh Sleep Quality Index (PSQI) - Adapted",
+  "description": "An adapted version of the PSQI to help you assess your overall sleep quality across seven key areas. This self-assessment provides insight into patterns that may be affecting your rest.",
+  "instructions": "Think about your typical sleep patterns over the past month. Answer each question based on what has been most common for you.",
+  "timeframe": "past month",
+  "questions": [
+    { "id": "q1", "text": "Difficulty falling asleep within 30 minutes" },
+    { "id": "q2", "text": "Waking up during the night or early morning" },
+    { "id": "q3", "text": "Having to get up to use the bathroom" },
+    { "id": "q4", "text": "Difficulty breathing comfortably" },
+    { "id": "q5", "text": "Coughing or snoring loudly" },
+    { "id": "q6", "text": "Feeling too cold or too hot" },
+    { "id": "q7", "text": "Having bad dreams or nightmares" },
+    { "id": "q8", "text": "Experiencing pain that disturbs sleep" },
+    { "id": "q9", "text": "Overall rating of your sleep quality" },
+    { "id": "q10", "text": "Needing medication or supplements to sleep" },
+    { "id": "q11", "text": "Trouble staying awake during daytime activities" },
+    { "id": "q12", "text": "Lack of enthusiasm or motivation to get things done" }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3,
+    "labels": {
+      "0": "Not during the past month",
+      "1": "Less than once a week",
+      "2": "Once or twice a week",
+      "3": "Three or more times a week"
+    }
+  },
+  "scoring": {
+    "maxScore": 36,
+    "bands": [
+      {
+        "min": 0,
+        "max": 5,
+        "severity": "good",
+        "label": "Good Sleep Quality",
+        "description": "Your responses suggest good overall sleep quality. Continue your current sleep habits and use this course to further optimize your rest.",
+        "color": "green"
+      },
+      {
+        "min": 6,
+        "max": 12,
+        "severity": "mild",
+        "label": "Mild Sleep Difficulties",
+        "description": "Your responses suggest some sleep difficulties. The techniques in this course can help you improve specific areas. Pay attention to which questions scored highest.",
+        "color": "yellow"
+      },
+      {
+        "min": 13,
+        "max": 21,
+        "severity": "moderate",
+        "label": "Moderate Sleep Problems",
+        "description": "Your responses suggest moderate sleep problems that are likely affecting your daily life. The strategies in this course are designed for exactly this level of difficulty. Consider also consulting a healthcare provider.",
+        "color": "orange"
+      },
+      {
+        "min": 22,
+        "max": 36,
+        "severity": "severe",
+        "label": "Significant Sleep Disturbance",
+        "description": "Your responses suggest significant sleep disturbance. We strongly recommend consulting a healthcare provider or sleep specialist alongside the educational content in this course.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "How much of a problem has poor sleep been for your overall quality of life during the past month?"
+  },
+  "disclaimer": "This is an adapted educational self-check tool based on PSQI concepts, not a clinical diagnosis. Results are meant to help you reflect on your sleep patterns. If you are in crisis or need immediate help, please call or text 988 (Suicide & Crisis Lifeline)."
+}

@@ -1,0 +1,141 @@
+{
+  "lessonId": "1",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Qué Significa Realmente el Posicionamiento (Y Por Qué las Características No Venden)",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué es el posicionamiento en el contexto de esta lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El logo, los colores y la identidad visual de tu empresa"
+        },
+        {
+          "id": "b",
+          "text": "El espacio que ocupas en la mente de tu cliente — por qué deberían elegirte sobre las alternativas"
+        },
+        {
+          "id": "c",
+          "text": "Tu estrategia de campaña de marketing y ubicaciones de anuncios"
+        },
+        {
+          "id": "d",
+          "text": "Las características técnicas que diferencian tu producto"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El posicionamiento se trata de espacio mental — es la respuesta a '¿por qué debería elegirte sobre las alternativas?' No se trata de identidad visual (eso es la marca) ni de campañas (eso es el marketing)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué es la 'maldición del conocimiento' que afecta a los fundadores técnicos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saber demasiado sobre los productos de los competidores"
+        },
+        {
+          "id": "b",
+          "text": "Entender tu producto tan bien que no puedes explicárselo de forma sencilla a los clientes"
+        },
+        {
+          "id": "c",
+          "text": "Tener demasiadas características para describir en un solo discurso"
+        },
+        {
+          "id": "d",
+          "text": "Estar condenado a aprender siempre nuevas tecnologías"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La maldición del conocimiento significa que has pasado tanto tiempo construyendo tu producto que entiendes cada decisión técnica — pero tu cliente no. Te cuesta simplificar porque todo te parece esencial."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la secuencia correcta para construir una presencia de marca?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Marketing → Marca → Posicionamiento"
+        },
+        {
+          "id": "b",
+          "text": "Marca → Posicionamiento → Marketing"
+        },
+        {
+          "id": "c",
+          "text": "Posicionamiento → Marca → Marketing"
+        },
+        {
+          "id": "d",
+          "text": "Los tres deben ocurrir simultáneamente"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El posicionamiento debe venir primero — necesitas saber por qué te destacas antes de poder expresarlo visualmente (marca) o comunicarlo para atraer clientes (marketing). Nathan Barry construyó ConvertKit sin un logo durante 2.5 años porque la claridad del posicionamiento vino primero."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué porcentaje de compradores B2B busca mensajes simples y enfocados en beneficios según la investigación citada en esta lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "35%"
+        },
+        {
+          "id": "b",
+          "text": "50%"
+        },
+        {
+          "id": "c",
+          "text": "65%"
+        },
+        {
+          "id": "d",
+          "text": "80%"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Las investigaciones muestran que el 65% de los compradores B2B busca mensajes simples y enfocados en beneficios — sin embargo, los fundadores técnicos constantemente lideran con lenguaje basado en características, creando una brecha entre lo que los clientes quieren y lo que los fundadores entregan."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué sucede cuando un prospecto no puede categorizar rápidamente tu producto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hacen más preguntas de seguimiento para entender"
+        },
+        {
+          "id": "b",
+          "text": "Dejan de pensar en ti por completo"
+        },
+        {
+          "id": "c",
+          "text": "Asumen que eres una solución empresarial"
+        },
+        {
+          "id": "d",
+          "text": "Te comparan con el líder del mercado por defecto"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Cuando los prospectos no pueden categorizar tu producto, no hacen más preguntas — simplemente dejan de pensar en ti. Tu trabajo es controlar la asociación de categoría para que los prospectos piensen inmediatamente 'esto es para personas exactamente como yo.'"
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Piensa en tu propio producto o servicio. Si tuvieras que eliminar todo el lenguaje técnico, ¿cómo explicarías el 'resultado' central que entregas en solo una oración? ¿Quién sufre específicamente si ese resultado no se logra?",
+      "minLength": 100,
+      "promptForAI": "Evalúa la capacidad del estudiante para identificar un resultado del cliente sin usar jerga. Verifica si identificaron a un sufridor específico (segmento objetivo). Proporciona retroalimentación sobre cómo hacer el resultado aún más específico y emocional."
+    }
+  ],
+  "passingScore": 70
+}

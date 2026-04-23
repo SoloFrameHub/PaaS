@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the primary challenge in interpreting research on volunteering and mental health outcomes?",
+      "options": [
+        {"id": "opt1", "text": "Most studies use small sample sizes that aren't statistically significant"},
+        {"id": "opt2", "text": "Selection bias: people who volunteer are often healthier and more socially connected to begin with"},
+        {"id": "opt3", "text": "Volunteering research focuses only on older adults, not midlife or younger populations"},
+        {"id": "opt4", "text": "There is no reliable research on volunteering and mental health—it's all anecdotal"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The main challenge is selection bias: people who volunteer tend to be healthier, more socially connected, and more resourced from the start. This makes it difficult to determine if contribution *causes* better health or if healthier people are simply more able to contribute. Randomized controlled trials help address this limitation, but most evidence remains observational and correlational rather than experimental."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What neurobiological changes occur during 'helper's high' according to research?",
+      "options": [
+        {"id": "opt1", "text": "Oxytocin release and reward system activation in the brain"},
+        {"id": "opt2", "text": "Increased serotonin production exclusively in the prefrontal cortex"},
+        {"id": "opt3", "text": "Permanent restructuring of neural pathways after a single helping act"},
+        {"id": "opt4", "text": "Complete elimination of stress hormones like cortisol"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Research shows that helping behaviors trigger oxytocin release (associated with bonding, trust, and calm) and activate the same reward centers in the brain as receiving rewards. This creates a biological reward for generative behavior. However, these are temporary effects—a single act of helping doesn't guarantee long-term mental health transformation, and helping doesn't eliminate stress hormones entirely (chronic helping without boundaries can actually increase stress)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which type of motivation tends to produce more sustainable and authentic generative work?",
+      "options": [
+        {"id": "opt1", "text": "Extrinsic motivations (seeking status, recognition, awards, resume-building)"},
+        {"id": "opt2", "text": "Intrinsic motivations (alignment with values, personal meaning, desire to make a difference)"},
+        {"id": "opt3", "text": "Mixed motivations equally balance intrinsic and extrinsic factors"},
+        {"id": "opt4", "text": "Motivation type doesn't matter—only the helping actions themselves count"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows intrinsic motivations (deep sense of purpose, alignment with values, internal desire to contribute) predict greater persistence and satisfaction in helping roles. While mixed motivations are normal, when generative work becomes primarily about external validation or status, it risks feeling hollow or unsustainable, and burnout increases. The most enduring contribution comes from work that feels meaningful even without external recognition."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for the claim that volunteering programs can reduce loneliness in older adults?",
+      "options": [
+        {"id": "opt1", "text": "WEAK—only correlational studies with small sample sizes"},
+        {"id": "opt2", "text": "MODERATE-HIGH—includes randomized controlled trials showing reduced loneliness"},
+        {"id": "opt3", "text": "EMERGING—too new to evaluate properly"},
+        {"id": "opt4", "text": "STRONG—multiple large-scale experimental studies with long-term follow-up"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The evidence is MODERATE-HIGH. While much volunteering research is observational, there are now randomized controlled trials among lonely older adults showing that volunteering programs can reduce loneliness and improve social/emotional outcomes over time. This strengthens the evidence beyond pure correlation, though long-term sustained effects and mechanisms still require more research."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When might generative work become harmful rather than helpful?",
+      "options": [
+        {"id": "opt1", "text": "When you contribute in multiple life domains simultaneously (family, work, community)"},
+        {"id": "opt2", "text": "When your contributions are small-scale or informal rather than large public projects"},
+        {"id": "opt3", "text": "When helping becomes a way to avoid your own pain, creates resentment, or leads to burnout without boundaries"},
+        {"id": "opt4", "text": "When you're motivated by intrinsic values rather than external recognition"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Generative work becomes harmful when it lacks boundaries and balance: sacrificing essential self-care, feeling depleted or resentful, using helping to avoid your own grief or problems, or becoming emotionally dependent on others' gratitude. Sustainable contribution requires boundaries, reciprocity, and self-care—not martyrdom. Small-scale contributions and multiple domains are healthy; intrinsic motivation is protective. The warning signs are depletion, resentment, and self-neglect in service of helping."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "legacy-building",
+  "lessonId": "2",
+  "title": "The Psychology of Generative Living - Quiz"
+}

@@ -1,0 +1,75 @@
+{
+  "lessonId": "8",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Week 2 Execution & Review",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key principle of A/B testing during the sprint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test as many variables as possible simultaneously"
+        },
+        {
+          "id": "b",
+          "text": "Change one variable at a time so you can attribute improvements"
+        },
+        { "id": "c", "text": "Only test after the sprint is complete" },
+        { "id": "d", "text": "Copy what competitors are doing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Change one variable at a time. If you change subject line AND first line AND CTA simultaneously, you won't know what caused any improvement or decline. Controlled experiments require isolating variables."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the minimum number of contacts per variant needed for reliable A/B test results?",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "10" },
+        { "id": "c", "text": "30" },
+        { "id": "d", "text": "100" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "You need at minimum 30 contacts per variant. With 50 per variant you get a more reliable signal. With fewer than 30, any difference could be random noise."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "At the mid-sprint point, when should you pivot your strategy?",
+      "options": [
+        { "id": "a", "text": "Whenever lagging metrics are below target" },
+        {
+          "id": "b",
+          "text": "Only if leading indicators (reply rate) drop below target for 2+ consecutive weeks"
+        },
+        { "id": "c", "text": "Every week to test new approaches" },
+        { "id": "d", "text": "Never — always finish the original plan" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Stay the course if leading indicators (reply rate) are on target. Meetings and closes have a 2-3 week lag from outreach. Only adjust if reply rate drops below target for 2+ consecutive weeks. Most founders pivot too early based on lagging indicators."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If your Week 2 reply rate improved from 3.4% to 4.1%, you should immediately scale volume.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Two weeks of improving data is encouraging but Week 2 is about running controlled experiments, not scaling. Scale in Week 3 once you've confirmed which variants work and have enough data to make reliable conclusions."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design an A/B test for your outreach. What single variable will you test, what are your two variants, and how many contacts per variant will you need? How will you determine the winner?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies one specific variable to test (subject line, first line, CTA), describes two distinct variants, specifies a minimum sample size of 30+ per variant, and defines a clear success metric (reply rate, positive reply rate) for determining the winner."
+    }
+  ]
+}

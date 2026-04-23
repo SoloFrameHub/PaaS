@@ -1,0 +1,129 @@
+{
+  "id": "lifestyle-audit",
+  "title": "Lifestyle Audit",
+  "description": "Rate yourself on 8 key lifestyle areas that influence mood, then identify one small, achievable change for each area you want to improve.",
+  "instructions": "For each area, rate your current level from 0 (very poor) to 10 (excellent). Then write one small, specific change you could make this week. Focus on progress, not perfection — even small improvements add up.",
+  "items": [
+    {
+      "id": "vegetables-rating",
+      "label": "Vegetable & fruit intake",
+      "type": "rating",
+      "category": "Nutrition",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "vegetables-change",
+      "label": "One small change for nutrition",
+      "type": "text",
+      "category": "Nutrition",
+      "placeholder": "e.g., Add one serving of vegetables to lunch"
+    },
+    {
+      "id": "wholefoods-rating",
+      "label": "Whole food vs. processed food balance",
+      "type": "rating",
+      "category": "Nutrition",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "wholefoods-change",
+      "label": "One small change for food quality",
+      "type": "text",
+      "category": "Nutrition",
+      "placeholder": "e.g., Swap one processed snack for a piece of fruit"
+    },
+    {
+      "id": "sleep-quantity-rating",
+      "label": "Sleep quantity (hours per night)",
+      "type": "rating",
+      "category": "Sleep",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "sleep-quantity-change",
+      "label": "One small change for sleep quantity",
+      "type": "text",
+      "category": "Sleep",
+      "placeholder": "e.g., Go to bed 15 minutes earlier on weeknights"
+    },
+    {
+      "id": "sleep-quality-rating",
+      "label": "Sleep quality (how rested you feel)",
+      "type": "rating",
+      "category": "Sleep",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "sleep-quality-change",
+      "label": "One small change for sleep quality",
+      "type": "text",
+      "category": "Sleep",
+      "placeholder": "e.g., No phone in bed for 30 minutes before sleep"
+    },
+    {
+      "id": "screentime-rating",
+      "label": "Screen time management before bed",
+      "type": "rating",
+      "category": "Habits",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "screentime-change",
+      "label": "One small change for screen time",
+      "type": "text",
+      "category": "Habits",
+      "placeholder": "e.g., Put phone on charger outside the bedroom by 10 PM"
+    },
+    {
+      "id": "activity-rating",
+      "label": "Physical activity level",
+      "type": "rating",
+      "category": "Movement & Connection",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "activity-change",
+      "label": "One small change for physical activity",
+      "type": "text",
+      "category": "Movement & Connection",
+      "placeholder": "e.g., Take a 10-minute walk after lunch"
+    },
+    {
+      "id": "outdoors-rating",
+      "label": "Time spent outdoors / in nature",
+      "type": "rating",
+      "category": "Movement & Connection",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "outdoors-change",
+      "label": "One small change for outdoor time",
+      "type": "text",
+      "category": "Movement & Connection",
+      "placeholder": "e.g., Eat one meal outside this week"
+    },
+    {
+      "id": "social-rating",
+      "label": "Social connection & meaningful interactions",
+      "type": "rating",
+      "category": "Movement & Connection",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "social-change",
+      "label": "One small change for social connection",
+      "type": "text",
+      "category": "Movement & Connection",
+      "placeholder": "e.g., Text or call one friend this week"
+    }
+  ],
+  "disclaimer": "This audit is for educational self-reflection. It is not a diagnostic tool. If you are struggling with depression, please consult a healthcare provider."
+}

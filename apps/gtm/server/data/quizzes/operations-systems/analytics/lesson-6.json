@@ -1,0 +1,88 @@
+{
+  "lessonId": "6",
+  "courseId": "analytics",
+  "sectionId": "operations-systems",
+  "title": "Revenue Tracking: MRR Components and NRR",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the Net New MRR formula?",
+      "options": [
+        { "id": "a", "text": "New MRR + Expansion MRR" },
+        {
+          "id": "b",
+          "text": "New MRR + Expansion MRR - Contraction MRR - Churned MRR"
+        },
+        { "id": "c", "text": "Total Revenue - Total Costs" },
+        { "id": "d", "text": "New MRR - Churned MRR" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Net New MRR = New MRR + Expansion MRR - Contraction MRR - Churned MRR. All four components must be tracked separately to understand where revenue is growing and where it's leaking."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Sarah's NRR was 83%. What does this mean?",
+      "options": [
+        { "id": "a", "text": "She's growing steadily" },
+        {
+          "id": "b",
+          "text": "Her existing customers shrank by 17% that month — a crisis"
+        },
+        { "id": "c", "text": "She needs to raise prices by 17%" },
+        { "id": "d", "text": "Her churn rate is 83%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An NRR of 83% means existing customers shrank by 17% in a single month. That's a crisis — churn is eating her growth. NRR below 90% means she should stop scaling acquisition and fix retention first."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why is total MRR described as a 'vanity metric'?",
+      "options": [
+        { "id": "a", "text": "Because it's always wrong" },
+        {
+          "id": "b",
+          "text": "Because it hides whether growth comes from new customers or existing ones masking churn"
+        },
+        { "id": "c", "text": "Because investors don't care about it" },
+        { "id": "d", "text": "Because it includes one-time revenue" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Total MRR hides the truth. Revenue can stay flat while major churn is being masked by new acquisition. Without decomposing MRR into New, Expansion, Contraction, and Churned components, you can't see what's actually happening in your business."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A one-time $5,000 consulting project should be counted as MRR.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. One-time revenue is not MRR. It should be tracked separately as 'project revenue.' Only recurring revenue (subscriptions, retainers) counts as MRR. Mixing them inflates your MRR and gives a false picture of business health."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "If any single customer represents more than what percentage of your revenue, you have dangerous concentration risk?",
+      "options": [
+        { "id": "a", "text": "5%" },
+        { "id": "b", "text": "10%" },
+        { "id": "c", "text": "20%" },
+        { "id": "d", "text": "50%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "If any single customer is more than 20% of your revenue, you're fragile. If they churn, you lose 20%+ of your business overnight. Diversify before you scale."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Build a rough MRR waterfall for your business from last month. Identify the starting MRR, new MRR, expansion, contraction, and churned MRR. What does this waterfall reveal about where you should focus?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response attempts to decompose revenue into MRR waterfall components (new, expansion, contraction, churned). Look for identification of the biggest issue (e.g., high churn, zero expansion, low new MRR) and a specific recommended action based on the waterfall analysis."
+    }
+  ]
+}

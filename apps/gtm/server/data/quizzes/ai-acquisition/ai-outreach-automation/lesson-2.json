@@ -1,0 +1,87 @@
+{
+  "lessonId": "2",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "Instantly & Smartlead Deep Dive",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key philosophical difference between Instantly and Smartlead?",
+      "options": [
+        { "id": "a", "text": "Instantly is free while Smartlead is paid" },
+        {
+          "id": "b",
+          "text": "Instantly is built for speed and simplicity; Smartlead is built for control and customization with API access"
+        },
+        {
+          "id": "c",
+          "text": "Instantly only supports email while Smartlead supports all channels"
+        },
+        {
+          "id": "d",
+          "text": "Smartlead has better deliverability than Instantly"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Instantly is built for speed and simplicity, assuming you want to launch campaigns fast. Smartlead is built for control and customization, assuming you'll want API access, custom webhooks, and white-label capabilities. For 90% of solo founders, Instantly wins on simplicity."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What does Instantly's Growth plan ($37/month) include for solo founders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 email accounts, 1,000 emails/month, no warmup"
+        },
+        {
+          "id": "b",
+          "text": "Unlimited email accounts, 5,000 active contacts, 5,000 emails/month, unlimited warmup, and A/B testing"
+        },
+        {
+          "id": "c",
+          "text": "1 email account, unlimited emails, no analytics"
+        },
+        { "id": "d", "text": "Unlimited everything with no limits" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Instantly's Growth plan at $37/month includes unlimited email accounts, 5,000 active contacts, 5,000 emails/month, unlimited built-in warmup, unlimited campaigns, A/B testing with up to 26 variants, AI Writer, Lead Finder (1,000 B2B leads/month), and standard analytics."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When should you choose Smartlead over Instantly?",
+      "options": [
+        { "id": "a", "text": "Always — Smartlead is objectively better" },
+        {
+          "id": "b",
+          "text": "When you need API integration, custom webhooks, or white-label capabilities"
+        },
+        { "id": "c", "text": "When you're just starting out with cold email" },
+        { "id": "d", "text": "When you want the cheapest option available" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Choose Smartlead only if you can articulate a specific technical need like API integration, custom webhook routing, or white-label capabilities. If you can't articulate that need, choose Instantly — it's $2/month cheaper, has better A/B testing, and a cleaner interface."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should start sending cold emails immediately after connecting your domains to Instantly, without waiting for warmup.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Skipping warmup is one of the most common configuration mistakes that tanks deliverability. New domains need 14-30 days of warmup (building reputation through simulated positive engagement) before sending cold emails. Sending immediately from a new domain triggers spam filters."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Based on your current outreach needs (volume, technical requirements, budget), which platform would you choose — Instantly or Smartlead? Explain your reasoning with specific features that matter for your use case.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response makes a clear platform choice with specific reasoning tied to their situation (volume needs, technical comfort, budget constraints). Look for mention of key differentiators like API access, A/B testing, warmup, and pricing. Penalize generic answers that don't reference their specific needs."
+    }
+  ]
+}

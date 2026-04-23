@@ -1,0 +1,75 @@
+{
+  "lessonId": "6",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Onboarding Calls for Small Customer Counts",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "For how long are personal onboarding calls sustainable and high-ROI for solo founders?",
+      "options": [
+        { "id": "a", "text": "Up to 10 customers" },
+        {
+          "id": "b",
+          "text": "Under 50 customers at >$100/month average revenue"
+        },
+        { "id": "c", "text": "Up to 500 customers" },
+        { "id": "d", "text": "They are never sustainable for solo founders" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Under 50 active customers with average revenue above $100/month, personal onboarding calls are your highest-ROI retention activity. Each customer represents 2%+ of your revenue and the calls double as research into what makes customers successful."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the recommended maximum length for a solo founder onboarding call?",
+      "options": [
+        { "id": "a", "text": "5 minutes" },
+        { "id": "b", "text": "15 minutes" },
+        { "id": "c", "text": "45 minutes" },
+        { "id": "d", "text": "60 minutes" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "15 minutes maximum. Research shows 15-minute calls are 90% as effective as 45-minute calls for onboarding, but you can do 3x as many in the same time block. The call focuses on confirming goals, checking progress, removing one blocker, and setting the next step."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the four components of the 15-minute onboarding call framework?",
+      "options": [
+        { "id": "a", "text": "Demo, Q&A, pricing review, close" },
+        {
+          "id": "b",
+          "text": "Confirm goal, check milestone progress, remove one blocker, set next step"
+        },
+        {
+          "id": "c",
+          "text": "Introduction, feature tour, support setup, feedback"
+        },
+        { "id": "d", "text": "Welcome, training, assessment, certification" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The framework is: (1) Confirm their goal, (2) Check milestone progress, (3) Remove one blocker, and (4) Set the next step. That's it — you're not selling anymore (they already bought), you're ensuring they succeed."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Above 50 customers, solo founders should transition from personal onboarding calls to automated onboarding with exception-based calls.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Above 50 customers, call volume exceeds 10 hours/week, which is unsustainable. By this point, you've seen the same questions 50+ times and can automate most of the process, reserving personal calls for exception cases."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your 15-minute onboarding call script with specific questions for each of the four steps: confirm goal, check progress, remove blocker, set next step. How would you batch these calls to maximize efficiency?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific questions for all four steps (not generic ones), considers batching calls into focused time blocks (e.g., 3 calls back-to-back on Wednesdays), and demonstrates understanding that the call is a check-in, not a sales demo or full training session."
+    }
+  ]
+}

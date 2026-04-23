@@ -1,0 +1,237 @@
+{
+  "industry_id": "ecommerce",
+  "display_name": "E-Commerce / DTC",
+  "parent_category": "commerce",
+  "description": "Online retailers, direct-to-consumer brands, marketplace sellers, and e-commerce technology companies. This fast-paced industry is characterized by data-driven decision making, rapid experimentation, and constant pressure to optimize customer acquisition costs and lifetime value.",
+  "typical_company_sizes": ["1-10", "11-50", "51-200"],
+  "typical_deal_sizes": ["transactional", "smb"],
+  "sales_cycle_length": "weeks",
+
+  "pain_points": [
+    {
+      "pain": "Rising customer acquisition costs (CAC) eroding margins",
+      "level": "complex",
+      "context": "iOS 14.5 privacy changes and competition have doubled Facebook/Instagram CPMs for many brands"
+    },
+    {
+      "pain": "Attribution and measurement broken by privacy changes",
+      "level": "complex",
+      "context": "Can't accurately track which channels drive conversions; MMM and incrementality testing gaining interest"
+    },
+    {
+      "pain": "Inventory management and forecasting challenges",
+      "level": "straightforward",
+      "context": "Stockouts lose sales; overstock ties up cash. Supply chain volatility makes planning difficult"
+    },
+    {
+      "pain": "Shipping and fulfillment costs cutting into margins",
+      "level": "straightforward",
+      "context": "Free shipping expectations while carrier rates increase; 3PL costs hard to control"
+    },
+    {
+      "pain": "Platform fees and dependency (Shopify, Amazon)",
+      "level": "complex",
+      "context": "Amazon takes 30-45% of revenue; Shopify payments and apps add up. Platform changes can kill businesses"
+    },
+    {
+      "pain": "Customer retention and repeat purchase rates",
+      "level": "straightforward",
+      "context": "First order often unprofitable; LTV depends on repeat purchases that many brands can't drive"
+    },
+    {
+      "pain": "Conversion rate optimization with limited traffic",
+      "level": "straightforward",
+      "context": "Small brands lack traffic for statistically significant A/B tests"
+    }
+  ],
+
+  "buying_triggers": [
+    "Post-holiday season budget planning",
+    "Preparing for peak season (Q4, Prime Day)",
+    "New funding round with growth mandate",
+    "iOS privacy changes breaking existing attribution",
+    "Shopify/Amazon fee increases",
+    "Competitor gains market share",
+    "Customer acquisition costs hit unsustainable levels",
+    "Launching new product line or market expansion"
+  ],
+
+  "budget_cycle": "Often flexible with monthly or quarterly commitments preferred. May have annual budgets for larger operations. Peak spending aligned with Q4 holiday season preparation.",
+
+  "regulatory_concerns": [
+    "CCPA/GDPR data privacy compliance",
+    "FTC truth in advertising requirements",
+    "Product safety and labeling regulations",
+    "Sales tax nexus and collection requirements",
+    "Accessibility compliance (ADA for websites)"
+  ],
+
+  "compliance_language": [
+    "CCPA/GDPR compliant",
+    "SOC 2 certified",
+    "PCI DSS compliant",
+    "Privacy-first",
+    "First-party data"
+  ],
+
+  "risk_tolerance": "high",
+
+  "terminology": [
+    {
+      "term": "AOV (Average Order Value)",
+      "definition": "Average amount spent per transaction",
+      "usage_context": "Key revenue metric; upsells and bundles aim to increase AOV"
+    },
+    {
+      "term": "LTV (Lifetime Value)",
+      "definition": "Total revenue expected from a customer over their entire relationship with the brand",
+      "usage_context": "Critical for understanding allowable CAC; LTV:CAC ratio is a key health metric"
+    },
+    {
+      "term": "CAC (Customer Acquisition Cost)",
+      "definition": "Total cost of acquiring a new customer, including advertising and marketing expenses",
+      "usage_context": "The metric that keeps founders up at night; has risen dramatically post-iOS 14.5"
+    },
+    {
+      "term": "Conversion Rate",
+      "definition": "Percentage of website visitors who complete a purchase",
+      "usage_context": "Industry average is 2-3%; small improvements have huge revenue impact"
+    },
+    {
+      "term": "Cart Abandonment",
+      "definition": "When shoppers add items to cart but leave without purchasing",
+      "usage_context": "Average rate is 70%+; recovery emails and retargeting aim to recapture lost sales"
+    },
+    {
+      "term": "ROAS (Return on Ad Spend)",
+      "definition": "Revenue generated per dollar spent on advertising",
+      "usage_context": "Primary metric for evaluating ad performance; varies widely by industry and channel"
+    },
+    {
+      "term": "GMV (Gross Merchandise Value)",
+      "definition": "Total value of merchandise sold through a platform or marketplace",
+      "usage_context": "Key metric for marketplaces; doesn't account for returns or cancellations"
+    },
+    {
+      "term": "SKU (Stock Keeping Unit)",
+      "definition": "Unique identifier for each distinct product and variant",
+      "usage_context": "Inventory management and complexity; more SKUs = more operational burden"
+    },
+    {
+      "term": "3PL (Third-Party Logistics)",
+      "definition": "Outsourced warehousing, fulfillment, and shipping services",
+      "usage_context": "ShipBob, Deliverr, and others; enables scaling without owning infrastructure"
+    },
+    {
+      "term": "Fulfillment",
+      "definition": "Process of receiving, processing, and delivering customer orders",
+      "usage_context": "Major cost center; speed and accuracy impact customer experience and reviews"
+    },
+    {
+      "term": "Dropshipping",
+      "definition": "Retail model where sellers don't hold inventory; products ship directly from supplier",
+      "usage_context": "Low barrier to entry but thin margins and quality control challenges"
+    },
+    {
+      "term": "Subscription Box",
+      "definition": "Recurring delivery business model with curated products",
+      "usage_context": "Provides predictable revenue but churn management is critical"
+    },
+    {
+      "term": "Headless Commerce",
+      "definition": "Architecture separating frontend presentation from backend commerce functionality",
+      "usage_context": "Enables custom experiences and omnichannel; typically for larger brands"
+    },
+    {
+      "term": "Composable Commerce",
+      "definition": "Modular approach assembling best-of-breed commerce components via APIs",
+      "usage_context": "Alternative to monolithic platforms; provides flexibility but adds complexity"
+    }
+  ],
+
+  "formality_level": "casual",
+  "decision_making_style": "fast_individual",
+
+  "common_objections": [
+    {
+      "objection": "What's the ROI? Show me the incrementality, not just attributed revenue",
+      "underlying_concern": "Attribution is broken; brands have been burned by inflated ROAS claims that didn't translate to real revenue growth",
+      "effective_response_approach": "Offer incrementality testing or holdout methodology, share case studies with real P&L impact, discuss geo-lift testing capabilities, be honest about attribution limitations",
+      "level": "complex"
+    },
+    {
+      "objection": "How does this integrate with Shopify/our tech stack?",
+      "underlying_concern": "E-commerce operators use dozens of apps; anything that doesn't integrate seamlessly won't get adopted",
+      "effective_response_approach": "Demonstrate native Shopify app or integration, show Klaviyo/Attentive/other common integrations, discuss API capabilities, offer implementation support",
+      "level": "straightforward"
+    },
+    {
+      "objection": "I'm worried about platform lock-in - what if we leave Shopify?",
+      "underlying_concern": "Brands have seen Shopify fees increase and want to avoid dependency on any single vendor",
+      "effective_response_approach": "Discuss data portability and export capabilities, show multi-platform support (BigCommerce, WooCommerce), explain API-first architecture, avoid long-term contracts",
+      "level": "complex"
+    },
+    {
+      "objection": "We don't have time for a long implementation - peak season is coming",
+      "underlying_concern": "E-commerce moves fast; anything that takes more than a few weeks to implement misses the window",
+      "effective_response_approach": "Show rapid time-to-value with specific timelines, offer phased implementation, provide dedicated onboarding support, share fast-launch case studies",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We're a small brand - is this built for companies our size?",
+      "underlying_concern": "Many e-commerce tools are built for enterprise and over-engineered for SMBs; pricing may not work at lower volumes",
+      "effective_response_approach": "Show SMB-specific pricing and packaging, share case studies from similar-sized brands, demonstrate simple UX, offer starter plans with room to grow",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Shopify / Shopify Plus",
+    "Amazon Seller Central / FBA",
+    "Klaviyo (email/SMS)",
+    "Meta Ads Manager",
+    "Google Ads",
+    "Gorgias (customer support)",
+    "Recharge (subscriptions)",
+    "ShipBob / Deliverr (3PL)",
+    "Triple Whale / Northbeam (attribution)",
+    "Yotpo (reviews/loyalty)"
+  ],
+
+  "switching_barriers": [
+    "Platform migrations are complex and risky",
+    "Historical data and customer records",
+    "Active integrations across dozens of apps",
+    "SEO and traffic tied to existing URLs",
+    "Staff trained on current tools",
+    "Peak season timing constraints"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're the {role} at a {revenue_range} DTC brand selling {product_category}. {trigger_event}. Your main concern is {pain_point}, and you need to make a decision before {deadline} to prepare for {season}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "revenue_range", "product_category", "trigger_event", "pain_point", "deadline", "season"]
+    },
+    {
+      "template": "You're a {role} running a {brand_stage} e-commerce brand. Your CAC has increased {percentage}% in the past year, and your LTV:CAC ratio is now {ratio}. {trigger_event}. You're evaluating {solution_category} tools.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "brand_stage", "percentage", "ratio", "trigger_event", "solution_category"]
+    },
+    {
+      "template": "You're the {role} at a brand that started on {platform} and is now doing ${revenue} annually. {trigger_event}. Your investors want {investor_expectation}, but your team is concerned about {concern}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "platform", "revenue", "trigger_event", "investor_expectation", "concern"]
+    },
+    {
+      "template": "You're a {role} at an e-commerce company selling on both your own site and {marketplace}. {trigger_event}. You're trying to balance {priority_a} with {priority_b} while managing {constraint}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "marketplace", "trigger_event", "priority_a", "priority_b", "constraint"]
+    },
+    {
+      "template": "You're the {role} at a {company_type} brand preparing for {event}. Last year you {last_year_result}. This year you need to {goal}, but your current {problem_area} is holding you back.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_type", "event", "last_year_result", "goal", "problem_area"]
+    }
+  ]
+}

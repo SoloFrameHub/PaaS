@@ -1,0 +1,141 @@
+{
+    "lessonId": "5",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Psychographic Targeting - Getting Inside Your Buyer's Head",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the main lesson from the 'King Charles vs. Ozzy Osbourne' example?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "British people buy the same things."
+                },
+                {
+                    "id": "b",
+                    "text": "Demographics alone are insufficient to predict buying behavior; you need psychographics."
+                },
+                {
+                    "id": "c",
+                    "text": "Wealthy people always buy expensive products."
+                },
+                {
+                    "id": "d",
+                    "text": "You should target musicians."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Both men share identical demographics (age, wealth, location) but opposite values and tastes. Selling the same way to both would fail."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "If a company is in 'Efficiency Mode' (Defense), what pitch is most likely to resonate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Grow 10x faster with new AI features."
+                },
+                {
+                    "id": "b",
+                    "text": "Capture more market share."
+                },
+                {
+                    "id": "c",
+                    "text": "Consolidate your stack and reduce spend by 30%."
+                },
+                {
+                    "id": "d",
+                    "text": "Be the first to use this bleeding-edge tech."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Efficiency buyers care about ROI, savings, and sustainability. They are risk-averse and cost-conscious."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What defines a 'Guardian' buyer persona?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They want to be famous and look like a genius."
+                },
+                {
+                    "id": "b",
+                    "text": "They value safety, stability, and 'not getting fired'."
+                },
+                {
+                    "id": "c",
+                    "text": "They love beta testing buggy software."
+                },
+                {
+                    "id": "d",
+                    "text": "They make decisions instantly."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Guardians are risk-averse. They buy insurance, compliance, and reliability. They avoid 'beta' software."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a 'Burning Platform' in a sales context?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A software bug that crashes the server."
+                },
+                {
+                    "id": "b",
+                    "text": "A nice-to-have feature request."
+                },
+                {
+                    "id": "c",
+                    "text": "A problem so painful and urgent that the prospect MUST act immediately."
+                },
+                {
+                    "id": "d",
+                    "text": "A marketing campaign that goes viral."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A Burning Platform represents the state of high urgency where the cost of doing nothing is catastrophe."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Language-Market Fit' important?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because you need to speak the same native language (English/Spanish) as the buyer."
+                },
+                {
+                    "id": "b",
+                    "text": "Because using the wrong psychological tone (e.g., pitching risk to a Guardian) will kill the deal."
+                },
+                {
+                    "id": "c",
+                    "text": "Because you need to use big words to sound smart."
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't important; product features sell themselves."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You must match your vocabulary and tone to the buyer's psychographic state (e.g., exciting words for Innovators, reassuring words for Guardians)."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "What are the psychographic characteristics of your ideal buyer? Describe their values, fears, aspirations, and how they make purchasing decisions.",
+            "minLength": 100,
+            "promptForAI": "Assess psychographic depth. Check for: (1) clear values, (2) specific fears, (3) concrete aspirations, (4) decision-making style. Provide feedback on psychological understanding."
+        }
+    ]
+}

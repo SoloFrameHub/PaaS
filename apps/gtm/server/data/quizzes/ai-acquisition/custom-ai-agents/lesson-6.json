@@ -1,0 +1,193 @@
+{
+    "lessonId": "6",
+    "courseId": "custom-ai-agents",
+    "sectionId": "ai-acquisition",
+    "title": "Meeting Prep Agent Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does the Meeting Prep Agent trigger 30 minutes before a call (instead of 2 hours or 5 minutes)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To reduce API costs by batching requests"
+                },
+                {
+                    "id": "b",
+                    "text": "To give you time to read and internalize without forgetting details"
+                },
+                {
+                    "id": "c",
+                    "text": "Because calendar APIs only support 30-minute intervals"
+                },
+                {
+                    "id": "d",
+                    "text": "To avoid overwhelming you with too many prep docs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "30 minutes is the sweet spot: early enough to review without rushing, recent enough that you retain the details during the call."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What's the primary purpose of including fresh data (LinkedIn posts, news) in the prep doc?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the doc longer and more impressive"
+                },
+                {
+                    "id": "b",
+                    "text": "To surface recent trigger events for personalized talking points"
+                },
+                {
+                    "id": "c",
+                    "text": "To test if the data sources are working correctly"
+                },
+                {
+                    "id": "d",
+                    "text": "To replace the original research brief"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Fresh data (last 7-30 days) gives you timely hooks — e.g., 'I saw your post about attribution challenges' — that make your outreach feel current and relevant."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does the agent generate 3 talking points instead of 10?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To save tokens and reduce cost"
+                },
+                {
+                    "id": "b",
+                    "text": "Because 3 is easier to remember and use in conversation"
+                },
+                {
+                    "id": "c",
+                    "text": "Because the LLM can't generate more than 3 reliably"
+                },
+                {
+                    "id": "d",
+                    "text": "To force you to prioritize manually"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "3-5 talking points is the optimal range: enough variety to adapt to the conversation, few enough to remember and deploy naturally."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What framework does the agent use to order discovery questions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "BANT (Budget, Authority, Need, Timeline)"
+                },
+                {
+                    "id": "b",
+                    "text": "SPIN (Situation, Problem, Implication, Need-Payoff)"
+                },
+                {
+                    "id": "c",
+                    "text": "MEDDIC (Metrics, Economic Buyer, Decision Criteria, Decision Process, Identify Pain, Champion)"
+                },
+                {
+                    "id": "d",
+                    "text": "AIDA (Attention, Interest, Desire, Action)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "SPIN is the discovery framework taught in Course 13. The agent orders questions from Situation (current state) → Problem (pain) → Implication (cost) → Need-Payoff (value)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What happens if the agent can't find a matching case study for the prospect?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It generates a fake case study to fill the gap"
+                },
+                {
+                    "id": "b",
+                    "text": "It skips the Relevant Proof section entirely"
+                },
+                {
+                    "id": "c",
+                    "text": "It writes 'No matching case study available' and suggests creating one"
+                },
+                {
+                    "id": "d",
+                    "text": "It uses a generic testimonial instead"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The anti-hallucination instruction tells the agent to flag missing data rather than invent it. This prompts you to add a case study for that profile."
+        },
+        {
+            "id": "q6",
+            "type": "true-false",
+            "question": "The Meeting Prep Agent should join the call and take notes in real-time.",
+            "correctAnswer": "b",
+            "explanation": "False. This agent generates a prep doc before the call. The Post-Call Summary Agent (Lesson 7) handles transcription and note-taking.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q7",
+            "type": "true-false",
+            "question": "Including the email thread in the prompt helps prevent asking questions the prospect already answered.",
+            "correctAnswer": "a",
+            "explanation": "True. The email thread provides context on what's already been discussed, so you don't repeat questions or miss objections they've raised.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "At 5 meetings/week with Claude Sonnet, what's the approximate monthly cost for this agent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$0.50"
+                },
+                {
+                    "id": "b",
+                    "text": "$5"
+                },
+                {
+                    "id": "c",
+                    "text": "$50"
+                },
+                {
+                    "id": "d",
+                    "text": "$500"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "$5/month. At ~$0.02 per prep doc × 5 meetings/week × 4 weeks = $0.40-0.50/month. Negligible compared to the time saved (75-150 min/week)."
+        }
+    ]
+}

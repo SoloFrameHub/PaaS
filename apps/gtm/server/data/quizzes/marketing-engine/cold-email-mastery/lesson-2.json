@@ -1,0 +1,167 @@
+{
+    "lessonId": "2",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "The PAS Framework Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does PAS stand for in copywriting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Product, Audience, Sales"
+                },
+                {
+                    "id": "b",
+                    "text": "Problem, Agitate, Solution"
+                },
+                {
+                    "id": "c",
+                    "text": "Persuasion, Action, Success"
+                },
+                {
+                    "id": "d",
+                    "text": "Pitch, Ask, Send"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "PAS (Problem, Agitate, Solution) is a foundational copywriting framework designed to connect with pain, build urgency, and offer a path forward."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the PAS framework, what is the goal of the 'Agitate' phase?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To introduce your company's history"
+                },
+                {
+                    "id": "b",
+                    "text": "To make the prospect angry at their competitors"
+                },
+                {
+                    "id": "c",
+                    "text": "To highlight the 'Cost of Inaction' and make the problem feel urgent"
+                },
+                {
+                    "id": "d",
+                    "text": "To list all the features of your software"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Agitation is about showing the consequences of the problem. It moves the prospect from 'I have a problem' to 'I need to solve this problem now.'"
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Feature-Dumping' discouraged in the 'Solution' phase of a cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Features are too complicated to explain in an email"
+                },
+                {
+                    "id": "b",
+                    "text": "Prospects buy outcomes, not features"
+                },
+                {
+                    "id": "c",
+                    "text": "It makes the email too long and triggering for spam filters"
+                },
+                {
+                    "id": "d",
+                    "text": "All of the above"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Cold emails should be short, outcome-focused, and avoid technical clutter that might trigger spam filters or overwhelm a recipient who doesn't know you yet."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What makes a 'Problem' statement effective in a cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is broad and applies to everyone in the world"
+                },
+                {
+                    "id": "b",
+                    "text": "It uses extremely complex technical jargon"
+                },
+                {
+                    "id": "c",
+                    "text": "It is specific to a pain point your ICP is actually experiencing"
+                },
+                {
+                    "id": "d",
+                    "text": "It includes three or more exclamation marks"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Specificity is the only way to cut through the noise. A generic problem (like 'wanting more money') is ignored. A specific problem (like 'slow site speed on mobile') gets a second look."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended word count for a PAS cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Under 50 words"
+                },
+                {
+                    "id": "b",
+                    "text": "50-125 words"
+                },
+                {
+                    "id": "c",
+                    "text": "250-500 words"
+                },
+                {
+                    "id": "d",
+                    "text": "As long as it takes to explain everything"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "50-125 words is the 'Sweet Spot.' It's enough to establish the PAS framework without overstaying your welcome in someone's inbox."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "How does the 'Problem' phase differ between a B2B Founder and a Creator?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It doesn't; pain is pain"
+                },
+                {
+                    "id": "b",
+                    "text": "B2B focuses on 'Inefficiency/Risk' (Logic), while Creators focus on 'Feeling/Status' (Emotion)"
+                },
+                {
+                    "id": "c",
+                    "text": "Creators don't use problems"
+                },
+                {
+                    "id": "d",
+                    "text": "B2B founders should use emojis in the problem line"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While the framework is the same, the *type* of pain differs. B2B buyers fear losing money or time. Creator audiences fear losing status, feeling stuck, or burnout."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Draft an 'Agitation' statement for your core product. What is the logical cost (time/money) AND the emotional cost (stress/distraction) for your prospect if they don't solve this problem?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder includes both logical and emotional agitation. Look for specific costs like 'wasted dev hours' or 'missed family time' rather than generic 'it's bad' statements."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

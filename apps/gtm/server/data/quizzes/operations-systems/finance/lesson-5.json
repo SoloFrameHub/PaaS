@@ -1,0 +1,66 @@
+{
+  "lessonId": "5",
+  "courseId": "finance",
+  "sectionId": "operations-systems",
+  "title": "Cash Flow Management for Lumpy Revenue",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of small businesses fail due to cash flow problems?",
+      "options": [
+        { "id": "a", "text": "25%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "82%" },
+        { "id": "d", "text": "95%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "82% of small businesses fail due to cash flow problems. Most were profitable on paper — the problem was insufficient visibility into when cash would arrive and leave, not insufficient revenue."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the recommended cash buffer target for solo founders?",
+      "options": [
+        { "id": "a", "text": "1 month of operating expenses" },
+        { "id": "b", "text": "2-3 months of operating expenses" },
+        { "id": "c", "text": "6 months of operating expenses" },
+        { "id": "d", "text": "12 months of operating expenses" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your cash buffer target should be 2-3x your monthly Operating Expense Floor (tools + contractors + personal draw minimum), held in a separate savings account. Below 1x is emergency territory."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How far ahead should a solo founder's cash flow forecast extend?",
+      "options": [
+        { "id": "a", "text": "1 week" },
+        { "id": "b", "text": "4 weeks" },
+        { "id": "c", "text": "13 weeks (one quarter)" },
+        { "id": "d", "text": "52 weeks (one year)" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The 13-week (one quarter) horizon is standard for solo founder cash management. Long enough to see problems before they arrive, short enough to be accurate. Update it every Friday."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Solo businesses with a 13-week cash flow forecast are 30% less likely to run out of cash.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The forecast doesn't magically create money, but seeing the problem 6-8 weeks in advance changes behavior. You sell harder, collect faster, and cut expenses before the crisis hits."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate your Operating Expense Floor and your current cash buffer in months. Are you above the 2-3 month target? If not, what specific steps would you take to build your buffer?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response calculates a specific Operating Expense Floor (tools + contractors + personal draw), assesses their current buffer in months, and proposes concrete steps to build or maintain the buffer (e.g., accelerating collections, cutting expenses, building a reserve)."
+    }
+  ]
+}

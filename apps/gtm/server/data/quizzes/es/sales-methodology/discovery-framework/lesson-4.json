@@ -1,0 +1,133 @@
+{
+  "title": "Quiz de la Lección 4",
+  "questions": [
+    {
+      "question": "¿Cuál es el problema con las 'Preguntas Binarias' (Sí/No)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son demasiado difíciles de responder"
+        },
+        {
+          "id": "b",
+          "text": "Detienen el flujo de la conversación y proporcionan datos sin contexto/emoción"
+        },
+        {
+          "id": "c",
+          "text": "Son groseras"
+        },
+        {
+          "id": "d",
+          "text": "Toman demasiado tiempo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las preguntas binarias convierten una conversación en un interrogatorio. Destruyen el rapport y no logran descubrir el *Por Qué* detrás del *Qué*.",
+      "id": "q1",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Cuál de estas es una Pregunta Abierta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¿Tienes presupuesto?"
+        },
+        {
+          "id": "b",
+          "text": "¿El cronograma es el Q4?"
+        },
+        {
+          "id": "c",
+          "text": "¿Quién es el tomador de decisiones?"
+        },
+        {
+          "id": "d",
+          "text": "¿Cómo maneja actualmente tu equipo la respuesta a incidentes?"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La pregunta con 'Cómo' requiere una respuesta narrativa. Obliga al prospecto a explicar un proceso.",
+      "id": "q2",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Qué significa el acrónimo TED en el cuestionamiento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tecnología, Energía, Datos"
+        },
+        {
+          "id": "b",
+          "text": "Cuéntame (Tell me), Explícame (Explain to me), Descríbeme (Describe)..."
+        },
+        {
+          "id": "c",
+          "text": "Tiempo, Esfuerzo, Decisiones"
+        },
+        {
+          "id": "d",
+          "text": "Habla (Talk), Email, Demo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "TED es un mnemónico para promover solicitudes abiertas: Cuéntame sobre X, Explícame X, Descríbeme X.",
+      "id": "q3",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Cuál es el objetivo de la técnica de los '5 Porqués'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Molestar al prospecto"
+        },
+        {
+          "id": "b",
+          "text": "Extender el tiempo de la llamada"
+        },
+        {
+          "id": "c",
+          "text": "Pasar de un síntoma superficial a la Causa Raíz profunda (dolor implicado)"
+        },
+        {
+          "id": "d",
+          "text": "Mostrar tu inteligencia"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La primera respuesta suele ser un síntoma ('Los reportes son lentos'). La quinta respuesta es el dolor de negocio raíz ('No alcanzaremos nuestra ronda Serie B'). Vendes al dolor raíz.",
+      "id": "q4",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "Cuando un prospecto guarda silencio después de que haces una pregunta, ¿qué debes hacer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aclarar la pregunta de inmediato"
+        },
+        {
+          "id": "b",
+          "text": "Esperar (Contar hasta 3) y dejarlos pensar"
+        },
+        {
+          "id": "c",
+          "text": "Cambiar el tema"
+        },
+        {
+          "id": "d",
+          "text": "Verificar tu conexión a internet"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El silencio significa que están pensando. Interrumpir su proceso de pensamiento destruye el valor potencial de su respuesta.",
+      "id": "q5",
+      "type": "multiple-choice"
+    }
+  ],
+  "sectionId": "sales-methodology",
+  "courseId": "discovery-framework",
+  "lessonId": "4"
+}

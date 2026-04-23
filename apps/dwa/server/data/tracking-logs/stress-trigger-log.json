@@ -1,0 +1,77 @@
+{
+  "id": "stress-trigger-log",
+  "title": "Stress Trigger & Pattern Log",
+  "description": "Track your stress triggers, your body's response, and what helped (or didn't) to identify patterns over time. Regular tracking builds the self-awareness needed to interrupt the stress escalation cycle early.",
+  "instructions": "Complete this log once daily (ideally in the evening), or after a significant stress episode. Focus on noticing patterns rather than judging yourself.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Monday Feb 10"
+    },
+    {
+      "id": "overallStress",
+      "label": "Overall stress level today (1 = very low, 10 = unbearable)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "primaryTrigger",
+      "label": "What was the main source of stress today?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "workload", "label": "Workload — too much to do, too little time" },
+        { "value": "control", "label": "Control — lack of say over my work or schedule" },
+        { "value": "relationships", "label": "Relationships — conflict, tension, or loneliness" },
+        { "value": "fairness", "label": "Fairness — feeling treated unfairly or unrecognized" },
+        { "value": "values", "label": "Values — doing things that conflict with what matters to me" },
+        { "value": "financial", "label": "Financial — money worries or insecurity" },
+        { "value": "health", "label": "Health — my own or someone I care about" },
+        { "value": "caregiving", "label": "Caregiving — demands from caring for others" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    {
+      "id": "triggerDetails",
+      "label": "What specifically happened?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., Had 3 back-to-back meetings then was asked to take on another project by end of week"
+    },
+    {
+      "id": "bodySignals",
+      "label": "How did stress show up in your body?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., Tight shoulders, headache, stomach tension, exhaustion, racing heart"
+    },
+    {
+      "id": "copingUsed",
+      "label": "What did you do to cope?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., Took a walk, vented to a friend, had a glass of wine, worked late, scrolled my phone"
+    },
+    {
+      "id": "copingHelpful",
+      "label": "How helpful was your coping? (1 = made it worse, 5 = neutral, 10 = very helpful)",
+      "type": "rating",
+      "required": false,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "recoveryToday",
+      "label": "Did you do anything restorative today? (Even something small counts)",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., 10-minute walk, called a friend, read for 20 minutes, nothing today"
+    }
+  ]
+}

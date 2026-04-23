@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.4: Your Journey Forward: Living as a Resilient Sleeper</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; margin-bottom: 20px; }
+        h3 { font-size: 20px; color: var(--brand-secondary-blue); margin-top: 25px; }
+        p { margin-bottom: 15px; }
+        strong { color: var(--brand-primary-blue); }
+
+        /* --- Interactive & Component Styles --- */
+        .phillips-note { background-color: #f0f7ff; border-left: 5px solid var(--brand-secondary-blue); padding: 20px; font-style: italic; border-radius: 4px; }
+        
+        .review-loop {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            background-color: var(--brand-light-grey);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .loop-step { padding: 10px; font-weight: bold; }
+        .loop-arrow { font-size: 24px; color: var(--brand-secondary-blue); }
+        
+        .checklist { list-style: none; padding-left: 0; }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            background-color: var(--brand-light-grey);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .checklist-item:hover { background-color: #e9ecef; }
+        .checklist-item.checked {
+            background-color: #e8f5e9;
+            text-decoration: line-through;
+            color: var(--brand-text-light);
+        }
+        .checklist-item input[type="checkbox"] {
+            -webkit-appearance: none;
+            appearance: none;
+            flex-shrink: 0;
+            margin-right: 15px;
+            margin-top: 4px;
+            width: 22px;
+            height: 22px;
+            border: 2px solid var(--brand-secondary-blue);
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+        .checklist-item input[type="checkbox"]:checked {
+            background-color: var(--brand-green);
+            border-color: var(--brand-green);
+        }
+        .checklist-item input[type="checkbox"]:checked::after {
+            content: '✔';
+            position: absolute;
+            color: var(--brand-white);
+            font-size: 16px;
+            font-weight: bold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .professional-support-box {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            padding: 25px;
+            border-radius: 8px;
+        }
+        .professional-support-box h2 {
+            color: var(--warning-text-heading);
+            border-bottom: none;
+        }
+
+        .part-completion-box {
+            background-color: #e8f5e9;
+            border: 2px solid var(--brand-green);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+        }
+        .part-completion-box h2 {
+            color: var(--brand-green);
+            border: none;
+        }
+
+        /* --- Crisis Resources --- */
+        .crisis-footer {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 24px; } h2 { font-size: 20px; }
+            .review-loop { flex-direction: column; }
+            .loop-arrow { transform: rotate(90deg); margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Lesson 3.4: Your Journey Forward: Living as a Resilient Sleeper</h1>
+            <p class="lesson-subtitle">A final collaborative plan with Phillip Jaskot, PMHNP-BC</p>
+        </header>
+
+        <section class="section">
+            <h2>From Blueprint to Identity</h2>
+            <p>Welcome to our final lesson. You have done the hard work of learning, planning, and building. You now hold your Personal Sleep Blueprint—a testament to your commitment. This is a huge achievement.</p>
+            <p>Our focus now shifts from *building* the system to *living* with it. A truly resilient system isn't rigid; it's adaptable. This lesson is about giving you the final set of tools to ensure your blueprint becomes a durable, lifelong asset for your well-being.</p>
+        </section>
+
+        <section class="section">
+            <h2>The Review & Refine Loop: Your System for Continuous Improvement</h2>
+            <p>Great systems are living systems. They need to be reviewed and adjusted. Your life will change, and your sleep needs may evolve. I encourage you to formally check in with your blueprint on a regular basis. This simple four-step loop puts you in control, permanently.</p>
+            <div class="review-loop">
+                <div class="loop-step"><strong>1. Plan</strong><br>(Your Blueprint)</div>
+                <div class="loop-arrow">→</div>
+                <div class="loop-step"><strong>2. Do</strong><br>(Live Your Plan)</div>
+                <div class="loop-arrow">→</div>
+                <div class="loop-step"><strong>3. Review</strong><br>(Assess & Reflect)</div>
+                <div class="loop-arrow">→</div>
+                <div class="loop-step"><strong>4. Refine</strong><br>(Make Small Tweaks)</div>
+            </div>
+            <div class="phillips-note">
+                <p><strong>A note from Phillip:</strong> In my clinical work, empowering my clients to become their own expert is the ultimate goal. I suggest putting a recurring reminder in your calendar right now—for 1 month from today—to do your first "Review & Refine" check-in. It only takes 10 minutes and it's the key to making this a sustainable practice.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>The "Stress Test" Protocol: Planning for Life's Disruptions</h2>
+            <p>Your system will be stress-tested by life. That's a guarantee. The difference now is that you have a protocol. The goal is not to avoid disruption, but to return to your baseline quickly and confidently. Click to commit to your resilience plan:</p>
+            <ul class="checklist">
+                <li class="checklist-item" onclick="toggleCheck(this)">
+                    <input type="checkbox" aria-label="Commit to my plan for social nights">
+                    <span><strong>After a late social night:</strong> I will enjoy the event, then get up at my regular wake-up time the next day, no matter what.</span>
+                </li>
+                <li class="checklist-item" onclick="toggleCheck(this)">
+                    <input type="checkbox" aria-label="Commit to my plan for high-stress weeks">
+                    <span><strong>During a high-stress work week:</strong> I will protect my wind-down ritual fiercely and use the "Good, Better, Best" model to ensure I do at least a mini-ritual every night.</span>
+                </li>
+                 <li class="checklist-item" onclick="toggleCheck(this)">
+                    <input type="checkbox" aria-label="Commit to my plan for when I'm sick">
+                    <span><strong>When I'm sick:</strong> I will give myself permission to rest as needed, and then gently return to my schedule once I'm better.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="professional-support-box">
+                <h2>Knowing When to Seek Professional Support Again</h2>
+                <p>You are now incredibly well-equipped to manage your own sleep. However, being a resilient sleeper also means knowing when to call for backup. You should consider scheduling a professional consultation if:</p>
+                <ul>
+                    <li>A major life change (new job, new baby, significant loss) has disrupted your system and you're struggling to get back on track after 2-3 weeks.</li>
+                    <li>You notice a significant, persistent downturn in your mood or increase in anxiety that isn't improving.</li>
+                    <li>New physical symptoms appear, such as loud snoring, gasping at night, or significant changes in your health.</li>
+                </ul>
+                <p><strong>Reaching out is not a sign of failure; it's a sign of strength and skillful self-management.</strong></p>
+            </div>
+        </section>
+
+        <section class="section">
+             <div class="part-completion-box">
+                <h2>Congratulations! You Have Completed Sleep Mastery.</h2>
+                <p>You have done it. You've progressed from understanding the problem to building a personalized, resilient system for lifelong wellness. This is a profound achievement.</p>
+                <p>Our final step is to connect with the community. I invite you to head to the discussion forum to share your insights from this incredible journey.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="crisis-footer">
+                <h3>Crisis Resources & Immediate Support</h3>
+                <p>If you're in immediate danger or having thoughts of self-harm:</p>
+                <ul>
+                    <li><strong>Emergency Services:</strong> Call 911</li>
+                    <li><strong>National Suicide Prevention Lifeline:</strong> Call or text 988</li>
+                    <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+                    <li><strong>SAMHSA National Helpline:</strong> Call 1-800-662-4357 (24/7 treatment referral service)</li>
+                </ul>
+                <p><strong>Disclaimer:</strong> This educational material is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        function toggleCheck(element) {
+            const checkbox = element.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+            element.classList.toggle('checked', checkbox.checked);
+        }
+    </script>
+</body>
+</html>

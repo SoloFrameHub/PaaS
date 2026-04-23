@@ -1,0 +1,141 @@
+{
+    "lessonId": "3",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Finding Your Golden Segment - The Beachhead Strategy",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is targeting a massive Total Addressable Market (TAM) dangerous for an early-stage startup?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Investors only invest in small, niche markets initially."
+                },
+                {
+                    "id": "b",
+                    "text": "A huge market implies generic messaging and well-funded competitors."
+                },
+                {
+                    "id": "c",
+                    "text": "It is illegal to target global markets without specific licenses."
+                },
+                {
+                    "id": "d",
+                    "text": "Big markets have too few potential customers to sustain growth."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In large markets, you face incumbents and noise. You need specific messaging (Beachhead) to win early traction."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following is NOT one of the three dimensions of the Golden Segment Score?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Pain Intensity"
+                },
+                {
+                    "id": "b",
+                    "text": "Market Valuation"
+                },
+                {
+                    "id": "c",
+                    "text": "Accessibility"
+                },
+                {
+                    "id": "d",
+                    "text": "Right-to-Win"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The score is based on Pain, Accessibility, and Right-to-Win. Market Valuation (size) is often a distraction early on."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Accessibility' a critical scoring factor for technical founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because if you cannot easily contact the prospect, even a high-pain problem remains unsolved."
+                },
+                {
+                    "id": "b",
+                    "text": "Because big companies want you to be physically accessible in their office."
+                },
+                {
+                    "id": "c",
+                    "text": "Because accessible markets are always the most profitable."
+                },
+                {
+                    "id": "d",
+                    "text": "Because you need permission from the government to access certain data."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Accessibility determines your ability to generate leads. High pain with zero access means you have no sales channel."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Beachhead Strategy' (or Bowling Alley Framework)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Launch your product on a literal beach to attract attention."
+                },
+                {
+                    "id": "b",
+                    "text": "Try to sell to everyone at once to see what sticks."
+                },
+                {
+                    "id": "c",
+                    "text": "Win a small, specific niche completely, then leverage that success to enter adjacent markets."
+                },
+                {
+                    "id": "d",
+                    "text": "Spend all your marketing budget on one massive conference."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Beachhead Strategy involves dominating one narrow segment (Head Pin) to gain the resources and credibility to attack the wider market (Back Pins)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the 'Generic Agency' case study, why was the 'Mid-sized SEO Agency' segment the winner?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They had the most employees."
+                },
+                {
+                    "id": "b",
+                    "text": "They had high pain (manual reporting) and were accessible on LinkedIn."
+                },
+                {
+                    "id": "c",
+                    "text": "They had the biggest budget of all segments."
+                },
+                {
+                    "id": "d",
+                    "text": "The founder had a personal friend who owned one."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "They scored high on Pain (20 hours wasted) and Accessibility, unlike the Enterprise agencies (inaccessible) or Freelancers (no budget)."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Define your Golden Segment using the three criteria: High Pain, Easy Access, Available Budget. Be specific about what makes this segment ideal for you as a solo founder.",
+            "minLength": 100,
+            "promptForAI": "Assess if the Golden Segment is well-defined. Check for: (1) concrete pain point, (2) realistic access strategy, (3) budget evidence. Provide feedback on beachhead viability."
+        }
+    ]
+}

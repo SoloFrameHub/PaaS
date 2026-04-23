@@ -1,0 +1,141 @@
+{
+    "lessonId": "5",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Email Infrastructure Setup Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason for using 'lookalike' domains (e.g., getcompany.com) for cold outreach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes your company look bigger"
+                },
+                {
+                    "id": "b",
+                    "text": "To protect your primary business domain from being blacklisted by spam filters"
+                },
+                {
+                    "id": "c",
+                    "text": "It is cheaper than buying a primary domain"
+                },
+                {
+                    "id": "d",
+                    "text": "Lookalike domains automatically bypass Google's spam filters"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Cold outreach carries an inherent risk of spam complaints. Isolating that risk to secondary domains ensures your primary business communication (invoices, support) remains safe."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How many SPF records are you allowed to have on a single domain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "One"
+                },
+                {
+                    "id": "b",
+                    "text": "Three"
+                },
+                {
+                    "id": "c",
+                    "text": "As many as you need"
+                },
+                {
+                    "id": "d",
+                    "text": "One for each sending tool"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "The SPF specification only allows one record. If multiple records are present, they will all fail authentication. You must merge all authorized senders into a single record string."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which record provides a 'cryptographic seal' to prove the content of an email wasn't tampered with?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "SPF"
+                },
+                {
+                    "id": "b",
+                    "text": "DMARC"
+                },
+                {
+                    "id": "c",
+                    "text": "DKIM"
+                },
+                {
+                    "id": "d",
+                    "text": "MX"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "DKIM (DomainKeys Identified Mail) uses a digital signature verified by a public key in your DNS to ensure message integrity."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does a DMARC policy of 'p=none' tell a receiving server?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Reject all emails that fail authentication"
+                },
+                {
+                    "id": "b",
+                    "text": "Deliver the email even if it fails authentication, but send me a report"
+                },
+                {
+                    "id": "c",
+                    "text": "Put failing emails in the spam folder"
+                },
+                {
+                    "id": "d",
+                    "text": "This domain doesn't send email"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "'p=none' is the monitoring policy. It allows emails to pass through if they fail checks but provides the domain owner with reporting data to fix issues."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which tool is recommended for verifying that your SPF, DKIM, and DMARC are configured correctly?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Google Search Console"
+                },
+                {
+                    "id": "b",
+                    "text": "MXToolbox"
+                },
+                {
+                    "id": "c",
+                    "text": "Facebook Ads Manager"
+                },
+                {
+                    "id": "d",
+                    "text": "Shopify Dashboard"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "MXToolbox is a standard practitioner tool for DNS lookups and authentication verification."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Review your current or planned outbound domain setup. List the lookalike domain you've chosen and explain your 'merging' strategy if you use multiple sending tools (e.g., Google Workspace + Instantly). Why is 'p=none' a safe starting point for DMARC?",
+            "minLength": 100,
+            "promptForAI": "Verify the domain choice (should be a variation, not the primary). Check the understanding of the one-SPF-record rule. Evaluate the DMARC rationale (it avoids accidental blocking of legitimate mail while setup is finalized)."
+        }
+    ]
+}

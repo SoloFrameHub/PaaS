@@ -1,0 +1,71 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { logger } from '@/lib/logger';
+
+const DocumentAnalysisInput = z.object({
+    name: z.string(),
+    content: z.string(),
+    businessModel: z.enum(['b2b-saas', 'creator-coach', 'service', 'marketplace', 'other']).optional(),
+});
+
+const DocumentAnalysisOutput = z.object({
+    summary: z.string(),
+    keyInsights: z.array(z.string()),
+    icpTraces: z.array(z.string()),
+    valuePropTraces: z.array(z.string()),
+    suggestedFocus: z.string(),
+    confidence: z.number().min(0).max(100),
+});
+
+export type DocumentAnalysisOutput = z.infer<typeof DocumentAnalysisOutput>;
+
+/**
+ * Genkit flow for analyzing a single document to extract acquisition intelligence.
+ * Identifies key insights, ICP traces, and value proposition alignment.
+ */
+export const analyzeDocumentFlow = ai.defineFlow(
+    {
+        name: 'analyzeDocument',
+        inputSchema: DocumentAnalysisInput,
+        outputSchema: DocumentAnalysisOutput,
+    },
+    async (input) => {
+        const result = await ai.generate({
+            model: gemini20Flash,
+            prompt: `You are an expert customer acquisition strategist. Analyze this document from a solo founder.
+      
+DOCUMENT NAME: ${input.name}
+DOCUMENT CONTENT:
+${input.content.slice(0, 50000)}${input.content.length > 50000 ? '\n...[TRUNCATED]' : ''}
+
+BUSINESS MODEL CONTEXT: ${input.businessModel || 'Not provided'}
+
+TASK: Extract core customer acquisition intelligence. What does this document tell us about their ICP, Value Prop, and gaps?
+
+Respond with JSON only:
+{
+  "summary": "1-2 sentence high-level summary of the document's purpose/relevance.",
+  "keyInsights": ["List 3-5 core business insights extracted"],
+  "icpTraces": ["What does this tell us about their target audience?"],
+  "valuePropTraces": ["What does this tell us about their core promise?"],
+  "suggestedFocus": "Where should they focus based on this doc?",
+  "confidence": 0-100
+}
+
+Return ONLY valid JSON.`,
+            config: {
+                temperature: 0.2,
+            },
+        });
+
+        try {
+            const responseText = result.text;
+            const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+            if (!jsonMatch) throw new Error('No JSON found');
+            return DocumentAnalysisOutput.parse(JSON.parse(jsonMatch[0]));
+        } catch (error) {
+            logger.error('Document analysis parsing error', { error });
+            throw error;
+        }
+    }
+);

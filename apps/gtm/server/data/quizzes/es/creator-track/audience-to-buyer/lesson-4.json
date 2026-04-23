@@ -1,0 +1,85 @@
+{
+  "lessonId": "4",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Embudos de Monetización en YouTube",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿En qué momento de un video de YouTube debes colocar tu llamada a la acción principal para obtener la máxima efectividad?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En los primeros 30 segundos para capturar la atención de inmediato"
+        },
+        { "id": "b", "text": "Al final del video como declaración de cierre" },
+        { "id": "c", "text": "En la marca del 60-70% del video" },
+        {
+          "id": "d",
+          "text": "Distribuida uniformemente cada 2 minutos a lo largo del video"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Coloca tu CTA en la marca del 60-70% — no al principio (los espectadores aún no han recibido suficiente valor para confiar en ti) y no al final del todo (la mayoría de los espectadores abandona antes del último 15%). La marca del 70% captura a los espectadores en el momento de mayor engagement."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Por qué los links de descripción de YouTube deberían ir a una página de aterrizaje dedicada en lugar de a tu página de inicio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El algoritmo de YouTube penaliza los links a páginas de inicio"
+        },
+        {
+          "id": "b",
+          "text": "Una página de aterrizaje de propósito único con un titular que coincide con el tema del video convierte al 30-50%, mientras que una página de inicio crea distracciones y reduce la conversión"
+        },
+        {
+          "id": "c",
+          "text": "Las páginas de inicio cargan más lento que las páginas de aterrizaje en dispositivos móviles"
+        },
+        {
+          "id": "d",
+          "text": "Las páginas de aterrizaje son más baratas de alojar que los sitios web completos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Una página de aterrizaje dedicada y de propósito único con un titular que coincide con el tema del video, puntos claros y un formulario de opt-in de correo (sin navegación ni distracciones) convierte al 30-50% de los visitantes. Una página de inicio divide la atención entre muchas opciones y reduce dramáticamente la conversión."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el rol estratégico principal de los YouTube Shorts en el embudo de monetización de un creador?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ventas directas de productos a través de pitches de formato corto"
+        },
+        {
+          "id": "b",
+          "text": "Generar ingresos de AdSense por las altas cantidades de vistas"
+        },
+        {
+          "id": "c",
+          "text": "Descubrimiento — llevar nuevos espectadores a tu canal donde encuentran tu contenido de formato largo"
+        },
+        {
+          "id": "d",
+          "text": "Construir listas de correo a través de superposiciones de CTA dentro del Short"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los YouTube Shorts sirven como herramienta de descubrimiento, no de conversión. Capturan la atención en torno a una sola idea y llevan a los espectadores a tu canal, donde el contenido de formato largo construye la confianza necesaria para los opt-ins de correo y las eventuales compras."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Identifica tres términos de búsqueda de alta intención en tu nicho que tus compradores ideales buscan activamente en YouTube. Para cada término, describe qué tipo de video crearías y qué imán de prospectos ofrecerías en la descripción.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student identifies specific, realistic search terms (not vague topics) that signal purchase intent. Look for alignment between the search term, the proposed video content, and the lead magnet. The lead magnet should logically connect to both the video topic and the student's paid offer."
+    }
+  ]
+}

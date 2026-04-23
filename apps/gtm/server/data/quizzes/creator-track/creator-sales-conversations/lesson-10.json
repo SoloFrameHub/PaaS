@@ -1,0 +1,91 @@
+{
+    "lessonId": "10",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Your Enrollment Playbook Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the ideal listening-to-talking ratio on an enrollment call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should talk 80% of the time to demonstrate expertise and build authority."
+                },
+                {
+                    "id": "b",
+                    "text": "You should listen 60-70% of the time and talk 30-40% of the time."
+                },
+                {
+                    "id": "c",
+                    "text": "It should be an even 50/50 split between listening and talking."
+                },
+                {
+                    "id": "d",
+                    "text": "You should listen 95% of the time and only speak to ask questions."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The recording review protocol specifies that you should listen 60-70% of the time on enrollment calls. This ensures the prospect feels heard and does most of the talking about their situation, pain, and aspirations. Your talking time should be focused on asking powerful questions, labeling their experience, and presenting the transformation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'post-call debrief' practice, and when should it be done?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is a 30-minute analysis done weekly, reviewing all calls from the past seven days."
+                },
+                {
+                    "id": "b",
+                    "text": "It is a 3-minute reflection done after every enrollment call to identify what went well, what was weak, and what the prospect's real concern was."
+                },
+                {
+                    "id": "c",
+                    "text": "It is an annual review of enrollment call recordings with a sales coach."
+                },
+                {
+                    "id": "d",
+                    "text": "It is a report you send to the prospect after the call summarizing what was discussed."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The post-call debrief is a 3-minute reflection done immediately after every enrollment call — whether the result was yes, no, or 'think about it.' The five questions focus on what went best, what was weakest, the prospect's real concern, what you would redo, and any new insights for the playbook. These compound over time into a refined understanding of what works."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "At what point does the lesson recommend considering hiring an enrollment closer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediately — you should never do enrollment calls yourself."
+                },
+                {
+                    "id": "b",
+                    "text": "After your one-to-one system is working consistently (close rate above 25%, 5+ calls per week) and your playbook is fully documented."
+                },
+                {
+                    "id": "c",
+                    "text": "After your first 10 calls, regardless of close rate."
+                },
+                {
+                    "id": "d",
+                    "text": "Only if your business exceeds $1 million in annual revenue."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The scaling progression is: optimize the funnel, add group events, hire an enrollment closer, then add self-serve enrollment. Hiring a closer is Level 3 and requires that your playbook is documented (it becomes the training manual) and your system is proven (close rate above 25%, consistent call volume). Without a documented, working system, you are asking someone to reinvent the wheel."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Review the enrollment playbook checklist from this lesson. Which components do you already have in place, which ones are partially built, and which ones are completely missing? For the most critical missing piece, describe what you will build first and set a specific deadline for completing it.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student provides an honest self-assessment against the 10-item playbook checklist. Look for specificity: naming which items are done, which are partial, and which are missing. The 'most critical missing piece' they identify should be logical for their stage of business. The deadline should be specific (a real date or 'by end of this week') rather than vague ('soon' or 'eventually'). Strong answers demonstrate a clear understanding of what needs to happen next in their enrollment system build-out."
+        }
+    ]
+}

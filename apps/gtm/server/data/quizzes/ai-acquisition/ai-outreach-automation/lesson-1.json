@@ -1,0 +1,201 @@
+{
+    "lessonId": "1",
+    "courseId": "ai-outreach-automation",
+    "sectionId": "ai-acquisition",
+    "title": "Platform Selection Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the #1 weighted criterion for solo founders choosing an outreach platform?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Price (lowest cost wins)"
+                },
+                {
+                    "id": "b",
+                    "text": "Deliverability (inbox placement and warmup)"
+                },
+                {
+                    "id": "c",
+                    "text": "Multi-channel support (email + LinkedIn + Twitter)"
+                },
+                {
+                    "id": "d",
+                    "text": "AI personalization quality"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Deliverability is weighted 10/10 because if your emails don't land in the inbox, nothing else matters. Price is #2, but a cheap tool that gets you spam-foldered is worthless."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "For a solo founder selling $500/month SaaS to small businesses, which platform makes the most sense?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Instantly.ai Growth ($37/mo) — email-only"
+                },
+                {
+                    "id": "b",
+                    "text": "Lemlist Multichannel ($99/mo) — email + LinkedIn"
+                },
+                {
+                    "id": "c",
+                    "text": "La Growth Machine Pro ($100/mo) — email + LinkedIn + Twitter"
+                },
+                {
+                    "id": "d",
+                    "text": "HeyReach ($79/mo) — LinkedIn-first"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Low ACV ($500/mo) + transactional sale = email-only is sufficient. Multi-channel ROI won't justify the extra $40-60/month cost. Instantly gives you everything you need at the lowest price."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What's the hidden cost of switching outreach platforms mid-campaign?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Just the new platform's monthly fee"
+                },
+                {
+                    "id": "b",
+                    "text": "8-12 hours of setup + 2 weeks of warmup disruption"
+                },
+                {
+                    "id": "c",
+                    "text": "You lose all your contact data"
+                },
+                {
+                    "id": "d",
+                    "text": "Your domain gets permanently blacklisted"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Every migration costs 8-12 hours of reconfiguration plus 2 weeks where your sending volume drops to zero during warmup. This compounds if you switch multiple times."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When does multi-channel outreach justify its 60-100% higher cost?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always — more channels = more replies"
+                },
+                {
+                    "id": "b",
+                    "text": "Never — email-only is always sufficient"
+                },
+                {
+                    "id": "c",
+                    "text": "When ACV is >$5K and the sales cycle is relationship-first"
+                },
+                {
+                    "id": "d",
+                    "text": "Only for enterprise sales (>$50K ACV)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Multi-channel adds 20-30% incremental pipeline but costs 60-100% more. The math works when ACV is high enough ($5K+) and the sale requires relationship-building. For low-ticket or transactional sales, email-only wins."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What's the main advantage of Instantly over Smartlead for most solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Better API and webhook integrations"
+                },
+                {
+                    "id": "b",
+                    "text": "Cleaner UI and better A/B testing (up to 26 variants)"
+                },
+                {
+                    "id": "c",
+                    "text": "White-label options for agencies"
+                },
+                {
+                    "id": "d",
+                    "text": "Higher email sending limits"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Instantly has a simpler UI and superior A/B testing (26 variants vs Smartlead's more complex setup). Smartlead wins on API/webhooks, but 90% of solo founders don't need that. Instantly is $2/month cheaper and easier to learn."
+        },
+        {
+            "id": "q6",
+            "type": "true-false",
+            "question": "True or False: You should switch platforms if you find one with 10% better features.",
+            "correctAnswer": "b",
+            "explanation": "False. The switching cost (8-12 hours + 2 weeks warmup disruption) outweighs a 10% feature improvement. Only switch if the current platform has a critical flaw (deliverability issues, missing must-have feature, unsustainable cost).",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q7",
+            "type": "multiple-choice",
+            "question": "What's the realistic total monthly cost for a solo founder outreach stack (platform + domains + enrichment)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$37-50 (just the platform)"
+                },
+                {
+                    "id": "b",
+                    "text": "$79-200 (platform + infrastructure + enrichment)"
+                },
+                {
+                    "id": "c",
+                    "text": "$300-500 (enterprise-grade stack)"
+                },
+                {
+                    "id": "d",
+                    "text": "$500+ (AI SDR platforms)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Platform ($37-150) + domains/hosting ($30-45) + enrichment ($0-99) = $79-200/month for a functional stack. Under $79 is possible but requires free tiers and manual work. Over $200 is overkill for solo founders."
+        },
+        {
+            "id": "q8",
+            "type": "multiple-choice",
+            "question": "According to the 'Good Enough' principle, what should you prioritize when choosing a platform?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The platform with the most features"
+                },
+                {
+                    "id": "b",
+                    "text": "The platform your favorite guru recommends"
+                },
+                {
+                    "id": "c",
+                    "text": "A platform that meets 5 core criteria and you'll use consistently"
+                },
+                {
+                    "id": "d",
+                    "text": "The cheapest platform available"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 'Good Enough' test: (1) Reliable deliverability, (2) A/B testing, (3) Tracking, (4) Under budget, (5) Usable UI. If it passes all 5, pick it and commit for 90 days. Consistency beats feature-chasing."
+        }
+    ]
+}

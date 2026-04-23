@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "The Verbal Yes Protocol Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary risk of continuing to sell features after a buyer has given a 'Verbal Yes'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes you look too prepared."
+                },
+                {
+                    "id": "b",
+                    "text": "It can trigger 'Talker's Remorse' in the seller and 'Buyer's Remorse' in the prospect by introducing new variables into a closed decision."
+                },
+                {
+                    "id": "c",
+                    "text": "It helps increase the price."
+                },
+                {
+                    "id": "d",
+                    "text": "It makes the call longer."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Once a decision is made, the brain wants to move to the 'Success' state. Introducing new features or selling points can actually create fresh doubt ('Wait, does it really do that?') and slow down the momentum."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why should you identify the 'Shadow Committee' (Legal/IT/Finance) immediately after a verbal agreement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To send them more marketing emails."
+                },
+                {
+                    "id": "b",
+                    "text": "To prevent the deal from stalling in internal bureaucracies where you have no visibility or influence."
+                },
+                {
+                    "id": "c",
+                    "text": "To increase the number of people on your email list."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for more money."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your Champion wants to buy, but they are often blocked by people you haven't met. Identifying these stakeholders early allows you to provide the specific documentation (Security docs, MSAs) they need before they can block the deal."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Implementation Velocity'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The speed of the founder's typing."
+                },
+                {
+                    "id": "b",
+                    "text": "The time it takes for a customer to see the first moment of value after signing."
+                },
+                {
+                    "id": "c",
+                    "text": "The speed of the software's API."
+                },
+                {
+                    "id": "d",
+                    "text": "The number of hours the founder works per week."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Buyers care about results, not just software. By giving them an'Immediate Win' task or checklist, you satisfy their biological need for progress and reinforce the decision."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Draft an 'Implementation Logistics' script you would use immediately after a prospect says 'Yes.' Include how you would ask for the correct email address for the contract and how you would flush out the 'Shadow Committee' (Legal/IT).",
+            "minLength": 100,
+            "aiPrompt": "Check for the shift from'selling' to'partnering/logistics'. The script should be professional and directive, identifying the key stakeholders (Finance, Legal) and the next 48-hour timeline."
+        }
+    ]
+}

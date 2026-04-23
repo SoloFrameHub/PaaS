@@ -1,0 +1,84 @@
+{
+  "lessonId": "8",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "Measuring What Matters: KPIs for AI-Assisted Sales",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the 5 metrics in the solo founder's acquisition dashboard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open rate, click rate, bounce rate, unsubscribe rate, spam rate"
+        },
+        {
+          "id": "b",
+          "text": "Prospects added/week, emails sent/week, reply rate %, conversations booked/week, pipeline value/month"
+        },
+        {
+          "id": "c",
+          "text": "Revenue, profit, churn, NPS, customer lifetime value"
+        },
+        {
+          "id": "d",
+          "text": "LinkedIn views, website visits, demo requests, trials started, conversions"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 5-metric dashboard tracks: Prospects Added/Week (pipeline fuel), Emails Sent/Week (activity baseline), Reply Rate % (efficiency indicator), Conversations Booked/Week (conversion metric), and Pipeline Value/Month (outcome metric). Everything else is either a vanity metric or a diagnostic tool."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why should solo founders ignore email open rates as a primary metric?",
+      "options": [
+        { "id": "a", "text": "Open rates are too high to be useful" },
+        {
+          "id": "b",
+          "text": "Apple Mail Privacy Protection and other clients pre-load images, inflating open rates by 30-50%"
+        },
+        {
+          "id": "c",
+          "text": "Open rates only matter for marketing emails, not sales emails"
+        },
+        { "id": "d", "text": "Open rates are only available on paid plans" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Open rates are increasingly unreliable due to Apple Mail Privacy Protection and other email clients that pre-load tracking pixels, inflating rates by 30-50%. The lesson advises ignoring open rates entirely and focusing on reply rates as the true engagement metric."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Using the pipeline math formula, if your revenue goal is $10K/month with $2K deal size and 25% close rate, how many conversations do you need per month?",
+      "options": [
+        { "id": "a", "text": "5 conversations" },
+        { "id": "b", "text": "10 conversations" },
+        { "id": "c", "text": "20 conversations" },
+        { "id": "d", "text": "50 conversations" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The math: $10K revenue goal / $2K deal size = 5 deals needed. 5 deals / 25% close rate = 20 conversations needed per month (or 5 per week). This 'working backwards from revenue' approach ensures your activity targets are grounded in actual business goals."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should check your acquisition dashboard three times daily to stay on top of performance.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Checking your dashboard 3x/day creates anxiety and doesn't give enough data for decisions. The lesson recommends checking once per week, same day/time, and letting data accumulate. The 60-second rule: your dashboard should answer three questions instantly — Am I feeding the machine? Is it working? Is it producing revenue?"
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate your personal pipeline math by working backwards from your monthly revenue goal. What is your deal size, close rate, reply-to-conversation rate, and reply rate? How many emails do you need to send per month to hit your target?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific numbers for each step of the pipeline math (revenue goal, deal size, close rate, conversations needed, reply-to-conversation rate, replies needed, reply rate, emails needed). Look for realistic assumptions and correct mathematical logic connecting each step."
+    }
+  ]
+}

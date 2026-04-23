@@ -1,0 +1,170 @@
+{
+  "courseId": "seo-aeo",
+  "lessonId": "1",
+  "lessonTitle": "La Realidad del Cero Clics",
+  "track": "marketing-engine",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué porcentaje de las búsquedas de Google en dispositivos móviles termina ahora sin un clic a ningún sitio web?",
+      "options": [
+        {
+          "id": "a",
+          "text": "45%"
+        },
+        {
+          "id": "b",
+          "text": "60%"
+        },
+        {
+          "id": "c",
+          "text": "77%"
+        },
+        {
+          "id": "d",
+          "text": "90%"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Si bien el 60% de todas las búsquedas son de cero clics, en dispositivos móviles este número salta al 77%. Esto destaca la importancia de la Optimización para Motores de Respuesta (AEO).",
+      "difficulty": "foundational",
+      "xpValue": 10
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cómo impacta a los creadores de contenido el cambio de rol de Google de 'Bibliotecario' a 'Profesor'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los creadores de contenido reciben más tráfico porque Google refiere más libros."
+        },
+        {
+          "id": "b",
+          "text": "Google ahora da la respuesta directamente en lugar de solo señalar la fuente, lo que puede reducir los clics."
+        },
+        {
+          "id": "c",
+          "text": "Google solo posiciona sitios web que usan lenguaje académico."
+        },
+        {
+          "id": "d",
+          "text": "No hay impacto; el SEO sigue siendo el mismo que en 2010."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Como 'Profesor', Google lee el contenido y proporciona la respuesta directamente en los resultados de búsqueda (Resúmenes de IA), lo que puede satisfacer la intención del usuario sin que necesite hacer clic para ir a un sitio web.",
+      "difficulty": "application",
+      "xpValue": 15
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué vio el 'Ganador' en nuestro caso de estudio un aumento en las citas a pesar del auge de los Resúmenes de IA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gastaron más en Google Ads."
+        },
+        {
+          "id": "b",
+          "text": "Publicaron contenido genérico de 'cómo hacer'."
+        },
+        {
+          "id": "c",
+          "text": "Proporcionaron datos propietarios que los modelos de IA no pueden alucinar ni replicar fácilmente."
+        },
+        {
+          "id": "d",
+          "text": "Tenían un nombre de dominio más llamativo."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los datos propietarios y la investigación original son fosos únicos. Los sistemas de IA deben citar la fuente original para datos específicos y frescos a fin de mantener la precisión.",
+      "difficulty": "application",
+      "xpValue": 15
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué significa E-E-A-T en el contexto de la calidad de búsqueda?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eficiencia, Efectividad, Autoridad, Confianza"
+        },
+        {
+          "id": "b",
+          "text": "Experiencia, Pericia, Autoridad, Confiabilidad"
+        },
+        {
+          "id": "c",
+          "text": "Engagement, Exposición, Analítica, Seguimiento"
+        },
+        {
+          "id": "d",
+          "text": "Pericia, Excelencia, Autoridad, Transformación"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "E-E-A-T significa Experiencia, Pericia, Autoridad y Confiabilidad. Estas son las señales centrales que usan los sistemas de IA para identificar fuentes de alta calidad y citables.",
+      "difficulty": "foundational",
+      "xpValue": 10
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia principal entre el SEO tradicional y el AEO?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SEO es para Google, AEO es para Bing."
+        },
+        {
+          "id": "b",
+          "text": "SEO se enfoca en obtener clics; AEO se enfoca en ser citado por modelos de IA."
+        },
+        {
+          "id": "c",
+          "text": "SEO es gratuito; AEO requiere una suscripción."
+        },
+        {
+          "id": "d",
+          "text": "No hay diferencia; son nombres diferentes para lo mismo."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El SEO tradicional apunta a posicionarse bien para dirigir clics a un sitio. El AEO se enfoca en estructurar el contenido para que los asistentes de IA confíen en él lo suficiente como para citarlo como la respuesta principal.",
+      "difficulty": "synthesis",
+      "xpValue": 20
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Mirando tu negocio (B2B SaaS o Creador), identifica un 'Dato Propietario' o 'Experiencia del Practicante' que posees y que una granja de contenido genérica nunca podría replicar. ¿Cómo podría ser esto la base de un contenido 'Citable'?",
+      "promptHints": [
+        "Piensa en resultados específicos de clientes que hayas logrado.",
+        "Considera datos internos o benchmarks que solo tú puedes ver.",
+        "Identifica una metodología única o un 'ángulo' que hayas desarrollado."
+      ],
+      "minimumWords": 50,
+      "xpValue": 25,
+      "aiEvaluationCriteria": {
+        "requiresSpecificity": true,
+        "requiresPersonalContext": true,
+        "requiresActionableInsight": true
+      }
+    }
+  ],
+  "passingScore": 70,
+  "totalXP": 105,
+  "metadata": {
+    "estimatedTime": "8-10 minutos",
+    "prerequisiteQuizzes": [],
+    "unlocks": ["2"]
+  },
+  "sectionId": "marketing-engine",
+  "title": "La Realidad del Cero Clics - Quiz"
+}

@@ -1,0 +1,78 @@
+{
+  "lessonId": "9",
+  "courseId": "retention",
+  "sectionId": "customer-success",
+  "title": "Automation Recipes for Retention",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the Retention Automation Rule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automate everything and remove all human touchpoints"
+        },
+        {
+          "id": "b",
+          "text": "Automate the monitoring and first touch; personalize the save play"
+        },
+        {
+          "id": "c",
+          "text": "Only use automation for customers under $50/month"
+        },
+        {
+          "id": "d",
+          "text": "Wait until you have 500+ customers before automating"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The rule is: automate detection and first response, personalize the intervention. A robot can detect a health score drop (monitoring). Only you can run the recovery call (save play). You're giving yourself superpowers, not replacing yourself."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What triggers the Dormancy Detector automation recipe?",
+      "options": [
+        { "id": "a", "text": "Customer submits an NPS score below 7" },
+        { "id": "b", "text": "Customer hasn't logged in for 7 days" },
+        { "id": "c", "text": "Customer downgrades their plan" },
+        { "id": "d", "text": "Customer opens a support ticket" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Dormancy Detector fires when a customer hasn't logged in for 7 days, sending a gentle reactivation email. If no login by Day 14, a value reminder email is sent. If still no login by Day 21, the account is flagged for personal outreach."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Without automation, where does a solo founder's 2-3 weekly CS hours go?",
+      "options": [
+        { "id": "a", "text": "Solving customer problems" },
+        { "id": "b", "text": "Finding problems to solve" },
+        { "id": "c", "text": "Building new features" },
+        { "id": "d", "text": "Marketing and sales" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Without automation, your limited CS time goes to finding problems — manually checking who's at risk, who hasn't logged in, who's unhappy. With automation handling detection, your time goes to solving problems instead."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Retention automation is about 'set it and forget it' — once workflows are running, no human involvement is needed.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. It's 'set it and steer,' not 'set it and forget it.' Automation handles the repetitive work (detection and first response), but you handle high-stakes interventions (recovery calls, save plays). The human touch is still essential for critical moments."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your top 3 retention automation recipes. For each, specify the trigger condition, the automated action(s), and the escalation path to personal intervention. Which recipe would have the biggest impact on your current churn?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response defines 3 specific automation recipes with concrete triggers (not vague conditions), automated actions (email content, CRM flags, Slack notifications), and escalation criteria for when human intervention is needed. Look for prioritization based on their actual churn patterns."
+    }
+  ]
+}

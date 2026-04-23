@@ -1,0 +1,75 @@
+{
+  "lessonId": "5",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "DNS Setup Checklist (Step by Step)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How many sequential steps are involved in DNS configuration for email sending?",
+      "options": [
+        { "id": "a", "text": "2 steps" },
+        { "id": "b", "text": "4 steps" },
+        { "id": "c", "text": "8 sequential steps that must happen in order" },
+        { "id": "d", "text": "1 step — just add the MX record" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "DNS configuration involves 8 sequential steps: choose DNS provider, add MX records, configure SPF, set up DKIM, create DMARC policy, verify with testing tools, set TTL values, and validate end-to-end. Skipping or misordering steps causes silent failures."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why does the lesson recommend Cloudflare for DNS management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It's the only DNS provider that works with email"
+        },
+        {
+          "id": "b",
+          "text": "Free DNS hosting, 5-minute TTL (fastest propagation), clean interface with no upsells, and built-in domain redirect"
+        },
+        { "id": "c", "text": "It's required by Google Workspace" },
+        { "id": "d", "text": "It's the cheapest domain registrar" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Cloudflare is recommended for DNS management (not domain purchase) because it offers free DNS hosting, 5-minute TTL for fast propagation during setup, a clean interface without upsells, and built-in domain redirect capabilities. The lesson also notes you can keep DNS at your registrar if preferred."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What happens when DNS records are configured incorrectly?",
+      "options": [
+        { "id": "a", "text": "You get an immediate error message" },
+        {
+          "id": "b",
+          "text": "Emails silently land in spam, Google Postmaster shows 'Bad' authentication, Outlook filters 100% to Junk, and you waste 2 weeks of warmup"
+        },
+        { "id": "c", "text": "Nothing — DNS errors are auto-corrected" },
+        { "id": "d", "text": "Your domain is immediately deleted" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Incorrect DNS causes cascading silent failures: emails land in spam without bouncing, Google Postmaster shows 'Bad' authentication status, Outlook filters everything to Junk, and your entire warmup period is wasted on a broken foundation that needs to be rebuilt from scratch."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "During initial DNS setup, you should set your TTL to 300 seconds (5 minutes) for faster propagation, then increase to 3600 (1 hour) after everything works.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Low TTL (300 seconds) during setup means DNS changes propagate in 5 minutes instead of up to 48 hours, letting you quickly iterate on misconfigurations. After everything is verified and working, increase to 3600 seconds (1 hour) for stability."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Walk through the DNS setup process for one of your sending domains. Which DNS provider do you use, what MX records do you need, and how would you verify that SPF, DKIM, and DMARC are all correctly configured?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies their DNS provider, lists correct MX records for their email provider (e.g., Google Workspace), and describes a verification method (mail-tester.com, mxtoolbox.com, or Google Admin Console). Look for understanding of the sequential nature of DNS setup."
+    }
+  ]
+}

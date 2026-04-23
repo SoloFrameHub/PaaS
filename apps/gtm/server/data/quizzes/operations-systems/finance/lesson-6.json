@@ -1,0 +1,72 @@
+{
+  "lessonId": "6",
+  "courseId": "finance",
+  "sectionId": "operations-systems",
+  "title": "Sales Tax, VAT, and Compliance Basics",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the typical economic nexus threshold that triggers sales tax collection obligations in US states?",
+      "options": [
+        { "id": "a", "text": "$10,000 in revenue OR 50 transactions" },
+        { "id": "b", "text": "$100,000 in revenue OR 200 transactions" },
+        { "id": "c", "text": "$500,000 in revenue OR 1,000 transactions" },
+        {
+          "id": "d",
+          "text": "$1,000,000 in revenue regardless of transactions"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The typical threshold is $100,000 in revenue OR 200 transactions within a 12-month period in a given state. This comes from the 2018 South Dakota v. Wayfair Supreme Court ruling."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the typical non-compliance penalties for sales tax?",
+      "options": [
+        { "id": "a", "text": "A warning letter only" },
+        { "id": "b", "text": "5-25% of unpaid tax plus interest" },
+        { "id": "c", "text": "Criminal prosecution" },
+        { "id": "d", "text": "Loss of business license" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Non-compliance penalties are typically 5-25% of unpaid tax plus interest. At $0.50 per transaction for Stripe Tax, automated handling is far cheaper than the alternative."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Is SaaS taxable in all US states?",
+      "options": [
+        { "id": "a", "text": "Yes, SaaS is always taxable" },
+        { "id": "b", "text": "No, SaaS is never taxable" },
+        {
+          "id": "c",
+          "text": "About 25 states tax SaaS; others exempt it, with rules varying dramatically"
+        },
+        { "id": "d", "text": "Only if you're above $1M in revenue" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Approximately 25 states tax SaaS and digital products; others exempt them entirely. Rules change frequently and vary by state (e.g., Texas taxes SaaS, California does not). You cannot track this manually — use automated tools."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "As a solo founder, you should become a tax expert to handle sales tax compliance yourself.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The solution is not to become a tax expert. It's to understand when you have an obligation and set up automation (like Stripe Tax) that handles it before you ever have to think about it."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "In how many US states do you currently have customers? Do you have nexus (physical or economic) in any of them? What automated tax solution would you implement to ensure compliance?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response assesses their customer geographic distribution, identifies states where they might have nexus (physical location, $100K revenue, or 200+ transactions), and proposes a specific automated solution (Stripe Tax, TaxJar, Avalara) with reasoning."
+    }
+  ]
+}

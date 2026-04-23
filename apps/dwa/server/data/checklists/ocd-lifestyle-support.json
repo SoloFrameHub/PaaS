@@ -1,0 +1,105 @@
+{
+  "id": "ocd-lifestyle-support",
+  "title": "OCD-Fighting Lifestyle Checklist",
+  "description": "Track the lifestyle practices that support OCD recovery and complement professional treatment. These don't replace ERP, but they create conditions where recovery is easier and relapse is less likely.",
+  "instructions": "Review each item and check off the practices you've done this week. Focus on what you can realistically maintain — even a few checked items is meaningful. Revisit weekly to track patterns and progress.",
+  "items": [
+    {
+      "id": "consistent-sleep",
+      "label": "I maintained consistent sleep and wake times most days this week",
+      "type": "checkbox",
+      "category": "Sleep & Routine"
+    },
+    {
+      "id": "wind-down",
+      "label": "I followed a calming wind-down routine before bed (not rituals — genuine relaxation)",
+      "type": "checkbox",
+      "category": "Sleep & Routine"
+    },
+    {
+      "id": "daily-routine",
+      "label": "I maintained a basic daily routine (meals, activities, rest)",
+      "type": "checkbox",
+      "category": "Sleep & Routine"
+    },
+    {
+      "id": "movement",
+      "label": "I did some form of physical activity or movement this week",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "regular-meals",
+      "label": "I ate regular meals and stayed hydrated",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "limited-caffeine",
+      "label": "I kept caffeine at a moderate level (not using it to push through exhaustion)",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "no-alcohol-coping",
+      "label": "I did not use alcohol or substances to cope with OCD distress",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "resisted-compulsion",
+      "label": "I resisted at least one compulsion this week (even a small one)",
+      "type": "checkbox",
+      "category": "OCD-Specific"
+    },
+    {
+      "id": "labeled-ocd",
+      "label": "I labeled an intrusive thought as 'just OCD' instead of engaging with it",
+      "type": "checkbox",
+      "category": "OCD-Specific"
+    },
+    {
+      "id": "reduced-reassurance",
+      "label": "I reduced reassurance-seeking (asked fewer times, or caught myself before asking)",
+      "type": "checkbox",
+      "category": "OCD-Specific"
+    },
+    {
+      "id": "faced-avoidance",
+      "label": "I faced something I usually avoid because of OCD (even something small)",
+      "type": "checkbox",
+      "category": "OCD-Specific"
+    },
+    {
+      "id": "erp-homework",
+      "label": "I completed my ERP homework from therapy (if currently in treatment)",
+      "type": "checkbox",
+      "category": "OCD-Specific"
+    },
+    {
+      "id": "social-connection",
+      "label": "I connected with a supportive person (friend, family, support group)",
+      "type": "checkbox",
+      "category": "Wellbeing & Connection"
+    },
+    {
+      "id": "values-activity",
+      "label": "I spent time on something meaningful or values-aligned (not OCD-driven)",
+      "type": "checkbox",
+      "category": "Wellbeing & Connection"
+    },
+    {
+      "id": "stress-management",
+      "label": "I used a stress management technique (breathing, nature, mindfulness, creative activity)",
+      "type": "checkbox",
+      "category": "Wellbeing & Connection"
+    },
+    {
+      "id": "self-compassion",
+      "label": "I practiced self-compassion — acknowledged that OCD is hard and I'm doing my best",
+      "type": "checkbox",
+      "category": "Wellbeing & Connection"
+    }
+  ],
+  "disclaimer": "This checklist supports recovery alongside professional OCD treatment (ERP). It does not replace therapy. If your OCD symptoms are severe or worsening, please seek help from an OCD-trained therapist. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

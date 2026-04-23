@@ -1,0 +1,124 @@
+{
+  "lessonId": "10",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Dominio de la Configuración del CRM",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "crm-setup-q1",
+      "question": "¿Cuál es la razón principal por la que los fundadores en solitario abandonan los CRMs?",
+      "options": [
+        "Elección incorrecta de herramienta",
+        "Sobreingeniería (demasiados campos) o subutilización (hoja de cálculo glorificada)",
+        "Falta de integraciones",
+        "Costo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La mayoría de los fallos de CRM vienen de la sobrepersonalización (demasiado complejo para mantener) o la baja adopción (no usarlo consistentemente). La elección de herramienta importa menos que la disciplina de uso."
+    },
+    {
+      "id": "crm-setup-q2",
+      "question": "¿Cuál es el pipeline universal de 6 etapas?",
+      "options": [
+        "Prospecto → Calificado → Demo → Propuesta → Negociación → Cerrado",
+        "Lead → Contactado → Comprometido → Reunión → Propuesta → Ganado/Perdido",
+        "Conciencia → Interés → Decisión → Acción → Retención → Defensa",
+        "Frío → Tibio → Caliente → Reunión → Propuesta → Ganado"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lead → Contactado → Comprometido → Reunión → Propuesta → Ganado/Perdido funciona universalmente porque mapea a acciones observables, no a juicios subjetivos."
+    },
+    {
+      "id": "crm-setup-q3",
+      "question": "¿Por qué son críticos los datos estructurados para los agentes de IA?",
+      "options": [
+        "La IA no puede leer notas de texto libre de forma efectiva",
+        "Los campos estructurados permiten el razonamiento, la categorización y la priorización",
+        "Las listas desplegables son más rápidas de completar que los campos de texto",
+        "Tanto A como B"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Los agentes de IA necesitan datos estructurados y categóricos para razonar. Las notas de texto libre son invisibles para la IA. Los campos estructurados (listas desplegables, números, fechas) permiten a los agentes priorizar, personalizar y recomendar acciones."
+    },
+    {
+      "id": "crm-setup-q4",
+      "question": "¿Qué es la prueba '¿Actuaría sobre Esto?'?",
+      "options": [
+        "Para cada campo personalizado: si la respuesta es no, elimínalo",
+        "Para cada automatización: si no ahorra tiempo, desactívala",
+        "Para cada contacto: si no tiene ajuste ICP, archívalo",
+        "Para cada trato: si no está avanzando, ciérralo"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cada campo personalizado debe ganarse su lugar desencadenando una decisión o acción. Si no actuarías sobre los datos, no los rastrees."
+    },
+    {
+      "id": "crm-setup-q5",
+      "question": "¿Cuál es la rutina de higiene semanal del CRM recomendada?",
+      "options": [
+        "Diario: registrar todo. Semanal: revisar pipeline. Mensual: deduplicar.",
+        "Lunes: revisión del pipeline (15 min). Viernes: barrido de higiene (15 min). En tiempo real: registrar reuniones.",
+        "Semanal: actualizar todos los tratos. Mensual: auditoría completa. Trimestral: migración.",
+        "Diario: verificar nuevos leads. Semanal: enviar seguimientos. Mensual: cerrar tratos perdidos."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Revisión del pipeline los lunes + barrido de higiene los viernes + registro de reuniones en tiempo real es el ritmo sostenible para fundadores en solitario. La administración diaria del CRM es excesiva; solo mensual es insuficiente."
+    },
+    {
+      "id": "crm-setup-q6",
+      "question": "¿Qué CRM es mejor para ventas B2B outbound de alto volumen?",
+      "options": [
+        "Folk (relación primero)",
+        "HubSpot Free (automatización limitada)",
+        "Close (llamadas + secuencias integradas)",
+        "Attio (UX moderno)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Close está construido específicamente para outbound de alto volumen con llamadas, SMS y secuencias integradas. Folk es para ventas de relaciones. HubSpot Free carece de automatización. Attio es excelente para preparación de IA pero no está optimizado para volumen."
+    },
+    {
+      "id": "crm-setup-q7",
+      "question": "¿Cuál es la integración #1 que verificar el Día 7?",
+      "options": [
+        "Sincronización de calendario",
+        "Sincronización de correo (los correos enviados y recibidos se registran automáticamente)",
+        "Enriquecimiento (Apollo, Clearbit)",
+        "Automatizaciones de Zapier/Make"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La sincronización de correo es la base. Sin ella, tu CRM tiene amnesia. El calendario, el enriquecimiento y las automatizaciones son importantes pero secundarios al registro de correos."
+    },
+    {
+      "id": "crm-setup-q8",
+      "question": "¿Cuál es el rango de la Puntuación de Preparación para IA para 'Listo para el Curso 27'?",
+      "options": ["1-3", "4-6", "7-8", "9-10"],
+      "correctAnswer": 2,
+      "explanation": "7-8 significa esquema completo listo para IA desplegado, registro de eventos estructurado, indicadores de salud presentes y 3+ automatizaciones ejecutándose. Ese es el umbral para construir agentes de IA en el Curso 27."
+    },
+    {
+      "id": "crm-setup-q9",
+      "question": "¿Qué ocurre si retrasa la configuración del CRM 1 semana después de elegir una herramienta?",
+      "options": [
+        "Nada — puedes configurarlo en cualquier momento",
+        "La adopción cae un 60% por cada semana de retraso",
+        "Olvidas qué herramienta elegiste",
+        "Tu período de prueba gratuita expira"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La investigación muestra que la adopción del CRM cae un 60% por cada semana de retraso después de la decisión de compra. La ventana de 48 horas es real."
+    },
+    {
+      "id": "crm-setup-q10",
+      "question": "¿Cuál es el artefacto de salida principal del Curso 40?",
+      "options": [
+        "Cuadro de Evaluación Comparativa de CRM",
+        "Mapa de Etapas del Pipeline",
+        "Esquema de Campos Listo para IA",
+        "Lista de Verificación Completa de Configuración del CRM (compila todos los artefactos de las lecciones)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La Lista de Verificación Completa de Configuración del CRM es el artefacto culminante que compila tu filosofía del CRM, elección de herramienta, pipeline, esquema, integraciones, rutina de higiene y puntuación de preparación para IA."
+    }
+  ]
+}

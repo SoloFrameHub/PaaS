@@ -1,0 +1,78 @@
+{
+  "lessonId": "7",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Supervision Patterns: Daily Queue + Kill Switches",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much daily time should a solo founder invest in AI SDR supervision?",
+      "options": [
+        { "id": "a", "text": "0 minutes — the system is autonomous" },
+        {
+          "id": "b",
+          "text": "10-20 minutes — the sweet spot for catching errors without negating automation benefits"
+        },
+        { "id": "c", "text": "2-3 hours — review every single email" },
+        { "id": "d", "text": "30 seconds to check the dashboard" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "10-20 minutes daily is the sweet spot. Less than 10 minutes means you're in the danger zone (expect brand damage within 30 days). More than 20 minutes means you might be over-supervising and should consider whether a DIY stack with full control would be simpler."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened in the '3 AM Wake-Up Call' scenario?",
+      "options": [
+        { "id": "a", "text": "The AI booked too many meetings" },
+        {
+          "id": "b",
+          "text": "The AI sent 147 emails with hallucinated personalization claiming prospects posted about switching CRMs when none of them did, destroying 3 months of deliverability"
+        },
+        { "id": "c", "text": "The AI ran out of credits overnight" },
+        { "id": "d", "text": "A competitor hacked the platform" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The AI SDR sent 147 emails with hallucinated personalization (claiming all prospects recently posted about switching from Salesforce to HubSpot). This generated 23 spam complaints, destroyed domain reputation, and wrecked 3 months of deliverability work — all while the founder slept."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the daily review queue, and why is it non-negotiable?",
+      "options": [
+        { "id": "a", "text": "A list of metrics to check weekly" },
+        {
+          "id": "b",
+          "text": "A morning review of planned sends before the AI SDR executes — reviewing for hallucinations, wrong targets, and quality issues"
+        },
+        {
+          "id": "c",
+          "text": "An automated quality check that requires no human input"
+        },
+        { "id": "d", "text": "A quarterly performance review" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The daily review queue is a non-negotiable morning review of the AI SDR's planned sends before they go out. You check for hallucinated facts, wrong targets (existing customers, competitors), quality issues, and kill switch triggers. This 15-minute protocol prevents the catastrophic failures that happen when AI runs unsupervised."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If you're not willing to spend 15 minutes per day reviewing your AI SDR's work, you're not ready to run one.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson is explicit: the time savings from AI SDRs come from automating research and drafting, not from eliminating human judgment. Without daily supervision, you're one hallucination away from domain reputation destruction, permanent LinkedIn bans, or lost enterprise deals."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your 15-minute daily supervision protocol for an AI SDR. What specific items would you check, in what order, and what would trigger a 'kill switch' to pause all sending?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific check items (hallucination review, target validation, quality sampling), a logical order of operations, and clear kill switch criteria (e.g., >2% bounce rate, hallucinated facts in 3+ emails, spam complaint). Look for practical understanding of supervision as risk management."
+    }
+  ]
+}

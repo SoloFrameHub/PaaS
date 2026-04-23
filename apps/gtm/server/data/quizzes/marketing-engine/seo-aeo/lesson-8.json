@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "8",
+    "lessonTitle": "Local SEO for Service Businesses",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Local Pack' in Google Search results?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A group of paid ads at the top of the page."
+                },
+                {
+                    "id": "b",
+                    "text": "A map and the top 3 local business listings that appear for geographic queries."
+                },
+                {
+                    "id": "c",
+                    "text": "A list of the fastest-loading websites in your city."
+                },
+                {
+                    "id": "d",
+                    "text": "A section for local news articles."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Local Pack is the most visible real estate for local search. Winning a spot here is the primary goal of Local SEO.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is considered the #1 ranking factor for appearing in the Local Pack?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The length of your domain name."
+                },
+                {
+                    "id": "b",
+                    "text": "The primary 'Business Category' chosen in your Google Business Profile."
+                },
+                {
+                    "id": "c",
+                    "text": "Having a video on your homepage."
+                },
+                {
+                    "id": "d",
+                    "text": "The number of followers on your Facebook page."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your primary category tells Google exactly what you do. If you mis-categorize your business, you will likely never appear for your target keywords.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Review Velocity' and why does it matter for Local SEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "How fast you can read a review."
+                },
+                {
+                    "id": "b",
+                    "text": "The speed at which you respond to a review."
+                },
+                {
+                    "id": "c",
+                    "text": "The frequency and consistency with which you receive new reviews over time."
+                },
+                {
+                    "id": "d",
+                    "text": "The number of words in an average review."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Google prioritizes businesses that are actively receiving fresh reviews. A steady stream of 2-3 reviews a month is better than 100 reviews from several years ago.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does NAP Consistency stand for and why is it important?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never Apologize Personally; it's a branding strategy."
+                },
+                {
+                    "id": "b",
+                    "text": "Name, Address, Phone; it builds trust for your local entity if this info is identical across the web."
+                },
+                {
+                    "id": "c",
+                    "text": "New Audience Persona; it's a way to target different cities."
+                },
+                {
+                    "id": "d",
+                    "text": "Network Access Point; it's a technical SEO term for site speed."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Name, Address, and Phone (NAP) consistency is a major signal for 'Trustworthiness'. If your data varies across different sites, search engines and AI models lose confidence in your entity data.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How can you build 'Localized Content Clusters' to improve your local authority?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By translating your blog into different languages."
+                },
+                {
+                    "id": "b",
+                    "text": "By hiding city names in the footer of your website."
+                },
+                {
+                    "id": "c",
+                    "text": "By writing articles that tie your expert advice to city-specific regulations, landmarks, or news."
+                },
+                {
+                    "id": "d",
+                    "text": "By blocking visitors from other cities from seeing your site."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Local clusters prove to Google that you are not just an expert, but an expert with deep roots and specific knowledge relevant to a geographic area.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your Google Business Profile (or your competitors' if you don't have one yet). What is one 'Missing Attribute' or 'Service Detail' you can add right now that would help a user (and an AI) understand your specific value better? How can you turn your next customer success into a keyword-rich review?",
+            "promptHints": [
+                "Check all specific business attributes (e.g., online appointments).",
+                "Think about specific terms a client could use in a review (e.g., 'B2B accounting' vs 'finance help').",
+                "Consider how you can make a review request part of your standard workflow."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "8-10 minutes",
+        "prerequisiteQuizzes": [
+            "7"
+        ],
+        "unlocks": [
+            "9"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Local SEO for Service Businesses - Quiz"
+}

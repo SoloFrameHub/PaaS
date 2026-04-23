@@ -1,0 +1,81 @@
+{
+  "lessonId": "5",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Results: What Solo Founders Actually See",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What should you expect during Month 1 of an AI SDR deployment?",
+      "options": [
+        { "id": "a", "text": "20+ meetings booked automatically" },
+        {
+          "id": "b",
+          "text": "Calibration phase: 2-5 meetings if lucky, 15-20 hours of setup/configuration, and frequent 'did it really send that?' moments"
+        },
+        {
+          "id": "c",
+          "text": "Zero emails sent — the system is still learning"
+        },
+        { "id": "d", "text": "Immediate ROI with no setup required" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Month 1 is 'Calibration Hell' — expect 2-5 meetings at best, 15-20 hours of setup/configuration, frequent prompt adjustments, and integration issues. The first 30 days are calibration, not production. Setting expectations correctly prevents premature abandonment."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Comparing Sarah (AI SDR at $750/month) and Jake (DIY stack at $150/month) over 3 months, what were the results?",
+      "options": [
+        { "id": "a", "text": "Sarah dramatically outperformed Jake" },
+        {
+          "id": "b",
+          "text": "Sarah: 21 meetings, 2 deals ($24K ARR), $2,250 cost. Jake: 19 meetings, 2 deals ($20K ARR), $450 cost"
+        },
+        { "id": "c", "text": "Jake had zero meetings" },
+        { "id": "d", "text": "Both had identical results and costs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Over 3 months, Sarah (AI SDR) got 21 meetings and closed $24K ARR for $2,250. Jake (DIY) got 19 meetings and closed $20K ARR for $450. Sarah got slightly more meetings but spent 5x more. The extra $1,800 bought 2 additional meetings and $4K more ARR — a questionable ROI."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the '30-Day Truth' about AI SDR platforms?",
+      "options": [
+        { "id": "a", "text": "You'll see ROI within 30 days" },
+        {
+          "id": "b",
+          "text": "AI SDR platforms are NOT 'set it and forget it' — the first 30 days are calibration, not production"
+        },
+        {
+          "id": "c",
+          "text": "You should cancel after 30 days if it's not working"
+        },
+        { "id": "d", "text": "Results double every 30 days automatically" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 30-Day Truth is that AI SDR platforms require a calibration period where you're setting up ICP parameters, reviewing every AI-generated email, adjusting tone and personalization, and fighting with integrations. Minimal results during this phase are normal, not a failure."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Solo founders typically see better results from AI SDR platforms than from well-configured DIY stacks at similar effort levels.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The lesson shows comparable results between AI SDR platforms and DIY stacks for solo founders. The marginal improvement from AI SDR platforms often doesn't justify the 5x+ cost premium, especially when founder-led outreach benefits from personal credibility and real-time judgment."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Based on the real-world comparison between AI SDR and DIY results, what outcome would the AI SDR platform need to deliver monthly to justify its cost for your specific business? Include your deal size, close rate, and the number of additional meetings needed.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response calculates a specific breakeven point using their deal size, close rate, and the cost premium of an AI SDR. Look for realistic expectations about Month 1 calibration and whether they factor in supervision time as a cost."
+    }
+  ]
+}

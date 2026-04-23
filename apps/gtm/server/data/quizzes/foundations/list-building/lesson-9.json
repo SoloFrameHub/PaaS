@@ -1,0 +1,141 @@
+{
+    "lessonId": "9",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Compliance: CAN-SPAM and GDPR Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a mandatory requirement for every commercial email sent under the CAN-SPAM Act?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A link to your Facebook profile"
+                },
+                {
+                    "id": "b",
+                    "text": "A valid physical postal address for your business"
+                },
+                {
+                    "id": "c",
+                    "text": "The recipient's date of birth"
+                },
+                {
+                    "id": "d",
+                    "text": "A 20% discount code"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "To prevent anonymous spam, US law requires a physical location where the business can be reached. For remote founders, a virtual mailbox or PO box is a standard solution."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Under GDPR, on what legal basis can you justify cold B2B outreach to a professional email address?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Historical Precedent"
+                },
+                {
+                    "id": "b",
+                    "text": "Universal Consent"
+                },
+                {
+                    "id": "c",
+                    "text": "Legitimate Interest"
+                },
+                {
+                    "id": "d",
+                    "text": "Freedom of Information"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Legitimate Interest allows for outreach that is professionally relevant to the recipient, provided their privacy rights are respected and an easy opt-out is provided."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 2024 Google/Yahoo mandates, what technical feature must be included in your email headers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A list of your last 10 customers"
+                },
+                {
+                    "id": "b",
+                    "text": "One-click unsubscribe"
+                },
+                {
+                    "id": "c",
+                    "text": "Your company's tax ID"
+                },
+                {
+                    "id": "d",
+                    "text": "A video of your product in action"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "One-click unsubscribe (List-Unsubscribe header) is now a hard requirement for all commercial mail reaching Gmail and Yahoo inboxes."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which type of email address is EXPLICITLY forbidden for cold outreach in the EU under GDPR without prior consent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "name@company.com"
+                },
+                {
+                    "id": "b",
+                    "text": "press@organization.org"
+                },
+                {
+                    "id": "c",
+                    "text": "Personal addresses (e.g., name@gmail.com)"
+                },
+                {
+                    "id": "d",
+                    "text": "info@startup.io"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Personal emails are treated with the highest level of privacy protection. Cold emailing them is a primary trigger for GDPR violations."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If someone unsubscribes, how long do you have under CAN-SPAM to honor their request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "24 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "10 business days"
+                },
+                {
+                    "id": "c",
+                    "text": "30 days"
+                },
+                {
+                    "id": "d",
+                    "text": "You don't have to honor it if they are a perfect fit"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "US law provides a 10-day window, but best practice is to automate this so it happens instantly."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Draft your 'Legitimate Interest' statement for your business. Why is your outreach helpful to your target audience? How will you handle an 'angry' reply from someone who claims you are violating their privacy?",
+            "minLength": 100,
+            "promptForAI": "Review the Legitimate Interest statement for professional relevance. Evaluate the handle for 'angry' replies—it should be calm, apologetic, and confirm immediate suppression from all future outreach."
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+  "lessonId": "5",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Done-for-You & Consulting Upsell Paths",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What pricing multiple can done-for-you (DFY) services typically command over self-serve tools?",
+      "options": [
+        { "id": "a", "text": "1.5-2x the self-serve price" },
+        { "id": "b", "text": "3-10x the self-serve price" },
+        { "id": "c", "text": "15-20x the self-serve price" },
+        { "id": "d", "text": "The same price with different packaging" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "DFY services command 3-10x premiums. A $200/month SaaS becomes a $2,000/month managed service. Customers pay the premium because you're selling back their time, eliminating their learning curve, and guaranteeing execution."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the magic phrase from a customer that signals a DFY upsell opportunity?",
+      "options": [
+        { "id": "a", "text": "This product is really great" },
+        { "id": "b", "text": "Can you add more features?" },
+        { "id": "c", "text": "I just don't have time to do this myself" },
+        { "id": "d", "text": "I need a discount on my subscription" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "'I don't have time to do this myself' is the DFY signal. The customer values the outcome but lacks time or confidence to execute. They're telling you they'll pay 3-10x more to have you do it for them."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which DFY archetype describes a coaching client who completed a program but needs help executing the framework?",
+      "options": [
+        { "id": "a", "text": "SaaS to DFY Implementation" },
+        { "id": "b", "text": "Coaching to DFY Execution" },
+        { "id": "c", "text": "Consulting to Productized DFY" },
+        { "id": "d", "text": "Retainer to Project Upgrade" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Coaching to DFY Execution is when a student understands the framework but lacks time or confidence to implement it. The offer becomes: 'You've learned the system. For clients who want me to execute it for them, here's my done-for-you package.'"
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Done-for-you services are only viable for service businesses, not SaaS companies.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. SaaS companies can offer DFY implementation, configuration, data migration, and ongoing management on top of their software subscription. This is the SaaS-to-DFY Implementation archetype, commanding 3-5x the subscription price."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design a done-for-you upsell offer for your business. Describe: what the customer currently does themselves, what you would do for them in the DFY package, the pricing multiple compared to self-serve, and how you would position the offer when a customer signals interest.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies a specific DFY offer (not generic), defines clear deliverables that the customer currently struggles with, sets a realistic pricing multiple (3-10x), and positions the offer as solving a time/execution problem rather than as a hard upsell."
+    }
+  ]
+}

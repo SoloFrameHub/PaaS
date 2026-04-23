@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "6",
+    "lessonTitle": "Product Hunt Launch",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the '400-Person Rule' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You must have 400 lines of code before launching."
+                },
+                {
+                    "id": "b",
+                    "text": "You should have an audience of at least 400 people ready to support your launch."
+                },
+                {
+                    "id": "c",
+                    "text": "You must get 400 upvotes to get a badge."
+                },
+                {
+                    "id": "d",
+                    "text": "The launch costs $400."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Product Hunt amplifies existing momentum. Without an 'initial push' from a predictable audience, the algorithm will likely bury your post.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is it recommended to use an animated GIF for your product thumbnail?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes the page load faster."
+                },
+                {
+                    "id": "b",
+                    "text": "It's the only way to stand out in a feed of static images."
+                },
+                {
+                    "id": "c",
+                    "text": "Product Hunt requires it for all posts."
+                },
+                {
+                    "id": "d",
+                    "text": "It helps with SEO."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Visual competition on PH is fierce. Movement catches the eye and increases the click-through rate to your product page.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "At what time (Pacific Time) should you ideally launch your Product Hunt post?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "9:00 AM PT"
+                },
+                {
+                    "id": "b",
+                    "text": "12:01 AM PT"
+                },
+                {
+                    "id": "c",
+                    "text": "5:00 PM PT"
+                },
+                {
+                    "id": "d",
+                    "text": "Noon PT"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Launching right at the start of the daily window (12:01 AM PT) gives you the full 24 hours to accumulate upvotes and engagement.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these behaviors is most likely to result in a 'Shadow-Ban' or penalty on Product Hunt?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Responding to every comment personally."
+                },
+                {
+                    "id": "b",
+                    "text": "Directly asking for upvotes and using 'Upvote Pods' to manipulate the algorithm."
+                },
+                {
+                    "id": "c",
+                    "text": "Launching on a Tuesday."
+                },
+                {
+                    "id": "d",
+                    "text": "Offering a discount code in your Maker Comment."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Product Hunt has advanced detection for manipulation. Genuinely asking for 'feedback' or 'support' is safe; transactional upvoting is not.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the most important 'Success Metric' for a solo founder on PH, according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Total number of upvotes."
+                },
+                {
+                    "id": "b",
+                    "text": "Reaching the #1 spot."
+                },
+                {
+                    "id": "c",
+                    "text": "New trials, sign-ups, and the ability to convert commenters into conversations."
+                },
+                {
+                    "id": "d",
+                    "text": "Getting a tweet from the PH founder."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Vanity metrics like upvotes are nice, but business momentum comes from actual users and the relationships you build with people who engaged with your 'milestone'.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "If you were to launch on Product Hunt 30 days from now, what is your specific 'Audience Gap'? (e.g., 'I only have 50 email subscribers, I need 350 more'). List 3 ways you will bridge that gap using the strategies from Lessons 1-4 (Reddit, Twitter, etc.).",
+            "promptHints": [
+                "Be specific about the numbers.",
+                "Consider how 'Building in Public' can help grow your warmup list.",
+                "Think about 'Borrowing' trust from other communities to build your own list."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "5"
+        ],
+        "unlocks": [
+            "7"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Product Hunt Launch - Quiz"
+}

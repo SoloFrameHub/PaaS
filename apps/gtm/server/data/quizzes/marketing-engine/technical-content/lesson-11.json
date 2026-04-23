@@ -1,0 +1,142 @@
+{
+    "lessonId": "11",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Content Performance Metrics Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is a 'Vanity Metric' in content marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A metric that directly results in revenue"
+                },
+                {
+                    "id": "b",
+                    "text": "A high-volume metric like 'Likes' or 'Views' that feels good but doesn't necessarily indicate business growth"
+                },
+                {
+                    "id": "c",
+                    "text": "A metric tracked in a private spreadsheet"
+                },
+                {
+                    "id": "d",
+                    "text": "The number of hours spent writing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Vanity metrics can be misleading. 10,000 views from the wrong audience is less valuable than 10 views from your ideal customer."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the 'Share of Model' metric measure in the AEO era?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "How many employees you have"
+                },
+                {
+                    "id": "b",
+                    "text": "How often AI models (ChatGPT, Perplexity) cite your content as the answer to niche questions"
+                },
+                {
+                    "id": "c",
+                    "text": "The percentage of your traffic coming from Google"
+                },
+                {
+                    "id": "d",
+                    "text": "The amount of content written by AI"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "As more users turn to AI for answers, being the 'cited source' (Share of Model) becomes as important as being #1 in traditional search."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these is the most valuable metric for a solo founder to track?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Total unique page views"
+                },
+                {
+                    "id": "b",
+                    "text": "Average session duration"
+                },
+                {
+                    "id": "c",
+                    "text": "Conversion rate from Visitor to Lead (Email Signup)"
+                },
+                {
+                    "id": "d",
+                    "text": "The number of images in a post"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "At the end of the day, your content engine exists to build your lead pipeline. Capturing the relationship is the most important conversion point."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the simplest way to perform 'Manual Attribution' for a new sale?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Guessing based on the date"
+                },
+                {
+                    "id": "b",
+                    "text": "Asking the customer 'How did you hear about us?' during their first call or in a form"
+                },
+                {
+                    "id": "c",
+                    "text": "Checking Google Analytics only"
+                },
+                {
+                    "id": "d",
+                    "text": "Assuming everyone found you on Twitter"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "No technical tool is 100% accurate. Asking the customer directly provides the highest-quality 'First-Touch' attribution data."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Scroll Depth' a useful engagement metric?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It shows how fast the user can read"
+                },
+                {
+                    "id": "b",
+                    "text": "It indicates if users are actually reaching your CTAs at the middle or bottom of your content"
+                },
+                {
+                    "id": "c",
+                    "text": "It helps with SEO ranking"
+                },
+                {
+                    "id": "d",
+                    "text": "It counts as a page view"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If people leave after the first 20% of the post, they aren't seeing your conversion points. Scroll depth helps you identify where you're losing their attention."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Define your 'North Star' content metric. Is it newsletter signups, trial starts, or demo bookings? Why did you pick this specific metric? How will tracking this change the way you write your next 'Source Piece'?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the metric is 'Valuable' vs 'Vanity'. It must be a lead-capture or revenue-generating activity. Push back if they choose 'Followers' or 'Views'."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

@@ -1,0 +1,72 @@
+{
+  "lessonId": "12",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Certification Presentation & Review",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of the certification rubric is based on artifact completeness?",
+      "options": [
+        { "id": "a", "text": "10%" },
+        { "id": "b", "text": "25%" },
+        { "id": "c", "text": "50%" },
+        { "id": "d", "text": "75%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Artifact completeness accounts for 25 points out of 100. This includes all track artifacts being present, customized to your business, updated with real data, organized and accessible, and having quality depth of content."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What distinguishes the Customer Acquisition Architect certification from a typical course certificate?",
+      "options": [
+        { "id": "a", "text": "It costs more" },
+        {
+          "id": "b",
+          "text": "It documents that you built, executed, and reflected on a real acquisition system with real numbers"
+        },
+        { "id": "c", "text": "It requires passing a written exam" },
+        { "id": "d", "text": "It's issued by a university" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The certification is not symbolic. It documents that you built, executed, and reflected on a real acquisition system — with real numbers, real evidence, and real learnings. It's a body of work, not a certificate from completing videos."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What loses marks in the artifact completeness criterion?",
+      "options": [
+        { "id": "a", "text": "Using simple language" },
+        { "id": "b", "text": "Having too many artifacts" },
+        {
+          "id": "c",
+          "text": "Artifacts left in template form with placeholder text"
+        },
+        { "id": "d", "text": "Including real customer data" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Artifacts left in template form with placeholder text lose marks. The certification evaluates whether artifacts are customized and updated with real information from sales activity, not just original course defaults."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should complete the certification presentation even if your portfolio is below 80% complete.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. If you're below 80%, list what's missing and complete it before presenting. The certification rubric includes artifact completeness as 25% of your score, and missing items will significantly impact your evaluation."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review the portfolio completeness checklist. Which items do you have ready, which are missing, and what is your plan to complete any gaps before presenting?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses portfolio completeness, identifies specific missing items, provides a realistic time estimate for completing gaps, and demonstrates understanding that the certification evaluates real execution evidence, not theoretical knowledge."
+    }
+  ]
+}

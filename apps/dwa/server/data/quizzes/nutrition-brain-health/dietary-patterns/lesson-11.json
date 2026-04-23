@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does each 2-point increase in the MEDAS (Mediterranean Diet Adherence Score) predict?",
+            "options": [
+                { "id": "opt1", "text": "A specific number of pounds lost" },
+                { "id": "opt2", "text": "Measurable improvements in inflammatory markers and mental health outcomes" },
+                { "id": "opt3", "text": "The need for fewer vitamins and supplements" },
+                { "id": "opt4", "text": "Better athletic performance" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that each 2-point increase in MEDAS score is associated with measurable improvements in inflammatory markers and mental health outcomes. You do not need to reach a perfect score of 14 — moving from 4 to 6 is just as meaningful as moving from 10 to 12. The dose-response relationship means progress at any level counts."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "If your estimated UPF (ultra-processed food) intake is 50% or higher, what does the research suggest about your mental health risk?",
+            "options": [
+                { "id": "opt1", "text": "You are in the range associated with 53% higher odds of common mental disorders" },
+                { "id": "opt2", "text": "There is no significant risk at any UPF level" },
+                { "id": "opt3", "text": "You are at average risk, which is considered safe" },
+                { "id": "opt4", "text": "Risk only applies to people who eat 80% or more UPF" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "A UPF intake of 50% or higher puts you at or above the Western average and in the range associated with 53% higher odds of common mental disorders (anxiety and depression). The dose-response relationship means every 10% reduction is associated with a measurable decrease in depression risk."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the simplified Inflammatory Balance assessment, what does a negative net score indicate?",
+            "options": [
+                { "id": "opt1", "text": "A healthy, anti-inflammatory dietary pattern" },
+                { "id": "opt2", "text": "That you are eating fewer calories than needed" },
+                { "id": "opt3", "text": "A pro-inflammatory dietary pattern with significant room for improvement" },
+                { "id": "opt4", "text": "That the assessment is invalid" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "In the Inflammatory Balance assessment, the net score equals your anti-inflammatory total minus your pro-inflammatory total. A negative score (-1 to -10) means pro-inflammatory foods outnumber anti-inflammatory ones in your regular diet, indicating significant opportunity for improvement. The priority should be adding anti-inflammatory foods rather than only restricting pro-inflammatory ones."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How often should you use dietary self-assessment tools like the MEDAS to track your dietary pattern?",
+            "options": [
+                { "id": "opt1", "text": "Daily — to catch every deviation from your plan" },
+                { "id": "opt2", "text": "Monthly — enough to track trends without triggering food anxiety" },
+                { "id": "opt3", "text": "Once a year at your annual physical" },
+                { "id": "opt4", "text": "Only when you feel like your diet has gotten worse" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Monthly scoring is recommended — enough to track trends and reveal actionable patterns without triggering food anxiety or obsessive tracking. Research shows that individuals who regularly self-assess their dietary patterns are more likely to make and sustain positive changes. The key is using tools periodically, not obsessively."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What guiding principle should you use when choosing which dietary changes to make based on your assessment results?",
+            "options": [
+                { "id": "opt1", "text": "Fix everything at once for maximum impact" },
+                { "id": "opt2", "text": "Focus on the most difficult changes first to build discipline" },
+                { "id": "opt3", "text": "Highest impact, lowest effort — target changes that move your scores the most for the least disruption" },
+                { "id": "opt4", "text": "Only make changes that involve buying new supplements" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The guiding principle is 'highest impact, lowest effort' — start with changes that will move your scores the most for the least disruption to your daily life. For example, switching cooking oil to olive oil is a single change with multiple benefits, and replacing your most frequent UPF with a whole-food alternative can shift your UPF percentage significantly."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "11",
+    "title": "Practical Assessment: Your Dietary Pattern Profile - Quiz"
+}

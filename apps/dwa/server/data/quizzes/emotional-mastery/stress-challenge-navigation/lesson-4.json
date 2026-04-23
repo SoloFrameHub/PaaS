@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the research evidence tell us about resilience as a construct?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Resilience is a fixed personality trait you're born with—you either have it or you don't"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Resilience is a dynamic process influenced by skills, context, social support, and biological variables—it's trainable, not fixed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Resilience only matters for people in high-stress professions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no scientific evidence that resilience exists"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "According to the American Psychological Association, resilience is the capacity to adapt, maintain, or regain functioning when faced with adversity—and it's a dynamic process, not a fixed trait. This distinction is critical for effective intervention: framing resilience as something you either have or don't invites fixed-mindset responses and helplessness. Framing it as a set of trainable processes influenced by skills, context, support, and biology is more accurate and more useful. Research consistently shows that resilience is multi-layered and can be developed through structured practice in multiple domains."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for combined CBT-based and mindfulness-based resilience interventions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—no good studies exist"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE to STRONG—meta-analyses show effect sizes of d=0.44 to 0.73 for resilience outcomes, with CBT, mindfulness, and combined programs all effective"
+                },
+                {
+                    "id": "opt3",
+                    "text": "STRONG with no limitations or caveats"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only STRONG for clinical populations, not general adults"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A 2024 systematic review of 43 studies found CBT-based interventions produced effect sizes of SMD=0.73 immediately post-intervention and SMD=1.17 at follow-up, suggesting durability. A separate meta-analysis (BMJ Open, 17 studies, 11 RCTs) found overall effect size d=0.44 for resilience interventions, with CBT-based, mindfulness-based, and combined programs each significantly effective. However, important caveats exist: effect sizes are smaller in highest-quality designs, publication bias is documented, and interventions cannot compensate for structural stressors like chronic abuse or systemic inequality. This is MODERATE to STRONG evidence with meaningful limitations."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the five resilience-relevant domains identified by research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Positive thinking, willpower, determination, optimism, and luck"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Cognitive appraisal/coping beliefs, emotion regulation, social connection, recovery behaviors (sleep/exercise), and meaning-making"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Intelligence, physical fitness, income level, personality type, and genetics"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There are no specific domains—resilience is general toughness"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently identifies at least five resilience-relevant domains: (1) cognitive appraisal and coping beliefs (how you interpret challenges), (2) emotion regulation strategies (how you manage internal states), (3) social connection (support networks and relationships), (4) recovery behaviors (sleep, exercise, restoration practices), and (5) meaning-making (sense of purpose and values). Importantly, interventions that target multiple domains produce the strongest effects—this is why comprehensive resilience programs combine cognitive, emotional, behavioral, and social components rather than focusing on a single skill."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does CBT-based stress management training research tell us about the active mechanism of benefit?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any pleasant activity reduces stress equally"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Mastery of cognitive strategies and problem-solving (not just relaxation) mediates beneficial effects on stress reactivity and exhaustion"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only relaxation techniques matter—cognitive skills are irrelevant"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The mechanism is unclear and not supported by research"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A non-randomized controlled trial of CBT-based occupational stress management training in employees found that mastery of cognitive strategies and problem-solving—not relaxation alone—mediated the beneficial effects on stress reactivity and exhaustion. This is a high-value finding: it means the mechanism is cognitive change, not stress reduction as a byproduct of any pleasant activity. This explains why CBT-based approaches produce more durable effects than relaxation-only interventions and why skill mastery (not just exposure to techniques) is critical for sustained benefit."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What important limitation must be acknowledged about individual-level resilience interventions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "There are no limitations—resilience skills work for all stressors"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Individual resilience interventions have real but bounded effects—they cannot compensate for structural stressors like chronic abuse, unsafe workplaces, or systemic inequality"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Resilience interventions don't work at all"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only people with weak character need to acknowledge limitations"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While resilience interventions show moderate effect sizes in research (d=0.44 to 0.73), they have bounded effects: individual skill-building cannot compensate for structural stressors like chronic workplace abuse, unsafe environments, economic precarity, or systemic discrimination. These situations require organizational or systemic intervention, not just personal coping skills. Failing to acknowledge this limitation leads to inappropriate victim-blaming (\"if you were more resilient, you could handle it\") and minimizes legitimate problems that need external advocacy or change. A responsible course must clearly delimit what individual skill-building can and cannot address."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "4",
+    "title": "Building Stress Resilience: The Foundation - Quiz"
+}

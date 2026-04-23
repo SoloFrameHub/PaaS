@@ -1,0 +1,101 @@
+{
+    "lessonId": "8",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "Budget Optimization",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "At what ROI multiple does automation become a clear investment (not a cost)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2x"
+                },
+                {
+                    "id": "b",
+                    "text": "5x"
+                },
+                {
+                    "id": "c",
+                    "text": "10x"
+                },
+                {
+                    "id": "d",
+                    "text": "20x"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "5x ROI is the minimum threshold. Below 5x, the time investment in building and maintaining automations may not be worth it. Most well-configured automation stacks deliver 10-25x ROI."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which cost optimization strategy has the highest impact for high-volume Zapier users?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Switch from polling to webhook triggers"
+                },
+                {
+                    "id": "b",
+                    "text": "Switch from Zapier to Make"
+                },
+                {
+                    "id": "c",
+                    "text": "Consolidate multiple Zaps into one multi-step Zap"
+                },
+                {
+                    "id": "d",
+                    "text": "Downgrade to a free plan"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Switching from Zapier to Make typically provides 10-13x more automation volume at half the price. This is the highest-impact optimization for users who have outgrown Zapier Starter's 750 task limit."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "You should check your automation health daily to catch failures quickly.",
+            "correctAnswer": "b",
+            "explanation": "False. Weekly is sufficient. Add a 5-minute automation health check to your Friday metrics review (from Course 41). Daily checks are overkill and distract from selling.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary advantage of webhook-based triggers over polling-based triggers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Webhooks are more reliable"
+                },
+                {
+                    "id": "b",
+                    "text": "Webhooks only consume tasks/operations when something actually happens"
+                },
+                {
+                    "id": "c",
+                    "text": "Webhooks are available on all plan tiers"
+                },
+                {
+                    "id": "d",
+                    "text": "Webhooks work with more integrations"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Webhooks (instant triggers) only fire when data changes — zero wasted tasks when nothing happens. Polling checks every 15 minutes and consumes tasks even when there's nothing new to process."
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does research show about the effectiveness of virtual coaching compared to in-person coaching?",
+      "options": [
+        {"id": "opt1", "text": "Virtual coaching is significantly less effective and should be avoided"},
+        {"id": "opt2", "text": "Virtual coaching produces outcomes comparable to in-person for many goals, with added benefits of accessibility and convenience, but requires adapted skills to address constraints like reduced nonverbal cues and Zoom fatigue"},
+        {"id": "opt3", "text": "Virtual coaching is always better than in-person"},
+        {"id": "opt4", "text": "There is no research on virtual coaching effectiveness"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows virtual coaching produces comparable outcomes to in-person for many goals. Benefits: accessibility across geography, convenience (no commute), cost reduction, privacy options (background blur). Constraints: reduced nonverbal cues (~50% loss), technical barriers, Zoom fatigue, harder rapport-building. Virtual isn't inferior — it's a different medium. Effective virtual coaches leverage affordances (screen-sharing collaborative docs, instant resource sharing) and mitigate constraints (exaggerate expressions, check in more, slow down, offer movement breaks)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is 'Zoom fatigue,' and what causes it?",
+      "options": [
+        {"id": "opt1", "text": "Zoom fatigue is just people being lazy — video calls aren't actually tiring"},
+        {"id": "opt2", "text": "Zoom fatigue is the exhaustion from virtual meetings caused by: constant self-monitoring (seeing your own face), reduced mobility, cognitive load of interpreting degraded nonverbal cues, and continuous partial attention (multitasking temptation)"},
+        {"id": "opt3", "text": "Zoom fatigue only affects people who don't like technology"},
+        {"id": "opt4", "text": "Zoom fatigue is caused by bad internet connections only"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Zoom fatigue is real and research-documented. Causes: (1) self-monitoring fatigue from seeing your own face constantly, (2) reduced mobility (stuck staring at screen vs. natural movement), (3) cognitive overload from interpreting degraded cues, (4) continuous partial attention (temptation to multitask reduces focus). Mitigation: hide self-view, build in movement breaks, shorten sessions (45 min vs 60), offer camera-off option, space sessions with buffers. Virtual time feels longer than in-person."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How should you adapt rapport-building for virtual coaching given the loss of ~50% of nonverbal communication?",
+      "options": [
+        {"id": "opt1", "text": "You can't build rapport virtually — give up on connection"},
+        {"id": "opt2", "text": "Exaggerate facial expressions and vocal tone, use gestures in frame, lean in, look at camera when speaking, create consistent rituals (same open/close), slow down and check in more frequently, leverage tech affordances (screen-share docs)"},
+        {"id": "opt3", "text": "Do exactly the same things you'd do in person — no adaptation needed"},
+        {"id": "opt4", "text": "Turn off your camera to avoid the discomfort of virtual interaction"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Virtual rapport-building requires compensation for lost cues: (1) Exaggerate expressions/tone — nod more, smile more, vary voice more. (2) Use hand gestures in frame. (3) Look at CAMERA (not screen) when speaking for pseudo-eye contact. (4) Create rituals (same opening/closing each session). (5) Check in MORE than in-person ('Am I making sense?' 'What's landing?'). (6) Leverage tech (screen-share goals doc, drop resources in chat). Rapport is harder virtually but absolutely achievable with adapted techniques."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What digital equity and accessibility issues should coaches be aware of when offering virtual coaching?",
+      "options": [
+        {"id": "opt1", "text": "Everyone has equal access to technology — digital equity isn't a real issue"},
+        {"id": "opt2", "text": "Virtual coaching assumes: reliable high-speed internet, device with camera/mic, private space, and digital literacy — NOT universal. Offer phone alternatives, mobile-friendly options, tech support, and recognize when virtual isn't appropriate (e.g., no private space, severe technical barriers, disability needs)."},
+        {"id": "opt3", "text": "If clients can't access virtual platforms, they're not serious about coaching"},
+        {"id": "opt4", "text": "Accessibility only matters for people with physical disabilities"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Digital equity matters. Virtual coaching assumes resources not everyone has: (1) reliable internet (not available in rural areas or low-income households), (2) devices with camera/mic (some only have phones), (3) private space (many share homes), (4) digital literacy (not universal especially for older adults). Accessibility considerations: offer audio-only for bandwidth issues, ensure mobile-friendly platforms, provide tech walkthroughs, use captions for hearing impairment, offer phone alternative when needed. Don't assume technology access equals willingness — it's often a resource barrier."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "During a virtual session, the client's video freezes and audio drops repeatedly. What's the appropriate troubleshooting protocol?",
+      "options": [
+        {"id": "opt1", "text": "End the session immediately and reschedule"},
+        {"id": "opt2", "text": "Use chat as backup communication to check if they can hear you. If persistent, switch to audio-only (turn off video to save bandwidth) or move to phone. Prevention: have backup phone number and test tech before first session."},
+        {"id": "opt3", "text": "Keep trying to force the video to work for the entire session"},
+        {"id": "opt4", "text": "Blame the client for having bad internet"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Technical issues protocol: (1) Immediate: use CHAT as backup ('Can you hear me?'). (2) If persistent: 'Let's switch to audio-only' (turn off video to save bandwidth) OR 'Let's move to phone — I'll call you at [number].' (3) Prevention: always have backup phone number, send test link before first session. Staying flexible and calm when tech fails builds trust. Don't blame client (opt4) — internet access varies. Don't waste session forcing video (opt3). Graceful adaptation shows professionalism."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "13",
+  "title": "Technology Tools and Virtual Coaching - Quiz"
+}

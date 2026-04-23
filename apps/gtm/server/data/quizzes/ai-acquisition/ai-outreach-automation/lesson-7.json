@@ -1,0 +1,72 @@
+{
+  "lessonId": "7",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "A/B Testing AI Copy vs Hand-Written Baselines",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the minimum sample size per variant needed for a statistically meaningful A/B test of cold email?",
+      "options": [
+        { "id": "a", "text": "25 emails per variant" },
+        { "id": "b", "text": "50 emails per variant" },
+        { "id": "c", "text": "200+ emails per variant" },
+        { "id": "d", "text": "1,000 emails per variant" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "You need 200+ emails per variant to detect a 3-5% difference in reply rates with statistical confidence. Testing 50 emails per variant tells you nothing — the results are within the margin of error and could be random noise."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'Confounding Variable Problem' in A/B testing outreach?",
+      "options": [
+        { "id": "a", "text": "Testing too many variants at once" },
+        {
+          "id": "b",
+          "text": "If you test AI copy on Tier C leads and hand-written on Tier A, you're measuring list quality, not copy quality"
+        },
+        { "id": "c", "text": "Running tests during holidays" },
+        { "id": "d", "text": "Using different email tools for each variant" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The confounding variable problem occurs when leads aren't split randomly. Testing AI copy on low-quality leads and hand-written on high-quality leads measures list quality, not copy quality. You must control everything except the single variable you're testing."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "In Sarah's A/B test, how did hand-written copy compare to AI-generated copy?",
+      "options": [
+        { "id": "a", "text": "AI performed 2x better than hand-written" },
+        { "id": "b", "text": "They performed equally" },
+        {
+          "id": "c",
+          "text": "Hand-written got 14% replies vs AI's 6% — more than double"
+        },
+        { "id": "d", "text": "AI performed slightly better (9% vs 8%)" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Sarah's hand-written version got 14% replies while the AI version got 6%. She'd been leaving $12K in pipeline on the table monthly by trusting AI output without validating it. This illustrates why A/B testing against human baselines is essential — AI copy isn't always better."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should check your A/B test results 3 days into a 21-day sequence to make quick decisions.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. This is the 'Premature Conclusion Fallacy.' Checking results after 3 days of a 21-day sequence means you're measuring open rates, not reply rates. Most replies come from follow-up touches (touches 2-5). Wait for the full sequence to complete before measuring results."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design an A/B test comparing AI-generated copy to a hand-written baseline for your outreach. Specify: the variable you're testing, sample size per variant, how you'll ensure random assignment, and what metric you'll use to declare a winner.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response specifies a single variable being tested, plans for 200+ leads per variant, describes random assignment method, waits for full sequence completion, and uses reply rate (not open rate) as the primary metric. Look for understanding of statistical significance and avoiding common pitfalls."
+    }
+  ]
+}

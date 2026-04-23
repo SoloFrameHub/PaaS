@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "Authentic Selling: Your Voice, Your Way",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does copying aggressive sales tactics specifically backfire for creators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because aggressive tactics never work in any context"
+                },
+                {
+                    "id": "b",
+                    "text": "Because your audience detects the incongruence between your established authentic voice and the sudden hard-sell, which breaks trust and repels your best potential clients while attracting impulse buyers who churn"
+                },
+                {
+                    "id": "c",
+                    "text": "Because creators do not have enough followers to make aggressive tactics profitable"
+                },
+                {
+                    "id": "d",
+                    "text": "Because social media algorithms penalize aggressive sales language"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your audience chose you over louder alternatives because of your authentic voice. When you suddenly switch to aggressive tactics, they experience cognitive dissonance -- the misalignment between your usual content and your sales message. This repels your ideal clients (who valued your authenticity) and attracts impulsive buyers who are more likely to churn."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "On the Selling Style Spectrum, which position is described as 'primarily educational, where content naturally leads people to want to work with you'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Conversational Sell"
+                },
+                {
+                    "id": "b",
+                    "text": "Direct Sell"
+                },
+                {
+                    "id": "c",
+                    "text": "Soft Sell"
+                },
+                {
+                    "id": "d",
+                    "text": "Assertive Sell"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Soft Sell position is primarily educational -- you share knowledge, case studies, and results, and your content naturally leads people to want to work with you. You rarely make direct asks. It is best suited for educators, writers, and thought leaders with large audiences, though the risk is that revenue can be slow if you never make direct offers."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does Permission Statement #4 ('Silence is not humility. It is a disservice.') mean in the context of creator selling?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should post about your offer on social media every single day"
+                },
+                {
+                    "id": "b",
+                    "text": "If you genuinely believe your offer helps people, then staying quiet about it prevents the people who need it from finding you -- making silence a selfish act rather than a humble one"
+                },
+                {
+                    "id": "c",
+                    "text": "Humility is always bad in business and you should never be modest"
+                },
+                {
+                    "id": "d",
+                    "text": "You should feel guilty every time you are not actively selling"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This permission statement reframes the choice not to sell. If your offer genuinely helps people, then someone out there is struggling with the exact problem you solve. They cannot hire you if they do not know you exist. Staying quiet is not modesty -- it is withholding a solution from someone who needs it."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Complete the Authenticity Audit from the lesson (the five questions about Energy Source, Conflict Comfort, Follow-Up Style, Ask Style, and Proof Preference). Based on your answers, identify where you naturally sit on the Selling Style Spectrum. Then write a sales message for your primary offer using the template closest to your natural style (Educator's Offer, Problem-Solver's Offer, or Results-Led Offer), adapted in your own voice.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student genuinely assessed their natural style through the Authenticity Audit rather than picking the style they wish they had. The sales message should match the style they identified -- a natural Soft Seller should not write an Assertive message. Look for authentic voice and specificity about their actual offer, not a generic copy of the template. The message should feel like it could actually be sent to a real prospect."
+        }
+    ]
+}

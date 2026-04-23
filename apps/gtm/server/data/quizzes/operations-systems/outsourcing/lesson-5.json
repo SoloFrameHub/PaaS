@@ -1,0 +1,66 @@
+{
+  "lessonId": "5",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "SOP 3: Prospect Research Tasks",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much does it cost per prospect when a VA with AI assist does research at $6/hour?",
+      "options": [
+        { "id": "a", "text": "$0.50-1.00" },
+        { "id": "b", "text": "$1.50-3.00" },
+        { "id": "c", "text": "$5.00-10.00" },
+        { "id": "d", "text": "$15-20" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A trained VA researching at $6/hour with AI assist costs $1.50-3.00 per Prospect Brief. Compare to $19-38 worth of your time at $75/hour doing the same research yourself."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How much higher are reply rates for personalized outreach that references a specific trigger event?",
+      "options": [
+        { "id": "a", "text": "10-20% higher" },
+        { "id": "b", "text": "50% higher" },
+        { "id": "c", "text": "3-5x higher" },
+        { "id": "d", "text": "10x higher" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Personalized outreach referencing a specific trigger (job change, funding, product launch) generates 3-5x higher reply rates than generic messaging. The VA's job is to find those triggers and surface them."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How long should research take per prospect with AI assistance?",
+      "options": [
+        { "id": "a", "text": "2-3 minutes" },
+        { "id": "b", "text": "8-15 minutes" },
+        { "id": "c", "text": "30-45 minutes" },
+        { "id": "d", "text": "1 hour" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Target is 10-15 minutes per Prospect Brief without AI, 8-10 minutes with AI assistance. Above 20 minutes means the SOP isn't specific enough or the prospect is too obscure to research efficiently."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A useful Prospect Brief only needs the prospect's name, title, and company to be valuable for outreach.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. A brief containing only name, title, and company doesn't earn its research time — you could find that in 30 seconds. The value is in the trigger event, the talking point, and the ICP fit score — things that require synthesizing multiple sources."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "How much time do you currently spend on prospect research per contact? What specific trigger events would you want your VA to find? How would standardized Prospect Briefs change your outreach quality?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response quantifies their current research time per prospect, identifies specific trigger events relevant to their ICP (job changes, funding rounds, product launches), and explains how standardized briefs would improve outreach personalization and reply rates."
+    }
+  ]
+}

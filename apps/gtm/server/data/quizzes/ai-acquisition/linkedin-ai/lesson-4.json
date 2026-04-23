@@ -1,0 +1,134 @@
+{
+    "lessonId": "4",
+    "courseId": "linkedin-ai",
+    "sectionId": "ai-acquisition",
+    "title": "AI Engagement Safety & Strategy",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which of these AI engagement workflows is SAFEST from a LinkedIn ban perspective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Use Expandi to auto-comment on 100 posts per day with personalized templates"
+                },
+                {
+                    "id": "b",
+                    "text": "Use Engage AI to suggest comments, edit each one manually, then click Post yourself"
+                },
+                {
+                    "id": "c",
+                    "text": "Use ChatGPT to generate 50 comments in bulk, then copy-paste them all at once"
+                },
+                {
+                    "id": "d",
+                    "text": "Use LinkedIn's native 'Suggest a reply' feature without editing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Engage AI suggests comments but requires manual posting (Yellow/Caution zone). Expandi is autonomous automation (Red/Risky). Bulk copy-pasting triggers velocity alerts. LinkedIn's native feature is safe but limited in quality."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the SERVE framework, what makes a comment high-quality?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's short, uses emojis, and praises the author"
+                },
+                {
+                    "id": "b",
+                    "text": "It references something specific, shares an experience, and asks a relevant question"
+                },
+                {
+                    "id": "c",
+                    "text": "It's written by AI and posted without editing"
+                },
+                {
+                    "id": "d",
+                    "text": "It includes a link to your product or service"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "SERVE = Specific reference, Experience, Relevant question, Value-add, Encourage. Generic praise and product links are low-quality. AI must be edited for authenticity."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended daily volume for safe LinkedIn commenting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10-15 quality comments spread across the day"
+                },
+                {
+                    "id": "b",
+                    "text": "50-100 comments posted in a single 10-minute session"
+                },
+                {
+                    "id": "c",
+                    "text": "200+ comments using automation tools"
+                },
+                {
+                    "id": "d",
+                    "text": "5 comments per week maximum"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "10-15 quality comments per day, spread across hours, is safe and effective. 50-100 in one session triggers velocity alerts. 200+ with automation = ban risk. 5/week is too low for meaningful engagement."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of using AI summarizers for prospect research before commenting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They eliminate the need to read the prospect's posts"
+                },
+                {
+                    "id": "b",
+                    "text": "They reduce research time from 10-15 minutes to 2-3 minutes per prospect"
+                },
+                {
+                    "id": "c",
+                    "text": "They automatically post comments based on the summary"
+                },
+                {
+                    "id": "d",
+                    "text": "They guarantee a response from the prospect"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI summarizers compress research time while maintaining context quality. You still need to read the summary and craft a personalized comment. They don't automate posting or guarantee responses."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the Engagement Ladder strategy, when should you send a connection request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediately after viewing their profile"
+                },
+                {
+                    "id": "b",
+                    "text": "After commenting on 1-2 of their posts and seeing some engagement back"
+                },
+                {
+                    "id": "c",
+                    "text": "After sending them a cold DM"
+                },
+                {
+                    "id": "d",
+                    "text": "Never — wait for them to connect with you first"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Engagement Ladder: View → Like → Comment → (they engage back) → Connect with context. Warming up the relationship first increases acceptance rate from 15-25% to 30-50%."
+        }
+    ]
+}

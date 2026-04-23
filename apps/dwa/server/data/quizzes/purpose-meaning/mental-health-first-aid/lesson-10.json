@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "15-year-old mentor says they're transgender, asks you not to tell unsupportive parents, mentions 'things would be easier if I wasn't here.' What do you do?",
+      "options": [
+        {"id": "opt1", "text": "Promise secret, wait to see if they bring up suicidal thoughts again"},
+        {"id": "opt2", "text": "Ask directly about suicide. If yes, assess urgency, call Trevor Project/988, involve supportive adults. Honor identity while ensuring safety."},
+        {"id": "opt3", "text": "Tell them being transgender is phase, they'll feel better accepting biological sex"},
+        {"id": "opt4", "text": "Immediately tell parents despite request not to"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "'Easier if I wasn't here' = suicide warning sign. Ask directly: 'Are you thinking about killing yourself?' If yes, call Trevor Project (LGBTQ+ crisis: 1-866-488-7386, text START to 678-678) or 988. Don't out to unsupportive parents BUT involve supportive adult (school counselor, affirming family). ONE accepting adult reduces suicide risk 40%. Never promise secrecy when safety at risk. 'Phase/biological sex' language is conversion therapy (harmful, increases suicide risk)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the confidentiality limits when working with minors in MHFA?",
+      "options": [
+        {"id": "opt1", "text": "Absolute confidentiality — never break privacy with youth"},
+        {"id": "opt2", "text": "Offer privacy but NOT absolute confidentiality; safety (suicide, abuse, immediate danger) overrides privacy; be transparent upfront about limits"},
+        {"id": "opt3", "text": "Tell parents everything the youth shares"},
+        {"id": "opt4", "text": "Minors have no privacy rights"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Confidentiality with minors: offer privacy BUT safety overrides. Must break confidence if: suicidal thoughts with plan/intent, abuse/neglect (mandatory reporting), immediate danger. Be transparent UPFRONT: 'What you tell me is private UNLESS I'm worried about your safety or someone is hurting you — then I need to get help.' Don't promise absolute confidentiality (can't keep). Don't tell parents everything (breaks trust). Privacy matters but safety comes first."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why do LGBTQ+ youth face higher mental health risks, and what is the most protective factor?",
+      "options": [
+        {"id": "opt1", "text": "Being LGBTQ+ itself causes mental illness; no protective factors exist"},
+        {"id": "opt2", "text": "Minority stress (discrimination, family rejection, bullying) causes 2-3x higher depression/anxiety, 4x higher suicide attempts; ONE accepting adult reduces suicide risk 40%"},
+        {"id": "opt3", "text": "LGBTQ+ youth face same risks as heterosexual youth"},
+        {"id": "opt4", "text": "Only therapy can reduce LGBTQ+ youth mental health risks"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "LGBTQ+ youth: 2-3x higher depression/anxiety, 4x higher suicide attempts, 40% trans youth attempted suicide. Root cause: minority stress (discrimination, family rejection, bullying) NOT sexual orientation/gender identity itself. MOST PROTECTIVE FACTOR: ONE accepting adult reduces suicide risk 40%. Your acceptance MATTERS. Conversion therapy is harmful/discredited. Affirming support is evidence-based protective factor."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "When do you have a mandatory reporting obligation for child abuse, and what should you do?",
+      "options": [
+        {"id": "opt1", "text": "No mandatory reporting obligations for MHFA responders"},
+        {"id": "opt2", "text": "Report if suspect: physical/sexual abuse, neglect, emotional abuse. Call CPS/state hotline. Tell child it's not their fault. Do NOT confront alleged abuser or investigate yourself."},
+        {"id": "opt3", "text": "Only report if you witness abuse directly"},
+        {"id": "opt4", "text": "Confront the alleged abuser first to get their side of story"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Mandatory reporting applies if you SUSPECT (not just witness): physical/sexual abuse, neglect, emotional abuse by parent/caregiver. CALL Child Protective Services (CPS) or state hotline (national: 1-800-422-4453). Tell child: 'You were right to tell me. Not your fault. I'm getting you help.' Do NOT confront alleged abuser (dangerous, can escalate). Do NOT investigate (that's CPS role). Your role: bridge to protection. Laws vary by state/role, but err on side of reporting when child safety at risk."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "According to research, when does most lifetime mental illness begin?",
+      "options": [
+        {"id": "opt1", "text": "Most mental illness begins in late adulthood (60+)"},
+        {"id": "opt2", "text": "Half of all lifetime mental illness begins by age 14, three-quarters by age 24"},
+        {"id": "opt3", "text": "Mental illness onset is evenly distributed across lifespan"},
+        {"id": "opt4", "text": "Childhood mental illness always resolves by adulthood"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research: HALF of all lifetime mental illness begins by age 14, THREE-QUARTERS by age 24. This highlights critical importance of early identification and intervention in youth. Adolescent brain development (prefrontal cortex not fully mature until ~25) affects risk-taking, emotion regulation. Early treatment improves long-term outcomes. Youth need specialized MHFA approaches respecting developmental stage."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "10",
+  "title": "Supporting Youth and Adolescent Mental Health - Quiz"
+}

@@ -1,0 +1,77 @@
+import { ai, gemini15Pro } from '../config';
+import { z } from 'zod';
+
+const RoleplayInput = z.object({
+    discPersonality: z.enum(['D', 'I', 'S', 'C']),
+    scenario: z.string(),
+    salesMethodology: z.enum(['SPIN', 'MEDDIC', 'CHALLENGER']),
+    userMessage: z.string(),
+    conversationHistory: z.array(z.object({
+        role: z.enum(['user', 'assistant']),
+        content: z.string(),
+    })),
+    founderContext: z.object({
+        businessName: z.string(),
+        valueProposition: z.string().nullable(),
+        icp: z.string().nullable(),
+    }),
+});
+
+export type RoleplayInput = z.infer<typeof RoleplayInput>;
+
+export const salesRoleplayFlow = ai.defineFlow(
+    {
+        name: 'salesRoleplay',
+        inputSchema: RoleplayInput,
+    },
+    async (input: RoleplayInput) => {
+        const discTraits = {
+            D: 'Direct, results-oriented, impatient. Asks "What can this do for me?" Challenges assertions, respects strength.',
+            I: 'Enthusiastic, people-oriented, easily distracted. Wants social proof and relationships. Makes emotional decisions.',
+            S: 'Patient, reliable, resistant to change. Needs reassurance and risk mitigation. Decides slowly.',
+            C: 'Analytical, detail-oriented, risk-averse. Asks technical questions. Needs data and proof.',
+        };
+
+        const historyText = input.conversationHistory
+            .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'SELLER' : 'PROSPECT'}: ${m.content}`)
+            .join('\n');
+
+        const result = await ai.generate({
+            model: gemini15Pro,
+            prompt: `You are playing a ${input.discPersonality}-type prospect in a sales roleplay.
+
+PERSONALITY: ${discTraits[input.discPersonality as keyof typeof discTraits]}
+
+SCENARIO: ${input.scenario}
+
+SELLER'S BUSINESS:
+- Company: ${input.founderContext.businessName}
+- Value Prop: ${input.founderContext.valueProposition || 'Not specified'}
+- Target Customer: ${input.founderContext.icp || 'Not specified'}
+
+CONVERSATION:
+${historyText}
+
+SELLER (using ${input.salesMethodology}): ${input.userMessage}
+
+TASK: Respond as this ${input.discPersonality} prospect would.
+
+RULES:
+1. Stay completely in character
+2. React realistically to their approach
+3. Raise objections your personality type would raise
+4. Give subtle buying signals if they handle you well
+5. Keep responses 2-4 sentences (real prospects don't monologue)
+6. If they're doing well, warm up gradually
+7. If they're struggling, get more resistant
+
+Respond now as the prospect:`,
+            config: {
+                temperature: 0.8,
+                maxOutputTokens: 500,
+            },
+        });
+
+        return result.text;
+    }
+);

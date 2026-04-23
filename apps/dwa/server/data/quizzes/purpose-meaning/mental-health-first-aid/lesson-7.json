@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Marcus has been severely depressed for months. Yesterday he seemed suddenly upbeat and said 'Don't worry about me — everything will be fine soon.' Today he gave you his treasured guitar. What should you do?",
+      "options": [
+        {"id": "opt1", "text": "Feel relieved — he's finally getting better! Give him space to recover."},
+        {"id": "opt2", "text": "Ask directly 'Are you thinking about suicide?' Assess for plan/intent/means. If yes, call 988/911 and stay with him."},
+        {"id": "opt3", "text": "Accept the guitar as a gift and tell him you're glad he's doing better"},
+        {"id": "opt4", "text": "Tell him he needs to see a therapist next week when he has time"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Sudden calm after severe depression + giving away treasured possession = HIGH-RISK suicide warning signs. This may indicate resolved ambivalence (decision to attempt suicide brings relief/calm). Ask directly: 'Are you thinking about suicide?' Assess plan/intent/means. Call 988 or 911 if immediate risk. Do NOT assume he's 'better' — this combination requires IMMEDIATE intervention. Do not leave him alone. 'Next week' is too late for acute crisis."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which of the following is an example of toxic positivity that should be AVOIDED when supporting someone with depression?",
+      "options": [
+        {"id": "opt1", "text": "'This sounds really hard. I'm here for you.'"},
+        {"id": "opt2", "text": "'Just think positive! Happiness is a choice — you have so much to be grateful for.'"},
+        {"id": "opt3", "text": "'Depression is real and treatable. It's not your fault.'"},
+        {"id": "opt4", "text": "'You don't have to force positivity. It's okay to not be okay right now.'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Toxic positivity ('just think positive,' 'happiness is a choice,' 'count your blessings') dismisses real suffering and increases shame by implying the person isn't trying hard enough or is choosing to be depressed. This invalidates their experience. Options 1, 3, and 4 are supportive, validating responses that acknowledge depression's reality without forcing cheerfulness. Effective support validates difficulty without minimizing."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is behavioral activation, and what does research show about its effectiveness for depression?",
+      "options": [
+        {"id": "opt1", "text": "A medication that activates neurotransmitters; weak evidence for effectiveness"},
+        {"id": "opt2", "text": "Encouraging small, manageable activities that provide mastery or pleasure; STRONG evidence showing comparable efficacy to antidepressants for mild-moderate depression"},
+        {"id": "opt3", "text": "Forcing people to exercise vigorously every day; no credible evidence"},
+        {"id": "opt4", "text": "Telling people to 'snap out of it' and get active; harmful approach"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Behavioral activation is a core CBT component involving encouraging small, manageable activities that provide mastery (sense of accomplishment) or pleasure. Research shows STRONG evidence — behavioral activation has comparable efficacy to antidepressant medications for mild-to-moderate depression. In MHFA, this means gently encouraging tiny steps: '5-minute walk?' or 'What did you used to enjoy?' NOT demanding big changes or 'snap out of it.' Start small, validate difficulty, celebrate wins."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "How does depression present differently in men compared to the classic presentation?",
+      "options": [
+        {"id": "opt1", "text": "Men are more likely to report sadness and cry more than women"},
+        {"id": "opt2", "text": "Men are more likely to present with irritability, anger, aggression, physical symptoms, and risk-taking behaviors rather than sadness"},
+        {"id": "opt3", "text": "Depression does not affect men — it's primarily a women's condition"},
+        {"id": "opt4", "text": "Men's depression always resolves on its own without treatment"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Men are less likely to report sadness and MORE likely to present with: irritability/anger/aggression (instead of sadness), physical symptoms (back pain, headaches), risk-taking behaviors (reckless driving, substance use), work overload/withdrawal, and lower help-seeking due to masculinity norms. This can lead to underdiagnosis. MHFA approach: normalize that depression affects everyone, frame treatment as strength, ask about anger/irritability as depression symptoms. Men absolutely need (and benefit from) treatment — depression is not gender-specific."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "According to research, what is the treatment gap for depression in the United States?",
+      "options": [
+        {"id": "opt1", "text": "Nearly 100% of people with depression receive adequate treatment"},
+        {"id": "opt2", "text": "Only ~35% of people with depression receive minimally adequate treatment, despite STRONG evidence for treatment effectiveness"},
+        {"id": "opt3", "text": "Depression is untreatable, so the treatment gap doesn't matter"},
+        {"id": "opt4", "text": "80% of people with depression receive excellent care"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Despite STRONG evidence that depression is highly treatable (CBT, behavioral activation, antidepressants all have NNT = 3-5 for response), only ~35% of people with depression receive minimally adequate treatment. This massive treatment gap is due to barriers: cost, stigma, lack of access, hopelessness, not recognizing symptoms. MHFA's role is helping close this gap by: recognizing depression, normalizing treatment, addressing barriers concretely, and facilitating access. Your support can make the difference between someone suffering alone and accessing effective help."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "7",
+  "title": "Supporting Individuals with Depression - Quiz"
+}

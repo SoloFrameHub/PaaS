@@ -1,0 +1,87 @@
+{
+  "lessonId": "6",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "AI Personalization: In-Tool vs External LLMs",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the four levels of the Personalization Quality Ladder?",
+      "options": [
+        { "id": "a", "text": "Basic, Standard, Premium, Enterprise" },
+        {
+          "id": "b",
+          "text": "Level 1: Merge Tags, Level 2: AI Template, Level 3: AI Research-Based, Level 4: Human-Crafted"
+        },
+        { "id": "c", "text": "Name, Company, Industry, Pain Point" },
+        {
+          "id": "d",
+          "text": "Generic, Semi-personalized, Personalized, Hyper-personalized"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four levels are: Level 1 Merge Tags (2-3% reply rate, $0), Level 2 AI Template using in-tool AI (3-5% reply rate, $0), Level 3 AI Research-Based using external LLMs with enriched data (5-10% reply rate, $0.02-0.05), and Level 4 Human-Crafted (10-25% reply rate, 5-15 minutes each)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the fundamental difference between in-tool AI and external LLM personalization?",
+      "options": [
+        { "id": "a", "text": "In-tool AI is always better quality" },
+        {
+          "id": "b",
+          "text": "In-tool AI is optimized for speed and safety; external LLMs are optimized for quality and flexibility"
+        },
+        {
+          "id": "c",
+          "text": "External LLMs are free while in-tool AI costs extra"
+        },
+        { "id": "d", "text": "There is no meaningful difference" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In-tool AI (like Instantly's AI Writer) is optimized for speed and safety — it generates quickly from basic data. External LLMs (like GPT-4 via Clay) are optimized for quality and flexibility — they use enriched data for deeper personalization but take longer and cost more per email."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the smart approach to using different personalization levels across your prospect list?",
+      "options": [
+        { "id": "a", "text": "Use Level 4 (human-crafted) for everyone" },
+        {
+          "id": "b",
+          "text": "Use Level 1 (merge tags) for everyone to save time"
+        },
+        {
+          "id": "c",
+          "text": "Use different levels for different tiers — Level 4 for top 10%, Level 3 for middle 40%, Level 2 for bottom 50%"
+        },
+        {
+          "id": "d",
+          "text": "Always use external LLMs regardless of prospect tier"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The smart play is matching personalization depth to prospect value. Top prospects get human-crafted attention (Level 4), middle-tier gets AI research-based personalization (Level 3), and lower-tier gets AI template or merge tag personalization (Level 2). This avoids both the laziness trap (Level 1 for everyone) and the burnout trap (Level 4 for everyone)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The best outreach systems use only one type of AI personalization (either in-tool or external LLM) consistently across all prospects.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The best outreach systems use both in-tool and external LLM personalization in different parts of the workflow. In-tool AI handles speed tasks (quick first-line generation for lower tiers), while external LLMs handle quality tasks (deep research-based personalization for top prospects)."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "For your current outreach, which personalization level do you use most often? Calculate the cost and time difference if you moved your top 20% of prospects from your current level to Level 3 or 4. Would the expected reply rate improvement justify the investment?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies their current personalization level with specifics, calculates realistic cost/time differences for upgrading their top tier, and makes a data-driven argument about whether the improvement justifies the investment based on expected reply rate changes and deal values."
+    }
+  ]
+}

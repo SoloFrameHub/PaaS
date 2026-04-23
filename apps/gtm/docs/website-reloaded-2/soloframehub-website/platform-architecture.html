@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#020408">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.iconify.design; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://forms.soloframehub.com;">
+        <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="/src/css/fonts.css">
+        <title>AI-Native Course Platform Architecture | Why We Built Our Own LMS | SoloFrameHub</title>
+        <meta name="description" content="Why SoloFrameHub built an AI-native course platform instead of using Teachable. Living curriculum, 3D persona roleplay, cohort sprints with accountability pods, NodeBB community, and business artifacts — not badges.">
+        <meta name="keywords" content="AI course platform, custom LMS architecture, NodeBB cohort learning, solo founder education platform, AI sales coaching platform, living curriculum, business artifacts">
+        <!-- Site Icon -->
+        <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://soloframehub.com/platform-architecture.html"/>
+        <link rel="alternate" hreflang="en" href="https://soloframehub.com/platform-architecture.html"/>
+        <link rel="alternate" hreflang="es" href="https://soloframehub.com/es/platform-architecture.html"/>
+        <link rel="alternate" hreflang="x-default" href="https://soloframehub.com/platform-architecture.html"/>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://soloframehub.com/platform-architecture.html">
+        <meta property="og:title" content="AI-Native Course Platform Architecture | SoloFrameHub">
+        <meta property="og:description" content="AI-native from the ground up. Living curriculum, cohort sprints, accountability pods, and business artifacts. Built by a bootstrapper, for bootstrappers.">
+        <meta property="og:image" content="https://soloframehub.com/assets/images/academy/caa-student-dashboard.webp">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://soloframehub.com/platform-architecture.html">
+        <meta property="twitter:title" content="AI-Native Course Platform Architecture | SoloFrameHub">
+        <meta property="twitter:description" content="AI-native from the ground up. Living curriculum, cohort sprints, accountability pods, and business artifacts.">
+        <meta property="twitter:image" content="https://soloframehub.com/assets/images/academy/caa-student-dashboard.webp">
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "AI-Native Course Platform Architecture",
+            "description": "Why SoloFrameHub built an AI-native course platform with living curriculum, cohort sprints, accountability pods, and business artifacts instead of using traditional LMS platforms.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "SoloFrameHub",
+              "url": "https://soloframehub.com"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Mike Sullivan",
+              "jobTitle": "Founder & Creator",
+              "description": "30+ years enterprise tech and sales leadership. VP at Intel-funded startups. $3.7M+ enterprise deals. 325% quota attainment. 2 wireless security patents. Author, entrepreneur, and sales practitioner.",
+              "image": "https://soloframehub.com/assets/images/academy/mike-sullivan-author-creator-solo-founder.webp",
+              "sameAs": [
+                "https://linkedin.com/in/michaeljsullivan",
+                "https://x.com/soloframehub"
+              ]
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soloframehub.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Platform Architecture",
+                "item": "https://soloframehub.com/platform-architecture.html"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why did SoloFrameHub build its own course platform instead of using Teachable or Kajabi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Traditional LMS platforms optimize for content delivery — static videos, quizzes, and badges. SoloFrameHub needed AI-native architecture where the AI is the teaching engine: personalized coaching, 3D persona roleplay, assessment-driven onboarding, and living curriculum that updates from learner signals. This couldn't be bolted onto an existing platform."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do cohort sprints and accountability pods work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Monthly 4-week cohort sprints rotate through tracks on a 6-month cycle. Each sprint groups 8-25 learners, who are further organized into accountability pods of 4-5 founders. Pods collaborate on real work — peer-reviewing ICPs, co-developing scripts, practicing roleplay together — with a structured weekly rhythm: Monday kickoff, Wednesday peer reviews, Friday wins and real talk."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes SoloFrameHub's AI different from chatbot add-ons?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SoloFrameHub's AI maintains full context of your business across every interaction. It uses RAG to reference your uploaded pitch decks, proposals, and documents. The 3D persona system creates realistic buyers matching your target market (founder category × industry × DISC overlay). This isn't a chatbot answering FAQs — it's a context-aware coaching engine."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why NodeBB for community instead of Circle.so or Mighty Networks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Full data ownership (self-hosted), $0/month marginal cost, complete API integration via Write API for automated cohort lifecycle management, and no platform risk. SSO integration with Firebase auth means seamless login. As a bootstrapped platform, we don't pay per-member fees to a community SaaS."
+                }
+              }
+            ]
+          }
+        ]
+        </script>
+        <script async defer src='https://app.visitortracking.com/assets/js/tracer.js'></script>
+        <script>
+        function init_tracer() {
+            var tracer = new Tracer({
+                websiteId: "84fd60c3-2e70-4228-afaa-720e209dbdd3",
+                async: true,
+                debug: false
+            });
+        }
+        </script>
+        <style>body { font-family: 'Inter', sans-serif; } .font-serif-custom { font-family: 'Newsreader', serif; } .gradient-border { position: relative; background: linear-gradient(#020408, #020408) padding-box,
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) border-box; border: 1px solid transparent; }</style>
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js" integrity="sha384-6w0TbqQyJ5y8F+7HAVTitSSVeSDGefw81KA7qo6lKUX7JfU8HX6w8j2qRf1PMZZ8f" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body class="bg-[#020408] min-h-screen flex flex-col items-center selection:bg-indigo-500/30 selection:text-indigo-200 text-zinc-300">
+        <!-- Background Grid -->
+        <div class="fixed inset-0 w-full h-full pointer-events-none z-0 flex justify-between px-4 md:px-12 opacity-10">
+            <div class="w-px h-full bg-white/5"></div>
+            <div class="w-px h-full bg-white/5 hidden sm:block"></div>
+            <div class="w-px h-full bg-white/5 hidden md:block"></div>
+            <div class="w-px h-full bg-white/5"></div>
+        </div>
+        <!-- Main Container -->
+        <main class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 backdrop-blur-xl lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+            <!-- Navigation -->
+            <nav class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-6 md:px-12 flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-4"> <img src="assets/images/soloframehub-logo-sm.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-12 w-auto object-contain"> </a>
+                <div class="hidden md:flex items-center gap-10">
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Books menu" aria-expanded="false">Books</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl"><a href="solo-founders-ai-customer-acquisition-playbook.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Playbook</a><a href="solo-founders-ai-60-day-roadmap-book.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Revolution</a><a href="8-gtm-frameworks-compounding-growth-book.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">AI Dominance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Academies menu" aria-expanded="false">Academies</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl"><a href="solo-founders-ai-startup-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Startup Academy</a><a href="solo-founders-ai-customer-acquisition-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Lead Generation & Sales Academy</a><a href="solo-founders-ai-gtm-academy.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">GTM Academy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative px-2 py-1">
+                        <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Platform menu" aria-expanded="false">Platform</button>
+                        <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                                <a href="community-forums.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Community</a>
+                                <a href="platform-architecture.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Course Platform</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://content.soloframehub.com" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Blog</a><a href="es/platform-architecture.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">ES</a>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="solo-founders-ai-customer-acquisition-academy.html" class="hidden sm:flex group relative px-8 py-4 rounded-full bg-zinc-900 border border-white/10 text-base font-medium text-white hover:bg-zinc-800 transition-all items-center gap-3">
+                    Start Learning  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg> </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-zinc-300 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-0 z-[100] hidden flex-col p-8" style="background-color: #06050B !important;">
+                <div class="flex justify-between items-center mb-12">
+                    <div class="flex items-center gap-4"> 
+                        <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50" class="h-10 w-auto object-contain"> 
+                    </div>
+                    <button id="close-menu" aria-label="Close mobile menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-8 overflow-y-auto">
+                    <div class="space-y-4">
+                        <h3 class="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Academies</h3>
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Lead Generation & Sales Academy</a>
+                        <a href="solo-founders-ai-startup-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">Startup Academy</a>
+                        <a href="solo-founders-ai-gtm-academy.html" class="block text-2xl font-serif-custom text-white mobile-link">GTM Academy</a>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-[10px] font-bold text-zinc-300 uppercase tracking-widest">Books</h3>
+                        <a href="solo-founders-ai-customer-acquisition-playbook.html" class="block text-2xl font-serif-custom text-white mobile-link">AI Playbook</a>
+                        <a href="solo-founders-ai-60-day-roadmap-book.html" class="block text-2xl font-serif-custom text-white mobile-link">AI Revolution</a>
+                        <a href="8-gtm-frameworks-compounding-growth-book.html" class="block text-2xl font-serif-custom text-white mobile-link">AI Dominance</a>
+                    </div>
+                    <div class="pt-8 border-t border-white/5 space-y-6">
+                        <a href="https://sales-suite.soloframehub.com/" class="block text-lg text-zinc-300 mobile-link">Apps</a>
+                        <a href="platform-architecture.html" class="block text-lg text-zinc-300 mobile-link">Platform</a>
+                        <a href="community-forums.html" class="block text-lg text-zinc-300 mobile-link">Community</a>
+                        <a href="https://content.soloframehub.com" class="block text-lg text-zinc-300 mobile-link">Blog</a><a href="es/platform-architecture.html" class="block text-lg text-zinc-300 mobile-link">ES</a>
+                    </div>
+                </nav>
+                <div class="mt-auto pt-8">
+                    <a href="solo-founders-ai-customer-acquisition-academy.html" class="w-full flex items-center justify-center h-14 rounded-full bg-white text-black font-bold mobile-link">
+                    Get Started — $49/mo </a>
+                </div>
+            </div>
+            <!-- Hero Section -->
+            <section class="px-6 md:px-12 py-16 md:py-24 border-b border-white/5">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-medium mb-8">
+                        <span class="iconify" data-icon="lucide:sparkles" data-width="16"></span>
+                        Not Another Course Platform
+                    </div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-sans font-bold text-white mb-6 leading-tight tracking-tight">
+                    Why I Built This Instead of Using Teachable </h1>
+                    <p class="text-lg md:text-xl text-zinc-300 max-w-3xl mx-auto leading-relaxed">
+                    Most course platforms were built for a different era. Record videos, upload them, drip content on a
+                    schedule, hand out completion badges. That model worked when "online course" meant replicating
+                    a classroom experience digitally. </p>
+                </div>
+            </section>
+            <!-- Quick Navigation Control Center -->
+            <nav id="jump-nav" class="sticky top-[88px] z-40 border-b border-white/5 bg-[#020408]/95 backdrop-blur-md px-6 py-6 transition-all duration-300">
+                <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                    <a href="#problem" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" x2="12" y1="8" y2="12"/>
+                            <line x1="12" x2="12.01" y1="16" y2="16"/>
+                        </svg>
+                        The Problem </a>
+                    <a href="#ai-native" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:cpu" data-width="20"></span>
+                        AI Architecture </a>
+                    <a href="#curriculum" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:refresh-cw" data-width="20"></span>
+                        Living Curriculum </a>
+                    <a href="#cohort" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:users" data-width="20"></span>
+                        Cohort Learning </a>
+                    <a href="#community" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:message-circle" data-width="20"></span>
+                        Community </a>
+                    <a href="#courses" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:layout-grid" data-width="20"></span>
+                        Courses </a>
+                    <a href="#artifacts" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:file-text" data-width="20"></span>
+                        Artifacts </a>
+                    <a href="#comparison" class="jump-link group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all"> <span class="iconify text-zinc-300 group-hover:text-sky-400 transition-colors" data-icon="lucide:git-compare" data-width="20"></span>
+                        Comparison </a>
+                </div>
+            </nav>
+            <!-- Problem Statement -->
+            <section id="problem" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <h2 class="font-sans font-serif-custom mb-6 text-2xl text-white md:text-3xl">The Problem I Kept Running Into </h2>
+                        <div class="space-y-4 text-zinc-300 leading-relaxed">
+                            <p>I built five courses on LearnWorlds using custom Interactive HTML5 lessons&#8212;coded in my editor, then pasted into their platform. It worked better than producing videos or static quizzes, but it exposed the fundamental problem:</p>
+                            <p>I was spending more time wrestling with a proprietary SaaS platform than actually helping founders build their businesses.</p>
+                            <p>Every content update meant navigating someone else&apos;s system. Every interactive element required workarounds. And even with all that effort, students still weren&apos;t getting what they actually needed: real-time AI coaching that generates usable artifacts, adapts to their specific challenges, and measures actual business outcomes&#8212;not just lesson completions.</p>
+                            <p>Traditional LMS platforms optimize for content delivery. Solo founders need a system that helps them build while they learn.</p>
+                            <p class="text-white font-medium pt-4">So I built what I needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- AI-Native Architecture -->
+            <section id="ai-native" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        AI-Native from Day One </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        This isn't AI bolted onto a traditional course platform. The AI is the teaching engine. </p>
+                        <p class="text-lg text-zinc-300">Built on a model-agnostic AI architecture that selects the right model for every task, SoloFrameHub's real advantage isn't which LLM it calls&mdash;it's the thousands of pages of curated research, frameworks, and context that power every interaction. The AI coaching system uses RAG to understand your pitch decks, business plans, proposals, and emails&mdash;generating personalized frameworks, versioning artifacts as your business evolves, and connecting every lesson to doing real work.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Traditional Platforms -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="flex items-start gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m15 9-6 6"/>
+                                    <path d="m9 9 6 6"/>
+                                </svg>
+                                <h3 class="text-lg font-medium text-white">Traditional Platforms</h3>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Pre-recorded video content
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Chatbot add-ons for Q&A
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>One-size-fits-all curriculum
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Manual content updates
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-500">—</span>Completion badges
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- SoloFrameHub -->
+                        <div class="gradient-border bg-sky-500/5 rounded-2xl p-6 border-sky-500/20">
+                            <div class="flex items-start gap-3 mb-4">
+                                <span class="iconify text-sky-400 mt-1" data-icon="lucide:check-circle" data-width="24"></span>
+                                <h3 class="text-lg font-medium text-white">SoloFrameHub</h3>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>AI-generated, personalized content
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>AI coaching throughout every
+                                    lesson
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Context-aware to your business
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Self-updating from learner signals
+                                </li>
+                                <li class="flex gap-3"><span class="text-sky-400">—</span>Business artifacts you can use
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CTA #1 -->
+                    <div class="mt-12 max-w-2xl mx-auto gradient-border bg-sky-500/5 border-sky-500/20 rounded-3xl p-8 flex flex-col items-center text-center gap-6">
+                        <p class="text-zinc-300 text-lg">See the AI coaching in action — 3 tracks live now, 4 more launching March 2026</p>
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="px-8 py-4 rounded-full bg-white text-black font-bold text-sm hover:bg-zinc-200 transition-all flex items-center gap-2 group">
+                        Explore the Academy <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                    </div>
+                    <div class="mt-12 gradient-border bg-indigo-500/5 rounded-2xl p-8 border-indigo-500/20">
+                        <div class="flex items-start gap-4">
+                            <span class="iconify text-indigo-400 mt-1" data-icon="lucide:zap" data-width="24"></span>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">What This Means for You</h3>
+                                <p class="text-sm text-zinc-300 leading-relaxed">When you practice a sales call, the AI
+                                orchestrates a multi-turn conversation with personality-specific responses. When you
+                                build an ICP, it evaluates your work against proven frameworks and suggests
+                                improvements. When you upload a pitch deck, it analyzes each slide and provides specific
+                                feedback. The infrastructure supports streaming responses, structured outputs, and
+                                persistent context across sessions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Living Curriculum -->
+            <section id="curriculum" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        A Curriculum That Updates Itself </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Static courses decay. Markets change, tools evolve, what worked last year might be outdated
+                        today. </p>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Five Signal Sources Driving Continuous Improvement </h3>
+                        <!-- Living Curriculum Diagram -->
+                        <div class="mb-12 py-8 bg-zinc-900/40 rounded-2xl border border-white/5 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#38bdf8 0.5px, transparent 0.5px); background-size: 24px 24px;">
+</div>
+                            <div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full px-8">
+                                    <div class="space-y-4">
+                                        <div class="gradient-border bg-sky-500/10 p-4 rounded-xl border-sky-500/20">
+                                            <p class="text-xs font-semibold text-sky-400 uppercase tracking-widest mb-1">
+                                            Source</p>
+                                            <p class="text-sm text-white">Manuscript Updates</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2 pl-4 border-l-2 border-sky-500/20">
+                                            <div class="text-[10px] text-zinc-300 uppercase tracking-tighter">Aggregating
+                                                Signals
+</div>
+                                            <div class="text-[10px] text-zinc-300">Completion Patterns</div>
+                                            <div class="text-[10px] text-zinc-300">AI Conversations</div>
+                                            <div class="text-[10px] text-zinc-300">Forum Discussions</div>
+                                            <div class="text-[10px] text-zinc-300">Assessment Data</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center">
+                                        <div class="w-32 h-32 rounded-full bg-sky-500/10 border-2 border-sky-500/30 flex items-center justify-center relative">
+                                            <div class="absolute inset-0 rounded-full border border-sky-400/20 animate-ping opacity-20">
+</div>
+                                            <span class="iconify text-sky-400" data-icon="lucide:brain" data-width="48"></span>
+                                        </div>
+                                        <p class="mt-4 text-sm font-medium text-white">Content Engine</p>
+                                        <p class="text-[10px] text-zinc-400">Regenerating Lessons</p>
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex flex-col items-center">
+                                    <span class="iconify text-sky-500/40" data-icon="lucide:arrow-down" data-width="24"></span>
+                                    <div class="mt-4 gradient-border bg-emerald-500/10 p-4 rounded-xl border-emerald-500/20 text-center">
+                                        <p class="text-sm font-medium text-white">Improved Learner Outcomes</p>
+                                        <p class="text-[10px] text-emerald-400">Continuous Feedback Loop</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-emerald-400" data-icon="lucide:trending-down" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Completion Patterns</h4>
+                                    <p class="text-sm text-zinc-300">When 40% of learners drop off at the same lesson, the
+                                    system flags it for regeneration with different approaches.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-violet-400" data-icon="lucide:messages-square" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">AI Coaching Conversations</h4>
+                                    <p class="text-sm text-zinc-300">When learners ask the same questions repeatedly, it
+                                    reveals curriculum gaps that get addressed automatically.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-sky-400" data-icon="lucide:users" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Community Discussions</h4>
+                                    <p class="text-sm text-zinc-300">Forum questions and discussions indicate where the
+                                    teaching isn't landing. Confusion clusters surface automatically.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-amber-400" data-icon="lucide:target" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Assessment Performance</h4>
+                                    <p class="text-sm text-zinc-300">AI-evaluated strategic work, not multiple-choice
+                                    quizzes. When scores drop on specific competencies, related content gets enhanced. </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 md:col-span-2">
+                                <div class="w-10 h-10 rounded-lg bg-rose-500/10 flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Source Manuscript Updates</h4>
+                                    <p class="text-sm text-zinc-300">Each academy maps to one of my three books. When I
+                                    update the manuscript based on new learnings, the curriculum inherits those changes
+                                    automatically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How This Works in Practice -->
+                    <div class="gradient-border bg-sky-500/5 rounded-3xl p-8 md:p-12 border-sky-500/20 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">How This Works in Practice</h3>
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-4">
+                                <p class="text-zinc-300 leading-relaxed italic">
+                                "Imagine 40% of founders drop off during the ICP Builder lesson. The system detects this
+                                pattern, analyzes AI coaching conversations to find where confusion clusters, identifies
+                                that founders struggle translating behavioral data into targeting criteria." </p>
+                                <div class="space-y-2">
+                                    <p class="text-sm text-white font-medium">Within 24 hours, the lesson regenerates with: </p>
+                                    <ul class="text-xs text-zinc-300 space-y-1">
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> New step-by-step
+                                            walkthrough
+                                        </li>
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> Concrete examples from 3
+                                            different markets
+                                        </li>
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> AI coaching prompts
+                                            adjusted to catch confusion early
+                                        </li>
+                                        <li class="flex gap-2"><span class="text-sky-400">•</span> Additional practice
+                                            scenarios
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-xs text-zinc-300 italic">The updated lesson deploys automatically to all
+                                users—including those who already completed it.</p>
+                            </div>
+                            <div class="bg-zinc-900/40 p-6 rounded-2xl border border-white/5 space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded bg-rose-500/10 flex items-center justify-center text-[10px] font-bold text-rose-400">
+                                        40%
+</div>
+                                    <div class="h-1 flex-1 bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-rose-500" style="width: 40%"></div>
+                                    </div>
+                                    <div class="text-[10px] text-zinc-400">Drop-off</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-sky-400" data-icon="lucide:search" data-width="16"></span>
+                                    <div class="text-[10px] text-zinc-300">AI Analysis finding confusion clusters...</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-emerald-400" data-icon="lucide:refresh-cw" data-width="16"></span>
+                                    <div class="text-[10px] text-zinc-300">Regenerating content for 85% completion Target
+</div>
+                                </div>
+                                <div class="pt-4 border-t border-white/5">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <div class="text-[10px] text-zinc-300 uppercase">Outcome</div>
+                                        <div class="text-[10px] text-emerald-400 font-bold">85% Complete</div>
+                                    </div>
+                                    <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                                        <div class="h-full bg-emerald-500" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <h4 class="text-sm font-medium text-white mb-1">User-Level</h4>
+                            <p class="text-xs text-zinc-300">Personalized to your progress and business context</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-emerald-400 mb-2" data-icon="lucide:users" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Cohort-Level</h4>
+                            <p class="text-xs text-zinc-300">Adjusted based on peer group performance</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-violet-400 mb-2" data-icon="lucide:globe" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Platform-Level</h4>
+                            <p class="text-xs text-zinc-300">Global improvements from aggregate signals</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-amber-400 mb-2" data-icon="lucide:book-marked" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Source-Level</h4>
+                            <p class="text-xs text-zinc-300">Updates from manuscript revisions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Cohort Learning Architecture -->
+            <section id="cohort" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Learn Faster Together </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Self-paced access to all courses plus monthly cohort sprints where founders collaborate, build together, and hold each other accountable. </p>
+                    </div>
+                    <!-- Hybrid Model -->
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Hybrid Learning Architecture</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center">
+                                        <span class="iconify text-sky-400" data-icon="lucide:book-open" data-width="20"></span>
+                                    </div>
+                                    <h4 class="text-white font-medium">Self-Paced Foundation</h4>
+                                </div>
+                                <ul class="space-y-2 text-sm text-zinc-300">
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Access all 21 courses across 3 live tracks anytime</li>
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> AI coaching available 24/7 — no waiting for office hours</li>
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Build artifacts at your own pace</li>
+                                    <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Quick-consumption format — learn a framework, practice, build</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                                        <span class="iconify text-emerald-400" data-icon="lucide:users" data-width="20"></span>
+                                    </div>
+                                    <h4 class="text-white font-medium">Monthly Cohort Sprints</h4>
+                                </div>
+                                <ul class="space-y-2 text-sm text-zinc-300">
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> 4-week sprints rotating through tracks on 6-month cycle</li>
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Rolling enrollment — join the next sprint anytime</li>
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> 8-25 learners per sprint, structured collaboration</li>
+                                    <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Shared learning experiences — not isolated study</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Three-Tier Depth -->
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="gradient-border bg-indigo-500/5 rounded-2xl p-6 border-indigo-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-indigo-400" data-icon="lucide:user-check" data-width="24"></span>
+                            </div>
+                            <h4 class="text-lg font-medium text-white mb-2">Accountability Pods</h4>
+                            <p class="text-sm text-zinc-300 mb-3">4-5 founders — research-backed optimal group size</p>
+                            <ul class="space-y-1 text-xs text-zinc-400">
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Peer-review each other's ICPs and scripts</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Practice roleplay together</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Co-develop outreach campaigns</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> Weekly accountability check-ins</li>
+                            </ul>
+                        </div>
+                        <div class="gradient-border bg-emerald-500/5 rounded-2xl p-6 border-emerald-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-emerald-400" data-icon="lucide:calendar-range" data-width="24"></span>
+                            </div>
+                            <h4 class="text-lg font-medium text-white mb-2">Cohort Sprint</h4>
+                            <p class="text-sm text-zinc-300 mb-3">8-25 learners — monthly 4-week focused sprints</p>
+                            <ul class="space-y-1 text-xs text-zinc-400">
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Shared learning experiences each month</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Monday kickoff &rarr; Wednesday peer reviews &rarr; Friday wins</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Collaborative problem-solving sessions</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> Track-focused deep dives</li>
+                            </ul>
+                        </div>
+                        <div class="gradient-border bg-sky-500/5 rounded-2xl p-6 border-sky-500/20">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-sky-400" data-icon="lucide:globe" data-width="24"></span>
+                            </div>
+                            <h4 class="text-lg font-medium text-white mb-2">Full Community</h4>
+                            <p class="text-sm text-zinc-300 mb-3">All members — persistent forum and shared wins</p>
+                            <ul class="space-y-1 text-xs text-zinc-400">
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Track-specific discussion forums</li>
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Wins &amp; celebrations space</li>
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Cross-cohort connections</li>
+                                <li class="flex gap-2"><span class="text-sky-400">&bull;</span> Alumni network and referrals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Weekly Rhythm -->
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <h3 class="text-xl font-medium text-white mb-6">Collaborative Learning by Design</h3>
+                        <p class="text-sm text-zinc-300 mb-6 leading-relaxed">
+                        This isn't a "community" bolted onto a course — collaboration is built into every week. Pods do real work together: reviewing each other's discovery call recordings, co-developing outreach sequences, giving honest feedback on ICPs. Structured peer collaboration means you're not just learning frameworks — you're building with people who understand your constraints. </p>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="flex gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-emerald-400" data-icon="lucide:message-square" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Mandatory Peer Feedback</h4>
+                                    <p class="text-xs text-zinc-400">Every artifact gets pod review before it's "done." Real feedback from people who get your constraints.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-violet-400" data-icon="lucide:handshake" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Shared Artifacts</h4>
+                                    <p class="text-xs text-zinc-400">Co-develop scripts, templates, and playbooks. What one founder builds, the pod improves together.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="iconify text-sky-400" data-icon="lucide:phone-call" data-width="20"></span>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Proactive Engagement</h4>
+                                    <p class="text-xs text-zinc-400">Founder-led check-ins, pod-level accountability, personal outreach for anyone falling behind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Community Infrastructure -->
+            <section id="community" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Community Infrastructure </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Self-hosted NodeBB forum — full data ownership, zero platform risk, seamless integration. </p>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">Why NodeBB, Not Circle.so or Mighty Networks</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-emerald-400" data-icon="lucide:database" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Full Data Ownership</h4>
+                                        <p class="text-sm text-zinc-300">Self-hosted means we own every post, every thread, every member interaction. No platform lock-in, no migration risk.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-sky-400" data-icon="lucide:key" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">SSO Integration</h4>
+                                        <p class="text-sm text-zinc-300">Firebase auth &rarr; NodeBB groups. One login for courses, community, and AI coaching. No separate accounts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-violet-400" data-icon="lucide:workflow" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Automated Lifecycle</h4>
+                                        <p class="text-sm text-zinc-300">n8n workflows via NodeBB Write API for cohort creation, pod assignment, sprint transitions, and member management.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="iconify text-amber-400" data-icon="lucide:wallet" data-width="20"></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-white mb-1">Bootstrap Economics</h4>
+                                        <p class="text-sm text-zinc-300">$0/month marginal cost per member. No per-seat pricing from a community SaaS. Scales with the platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Four Forum Spaces -->
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-indigo-400 mb-2" data-icon="lucide:coffee" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Cohort Lounge</h4>
+                            <p class="text-xs text-zinc-400">Sprint coordination, weekly rhythm, pod discussions</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-sky-400 mb-2" data-icon="lucide:layout-grid" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Track Forums</h4>
+                            <p class="text-xs text-zinc-400">Course discussions, artifact sharing, strategy questions</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-emerald-400 mb-2" data-icon="lucide:trophy" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Wins &amp; Celebrations</h4>
+                            <p class="text-xs text-zinc-400">Share real results — first customer, deal closed, pipeline milestone</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <span class="iconify text-amber-400 mb-2" data-icon="lucide:hand-metal" data-width="32"></span>
+                            <h4 class="text-sm font-medium text-white mb-1">Introductions</h4>
+                            <p class="text-xs text-zinc-400">Who you are, what you're building, what you need help with</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course Architecture -->
+            <section id="courses" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        7 Tracks, Not 49 Random Courses </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Each track serves a specific founder type and stage. Courses are designed for quick consumption — learn a framework, practice with AI, build an artifact. Not passive video lectures. </p>
+                    </div>
+                    <!-- Track Grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="gradient-border bg-emerald-500/5 rounded-2xl p-6 border-emerald-500/20">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="text-white font-medium">Tracks 1-3: Live Now</h4>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">LIVE</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> <strong class="text-white">Foundations</strong> (5 courses) — Core frameworks for all founders</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> <strong class="text-white">Marketing Engine</strong> (8 courses) — Content, SEO, AEO, demand gen</li>
+                                <li class="flex gap-2"><span class="text-emerald-400">&bull;</span> <strong class="text-white">Sales Methodology</strong> (8 courses) — DISC, MVQ, discovery, closing</li>
+                            </ul>
+                            <p class="text-xs text-zinc-400 mt-3">21 courses &middot; 165,000+ words of curriculum</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="text-white font-medium">Tracks 4-7: March 2026</h4>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">MAR 2026</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">AI-Powered Acquisition</strong> (7 courses) — AI outreach at scale</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Creator Economy</strong> (8 courses) — Audience, launches, product ladder</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Customer Success</strong> (4 courses) — Retention, expansion, advocacy</li>
+                                <li class="flex gap-2"><span class="text-indigo-400">&bull;</span> <strong class="text-white">Operations &amp; Systems</strong> (9 courses) — Scaling, delegation, automation</li>
+                            </ul>
+                            <p class="text-xs text-zinc-400 mt-3">28 additional courses &middot; Different tracks for different founder types</p>
+                        </div>
+                    </div>
+                    <!-- Lesson Flow -->
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12 mb-8">
+                        <h3 class="text-xl font-medium text-white mb-6">How a Lesson Actually Works</h3>
+                        <p class="text-sm text-zinc-300 mb-6">Every lesson follows the same doing-while-learning loop. No passive video lectures — you're building from minute one.</p>
+                        <div class="grid md:grid-cols-4 gap-4">
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mx-auto mb-3 text-sky-400 text-sm font-bold">1</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Read</h4>
+                                <p class="text-xs text-zinc-400">Framework introduction — concise, actionable, context-aware to your business</p>
+                            </div>
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-3 text-emerald-400 text-sm font-bold">2</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Practice</h4>
+                                <p class="text-xs text-zinc-400">AI quizzes (multiple-choice + free-text) with personalized feedback</p>
+                            </div>
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mx-auto mb-3 text-violet-400 text-sm font-bold">3</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Build</h4>
+                                <p class="text-xs text-zinc-400">Create a real artifact — ICP, playbook, script, outreach sequence</p>
+                            </div>
+                            <div class="bg-zinc-900/40 rounded-xl p-4 border border-white/5 text-center">
+                                <div class="w-8 h-8 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mx-auto mb-3 text-amber-400 text-sm font-bold">4</div>
+                                <h4 class="text-sm font-medium text-white mb-1">Iterate</h4>
+                                <p class="text-xs text-zinc-400">AI coaching + pod feedback refine your work until it's usable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Screenshots -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl overflow-hidden">
+                            <img src="assets/images/academy/caa-lesson-page.webp" alt="SoloFrameHub lesson page showing interactive content with AI coaching sidebar" width="800" height="500" loading="lazy" class="w-full h-auto">
+                            <div class="p-4">
+                                <p class="text-sm text-zinc-300">Lesson content with AI help sidebar — ask questions about any concept while you learn</p>
+                            </div>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl overflow-hidden">
+                            <img src="assets/images/academy/lesson-quizes.webp" alt="SoloFrameHub quiz interface with AI-graded responses" width="800" height="500" loading="lazy" class="w-full h-auto">
+                            <div class="p-4">
+                                <p class="text-sm text-zinc-300">AI-graded quizzes — multiple-choice plus free-text with personalized coaching feedback</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Business Artifacts -->
+            <section id="artifacts" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        Business Artifacts, Not Badges </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        Most courses end with a badge you can post on LinkedIn. We live in an age of doing, creating, building. The output here is real business artifacts you can use tomorrow. </p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <!-- Sales Academy -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-sky-400" data-icon="lucide:handshake" data-width="24"></span>
+                            </div>
+                            <h3 class="text-lg font-medium text-white mb-3">Sales Academy</h3>
+                            <ul class="space-y-2 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Ideal Customer Profiles
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Sales Playbooks
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Discovery Frameworks
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Demo Scripts
+                                </li>
+                                <li class="flex gap-2"><span class="text-sky-400">•</span>Pipeline Definitions
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Startup Academy -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-emerald-400" data-icon="lucide:rocket" data-width="24"></span>
+                            </div>
+                            <h3 class="text-lg font-medium text-white mb-3">Startup Academy</h3>
+                            <ul class="space-y-2 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>Business Model Canvas
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>60-Day Launch Sprint
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>PROOF Validation Docs
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>MVP Specifications
+                                </li>
+                                <li class="flex gap-2"><span class="text-emerald-400">•</span>GTM Strategy Briefs
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- GTM Academy -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4">
+                                <span class="iconify text-violet-400" data-icon="lucide:trending-up" data-width="24"></span>
+                            </div>
+                            <h3 class="text-lg font-medium text-white mb-3">GTM Academy</h3>
+                            <ul class="space-y-2 text-sm text-zinc-300">
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Positioning Documents
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Distribution Blueprints
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Content Systems
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>Buyer Journey Maps
+                                </li>
+                                <li class="flex gap-2"><span class="text-violet-400">•</span>GTM Scorecards
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gradient-border bg-indigo-500/5 rounded-2xl p-8 border-indigo-500/20">
+                        <h3 class="text-xl font-medium text-white mb-4">Every Artifact Is:</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:git-branch" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Versioned</h4>
+                                    <p class="text-sm text-zinc-300">Full history, compare changes, restore previous
+                                    versions</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:brain" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">AI-Evaluated</h4>
+                                    <p class="text-sm text-zinc-300">Strategic feedback on quality and completeness</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:download" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Exportable</h4>
+                                    <p class="text-sm text-zinc-300">PDF, Google Docs, formats your tools accept</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="iconify text-indigo-400 mt-1 flex-shrink-0" data-icon="lucide:link" data-width="20"></span>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white mb-1">Integrated</h4>
+                                    <p class="text-sm text-zinc-300">Referenced by the AI coach in future conversations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-zinc-300 mt-6 leading-relaxed">
+                        When you do a practice sales call, the AI references your actual ICP and playbook. When you work
+                        on positioning, it pulls from your validated customer data. The artifacts aren't just
+                        assignments—they're the foundation the entire system builds on. </p>
+                    </div>
+                    <!-- Business Artifact Mockup -->
+                    <div class="mt-12 gradient-border bg-zinc-900/40 rounded-3xl overflow-hidden border-white/5">
+                        <div class="bg-zinc-900/60 px-6 py-4 border-b border-white/5 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="flex gap-1.5">
+                                    <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                                    <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                                    <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                                </div>
+                                <span class="ml-4 text-xs text-zinc-300 font-mono italic">ICP-Builder-Draft-v3.2</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button class="text-xs text-zinc-300 flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 hover:bg-white/5">
+                                    <span class="iconify" data-icon="lucide:download" data-width="14"></span> Export
+                                </button>
+                                <button class="text-xs text-white bg-sky-500/20 border border-sky-500/30 px-3 py-1.5 rounded-lg flex items-center gap-2">
+                                    <span class="iconify" data-icon="lucide:history" data-width="14"></span> History
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 h-[400px]">
+                            <div class="md:col-span-2 p-8 overflow-hidden relative">
+                                <div class="space-y-6 blur-[2px] opacity-40">
+                                    <div class="h-8 bg-white/10 rounded w-1/3"></div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="h-24 bg-white/5 rounded"></div>
+                                        <div class="h-24 bg-white/5 rounded"></div>
+                                    </div>
+                                    <div class="h-4 bg-white/10 rounded w-full"></div>
+                                    <div class="h-4 bg-white/10 rounded w-5/6"></div>
+                                    <div class="h-32 bg-white/5 rounded w-full"></div>
+                                </div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="assets/images/icp-builder-mockup.png">
+                                </div>
+                            </div>
+                            <div class="bg-indigo-500/5 border-l border-white/5 p-6 flex flex-col gap-4">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></div>
+                                    <span class="text-xs font-bold text-sky-400 uppercase tracking-widest">AI
+                                    Coaching</span>
+                                </div>
+                                <div class="bg-indigo-500/10 p-4 rounded-xl text-[11px] text-zinc-300 leading-relaxed border border-indigo-500/20">
+                                    Your psychographic data suggests a high pain-point in the "Time to ROI" category. Have
+                                    you considered adding a specific objection-handler for the 3-month transition period?
+</div>
+                                <div class="mt-auto pt-4 border-t border-white/5">
+                                    <div class="bg-white/5 rounded-lg p-2 flex items-center gap-2">
+                                        <div class="flex-1 h-2 bg-white/10 rounded-full"></div>
+                                        <span class="iconify text-zinc-500" data-icon="lucide:send" data-width="12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-zinc-900/60 px-8 py-4 border-t border-white/5 text-center">
+                            <p class="text-xs text-zinc-300 italic">Every artifact is versioned, AI-evaluated, and
+                            integrated with your coaching sessions</p>
+                        </div>
+                    </div>
+                    <!-- CTA #2 -->
+                    <div class="mt-12 max-w-2xl mx-auto gradient-border bg-sky-500/5 border-sky-500/20 rounded-3xl p-8 flex flex-col items-center text-center gap-6">
+                        <p class="text-zinc-300">Ready to start building your first ICP and sales playbook?</p>
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="px-8 py-3 rounded-full bg-white text-black font-bold text-sm hover:bg-zinc-200 transition-all flex items-center gap-2">
+                        Start Doing — $49/mo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Platform Comparison -->
+            <section id="comparison" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        How This Compares </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        A side-by-side look at what makes SoloFrameHub fundamentally different </p>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-white/5">
+                                        <th class="text-left p-4 font-medium text-white">Capability</th>
+                                        <th class="text-left p-4 font-medium text-zinc-300">Teachable / Kajabi</th>
+                                        <th class="text-left p-4 font-medium text-zinc-300">Thinkific</th>
+                                        <th class="text-left p-4 font-medium text-zinc-300">Skool</th>
+                                        <th class="text-left p-4 font-medium text-sky-400 bg-sky-500/5">SoloFrameHub</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-zinc-300">
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:video" data-width="18"></span>
+                                        Content Model </td>
+                                        <td class="p-4">Static video/text</td>
+                                        <td class="p-4">Static video/text</td>
+                                        <td class="p-4">Static + community</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:sparkles" data-width="14"></span>
+                                                Dynamic AI-generated
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:message-square" data-width="18"></span>
+                                        AI Integration </td>
+                                        <td class="p-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="m15 9-6 6"/>
+                                                <path d="m9 9 6 6"/>
+                                            </svg>
+                                        </td>
+                                        <td class="p-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="m15 9-6 6"/>
+                                                <path d="m9 9 6 6"/>
+                                            </svg>
+                                        </td>
+                                        <td class="p-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="m15 9-6 6"/>
+                                                <path d="m9 9 6 6"/>
+                                            </svg>
+                                        </td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:brain" data-width="14"></span>
+                                                Core teaching engine
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:upload" data-width="18"></span>
+                                        Content Updates </td>
+                                        <td class="p-4">Manual</td>
+                                        <td class="p-4">Manual</td>
+                                        <td class="p-4">Manual</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:refresh-cw" data-width="14"></span>
+                                                Signal-triggered
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:calendar" data-width="18"></span>
+                                        Personalization </td>
+                                        <td class="p-4">None</td>
+                                        <td class="p-4">None</td>
+                                        <td class="p-4">None</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify text-sky-400" data-icon="lucide:target" data-width="14"></span>
+                                                Context-aware
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:award" data-width="18"></span>
+                                        Primary Output </td>
+                                        <td class="p-4">Badge</td>
+                                        <td class="p-4">Badge</td>
+                                        <td class="p-4">Points + badges</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify text-sky-400" data-icon="lucide:file-text" data-width="14"></span>
+                                                Business artifacts
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:check-square" data-width="18"></span>
+                                        Assessment </td>
+                                        <td class="p-4">Quizzes</td>
+                                        <td class="p-4">Assignments</td>
+                                        <td class="p-4">Peer review</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify text-sky-400" data-icon="lucide:brain" data-width="14"></span>
+                                                AI-evaluated strategy
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:users" data-width="18"></span>
+                                        Community Model </td>
+                                        <td class="p-4">Discussion board</td>
+                                        <td class="p-4">Discussion board</td>
+                                        <td class="p-4">Points + leaderboards</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:users" data-width="14"></span>
+                                                Cohort sprints + pods
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-white/5 hover:bg-zinc-900/40 transition-colors group">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:database" data-width="18"></span>
+                                        Data Ownership </td>
+                                        <td class="p-4">Platform-locked</td>
+                                        <td class="p-4">Platform-locked</td>
+                                        <td class="p-4">Platform-locked</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="iconify" data-icon="lucide:download" data-width="14"></span>
+                                                Self-hosted, export all
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="group hover:bg-zinc-900/40 transition-colors">
+                                        <td class="p-4 font-medium text-white flex items-center gap-3"> <span class="iconify text-zinc-300 group-hover:text-white transition-colors" data-icon="lucide:dollar-sign" data-width="18"></span>
+                                        Pricing Model </td>
+                                        <td class="p-4">Fee + %</td>
+                                        <td class="p-4">Platform fee</td>
+                                        <td class="p-4">Monthly</td>
+                                        <td class="p-4 text-sky-400 font-medium bg-sky-500/5">Subscription only</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Comparison Pull Quote -->
+                </div>
+            </section>
+            <!-- Bootstrap Economics -->
+            <!-- Built Using Own Frameworks -->
+            <section id="frameworks" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <div class="flex items-start gap-4 mb-6">
+                            <span class="iconify text-sky-400 mt-1 flex-shrink-0" data-icon="lucide:hammer" data-width="32"></span>
+                            <h2 class="text-2xl md:text-3xl font-serif-custom text-white">
+                            Built Using My Own Frameworks </h2>
+                        </div>
+                        <div class="space-y-4 text-zinc-300 leading-relaxed">
+                            <p>One thing I learned building this: the best way to validate a framework is to use it
+                            yourself.</p>
+                            <p>SoloFrameHub was built using the same methodologies I teach in the three academies. Startup
+                            Academy frameworks shaped the validation process and MVP scope. Sales Academy principles
+                            informed the positioning and landing page strategy. GTM Academy systems drive the launch and
+                            growth approach.</p>
+                            <p>The technical documentation alone is 260KB across 14 specification files—comprehensive specs
+                            written before a line of code. That's the DECIDE framework from the AI Playbook in practice. </p>
+                            <p class="text-white font-medium pt-4">When I say these frameworks work, I'm not theorizing. I'm
+                            in the arena, using the same tools I'm asking you to use.</p>
+                            <p class="text-sm text-zinc-300 pt-4">I had three manuscripts ready to publish in October 2025, but I decided to pause publication to test my frameworks by building real-world apps—starting with this course creation platform. While I had begun creating the Startup Academy (and a Mental Wellness Education Platform in partnership with a Psychiatric Nurse Practitioner's office) on LearnWorlds, I realized that although LearnWorlds has a great code editor module for interactive HTML lessons, creating, updating, and maintaining courses wasn't scalable. More importantly, it couldn't provide the level of student engagement, platform intelligence, and near-realtime updates I wanted. So I decided to build my own AI-native (not AI bolt-on) platform. The manuscripts continue to evolve based on what I learn during the build. This is what practitioner-built means.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Credibility Section -->
+            <section class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">30+ Years Building Enterprise
+                        Technology</h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">From VP roles to bootstrapped founder</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-sky-400 mb-1">30+ Years</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Enterprise Tech Experience</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-emerald-400 mb-1">14 Files</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Technical Documentation</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-violet-400 mb-1">260KB</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Specifications Before Code</p>
+                        </div>
+                        <div class="gradient-border bg-zinc-900/20 rounded-xl p-6 text-center">
+                            <h4 class="text-2xl font-bold text-amber-400 mb-1">3 Books</h4>
+                            <p class="text-xs text-zinc-300 uppercase tracking-wider">Paired with Academies</p>
+                        </div>
+                    </div>
+                    <div class="gradient-border bg-zinc-900/20 rounded-3xl p-8 md:p-12">
+                        <div class="space-y-6 text-zinc-300 leading-relaxed max-w-3xl mx-auto text-center">
+                            <p>My career has spanned the evolution of enterprise technology, cybersecurity, and mobile innovation. I&apos;ve worked at the intersection of technology research and market development - translating what engineers could build into solutions customers would buy. From conceiving products and finding early adopters to closing deals and negotiating partnerships, I&apos;ve taken ideas from concept to revenue for Silicon Valley startups. Along the way, I authored two patents in wireless security technology.</p>
+                            <p>By October 2025 I had completed writing a 3 manuscript series, but I paused publishing everything else to build SoloFrameHub. I didn&apos;t want to
+                            just write another book; I wanted to build the platform that proves these frameworks work
+                            for bootstrapped founders first.</p>
+                            <p>Every line of code in this platform followed 260KB of technical specifications across 14
+                            distinct files—written before any development began. This is the discipline of a
+                            practitioner-built platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Who This Is For -->
+            <section class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">
+                        What This Means For You </h2>
+                        <p class="text-lg text-zinc-300 max-w-2xl mx-auto">
+                        If you've made it this far, you're probably evaluating whether SoloFrameHub is worth your time
+                        and money. </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Perfect Fit -->
+                        <div class="gradient-border bg-emerald-500/5 rounded-2xl p-8 border-emerald-500/20">
+                            <h3 class="text-lg font-medium text-white mb-6 flex items-center gap-3"> <span class="iconify text-emerald-400" data-icon="lucide:check-circle" data-width="24"></span>
+                            This platform is built for founders who... </h3>
+                            <ul class="space-y-4 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Want systematic
+                                    frameworks, not motivational content</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Need to generate
+                                    real business artifacts, not just learn concepts</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Prefer AI
+                                    coaching over passive video consumption</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Are building
+                                    bootstrapped businesses without VC runway</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-emerald-400 mt-0.5">—</span><span>Value depth over
+                                    breadth in their learning</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Not the Right Fit -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8">
+                            <h3 class="text-lg font-medium text-white mb-6 flex items-center gap-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m15 9-6 6"/>
+                                    <path d="m9 9 6 6"/>
+                                </svg>
+                            This probably isn't for you if... </h3>
+                            <ul class="space-y-4 text-sm text-zinc-300">
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>You want polished
+                                    video production and celebrity instructors</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>You're looking for
+                                    casual networking without structured learning outcomes</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>You need
+                                    enterprise-grade certifications for career advancement</span>
+                                </li>
+                                <li class="flex gap-3"><span class="text-zinc-400 mt-0.5">—</span><span>You prefer
+                                    self-directed exploration over structured paths</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Risk Reversal Section -->
+            <section id="guarantee" class="px-6 md:px-12 py-16 md:py-20 border-b border-white/5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tight">Risk-Free for Founders</h2>
+                        <p class="text-lg text-zinc-300">Built for bootstrappers, by a bootstrapper</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Cancel Anytime -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8 group hover:bg-zinc-900/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <span class="iconify text-sky-400" data-icon="lucide:shield-check" data-width="28"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Cancel Anytime</h3>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     No long-term contracts
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     No cancellation fees
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Keep artifacts even if you cancel
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Month-to-Month -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8 group hover:bg-zinc-900/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <span class="iconify text-emerald-400" data-icon="lucide:calendar-check" data-width="28"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Month-to-Month Pricing</h3>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Pay as you go
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Pause subscription any time
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     No pressure to commit upfront
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Your Data -->
+                        <div class="gradient-border bg-zinc-900/20 rounded-2xl p-8 group hover:bg-zinc-900/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <span class="iconify text-violet-400" data-icon="lucide:download" data-width="28"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Your Data, Your Artifacts</h3>
+                            <ul class="space-y-3 text-sm text-zinc-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     Export everything you create
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     PDF, Google Docs, Plain Text
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>                                                                                                                                                                                     No vendor lock-in
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Final CTA Section -->
+            <section id="launch" class="px-6 md:px-12 py-20 md:py-32 relative overflow-hidden bg-zinc-900/40">
+                <div class="max-w-4xl mx-auto text-center relative z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-8">
+                        <span class="iconify" data-icon="lucide:check-circle" data-width="16"></span>
+                        3 Tracks Live Now
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-sans font-bold text-white mb-6 tracking-tight">
+                    Stop Collecting Badges. Start Building Your Business. </h2>
+                    <p class="text-xl text-zinc-300 mb-12 max-w-2xl mx-auto">
+                    Founding members get $49/month pricing — locked in for life. 7 tracks, AI coaching, cohort sprints, accountability pods, and every artifact you build is yours to keep. </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="solo-founders-ai-customer-acquisition-academy.html" class="px-10 py-5 rounded-full bg-white text-black font-bold text-lg hover:bg-zinc-200 transition-all flex items-center justify-center gap-3 group">
+                        Start the Academy <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg> </a>
+                        <a href="solo-founders-ai-customer-acquisition-playbook.html" class="px-10 py-5 rounded-full border border-white/10 text-white font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+                        Read the Playbook </a>
+                    </div>
+                    <div class="mt-12 pt-8 border-t border-white/5">
+                        <p class="text-zinc-300 text-sm font-medium tracking-wider uppercase mb-6">Upcoming Academies</p>
+                        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm">
+                            <a href="solo-founders-ai-startup-academy.html" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-2"> <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            Startup Academy (Spring 2026) </a>
+                            <a href="solo-founders-ai-gtm-academy.html" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-2"> <span class="w-2 h-2 rounded-full bg-violet-500"></span>
+                            GTM Academy (Spring 2026) </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="bg-black/50 border-t border-white/5 py-12 px-6 md:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-4 text-zinc-400">
+                        <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" class="w-14 h-14 object-contain">
+                        <span class="text-sm ml-2">© 2026</span>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400"><a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a><a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a><a href="legal/cookie-policy.html" class="hover:text-white transition-colors">Cookies</a><a href="legal/refund-policy.html" class="hover:text-white transition-colors">Refunds</a><a href="legal/ai-disclaimer.html" class="hover:text-white transition-colors">AI Disclaimer</a><a href="legal/acceptable-use-policy.html" class="hover:text-white transition-colors">Acceptable Use</a><a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            document.body.classList.toggle('overflow-hidden');
+        };
+
+        mobileMenuBtn?.addEventListener('click', toggleMenu);
+        closeMenuBtn?.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+
+        // Jump Nav Scroll Logic
+        const jumpNav = document.getElementById('jump-nav');
+        const jumpLinks = document.querySelectorAll('.jump-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        // Smooth scroll
+        jumpLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const navHeight = 88; // Main nav height
+                    const jumpNavHeight = jumpNav.offsetHeight;
+                    const offsetPosition = targetElement.offsetTop - navHeight - jumpNavHeight + 10;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for Active State
+        const observerOptions = {
+            root: null,
+            rootMargin: '-150px 0px -70% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    jumpLinks.forEach(link => {
+                        const icon = link.querySelector('.iconify');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('text-white', 'bg-white/10', 'border-white/20');
+                            link.classList.remove('text-zinc-300', 'border-transparent');
+                            if (icon) icon.classList.add('text-sky-400');
+                        } else {
+                            link.classList.remove('text-white', 'bg-white/10', 'border-white/20');
+                            link.classList.add('text-zinc-300', 'border-transparent');
+                            if (icon) icon.classList.remove('text-sky-400');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+    </body>
+</html>

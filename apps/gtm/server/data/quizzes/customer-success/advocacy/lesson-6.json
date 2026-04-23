@@ -1,0 +1,134 @@
+{
+    "lessonId": "6",
+    "courseId": "advocacy",
+    "sectionId": "customer-success",
+    "title": "Timing Advocacy Asks",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "What is the optimal window for asking for advocacy after a customer success milestone?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Within 7 days"
+                },
+                {
+                    "id": "b",
+                    "text": "Within 48-72 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "Within 2 weeks"
+                },
+                {
+                    "id": "d",
+                    "text": "Anytime within the first month"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 48-72 hour window captures customers when they're emotionally high, results are fresh, and advocacy feels natural. Response rates are 60-70% in this window vs 15-25% after.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "Which advocacy ask is most appropriate for a Day 30 milestone (first value achieved)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30-minute case study interview"
+                },
+                {
+                    "id": "b",
+                    "text": "Video testimonial"
+                },
+                {
+                    "id": "c",
+                    "text": "Written testimonial (3-question form)"
+                },
+                {
+                    "id": "d",
+                    "text": "Referral ask"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Written testimonials are low-friction (2-3 minutes) and appropriate for early wins. Case studies and video testimonials require deeper results and stronger relationships.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "What is the maximum frequency for advocacy asks to avoid overwhelming customers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "One ask per week"
+                },
+                {
+                    "id": "b",
+                    "text": "One ask per month"
+                },
+                {
+                    "id": "c",
+                    "text": "One ask per quarter"
+                },
+                {
+                    "id": "d",
+                    "text": "One ask per year"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Maximum one ask per month prevents advocacy fatigue. Space asks across the customer journey (Day 30, 60, 90, renewal) to build advocacy gradually.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "A customer declines your testimonial request at Day 30. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never ask them again"
+                },
+                {
+                    "id": "b",
+                    "text": "Ask again in 7 days"
+                },
+                {
+                    "id": "c",
+                    "text": "Flag in CRM and re-ask after next milestone (60-90 days)"
+                },
+                {
+                    "id": "d",
+                    "text": "Send automated follow-up emails until they respond"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Respect the decline, flag in CRM, and re-ask after the next major milestone when they may have bigger results and more confidence to advocate.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "Why do personal founder emails for advocacy get 3x the response rate of automated templates?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Founders have more authority"
+                },
+                {
+                    "id": "b",
+                    "text": "Personal emails reference specific milestones and celebrate individual success"
+                },
+                {
+                    "id": "c",
+                    "text": "Automated emails go to spam"
+                },
+                {
+                    "id": "d",
+                    "text": "Customers feel obligated to respond to founders"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Personal emails that reference specific achievements and celebrate individual success feel genuine, not corporate. Customers respond to being seen and valued.",
+            "type": "multiple-choice"
+        }
+    ]
+}

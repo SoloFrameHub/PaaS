@@ -1,0 +1,72 @@
+{
+  "lessonId": "2",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "What to Customize: Scope, Payment, IP, Termination",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of contract disputes originate in just four clauses?",
+      "options": [
+        { "id": "a", "text": "30%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "70%" },
+        { "id": "d", "text": "90%" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "90% of contract disputes originate in four clauses: Scope, Payment, IP Ownership, and Termination. Everything else — governing law, force majeure, integration clauses — almost never comes up in practice."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What percentage of freelancer payment disputes relate to unclear milestone definitions?",
+      "options": [
+        { "id": "a", "text": "15%" },
+        { "id": "b", "text": "25%" },
+        { "id": "c", "text": "45%" },
+        { "id": "d", "text": "70%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "45% of freelancer payment disputes relate to unclear milestone definitions. Scope ambiguity is the cause — payment is just where the fight breaks out. Strong scope clauses need deliverables lists, acceptance criteria, revision limits, and explicit exclusions."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which of the following is an example of WEAK scope language?",
+      "options": [
+        { "id": "a", "text": "5 landing pages with 2 rounds of revisions" },
+        { "id": "b", "text": "Marketing support as needed" },
+        {
+          "id": "c",
+          "text": "12 blog posts of 1,000 words each, delivered bi-weekly"
+        },
+        {
+          "id": "d",
+          "text": "1 Salesforce integration with documented API endpoints"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "'Marketing support as needed' describes a category of work, not a scope of work. When the client asks for unlimited revisions or additional features, there's nothing in the contract to reference. Strong scope is specific and enumerable."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You can safely ignore most contract sections and focus only on Scope, Payment, IP, and Termination.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. You could ignore fifteen of seventeen sections and lose nothing that matters in practice. But these four clauses determine whether you get paid, who owns what you built, and how cleanly you can exit if things go wrong."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review your current contract's scope clause (or write a draft). Does it include specific deliverables, acceptance criteria, revision limits, explicit exclusions, and a change order process? What's missing?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response examines their scope clause against the five elements (deliverables list, acceptance criteria, revision rounds, explicit exclusions, change order process), identifies specific gaps, and proposes concrete improvements."
+    }
+  ]
+}

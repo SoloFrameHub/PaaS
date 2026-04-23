@@ -1,0 +1,142 @@
+{
+    "lessonId": "3",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "The 80/20 Content Mix Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the main drawback of focusing too much on 'Timely' content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It is too expensive to produce"
+                },
+                {
+                    "id": "b",
+                    "text": "It has a short 'half-life' and stops generating value shortly after publication"
+                },
+                {
+                    "id": "c",
+                    "text": "Search engines refuse to index it"
+                },
+                {
+                    "id": "d",
+                    "text": "It is too technical for most readers"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Timely content (news, trends) is relevant today but dead tomorrow. It forces you to stay on a content hamster wheel to maintain visibility."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is an example of 'Evergreen' content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A live-tweet thread of an industry conference"
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Hot Take' on this morning's tech news"
+                },
+                {
+                    "id": "c",
+                    "text": "A comprehensive guide on 'Handling Customer Objections'"
+                },
+                {
+                    "id": "d",
+                    "text": "A post wishing everyone a Happy New Year"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Fundamental problems (like handling objections) are evergreen. A guide on this topic will be as useful a year from now as it is today."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended content mix for a founder in the 'Pre-Traction (Zero-to-Ten)' stage?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "50% Evergreen, 50% Timely"
+                },
+                {
+                    "id": "b",
+                    "text": "20% Evergreen, 80% Timely"
+                },
+                {
+                    "id": "c",
+                    "text": "100% Evergreen"
+                },
+                {
+                    "id": "d",
+                    "text": "100% Timely"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "In the early stages, your time is extremely limited. You must focus 100% of your content effort on assets that will build a long-term foundation and continue to attract leads while you're busy building."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How can you reframe a 'Timely' news reaction into 'Evergreen' content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By adding more images"
+                },
+                {
+                    "id": "b",
+                    "text": "By focusing on the underlying framework or principle the news represents"
+                },
+                {
+                    "id": "c",
+                    "text": "By posting it on a different platform"
+                },
+                {
+                    "id": "d",
+                    "text": "You cannot; news can only ever be timely"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Instead of just reacting to news, explain how that news changes the fundamental 'How-To' of your niche. This turns a temporary thought into a lasting educational asset."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Compound Effect' of content marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The way multiple people editing a post makes it better"
+                },
+                {
+                    "id": "b",
+                    "text": "The way a library of evergreen assets continues to generate traffic over time without new effort"
+                },
+                {
+                    "id": "c",
+                    "text": "The way social media algorithms punish consistent posters"
+                },
+                {
+                    "id": "d",
+                    "text": "The increase in ad costs as you get more traffic"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Every evergreen post is a 'worker' that never sleeps. As you build a library, the total traffic from 'old' posts grows, eventually exceeding the traffic from your newest ones."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think about your niche. What is one 'fundamental problem' your ICP always has (Evergreen)? What is one 'trending topic' in your industry right now (Timely)? How could you combine these to create a piece of content that gets immediate attention but remains valuable for a year?",
+            "minLength": 100,
+            "promptForAI": "Review if the founder correctly identifies the difference between the two types. Look for a creative 'Reframe' where the timely hook leads into an evergreen lesson."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

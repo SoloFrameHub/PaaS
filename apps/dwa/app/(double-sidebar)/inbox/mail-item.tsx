@@ -1,0 +1,55 @@
+'use client'
+
+import { useState } from 'react'
+import { Mail } from './inbox-body'
+import Image from 'next/image'
+
+import DOMPurify from 'isomorphic-dompurify'
+
+export default function MailItem({ mail }: { mail: Mail }) {
+  const [open, setOpen] = useState<boolean>(mail.open)
+  // STRICT SANITIZATION: Only allow basic formatting to prevent XSS
+  const sanitizedMessage = DOMPurify.sanitize(mail.message, {
+    ALLOWED_TAGS: ['b', 'i', 'em', 'strong', 'a', 'p', 'br', 'ul', 'li'],
+    ALLOWED_ATTR: ['href', 'target']
+  })
+
+  return (
+    <div className="py-6">
+      {/* Header */}
+      <header className="flex items-start">
+        {/* Avatar */}
+        <Image className="rounded-full shrink-0 mr-3" src={mail.image} width={40} height={40} alt={mail.name} />
+        {/* Meta */}
+        <div className="grow">
+          <div className="sm:flex items-start justify-between mb-0.5">
+            {/* Message author */}
+            <div className="xl:flex items-center mb-2 sm:mb-0">
+              <button className="text-sm font-semibold text-gray-800 dark:text-gray-100 text-left truncate" onClick={() => setOpen(!open)}>{mail.name}</button>
+              {open &&
+                <>
+                  <div className="text-sm text-gray-400 dark:text-gray-600 hidden xl:block mx-1">·</div>
+                  <div className="text-xs dark:text-gray-500">{mail.email}</div>
+                </>
+              }
+            </div>
+            {/* Date */}
+            <div className="text-xs font-medium text-gray-500 whitespace-nowrap mb-2 sm:mb-0">{mail.date}</div>
+          </div>
+          {/* To */}
+          {open &&
+            <div className="text-xs font-medium text-gray-500">To {mail.recipients.join(', ')}</div>
+          }
+          {/* Excerpt */}
+          {!open &&
+            <div className="text-sm">{mail.excerpt}</div>
+          }
+        </div>
+      </header>
+      {/* Body */}
+      {open &&
+        <div className="text-sm text-gray-800 dark:text-gray-100 mt-4 space-y-2" dangerouslySetInnerHTML={{ __html: sanitizedMessage }}></div>
+      }
+    </div>
+  )
+}

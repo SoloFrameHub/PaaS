@@ -1,0 +1,87 @@
+{
+  "lessonId": "8",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "B2B Enrichment Fields vs Creator Enrichment Fields",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why do B2B and creator enrichment require fundamentally different data fields?",
+      "options": [
+        { "id": "a", "text": "They use different CRM systems" },
+        {
+          "id": "b",
+          "text": "B2B buying happens through companies (budgets, committees, tech stacks) while creator buying happens through individuals (audience size, engagement, monetization model)"
+        },
+        { "id": "c", "text": "Creator data is more expensive to collect" },
+        { "id": "d", "text": "B2B leads don't use social media" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "B2B buying decisions flow through companies (budgets, committees, tech stacks), so enrichment focuses on firmographic data like company size, revenue, and org charts. Creator buying is person-centric, requiring audience size, platform mix, engagement rates, and monetization model. The data that predicts fit is fundamentally different."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened when Jordan tried to use the same enrichment pipeline for both B2B prospects and creator contacts?",
+      "options": [
+        { "id": "a", "text": "It worked perfectly for both audiences" },
+        {
+          "id": "b",
+          "text": "The pipeline returned 30% coverage and garbage data for creators because B2B tools can't find creator-specific fields"
+        },
+        {
+          "id": "c",
+          "text": "The creator data was more accurate than the B2B data"
+        },
+        { "id": "d", "text": "Both audiences returned 90%+ coverage" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "B2B enrichment tools like Apollo are built for company-centric sales and can't find creator-specific data like Substack subscriber counts or YouTube niche. When Jordan ran creators through the B2B pipeline, it returned 30% coverage and garbage data because the tools didn't speak that language."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is a 'creator-operator' and why do they need special enrichment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A creator who uses AI tools — needs standard B2B enrichment"
+        },
+        {
+          "id": "b",
+          "text": "A person who has both a personal brand AND a B2B service/product — needs enrichment that captures both sides"
+        },
+        {
+          "id": "c",
+          "text": "A social media manager — needs only creator fields"
+        },
+        {
+          "id": "d",
+          "text": "An enterprise buyer who follows creators — needs standard B2B enrichment"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Creator-operators are the fastest-growing solo founder segment — people who have both a personal brand AND a B2B service/product. They need hybrid enrichment that captures both company-centric B2B data and person-centric creator data, which most tools only handle one side of."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You can use Apollo to find a creator's Substack subscriber count and YouTube engagement rate.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Apollo and similar B2B enrichment tools are built for company-centric sales data (job titles, company size, tech stack). They cannot find creator-specific metrics like Substack subscriber counts, YouTube niche, or audience demographics. Creator enrichment requires different data sources and tools."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "If you target both B2B buyers and creators (or plan to), describe how you would build separate enrichment pipelines for each audience. What fields would you prioritize for each, and which tools would you use?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response differentiates B2B enrichment fields (job title, company size, tech stack, funding) from creator fields (audience size, engagement rate, platform mix, monetization model). Look for specific tool recommendations for each audience and understanding of why the two pipelines must be separate."
+    }
+  ]
+}

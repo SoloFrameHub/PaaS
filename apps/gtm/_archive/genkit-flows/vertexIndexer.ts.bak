@@ -1,0 +1,55 @@
+import { DocumentServiceClient } from '@google-cloud/discoveryengine';
+import { logger } from '@/lib/logger';
+
+// Initialize Vertex AI Document Service Client
+const documentClient = new DocumentServiceClient({
+    apiEndpoint: process.env.VERTEX_AI_LOCATION === 'global' ? undefined : `${process.env.VERTEX_AI_LOCATION}-discoveryengine.googleapis.com`,
+});
+
+export const vertexIndexer = {
+    /**
+     * Index a single document into Vertex AI Search
+     * @param doc The document to index
+     */
+    async indexDocument(doc: { id: string; title: string; content: string; source?: string }) {
+        const projectId = process.env.VERTEX_AI_PROJECT_ID || process.env.FIREBASE_PROJECT_ID;
+        const location = process.env.VERTEX_AI_LOCATION || 'global';
+        const dataStoreId = process.env.VERTEX_AI_DATA_STORE_ID;
+
+        if (!projectId || !dataStoreId) {
+            logger.warn('VERTEX_AI_PROJECT_ID or VERTEX_AI_DATA_STORE_ID not set. Skipping indexing.');
+            return;
+        }
+
+        const parent = `projects/${projectId}/locations/${location}/collections/default_collection/dataStores/${dataStoreId}/branches/default_branch`;
+
+        try {
+            await documentClient.createDocument({
+                parent,
+                document: {
+                    id: doc.id,
+                    schemaId: 'default_schema', // Use default schema for unstructured data
+                    jsonData: JSON.stringify({
+                        title: doc.title,
+                        content: doc.content,
+                        link: doc.source || '',
+                        // Add metadata for filtering if needed
+                        created_at: new Date().toISOString(),
+                    }),
+                    content: {
+                        mimeType: 'text/plain',
+                        rawBytes: Buffer.from(doc.content).toString('base64'),
+                    }
+                },
+                documentId: doc.id, // Explicitly pass documentId for createDocument
+            });
+
+            logger.info(`Successfully indexed document: ${doc.id}`);
+        } catch (error) {
+            logger.error(`Failed to index document ${doc.id}:`, { error });
+            // We might not want to throw here to avoid failing the whole flow if just indexing fails?
+            // But for now let's log and rethrow so the user knows.
+            throw error;
+        }
+    }
+};

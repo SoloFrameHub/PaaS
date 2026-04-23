@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "What Positioning Actually Means (And Why Features Don't Sell)",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is positioning in the context of this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your company's logo, colors, and visual identity"
+                },
+                {
+                    "id": "b",
+                    "text": "The space you occupy in your customer's mind—why they should choose you over alternatives"
+                },
+                {
+                    "id": "c",
+                    "text": "Your marketing campaign strategy and ad placements"
+                },
+                {
+                    "id": "d",
+                    "text": "The technical features that differentiate your product"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Positioning is about mental real estate—it's the answer to 'why should I choose you over alternatives?' It's not about visual identity (that's branding) or campaigns (that's marketing)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'curse of knowledge' that affects technical founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Knowing too much about competitors' products"
+                },
+                {
+                    "id": "b",
+                    "text": "Understanding your product so well that you can't explain it simply to customers"
+                },
+                {
+                    "id": "c",
+                    "text": "Having too many features to describe in one pitch"
+                },
+                {
+                    "id": "d",
+                    "text": "Being cursed to always learn new technologies"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The curse of knowledge means you've spent so much time building your product that you understand every technical decision—but your customer hasn't. You struggle to simplify because it all seems essential to you."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the correct sequence for building a brand presence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Marketing → Branding → Positioning"
+                },
+                {
+                    "id": "b",
+                    "text": "Branding → Positioning → Marketing"
+                },
+                {
+                    "id": "c",
+                    "text": "Positioning → Branding → Marketing"
+                },
+                {
+                    "id": "d",
+                    "text": "All three should happen simultaneously"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Positioning must come first—you need to know what you stand for before you can express it visually (branding) or communicate it to attract customers (marketing). Nathan Barry built ConvertKit without a logo for 2.5 years because positioning clarity came first."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What percentage of B2B buyers seek simple, benefit-focused messaging according to research cited in this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "35%"
+                },
+                {
+                    "id": "b",
+                    "text": "50%"
+                },
+                {
+                    "id": "c",
+                    "text": "65%"
+                },
+                {
+                    "id": "d",
+                    "text": "80%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Research shows that 65% of B2B buyers seek simple, benefit-focused messaging—yet technical founders consistently lead with feature-first language, creating a mismatch between what customers want and what founders deliver."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What happens when a prospect can't quickly categorize your product?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They ask more follow-up questions to understand"
+                },
+                {
+                    "id": "b",
+                    "text": "They stop thinking about you entirely"
+                },
+                {
+                    "id": "c",
+                    "text": "They assume you're an enterprise solution"
+                },
+                {
+                    "id": "d",
+                    "text": "They compare you to the market leader by default"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "When prospects can't categorize your product, they don't ask more questions—they simply stop thinking about you. Your job is to control the category association so prospects immediately think 'this is for people exactly like me.'"
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Think about your own product or service. If you had to strip away all the technical jargon, how would you explain the core 'outcome' you deliver in just one sentence? Who specifically suffers if that outcome isn't achieved?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's ability to identify a customer outcome without using jargon. Check if they identified a specific suffer-er (target segment). Provide feedback on how to make the outcome even more specific and emotional."
+        }
+    ],
+    "passingScore": 70
+}

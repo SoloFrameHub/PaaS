@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "9",
+    "lessonTitle": "Email Analytics That Matter",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why are email open rates described as 'increasingly unreliable'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because email providers no longer track opens."
+                },
+                {
+                    "id": "b",
+                    "text": "Because Apple's Mail Privacy Protection pre-loads emails, making them appear 'opened' even when they weren't."
+                },
+                {
+                    "id": "c",
+                    "text": "Because most email tools calculate open rates incorrectly."
+                },
+                {
+                    "id": "d",
+                    "text": "Because people open emails but don't read them."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Since 2021, Apple Mail Privacy Protection pre-loads email content including tracking pixels. This inflates open rates artificially, making them less reliable as an absolute measure of engagement.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which metric is described as 'the strongest engagement signal' in email marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Open rate"
+                },
+                {
+                    "id": "b",
+                    "text": "Click rate"
+                },
+                {
+                    "id": "c",
+                    "text": "Reply rate"
+                },
+                {
+                    "id": "d",
+                    "text": "Unsubscribe rate"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When someone takes the time to reply to your email, it shows genuine connection and engagement. Replies are harder to fake and indicate true relationship-building.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does a 'drop-off point' in your sequence data indicate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The email where subscribers unsubscribe."
+                },
+                {
+                    "id": "b",
+                    "text": "The email where open rates significantly decrease—suggesting the previous email didn't deliver enough value to keep them interested."
+                },
+                {
+                    "id": "c",
+                    "text": "The email with the most clicks."
+                },
+                {
+                    "id": "d",
+                    "text": "The final email in the sequence."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If Email 1 has 60% opens but Email 3 has 15%, something went wrong with Email 2. The content didn't provide enough value to keep subscribers engaged. This is a signal to improve that specific email.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended A/B testing rule for achieving statistical significance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Test as many variables as possible in each test."
+                },
+                {
+                    "id": "b",
+                    "text": "Test one variable at a time with a minimum of 100 recipients per variant."
+                },
+                {
+                    "id": "c",
+                    "text": "Only test on weekends when engagement is highest."
+                },
+                {
+                    "id": "d",
+                    "text": "Run tests for at least 30 days before drawing conclusions."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Testing one variable at a time (e.g., just the subject line) isolates what caused the difference. 100 recipients per variant provides enough data for meaningful comparison. Testing multiple variables at once makes results impossible to interpret.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If a specific email in your sequence has a 2% unsubscribe rate while others have 0.2%, what does this indicate?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "That email is the best performing one in the sequence."
+                },
+                {
+                    "id": "b",
+                    "text": "That email is a problem—it's likely too salesy, too irrelevant, or misaligned with subscriber expectations."
+                },
+                {
+                    "id": "c",
+                    "text": "You should send that email more frequently."
+                },
+                {
+                    "id": "d",
+                    "text": "Unsubscribes are normal and shouldn't be analyzed."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A 10x higher unsubscribe rate on a specific email is a clear signal. Something about that email—content, tone, timing, or relevance—is causing people to leave. Investigate and fix it.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your current email performance data (or estimate if you're just starting). What is your current open rate and click rate? Where is your biggest drop-off point in your sequences? What is one A/B test you could run this week to improve a specific metric?",
+            "promptHints": [
+                "If you don't have data yet, describe what you'll measure once you start.",
+                "Focus on actionable metrics like clicks and conversions, not just opens.",
+                "Pick a simple A/B test—subject lines are the easiest starting point."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "8"
+        ],
+        "unlocks": [
+            "10"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Email Analytics That Matter - Quiz"
+}

@@ -1,0 +1,59 @@
+# OpenClaw AI Agent — Docker Compose for Dokploy VPS
+# Runs as a background automation agent with cron jobs, webhooks, and optional WebChat.
+#
+# Deploy via Dokploy compose service or directly with:
+#   docker compose -f scripts/openclaw/docker-compose.yml up -d
+#
+# Configuration:
+#   - Config dir: ./config/ (mounted to /home/node/.openclaw)
+#   - Skills dir: ./skills/ (mounted to /home/node/.openclaw/workspace/skills)
+#   - Gateway port: 18789 (internal only — not exposed to internet)
+
+services:
+  openclaw-gateway:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-gateway
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:18789:18789"  # Gateway — internal only
+    volumes:
+      - openclaw-config:/home/node/.openclaw
+      - ./skills:/home/node/.openclaw/workspace/skills:ro
+      - ./config/config.json:/home/node/.openclaw/config.json:ro
+    environment:
+      # LLM Provider — Anthropic Claude
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      # Webhook auth for cron job delivery to CAA API
+      - CAA_ADMIN_SECRET=${ADMIN_API_SECRET}
+      - CAA_API_URL=${NEXT_PUBLIC_APP_URL:-https://ai-solo-gtm-os.soloframehub.com}
+      # Listmonk for email campaigns
+      - LISTMONK_URL=${LISTMONK_URL:-https://listmonk.soloframehub.com}
+      - LISTMONK_ADMIN_USERNAME=${LISTMONK_ADMIN_USERNAME}
+      - LISTMONK_ADMIN_PASSWORD=${LISTMONK_ADMIN_PASSWORD}
+      # Resend for transactional email
+      - RESEND_API_KEY=${RESEND_API_KEY}
+      # NodeBB forum access
+      - NODEBB_URL=${NODEBB_URL}
+      - NODEBB_API_KEY=${NODEBB_API_KEY}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:18789/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "0.5"
+    # Connect to Dokploy's internal network so it can reach CAA app, NodeBB, etc.
+    networks:
+      - dokploy-network
+
+volumes:
+  openclaw-config:
+    driver: local
+
+networks:
+  dokploy-network:
+    external: true

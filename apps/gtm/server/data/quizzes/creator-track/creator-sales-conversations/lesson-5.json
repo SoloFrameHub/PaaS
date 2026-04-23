@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Pricing High-Ticket Offers Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, why should you never lead with the price when presenting your offer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because the price should always be hidden until after the prospect has signed a contract."
+                },
+                {
+                    "id": "b",
+                    "text": "Because the first number a person hears becomes the reference point (anchor) against which all subsequent numbers are evaluated."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it is considered unprofessional to discuss pricing before the third call."
+                },
+                {
+                    "id": "d",
+                    "text": "Because prospects will always negotiate down from whatever number they hear first."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Price anchoring is a well-documented behavioral economics phenomenon. The first number heard becomes the reference point. If you lead with the outcome value ($45,000/year) and stacked component value ($5,000+), then reveal the price ($2,997), the price feels like a bargain. If you lead with the price, everything that follows is evaluated as justification for sticker shock."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the '10x Rule' for creator pricing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should charge 10 times what your competitors charge."
+                },
+                {
+                    "id": "b",
+                    "text": "You should include at least 10 modules in any high-ticket program."
+                },
+                {
+                    "id": "c",
+                    "text": "Your program should deliver at least 10 times the value of the investment in tangible outcomes."
+                },
+                {
+                    "id": "d",
+                    "text": "You should follow up with a prospect at least 10 times before giving up."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 10x Rule states that a program priced at $3,000 should help the client see a clear path to $30,000 in value (direct revenue, time savings, or a combination). This ratio makes the price objection disappear because the conversation shifts from 'Is $3,000 too much?' to 'Can I really achieve 10x the return?'"
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "The lesson identifies a pricing 'dead zone' that creators should avoid. What is this range and why?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$50-$100, because it is too cheap to be taken seriously."
+                },
+                {
+                    "id": "b",
+                    "text": "$300-$800, because it is too expensive for an impulse buy but too cheap to justify an enrollment call."
+                },
+                {
+                    "id": "c",
+                    "text": "$10,000-$20,000, because nobody will pay that much for a course."
+                },
+                {
+                    "id": "d",
+                    "text": "$997 exactly, because it looks like a marketing trick."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The $300-$800 range is 'no-man's land' for creator offers. It is too expensive for someone to buy impulsively (like a $47 ebook) but too low to justify the time investment of a 45-minute enrollment call. Offers in this range should either be lowered below $300 (and sold without a call) or raised above $997 (with added value to justify the increase)."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Build a value stack for your current (or planned) offer. Include: the outcome anchor (what is the annual value of the result?), at least three components with standalone values, and the total stacked value versus your actual price. Does your pricing pass the 10x Rule?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has built a proper value stack with a clear outcome anchor, multiple components with realistic standalone values, and a logical total. Check that the actual price creates a meaningful gap below the stacked value. Assess whether the 10x Rule is met based on their stated outcome value versus price. Flag if the standalone values seem inflated or unrealistic, or if the outcome anchor is vague rather than specific."
+        }
+    ]
+}

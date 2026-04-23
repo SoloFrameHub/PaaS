@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Bandura's research, which of the four sources of self-efficacy is the most powerful and durable?",
+            "options": [
+                {"id": "opt1", "text": "Social persuasion (encouragement from others)"},
+                {"id": "opt2", "text": "Mastery experiences (direct successful performance)—you have personal proof that you can do it"},
+                {"id": "opt3", "text": "Vicarious learning (watching others succeed)"},
+                {"id": "opt4", "text": "Physiological states (interpreting arousal as readiness)"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Bandura's research consistently shows mastery experiences (direct successful performance) are the most powerful source of self-efficacy. You have personal proof that you can do it—no amount of encouragement or observation matches 'I did this.' Experimental studies show mastery experiences produce the largest and most durable self-efficacy gains. This is why graduated exposure (progressive challenge with success at each level) is the gold-standard approach for building confidence. The other sources help, but mastery is primary."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is graduated exposure and why is it the recommended method for building self-efficacy?",
+            "options": [
+                {"id": "opt1", "text": "Forcing yourself into the most difficult situation immediately to prove you can handle it"},
+                {"id": "opt2", "text": "Starting with manageable challenges and progressively increasing difficulty as competence builds—each success builds efficacy for the next level"},
+                {"id": "opt3", "text": "Avoiding all challenges until you feel completely confident"},
+                {"id": "opt4", "text": "Randomly attempting challenges of varying difficulty"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Graduated exposure means starting with manageable challenges and progressively increasing difficulty as competence builds. Each successful experience at one level builds self-efficacy for the next level. This is far more effective than jumping to the hardest challenge (which risks failure and efficacy damage) or waiting until you feel confident (confidence follows action, not vice versa). Example: public speaking anxiety—speak to 2 people → 5 → 10 → 30 → larger audiences. Progressive success builds sustainable confidence."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does self-efficacy differ from self-esteem and growth mindset?",
+            "options": [
+                {"id": "opt1", "text": "They are all identical constructs"},
+                {"id": "opt2", "text": "Self-efficacy is task-specific confidence ('Can I do this?'); self-esteem is global self-worth ('Am I good?'); growth mindset is belief abilities can develop ('Can I improve?')"},
+                {"id": "opt3", "text": "Self-efficacy is permanent; self-esteem and growth mindset change"},
+                {"id": "opt4", "text": "Self-efficacy applies only to physical tasks"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "These are distinct constructs: Self-efficacy (Bandura) = task-specific confidence in your capacity to execute behaviors ('Can I successfully give this presentation?'). Self-esteem = global self-evaluation ('Am I a worthy person?'). Growth mindset = belief that abilities can develop ('Can my skills improve?'). Self-efficacy is the most behaviorally predictive—it determines whether you attempt challenges, effort investment, and persistence. You can have high self-esteem but low self-efficacy for specific tasks, or vice versa."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is social persuasion (encouragement) the weakest source of self-efficacy?",
+            "options": [
+                {"id": "opt1", "text": "Because encouragement has no positive effects"},
+                {"id": "opt2", "text": "Because external belief is easily undermined by failure and doesn't provide personal proof of capability—most effective only when paired with mastery experiences"},
+                {"id": "opt3", "text": "Because people don't value encouragement"},
+                {"id": "opt4", "text": "Social persuasion is actually the strongest source"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Social persuasion (others expressing confidence in your ability: 'You can do this') is the weakest of Bandura's four sources. It can provide temporary boost, but it's easily undermined by failure because you lack personal proof. Research shows social persuasion alone produces small, unstable effects. It's most effective when: (1) it comes from credible sources who know your abilities, and (2) it's paired with mastery opportunities. Encouragement can support initial attempts, but only sustained if actual success follows. You can't talk someone into lasting confidence—they need to experience success."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify a specific skill or challenge where you currently have low self-efficacy. Design a graduated exposure plan: What's the easiest first step you could take with high likelihood of success? What would the next 3-4 progressive steps look like? How would each success build confidence for the next level?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "11",
+    "title": "Building Self-Efficacy Through Mastery Experiences - Quiz"
+}

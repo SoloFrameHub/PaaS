@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to boundary theory, when is high boundary permeability (work entering personal time) protective vs. harmful?",
+            "options": [
+                {"id": "opt1", "text": "High permeability is always harmful"},
+                {"id": "opt2", "text": "High permeability is protective when YOU control when and how it happens (integration by choice); harmful when work invades unpredictably without your control"},
+                {"id": "opt3", "text": "High permeability only matters for parents"},
+                {"id": "opt4", "text": "High permeability has no effect on mental health"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "High boundary permeability can be protective when you have high boundary control (you choose when to work flexibly). This is 'work-life integration by choice.' However, low control + high permeability = 'work-life invasion' — work demands your attention unpredictably, which predicts stress, exhaustion, and burnout. Control is the key variable."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are evidence-backed strategies for setting work-life boundaries?",
+            "options": [
+                {"id": "opt1", "text": "Just try harder to not think about work"},
+                {"id": "opt2", "text": "Clarify expectations with manager, use technology boundaries (Do Not Disturb, auto-responders), practice psychological detachment, communicate boundaries assertively and consistently"},
+                {"id": "opt3", "text": "Work more hours so you finish everything"},
+                {"id": "opt4", "text": "Boundaries don't actually help with stress"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Evidence-backed boundary strategies include: clarifying expectations explicitly with your manager, using technology to create boundaries (notifications off, scheduled email sends, auto-responders), practicing psychological detachment (transition rituals, hobbies), and communicating boundaries assertively and consistently. Boundaries work when you have organizational support to enact them."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When are boundary challenges STRUCTURAL (organizational) rather than individual (skills-based)?",
+            "options": [
+                {"id": "opt1", "text": "When you have permission to disconnect but struggle with internal anxiety"},
+                {"id": "opt2", "text": "When organizational culture punishes boundaries, workload makes them impossible, or managers require after-hours responsiveness"},
+                {"id": "opt3", "text": "When you need assertive communication scripts"},
+                {"id": "opt4", "text": "Boundary challenges are always individual problems"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Boundary challenges are structural when: organizational culture punishes disconnection or expects constant availability, workload volume makes boundaries incompatible with job performance, managers explicitly or implicitly require after-hours work, or job insecurity makes boundary-setting feel risky. These require organizational policy change — not just individual skills."
+        },
+        {
+            "id": "q4",
+            "type": "reflection",
+            "question": "Think of one specific boundary you want to set at work (e.g., no email after 7pm, protected lunch breaks). Write the boundary in one clear sentence, then describe how you would communicate it assertively. Do you have organizational permission to set this boundary, or would it be punished?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "11",
+    "title": "Work-Life Boundaries — Theory and Practice - Quiz"
+}

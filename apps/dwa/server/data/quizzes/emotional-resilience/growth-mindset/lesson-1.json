@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core distinction between fixed and growth mindsets according to Carol Dweck's theory?",
+            "options": [
+                {"id": "opt1", "text": "Fixed mindset people are lazy; growth mindset people work hard"},
+                {"id": "opt2", "text": "Fixed mindset believes attributes are immutable; growth mindset believes attributes can develop through effort and learning"},
+                {"id": "opt3", "text": "Fixed mindset is pessimistic; growth mindset is optimistic"},
+                {"id": "opt4", "text": "Fixed mindset applies only to intelligence; growth mindset applies to all domains"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Growth mindset theory is about implicit theories of malleability. Fixed (entity) mindset believes intelligence, personality, and abilities are relatively stable traits. Growth (incremental) mindset believes these attributes can be developed through effort, effective strategies, and support from others. It's not about work ethic, optimism, or domain scope—it's specifically about beliefs about changeability."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is domain specificity critical when understanding mindsets?",
+            "options": [
+                {"id": "opt1", "text": "Because mindsets don't actually exist—they're just marketing"},
+                {"id": "opt2", "text": "Because you can hold different mindsets across different attributes (intelligence, personality, emotion, anxiety), and mindsets most strongly predict outcomes in their specific domain"},
+                {"id": "opt3", "text": "Because growth mindset only works in academic settings"},
+                {"id": "opt4", "text": "Because everyone has the same mindset across all domains"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently shows that mindsets are domain-specific. You can hold a growth mindset about your intelligence but a fixed mindset about your personality or emotional responses. Critically, mindsets are most strongly related to outcomes in the same domain—a growth mindset of anxiety most strongly predicts anxiety-related outcomes, for example. You're not 'a growth mindset person' or 'a fixed mindset person'—you hold different beliefs across different attributes."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 2023 bias-corrected meta-analysis, what is the actual effect size of growth mindset interventions on academic achievement for general student populations?",
+            "options": [
+                {"id": "opt1", "text": "d = 0.60 (large effect)—growth mindset dramatically improves grades"},
+                {"id": "opt2", "text": "d = 0.27 (small-to-medium effect)—modest but consistent benefits"},
+                {"id": "opt3", "text": "d = 0.02 (essentially zero)—effects are weak to null in general populations, though larger for struggling students in supportive contexts"},
+                {"id": "opt4", "text": "d = −0.15 (negative effect)—growth mindset actually harms achievement"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Macnamara & Burgoyne 2023 meta-analysis found d = 0.02 (95% CI: −0.06 to 0.10) among the highest-quality studies for general student populations—essentially zero after correcting for publication bias. Effects are larger for struggling students in supportive school environments (d = 0.27), but growth mindset interventions do not reliably boost achievement universally. The popularized 'growth mindset improves achievement' claim is overstated for most students."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a common misconception about growth mindset that the lesson explicitly warns against?",
+            "options": [
+                {"id": "opt1", "text": "Growth mindset means believing you can develop skills with practice"},
+                {"id": "opt2", "text": "Growth mindset means you can be anything with enough effort, erasing all differences in aptitude, access, and structural barriers"},
+                {"id": "opt3", "text": "Growth mindset varies across different life domains"},
+                {"id": "opt4", "text": "Growth mindset research has mixed evidence quality"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A major misconception is that growth mindset means 'you can be anything with enough effort,' which overstates the construct and ignores structural barriers, resources, and biological constraints. Growth mindset is about development potential and engaging more effectively with learnable challenges—not transformation into whatever you imagine or erasing differences in starting ability, opportunity, and access. This misconception leads to toxic positivity and victim-blaming when outcomes don't match effort."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify one domain where you currently hold a fixed mindset (e.g., 'I'm just not good at managing emotions,' 'I'll always be anxious in social situations'). How does that belief affect your behavior in that domain? What would shift if you adopted a more growth-oriented belief?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "1",
+    "title": "Understanding Mindsets: Fixed vs. Growth - Quiz"
+}

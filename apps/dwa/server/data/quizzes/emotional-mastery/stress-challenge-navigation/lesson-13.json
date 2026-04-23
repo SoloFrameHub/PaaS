@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the current evidence status for nutrition interventions targeting stress and mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "STRONG—specific diets cure stress and anxiety"
+                },
+                {
+                    "id": "opt2",
+                    "text": "EMERGING—gut-brain axis research is promising, but evidence for specific dietary interventions for stress management is preliminary and developing"
+                },
+                {
+                    "id": "opt3",
+                    "text": "STRONG for all superfoods and supplements"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No evidence exists for any nutrition-mental health connection"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Nutrition and stress represents an emerging evidence area. The gut-brain axis (bidirectional communication between gut microbiome and brain) is well-established as a biological pathway, and preliminary research suggests diet quality may influence stress response and mental health outcomes. However, evidence for specific dietary interventions targeting stress management is still developing. Unlike exercise (STRONG evidence, SMD=-0.61) or CBT (STRONG evidence, d=0.73), nutrition research for stress is characterized by observational studies, small RCTs, and heterogeneous interventions. This means nutrition education should focus on general dietary patterns and avoid overclaiming specific 'stress-reducing foods' or supplements."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the gut-brain axis and why does it matter for stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A marketing term with no scientific basis"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Bidirectional communication between the gut microbiome and the brain via neural, immune, and endocrine pathways—gut health may influence stress response and mental health"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only relevant for digestive disorders, not mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A disproven theory from alternative medicine"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The gut-brain axis refers to bidirectional communication between the gastrointestinal tract (including gut microbiome) and the central nervous system. This occurs through multiple pathways: the vagus nerve (neural), inflammatory cytokines (immune), and cortisol regulation (endocrine/HPA axis). Research shows that gut microbiome composition can influence neurotransmitter production (serotonin, GABA), inflammation levels, and HPA axis regulation—all relevant to stress response. However, while the biological pathway is established, translating this into specific dietary recommendations for stress management is still an emerging area requiring more high-quality RCTs."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should courses avoid promoting specific 'superfoods' or supplements for stress management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "All superfoods and supplements are dangerous"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because evidence for specific foods/supplements targeting stress is weak or preliminary—general dietary patterns have better support than single-nutrient interventions"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Nutrition has no connection to mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Supplements are always better than whole foods"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While the gut-brain connection is real, evidence for specific 'superfoods' (like particular berries, herbs, or trendy ingredients) or single supplements for stress reduction is weak, preliminary, or commercially driven rather than evidence-based. The stronger research supports general dietary patterns (Mediterranean diet, whole foods, adequate protein, diverse fiber sources) rather than magical single nutrients. Additionally, supplement quality is unregulated, interactions with medications are common, and focusing on 'superfoods' distracts from evidence-based stress management strategies with STRONG evidence (CBT, exercise, sleep, social support). Nutrition education should emphasize balanced eating patterns, not overclaim specific stress-reducing foods."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the most evidence-aligned nutrition message for a stress management course?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Follow this specific diet to eliminate all stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "General dietary quality (adequate nutrition, hydration, stable blood sugar, gut health) supports overall resilience; poor nutrition can worsen stress, but no specific diet 'cures' it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Nutrition is irrelevant to stress management"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only supplements, not food, affect stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The evidence-aligned message is that general dietary quality supports resilience without overclaiming specific stress-reduction effects. Poor nutrition (skipped meals, high sugar/processed foods, dehydration, inadequate protein) can worsen stress by creating blood sugar instability, energy crashes, and inflammation. Adequate nutrition (regular meals, diverse whole foods, hydration, protein, fiber) provides the biological foundation for stress management—but it's not a standalone stress intervention. This framing is honest about the evidence (emerging, not strong), acknowledges the gut-brain connection, avoids magical thinking about superfoods, and positions nutrition appropriately within a multi-modal stress management approach."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should nutrition-related symptoms prompt professional consultation rather than self-management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Never—all nutrition issues can be self-managed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Significant unintended weight changes, disordered eating patterns, chronic digestive issues, or using food restriction/binging as primary stress coping require professional evaluation"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only if you have been diagnosed with an eating disorder"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Nutrition never requires professional help"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Several nutrition-related patterns indicate the need for professional consultation: significant unintended weight changes (gain or loss) accompanying stress may signal depression, thyroid issues, or other medical conditions; disordered eating patterns (restrictive eating, binging, purging) require specialized treatment, not general wellness advice; chronic digestive issues may indicate IBS, IBD, or other conditions requiring medical workup; and using food restriction, binging, or extreme dietary control as a primary stress coping mechanism suggests maladaptive coping that benefits from professional support (therapist, registered dietitian). General nutrition education is valuable, but these patterns require clinical assessment and treatment."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "13",
+    "title": "Nutrition and Stress: Fueling Resilience - Quiz"
+}

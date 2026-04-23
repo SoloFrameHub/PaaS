@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Handling Last Second Hurdles Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Litmus Test' for a late-stage objection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking if they have enough money."
+                },
+                {
+                    "id": "b",
+                    "text": "The question: 'If we solve [X] today, does the signature happen tomorrow?'"
+                },
+                {
+                    "id": "c",
+                    "text": "Offering a discount immediately."
+                },
+                {
+                    "id": "d",
+                    "text": "Checking if they still like you."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This question isolates the objection. If solving the problem doesn't lead to a signature, it means the objection is just a smokescreen for a larger internal issue (The Wall)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How should you respond to a 'Budget Freeze' that threatens a middle-of-the-closing deal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Wait silently until they call you back."
+                },
+                {
+                    "id": "b",
+                    "text": "Offer to work for free."
+                },
+                {
+                    "id": "c",
+                    "text": "Pivot to completing Legal/Security reviews and deferring the billing start date to keep the momentum alive."
+                },
+                {
+                    "id": "d",
+                    "text": "Get angry at the prospect."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A freeze is usually financial, not strategic. If you can keep the administrative momentum (Legal/IT) going, you eliminate the friction for when the budget eventually opens back up."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When faced with a last-minute discount request, what is the 'Give-Get' logic?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You give a discount and get a thank you email."
+                },
+                {
+                    "id": "b",
+                    "text": "You give a concession (like a lower price) but only in exchange for a concession from them (like reduced scope or a longer contract term)."
+                },
+                {
+                    "id": "c",
+                    "text": "You give up and get out of the deal."
+                },
+                {
+                    "id": "d",
+                    "text": "You give them a free trial."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Price and Value are linked. If the price goes down, the value/scope must also be adjusted. This preserves the integrity of your pricing and prevents the buyer from treating you like a commodity."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Describe a 'Last-Second Hurdle' you've encountered. Was it a 'Hurdle' (solvable) or a 'Wall' (systemic issue)? Based on this lesson, how would you re-diagnose it and what specific 'Give-Get' would you offer to keep the momentum moving?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can distinguish between solvable friction and systemic roadblocks, and if they propose a specific trade (Give-Get) to resolve the friction."
+        }
+    ]
+}

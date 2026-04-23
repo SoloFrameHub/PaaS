@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "AI Pipeline Insights Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Sentiment Drift' in AI sales analytics?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When a prospect starts using more emojis."
+                },
+                {
+                    "id": "b",
+                    "text": "The detection by AI of subtle shifts in the tone or vocabulary of buyer communication that indicate a change in interest, trust, or internal friction."
+                },
+                {
+                    "id": "c",
+                    "text": "When the CRM changes colors."
+                },
+                {
+                    "id": "d",
+                    "text": "When the founder gets bored."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Human beings are often too close to a deal to notice a buyer's cooling interest. AI can identify patterns (longer reply times, more formal language, fewer 'we' pronouns) that signal a deal is at risk before it actually stalls."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How should a solo founder use AI for a 'Deals Pre-Mortem'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To write a celebratory email before the deal closes."
+                },
+                {
+                    "id": "b",
+                    "text": "To calculate the final tax on a sale."
+                },
+                {
+                    "id": "c",
+                    "text": "To analyze call and email notes and identify the most likely reasons a specific deal might fail, allowing the founder to proactively address those risks."
+                },
+                {
+                    "id": "d",
+                    "text": "To predict the exact date the money will arrive."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pre-mortems are about de-risking. AI can objectively point out that you haven't spoken to the IT department yet or that the price hasn't been validated, prompting you to fix those gaps while the deal is still live."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Question Density' as a buying signal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When the founder asks too many questions."
+                },
+                {
+                    "id": "b",
+                    "text": "A high volume of technical or implementation questions from a buyer, which AI identifies as a signal that the buyer is mentally 'living in the product' and moving toward a close."
+                },
+                {
+                    "id": "c",
+                    "text": "A list of questions in the FAQ."
+                },
+                {
+                    "id": "d",
+                    "text": "When the prospect is confused."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Questions are engagement. If a prospect is asking about data migration or SSO details, they are doing internal research to prepare for a'Yes'. AI flags this as high intent."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "If you had an AI that could listen to your last 5 discovery calls, what specific 'Verbal Tick' or 'Negative Pattern' are you most afraid it would find? (e.g., Talking too much, ignoring price objections, soundling desperate). How would knowing this data change your next call?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can self-diagnose their likely weaknesses and if they see AI as a tool for objective self-improvement rather than just a reporting mechanism."
+        }
+    ]
+}

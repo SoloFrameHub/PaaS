@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "12",
+    "lessonTitle": "Your SEO/AEO Playbook",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the recommended time investment for a solo founder's weekly AEO 'Content Sprint'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "20+ hours a week."
+                },
+                {
+                    "id": "b",
+                    "text": "2 hours a week."
+                },
+                {
+                    "id": "c",
+                    "text": "AEO shouldn't take any time; it's automated."
+                },
+                {
+                    "id": "d",
+                    "text": "10 minutes a day."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A focused 2-hour sprint is enough to create one high-impact, 'citable' piece of content. Consistency is more important for AEO than pure volume.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the AEO ecosystem, what is the primary difference between winning the 'Click' and winning the 'Mind'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Winning the click is for SEO; winning the mind is for AEO where brand authority matters more than the visit."
+                },
+                {
+                    "id": "b",
+                    "text": "Winning the mind is for telepathic marketing."
+                },
+                {
+                    "id": "c",
+                    "text": "There is no difference; they are the same thing."
+                },
+                {
+                    "id": "d",
+                    "text": "Winning the click is more expensive."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Being cited by an AI assistant builds 'Mental Real Estate' and authority. Even if the user doesn't click immediately, your brand is established as the trusted expert for their future needs.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should be the focus of your 'Quarterly Technical Hygiene' audit?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying a new computer."
+                },
+                {
+                    "id": "b",
+                    "text": "Checking for Core Web Vital errors, fixing broken links, and refreshing your sitemap."
+                },
+                {
+                    "id": "c",
+                    "text": "Redesigning your entire logo."
+                },
+                {
+                    "id": "d",
+                    "text": "Deleting all your social media accounts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Quarterly audits ensure that the technical 'Plumbing' of your site remains solid, preventing crawl errors or performance penalties from sabotaging your content efforts.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which phase of the 'High-Intent Roadmap' focuses on achieving 'Tier 1' Share of Model status?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Days 1-30"
+                },
+                {
+                    "id": "b",
+                    "text": "Days 31-90"
+                },
+                {
+                    "id": "c",
+                    "text": "Days 91-180"
+                },
+                {
+                    "id": "d",
+                    "text": "Year 5"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Tier 1 status (being the top-recommended solution) is a long-term goal that results from sustained authoritative content creation and authority signaling during the first 6 months of execution.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the ultimate goal of combining Inverted Pyramid content with JSON-LD Schema?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the website more colorful."
+                },
+                {
+                    "id": "b",
+                    "text": "To provide both 'Human-Readable' and 'Machine-Readable' structure that makes your expertise undeniable to search engines and AI."
+                },
+                {
+                    "id": "c",
+                    "text": "To hide your content from competitors."
+                },
+                {
+                    "id": "d",
+                    "text": "To automatically convert your site into a mobile app."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This 'Human + Machine' structure is the core of AEO. It ensures that regardless of whether a human reads your page or an AI summarizes it, your expertise remains the core source of truth.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "You have all the tools now. Looking back at the entire Course 6, what is the #1 'Technical' win and the #1 'Content' win you will implement this month? What is the specific 'North Star' query you are going to own?",
+            "promptHints": [
+                "Pick one schema type or technical fix (Speed, HTTPS, etc.).",
+                "Pick one structure (Table, List, Inverted Pyramid) to apply to your next post.",
+                "Be very specific about your chosen query (Long-tail works best!)."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "15-20 minutes",
+        "prerequisiteQuizzes": [
+            "11"
+        ],
+        "unlocks": [
+            "course-complete"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Your SEO/AEO Playbook - Quiz"
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between how people with OCD and people without OCD experience intrusive thoughts?",
+            "options": [
+                { "id": "opt1", "text": "People without OCD never have intrusive thoughts" },
+                { "id": "opt2", "text": "People with OCD have more violent thoughts than others" },
+                { "id": "opt3", "text": "People with OCD have different content in their intrusive thoughts" },
+                { "id": "opt4", "text": "People with OCD treat the thought as urgent and meaningful, while others dismiss it as random noise" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Research shows that 90-99% of people experience intrusive thoughts, and the content is nearly identical between people with and without OCD. The difference is not what you think, but how your brain responds. In OCD, the brain treats the thought as urgent, meaningful, and dangerous, demanding a compulsive response."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'thought-action fusion' (TAF)?",
+            "options": [
+                { "id": "opt1", "text": "A technique for combining positive thoughts with positive actions" },
+                { "id": "opt2", "text": "The belief that having a thought is equivalent to doing the action, or that thinking something makes it more likely to happen" },
+                { "id": "opt3", "text": "A mindfulness practice that fuses awareness with behavior" },
+                { "id": "opt4", "text": "The process of turning compulsive thoughts into productive actions" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Thought-action fusion (TAF) is a key cognitive distortion in OCD. Moral TAF is the belief that having a violent thought is morally equivalent to committing violence. Likelihood TAF is the belief that thinking about a bad event makes it more likely to happen. In reality, thoughts are not actions, intentions, or prophecies."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the 'white bear experiment' demonstrate about thought suppression?",
+            "options": [
+                { "id": "opt1", "text": "That people can successfully suppress unwanted thoughts with enough practice" },
+                { "id": "opt2", "text": "That trying not to think about something paradoxically increases how often you think about it" },
+                { "id": "opt3", "text": "That white bears are a common OCD trigger" },
+                { "id": "opt4", "text": "That visualizing animals helps reduce intrusive thoughts" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The white bear experiment showed that when people were told NOT to think about a white bear, they thought about it more than ever. Thought suppression paradoxically increases the frequency of the suppressed thought. The harder you try not to think something, the more your brain monitors for it, which keeps it showing up."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does the 'maybe, maybe not' response technique involve?",
+            "options": [
+                { "id": "opt1", "text": "Ignoring the thought completely and pretending it didn't happen" },
+                { "id": "opt2", "text": "Analyzing the thought to determine whether it is true or false" },
+                { "id": "opt3", "text": "Accepting uncertainty without trying to resolve it and continuing with what you were doing" },
+                { "id": "opt4", "text": "Asking other people whether the thought is true or not" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 'maybe, maybe not' response refuses to play OCD's certainty game. For example: 'What if I left the stove on?' — 'Maybe I did, maybe I didn't. I'm going to keep going.' This isn't believing the worst case; it's accepting that you can live with uncertainty, which is exactly what OCD says you cannot do."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is an effective way to respond to an intrusive thought?",
+            "options": [
+                { "id": "opt1", "text": "Argue with the thought to prove it wrong" },
+                { "id": "opt2", "text": "Analyze why you had the thought to understand its deeper meaning" },
+                { "id": "opt3", "text": "Label it as an OCD thought and return your attention to your current activity" },
+                { "id": "opt4", "text": "Replace it with a positive thought to neutralize it" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Labeling intrusive thoughts ('That's an OCD thought') and returning attention to your current activity is a defusion technique that reduces the power of the thought without feeding the OCD cycle. Arguing, analyzing, and neutralizing all backfire by giving the thought more significance and attention."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "6",
+    "title": "Managing Intrusive Thoughts - Quiz"
+}

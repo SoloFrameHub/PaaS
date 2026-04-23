@@ -1,0 +1,81 @@
+{
+  "lessonId": "3",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "Waterfall Enrichment: 30% to 80% Coverage",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why does single-source enrichment fail for most solo founders?",
+      "options": [
+        { "id": "a", "text": "Single sources are too expensive" },
+        {
+          "id": "b",
+          "text": "No single provider has complete coverage — Apollo finds 35%, Hunter finds a different 30%, overlap is only 10-15%"
+        },
+        { "id": "c", "text": "Single sources have better data quality" },
+        { "id": "d", "text": "Multiple sources confuse the CRM" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Each enrichment provider crawls different sources, validates differently, and updates at different frequencies. Apollo might find 35% of emails, Hunter a different 30%, and Snov.io another 20%, with only 10-15% overlap. Waterfall enrichment checks multiple sources sequentially to achieve 80%+ coverage."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "At a 10% reply rate, what is the difference in conversations between single-source enrichment (35% coverage) and waterfall enrichment (80% coverage) for 500 prospects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17 replies vs 40 replies — 2.3x more conversations"
+        },
+        { "id": "b", "text": "5 replies vs 10 replies" },
+        { "id": "c", "text": "100 replies vs 200 replies" },
+        {
+          "id": "d",
+          "text": "No difference — reply rate matters more than coverage"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "500 prospects with 35% coverage = 175 emails, at 10% reply rate = 17 replies. With 80% coverage = 400 emails, at 10% reply rate = 40 replies. Same effort, same prospects, but 2.3x more conversations just from better email coverage through waterfall enrichment."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the three main causes of poor email coverage (the 'coverage killers')?",
+      "options": [
+        { "id": "a", "text": "Bad internet, slow tools, expensive plans" },
+        {
+          "id": "b",
+          "text": "Data decay, provider gaps, role-based addresses"
+        },
+        {
+          "id": "c",
+          "text": "Small databases, old algorithms, manual entry errors"
+        },
+        { "id": "d", "text": "GDPR compliance, spam filters, bounced emails" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three coverage killers are: data decay (2-3% per month for B2B contacts due to job changes), provider gaps (each source crawls different parts of the internet), and role-based addresses (info@, sales@ instead of personal emails). Waterfall enrichment addresses the first two by checking multiple recently-updated sources."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Clay's waterfall enrichment checks all 75+ data sources simultaneously to find the best match.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Clay checks sources sequentially, not simultaneously. It tries Source A first, then Source B if no result, then Source C, and so on. This waterfall approach stops when it finds valid data, meaning you only pay for successful enrichments rather than querying all 75+ sources for every contact."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "What is your current email coverage rate when you build prospect lists? Design a waterfall enrichment sequence (at least 3 sources in priority order) that you could implement to improve coverage from your current rate toward 80%.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response estimates a current coverage rate, lists at least 3 enrichment sources in priority order with reasoning for the sequence, and considers cost and accuracy tradeoffs. Look for understanding that different sources have different strengths (Apollo for US B2B, Hunter for domain-based lookups, etc.)."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which of the following requires IMMEDIATE professional help (call 988 or go to ER)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Feeling sad for a few days"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Having a specific plan to end your life, access to means, or active self-harm urges"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Mild sleep difficulties"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Feeling tired in the afternoon"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Immediate help is needed if you have a specific plan to end your life, access to means and thoughts of using them, active self-harm urges, psychotic symptoms, or cannot care for basic needs. Call 988, text HOME to 741741, or go to the emergency room."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What PHQ-9 score range suggests professional help is recommended (even without crisis)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any score above 0"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Moderate to severe scores of 10 or higher"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only a perfect score of 27"
+                },
+                {
+                    "id": "opt4",
+                    "text": "PHQ-9 is not used to guide treatment decisions"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A PHQ-9 score of 10 or higher (moderate to severe range) suggests professional help is recommended. Self-help works best for mild symptoms (0-9). Professional treatment is more appropriate for moderate to severe symptoms, symptoms not responding to self-help, or presence of suicidal thoughts."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does research show about combining therapy and medication for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "You should only use one or the other, never both"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Therapy + medication is often MORE effective than either alone, especially for moderate-severe or chronic depression"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Medication makes therapy less effective"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no research on this topic"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that therapy + medication is often more effective than either treatment alone, especially for moderate to severe depression, chronic or recurrent depression, and when one treatment alone isn't sufficient. Many people benefit from this combination approach."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a common barrier to seeking help, and what is the reality?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Barrier: 'It's expensive' - Reality: Treatment is always free"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Barrier: 'Seeking help is weakness' - Reality: Seeking help is courage and self-awareness; depression is a medical condition"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Barrier: 'Therapists judge you' - Reality: Therapists want you to be perfect"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There are no barriers to mental health care"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A common barrier is believing 'Seeking help is weakness.' The reality is that seeking help requires courage and self-awareness. Depression is a medical condition, and you wouldn't feel weak for treating cancer. Other barriers include cost concerns (many low-cost options exist) and believing 'I should handle it alone.'"
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How long does it typically take for antidepressant medication to reach full effectiveness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Immediately after the first dose"
+                },
+                {
+                    "id": "opt2",
+                    "text": "4-6 weeks for full effect"
+                },
+                {
+                    "id": "opt3",
+                    "text": "6-12 months"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Antidepressants don't work at all"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Antidepressant medications typically take 4-6 weeks to reach full effectiveness. Side effects often diminish after the first few weeks. If one medication doesn't work, others might. It's important to work with a prescriber to find the right fit rather than giving up after trying one option."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "depression-action",
+    "lessonId": "8",
+    "title": "When to Seek Professional Help - Quiz"
+}

@@ -1,0 +1,153 @@
+{
+    "lessonId": "10",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 10: Marketing Operations Rhythm",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "conceptual",
+            "xpValue": 15,
+            "question": "What is the primary cause of the 'Feast or Famine' cycle in solo founder marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The economy."
+                },
+                {
+                    "id": "b",
+                    "text": "Lack of funds."
+                },
+                {
+                    "id": "c",
+                    "text": "treating marketing as an ad-hoc activity based on 'feeling' rather than a scheduled rhythm."
+                },
+                {
+                    "id": "d",
+                    "text": "Not having enough tools."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Consistency beats intensity. Founders who market only when they 'feel like it' or when they are desperate for leads will always suffer from unpredictable pipeline."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "conceptual",
+            "xpValue": 15,
+            "question": "Which task belongs in the 'Monday: The Review & Plan' block?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Writing 10 blog posts."
+                },
+                {
+                    "id": "b",
+                    "text": "Checking dashboard metrics and setting 3 non-negotiable priorities."
+                },
+                {
+                    "id": "c",
+                    "text": "Cleaning the email list."
+                },
+                {
+                    "id": "d",
+                    "text": "Fixing broken links."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Mondays are for strategy and prioritization. You need to know 'Where are we?' (metrics) and 'What matters most this week?' (priorities) before you start executing."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "How often should you test your automations (e.g., submitting your own form) to ensure they aren't broken?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never, they work forever."
+                },
+                {
+                    "id": "b",
+                    "text": "Daily."
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly."
+                },
+                {
+                    "id": "d",
+                    "text": "Every 5 years."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 'Set and Forget' fallacy kills funnels. APIs break, tools update, and connections fail. A monthly 'Sanity Check' prevents you from losing leads to a broken form."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "conceptual",
+            "xpValue": 15,
+            "question": "What is a key difference between a B2B Marketing Rhythm and a Creator Marketing Rhythm?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "There is no difference."
+                },
+                {
+                    "id": "b",
+                    "text": "B2B focuses on Pipeline/Deals; Creators focus on Content Production/List Health."
+                },
+                {
+                    "id": "c",
+                    "text": "Creators don't need rhythms."
+                },
+                {
+                    "id": "d",
+                    "text": "B2B founders don't create content."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While both need consistency, B2B ops often revolve around moving leads through stages (MQL -> SQL), while Creator ops follow the 'Content Publishing' cadence (Newsletter -> Repurpose -> Offer)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "strategic",
+            "xpValue": 15,
+            "question": "What is 'Over-Monitoring' and why is it dangerous?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Checking Stripe/Analytics endlessly; it is procrastination disguised as work."
+                },
+                {
+                    "id": "b",
+                    "text": "It means you have too many monitors."
+                },
+                {
+                    "id": "c",
+                    "text": "It helps you find errors instantly."
+                },
+                {
+                    "id": "d",
+                    "text": "It makes you more money."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Staring at dashboards doesn't change the numbers. It creates anxiety and wastes time that should be spent on execution."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Define your 'Monday Morning Ritual.' What specific dashboard will you look at, and at what time will you do it? Write down the 3 metrics that matter most to your business right now.",
+            "minLength": 50,
+            "promptForAI": "Review the student's ritual. Ensure they picked a specific time and 3 concrete metrics (not vague goals). Encourage simplicity."
+        }
+    ]
+}

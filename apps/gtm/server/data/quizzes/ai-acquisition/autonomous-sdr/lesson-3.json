@@ -1,0 +1,75 @@
+{
+  "lessonId": "3",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Platform Deep Dive: 11x, Artisan, AiSDR, Salesforge",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "At what ARR level does 11x (Alice) make economic sense for a solo founder?",
+      "options": [
+        { "id": "a", "text": "$50K ARR" },
+        { "id": "b", "text": "$100K ARR" },
+        {
+          "id": "c",
+          "text": "$500K+ ARR with proven playbooks and teams to supervise"
+        },
+        { "id": "d", "text": "Any ARR level" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "11x costs ~$5,000/month with annual commitments. At that price, you need to book 10+ high-value meetings monthly just to break even. It's built for companies with $500K+ ARR, proven playbooks, and dedicated teams to supervise the AI output."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How does a solo founder's current DIY stack ($136/month) compare to AI SDR platforms in terms of cost?",
+      "options": [
+        { "id": "a", "text": "DIY is more expensive" },
+        { "id": "b", "text": "They cost about the same" },
+        {
+          "id": "c",
+          "text": "AI SDR platforms cost 5-35x more ($750-5,000/month vs $136/month)"
+        },
+        { "id": "d", "text": "AI SDR platforms are free" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A DIY stack of Instantly ($37) + Apollo ($79) + ChatGPT ($20) = $136/month. AI SDR platforms range from Salesforge ($160/month) to 11x ($5,000/month), representing a 1.2x to 37x cost increase. The question is whether the automation justifies the premium."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which AI SDR platform is the most realistic option for solo founders based on pricing?",
+      "options": [
+        { "id": "a", "text": "11x at $5,000/month" },
+        { "id": "b", "text": "Artisan at $2,000/month" },
+        {
+          "id": "c",
+          "text": "Salesforge at $160/month — closest to DIY stack pricing"
+        },
+        { "id": "d", "text": "All platforms are equally affordable" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Salesforge at $160/month is the most realistic AI SDR platform option for solo founders, as it's closest to DIY stack pricing. However, the lesson questions whether even this premium is justified when a well-configured DIY stack achieves comparable results at $136/month."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The question for solo founders isn't 'which AI SDR platform is best?' but 'should I even use an AI SDR platform at all?'",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. The lesson frames the real question not as platform comparison, but whether the fundamental economics work at solo founder scale. For most founders under $500K ARR, a well-configured DIY stack provides comparable results at a fraction of the cost."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Compare the cost-to-benefit ratio of your current outreach stack versus the AI SDR platform that most closely matches your budget. What specific capabilities would the platform add that you can't replicate with your current tools?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response calculates specific costs for both options, identifies concrete capability gaps (not just 'it's more automated'), and makes a data-driven argument about whether the platform premium is justified at their current revenue level."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the 2014 Triple P meta-analysis of 101 studies (n=16,099 families), what effect size was reported for child behavioral outcomes?",
+      "options": [
+        {"id": "opt1", "text": "d = 0.15 (small effect)"},
+        {"id": "opt2", "text": "d = 0.47 (medium effect)"},
+        {"id": "opt3", "text": "d = 0.85 (large effect)"},
+        {"id": "opt4", "text": "No significant effect"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The Triple P meta-analysis reported an effect size of d=0.47 for child outcomes and d=0.58 for parenting practices—both medium-to-large effects. Community-wide implementation reduced child maltreatment by 13-33%. This demonstrates that structured parenting approaches combining positive reinforcement, consistent consequences, and teaching alternative behaviors produce significant, measurable improvements across diverse families."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What does 'behavior is communication' mean?",
+      "options": [
+        {"id": "opt1", "text": "Children should be allowed to behave however they want because it's self-expression"},
+        {"id": "opt2", "text": "Challenging behavior signals unmet needs, skill deficits, or emotional overwhelm—address the underlying cause, not just the symptom"},
+        {"id": "opt3", "text": "All behavior problems stem from poor parenting"},
+        {"id": "opt4", "text": "Behavior can be ignored because it's just communication"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "'Behavior is communication' means challenging behavior signals something: unmet needs (hunger, tiredness, attention), skill deficits (lacks regulation or language to express needs appropriately), emotional overwhelm, or reinforcement patterns. When you address the underlying need or teach missing skills, behavior often improves without direct behavior modification. This doesn't mean allowing all behavior—it means understanding the 'why' behind it guides more effective interventions."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to research, what ratio of positive to negative interactions produces the best outcomes?",
+      "options": [
+        {"id": "opt1", "text": "1 positive to 1 negative (1:1)"},
+        {"id": "opt2", "text": "2 positive to 1 negative (2:1)"},
+        {"id": "opt3", "text": "5 positive to 1 negative (5:1)"},
+        {"id": "opt4", "text": "10 positive to 1 negative (10:1)"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Research suggests 5 positive interactions to every 1 negative produces best outcomes. Most struggling families run 1:1 or worse. The practice of 'catching them being good' increases this ratio by noticing and specifically praising prosocial behavior. You get more of what you attend to—if you only notice misbehavior, you'll see more misbehavior. Deliberately increasing positive attention reduces attention-seeking negative behavior."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for structured parenting programs like Triple P and Incredible Years?",
+      "options": [
+        {"id": "opt1", "text": "Limited - more research needed"},
+        {"id": "opt2", "text": "Moderate - some evidence exists"},
+        {"id": "opt3", "text": "Strong - extensive research demonstrates effectiveness"},
+        {"id": "opt4", "text": "Emerging - preliminary findings only"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "The evidence grade is STRONG. Triple P has been evaluated in 101 studies with over 16,000 families over 33 years. Incredible Years has four decades of research with meta-analyses of 50 studies. Both programs demonstrate significant improvements in child behavior, parenting practices, and family outcomes across diverse populations and settings. Community-wide implementations show population-level effects on child maltreatment."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should parents seek professional assessment for behavioral challenges?",
+      "options": [
+        {"id": "opt1", "text": "Immediately for any misbehavior"},
+        {"id": "opt2", "text": "Never - all behavioral issues can be managed at home"},
+        {"id": "opt3", "text": "When standard strategies fail after consistent implementation (4-6 weeks), behaviors suggest ODD/CD/ADHD patterns, or functioning is seriously impaired"},
+        {"id": "opt4", "text": "Only when the child asks for help"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Seek professional assessment when: standard approaches fail after consistent implementation (4-6 weeks), behaviors suggest underlying conditions (ODD patterns like frequent temper loss and vindictiveness; CD patterns like aggression or property destruction; ADHD-related impulsivity and inattention), functioning is seriously impaired, or trauma-related behavior appears. Struggling with behavior management doesn't mean you're a bad parent—it means your child needs additional support beyond parenting strategies alone."
+    }
+  ],
+  "sectionId": "social-connection",
+  "courseId": "family-parenting-mental-health",
+  "lessonId": "8",
+  "title": "Understanding and Managing Behavioral Challenges - Quiz"
+}

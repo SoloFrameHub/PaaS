@@ -1,0 +1,172 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "1",
+    "lessonTitle": "Why Communities Beat Ads",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "By approximately what percentage have Customer Acquisition Costs (CAC) risen over the last 5 years?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10%"
+                },
+                {
+                    "id": "b",
+                    "text": "30%"
+                },
+                {
+                    "id": "c",
+                    "text": "60%"
+                },
+                {
+                    "id": "d",
+                    "text": "Over 100%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Rising competition and decreasing ad efficiency have driven CAC up by 60%, making traditional paid acquisition unsustainable for many bootstrapped founders.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary mechanism of 'Trust Transference' in a community setting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Paying the community moderator to endorse you."
+                },
+                {
+                    "id": "b",
+                    "text": "Leveraging the existing trust peers have for each other by participating as a helpful practitioner."
+                },
+                {
+                    "id": "c",
+                    "text": "Running highly targeted ads within the community."
+                },
+                {
+                    "id": "d",
+                    "text": "Creating fake accounts to agree with your own posts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Trust transference occurs when you earn credibility through selfless contribution, allowing you to 'borrow' the trust inherent in a community's peer-to-peer relationships.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Borrow Before You Build' the recommended strategy for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because building a new community takes ~9 months to mature and requires significant time you don't have yet."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it's illegal to build your own community."
+                },
+                {
+                    "id": "c",
+                    "text": "Because existing communities are always better than anything you could build."
+                },
+                {
+                    "id": "d",
+                    "text": "Because you can only sell to people in other people's communities."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Building a community from scratch is a massive long-term investment. Starting in existing hubs where your ICP already gathers provides immediate leverage.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the 'Anti-Spam' commitment for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never mentioning your product in a community."
+                },
+                {
+                    "id": "b",
+                    "text": "Only posting once a month."
+                },
+                {
+                    "id": "c",
+                    "text": "Committing to being a 'Helper' first and a 'Seller' second."
+                },
+                {
+                    "id": "d",
+                    "text": "Deleting any comments that disagree with you."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Trust is built by solving problems. In communities, the person asking for advice (or providing it) earns the sale, while the direct 'pitcher' is ignored or banned.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the primary economic advantage of Reddit marketing over traditional ads mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It reaches more people globally."
+                },
+                {
+                    "id": "b",
+                    "text": "It can achieve up to a 94% reduction in cost per action through hyper-targeted relevance."
+                },
+                {
+                    "id": "c",
+                    "text": "Reddit doesn't allow competitors to see your marketing."
+                },
+                {
+                    "id": "d",
+                    "text": "Reddit pays you for high-quality comments."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Because subreddits are literally groups of people discussing specific problems, the relevance of a well-placed, helpful comment is far higher than a generic ad, leading to lower conversion costs.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify one community (Reddit, Slack, Discord, etc.) where you have previously lurked or participated. Based on the concept of 'Trust Transference', what is one specific piece of practitioner advice you could have shared in the last week that would have established your authority without selling anything?",
+            "promptHints": [
+                "Think of a recent problem you solved for a client or yourself.",
+                "Consider a question you saw that had zero helpful replies.",
+                "Focus on 'Teaching the How' rather than 'Pitching the What'."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [],
+        "unlocks": [
+            "2"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Why Communities Beat Ads - Quiz"
+}

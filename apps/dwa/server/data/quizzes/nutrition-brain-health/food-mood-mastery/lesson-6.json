@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do universal school meal programs show stronger mental health benefits than income-targeted programs?",
+            "options": [
+                { "id": "opt1", "text": "Universal programs serve higher quality food" },
+                { "id": "opt2", "text": "Universal programs are cheaper to run, so more money goes to food" },
+                { "id": "opt3", "text": "Universal programs eliminate the stigma of being singled out for needing help, while also improving nutrition for all students" },
+                { "id": "opt4", "text": "Income-targeted programs do not actually reach the students who need them" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Universal meal programs eliminate stigma entirely — no child is singled out for needing help. When only low-income students receive free meals, children report feeling embarrassed or different from peers. Universal programs combine nutritional improvement with stigma elimination, which strengthens the mental health benefits."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What percentage of the average American child's caloric intake comes from ultra-processed foods?",
+            "options": [
+                { "id": "opt1", "text": "Approximately 25%" },
+                { "id": "opt2", "text": "Approximately 40%" },
+                { "id": "opt3", "text": "Approximately 67%" },
+                { "id": "opt4", "text": "Approximately 90%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Ultra-processed foods now constitute an estimated 67% of the average child's caloric intake in the United States. These foods are engineered for hyper-palatability while being depleted of the micronutrients that developing brains need, and higher consumption is associated with increased rates of depression, anxiety, and ADHD symptoms."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How are regular family meals (3-5+ times per week) associated with youth mental health?",
+            "options": [
+                { "id": "opt1", "text": "They have no measurable effect on youth mental health" },
+                { "id": "opt2", "text": "They are associated with 12-20% reduced odds of depression and anxiety in youth" },
+                { "id": "opt3", "text": "They only benefit children under age 5" },
+                { "id": "opt4", "text": "They improve nutrition but have no effect on emotional wellbeing" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Regular family meals (5+ times per week) are associated with 12-20% reduced odds of depression and anxiety in youth, better dietary quality, fewer disordered eating behaviors, and improved academic performance. The benefits come through both nutritional pathways and psychosocial pathways (structure, connection, communication)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why are breakfast programs particularly impactful for youth mental health?",
+            "options": [
+                { "id": "opt1", "text": "Because children prefer eating breakfast at school rather than at home" },
+                { "id": "opt2", "text": "Because morning nutrition directly affects same-day cognitive function and emotional regulation after an overnight fast" },
+                { "id": "opt3", "text": "Because breakfast is the only meal that affects brain chemistry" },
+                { "id": "opt4", "text": "Because schools can control portion sizes better at breakfast" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "After an overnight fast, blood glucose levels are low, and the brain uses about 20% of the body's glucose. Children who skip breakfast show poorer concentration, more irritability, more anxiety, and worse emotional regulation. Morning nutrition directly affects same-day cognitive function and emotional regulation."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the most effective parental strategy for influencing children's eating behaviors?",
+            "options": [
+                { "id": "opt1", "text": "Forcing children to finish vegetables before they can have dessert" },
+                { "id": "opt2", "text": "Labeling foods as 'good' and 'bad' so children learn which to choose" },
+                { "id": "opt3", "text": "Restricting access to all sweets and ultra-processed foods" },
+                { "id": "opt4", "text": "Modeling enjoyment of diverse foods and making nutrient-dense foods visible and accessible at home" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Children learn eating behaviors primarily by observing their parents. Parental modeling of enjoying diverse, nutrient-rich foods, combined with making nutrient-dense foods visible and accessible at home, is the most effective strategy. Parental restriction, using food as reward/punishment, and moralistic food language are associated with increased risk of disordered eating in children."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "6",
+    "title": "Pediatric Nutrition and Youth Mental Health - Quiz"
+}

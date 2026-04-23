@@ -1,0 +1,105 @@
+{
+  "id": "sleep-blueprint-checklist",
+  "title": "Personal Sleep Blueprint Checklist",
+  "description": "Build your personalized sleep plan by checking off the strategies you commit to implementing. This is your roadmap for better sleep.",
+  "instructions": "Review each strategy and check the ones you plan to incorporate into your sleep routine. Start with 3-5 items and add more over time. Revisit weekly to track what you're consistently doing.",
+  "items": [
+    {
+      "id": "consistent-wake",
+      "label": "Set a consistent wake time (even weekends) — my wake time: ___",
+      "type": "checkbox",
+      "category": "Sleep Schedule"
+    },
+    {
+      "id": "consistent-bed",
+      "label": "Set a consistent bedtime based on my sleep need — my bedtime: ___",
+      "type": "checkbox",
+      "category": "Sleep Schedule"
+    },
+    {
+      "id": "wind-down",
+      "label": "Create a 30-60 minute wind-down routine before bed",
+      "type": "checkbox",
+      "category": "Sleep Schedule"
+    },
+    {
+      "id": "morning-light",
+      "label": "Get 15-30 minutes of bright light within 1 hour of waking",
+      "type": "checkbox",
+      "category": "Light Exposure"
+    },
+    {
+      "id": "dim-evening",
+      "label": "Dim lights and reduce screen exposure 1-2 hours before bed",
+      "type": "checkbox",
+      "category": "Light Exposure"
+    },
+    {
+      "id": "bedroom-dark",
+      "label": "Make my bedroom as dark as possible for sleep",
+      "type": "checkbox",
+      "category": "Light Exposure"
+    },
+    {
+      "id": "exercise-timing",
+      "label": "Exercise regularly but finish vigorous activity 4+ hours before bed",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "caffeine-cutoff",
+      "label": "Stop caffeine by early afternoon (my cutoff: ___)",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "alcohol-limit",
+      "label": "Avoid alcohol within 3 hours of bedtime",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "sleep-nutrition",
+      "label": "Include sleep-supporting foods (tryptophan, magnesium, complex carbs)",
+      "type": "checkbox",
+      "category": "Physical Health"
+    },
+    {
+      "id": "temp-optimize",
+      "label": "Keep bedroom temperature at 60-67°F (15.5-19.4°C)",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "noise-control",
+      "label": "Minimize noise or use white noise / earplugs",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "bed-association",
+      "label": "Use bed only for sleep and intimacy (no work, scrolling, TV)",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "relaxation-technique",
+      "label": "Practice a relaxation technique before bed (my technique: ___)",
+      "type": "checkbox",
+      "category": "Mental Preparation"
+    },
+    {
+      "id": "worry-time",
+      "label": "Schedule a 'worry time' earlier in the day (not at bedtime)",
+      "type": "checkbox",
+      "category": "Mental Preparation"
+    },
+    {
+      "id": "leave-bed-rule",
+      "label": "If awake 20+ minutes, get up and do something calming until sleepy",
+      "type": "checkbox",
+      "category": "Mental Preparation"
+    }
+  ],
+  "disclaimer": "This checklist is for educational purposes only. If you have persistent sleep problems, consult a healthcare provider or sleep specialist."
+}

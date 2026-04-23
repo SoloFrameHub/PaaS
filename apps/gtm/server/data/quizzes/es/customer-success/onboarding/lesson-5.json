@@ -1,0 +1,63 @@
+{
+  "lessonId": "5",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Dominio del Correo del Día 7",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué porcentaje de clientes que logran un resultado significativo en los primeros 7 días siguen activos en el Día 60?",
+      "options": ["45%", "60%", "75%", "85%"],
+      "correctAnswer": 3,
+      "explanation": "El 85% de los clientes que logran su primera victoria en 7 días permanecen activos en el Día 60, en comparación con solo el 15% de los que no lo logran."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia principal entre un correo de 'Primera Victoria' y uno de 'Usuario Estancado'?",
+      "options": [
+        "Primera Victoria es más largo y detallado",
+        "Primera Victoria celebra el logro; Estancado elimina la fricción",
+        "Los correos de Estancado deben enviarse antes",
+        "Los correos de Primera Victoria deben incluir ventas adicionales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los correos de Primera Victoria celebran lo que el cliente logró y señalan el siguiente hito. Los correos de Estancado identifican bloqueos y proporcionan el camino más fácil hacia el primer valor."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué tipo de disparador generalmente obtiene mayor engagement?",
+      "options": [
+        "Basado en tiempo (Día 7 sin importar el comportamiento)",
+        "Conductual (disparado por acciones específicas)",
+        "Ambos tienen el mismo desempeño",
+        "Ninguno — los clientes ignoran los correos de incorporación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los disparadores conductuales obtienen 3-5 veces más engagement porque son contextualmente relevantes — el correo llega justo cuando el cliente completa una acción."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Verdadero o Falso: Los correos del Día 7 deben firmarse con el nombre de la empresa, no con el del fundador, para parecer más profesionales.",
+      "correctAnswer": false,
+      "explanation": "Falso. Los correos del nombre personal del fundador obtienen tasas de apertura 20-30% más altas. El Día 7 es un momento de relación, no de marca."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Un cliente inició sesión 4 veces pero no ha completado su primer hito. ¿Qué correo debería recibir?",
+      "options": [
+        "Correo de Primera Victoria",
+        "Correo de Estancado pero Activo (oferta de ayuda)",
+        "Correo de Fantasma Estancado (reenganche)",
+        "Ningún correo — esperar hasta el Día 14"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Este cliente está comprometido pero bloqueado. Necesita el correo de Estancado con una oferta directa de ayuda, no una celebración ni un mensaje genérico de reenganche."
+    }
+  ]
+}

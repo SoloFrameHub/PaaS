@@ -1,0 +1,101 @@
+{
+    "lessonId": "10",
+    "courseId": "analytics",
+    "sectionId": "operations-systems",
+    "title": "The Analytics Playbook",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the analytics → automation loop, what does analytics tell you?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "How to build Zapier automations"
+                },
+                {
+                    "id": "b",
+                    "text": "Which bottlenecks to prioritize for automation"
+                },
+                {
+                    "id": "c",
+                    "text": "How to reduce your automation budget"
+                },
+                {
+                    "id": "d",
+                    "text": "When to switch CRM tools"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Analytics identifies bottlenecks. Automation fixes them. The loop: Measure → Identify bottleneck → Automate fix → Measure improvement."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How long should you test a hypothesis before drawing conclusions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2 weeks"
+                },
+                {
+                    "id": "b",
+                    "text": "4-6 weeks"
+                },
+                {
+                    "id": "c",
+                    "text": "6 months"
+                },
+                {
+                    "id": "d",
+                    "text": "1 year"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "4-6 weeks provides enough data to see trends without waiting so long that you miss the window to course-correct. 1-2 weeks is noise; 6+ months is too slow."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "You should test multiple variables simultaneously to find improvements faster.",
+            "correctAnswer": "b",
+            "explanation": "False. Test one variable at a time. If you change messaging AND add demos simultaneously, you won't know which change drove the improvement.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should you add a new metric to your dashboard?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Whenever you find an interesting data source"
+                },
+                {
+                    "id": "b",
+                    "text": "After consistently acting on all existing metrics for 8+ weeks"
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly, to keep your dashboard fresh"
+                },
+                {
+                    "id": "d",
+                    "text": "Only when investors request it"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Earn the right to complexity. Only add metrics when you've acted on everything you already track for 8+ weeks. Each new metric must change a decision."
+        }
+    ]
+}

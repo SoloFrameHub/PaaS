@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "5",
+    "sectionId": "foundations",
+    "title": "The Zero-to-Ten Sprint Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the singular goal of the 'Zero-to-Ten Sprint'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To build a scalable automated sales machine"
+                },
+                {
+                    "id": "b",
+                    "text": "To validate the offer and get 10 paying customers as fast as possible"
+                },
+                {
+                    "id": "c",
+                    "text": "To raise venture capital"
+                },
+                {
+                    "id": "d",
+                    "text": "To perfect your brand and website"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Zero-to-Ten phase is entirely about validation and proof of value. Efficiency and automation come later; right now, you need proof that someone will pay."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'Brutal Honesty' recommended as a sales tool in this phase?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it makes you look like a big company"
+                },
+                {
+                    "id": "b",
+                    "text": "Because people enjoy being part of a 'build' and will help you if you ask for their expertise"
+                },
+                {
+                    "id": "c",
+                    "text": "Because you can't get in trouble for lying if you're honest"
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't; you should always pretend to be more established than you are"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Positioning early prospects as 'design partners' or collaborators builds a different kind of trust. They feel invested in the outcome and are often more willing to forgive early bugs or gaps in exchange for a voice in the product."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should the majority of your effort (70%) be spent on during the sprint?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Writing blog posts"
+                },
+                {
+                    "id": "b",
+                    "text": "Direct, manual reach-outs to ICP targets"
+                },
+                {
+                    "id": "c",
+                    "text": "Tweaking the product features"
+                },
+                {
+                    "id": "d",
+                    "text": "Networking at large conferences"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Calculated manual outreach is the fastest way to get feedback. At this stage, you need 1-on-1 conversations, not a broad audience."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "While on a 'Problem Interview' call, a founder discovers the prospect doesn't actually have the pain they expected. What is the correct move?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Try to convince them they do have the pain"
+                },
+                {
+                    "id": "b",
+                    "text": "End the call as fast as possible"
+                },
+                {
+                    "id": "c",
+                    "text": "Use it as data to refine the ICP or the problem statement (Iteration)"
+                },
+                {
+                    "id": "d",
+                    "text": "Offer them a different product entirely"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Every 'no' or 'not for me' is valuable data. It tells you either your targeting is wrong or your problem definition is off. Use this feedback to iterate immediately."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should a founder transition out of the Zero-to-Ten Sprint context?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When they hit 100 on their email list"
+                },
+                {
+                    "id": "b",
+                    "text": "When they have 10 paying customers and a validated offer"
+                },
+                {
+                    "id": "c",
+                    "text": "After 3 months, regardless of results"
+                },
+                {
+                    "id": "d",
+                    "text": "When they finish all Track 1 courses"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "10 customers is the arbitrary but effective benchmark for 'Initial Traction.' At this point, you've proven someone will pay, and you can start looking at more scalable acquisition paths (SaaS, Creator, or Service)."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "What's your current validation status? How many paying customers do you have? Based on Lesson 5, what is the #1 distraction currently keeping you from doing 10 manual reach-outs a day?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the founder's honesty. Are they 'playing business' (focusing on logos/automation) or 'doing business' (manual outreach)? Push them to commit to a specific outreach volume and identify their 'Target 10' for tomorrow."
+        }
+    ]
+}

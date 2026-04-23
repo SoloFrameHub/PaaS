@@ -1,0 +1,68 @@
+{
+  "lessonId": "4",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Dominio de las Etapas del Pipeline",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Un prospecto responde a tu correo frío diciendo 'No me interesa ahora'. ¿En qué etapa debería estar este trato?",
+      "options": [
+        "Contactado (realmente no se ha comprometido)",
+        "Comprometido (cualquier respuesta cuenta como compromiso)",
+        "Perdido (dijo que no le interesa)",
+        "Reunión (agenda un seguimiento)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cualquier respuesta = compromiso, incluso si es negativa. Pasa a Comprometido y luego haz seguimiento en 90 días con un nuevo disparador. No cierres como Perdido a menos que digan explícitamente 'nunca me vuelvas a contactar'."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuánto tiempo debería un trato permanecer en la etapa 'Contactado' antes de tomar acción?",
+      "options": [
+        "3-7 días con seguimientos, luego cerrar como Perdido si no hay respuesta para el Día 14",
+        "Mínimo 30 días para darles tiempo de pensar",
+        "Seguir con seguimientos semanales por 90 días",
+        "Pasar a Perdido inmediatamente si no responden en 24 horas"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La regla de 3 contactos: haz seguimiento el Día 3 y el Día 7. Si no hay respuesta para el Día 14, pasa a Perdido con razón 'Sin Respuesta'. Puedes retomar el contacto más tarde con un nuevo disparador."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el campo más importante que completar al cerrar un trato como Perdido?",
+      "options": [
+        "Valor del trato",
+        "Razón de pérdida",
+        "Nombre del competidor",
+        "Fecha del último contacto"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La razón de pérdida es inteligencia estratégica. Si el 60% de tus pérdidas son 'eligió al competidor X', tienes un problema de posicionamiento. Registra esto religiosamente."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Los fundadores en solitario deberían usar pipelines separados para leads inbound vs. outbound.",
+      "correctAnswer": false,
+      "explanation": "Falso. Usa un pipeline con un campo 'Fuente del Lead'. Múltiples pipelines fragmentan tus informes y duplican el trabajo de mantenimiento."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Un prospecto tuvo una excelente llamada de demo y te pidió que enviaras los precios. ¿A qué etapa debería pasar este trato?",
+      "options": [
+        "Quedarse en la etapa Reunión hasta que confirmen el interés",
+        "Pasar a la etapa Propuesta inmediatamente",
+        "Pasar a la etapa Comprometido para nutrir más",
+        "Pasar a la etapa Ganado (claramente están interesados)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Precios enviados = etapa Propuesta. No esperes. El criterio de salida de la etapa Reunión es 'propuesta enviada' — muévelo inmediatamente y crea una tarea de seguimiento."
+    }
+  ]
+}

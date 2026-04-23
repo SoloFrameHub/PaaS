@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Free-to-Paid Community Funnels",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core principle behind the 'velvet rope strategy' for community funnels?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hide all paid content completely so free members cannot see what they are missing"
+                },
+                {
+                    "id": "b",
+                    "text": "Make the paid experience strategically visible to free members without feeling manipulative"
+                },
+                {
+                    "id": "c",
+                    "text": "Restrict free members to read-only access with no ability to post or interact"
+                },
+                {
+                    "id": "d",
+                    "text": "Automatically upgrade free members to paid after 30 days"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The velvet rope strategy borrows from nightclubs: everyone can see the VIP section and that the people there are having a different experience. Free members should be able to see enough of the paid experience to understand the value gap, through shared wins, preview events, and member badges."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the 'give away the what, charge for the how and the who' framework, which of the following should be in the FREE tier?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Step-by-step implementation playbooks and templates"
+                },
+                {
+                    "id": "b",
+                    "text": "Personal feedback on members' work submissions"
+                },
+                {
+                    "id": "c",
+                    "text": "The concepts, frameworks, and mental models that explain what needs to happen"
+                },
+                {
+                    "id": "d",
+                    "text": "Weekly group coaching and hot-seat sessions"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The framework says to give away the 'what' (concepts, principles, diagnosis, inspiration) and charge for the 'how' (implementation details, playbooks, templates) and the 'who' (access to you, access to curated peers, accountability structures)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does a free community member who has been active for 30+ days convert at 8-15%, compared to 1-3% for a typical email opt-in?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Free community members receive more promotional emails"
+                },
+                {
+                    "id": "b",
+                    "text": "The community platform sends automated upgrade prompts"
+                },
+                {
+                    "id": "c",
+                    "text": "Repeated authentic interaction builds trust that a one-time lead magnet cannot match"
+                },
+                {
+                    "id": "d",
+                    "text": "Community members are wealthier and can afford more products"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A free community is a living lead magnet that delivers value continuously. Members see your expertise demonstrated in real time, build relationships with other members, develop engagement habits, and experience the community dynamic firsthand. This repeated, authentic interaction builds trust far beyond what a PDF download can achieve."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design your three-tier community structure (Free, Paid, Premium). For each tier, list 3-4 specific inclusions and explain why each item belongs in that tier rather than a different one, using the 'give the what, charge for the how and the who' framework.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has created a clear three-tier structure with specific, concrete inclusions for each tier. Check that the free tier focuses on concepts and general community interaction, the paid tier adds implementation support and accountability, and the premium tier adds direct access and exclusivity. Point out any items that seem misplaced according to the framework."
+        }
+    ]
+}

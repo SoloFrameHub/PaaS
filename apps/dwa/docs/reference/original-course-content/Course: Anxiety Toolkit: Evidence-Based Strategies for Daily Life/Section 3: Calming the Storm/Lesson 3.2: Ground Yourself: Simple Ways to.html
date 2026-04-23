@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.2: The 5-4-3-2-1 Grounding Skill</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        .gentle-header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, #477e8f 100%);
+            color: white; padding: 25px 30px; text-align: center;
+            border-radius: 12px; margin-bottom: 30px;
+        }
+        .gentle-header h1 { font-size: 1.8em; margin: 0 0 10px 0; color: white; }
+        .gentle-header p { font-size: 1.1em; margin: 0; opacity: 0.95; }
+
+        .safe-space-container {
+            background: var(--soft-white); border-radius: 12px;
+            padding: 30px 40px; border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15);
+            margin-bottom: 30px;
+        }
+        
+        .intro-block {
+            border-left: 5px solid var(--calming-teal); padding: 20px 25px;
+            background: var(--light-teal); margin-bottom: 30px; border-radius: 0 8px 8px 0;
+        }
+        .intro-block h2 { color: var(--deep-teal); font-size: 1.6em; margin-top: 0; }
+        .intro-block p { font-size: 1.1em; }
+        .intro-block .provider-note { font-style: italic; color: var(--warm-gray); }
+
+        /* Grounding Exercise Section */
+        .grounding-exercise {
+            background: var(--light-sage); padding: 30px;
+            border-radius: 12px; border: 2px solid var(--light-teal);
+        }
+        .instruction-card {
+            background: var(--soft-white); padding: 25px;
+            border-radius: 8px; margin-bottom: 20px;
+            text-align: center; display: none; /* Hidden by default */
+            animation: fadeIn 0.8s;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .instruction-card h3 {
+            margin: 0 0 15px 0; color: var(--deep-teal);
+            font-size: 2em; display: flex; align-items: center;
+            justify-content: center; gap: 15px;
+        }
+        .instruction-card .icon { font-size: 1.2em; }
+        .instruction-card p { font-size: 1.1em; margin-bottom: 20px; }
+        
+        .input-list textarea {
+            width: 95%; margin-bottom: 10px; padding: 10px;
+            border: 2px solid var(--light-teal); border-radius: 6px;
+            font-size: 1em; background-color: #fdfdfd;
+        }
+        .input-list textarea:focus {
+            outline: none; border-color: var(--soft-blue);
+        }
+
+        .btn {
+            background: var(--sage-green); color: white; border: none; padding: 12px 30px;
+            font-size: 1.1em; font-weight: 600; border-radius: 50px; cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn:hover { background-color: #769a59; transform: translateY(-2px); }
+        .btn:disabled { background-color: var(--warm-gray); cursor: not-allowed; }
+
+        #start-btn-container { text-align: center; }
+
+        .completion-message {
+            text-align: center;
+            padding: 30px;
+        }
+        .completion-message h2 { color: var(--success-green, #2e7d32); }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="gentle-header">
+            <h1>Lesson 3.2: Ground Yourself: Simple Ways to Feel Present</h1>
+            <p>An anchor for your mind in an emotional storm.</p>
+        </header>
+
+        <main class="safe-space-container">
+            <section class="intro-block">
+                <h2>The 5-4-3-2-1 Grounding Skill</h2>
+                <p>When your mind is spinning with anxious thoughts, it's often focused on the past ("what I did wrong") or the future ("what might go wrong"). Grounding is the skill of pulling your attention back to the present moment—the only place you are truly safe. This exercise uses your five senses to anchor you in the here and now.</p>
+                <p class="provider-note"><strong>A note from Phillip:</strong> "Anxiety cannot easily survive in the present moment. This skill is incredibly effective because it's impossible to focus on your five senses and your anxious thoughts at the exact same time. You are intentionally shifting your brain's focus."</p>
+            </section>
+            
+            <section class="grounding-exercise">
+                <div id="start-btn-container">
+                     <p style="text-align: center; font-weight: 500;">Ready to try it? We'll walk you through it step-by-step.</p>
+                    <button class="btn" id="start-btn" onclick="startExercise()">Begin the 5-4-3-2-1 Exercise</button>
+                </div>
+
+                <!-- Step 5: Sight -->
+                <div class="instruction-card" id="step5">
+                    <h3><span class="icon">5️⃣</span> Acknowledge 5 things you can SEE</h3>
+                    <p>Look around you right now. No judgment, just notice. List five things you see in your immediate environment. They can be big or small.</p>
+                    <div class="input-list">
+                        <textarea rows="1" placeholder="e.g., The blue coffee mug on my desk"></textarea>
+                        <textarea rows="1" placeholder="e.g., A crack in the ceiling"></textarea>
+                        <textarea rows="1" placeholder="e.g., The green leaves on the plant outside"></textarea>
+                        <textarea rows="1" placeholder="e.g., A dust bunny in the corner"></textarea>
+                        <textarea rows="1" placeholder="e.g., The light reflecting off my screen"></textarea>
+                    </div>
+                    <button class="btn" onclick="showNextStep(4)">Next Step</button>
+                </div>
+
+                <!-- Step 4: Touch -->
+                <div class="instruction-card" id="step4">
+                    <h3><span class="icon">4️⃣</span> Acknowledge 4 things you can FEEL</h3>
+                    <p>Turn your attention to the sensation of touch. What are four things you can physically feel right now?</p>
+                    <div class="input-list">
+                        <textarea rows="1" placeholder="e.g., The smooth surface of my phone"></textarea>
+                        <textarea rows="1" placeholder="e.g., My feet flat on the floor"></textarea>
+                        <textarea rows="1" placeholder="e.g., The soft fabric of my sweater"></textarea>
+                        <textarea rows="1" placeholder="e.g., A cool breeze from the vent"></textarea>
+                    </div>
+                     <button class="btn" onclick="showNextStep(3)">Next Step</button>
+                </div>
+
+                <!-- Step 3: Hearing -->
+                <div class="instruction-card" id="step3">
+                    <h3><span class="icon">3️⃣</span> Acknowledge 3 things you can HEAR</h3>
+                    <p>Listen carefully. Tune in to the sounds around you, even the subtle ones you might usually ignore.</p>
+                     <div class="input-list">
+                        <textarea rows="1" placeholder="e.g., The hum of my computer"></textarea>
+                        <textarea rows="1" placeholder="e.g., A bird chirping outside"></textarea>
+                        <textarea rows="1" placeholder="e.g., The sound of my own breathing"></textarea>
+                    </div>
+                     <button class="btn" onclick="showNextStep(2)">Next Step</button>
+                </div>
+
+                <!-- Step 2: Smell -->
+                <div class="instruction-card" id="step2">
+                    <h3><span class="icon">2️⃣</span> Acknowledge 2 things you can SMELL</h3>
+                    <p>Take a gentle breath in through your nose. What scents can you detect in the air right now?</p>
+                    <div class="input-list">
+                        <textarea rows="1" placeholder="e.g., The faint smell of coffee"></textarea>
+                        <textarea rows="1" placeholder="e.g., The dusty scent of a book"></textarea>
+                    </div>
+                    <button class="btn" onclick="showNextStep(1)">Next Step</button>
+                </div>
+
+                <!-- Step 1: Taste -->
+                <div class="instruction-card" id="step1">
+                    <h3><span class="icon">1️⃣</span> Acknowledge 1 thing you can TASTE</h3>
+                    <p>Focus on your sense of taste. This could be the lingering taste of your last meal, or simply the neutral taste of your own mouth.</p>
+                     <div class="input-list">
+                        <textarea rows="1" placeholder="e.g., The mint from my toothpaste this morning"></textarea>
+                    </div>
+                    <button class="btn" onclick="showCompletion()">Finish Exercise</button>
+                </div>
+
+                <!-- Completion Message -->
+                <div class="instruction-card" id="completion">
+                    <div class="completion-message">
+                         <h2>Excellent Work.</h2>
+                         <p>Take a deep breath. Notice how you feel right now. By engaging your senses, you've successfully anchored yourself in the present moment. This is a skill you can use anywhere, anytime you feel your mind starting to spin. You are in control.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        let currentStep = 0;
+
+        function startExercise() {
+            document.getElementById('start-btn-container').style.display = 'none';
+            showNextStep(5);
+        }
+
+        function showNextStep(stepNumber) {
+            // Hide all steps first
+            document.querySelectorAll('.instruction-card').forEach(card => {
+                card.style.display = 'none';
+            });
+            
+            // Show the specific step
+            const stepToShow = document.getElementById(`step${stepNumber}`);
+            if (stepToShow) {
+                stepToShow.style.display = 'block';
+                // Focus the first input of the new step
+                const firstInput = stepToShow.querySelector('textarea');
+                if (firstInput) {
+                    firstInput.focus();
+                }
+            }
+        }
+        
+        function showCompletion() {
+            // Hide all steps
+            document.querySelectorAll('.instruction-card').forEach(card => {
+                card.style.display = 'none';
+            });
+            
+            // Show the completion message
+            const completionCard = document.getElementById('completion');
+            completionCard.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

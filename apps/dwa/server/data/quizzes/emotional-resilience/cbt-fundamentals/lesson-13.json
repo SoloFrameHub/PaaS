@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is behavioral activation?",
+            "options": [
+                {"id": "opt1", "text": "Forcing yourself to do activities even when you don't feel like it"},
+                {"id": "opt2", "text": "Systematically engaging in valued activities to improve mood and break the cycle of avoidance"},
+                {"id": "opt3", "text": "Staying busy to avoid thinking about problems"},
+                {"id": "opt4", "text": "Only doing activities you already enjoy"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Behavioral activation is based on the principle that action changes emotion. When you're depressed or anxious, you withdraw — which makes mood worse. BA teaches you to re-engage with meaningful activities, which generates evidence that challenges negative thoughts and improves mood."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does behavioral activation focus on valued activities rather than just pleasant ones?",
+            "options": [
+                {"id": "opt1", "text": "Because pleasant activities are too easy and don't create change"},
+                {"id": "opt2", "text": "Because activities aligned with your values create lasting meaning and motivation"},
+                {"id": "opt3", "text": "Because pleasant activities are selfish and unhelpful"},
+                {"id": "opt4", "text": "Because you should only do difficult things to prove you can"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. Pleasant activities (scrolling social media) provide temporary distraction, but valued activities (spending time with family, working on a meaningful project) create lasting fulfillment and strengthen your sense of purpose. This makes the effort feel worthwhile even when it's hard."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the relationship between behavioral activation and the cognitive triangle?",
+            "options": [
+                {"id": "opt1", "text": "Behavioral activation ignores thoughts and only focuses on behavior"},
+                {"id": "opt2", "text": "Changing behavior provides evidence that challenges negative thoughts and improves mood"},
+                {"id": "opt3", "text": "You must change thoughts before you can change behavior"},
+                {"id": "opt4", "text": "Behavioral activation and cognitive work are separate and don't interact"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. When you avoid ('I can't handle this'), your brain learns 'this is dangerous.' When you engage despite discomfort, you collect evidence: 'I did it, it wasn't as bad as I thought, I can handle more than I believed.' Behavior teaches your brain new patterns."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How do you start behavioral activation when motivation is very low?",
+            "options": [
+                {"id": "opt1", "text": "Wait until you feel motivated, then start"},
+                {"id": "opt2", "text": "Start with small, achievable activities and build gradually"},
+                {"id": "opt3", "text": "Force yourself to do everything you used to do immediately"},
+                {"id": "opt4", "text": "Only do activities that require no effort"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Behavioral activation teaches that action precedes motivation, not the other way around. Start small ('make the bed,' 'walk around the block') to prove you can do something, then gradually increase difficulty. Small wins build momentum and self-efficacy."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify one valued activity you've been avoiding due to low mood or anxiety. What's the smallest first step you could take this week? How might engaging with this activity provide evidence that challenges a negative thought?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "13",
+    "title": "Behavioral Activation - Quiz"
+}

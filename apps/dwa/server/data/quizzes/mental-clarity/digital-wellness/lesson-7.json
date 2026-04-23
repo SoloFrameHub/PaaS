@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most effective notification management strategy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Keep all notifications on so you don't miss anything important"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Disable all non-essential notifications and batch-check remaining ones at scheduled times"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Turn notifications off only during work hours"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Use vibrate mode instead of sound"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The strongest evidence supports aggressive notification pruning: disable all non-essential alerts and check remaining ones at scheduled intervals (e.g., 3-4 times/day). This reduces attention fragmentation while maintaining access to important information."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which types of notifications should you consider keeping enabled?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "All social media likes, comments, and follows"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Only critical, time-sensitive communications: calls from key contacts, urgent work messages, emergency alerts"
+                },
+                {
+                    "id": "opt3",
+                    "text": "All email notifications to stay on top of your inbox"
+                },
+                {
+                    "id": "opt4",
+                    "text": "News alerts to stay informed"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Keep only truly critical, time-sensitive notifications: calls from key people, urgent work messages (if required by your job), and emergency alerts. Most notifications (email, social media, news) can be batched."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'batch checking' and why is it effective?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Checking all apps simultaneously while multitasking"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Checking messages/emails at scheduled times (e.g., 9am, 1pm, 5pm) instead of responding to each notification immediately"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Grouping similar apps together on your home screen"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Downloading multiple apps at once"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Batch checking means checking messages, emails, and social media at designated times (e.g., 3-4 times/day) rather than continuously. This preserves focus blocks while ensuring you stay responsive."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does research show about the impact of disabling notifications?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "People miss critical information and become less productive"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Most people report improved focus, reduced stress, and no significant loss of important information"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It only helps people with attention disorders"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It has no measurable effect on wellbeing or productivity"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Studies show that disabling notifications improves focus, reduces stress and anxiety, and rarely leads to missing truly important information — most notifications are low-priority."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Review your current notification settings. Which apps currently send you notifications? Which of these could you disable without negative consequences? Pick 3-5 to turn off this week.",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "7",
+    "title": "Notification Management - Quiz"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "anxiety-first-aid",
+  "title": "My Anxiety First Aid Card",
+  "description": "Create your personal anxiety first aid card — a quick-reference tool with your go-to coping strategies. Fill it in now, then download it to carry with you.",
+  "instructions": "Think back through what you've learned in this course. Write down the specific techniques and resources that work best for you. This becomes your personal 'emergency kit' for anxious moments.",
+  "items": [
+    {
+      "id": "breathing",
+      "label": "When I feel anxious, my breathing technique is:",
+      "type": "text",
+      "placeholder": "e.g., Box breathing (4-4-4-4), diaphragmatic breathing, 4-7-8 breathing"
+    },
+    {
+      "id": "grounding",
+      "label": "My grounding technique is:",
+      "type": "text",
+      "placeholder": "e.g., 5-4-3-2-1 senses exercise, cold water on wrists, feet on the ground"
+    },
+    {
+      "id": "coping-thought",
+      "label": "My coping thought is:",
+      "type": "text",
+      "placeholder": "e.g., 'This feeling is temporary and I have handled it before', 'Anxiety is uncomfortable but not dangerous'"
+    },
+    {
+      "id": "support-person",
+      "label": "My support person I can call or text:",
+      "type": "text",
+      "placeholder": "e.g., My partner Sarah (555-0123), My friend James, My therapist Dr. Lee"
+    },
+    {
+      "id": "what-helped",
+      "label": "What has helped me before:",
+      "type": "text",
+      "placeholder": "e.g., Going for a walk, talking to someone, journaling, playing with my dog"
+    }
+  ],
+  "disclaimer": "This card is a personal coping tool. If you are in crisis, contact the 988 Suicide & Crisis Lifeline by calling or texting 988, or text HOME to 741741 for the Crisis Text Line."
+}

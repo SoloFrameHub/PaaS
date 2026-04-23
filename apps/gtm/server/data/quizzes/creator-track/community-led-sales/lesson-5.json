@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Community as a Retention Engine",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'switching cost of relationships' and why does it reduce churn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The financial penalty for canceling a membership early"
+                },
+                {
+                    "id": "b",
+                    "text": "The cost of migrating your account data to a competing platform"
+                },
+                {
+                    "id": "c",
+                    "text": "The emotional and practical cost of losing peer connections, accountability partners, and trusted relationships built within the community"
+                },
+                {
+                    "id": "d",
+                    "text": "The time spent learning a new community platform's interface"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When members build genuine relationships within a community -- accountability partners, mentors, peer advisors -- leaving means abandoning those relationships. Even if a competitor offers better content or a lower price, rebuilding an entire network of trusted relationships from scratch is a significant cost that keeps members from canceling."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the churn prediction model, which combination of factors signals a CRITICAL risk (score 9+) that a member will churn within 14 days?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "New member who has not posted yet but logged in twice this week"
+                },
+                {
+                    "id": "b",
+                    "text": "No login in 14+ days, no post in 21+ days, and a failed payment in the last 30 days"
+                },
+                {
+                    "id": "c",
+                    "text": "Member who attends every event but never posts in discussion threads"
+                },
+                {
+                    "id": "d",
+                    "text": "Member who posts daily but has not attended a live event in two months"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Using the scoring model: no login in 14+ days (3 points) + no post in 21+ days (2 points) + failed payment (3 points) = 8 points minimum, plus any additional factors. A score of 9+ indicates the member is likely to churn within 14 days and requires immediate personal intervention."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the highest-risk period for new member churn, and what is the probability of churning within 90 days if a member does not engage during this period?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The first 30 days; 50% churn probability"
+                },
+                {
+                    "id": "b",
+                    "text": "The first 14 days; 70%+ churn probability"
+                },
+                {
+                    "id": "c",
+                    "text": "The first 60 days; 40% churn probability"
+                },
+                {
+                    "id": "d",
+                    "text": "The first 7 days; 90% churn probability"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The onboarding period (days 1-14) is the highest-risk window. Members who do not engage in the first two weeks have a 70%+ probability of churning within 90 days. This is why sending a personal welcome, guiding the first post, and delivering an early quick win are critical during this window."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design your onboarding sequence for the first 14 days of a new member's experience. What specific actions will you take on day 1, day 3, day 7, and day 14? Include the exact messages or prompts you would send and explain how each step addresses the churn risk during the onboarding period.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has created a specific, time-bound onboarding sequence with concrete actions at each checkpoint. Look for personal touches (not just automated messages), prompts that encourage the member's first post, early value delivery, and peer connection facilitation. If the sequence is too automated or impersonal, suggest ways to add human touches that reduce the 70%+ churn risk."
+        }
+    ]
+}

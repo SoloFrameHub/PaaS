@@ -1,0 +1,78 @@
+{
+  "lessonId": "9",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Week 3 Execution & Review",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does 'scaling' actually mean in the context of Week 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sending more messages with lower quality to cover more ground"
+        },
+        {
+          "id": "b",
+          "text": "Sending more messages at the same quality that's been producing results"
+        },
+        { "id": "c", "text": "Hiring additional team members" },
+        { "id": "d", "text": "Switching to a completely new channel" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Scaling means more volume with maintained quality. More volume with degraded quality equals worse results and damaged deliverability. The Draft + Human Gate model matters: AI generates, you approve."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What scoring system should you use to evaluate each discovery call?",
+      "options": [
+        { "id": "a", "text": "Rate overall feeling on a 1-10 scale" },
+        {
+          "id": "b",
+          "text": "Score 5 elements (BANT coverage, pain depth, decision process, next step, energy) on 1-5 each"
+        },
+        { "id": "c", "text": "Track only whether the deal closed" },
+        { "id": "d", "text": "Count the number of minutes the call lasted" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Score each call on 5 elements: BANT/MEDDIC coverage, pain depth, decision process clarity, next step agreement, and energy/momentum. A score of 20-25 warrants a proposal, 12-19 may need a second call, below 12 indicates a problem."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "By Week 3, what should you have in your pipeline?",
+      "options": [
+        { "id": "a", "text": "Only email sequences running" },
+        {
+          "id": "b",
+          "text": "Active deals with expected close dates and pipeline value"
+        },
+        { "id": "c", "text": "A completed system architecture document" },
+        { "id": "d", "text": "At least 50 closed deals" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "By Week 3, you should have active pipeline with expected close dates. This is the week most sprints produce their first closed deal or set up deals to close in Week 4. CRM should have active deals with next-action dates."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "When scaling in Week 3, cutting a low-performing channel to free up time for your best channel is a valid strategy.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Week 3 is about 'more of what works, less of everything else.' Cutting a low-performing channel frees time for your highest-ROI activities. If cutting has no negative impact on pipeline, it was the right call."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Imagine you are at Week 3 of a sprint. Your reply rate is strong but call booking is lagging. Analyze why this gap might exist and propose a specific fix to improve the positive-reply-to-call conversion rate.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies a specific cause for the reply-to-call gap (scheduling friction, weak CTA, delayed response time), proposes a concrete fix (offering specific time slots instead of Calendly links, faster response), and demonstrates understanding that pipeline metrics have a 2-3 week lag."
+    }
+  ]
+}

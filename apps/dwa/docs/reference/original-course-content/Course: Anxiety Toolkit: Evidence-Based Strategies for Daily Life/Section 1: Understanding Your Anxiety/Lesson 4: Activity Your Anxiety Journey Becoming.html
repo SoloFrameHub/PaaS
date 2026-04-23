@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Anxiety Journey: Becoming a Curious Observer</title>
+    <style>
+        /* --- CORE DESIGN SYSTEM & THERAPEUTIC COLOR PALETTE --- */
+        :root {
+            --calming-teal: #4a90a4;        /* Primary calming teal */
+            --deep-teal: #357a8a;           /* Deeper teal for contrast */
+            --soft-blue: #6ba3d0;           /* Gentle supportive blue */
+            --sage-green: #87a96b;          /* Grounding sage green */
+            --warm-gray: #7d8597;           /* Soft neutral gray */
+            --gentle-text: #4a5568;         /* Gentle dark text (not harsh black) */
+            --light-sage: #f7f8f6;          /* Very light sage background */
+            --soft-white: #fdfdfd;          /* Warm white */
+            --light-teal: #e8f4f6;          /* Light teal for calm backgrounds */
+            --transparent-teal: rgba(74, 144, 164, 0.1);
+            --transparent-sage: rgba(135, 169, 107, 0.05);
+        }
+
+        /* --- THERAPEUTIC BASE & TYPOGRAPHY --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--gentle-text);
+            margin: 0;
+            padding: 20px;
+            background-color: var(--light-sage);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* --- LAYOUT PRINCIPLES & CONTENT BLOCKS --- */
+        .gentle-header {
+            background: linear-gradient(135deg, var(--calming-teal) 0%, var(--soft-blue) 100%);
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .gentle-header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .safe-space-container {
+            background: var(--soft-white);
+            border-radius: 12px;
+            padding: 20px 30px 30px 30px;
+            border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15);
+        }
+
+        .gentle-introduction {
+            margin-bottom: 35px;
+            border-left: 5px solid var(--sage-green);
+            padding-left: 30px;
+            background: var(--transparent-sage);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .gentle-introduction p {
+            margin-bottom: 10px;
+        }
+
+        .gentle-introduction p:last-child {
+            margin-bottom: 0;
+        }
+
+        .assignment-form .prompt-group {
+            background: #fdfdfd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(74, 144, 164, 0.12);
+            margin-bottom: 25px;
+            border-left: 4px solid var(--sage-green);
+        }
+
+        .assignment-form label {
+            display: block;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--deep-teal);
+            margin-bottom: 10px;
+        }
+        
+        .assignment-form .prompt-description {
+            font-size: 0.9em;
+            color: var(--warm-gray);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .assignment-form textarea {
+            width: 100%;
+            min-height: 100px;
+            border: 2px solid #e8f4f6;
+            border-radius: 8px;
+            padding: 12px;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1em;
+            line-height: 1.6;
+            color: var(--gentle-text);
+            transition: border-color 0.3s, box-shadow 0.3s;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+
+        .assignment-form textarea:focus {
+            outline: none;
+            border-color: var(--soft-blue);
+            box-shadow: 0 0 8px var(--transparent-teal);
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            background: var(--sage-green);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .submit-button:hover {
+            background-color: #769a59; /* Darker sage */
+            transform: translateY(-2px);
+        }
+
+        .closing-encouragement {
+            background: linear-gradient(135deg, #e8f4f6 0%, #f0f7f4 100%);
+            color: var(--gentle-text);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+            border: 1px solid var(--calming-teal);
+        }
+
+        .closing-encouragement p {
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        /* --- CRISIS SAFETY --- */
+        .crisis-resource-box {
+            background: linear-gradient(135deg, #f0a394 0%, #e88d7d 100%); /* Softer, more noticeable red/orange */
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0 15px 0;
+            border-left: 5px solid #c75c4a;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .crisis-resource-box h3 {
+            color: white;
+            text-align: center;
+            font-size: 1.3em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .crisis-resource-box p {
+            text-align: center;
+            font-size: 0.9em;
+            opacity: 0.95;
+            margin-bottom: 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .safe-space-container { padding: 15px; }
+            .gentle-introduction { padding-left: 15px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="gentle-header">
+            <h1>Your Anxiety Journey: Becoming a Curious Observer</h1>
+        </header>
+
+        <main class="safe-space-container">
+            <div class="gentle-introduction">
+                <p><strong>A note from David Glenn:</strong></p>
+                <p>"Hello again. This is one of the most important exercises in this entire course. For so long, you've likely been <em>in</em> the anxiety. Now, we're going to take a step back and simply <em>look</em> at it, like a curious scientist observing a phenomenon."</p>
+                <p>"There are absolutely no right or wrong answers here. This is about building awareness, not about getting a perfect score. Please be gentle and honest with yourself."</p>
+                <p>"Take a few deep breaths, and when you're ready, please reflect on the questions below. Aim for just a few sentences for each."</p>
+            </div>
+
+            <form action="#" method="POST" class="assignment-form" onsubmit="event.preventDefault(); alert('Your reflection has been saved!');">
+                
+                <div class="prompt-group">
+                    <label for="situation-prompt">1. The Situation</label>
+                    <p class="prompt-description">Think back to the most recent time you felt a significant wave of anxiety. Describe what was happening right before and during that moment.</p>
+                    <textarea id="situation-prompt" name="situation" rows="4" placeholder="e.g., I was about to join a video call for work, or I was thinking about my to-do list at night."></textarea>
+                </div>
+
+                <div class="prompt-group">
+                    <label for="sensations-prompt">2. The Physical Sensations (The 'Gas Pedal')</label>
+                    <p class="prompt-description">What did you feel in your body? Using the examples from the lessons (or your own words), list the top 2-3 sensations you noticed.</p>
+                    <textarea id="sensations-prompt" name="sensations" rows="4" placeholder="e.g., A tight feeling in my chest, my palms got sweaty, I felt dizzy."></textarea>
+                </div>
+
+                <div class="prompt-group">
+                    <label for="thoughts-prompt">3. The Thoughts</label>
+                    <p class="prompt-description">What was your mind telling you? Try to recall any 'what if...' thoughts, worries, or self-critical statements that were present.</p>
+                    <textarea id="thoughts-prompt" name="thoughts" rows="4" placeholder="e.g., 'What if I say something stupid?', 'I'm going to fail this.', 'I can't handle this.'"></textarea>
+                </div>
+
+                <div class="prompt-group">
+                    <label for="action-prompt">4. The Action</label>
+                    <p class="prompt-description">What did you do in response to the anxiety? Did you avoid something, distract yourself, push through, or something else?</p>
+                    <textarea id="action-prompt" name="action" rows="4" placeholder="e.g., I kept checking my phone, I decided not to go to the event, I paced around the room."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Save My Reflection</button>
+            </form>
+
+            <div class="closing-encouragement">
+                <p>"Thank you for sharing. Simply writing this down is a huge step in taking back control. You are separating yourself from the anxiety and seeing it for what it is: a pattern of feelings, thoughts, and urges. We will use this information in later lessons. Great work."</p>
+            </div>
+            
+            <div class="crisis-resource-box">
+                <h3>A Gentle Reminder: Safety First</h3>
+                <p>Reflecting on anxiety can sometimes feel intense. If you feel overwhelmed or are in crisis, please reach out. Support is available 24/7. Call or text 988 in the US & Canada.</p>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

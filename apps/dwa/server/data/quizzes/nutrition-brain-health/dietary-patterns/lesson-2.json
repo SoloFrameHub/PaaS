@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How do artificial sweeteners like sucralose and aspartame negatively affect mental health according to the research?",
+            "options": [
+                { "id": "opt1", "text": "They directly destroy neurons in the brain" },
+                { "id": "opt2", "text": "They cause immediate spikes in blood pressure" },
+                { "id": "opt3", "text": "They alter gut microbiome composition, disrupt glucose metabolism, and trigger inflammatory responses" },
+                { "id": "opt4", "text": "They block the absorption of all vitamins and minerals" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Artificial sweeteners disrupt mental health through the gut-brain axis: they alter which bacterial species thrive in the gut (reducing beneficial strains), paradoxically disrupt glucose metabolism creating blood sugar instability, and trigger inflammatory responses that travel to the brain."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the gut-inflammation-brain pathway that connects emulsifiers in ultra-processed foods to depression?",
+            "options": [
+                { "id": "opt1", "text": "Emulsifiers cause weight gain, which leads to depression" },
+                { "id": "opt2", "text": "Emulsifiers damage the intestinal barrier, allowing bacterial products to leak into the bloodstream, triggering inflammation that crosses the blood-brain barrier and disrupts neurotransmitter production" },
+                { "id": "opt3", "text": "Emulsifiers directly enter the brain and block serotonin receptors" },
+                { "id": "opt4", "text": "Emulsifiers make food taste worse, leading to reduced appetite and malnutrition" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Emulsifiers weaken tight junctions in the intestinal lining and thin the protective mucus layer. This allows bacterial products to leak into the bloodstream, triggering an immune response that releases inflammatory cytokines. These cytokines cross the blood-brain barrier and disrupt serotonin production, dopamine signaling, and stress response systems."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the NIH ultra-processed meal experiment (Hall et al., 2019), how many additional calories per day did participants eating ultra-processed meals consume compared to those eating unprocessed meals?",
+            "options": [
+                { "id": "opt1", "text": "About 200 additional calories" },
+                { "id": "opt2", "text": "About 500 additional calories" },
+                { "id": "opt3", "text": "About 1,200 additional calories" },
+                { "id": "opt4", "text": "About 800 additional calories" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "In this landmark NIH study (Hall et al., 2019, Cell Metabolism), participants eating ultra-processed meals consumed approximately 500 additional calories per day compared to those eating unprocessed meals — even though both meal sets were matched for calories, macronutrients, fiber, sugar, and salt. This demonstrated that ultra-processed foods bypass normal satiety signals through hyperpalatable engineering."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'nutrient displacement' and why is it harmful to brain health?",
+            "options": [
+                { "id": "opt1", "text": "It means nutrients move from the gut to the brain too quickly, causing headaches" },
+                { "id": "opt2", "text": "It means ultra-processed foods crowd out whole foods, leaving the brain without essential nutrients like omega-3s, magnesium, zinc, and B vitamins needed for neurotransmitter production" },
+                { "id": "opt3", "text": "It means eating too many nutrients overwhelms the brain" },
+                { "id": "opt4", "text": "It means nutrients from supplements displace nutrients from food" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Nutrient displacement means UPFs crowd out the nutrient-dense whole foods your brain needs. A diet dominated by UPFs can leave someone consuming adequate calories while being functionally malnourished in omega-3s, magnesium, zinc, B vitamins, polyphenols, and fiber — all essential for neurotransmitter production and brain protection. This is linked to 28% faster cognitive decline."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What happens to the brain's dopamine system with repeated overconsumption of hyperpalatable ultra-processed foods?",
+            "options": [
+                { "id": "opt1", "text": "Dopamine receptors become more sensitive, making all foods taste better" },
+                { "id": "opt2", "text": "Dopamine production stops entirely" },
+                { "id": "opt3", "text": "Dopamine receptors downregulate, reducing reward from natural pleasures and increasing cravings" },
+                { "id": "opt4", "text": "The brain produces more dopamine, leading to hyperactivity" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Repeated overconsumption of hyperpalatable foods causes dopamine receptor downregulation — the brain reduces its sensitivity to dopamine, meaning you need more stimulation to feel the same pleasure. This reduces reward from natural activities like exercise and social connection, increases impulsivity, and can cause withdrawal-like symptoms when UPF intake is reduced."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "2",
+    "title": "How Processed Foods Harm Your Brain - Quiz"
+}

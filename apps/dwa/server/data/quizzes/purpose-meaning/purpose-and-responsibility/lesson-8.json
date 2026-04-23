@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key principle that distinguishes peer support from professional clinical care?",
+      "options": [
+        {"id": "opt1", "text": "Peer support is more effective than professional care"},
+        {"id": "opt2", "text": "Mutuality—both parties give and receive, unlike the provider→client dynamic of professional care"},
+        {"id": "opt3", "text": "Peer support requires more training than professional care"},
+        {"id": "opt4", "text": "There is no difference between peer support and therapy"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The key principle is mutuality: peer support is reciprocal (both parties give and receive), unlike professional care where the provider gives and the client receives. Peer supporters benefit through purpose, insight into their own recovery, connection, and reinforced hope—the 'helper-therapy principle.' This mutuality is what makes peer support distinct and valuable. It's not better or worse than professional care; it offers something different: lived experience, hope through example, and mutual growth."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to the 2020 systematic review, what outcomes are associated with peer support?",
+      "options": [
+        {"id": "opt1", "text": "No measurable benefits"},
+        {"id": "opt2", "text": "Reduced hospital admissions, improved hope and empowerment, enhanced social functioning"},
+        {"id": "opt3", "text": "Complete cure of mental illness"},
+        {"id": "opt4", "text": "Benefits only for the helper, not the recipient"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The systematic review found peer support associated with: reduced psychiatric hospital admissions (peers help recognize early warning signs before crisis), improved hope and empowerment ('If they recovered, maybe I can too'), and enhanced social functioning (reduced isolation, expanded support networks). Evidence grade is MODERATE. Importantly, best outcomes occur when peer support is integrated with clinical care, not substituted for it. Peer support complements professional treatment; it doesn't replace it."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the 'helper-therapy principle'?",
+      "options": [
+        {"id": "opt1", "text": "Only therapists can help people"},
+        {"id": "opt2", "text": "Helping others benefits the helper—sometimes as much or more than the helped—through purpose, deeper insight, connection, and reinforced hope"},
+        {"id": "opt3", "text": "Helpers should never benefit from helping"},
+        {"id": "opt4", "text": "Helping others makes your own problems disappear"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The helper-therapy principle is that helping others benefits the helper through: (1) purpose and meaning (using struggle for something positive), (2) deeper insight into own recovery (teaching solidifies learning), (3) connection with people who understand (mutual support reduces isolation), and (4) reinforced hope (seeing your progress reflected in helping someone earlier in their journey). This is especially true in peer support due to mutuality. It doesn't make your problems disappear, but it creates meaning and growth alongside your own recovery."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What are the boundaries of peer support? What is it NOT?",
+      "options": [
+        {"id": "opt1", "text": "Peer support can do everything professional care does"},
+        {"id": "opt2", "text": "Peer support is NOT therapy, crisis intervention, medical advice, or friendship without limits—it's sharing experience, listening, offering hope, and connecting to resources"},
+        {"id": "opt3", "text": "Peer supporters have no boundaries"},
+        {"id": "opt4", "text": "Peer support replaces all other forms of mental health support"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Critical boundaries: Peer support is NOT therapy (only licensed clinicians provide therapy), NOT crisis intervention (if someone is suicidal, call 988/911), NOT medical advice (never tell someone to stop medication), and NOT friendship without limits (boundaries are essential). Peer support IS: sharing your experience, listening and validating, offering hope through your recovery journey, connecting to resources, and walking alongside someone (not carrying them). Violating these boundaries can cause harm and burnout."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When is peer support NOT appropriate and professional care is needed instead?",
+      "options": [
+        {"id": "opt1", "text": "Peer support is always appropriate for any mental health issue"},
+        {"id": "opt2", "text": "Active suicidal crisis, severe psychosis/mania, first episode needing diagnosis, or when helper is in acute struggle themselves"},
+        {"id": "opt3", "text": "Only when the person explicitly asks for professional care"},
+        {"id": "opt4", "text": "Peer support can handle all crises"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Peer support is NOT appropriate for: active suicidal crisis (needs 988/911), severe psychosis or mania (needs psychiatric intervention), first episode (person needs diagnosis and professional treatment plan first), when it would replace professional care (not complement it), or when the peer supporter is in acute struggle themselves (can't give from empty). Peer support works best for mild-to-moderate symptoms as complement to professional treatment, with clear boundaries and mutual benefit. Know your limits and when to escalate to professionals."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "purpose-and-responsibility",
+  "lessonId": "8",
+  "title": "Peer Support Models - Quiz"
+}

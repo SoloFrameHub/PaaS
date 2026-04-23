@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "3",
+    "lessonTitle": "Welcome Sequence Design",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do welcome emails achieve 50-60% open rates compared to the 20-25% average?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because email providers prioritize them in the inbox."
+                },
+                {
+                    "id": "b",
+                    "text": "Because the subscriber just signed up—they remember who you are and are actively engaged (Recency and Intent)."
+                },
+                {
+                    "id": "c",
+                    "text": "Because welcome emails have special formatting that stands out."
+                },
+                {
+                    "id": "d",
+                    "text": "Because welcome emails are always shorter than regular emails."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The magic of welcome emails is timing. The subscriber is in a high-attention state right after signing up. This window closes within 48 hours, making it crucial to capitalize on their engagement immediately.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the purpose of asking a question in Email 1 of the welcome sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To qualify leads for your sales team immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "To boost deliverability (replies signal engagement), gather market research, and enable segmentation based on their answer."
+                },
+                {
+                    "id": "c",
+                    "text": "To make the email longer so it looks more professional."
+                },
+                {
+                    "id": "d",
+                    "text": "To test if their email address is valid."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Replies are email gold. They tell email providers you're a real conversation, not spam. They give you insights into what your audience struggles with. And they let you tag subscribers based on their specific challenge.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What makes Email 2 (Your Story) effective for building trust?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Listing all your credentials and achievements in detail."
+                },
+                {
+                    "id": "b",
+                    "text": "Sharing a vulnerable, real founder story including struggles and failures, which makes you relatable and human."
+                },
+                {
+                    "id": "c",
+                    "text": "Using formal corporate language to sound professional."
+                },
+                {
+                    "id": "d",
+                    "text": "Including multiple links to your products and services."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Vulnerability builds trust faster than credentials. When you share your real struggles, readers think 'This person understands me.' This is the foundation of the relationship you're building.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should Email 5 (The Bridge) approach the transition to a sale or next step?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "With aggressive urgency: 'Buy now or miss out forever!'"
+                },
+                {
+                    "id": "b",
+                    "text": "Don't mention any next step—just provide more free content."
+                },
+                {
+                    "id": "c",
+                    "text": "With gentle, permission-based language: 'If you're ready...' or 'For those who want to go deeper...'"
+                },
+                {
+                    "id": "d",
+                    "text": "By hiding the call-to-action at the very bottom of a long email."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Email 5 is an invitation, not a pitch. By using 'if you're ready' language, you respect the subscriber's autonomy while making the path forward clear. This builds trust rather than creating pressure.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the correct progression of the 5-Email Welcome Framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sell → Story → Sell → Sell → Final Sale"
+                },
+                {
+                    "id": "b",
+                    "text": "Deliver → Story → Value → Proof → Bridge"
+                },
+                {
+                    "id": "c",
+                    "text": "Introduction → Features → Pricing → FAQ → Checkout"
+                },
+                {
+                    "id": "d",
+                    "text": "Content → Content → Content → Content → Content"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The framework builds progressively: give them what they signed up for (Deliver), become a real human (Story), prove your expertise (Value), show others trust you (Proof), then invite the next step (Bridge).",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Draft the hook for your Email 2 (Your Story). What is the vulnerable, real moment from your founder journey that you can share? Consider: What struggle did you face that your ICP also faces? What failure taught you the lesson you now teach? Write the opening paragraph of this email.",
+            "promptHints": [
+                "Be specific about the struggle or failure—vague stories don't connect.",
+                "Include the emotional truth, not just the facts.",
+                "Connect your story to how it helps you serve your ICP better today."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "2"
+        ],
+        "unlocks": [
+            "4"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Welcome Sequence Design - Quiz"
+}

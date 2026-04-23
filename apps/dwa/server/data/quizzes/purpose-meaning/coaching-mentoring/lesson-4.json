@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to goal-setting theory (Locke & Latham), what type of goals lead to highest performance?",
+      "options": [
+        {"id": "opt1", "text": "Easy, achievable goals that ensure success and build confidence"},
+        {"id": "opt2", "text": "Vague, flexible goals like 'do your best' that reduce pressure"},
+        {"id": "opt3", "text": "Specific, challenging goals that stretch the person but remain achievable with effort"},
+        {"id": "opt4", "text": "Impossible 'stretch goals' that push people beyond their limits"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Decades of goal-setting research show that specific, challenging goals improve performance on 90% of tasks — significantly more than easy or vague goals. The key condition: the person must have sufficient knowledge and skill to pursue the goal. The sweet spot is a 6-7/10 difficulty level: uncomfortable enough to activate motivation, but not so hard it feels impossible and triggers demoralization."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the key difference between process goals and outcome goals, and why does it matter for weekly coaching focus?",
+      "options": [
+        {"id": "opt1", "text": "Process goals are behaviors fully within your control (e.g., 'Follow my eating plan 5 days'); outcome goals are results partially outside your control (e.g., 'Lose 2 pounds'). Process goals build self-efficacy because you can guarantee success through effort."},
+        {"id": "opt2", "text": "Process goals are short-term; outcome goals are long-term. There's no real difference in effectiveness."},
+        {"id": "opt3", "text": "Process goals are easier and less motivating; outcome goals are harder and more inspiring, so you should always focus on outcomes."},
+        {"id": "opt4", "text": "Process goals are for beginners; advanced clients should focus exclusively on outcome goals."}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Process goals focus on actions completely within your control. You can't control whether you lose 2 pounds this week (water weight, hormones, metabolism vary), but you CAN control whether you follow your eating plan 5 days. This controllability reduces anxiety and builds self-efficacy through reliable mastery experiences. Use outcome goals for long-term vision; use process goals for weekly accountability."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why do proximal goals (small, near-term steps) build self-efficacy more effectively than distant outcome goals?",
+      "options": [
+        {"id": "opt1", "text": "Proximal goals are easier, so people feel less pressure and perform better."},
+        {"id": "opt2", "text": "Proximal goals create frequent mastery experiences — successfully completing challenging tasks — which is the strongest source of self-efficacy. Each small win activates dopamine and reinforces 'I can do this.'"},
+        {"id": "opt3", "text": "Proximal goals don't actually build self-efficacy — only big accomplishments do that."},
+        {"id": "opt4", "text": "Proximal goals work only for people with low confidence; high performers should skip them."}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Mastery experiences (successfully completing challenging tasks) are the most powerful source of self-efficacy (Bandura). Proximal goals break large goals into achievable steps, creating frequent opportunities for mastery. Each completion activates dopamine reward and builds the neural pathway: 'I follow through on commitments.' Distant goals provide no feedback or reinforcement for months, allowing motivation to decay."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What are implementation intentions ('if-then' planning), and why do they improve goal attainment?",
+      "options": [
+        {"id": "opt1", "text": "Detailed plans that specify every possible scenario and eliminate all flexibility"},
+        {"id": "opt2", "text": "Pre-commitment strategies that specify when, where, and how you'll act (e.g., 'If it's Monday morning, then I'll put on running shoes after my alarm'). They work by offloading decision-making from the moment of action (when willpower is weak) to the planning phase (when motivation is high)."},
+        {"id": "opt3", "text": "Goals that have backup plans in case you fail"},
+        {"id": "opt4", "text": "A planning method with no research support — it's just trendy coaching jargon"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Implementation intentions are if-then plans that pre-decide when, where, and how you'll act. Meta-analyses show they significantly improve goal attainment (medium-to-large effects). They work because they remove in-the-moment decision fatigue. Instead of deciding every morning whether to exercise, you've already decided: 'If it's MWF at 6am, then I put on running shoes.' This automation increases follow-through."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "A client says: 'Everything feels so overwhelming right now. I don't even know where to start with goal-setting.' What's the most effective coaching response?",
+      "options": [
+        {"id": "opt1", "text": "'Let's just pick something small and start — action creates clarity.'"},
+        {"id": "opt2", "text": "'If everything is overwhelming, maybe you're not ready for coaching. Come back when you have clarity.'"},
+        {"id": "opt3", "text": "'It sounds like you're feeling really overwhelmed. Before we talk about goals, tell me — what's taking up the most space in your mind right now?'"},
+        {"id": "opt4", "text": "'Here's a simple goal-setting template. Fill this out and we'll review it next time.'"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Reflect the emotion (overwhelmed) and explore what's driving it before jumping to goal-setting. Pushing someone who's already overwhelmed increases resistance. Often, exploring the overwhelm reveals what actually matters most — and that becomes the meaningful starting point for goals. Option 1 ignores their emotional state. Option 2 abandons them when they most need support. Option 4 adds more tasks to an overwhelmed person."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "4",
+  "title": "Goal Setting and Action Planning - Quiz"
+}

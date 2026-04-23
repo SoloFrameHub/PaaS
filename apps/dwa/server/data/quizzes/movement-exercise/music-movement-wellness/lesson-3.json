@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the 'iso principle' in music therapy, and why is it effective for mood regulation?",
+      "options": [
+        {"id": "opt1", "text": "Always play the same song at the same time every day"},
+        {"id": "opt2", "text": "Start with music that matches your current emotional/energy state, then gradually shift tempo and mood toward your target state"},
+        {"id": "opt3", "text": "Only listen to music in isolation (headphones, alone)"},
+        {"id": "opt4", "text": "Match the music to your friend's mood, not your own"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The iso principle means starting with music that matches where you are emotionally/energetically (e.g., moderate-tempo if anxious, slow if sad), then gradually shifting. Jumping straight to your target state (e.g., calm music when anxious) can feel jarring or create resistance. Matching first, then shifting, respects your nervous system's current state and produces more effective regulation."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "You're feeling anxious and want to calm down. Which playlist progression best applies the iso principle?",
+      "options": [
+        {"id": "opt1", "text": "Start with very slow, sleepy music (60 BPM) to force immediate calm"},
+        {"id": "opt2", "text": "Start with moderate-fast tempo (100-110 BPM) that matches your arousal, then gradually slow to 70-80 BPM over 5-6 songs"},
+        {"id": "opt3", "text": "Play only high-energy music (130+ BPM) to distract from anxiety"},
+        {"id": "opt4", "text": "Avoid music entirely and sit in silence"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "✓ Correct. When anxious (hyperaroused), starting with moderate-fast tempo (100-110 BPM) matches your current state without intensifying it. Then gradually slowing to 70-80 BPM over several songs brings your nervous system down into calm. This gradual shift is more effective than jumping straight to very slow music."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the optimal BPM range for deep relaxation and pre-sleep music?",
+      "options": [
+        {"id": "opt1", "text": "120-140 BPM (high energy)"},
+        {"id": "opt2", "text": "100-120 BPM (moderate energy)"},
+        {"id": "opt3", "text": "60-80 BPM (slow, matches resting heart rate)"},
+        {"id": "opt4", "text": "BPM doesn't matter for sleep"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "60-80 BPM is optimal for deep relaxation and sleep because it matches or slows below your resting heart rate (60-80 BPM). This tempo entrains your nervous system to activate the parasympathetic branch, slowing heart rate, deepening breathing, and reducing cortisol. Many sleep-focused tracks (like 'Weightless' by Marconi Union) are designed at 60 BPM for this reason."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Why do personal associations and memories often matter more than musical features (tempo, mode) in determining a song's emotional impact?",
+      "options": [
+        {"id": "opt1", "text": "Personal associations are irrelevant—only tempo and mode matter"},
+        {"id": "opt2", "text": "Your brain links specific songs to autobiographical memories (hippocampus and medial prefrontal cortex), so a song tied to a joyful memory can be uplifting regardless of its tempo or mode"},
+        {"id": "opt3", "text": "This is a myth—everyone responds to music identically"},
+        {"id": "opt4", "text": "Personal associations only matter for classical music"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Your brain's memory systems (hippocampus and medial prefrontal cortex) link songs to specific times, places, and emotions from your past. A slow, minor-mode song tied to a joyful memory can be uplifting, while a fast, major-mode song linked to trauma can be triggering. Personal history often overrides musical structure, which is why self-monitoring and honoring your unique responses is crucial."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should you avoid specific music or consult a professional about music listening practices?",
+      "options": [
+        {"id": "opt1", "text": "When you prefer one genre over another"},
+        {"id": "opt2", "text": "When music consistently worsens symptoms (intensifies agitation, confusion, or distress), especially in severe depression, PTSD, bipolar disorder, or psychosis"},
+        {"id": "opt3", "text": "When you listen to music more than 2 hours per day"},
+        {"id": "opt4", "text": "Never—music is always beneficial"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The American Music Therapy Association notes that unsupervised music listening can sometimes intensify agitation, confusion, or distress in vulnerable populations (severe depression, PTSD, bipolar mania, psychosis). If music consistently makes your symptoms worse, discontinue and consult a mental health professional or board-certified music therapist (MT-BC). Music should support, not destabilize."
+    }
+  ],
+  "sectionId": "movement-exercise",
+  "courseId": "music-movement-wellness",
+  "lessonId": "3",
+  "title": "Creating Your Therapeutic Playlist - Quiz"
+}

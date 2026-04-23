@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does poor sleep specifically worsen OCD symptoms?",
+            "options": [
+                { "id": "opt1", "text": "It causes new types of obsessions to appear" },
+                { "id": "opt2", "text": "It reduces prefrontal cortex function and increases amygdala reactivity, making intrusive thoughts feel more threatening" },
+                { "id": "opt3", "text": "It only affects physical compulsions, not mental ones" },
+                { "id": "opt4", "text": "It has no direct effect on OCD — it only causes general tiredness" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Poor sleep reduces prefrontal cortex function (the brain region that helps you resist compulsions) and increases amygdala reactivity (making intrusive thoughts feel more threatening). Sleep and OCD have a bidirectional relationship — OCD disrupts sleep through bedtime rituals, and poor sleep worsens OCD."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'accommodation' in the context of OCD and family?",
+            "options": [
+                { "id": "opt1", "text": "Finding a comfortable living space for someone with OCD" },
+                { "id": "opt2", "text": "When family members participate in or enable OCD rituals, such as providing repeated reassurance or modifying routines to avoid triggers" },
+                { "id": "opt3", "text": "A type of professional therapy done with the whole family present" },
+                { "id": "opt4", "text": "Making reasonable adjustments at work for someone with OCD" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Accommodation is when family members participate in or enable OCD rituals — providing reassurance on demand, modifying routines to avoid triggers, participating in rituals, or allowing the person with OCD to control household routines. Research shows higher accommodation predicts worse OCD outcomes."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does family accommodation reinforce OCD?",
+            "options": [
+                { "id": "opt1", "text": "Because family members give incorrect medical advice" },
+                { "id": "opt2", "text": "Because it functions like the person's own compulsions — teaching the brain that the threat is real" },
+                { "id": "opt3", "text": "Because it makes the person with OCD feel guilty" },
+                { "id": "opt4", "text": "Because it causes family members to develop OCD themselves" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Accommodation reinforces OCD the same way the person's own compulsions do — it teaches the brain that the threat is real. It also increases OCD severity over time, exhausts family members, and prevents the person from learning they can cope on their own. Reducing accommodation gradually, with professional guidance, supports recovery."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you watch for when using exercise as part of OCD management?",
+            "options": [
+                { "id": "opt1", "text": "Exercise always makes OCD worse and should be avoided" },
+                { "id": "opt2", "text": "You should only exercise indoors to avoid triggers" },
+                { "id": "opt3", "text": "Exercise becoming a compulsion — feeling you 'must' exercise a certain amount or something bad will happen" },
+                { "id": "opt4", "text": "Any form of exercise will cure OCD without therapy" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "While regular physical activity supports OCD recovery by reducing anxiety and improving sleep, exercise can be hijacked by OCD. If you feel you 'must' exercise a certain amount or something bad will happen, or if missing a workout triggers disproportionate distress, that's OCD turning exercise into a compulsion."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the first step in relapse prevention for OCD?",
+            "options": [
+                { "id": "opt1", "text": "Stopping all medication immediately after feeling better" },
+                { "id": "opt2", "text": "Avoiding all situations that ever triggered OCD" },
+                { "id": "opt3", "text": "Knowing your early warning signs — the first indicators that OCD is ramping up" },
+                { "id": "opt4", "text": "Never thinking about OCD again after treatment ends" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The first step in relapse prevention is knowing your early warning signs — what are the first indicators that OCD is ramping up? These might include increased checking, more time on rituals, or returning to previously resolved triggers. A temporary increase in symptoms is not the same as relapse; it's OCD trying to re-establish itself."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "ocd-toolkit",
+    "lessonId": "7",
+    "title": "Building an OCD-Fighting Lifestyle - Quiz"
+}

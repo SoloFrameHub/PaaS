@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "When are distress tolerance skills the appropriate choice?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Whenever you feel any negative emotion"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When you cannot change the situation right now and need to survive it without making it worse"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only during panic attacks"
+                },
+                {
+                    "id": "opt4",
+                    "text": "When you want to avoid dealing with a problem permanently"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Distress tolerance skills are specifically designed for situations you cannot change in the current moment. The goal is to survive the crisis without making it worse -- not to feel better, and not to avoid the problem permanently. When the situation can be changed, problem-solving and emotion regulation skills are more appropriate."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the 'T' in TIPP stand for, and how does it work?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Talking -- calling a friend to process the crisis"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Thinking -- using rational thoughts to calm down"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Temperature -- using cold water or ice to trigger the dive reflex and reduce heart rate"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Time -- waiting a specific number of minutes before acting"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 'T' in TIPP stands for Temperature. Submerging your face in cold water or holding ice against your cheeks and forehead triggers the mammalian dive reflex, which rapidly decreases heart rate, redirects blood flow, and activates the parasympathetic nervous system. This is one of the fastest-acting distress tolerance skills available."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the 'E' in the ACCEPTS distraction skills stand for?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise -- doing physical activity to burn off stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Escape -- leaving the situation entirely"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Emotions (opposite) -- generating an emotion opposite to what you currently feel"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Encouragement -- giving yourself positive affirmations"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "In ACCEPTS, the 'E' stands for Emotions (opposite) -- deliberately generating an emotion that is opposite to what you are currently feeling. For example, watching something funny when you are sad, or listening to calming music when you are angry. This works because emotions are temporary states that can be influenced by what you expose yourself to."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does the DBT pros-and-cons exercise recommend completing the analysis BEFORE a crisis occurs?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because crises never actually happen if you plan ahead"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because during a crisis, your brain generates compelling arguments for acting on urges and your decision-making is impaired"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because therapists require you to have it completed before your next session"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because the exercise only works once and cannot be repeated"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "During a crisis, your prefrontal cortex is partially offline and your mind generates strong arguments for acting on destructive urges. The short-term payoff of acting feels overwhelmingly appealing. Completing the pros-and-cons analysis in advance -- when you can think clearly -- gives you a written record to refer back to that reminds you why tolerating the distress is worth the short-term pain."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is a situation where distress tolerance is NOT the appropriate approach?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Grieving a loss that cannot be undone"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Waiting for medical test results you cannot speed up"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Staying in a harmful situation that you have the ability to leave"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Experiencing intense emotions after receiving bad news"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Distress tolerance is not appropriate when you are using it to avoid addressing a solvable problem or to stay in a harmful situation indefinitely. If the situation can be changed -- such as leaving an abusive relationship, seeking medical care, or setting a boundary -- then problem-solving and emotion regulation skills are the right approach, not distress tolerance."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "emotional-dysregulation",
+    "lessonId": "3",
+    "title": "Distress Tolerance: Surviving Crisis - Quiz"
+}

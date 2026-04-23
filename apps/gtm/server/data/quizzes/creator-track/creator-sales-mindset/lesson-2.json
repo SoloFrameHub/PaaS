@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "Imposter Syndrome on Sales Calls",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, why is the Dunning-Kruger effect a cruel paradox for creators on sales calls?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because creators lack the sales skills needed to close deals"
+                },
+                {
+                    "id": "b",
+                    "text": "Because the more you genuinely know about your craft, the more aware you become of what you do not know, making you feel more fraudulent -- while less knowledgeable competitors feel completely confident"
+                },
+                {
+                    "id": "c",
+                    "text": "Because the Dunning-Kruger effect only applies to technical fields, not creative ones"
+                },
+                {
+                    "id": "d",
+                    "text": "Because prospects can always tell when a creator is experiencing imposter syndrome"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Dunning-Kruger paradox means that deep expertise creates awareness of the vast unknowns in your field, which fuels self-doubt. Meanwhile, someone with superficial knowledge lacks the depth to doubt themselves. Your imposter syndrome is paradoxically evidence of your expertise."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Evidence File' and how should it be used?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A marketing document you share with prospects to prove your credentials"
+                },
+                {
+                    "id": "b",
+                    "text": "A private collection of testimonials, results, credentials, and proof of competence that you review for 5 minutes before every sales call to ground yourself in facts"
+                },
+                {
+                    "id": "c",
+                    "text": "A spreadsheet tracking your sales conversion rates over time"
+                },
+                {
+                    "id": "d",
+                    "text": "A list of objections and scripted responses for sales conversations"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Evidence File is a personal document containing irrefutable proof of your competence: testimonials, before/after data, credentials, and moments where you solved hard problems. Reading it before calls grounds you in facts rather than feelings, because imposter syndrome is an emotion -- and data beats emotions."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "On the Expertise Spectrum (Level 0 to Level 5), what key insight should creators remember about their relationship to prospects?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You must be at Level 5 (world-class mastery) before you can ethically charge for your expertise"
+                },
+                {
+                    "id": "b",
+                    "text": "Most prospects are at Level 0-2 and you are likely at Level 3-4 -- you do not need to be at Level 5 to help someone at Level 1"
+                },
+                {
+                    "id": "c",
+                    "text": "The expertise spectrum does not apply to creative fields, only to technical ones"
+                },
+                {
+                    "id": "d",
+                    "text": "Prospects at Level 0 cannot appreciate the value of expertise at any level"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Creators often compare themselves to the top 0.1% and feel inadequate. But your prospects are typically at Level 0-2, and you are at Level 3-4. You only need to be far enough ahead to guide them to the next step -- not at the absolute pinnacle of your field."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Describe a specific moment on a sales call or pricing conversation where imposter syndrome showed up for you. Which of the five manifestations (Preemptive Discount, Over-Qualification, Deflection, Expertise Hedge, or Comparison Spiral) was at play? How would you handle that same moment differently using the Pre-Call Protocol from this lesson?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student identifies a specific real or realistic scenario and correctly maps it to one of the five imposter syndrome manifestations. Look for concrete details about what they said or did, not vague generalizations. The alternative approach should reference specific steps from the Pre-Call Protocol (Name It, Review Evidence, Set Service Frame, Prepare I Don't Know Response, Physiology Reset)."
+        }
+    ]
+}

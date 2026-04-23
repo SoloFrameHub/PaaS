@@ -1,0 +1,68 @@
+{
+  "lessonId": "2",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "HubSpot vs Attio",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la mayor limitación de HubSpot Free para los fundadores en solitario?",
+      "options": [
+        "Sin seguimiento de correo",
+        "Solo 1 pipeline",
+        "Sin aplicación móvil",
+        "Limitado a 100 contactos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HubSpot Free te limita a 1 pipeline, lo que significa que no puedes separar los tratos inbound y outbound. Los límites de contactos son ilimitados en el nivel gratuito."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué CRM enriquece automáticamente los contactos desde LinkedIn y datos públicos?",
+      "options": [
+        "HubSpot Free",
+        "HubSpot Starter",
+        "Attio Plus",
+        "Tanto HubSpot como Attio"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Attio Plus enriquece automáticamente los contactos desde LinkedIn, sitios web de empresas y perfiles sociales. HubSpot requiere enriquecimiento manual o herramientas de terceros como Apollo."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Un fundador B2B envía 200 correos fríos por semana y necesita integraciones con Stripe y Slack. ¿Qué CRM encaja mejor?",
+      "options": [
+        "Attio Plus",
+        "HubSpot Free",
+        "HubSpot Starter",
+        "Cualquiera de HubSpot o Attio"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HubSpot Starter ($20/mes) proporciona automatización para seguimientos, 2 pipelines para separar inbound/outbound e integraciones nativas con Stripe y Slack. Attio requeriría Zapier para algunas integraciones."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "La puntuación de preparación para IA de Attio es mayor que la de HubSpot debido a su modelo de datos flexible y sus funcionalidades nativas de IA.",
+      "correctAnswer": true,
+      "explanation": "Attio obtiene 9/10 en preparación para IA gracias a objetos personalizados, esquema flexible y funcionalidades de IA integradas. HubSpot obtiene 7/10 con un esquema más rígido."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia de costo a 12 meses entre HubSpot Starter y Attio Plus?",
+      "options": [
+        "$108 (Attio cuesta más)",
+        "$240 (HubSpot cuesta más)",
+        "$108 (HubSpot cuesta más)",
+        "Cuestan lo mismo"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HubSpot Starter cuesta $240/año ($20/mes). Attio Plus cuesta $348/año ($29/mes). La diferencia es $108 anuales, siendo Attio más caro."
+    }
+  ]
+}

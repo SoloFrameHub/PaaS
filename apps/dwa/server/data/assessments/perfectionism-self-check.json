@@ -1,0 +1,92 @@
+{
+  "id": "perfectionism-self-check",
+  "title": "Perfectionism Self-Check",
+  "description": "This brief self-check explores patterns related to perfectionism across four domains: high standards, concern over mistakes, self-criticism, and impact on daily life. It is designed for self-understanding, not diagnosis.",
+  "instructions": "For each statement, choose how often it has applied to you over the past 2 weeks.",
+  "timeframe": "Over the past 2 weeks",
+  "questions": [
+    {
+      "id": "high-standards-rigid",
+      "text": "I set standards for myself that are very difficult or almost impossible to reach"
+    },
+    {
+      "id": "high-standards-all-areas",
+      "text": "I apply the same high standards to everything I do, whether it is important or routine"
+    },
+    {
+      "id": "concern-mistakes",
+      "text": "I worry a lot about making mistakes, even small ones"
+    },
+    {
+      "id": "concern-judgment",
+      "text": "I worry about what others will think if my work is not excellent"
+    },
+    {
+      "id": "self-criticism-harsh",
+      "text": "When I fall short of my goals, I am very harsh with myself"
+    },
+    {
+      "id": "self-criticism-discount",
+      "text": "I have trouble feeling satisfied with my work, even when others say it is good"
+    },
+    {
+      "id": "impact-procrastinate",
+      "text": "I put off starting tasks because I am afraid I will not do them well enough"
+    },
+    {
+      "id": "impact-overwork",
+      "text": "My standards make it hard to finish tasks on time, to relax, or to enjoy what I have accomplished"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Very often"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 8,
+        "label": "Minimal perfectionism patterns",
+        "description": "Your responses suggest that perfectionism patterns are not a significant concern at this time. You may experience occasional high standards or self-criticism, but they do not appear to be causing notable distress or impairment."
+      },
+      {
+        "min": 9,
+        "max": 16,
+        "label": "Mild perfectionism patterns",
+        "description": "Your responses suggest some perfectionism patterns are present. You may notice rigid standards or self-critical tendencies in certain areas. The skills in this course — particularly cognitive restructuring and self-compassion — may be helpful for building flexibility."
+      },
+      {
+        "min": 17,
+        "max": 24,
+        "label": "Moderate perfectionism patterns",
+        "description": "Your responses suggest that perfectionism patterns are quite active and may be causing meaningful distress or affecting your daily life. You may benefit from working through the full set of tools in this course and considering professional support if these patterns persist."
+      },
+      {
+        "min": 25,
+        "max": 32,
+        "label": "Strong perfectionism patterns",
+        "description": "Your responses suggest that perfectionism patterns are very active and likely causing significant distress or impairment. In addition to the skills in this course, consider speaking with a qualified mental health professional who can provide personalized support."
+      }
+    ],
+    "functionalImpairmentQuestion": {
+      "text": "How much has perfectionism interfered with your work, relationships, or daily activities over the past 2 weeks?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "A little" },
+        { "value": 2, "label": "Somewhat" },
+        { "value": 3, "label": "A lot" },
+        { "value": 4, "label": "Extremely" }
+      ]
+    }
+  },
+  "disclaimer": "This self-check is for educational purposes only and is not a diagnostic tool. It cannot diagnose any condition. If you are struggling with perfectionism that significantly affects your daily life, please consider speaking with a qualified mental health professional."
+}

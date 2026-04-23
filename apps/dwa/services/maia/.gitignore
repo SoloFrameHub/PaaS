@@ -1,0 +1,19 @@
+# Model weights are too large for git — deploy separately
+models/*/model.safetensors
+models/*/optimizer.pt
+models/*/rng_state.pth
+models/*/scaler.pt
+models/*/scheduler.pt
+models/*/training_args.bin
+models/*/checkpoint-*
+
+# Keep config, tokenizer, and metrics (small, needed for deployment)
+!models/*/config.json
+!models/*/tokenizer.json
+!models/*/tokenizer_config.json
+!models/*/metrics.json
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/

@@ -1,0 +1,91 @@
+{
+  "lessonId": "7",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Valor de Vida del Cliente para Negocios de Creadores",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Un creador tiene una membresía de comunidad a $97 USD/mes con una retención promedio de 8 meses. ¿Cuál es el LTV del cliente y qué dice la lección sobre cómo se comparan las membresías de mayor precio en retención?",
+      "options": [
+        {
+          "id": "a",
+          "text": "$776 USD de LTV; las membresías de mayor precio retienen menos tiempo por la carga del costo"
+        },
+        {
+          "id": "b",
+          "text": "$776 USD de LTV; las membresías de mayor precio retienen más tiempo porque los miembros están más comprometidos y ven resultados más rápido"
+        },
+        {
+          "id": "c",
+          "text": "$970 USD de LTV; la retención es la misma sin importar el precio"
+        },
+        {
+          "id": "d",
+          "text": "$582 USD de LTV; las membresías de $97/mes típicamente retienen solo 6 meses"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LTV = $97 x 8 meses = $776 USD (aproximadamente $13,580 MXN). La lección hace el punto contraintuitivo de que las membresías de mayor precio retienen más, no menos. Los miembros que pagan $297 USD/mes están más comprometidos, toman el contenido más en serio y ven resultados más rápido -- todo lo cual reduce la cancelación."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué rango de ratio LTV:CAC se considera el 'punto ideal' para la mayoría de los negocios de creadores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:1 a 2:1 -- punto de equilibrio es suficiente para negocios de creadores"
+        },
+        {
+          "id": "b",
+          "text": "3:1 a 5:1 -- márgenes saludables con espacio para inversión en crecimiento"
+        },
+        {
+          "id": "c",
+          "text": "8:1 a 10:1 -- mientras más alto el ratio, mejor el negocio"
+        },
+        {
+          "id": "d",
+          "text": "10:1 o más -- los negocios de creadores deberían tener costos de adquisición extremadamente bajos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El punto ideal para la mayoría de los negocios de creadores es 3:1 a 5:1. Por debajo de 3:1, los márgenes de ganancia son demasiado ajustados. Por encima de 8:1, en realidad estás sub-invirtiendo en crecimiento y dejando ingresos sobre la mesa. La lección nota específicamente que un ratio por encima de 8:1 significa que deberías estar gastando más en marketing."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según los referentes de cancelación de membresías, ¿cuál es la 'ventana crítica de retención' y qué pasa si un miembro la sobrevive?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La primera semana; sobrevivirla duplica la retención"
+        },
+        {
+          "id": "b",
+          "text": "Los meses 1-3; sobrevivirlos aumenta la probabilidad de quedarse 12+ meses en 3x"
+        },
+        {
+          "id": "c",
+          "text": "Los primeros 30 días; después de los cuales la cancelación cae a casi cero"
+        },
+        {
+          "id": "d",
+          "text": "Los meses 6-12; es cuando la mayoría de los miembros deciden si renuevan anualmente"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La ventana crítica de retención son los meses 1-3. El mes 1 ve un 10-20% de cancelación, los meses 2-3 ven 8-12% por mes. Pero si un miembro sobrevive los primeros 90 días, su probabilidad de quedarse 12+ meses aumenta 3x. Por eso las mejores comunidades de creadores invierten fuertemente en onboarding durante los primeros 90 días."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Calcula tu LTV actual usando las fórmulas de esta lección (elige la fórmula que coincida con tu tipo de oferta). Luego estima tu CAC. ¿Cuál es tu ratio LTV:CAC? Basándote en los referentes, ¿está tu negocio en un rango saludable, y cuál de las 4 palancas de LTV (aumentar valor de transacción, aumentar frecuencia de compra, extender vida del cliente, construir ingresos recurrentes) tendría el mayor impacto en tu ratio?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante aplicó correctamente la fórmula de LTV para su tipo de oferta y proporcionó una estimación razonable de CAC. Verifica que su interpretación del ratio LTV:CAC se alinee con los referentes (por debajo de 3:1 necesita trabajo, 3-5:1 es saludable, por encima de 8:1 significa sub-inversión en crecimiento). Evalúa si la palanca de LTV que eligieron es la más impactante para su situación específica."
+    }
+  ]
+}

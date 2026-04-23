@@ -1,0 +1,159 @@
+{
+    "lessonId": "6",
+    "courseId": "autonomous-sdr",
+    "sectionId": "ai-acquisition",
+    "title": "Can You Spot the Failure Modes?",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "An AI SDR sends this email: 'Hi [Name], I saw your company recently raised $50M in Series C funding. Congrats!' The prospect's company is bootstrapped and has never raised funding. What failure mode is this?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Off-brand messaging"
+                },
+                {
+                    "id": "b",
+                    "text": "Hallucinated personalization"
+                },
+                {
+                    "id": "c",
+                    "text": "Spam trigger"
+                },
+                {
+                    "id": "d",
+                    "text": "Reply misclassification"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This is hallucinated personalization. The AI invented a funding round that doesn't exist. This destroys credibility instantly.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "Your bounce rate is 8%, complaint rate is 0.05%, and open rate is 25%. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — all metrics are fine"
+                },
+                {
+                    "id": "b",
+                    "text": "Pause sends — bounce rate is too high"
+                },
+                {
+                    "id": "c",
+                    "text": "Increase volume — open rate is good"
+                },
+                {
+                    "id": "d",
+                    "text": "Change email content — complaint rate is rising"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Bounce rate > 5% indicates a deliverability problem (bad email list or domain health issue). Pause sends and clean your list.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "A prospect replies: 'Not the right time, but maybe in Q3.' Your AI SDR classifies this as 'Not interested' and sends a breakup email. What failure mode is this?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Off-brand messaging"
+                },
+                {
+                    "id": "b",
+                    "text": "Hallucinated personalization"
+                },
+                {
+                    "id": "c",
+                    "text": "Reply misclassification"
+                },
+                {
+                    "id": "d",
+                    "text": "Data compliance violation"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "This is reply misclassification. 'Not now' is different from 'not interested.' The AI should have scheduled a Q3 follow-up, not sent a breakup email.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "You send 300 emails in 2 hours from a 20-day-old domain. What's the most likely outcome?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High open rates — volume shows confidence"
+                },
+                {
+                    "id": "b",
+                    "text": "Normal deliverability — content quality matters more than volume"
+                },
+                {
+                    "id": "c",
+                    "text": "Spam filter trigger — volume spike on young domain"
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn ban — too many emails"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Spam filter trigger. Sending 300 emails in 2 hours from a 20-day-old domain is a massive red flag to email providers. Your domain will likely be flagged within 24 hours.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "Which of these LinkedIn activities has the HIGHEST ban risk?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Manually sending 15 connection requests per day"
+                },
+                {
+                    "id": "b",
+                    "text": "Using Artisan to auto-send 50 connection requests per day"
+                },
+                {
+                    "id": "c",
+                    "text": "Using ChatGPT to draft messages, then manually sending via LinkedIn"
+                },
+                {
+                    "id": "d",
+                    "text": "Viewing 30 profiles per day manually"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Using Artisan (or any automation tool) to auto-send 50 connection requests per day violates LinkedIn's ToS and will likely result in account restriction within 2 weeks.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "You scrape 5,000 email addresses from LinkedIn profiles of EU residents and import them into your AI SDR. What's the compliance risk?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Low — B2B emails are exempt from GDPR"
+                },
+                {
+                    "id": "b",
+                    "text": "Medium — only risky if someone complains"
+                },
+                {
+                    "id": "c",
+                    "text": "High — GDPR violation (no consent, scraped data)"
+                },
+                {
+                    "id": "d",
+                    "text": "None — LinkedIn data is public"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High GDPR risk. Scraped LinkedIn data without consent violates GDPR, even for B2B. Fines can be up to 4% of revenue or €20M. Never scrape EU resident data without explicit consent.",
+            "type": "multiple-choice"
+        }
+    ]
+}

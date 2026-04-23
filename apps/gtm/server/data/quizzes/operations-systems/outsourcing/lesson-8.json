@@ -1,0 +1,72 @@
+{
+  "lessonId": "8",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "Your Delegation Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the Delegation Playbook?",
+      "options": [
+        { "id": "a", "text": "A list of tasks you don't want to do" },
+        {
+          "id": "b",
+          "text": "A single document containing all course artifacts that can onboard any VA from scratch"
+        },
+        { "id": "c", "text": "A job posting template" },
+        { "id": "d", "text": "A performance review form" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Delegation Playbook is a single document (Notion or Google Docs) containing every course artifact: threshold assessment, hiring decision, three SOPs, onboarding protocol, QA scorecard, and delegation scorecard. If your VA leaves tomorrow, their replacement can be onboarded from this document alone."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 7-Day Delegation Sprint?",
+      "options": [
+        { "id": "a", "text": "A week-long hiring process" },
+        {
+          "id": "b",
+          "text": "A structured action plan to go from 'I have the SOPs' to 'I have a VA hired and producing output'"
+        },
+        { "id": "c", "text": "A training bootcamp for VAs" },
+        { "id": "d", "text": "A trial period before committing to a VA" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 7-Day Delegation Sprint is the structured action plan that bridges the gap between having documentation (SOPs, playbook) and having a functioning VA producing output. It covers posting, screening, hiring, and first-week execution."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How many course artifacts must be complete before building the final Delegation Playbook?",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "5" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "10" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Seven artifacts must be complete: L1 Hiring Threshold Calculator, L2 VA vs SDR Decision, L3 Inbox Triage SOP, L4 CRM Update SOP, L5 Prospect Research SOP, L6 VA Hiring Materials, L7 Collaboration Stack. Any unchecked item is a gap in your system."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You can hire a VA before completing all seven course artifacts if you plan to fill in the gaps later.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. A VA given an incomplete SOP will make mistakes in exactly that area. Do not hire before completing all seven artifacts. Gaps in documentation directly cause quality failures."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review the 7-artifact checklist. Which items are complete and which have gaps? What is your plan for the 7-Day Delegation Sprint — will you execute it immediately or address gaps first?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses each of the 7 artifacts, identifies specific gaps, and creates a realistic timeline for completing gaps and executing the 7-Day Sprint — demonstrating understanding that hiring without complete SOPs leads to quality failures."
+    }
+  ]
+}

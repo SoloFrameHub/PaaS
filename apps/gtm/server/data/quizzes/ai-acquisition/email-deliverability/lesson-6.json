@@ -1,0 +1,75 @@
+{
+  "lessonId": "6",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "Warmup Timelines & Safe Volume Ramps",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of new inboxes land in spam without warmup?",
+      "options": [
+        { "id": "a", "text": "10-20%" },
+        { "id": "b", "text": "30-40%" },
+        { "id": "c", "text": "58-73%" },
+        { "id": "d", "text": "Less than 5%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "According to Validity's 2025 Sender Score study, 58-73% of new inboxes land in spam without warmup. Perfect DNS records don't matter if you have zero reputation. Warmup is the process of building that reputation through simulated positive engagement before cold sending."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Using the 'bank account' metaphor, what are deposits and withdrawals for email reputation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deposits = emails sent, Withdrawals = replies received"
+        },
+        {
+          "id": "b",
+          "text": "Deposits = opens, replies, moves from spam to inbox; Withdrawals = spam complaints, bounces, ignores, high send volume"
+        },
+        {
+          "id": "c",
+          "text": "Deposits = money spent on tools, Withdrawals = unsubscribes"
+        },
+        { "id": "d", "text": "Deposits and withdrawals don't apply to email" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Reputation deposits include opens, replies, moves from spam to inbox, and low bounce rates. Withdrawals include spam complaints, bounces, being ignored, and high send volume. A new inbox starts at zero balance — you can't make withdrawals (cold sends) until you've built up deposits (warmup engagement)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How long should you warm up a new sending domain before cold emailing?",
+      "options": [
+        { "id": "a", "text": "1-3 days" },
+        { "id": "b", "text": "1 week" },
+        { "id": "c", "text": "14-30 days" },
+        { "id": "d", "text": "No warmup needed with good DNS" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The lesson prescribes a 14-30 day warmup protocol that gradually builds reputation. During this period, warmup tools simulate positive engagement (opens, replies, moves from spam). Skipping this and sending 300 cold emails on Day 1 caused $12,000 in opportunity cost in the lesson's example."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Sarah's $12,000 mistake was buying the wrong sending domains — she should have chosen better domain names.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Sarah's domains and DNS were configured perfectly. Her mistake was skipping warmup entirely and launching 300 cold emails on Day 1. By Day 3, inbox placement was 12%. By Day 7, Google showed 'Bad' reputation. She had to rebuild from scratch with new domains — a $12,000 opportunity cost."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Create a 30-day warmup plan for a new sending domain. Include the daily volume ramp (starting volume, increment schedule, target daily volume by Day 30), and describe what metrics you would monitor to know the warmup is progressing successfully.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a specific daily volume ramp (starting low, incrementing gradually), reaches a realistic Day 30 target (30-50 cold emails/day), and identifies monitoring metrics (inbox placement rate, Google Postmaster reputation, bounce rate). Look for understanding that warmup must precede all cold sending."
+    }
+  ]
+}

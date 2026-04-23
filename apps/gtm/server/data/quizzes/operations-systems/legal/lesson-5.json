@@ -1,0 +1,72 @@
+{
+  "lessonId": "5",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "Redlines: What to Push Back On",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of contract negotiations involve 3 or fewer rounds of redlines?",
+      "options": [
+        { "id": "a", "text": "30%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "70%" },
+        { "id": "d", "text": "90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "70% of contract negotiations involve 3 or fewer rounds of redlines. Most deals that survive a redline exchange are perfectly healthy. The process just feels confrontational until you understand how it works."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which of these is the most common redline received by solo founders?",
+      "options": [
+        { "id": "a", "text": "Changing the governing law state" },
+        {
+          "id": "b",
+          "text": "Unlimited liability — removing your liability cap"
+        },
+        { "id": "c", "text": "Adding a warranty period" },
+        { "id": "d", "text": "Requiring insurance certificates" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Unlimited liability is the #1 most common redline. The client removes your liability cap, leaving you exposed for any claim. This should always be negotiated — never accept unlimited liability on a services contract."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the correct framework for responding to any redline?",
+      "options": [
+        { "id": "a", "text": "Accept everything to close the deal" },
+        { "id": "b", "text": "Reject everything to show strength" },
+        {
+          "id": "c",
+          "text": "Accept, Negotiate, or Walk — based on worst realistic outcome and business impact"
+        },
+        { "id": "d", "text": "Forward it to a lawyer for every change" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Every redline is a request, not a demand. Run it through three questions: What's the worst realistic outcome? What's the business impact? What's my walk-away point? Then Accept (minor), Negotiate (moderate), or Walk (unacceptable)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Receiving a redlined contract means the deal is at risk of falling through.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Redlining is not aggression — it's standard B2B negotiation. Most founders panic when they see tracked changes. But redlining is completely normal, and most deals that go through redlines close successfully."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Think about the last contract negotiation you experienced (or one you might face). Which of the 5 most common redlines would concern you most? How would you respond using the Accept/Negotiate/Walk framework?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies a specific redline scenario, applies the Accept/Negotiate/Walk framework by assessing worst realistic outcome and business impact, and proposes a professional counter-offer or response rather than simply accepting or rejecting."
+    }
+  ]
+}

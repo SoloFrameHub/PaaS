@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.log
+.env
+.venv
+venv/
+ENV/
+
+# Training artifacts (2.5GB of checkpoints we don't need in production)
+checkpoint-*/
+
+# Keep only the final model
+!model/model.safetensors
+!model/config.json
+!model/tokenizer*.json
+!model/training_args.bin

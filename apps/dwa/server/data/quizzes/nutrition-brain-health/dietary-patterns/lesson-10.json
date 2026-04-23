@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is dietary acculturation?",
+            "options": [
+                { "id": "opt1", "text": "Learning to cook dishes from another culture as a hobby" },
+                { "id": "opt2", "text": "The shift in eating patterns that occurs during transitions like immigration, urbanization, or the global spread of industrial food systems" },
+                { "id": "opt3", "text": "Following a strict diet prescribed by a nutritionist" },
+                { "id": "opt4", "text": "Choosing to eat only traditional foods and refusing all modern food" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Dietary acculturation refers to the shift in eating patterns during transitions — whether through immigration, rural-to-urban migration, or the global spread of industrial food systems. It follows a consistent pattern: increased UPFs, sugar, and processed meats, and decreased fiber, plant diversity, fermented foods, and communal eating."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What happens to the gut microbiome when populations transition from traditional to Western diets?",
+            "options": [
+                { "id": "opt1", "text": "Microbial diversity increases as people eat a wider variety of modern foods" },
+                { "id": "opt2", "text": "The microbiome remains stable regardless of dietary changes" },
+                { "id": "opt3", "text": "Microbial diversity drops rapidly within months, with key butyrate-producing bacteria declining progressively across generations" },
+                { "id": "opt4", "text": "Only harmful bacteria are affected while beneficial bacteria remain unchanged" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research shows that immigration from non-Western to Western countries is associated with rapid and significant loss of microbial diversity, occurring within months. Key butyrate-producing bacteria (Prevotella, Faecalibacterium) decline while Western-associated bacteria (Bacteroides) increase. These shifts are progressive — second-generation immigrants show greater microbial loss than first-generation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which elements of traditional diets are typically lost first during dietary acculturation?",
+            "options": [
+                { "id": "opt1", "text": "Meat and dairy products" },
+                { "id": "opt2", "text": "Basic grains like rice and wheat" },
+                { "id": "opt3", "text": "Fermented foods, spice diversity, and traditional cooking methods like soaking, sprouting, and fermenting" },
+                { "id": "opt4", "text": "All traditional foods are lost simultaneously" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Traditional fermented foods are often among the first foods lost because they require specific ingredients and preparation time. Spice and herb diversity, extended cooking methods (fermentation, soaking, sprouting), and dietary fiber intake also decline early and sharply. These losses are particularly consequential because they represent some of the most protective elements for mental health."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why are legume-grain combinations (beans and rice, lentils and roti, etc.) highlighted as one of the most protective elements across traditional diets?",
+            "options": [
+                { "id": "opt1", "text": "Because they are the cheapest foods available in traditional markets" },
+                { "id": "opt2", "text": "Because they provide complete protein, resistant starch for butyrate production, prebiotic fiber, and blood sugar stability" },
+                { "id": "opt3", "text": "Because they are the only foods that contain vitamins" },
+                { "id": "opt4", "text": "Because they taste better than other traditional foods" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Legume-grain combinations found in nearly every traditional diet (beans and rice, lentils and roti, beans and corn tortillas, etc.) provide complete protein (all essential amino acids), resistant starch for butyrate production, prebiotic fiber for microbiome diversity, and stable blood sugar from the fiber-protein combination — making them one of the most cost-effective brain-healthy food pairings."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the most practical evidence-based approach for someone navigating dietary acculturation with limited time and budget?",
+            "options": [
+                { "id": "opt1", "text": "Completely return to a traditional diet regardless of practical constraints" },
+                { "id": "opt2", "text": "Focus only on removing fast food and do not worry about adding anything" },
+                { "id": "opt3", "text": "Identify 2-3 traditional foods that are accessible and high-impact (like canned beans, simple spice blends, and fermented staples) and maintain them as dietary anchors" },
+                { "id": "opt4", "text": "Give up on dietary changes until circumstances improve" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The most practical approach is identifying 2-3 high-impact traditional foods that are accessible and maintaining them as dietary anchors. Research shows that maintaining even partial traditional dietary practices buffers against the mental health risks of dietary transition. Addition-based strategies (adding protective foods) are more effective than restriction-only approaches."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "10",
+    "title": "Dietary Acculturation and Mental Health - Quiz"
+}

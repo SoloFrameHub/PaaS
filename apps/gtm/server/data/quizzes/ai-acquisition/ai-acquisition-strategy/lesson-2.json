@@ -1,0 +1,97 @@
+{
+  "lessonId": "2",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "Prospecting & List Building with AI + Data Tools",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is 'waterfall enrichment' in the context of prospect list building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sending emails in a cascading sequence over multiple weeks"
+        },
+        {
+          "id": "b",
+          "text": "A sequential data lookup strategy that checks multiple sources until it finds valid data"
+        },
+        {
+          "id": "c",
+          "text": "A technique for gradually increasing email send volume"
+        },
+        {
+          "id": "d",
+          "text": "A method of scoring leads from highest to lowest priority"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Waterfall enrichment is a sequential data lookup strategy: try Source A for email, if no result try Source B, then Source C. Clay automates this across 75+ providers, stopping when it finds valid data. This dramatically improves coverage beyond any single data source."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "When building an Apollo search, how many filters should you use in your first pass?",
+      "options": [
+        { "id": "a", "text": "As many as possible for precision" },
+        { "id": "b", "text": "Exactly 2 filters" },
+        { "id": "c", "text": "No more than 5 filters" },
+        { "id": "d", "text": "Only 1 filter at a time" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The lesson recommends no more than 5 filters in your first pass. Over-filtering leads to zero results. Start with core filters (industry, company size, location) and refine from there."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the Research Depth Pyramid, how much time should you spend on the top 20% of prospects (score 8-10)?",
+      "options": [
+        { "id": "a", "text": "5 seconds per prospect" },
+        { "id": "b", "text": "5 minutes of AI-assisted research" },
+        { "id": "c", "text": "30+ minutes of manual research" },
+        { "id": "d", "text": "No research needed — just send templates" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Research Depth Pyramid allocates 30+ minutes of manual research for the top 20% (score 8-10), 5 minutes of AI-assisted research for the middle 50% (score 5-7), and template-only with segment personalization for the bottom 30% (score 1-4)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Tech stack data from Apollo is 95-99% accurate and should be used to exclude prospects who don't match your criteria.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Apollo's tech stack data is only 60-70% accurate. The lesson warns to use it to prioritize prospects, not to exclude them. Excluding based on inaccurate tech data means you could miss qualified prospects."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What is the email decay rate for B2B contacts, and why does it matter for list building?",
+      "options": [
+        { "id": "a", "text": "0.5% per year — emails rarely change" },
+        {
+          "id": "b",
+          "text": "2-3% per month — a 90-day-old list is 6-9% invalid"
+        },
+        { "id": "c", "text": "10% per week — lists are useless after a month" },
+        {
+          "id": "d",
+          "text": "Email decay only affects consumer lists, not B2B"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "B2B email addresses decay at 2-3% per month due to job changes, company acquisitions, and role changes. A 90-day-old list will have 6-9% invalid emails, which is why verifying emails before sending (using tools like MillionVerifier) is a critical step."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe your current prospect research process step by step. How long does it take you to build a list of 50 qualified prospects? Which steps from the lesson's SOP could you adopt to cut that time by 60-80%?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response describes a concrete current process (even if informal), identifies specific time bottlenecks, and references actionable steps from the lesson's SOP such as ICP-to-filter translation, Apollo search building, waterfall enrichment, and email verification."
+    }
+  ]
+}

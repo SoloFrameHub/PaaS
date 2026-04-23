@@ -1,0 +1,81 @@
+{
+  "lessonId": "4",
+  "courseId": "custom-ai-agents",
+  "sectionId": "ai-acquisition",
+  "title": "Agent 2: Email First-Draft Agent",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the FASP Quality Gate for AI-drafted emails?",
+      "options": [
+        { "id": "a", "text": "Fast, Accurate, Short, Professional" },
+        {
+          "id": "b",
+          "text": "Factual (verified references), Actually relevant (connected to value prop), Specific to this person (not generic), Proud if they knew how you found it"
+        },
+        { "id": "c", "text": "Format, Audience, Subject, Personalization" },
+        { "id": "d", "text": "First line, Ask, Social proof, Pitch" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every AI-drafted email must pass FASP: Factual (all references verified — no hallucinations), Actually relevant (not a stretch to your value prop), Specific to this person (not applicable to anyone), and Proud if they knew how you found the information (not creepy or invasive)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How many email variants does the Email First-Draft Agent generate per prospect, and why?",
+      "options": [
+        { "id": "a", "text": "1 variant — simplicity is key" },
+        {
+          "id": "b",
+          "text": "3 variants (pain-focused, trigger-focused, value-focused) to give options for different angles"
+        },
+        { "id": "c", "text": "10 variants for comprehensive A/B testing" },
+        {
+          "id": "d",
+          "text": "No variants — the AI sends the best one automatically"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The agent generates 3 variants per prospect: pain-focused (addresses their challenge), trigger-focused (references a recent event), and value-focused (leads with your solution's benefit). This gives you options without overwhelm, and each variant can be adapted to different sequence positions."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the '80/20 Rule of AI Email Drafting'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80% of emails should be AI, 20% should be human"
+        },
+        {
+          "id": "b",
+          "text": "AI gets you to 80-90% quality in 30 seconds; the human edit adds the final 10-20% that makes the difference between 3% and 8% reply rates"
+        },
+        { "id": "c", "text": "80% of prospects won't reply regardless" },
+        { "id": "d", "text": "Write 80 emails per day, review 20" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "AI gets you to 80-90% quality in 30 seconds. The human edit — fixing an awkward phrase, sharpening the CTA, adding a personal touch — adds the final 10-20% that makes the difference between 3% reply rates (pure AI) and 8% reply rates (AI + human polish)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Treating AI like a magic button ('write me a cold email') produces high-quality output without any additional context or constraints.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. 'Write me a cold email' produces generic garbage. The secret is in prompt architecture — feeding the AI your research brief, voice guide, proven templates, and strict constraints that prevent hallucination and spam. Quality output requires quality input and structure."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Take a real prospect from your list and describe the inputs you would feed to your Email First-Draft Agent (research brief, voice guide, template constraints). Then draft what you think the agent's best variant would look like and explain which FASP criteria it passes.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific agent inputs (research data, voice constraints, template structure), produces an actual email draft (not just a description), and evaluates it against all four FASP criteria. Look for understanding that prompt architecture drives output quality."
+    }
+  ]
+}

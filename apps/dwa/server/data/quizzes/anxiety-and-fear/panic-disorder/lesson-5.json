@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does hyperventilation during a panic attack cause dizziness and tingling?",
+            "options": [
+                { "id": "opt1", "text": "Because you are not getting enough oxygen to your brain" },
+                { "id": "opt2", "text": "Because rapid breathing blows off too much CO2, causing blood vessels to constrict and reducing blood flow to the brain" },
+                { "id": "opt3", "text": "Because your blood sugar drops during a panic attack" },
+                { "id": "opt4", "text": "Because your heart is pumping too much blood to your extremities" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Hyperventilation (rapid, shallow breathing) blows off too much CO2, which causes blood vessels to constrict, reducing blood flow to the brain. This produces dizziness, tingling, lightheadedness, and feelings of unreality. Counterintuitively, you are getting too much oxygen, not too little."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In diaphragmatic breathing for panic, why is the exhale made longer than the inhale?",
+            "options": [
+                { "id": "opt1", "text": "To expel toxins from the lungs more efficiently" },
+                { "id": "opt2", "text": "To make room for a larger inhale on the next breath" },
+                { "id": "opt3", "text": "Because the longer exhale activates the parasympathetic nervous system, which counteracts fight-or-flight" },
+                { "id": "opt4", "text": "To strengthen the diaphragm muscle over time" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The exhale activates the parasympathetic nervous system — your body's natural 'calming brake.' By making the exhale longer than the inhale (e.g., inhale for 4 counts, exhale for 6 counts), you directly stimulate the system that counteracts the fight-or-flight response."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 5-4-3-2-1 grounding technique best used for during a panic attack?",
+            "options": [
+                { "id": "opt1", "text": "Lowering your heart rate through physical relaxation" },
+                { "id": "opt2", "text": "Combating feelings of derealization by redirecting attention to external sensory input" },
+                { "id": "opt3", "text": "Stopping the panic attack immediately" },
+                { "id": "opt4", "text": "Analyzing the root cause of the panic attack" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 5-4-3-2-1 technique is specifically designed to combat derealization — the feeling of being detached from reality. It works by engaging all five senses to redirect attention from internal panic sensations to external reality, engaging your thinking brain and competing with the fear response."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does the cold water 'reset' technique work physiologically?",
+            "options": [
+                { "id": "opt1", "text": "It shocks the brain into forgetting about the panic" },
+                { "id": "opt2", "text": "It triggers the mammalian dive reflex, which activates the parasympathetic nervous system and slows heart rate" },
+                { "id": "opt3", "text": "It lowers body temperature to reduce adrenaline production" },
+                { "id": "opt4", "text": "It causes a rush of endorphins that override the panic response" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cold stimulation of the face and wrists triggers the mammalian dive reflex — an automatic physiological response that activates the parasympathetic nervous system and directly slows your heart rate. It acts as a quick physiological 'reset button.'"
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the critical distinction between using breathing techniques correctly versus incorrectly in panic management?",
+            "options": [
+                { "id": "opt1", "text": "Correct use involves breathing as fast as possible; incorrect use involves breathing slowly" },
+                { "id": "opt2", "text": "Correct use means practicing only during panic; incorrect means practicing when calm" },
+                { "id": "opt3", "text": "Using them to stay in a situation and tolerate discomfort is therapeutic; using them to avoid ever feeling anxiety maintains the panic cycle" },
+                { "id": "opt4", "text": "There is no difference — any use of breathing techniques is equally effective" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The key distinction is purpose: using breathing to stay in a frightening situation and observe that fear eventually passes is therapeutic. Using breathing to avoid ever feeling the sensation of fear actually maintains the panic cycle, because you never learn that panic is tolerable on its own."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "5",
+    "title": "Breathing and Grounding During Panic - Quiz"
+}

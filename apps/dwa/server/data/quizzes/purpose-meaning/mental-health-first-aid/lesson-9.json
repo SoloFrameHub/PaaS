@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Friend admits drinking heavily nightly to cope, says 'I know it's bad but can't stop. I've tried.' Best response?",
+      "options": [
+        {"id": "opt1", "text": "'You're an alcoholic. Go to AA now or lose everything.'"},
+        {"id": "opt2", "text": "'Sounds like you're struggling, using alcohol to cope. Tried to stop shows you care. What would help you feel ready to try again?'"},
+        {"id": "opt3", "text": "'Everyone drinks to cope sometimes. You're probably fine.'"},
+        {"id": "opt4", "text": "'If you really wanted to stop, you would. Making excuses.'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Uses MI principles: empathy ('struggling'), affirm effort ('tried=care'), no judgment, roll with resistance (not forcing action), support self-efficacy. Creates space for change at their pace. Labeling/demanding/threatening (opt1) triggers defensiveness. Minimizing (opt3) misses serious concern. Blaming (opt4) increases shame."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the evidence base for motivational interviewing (MI) in substance use treatment?",
+      "options": [
+        {"id": "opt1", "text": "STRONG evidence — more effective than confrontation for behavior change"},
+        {"id": "opt2", "text": "WEAK evidence — confrontation works better"},
+        {"id": "opt3", "text": "No credible research exists on MI"},
+        {"id": "opt4", "text": "MI only works for alcohol, not other substances"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "MI has STRONG evidence for effectiveness in SUD treatment across substances. More effective than confrontation ('you're an addict, you need help'), which increases resistance. MI principles: empathy, develop discrepancy (their values vs. behavior), roll with resistance, support self-efficacy."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is dual diagnosis and why does integrated treatment matter?",
+      "options": [
+        {"id": "opt1", "text": "Two separate SUDs; treat sequentially"},
+        {"id": "opt2", "text": "Co-occurring mental health + SUD (~50% overlap); integrated treatment (both simultaneously) essential vs. sequential which failed"},
+        {"id": "opt3", "text": "Dual diagnosis is rare (<5% of SUD cases)"},
+        {"id": "opt4", "text": "Always treat mental health first, then SUD"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Dual diagnosis = co-occurring mental illness + SUD. VERY common (~50% with severe mental illness have SUD, ~50% with SUD have mental illness). Old sequential model (treat one first) FAILED — people relapsed. Evidence-based: integrated treatment (both simultaneously, coordinated care). Self-medication, shared risk factors, substance-induced mental illness explain overlap."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is harm reduction and is it enabling?",
+      "options": [
+        {"id": "opt1", "text": "Harm reduction enables addiction — abstinence-only is evidence-based"},
+        {"id": "opt2", "text": "Harm reduction (Narcan, clean needles, reducing use) saves lives while working toward recovery; NOT enabling — reduction is meaningful progress"},
+        {"id": "opt3", "text": "Harm reduction has no research support"},
+        {"id": "opt4", "text": "Harm reduction means giving up on recovery"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Harm reduction: meet people where they are; reducing harm=progress even if not abstinent. Examples: Narcan (reverses overdose), clean needles (prevents HIV/hepatitis), reducing amount/frequency. SAVES LIVES while person works toward recovery. NOT enabling. Abstinence is goal for many, but reduction is meaningful. Strong research support."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which substance withdrawals can be medically dangerous or fatal?",
+      "options": [
+        {"id": "opt1", "text": "All substance withdrawals are equally dangerous"},
+        {"id": "opt2", "text": "Alcohol and benzodiazepine withdrawal can cause FATAL seizures; require medical supervision"},
+        {"id": "opt3", "text": "No substance withdrawal is dangerous"},
+        {"id": "opt4", "text": "Only opioid withdrawal is dangerous"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Alcohol and benzodiazepine withdrawal can be FATAL (seizures, delirium tremens). Require medical detox supervision. Never encourage abrupt cessation without medical support. Opioid withdrawal is extremely uncomfortable but rarely fatal. Stimulant withdrawal causes depression/suicidal thoughts (monitor). Call 911 if seizures, hallucinations, extreme agitation during withdrawal."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "9",
+  "title": "Substance Use Disorders and Dual Diagnosis - Quiz"
+}

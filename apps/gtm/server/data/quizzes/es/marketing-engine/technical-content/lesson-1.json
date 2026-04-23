@@ -1,0 +1,142 @@
+{
+  "lessonId": "1",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Estrategia de Contenido vs. Creación de Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Por qué muchos fundadores ven mucho tráfico pero cero leads desde su contenido?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No están publicando con suficiente frecuencia"
+        },
+        {
+          "id": "b",
+          "text": "Se están enfocando en 'Contenido que Impresiona' a sus pares en lugar de 'Contenido que Convierte' a los clientes"
+        },
+        {
+          "id": "c",
+          "text": "Su sitio web es demasiado lento"
+        },
+        {
+          "id": "d",
+          "text": "Google está ocultando su contenido a los compradores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El tráfico proveniente de pares (otros expertos) raramente se convierte en ingresos. El contenido estratégico tiene como objetivo a la persona 'un paso detrás' que realmente tiene el problema que tú resuelves."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el 'Trabajo' del contenido en la Parte Superior del Embudo (TOFU)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cerrar el trato de inmediato"
+        },
+        {
+          "id": "b",
+          "text": "Comparar tu producto con un competidor"
+        },
+        {
+          "id": "c",
+          "text": "Atraer a una audiencia específica a través del valor educativo"
+        },
+        {
+          "id": "d",
+          "text": "Proveer documentación técnica para usuarios actuales"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El contenido TOFU trata sobre el descubrimiento. Aborda puntos de dolor amplios y necesidades educativas para atraer a tu ICP hacia tu ecosistema."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Según la lección, ¿cuál es la proporción ideal para creación vs. distribución?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80% creación, 20% distribución"
+        },
+        {
+          "id": "b",
+          "text": "50% creación, 50% distribución"
+        },
+        {
+          "id": "c",
+          "text": "20% creación, 80% distribución"
+        },
+        {
+          "id": "d",
+          "text": "100% creación, la distribución ocurre automáticamente"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La mayoría de los fundadores sobreinvierte en la escritura y subinvierte en garantizar que las personas realmente lo vean. La proporción 20/80 garantiza que tu arduo trabajo llegue a su objetivo."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué 'Ventaja del Fundador Técnico' se destaca como clave para el éxito en contenido?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La capacidad de escribir código complejo"
+        },
+        {
+          "id": "b",
+          "text": "Pensamiento sistemático e instintos de documentación"
+        },
+        {
+          "id": "c",
+          "text": "Conocimiento de los algoritmos de SEO"
+        },
+        {
+          "id": "d",
+          "text": "Alta velocidad de escritura"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los fundadores técnicos son naturalmente buenos en la documentación y la construcción de sistemas. El marketing de contenidos, cuando se considera como un sistema repetible, aprovecha directamente estas fortalezas."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué empresa se menciona como caso de estudio de crecimiento exitoso basado en contenido con $0 en publicidad?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Analytics"
+        },
+        {
+          "id": "b",
+          "text": "Plausible Analytics"
+        },
+        {
+          "id": "c",
+          "text": "Facebook"
+        },
+        {
+          "id": "d",
+          "text": "Salesforce"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Plausible usó una estrategia de contenido 'aburrida' pero consistente, enfocada en los puntos de dolor de su ICP (privacidad), para crecer hasta $3.1M ARR sin anuncios."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Audita una de tus entradas de blog recientes o ideas de contenido. ¿Quién es la audiencia objetivo (sé específico)? ¿Cuál es el problema 'un paso detrás' al que se enfrentan? ¿Cuál es el único paso siguiente específico que quieres que den después de leer?",
+      "minLength": 100,
+      "promptForAI": "Evalúa si el fundador identifica un ICP específico (no solo 'todos') y si el 'paso siguiente' es un punto de conversión lógico (ej., suscripción al newsletter desde TOFU). Cuestiona si la audiencia es demasiado amplia."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

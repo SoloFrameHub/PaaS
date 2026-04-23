@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "4",
+    "sectionId": "foundations",
+    "title": "Service Business Acquisition Path Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary acquisition channel for high-touch service businesses?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cold direct-response advertising"
+                },
+                {
+                    "id": "b",
+                    "text": "High-volume cold emailing"
+                },
+                {
+                    "id": "c",
+                    "text": "Referral network cultivation and relationship-based sales"
+                },
+                {
+                    "id": "d",
+                    "text": "Posting memes on social media"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Service businesses rely on high trust. Referrals and existing relationships have the highest trust, making them the most effective channel for landing high-value consulting or agency deals."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'Cold Outreach' generally harder for services than for SaaS products?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Service buyers don't use email"
+                },
+                {
+                    "id": "b",
+                    "text": "The price and commitment are significantly higher, requiring a higher 'Trust Threshold'"
+                },
+                {
+                    "id": "c",
+                    "text": "Service providers are bad at writing emails"
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't harder; it works the same for both"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A $20,000 project requires much more trust than a $20/month app. Approaching someone cold for a high-stakes service often feels premature unless you focus on diagnosis and relationship-building first."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In a service business context, what is a 'Referral Node'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A piece of software that automates referrals"
+                },
+                {
+                    "id": "b",
+                    "text": "A specific person who is well-connected and consistently sends you business"
+                },
+                {
+                    "id": "c",
+                    "text": "A networking event"
+                },
+                {
+                    "id": "d",
+                    "text": "A technical term for a sales lead"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Referral Nodes are the 'power connectors' in your network—past clients, non-competing peers, or industry influencers who can introduce you to many qualified prospects."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which set of courses should a Service Business founder prioritize first (Tier 1)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Courses 4, 8, and 14"
+                },
+                {
+                    "id": "b",
+                    "text": "Courses 5, 10, and 13"
+                },
+                {
+                    "id": "c",
+                    "text": "Courses 14, 18, and 11"
+                },
+                {
+                    "id": "d",
+                    "text": "Courses 7, 20, and 22"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "For services, the priorities are Course 14 (Discovery), Course 18 (Proposals/Pricing), and Course 11 (Social Proof/Referrals)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach for 'Selective Outreach' in a service business?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Mass email 500 LinkedIn leads a day"
+                },
+                {
+                    "id": "b",
+                    "text": "Focus on 'Diagnosis' and highly researched, personalized value-adds for a small group of dream clients"
+                },
+                {
+                    "id": "c",
+                    "text": "Wait for them to find you"
+                },
+                {
+                    "id": "d",
+                    "text": "Buy a lead list of CEOs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Because trust is paramount, selective outreach means doing the homework. Showing a prospect you already understand their specific problem is the fastest way to earn the right to a deeper conversation."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify your top 3 potential referral partners (people who serve your ICP but don't compete) and one 'Dream Client.' Explain why these partners are a good fit for you and what specific value-add or diagnostic insight you could share with the dream client to open a conversation.",
+            "minLength": 100,
+            "promptForAI": "Check for 'Referral Logic' — why do these partners serve the same people? The value-add for the dream client must be specific and based on observation, not just 'I can help you.'"
+        }
+    ]
+}

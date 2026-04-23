@@ -1,0 +1,97 @@
+{
+  "lessonId": "3",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Folk vs. Close vs. Pipedrive",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué CRM tiene llamadas y SMS integrados?",
+      "options": ["Folk", "Close", "Pipedrive", "Todos ellos"],
+      "correctAnswer": 1,
+      "explanation": "Close es el único con llamadas y SMS integrados. Folk y Pipedrive requieren integraciones (Aircall, Dialpad) para llamadas."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué CRM enriquece automáticamente los contactos desde LinkedIn y datos públicos?",
+      "options": ["Folk", "Close", "Pipedrive", "Ninguno de ellos"],
+      "correctAnswer": 0,
+      "explanation": "Folk enriquece automáticamente los contactos cuando los importas vía la extensión de Chrome. Close y Pipedrive requieren herramientas de enriquecimiento externas como Apollo."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Envías 150 correos fríos/semana y haces 25 llamadas/semana. ¿Qué CRM encaja mejor?",
+      "options": [
+        "Folk (relación primero)",
+        "Close (outbound de volumen)",
+        "Pipedrive (pipeline visual)",
+        "Cualquiera de ellos funciona igual de bien"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Close está construido para outbound de alto volumen con secuencias y llamadas integradas. Folk es excesivo para outbound frío, y Pipedrive requeriría añadir Instantly + Aircall."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué CRM tiene el ecosistema de integraciones más grande (400+)?",
+      "options": [
+        "Folk (~50)",
+        "Close (~100)",
+        "Pipedrive (400+)",
+        "Todos tienen el mismo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pipedrive tiene 400+ integraciones, el ecosistema más grande. Folk tiene ~50, Close tiene ~100."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el nivel de pago más económico para un fundador en solitario?",
+      "options": [
+        "Folk Standard ($20/mes)",
+        "Close Startup ($29/mes)",
+        "Pipedrive Essential ($14/mes)",
+        "HubSpot Starter ($20/mes)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pipedrive Essential a $14/mes es el nivel de pago más económico. Folk Standard es $20/mes, Close Startup es $29/mes."
+    },
+    {
+      "id": "q6",
+      "type": "true-false",
+      "question": "Verdadero o Falso: Deberías cambiar de CRM cada 60 días para encontrar el ajuste perfecto.",
+      "correctAnswer": false,
+      "explanation": "Falso. El principio de compromiso de 90 días dice que debes quedarte con un CRM al menos 90 días. Cambiar con demasiada frecuencia cuesta 20-40 horas de configuración e impide que construyas hábitos consistentes."
+    },
+    {
+      "id": "q7",
+      "type": "multiple-choice",
+      "question": "¿Qué CRM es mejor para un coach que cierra 2-3 clientes/mes a través de referidos cálidos?",
+      "options": [
+        "Folk (etiquetas de relación, correo masivo personalizado)",
+        "Close (secuencias, llamadas)",
+        "Pipedrive (pipeline visual)",
+        "Ninguno — usa una hoja de cálculo"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Folk está diseñado para vendedores de relaciones que gestionan conexiones cálidas. El coach no necesita secuencias ni llamadas de alto volumen — necesita contexto de relación y prospección personalizada."
+    },
+    {
+      "id": "q8",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la razón principal por la que los fundadores en solitario abandonan los CRMs?",
+      "options": [
+        "Demasiado caro",
+        "Sobreingeniería (demasiados campos) o subutilización (hoja de cálculo glorificada)",
+        "Falta de integraciones",
+        "Malas aplicaciones móviles"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los dos modos de fallo son la sobreingeniería (crear 50 campos personalizados que nunca usas) y la subutilización (tratarlo como una hoja de cálculo glorificada). Ambos conducen al abandono."
+    }
+  ]
+}

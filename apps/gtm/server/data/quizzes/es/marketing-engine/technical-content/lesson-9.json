@@ -1,0 +1,142 @@
+{
+  "lessonId": "9",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Lista de Verificación de Distribución de Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué significa 'Publicar y Rezar' en el contexto del marketing de contenidos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una estrategia en la que publicas contenido y esperas lo mejor sin distribución activa"
+        },
+        {
+          "id": "b",
+          "text": "Una estrategia de contenido religioso"
+        },
+        {
+          "id": "c",
+          "text": "Una forma de usar SEO para obtener tráfico"
+        },
+        {
+          "id": "d",
+          "text": "Publicar contenido solo los fines de semana"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Publicar y Rezar es el error más común de los fundadores — escribir buen contenido pero no garantizar proactivamente que llegue a la audiencia objetivo."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estos se considera un canal de distribución 'Propio'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reddit"
+        },
+        {
+          "id": "b",
+          "text": "Un grupo de Facebook de nicho"
+        },
+        {
+          "id": "c",
+          "text": "Tu Lista de Email"
+        },
+        {
+          "id": "d",
+          "text": "Hacker News"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Posees tu lista de email. Ningún cambio de algoritmo puede quitártela o cobrarte por llegar a tus suscriptores. Es tu activo de adquisición más valioso."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el principio de 'Cero Clics' para la distribución en redes sociales?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Publicar contenido en el que nadie hace clic"
+        },
+        {
+          "id": "b",
+          "text": "Proporcionar el valor/lección completo directamente en la publicación/hilo para que los usuarios no tengan que salir de la plataforma"
+        },
+        {
+          "id": "c",
+          "text": "Usar un acortador de enlaces para rastrear clics"
+        },
+        {
+          "id": "d",
+          "text": "Eliminar todas las imágenes de una publicación"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las plataformas recompensan el contenido que mantiene a los usuarios en su sitio. Al dar el valor en el feed, construyes más confianza y a menudo obtienes más alcance total que con una publicación 'Solo enlace'."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuánto tiempo debe durar la 'Ventana de Ejecución' para distribuir una sola pieza fuente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 hora"
+        },
+        {
+          "id": "b",
+          "text": "24 horas"
+        },
+        {
+          "id": "c",
+          "text": "Al menos 7+ días"
+        },
+        {
+          "id": "d",
+          "text": "Para siempre"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Escalonar la distribución (Día 1 email, Día 2 hilo, Día 4 compartir en la comunidad) garantiza que tu contenido se mantenga en la 'conversación' durante una semana o más, en lugar de ser un destello de 24 horas."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Al compartir en comunidades 'Ganadas' como Reddit o Discord, ¿cuál es la regla más importante?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Publicar el enlace tantas veces como sea posible"
+        },
+        {
+          "id": "b",
+          "text": "Proporcionar participación 'Valor Primero' y seguir las reglas de la comunidad"
+        },
+        {
+          "id": "c",
+          "text": "Pedir a todos que sigan tu Twitter"
+        },
+        {
+          "id": "d",
+          "text": "Discutir con cualquiera que no esté de acuerdo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El spam es ignorado. El valor genuino liderado por el practicante (ej., 'Aquí está lo que aprendí de [X]') es recompensado con confianza y tráfico."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Lista 3 'Comunidades Ganadas' donde tu ICP se reúne actualmente (Slack, Discord, Subreddits, etc.). Redacta una introducción de 'Valor Primero' para una de tus ideas de contenido recientes. ¿Cómo responderás a la pregunta '¿Qué hay para ellos?' sin parecer spam?",
+      "minLength": 100,
+      "promptForAI": "Revisa si el fundador es específico. Debe identificar subreddits o grupos específicos, y su introducción debe sentirse como una 'lección' en lugar de un 'pitch'."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

@@ -1,0 +1,55 @@
+{
+  "lessonId": "6",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Podcast-to-Pipeline Strategy",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why does the text-to-subscribe CTA outperform 'visit this URL' CTAs on podcasts by 5-8x?",
+      "options": [
+        { "id": "a", "text": "Text messages have higher open rates than emails" },
+        { "id": "b", "text": "Podcast listeners are usually driving, exercising, or doing chores and can text without stopping what they are doing" },
+        { "id": "c", "text": "Phone carriers give priority to opt-in text messages" },
+        { "id": "d", "text": "Text messages bypass spam filters that would catch emails" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Podcast listeners are typically consuming content while their hands and eyes are occupied (driving, exercising, doing chores). Texting a keyword is possible in this context, while navigating to a URL is not. This context-aware CTA design dramatically increases conversion rates."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "When targeting podcasts for guest appearances, what audience size is recommended and why?",
+      "options": [
+        { "id": "a", "text": "100,000+ downloads per episode, because larger audiences generate more leads" },
+        { "id": "b", "text": "500-5,000 downloads per episode, because hosts are hungry for guests and audiences are engaged" },
+        { "id": "c", "text": "Under 100 downloads per episode, because niche audiences convert better" },
+        { "id": "d", "text": "Audience size does not matter; only topic relevance counts" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Podcasts with 500-5,000 downloads per episode hit the sweet spot: large enough to generate meaningful leads, but small enough that hosts are receptive to guest pitches. Very large podcasts are difficult to get booked on, while very small ones do not move the needle."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the primary CTA placement for maximum conversion within a podcast episode?",
+      "options": [
+        { "id": "a", "text": "Only in the show notes and episode description" },
+        { "id": "b", "text": "A single mention at the very end of the episode" },
+        { "id": "c", "text": "Mid-roll (50-60% mark) as the primary CTA, with supporting pre-roll and post-roll mentions" },
+        { "id": "d", "text": "Continuously repeated every 5 minutes throughout the episode" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The mid-roll CTA at the 50-60% mark is your primary conversion opportunity, delivered after a key insight when engagement is highest. A brief pre-roll mention builds awareness, and a post-roll reminder catches anyone who missed the mid-roll."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Draft a guest podcast pitch email for a specific show in your niche. Include: the podcast name, why your expertise is relevant to their audience, a specific angle you would discuss, and what value you would deliver. Also describe the guest-specific landing page you would create.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student identifies a real or realistic podcast, tailors the pitch to that specific audience (not generic), proposes a specific angle rather than a broad topic, and describes a landing page strategy. The pitch should focus on value to the host's audience rather than self-promotion."
+    }
+  ]
+}

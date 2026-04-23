@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Your cousin recently lost their job and relationship, and texts you 'Thank you for always being there. You're a great cousin' in a way that feels final. They've posted 'The pain will end soon' on social media. What should you do?",
+      "options": [
+        {"id": "opt1", "text": "Text back: 'No problem! Hang in there buddy, things will get better soon!'"},
+        {"id": "opt2", "text": "Call or visit immediately, ask directly 'Are you thinking about suicide?', assess for plan/intent/means, and call 988/911 if immediate risk"},
+        {"id": "opt3", "text": "Don't say anything — asking about suicide might plant the idea and make it worse"},
+        {"id": "opt4", "text": "Tell their parents immediately but don't talk to them directly to avoid making them uncomfortable"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The 'thank you' message that feels final + 'the pain will end soon' + recent significant losses (job, relationship) are HIGH-RISK suicide warning signs requiring IMMEDIATE response. Call or visit in person. Ask directly using clear language: 'Are you thinking about suicide?' Research shows asking does NOT increase risk and can provide relief. If yes, assess: 'Have you thought about how? When? Do you have access to [means]?' If plan + intent + means, call 988 or 911 and do not leave them alone. Reassuring texts are insufficient. The myth that asking plants the idea is dangerous — silence is not safety. Your direct action could save their life."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to research, what is the evidence base for asking someone directly about suicidal thoughts?",
+      "options": [
+        {"id": "opt1", "text": "Research shows asking about suicide increases risk and should be avoided by non-clinicians"},
+        {"id": "opt2", "text": "Research consistently shows asking about suicide does NOT increase risk and can provide relief by giving permission to share"},
+        {"id": "opt3", "text": "There is no research on this topic — it's based solely on clinical opinion"},
+        {"id": "opt4", "text": "Research shows only licensed therapists should ask about suicide"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research consistently demonstrates that asking someone directly about suicidal thoughts does NOT increase their risk of suicide and can actually provide relief. People experiencing suicidal thoughts often feel isolated and afraid to talk about it — your direct question signals it's safe to share and can open the door to help. Using clear language ('Are you thinking about suicide?' not euphemisms) is critical. This is one of the most important evidence-based principles in suicide prevention and applies to MHFA responders, not just clinicians. Avoiding the question due to fear of 'planting the idea' is a dangerous myth."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "After someone discloses suicidal thoughts, you ask 'Have you thought about how you would do it?' They describe a specific plan and say they have access to the means. What does this indicate, and what should you do?",
+      "options": [
+        {"id": "opt1", "text": "This indicates they're just thinking it through — encourage them to talk to a therapist this week and follow up later"},
+        {"id": "opt2", "text": "This indicates IMMEDIATE high risk — call 988 or 911 now, stay with them if safe, do not leave them alone"},
+        {"id": "opt3", "text": "This means you should extract a promise that they won't hurt themselves and check in tomorrow"},
+        {"id": "opt4", "text": "This exceeds your MHFA scope — you should not have asked about plan or means"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Suicidal thoughts + specific plan + access to means = IMMEDIATE HIGH RISK requiring emergency escalation. Call 988 (Suicide & Crisis Lifeline) or 911 RIGHT NOW. Do not leave them alone if it's safe to stay with them. This is not a 'wait and see' situation — the combination of plan, intent, and means indicates imminent danger. Do NOT extract a 'promise not to harm yourself' (clinically discredited and harmful). Do NOT wait until later. Your role in MHFA is to assess for these indicators and escalate immediately — this IS within your scope (assessing for indicators, then connecting to professionals)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "According to AFSP/SPRC safe messaging guidelines, which of the following is appropriate language when discussing suicide?",
+      "options": [
+        {"id": "opt1", "text": "'Committed suicide' — the traditional and most widely understood term"},
+        {"id": "opt2", "text": "'Died by suicide' — factual, respectful language that does not imply crime or sin"},
+        {"id": "opt3", "text": "'Successful suicide attempt' — accurate description of a fatal attempt"},
+        {"id": "opt4", "text": "Detailed description of the method and location to educate people about warning signs"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "'Died by suicide' is the appropriate, evidence-based language. 'Committed suicide' implies crime or sin (from when suicide was illegal) and is stigmatizing. 'Successful attempt' implies death is success (harmful framing). NEVER describe method or location (increases contagion risk — copycat suicides). Safe messaging guidelines (AFSP/SPRC/WHO) require: respectful language, no method details, no glorification, no simplification of causes, emphasis that help is available and suicide is preventable, and always providing crisis resources (988). These guidelines are based on substantial evidence from contagion research."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What does research show about gatekeeper training (like MHFA) for suicide prevention's effects on population-level suicide rates?",
+      "options": [
+        {"id": "opt1", "text": "STRONG evidence that gatekeeper training reduces community suicide rates by 40-60%"},
+        {"id": "opt2", "text": "MODERATE evidence for short-term trainee knowledge/confidence gains; WEAK evidence for long-term behavior change; ABSENT high-quality evidence for population suicide rate reduction"},
+        {"id": "opt3", "text": "STRONG evidence that gatekeeper training increases suicide rates through contagion"},
+        {"id": "opt4", "text": "Universal consensus that gatekeeper training 'saves lives' as established fact"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows MODERATE evidence for short-term improvements in trainee knowledge, self-efficacy, and attitudes (d = 0.49 for self-efficacy). However, long-term evidence is WEAK: knowledge decays, attitudes return to baseline in 57% of studies within ~4 months, and translation to actual intervention behavior is inconsistent. Critically, high-quality evidence that gatekeeper training reduces population-level suicide rates is ABSENT — most studies lack the methodological rigor to establish this causal link. Claims that MHFA 'saves lives' or 'prevents suicide' at population level are NOT supported by current RCT evidence, though training's benefits at trainee level (knowledge, confidence, recognition) are real and meaningful. Honest communication about evidence is essential."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "5",
+  "title": "Suicide Prevention and Risk Assessment - Quiz"
+}

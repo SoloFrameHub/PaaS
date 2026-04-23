@@ -1,0 +1,69 @@
+{
+  "id": "panic-attack-log",
+  "title": "Panic Attack Log",
+  "description": "Track your panic attacks or episodes of high anxiety to identify patterns and monitor your progress over time.",
+  "instructions": "Complete this log after each panic attack or period of intense anxiety. Be as specific as possible.",
+  "frequency": "per-episode",
+  "fields": [
+    {
+      "id": "date",
+      "label": "When did it happen? (date and approximate time)",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Monday 3:30 PM"
+    },
+    {
+      "id": "duration",
+      "label": "How long did it last? (minutes)",
+      "type": "number",
+      "required": true,
+      "min": 1,
+      "max": 180,
+      "unit": "minutes",
+      "placeholder": "e.g., 15"
+    },
+    {
+      "id": "location",
+      "label": "Where were you?",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., at the grocery store, at home, driving"
+    },
+    {
+      "id": "trigger",
+      "label": "What were you doing? Was there a trigger?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., standing in checkout line, noticed heart racing after coffee, no clear trigger"
+    },
+    {
+      "id": "peakIntensity",
+      "label": "Peak intensity of panic (1 = mild anxiety, 10 = worst panic ever)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "catastrophicThought",
+      "label": "What catastrophic thought did you have?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., 'I'm having a heart attack', 'I'm going to faint', 'I'm losing control'"
+    },
+    {
+      "id": "safetyBehaviors",
+      "label": "What safety behaviors did you use?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., left the store, sat down, called someone, took medication"
+    },
+    {
+      "id": "whatHelped",
+      "label": "What helped, or what would you do differently next time?",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., breathing helped, reminded myself it would pass, next time I'll try to stay in the situation"
+    }
+  ]
+}

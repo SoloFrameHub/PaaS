@@ -1,0 +1,81 @@
+{
+  "lessonId": "5",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "Building the Prospect Research Agent",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key difference between a prompt and an agent?",
+      "options": [
+        { "id": "a", "text": "A prompt is free while an agent costs money" },
+        {
+          "id": "b",
+          "text": "A prompt is a one-shot question; an agent is a system that takes a goal, accesses tools, makes decisions in a loop, and produces structured output"
+        },
+        {
+          "id": "c",
+          "text": "A prompt works with ChatGPT while an agent works with Claude"
+        },
+        { "id": "d", "text": "A prompt is faster than an agent" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A prompt is a one-shot question-answer interaction. An agent is a system that takes a goal, accesses tools (APIs, databases), makes decisions in a loop, and produces structured output. The research agent doesn't just answer a question — it gathers data from multiple sources and synthesizes it into a structured brief."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How much does the prospect research agent cost per brief, and how long does it take?",
+      "options": [
+        { "id": "a", "text": "$1-5 per brief, 10 minutes each" },
+        { "id": "b", "text": "$0.01-0.05 per brief, 30-60 seconds each" },
+        { "id": "c", "text": "$10 per brief, 5 minutes each" },
+        { "id": "d", "text": "Free, but requires 15 minutes of manual review" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The research agent costs $0.01-0.05 per prospect and generates a research brief in 30-60 seconds. Compare this to 15-20 minutes of manual research per prospect. For 50 prospects per week, this saves 12.5 hours weekly — or 650 hours (16 full work weeks) per year."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the six components of a research agent's output brief?",
+      "options": [
+        { "id": "a", "text": "Name, email, phone, LinkedIn, title, company" },
+        {
+          "id": "b",
+          "text": "Company overview, recent news, key challenges, tech stack signals, conversation hooks, personalization angle"
+        },
+        {
+          "id": "c",
+          "text": "Revenue, funding, employees, competitors, market share, growth rate"
+        },
+        {
+          "id": "d",
+          "text": "Email template, subject line, CTA, follow-up sequence, timing, segment"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The research agent generates: company overview (what they do, stage of growth), recent news (funding, launches, leadership changes), key challenges (pain points based on industry and stage), tech stack signals (technologies they use), conversation hooks (3-5 personalized angles), and personalization angle (recommended approach)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "AI research agents replace the need for human review — once the brief is generated, you can use it directly for outreach without checking.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. AI research agents compress 15 minutes of browsing into 60 seconds of structured output, but you still review and add human insight. The agent does 80% of the work; the human adds the judgment, context, and authenticity that converts research into effective outreach."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe how you would deploy a prospect research agent in your current workflow. What data sources would you connect, what output format would you use, and how would you integrate the briefs into your outreach process?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response specifies concrete data sources (LinkedIn, Crunchbase, Google News, etc.), describes a structured output format, and explains how briefs would feed into their actual outreach workflow. Look for understanding that the agent needs clear goals, specific data inputs, and structured output to be useful."
+    }
+  ]
+}

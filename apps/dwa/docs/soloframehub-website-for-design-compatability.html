@@ -1,0 +1,1173 @@
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloFrameHub | AI-Native Sales Academy for Solo Founders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif-custom {
+            font-family: 'Newsreader', serif;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Animations */
+        @keyframes float-subtle {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .animate-float {
+            animation: float-subtle 6s ease-in-out infinite;
+        }
+
+        @keyframes gradient-xy {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-xy 6s ease infinite;
+        }
+
+        /* Gradient Border Utility */
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(#09090b, #09090b) padding-box,
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) border-box;
+            border: 1px solid transparent;
+        }
+
+        /* Custom Details Marker */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-[#020408] min-h-screen flex flex-col items-center selection:bg-sky-500/30 selection:text-sky-200 text-zinc-300">
+
+    <!-- Background Grid -->
+    <div class="fixed inset-0 w-full h-full pointer-events-none z-0 flex justify-between px-4 md:px-12 opacity-20">
+        <div class="w-px h-full bg-white/5"></div>
+        <div class="w-px h-full bg-white/5 hidden sm:block"></div>
+        <div class="w-px h-full bg-white/5 hidden md:block"></div>
+        <div class="w-px h-full bg-white/5 hidden lg:block"></div>
+        <div class="w-px h-full bg-white/5 hidden xl:block"></div>
+        <div class="w-px h-full bg-white/5"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main
+        class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 backdrop-blur-xl lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+
+        <!-- Navigation -->
+        <nav
+            class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-4 md:px-12 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-8 h-8 rounded-lg bg-gradient-to-br from-zinc-800 to-black border border-white/10 flex items-center justify-center">
+                    <span class="iconify text-sky-400" data-icon="lucide:box" data-width="18"></span>
+                </div>
+                <span class="text-sm font-medium text-white tracking-tight">SoloFrameHub</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#sales" class="text-xs font-medium text-white transition-colors">Sales Academy</a>
+                <span class="text-xs font-medium text-zinc-600 cursor-not-allowed">Startup Academy</span>
+                <span class="text-xs font-medium text-zinc-600 cursor-not-allowed">GTM Academy</span>
+                <a href="#books" class="text-xs font-medium text-zinc-400 hover:text-white transition-colors">Books</a>
+            </div>
+
+            <a href="#pricing"
+                class="hidden sm:flex group relative px-4 py-2 rounded-full bg-zinc-900 border border-white/10 text-xs font-medium text-white hover:bg-zinc-800 transition-all items-center gap-2">
+                Start Learning
+                <span class="text-zinc-500">$49/mo</span>
+                <span class="iconify group-hover:translate-x-0.5 transition-transform" data-icon="lucide:arrow-right"
+                    data-width="14"></span>
+            </a>
+        </nav>
+
+        <!-- SECTION 1: HERO -->
+        <section class="relative pt-24 pb-20 px-6 md:px-12 border-b border-white/5">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-300 text-[10px] font-medium tracking-wide mb-8">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                    </span>
+                    BETA COHORT: JANUARY 2026
+                </div>
+
+                <h1
+                    class="text-5xl md:text-7xl font-serif-custom font-normal text-white tracking-tight mb-6 leading-[0.95]">
+                    Learn the systematic approach to
+                    <span class="italic text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-indigo-400">lead
+                        generation &amp; sales</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-zinc-400 font-light leading-relaxed max-w-2xl mx-auto mb-6">
+                    Most technical founders avoid sales because it feels like guesswork. But sales is a learnable
+                    system—just like engineering. Document it, practice it, and improve it.
+                </p>
+
+                <p class="text-sm text-zinc-500 max-w-xl mx-auto mb-10 leading-relaxed">
+                    Stop looking for "growth hacks" or generic tactics. Build a predictable engine based on human
+                    psychology and rigorous process documentation.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button
+                        class="w-full sm:w-auto h-12 px-8 rounded-full bg-white text-black text-sm font-medium hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
+                        Start Learning &amp; Executing
+                        <span class="text-zinc-500 text-xs">($49/mo)</span>
+                    </button>
+                    <button
+                        class="w-full sm:w-auto h-12 px-8 rounded-full border border-white/10 text-white text-sm font-medium hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+                        See what's coming in 2026
+                        <span class="iconify" data-icon="lucide:arrow-down" data-width="16"></span>
+                    </button>
+                </div>
+                <p class="mt-4 text-[10px] text-zinc-500 uppercase tracking-widest">First 500 founders lock in founding
+                    member pricing</p>
+            </div>
+
+            <!-- Value Prop Grid (Bento) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-20">
+                <!-- Card 1 -->
+                <div
+                    class="lg:col-span-2 gradient-border rounded-2xl p-6 bg-zinc-900/20 backdrop-blur-sm group hover:bg-zinc-900/40 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 rounded bg-sky-500/10 flex items-center justify-center text-sky-400">
+                            <span class="iconify" data-icon="lucide:bot" data-width="18"></span>
+                        </div>
+                        <h3 class="text-sm font-medium text-white">Learn By Doing</h3>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                        Practice sales conversations with AI buyer personas while building real sales artifacts for your
+                        actual customers.
+                    </p>
+                    <!-- Visual mock -->
+                    <div
+                        class="w-full h-32 bg-black/40 rounded-lg border border-white/5 p-4 flex flex-col gap-3 overflow-hidden relative">
+                        <!-- Chat Header -->
+                        <div class="flex items-center justify-between border-b border-white/5 pb-2">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                <span class="text-[10px] text-zinc-500">AI Roleplay: Active</span>
+                            </div>
+                        </div>
+                        <!-- Messages -->
+                        <div class="space-y-2">
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full bg-zinc-700 flex-shrink-0"></div>
+                                <div class="bg-zinc-800/50 p-2 rounded-lg rounded-tl-none">
+                                    <div class="h-1.5 w-32 bg-zinc-700 rounded mb-1"></div>
+                                    <div class="h-1.5 w-20 bg-zinc-700 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 flex-row-reverse">
+                                <div class="w-5 h-5 rounded-full bg-sky-900 flex-shrink-0"></div>
+                                <div class="bg-sky-900/20 border border-sky-500/10 p-2 rounded-lg rounded-tr-none">
+                                    <div class="h-1.5 w-24 bg-sky-500/20 rounded mb-1"></div>
+                                    <div class="h-1.5 w-16 bg-sky-500/20 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Feedback Toast -->
+                        <div
+                            class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-zinc-900/90 border border-emerald-500/30 px-3 py-1 rounded-full shadow-lg flex items-center gap-2">
+                            <span class="iconify text-emerald-500" data-icon="lucide:check-circle"
+                                data-width="10"></span>
+                            <span class="text-[9px] text-emerald-400 font-medium">Good empathy bridge</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="gradient-border rounded-2xl p-6 bg-zinc-900/20 backdrop-blur-sm hover:bg-zinc-900/40 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 rounded bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                            <span class="iconify" data-icon="lucide:git-branch" data-width="18"></span>
+                        </div>
+                        <h3 class="text-sm font-medium text-white">Systematic Frameworks</h3>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                        Discovery (SPIN). Qualification (BANT). Objection handling databases. Pipeline state machines.
+                        Document sales like code.
+                    </p>
+                    <!-- Visual mock -->
+                    <div class="w-full h-32 bg-black/40 rounded-lg border border-white/5 overflow-hidden flex flex-col">
+                        <!-- Table Header -->
+                        <div class="h-6 bg-zinc-900/50 border-b border-white/5 flex items-center px-3 gap-2">
+                            <div class="w-2 h-2 rounded-full bg-indigo-500/50"></div>
+                            <span class="text-[9px] text-zinc-500 font-mono uppercase">Objection_DB.json</span>
+                        </div>
+                        <!-- Table Body -->
+                        <div class="p-3 space-y-2">
+                            <!-- Row 1 -->
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-16 h-4 rounded bg-red-900/20 border border-red-500/20 flex items-center justify-center">
+                                    <span class="text-[8px] text-red-400">Price</span>
+                                </div>
+                                <div class="flex-1 h-4 bg-zinc-800/30 rounded flex items-center px-2">
+                                    <div class="h-1 w-full bg-zinc-700 rounded-full"></div>
+                                </div>
+                                <div class="text-[9px] text-zinc-600">92%</div>
+                            </div>
+                            <!-- Row 2 -->
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-16 h-4 rounded bg-orange-900/20 border border-orange-500/20 flex items-center justify-center">
+                                    <span class="text-[8px] text-orange-400">Timing</span>
+                                </div>
+                                <div class="flex-1 h-4 bg-zinc-800/30 rounded flex items-center px-2">
+                                    <div class="h-1 w-2/3 bg-zinc-700 rounded-full"></div>
+                                </div>
+                                <div class="text-[9px] text-zinc-600">85%</div>
+                            </div>
+                            <!-- Row 3 -->
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-16 h-4 rounded bg-indigo-900/20 border border-indigo-500/20 flex items-center justify-center">
+                                    <span class="text-[8px] text-indigo-400">Auth</span>
+                                </div>
+                                <div class="flex-1 h-4 bg-zinc-800/30 rounded flex items-center px-2">
+                                    <div class="h-1 w-3/4 bg-zinc-700 rounded-full"></div>
+                                </div>
+                                <div class="text-[9px] text-zinc-600">88%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="gradient-border rounded-2xl p-6 bg-zinc-900/20 backdrop-blur-sm hover:bg-zinc-900/40 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 rounded bg-orange-500/10 flex items-center justify-center text-orange-400">
+                            <span class="iconify" data-icon="lucide:fingerprint" data-width="18"></span>
+                        </div>
+                        <h3 class="text-sm font-medium text-white">Your Context</h3>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                        Build ICPs, playbooks, and scripts specific to YOUR product. Not generic "best practices."
+                    </p>
+                    <!-- Visual mock -->
+                    <div
+                        class="w-full h-32 bg-black/40 rounded-lg border border-white/5 p-3 flex flex-col gap-2 relative overflow-hidden">
+                        <!-- Form Field 1 -->
+                        <div class="space-y-1">
+                            <div class="text-[9px] text-zinc-600">Target Role</div>
+                            <div
+                                class="flex items-center justify-between bg-zinc-900/50 border border-orange-500/20 rounded px-2 py-1.5">
+                                <span class="text-[10px] text-orange-200">CTO (Series A)</span>
+                                <span class="iconify text-orange-500/50" data-icon="lucide:user" data-width="10"></span>
+                            </div>
+                        </div>
+                        <!-- Form Field 2 -->
+                        <div class="space-y-1">
+                            <div class="text-[9px] text-zinc-600">Pain Point</div>
+                            <div
+                                class="flex items-center justify-between bg-zinc-900/50 border border-white/5 rounded px-2 py-1.5">
+                                <span class="text-[10px] text-zinc-400">Slow CI/CD Builds</span>
+                                <span class="iconify text-zinc-700" data-icon="lucide:alert-circle"
+                                    data-width="10"></span>
+                            </div>
+                        </div>
+                        <!-- Button stub -->
+                        <div
+                            class="mt-auto w-full h-5 bg-gradient-to-r from-orange-600/20 to-orange-500/10 border border-orange-500/20 rounded flex items-center justify-center">
+                            <span class="text-[9px] text-orange-400 font-medium">Generate Playbook</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 4 (Full Width on mobile, spanned on large) -->
+                <div
+                    class="lg:col-span-4 gradient-border rounded-2xl p-6 bg-zinc-900/20 backdrop-blur-sm flex flex-col md:flex-row gap-6 items-center">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div
+                                class="w-8 h-8 rounded bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                                <span class="iconify" data-icon="lucide:library" data-width="18"></span>
+                            </div>
+                            <h3 class="text-sm font-medium text-white">Sales Enablement Platform</h3>
+                        </div>
+                        <p class="text-sm text-zinc-400">
+                            As you build your ICP profiles and objection handlers, you create institutional sales
+                            knowledge. 70-90% of first sales hires fail because founders hire before having documented
+                            processes.
+                        </p>
+                    </div>
+                    <div
+                        class="w-full md:w-1/3 h-12 bg-black/40 rounded border border-white/5 flex items-center justify-center text-zinc-600 font-mono text-xs">
+                        [ Sales_Playbook_v3.pdf ]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Context Block -->
+            <div
+                class="max-w-3xl mx-auto bg-zinc-900/30 border border-white/5 rounded-2xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-sky-500 to-transparent"></div>
+                <h4 class="text-sm font-medium text-white mb-4">Why This Academy Exists</h4>
+                <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                    In October 2025, I paused publishing <em>Solo Founder's AI Playbook</em> to build something first: a
+                    working system that proves these frameworks in practice.
+                </p>
+                <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                    I realized solo founders needed more than frameworks on paper. They needed a proven implementation
+                    system. So I built the Sales Academy on Google Cloud serverless architecture (Firebase, Genkit,
+                    Gemini 2.5 Pro). A living curriculum that evolves weekly.
+                </p>
+                <p class="text-xs text-sky-400/80 font-mono mt-4">NOT ANOTHER COURSE PLATFORM. THIS IS AN AI-NATIVE
+                    EXECUTION ENVIRONMENT.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE PROBLEM -->
+        <section class="relative py-24 px-6 md:px-12 bg-black/40 border-b border-white/5">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif-custom text-white mb-6">The Sales Learning Gap</h2>
+                <p class="text-zinc-400 text-lg font-light">Why traditional approaches fail technical founders.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Path 1 -->
+                <div
+                    class="group relative p-6 rounded-2xl bg-[#09090b] border border-white/5 hover:border-white/10 transition-colors">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none">
+                    </div>
+                    <div class="text-xs font-mono text-red-400 mb-3">PATH 01</div>
+                    <h3 class="text-lg font-medium text-white mb-2">Generic Sales Courses</h3>
+                    <div class="text-xl font-serif-custom text-zinc-500 mb-4">$500-5K</div>
+                    <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+                        You watch 20-40 hours of videos. Examples don't map to your product. No practice.
+                    </p>
+                    <div class="border-t border-white/5 pt-4">
+                        <div class="flex justify-between text-xs text-zinc-500">
+                            <span>Outcome</span>
+                            <span class="text-red-300">Vocabulary only</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Path 2 -->
+                <div
+                    class="group relative p-6 rounded-2xl bg-[#09090b] border border-white/5 hover:border-white/10 transition-colors">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none">
+                    </div>
+                    <div class="text-xs font-mono text-orange-400 mb-3">PATH 02 (MOST COMMON)</div>
+                    <h3 class="text-lg font-medium text-white mb-2">Figuring It Out Alone</h3>
+                    <div class="text-xl font-serif-custom text-zinc-500 mb-4">Years of Time</div>
+                    <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+                        Inefficient learning. Lead gen stays messy (1-5% reply rates). Knowledge lives in your head.
+                    </p>
+                    <div class="border-t border-white/5 pt-4">
+                        <div class="flex justify-between text-xs text-zinc-500">
+                            <span>Outcome</span>
+                            <span class="text-orange-300">Leads are bottleneck</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Path 3 -->
+                <div
+                    class="group relative p-6 rounded-2xl bg-[#09090b] border border-white/5 hover:border-white/10 transition-colors">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none">
+                    </div>
+                    <div class="text-xs font-mono text-red-400 mb-3">PATH 03</div>
+                    <h3 class="text-lg font-medium text-white mb-2">Hire Leader Too Early</h3>
+                    <div class="text-xl font-serif-custom text-zinc-500 mb-4">$150K+/Year</div>
+                    <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+                        70-90% failure rate. You have no documented process for them to execute. Expensive mistake.
+                    </p>
+                    <div class="border-t border-white/5 pt-4">
+                        <div class="flex justify-between text-xs text-zinc-500">
+                            <span>Outcome</span>
+                            <span class="text-red-300">Burned runway</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div
+                    class="inline-block px-6 py-3 rounded-lg border border-sky-500/20 bg-sky-500/5 text-sm text-sky-200">
+                    <span class="font-medium text-white">The Missing Link:</span> A system to learn sales systematically
+                    while executing in real-time.
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE SOLUTION -->
+        <section class="py-24 px-6 md:px-12 border-b border-white/5">
+            <div class="max-w-4xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif-custom text-white mb-6">How the Academy Works</h2>
+                <p class="text-zinc-400 text-lg font-light">Theory AND practice, simultaneously.</p>
+            </div>
+
+            <div class="space-y-24 max-w-5xl mx-auto">
+                <!-- Component 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 order-2 md:order-1">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-white mb-6 border border-white/10">
+                            1</div>
+                        <h3 class="text-2xl font-medium text-white mb-2">AI Roleplay Practice</h3>
+                        <p class="text-sky-400 text-sm font-medium mb-4">Unlimited, Consequence-Free Conversations</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                            Practice with four distinct buyer personalities (DISC). Real-time coaching on talk-time
+                            ratio. Adaptive difficulty that doesn't "give you the sale." Compress 100 learning cycles
+                            into a week.
+                        </p>
+                        <ul class="space-y-2 text-sm text-zinc-500">
+                            <li class="flex items-center gap-2"><span class="iconify text-emerald-500"
+                                    data-icon="lucide:check"></span> Streaming Real-Time Coaching</li>
+                            <li class="flex items-center gap-2"><span class="iconify text-emerald-500"
+                                    data-icon="lucide:check"></span> Session Recordings &amp; Playback</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 w-full order-1 md:order-2">
+                        <div
+                            class="relative aspect-video rounded-xl bg-gradient-to-br from-zinc-900 to-black border border-white/10 p-6 flex flex-col justify-end overflow-hidden shadow-2xl">
+                            <!-- Chat UI Mock -->
+                            <div class="space-y-3 relative z-10">
+                                <div class="flex gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center text-xs text-white">
+                                        AI</div>
+                                    <div
+                                        class="bg-zinc-800 p-3 rounded-2xl rounded-tl-none text-xs text-zinc-300 max-w-[80%]">
+                                        Your pricing seems high compared to Competitor X. Why should we switch?
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 flex-row-reverse">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs text-white">
+                                        ME</div>
+                                    <div
+                                        class="bg-sky-900/30 border border-sky-500/20 p-3 rounded-2xl rounded-tr-none text-xs text-zinc-300 max-w-[80%]">
+                                        That's a fair question. Typically, clients who switch tell us that...
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feedback Overlay -->
+                            <div
+                                class="absolute top-4 right-4 bg-black/80 backdrop-blur border border-red-500/30 text-red-300 text-[10px] px-2 py-1 rounded">
+                                Alert: Talk time &gt; 60%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 w-full">
+                        <div
+                            class="relative aspect-video rounded-xl bg-[#0c0c0e] border border-white/10 p-8 flex items-center justify-center overflow-hidden shadow-2xl">
+                            <!-- Artifacts UI -->
+                            <div class="grid grid-cols-2 gap-4 w-full max-w-sm">
+                                <div class="bg-zinc-900 border border-white/5 p-4 rounded-lg">
+                                    <div class="text-[10px] text-zinc-500 mb-2">ICP_Profile_v3.json</div>
+                                    <div class="space-y-1">
+                                        <div class="h-1.5 w-full bg-zinc-800 rounded"></div>
+                                        <div class="h-1.5 w-2/3 bg-zinc-800 rounded"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-zinc-900 border border-white/5 p-4 rounded-lg opacity-50">
+                                    <div class="text-[10px] text-zinc-500 mb-2">Playbook_v1.md</div>
+                                    <div class="space-y-1">
+                                        <div class="h-1.5 w-3/4 bg-zinc-800 rounded"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-2 bg-zinc-900 border border-sky-500/20 p-4 rounded-lg relative">
+                                    <div
+                                        class="absolute -top-2 -right-2 bg-sky-500 text-white text-[9px] px-2 py-0.5 rounded-full">
+                                        Validated</div>
+                                    <div class="text-[10px] text-sky-400 mb-2">Objection_Handlers_DB</div>
+                                    <div class="h-1.5 w-full bg-zinc-800 rounded mb-1"></div>
+                                    <div class="h-1.5 w-full bg-zinc-800 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-white mb-6 border border-white/10">
+                            2</div>
+                        <h3 class="text-2xl font-medium text-white mb-2">Versioned Sales Artifacts</h3>
+                        <p class="text-indigo-400 text-sm font-medium mb-4">Build Institutional Knowledge</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                            Start with v1. Progress to v3. Every objection gets documented. When you're ready to hire,
+                            you hand them versioned artifacts that represent months of validated learning, not a blank
+                            slate.
+                        </p>
+                        <ul class="space-y-2 text-sm text-zinc-500">
+                            <li class="flex items-center gap-2"><span class="iconify text-emerald-500"
+                                    data-icon="lucide:check"></span> ICP Builder (v1 → v3)</li>
+                            <li class="flex items-center gap-2"><span class="iconify text-emerald-500"
+                                    data-icon="lucide:check"></span> Objection Handler Database</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Component 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 order-2 md:order-1">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-white mb-6 border border-white/10">
+                            3</div>
+                        <h3 class="text-2xl font-medium text-white mb-2">Pipeline State Machine</h3>
+                        <p class="text-orange-400 text-sm font-medium mb-4">Stage-Aware Coaching</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                            A 7-stage machine. When you're in "Discovery", get SPIN questions. In "Negotiation", get
+                            pricing frameworks. The AI coach adapts its advice based on exactly where the deal sits in
+                            your pipeline.
+                        </p>
+                    </div>
+                    <div class="flex-1 w-full order-1 md:order-2">
+                        <div
+                            class="relative aspect-video rounded-xl bg-[#0c0c0e] border border-white/10 p-6 flex flex-col items-center justify-center overflow-hidden shadow-2xl">
+                            <div class="flex items-center gap-2 w-full max-w-xs mb-8">
+                                <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                                <div class="text-xs font-mono text-zinc-400">Current State: <span
+                                        class="text-white">Discovery</span></div>
+                            </div>
+                            <!-- Flow Visual -->
+                            <div class="flex w-full max-w-xs justify-between items-center relative z-10">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-[10px] text-zinc-500">
+                                    1</div>
+                                <div class="h-px flex-1 bg-zinc-800"></div>
+                                <div
+                                    class="w-10 h-10 rounded-full bg-sky-500/20 border border-sky-500 text-white flex items-center justify-center text-xs shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+                                    2</div>
+                                <div class="h-px flex-1 bg-zinc-800"></div>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-[10px] text-zinc-500">
+                                    3</div>
+                            </div>
+                            <div class="mt-8 bg-zinc-900 border border-white/5 p-3 rounded w-full max-w-xs">
+                                <div class="text-[10px] text-zinc-500 uppercase tracking-widest mb-1">Recommended Action
+                                </div>
+                                <div class="text-xs text-white">Execute SPIN sequence #4: Implication Questions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: EXECUTION LOOP -->
+        <section class="py-24 px-6 md:px-12 bg-black/40 border-b border-white/5">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-serif-custom text-white mb-4">Learn Sales by Executing Sales</h2>
+                <p class="text-zinc-400">The Weekly Execution Loop</p>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto mb-20">
+                <div class="absolute left-6 top-0 bottom-0 w-px bg-zinc-800 md:left-1/2 md:-ml-px"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <div class="relative pl-16 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="md:text-right">
+                            <h4 class="text-white font-medium">Monday</h4>
+                            <p class="text-sm text-zinc-500">Learn the Framework (45m)</p>
+                        </div>
+                        <div
+                            class="absolute left-6 md:left-1/2 -ml-2 w-4 h-4 rounded-full bg-zinc-900 border-2 border-indigo-500">
+                        </div>
+                        <div class="hidden md:block"></div> <!-- Spacer -->
+                    </div>
+
+                    <div class="relative pl-16 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="hidden md:block"></div>
+                        <div
+                            class="absolute left-6 md:left-1/2 -ml-2 w-4 h-4 rounded-full bg-zinc-900 border-2 border-sky-500">
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium">Tue-Wed</h4>
+                            <p class="text-sm text-zinc-500">Practice with AI (90m)</p>
+                            <p class="text-xs text-zinc-600 mt-1">Safe, risk-free iteration</p>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-16 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="md:text-right">
+                            <h4 class="text-white font-medium">Thursday</h4>
+                            <p class="text-sm text-zinc-500">Build Artifacts (45m)</p>
+                            <p class="text-xs text-zinc-600 mt-1">Refine ICP &amp; Scripts</p>
+                        </div>
+                        <div
+                            class="absolute left-6 md:left-1/2 -ml-2 w-4 h-4 rounded-full bg-zinc-900 border-2 border-orange-500">
+                        </div>
+                        <div class="hidden md:block"></div>
+                    </div>
+
+                    <div class="relative pl-16 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="hidden md:block"></div>
+                        <div
+                            class="absolute left-6 md:left-1/2 -ml-2 w-4 h-4 rounded-full bg-zinc-900 border-2 border-emerald-500">
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium">Friday</h4>
+                            <p class="text-sm text-zinc-500">Execute Real Calls (90m)</p>
+                            <p class="text-xs text-zinc-600 mt-1">Use versioned artifacts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Section: 4 Week Results & Compound Effect -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-zinc-900/30 border border-white/5 rounded-xl p-8">
+                    <h3 class="text-lg font-medium text-white mb-6">4-Week Results</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-zinc-800 flex items-center justify-center text-[10px] text-zinc-400">
+                                W1</div>
+                            <span class="text-sm text-zinc-400">First roleplay &amp; objection recorded</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-zinc-800 flex items-center justify-center text-[10px] text-zinc-400">
+                                W2</div>
+                            <span class="text-sm text-zinc-400">ICP Profile v1 &amp; Script v1 Created</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-zinc-800 flex items-center justify-center text-[10px] text-zinc-400">
+                                W3</div>
+                            <span class="text-sm text-zinc-400">10 AI sessions completed (Talk time &lt; 45%)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-emerald-900/30 text-emerald-500 flex items-center justify-center text-[10px]">
+                                W4</div>
+                            <span class="text-sm text-white">First 5 Real Discovery Calls Executed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-zinc-900/30 border border-white/5 rounded-xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-medium text-white mb-2">The Compound Effect</h3>
+                        <p class="text-xs text-zinc-500 mb-6">Sales knowledge compounds when documented.</p>
+                    </div>
+
+                    <div class="flex items-end gap-2 h-32 w-full px-2">
+                        <!-- Bar 1 -->
+                        <div class="w-1/4 bg-zinc-800 rounded-t h-1/4 relative group">
+                            <div
+                                class="absolute -top-6 left-0 right-0 text-center text-[10px] text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                                W1</div>
+                        </div>
+                        <!-- Bar 2 -->
+                        <div class="w-1/4 bg-zinc-700 rounded-t h-2/4 relative group">
+                            <div
+                                class="absolute -top-6 left-0 right-0 text-center text-[10px] text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                                W4</div>
+                        </div>
+                        <!-- Bar 3 -->
+                        <div class="w-1/4 bg-zinc-600 rounded-t h-3/4 relative group">
+                            <div
+                                class="absolute -top-6 left-0 right-0 text-center text-[10px] text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                                W8</div>
+                        </div>
+                        <!-- Bar 4 -->
+                        <div
+                            class="w-1/4 bg-gradient-to-t from-sky-600 to-sky-400 rounded-t h-full relative group shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+                            <div
+                                class="absolute -top-6 left-0 right-0 text-center text-[10px] text-sky-400 opacity-100 font-bold">
+                                W12</div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-xs text-zinc-500 text-center">Institutional Knowledge vs. Time</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: WHO IS THIS FOR -->
+        <section class="py-24 px-6 md:px-12 border-b border-white/5">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif-custom text-white mb-6">Built for Technical Founders</h2>
+                <p class="text-zinc-400 text-lg font-light">Engineers who want to master the "other half" of business.
+                </p>
+            </div>
+
+            <!-- Profiles -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto mb-16">
+                <div class="p-6 rounded-xl bg-zinc-900/20 border border-white/5">
+                    <div class="text-xs font-mono text-zinc-500 mb-2">PROFILE 01</div>
+                    <h4 class="text-white font-medium mb-1">The Builder</h4>
+                    <p class="text-sm text-zinc-400">Great product, zero traction. Wants to stop coding features and
+                        start getting customers.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-zinc-900/20 border border-white/5">
+                    <div class="text-xs font-mono text-zinc-500 mb-2">PROFILE 02</div>
+                    <h4 class="text-white font-medium mb-1">The Agency Owner</h4>
+                    <p class="text-sm text-zinc-400">Hitting revenue ceilings. Needs to productize services and delegate
+                        sales.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-zinc-900/20 border border-white/5">
+                    <div class="text-xs font-mono text-zinc-500 mb-2">PROFILE 03</div>
+                    <h4 class="text-white font-medium mb-1">The Bootstrapper</h4>
+                    <p class="text-sm text-zinc-400">Refuses VC money. Needs cash flow immediately to extend runway.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <h3 class="text-xl font-medium text-white mb-6">You're the Right Fit If:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="iconify text-emerald-500 shrink-0 mt-0.5"
+                                data-icon="lucide:check-circle-2"></span>
+                            <span class="text-sm text-zinc-400">Technical/analytical and think in systems, not
+                                tactics.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-emerald-500 shrink-0 mt-0.5"
+                                data-icon="lucide:check-circle-2"></span>
+                            <span class="text-sm text-zinc-400">Building bootstrap - profitable first, VC later (or
+                                never).</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-emerald-500 shrink-0 mt-0.5"
+                                data-icon="lucide:check-circle-2"></span>
+                            <span class="text-sm text-zinc-400">Want to document as you learn for future hiring.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-emerald-500 shrink-0 mt-0.5"
+                                data-icon="lucide:check-circle-2"></span>
+                            <span class="text-sm text-zinc-400">Willing to dedicate 5 hours/week to practice.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-emerald-500 shrink-0 mt-0.5"
+                                data-icon="lucide:check-circle-2"></span>
+                            <span class="text-sm text-zinc-400">Believe sales is a science, not an art.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-emerald-500 shrink-0 mt-0.5"
+                                data-icon="lucide:check-circle-2"></span>
+                            <span class="text-sm text-zinc-400">Value high-fidelity feedback over
+                                "encouragement".</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium text-white mb-6">NOT the Right Fit If:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="iconify text-red-500 shrink-0 mt-0.5" data-icon="lucide:x-circle"></span>
+                            <span class="text-sm text-zinc-400">Still in idea stage with no product to sell.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-red-500 shrink-0 mt-0.5" data-icon="lucide:x-circle"></span>
+                            <span class="text-sm text-zinc-400">Looking for "growth hacks" instead of systems.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-red-500 shrink-0 mt-0.5" data-icon="lucide:x-circle"></span>
+                            <span class="text-sm text-zinc-400">Already closing 50%+ of qualified opportunities.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-red-500 shrink-0 mt-0.5" data-icon="lucide:x-circle"></span>
+                            <span class="text-sm text-zinc-400">Unwilling to talk to strangers on Zoom.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="iconify text-red-500 shrink-0 mt-0.5" data-icon="lucide:x-circle"></span>
+                            <span class="text-sm text-zinc-400">Expecting the AI to do the selling for you.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: PRICING -->
+        <section id="pricing" class="py-24 px-6 md:px-12 bg-black/40 border-b border-white/5">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
+
+                <!-- Pricing Card -->
+                <div class="w-full lg:w-1/3 order-2 lg:order-1">
+                    <div class="relative rounded-3xl bg-zinc-900 border border-white/10 p-8 shadow-2xl">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-b from-sky-500/5 to-transparent rounded-3xl pointer-events-none">
+                        </div>
+                        <div class="relative z-10">
+                            <h3 class="text-lg font-medium text-white">Founding Member</h3>
+                            <div class="mt-4 flex items-baseline gap-1">
+                                <span class="text-4xl font-serif-custom text-white">$49</span>
+                                <span class="text-zinc-500">/month</span>
+                            </div>
+                            <p class="text-xs text-zinc-500 mt-2">Price locked for life (Increases to $79 after 500
+                                members)</p>
+
+                            <button
+                                class="w-full mt-8 py-3 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium transition-colors">
+                                Start Sales Academy
+                            </button>
+                            <p class="text-[10px] text-center text-zinc-500 mt-3">Join January 2026 Beta</p>
+
+                            <div class="mt-8 pt-8 border-t border-white/5 space-y-3">
+                                <div class="text-xs font-medium text-white mb-2">INCLUDES:</div>
+                                <div class="flex gap-3 text-sm text-zinc-400">
+                                    <span class="iconify text-sky-500" data-icon="lucide:check"></span> Unlimited AI
+                                    Roleplay
+                                </div>
+                                <div class="flex gap-3 text-sm text-zinc-400">
+                                    <span class="iconify text-sky-500" data-icon="lucide:check"></span> Sales Framework
+                                    Training
+                                </div>
+                                <div class="flex gap-3 text-sm text-zinc-400">
+                                    <span class="iconify text-sky-500" data-icon="lucide:check"></span> Artifact
+                                    Builders
+                                </div>
+                                <div class="flex gap-3 text-sm text-zinc-400">
+                                    <span class="iconify text-sky-500" data-icon="lucide:check"></span> Pipeline State
+                                    Machine
+                                </div>
+                                <div class="flex gap-3 text-sm text-zinc-400">
+                                    <span class="iconify text-sky-500" data-icon="lucide:check"></span> Weekly Live
+                                    Office Hours
+                                </div>
+                                <div class="flex gap-3 text-sm text-zinc-400">
+                                    <span class="iconify text-sky-500" data-icon="lucide:check"></span> Private
+                                    Community
+                                </div>
+                            </div>
+
+                            <div class="mt-8 bg-black/40 rounded p-3">
+                                <h5 class="text-xs text-white font-medium mb-2">No Hidden Costs</h5>
+                                <ul class="text-[10px] text-zinc-500 space-y-1">
+                                    <li>• Cancel anytime</li>
+                                    <li>• No "upsell" courses inside</li>
+                                    <li>• All future updates included</li>
+                                    <li>• Grandfathered pricing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison & Two Paths -->
+                <div class="w-full lg:w-2/3 order-1 lg:order-2 space-y-12">
+                    <div>
+                        <h2 class="text-3xl font-serif-custom text-white mb-8">Stop guessing. Start building a system.
+                        </h2>
+
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="border-b border-white/10 text-xs text-zinc-500 uppercase tracking-wide">
+                                        <th class="py-4 font-medium">Feature</th>
+                                        <th class="py-4 font-medium text-white">Sales Academy ($49)</th>
+                                        <th class="py-4 font-medium">Traditional ($150K+)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm text-zinc-400">
+                                    <tr class="border-b border-white/5">
+                                        <td class="py-4">Roleplay Practice</td>
+                                        <td class="py-4 text-white">Unlimited AI Sessions</td>
+                                        <td class="py-4">Zero (Learn on prospects)</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="py-4">Coaching</td>
+                                        <td class="py-4 text-white">Real-time Context Aware</td>
+                                        <td class="py-4">$200-500/hour consultant</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="py-4">Documentation</td>
+                                        <td class="py-4 text-white">Artifact Builders</td>
+                                        <td class="py-4">Manual / Messy Google Docs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-4">Hiring Readiness</td>
+                                        <td class="py-4 text-white">System Ready for Hires</td>
+                                        <td class="py-4">Hire then fail (90% risk)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mt-8 bg-zinc-900/50 border border-white/5 p-4 rounded-lg flex gap-4 items-start">
+                            <span class="iconify text-sky-500 shrink-0 mt-1" data-icon="lucide:shield-check"></span>
+                            <div>
+                                <h4 class="text-white text-sm font-medium">30-Day Checkpoint Guarantee</h4>
+                                <p class="text-xs text-zinc-500 mt-1 leading-relaxed">
+                                    If by Day 30 you haven't completed 10 roleplays, built ICP v2, and had 5 discovery
+                                    calls, get a full refund. We guarantee the system, you guarantee the work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Two Paths Block -->
+                    <div class="pt-8 border-t border-white/5">
+                        <h3 class="text-white font-medium mb-6">Two Paths From Here</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded border border-white/5 bg-zinc-900/20 opacity-50">
+                                <div class="text-xs font-mono text-zinc-500 mb-1">PATH A</div>
+                                <div class="text-sm text-zinc-300 font-medium">Continue Guessing</div>
+                                <div class="text-xs text-zinc-500 mt-2">Cost: Years of trial &amp; error</div>
+                            </div>
+                            <div class="p-4 rounded border border-sky-500/30 bg-sky-500/5">
+                                <div class="text-xs font-mono text-sky-400 mb-1">PATH B</div>
+                                <div class="text-sm text-white font-medium">Install the System</div>
+                                <div class="text-xs text-zinc-400 mt-2">Cost: $49/month</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: FAQ -->
+        <section class="py-24 px-6 md:px-12 border-b border-white/5">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-serif-custom text-white mb-8 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details
+                        class="group bg-zinc-900/30 border border-white/5 rounded-lg open:bg-zinc-900/50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer text-sm font-medium text-white">
+                            What is the weekly time commitment?
+                            <span class="iconify transition-transform group-open:rotate-180 text-zinc-500"
+                                data-icon="lucide:chevron-down"></span>
+                        </summary>
+                        <div class="px-4 pb-4 text-sm text-zinc-400 leading-relaxed">
+                            Expect to spend about 3-5 hours per week. This includes watching the framework modules
+                            (Monday), practicing with the AI (Tue/Wed), and executing real calls (Thursday/Friday).
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-zinc-900/30 border border-white/5 rounded-lg open:bg-zinc-900/50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer text-sm font-medium text-white">
+                            Do I need a product to join?
+                            <span class="iconify transition-transform group-open:rotate-180 text-zinc-500"
+                                data-icon="lucide:chevron-down"></span>
+                        </summary>
+                        <div class="px-4 pb-4 text-sm text-zinc-400 leading-relaxed">
+                            Yes. This is an execution academy, not a theoretical one. You need something to sell, even
+                            if it's just an MVP or a service, so you can build real artifacts and handle real
+                            objections.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-zinc-900/30 border border-white/5 rounded-lg open:bg-zinc-900/50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer text-sm font-medium text-white">
+                            Is this just a video course?
+                            <span class="iconify transition-transform group-open:rotate-180 text-zinc-500"
+                                data-icon="lucide:chevron-down"></span>
+                        </summary>
+                        <div class="px-4 pb-4 text-sm text-zinc-400 leading-relaxed">
+                            No. While there are video frameworks, the core value is the software platform: the AI
+                            Roleplay environment, the Artifact Builders, and the Pipeline State Machine. It's a SaaS +
+                            Education hybrid.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-zinc-900/30 border border-white/5 rounded-lg open:bg-zinc-900/50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer text-sm font-medium text-white">
+                            What if I'm an introvert/engineer?
+                            <span class="iconify transition-transform group-open:rotate-180 text-zinc-500"
+                                data-icon="lucide:chevron-down"></span>
+                        </summary>
+                        <div class="px-4 pb-4 text-sm text-zinc-400 leading-relaxed">
+                            You are exactly who this is built for. We treat sales as a system of inputs and outputs, not
+                            a charisma contest. You will learn scripts and frameworks that remove the need for "charm."
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-zinc-900/30 border border-white/5 rounded-lg open:bg-zinc-900/50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer text-sm font-medium text-white">
+                            What is the refund policy?
+                            <span class="iconify transition-transform group-open:rotate-180 text-zinc-500"
+                                data-icon="lucide:chevron-down"></span>
+                        </summary>
+                        <div class="px-4 pb-4 text-sm text-zinc-400 leading-relaxed">
+                            We offer a "Do The Work" Guarantee. If you complete the onboarding, 10 roleplay sessions,
+                            and 5 real calls in 30 days and don't feel more confident, we'll refund you 100%.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: COMING 2026 / ECOSYSTEM -->
+        <section class="py-24 px-6 md:px-12 bg-black/40">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-serif-custom text-white mb-4">The Complete Ecosystem</h2>
+                    <p class="text-zinc-400 max-w-2xl mx-auto">
+                        We are bridging the two "Valleys of Death" for solo founders. Gap 1: Idea to Revenue. Gap 2:
+                        Revenue to Scale. Three academies and three books to guide you through the entire lifecycle.
+                    </p>
+                </div>
+
+                <!-- Academies Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    <!-- Card 1 -->
+                    <div class="bg-zinc-900 border border-sky-500/30 p-6 rounded-2xl relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 bg-sky-600 text-white text-[10px] px-3 py-1 rounded-bl-xl font-medium">
+                            Current Focus</div>
+                        <div class="text-xs font-mono text-sky-400 mb-2">JAN 2026</div>
+                        <h3 class="text-white font-medium mb-2">Sales Academy</h3>
+                        <p class="text-xs text-zinc-500 mb-4">Master systematic lead gen &amp; sales.</p>
+                        <ul class="text-[10px] text-zinc-400 space-y-2 mb-4">
+                            <li>• Lead Gen Systems</li>
+                            <li>• Sales Process Documentation</li>
+                            <li>• First $10k MRR</li>
+                        </ul>
+                        <div class="flex items-center gap-2 text-[10px] text-zinc-300 border-t border-white/5 pt-3">
+                            <span class="iconify" data-icon="lucide:book"></span>
+                            Companion: AI Playbook
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-zinc-900/50 border border-white/5 p-6 rounded-2xl opacity-75 hover:opacity-100 transition-opacity">
+                        <div class="text-xs font-mono text-zinc-500 mb-2">FEB/MAR 2026</div>
+                        <h3 class="text-white font-medium mb-2">Startup Academy</h3>
+                        <p class="text-xs text-zinc-500 mb-4">From idea to first revenue in 60 days.</p>
+                        <ul class="text-[10px] text-zinc-500 space-y-2 mb-4">
+                            <li>• Idea Validation</li>
+                            <li>• MVP Build Speed</li>
+                            <li>• Launch Strategy</li>
+                        </ul>
+                        <div class="flex items-center gap-2 text-[10px] text-zinc-500 border-t border-white/5 pt-3">
+                            <span class="iconify" data-icon="lucide:book"></span>
+                            Companion: AI Revolution
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-zinc-900/50 border border-white/5 p-6 rounded-2xl opacity-75 hover:opacity-100 transition-opacity">
+                        <div class="text-xs font-mono text-zinc-500 mb-2">APR 2026</div>
+                        <h3 class="text-white font-medium mb-2">GTM Academy</h3>
+                        <p class="text-xs text-zinc-500 mb-4">Compound growth systems (Autonomous).</p>
+                        <ul class="text-[10px] text-zinc-500 space-y-2 mb-4">
+                            <li>• Content Loops</li>
+                            <li>• Ad Scaling</li>
+                            <li>• Team Automation</li>
+                        </ul>
+                        <div class="flex items-center gap-2 text-[10px] text-zinc-500 border-t border-white/5 pt-3">
+                            <span class="iconify" data-icon="lucide:book"></span>
+                            Companion: AI Dominance
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Books Visualization -->
+                <div class="flex justify-center gap-4 sm:gap-8 mb-16 opacity-50 hover:opacity-100 transition-opacity">
+                    <div
+                        class="w-20 sm:w-24 aspect-[2/3] bg-zinc-800 border border-white/10 rounded flex items-center justify-center text-[8px] sm:text-[10px] text-zinc-500 text-center px-1">
+                        Book 1<br>AI Playbook</div>
+                    <div
+                        class="w-20 sm:w-24 aspect-[2/3] bg-zinc-800 border border-white/10 rounded flex items-center justify-center text-[8px] sm:text-[10px] text-zinc-500 text-center px-1">
+                        Book 2<br>AI Revolution</div>
+                    <div
+                        class="w-20 sm:w-24 aspect-[2/3] bg-zinc-800 border border-white/10 rounded flex items-center justify-center text-[8px] sm:text-[10px] text-zinc-500 text-center px-1">
+                        Book 3<br>AI Dominance</div>
+                </div>
+
+                <!-- Email Capture -->
+                <div id="books" class="max-w-xl mx-auto bg-zinc-900 border border-white/10 p-8 rounded-2xl text-center">
+                    <h3 class="text-white font-medium mb-2">Join the Waitlist</h3>
+                    <p class="text-xs text-zinc-500 mb-6">Get launch notifications and founding member pricing for
+                        future academies and book releases.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="enter@email.com"
+                            class="flex-1 bg-black border border-white/10 rounded-lg px-4 text-sm text-white focus:outline-none focus:border-sky-500/50 transition-colors">
+                        <button
+                            class="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-200 transition-colors">Join</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black/50 border-t border-white/5 py-12 px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <span class="iconify text-zinc-500" data-icon="lucide:box" data-width="16"></span>
+                    <span class="text-sm text-zinc-500">SoloFrameHub © 2026</span>
+                </div>
+                <div class="flex gap-6 text-xs text-zinc-500">
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Init icons
+        // Iconify handles this automatically via the script tag
+    </script>
+
+</body>
+
+</html>

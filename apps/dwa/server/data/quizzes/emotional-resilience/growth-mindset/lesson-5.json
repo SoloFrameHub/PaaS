@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the relationship between cognitive reappraisal skills and personal resilience according to the 2024 meta-analysis?",
+            "options": [
+                {"id": "opt1", "text": "r = 0.15 (weak correlation)"},
+                {"id": "opt2", "text": "r = 0.47 (medium-to-large correlation)—one of the most consistently resilience-associated cognitive processes"},
+                {"id": "opt3", "text": "r = 0.82 (very large correlation)"},
+                {"id": "opt4", "text": "No significant correlation found"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A 2024 meta-analysis in Clinical Psychology Review found r = 0.47 between cognitive reappraisal skills and personal resilience—a medium-to-large effect and one of the most robust correlations in resilience research. This is substantially stronger evidence than growth mindset intervention findings. Reappraisal is the mechanism underlying growth mindset shifts (reframing challenges from threats to opportunities), but it has 40+ years of evidence as a standalone skill in CBT, ACT, and DBT. This is why the course frames reappraisal as the evidence-backed core."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does cognitive reappraisal differ from emotional suppression?",
+            "options": [
+                {"id": "opt1", "text": "They are the same process with different names"},
+                {"id": "opt2", "text": "Reappraisal changes interpretation (cognitive level) to alter emotion; suppression pushes down emotions without changing interpretation and is maladaptive"},
+                {"id": "opt3", "text": "Suppression is more effective than reappraisal for wellbeing"},
+                {"id": "opt4", "text": "Reappraisal is only for negative emotions; suppression is for positive emotions"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Critical distinction: Reappraisal changes your INTERPRETATION of a situation (cognitive level), which then changes the emotional response. Suppression pushes down emotions without addressing the interpretation—you still have the threat appraisal, you're just hiding the emotional reaction. Research shows suppression is maladaptive: it increases physiological arousal, impairs memory, damages relationships, and doesn't actually reduce negative emotion long-term. Reappraisal is adaptive: it reduces amygdala activation, supports emotion regulation, and improves wellbeing. These are not interchangeable strategies."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What neurobiological mechanism underlies cognitive reappraisal according to neuroimaging research?",
+            "options": [
+                {"id": "opt1", "text": "Amygdala activation increases and prefrontal cortex shuts down"},
+                {"id": "opt2", "text": "Prefrontal cortex (cognitive control) down-regulates amygdala (threat detection) reactivity"},
+                {"id": "opt3", "text": "Hippocampus suppresses all emotional responses"},
+                {"id": "opt4", "text": "No neurobiological changes occur—reappraisal is purely behavioral"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Neuroimaging meta-analyses confirm that reappraisal consistently activates prefrontal cortex regions (cognitive control) and attenuates amygdala reactivity to emotional stimuli. The prefrontal cortex down-regulates amygdala threat responses—measurable on fMRI. This is not just 'thinking positive thoughts'—it's a measurable neurobiological process. When you successfully reappraise a situation, you're literally reducing threat-detection activation in the brain. This mechanism is well-understood and clinically validated across CBT, ACT, and DBT frameworks."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When does cognitive reappraisal become toxic positivity or emotional avoidance?",
+            "options": [
+                {"id": "opt1", "text": "Whenever you try to change your interpretation of a negative situation"},
+                {"id": "opt2", "text": "When it dismisses genuine emotions needing processing, reframes structural problems as individual mindset issues, or convinces you to tolerate intolerable conditions"},
+                {"id": "opt3", "text": "Reappraisal can never become toxic—it's always adaptive"},
+                {"id": "opt4", "text": "Only when used more than once per day"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Adaptive reappraisal changes interpretation when multiple interpretations are plausible and helps you engage more effectively. It becomes TOXIC when it: (1) dismisses emotions that need validation and processing (grief, trauma), (2) reframes structural threats as individual mindset issues ('this abusive workplace is a growth opportunity!'), (3) suppresses valid anger at injustice, or (4) convinces you to tolerate genuinely intolerable conditions. The lesson explicitly warns: do NOT use reappraisal to deny reality, avoid necessary action, or blame yourself for structural problems. Boundaries matter."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Practice the 5-step reappraisal protocol on a current stressor: (1) Notice your automatic interpretation, (2) Ask if it's the only possibility, (3) Generate 2-3 alternative interpretations using reappraisal types (situation, growth, self-compassion, distancing), (4) Choose the interpretation that supports adaptive action, (5) Reflect on how the emotion shifts. What did you notice?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "5",
+    "title": "Cognitive Reframing: The Science of Reappraisal - Quiz"
+}

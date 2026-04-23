@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "choose-path",
+    "sectionId": "foundations",
+    "title": "Quiz de Los Cuatro Contextos del Fundador",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "¿Cuál es la característica distintiva principal del contexto 'Sprint de Cero a Diez'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Vender software a empresas con comités de compra"
+                },
+                {
+                    "id": "b",
+                    "text": "Fase pre-tracción sin clientes y máxima incertidumbre"
+                },
+                {
+                    "id": "c",
+                    "text": "Construir una audiencia antes de la monetización"
+                },
+                {
+                    "id": "d",
+                    "text": "Entrega de alto contacto con ventas basadas en relaciones"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "El Sprint de Cero a Diez es específicamente para fundadores que aún no han validado que alguien pagará. Es una fase por la que todos pasan, caracterizada por la máxima incertidumbre y el objetivo singular de obtener 10 clientes de pago lo más rápido posible."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Sara vende un SaaS de gestión de proyectos de $297/mes a agencias de marketing. Sus acuerdos típicamente involucran al dueño de la agencia y a su gerente de operaciones. ¿Qué contexto describe mejor su situación?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sprint de Cero a Diez"
+                },
+                {
+                    "id": "b",
+                    "text": "B2B SaaS"
+                },
+                {
+                    "id": "c",
+                    "text": "Creador/Coach"
+                },
+                {
+                    "id": "d",
+                    "text": "Negocio de Servicios"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "El negocio de Sara tiene características clásicas de B2B SaaS: software vendido a empresas, precios de ingresos recurrentes y múltiples partes interesadas (dueño + gerente de operaciones) involucradas en las decisiones de compra. Aunque es una agencia pequeña, la dinámica del comité de compra está presente."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Marcos tiene 12.000 seguidores en LinkedIn y vende un programa de coaching de $2.500 a consultores aspirantes. La mayoría de los clientes provienen de su contenido. ¿Qué contexto describe mejor su situación?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sprint de Cero a Diez"
+                },
+                {
+                    "id": "b",
+                    "text": "B2B SaaS"
+                },
+                {
+                    "id": "c",
+                    "text": "Creador/Coach"
+                },
+                {
+                    "id": "d",
+                    "text": "Negocio de Servicios"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Marcos tiene el perfil de Creador/Coach: la marca personal importa, la audiencia precede a la monetización, vende experiencia/transformación a individuos que lo descubrieron a través de contenido. El precio de alto valor y las conversaciones de inscripción son típicos de este contexto."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Un fundador vende software de analítica de $50/mes Y ofrece compromisos de consultoría de $5.000 para ayudar a implementarlo. ¿Cómo debería abordar la selección de contexto?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Elegir B2B SaaS e ignorar la consultoría"
+                },
+                {
+                    "id": "b",
+                    "text": "Elegir Negocio de Servicios ya que la consultoría genera más ingresos"
+                },
+                {
+                    "id": "c",
+                    "text": "Identificar el contexto primario (probablemente B2B SaaS) con Servicios como secundario, tomando tácticas de ambos"
+                },
+                {
+                    "id": "d",
+                    "text": "Deben elegir un modelo de negocio y abandonar el otro"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Muchos fundadores son híbridos. La clave es identificar tu movimiento PRIMARIO mientras reconoces los contextos secundarios. Si la mayoría de los clientes llegan a través del SaaS y la consultoría es un upsell, B2B SaaS es el primario. El híbrido funciona cuando las piezas se refuerzan mutuamente."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "¿Por qué el curso enfatiza que Cero a Diez es una 'fase' en lugar de un contexto permanente?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Porque es menos rentable que otros contextos"
+                },
+                {
+                    "id": "b",
+                    "text": "Porque todo fundador pasa por la validación antes de poder escalar, independientemente del modelo de negocio eventual"
+                },
+                {
+                    "id": "c",
+                    "text": "Porque los inversores no financian empresas de Cero a Diez"
+                },
+                {
+                    "id": "d",
+                    "text": "Porque solo aplica a fundadores técnicos"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Cero a Diez es universal — todo fundador debe validar que alguien pagará antes de construir sistemas escalables. Un fundador de B2B SaaS, un creador y un proveedor de servicios todos empiezan en cero. La fase termina cuando tienes prueba (10 clientes) y puedes elegir tu contexto 'real'."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Según los cuatro contextos (Cero a Diez, B2B SaaS, Creador/Coach, Negocio de Servicios), ¿cuál describe mejor TU situación actual? Explica tu razonamiento haciendo referencia a características específicas: tu tamaño de acuerdo, cómo te encuentran los clientes, quiénes están involucrados en las decisiones de compra y la duración de tu ciclo de ventas.",
+            "minLength": 100,
+            "promptForAI": "Evalúa si esta reflexión: 1) Identifica correctamente uno de los cuatro contextos, 2) Proporciona evidencia específica de su negocio (tamaño del acuerdo, fuente de adquisición, partes interesadas), 3) Muestra una autoevaluación honesta sobre el estado de validación. Pide más especificidad si dan respuestas genéricas sin números concretos o ejemplos."
+        }
+    ]
+}

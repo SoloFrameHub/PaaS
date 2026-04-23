@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What was the key finding of the 12-week EPA study in youth with ADHD?",
+            "options": [
+                { "id": "opt1", "text": "All children with ADHD benefited equally from EPA supplementation" },
+                { "id": "opt2", "text": "EPA supplementation worsened ADHD symptoms in most participants" },
+                { "id": "opt3", "text": "Only youth with low baseline EPA levels showed significant improvements in focused attention and vigilance" },
+                { "id": "opt4", "text": "DHA was more effective than EPA for ADHD symptoms" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The pivotal study found that youth with low baseline EPA levels showed significant improvements in focused attention and vigilance after 12 weeks of supplementation. Those with adequate baseline levels did not show the same degree of improvement, confirming a deficiency-correction mechanism rather than a pharmacological one."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What remission rate did the ketogenic diet produce in the bipolar disorder clinical trial?",
+            "options": [
+                { "id": "opt1", "text": "5.2%" },
+                { "id": "opt2", "text": "13.7%" },
+                { "id": "opt3", "text": "42.9%" },
+                { "id": "opt4", "text": "75.0%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The ketogenic diet group showed a 42.9% rate of remission or marked clinical improvement, compared to 13.7% in the omega-3 supplementation control group. Proposed mechanisms include mitochondrial enhancement, GABA-glutamate balance, sodium channel modulation, and insulin signaling normalization."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is the 'morning protein loading' strategy recommended for individuals with ADHD?",
+            "options": [
+                { "id": "opt1", "text": "Protein causes drowsiness that counteracts ADHD hyperactivity" },
+                { "id": "opt2", "text": "25-30g protein at breakfast enhances dopamine precursor availability during peak-demand hours" },
+                { "id": "opt3", "text": "Morning protein eliminates the need for ADHD medication" },
+                { "id": "opt4", "text": "It prevents weight gain associated with stimulant medications" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "25-30g protein at breakfast enhances dopamine precursor availability (from the amino acid tyrosine) during peak-demand hours. This is especially important for individuals on stimulant medication, which suppresses appetite later in the day."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What percentage of children with ADHD are estimated to show behavioral improvement on structured elimination diets?",
+            "options": [
+                { "id": "opt1", "text": "100% — all children with ADHD are food-sensitive" },
+                { "id": "opt2", "text": "Less than 5%" },
+                { "id": "opt3", "text": "20-30%" },
+                { "id": "opt4", "text": "80-90%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "An estimated 20-30% of children with ADHD show behavioral improvement on structured elimination diets that remove common reactive foods. The response is highly individual, which is why a team approach with dietitian supervision is essential for any elimination protocol."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How do omega-3 fatty acids benefit bipolar disorder through G-protein signaling?",
+            "options": [
+                { "id": "opt1", "text": "They completely block G-protein signaling to prevent mood episodes" },
+                { "id": "opt2", "text": "They integrate into neuronal membranes and modulate the coupling efficiency between receptors and G-protein partners, similar to how lithium works" },
+                { "id": "opt3", "text": "They replace the need for lithium and other mood stabilizers" },
+                { "id": "opt4", "text": "They increase G-protein activity to elevate mood during depressive episodes only" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "EPA and DHA integrate into neuronal membranes and modulate the physical environment in which G-protein-coupled receptors operate. By altering membrane fluidity and composition, omega-3s can normalize coupling efficiency between receptors and their G-protein partners — analogous to how lithium works through the inositol depletion hypothesis."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "3",
+    "title": "Nutrition for ADHD and Bipolar Disorder - Quiz"
+}

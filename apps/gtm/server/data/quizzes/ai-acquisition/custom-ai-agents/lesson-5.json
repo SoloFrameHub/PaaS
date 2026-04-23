@@ -1,0 +1,75 @@
+{
+  "lessonId": "5",
+  "courseId": "custom-ai-agents",
+  "sectionId": "ai-acquisition",
+  "title": "Agent 3: CRM Enrichment Agent",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "At what rate does CRM data decay, and what is the business impact?",
+      "options": [
+        { "id": "a", "text": "1% per year — negligible impact" },
+        {
+          "id": "b",
+          "text": "2-3% per month — 25-36% of records go stale in a year, causing wasted sends, damaged sender reputation, and missed opportunities"
+        },
+        { "id": "c", "text": "10% per day — data is nearly useless" },
+        { "id": "d", "text": "CRM data doesn't decay" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "CRM data decays at 2-3% per month (people change jobs at 15-20% annually, companies get acquired, emails bounce). Without enrichment, 25-36% of your records go stale in a year. Every stale record is a wasted send, a damaged sender reputation point, and a missed opportunity."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the two enrichment modes the CRM Enrichment Agent supports?",
+      "options": [
+        { "id": "a", "text": "Manual and automated" },
+        {
+          "id": "b",
+          "text": "Event-driven (triggered when new contact is added) and scheduled (weekly refresh of existing records)"
+        },
+        { "id": "c", "text": "Free and paid" },
+        { "id": "d", "text": "Basic and premium" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The two modes are: event-driven enrichment (runs immediately when a contact is created, filling in missing fields and verifying emails) and scheduled enrichment (weekly refresh of existing records to catch job changes, email bounces, and company updates). Both are needed for a healthy CRM."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "In Sarah's $3,000 mistake, what was the root cause of her 2% reply rate?",
+      "options": [
+        { "id": "a", "text": "Her messaging was too generic" },
+        {
+          "id": "b",
+          "text": "47% of her 'VP Marketing' contacts had changed jobs — she was emailing ghosts due to stale CRM data"
+        },
+        { "id": "c", "text": "She sent too many emails per day" },
+        { "id": "d", "text": "Her domain wasn't warmed up" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's data audit revealed that 47% of her 'VP Marketing' contacts weren't VPs anymore — they'd changed jobs 3-8 months ago. Her CRM was full of stale data. At her 10% reply rate to correct contacts, she'd missed ~75 conversations and ~$3,000 in revenue from data decay alone."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Enrichment is a one-time task — once you fill in all the fields, the data stays accurate indefinitely.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Data changes constantly: people switch jobs (15-20% annually), companies get acquired, emails bounce, phone numbers change. Enrichment is a continuous process requiring both event-driven updates (new contacts) and scheduled refreshes (existing contacts) to maintain data quality."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Estimate what percentage of your current CRM contacts have stale data (wrong title, wrong company, invalid email). How would you set up a CRM Enrichment Agent to address this, including which fields to prioritize and how often to run scheduled enrichment?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response provides a realistic estimate of data staleness, identifies specific fields to enrich (job title, email validity, company data), and defines a refresh schedule. Look for understanding that event-driven and scheduled modes serve different purposes and both are needed."
+    }
+  ]
+}

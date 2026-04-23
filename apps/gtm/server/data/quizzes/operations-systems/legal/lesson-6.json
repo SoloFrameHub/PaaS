@@ -1,0 +1,66 @@
+{
+  "lessonId": "6",
+  "courseId": "legal",
+  "sectionId": "operations-systems",
+  "title": "When to Involve Legal Counsel",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the 80/20 rule of solo founder legal, what percentage of contracts can be handled with good templates?",
+      "options": [
+        { "id": "a", "text": "50%" },
+        { "id": "b", "text": "65%" },
+        { "id": "c", "text": "80%" },
+        { "id": "d", "text": "95%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "80% of your contracts can be handled with good templates and common sense. 20% require professional review. The skill is knowing which is which."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "At what deal value threshold should you always involve legal counsel?",
+      "options": [
+        { "id": "a", "text": "$5,000" },
+        { "id": "b", "text": "$10,000" },
+        { "id": "c", "text": "$25,000" },
+        { "id": "d", "text": "$50,000" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "When total contract value exceeds $50,000, a $500-800 legal review is trivially small relative to the financial exposure. Send the contract with specific questions marked — don't ask for a general review."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the average cost of a business contract dispute in legal fees?",
+      "options": [
+        { "id": "a", "text": "$1,000-5,000" },
+        { "id": "b", "text": "$5,000-10,000" },
+        { "id": "c", "text": "$25,000-100,000" },
+        { "id": "d", "text": "Over $500,000" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Average cost of a business contract dispute is $25,000-$100,000 in legal fees — even when you win. A $300-800 flat-fee contract review for prevention makes far more financial sense."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should involve legal counsel whenever a client asks you to transfer (not license) IP ownership.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. A license says 'you can use this.' A transfer says 'this is now yours forever.' Once IP is transferred, you can't use it. Get a lawyer to make sure you understand exactly what you're giving up."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review your current and upcoming deals. Which ones meet the threshold for legal review (over $50K, IP transfer, non-compete)? How would you scope the legal review to keep costs under $800?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific deals or scenarios that trigger the counsel requirement, understands the distinction between licensing and transferring IP, and proposes a scoped legal review approach (specific questions marked rather than general review) to control costs."
+    }
+  ]
+}

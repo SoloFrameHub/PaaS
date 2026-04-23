@@ -1,0 +1,108 @@
+{
+  "id": "boundary-setting-worksheet",
+  "title": "Boundary Setting Worksheet",
+  "description": "Use this worksheet to plan, practice, and reflect on setting a boundary. Work through each step to prepare before the conversation, and return afterward to record what happened.",
+  "instructions": "Identify a situation where you need to set a boundary. Work through each step to clarify what you want, prepare your script, anticipate fears, and reflect on the outcome. This worksheet is for planning — you can complete the follow-up section after you've tried setting the boundary.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Situation — What boundary do you need to set? With whom?",
+      "type": "textarea",
+      "placeholder": "e.g., My manager keeps sending messages after 7 PM expecting immediate responses...",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. Current Pattern — What do you usually do in this situation? How does it affect you?",
+      "type": "textarea",
+      "placeholder": "e.g., I respond immediately even though I'm off the clock. It means I never fully disconnect from work, and I feel resentful and exhausted.",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. Stress Level — How much does this situation stress you? (0 = not at all, 100 = extremely)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. Boundary Fear — What are you afraid will happen if you set this boundary?",
+      "type": "select",
+      "options": [
+        { "value": "rejection", "label": "Rejection — They'll think less of me or distance themselves" },
+        { "value": "lazy", "label": "Perceived Laziness — They'll think I don't care or I'm not committed" },
+        { "value": "conflict", "label": "Conflict — It will create an argument or tension" },
+        { "value": "consequences", "label": "Consequences — I'll be passed over, punished, or fired" },
+        { "value": "guilt", "label": "Guilt — I'll feel selfish or like I'm letting people down" },
+        { "value": "other", "label": "Other — A different fear" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Boundary Script — What will you actually say? (Be specific and clear)",
+      "type": "textarea",
+      "placeholder": "e.g., 'I'm going to be offline after 7 PM on weekdays. I'll respond to any messages first thing the next morning. For true emergencies, you can call me.'",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Fear Response — What is a more balanced view of your fear? What's the most likely outcome?",
+      "type": "textarea",
+      "placeholder": "e.g., Most likely, my manager will understand — other team members have similar boundaries. Even if there's initial pushback, my work quality will improve because I'll be less exhausted.",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. Follow-Up — What happened when you set the boundary? (Complete this after trying)",
+      "type": "textarea",
+      "placeholder": "e.g., I told my manager on Monday. She seemed surprised but said 'that's fair.' No negative consequences so far. I felt guilty the first two evenings but it got easier.",
+      "required": false
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. Stress Level After — How stressed do you feel about this situation now? (0 = not at all, 100 = extremely)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "rejection",
+      "name": "Fear of Rejection",
+      "description": "Believing that setting a boundary will make people dislike or distance themselves from you. In reality, most people respect clear, consistent limits."
+    },
+    {
+      "id": "lazy",
+      "name": "Fear of Being Seen as Lazy",
+      "description": "Assuming that having limits means you lack commitment. In reality, boundaries protect your ability to do sustainable, high-quality work."
+    },
+    {
+      "id": "conflict",
+      "name": "Fear of Conflict",
+      "description": "Expecting that any limit-setting will create a confrontation. In reality, clear, calm communication often prevents conflict rather than creating it."
+    },
+    {
+      "id": "consequences",
+      "name": "Fear of Professional Consequences",
+      "description": "Worrying about being punished, passed over, or fired for setting reasonable limits. While some environments are genuinely punitive, many are more accepting of boundaries than we expect."
+    },
+    {
+      "id": "guilt",
+      "name": "Guilt and People-Pleasing",
+      "description": "Feeling selfish for prioritizing your needs. In reality, you cannot pour from an empty cup — boundaries help you show up better for others, not worse."
+    },
+    {
+      "id": "other",
+      "name": "Other Fears",
+      "description": "Any other fear or concern about setting this boundary. Write it out and examine whether it's based on evidence or assumption."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes to help you practice boundary-setting skills. If you're in a situation where setting boundaries puts your safety at risk (e.g., abusive relationships or hostile work environments), please seek professional guidance. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is psychological flexibility in the ACT (Acceptance and Commitment Therapy) framework?",
+            "options": [
+                {"id": "opt1", "text": "The ability to change your mind frequently"},
+                {"id": "opt2", "text": "The ability to contact the present moment fully as a conscious being and change or persist in behavior when doing so serves valued ends"},
+                {"id": "opt3", "text": "Physical flexibility through yoga and stretching"},
+                {"id": "opt4", "text": "Cognitive flexibility measured by IQ tests"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "ACT defines psychological flexibility as 'the ability to contact the present moment fully as a conscious human being, and to change or persist in behavior when doing so serves valued ends.' This is broader and more clinically developed than growth mindset. It includes: acceptance of difficult experiences (not just reframing them), defusion from unhelpful thoughts, present-moment awareness, self-as-context, values clarification, and committed action. The 2025 meta-analysis found g = 0.72 effect size—very strong evidence for mental health outcomes."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the 2025 meta-analysis cited in the lesson, what is the effect size of ACT interventions on psychopathology and wellbeing in transitional-age youth?",
+            "options": [
+                {"id": "opt1", "text": "g = 0.15 (small effect)"},
+                {"id": "opt2", "text": "g = 0.35 (small-to-medium effect)"},
+                {"id": "opt3", "text": "g = 0.72 (medium-to-large effect)—robust evidence across 65 studies"},
+                {"id": "opt4", "text": "No significant effect found"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A 2025 meta-analysis of 65 studies (n = 5,283) found Hedges' g = 0.72 for ACT on psychopathology, ACT processes, wellbeing, and coping in transitional-age youth. This is a medium-to-large effect and substantially stronger than growth mindset intervention evidence. ACT's psychological flexibility framework is a more clinically mature and evidence-backed version of 'responding flexibly to challenges' than growth mindset alone. The lesson positions ACT-informed content as providing stronger clinical grounding than growth mindset research."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is cognitive defusion in ACT, and how does it differ from cognitive reappraisal?",
+            "options": [
+                {"id": "opt1", "text": "They are identical processes"},
+                {"id": "opt2", "text": "Defusion is observing thoughts as thoughts (not facts) without needing to change them; reappraisal actively changes the interpretation"},
+                {"id": "opt3", "text": "Defusion is suppressing thoughts; reappraisal is accepting them"},
+                {"id": "opt4", "text": "Defusion only works for positive thoughts; reappraisal works for negative thoughts"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cognitive defusion (ACT) is noticing thoughts AS THOUGHTS rather than facts—creating distance from unhelpful thinking without necessarily changing content. Example: 'I'm having the thought I'll fail' vs. 'I'll fail' (fused). You observe the thought without buying into it. Cognitive reappraisal (CBT) actively generates alternative interpretations to change the thought. Both are useful, but they're distinct mechanisms. Defusion says 'you don't have to change or believe every thought'; reappraisal says 'generate a more helpful interpretation.' ACT includes acceptance; growth mindset/CBT emphasizes change."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does ACT's acceptance approach differ from growth mindset's reframing approach to difficult internal experiences?",
+            "options": [
+                {"id": "opt1", "text": "ACT emphasizes accepting uncomfortable experiences rather than reframing them; growth mindset predominantly uses reappraisal"},
+                {"id": "opt2", "text": "Growth mindset emphasizes acceptance; ACT emphasizes reframing"},
+                {"id": "opt3", "text": "They use identical approaches to difficult emotions"},
+                {"id": "opt4", "text": "Neither framework addresses difficult emotions"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Critical difference: ACT includes ACCEPTANCE of uncomfortable internal experiences (emotions, thoughts, sensations)—you don't need to change them, you can act effectively while they're present. Growth mindset predominantly teaches reappraisal (reframing challenges as opportunities). ACT says 'anxiety can be present AND you can act on your values.' Growth mindset says 'reframe anxiety as helpful energy.' Acceptance is not reframing—it's making room for discomfort. Both are useful, but ACT's acceptance-based approach addresses situations where reframing isn't appropriate or effective."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Practice cognitive defusion with a current unhelpful thought: (1) Identify the thought (e.g., 'I'm going to fail'), (2) Add 'I'm having the thought that...' in front of it, (3) Notice how creating that distance changes your relationship to the thought, (4) Ask: Do I need to believe this thought, or can I observe it and act on my values anyway? What did you notice?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "8",
+    "title": "Psychological Flexibility: The ACT Framework - Quiz"
+}

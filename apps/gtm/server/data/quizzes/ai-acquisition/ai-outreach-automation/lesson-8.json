@@ -1,0 +1,134 @@
+{
+    "lessonId": "8",
+    "courseId": "ai-outreach-automation",
+    "sectionId": "ai-acquisition",
+    "title": "Reply Routing Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "A prospect replies: 'Not interested right now, maybe next quarter.' What's the correct classification and action?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "POSITIVE — Route to human immediately"
+                },
+                {
+                    "id": "b",
+                    "text": "SOFT_OBJECTION — Tag as nurture, add to 90-day re-engagement"
+                },
+                {
+                    "id": "c",
+                    "text": "HARD_OBJECTION — Mark as 'Do Not Contact'"
+                },
+                {
+                    "id": "d",
+                    "text": "QUESTION — Auto-respond with FAQ"
+                }
+            ],
+            "explanation": "This is a soft objection (timing issue, not a hard no). Tag for nurture and re-engage in 90 days. Don't push now.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q2",
+            "question": "Your AI classification accuracy drops from 95% to 78% over 2 months. What's the most likely cause?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your prompt needs retraining with new examples"
+                },
+                {
+                    "id": "b",
+                    "text": "The AI model was updated and changed behavior"
+                },
+                {
+                    "id": "c",
+                    "text": "Your reply volume increased and the AI can't handle it"
+                },
+                {
+                    "id": "d",
+                    "text": "Nothing — 78% is still good enough"
+                }
+            ],
+            "explanation": "Classification drift happens when your prospect language changes but your prompt doesn't. Retrain with recent examples to restore accuracy.",
+            "type": "multiple-choice",
+            "correctAnswer": "a"
+        },
+        {
+            "id": "q3",
+            "question": "You're running email + LinkedIn sequences. A prospect replies on LinkedIn. What should happen to the email sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Continue the email sequence — they're separate channels"
+                },
+                {
+                    "id": "b",
+                    "text": "Stop the email sequence immediately"
+                },
+                {
+                    "id": "c",
+                    "text": "Pause the email sequence for 7 days, then resume"
+                },
+                {
+                    "id": "d",
+                    "text": "Send one more email acknowledging their LinkedIn reply"
+                }
+            ],
+            "explanation": "Stop all sequences immediately when someone replies on any channel. Continuing feels spammy and wastes touches.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q4",
+            "question": "What's the maximum acceptable response time for a 'POSITIVE' classified reply?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Within 1 hour"
+                },
+                {
+                    "id": "b",
+                    "text": "Within 4 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "Within 24 hours"
+                },
+                {
+                    "id": "d",
+                    "text": "Within 48 hours"
+                }
+            ],
+            "explanation": "Aim for <4 hours on positive replies. Research shows response time dramatically impacts qualification rates. Within 1 hour is ideal but unrealistic for solo founders.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q5",
+            "question": "Which reply type is SAFE to auto-respond to?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Pricing questions"
+                },
+                {
+                    "id": "b",
+                    "text": "Out-of-office auto-replies"
+                },
+                {
+                    "id": "c",
+                    "text": "Objections about timing"
+                },
+                {
+                    "id": "d",
+                    "text": "Requests for case studies"
+                }
+            ],
+            "explanation": "Out-of-office is the only truly safe auto-response. Everything else benefits from human context and personalization.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        }
+    ]
+}

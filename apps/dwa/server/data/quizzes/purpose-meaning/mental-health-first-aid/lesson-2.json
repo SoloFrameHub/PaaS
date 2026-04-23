@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Your coworker has been missing work, appears disheveled, and posts on social media 'You'd all be better off without me.' What do these warning signs most likely indicate, and what should you do?",
+      "options": [
+        {"id": "opt1", "text": "Normal stress response — give them space and wait for them to reach out when ready"},
+        {"id": "opt2", "text": "Depression with possible suicidal ideation — approach privately, use ALGEE, directly ask about suicide, and be prepared to call 988/911"},
+        {"id": "opt3", "text": "Attention-seeking behavior — ignore the social media post to avoid reinforcing it"},
+        {"id": "opt4", "text": "Clinical depression requiring medication — tell them to see a psychiatrist immediately"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Multiple warning signs across domains (behavioral withdrawal, physical self-care decline, and the statement 'you'd be better off without me') indicate serious risk requiring immediate response. That statement reflects 'perceived burdensomeness' — one of the strongest predictors of suicide risk. Approach privately using ALGEE, listen non-judgmentally, and ask directly: 'Are you thinking about suicide?' Research shows asking does NOT increase risk and can provide relief. Be prepared to escalate to 988 or 911 if they express a plan or intent. Never ignore high-risk warning signs or assume they're 'just attention-seeking' — that assumption kills people."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which of the following is the most critical difference between a temporary stress response and a clinical mental health condition?",
+      "options": [
+        {"id": "opt1", "text": "Stress responses last days-to-weeks and improve as the stressor resolves; clinical conditions persist for weeks-to-months, interfere with functioning, and don't respond to normally positive events"},
+        {"id": "opt2", "text": "Stress responses are caused by external events; clinical conditions have no identifiable cause"},
+        {"id": "opt3", "text": "Stress responses never require professional help; clinical conditions always require medication"},
+        {"id": "opt4", "text": "You can diagnose stress responses yourself; only doctors can diagnose clinical conditions"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "The key distinguishing features are duration, functional impairment, and responsiveness. Temporary stress typically lasts days to a couple weeks, may cause temporary struggle but people still manage basics, and improves as the stressor resolves. Clinical conditions persist for weeks to months, cause significant interference with work/relationships/self-care, and don't respond to normally positive events. Clinical conditions CAN have identifiable triggers (so 'no cause' is not the distinction), and NOT all clinical conditions require medication (therapy is often first-line). When in doubt, encourage professional evaluation — it's better to over-refer than minimize real suffering."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "A friend describes hearing voices telling him that people are plotting against him. He seems confused and agitated. What condition might these warning signs indicate, and what should you do?",
+      "options": [
+        {"id": "opt1", "text": "Severe anxiety disorder — use active listening and suggest relaxation techniques"},
+        {"id": "opt2", "text": "Possible psychosis — encourage urgent professional evaluation; if he's a danger to self/others or severely disorganized, call 911"},
+        {"id": "opt3", "text": "Attention-seeking or making it up — challenge the claims to see if they're real"},
+        {"id": "opt4", "text": "Substance-induced hallucination — wait for it to wear off and check in tomorrow"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Auditory hallucinations (hearing voices) + paranoid delusions (people plotting against him) + disorganized presentation (confused, agitated) are classic warning signs of psychosis, which requires urgent medical evaluation. Psychosis can be primary (schizophrenia-spectrum), substance-induced, or caused by medical conditions (infection, neurological) — a physician must evaluate. Approach calmly in a quiet environment, do NOT argue with delusional content, and encourage professional help urgently. If he's a danger to himself or others, or severely disorganized and unable to ensure his safety, call 911. Do NOT dismiss as 'making it up' (that's stigmatizing and dangerous) or assume it's substance-induced without evaluation."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "According to research, what is Mental Health First Aid training's evidence base for helping people recognize warning signs?",
+      "options": [
+        {"id": "opt1", "text": "STRONG evidence that training improves recognition of mental health warning signs and disorders (effect sizes d = 0.22–0.52)"},
+        {"id": "opt2", "text": "WEAK evidence — most studies show warning sign recognition does not improve after MHFA training"},
+        {"id": "opt3", "text": "MODERATE evidence that warning sign recognition training prevents mental illness in those who receive the training"},
+        {"id": "opt4", "text": "No credible evidence exists for warning sign recognition training"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "The 2018 Morgan et al. meta-analysis found STRONG evidence that MHFA training improves recognition of mental disorders (effect sizes d = 0.22–0.52) and beliefs about effective treatments (d = 0.19–0.45). This is one of the most robust findings in the MHFA literature — trainees demonstrably improve in their ability to recognize warning signs across depression, anxiety, psychosis, substance use, and suicide risk. However, this is about TRAINEE outcomes (what you learn), not prevention of illness in others. The training equips you to notice and respond — the evidence for downstream effects on recipients' mental health is much weaker."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which of the following is a protective factor that Mental Health First Aid responders can help strengthen?",
+      "options": [
+        {"id": "opt1", "text": "Genetic predisposition to mental illness"},
+        {"id": "opt2", "text": "History of childhood trauma"},
+        {"id": "opt3", "text": "Social connections and sense of belonging to a community"},
+        {"id": "opt4", "text": "Access to lethal means (firearms, medications)"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Social connections and sense of belonging are KEY protective factors that MHFA responders can strengthen through their support. By reducing isolation, validating someone's experience, connecting them to resources, and maintaining the relationship, you build protective factors. Genetic predisposition and trauma history are risk factors (not protective), and access to lethal means is a RISK factor. While you cannot change someone's genetics or past, you CAN reduce isolation, facilitate access to care, and help build the relational protective factors that buffer against mental health crisis."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "2",
+  "title": "Recognizing Warning Signs and Risk Factors - Quiz"
+}

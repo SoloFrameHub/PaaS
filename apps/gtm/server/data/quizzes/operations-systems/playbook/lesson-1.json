@@ -1,0 +1,72 @@
+{
+  "lessonId": "1",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "The 5 Core Questions Every Playbook Answers",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of solo founders have a written sales process?",
+      "options": [
+        { "id": "a", "text": "5%" },
+        { "id": "b", "text": "20%" },
+        { "id": "c", "text": "50%" },
+        { "id": "d", "text": "75%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Only 20% of solo founders have a written sales process. The other 80% are improvising, which produces inconsistent results and the feast-or-famine revenue cycle that kills more businesses than bad products."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What makes a playbook different from a strategy document?",
+      "options": [
+        { "id": "a", "text": "A playbook is longer and more detailed" },
+        {
+          "id": "b",
+          "text": "A playbook fits on one page and tells you what to do tomorrow morning"
+        },
+        { "id": "c", "text": "A playbook includes financial projections" },
+        {
+          "id": "d",
+          "text": "A playbook is only for sales teams, not solo founders"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A strategy document describes aspirations. A playbook answers 5 ruthlessly specific questions, fits on one page, and you tape it to your wall. Then you do exactly what the page says, every day, for 90 days."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the Playbook-First Principle, what happens if your system doesn't fit on one page?",
+      "options": [
+        { "id": "a", "text": "You need a better template" },
+        { "id": "b", "text": "You lack clarity" },
+        { "id": "c", "text": "You need more pages" },
+        { "id": "d", "text": "Your business is too complex" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "If it doesn't fit on one page, you lack clarity. Complexity is where execution goes to die. The one-page constraint is a forcing function that strips away everything except what matters."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Most solo founders skip building a playbook because they lack the knowledge to do it.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Most skip it not from lack of knowledge but from lack of commitment. They know what they should do but haven't written it down with enough specificity to execute consistently."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "How clearly documented is your current acquisition system? Rate your consistency with daily/weekly activities on a 1-10 scale. What would change if you had a one-page playbook taped to your wall?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly rates their documentation and consistency, identifies the gap between knowing and doing, and articulates how a specific, written playbook would change their daily execution behavior."
+    }
+  ]
+}

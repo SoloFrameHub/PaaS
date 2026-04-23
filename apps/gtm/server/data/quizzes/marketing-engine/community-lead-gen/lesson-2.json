@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "2",
+    "lessonTitle": "The 80/20 Community Rule",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the 80/20 Community Rule, what percentage of your interactions should be dedicated to 'Pure Value Contribution'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "20%"
+                },
+                {
+                    "id": "b",
+                    "text": "50%"
+                },
+                {
+                    "id": "c",
+                    "text": "80%"
+                },
+                {
+                    "id": "d",
+                    "text": "100%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "To build a sustainable trust-led engine, you must prioritize contribution. 80% contribution creates the 'Trust Balance' needed to effectively promote your work later.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the key difference between 'Selfish' and 'Selfless' self-promotion?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Selfish promotion is cheaper to run."
+                },
+                {
+                    "id": "b",
+                    "text": "Selfish promotion says 'I made this!', while selfless promotion says 'I made this FOR YOU' to solve a specific community pain."
+                },
+                {
+                    "id": "c",
+                    "text": "Selfless promotion never includes a link to your product."
+                },
+                {
+                    "id": "d",
+                    "text": "Selfish promotion is done by brands; selfless promotion is done by influencers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Framing matters. When you position your product as a solution to a problem the community has already expressed, it feels like a contribution rather than an advertisement.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Trust Bank' analogy, what happens if you try to make a 'Withdrawal' (Promotion) with an empty balance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The community will give you a loan of trust."
+                },
+                {
+                    "id": "b",
+                    "text": "Your post will be 'Declined' (ignored, flagged as spam, or leading to a ban)."
+                },
+                {
+                    "id": "c",
+                    "text": "LinkedIn will automatically increase your reach."
+                },
+                {
+                    "id": "d",
+                    "text": "You will be asked to pay a fine to the moderators."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Without a history of helpfulness, a promotional post is seen as 'Value Extraction.' Communities protect themselves from this by ignoring or removing the content.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of these is considered a 'High-Value Deposit' into a community trust bank?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Posting a link to your blog every day."
+                },
+                {
+                    "id": "b",
+                    "text": "Answering a technical question thoroughly without any self-promotional links."
+                },
+                {
+                    "id": "c",
+                    "text": "Liking every post in the newsfeed without commenting."
+                },
+                {
+                    "id": "d",
+                    "text": "Messaging members privately to ask for a meeting."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Selfless contribution is the most powerful way to build authority. Answering a question well proves you are an expert and a helper.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Consistency' recommended over 'Intensity' for community marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because the algorithm prefers it."
+                },
+                {
+                    "id": "b",
+                    "text": "Because people recognize and trust familiar names. 5 minutes a day builds long-term reputation better than a massive blast once a month."
+                },
+                {
+                    "id": "c",
+                    "text": "Because you get more points for daily logins."
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't; you should aim for one viral post per month."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Community value is human-to-human. Being a recurring 'helpful neighbor' is more effective than being an 'intermittent advertiser.'",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look back at your last 5 interactions in your primary community. If you were to calculate your current 'Trust Balance', what would the ratio be (Contribution % vs. Promotion %)? Based on today's lesson, what is one 'Selfless' resource you could create and share in the next 7 days that would move the needle for your ICP?",
+            "promptHints": [
+                "Be honest about your current 'Pitch vs. Help' ratio.",
+                "Think of a problem you see members asking about repeatedly.",
+                "Consider a template or checklist you already use internally."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "1"
+        ],
+        "unlocks": [
+            "3"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "The 80/20 Community Rule - Quiz"
+}

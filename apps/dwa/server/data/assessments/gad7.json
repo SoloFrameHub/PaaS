@@ -1,0 +1,65 @@
+{
+  "id": "gad7",
+  "title": "GAD-7 Anxiety Self-Assessment",
+  "description": "A brief validated measure to screen for generalized anxiety disorder. This 7-item questionnaire helps you understand your current anxiety levels.",
+  "instructions": "Over the past 2 weeks, how often have you been bothered by the following problems?",
+  "timeframe": "past 2 weeks",
+  "questions": [
+    { "id": "q1", "text": "Feeling nervous, anxious, or on edge" },
+    { "id": "q2", "text": "Not being able to stop or control worrying" },
+    { "id": "q3", "text": "Worrying too much about different things" },
+    { "id": "q4", "text": "Trouble relaxing" },
+    { "id": "q5", "text": "Being so restless that it's hard to sit still" },
+    { "id": "q6", "text": "Becoming easily annoyed or irritable" },
+    { "id": "q7", "text": "Feeling afraid, as if something awful might happen" }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3,
+    "labels": {
+      "0": "Not at all",
+      "1": "Several days",
+      "2": "More than half the days",
+      "3": "Nearly every day"
+    }
+  },
+  "scoring": {
+    "maxScore": 21,
+    "bands": [
+      {
+        "min": 0,
+        "max": 4,
+        "severity": "minimal",
+        "label": "Minimal Anxiety",
+        "description": "Your responses suggest minimal anxiety. Continue your current wellness practices and self-care routines.",
+        "color": "green"
+      },
+      {
+        "min": 5,
+        "max": 9,
+        "severity": "mild",
+        "label": "Mild Anxiety",
+        "description": "Your responses suggest mild anxiety. Self-help strategies like those in this course can be very effective. Monitor your symptoms over time.",
+        "color": "yellow"
+      },
+      {
+        "min": 10,
+        "max": 14,
+        "severity": "moderate",
+        "label": "Moderate Anxiety",
+        "description": "Your responses suggest moderate anxiety. Consider combining the techniques in this course with professional support for the best outcomes.",
+        "color": "orange"
+      },
+      {
+        "min": 15,
+        "max": 21,
+        "severity": "severe",
+        "label": "Severe Anxiety",
+        "description": "Your responses suggest severe anxiety. We strongly recommend seeking a professional evaluation alongside the educational content in this course.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "If you checked any problems, how difficult have they made it for you to do your work, take care of things at home, or get along with other people?"
+  },
+  "disclaimer": "This is an educational self-check tool, not a clinical diagnosis. Results are meant to help you reflect on your experiences. If you are in crisis or need immediate help, please call or text 988 (Suicide & Crisis Lifeline)."
+}

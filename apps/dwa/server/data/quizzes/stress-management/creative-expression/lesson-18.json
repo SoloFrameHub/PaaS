@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the critical distinction between everyday difficult experiences (appropriate for creative self-help) and major trauma (requiring professional therapy)?",
+      "options": [
+        {"id": "opt1", "text": "There is no distinction—all difficult experiences can be processed through creative self-help"},
+        {"id": "opt2", "text": "Creative self-help is appropriate for everyday stress, conflicts, non-traumatic grief, life transitions; Major trauma (PTSD, sexual assault, complex trauma, severe abuse) requires licensed trauma-focused therapy"},
+        {"id": "opt3", "text": "Creative self-help is more effective than therapy for all trauma"},
+        {"id": "opt4", "text": "You should never use creative expression for any difficult content"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Creative self-help is appropriate for everyday difficult experiences (work stress, relationship conflicts, non-traumatic grief, life transitions, mild-moderate emotional distress) WITH containment strategies. Major trauma (PTSD, sexual assault, physical abuse, complex trauma, traumatic grief, severe dissociation, active suicidal ideation) requires licensed trauma-focused therapy (EMDR, PE, CPT). Self-help creative work can complement therapy but cannot replace specialized trauma treatment."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the essential components of the containment protocol for working with difficult content through creative expression?",
+      "options": [
+        {"id": "opt1", "text": "Just start creating whenever you feel like it with no plan"},
+        {"id": "opt2", "text": "Assess capacity before starting, set strict time limits (10-20 min max), use specific prompts (not open-ended), have grounding plan ready, check in after, follow-up support same day"},
+        {"id": "opt3", "text": "Work for as long as it takes to feel completely better"},
+        {"id": "opt4", "text": "Containment isn't necessary for creative work"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Safe containment protocol: (1) Assess capacity first (distress 0-10, if 7+ too activated), (2) Set strict time limits (10-20 min max, stop when timer rings), (3) Use specific prompts not open-ended (e.g., 'one moment from the conflict' not 'all my trauma'), (4) Have grounding plan ready before starting, (5) Check in after (better, same, or worse?), (6) Follow-up support that day (don't isolate). This prevents spiraling and retraumatization."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are red flags that signal you should STOP self-help creative work and seek professional trauma therapy?",
+      "options": [
+        {"id": "opt1", "text": "Feeling any emotions at all during creative work"},
+        {"id": "opt2", "text": "Flashbacks or dissociation during creative work, consistently feeling worse after sessions, suicidal thoughts or self-harm urges emerge, content involves major trauma (sexual assault, severe abuse, complex trauma)"},
+        {"id": "opt3", "text": "Creating anything that isn't perfect"},
+        {"id": "opt4", "text": "There are no red flags—creative self-help is always safe"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "STOP self-help and seek trauma therapy if: (1) Flashbacks/dissociation during creating (re-experiencing, losing time, detached from body), (2) Consistently worse after sessions (distress increases, rumination intensifies, mood crashes), (3) Suicidal thoughts or self-harm urges emerge, (4) Content involves major trauma (sexual assault, physical abuse, combat, witnessed violence, complex childhood trauma). These indicate content is too big for self-help—you need licensed trauma-focused therapy (EMDR, CPT, PE)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What creative techniques are appropriate for processing non-traumatic grief and loss?",
+      "options": [
+        {"id": "opt1", "text": "No creative techniques are appropriate for any type of grief"},
+        {"id": "opt2", "text": "Memory collages (tribute to person/relationship), letters to deceased/lost (say what you didn't get to say), before/after drawings for life transitions—all with time limits and containment"},
+        {"id": "opt3", "text": "Only professional art therapists can work with grief—never do it yourself"},
+        {"id": "opt4", "text": "Process all types of grief (including traumatic) through intensive multi-hour creative sessions"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "For non-traumatic grief (expected deaths, non-violent loss, relationship endings without abuse), appropriate creative practices include: memory work (collages, photo tributes), letters to deceased/lost (unsent), before/after drawings (life transitions). CRITICAL: Use containment (time limits—grief work in 20-30 min sessions, not marathons; support available; stop if overwhelmed). Traumatic grief (sudden death, witnessed violence, suicide of loved one) requires trauma-informed grief counselor, not self-help."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Why does self-help creative work have mixed/limited evidence for trauma processing, and what IS effective for trauma?",
+      "options": [
+        {"id": "opt1", "text": "Creative work is the most effective trauma treatment available"},
+        {"id": "opt2", "text": "Research on expressive writing for trauma shows mixed results (some benefit, some no effect or increased distress); Trauma-focused therapy (EMDR, PE, CPT) substantially outperforms self-help—trauma needs clinical support for safe processing"},
+        {"id": "opt3", "text": "All trauma should be processed alone through creative work"},
+        {"id": "opt4", "text": "Trauma cannot be healed through any method"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Evidence for creative self-help with trauma is MIXED/LIMITED: Some studies find benefits, others show no effect or increased distress. Why? Trauma overwhelms normal coping—need expert guidance to titrate exposure safely. Risk of retraumatization if you activate memory without processing it. Trauma-focused therapy (EMDR, Prolonged Exposure, Cognitive Processing Therapy) is substantially more effective—provides: trained assessment, stabilization skills first, structured gradual processing, support when overwhelmed, integration. Creative work can COMPLEMENT therapy (with therapist guidance) but cannot REPLACE it."
+    }
+  ],
+  "sectionId": "stress-management",
+  "courseId": "creative-expression",
+  "lessonId": "18",
+  "title": "Creative Expression and Difficult Life Experiences - Quiz"
+}

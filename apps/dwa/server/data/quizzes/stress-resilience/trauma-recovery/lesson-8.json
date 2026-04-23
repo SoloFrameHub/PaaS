@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What do the latest APA and VA/DoD guidelines recommend as the first-line treatment for PTSD?",
+            "options": [
+                { "id": "opt1", "text": "Medication (SSRIs) as the primary treatment, with therapy as optional" },
+                { "id": "opt2", "text": "A combination of benzodiazepines and exposure therapy" },
+                { "id": "opt3", "text": "Specific manualized psychotherapies (such as CPT, PE, and EMDR) over medication as first-line treatment" },
+                { "id": "opt4", "text": "Self-help courses and support groups as the primary intervention" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The latest guidelines recommend specific manualized psychotherapies over medication as first-line treatment for PTSD. Therapy is the primary treatment — medication can be a helpful addition, but not a replacement. Evidence-based therapies include CPT, PE, EMDR, and Written Exposure Therapy."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a key difference between Cognitive Processing Therapy (CPT) and Prolonged Exposure (PE)?",
+            "options": [
+                { "id": "opt1", "text": "CPT uses bilateral stimulation while PE uses writing exercises" },
+                { "id": "opt2", "text": "CPT focuses on examining and modifying unhelpful beliefs ('stuck points') without requiring detailed retelling, while PE involves gradually retelling the trauma narrative until it loses emotional charge" },
+                { "id": "opt3", "text": "CPT takes 5 sessions while PE requires at least 52 sessions" },
+                { "id": "opt4", "text": "CPT is only for combat veterans while PE is for civilian trauma" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "CPT is a structured 12-session therapy that focuses on 'stuck points' — unhelpful beliefs like 'It was my fault' — and does NOT require detailed retelling of the trauma. PE involves gradually approaching trauma-related memories by retelling the narrative repeatedly until it loses its emotional charge. Both are first-line treatments with strong evidence."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why are benzodiazepines generally NOT recommended for PTSD treatment?",
+            "options": [
+                { "id": "opt1", "text": "They are too expensive for most patients to afford" },
+                { "id": "opt2", "text": "They can interfere with trauma processing and carry dependence risks" },
+                { "id": "opt3", "text": "They have not been studied in any clinical trials" },
+                { "id": "opt4", "text": "They only work for anxiety, not for PTSD specifically" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Benzodiazepines are generally NOT recommended for PTSD because they can interfere with trauma processing and carry dependence risks. The lesson notes that if you've been prescribed benzodiazepines, you should discuss this with your prescriber. SSRIs (specifically sertraline and paroxetine) are the FDA-approved medication options for PTSD."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is TRUE about your rights as a client in trauma therapy?",
+            "options": [
+                { "id": "opt1", "text": "You must complete every session without breaks to get the full benefit" },
+                { "id": "opt2", "text": "You should stay with the first therapist you find, even if the fit isn't right" },
+                { "id": "opt3", "text": "You must share your full trauma history in the first session" },
+                { "id": "opt4", "text": "You can say 'I'm not ready for that' at any time, take breaks during sessions, and switch therapists if the fit isn't right" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The lesson outlines your rights as a client: you can ask questions about the therapist's training, say 'I'm not ready for that' at any time, take breaks during sessions, switch therapists if the fit isn't right, and you are in control of your treatment. Finding the right therapist is like finding the right fit for any important relationship."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Written Exposure Therapy is notable for which advantage compared to other evidence-based trauma treatments?",
+            "options": [
+                { "id": "opt1", "text": "It is the only therapy that uses medication alongside talk therapy" },
+                { "id": "opt2", "text": "It is a shorter treatment (5 sessions vs. 12-16) with improved retention rates" },
+                { "id": "opt3", "text": "It can only be done remotely via telehealth" },
+                { "id": "opt4", "text": "It does not require any interaction with a therapist" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Written Exposure Therapy involves writing about the traumatic experience in a structured format over just 5 sessions (compared to 12-16 for CPT or PE), and has improved retention — meaning fewer people drop out of treatment. It has strong emerging evidence and was recommended in the 2023 VA/DoD guidelines."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "trauma-recovery",
+    "lessonId": "8",
+    "title": "Professional Treatment Options and Finding Help - Quiz"
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2.3: Sleep for Physical Resilience</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --warning-text-heading: #E65100;
+            --warning-text-body: #666;
+            --stress-red: #D32F2F;
+            --calm-green: #388E3C;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; margin-bottom: 20px; }
+        h3 { font-size: 20px; color: var(--brand-secondary-blue); margin-top: 25px; }
+        p { margin-bottom: 15px; }
+        strong { color: var(--brand-primary-blue); }
+
+        /* --- Interactive Nervous System --- */
+        .nervous-system-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .ns-state { text-align: center; }
+        .ns-state h3 { margin-top: 0; font-size: 18px; }
+        .ns-state .icon {
+            font-size: 40px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #sympathetic-state h3 { color: var(--stress-red); }
+        #parasympathetic-state h3 { color: var(--calm-green); }
+
+        /* --- Interactive Battery Recharge --- */
+        .recharge-station {
+            text-align: center;
+            background-color: var(--brand-light-grey);
+            padding: 25px;
+            border-radius: 8px;
+        }
+        .battery-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .battery {
+            width: 40px;
+            height: 80px;
+            border: 3px solid var(--brand-text-dark);
+            border-radius: 8px;
+            position: relative;
+        }
+        .battery::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 5px;
+            background-color: var(--brand-text-dark);
+            border-radius: 3px;
+        }
+        .battery-level {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--stress-red);
+            height: 20%; /* Start drained */
+            border-radius: 4px;
+            transition: height 1s ease, background-color 1s ease;
+        }
+        .recharge-station.recharged .battery-level {
+            height: 90%;
+            background-color: var(--brand-green);
+        }
+        .recharge-button {
+            padding: 12px 25px;
+            background-color: var(--brand-secondary-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* --- Other Components --- */
+        .immune-box {
+            background-color: #f0f7ff;
+            border-left: 5px solid var(--brand-secondary-blue);
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .autumns-note {
+            background-color: #e8f5e9;
+            border-left: 5px solid var(--brand-green);
+            padding: 20px;
+            font-style: italic;
+            border-radius: 4px;
+        }
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            background-color: var(--brand-light-grey);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .checklist-item.checked {
+            background-color: #e8f5e9;
+            text-decoration: line-through;
+            color: var(--brand-text-light);
+        }
+        .checklist-item input[type="checkbox"] {
+            -webkit-appearance: none; appearance: none;
+            flex-shrink: 0; margin-right: 15px; margin-top: 4px;
+            width: 22px; height: 22px; border: 2px solid var(--brand-secondary-blue);
+            border-radius: 4px; cursor: pointer; position: relative;
+        }
+        .checklist-item input[type="checkbox"]:checked {
+            background-color: var(--brand-green); border-color: var(--brand-green);
+        }
+        .checklist-item input[type="checkbox"]:checked::after {
+            content: '✔'; position: absolute; color: var(--brand-white); font-size: 16px;
+            font-weight: bold; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        
+        /* --- Crisis Resources --- */
+        .crisis-footer {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+        
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            .nervous-system-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Lesson 2.3: Sleep for Physical Resilience</h1>
+            <p class="lesson-subtitle">Boosting Your Energy, Stress Response, and Immune Health</p>
+        </header>
+
+        <section class="section">
+            <h2>Your Body's Foundation for Wellness</h2>
+            <p>Welcome. We've explored how sleep cleanses the brain and stabilizes our mood. Now, let's turn our gentle curiosity to the physical body. It's easy to think of sleep as just a mental reset, but it is deeply and fundamentally physical.</p>
+            <p>Today, we'll uncover how restorative sleep is the foundation for your physical energy, your ability to handle stress, and your power to fight off illness. Your body has an incredible, innate wisdom to heal and rebalance itself. Sleep is the primary way we honor and activate that wisdom.</p>
+        </section>
+
+        <section class="section">
+            <h2>Turning Down the Body's Stress Dial</h2>
+            <p>Your body has two main operating systems: "fight or flight" and "rest and digest."</p>
+            <div class="nervous-system-container">
+                <div class="ns-state" id="sympathetic-state">
+                    <div class="icon">🏃‍♀️💨</div>
+                    <h3>Sympathetic: "Fight or Flight"</h3>
+                    <p>This is your gas pedal. It releases stress hormones like cortisol and adrenaline to help you handle threats. It's essential for survival, but chronic sleep deprivation can leave it stuck in the "on" position.</p>
+                </div>
+                <div class="ns-state" id="parasympathetic-state">
+                     <div class="icon">🧘‍♀️🍃</div>
+                    <h3>Parasympathetic: "Rest and Digest"</h3>
+                    <p>This is your brake pedal. It promotes calm, digestion, and repair. Deep sleep is one of the most powerful ways to activate this system, allowing your body to recover from daily stress.</p>
+                </div>
+            </div>
+             <p style="margin-top: 20px;">When you get consistent, quality sleep, you are actively helping your body shift out of a chronic stress state and into a state of healing and repair. You are turning down the stress dial.</p>
+        </section>
+
+        <section class="section">
+            <h2>Recharging Your Cellular Batteries</h2>
+            <p>Do you ever feel a deep, physical exhaustion that coffee can't touch? That's because energy isn't just mental—it's cellular. Your cells are powered by tiny engines called mitochondria, which produce an energy molecule called ATP.</p>
+            <p>During the day, these cellular batteries get drained. Sleep is when your body does the essential work of repairing mitochondria and replenishing ATP stores. It is literally a nightly recharge for every cell in your body.</p>
+
+            <div class="recharge-station" id="rechargeStation">
+                <h3>Cellular Recharge Station</h3>
+                <div class="battery-grid">
+                    <div class="battery"><div class="battery-level"></div></div>
+                    <div class="battery"><div class="battery-level"></div></div>
+                    <div class="battery"><div class="battery-level"></div></div>
+                </div>
+                <p id="recharge-text">Your cells after a busy, stressful day.</p>
+                <button class="recharge-button" onclick="rechargeBatteries()" role="button">Simulate a Night of Restorative Sleep</button>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Your Immune System's Night Shift</h2>
+            <p>Have you ever noticed you're more likely to catch a cold when you're run down? That's your immune system showing the strain of poor sleep.</p>
+            <div class="immune-box">
+                <h3>Sleep is Your Immune System's Training Ground</h3>
+                <p>During deep sleep, your body ramps up the production of crucial immune cells, like T-cells, which are essential for fighting off viruses. It also produces proteins called cytokines, some of which help promote sleep and others which are needed to fight infection and inflammation.</p>
+                <p><strong>In simple terms:</strong> A full night of sleep is like sending your immune army to bootcamp. They come out stronger, smarter, and better prepared to protect you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="autumns-note">
+                <p>"As you can see, sleep isn't a passive state of just 'turning off.' It is an active, dynamic, and essential process of physical repair and rebalancing. From your nervous system to your individual cells to your immune army, your entire body is working to heal you. The habits you are building are a profound act of self-care for your physical health."</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>An Invitation to Notice: Physical Well-being</h2>
+            <p>This week, I invite you to continue your practice of gentle observation, this time with a focus on your physical body. Click to commit to this practice of noticing.</p>
+            <ul class="checklist">
+                <li class="checklist-item" onclick="toggleCheck(this)">
+                    <input type="checkbox" aria-label="Commit to noticing my physical energy levels.">
+                    <span>This week, I will notice moments of physical energy or fatigue without judgment.</span>
+                </li>
+                <li class="checklist-item" onclick="toggleCheck(this)">
+                    <input type="checkbox" aria-label="Commit to noticing how my body handles stress.">
+                    <span>This week, I will notice how my body feels during a stressful moment (e.g., tense, jittery, calm).</span>
+                </li>
+                 <li class="checklist-item" onclick="toggleCheck(this)">
+                    <input type="checkbox" aria-label="Commit to noticing early signs of illness or health.">
+                    <span>This week, I will notice my general sense of physical wellness and resilience.</span>
+                </li>
+            </ul>
+        </section>
+        
+        <footer>
+            <div class="crisis-footer">
+                <h3>Crisis Resources & Immediate Support</h3>
+                <p>This course is educational. If you're in immediate danger, please use the resources below.</p>
+                <ul><li><strong>Emergency Services:</strong> 911</li><li><strong>National Suicide Prevention Lifeline:</strong> 988</li><li><strong>Crisis Text Line:</strong> Text HOME to 741741</li></ul>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        function rechargeBatteries() {
+            const station = document.getElementById('rechargeStation');
+            const text = document.getElementById('recharge-text');
+            station.classList.add('recharged');
+            text.textContent = 'Your cells after a night of deep, restorative sleep!';
+        }
+
+        function toggleCheck(element) {
+            const checkbox = element.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+            element.classList.toggle('checked', checkbox.checked);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+{
+    "lessonId": "3",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "The AIDA Framework Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does AIDA stand for in marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Audience, Influence, Decision, Agreement"
+                },
+                {
+                    "id": "b",
+                    "text": "Attention, Interest, Desire, Action"
+                },
+                {
+                    "id": "c",
+                    "text": "Authenticate, Identify, Deliver, Analyze"
+                },
+                {
+                    "id": "d",
+                    "text": "Automate, Integrate, Drive, Accelerate"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AIDA (Attention, Interest, Desire, Action) is a linear model that describes the stages a prospect goes through before taking an action."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When is it better to use the AIDA framework instead of PAS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When the prospect is already complaining about a specific problem"
+                },
+                {
+                    "id": "b",
+                    "text": "When you are educating the prospect on a new category or strategic opportunity"
+                },
+                {
+                    "id": "c",
+                    "text": "When the email needs to be under 20 words"
+                },
+                {
+                    "id": "d",
+                    "text": "When you don't know the prospect's name"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "PAS is great for known pain. AIDA is better for 'Educational' or 'Strategic' outreach where you need to build interest and desire for a solution they might not have been looking for."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Attention' phase, what is a 'Pattern Interrupt'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using all caps in the subject line"
+                },
+                {
+                    "id": "b",
+                    "text": "Calling the prospect on their personal cell phone"
+                },
+                {
+                    "id": "c",
+                    "text": "Starting with something unexpected (like a specific observation) that proves you aren't a generic bot"
+                },
+                {
+                    "id": "d",
+                    "text": "Misspelling their name to get their attention"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A pattern interrupt breaks the cycle of generic outreach. By showing specific research in the first line, you earn the right to the prospect's attention."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Action' phase in a cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To close the sale immediately"
+                },
+                {
+                    "id": "b",
+                    "text": "To get them to sign a contract"
+                },
+                {
+                    "id": "c",
+                    "text": "To start a conversation with a low-friction, binary question"
+                },
+                {
+                    "id": "d",
+                    "text": "To get them to follow you on social media"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Cold emails are the start of a relationship. Your 'Action' should be as easy to say 'Yes' to as possible, such as 'Worth a quick chat?'"
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How should 'Social Proof' be used in the 'Desire' phase?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Listing every customer you've ever had"
+                },
+                {
+                    "id": "b",
+                    "text": "Briefly mentioning a similar company you helped achieve a specific result"
+                },
+                {
+                    "id": "c",
+                    "text": "Claiming you are the 'Industry Leader'"
+                },
+                {
+                    "id": "d",
+                    "text": "Including several award logos in the email body"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Social proof is most effective when it is specific and relevant to the prospect's situation. 'I helped [Similar Company] acheive [X Result]' is much more powerful than a generic claim."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think of a 'Logical Progression' for your product. What is the one specific 'Attention' hook you could use today for an ICP you follow on LinkedIn? How does that lead naturally into 'Interest' for your product?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the Attention hook is genuine research or fake personalization. The Interest section should connect the hook to a business value proposition."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

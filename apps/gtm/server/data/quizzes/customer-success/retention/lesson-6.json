@@ -1,0 +1,75 @@
+{
+  "lessonId": "6",
+  "courseId": "retention",
+  "sectionId": "customer-success",
+  "title": "Feature Adoption Nudges",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much less do customers using 3+ features churn compared to single-feature users?",
+      "options": [
+        { "id": "a", "text": "10-20% less" },
+        { "id": "b", "text": "30-40% less" },
+        { "id": "c", "text": "50-70% less" },
+        { "id": "d", "text": "They churn at the same rate" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Customers using 3+ features churn 50-70% less than single-feature users. Multi-feature users have workflows, data, and habits locked into your product, creating switching costs that make it much harder to leave."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What percentage of SaaS features typically go completely unused by the average customer?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "40%" },
+        { "id": "c", "text": "60%" },
+        { "id": "d", "text": "80%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "60% of SaaS features go completely unused by the average customer. Not because the features are bad, but because customers don't know they exist, don't understand the value, or never hit the moment where they'd naturally discover them."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "At which stage of the feature adoption funnel do most features fail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Awareness — customers don't know the feature exists"
+        },
+        { "id": "b", "text": "Trial — customers try it but find it confusing" },
+        {
+          "id": "c",
+          "text": "Adoption — customers use it once but don't build a habit"
+        },
+        {
+          "id": "d",
+          "text": "Retention — customers stop using it after initial adoption"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Most features die at Awareness — customers simply don't know they exist. Features get buried in settings, launched with a single email that 40% never opened, or lack any in-app discovery mechanism."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Your job as a founder is primarily to build more features rather than to get customers using the features that already create stickiness.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Your job isn't to build more features — it's to get customers using the features that already create stickiness. Sarah's Client Portal had zero churn among users, but only 3 of 200 customers had discovered it. The feature existed; adoption was the problem."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Identify your product's 'sticky feature' — the one that, when adopted, correlates most strongly with retention. Describe what percentage of customers currently use it and design a 3-step nudge campaign to increase adoption.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies a specific feature with a concrete retention correlation (not a guess), provides a realistic current adoption percentage, and designs a multi-step nudge campaign that addresses the awareness-trial-adoption funnel with specific channels and timing."
+    }
+  ]
+}

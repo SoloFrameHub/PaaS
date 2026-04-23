@@ -1,0 +1,79 @@
+{
+  "lessonId": "5",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Embudos de Instagram y Formato Corto",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En el flujo de trabajo Reels-a-DM, ¿cuál es la tasa de opt-in de comentario a DM esperada cuando se usa la automatización adecuada?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "15-25%" },
+        { "id": "c", "text": "40-60%" },
+        { "id": "d", "text": "80-90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Con la automatización de DM adecuada (usando herramientas como ManyChat), la tasa de opt-in de comentario a DM es del 40-60%. Esto se debe a que la persona ya ha mostrado intención al comentar una palabra clave, y el DM automatizado entrega el recurso prometido de inmediato."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Por qué las Instagram Stories son mejores para las ventas que los Reels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Las Stories tienen mayor calidad de video y capacidades de edición"
+        },
+        {
+          "id": "b",
+          "text": "Las Stories solo las ven los seguidores existentes (tu audiencia cálida), mientras que los Reels se muestran a desconocidos"
+        },
+        {
+          "id": "c",
+          "text": "Las Stories permiten colocaciones ilimitadas de links mientras que los Reels no"
+        },
+        {
+          "id": "d",
+          "text": "Las Stories aparecen más alto en el algoritmo del feed de Instagram"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las Stories se muestran principalmente a personas que ya te siguen — tu audiencia cálida. Esto las hace ideales para las ventas porque estas personas ya tienen contexto sobre quién eres y lo que haces. Los Reels se muestran a desconocidos, lo que los hace mejores para el descubrimiento pero no para la conversión."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el número máximo de links recomendado para tu página de link en bio de Instagram, y qué link debería aparecer siempre primero?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5-7 links, con tu publicación más reciente primero"
+        },
+        {
+          "id": "b",
+          "text": "3-4 links, con tu imán de prospectos (recurso gratuito) primero"
+        },
+        {
+          "id": "c",
+          "text": "1-2 links, con tu página de ventas del producto primero"
+        },
+        {
+          "id": "d",
+          "text": "Links ilimitados organizados por categoría, con tus perfiles sociales primero"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Tu página de link en bio debe tener un máximo de 3-4 links, con tu imán de prospectos siempre apareciendo primero. El link del imán de prospectos genera el mayor tráfico porque es gratuito y captura direcciones de correo. Demasiados links crean parálisis de decisión y reducen las conversiones."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Diseña un flujo de trabajo completo Reels-a-DM para tu negocio. Incluye: el tema y gancho del Reel, la palabra clave que deben comentar los espectadores, lo que diría el DM automatizado y qué imán de prospectos entregaría. Explica cómo esto conecta con tu oferta de pago.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student creates a specific, implementable workflow with all four components (Reel topic/hook, keyword, DM copy, lead magnet). The workflow should feel natural and value-driven, not spammy. Check that there is a logical connection between the Reel topic, the lead magnet, and their paid offer."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the JD-R model, what are the two distinct pathways that predict workplace outcomes?",
+            "options": [
+                {"id": "opt1", "text": "Work stress and home stress pathways"},
+                {"id": "opt2", "text": "Energy depletion (high demands → burnout) and motivational (low resources → disengagement)"},
+                {"id": "opt3", "text": "Physical health and mental health pathways"},
+                {"id": "opt4", "text": "Individual coping and organizational support pathways"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The JD-R model identifies two distinct pathways: the energy depletion pathway (high demands lead to exhaustion and burnout) and the motivational pathway (inadequate resources lead to disengagement and low engagement). These operate independently or together to predict employee outcomes."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following is a job DEMAND (energy-depleting factor), not a job RESOURCE?",
+            "options": [
+                {"id": "opt1", "text": "Autonomy and job control"},
+                {"id": "opt2", "text": "Supervisor support"},
+                {"id": "opt3", "text": "Emotional labor (managing emotions that don't match how you feel)"},
+                {"id": "opt4", "text": "Peer support and team cohesion"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Emotional labor is a job demand — it requires sustained effort to manage, suppress, or display emotions that don't match your actual feelings, which is common in customer service, healthcare, and teaching roles. The other options are all job resources that help you cope and grow."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the highest-risk job profile for burnout in the JD-R model?",
+            "options": [
+                {"id": "opt1", "text": "High demands + high resources (you're stretched but supported)"},
+                {"id": "opt2", "text": "Low demands + high resources (you're supported but under-challenged)"},
+                {"id": "opt3", "text": "High demands + low resources (you're stretched without support)"},
+                {"id": "opt4", "text": "Low demands + low resources (you're bored and disconnected)"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "High demands combined with low resources creates the highest-risk profile for burnout. You're stretched by excessive workload or pressure, but you lack the autonomy, support, feedback, or other resources needed to cope effectively. This combination predicts exhaustion and disengagement."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does correctly attributing workplace stress to structural causes (rather than personal failure) protect mental health?",
+            "options": [
+                {"id": "opt1", "text": "It allows you to blame others and avoid responsibility"},
+                {"id": "opt2", "text": "It helps you recognize organizational problems, seek appropriate support, advocate for change, and make informed career decisions without self-blame"},
+                {"id": "opt3", "text": "It means you don't need to develop any coping skills"},
+                {"id": "opt4", "text": "It guarantees your organization will change"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that correctly attributing stress to structural causes (workload, lack of resources, poor management) rather than personal inadequacy is itself protective. It helps you seek appropriate support, advocate for organizational change, set boundaries, and make informed career decisions — without internalizing shame or trying to solve structural problems through individual coping alone."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about your current or most recent job. Using the JD-R framework, identify one major job demand you experience and one job resource that helps you cope. Do your demands outweigh your resources, or vice versa? What does this tell you about your burnout risk?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "1",
+    "title": "Understanding Occupational Stress — The JD-R Model - Quiz"
+}

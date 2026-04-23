@@ -1,0 +1,151 @@
+{
+    "lessonId": "8",
+    "courseId": "custom-ai-agents",
+    "sectionId": "ai-acquisition",
+    "title": "Architecture Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "cost-comparison",
+            "type": "multiple-choice",
+            "question": "You're processing 250 prospects/month with 5 active agents. What's the approximate monthly cost difference between SaaS (Zapier Pro) and self-hosted (n8n on Railway)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "SaaS is $50-75/mo cheaper"
+                },
+                {
+                    "id": "b",
+                    "text": "Self-hosted is $50-75/mo cheaper"
+                },
+                {
+                    "id": "c",
+                    "text": "Self-hosted is $150-200/mo cheaper"
+                },
+                {
+                    "id": "d",
+                    "text": "They cost about the same"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "SaaS (Zapier Pro + APIs) runs ~$200-250/mo. Self-hosted (Railway + APIs) runs ~$50-60/mo. Savings: $150-190/mo."
+        },
+        {
+            "id": "technical-threshold",
+            "type": "multiple-choice",
+            "question": "What's the minimum technical comfort level (1-10) where self-hosted becomes viable?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2 (anyone can do it)"
+                },
+                {
+                    "id": "b",
+                    "text": "3-4 (basic computer skills)"
+                },
+                {
+                    "id": "c",
+                    "text": "5-6 (comfortable with guides and troubleshooting)"
+                },
+                {
+                    "id": "d",
+                    "text": "8-10 (only experienced developers)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "With good guides (Railway 1-click deploy), comfort level 5-6 is sufficient. You need to follow instructions, paste environment variables, and debug basic errors."
+        },
+        {
+            "id": "migration-time",
+            "type": "multiple-choice",
+            "question": "How long does a typical SaaS → self-hosted migration take for 3-5 agents?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2-4 hours (one session)"
+                },
+                {
+                    "id": "b",
+                    "text": "10-15 hours (over 2-4 weeks)"
+                },
+                {
+                    "id": "c",
+                    "text": "40+ hours (full-time for a week)"
+                },
+                {
+                    "id": "d",
+                    "text": "It's not possible to migrate"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Rebuilding 3-5 workflows in n8n takes 10-15 hours spread over 2-4 weeks (prep, rebuild, test, cutover). Payback in 1-2 months of savings."
+        },
+        {
+            "id": "hybrid-use-case",
+            "type": "multiple-choice",
+            "question": "When does a hybrid architecture (SaaS + self-hosted) make the most sense?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never — pick one and stick with it"
+                },
+                {
+                    "id": "b",
+                    "text": "When you want to prototype fast in SaaS, then migrate stable agents to self-hosted"
+                },
+                {
+                    "id": "c",
+                    "text": "When you're non-technical and need a backup"
+                },
+                {
+                    "id": "d",
+                    "text": "When you have unlimited budget"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Hybrid works well for iterative founders: build and test in SaaS (fast), migrate to self-hosted once stable (cheap). Combines speed and savings."
+        },
+        {
+            "id": "data-control",
+            "type": "true-false",
+            "question": "True or False: With self-hosted n8n, your prospect data never leaves your infrastructure (except when calling LLM APIs).",
+            "correctAnswer": "a",
+            "explanation": "True. Self-hosted n8n runs on your VPS. Data only leaves when you call external APIs (LLMs, enrichment). SaaS passes data through vendor servers.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "maintenance-reality",
+            "type": "multiple-choice",
+            "question": "What's the realistic monthly maintenance time for self-hosted n8n?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "0 minutes (set and forget)"
+                },
+                {
+                    "id": "b",
+                    "text": "5-10 minutes (quick log checks)"
+                },
+                {
+                    "id": "c",
+                    "text": "15-30 minutes (updates + monitoring)"
+                },
+                {
+                    "id": "d",
+                    "text": "2+ hours (constant troubleshooting)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Realistic: 15-30 min/month. n8n updates take 10-15 min. Log checks and monitoring add 5-10 min. Troubleshooting is rare if workflows are stable."
+        }
+    ]
+}

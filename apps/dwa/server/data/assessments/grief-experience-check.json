@@ -1,0 +1,92 @@
+{
+  "id": "grief-experience-check",
+  "title": "Grief Experience Reflection",
+  "description": "This gentle reflection invites you to notice how grief is showing up in your life — physically, emotionally, cognitively, and behaviorally. It is not a diagnostic tool or a score to compare against. Its purpose is self-awareness and self-compassion.",
+  "instructions": "For each statement below, choose the response that best describes your experience since your loss. There are no right or wrong answers. This is simply a way to notice and name what you're going through.",
+  "timeframe": "Since your loss",
+  "questions": [
+    {
+      "id": "fatigue",
+      "text": "I have felt physically exhausted or drained, even after rest"
+    },
+    {
+      "id": "sleep",
+      "text": "My sleep has been disrupted (trouble falling asleep, waking at night, or sleeping too much)"
+    },
+    {
+      "id": "waves",
+      "text": "Grief comes in waves — sometimes intense, sometimes quieter"
+    },
+    {
+      "id": "yearning",
+      "text": "I experience strong yearning or longing for who or what I've lost"
+    },
+    {
+      "id": "concentration",
+      "text": "I have difficulty concentrating, making decisions, or thinking clearly"
+    },
+    {
+      "id": "guilt",
+      "text": "I feel guilt or regret about things I did or didn't do"
+    },
+    {
+      "id": "withdrawal",
+      "text": "I have withdrawn from people or activities I used to enjoy"
+    },
+    {
+      "id": "functioning",
+      "text": "Daily tasks and routines feel much harder than before"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "A little",
+      "2": "Moderately",
+      "3": "Quite a bit",
+      "4": "Very much"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 8,
+        "label": "Lighter grief presence",
+        "description": "Grief may be present in quieter ways right now. This is a valid place to be — grief doesn't always look intense. The tools in this course can support you wherever you are."
+      },
+      {
+        "min": 9,
+        "max": 16,
+        "label": "Moderate grief presence",
+        "description": "Grief is affecting several areas of your life. This is a very common experience. The self-care, coping, and support strategies in this course are designed for exactly this. Be gentle with yourself."
+      },
+      {
+        "min": 17,
+        "max": 24,
+        "label": "Significant grief presence",
+        "description": "Grief is weighing heavily on you right now. This level of impact is understandable, especially with significant loss. Please consider reaching out to a supportive person or professional alongside this course — you don't have to carry this alone."
+      },
+      {
+        "min": 25,
+        "max": 32,
+        "label": "Intense grief presence",
+        "description": "You're carrying a very heavy load right now. Your pain is real and valid. We strongly encourage you to connect with a grief-informed therapist or counselor who can provide personalized support. If you're having thoughts of self-harm, please contact the 988 Suicide & Crisis Lifeline (call or text 988) immediately."
+      }
+    ],
+    "functionalImpairmentQuestion": {
+      "text": "Overall, how much has your grief interfered with your ability to manage daily life?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "A little" },
+        { "value": 2, "label": "Moderately" },
+        { "value": 3, "label": "A lot" },
+        { "value": 4, "label": "Severely" }
+      ]
+    }
+  },
+  "disclaimer": "This reflection is for self-awareness only. It is not a clinical diagnostic tool and does not assess for Prolonged Grief Disorder or any other condition. Only a trained clinician can make such assessments. If you are having thoughts of ending your life, call or text 988 (Suicide & Crisis Lifeline) immediately."
+}

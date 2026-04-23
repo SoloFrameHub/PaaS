@@ -1,0 +1,209 @@
+{
+    "lessonId": "7",
+    "courseId": "linkedin-ai",
+    "sectionId": "ai-acquisition",
+    "title": "Prospect Brief Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "What is the primary time-saving benefit of AI-generated prospect briefs?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They eliminate the need for personalization"
+                },
+                {
+                    "id": "b",
+                    "text": "They reduce research time from 25 minutes to 3 minutes per prospect"
+                },
+                {
+                    "id": "c",
+                    "text": "They automate the entire outreach process"
+                },
+                {
+                    "id": "d",
+                    "text": "They guarantee higher response rates"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI briefs reduce research time by 70-80%, from 25-30 minutes of manual research to 3-5 minutes of AI-assisted research and review.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "What does the 'F' in the FRESH framework stand for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "First-time buyer"
+                },
+                {
+                    "id": "b",
+                    "text": "Funding or financial events"
+                },
+                {
+                    "id": "c",
+                    "text": "Frequent poster"
+                },
+                {
+                    "id": "d",
+                    "text": "Formal introduction"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "FRESH = Funding, Recent role change, Engagement, Shared connections, Hiring. These are timing signals that make outreach more relevant.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "According to the 20-50-30 rule, what percentage of prospects should get a full AI brief with manual review?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "100% (all prospects)"
+                },
+                {
+                    "id": "b",
+                    "text": "50% (medium FRESH score)"
+                },
+                {
+                    "id": "c",
+                    "text": "20% (highest FRESH score)"
+                },
+                {
+                    "id": "d",
+                    "text": "30% (lowest FRESH score)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Top 20% with highest FRESH scores get full briefs (10-15 min), middle 50% get AI-only briefs (3-5 min), bottom 30% get template personalization (1-2 min).",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "What is the recommended batch size for weekly brief generation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "5 briefs per week"
+                },
+                {
+                    "id": "b",
+                    "text": "10-25 briefs per week"
+                },
+                {
+                    "id": "c",
+                    "text": "50+ briefs per week"
+                },
+                {
+                    "id": "d",
+                    "text": "100 briefs per week"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "10-25 briefs per week in a single 60-90 minute batch session is the sweet spot for solo founders with 5-7 hours/week on acquisition.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "When should you regenerate a prospect brief?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Every week regardless of age"
+                },
+                {
+                    "id": "b",
+                    "text": "Never — briefs are permanent"
+                },
+                {
+                    "id": "c",
+                    "text": "After 60+ days if you haven't reached out yet"
+                },
+                {
+                    "id": "d",
+                    "text": "Only if the prospect changes companies"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Briefs go stale after 60+ days. Recent posts, company news, and timing signals change, so regenerate before reaching out to old prospects.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "Which of these is a HIGH FRESH score signal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Prospect has 10+ years of experience"
+                },
+                {
+                    "id": "b",
+                    "text": "Prospect posted yesterday about a relevant pain point"
+                },
+                {
+                    "id": "c",
+                    "text": "Prospect works at a large company"
+                },
+                {
+                    "id": "d",
+                    "text": "Prospect has a complete LinkedIn profile"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Recent content engagement is a FRESH signal (the 'E' in FRESH). Experience level and company size are background context, not timing signals.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q7",
+            "question": "What is the main purpose of the 'Outreach Angle' section in a prospect brief?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To list all possible connection points"
+                },
+                {
+                    "id": "b",
+                    "text": "To provide a recommended approach for first contact"
+                },
+                {
+                    "id": "c",
+                    "text": "To summarize the prospect's career history"
+                },
+                {
+                    "id": "d",
+                    "text": "To calculate the prospect's budget"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Outreach Angle section recommends a specific approach based on FRESH signals and connection points — it's the actionable conclusion of the brief.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q8",
+            "question": "How many connection points should a quality brief include?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 connection point is enough"
+                },
+                {
+                    "id": "b",
+                    "text": "2-3 connection points minimum"
+                },
+                {
+                    "id": "c",
+                    "text": "3-5 connection points for multi-touch sequences"
+                },
+                {
+                    "id": "d",
+                    "text": "10+ connection points for thoroughness"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "3-5 connection points support multi-touch sequences (each touch uses a different point). More than 5 is overkill; fewer than 3 limits your options.",
+            "type": "multiple-choice"
+        }
+    ]
+}

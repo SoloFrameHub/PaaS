@@ -1,0 +1,33 @@
+/**
+ * Genkit AI Configuration
+ * Initializes Genkit with Google AI plugin for Gemini models
+ */
+
+import { genkit } from 'genkit';
+import { googleAI } from '@genkit-ai/googleai';
+import { enableGoogleCloudTelemetry } from '@genkit-ai/google-cloud';
+
+// Initialize Google Cloud Observability
+enableGoogleCloudTelemetry();
+
+// Do not throw at import time when key is missing: allows Next.js build (e.g. Coolify) to succeed
+// without GOOGLE_GENAI_API_KEY. Runtime flows will fail with a clear error if the key is missing.
+const googleApiKey = process.env.GOOGLE_GENAI_API_KEY ?? '';
+
+// Initialize Genkit with Google AI
+export const ai = genkit({
+    plugins: [
+        googleAI({
+            apiKey: googleApiKey,
+        }),
+    ],
+    // Tracing is handled globally by enableGoogleCloudTelemetry
+});
+
+// Model references
+export const gemini20Flash = 'googleai/gemini-2.0-flash';
+export const gemini15Flash = 'googleai/gemini-1.5-flash';
+export const gemini15Pro = 'googleai/gemini-1.5-pro';
+
+// Default model for most flows
+export const defaultModel = gemini20Flash;

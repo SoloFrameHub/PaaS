@@ -1,0 +1,82 @@
+{
+  "lessonId": "1",
+  "courseId": "advocacy",
+  "sectionId": "customer-success",
+  "title": "Why Advocacy Beats Advertising",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to research, what percentage of satisfied customers are willing to refer — but only 29% actually do?",
+      "options": [
+        { "id": "a", "text": "50%" },
+        { "id": "b", "text": "67%" },
+        { "id": "c", "text": "83%" },
+        { "id": "d", "text": "92%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "83% of satisfied customers are willing to refer, but only 29% actually do. The 54-point gap — the 'ask gap' — exists because most founders never ask."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "When is the optimal time to ask a customer for a testimonial?",
+      "options": [
+        { "id": "a", "text": "Immediately after they sign up" },
+        { "id": "b", "text": "Within 48 hours of a success milestone" },
+        { "id": "c", "text": "After 6 months of steady usage" },
+        { "id": "d", "text": "When you need marketing content" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Ask within 48-72 hours of a measurable success milestone, when the customer's emotional high and memory of results are both fresh. Waiting too long drops response rates by 50%."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the solo founder's biggest advocacy advantage over large companies?",
+      "options": [
+        { "id": "a", "text": "Bigger marketing budget" },
+        { "id": "b", "text": "More customers to ask" },
+        { "id": "c", "text": "Personal relationship with every customer" },
+        { "id": "d", "text": "Better automation tools" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Solo founders have a personal relationship with every customer. When the founder asks for help, it feels authentic and personal, generating 6x higher response rates compared to corporate outreach."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Referred customers have 16% higher lifetime value and 37% higher retention rates than customers acquired through paid advertising.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Research from Wharton and Deloitte confirms that referred customers have 16% higher LTV and 37% higher retention. They are better-fit customers because they come pre-qualified by someone who knows both them and your product."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT one of the four deadly advocacy mistakes most founders make?",
+      "options": [
+        { "id": "a", "text": "Not asking for advocacy at all" },
+        { "id": "b", "text": "Asking too late after a success milestone" },
+        { "id": "c", "text": "Offering too large a referral incentive" },
+        {
+          "id": "d",
+          "text": "Collecting testimonials but never deploying them"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The four deadly mistakes are: not asking at all (71% of founders), asking too late, making it too hard (complex surveys), and not deploying collected proof. Offering too large an incentive is not listed as a common failure mode."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Identify your 3 happiest customers and describe one specific success milestone each has achieved. How would you approach each of them for advocacy, and what type of ask (testimonial, case study, referral) would be most appropriate for each?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific customers with concrete success milestones (not vague descriptions). Look for an understanding of the advocacy progression (testimonial first, then case study, then referral) and timing tied to customer milestones."
+    }
+  ]
+}

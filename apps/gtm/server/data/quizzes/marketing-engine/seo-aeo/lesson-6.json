@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "6",
+    "lessonTitle": "Optimizing for AI Overviews",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason Google triggers an AI Overview (AIO) for a search query?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To increase the number of ads shown to the user."
+                },
+                {
+                    "id": "b",
+                    "text": "To provide a direct, summarized answer that improves the user experience by saving them clicks."
+                },
+                {
+                    "id": "c",
+                    "text": "To hide competition from smaller websites."
+                },
+                {
+                    "id": "d",
+                    "text": "Because the website owner paid for a 'Featured Answer' spot."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AIO is designed to satisfy the user's intent immediately. By summarizing information from across the web, Google saves the user from having to click into multiple links to find an answer.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these content structures is most likely to be featured in an AI Overview comparison query?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A 2,000-word narrative essay."
+                },
+                {
+                    "id": "b",
+                    "text": "A 3-column table comparing features, price, and ICP fit."
+                },
+                {
+                    "id": "c",
+                    "text": "A series of high-resolution images."
+                },
+                {
+                    "id": "d",
+                    "text": "A video with no captions."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI models 'love' tables because they represent structured knowledge. Providing a direct comparison in a table makes it incredibly easy for the model to pluck your data and feature it as the definitive answer.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Proprietary Data' your strongest defense against AI summarization?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "AI models are banned from reading proprietary data."
+                },
+                {
+                    "id": "b",
+                    "text": "Proprietary data is too complex for AI to understand."
+                },
+                {
+                    "id": "c",
+                    "text": "AI models cannot 'hallucinate' fresh, original research, so they must cite the original source to provide accurate specific data."
+                },
+                {
+                    "id": "d",
+                    "text": "Proprietary data is always written in a code that only humans can read."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "AI models can summarize 'common knowledge' without citations. However, if you possess unique data (like a survey or internal benchmarks), the AI must attribute that information to you to remain factually correct.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does coining a unique term, like 'The Trust Pincer Strategy', help your AEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It helps you own that specific entity in the AI's Knowledge Graph, making you the definitive source for that methodology."
+                },
+                {
+                    "id": "b",
+                    "text": "It confuses competitors so they can't copy your work."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes your website load 10% faster."
+                },
+                {
+                    "id": "d",
+                    "text": "Google automatically gives you #1 ranking for any word you invent."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "When you give your unique process a name, you create a new entity. As that term gains traction, AI models associate it exclusively with you, building your long-term authority and 'Share of Model.'",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should follow an H2 header structured as a question (AIO Bait)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A link to a YouTube video."
+                },
+                {
+                    "id": "b",
+                    "text": "A 50-word direct, snippet-ready answer paragraph."
+                },
+                {
+                    "id": "c",
+                    "text": "A high-resolution image with a catchy title."
+                },
+                {
+                    "id": "d",
+                    "text": "A request for the user to book a call immediately."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The '1-2 punch' of a Question Header followed by an immediate Direct Answer is the primary trigger for winning an AI Overview snippet. It provides the machine with the exact answer it's looking for in one place.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think of one 'Secret' or 'Niche Truth' from your specific area of expertise—something true in your industry that is rarely talked about or correctly documented online. How could you turn this into a 'Proprietary Data' post (e.g., 'I audited 100 cases and found X...') that an AI would be forced to cite?",
+            "promptHints": [
+                "Focus on 'Uncommon Knowledge'.",
+                "Consider data points you see every day that aren't public.",
+                "Think about a common myth you can debunk with specific results."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "8-10 minutes",
+        "prerequisiteQuizzes": [
+            "5"
+        ],
+        "unlocks": [
+            "7"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Optimizing for AI Overviews - Quiz"
+}

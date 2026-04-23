@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.2: The 24-Hour Sleep System</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --warning-text-heading: #E65100;
+            --warning-text-body: #666;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; margin-bottom: 20px; }
+        h3 { font-size: 20px; color: var(--brand-secondary-blue); margin-top: 25px; }
+        p { margin-bottom: 15px; }
+        strong { color: var(--brand-primary-blue); }
+
+        /* --- Caffeine Calculator --- */
+        .calculator-tool {
+            background-color: #f0f7ff;
+            border: 1px solid var(--brand-secondary-blue);
+            border-radius: 8px;
+            padding: 25px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .input-group label {
+            font-weight: 600;
+        }
+        .input-group input[type="time"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .calc-button {
+            padding: 12px 25px;
+            background-color: var(--brand-secondary-blue);
+            color: white; border: none; border-radius: 5px; cursor: pointer;
+        }
+        #caffeine-result {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            background-color: var(--warning-bg);
+            color: var(--warning-text-heading);
+            display: none;
+        }
+
+        /* --- Movement Sorter --- */
+        .movement-sorter {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .drop-zone {
+            padding: 15px;
+            background-color: var(--brand-light-grey);
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            min-height: 150px;
+        }
+        .drop-zone h3 { margin-top: 0; }
+        .activity-item {
+            padding: 10px;
+            background-color: var(--brand-white);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            cursor: grab;
+        }
+        
+        /* --- Tiered Options (Good, Better, Best) --- */
+        .tiered-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .option-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .option-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: var(--brand-secondary-blue);
+        }
+        .option-card h3.best { color: var(--brand-green); }
+        .option-card h3.good { color: var(--brand-primary-blue); }
+
+        /* --- Other Components --- */
+        .final-cta {
+            background-color: #e8f5e9;
+            border-left: 5px solid var(--brand-green);
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        /* --- Crisis Resources --- */
+        .crisis-footer {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 24px; } h2 { font-size: 20px; }
+            .movement-sorter, .input-group { grid-template-columns: 1fr; flex-direction: column; align-items: stretch; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Lesson 3.2: The 24-Hour Sleep System</h1>
+            <p class="lesson-subtitle">Using Daytime Habits to Fuel Nighttime Rest</p>
+        </header>
+
+        <section class="section">
+            <h2>Building a System That Works All Day</h2>
+            <p>Welcome back. In our last lesson, we designed the blueprint for your sustainable evening ritual. That ritual is the final, critical step you take each night. But great sleep isn't just about what you do in the hour before bed. It's the result of a 24-hour system working quietly in the background.</p>
+            <p>In my clinical experience, the most resilient systems are the ones that are supported from all angles. Today, we'll explore three powerful levers you can pull during the day to make your nights easier: **Light, Movement, and Caffeine.** Think of these as daytime settings in your personal operating system for wellness.</p>
+        </section>
+
+        <section class="section">
+            <h2>Lever 1: Light as Your Master Switch</h2>
+            <p>The single most powerful signal for setting your body's 24-hour clock (your circadian rhythm) is light. Specifically, getting bright light exposure soon after waking up acts as the master "ON" switch for your day. It tells your brain to suppress melatonin and start the countdown to when it will be released again at night.</p>
+            <p>You don't need to be perfect. Let's look at some options. What feels most achievable for you?</p>
+            <div class="tiered-options">
+                <div class="option-card">
+                    <h3 class="good">Good</h3>
+                    <p>Open all the blinds in your home as soon as you wake up. Stand by a window for 5-10 minutes while you have your first drink of the day.</p>
+                </div>
+                <div class="option-card">
+                    <h3>Better</h3>
+                    <p>Step outside for 5-10 minutes. You don't need to look at the sun (and shouldn't). Just being outdoors, even on a cloudy day, provides far more powerful light than indoor lighting.</p>
+                </div>
+                <div class="option-card">
+                    <h3 class="best">Best</h3>
+                    <p>Go for a 15-30 minute walk outside within the first hour of waking. This combines the power of light with gentle movement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Lever 2: Movement as a Sleep Regulator</h2>
+            <p>Movement is another powerful tool for regulating sleep. It helps build sleep pressure, reduces stress hormones, and helps regulate your body temperature cycle. However, timing matters.</p>
+            <p>Think of it this way: more intense exercise is like a strong cup of coffee for your body—it's great in the morning or early afternoon. Gentle, calming movement is like herbal tea—perfect for the evening wind-down.</p>
+             <div class="movement-sorter" id="movementSorter">
+                <div class="drop-zone">
+                    <h3>Best Before 2 PM</h3>
+                    <div class="activity-item" draggable="true">Weight Lifting</div>
+                    <div class="activity-item" draggable="true">Running</div>
+                    <div class="activity-item" draggable="true">HIIT Class</div>
+                </div>
+                <div class="drop-zone">
+                    <h3>Great for Evenings</h3>
+                    <div class="activity-item" draggable="true">Gentle Stretching</div>
+                    <div class="activity-item" draggable="true">Casual Walk</div>
+                    <div class="activity-item" draggable="true">Restorative Yoga</div>
+                </div>
+            </div>
+             <p style="font-size:12px; text-align:center; color:var(--brand-text-light);">Drag and drop the activities into the suggested timeframes to test your understanding.</p>
+        </section>
+
+        <section class="section">
+            <h2>Lever 3: Your Personal Caffeine Protocol</h2>
+            <p>Caffeine can be a useful tool, but its effects last much longer than most people realize. It has a "half-life" of about 6-8 hours. This means if you have a coffee at 2 PM, half of that caffeine can still be circulating in your system and disrupting your deep sleep at 10 PM.</p>
+            <p>The most effective strategy is to establish a personal **"caffeine curfew"**—a time of day after which you switch to non-caffeinated drinks. For most people, somewhere between 12 PM and 2 PM is ideal.</p>
+            <p>Use this tool to see how this works for you.</p>
+            <div class="calculator-tool">
+                <h3>Caffeine Curfew Calculator</h3>
+                <div class="input-group">
+                    <label for="caffeine-time">If my last caffeinated drink is at:</label>
+                    <input type="time" id="caffeine-time" value="14:00">
+                    <button class="calc-button" onclick="calculateCaffeine()">Calculate Half-Life</button>
+                </div>
+                <div id="caffeine-result"></div>
+            </div>
+        </section>
+
+        <section class="section final-cta">
+            <h2>Your Action for This Week</h2>
+            <p>You now have three powerful daytime levers to support your sleep system. The goal is not to implement all of them perfectly at once. Remember, consistency is more important than intensity.</p>
+            <p><strong>Your task:</strong> Choose just ONE of these levers to focus on for the next 7 days.</p>
+            <ul>
+                <li>Will you commit to 10 minutes of morning light?</li>
+                <li>Will you be mindful of the timing of your movement?</li>
+                <li>Will you establish a personal caffeine curfew?</li>
+            </ul>
+            <p>You are the expert. Choose the one that feels most achievable and impactful for you right now. In our next lesson, we will focus on putting all these pieces together into a resilient, long-term plan.</p>
+        </section>
+
+        <footer>
+            <div class="crisis-footer">
+                <h3>Crisis Resources & Immediate Support</h3>
+                <p>This course is educational. If you're in immediate danger, please use the resources below.</p>
+                <ul><li><strong>Emergency Services:</strong> 911</li><li><strong>National Suicide Prevention Lifeline:</strong> 988</li><li><strong>Crisis Text Line:</strong> Text HOME to 741741</li></ul>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        function calculateCaffeine() {
+            const timeInput = document.getElementById('caffeine-time');
+            const resultDiv = document.getElementById('caffeine-result');
+            if (!timeInput.value) return;
+
+            const [hours, minutes] = timeInput.value.split(':');
+            const drinkTime = new Date();
+            drinkTime.setHours(hours, minutes, 0, 0);
+
+            const halfLifeTime = new Date(drinkTime.getTime() + (7 * 60 * 60 * 1000)); // Average 7 hour half-life
+
+            const formatTime = (date) => {
+                let h = date.getHours();
+                let m = date.getMinutes();
+                const ampm = h >= 12 ? 'PM' : 'AM';
+                h = h % 12;
+                h = h ? h : 12; // the hour '0' should be '12'
+                m = m < 10 ? '0' + m : m;
+                return `${h}:${m} ${ampm}`;
+            };
+
+            resultDiv.textContent = `At around ${formatTime(halfLifeTime)}, half of that caffeine may still be active in your system.`;
+            resultDiv.style.display = 'block';
+        }
+
+        // Drag and drop functionality for the movement sorter
+        document.addEventListener('DOMContentLoaded', () => {
+            const draggables = document.querySelectorAll('.activity-item');
+            const dropZones = document.querySelectorAll('.drop-zone');
+
+            draggables.forEach(draggable => {
+                draggable.addEventListener('dragstart', () => {
+                    draggable.classList.add('dragging');
+                });
+                draggable.addEventListener('dragend', () => {
+                    draggable.classList.remove('dragging');
+                });
+            });
+
+            dropZones.forEach(zone => {
+                zone.addEventListener('dragover', e => {
+                    e.preventDefault();
+                    const draggable = document.querySelector('.dragging');
+                    zone.appendChild(draggable);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

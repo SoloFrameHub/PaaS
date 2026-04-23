@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.3: Your Personal Sleep Blueprint</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --warning-text-heading: #E65100;
+            --warning-text-body: #666;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; margin-bottom: 20px; }
+        h3 { font-size: 20px; color: var(--brand-secondary-blue); margin-top: 25px; }
+        p { margin-bottom: 15px; }
+
+        /* --- Blueprint Builder --- */
+        .blueprint-container {
+            background-color: #f0f7ff;
+            border: 1px solid var(--brand-secondary-blue);
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+        .blueprint-container.finalized {
+            border: 2px solid var(--brand-green);
+            background-color: #f1f8e9;
+        }
+        .blueprint-section { margin-bottom: 20px; }
+        .blueprint-section label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .blueprint-section input[type="text"],
+        .blueprint-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: var(--font-family);
+        }
+        .blueprint-section textarea { min-height: 80px; resize: vertical; }
+        .blueprint-section input:disabled, 
+        .blueprint-section textarea:disabled {
+            background-color: #fff;
+            color: var(--brand-text-dark);
+            border: 1px dashed #999;
+            cursor: default;
+        }
+        .blueprint-actions { text-align: center; margin-top: 20px; }
+        .action-button {
+            padding: 15px 30px;
+            background-color: var(--brand-secondary-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .action-button:hover { background-color: var(--brand-primary-blue); }
+        .action-button:disabled {
+            background-color: var(--brand-green);
+            cursor: default;
+        }
+        #screenshot-tip {
+            display: none;
+            margin-top: 15px;
+            font-size: 14px;
+            color: var(--brand-text-light);
+        }
+
+        /* --- Review & Refine Loop --- */
+        .review-loop { display: flex; justify-content: space-around; align-items: center; text-align: center; margin-top: 20px; }
+        .loop-step { padding: 10px; font-weight: bold; }
+        .loop-arrow { font-size: 24px; color: var(--brand-secondary-blue); }
+
+        /* --- Other Components --- */
+        .phillips-note { background-color: var(--brand-light-grey); padding: 20px; border-radius: 8px; border-left: 5px solid var(--brand-primary-blue); }
+        .part-completion-box { background-color: #e8f5e9; border: 2px solid var(--brand-green); border-radius: 8px; padding: 25px; text-align: center; }
+        
+        /* --- Crisis Resources --- */
+        .crisis-footer { background-color: var(--warning-bg); border: 1px solid var(--warning-border); padding: 15px; margin-top: 40px; border-radius: 4px; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 24px; } h2 { font-size: 20px; }
+            .review-loop { flex-direction: column; }
+            .loop-arrow { transform: rotate(90deg); margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Lesson 3.3: Your Personal Sleep Blueprint</h1>
+            <p class="lesson-subtitle">Synthesizing Your Skills for Lifelong Resilience</p>
+        </header>
+
+        <section class="section">
+            <h2>Bringing It All Together</h2>
+            <p>Welcome to our final lesson on building your resilient sleep system. You have explored your evening rituals and your daytime habits. Now, we're going to put all the pieces together into a single, powerful document: your personal sleep blueprint.</p>
+            <p>Remember, you are the expert on your life. This isn't a rigid set of rules I'm giving you; it's a framework that you will populate with your own choices. Let's collaborate one last time to build the plan that you will carry forward, long after this course is complete.</p>
+        </section>
+
+        <section class="section">
+            <h2>Interactive: Build Your Sleep Blueprint</h2>
+            <p>Take a few moments to fill out each section below. This act of writing it down solidifies your commitment and creates a tangible plan you can refer to anytime. Be specific and realistic.</p>
+            <div class="blueprint-container" id="blueprintContainer">
+                <h3 style="text-align:center;">My Personal Sleep Blueprint</h3>
+                <div class="blueprint-section">
+                    <label for="bp_wakeup">My Fixed Wake-Up Time (The Anchor):</label>
+                    <input type="text" id="bp_wakeup" placeholder="e.g., 6:45 AM every single day">
+                </div>
+                 <div class="blueprint-section">
+                    <label for="bp_light">My Morning Light Protocol:</label>
+                    <input type="text" id="bp_light" placeholder="e.g., A 15-minute walk outside before 8 AM.">
+                </div>
+                <div class="blueprint-section">
+                    <label for="bp_caffeine">My Caffeine Curfew:</label>
+                    <input type="text" id="bp_caffeine" placeholder="e.g., No caffeine after 1:00 PM.">
+                </div>
+                <div class="blueprint-section">
+                    <label for="bp_movement">My Movement Plan:</label>
+                    <textarea id="bp_movement" placeholder="e.g., Intense workouts before 2 PM. A gentle walk or stretching after dinner."></textarea>
+                </div>
+                 <div class="blueprint-section">
+                    <label for="bp_sunset">My "Digital Sunset" Time:</label>
+                    <input type="text" id="bp_sunset" placeholder="e.g., All screens off by 9:30 PM.">
+                </div>
+                <div class="blueprint-section">
+                    <label for="bp_ritual">My 15-Minute Wind-Down Ritual:</label>
+                    <textarea id="bp_ritual" placeholder="e.g., 1. Sip herbal tea. 2. Read a physical book for 10 minutes. 3. Five deep breaths before lights out."></textarea>
+                </div>
+                <div class="blueprint-section">
+                    <label for="bp_badnight">My "Bad Night" Protocol:</label>
+                    <textarea id="bp_badnight" placeholder="e.g., 1. Get up if awake >20 mins. 2. Read in dim light. 3. No matter what, stick to my 6:45 AM wake-up time."></textarea>
+                </div>
+                <div class="blueprint-actions">
+                    <button class="action-button" id="finalizeBtn" onclick="finalizeBlueprint()">Finalize & Save My Blueprint</button>
+                    <p id="screenshot-tip"><strong>Your blueprint is saved! Now, take a screenshot of this section to keep it on your phone or computer.</strong><br>(Tip: On Windows, use Win+Shift+S. On Mac, use Cmd+Shift+4).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Your System for Continuous Improvement</h2>
+            <p>A resilient system is a living system. It needs to be reviewed and adjusted as your life changes. I encourage you to set a reminder on your calendar to review your saved blueprint every 4-6 weeks.</p>
+            <p>Follow this simple loop:</p>
+            <div class="review-loop">
+                <div class="loop-step">Plan</div>
+                <div class="loop-arrow">→</div>
+                <div class="loop-step">Do</div>
+                <div class="loop-arrow">→</div>
+                <div class="loop-step">Review</div>
+                <div class="loop-arrow">→</div>
+                <div class="loop-step">Refine</div>
+            </div>
+            <p>Ask yourself: What's working well? What feels difficult? What small tweak could I make? This puts you in the driver's seat permanently.</p>
+        </section>
+        
+        <section class="section">
+            <div class="phillips-note">
+                <h3>A Final Word from Phillip</h3>
+                <p>"In my work, I've seen that confidence comes from having a reliable plan, especially under pressure. You have now built that plan. You have the tools, you have the science, and you have the system. Trust the blueprint you've created, and trust your ability to adapt it. You are fully equipped to be the architect of your own well-being. It has been a pleasure building this with you."</p>
+            </div>
+        </section>
+
+        <section class="section">
+             <div class="part-completion-box">
+                <h2>Congratulations! You've Completed Part 3</h2>
+                <p>You've successfully integrated the skills from this course into a single, powerful, and personalized system. This blueprint is your key to long-term success and resilience.</p>
+                <p>Thank you for your hard work and commitment throughout this entire journey. You have truly mastered the foundations of sleep and mental wellness.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="crisis-footer">
+                <h3>Crisis Resources & Immediate Support</h3>
+                <p>This course is educational. If you're in immediate danger, please use the resources below.</p>
+                <ul><li><strong>Emergency Services:</strong> 911</li><li><strong>National Suicide Prevention Lifeline:</strong> 988</li><li><strong>Crisis Text Line:</strong> Text HOME to 741741</li></ul>
+            </div>
+        </footer>
+
+    </main>
+<script>
+    function finalizeBlueprint() {
+        const blueprintContainer = document.getElementById('blueprintContainer');
+        const inputs = blueprintContainer.querySelectorAll('input, textarea');
+        const button = document.getElementById('finalizeBtn');
+        const tip = document.getElementById('screenshot-tip');
+
+        // Add a class for visual feedback
+        blueprintContainer.classList.add('finalized');
+
+        // Disable all form fields
+        inputs.forEach(input => {
+            input.disabled = true;
+        });
+
+        // Update the button
+        button.disabled = true;
+        button.textContent = '✅ Blueprint Saved!';
+        
+        // Show the screenshot tip
+        tip.style.display = 'block';
+    }
+</script>
+</body>
+</html>

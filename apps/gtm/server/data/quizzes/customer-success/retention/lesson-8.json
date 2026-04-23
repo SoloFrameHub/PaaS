@@ -1,0 +1,209 @@
+{
+    "lessonId": "8",
+    "courseId": "retention",
+    "sectionId": "customer-success",
+    "title": "Lesson 8 Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "What is the primary benefit of a weekly CS Review Block?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes you look busy"
+                },
+                {
+                    "id": "b",
+                    "text": "It catches at-risk customers 45% faster than reactive CS"
+                },
+                {
+                    "id": "c",
+                    "text": "It replaces the need for a health score model"
+                },
+                {
+                    "id": "d",
+                    "text": "It eliminates all churn"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Solo founders with a weekly CS review block detect at-risk customers 45% faster, which translates to 25% lower churn over 12 months.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "What is the 'Top 3' rule?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Focus on your top 3 highest-paying customers only"
+                },
+                {
+                    "id": "b",
+                    "text": "Each weekly review should produce a maximum of 3 action items that you execute this week"
+                },
+                {
+                    "id": "c",
+                    "text": "Review only the top 3 health score zones"
+                },
+                {
+                    "id": "d",
+                    "text": "Send 3 reactivation emails per week"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'Top 3' rule ensures you actually execute high-impact actions instead of creating endless to-do lists. Execution rate jumps from ~30% to ~80%.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "In the Urgency x Value matrix, what should you do with actions that are 'Urgent + Low Value'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Do them first"
+                },
+                {
+                    "id": "b",
+                    "text": "Defer them to next month"
+                },
+                {
+                    "id": "c",
+                    "text": "Automate them"
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore them completely"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Urgent + Low Value actions (like a $50/mo customer at 10 days inactive) should be handled by automated sequences, not personal outreach.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "How long should a solo founder's Weekly CS Review Block be?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30 minutes"
+                },
+                {
+                    "id": "b",
+                    "text": "1 hour"
+                },
+                {
+                    "id": "c",
+                    "text": "2-3 hours"
+                },
+                {
+                    "id": "d",
+                    "text": "5+ hours"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The optimal CS Review Block is 2-3 hours: 30 min per step (health review, reactivation, expansion, feedback, Top 3 execution, documentation).",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "What is the purpose of the monthly CS retrospective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To review churn metrics and adjust your playbook based on what's working"
+                },
+                {
+                    "id": "b",
+                    "text": "To fire low-value customers"
+                },
+                {
+                    "id": "c",
+                    "text": "To celebrate wins only"
+                },
+                {
+                    "id": "d",
+                    "text": "To plan next month's product roadmap"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "The monthly retrospective reviews churn numbers, health trends, save play success rates, and expansion wins to continuously improve your CS playbook.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "Which of these is a 'Yellow zone' action during the health score review?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Monitor monthly + look for expansion opportunities"
+                },
+                {
+                    "id": "b",
+                    "text": "Urgent intervention within 48 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "Proactive outreach + feature nudges this week"
+                },
+                {
+                    "id": "d",
+                    "text": "Accept natural churn"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Yellow zone (health score 50-74) requires proactive outreach and feature nudges this week. It's the salvageable zone with 40-60% save rates.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q7",
+            "question": "What percentage of churning customers give no verbal warning before canceling?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30%"
+                },
+                {
+                    "id": "b",
+                    "text": "50%"
+                },
+                {
+                    "id": "c",
+                    "text": "70%"
+                },
+                {
+                    "id": "d",
+                    "text": "90%"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "70% of churning customers never complain or contact support — they just stop logging in and eventually cancel. This is why proactive monitoring is critical.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q8",
+            "question": "What is the primary purpose of the CS log?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To track time spent on CS activities"
+                },
+                {
+                    "id": "b",
+                    "text": "To document patterns, interventions, and outcomes for institutional knowledge"
+                },
+                {
+                    "id": "c",
+                    "text": "To create reports for investors"
+                },
+                {
+                    "id": "d",
+                    "text": "To replace your CRM"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The CS log captures patterns, interventions, and learnings. It becomes institutional knowledge and trains future CS hires 50% faster.",
+            "type": "multiple-choice"
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "9",
+    "lessonTitle": "Forum Monitoring",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of setting up a 'Persistent Monitoring Radar' as described in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To find people to argue with about your competitor."
+                },
+                {
+                    "id": "b",
+                    "text": "To identify and respond to brand or problem mentions in real-time, while the conversation is still 'hot'."
+                },
+                {
+                    "id": "c",
+                    "text": "To automatically downvote negative comments about your brand."
+                },
+                {
+                    "id": "d",
+                    "text": "To gather email addresses for a cold outreach campaign."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Community opportunities have a short window. Being the first helpful person in a thread builds significantly more trust and authority.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is NOT one of the five essential keyword groups a founder should monitor?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Brand & Product names."
+                },
+                {
+                    "id": "b",
+                    "text": "Competitor Names."
+                },
+                {
+                    "id": "c",
+                    "text": "Generic dictionary words like 'the' or 'and'."
+                },
+                {
+                    "id": "d",
+                    "text": "Problem keywords (e.g., 'High churn')."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Monitoring must be targeted. Generic words will flood your inbox with noise, while brand, competitor, and problem keywords provide high-intent signals.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What tool is highlighted as a free way to receive email alerts for Reddit and Hacker News mentions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Syften"
+                },
+                {
+                    "id": "b",
+                    "text": "F5Bot"
+                },
+                {
+                    "id": "c",
+                    "text": "Slack Connect"
+                },
+                {
+                    "id": "d",
+                    "text": "Twitter Search"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "F5Bot is a critical free tool for solo founders to stay on top of the two largest technical and founder-focused public forums.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'Response Triage' for a 'Comparison' post (e.g., '[Competitor] vs. [Other Tool]')?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Post your link and say your tool is better."
+                },
+                {
+                    "id": "b",
+                    "text": "Remain objective: acknowledge the competitor's strength for certain users, then highlight why you built your tool specifically for a different segment (like solo founders)."
+                },
+                {
+                    "id": "c",
+                    "text": "Report the post as spam if people recommend the competitor."
+                },
+                {
+                    "id": "d",
+                    "text": "Wait for 24 hours to see who else replies."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Objectivity builds trust. By admitting that a competitor might be 'great for enterprise,' you earn the credibility to explain why your tool is better for the person asking the question.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How should a solo founder incorporate 'Monitoring' into their weekly rhythm to avoid distraction?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Check alerts every 5 minutes all day."
+                },
+                {
+                    "id": "b",
+                    "text": "Dedicate a few minutes daily for urgent responses and a longer weekly session to analyze 'Problem' patterns for product research."
+                },
+                {
+                    "id": "c",
+                    "text": "Only check alerts once a month."
+                },
+                {
+                    "id": "d",
+                    "text": "Let your assistant handle it all."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Consistency beats intensity. Periodic checks ensure you don't miss hot leads, while weekly reviews turn the noise into actionable product intelligence.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Choose a competitor in your niche. If you were to see a post titled 'Why I am leaving [Competitor]', what are the top 3 'Pain Points' that user is likely struggling with? How would you structure a response that acknowledges those pains without sounding like a desperate salesman?",
+            "promptHints": [
+                "Focus on 'Empathetic Observation'.",
+                "Refer back to the 'Founder Voice' of helping, not selling.",
+                "Consider how to frame your product as a 'Direct response to that specific frustration'."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "8"
+        ],
+        "unlocks": [
+            "10"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Forum Monitoring - Quiz"
+}

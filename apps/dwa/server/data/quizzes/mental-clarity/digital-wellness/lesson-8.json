@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the research say about the relationship between social media use and mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Social media directly causes depression and anxiety in all users (STRONG evidence)"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The relationship is complex and context-dependent — some use patterns correlate with worse outcomes, but causation is unclear (MODERATE-CONTESTED)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Social media has no impact on mental health (STRONG evidence)"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Social media always improves mental health by increasing connection"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The evidence is MODERATE-CONTESTED: correlational studies show associations between heavy use and worse mental health, but causation is unclear. Context matters: who uses it, how, why, and what else is happening in their life."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which social media use pattern is most consistently associated with negative mental health outcomes?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any use of social media at all"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Passive scrolling, social comparison, and fear of missing out (FOMO)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Active posting and sharing"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Using social media for work purposes"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Passive use (scrolling without engagement), upward social comparison (comparing yourself unfavorably to others), and FOMO are most consistently linked to negative outcomes like anxiety, depression, and low self-esteem."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is the claim 'social media is the primary cause of the teen mental health crisis' considered OVERSTATED?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because social media has zero impact on teen mental health"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because the evidence is mostly correlational, effect sizes are small to moderate, and many other factors (sleep, school stress, social isolation) also contribute"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because only adults are affected by social media"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because all teens use social media the same way"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While there are correlations between social media use and teen mental health struggles, the evidence is mostly observational, effect sizes are small-to-moderate, and many other factors contribute. Saying it's the 'primary cause' oversimplifies a complex issue."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a more productive way to think about social media and mental health than 'is it good or bad?'",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Social media is always bad and should be banned"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Ask: How am I using it? Why? How does it make me feel? Does it align with my values?"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Use it as much as possible to maximize connection"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only use platforms with the most users"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Instead of asking 'is social media good or bad?', focus on your specific use: Are you using it intentionally or habitually? Does it support connection or increase comparison and FOMO? How does it make you feel? Adjust based on your answers."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think about your social media use. Which platforms do you use most? Do you tend to use them actively (posting, commenting, connecting) or passively (scrolling, comparing)? How do you typically feel after using each platform?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "8",
+    "title": "Social Media and Mental Health - Quiz"
+}

@@ -1,0 +1,142 @@
+{
+  "lessonId": "11",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Métricas de Rendimiento de Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué es una 'Métrica de Vanidad' en el marketing de contenidos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una métrica que resulta directamente en ingresos"
+        },
+        {
+          "id": "b",
+          "text": "Una métrica de alto volumen como 'Likes' o 'Visitas' que se siente bien pero no indica necesariamente crecimiento del negocio"
+        },
+        {
+          "id": "c",
+          "text": "Una métrica rastreada en una hoja de cálculo privada"
+        },
+        {
+          "id": "d",
+          "text": "El número de horas dedicadas a escribir"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las métricas de vanidad pueden ser engañosas. 10,000 visitas de la audiencia equivocada valen menos que 10 visitas de tu cliente ideal."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué mide la métrica 'Cuota de Modelo' en la era AEO?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuántos empleados tienes"
+        },
+        {
+          "id": "b",
+          "text": "Con qué frecuencia los modelos de IA (ChatGPT, Perplexity) citan tu contenido como la respuesta a preguntas del nicho"
+        },
+        {
+          "id": "c",
+          "text": "El porcentaje de tu tráfico que proviene de Google"
+        },
+        {
+          "id": "d",
+          "text": "La cantidad de contenido escrito por IA"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A medida que más usuarios recurren a la IA para obtener respuestas, ser la 'fuente citada' (Cuota de Modelo) se vuelve tan importante como estar en el primer lugar de la búsqueda tradicional."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estas es la métrica más valiosa para que un fundador en solitario rastree?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total de visitas únicas a páginas"
+        },
+        {
+          "id": "b",
+          "text": "Duración promedio de la sesión"
+        },
+        {
+          "id": "c",
+          "text": "Tasa de conversión de Visitante a Lead (Suscripción al Email)"
+        },
+        {
+          "id": "d",
+          "text": "El número de imágenes en una publicación"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Al final del día, tu motor de contenido existe para construir tu pipeline de leads. Capturar la relación es el punto de conversión más importante."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la forma más simple de realizar 'Atribución Manual' para una nueva venta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adivinar basándose en la fecha"
+        },
+        {
+          "id": "b",
+          "text": "Preguntar al cliente '¿Cómo nos conociste?' durante su primera llamada o en un formulario"
+        },
+        {
+          "id": "c",
+          "text": "Revisar Google Analytics únicamente"
+        },
+        {
+          "id": "d",
+          "text": "Asumir que todos te encontraron en Twitter"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Ninguna herramienta técnica es 100% precisa. Preguntar directamente al cliente proporciona los datos de atribución de 'Primer Contacto' de mayor calidad."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué la 'Profundidad de Desplazamiento' es una métrica de engagement útil?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muestra qué tan rápido puede leer el usuario"
+        },
+        {
+          "id": "b",
+          "text": "Indica si los usuarios realmente están llegando a tus CTAs en el medio o al final de tu contenido"
+        },
+        {
+          "id": "c",
+          "text": "Ayuda con el posicionamiento SEO"
+        },
+        {
+          "id": "d",
+          "text": "Cuenta como una vista de página"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si las personas se van después del primer 20% del artículo, no están viendo tus puntos de conversión. La profundidad de desplazamiento te ayuda a identificar dónde estás perdiendo su atención."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Define tu métrica de contenido 'Estrella del Norte.' ¿Es suscripciones al newsletter, inicios de prueba o reservas de demo? ¿Por qué elegiste esta métrica específica? ¿Cómo cambiará rastrearla la forma en que escribes tu próxima 'Pieza Fuente'?",
+      "minLength": 100,
+      "promptForAI": "Evalúa si la métrica es 'Valiosa' vs. 'de Vanidad'. Debe ser una actividad de captura de leads o generación de ingresos. Rechaza la idea si eligen 'Seguidores' o 'Visitas'."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

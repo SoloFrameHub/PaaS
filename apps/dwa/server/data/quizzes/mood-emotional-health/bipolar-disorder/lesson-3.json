@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does CBT for bipolar disorder differ from standard CBT for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It uses completely different techniques that have nothing in common with standard CBT"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It addresses distortions in both depressive and manic/hypomanic states, incorporates medication adherence, and emphasizes early warning sign detection"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It only focuses on preventing manic episodes, not depressive ones"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It replaces medication entirely with cognitive techniques"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "CBT adapted for bipolar disorder must address cognitive distortions in both depressive and manic/hypomanic states, incorporate medication adherence as a therapeutic target, emphasize early warning sign detection, and build relapse prevention skills practiced between episodes. It works best in combination with mood-stabilizing medication, not as a replacement."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of the following is a common cognitive distortion during a manic or hypomanic episode?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "\"Nothing will ever help me\""
+                },
+                {
+                    "id": "opt2",
+                    "text": "\"I'm a burden to everyone around me\""
+                },
+                {
+                    "id": "opt3",
+                    "text": "\"I don't need medication -- I've never felt better\""
+                },
+                {
+                    "id": "opt4",
+                    "text": "\"I'll always be like this\""
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "\"I don't need medication -- I've never felt better\" is a classic manic/hypomanic distortion involving medication rejection. When people feel elevated and energized, they often conclude that medication is unnecessary, but stopping medication is one of the leading causes of relapse. The other options are depressive distortions."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What additional column does the bipolar-adapted thought record include compared to a standard thought record?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A medication dosage column"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A current mood state column (Depressed / Low / Baseline / Elevated / Manic)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A column rating the severity of the situation"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A column listing other people involved"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The bipolar-adapted thought record adds a mood-state awareness column that asks you to identify where you are on the mood spectrum (Depressed / Low / Baseline / Elevated / Manic). This helps you recognize whether a distortion is depression-driven or mania-driven, which changes how you challenge it."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is it important to maintain CBT skills between episodes, not just during crises?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It isn't important -- CBT skills are only useful during active episodes"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Practicing only during crises is sufficient for long-term management"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Consistent practice during stable periods keeps skills sharp, helps detect early warning signs, and makes coping plans more effective when episodes do occur"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Between-episode practice is only necessary for people with rapid cycling"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Maintaining CBT skills between episodes is essential because consistent practice keeps skills sharp, regular mood monitoring helps detect subtle early shifts, and routines and coping plans are most effective when they are already in place before a crisis hits. Abandoning coping strategies when feeling well is one of the most common mistakes in bipolar management."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the single most important daily anchor for building a structured routine?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise time"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Meal times"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Wake time -- the same time every day, including weekends"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Medication time"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Wake time is identified as the single most important anchor for building a structured routine. Keeping a consistent wake time every day, including weekends, supports circadian rhythm stability, which is critical for mood regulation in bipolar disorder. The recommendation is to stabilize wake time first, then add other routine elements one at a time."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "bipolar-disorder",
+    "lessonId": "3",
+    "title": "CBT Skills for Bipolar Disorder - Quiz"
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "11",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Building the Creator Email List",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is an email list considered 'Owned Land' vs. social media 'Rented Land'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Email is cheaper than social media ads"
+                },
+                {
+                    "id": "b",
+                    "text": "You control the distribution; social algorithms can cut your reach overnight"
+                },
+                {
+                    "id": "c",
+                    "text": "It is easier to design pretty emails"
+                },
+                {
+                    "id": "d",
+                    "text": "Social media is for old people"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Social platforms can ban you or change algorithms at any time. Your email list is a portable asset that you own and can bring to any platform."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a 'Lead Magnet'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A physical magnet you mail to customers"
+                },
+                {
+                    "id": "b",
+                    "text": "A generic request to 'Join my newsletter'"
+                },
+                {
+                    "id": "c",
+                    "text": "A specific solution (template, checklist, course) given in exchange for contact info"
+                },
+                {
+                    "id": "d",
+                    "text": "A sales call"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A Lead Magnet trades value for data. It must solve a specific problem quickly to be effective."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these is the LEAST effective way to build a list?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A specific checklist for a specific problem"
+                },
+                {
+                    "id": "b",
+                    "text": "A generic 'Sign up for updates' form"
+                },
+                {
+                    "id": "c",
+                    "text": "A 5-day email mini-course"
+                },
+                {
+                    "id": "d",
+                    "text": "A Notion template"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Generic promises like 'updates' offer no immediate value. High-converting magnets solve immediate pain."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Content Upgrade' strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Charging people to read your tweets"
+                },
+                {
+                    "id": "b",
+                    "text": "Posting 80% of the value on social, and offering the final 20% (asset) in exchange for an email"
+                },
+                {
+                    "id": "c",
+                    "text": "Upgrading your LinkedIn Premium account"
+                },
+                {
+                    "id": "d",
+                    "text": "Writing longer posts"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Content Upgrades convert attention (casual readers) into retention (subscribers) by offering a relevant asset that completes the lesson they just read."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Social media is primarily for ____; Email is primarily for ____.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sales; Fun"
+                },
+                {
+                    "id": "b",
+                    "text": "Discovery; Relationship & Sales"
+                },
+                {
+                    "id": "c",
+                    "text": "Politics; Work"
+                },
+                {
+                    "id": "d",
+                    "text": "Images; Text"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Use social media's algorithm to get found (Discovery), then move them to email to deepen trust and sell (Relationship)."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Brainstorm one Lead Magnet for your specific audience. What is an 'Annoying Task' they hate, and what Template or Checklist could you create to solve it?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the lead magnet idea. Is it specific? Does it solve a real pain point? Is it a quick win (template/checklist) vs. a heavy ebook?"
+        }
+    ],
+    "passingScore": 70
+}

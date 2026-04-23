@@ -1,0 +1,126 @@
+{
+    "lessonId": "1",
+    "courseId": "custom-ai-agents",
+    "sectionId": "ai-acquisition",
+    "title": "Test Your Framework Knowledge",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "You're building a single agent that researches prospects and drafts emails. It will run 50 times/week. Which framework should you start with?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "LangChain + LangSmith for production observability"
+                },
+                {
+                    "id": "b",
+                    "text": "CrewAI for multi-agent collaboration"
+                },
+                {
+                    "id": "c",
+                    "text": "Direct Claude API calls + n8n orchestrator"
+                },
+                {
+                    "id": "d",
+                    "text": "AutoGen for conversational reasoning"
+                }
+            ],
+            "explanation": "This is a simple, single-agent use case with low volume. Direct API + orchestrator is the fastest path to shipping. LangChain is overkill, CrewAI is for multi-agent, AutoGen is for conversational.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q2",
+            "question": "When does it make sense to pay $39/month for LangSmith observability?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When you're building your first agent"
+                },
+                {
+                    "id": "b",
+                    "text": "When you're running 50 prospects/week"
+                },
+                {
+                    "id": "c",
+                    "text": "When you're debugging agent failures weekly or building a product"
+                },
+                {
+                    "id": "d",
+                    "text": "Never — observability is unnecessary for solo founders"
+                }
+            ],
+            "explanation": "LangSmith is valuable when you need to trace and debug complex agent failures, or when you're building a product for others. For simple agents at low volume, it's overkill.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q3",
+            "question": "You need to build a workflow where Agent 1 researches, Agent 2 drafts, and Agent 3 reviews. Which framework is best suited?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Direct API calls (no framework)"
+                },
+                {
+                    "id": "b",
+                    "text": "Claude SDK"
+                },
+                {
+                    "id": "c",
+                    "text": "CrewAI"
+                },
+                {
+                    "id": "d",
+                    "text": "AutoGen"
+                }
+            ],
+            "explanation": "CrewAI is designed for role-based multi-agent workflows. This is exactly its use case. Direct API could work but requires more orchestration logic. Claude SDK is single-agent focused.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q4",
+            "question": "What's the main weakness of starting with LangChain for your first agent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's too expensive"
+                },
+                {
+                    "id": "b",
+                    "text": "It doesn't support Claude models"
+                },
+                {
+                    "id": "c",
+                    "text": "The learning curve delays shipping"
+                },
+                {
+                    "id": "d",
+                    "text": "It can't handle multi-agent workflows"
+                }
+            ],
+            "explanation": "LangChain's main cost for solo founders is time — the 4-8 hour learning curve delays shipping. For simple agents, direct API calls get you to production in 2-3 hours.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q5",
+            "question": "True or False: Most solo founder agent use cases (80%) can be solved with direct API calls + an orchestrator, no framework needed.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ],
+            "explanation": "True. The vast majority of solo founder agents are simple: trigger → data gathering → LLM call → output. This doesn't require a framework. Frameworks add value at higher complexity (5+ agents, multi-agent collaboration, production observability).",
+            "type": "true-false",
+            "correctAnswer": "a"
+        }
+    ]
+}

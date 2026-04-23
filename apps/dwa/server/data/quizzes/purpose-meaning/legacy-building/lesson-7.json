@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to neuroscience research, how many brain regions are activated when processing narratives compared to factual information?",
+      "options": [
+        {"id": "opt1", "text": "Stories and facts activate the same 1-2 brain regions"},
+        {"id": "opt2", "text": "Stories activate 3-4 regions vs. 1-2 for facts"},
+        {"id": "opt3", "text": "Stories activate 5+ regions vs. 1-2 for facts, including language, sensory, motor, and emotional centers"},
+        {"id": "opt4", "text": "Factual information actually activates more regions than stories"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "When processing narratives, the brain activates 5+ regions simultaneously (language processing, sensory cortex, motor cortex, emotional centers), compared to 1-2 regions for factual information. This multi-region engagement creates stronger, more durable memory encoding—which is why stories are approximately 22x more memorable than facts alone."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for the association between narrative coherence and psychological wellbeing?",
+      "options": [
+        {"id": "opt1", "text": "STRONG - experimental studies prove narrative work improves mental health"},
+        {"id": "opt2", "text": "MODERATE - correlational research shows association, but causal direction partially uncertain"},
+        {"id": "opt3", "text": "WEAK - only a few small studies suggest possible connections"},
+        {"id": "opt4", "text": "EMERGING - research is too new to evaluate"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The evidence grade is MODERATE. McAdams' narrative identity research shows that coherent life stories with themes of agency, redemption, and meaning-making correlate with better psychological functioning. However, the evidence is primarily correlational—it's unclear whether coherent storytelling improves mental health or whether psychologically healthier people naturally tell more coherent stories. Causal direction remains partially uncertain, though the association is well-established."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the universal story structure, what creates narrative tension that engages attention?",
+      "options": [
+        {"id": "opt1", "text": "Status Quo / Setup - introducing the protagonist and their normal world"},
+        {"id": "opt2", "text": "Inciting Incident / Challenge - something that disrupts the status quo and demands response"},
+        {"id": "opt3", "text": "New Normal / Application - showing how life looks different post-transformation"},
+        {"id": "opt4", "text": "Resolution / Insight - where the abstract principle meets lived experience"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The Inciting Incident / Challenge creates narrative tension by disrupting the status quo with a crisis, question, contradiction, or opportunity that demands response. This engages attention because brains are wired to track problems and seek resolution. Without this disruption and challenge, there's no story—just description. The other elements are important but serve different purposes in the narrative arc."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is Brené Brown's distinction between healthy vulnerability and 'floodlighting' in storytelling?",
+      "options": [
+        {"id": "opt1", "text": "Vulnerability is courageous truth-sharing that serves connection; floodlighting is overwhelming overshare that burdens listeners"},
+        {"id": "opt2", "text": "Vulnerability means sharing everything in complete detail; floodlighting means holding back too much"},
+        {"id": "opt3", "text": "They mean the same thing - both involve sharing personal stories openly"},
+        {"id": "opt4", "text": "Vulnerability is for professional contexts; floodlighting is for personal relationships"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "Brené Brown distinguishes between vulnerability (courageous truth-sharing that serves connection and learning) and 'floodlighting' (overwhelming overshare that burdens listeners with unprocessed pain). The key questions are: Is this detail necessary for the lesson? Am I sharing to serve their growth or process my own pain? Have I done my own healing work so I'm teaching FROM the scar, not FROM the wound? Vulnerability serves the listener; floodlighting serves the teller's unmet needs."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When might storytelling about difficult experiences require professional support before using for teaching?",
+      "options": [
+        {"id": "opt1", "text": "Whenever a story involves any challenging or difficult life experience"},
+        {"id": "opt2", "text": "When crafting stories triggers overwhelming emotion, flashbacks, regression to trauma state, or compulsive retelling without resolution"},
+        {"id": "opt3", "text": "When you need to change identifying details to protect privacy"},
+        {"id": "opt4", "text": "When listeners show emotional responses to your story"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Professional support (trauma-informed therapy, EMDR, narrative therapy) is needed when storytelling triggers: overwhelming emotion or inability to function, flashbacks or intrusive memories, regression to trauma state (feeling like it's happening now vs. remembering past), or compulsive retelling without healing. These signs indicate teaching from an active wound rather than a healed scar, risking re-traumatization of yourself and burdening listeners. Privacy protection and listener emotions are normal parts of storytelling, not warning signs."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "legacy-building",
+  "lessonId": "7",
+  "title": "Documenting Your Life Lessons Through Storytelling - Quiz"
+}

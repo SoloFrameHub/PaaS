@@ -1,0 +1,108 @@
+{
+  "id": "anger-thought-record",
+  "title": "Anger Thought Record",
+  "description": "Use this worksheet to examine and challenge the thoughts that fuel your anger. The goal isn't to talk yourself out of being angry — it's to check whether your interpretation is accurate and proportionate, and to find a more balanced perspective that's firm but fair.",
+  "instructions": "When you notice anger rising (ideally before it peaks), work through each step below. If you can't do it in the moment, fill it in as soon afterward as possible — even a few hours later is valuable.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. What happened? (Stick to facts — who, what, when, where)",
+      "type": "textarea",
+      "placeholder": "e.g., My coworker took credit for my idea in the team meeting in front of our manager",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. The hot thought — What went through your mind?",
+      "type": "textarea",
+      "placeholder": "e.g., 'They always steal my work. They have no respect for me. They're trying to sabotage me.'",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. How angry are you? (0 = not at all, 100 = most angry ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. Which anger-fuelling pattern is at work?",
+      "type": "select",
+      "options": [
+        { "value": "should-statements", "label": "Should Statements — 'They should know better / must behave differently'" },
+        { "value": "mind-reading", "label": "Mind-Reading — 'They did this on purpose / They intended to hurt me'" },
+        { "value": "catastrophizing", "label": "Catastrophizing — 'This is unbearable / Everything is ruined'" },
+        { "value": "overgeneralizing", "label": "Overgeneralizing — 'They always... / Nobody ever...'" },
+        { "value": "labeling", "label": "Labeling — Reducing someone to a single judgment ('idiot', 'selfish')" },
+        { "value": "personalizing", "label": "Personalizing — 'This is about me / They're targeting me specifically'" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Evidence for this thought — What supports it?",
+      "type": "textarea",
+      "placeholder": "e.g., They did present my idea without mentioning me. This has happened once before with a different project.",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Evidence against / Alternative explanations — What else could be true?",
+      "type": "textarea",
+      "placeholder": "e.g., They may not have realized it was my idea originally. They've credited me in other situations. I didn't speak up in the meeting when I had the chance.",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. Balanced thought — Firm but fair. What's a more realistic perspective?",
+      "type": "textarea",
+      "placeholder": "e.g., It's possible they didn't do it intentionally, but I still need to address it. I'll talk to them privately and make sure I get credit. If it keeps happening, I'll escalate it.",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. How angry are you now? (0 = not at all, 100 = most angry ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "should-statements",
+      "name": "Should Statements",
+      "description": "Rigid rules about how other people must behave. When reality doesn't match the 'should,' it feels like a moral violation. Replace 'should' with 'I'd prefer' to reduce the intensity."
+    },
+    {
+      "id": "mind-reading",
+      "name": "Mind-Reading",
+      "description": "Assuming you know someone's motives — and assuming they're hostile. 'He did that to embarrass me.' You're often wrong about others' intentions. Ask: is there another explanation?"
+    },
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Turning one frustrating event into a disaster. 'I can't stand this.' 'Everything is ruined.' Check: is this really as bad as it feels right now, or is the anger amplifying it?"
+    },
+    {
+      "id": "overgeneralizing",
+      "name": "Overgeneralizing",
+      "description": "Using 'always,' 'never,' 'nobody,' 'everyone' to turn one event into a permanent pattern. 'You never listen.' Be specific: 'You didn't listen just now' is more accurate and less inflammatory."
+    },
+    {
+      "id": "labeling",
+      "name": "Labeling",
+      "description": "Reducing a whole person to a single negative judgment: 'idiot,' 'selfish,' 'worthless.' Separating the person from the behavior ('that was a careless thing to do') keeps anger proportionate."
+    },
+    {
+      "id": "personalizing",
+      "name": "Personalizing",
+      "description": "Assuming that someone's behavior is directed at you specifically when it may not be. 'They did that to spite me.' Consider: could this have nothing to do with me?"
+    }
+  ],
+  "disclaimer": "This worksheet is for educational self-reflection, not a substitute for professional therapy. If your anger involves violence, threats, or harm, seek professional help immediately. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

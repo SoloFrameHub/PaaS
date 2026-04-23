@@ -1,0 +1,99 @@
+{
+  "id": "sleep-hygiene",
+  "title": "Sleep Hygiene Checklist",
+  "description": "Review these evidence-based sleep hygiene rules. Check off each item you are currently following, then work on adding the unchecked ones over time.",
+  "instructions": "Go through each item and honestly check off the ones you are consistently doing. The unchecked items become your improvement targets. Revisit this checklist weekly to track your progress.",
+  "items": [
+    {
+      "id": "wake-same-time",
+      "label": "I wake at the same time every day, including weekends",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "bright-light",
+      "label": "I get bright light exposure within 1 hour of waking",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "exercise",
+      "label": "I exercise for 30+ minutes daily (but not within 4 hours of bedtime)",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "caffeine",
+      "label": "I limit caffeine and stop all caffeine intake by 2 PM",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "alcohol",
+      "label": "I avoid alcohol within 3 hours of bedtime",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "eating",
+      "label": "I finish eating 2-4 hours before bedtime",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "dim-lights",
+      "label": "I dim the lights 1-2 hours before bed",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "no-screens",
+      "label": "I avoid screens 1 hour before bed (or use blue light filters)",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "bed-when-sleepy",
+      "label": "I go to bed only when I feel sleepy",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "leave-bed",
+      "label": "I leave the bed if I'm awake for more than 20 minutes",
+      "type": "checkbox",
+      "category": "Daily Habits"
+    },
+    {
+      "id": "temperature",
+      "label": "My bedroom temperature is set to 60-67°F (15.5-19.4°C)",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "darkness",
+      "label": "My room is as dark as possible (blackout curtains, no LED lights)",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "quiet",
+      "label": "My room is as quiet as possible (or I use white noise)",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "comfort",
+      "label": "My mattress and pillows are comfortable and supportive",
+      "type": "checkbox",
+      "category": "Environment"
+    },
+    {
+      "id": "bed-only-sleep",
+      "label": "I use the bed only for sleep and intimacy (no work, TV, or phone)",
+      "type": "checkbox",
+      "category": "Environment"
+    }
+  ],
+  "disclaimer": "This checklist is for educational purposes only. If you continue to have significant sleep problems after implementing these changes, consult a healthcare provider."
+}

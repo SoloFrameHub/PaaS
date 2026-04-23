@@ -1,0 +1,75 @@
+{
+  "lessonId": "2",
+  "courseId": "advocacy",
+  "sectionId": "customer-success",
+  "title": "Testimonial Collection System",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What completion rate does a 3-question testimonial form typically achieve?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "15-25%" },
+        { "id": "c", "text": "40-60%" },
+        { "id": "d", "text": "80-90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A 3-question testimonial form achieves 40-60% completion rates. Every additional question beyond three cuts the response rate in half, so a 10-question form drops to just 5-10%."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the purpose of Question 2 in the 3-question testimonial formula ('What specific result or outcome have you achieved?')?",
+      "options": [
+        { "id": "a", "text": "To make the customer feel appreciated" },
+        {
+          "id": "b",
+          "text": "To push customers toward concrete numbers rather than vague praise"
+        },
+        { "id": "c", "text": "To identify upsell opportunities" },
+        { "id": "d", "text": "To gather product feedback for development" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The word 'specific' in Question 2 pushes customers toward numbers and measurable outcomes. Testimonials with specific numbers are 2x more persuasive than generic praise like 'it's been great.'"
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When editing a raw testimonial, which of the following is acceptable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Changing 'helped' to 'transformed' for stronger impact"
+        },
+        { "id": "b", "text": "Adding metrics the customer didn't mention" },
+        { "id": "c", "text": "Fixing grammar and restructuring for clarity" },
+        {
+          "id": "d",
+          "text": "Inflating '4 hours saved' to '50% time reduction'"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "You can fix grammar, spelling, clarity, and structure. You cannot change meaning, inflate claims, or add metrics the customer never mentioned. The ethics test: if the customer reads your edit and says 'I didn't say that,' you've crossed the line."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should always send the edited testimonial to the customer for approval before publishing, even if they voluntarily submitted it.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Always get approval before publishing. The approval step provides legal safety, preserves trust, and protects the relationship. Skipping it risks blindsiding customers and damaging the relationship."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Draft the 3-question testimonial form you would use for your product or service. For each question, explain why it's important and what kind of response you hope to elicit from customers.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes three clear, concise questions that follow the Before-State, Specific-Result, Peer-Recommendation formula. Look for understanding of why each question matters (relatability, measurable proof, peer-to-peer trust) and whether the questions are customized to their specific product/service."
+    }
+  ]
+}

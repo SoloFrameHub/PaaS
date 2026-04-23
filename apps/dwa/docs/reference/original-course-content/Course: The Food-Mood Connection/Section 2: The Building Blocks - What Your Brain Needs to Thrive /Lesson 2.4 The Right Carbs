@@ -1,0 +1,152 @@
+<!-- START OF LEARNWORLDS CUSTOM CODE BLOCK FOR LESSON 8 -->
+<style>
+    /* --- RPS Gold Standard Styles - Based on User-Provided Sleep Course Example --- */
+    /* --- Brand Colors & Fonts --- */
+    :root {
+        --brand-primary-blue: #3d70b2;
+        --brand-secondary-blue: #5fa8d3;
+        --brand-light-bg: #f8f9fa;
+        --brand-text-dark: #212529;
+        --brand-text-light: #6c757d;
+        --brand-white: #FFFFFF;
+        --brand-green-dark: #229954;
+        --brand-green-light: #27ae60;
+        --brand-red: #e74c3c;
+        --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* --- General & Layout --- */
+    .rps-lesson-8 *, .rps-lesson-8 *::before, .rps-lesson-8 *::after { box-sizing: border-box; }
+    .rps-lesson-8 {
+        font-family: var(--font-family);
+        line-height: 1.7;
+        color: var(--brand-text-dark);
+        background-color: var(--brand-white);
+    }
+    .rps-lesson-8 .content-wrapper { max-width: 850px; margin: 20px auto; padding: 10px; }
+    .rps-lesson-8 .section { padding: 32px 0; border-bottom: 1px solid #e9ecef; }
+    .rps-lesson-8 .section:last-of-type { border-bottom: none; }
+
+    /* --- Typography & Headers (Fixed Pixel Scale) --- */
+    .rps-lesson-8 .lesson-header { text-align: center; margin-bottom: 32px; }
+    .rps-lesson-8 h1 { font-size: 28px; font-weight: 700; color: var(--brand-green-dark); margin-bottom: 8px; }
+    .rps-lesson-8 .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+    .rps-lesson-8 h2 { font-size: 24px; color: var(--brand-green-dark); border-bottom: 2px solid #e9ecef; padding-bottom: 12px; margin-bottom: 24px; }
+    .rps-lesson-8 p { font-size: 18px; color: var(--brand-text-light); margin-bottom: 16px; }
+    .rps-lesson-8 strong { color: var(--brand-green-dark); font-weight: 600; }
+    .rps-lesson-8 ul { padding-left: 24px; }
+    .rps-lesson-8 li { margin-bottom: 8px; }
+
+    /* --- Special Containers --- */
+    .rps-lesson-8 .practitioner-voice { display: flex; align-items: flex-start; gap: 20px; background-color: #eaf5fd; padding: 24px; border-radius: 8px; margin: 24px 0; }
+    .rps-lesson-8 .practitioner-voice blockquote { margin: 0; font-style: italic; color: var(--brand-text-light); border-left: 4px solid var(--brand-secondary-blue); padding-left: 20px; font-size: 17px; }
+    .rps-lesson-8 .highlight-box { background-color: #e8f5e9; border-left: 5px solid var(--brand-green-dark); padding: 20px; margin-top: 20px; border-radius: 4px; }
+    .rps-lesson-8 .highlight-box h3 { color: var(--brand-green-dark); margin-top: 0; font-size: 18px; }
+
+    /* --- Interactive Activity --- */
+    .rps-lesson-8 .activity-box { background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 24px; margin-top: 24px; }
+    .rps-lesson-8 .carb-items { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 24px; border-bottom: 2px dashed #dee2e6; padding-bottom: 24px; }
+    .rps-lesson-8 .carb-item { padding: 10px 18px; border: 2px solid var(--brand-secondary-blue); border-radius: 20px; background-color: var(--brand-white); color: var(--brand-secondary-blue); font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .rps-lesson-8 .carb-item.placed { cursor: default; }
+    .rps-lesson-8 .carb-sorter-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .rps-lesson-8 .carb-category { min-height: 150px; padding: 16px; border: 3px dashed #bdc3c7; border-radius: 8px; }
+    .rps-lesson-8 .carb-category h4 { text-align: center; margin-bottom: 16px; font-size: 18px; }
+    .rps-lesson-8 .carb-category#slowFuel8 { border-color: var(--brand-green-light); color: var(--brand-green-dark); }
+    .rps-lesson-8 .carb-category#fastFuel8 { border-color: var(--brand-red); color: #a94442; }
+
+    /* --- Mobile Responsiveness --- */
+    @media (max-width: 768px) {
+        .rps-lesson-8 .carb-sorter-container { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="rps-lesson-container rps-lesson-8">
+    <div class="content-wrapper">
+        <header class="lesson-header">
+            <h1>Lesson 2.4: The Right Carbs</h1>
+            <p class="lesson-subtitle">Fueling for Steady Energy & a Happy Gut</p>
+        </header>
+
+        <section class="section">
+            <h2>The Brain's Preferred Fuel</h2>
+            <p>Carbohydrates are not the enemy. In fact, they are your brain's preferred source of fuel. The problem isn't carbs themselves, but the *type* of carbs we typically reach for. This lesson is about shifting our focus from "low-carb" to **"smart-carb."** We'll explore how choosing the right carbohydrates can provide clean, steady energy, eliminate brain fog, and act as the primary food for your mood-boosting gut garden.</p>
+        </section>
+
+        <section class="section">
+            <h2>Complex vs. Simple: The Fiber Factor</h2>
+            <p>The difference between a "smart" carb and a "rollercoaster" carb comes down to one thing: **fiber**.</p>
+            <ul>
+                <li><strong>Simple Carbs</strong> (white bread, sugar, pastries) have had their fiber stripped away. Without fiber to slow them down, they hit your bloodstream like a tidal wave, causing the spike and crash we discussed in Lesson 6.</li>
+                <li><strong>Complex Carbs</strong> (oats, quinoa, beans, sweet potatoes, whole fruits) come packaged with their natural fiber. This fiber acts like a slow-release mechanism, delivering a steady stream of glucose to your brain for hours of stable energy and focus.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="highlight-box">
+                <h3>💡 Key Insight: Fiber is Your Gut's Favorite Food</h3>
+                <p>You don't digest fiber, but your gut bacteria do! Fiber is the ultimate **prebiotic**—the fertilizer for your gut garden. When your beneficial microbes feast on fiber, they produce powerful anti-inflammatory molecules called short-chain fatty acids (SCFAs). These SCFAs strengthen your gut lining, reduce inflammation throughout your body, and directly support brain health.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practitioner-voice">
+                <blockquote>"A patient of mine, a student just like Jordan, was struggling with intense test anxiety and an inability to study for long periods. His diet consisted of quick, simple carbs like instant noodles and energy drinks. We made one simple swap: he replaced the instant noodles with a big bowl of oatmeal loaded with berries, nuts, and seeds. The change was profound. He reported being able to study for two to three hours straight without brain fog or feeling jittery. He was giving his brain the slow-burning fuel it needed to perform under pressure." - Autumn Persinger, PMHNP-BC</blockquote>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Interactive Activity: Smart Carb Sorter</h2>
+            <div class="activity-box">
+                <h3 style="text-align:center; color: var(--brand-green-dark); margin-top:0;">Sort the Fuel</h3>
+                <p style="text-align:center; margin-top:8px;">Click on the foods below to sort them into the correct category based on how they affect your brain and mood.</p>
+                <div class="carb-items" id="carbPool8">
+                    <div class="carb-item" data-category="fast">White Bread</div>
+                    <div class="carb-item" data-category="slow">Oatmeal</div>
+                    <div class="carb-item" data-category="slow">Apple</div>
+                    <div class="carb-item" data-category="fast">Soda</div>
+                    <div class="carb-item" data-category="slow">Lentils</div>
+                    <div class="carb-item" data-category="fast">Candy Bar</div>
+                </div>
+                <div class="carb-sorter-container">
+                    <div class="carb-category" id="slowFuel8">
+                        <h4>✅ Steady Fuel (Complex)</h4>
+                    </div>
+                    <div class="carb-category" id="fastFuel8">
+                        <h4>🎢 Rollercoaster Fuel (Simple)</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const container = document.querySelector('.rps-lesson-8');
+        if (!container) return;
+
+        const carbItemsPool = container.querySelector('#carbPool8');
+        const slowFuelZone = container.querySelector('#slowFuel8');
+        const fastFuelZone = container.querySelector('#fastFuel8');
+
+        carbItemsPool.addEventListener('click', function(e) {
+            const item = e.target;
+            if (item.classList.contains('carb-item') && !item.classList.contains('placed')) {
+                const category = item.dataset.category;
+                
+                if (category === 'slow') {
+                    slowFuelZone.appendChild(item);
+                    item.style.background = 'var(--brand-green-light)';
+                    item.style.borderColor = 'var(--brand-green-dark)';
+                } else {
+                    fastFuelZone.appendChild(item);
+                    item.style.background = 'var(--brand-red)';
+                    item.style.borderColor = '#a94442';
+                }
+                item.style.color = 'var(--brand-white)';
+                item.classList.add('placed');
+            }
+        });
+    })();
+</script>
+<!-- END OF LEARNWORLDS CUSTOM CODE BLOCK FOR LESSON 8 -->

@@ -1,0 +1,141 @@
+{
+    "lessonId": "7",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "The Anti-Persona - Who NOT to Sell To",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the '80/20 Rule of Misery' in sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "80% of customers are happy, 20% are sad."
+                },
+                {
+                    "id": "b",
+                    "text": "80% of your headaches/support tickets come from 20% of your customers (the bad fits)."
+                },
+                {
+                    "id": "c",
+                    "text": "You should spend 80% of your time on difficult customers to fix them."
+                },
+                {
+                    "id": "d",
+                    "text": "80% of sales happen on Fridays."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Bad fit customers (Anti-Personas) consume disproportionate resources compared to their revenue value."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'Bad Revenue' dangerous for a startup?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Money is never bad."
+                },
+                {
+                    "id": "b",
+                    "text": "It forces you to build features for edge cases that don't scale, distracting you from the main product roadmap."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes your bank account look too full."
+                },
+                {
+                    "id": "d",
+                    "text": "It requires you to pay more taxes."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Revenue that comes with custom feature demands or high support costs from the wrong customer type can kill your product focus."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do you identify the 'Education Seeker' (Free Consultant)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They ask 'Can I pick your brain?' or 'Just exploring' with no budget/timeline."
+                },
+                {
+                    "id": "b",
+                    "text": "They ask for the pricing page immediately."
+                },
+                {
+                    "id": "c",
+                    "text": "They are the CEO."
+                },
+                {
+                    "id": "d",
+                    "text": "They send you a contract."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Education seekers want your knowledge but have no intent or ability to buy. They often use phrase like 'just researching'."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the best way to handle an 'Unfunded Visionary' asking for a discount on Day 1?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Give them the discount to get the logo."
+                },
+                {
+                    "id": "b",
+                    "text": "State your standard price firmly. If they flinch, disqualify them."
+                },
+                {
+                    "id": "c",
+                    "text": "Argue with them."
+                },
+                {
+                    "id": "d",
+                    "text": "Build a custom plan for them."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "State pricing early to test budget qualification. If they can't afford your base price, they are an Anti-Persona."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of these is a valid 'Technical Anti-Persona' signal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They use a competitor's technology that implies a fundamentally different workflow (e.g. Shopify vs Magento)."
+                },
+                {
+                    "id": "b",
+                    "text": "They have a website."
+                },
+                {
+                    "id": "c",
+                    "text": "They are on LinkedIn."
+                },
+                {
+                    "id": "d",
+                    "text": "They use Gmail."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Incompatible tech stacks are hard disqualifiers. You shouldn't try to sell a Salesforce plugin to a Hubspot shop."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Define your Anti-Persona: Describe the type of customer you should actively AVOID. What are the warning signs that someone is not a good fit?",
+            "minLength": 100,
+            "promptForAI": "Assess the anti-persona clarity. Check for: (1) specific characteristics to avoid, (2) clear warning signs, (3) reasoning for exclusion. Suggest additional red flags to watch for."
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "lessonId": "12",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Your Content Playbook Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'Total Time' per week a solo founder should spend on their content engine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "5-6 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "20+ hours"
+                },
+                {
+                    "id": "d",
+                    "text": "0 hours (fully automated)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "5-6 hours is the 'Golden Ratio.' It provides enough time for high-quality creation and distribution without interfering with your ability to actually build and sell."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary activity on 'Friday' in the Content Playbook rhythm?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Deep Work writing"
+                },
+                {
+                    "id": "b",
+                    "text": "Translation and repurposing"
+                },
+                {
+                    "id": "c",
+                    "text": "Reviewing metrics and 'Rolling' the 12-week calendar forward"
+                },
+                {
+                    "id": "d",
+                    "text": "Taking the day off"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Friday is for strategy and planning. By rolling the calendar then, you ensure Monday morning is focused 100% on execution."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How often should you perform a 'Macro' Strategic Review of your entire playbook?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Every day"
+                },
+                {
+                    "id": "b",
+                    "text": "Every week"
+                },
+                {
+                    "id": "c",
+                    "text": "Every 90 days (Quarterly)"
+                },
+                {
+                    "id": "d",
+                    "text": "Once a year"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Content marketing is a long-term game. 90 days provides enough data to see real trends in pillar performance and AEO visibility."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does the lesson say is the solo founder's ultimate 'Moat' in content marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Fancy graphic design"
+                },
+                {
+                    "id": "b",
+                    "text": "Boring consistency"
+                },
+                {
+                    "id": "c",
+                    "text": "Knowing secret SEO hacks"
+                },
+                {
+                    "id": "d",
+                    "text": "Using the same tools as everyone else"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most people quit when things get difficult or results are slow. If you continue executing your playbook while others stop, you will eventually dominate the conversation in your niche."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which course should you take after completing Course 5?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Course 1: ICP Builder"
+                },
+                {
+                    "id": "b",
+                    "text": "Course 10: Email Nurture"
+                },
+                {
+                    "id": "c",
+                    "text": "Course 6: SEO & Answer Engine Optimization"
+                },
+                {
+                    "id": "d",
+                    "text": "No more courses needed"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Now that you have a content engine, Course 6 teaches you how to tune those assets so they are visible to both humans (SEO) and AI (AEO)."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Combine your learning into your weekly rhythm. What specific day and time is your 'Monday Execution' block? What is your 'Friday Planning' block? What is the ONE Pillar you are most excited to start writing for next week? Why?",
+            "minLength": 100,
+            "promptForAI": "Review for specific calendar commitments. The founder should name a dedicated time slot for both planning and execution. Look for excitement about a specific pillar as a sign of strategic alignment."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

@@ -1,0 +1,153 @@
+{
+    "lessonId": "7",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 7: Marketing Qualified Lead (MQL) Definition",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What are the two core requirements for a lead to be considered an MQL?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A high email open rate and a large social media following."
+                },
+                {
+                    "id": "b",
+                    "text": "Demographic Fit and Behavioral Engagement."
+                },
+                {
+                    "id": "c",
+                    "text": "A signed contract and a processed payment."
+                },
+                {
+                    "id": "d",
+                    "text": "Visiting the homepage and downloading a free wallpaper."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "An MQL must both match your Ideal Customer Profile (Fit) and demonstrate active interest in your solution (Engagement)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Why is 'Engagement without Fit' (e.g., a student heavily opening your emails) NOT usually an MQL for a B2B software founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are clicking too much."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they lack the authority, budget, or business need to actually purchase the solution."
+                },
+                {
+                    "id": "c",
+                    "text": "Because they haven't visited the pricing page yet."
+                },
+                {
+                    "id": "d",
+                    "text": "Because they are using a corporate email address."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Fit criteria protect your time by ensuring you only focus on leads who represent actual business opportunities."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "What is the primary difference between an MQL (Marketing Qualified Lead) and an SQL (Sales Qualified Lead)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "MQLs have paid; SQLs haven't."
+                },
+                {
+                    "id": "b",
+                    "text": "MQLs are 'worth your time' to reach out to; SQLs are confirmed opportunities after a conversation."
+                },
+                {
+                    "id": "c",
+                    "text": "SQLs are handled by automation; MQLs are handled by humans."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; they are interchangeable terms."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "MQL indicates readiness for sales attention, while SQL indicates that a sales professional (the founder) has validated the lead's intent and fit during a conversation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "If your MQL-to-SQL conversion rate is consistently under 20%, what does the lesson suggest you should do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Loosen your criteria to get more leads."
+                },
+                {
+                    "id": "b",
+                    "text": "Stop using automation entirely."
+                },
+                {
+                    "id": "c",
+                    "text": "Tighten your 'Fit' criteria to ensure you are only qualifying high-quality prospects."
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore the data and keep doing what you're doing."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Low MQL-to-SQL conversion means your filter is too loose and you are 'qualifying' leads who aren't actually ready or a good fit."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which of these is a typical 'Immediate MQL' trigger that bypasses general scoring?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Unsubscribing from the newsletter."
+                },
+                {
+                    "id": "b",
+                    "text": "Requesting a live product demo."
+                },
+                {
+                    "id": "c",
+                    "text": "Reading one blog post on a mobile device."
+                },
+                {
+                    "id": "d",
+                    "text": "Liking a post on LinkedIn."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A demo request is a high-intent signal that immediately qualifies a lead for direct attention."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft your MQL Definition. What are your 3 non-negotiable 'Fit' criteria (e.g., job title, company size, industry)? What is one specific 'Engagement Trigger' that signals a lead is ready for you to stop the automation and send a personal message? Why did you choose that specific trigger?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's MQL definition. Check for alignment between the fit criteria and their core business. Provide feedback on whether their 'Engagement Trigger' is too high-friction or too low-intent."
+        }
+    ]
+}

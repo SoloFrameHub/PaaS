@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the half-life of caffeine and why does it matter for sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "30 minutes - caffeine leaves your system quickly"
+                },
+                {
+                    "id": "opt2",
+                    "text": "5-6 hours - meaning half the caffeine from a 3 PM coffee is still in your system at 8-9 PM"
+                },
+                {
+                    "id": "opt3",
+                    "text": "24 hours - caffeine stays in your system for a full day"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Caffeine has no half-life"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Caffeine has a half-life of approximately 5-6 hours. This means half the caffeine from a 3 PM coffee is still in your system at 8-9 PM, and a quarter is still active at 1-2 AM. Many people underestimate how long caffeine lasts because they've developed tolerance to its alerting effects—but it's still affecting their sleep."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the recommended caffeine cutoff time for better sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "6 PM - a few hours before bed is fine"
+                },
+                {
+                    "id": "opt2",
+                    "text": "2 PM - or earlier if you're caffeine-sensitive"
+                },
+                {
+                    "id": "opt3",
+                    "text": "10 PM - right before bed doesn't matter"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Caffeine doesn't affect sleep at all"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Stop caffeine by 2 PM (or earlier if you're sensitive). Research shows caffeine within 6 hours of bedtime significantly impairs sleep. Given the 5-6 hour half-life, even afternoon caffeine can affect sleep. Limit to 1-2 cups in the morning and switch to decaf after your cutoff."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does alcohol actually affect sleep despite making you feel drowsy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Alcohol improves sleep quality throughout the entire night"
+                },
+                {
+                    "id": "opt2",
+                    "text": "You may fall asleep faster, but sleep becomes fragmented in the second half of the night with more awakenings, less REM sleep, and worse overall quality"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Alcohol has no effect on sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Alcohol only affects dreaming, not sleep quality"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Alcohol is deceptive: it may help you fall asleep faster (sedation effect), but as it metabolizes during the second half of the night, sleep becomes fragmented with more awakenings, less REM sleep, and possibly sweating and racing heart. Net result: 3-4% reduction in sleep quality per drink."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended timing for eating dinner relative to bedtime?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Right before bed to feel full and sleepy"
+                },
+                {
+                    "id": "opt2",
+                    "text": "2-4 hours before bed - avoid heavy meals close to bedtime"
+                },
+                {
+                    "id": "opt3",
+                    "text": "6+ hours before bed - skip dinner entirely"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Food timing has no effect on sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Finish dinner 2-4 hours before bed. Eating less than 1 hour before bed significantly increases wake time during the night, and eating less than 3 hours before bed increases nocturnal awakening risk by 40%. Heavy, fatty, or spicy meals late in the evening extend time to fall asleep."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is using alcohol as a sleep aid particularly dangerous for people with insomnia?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It's actually safe and recommended"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It creates a self-medication cycle: trouble sleeping → drink to 'help' → sleep actually worsens → think you need more alcohol → dependency develops"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Alcohol is only dangerous for people without insomnia"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The only danger is the calories"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Using alcohol as a sleep aid creates a dangerous self-medication cycle: you have trouble sleeping, you drink to 'help,' sleep actually worsens (though you may not realize it), you think you need more alcohol to sleep, and dependency can develop. This leads to worse insomnia AND alcohol problems."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "6",
+    "title": "Substances and Sleep - Quiz"
+}

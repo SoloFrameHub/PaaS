@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does 'calibrated effort beliefs' mean according to the lesson?",
+            "options": [
+                {"id": "opt1", "text": "Effort always guarantees success if you try hard enough"},
+                {"id": "opt2", "text": "Effort is meaningful and builds skill, AND effort alone is insufficient without strategy, feedback, resources, and opportunity"},
+                {"id": "opt3", "text": "Effort doesn't matter—only natural talent determines outcomes"},
+                {"id": "opt4", "text": "You should minimize effort to avoid burnout"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Calibrated effort beliefs acknowledge that effort is valuable (builds skill, creates meaning) AND recognize that effort alone is insufficient. Outcomes depend on effort + strategy + resources + opportunity + sometimes factors beyond control. 'Just try harder' is inadequate advice when strategy, resources, or structural barriers are the limiting factor. This nuanced view avoids both the 'effort always works' myth (which causes self-blame when systemic barriers exist) and the 'effort doesn't matter' myth (which undermines persistence on genuinely learnable challenges)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to experimental evidence cited in the lesson, when does exerting effort increase felt meaning and competence?",
+            "options": [
+                {"id": "opt1", "text": "Effort always increases meaning, regardless of outcomes"},
+                {"id": "opt2", "text": "Effort increases meaning up to a point, but exhaustive effort with no progress does not—it leads to learned helplessness"},
+                {"id": "opt3", "text": "Effort never creates meaning—only outcomes matter"},
+                {"id": "opt4", "text": "Only effortless success creates meaning"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Experimental studies show effort does increase perceived value and meaning (effort justification effect)—when you work hard for something, you attach more significance to it. However, this only works UP TO A POINT. Exhaustive effort with no progress reduces meaning and motivation, leading to learned helplessness. This is why 'keep trying harder' advice can be destructive when progress isn't possible. Effort needs to be paired with feedback, strategy adjustment, and at least some incremental progress to sustain motivation and meaning."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why can effort beliefs cause harm in certain contexts?",
+            "options": [
+                {"id": "opt1", "text": "Effort beliefs can never cause harm—they're always motivating"},
+                {"id": "opt2", "text": "In contexts with structural barriers or impossible standards, effort beliefs shift blame to individuals ('you didn't try hard enough'), causing self-blame and burnout when systemic factors block success"},
+                {"id": "opt3", "text": "Effort beliefs only harm people with low intelligence"},
+                {"id": "opt4", "text": "Effort beliefs harm only when combined with self-compassion"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When structural barriers, resource deprivation, or impossible standards prevent success regardless of effort, effort beliefs ('if you try hard, you'll succeed') cause harm. They shift blame to the individual: if 'effort always works,' then failure means 'I didn't try hard enough'—even when the system was rigged. This causes burnout, self-blame, and ignores systemic inequality. The lesson cites evidence that growth mindset accounts for only 2.9-3.2% of SES variance in achievement—the other 97% is structural. Effort beliefs can't overcome structural inequality."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based relationship between effort and achievement according to the lesson?",
+            "options": [
+                {"id": "opt1", "text": "Perfect correlation—effort directly predicts achievement in all contexts"},
+                {"id": "opt2", "text": "Correlation exists but is modest and mediated by access, opportunity, strategy, feedback, and systemic factors"},
+                {"id": "opt3", "text": "No correlation—effort has no relationship to achievement"},
+                {"id": "opt4", "text": "Negative correlation—more effort always leads to worse outcomes"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows a correlation between effort and achievement exists, but it's modest and heavily mediated by other factors: access to resources, opportunity, effective strategy, quality feedback, and systemic factors (SES, discrimination, educational quality). Effort without these supporting conditions doesn't reliably produce outcomes. This is why deliberate practice (effortful practice WITH feedback and strategy) predicts skill development, but undirected effort alone does not. The effort-achievement link is real but conditional—not universal or sufficient."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a current challenge where you've been telling yourself 'I just need to work harder.' Analyze: Is increased effort actually the solution, or are you missing strategy, feedback, resources, or facing structural barriers? What would a calibrated approach look like (effort + what else)?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "9",
+    "title": "Effort Beliefs: Calibrated and Realistic - Quiz"
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is GABA's primary role in the brain?",
+            "options": [
+                { "id": "opt1", "text": "It stimulates neural activity to increase alertness and energy" },
+                { "id": "opt2", "text": "It is the primary excitatory neurotransmitter that speeds up brain processing" },
+                { "id": "opt3", "text": "It is the primary inhibitory neurotransmitter — the brain's calming signal that reduces neural overexcitation" },
+                { "id": "opt4", "text": "It regulates body temperature and hunger signals" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "GABA is the brain's primary inhibitory neurotransmitter. It works by making neurons less likely to fire, serving as the braking system for the nervous system. Without adequate GABA activity, neural circuits can become overactive, leading to anxiety, hypervigilance, insomnia, and difficulty managing stress."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which two bacterial species are among the top GABA producers found in fermented foods?",
+            "options": [
+                { "id": "opt1", "text": "E. coli and Salmonella" },
+                { "id": "opt2", "text": "Lactiplantibacillus plantarum and Levilactobacillus brevis" },
+                { "id": "opt3", "text": "Streptococcus and Staphylococcus" },
+                { "id": "opt4", "text": "Clostridium and Helicobacter" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Lactiplantibacillus plantarum and Levilactobacillus brevis are among the most prolific GABA producers. L. plantarum is found in fermented vegetables like sauerkraut and kimchi, while L. brevis is commonly found in sourdough bread, pickles, and other fermented products."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the most likely mechanism by which gut-produced GABA influences brain function?",
+            "options": [
+                { "id": "opt1", "text": "GABA freely crosses the blood-brain barrier in large quantities" },
+                { "id": "opt2", "text": "GABA is converted into a different neurotransmitter that can cross the blood-brain barrier" },
+                { "id": "opt3", "text": "Gut GABA activates GABA receptors on enteric neurons and vagal afferents, sending neural signals to the brain" },
+                { "id": "opt4", "text": "Gut bacteria transport GABA directly into brain cells through special tubes" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The most likely mechanism is indirect: gut bacteria produce GABA, which activates GABA receptors on enteric neurons and vagal afferents. These neural signals travel to the brain through the vagus nerve, influencing central GABA signaling. This explains why vagus nerve-intact animals show behavioral effects from GABA-producing probiotics while vagotomized animals do not."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why do bacteria produce GABA in the first place?",
+            "options": [
+                { "id": "opt1", "text": "They evolved specifically to help humans manage anxiety" },
+                { "id": "opt2", "text": "It is part of their survival strategy — it helps them regulate pH, manage glutamate, and generate energy" },
+                { "id": "opt3", "text": "They produce GABA accidentally as a toxic waste product" },
+                { "id": "opt4", "text": "They produce GABA only when they sense human stress hormones" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Bacteria produce GABA as part of their own survival strategy, not to help humans relax. The GAD reaction consumes a proton (helping regulate pH in acidic environments), helps manage intracellular glutamate balance, and generates energy through the GABA shunt. This makes it a robust, naturally selected process."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which combined approach is most effective for supporting the GABA system naturally?",
+            "options": [
+                { "id": "opt1", "text": "Taking a GABA supplement alone without any lifestyle changes" },
+                { "id": "opt2", "text": "Drinking alcohol to enhance GABA receptor activity" },
+                { "id": "opt3", "text": "Combining gut-based GABA support (fermented foods, fiber, B6) with brain-based support (stress reduction, exercise, sleep)" },
+                { "id": "opt4", "text": "Avoiding all fermented foods and relying solely on medication" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The most effective strategy combines gut-based GABA support (fermented foods provide GABA-producing bacteria, fiber feeds them, B6 is the essential cofactor) with brain-based GABA support (stress reduction, exercise, and sleep all directly increase brain GABA activity). These approaches work through complementary pathways and may have synergistic effects."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "10",
+    "title": "GABA Production by Gut Bacteria - Quiz"
+}

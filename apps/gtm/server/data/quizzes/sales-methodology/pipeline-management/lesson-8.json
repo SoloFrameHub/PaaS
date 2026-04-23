@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Scaling Sales Operations Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Exception-Based Management' in sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Managing deals only when the customer complains."
+                },
+                {
+                    "id": "b",
+                    "text": "A system where the founder only intervenes in deals that deviate from the standard velocity or trigger a friction alert, allowing automated systems to handle the 'normal' flow."
+                },
+                {
+                    "id": "c",
+                    "text": "Only managing deals that are exceptionally large."
+                },
+                {
+                    "id": "d",
+                    "text": "Managing sales only on weekends."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "As a solo founder, time is your scarcest resource. You cannot manually touch 50 deals a week. Automation should handle the momentum; you should only use your 'expert status' to unblock deals that are stuck."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is 'Batching' critical for a founder managing a high-volume pipeline?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make it easier to hire a team later."
+                },
+                {
+                    "id": "b",
+                    "text": "To reduce 'Context Switching' costs, which allow you to maintain deeper focus and higher quality communication than if you reacted to every notification in real-time."
+                },
+                {
+                    "id": "c",
+                    "text": "To save on internet bandwidth."
+                },
+                {
+                    "id": "d",
+                    "text": "Because the CRM is faster on Tuesdays."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Every time you stop a deep task (like coding) to answer one sales email, you lose 20 minutes of productivity. Batching your sales tasks ensures you are in the 'Sales Mindset' when you need to be, without sacrificing your product development time."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which deals should be in 'Tier C' (Automated) of your pipeline?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High-value whales."
+                },
+                {
+                    "id": "b",
+                    "text": "Complex enterprise deals."
+                },
+                {
+                    "id": "c",
+                    "text": "Low-value, high-volume deals that can follow a standardized 'No-Touch' funnel from signup to close."
+                },
+                {
+                    "id": "d",
+                    "text": "Deals that are about to close."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "You should only spend your personal energy (the most expensive energy) on deals where your expert status is required to close. Low-value deals must be automated to remain profitable."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Choose one sales activity you do manually today (e.g., scheduling, follow-up emails, contract creation). Describe how you would automate it to an 'Exception-Based' model where you only intervene if something goes wrong.",
+            "minLength": 100,
+            "aiPrompt": "Check if the student uses the'If/Then' logic of automation (e.g.,'If they don't book in 24 hours, THEN I get an alert' rather than manual follow-up)."
+        }
+    ]
+}

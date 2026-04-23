@@ -1,0 +1,56 @@
+RewriteEngine On
+
+# ============================================================
+# 1. FORCE HTTPS
+# ============================================================
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ============================================================
+# 2. WWW → NON-WWW
+# Fixes ~83 GSC impressions currently hitting dead www. URLs
+# ============================================================
+RewriteCond %{HTTP_HOST} ^www\.soloframehub\.com [NC]
+RewriteRule ^(.*)$ https://soloframehub.com/$1 [R=301,L]
+
+# ============================================================
+# 4. /es AND /es/ → /es/index.html
+# ============================================================
+RewriteRule ^es/?$ /es/index.html [L,R=301]
+
+# ============================================================
+# 5. OLD BOOK ROUTES (Next.js app /book/* paths)
+# Fixes 24+ impressions from cached /book/* URLs in GSC
+# ============================================================
+RedirectPermanent /book /founders-ai-customer-acquisition-playbook.html
+RedirectMatch 301 ^/book/(.*)$ /founders-ai-customer-acquisition-playbook.html
+
+# ============================================================
+# 6. LEGACY URL RENAMES (solo → team rebrand)
+# Root pages
+# ============================================================
+RedirectPermanent /solo-gtm-os.html /gtm-os.html
+RedirectPermanent /solo-founders-ai-client-acquisition-os.html /gtm-os.html
+RedirectPermanent /solo-founders-ai-customer-acquisition-academy.html /gtm-os.html
+RedirectPermanent /solo-founders-ai-customer-acquisition-playbook.html /founders-ai-customer-acquisition-playbook.html
+RedirectPermanent /solo-founders-ai-gtm-academy.html /founders-ai-gtm-academy.html
+RedirectPermanent /solo-founders-ai-startup-academy.html /founders-ai-startup-academy.html
+RedirectPermanent /solo-founders-ai-60-day-roadmap-book.html /founders-ai-60-day-roadmap-book.html
+RedirectPermanent /solo-founder-apps.html /founder-apps.html
+RedirectPermanent /blog-solo-gtm-strategy.html /blog-gtm-strategy.html
+RedirectPermanent /blog-solo-founder-customer-acquisition.html /blog-founder-customer-acquisition.html
+RedirectPermanent /blog-sales-pipeline-solopreneurs.html /blog-sales-pipeline-founders.html
+RedirectPermanent /blog-certified-solo-gtm.html /blog-certified-gtm.html
+
+# ============================================================
+# 7. LEGACY URL RENAMES — Spanish pages
+# ============================================================
+RedirectPermanent /es/solo-gtm-os.html /es/gtm-os.html
+RedirectPermanent /es/solo-founders-ai-client-acquisition-os.html /es/gtm-os.html
+RedirectPermanent /es/founders-ai-client-acquisition-os.html /es/gtm-os.html
+RedirectPermanent /es/solo-founders-ai-customer-acquisition-academy.html /es/gtm-os.html
+RedirectPermanent /es/solo-founders-ai-customer-acquisition-playbook.html /es/founders-ai-customer-acquisition-playbook.html
+RedirectPermanent /es/solo-founders-ai-gtm-academy.html /es/founders-ai-gtm-academy.html
+RedirectPermanent /es/solo-founders-ai-startup-academy.html /es/founders-ai-startup-academy.html
+RedirectPermanent /es/solo-founders-ai-60-day-roadmap-book.html /es/founders-ai-60-day-roadmap-book.html
+RedirectPermanent /es/solo-founder-apps.html /es/founder-apps.html

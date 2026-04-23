@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does the HPA axis coordinate the stress response?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "The hypothalamus releases CRH → pituitary releases ACTH → adrenals release cortisol → negative feedback quiets the system"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The adrenals release adrenaline → heart rate increases → cortisol is suppressed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "The hypothalamus directly releases cortisol into the bloodstream"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The HPA axis only activates during chronic stress, not acute stress"
+                }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "The HPA axis operates as a coordinated cascade: the hypothalamus releases corticotropin-releasing hormone (CRH), which signals the pituitary to release ACTH, which then signals the adrenal glands to release cortisol. In a healthy stress response, rising cortisol triggers negative feedback that quiets the system and returns you to baseline. This feedback mechanism is what breaks down in chronic stress."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What distinguishes acute stress from chronic stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Acute stress is always harmful; chronic stress is adaptive"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Acute stress is time-limited and adaptive (enhances focus/performance); chronic stress disrupts HPA negative feedback and creates allostatic load"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Acute stress only affects the mind; chronic stress only affects the body"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no meaningful difference between acute and chronic stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Acute stress is short-term activation in response to a specific challenge (minutes to hours) and can enhance memory, focus, and performance—this is stress working as designed. Chronic stress, by contrast, is prolonged or repeated activation (weeks to years) that breaks down the HPA negative feedback system, leading to abnormal cortisol regulation, inflammation, and structural brain changes. This cumulative damage is called allostatic load."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the transactional model of stress (Lazarus & Folkman), what determines whether a situation becomes stressful?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only the objective severity of the external event"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Your primary appraisal (Is this threatening?) combined with your secondary appraisal (Do I have resources to cope?)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Whether other people also find the situation stressful"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Your personality type (Type A vs. Type B)"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The transactional model frames stress as a person-environment transaction, not just an external event. Your brain runs a two-stage appraisal: primary appraisal evaluates whether the situation is threatening, harmful, challenging, or irrelevant; secondary appraisal evaluates whether you have the resources to cope. This explains why the same situation (like public speaking) creates different stress responses in different people—the difference is in the appraisal, not the objective event."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is allostatic load, and why does it matter?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Allostatic load is the amount of daily tasks you need to complete"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Allostatic load is the cumulative biological cost of chronic stress, measurable through biomarkers like cortisol and inflammatory markers—it can accumulate even when you feel 'fine'"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Allostatic load only affects people with diagnosed mental health conditions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Allostatic load is another term for acute stress response"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Allostatic load is the cumulative biological burden of chronic stress exposure, measured through biomarkers including cortisol patterns, inflammatory markers (CRP, IL-6), blood pressure, and glucose metabolism. Clinically, this matters because allostatic load predicts health outcomes independently of subjective stress symptoms—you can feel like you're managing fine but still be accumulating physiological damage. Once accumulated, stress management practices alone may not fully reverse it, which is why medical monitoring is sometimes needed."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When is stress a medical issue requiring professional evaluation rather than self-management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only if you have been diagnosed with a mental illness"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Never—all stress can be managed with the right techniques"
+                },
+                {
+                    "id": "opt3",
+                    "text": "When chronic stress occurs alongside persistent physical symptoms, sleep disturbances lasting >3 weeks, significant concentration impairment, or feelings of hopelessness"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only if stress leads to suicidal thoughts"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Chronic stress becomes a medical issue when it's accompanied by persistent physical symptoms that don't resolve, sleep disturbances lasting more than 3 weeks, significant changes in appetite or weight, difficulty concentrating that impairs daily function, or feelings of hopelessness or loss of interest in activities. These symptoms suggest that stress may be contributing to or co-occurring with a clinical condition that requires professional assessment and treatment. Stress management skills are valuable adjuncts, but they're not substitutes for medical care when these warning signs appear."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "1",
+    "title": "Understanding Stress: The Science of the Stress Response - Quiz"
+}

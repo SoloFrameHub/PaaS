@@ -1,0 +1,84 @@
+{
+  "lessonId": "4",
+  "courseId": "ai-outreach-automation",
+  "sectionId": "ai-acquisition",
+  "title": "Multi-Channel Sequence Design (B2B Framing)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the '5-7 Touch Sweet Spot' for B2B outreach sequences?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Send 5-7 emails on the first day for maximum impact"
+        },
+        {
+          "id": "b",
+          "text": "80% of B2B replies come from touches 2-5; beyond touch 7, you add less than 5% incremental replies while increasing annoyance risk"
+        },
+        {
+          "id": "c",
+          "text": "Always send exactly 7 touches regardless of response"
+        },
+        {
+          "id": "d",
+          "text": "5-7 different channels should be used simultaneously"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Data from 2025-2026 shows 80% of replies come from touches 2-5. Touch 1 gets ~30%, Touch 2 ~25%, Touches 3-5 ~25% combined. Beyond Touch 7, incremental replies drop below 5% while annoyance and unsubscribe risk increases significantly."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What were the three critical errors in Sarah's $47K multi-channel sequence failure?",
+      "options": [
+        { "id": "a", "text": "Wrong tools, bad timing, high cost" },
+        {
+          "id": "b",
+          "text": "Too many touches too fast, no channel logic (wrong order), and generic AI personalization"
+        },
+        { "id": "c", "text": "Not enough volume, wrong ICP, missing CTA" },
+        {
+          "id": "d",
+          "text": "Using email instead of phone, skipping LinkedIn, no follow-ups"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah made three errors: too many touches too fast (7 in 21 days across 3 channels felt like harassment), no channel logic (LinkedIn connection request before prospects even knew who she was), and generic personalization (AI lines referencing 'your company's growth' that apply to everyone)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "For a solo founder doing less than 500 emails/week on a budget under $50/month, which sequence archetype is recommended?",
+      "options": [
+        { "id": "a", "text": "Email + LinkedIn + Voice (multi-channel)" },
+        { "id": "b", "text": "LinkedIn-only with AI engagement" },
+        { "id": "c", "text": "Email-only: 5 touches over 21 days" },
+        { "id": "d", "text": "Phone-first with email follow-up" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Email-Only archetype (5 touches over 21 days) is best for low-to-mid ticket deals, high-volume outreach, and budget-conscious solo founders under $50/month in tools. Master email before adding channel complexity."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Multi-channel outreach done wrong is worse than email-only outreach done right.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. More channels mean more ways to make mistakes. A poorly designed multi-channel sequence can get your LinkedIn banned, damage your email domain, and burn through prospects permanently. The lesson emphasizes mastering one channel (email) before adding complexity."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design a 5-touch email sequence for your specific ICP. For each touch, describe the timing (which day), the angle (problem, case study, value-add, social proof, or breakup), and one example subject line. Explain why you ordered the touches this way.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes all 5 touches with specific timing, distinct angles for each (not repeating the same approach), and example subject lines. Look for logical progression (problem-first opener, different angles in follow-ups, warm breakup at the end) and appropriate spacing between touches."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "10",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Your Social Proof Library Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of a 'Social Proof Library'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To store every single email ever received from a customer."
+                },
+                {
+                    "id": "b",
+                    "text": "To create a centralized, searchable, and organized repository of all evidence assets."
+                },
+                {
+                    "id": "c",
+                    "text": "To hide your social proof from competitors."
+                },
+                {
+                    "id": "d",
+                    "text": "To replace your landing page with a database."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A library ensures that you can find the right piece of proof for the right prospect in seconds, rather than digging through scattered folders."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is tagging by 'Persona Type' (e.g., industry, role) important for social proof?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It helps you stay organized alphabetically."
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to quickly find examples from 'someone like them,' which builds more relatable trust."
+                },
+                {
+                    "id": "c",
+                    "text": "It's a requirement for GDPR compliance."
+                },
+                {
+                    "id": "d",
+                    "text": "It hides the identities of your customers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Prospects find proof much more compelling when it comes from a peer in a similar role or industry."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Proof Ops' workflow, what is the 'Distill' step?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Deleting any testimonial that isn't perfect."
+                },
+                {
+                    "id": "b",
+                    "text": "Drafting a punchy, concise version of a raw quote or creating a short video clip."
+                },
+                {
+                    "id": "c",
+                    "text": "Sending the testimonial to a lawyer for approval."
+                },
+                {
+                    "id": "d",
+                    "text": "Translating the testimonial into multiple languages."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Distilling raw feedback into its most impactful form ensures it captures attention and delivers the message quickly on your website or in emails."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what should you do with testimonials from customers who have churned?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep using them as long as they are positive."
+                },
+                {
+                    "id": "b",
+                    "text": "Archive them immediately to prevent damaging your credibility."
+                },
+                {
+                    "id": "c",
+                    "text": "Email the customer and ask why they left."
+                },
+                {
+                    "id": "d",
+                    "text": "Edit them to make them look like current customers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Using testimonials from former customers who are no longer happy or using the product can lead to embarrassing situations if a prospect reaches out to them for a reference."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Friday Proof Audit'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A meeting with investors to show off your progress."
+                },
+                {
+                    "id": "b",
+                    "text": "A recurring 15-minute habit to move new success signals into your library."
+                },
+                {
+                    "id": "c",
+                    "text": "A technical audit of your server logs."
+                },
+                {
+                    "id": "d",
+                    "text": "A day where you ask every customer for a referral."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Making proof organization a habit ensures that your library stays up-to-date and your 'evidence layer' remains a powerful asset for sales."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Choose a tool for your V1 Social Proof Library (e.g., Notion, Airtable, or a dedicated tool like Senja). List the top 5 'metadata tags' you will use to categorize your proof to ensure it's searchable for your specific sales process.",
+            "minLength": 100,
+            "promptForAI": "The user should select a tool and define specific, relevant tags (e.g., industry-specific tags, role-based tags, objection-based tags). Evaluate the response for its practical utility and organization."
+        }
+    ]
+}

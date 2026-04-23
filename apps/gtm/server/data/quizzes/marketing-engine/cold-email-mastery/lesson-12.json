@@ -1,0 +1,167 @@
+{
+    "lessonId": "12",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Your Cold Email Playbook Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the recommended 'Daily Rhythm' for a solo founder managing cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spend 8 hours a day researching new leads"
+                },
+                {
+                    "id": "b",
+                    "text": "Check and respond to replies in the morning; batch lead research and sequence updates in the afternoon/evening"
+                },
+                {
+                    "id": "c",
+                    "text": "Only check emails once a week"
+                },
+                {
+                    "id": "d",
+                    "text": "Spend all morning writing 100 first lines from scratch"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Consistency is key. By batching your research and updates, you keep the 'Machine' running while protecting your energy for the actual sales conversations."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What should you do if an entire segment of prospects is completely silent after a high-quality sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send even more emails to them"
+                },
+                {
+                    "id": "b",
+                    "text": "Assume email is dead and stop doing it"
+                },
+                {
+                    "id": "c",
+                    "text": "Treat it as data that your 'Problem/Pain' hypothesis for that segment is likely wrong and refactor your ICP research"
+                },
+                {
+                    "id": "d",
+                    "text": "Try calling them on the phone every hour"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Silence is feedback. It means your message didn't resonate, which usually stems from a misunderstanding of that segment's urgent priorities."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How often should you perform a full 'Technical and Copy Audit' of your outreach engine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Every day"
+                },
+                {
+                    "id": "b",
+                    "text": "Once a year"
+                },
+                {
+                    "id": "c",
+                    "text": "Quarterly (every 90 days)"
+                },
+                {
+                    "id": "d",
+                    "text": "Only when something breaks"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Copy 'decays' as more competitors enter the space, and domain reputation can shift over time. A quarterly audit keeps the engine healthy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Breakup' email in your playbook?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To express your frustration"
+                },
+                {
+                    "id": "b",
+                    "text": "To close the loop and politely offer a 'clean exit' while leaving a door open for the future"
+                },
+                {
+                    "id": "c",
+                    "text": "To threaten them with a bad review"
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for a referral to a different person"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A professional breakup email often triggers a 'Wait, I actually am interested' response because it removes the pressure of the pursuit."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When scaling from 1 domain to 5 domains, what must you keep consistent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The price of your product"
+                },
+                {
+                    "id": "b",
+                    "text": "Your practitioner voice and the focus on individual relevance"
+                },
+                {
+                    "id": "c",
+                    "text": "The time of day you send emails"
+                },
+                {
+                    "id": "d",
+                    "text": "The number of images in the email"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Scale often tempts founders to become 'Lazy Spammers.' Maintaining your high-quality voice and niche-relevance is the only way to scale without killing your domain reputation."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "For Creators with an audience, why is the 'Warm DM' strategy often more effective than cold email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It uses more emojis"
+                },
+                {
+                    "id": "b",
+                    "text": "It leverages existing 'Permission' and familiarity (they already follow/know you)"
+                },
+                {
+                    "id": "c",
+                    "text": "It is fully automated by bots"
+                },
+                {
+                    "id": "d",
+                    "text": "It requires no work"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Cold email fights for attention. Warm DMs leverage the attention you've already earned. The conversion rate is significantly higher because the trust bridge already exists."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at the 'Campaign Launchpad' checklist. Which of the 5 steps is the biggest blocker for you right now? What is your deadline for checking that box and hitting 'Send' on your first campaign?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the founder's readiness and commitment. Look for a specific deadline (e.g., 'next Tuesday') and a clear understanding of their current obstacle (e.g., 'SPF setup')."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

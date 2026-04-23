@@ -1,0 +1,72 @@
+{
+  "lessonId": "2",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "VA vs Part-Time SDR: Which First?",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key distinction between a VA and an SDR?",
+      "options": [
+        { "id": "a", "text": "VAs are cheaper than SDRs" },
+        {
+          "id": "b",
+          "text": "A VA solves an admin capacity problem; an SDR solves an outbound volume problem"
+        },
+        { "id": "c", "text": "VAs work remotely while SDRs work in-office" },
+        { "id": "d", "text": "SDRs can replace the founder; VAs cannot" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A VA solves an admin capacity problem (inbox, CRM, research). An SDR solves an outbound volume problem (more outreach than you can generate alone). Hiring the wrong one adds management complexity without solving the underlying bottleneck."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What should you have before hiring an SDR?",
+      "options": [
+        { "id": "a", "text": "A large marketing budget" },
+        {
+          "id": "b",
+          "text": "A proven, documented outreach process that they can follow"
+        },
+        { "id": "c", "text": "At least 500 customers" },
+        { "id": "d", "text": "A physical office space" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An SDR should only be hired if you have a proven, documented process. They execute a playbook that works — they don't discover one. If your outreach isn't documented and tested, a VA is the right first hire."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the typical budget for a full-time Filipino VA from OnlineJobs.ph?",
+      "options": [
+        { "id": "a", "text": "$100-300/month" },
+        { "id": "b", "text": "$500-1,300/month" },
+        { "id": "c", "text": "$2,000-3,000/month" },
+        { "id": "d", "text": "$4,000-5,000/month" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A full-time Filipino VA from OnlineJobs.ph costs $500-1,300/month. A US-based part-time VA from Belay or Time Etc costs $1,500-2,500/month. The cost difference is significant."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A VA can make judgment calls about your sales strategy and decide who to prioritize in your pipeline.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. A VA handles the work around the selling — inbox triage, CRM updates, prospect research, scheduling. They cannot make strategic judgment calls, represent your voice in relationship-building, or decide pipeline priorities. That's your job."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Is your primary bottleneck admin capacity or outbound volume? Based on this, should your first hire be a VA or an SDR? What specific tasks would you delegate to them?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response correctly identifies their bottleneck (admin vs outbound volume), makes a clear VA/SDR choice with reasoning, and lists specific tasks they would delegate that match the role's capabilities (not tasks outside the role's scope)."
+    }
+  ]
+}

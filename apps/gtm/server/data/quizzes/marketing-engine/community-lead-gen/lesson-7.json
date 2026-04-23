@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "7",
+    "lessonTitle": "Slack and Discord Communities",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Private Dinner Party' analogy referring to in this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Reddit, because everyone is friendly."
+                },
+                {
+                    "id": "b",
+                    "text": "Slack and Discord communities, where trust is high and members are seen recurringly."
+                },
+                {
+                    "id": "c",
+                    "text": "Hacker News, because it's intellectual."
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn, because it's professional."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Unlike public forums, private communities build deeper, more intimate relationships over time, much like a recurring dinner party with peers.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When applying to join a gated community, what is the best way to frame your request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ask how you can use the group to grow your sales."
+                },
+                {
+                    "id": "b",
+                    "text": "Focus on the specific 'Practitioner Expertise' you are bringing to help other members."
+                },
+                {
+                    "id": "c",
+                    "text": "Tell them you have a budget for ads."
+                },
+                {
+                    "id": "d",
+                    "text": "Keep it generic so you don't sound too specialized."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Private communities are protective of their 'Vibe.' Proving you are an asset to the group rather than a seeker of value is the fastest way to get accepted.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Rule' of DMs (Direct Messages) in private communities?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Only message the moderators."
+                },
+                {
+                    "id": "b",
+                    "text": "Never slide into a DM to sell; only slide in to help or provide a resource."
+                },
+                {
+                    "id": "c",
+                    "text": "Always include a link to your sales page in the first message."
+                },
+                {
+                    "id": "d",
+                    "text": "Wait for them to message you first."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "DMs are personal. Using them for unsolicited sales is seen as a violation of privacy and trust, often resulting in being banned from the community.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "At what point should a solo founder consider building their own community platform?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The day they launch their MVP."
+                },
+                {
+                    "id": "b",
+                    "text": "Once they have at least 50 active users who are already talking to each other and an identified need for a dedicated hub."
+                },
+                {
+                    "id": "c",
+                    "text": "As soon as they hire their first employee."
+                },
+                {
+                    "id": "d",
+                    "text": "Never; it's better to stay on Reddit."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Communities require significant management time. Building one too early before there is critical mass of engagement often leads to a 'Ghost Town' effect.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which platform is generally considered best for 'Professional / B2B' focused private communities?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "TikTok"
+                },
+                {
+                    "id": "b",
+                    "text": "Slack"
+                },
+                {
+                    "id": "c",
+                    "text": "Discord"
+                },
+                {
+                    "id": "d",
+                    "text": "Facebook Groups"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While Discord is growing fast, Slack remains the standard for professional business networking and tool-based user communities.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think of a professional tool you use daily (e.g., Stripe, Shopify, Apollo). Does it have an official or unofficial 'User Community' on Slack or Discord? If you were to join today, what is the #1 value you could offer to other users of that tool? Write your potential #introductions post right now.",
+            "promptHints": [
+                "Include your 'Practitioner Hook' (I've spent X hours doing Y...).",
+                "Avoid any mention of your own product/service.",
+                "End with a clear 'How I can help' statement."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "6"
+        ],
+        "unlocks": [
+            "8"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Slack and Discord Communities - Quiz"
+}

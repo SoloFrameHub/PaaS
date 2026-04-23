@@ -1,0 +1,242 @@
+{
+  "industry_id": "devtools",
+  "display_name": "DevTools & Developer Infrastructure",
+  "parent_category": "technology",
+  "description": "Developer tools and infrastructure companies selling to engineering teams of 5-100+ developers. Characterized by bottom-up adoption patterns, technical evaluation processes, and deals typically under $5K with 4-7 week sales cycles. Buyers are often individual developers or engineering managers who champion tools internally.",
+  "typical_company_sizes": ["1-10", "11-50", "51-200"],
+  "typical_deal_sizes": ["transactional", "smb"],
+  "sales_cycle_length": "weeks",
+
+  "pain_points": [
+    {
+      "pain": "Build times exceeding 15 minutes killing developer productivity",
+      "level": "straightforward",
+      "context": "Long CI/CD pipelines create context switching and slow feedback loops"
+    },
+    {
+      "pain": "Production incidents taking too long to resolve (high MTTR)",
+      "level": "complex",
+      "context": "Poor observability and debugging tools extend outage duration"
+    },
+    {
+      "pain": "Scaling engineering team from 15 to 40+ developers",
+      "level": "complex",
+      "context": "Processes and tools that worked for small teams break down at scale"
+    },
+    {
+      "pain": "Build vs buy decisions consuming engineering resources",
+      "level": "straightforward",
+      "context": "Teams often default to building internal tools instead of buying proven solutions"
+    },
+    {
+      "pain": "Microservices migration complexity",
+      "level": "complex",
+      "context": "Moving from monolith to microservices creates new tooling and observability needs"
+    },
+    {
+      "pain": "Developer experience degradation as codebase grows",
+      "level": "straightforward",
+      "context": "Slow local development, flaky tests, and poor documentation reduce velocity"
+    }
+  ],
+
+  "buying_triggers": [
+    "Production incident causing significant customer impact",
+    "Build times exceeding 15 minutes consistently",
+    "Microservices migration initiative",
+    "Team scaling from 15 to 40+ developers",
+    "Security audit or compliance requirement",
+    "Developer attrition linked to poor tooling",
+    "AI adoption mandate from leadership",
+    "Platform engineering initiative launch"
+  ],
+
+  "budget_cycle": "Engineering budgets typically set annually but with discretionary spending authority for tools under $5K. Bottom-up adoption often starts with team credit cards before formal procurement.",
+
+  "regulatory_concerns": [
+    "SOC 2 compliance for enterprise customers",
+    "SSO/SAML requirements for security",
+    "Data handling for production debugging tools",
+    "Code scanning and SBOM requirements"
+  ],
+
+  "compliance_language": [
+    "SOC 2 Type II certified",
+    "SSO/SAML support",
+    "Role-based access control",
+    "Audit logging",
+    "On-premise deployment option"
+  ],
+
+  "risk_tolerance": "medium",
+
+  "terminology": [
+    {
+      "term": "DX",
+      "definition": "Developer Experience - the overall experience developers have when using tools, APIs, and platforms",
+      "usage_context": "Quality metric. 'Our DX is suffering because of slow build times.'"
+    },
+    {
+      "term": "DXI",
+      "definition": "Developer Experience Index - quantitative measurement of developer experience",
+      "usage_context": "Benchmarking. 'We track DXI quarterly to measure improvements.'"
+    },
+    {
+      "term": "CI/CD",
+      "definition": "Continuous Integration/Continuous Deployment - automated build, test, and deployment pipelines",
+      "usage_context": "Core infrastructure. 'Our CI/CD pipeline takes 20 minutes to complete.'"
+    },
+    {
+      "term": "Observability",
+      "definition": "Ability to understand system state through logs, metrics, and traces",
+      "usage_context": "Monitoring capability. 'We need better observability to debug production issues.'"
+    },
+    {
+      "term": "SLO/SLI/SLA",
+      "definition": "Service Level Objective/Indicator/Agreement - targets, measurements, and commitments for service reliability",
+      "usage_context": "Reliability metrics. 'Our SLO is 99.9% uptime measured by SLI of error rate.'"
+    },
+    {
+      "term": "Platform Engineering",
+      "definition": "Discipline of building and maintaining internal developer platforms to improve productivity",
+      "usage_context": "Team function. 'Our platform engineering team maintains the internal developer portal.'"
+    },
+    {
+      "term": "IDP",
+      "definition": "Internal Developer Platform/Portal - self-service platform for developers to provision resources",
+      "usage_context": "Infrastructure. 'The IDP lets developers spin up new services without tickets.'"
+    },
+    {
+      "term": "IaC",
+      "definition": "Infrastructure as Code - managing infrastructure through code rather than manual processes",
+      "usage_context": "Practice. 'All our infrastructure is defined in Terraform as IaC.'"
+    },
+    {
+      "term": "GitOps",
+      "definition": "Using Git as the source of truth for declarative infrastructure and applications",
+      "usage_context": "Deployment practice. 'We use GitOps so all changes go through pull requests.'"
+    },
+    {
+      "term": "Build Time",
+      "definition": "Time required to compile and test code changes",
+      "usage_context": "Productivity metric. 'Our build time has crept up to 18 minutes.'"
+    },
+    {
+      "term": "PR Cycle Time",
+      "definition": "Time from pull request creation to merge",
+      "usage_context": "Velocity metric. 'Our average PR cycle time is 2 days.'"
+    },
+    {
+      "term": "DORA Metrics",
+      "definition": "DevOps Research and Assessment metrics - deployment frequency, lead time, MTTR, change failure rate",
+      "usage_context": "Industry benchmarks. 'We track DORA metrics to compare against elite performers.'"
+    },
+    {
+      "term": "MTTR",
+      "definition": "Mean Time To Recovery - average time to restore service after an incident",
+      "usage_context": "Reliability metric. 'Our MTTR is currently 45 minutes which is too high.'"
+    },
+    {
+      "term": "Microservices",
+      "definition": "Architecture pattern where applications are composed of small, independent services",
+      "usage_context": "Architecture. 'We migrated from monolith to microservices last year.'"
+    },
+    {
+      "term": "Kubernetes",
+      "definition": "Container orchestration platform for automating deployment, scaling, and management",
+      "usage_context": "Infrastructure. 'We run everything on Kubernetes in AWS.'"
+    }
+  ],
+
+  "formality_level": "casual",
+  "decision_making_style": "committee",
+
+  "common_objections": [
+    {
+      "objection": "We can build this ourselves",
+      "underlying_concern": "Engineering teams often believe internal solutions will be better tailored to their needs and avoid vendor dependency",
+      "effective_response_approach": "Calculate total cost of ownership including maintenance, opportunity cost of engineers not building product features, and ongoing iteration. Reference industry data on build vs buy outcomes.",
+      "level": "complex"
+    },
+    {
+      "objection": "We don't have time to evaluate and implement new tools right now",
+      "underlying_concern": "Team is under delivery pressure and adding new tools feels like a distraction",
+      "effective_response_approach": "Acknowledge the time pressure. Propose minimal viable adoption that solves the most acute pain. Show time-to-value data from similar teams. Offer to handle setup.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "This doesn't fit with our current stack/architecture",
+      "underlying_concern": "Fear of adding complexity or forcing architectural changes",
+      "effective_response_approach": "Deep dive on their specific stack. Show integration patterns with their technologies. Provide architecture guidance for adoption path.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Migrating our existing setup is too risky",
+      "underlying_concern": "Production systems are fragile and any change could cause outages",
+      "effective_response_approach": "Propose incremental migration strategy. Offer to run parallel for a period. Share migration playbooks from similar customers. Provide migration support.",
+      "level": "complex"
+    },
+    {
+      "objection": "I like it but I can't get the team to adopt it",
+      "underlying_concern": "Developers are creatures of habit and resist changing workflows",
+      "effective_response_approach": "Provide adoption playbook. Identify early adopters on the team. Show developer-friendly features. Offer team training or champions program.",
+      "level": "complex"
+    },
+    {
+      "objection": "We need SSO/SOC 2 and you don't have it",
+      "underlying_concern": "Security team blocks tools without proper enterprise security features",
+      "effective_response_approach": "Share roadmap for security features. Offer interim security measures. Connect with security team directly. Consider design partner arrangement for enterprise features.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "The pricing doesn't scale well for our team size",
+      "underlying_concern": "Per-seat pricing becomes expensive as team grows",
+      "effective_response_approach": "Explore alternative pricing models. Show value at scale. Offer volume discounts or flat-tier pricing. Compare to total cost of alternatives including internal tools.",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Open source tools requiring self-hosting and maintenance",
+    "Built-in features from cloud providers (AWS, GCP, Azure)",
+    "In-house built internal tools",
+    "Legacy enterprise tools (Jenkins, etc.)",
+    "Manual processes and scripts"
+  ],
+
+  "switching_barriers": [
+    "Migration risk for production systems",
+    "Team familiarity with current tools",
+    "Integration with existing CI/CD pipelines",
+    "Institutional knowledge embedded in current setup",
+    "Time investment to learn new tools"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "{{role}} at a {{company_size}} company is frustrated with {{pain_point}}. Their team of {{team_size}} developers currently uses {{current_solution}} but it's causing {{specific_issue}}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "pain_point", "team_size", "current_solution", "specific_issue"]
+    },
+    {
+      "template": "A {{company_type}} is scaling their engineering team from {{current_size}} to {{target_size}} developers over the next {{timeline}}. They need to upgrade their {{tooling_area}} before the current approach breaks down.",
+      "complexity": "multi_stakeholder",
+      "variables": ["company_type", "current_size", "target_size", "timeline", "tooling_area"]
+    },
+    {
+      "template": "{{role}} discovered your tool and loves it, but needs to convince their {{stakeholder}} to approve the purchase. The main concerns are {{concerns}} and budget is {{budget}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "stakeholder", "concerns", "budget"]
+    },
+    {
+      "template": "After a production incident that took {{incident_duration}} to resolve, {{role}} at {{company_type}} is looking for better {{tooling_area}} tooling. They have executive support but need to show ROI.",
+      "complexity": "single_stakeholder",
+      "variables": ["incident_duration", "role", "company_type", "tooling_area"]
+    },
+    {
+      "template": "{{company_type}} with {{team_size}} developers is migrating from monolith to microservices. {{role}} is evaluating {{tooling_area}} solutions and has narrowed it down to your product and {{competitor}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["company_type", "team_size", "role", "tooling_area", "competitor"]
+    }
+  ]
+}

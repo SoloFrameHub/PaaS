@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does CBT-based stress management research tell us about the active mechanism that reduces stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only relaxation techniques reduce stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Mastery of cognitive strategies and problem-solving (not relaxation alone) mediates beneficial effects on stress reactivity and exhaustion"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Any pleasant activity reduces stress equally"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Problem-solving is ineffective for stress management"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A controlled trial of CBT-based occupational stress management training found that mastery of cognitive strategies and problem-solving—not relaxation alone—mediated the beneficial effects on stress reactivity and exhaustion. This means the active mechanism is cognitive change and skill acquisition, not stress reduction as a byproduct of any pleasant activity. This explains why CBT-based approaches that teach systematic problem-solving produce more durable effects than relaxation-only interventions, and why skill mastery (actually learning to apply the frameworks) is critical for sustained benefit."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the critical difference between problem-focused and emotion-focused coping?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Problem-focused coping is always better than emotion-focused coping"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Problem-focused coping (taking action to change the stressor) works for controllable stressors; emotion-focused coping (managing emotional response) works for uncontrollable stressors"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Emotion-focused coping is avoidance and should never be used"
+                },
+                {
+                    "id": "opt4",
+                    "text": "They are the same strategy with different names"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The effectiveness of these coping strategies depends on controllability of the stressor. Problem-focused coping—taking action to change or eliminate the stressor—is effective for modifiable, controllable stressors (creating a study schedule, delegating tasks, seeking medical treatment). Emotion-focused coping—managing your emotional response rather than changing the situation—is effective for uncontrollable or unchangeable stressors (grief after loss, accepting chronic illness, managing anxiety about things outside your control). The critical skill is accurately appraising controllability: trying to problem-solve the uncontrollable creates frustration; avoiding solvable problems through emotion-focused coping alone perpetuates stress."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the first step in the systematic 5-step problem-solving framework, and why does it matter?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Immediately implement the first solution you think of"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Define the problem specifically—you can't solve vague problems, and clear definition reveals actionable components"
+                },
+                {
+                    "id": "opt3",
+                    "text": "List every possible solution without thinking"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Evaluate pros and cons before knowing what the problem is"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Step 1 is defining the problem specifically, which is critical because you cannot solve vague problems. Compare \"I'm so stressed about work\" (vague, overwhelming, no clear action) to \"I have three projects due this month and don't have enough time to complete them all to standard\" (specific, reveals components). Clear problem definition makes the issue less overwhelming and reveals actionable elements—in this case, the problem involves workload, time, and quality standards, which suggests possible solutions like delegating, extending deadlines, or reducing scope. Specificity is what makes systematic problem-solving work."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is generating multiple solutions (Step 2) important before evaluating them?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It wastes time—the first solution is always best"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because the first solution isn't always best—multiple options increase flexibility and reveal possibilities you might have missed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "You should never evaluate solutions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Multiple solutions create more stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Generating multiple solutions before evaluating them prevents premature closure—settling on the first idea that comes to mind without considering alternatives. The first solution is often the most obvious or habitual, but not necessarily the most effective. Brainstorming quantity (multiple options) before judging quality reveals possibilities you might have missed and increases behavioral flexibility. For example, if your first thought is \"work extra hours,\" but you also generate \"delegate,\" \"extend deadline,\" \"reduce scope,\" or \"hire temporary help,\" you now have options that may be more effective or sustainable. This is why Step 2 (generate) comes before Step 3 (evaluate)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should you do if a problem-solving attempt doesn't work (Step 5: Evaluate outcome)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Give up—the problem must be unsolvable"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Return to Step 2 and try another solution—problem-solving is iterative, not linear"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Blame yourself for failing"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Keep repeating the same failed solution"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Problem-solving is iterative, not a one-shot process. If you implement a solution and evaluate that it didn't solve the problem (or only partially solved it), you return to Step 2—generate additional solutions—and try another approach. This prevents all-or-nothing thinking (\"I tried one thing and it didn't work, so I've failed\") and maintains agency. Many real-world problems require trying multiple solutions before finding what works, or combining approaches. The systematic framework reduces overwhelm by breaking the process into manageable steps and normalizing that effective problem-solving often involves trial, evaluation, and adjustment rather than immediate success."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "10",
+    "title": "Problem-Solving Strategies for Stress Management - Quiz"
+}

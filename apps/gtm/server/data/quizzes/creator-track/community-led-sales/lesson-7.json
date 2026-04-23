@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Community Pricing & Tiers",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do annual members tend to be 2-3x more engaged than monthly members?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Annual members receive exclusive content that monthly members do not get"
+                },
+                {
+                    "id": "b",
+                    "text": "The higher upfront commitment creates stronger psychological investment, and the absence of monthly payment 'pain' reduces friction"
+                },
+                {
+                    "id": "c",
+                    "text": "Annual members are automatically placed in smaller, more active groups"
+                },
+                {
+                    "id": "d",
+                    "text": "Annual plans include more live events than monthly plans"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Annual members pay more upfront, which creates greater psychological commitment to getting value from the purchase. Additionally, they do not experience the monthly 'pain of paying' that can trigger monthly members to reevaluate their membership each billing cycle. This combination of higher commitment and lower friction leads to 2-3x more engagement."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In a Bronze/Silver/Gold tier structure, where should most members cluster, and why?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Bronze, because it is the most affordable"
+                },
+                {
+                    "id": "b",
+                    "text": "Gold, because it offers the most value"
+                },
+                {
+                    "id": "c",
+                    "text": "Silver (the middle tier), because Bronze anchors the low end and Gold anchors the high end, making the middle feel like the best value"
+                },
+                {
+                    "id": "d",
+                    "text": "Members should be evenly distributed across all three tiers"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "This is classic decoy pricing. The Bronze tier anchors the low end, making the middle tier feel reasonable. The Gold tier anchors the high end, making the middle tier feel like excellent value by comparison. Most members naturally cluster in the middle, which should be your most profitable tier."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "A community priced at $17/month versus $97/month signals different things to potential members. What does the lesson identify as the primary effect of pricing on community quality?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Lower prices attract more members, which makes the community more active"
+                },
+                {
+                    "id": "b",
+                    "text": "Higher prices mean the creator produces better content"
+                },
+                {
+                    "id": "c",
+                    "text": "Price acts as a quality signal -- higher prices attract more invested, committed members, which improves the community experience for everyone"
+                },
+                {
+                    "id": "d",
+                    "text": "Price has no effect on member quality as long as the content is good"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Your price does not just determine your revenue -- it determines the quality of members you attract. A $17/month community signals 'this is not very serious,' while $97/month signals 'the people here are invested.' Higher-paying members tend to engage more, contribute more, and create a better experience for everyone."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design your founding member pricing strategy. Specify: (1) your target full price, (2) your founding member discount percentage, (3) how many founding spots you will offer, (4) the terms of the founding rate (locked forever vs. time-limited), and (5) how you will communicate the transition from founding to full pricing to create urgency for new prospects.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has created a complete founding member strategy covering all five elements. Check that the discount is meaningful (30-50% as recommended) but not so deep it undermines perceived value. Verify the number of founding spots is realistic for their audience size. Assess whether their communication plan for transitioning to full pricing leverages social proof from existing founders. Suggest improvements to any element that seems underdeveloped."
+        }
+    ]
+}

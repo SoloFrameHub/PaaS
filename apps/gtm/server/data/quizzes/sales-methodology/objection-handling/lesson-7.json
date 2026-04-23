@@ -1,0 +1,141 @@
+{
+    "lessonId": "7",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "Handling Trust & Competition Objections Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How can a solo founder pivot their 'small size' into a competitive advantage?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By pretending to have a larger team."
+                },
+                {
+                    "id": "b",
+                    "text": "By offering the lowest price in the market."
+                },
+                {
+                    "id": "c",
+                    "text": "By positioning themselves as an 'Expert Founder Contact' who provides high-touch, reputation-backed service compared to an anonymous support rep at a big firm."
+                },
+                {
+                    "id": "d",
+                    "text": "By ignoring the question of size entirely."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Expertise and direct accountability are powerful selling points. A solo founder's reputation is directly tied to the client's success, which is often more reassuring than a nameless corporate rep."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is an 'Escrow Agreement' in the context of trust objections?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A way to hide your revenue from the government."
+                },
+                {
+                    "id": "b",
+                    "text": "A legal arrangement where your source code is held by a third party and released to clients if you are unable to fulfill your duties."
+                },
+                {
+                    "id": "c",
+                    "text": "A type of discount for early-stage startups."
+                },
+                {
+                    "id": "d",
+                    "text": "A contract that prevents the client from firing you."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Escrow provides a safety net for the client. It ensures that even if you 'get hit by a bus,' their business-critical software remains functional and accessible."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Scalpel vs. Swiss Army Knife' frame used for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To describe the physical appearance of your product."
+                },
+                {
+                    "id": "b",
+                    "text": "To out-position generalized big competitors by highlighting your specialized depth and 'wedge' for a specific problem."
+                },
+                {
+                    "id": "c",
+                    "text": "To explain your pricing tiers."
+                },
+                {
+                    "id": "d",
+                    "text": "To demonstrate your surgical engineering skills."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Big companies often have 'all-in-one' tools that do many things poorly. Position yourself as the 'Scalpel'—the precise tool designed specifically for the prospect's most painful problem."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why should you ask 'Given that they are the market leader, why did you spend 30 minutes on the phone with me today?'",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To remind the prospect that they are wasting your time."
+                },
+                {
+                    "id": "b",
+                    "text": "To provoke the prospect into admitting they can't afford the competitor."
+                },
+                {
+                    "id": "c",
+                    "text": "To get the prospect to articulate the competitor's weaknesses and their own dissatisfaction for you."
+                },
+                {
+                    "id": "d",
+                    "text": "To show that you are humble."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When the prospect explains why they called you, they are essentially telling you exactly how to beat the competitor in their specific situation."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Triple Guarantee' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A promise to respond to emails within 3 minutes."
+                },
+                {
+                    "id": "b",
+                    "text": "A commitment to work for free until a specific metric is hit if the initial goals aren't met."
+                },
+                {
+                    "id": "c",
+                    "text": "A guarantee that you'll have 3 employees by next year."
+                },
+                {
+                    "id": "d",
+                    "text": "A promise to give a 3% discount."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Strong guarantees (Risk Reversal) are one of the most effective ways for solo founders to neutralize the fear of 'picking the small guy.' It puts the risk squarely on your shoulders."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Between 'Scalpel vs. Swiss Army Knife' and 'Direct Founder Contact,' which advantage do you think is most compelling for YOUR ideal prospect? Write a 3-sentence email pitch using that specific advantage to handle a 'Trust/Competition' objection from a lead you're currently chasing.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to articulate their unique advantage. Look for clear positioning (e.g., 'unlike the big platforms, I do X specialized task') and a professional tone."
+        }
+    ]
+}

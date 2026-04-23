@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the five steps of a Thought Record?",
+            "options": [
+                { "id": "opt1", "text": "Breathe, Think, Feel, Act, Reflect" },
+                { "id": "opt2", "text": "Situation, Emotions, Automatic Thought, Thinking Traps, Balanced Response" },
+                { "id": "opt3", "text": "Trigger, Response, Consequence, Alternative, Practice" },
+                { "id": "opt4", "text": "Notice, Name, Accept, Choose, Move on" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The five steps are: describe the Situation, identify your Emotions (with intensity rating), capture the Automatic Thought, identify the Thinking Trap(s), and create a Balanced Response."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the goal of a Thought Record regarding anxiety levels?",
+            "options": [
+                { "id": "opt1", "text": "To eliminate anxiety completely" },
+                { "id": "opt2", "text": "To reduce anxiety intensity to a manageable level" },
+                { "id": "opt3", "text": "To prove all anxious thoughts are wrong" },
+                { "id": "opt4", "text": "To increase awareness of how many anxious thoughts you have" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The goal is not to eliminate anxiety entirely but to reduce its intensity to a manageable level. In the worked example, anxiety dropped from 8/10 to 4/10 after creating a balanced response."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is it recommended to start thought records with moderate rather than high anxiety situations?",
+            "options": [
+                { "id": "opt1", "text": "High anxiety situations are not worth recording" },
+                { "id": "opt2", "text": "Building the skill with everyday worries first makes it effective for more distressing thoughts later" },
+                { "id": "opt3", "text": "Moderate anxiety is more common" },
+                { "id": "opt4", "text": "High anxiety thoughts cannot be balanced" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Starting with moderate anxiety (3-6 on the intensity scale) builds the skill with manageable situations. Like any skill, thought records get easier with repetition, making them more effective when applied to more distressing thoughts later."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does writing down thoughts create clarity that thinking alone cannot achieve?",
+            "options": [
+                { "id": "opt1", "text": "Writing is faster than thinking" },
+                { "id": "opt2", "text": "The physical act of writing creates distance and structure that helps you see patterns objectively" },
+                { "id": "opt3", "text": "Written thoughts are always more accurate" },
+                { "id": "opt4", "text": "Writing eliminates emotional bias" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Writing things down creates distance and clarity that thinking alone cannot achieve. The structured format of a thought record organizes your experience into clear steps, making it easier to identify patterns and create balanced perspectives."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you ideally complete a Thought Record?",
+            "options": [
+                { "id": "opt1", "text": "Only at the end of the week" },
+                { "id": "opt2", "text": "Close to the event for more accurate recall" },
+                { "id": "opt3", "text": "Only during therapy sessions" },
+                { "id": "opt4", "text": "At least a week after the event for better perspective" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Thought records should be completed close to the event because the sooner you write it down, the more accurate your recall will be. Vague entries completed much later are harder to work with."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "anxiety-toolkit-foundations",
+    "lessonId": "7",
+    "title": "Your Thought Record: Tracking and Transforming Your Thinking - Quiz"
+}

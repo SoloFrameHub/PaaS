@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is workplace digital wellness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Banning all technology from the workplace"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Strategies and norms to manage technology use at work in ways that preserve focus, prevent burnout, and support wellbeing"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only using company-issued devices"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Working from home exclusively"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Workplace digital wellness refers to practices, norms, and boundaries around technology use at work — managing email, meetings, notifications, and communication tools to protect focus, prevent burnout, and maintain wellbeing."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'email apnea' and why does it matter?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A medical condition requiring treatment"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The tendency to hold your breath or breathe shallowly while checking email, which increases stress and tension"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Forgetting to respond to emails"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sending too many emails"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "'Email apnea' describes the unconscious breath-holding or shallow breathing many people do while reading email, which activates the stress response. It's a physical manifestation of email-related anxiety."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is an effective workplace strategy for managing email overload?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Check email continuously throughout the day to stay on top of everything"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Batch process email at designated times (e.g., 9am, 1pm, 4pm), turn off notifications, and use filters/rules to prioritize"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never check email and let it pile up"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Respond to every email immediately as it arrives"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Batch processing (checking email at specific times, not continuously) reduces attention fragmentation. Turning off email notifications and using filters helps prioritize important messages without constant interruption."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'right to disconnect' and why does it matter?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A law requiring all employees to work remotely"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The right to disconnect from work communication (email, messages) outside of work hours to prevent burnout and protect work-life boundaries"
+                },
+                {
+                    "id": "opt3",
+                    "text": "The ability to turn off your computer"
+                },
+                {
+                    "id": "opt4",
+                    "text": "A policy banning all technology use"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 'right to disconnect' (law in some countries, policy in some companies) protects employees from being expected to respond to work communication outside of work hours. It prevents 'always-on' culture and supports recovery and boundaries."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on your workplace technology use. Do you feel pressure to respond to emails/messages outside work hours? Do you have clear boundaries between 'work time' and 'personal time'? What's one boundary you could set to improve your workplace digital wellness?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "18",
+    "title": "Workplace Digital Wellness - Quiz"
+}

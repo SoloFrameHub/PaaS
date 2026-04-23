@@ -1,0 +1,133 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key distinguishing factor between subclinical social anxiety and Social Anxiety Disorder (SAD)?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "The intensity of anxiety symptoms"
+        },
+        {
+          "id": "opt2",
+          "text": "Functional impairment in social, occupational, or other important areas"
+        },
+        {
+          "id": "opt3",
+          "text": "Whether the person is introverted or extroverted"
+        },
+        {
+          "id": "opt4",
+          "text": "The number of people the person knows"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Functional impairment is the critical diagnostic criterion. Social Anxiety Disorder involves significant impairment in essential life domains (avoiding job promotions, declining necessary medical appointments, losing relationships). Subclinical anxiety causes distress but doesn't prevent you from completing important activities. The question isn't 'how anxious do you feel?' but 'is it stopping you from living your life?'"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the highest-efficacy CBT protocol for Social Anxiety Disorder according to the 2025 Bayesian network meta-analysis?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Medication-only treatment with SSRIs"
+        },
+        {
+          "id": "opt2",
+          "text": "Clark & Wells cognitive model with video feedback, attention training, and behavioral experiments (SMD = 1.42)"
+        },
+        {
+          "id": "opt3",
+          "text": "General social skills training without exposure"
+        },
+        {
+          "id": "opt4",
+          "text": "Self-help wellness courses like this one"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The Clark & Wells protocol ranks highest in meta-analyses with an effect size of SMD = 1.42 (95% CrI: 1.14–1.70) — a very large effect. This includes video feedback (correcting distorted self-perception), attention training (reducing self-focused attention), and behavioral experiments (testing negative predictions). This is clinical-grade treatment requiring professional support."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "If you score 9 or above on the Mini-SPIN self-assessment, what does this suggest?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "You have normal social anxiety and this course is sufficient"
+        },
+        {
+          "id": "opt2",
+          "text": "You are definitely diagnosed with Social Anxiety Disorder"
+        },
+        {
+          "id": "opt3",
+          "text": "High likelihood of SAD; professional assessment is strongly recommended"
+        },
+        {
+          "id": "opt4",
+          "text": "You should immediately start medication without seeing a doctor"
+        }
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "A Mini-SPIN score of 9+ suggests high likelihood of Social Anxiety Disorder and warrants professional assessment. This is NOT a diagnosis (only a licensed clinician can diagnose), but it's a validated screening tool showing 88.7% sensitivity and 90.0% specificity at this cutoff. Don't delay seeking help if you score in this range — CBT for SAD is highly effective."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What percentage of people with Social Anxiety Disorder never seek treatment?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "About 10%"
+        },
+        {
+          "id": "opt2",
+          "text": "About 25%"
+        },
+        {
+          "id": "opt3",
+          "text": "About 50%"
+        },
+        {
+          "id": "opt4",
+          "text": "About 75%"
+        }
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Approximately 50% of people with Social Anxiety Disorder never seek treatment, often due to shame, misconceptions about therapy, or not recognizing their symptoms as treatable. This is tragic because CBT with exposure therapy is highly effective (large effect sizes, maintained long-term gains). If you're in this category, don't let shame delay care — treatment works."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When is this course NOT appropriate as a standalone intervention?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "When you're experiencing shyness or mild social discomfort"
+        },
+        {
+          "id": "opt2",
+          "text": "When you experience Social Anxiety Disorder with significant functional impairment"
+        },
+        {
+          "id": "opt3",
+          "text": "When you're feeling lonely but can still engage socially"
+        },
+        {
+          "id": "opt4",
+          "text": "When you have subclinical social anxiety affecting confidence but not daily function"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "This course is NOT sufficient for clinical Social Anxiety Disorder, depression-driven isolation, or trauma-related social avoidance. These conditions require professional treatment. The course is appropriate for shyness, subclinical social anxiety, and general loneliness. If your anxiety prevents essential activities (work meetings, medical appointments, important relationships), seek CBT with exposure therapy — self-help alone is inadequate."
+    }
+  ],
+  "sectionId": "social-connection",
+  "courseId": "social-circle-mastery",
+  "lessonId": "2",
+  "title": "The Social Anxiety Spectrum — Where You Are, Where Help Is - Quiz"
+}

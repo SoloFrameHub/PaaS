@@ -1,0 +1,141 @@
+{
+    "lessonId": "5",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Price Presentation Techniques Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Earn the Right' principle in pricing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The legal right to charge whatever you want."
+                },
+                {
+                    "id": "b",
+                    "text": "The idea that you must establish problem clarity, solution fit, and value before presenting your price."
+                },
+                {
+                    "id": "c",
+                    "text": "The requirement to have a signed contract before telling the prospect the cost."
+                },
+                {
+                    "id": "d",
+                    "text": "Earning a certification in sales before you can present pricing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you present price before value is established, it's an expense. After value is established, it's an investment. You 'earn' the right to share the number by doing the work of discovery first."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How should you generally handle a prospect who asks for a 'ballpark' price early in a discovery call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Give them your lowest possible price to keep them happy."
+                },
+                {
+                    "id": "b",
+                    "text": "Refuse to give any answer and tell them to wait."
+                },
+                {
+                    "id": "c",
+                    "text": "Provide a typical range and redirect the conversation back to their specific needs and value."
+                },
+                {
+                    "id": "d",
+                    "text": "Hang up because they are clearly just 'window shopping'."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A range satisfies their curiosity without anchoring you to a single number before you've established value. It allows you to maintain control of the conversation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Where should the 'Investment' section typically appear in a well-structured 5-page proposal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Page 1 (to save them time)."
+                },
+                {
+                    "id": "b",
+                    "text": "Page 2 (after the Executive Summary)."
+                },
+                {
+                    "id": "c",
+                    "text": "Section 5 (at the end, after problem, solution, and evidence)."
+                },
+                {
+                    "id": "d",
+                    "text": "It shouldn't be in the proposal at all."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Placing price at the end ensures that the reader only sees the number after they have been reminded of their pain, seen your solution, and viewed social proof."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Confident Pause' technique?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Pausing for 10 minutes before the call starts."
+                },
+                {
+                    "id": "b",
+                    "text": "Stating the price clearly, then remaining silent to allow the prospect to respond first."
+                },
+                {
+                    "id": "c",
+                    "text": "Pausing your subscription if the prospect complains about price."
+                },
+                {
+                    "id": "d",
+                    "text": "Laughing confidently when a prospect asks for a discount."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Silence creates healthy tension. If you speak first after revealing a price, you often speak yourself into a discount or justification that undermines your value."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is it important to recap the value immediately BEFORE stating the price?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To talk more and overwhelm the prospect."
+                },
+                {
+                    "id": "b",
+                    "text": "To remind the prospect of the $50K problem they are solving so the $5K price feels small."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it's required by law."
+                },
+                {
+                    "id": "d",
+                    "text": "To make the call longer."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Contrast is a powerful psychological tool. By placing the 'large' problem cost right next to the 'small' solution investment, you make the math easy for the buyer."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Recall a time you shared a price and then felt the need to immediately keep talking to justify it. What did you say, and how do you think it affected the prospect's perception?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies 'filler' talk or apologetic justification. Provide feedback on how the 'Confident Pause' would have changed the power dynamic in that conversation."
+        }
+    ]
+}

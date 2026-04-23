@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: Finding Balance in Your Thoughts</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+            --success-green: #2e7d32; --success-bg: #e8f5e9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        .gentle-header {
+            background: linear-gradient(135deg, var(--calming-teal) 0%, var(--soft-blue) 100%);
+            color: white; padding: 25px 30px; text-align: center;
+            border-radius: 12px; margin-bottom: 30px;
+        }
+        .gentle-header h1 { font-size: 1.8em; margin: 0 0 10px 0; color: white; }
+        .gentle-header p { font-size: 1.1em; margin: 0; opacity: 0.95; }
+
+        .safe-space-container {
+            background: var(--soft-white); border-radius: 12px;
+            padding: 30px 40px; border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15);
+            margin-bottom: 30px;
+        }
+        
+        .intro-block { text-align: center; margin-bottom: 40px; }
+        .intro-block h2 { color: var(--deep-teal); font-size: 1.6em; }
+        .intro-block p { font-size: 1.1em; color: var(--warm-gray); max-width: 700px; margin: 0 auto; }
+
+        /* Investigation Section */
+        .investigation-container {
+            background: var(--light-sage); padding: 30px;
+            border-radius: 12px; border: 2px solid var(--light-teal);
+        }
+
+        .progress-dots { text-align: center; margin-bottom: 20px; }
+        .dot { height: 12px; width: 12px; margin: 0 5px; background-color: var(--light-teal);
+            border-radius: 50%; display: inline-block; transition: all 0.3s; }
+        .dot.active { background-color: var(--soft-blue); transform: scale(1.2); }
+
+        .case-file {
+            background: #fff3e0; border-left: 5px solid #ffb74d;
+            padding: 20px; border-radius: 8px; margin-bottom: 30px;
+        }
+        .case-file h3 { margin: 0 0 10px 0; color: #e65100; }
+        .case-file p { font-style: italic; font-size: 1.2em; color: var(--gentle-text); margin: 0; }
+        
+        .investigation-step {
+            display: none; /* Hidden by default */
+            animation: slideInUp 0.6s forwards;
+        }
+        @keyframes slideInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .question-box {
+            background: var(--soft-white); padding: 25px; border-radius: 8px;
+            margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .question-box label {
+            display: block; font-size: 1.3em; font-weight: 600;
+            color: var(--deep-teal); margin-bottom: 10px;
+        }
+        .question-box textarea {
+            width: 100%; min-height: 80px; border: 2px solid var(--light-teal);
+            border-radius: 8px; padding: 12px; font-family: 'Segoe UI', sans-serif;
+            font-size: 1em; line-height: 1.6; transition: all 0.3s;
+        }
+        .question-box textarea:focus {
+            outline: none; border-color: var(--soft-blue); box-shadow: 0 0 0 3px rgba(107, 163, 208, 0.2);
+        }
+        
+        .example-box {
+            background: #f0f9ff; border-left: 4px solid var(--soft-blue);
+            padding: 15px; border-radius: 0 8px 8px 0; font-size: 0.9em;
+        }
+        .example-box strong { color: var(--soft-blue); }
+
+        .btn {
+            background: var(--sage-green); color: white; border: none; padding: 12px 30px;
+            font-size: 1em; font-weight: 600; border-radius: 50px; cursor: pointer;
+            transition: all 0.3s; margin-top: 15px;
+        }
+        .btn:hover { background-color: #769a59; transform: translateY(-2px); }
+        .btn:disabled { background-color: var(--warm-gray); cursor: not-allowed; }
+
+        #final-thought-section {
+             background: var(--success-bg); padding: 25px; border-radius: 8px;
+            margin-top: 30px; border: 1px solid var(--success-green); text-align: center;
+        }
+        #final-thought-section h3 { color: var(--success-green); }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="gentle-header">
+            <h1>Lesson 3: Your "Thought Detective" Toolkit</h1>
+            <p>Three simple questions to challenge anxiety and find balance.</p>
+        </header>
+
+        <main class="safe-space-container">
+            <div class="intro-block">
+                <h2>You've Spotted the Trap. Now, Let's Investigate.</h2>
+                <p>Now that you can spot a Thinking Trap, you need to know what to do next. The goal isn't to bully your thoughts into submission. It's to become a calm, curious detective—to gently investigate the thought, check the facts, and find a more balanced perspective.</p>
+            </div>
+
+            <section class="investigation-container">
+                <div class="progress-dots" id="progress-dots">
+                    <span class="dot" id="dot1"></span>
+                    <span class="dot" id="dot2"></span>
+                    <span class="dot" id="dot3"></span>
+                    <span class="dot" id="dot4"></span>
+                </div>
+
+                <div class="case-file">
+                    <h3>Your First Case: The Anxious Thought</h3>
+                    <p>Think of an anxious thought you've had recently. If you can't think of one, feel free to use our example: "My boss wants a 'quick chat.' I must have done something wrong."</p>
+                </div>
+                
+                <form id="investigation-form" onsubmit="event.preventDefault();">
+                    <!-- Step 1 -->
+                    <div class="investigation-step" id="step1">
+                        <div class="question-box">
+                            <label for="q1-input">🔍 Question 1: What is the evidence that this thought is 100% true?</label>
+                            <textarea id="q1-input" rows="3" placeholder="Look for the cold, hard facts. Not feelings."></textarea>
+                            <div class="example-box">
+                                <strong>Example Answer:</strong> "The only evidence is an email asking for a chat. There is no evidence of me being in trouble. In fact, my boss praised my work last week."
+                            </div>
+                            <button class="btn" onclick="showNextStep(2)">Continue Investigation</button>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="investigation-step" id="step2">
+                        <div class="question-box">
+                            <label for="q2-input">🤔 Question 2: Is there another, more balanced way to look at this?</label>
+                            <textarea id="q2-input" rows="3" placeholder="Brainstorm other possibilities, even if they seem unlikely."></textarea>
+                             <div class="example-box">
+                                <strong>Example Answer:</strong> "A 'quick chat' could be about anything. She might have a simple question, want my opinion, or have a positive update. There are many neutral possibilities."
+                            </div>
+                            <button class="btn" onclick="showNextStep(3)">Continue Investigation</button>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="investigation-step" id="step3">
+                        <div class="question-box">
+                            <label for="q3-input">❤️ Question 3: What would I tell a close friend if they had this thought?</label>
+                            <textarea id="q3-input" rows="3" placeholder="We are often much kinder to our friends than to ourselves."></textarea>
+                             <div class="example-box">
+                                <strong>Example Answer:</strong> "I'd tell them not to jump to conclusions and that their brain is in worst-case-scenario mode. I'd remind them they do great work and it's probably nothing to stress about."
+                            </div>
+                            <button class="btn" onclick="showNextStep(4)">Reveal Final Thought</button>
+                        </div>
+                    </div>
+                    <!-- Step 4: Final Thought -->
+                    <div class="investigation-step" id="step4">
+                        <div class="question-box" id="final-thought-section">
+                            <h3 style="color: var(--success-green);">Your New, Balanced Thought</h3>
+                            <p>Based on your detective work, you've moved from an automatic anxious thought to a more realistic and calming one. This new thought isn't overly positive—it's just balanced. It acknowledges your feeling while looking at the facts.</p>
+                            <p style="font-size: 1.2em; font-weight: 500; font-style: italic; margin-top: 15px;">"Even though I feel nervous about this chat, I recognize that I don't actually know what it's about. It could be for any number of reasons. I will wait for more information before I decide there's a problem."</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            
+            <div class="intro-block" style="margin-top: 40px;">
+                <h2>Your Detective's Toolkit</h2>
+                <p>These three questions are your new tools. You can use them anytime you catch yourself in a thinking trap. The goal is to reduce the thought's intensity and stop the runaway train of catastrophic thinking. By finding a more balanced view, you apply the 'brake' to the emotional spiral.</p>
+            </div>
+            
+            <button class="btn" onclick="alert('Proceeding to Lesson 4!')" style="background-color: var(--deep-teal);">Complete This Lesson</button>
+        </main>
+    </div>
+
+    <script>
+        function showNextStep(stepNumber) {
+            // Update progress dots
+            const currentDot = document.getElementById(`dot${stepNumber - 1}`);
+            if(currentDot) currentDot.classList.add('active');
+
+            // Show the next step
+            const nextStep = document.getElementById(`step${stepNumber}`);
+            if (nextStep) {
+                nextStep.style.display = 'block';
+                const nextTextarea = nextStep.querySelector('textarea');
+                if (nextTextarea) {
+                    nextTextarea.focus();
+                } else {
+                    // For the final step, just mark the last dot
+                    const finalDot = document.getElementById(`dot${stepNumber}`);
+                     if(finalDot) finalDot.classList.add('active');
+                }
+            }
+        }
+
+        // Initialize the first step
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstStep = document.getElementById('step1');
+            firstStep.style.display = 'block';
+            document.getElementById('dot1').classList.add('active');
+            firstStep.querySelector('textarea').focus();
+        });
+    </script>
+</body>
+</html>

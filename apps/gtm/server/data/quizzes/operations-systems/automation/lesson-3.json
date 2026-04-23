@@ -1,0 +1,101 @@
+{
+    "lessonId": "3",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "The Meeting Logger",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of sales meetings receive a follow-up within 24 hours?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "87%"
+                },
+                {
+                    "id": "b",
+                    "text": "44%"
+                },
+                {
+                    "id": "c",
+                    "text": "62%"
+                },
+                {
+                    "id": "d",
+                    "text": "29%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Only 44% of sales meetings receive a follow-up within 24 hours. The Meeting Logger ensures you're always in that group by auto-creating a follow-up task."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why should you trigger the Meeting Logger on 'Invitee Created' rather than 'Event Ended' in Calendly?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Calendly doesn't have an 'Event Ended' trigger"
+                },
+                {
+                    "id": "b",
+                    "text": "Automation platforms can't detect when meetings end reliably"
+                },
+                {
+                    "id": "c",
+                    "text": "It's faster and requires less setup"
+                },
+                {
+                    "id": "d",
+                    "text": "Calendly only sends data on booking, not on completion"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Automation platforms like Zapier and Make don't reliably receive a webhook when a Calendly meeting ends. The workaround is to trigger on booking creation and add a delay step equal to the meeting duration."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "The Meeting Logger should fire for all Calendly event types, including customer check-ins and internal meetings.",
+            "correctAnswer": "b",
+            "explanation": "False. Filter to only fire for sales-related event types (Discovery Call, Demo). Check-ins with existing customers and internal meetings should not advance deal stages or create sales follow-up tasks.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary analytics benefit of the Meeting Logger?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It reduces your CRM cost"
+                },
+                {
+                    "id": "b",
+                    "text": "It creates timestamped activity records that enable velocity tracking"
+                },
+                {
+                    "id": "c",
+                    "text": "It automatically closes deals when meetings go well"
+                },
+                {
+                    "id": "d",
+                    "text": "It replaces manual note-taking"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Meeting Logger creates timestamped activity records that feed your Course 41 pipeline velocity dashboard. Without it, you can't accurately measure how long deals spend in each stage."
+        }
+    ]
+}

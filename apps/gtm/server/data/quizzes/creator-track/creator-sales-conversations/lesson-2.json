@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "The C.L.O.S.E.R. Framework Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the C.L.O.S.E.R. framework, what does the 'S' stand for and what does it mean?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Solve the problem — demonstrating how your program solves their specific pain point."
+                },
+                {
+                    "id": "b",
+                    "text": "Sell the vacation — painting a vivid picture of the outcome and future state rather than describing the program's features."
+                },
+                {
+                    "id": "c",
+                    "text": "Share the solution — walking through every module and deliverable in your program."
+                },
+                {
+                    "id": "d",
+                    "text": "Set expectations — managing what the prospect should expect during the program."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "'S' stands for 'Sell the Vacation.' The principle is that nobody buys a plane ticket because they enjoy the flight — they buy it for the destination. On enrollment calls, you should spend 80% of this phase on the outcome and only 20% on the mechanism (your program's features)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Label the problem' step in the C.L.O.S.E.R. framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To categorize the prospect into a CRM segment for future follow-up."
+                },
+                {
+                    "id": "b",
+                    "text": "To tell the prospect what they are doing wrong so they feel motivated to change."
+                },
+                {
+                    "id": "c",
+                    "text": "To reflect back what the prospect shared and name their experience in a way that makes them feel deeply understood."
+                },
+                {
+                    "id": "d",
+                    "text": "To assign a clinical diagnosis to their business problem for your own notes."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Labeling is about reflecting back what the prospect told you and giving their experience a name that resonates. When you propose a label and ask 'Does that feel right?', the prospect feels seen and understood, which builds trust. It is not about diagnosing or telling them what is wrong."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is the 'Reinforce the decision' step important immediately after someone says yes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It gives you time to find the payment link while making small talk."
+                },
+                {
+                    "id": "b",
+                    "text": "It prevents chargebacks by making them verbally confirm the purchase multiple times."
+                },
+                {
+                    "id": "c",
+                    "text": "It counteracts the wave of buyer's doubt that hits immediately after a purchase decision, reducing buyer's remorse."
+                },
+                {
+                    "id": "d",
+                    "text": "It is optional and only necessary for sales over $5,000."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The moment someone commits to a purchase, their brain starts questioning the decision. Reinforcing immediately with specific, genuine acknowledgment and a concrete next step reduces buyer's remorse and ensures they leave the call feeling good about their choice."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Walk through how you would apply the 'Overview past experience' step for your specific offer. What have your ideal clients typically tried before coming to you? How would you use their history of past attempts to build the case that your approach is different?",
+            "minLength": 100,
+            "aiPrompt": "Look for the student to identify specific past solutions their prospects have tried (courses, coaches, DIY methods) and articulate how they would use that history to reframe failures as 'the method failed you, not the other way around.' Strong answers show understanding that the Overview step separates the prospect from their past failures and creates openness to a new approach."
+        }
+    ]
+}

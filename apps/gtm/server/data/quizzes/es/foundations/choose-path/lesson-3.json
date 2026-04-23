@@ -1,0 +1,141 @@
+{
+    "courseId": "choose-path",
+    "lessonId": "3",
+    "sectionId": "foundations",
+    "title": "Quiz del Camino de Adquisición para Creador/Coach",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "¿Cuál es la 'Ecuación de Confianza' central para el modelo de adquisición Creador/Coach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Publicidad + Landing Page = Ventas"
+                },
+                {
+                    "id": "b",
+                    "text": "El Contenido genera Confianza → La Confianza habilita la Conversación → La Conversación lleva a las Ventas"
+                },
+                {
+                    "id": "c",
+                    "text": "Alianzas + Referencias = Crecimiento"
+                },
+                {
+                    "id": "d",
+                    "text": "Características + Velocidad = Conversión"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Para creadores y coaches, las ventas se construyen sobre una base de confianza ganada a través de contenido consistente. Esta confianza abre la puerta a las conversaciones (DMs, llamadas), que finalmente conducen a las conversiones."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Un creador que vende un programa de coaching ejecutivo de $2.500 tiene muchas llamadas de descubrimiento pero solo el 10% están convirtiendo. ¿Cuál es el problema más probable?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Necesitan bajar su precio"
+                },
+                {
+                    "id": "b",
+                    "text": "Su contenido es demasiado bueno y regala demasiado"
+                },
+                {
+                    "id": "c",
+                    "text": "Mala calificación (lo que lleva a llamadas con personas no adecuadas)"
+                },
+                {
+                    "id": "d",
+                    "text": "Necesitan un mejor logo"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Las ofertas de alto precio requieren una calificación profunda. Si las tasas de inscripción son inferiores al 50% para las llamadas de descubrimiento, el creador probablemente está dejando que 'cualquiera' reserve una llamada en lugar de calificar previamente por ajuste y presupuesto. El Curso 14 ayuda a resolver esto."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "¿Qué sugiere el principio de contenido de 'Cero Clics'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nunca incluyas enlaces en tus publicaciones"
+                },
+                {
+                    "id": "b",
+                    "text": "El contenido debe proporcionar valor completo dentro del feed social mismo, no solo hacer un teaser de un enlace"
+                },
+                {
+                    "id": "c",
+                    "text": "Los usuarios no deberían tener que hacer clic para comprar tu producto"
+                },
+                {
+                    "id": "d",
+                    "text": "El algoritmo de LinkedIn odia los enlaces, así que usa códigos QR en su lugar"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "El contenido de Cero Clics respeta el tiempo del usuario al entregar la perspectiva clave o el 'pago' dentro del feed. Esto genera confianza y autoridad, haciendo que los usuarios sean *más* propensos a visitar eventualmente tu perfil o unirse a tu lista."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "¿Qué conjunto de cursos está designado como 'Nivel 1' para un fundador Creador/Coach?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cursos 4, 8 y 14"
+                },
+                {
+                    "id": "b",
+                    "text": "Cursos 7, 9 y 13"
+                },
+                {
+                    "id": "c",
+                    "text": "Cursos 5, 10 y 14"
+                },
+                {
+                    "id": "d",
+                    "text": "Cursos 11, 18 y 22"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Para los creadores, las prioridades son el Curso 5 (Motor de Contenido), el Curso 10 (Email Nurture/Activos Propios) y el Curso 14 (Descubrimiento/Inscripción)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "En el concepto de 'Escalera de Productos', ¿cuál es el rol de un producto de 'Bajo Precio' ($50-$200)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ser el principal generador de ingresos"
+                },
+                {
+                    "id": "b",
+                    "text": "Generar 'Confianza como Comprador' y calificar a las personas para ofertas de mayor precio"
+                },
+                {
+                    "id": "c",
+                    "text": "Reemplazar la necesidad de una lista de email"
+                },
+                {
+                    "id": "d",
+                    "text": "Actuar como un lead magnet que se regala gratis"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Los productos de bajo precio mueven la relación de 'seguidor' a 'cliente.' Es más fácil vender un programa de $5.000 a alguien que ya pagó $100 y obtuvo valor que a un completo desconocido."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Traza tu camino de Contenido a Cliente. Identifica tu plataforma principal, tres pilares de contenido principales, el concepto de tu lead magnet y tu oferta de transformación de alto precio máxima. ¿Cómo encajan estas piezas para construir confianza?",
+            "minLength": 100,
+            "promptForAI": "Evalúa si el camino del creador es lógicamente consistente. ¿Los pilares de contenido llevan naturalmente al lead magnet? ¿La oferta de transformación justifica la 'confianza' construida anteriormente? Busca 'El Pivote' — ¿dónde termina el contenido gratuito y comienza la invitación a comprar?"
+        }
+    ]
+}

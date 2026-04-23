@@ -1,0 +1,172 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "10",
+    "lessonTitle": "Community-to-Pipeline Conversion",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is meant by conversion being a 'Pull' mechanism on community platforms?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You pull people into meetings by DMing them repeatedly."
+                },
+                {
+                    "id": "b",
+                    "text": "You optimize your presence (Value -> Interest -> Profile) so that prospects voluntarily 'pull' themselves into your ecosystem."
+                },
+                {
+                    "id": "c",
+                    "text": "You pay for 'Pull' ads instead of 'Push' ads."
+                },
+                {
+                    "id": "d",
+                    "text": "You pull your product from the market to create scarcity."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Community-led growth relies on attracting interest through authority. When a founder provides high value, prospects naturally want to learn more, moving to the founder's profile and eventually the product.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What should be the primary focus of your community profile bio for maximum conversion?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your job title and years of experience."
+                },
+                {
+                    "id": "b",
+                    "text": "The 'Transformation' or specific problem you solve for your ICP."
+                },
+                {
+                    "id": "c",
+                    "text": "A list of your hobbies and interests."
+                },
+                {
+                    "id": "d",
+                    "text": "The name of your college and degree."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A conversion-focused bio tells a potential customer exactly how you can help them. This makes it easy for them to self-identify as a fit for your solution.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Permission Bridge' strategy in direct messaging?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking the moderator for permission before sending a DM."
+                },
+                {
+                    "id": "b",
+                    "text": "Asking 'Want me to send it over?' after offering a specific, valuable resource before moving to a sales conversation."
+                },
+                {
+                    "id": "c",
+                    "text": "Buying a list of 'opt-in' community members."
+                },
+                {
+                    "id": "d",
+                    "text": "Waiting for the prospect to ask for a price before mentioning the product."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "By asking for permission to share value, you avoid sounding like a spammer and build a consensual path toward a deeper sales discussion.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is it important to track 'Source_Community' in your CRM?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To report spammers to the community owners."
+                },
+                {
+                    "id": "b",
+                    "text": "To calculate the ROI of your time and identify which communities are producing the highest-quality leads."
+                },
+                {
+                    "id": "c",
+                    "text": "Because the platform rules require it."
+                },
+                {
+                    "id": "d",
+                    "text": "To see which community has the most members."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For a solo founder, time is the scarcest resource. Tracking data allows you to double-down on communities that actually convert into revenue.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the '4-Hour Weekly Playbook,' what is the primary activity for Monday?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Post a long thread about your revenue."
+                },
+                {
+                    "id": "b",
+                    "text": "Review Forum Alerts (F5Bot/Syften) and respond to 'Hot' pain points."
+                },
+                {
+                    "id": "c",
+                    "text": "Go to a networking dinner."
+                },
+                {
+                    "id": "d",
+                    "text": "Redesign your landing page."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Starting the week by responding to high-intent problems ensures you capture leads while their pain is fresh and the window of opportunity is open.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Map out your 'Ideal Conversion Path' starting from a Reddit comment. What is the specific 'Bridge' resource you will offer, and what is the 'Next Step' you want the prospect to take (e.g., newsletter signup, 15-min call)? How does this path maintain the 'Practitioner First' mindset?",
+            "promptHints": [
+                "Include the 'Permission' question you will use.",
+                "Ensure the 'Next Step' feels like a continuation of the value.",
+                "Reflect on how you will avoid the 'Sales Pressure' trap."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "15-20 minutes",
+        "prerequisiteQuizzes": [
+            "9"
+        ],
+        "unlocks": []
+    },
+    "sectionId": "marketing-engine",
+    "title": "Community-to-Pipeline Conversion - Quiz"
+}

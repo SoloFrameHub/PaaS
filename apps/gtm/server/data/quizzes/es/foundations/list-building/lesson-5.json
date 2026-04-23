@@ -1,0 +1,141 @@
+{
+  "lessonId": "5",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Configuración de Infraestructura de Correo",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la razón principal para usar dominios 'similares' (ej., getempresa.com) para el outreach frío?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hace que tu empresa parezca más grande"
+        },
+        {
+          "id": "b",
+          "text": "Para proteger tu dominio principal del negocio de ser incluido en la lista negra por los filtros de spam"
+        },
+        {
+          "id": "c",
+          "text": "Es más barato que comprar un dominio principal"
+        },
+        {
+          "id": "d",
+          "text": "Los dominios similares omiten automáticamente los filtros de spam de Google"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El outreach frío conlleva un riesgo inherente de quejas de spam. Aislar ese riesgo en dominios secundarios garantiza que tu comunicación comercial principal (facturas, soporte) permanezca segura."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuántos registros SPF se te permite tener en un solo dominio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uno"
+        },
+        {
+          "id": "b",
+          "text": "Tres"
+        },
+        {
+          "id": "c",
+          "text": "Tantos como necesites"
+        },
+        {
+          "id": "d",
+          "text": "Uno por cada herramienta de envío"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La especificación SPF solo permite un registro. Si hay múltiples registros, todos fallarán en la autenticación. Debes fusionar todos los remitentes autorizados en una sola cadena de registro."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué registro proporciona un 'sello criptográfico' para demostrar que el contenido de un correo no fue manipulado?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SPF"
+        },
+        {
+          "id": "b",
+          "text": "DMARC"
+        },
+        {
+          "id": "c",
+          "text": "DKIM"
+        },
+        {
+          "id": "d",
+          "text": "MX"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "DKIM (DomainKeys Identified Mail) usa una firma digital verificada por una clave pública en tu DNS para garantizar la integridad del mensaje."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué le dice una política DMARC de 'p=none' al servidor receptor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rechaza todos los correos que fallen la autenticación"
+        },
+        {
+          "id": "b",
+          "text": "Entrega el correo aunque falle la autenticación, pero envíame un reporte"
+        },
+        {
+          "id": "c",
+          "text": "Pon los correos fallidos en la carpeta de spam"
+        },
+        {
+          "id": "d",
+          "text": "Este dominio no envía correo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "'p=none' es la política de monitoreo. Permite que los correos pasen aunque fallen las verificaciones, pero proporciona al propietario del dominio datos de reporte para solucionar problemas."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué herramienta se recomienda para verificar que tu SPF, DKIM y DMARC estén configurados correctamente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Search Console"
+        },
+        {
+          "id": "b",
+          "text": "MXToolbox"
+        },
+        {
+          "id": "c",
+          "text": "Facebook Ads Manager"
+        },
+        {
+          "id": "d",
+          "text": "Panel de Shopify"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "MXToolbox es una herramienta estándar de practicante para búsquedas de DNS y verificación de autenticación."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Revisa tu configuración actual o planificada de dominio de outbound. Lista el dominio similar que has elegido y explica tu estrategia de 'fusión' si usas múltiples herramientas de envío (ej., Google Workspace + Instantly). ¿Por qué 'p=none' es un punto de partida seguro para DMARC?",
+      "minLength": 100,
+      "promptForAI": "Verifica la elección de dominio (debe ser una variación, no el principal). Comprueba la comprensión de la regla de un solo registro SPF. Evalúa la justificación de DMARC (evita el bloqueo accidental de correo legítimo mientras se finaliza la configuración)."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What effect size did omega-3 supplementation show for postpartum depression in the meta-analysis, and how does it compare to typical pharmaceutical treatments?",
+            "options": [
+                { "id": "opt1", "text": "SMD of 0.30 — similar to most pharmaceutical treatments" },
+                { "id": "opt2", "text": "SMD of 0.50 — slightly better than most pharmaceutical treatments" },
+                { "id": "opt3", "text": "SMD of 1.59 — far larger than most pharmaceutical treatments (typically 0.30-0.50)" },
+                { "id": "opt4", "text": "SMD of 3.00 — the largest effect size ever recorded for any depression treatment" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The meta-analysis found a very large effect size of SMD = 1.59 for omega-3 supplementation in postpartum depression. Most pharmaceutical treatments for depression show effect sizes in the range of 0.30-0.50, making the omega-3 effect notably larger, though interpreted with caution due to the moderate total sample size."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What EPA-to-DHA ratio was found to be most effective for postpartum depression in the omega-3 meta-analysis?",
+            "options": [
+                { "id": "opt1", "text": "Equal amounts of EPA and DHA (1:1 ratio)" },
+                { "id": "opt2", "text": "DHA-dominant formulations (more DHA than EPA)" },
+                { "id": "opt3", "text": "Pure DHA with no EPA" },
+                { "id": "opt4", "text": "EPA-to-DHA ratio of 1.5 or greater" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The meta-analysis found that formulations with an EPA-to-DHA ratio of 1.5 or greater showed significantly better results than those with lower ratios or DHA-dominant formulations. EPA may have more direct antidepressant properties, while DHA is more important for brain structure and development."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the maternal depletion hypothesis explain?",
+            "options": [
+                { "id": "opt1", "text": "Why mothers lose interest in food after giving birth" },
+                { "id": "opt2", "text": "How the developing fetus draws from the mother's nutrient stores — including brain DHA — leaving her depleted and vulnerable to depression" },
+                { "id": "opt3", "text": "Why newborn babies need formula supplementation" },
+                { "id": "opt4", "text": "How hormonal changes during pregnancy prevent nutrient absorption" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The maternal depletion hypothesis explains how during pregnancy, the fetus has priority access to the mother's nutrient stores. The fetal brain requires large amounts of DHA during the third trimester, and if intake is insufficient, the fetus draws from the mother's own tissue stores, including her brain, leaving her depleted during the most vulnerable postpartum period."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is the cultural pressure to 'bounce back' after pregnancy harmful to postpartum mental health?",
+            "options": [
+                { "id": "opt1", "text": "It has no effect on mental health — it is only about physical appearance" },
+                { "id": "opt2", "text": "Restrictive postpartum eating works against nutritional recovery, and breastfeeding alone requires an additional 450-500 kcal per day" },
+                { "id": "opt3", "text": "It causes new mothers to exercise too much" },
+                { "id": "opt4", "text": "It only affects mothers who had a difficult delivery" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The cultural pressure to lose baby weight quickly works directly against nutritional recovery and mental health. Breastfeeding requires an additional 450-500 kilocalories per day, along with increased needs for protein, calcium, vitamin D, and omega-3 fatty acids. Restricting calories during this period can worsen nutrient depletion and increase depression risk."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Beyond omega-3 fatty acids, which other nutrients are commonly depleted during pregnancy and linked to postpartum mental health?",
+            "options": [
+                { "id": "opt1", "text": "Only vitamin C and fiber" },
+                { "id": "opt2", "text": "Iron, vitamin D, zinc, and B vitamins (folate, B12, B6)" },
+                { "id": "opt3", "text": "Caffeine and sodium" },
+                { "id": "opt4", "text": "Carbohydrates and dietary fat" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Multiple nutrients beyond omega-3s are depleted during the perinatal period: iron (affects up to 30% of pregnant women), vitamin D (linked to increased depression risk), zinc (required for neurotransmitter synthesis), and B vitamins (folate, B12, B6 — critical for methylation pathways and neurotransmitter production)."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "5",
+    "title": "Perinatal Nutrition and Postpartum Depression - Quiz"
+}

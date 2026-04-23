@@ -1,0 +1,133 @@
+{
+    "title": "Lesson 3 Quiz",
+    "questions": [
+        {
+            "question": "What is the primary difference between a 'Coach' and a 'Champion' in MEDDIC?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A Coach plays sports"
+                },
+                {
+                    "id": "b",
+                    "text": "A Champion has power/influence and fights for you; a Coach just wants you to win but has no power"
+                },
+                {
+                    "id": "c",
+                    "text": "A Champion is the CEO"
+                },
+                {
+                    "id": "d",
+                    "text": "They are the same thing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A Champion must have *Power*. If they love your product but can't influence the decision, they are just a Coach.",
+            "id": "q1",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "Why is 'Decision Process' (Dp) critical in enterprise sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "So you can invoice them early"
+                },
+                {
+                    "id": "b",
+                    "text": "Because enterprise buying involves hidden steps (Security, Legal, Procurement) that can delay or kill deals"
+                },
+                {
+                    "id": "c",
+                    "text": "So you know what color to make the button"
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't critical"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Ignoring the 'Process' is the #1 reason deals 'slip' into the next quarter. You get blindsided by a 6-week security review.",
+            "id": "q2",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "What does the 'M' (Metrics) stand for in MEDDIC?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Marketing Spend"
+                },
+                {
+                    "id": "b",
+                    "text": "Metrics: The quantifiable economic impact (ROI) of the solution"
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly Active Users"
+                },
+                {
+                    "id": "d",
+                    "text": "Management Overhead"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "M implies ROI. You aren't just solving a problem; you are delivering a measurable economic gain (Time saved, Revenue gained).",
+            "id": "q3",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "If you are selling a $5,000 tool to a single founder, which framework should you use?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "MEDDIC"
+                },
+                {
+                    "id": "b",
+                    "text": "BANT"
+                },
+                {
+                    "id": "c",
+                    "text": "Neither"
+                },
+                {
+                    "id": "d",
+                    "text": "Both"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "BANT is superior for transactional, simple sales. MEDDIC is overkill for a $5k deal with one decision maker.",
+            "id": "q4",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "Who is the 'Economic Buyer'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The person using the software"
+                },
+                {
+                    "id": "b",
+                    "text": "The procurement manager"
+                },
+                {
+                    "id": "c",
+                    "text": "The person with the P&L authority to release funds (Budget Holder)"
+                },
+                {
+                    "id": "d",
+                    "text": "The CFO always"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Economic Buyer is the one whose budget pays for the tool. They have the final 'No' or 'Yes'. It might be a VP, CTO, or CEO.",
+            "id": "q5",
+            "type": "multiple-choice"
+        }
+    ],
+    "sectionId": "sales-methodology",
+    "courseId": "discovery-framework",
+    "lessonId": "3"
+}

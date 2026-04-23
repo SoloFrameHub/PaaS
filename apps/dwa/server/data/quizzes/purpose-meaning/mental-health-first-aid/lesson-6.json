@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Sarah confides she was in an abusive relationship years ago. She says 'Sorry, I'm probably overreacting.' Which response demonstrates trauma-informed care principles?",
+      "options": [
+        {"id": "opt1", "text": "'That's terrible! You need to tell me exactly what happened so I can understand.'"},
+        {"id": "opt2", "text": "'You're not overreacting. Thank you for trusting me. You don't have to tell me more unless you want to. What would feel most helpful right now?'"},
+        {"id": "opt3", "text": "'That doesn't sound that bad compared to what some people go through. At least you got out!'"},
+        {"id": "opt4", "text": "'Oh wow, I went through something similar! Let me tell you about my experience...'"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "This response applies multiple TIC principles: validates her experience (counters 'overreacting'), expresses gratitude for trust (trustworthiness), honors autonomy ('you don't have to' = choice/empowerment), and collaborates by asking what SHE needs (collaboration/mutuality). It creates safety without demanding disclosure or imposing your agenda. Demanding details re-traumatizes, minimizing/'doesn't sound that bad' invalidates and increases shame, and making it about you removes her voice and shifts focus."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the fundamental difference between 'What's wrong with you?' and 'What happened to you?' in trauma-informed thinking?",
+      "options": [
+        {"id": "opt1", "text": "'What's wrong with you?' focuses on fixing the person; 'What happened to you?' assumes behavior makes sense in context and focuses on understanding root causes"},
+        {"id": "opt2", "text": "There is no meaningful difference — both questions seek the same information"},
+        {"id": "opt3", "text": "'What's wrong with you?' is more direct and honest; 'What happened to you?' avoids accountability"},
+        {"id": "opt4", "text": "'What happened to you?' assumes all problems are caused by trauma, which is rarely true"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "'What's wrong with you?' assumes behavior is a character flaw/choice, the person is broken/defective, and focuses on 'fixing' them — this INCREASES shame and disempowers. 'What happened to you?' assumes behavior makes sense in the context of experience, the person is adapting/surviving (not broken), and focuses on understanding root causes to support healing — this REDUCES shame and empowers through understanding. This shift, popularized by Dr. Bruce Perry and Oprah, is the foundation of trauma-informed practice. It validates that trauma affects people in profound ways without implying they're defective."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "During a support conversation, the person you're helping suddenly seems to 'space out' — they're staring blankly, not responding, flat affect. This is likely dissociation. What is the trauma-informed response?",
+      "options": [
+        {"id": "opt1", "text": "Shake their shoulder and say loudly 'Snap out of it! Come back!'"},
+        {"id": "opt2", "text": "Gently ground them with calm prompts like 'Can you feel your feet on the floor?' and give them time to come back without demanding they 'snap out of it'"},
+        {"id": "opt3", "text": "Leave immediately — dissociation means they don't want to talk to you"},
+        {"id": "opt4", "text": "Continue talking and assume they're still listening even if they don't respond"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Dissociation is a survival mechanism where the brain 'leaves' when the present feels overwhelming or triggers past trauma. Gently ground them with sensory prompts: 'Can you feel your feet on the floor? Can you name 3 things you see?' Speak calmly, give them time, do NOT touch without permission (can escalate), and do NOT demand they 'snap out of it' (they can't voluntarily control dissociation). Shaking/loud voice can escalate panic. Leaving abandons them. Continuing to talk without checking if they're present ignores their experience. Trauma-informed care recognizes dissociation as protective, not willful."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What does research show about the prevalence of trauma and Adverse Childhood Experiences (ACEs)?",
+      "options": [
+        {"id": "opt1", "text": "Trauma is rare — only 10-15% of adults report traumatic events"},
+        {"id": "opt2", "text": "60-75% of adults report at least one traumatic event; ACE research found dose-response relationships between childhood trauma and adult health outcomes"},
+        {"id": "opt3", "text": "Trauma only affects combat veterans and abuse survivors — it's not relevant to general population"},
+        {"id": "opt4", "text": "There is no credible research on trauma prevalence"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows trauma is PERVASIVE: 60-75% of adults report at least one traumatic event. The landmark ACE study (Felitti et al., 1998; ongoing CDC research) found dose-response relationships between childhood trauma (abuse, neglect, household dysfunction) and adult health outcomes including mental illness, substance use, chronic disease, and early death. This demonstrates that trauma is NOT rare or limited to specific populations — it affects the majority of people to some degree, and childhood trauma has lasting effects across the lifespan. Trauma-informed care assumes trauma is common, not exceptional."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Vicarious trauma (secondary traumatic stress) is trauma experienced by HELPERS through repeated exposure to others' traumatic stories. Which of the following is TRUE about vicarious trauma?",
+      "options": [
+        {"id": "opt1", "text": "Vicarious trauma is a sign of weakness — good helpers don't experience it"},
+        {"id": "opt2", "text": "Vicarious trauma affects 40-85% of helping professionals; signs include intrusive thoughts, hypervigilance, numbness, and cynicism — it requires active prevention and self-care"},
+        {"id": "opt3", "text": "Vicarious trauma only affects therapists, not community helpers doing MHFA"},
+        {"id": "opt4", "text": "Once you experience vicarious trauma, you should stop all helping work permanently"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Vicarious trauma affects an estimated 40-85% of helping professionals at some point — it's a NORMAL response to repeated trauma exposure, not a sign of weakness. Signs include intrusive thoughts about people you've helped, hypervigilance, emotional numbness, cynicism, sleep disruption, and avoidance. Community helpers (including MHFA responders) are at risk, not just therapists. Prevention requires: setting boundaries, regular debriefing, diversifying your life beyond helping, monitoring your signs, seeking your own support, and knowing when to step back temporarily. Sustainable helping requires sustainability. You don't need to stop permanently, but you DO need active self-care."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "6",
+  "title": "Trauma-Informed Approaches to Mental Health Support - Quiz"
+}

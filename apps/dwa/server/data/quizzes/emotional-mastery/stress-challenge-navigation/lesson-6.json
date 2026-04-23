@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for Mindfulness-Based Stress Reduction (MBSR) for stress and anxiety?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—only anecdotal reports support it"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MODERATE to STRONG—meta-analyses show effect sizes of approximately g=0.56-0.62 for anxiety, with significant stress reduction across workplace and general populations"
+                },
+                {
+                    "id": "opt3",
+                    "text": "STRONG with no limitations for all mental health conditions"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No scientific evidence exists for MBSR"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "MBSR has MODERATE to STRONG evidence for workplace and general-population stress. Meta-analytic effect sizes for anxiety are approximately Hedges' g=0.56-0.62. Studies show MBSR is particularly effective for improving emotion regulation and mindfulness (where it outperforms CBT), though CBT shows greater improvements in cognitive-executive functions. A head-to-head comparison found no significant difference in depression outcomes between MBSR and CBT. For digital courses, brief mindfulness practices (5-10 minutes) combined with structured learning show stronger evidence than standalone mindfulness apps."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How do MBSR and CBT differ in their mechanism profiles for stress management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "They are identical in mechanism and outcomes"
+                },
+                {
+                    "id": "opt2",
+                    "text": "MBSR produces greater improvements in emotion regulation and mindfulness; CBT produces greater improvements in cognitive-executive functions—no significant difference in depression outcomes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only MBSR works—CBT is ineffective for stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only CBT works—MBSR is ineffective for stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A head-to-head comparison study found that MBSR and CBT have different but complementary mechanism profiles. MBSR produces greater improvements in emotion regulation (the ability to manage emotional responses) and mindfulness skills (present-moment awareness and observational capacity). CBT, by contrast, produces greater improvements in cognitive-executive functions like problem-solving and cognitive restructuring. Importantly, there was no significant difference in depression outcomes between the two approaches. This suggests that for comprehensive stress management, a hybrid model integrating both approaches—cognitive reframing from CBT plus awareness practices from mindfulness—may be optimal."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What distinguishes mindfulness practice from relaxation techniques like PMR?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "There is no difference—they're the same thing"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Mindfulness cultivates observational awareness without trying to change the experience; relaxation techniques actively work to reduce physiological arousal"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only mindfulness has scientific evidence"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only relaxation techniques have scientific evidence"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "While both are evidence-based stress management tools, mindfulness and relaxation have different goals and mechanisms. Mindfulness practices (like mindful breathing or body scans) cultivate present-moment observational awareness—you notice sensations, thoughts, and emotions without trying to change them. The goal is awareness and acceptance. Relaxation techniques like Progressive Muscle Relaxation (PMR) or diaphragmatic breathing actively work to reduce physiological arousal through specific mechanisms (muscle tension release, parasympathetic activation). Both are valuable, and research suggests they work through different pathways—mindfulness through emotion regulation and cognitive flexibility, relaxation through direct autonomic nervous system modulation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended duration and format for mindfulness practice in digital stress management courses?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "60+ minutes daily of unguided meditation"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Brief practices (5-10 minutes) combined with structured learning and skill-building—this has stronger evidence than standalone mindfulness apps"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Mindfulness should never be taught in digital formats"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Any amount works equally—duration doesn't matter"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research on digital mindfulness interventions shows that brief mindfulness practices (5-10 minutes) combined with structured learning components produce stronger evidence of benefit than standalone mindfulness apps without structured education. This makes sense from a skill-acquisition perspective: learners need both practice time and conceptual understanding of why, how, and when to use mindfulness. The traditional 8-week MBSR program includes both formal practice and didactic teaching. For digital courses, this translates to integrated brief practices (accessible and sustainable) plus psychoeducation about mindfulness mechanisms, applications, and when to use it."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "For which population does MBSR have MODERATE evidence with important follow-up caveats?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Workplace stress populations—no caveats"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Veterans with PTSD and depression—medium effect sizes during intervention, but PTSD effects not maintained at follow-up between groups (depression effects maintained)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "College students—MBSR is ineffective for this group"
+                },
+                {
+                    "id": "opt4",
+                    "text": "MBSR has no evidence for any specific population"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A meta-analysis of 13 studies (N=1,131) examined MBSR in veterans with PTSD and depression. It found medium within- and between-group effect sizes for both depression and PTSD symptoms during the intervention period. However, at follow-up assessment, depression effects were maintained between groups but PTSD effects were not. This suggests MBSR may be a helpful adjunct for depression in trauma populations, but it's not a substitute for trauma-focused therapy (CPT, PE, EMDR) for PTSD. This aligns with VA/DoD 2023 clinical practice guidelines strongly supporting trauma-focused treatment over standalone self-help for PTSD."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "6",
+    "title": "Mindfulness and Present-Moment Awareness - Quiz"
+}

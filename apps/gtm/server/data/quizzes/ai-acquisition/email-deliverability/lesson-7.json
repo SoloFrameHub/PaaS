@@ -1,0 +1,75 @@
+{
+  "lessonId": "7",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "Inbox Rotation & Sending Limits",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the safe cold email limit per inbox per day for Google Workspace?",
+      "options": [
+        { "id": "a", "text": "500/day (the official technical limit)" },
+        { "id": "b", "text": "200/day" },
+        { "id": "c", "text": "30-50/day (the behavioral safe limit)" },
+        { "id": "d", "text": "1,000/day" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "While Google's technical limit is 500 emails/day, the safe cold email limit is only 30-50/day. The official limit was designed for transactional email and internal communication. Cold email at 200/day from one inbox triggers spam heuristics: sudden volume spikes, low engagement rates, templated content, and concentrated sending patterns."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened when David sent 200 cold emails from a single inbox in one day?",
+      "options": [
+        { "id": "a", "text": "He got 200 replies" },
+        {
+          "id": "b",
+          "text": "Inbox placement dropped from 92% to 23% within 48 hours, requiring 60 days of domain rest and $12,000+ in lost pipeline"
+        },
+        { "id": "c", "text": "Nothing — he was within the official limit" },
+        { "id": "d", "text": "His account was immediately suspended" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Despite being under the 500/day official limit, David's 200 cold emails triggered every spam heuristic: sudden volume spike (35 to 200), low engagement rate, template similarity, and concentrated sending. He had to rest the domain 60 days, buy 4 new domains, and lost ~$12,000 in pipeline value."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why do official email limits and safe cold email limits differ so dramatically?",
+      "options": [
+        { "id": "a", "text": "Providers intentionally mislead users" },
+        {
+          "id": "b",
+          "text": "Cold email has low engagement rates, unknown contacts, templated content, and batch sending — all patterns that trigger spam filters differently than normal email"
+        },
+        {
+          "id": "c",
+          "text": "Safe limits are made up by email marketing companies"
+        },
+        { "id": "d", "text": "There is no real difference" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Normal email has 20-80% reply rates, known contacts, varied content, and natural timing. Cold email has 1-5% reply rates, unknown contacts, templated content, and batch sending. These behavioral differences mean filters treat cold email much more suspiciously, requiring significantly lower volume to maintain reputation."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Inbox rotation — spreading sends across multiple inboxes and domains — is essential for safely scaling cold email volume beyond 50/day.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. To safely send 200-400 cold emails per day, you need 4-12 inboxes across 3-4 domains, each sending only 30-50 emails. Inbox rotation tools (Instantly, Smartlead) automatically distribute sends across inboxes, maintaining safe per-inbox volume while achieving scale."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your inbox rotation strategy. How many domains and inboxes do you need to reach your target daily send volume while staying within safe limits? Show the math: target volume / safe per-inbox limit = inboxes needed.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a specific target daily volume, correctly calculates inboxes needed (volume / 30-50 per inbox), plans for 2-3 inboxes per domain, and considers domain diversity. Look for understanding that the math must account for warm-up capacity and growth headroom."
+    }
+  ]
+}

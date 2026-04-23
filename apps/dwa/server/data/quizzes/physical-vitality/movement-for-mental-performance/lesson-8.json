@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the WHO-recommended aerobic exercise dose for mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "30 minutes of exercise once per week"
+                },
+                {
+                    "id": "opt2",
+                    "text": "150-300 minutes per week of moderate-intensity OR 75-150 minutes per week of vigorous-intensity aerobic activity"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Daily high-intensity exercise for at least 2 hours"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There are no official guidelines for exercise and mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The WHO 2020 guidelines and international lifestyle psychiatry guidelines (Marx et al., 2022) recommend 150-300 minutes per week of moderate-intensity aerobic exercise (e.g., 30-60 min, 5 days/week) OR 75-150 minutes per week of vigorous-intensity (e.g., 25-30 min, 3-5 days/week). You can also combine both. 1 minute vigorous ≈ 2 minutes moderate in terms of mental health benefit."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'sweet spot' intensity zone for most people balancing efficacy and adherence?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Light intensity (50-60% max HR) — easy conversation, minimal effort"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Moderate intensity (60-75% max HR) — can talk but not sing, noticeably breathing harder, sustainable for 30-60 minutes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Very high intensity (85-95% max HR) — gasping for air, maximal effort"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Intensity doesn't matter at all for mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Moderate intensity (60-75% max HR) is the sweet spot for most people. It triggers BDNF release, activates monoamine systems, blunts HPA axis reactivity, and has good adherence because it's sustainable. Vigorous intensity (75-85% max HR) produces stronger effects but has lower adherence in mental health populations. Light intensity (50-60% max HR) provides minimal acute neurobiological benefit."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the minimum effective dose for clinically meaningful depression reduction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "5 minutes of walking once per week"
+                },
+                {
+                    "id": "opt2",
+                    "text": "~320 MET-min/week, which translates to 20-30 minutes of brisk walking, 5 days/week"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only marathon running or extreme exercise works for depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no minimum dose — any amount works equally well"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows ~320 MET-min/week crosses the threshold for clinically meaningful depression reduction. This translates to approximately 20-30 minutes of brisk walking, 5 days per week. More is often better (150-300 min/week is optimal), but this minimum dose makes exercise accessible for people starting from zero or dealing with severe fatigue."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why did walking/jogging show the highest effect size (g = -0.62) in the 2024 BMJ meta-analysis?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Walking is inherently superior to all other exercise modalities biologically"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Walking/jogging is highly accessible (no equipment, no gym, flexible dose), which likely improves adherence — and adherence is the most critical variable"
+                },
+                {
+                    "id": "opt3",
+                    "text": "The study was biased toward walking"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Walking is the only exercise that increases BDNF"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Walking/jogging had the highest effect size likely because of accessibility, not biological superiority. It requires zero equipment beyond shoes, no gym membership, is highly dose-flexible (10-60 min), can be done anywhere, and allows outdoor/nature exposure. High accessibility = better adherence = better real-world outcomes. The best exercise is the one you'll actually do."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Which aerobic modality from this lesson resonates most with you (walking, running, cycling, swimming, rowing), and why? Consider accessibility, enjoyment, past experiences, and what intensity zone you think you can sustain 3-5x/week.",
+            "minLength": 50,
+            "explanation": "This reflection helps you identify which aerobic modality aligns with your preferences, constraints, and capacity. The lesson emphasized that all modalities work — the best one is the one you'll actually do. Consider factors like: Do you have access (pool for swimming, bike)? Do you enjoy it? Can you sustain the intensity? Does it fit your schedule? There's no wrong answer — this is about self-knowledge and sustainable planning."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "8",
+    "title": "Cardio for Mental Clarity - Quiz"
+}

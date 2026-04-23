@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <title>Multi-Tenant AI SaaS Architecture for GTM | SoloFrameHub Platform</title>
+    <meta name="description" content="How a multi-tenant AI-native SaaS architecture composes into the SoloFrameHub GTM runtime. Seven architectural moves - multi-tenant runtime, context-aware AI substrate, HITL template propagation, API-native integrations, adaptive unlock system, fine-tune pipeline, operational posture.">
+    <meta name="keywords" content="multi-tenant AI SaaS architecture, multi-tenant SaaS, AI-native runtime, context-aware AI architecture, HITL template propagation, AI SaaS platform architecture, scalable AI platform architecture, fine-tune pipeline architecture">
+    <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+    <link rel="canonical" href="https://soloframehub.com/platform-architecture.html"/>
+    <link rel="alternate" hreflang="en" href="https://soloframehub.com/platform-architecture.html"/>
+    <link rel="alternate" hreflang="x-default" href="https://soloframehub.com/platform-architecture.html"/>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soloframehub.com/platform-architecture.html">
+    <meta property="og:title" content="Multi-Tenant AI SaaS Architecture for GTM | SoloFrameHub Platform">
+    <meta property="og:description" content="Seven architectural moves that separate a multi-tenant AI-native runtime from a course site with AI bolted on. Multi-tenant runtime, context-aware AI, HITL templates, fine-tune pipeline, operational posture.">
+    <meta property="og:image" content="https://soloframehub.com/assets/images/integrated-intelligence.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Multi-Tenant AI SaaS Architecture | SoloFrameHub GTM Platform">
+    <meta name="twitter:description" content="Seven architectural moves behind the SoloFrameHub AI GTM runtime - multi-tenant, context-aware, HITL templates, fine-tune pipeline.">
+    <meta name="twitter:image" content="https://soloframehub.com/assets/images/integrated-intelligence.webp">
+
+    <!-- Schema.org: TechArticle -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Multi-Tenant AI SaaS Architecture for GTM",
+      "description": "Seven architectural moves that separate a multi-tenant AI-native runtime from a course site with AI bolted on. Multi-tenant runtime, context-aware AI substrate, HITL template propagation, API-native integrations, adaptive unlock system, fine-tune pipeline, and operational posture.",
+      "url": "https://soloframehub.com/platform-architecture.html",
+      "image": "https://soloframehub.com/assets/images/integrated-intelligence.webp",
+      "inLanguage": "en",
+      "author": {"@type":"Person","name":"Mike Sullivan","url":"https://soloframehub.com/about.html"},
+      "publisher": {"@type":"Organization","name":"SoloFrameHub","url":"https://soloframehub.com/","logo":{"@type":"ImageObject","url":"https://soloframehub.com/assets/images/soloframehub-site-icon.png"}},
+      "about": [
+        {"@type":"Thing","name":"Multi-tenant SaaS Architecture"},
+        {"@type":"Thing","name":"AI-Native Runtime"},
+        {"@type":"Thing","name":"Context-Aware AI"},
+        {"@type":"Thing","name":"Retrieval-Augmented Generation (RAG)"},
+        {"@type":"Thing","name":"Fine-Tune Pipeline"}
+      ],
+      "mainEntityOfPage": "https://soloframehub.com/platform-architecture.html"
+    }
+    </script>
+
+    <!-- Schema.org: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://soloframehub.com/"},
+        {"@type":"ListItem","position":2,"name":"Platform Architecture","item":"https://soloframehub.com/platform-architecture.html"}
+      ]
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { 'playfair-display': ['"Playfair Display"', 'serif'] } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .h1 { font-size: 3.5rem; line-height: 1.1; font-weight: 700; }
+        .h2 { font-size: 2.5rem; line-height: 1.2; font-weight: 700; }
+        .h3 { font-size: 1.875rem; line-height: 1.3; font-weight: 700; }
+        .h4 { font-size: 1.5rem; line-height: 1.4; font-weight: 700; }
+        @media (max-width: 768px) { .h1 { font-size: 2.5rem; } .h2 { font-size: 2rem; } .h3 { font-size: 1.5rem; } .h4 { font-size: 1.25rem; } }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+
+<header class="absolute w-full z-30">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+        <div class="flex items-center justify-between h-16 md:h-20">
+            <div class="shrink-0 mr-4"><a href="./index.html" class="block text-2xl font-bold text-blue-600">SoloFrameHub</a></div>
+            <nav class="hidden xl:flex xl:grow">
+                <ul class="flex grow justify-start flex-wrap items-center">
+                    <li><a href="./gtm-os.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">GTM OS</a></li>
+                    <li><a href="./methodology.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">The Method</a></li>
+                    <li><a href="./platform-architecture.html" class="font-medium text-white px-3 py-2">Architecture</a></li>
+                    <li><a href="./pricing.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">Pricing</a></li>
+                    <li><a href="./about.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">About</a></li>
+                    <li><a href="./es/index.html" class="font-medium text-slate-300 hover:text-white px-3 py-2">LatAm</a></li>
+                </ul>
+                <ul class="flex grow justify-end flex-wrap items-center">
+                    <li><a href="https://ai-solo-gtm-os.soloframehub.com/signin" class="font-medium text-slate-300 hover:text-white px-3 py-2">Sign in</a></li>
+                    <li><a href="https://forms.soloframehub.com/forms/beta-tester" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">Apply for Beta →</a></li>
+                </ul>
+            </nav>
+            <button class="xl:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+    </div>
+</header>
+
+<div id="mobile-menu" class="hidden xl:hidden fixed inset-0 z-40 bg-white pt-20 px-6 overflow-y-auto">
+    <nav><ul class="space-y-2 pb-12">
+        <li class="pt-4"><a href="./gtm-os.html" class="block text-lg font-medium text-gray-800 hover:text-blue-600">GTM OS</a></li>
+        <li><a href="./methodology.html" class="block text-lg font-medium text-gray-800 hover:text-blue-600">The Method</a></li>
+        <li><a href="./platform-architecture.html" class="block text-lg font-medium text-blue-600">Architecture</a></li>
+        <li><a href="./pricing.html" class="block text-lg font-medium text-gray-800 hover:text-blue-600">Pricing</a></li>
+        <li><a href="./about.html" class="block text-lg font-medium text-gray-800 hover:text-blue-600">About</a></li>
+        <li><a href="./es/index.html" class="block text-lg font-medium text-gray-800 hover:text-blue-600">LatAm Edition</a></li>
+        <li class="pt-4"><a href="https://forms.soloframehub.com/forms/beta-tester" class="block text-lg font-medium text-blue-600">Apply for Beta →</a></li>
+    </ul></nav>
+</div>
+
+<!-- Hero -->
+<section class="relative">
+    <div class="absolute inset-0 bg-slate-900 pointer-events-none -z-10" style="clip-path: polygon(0 0, 5760px 0, 5760px calc(100% - 180px), 0 100%);" aria-hidden="true"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="pt-32 pb-24 md:pt-40 md:pb-32 text-center">
+            <div class="inline-flex items-center gap-2 mb-8">
+                <span class="h-px w-8 bg-gradient-to-r from-transparent to-slate-600"></span>
+                <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400">Platform Architecture</span>
+                <span class="h-px w-8 bg-gradient-to-l from-transparent to-slate-600"></span>
+            </div>
+            <h1 class="h1 text-slate-100 mb-6 py-6 border-y font-bold" style="border-image: linear-gradient(to right, transparent, rgba(203, 213, 225, 0.25), transparent) 1;">How capabilities compose <span class="italic font-playfair-display font-normal text-blue-300">into a runtime.</span></h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-6 leading-relaxed max-w-3xl mx-auto">Seven architectural moves that separate a multi-tenant AI-native platform from a course site with AI bolted on. This is the underlying shape - not a tools-I-use list.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 1. MULTI-TENANT RUNTIME -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-blue-600 leading-none mb-4">01</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-blue-600 mb-3">Multi-Tenant Runtime</div>
+                <h2 class="h3 font-bold text-slate-900">One codebase. Multiple verticals. Each vertical a week.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">The <strong class="text-slate-900">codebase is architected multi-tenant</strong> from day one - one shared engine for coaching, roleplay, pods, and intelligence, with per-tenant corpus, prompts, seed data, and branding.</p>
+                <p class="leading-relaxed">Standing up a new vertical means swap the corpus, retune the prompts, point a new domain, and re-brand the surface. It does not mean rebuild the engine. A vertical ships in about a week because the engine stays constant.</p>
+                <p class="leading-relaxed">Every tenant gets its own dedicated infrastructure once revenue justifies it. The tenancy lives in the code, not in shared hosting. Improvements to the coaching substrate, pod-matching algorithm, or context-aware AI layer roll to every tenant on the next deploy - without re-engineering per vertical.</p>
+                <div class="bg-blue-50 rounded-xl p-5 mt-4">
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-blue-700 mb-2">The implication</div>
+                    <p class="text-sm text-slate-700">Standing up a new vertical takes about a week because the engine doesn't get rebuilt. Every prior capability travels with it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. CONTEXT-AWARE AI SUBSTRATE -->
+<section class="bg-slate-50 py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-emerald-600 leading-none mb-4">02</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-emerald-600 mb-3">Context-Aware AI Substrate</div>
+                <h2 class="h3 font-bold text-slate-900">Every AI call is assembled from a structured context payload, not a prompt string.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">Most AI products paste a system prompt in front of a user message. This runtime builds a <strong class="text-slate-900">10+ signal context block</strong> on every call: DISC profile, saved artifacts, assessment baseline with scoring reasoning, weak-dimension framework mapping, learning style, current lesson, 7-day outreach stats, full pipeline state, and live semantic search across the user's uploaded documents.</p>
+                <p class="leading-relaxed">That context is PII-stripped at the boundary by a single centralized function so every downstream AI call gets the safe version. It isn't per-feature plumbing that could drift - it's one path, shared.</p>
+                <p class="leading-relaxed">The user-facing consequence: the coach references your deals by name. Flags stale pipeline. Adapts tone to your DISC type. Suggests the specific lesson that addresses a specific weak-dimension gap. It's yours.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. HITL TEMPLATE PROPAGATION -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-amber-600 leading-none mb-4">03</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-amber-600 mb-3">HITL Template Propagation</div>
+                <h2 class="h3 font-bold text-slate-900">Fix once. Lands everywhere it applies. Same week.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">The platform isn't a monolith of copy-paste. It's a <strong class="text-slate-900">library of templates</strong> - interactive lesson components, prompt templates for coaching personas, facilitator rhythm prompts, integration adapters, AI flow patterns. Every surface that uses a template inherits edits made to it.</p>
+                <p class="leading-relaxed">Analytics surface a signal → founder + AI review → a template-level fix lands in one place → the next deploy propagates it everywhere.</p>
+                <p class="leading-relaxed">That's why the claim "the platform gets smarter while you use it" isn't marketing - it's the operating model. A weakness surfaces Tuesday. The fix is live Thursday. Every lesson, every chat, every roleplay using that template improves at once.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. BYOK ARCHITECTURE -->
+<section class="bg-slate-50 py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-violet-600 leading-none mb-4">04</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-violet-600 mb-3">BYOK Architecture</div>
+                <h2 class="h3 font-bold text-slate-900">Founder-supplied credentials at every external edge. No markup on anything.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">Every integration point - CRM, email-finding, export, messaging, and AI providers - uses the founder's own API keys, encrypted at rest, scoped per user. The platform proxies calls on your behalf. It never holds your vendor relationships hostage to its own.</p>
+                <p class="leading-relaxed">BYOK isn't a feature. It's a <strong class="text-slate-900">political position</strong>. When a platform holds your keys, it rents your leverage back to you at a markup. This one doesn't. Your contact data stays in your vendor accounts. Your AI spend goes to your provider at list rates.</p>
+                <p class="leading-relaxed">The side effect: a founder's total cost of ownership (platform subscription + their own vendor bills) is smaller than the all-inclusive price of a competitor who bundles AI usage and marks up tokens 3–5× to hedge against power users.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. ADAPTIVE UNLOCK SYSTEM -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-rose-600 leading-none mb-4">05</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-rose-600 mb-3">Adaptive Unlock System</div>
+                <h2 class="h3 font-bold text-slate-900">No two founders see the same curriculum sequence.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">A 7-rule cascading unlock engine routes each founder through the curriculum based on their onboarding assessment, recommended path (inbound / outbound / hybrid), quick wins, critical gaps, journey-map phases, and completion history.</p>
+                <p class="leading-relaxed">A founder with strong positioning but weak prospecting infrastructure goes one direction. A founder with the opposite gap goes another. The platform doesn't assume lesson N+1 follows lesson N for everyone - because <strong class="text-slate-900">it doesn't, in real founder journeys</strong>.</p>
+                <p class="leading-relaxed">Combined with the Quick Win Path (free 8-dimension Readiness Score → 3 lessons targeting the lowest-scoring dimension → usable output in ~90 minutes), new founders see value in their first session. The full 49-course library opens up after the first wins land.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. FINE-TUNE PIPELINE -->
+<section class="bg-slate-50 py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-teal-600 leading-none mb-4">06</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-teal-600 mb-3">Fine-Tune + RAG Pipeline</div>
+                <h2 class="h3 font-bold text-slate-900">Five signal streams feeding a monthly training cycle that compounds across surfaces.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">The analytics layer is the training corpus. Five distinct signal streams - completion patterns, coaching conversations, community discussions, assessment performance, manuscript updates - feed a privacy-first training pipeline. Founder IDs are cryptographically hashed; names, emails, and chat transcripts never enter the corpus.</p>
+                <p class="leading-relaxed">A single monthly training cycle produces models that serve <strong class="text-slate-900">multiple surfaces at once</strong>: coaching chat, in-lesson AI coach, roleplay personas, support bot first-pass, assessment routing, curriculum grounding. One cycle lifts the whole surface area.</p>
+                <p class="leading-relaxed">Fine-tunes will be published to the open ML commons with documented evaluation metrics - peer-reviewable evidence of real AI work, plus a credibility signal that says "the AI isn't marketing, it's infrastructure."</p>
+                <div class="bg-teal-50 rounded-xl p-5 mt-4">
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-teal-700 mb-2">The compounding math</div>
+                    <p class="text-sm text-slate-700">Training-cycle costs amortize over every AI surface running on the multi-tenant runtime. One cycle lifts coaching, in-lesson coach, roleplay personas, support, and curriculum grounding at the same time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. OPERATIONAL POSTURE -->
+<section class="bg-white py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+            <div class="md:col-span-2">
+                <div class="text-6xl font-playfair-display font-bold text-slate-700 leading-none mb-4">07</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-700 mb-3">Operational Posture</div>
+                <h2 class="h3 font-bold text-slate-900">Self-hosted. Portable. Cost-disciplined. No vendor lock at any edge.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-4 text-slate-700">
+                <p class="text-lg leading-relaxed">The platform walked away from enterprise cloud gatekeeping and rebuilt itself in a week on commodity self-hosted infrastructure. That's not a stunt - it's a discipline. Every external edge is designed to be portable.</p>
+                <p class="leading-relaxed">Deployments are idempotent. Migrations embed in the container entrypoint - no separate migration tool to invoke. Auto-deploy runs on commit to main. Rate-limiting, webhook signature validation, and safe-context extraction live in centralized functions instead of scattered through the codebase.</p>
+                <p class="leading-relaxed">A second box is planned for redundancy once revenue justifies it. Until then, the operating cost is disciplined enough that margin math works at founder-comfortable pricing - and the savings flow back into capability investment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- THE COMPOUNDING CLOSE -->
+<section class="bg-gradient-to-br from-blue-50 to-white py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-blue-600 mb-4">The Close</div>
+        <h2 class="h2 font-bold mb-6 text-slate-900">None of these moves is individually novel. <span class="italic font-playfair-display">Compounded, they are.</span></h2>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">Multi-tenant runtimes exist. Context-aware AI exists. BYOK exists. Template-based architectures exist. Adaptive curricula exist. Fine-tune pipelines exist. Self-hosted operations exist.</p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">What doesn't exist, yet, is all seven <strong class="text-slate-900">composed into a single AI-native runtime that a semi-technical founder can operate at a founder-comfortable cost.</strong></p>
+        <p class="text-lg text-slate-700 leading-relaxed">That's what this architecture was designed to produce. And it's why the platform itself is its own Patient Zero.</p>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="relative">
+    <div class="absolute inset-0 bg-slate-900 pointer-events-none -z-10" style="clip-path: polygon(0 180px, 5760px 0, 5760px 100%, 0 100%);" aria-hidden="true"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="pt-32 pb-20 md:pt-40 md:pb-32 text-center">
+            <h2 class="h2 font-bold mb-5 text-slate-100">See the <span class="italic font-playfair-display text-blue-300">product</span> these capabilities compose into.</h2>
+            <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto mb-10">A tour of the real screens, real workflows, real data flows - then the free Readiness Score.</p>
+            <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="./gtm-os.html" class="inline-flex items-center justify-center px-6 py-3 text-white bg-gradient-to-t from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 rounded-lg transition font-medium shadow-sm group">See the product →</a>
+                <a href="https://ai-solo-gtm-os.soloframehub.com/readiness-score" class="inline-flex items-center justify-center px-6 py-3 text-white bg-slate-700 hover:bg-slate-800 rounded-lg transition font-medium shadow-sm">Take the Readiness Score</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-900 border-t border-slate-800 text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+        <div class="grid md:grid-cols-5 gap-8">
+            <div class="md:col-span-2"><div class="text-2xl font-bold text-blue-400 mb-4">SoloFrameHub</div><p class="text-sm leading-relaxed">An AI-native runtime for customer acquisition. Multi-tenant platform. Built in Bogotá.</p></div>
+            <div><h4 class="text-white font-semibold mb-4 text-sm">Platform</h4><ul class="space-y-2 text-sm"><li><a href="./gtm-os.html" class="hover:text-white">GTM OS</a></li><li><a href="./platform-architecture.html" class="text-white">Architecture</a></li><li><a href="./pricing.html" class="hover:text-white">Pricing</a></li><li><a href="./founders-ai-customer-acquisition-playbook.html" class="hover:text-white">The Book</a></li></ul></div>
+            <div><h4 class="text-white font-semibold mb-4 text-sm">Deep Dives</h4><ul class="space-y-2 text-sm"><li><a href="./blog-five-layers.html" class="hover:text-white">Five Layers</a></li><li><a href="./blog-ai-coaching.html" class="hover:text-white">AI Coaching</a></li><li><a href="./blog-accountability-pods.html" class="hover:text-white">Accountability Pods</a></li><li><a href="./blog-byok-integrations.html" class="hover:text-white">BYOK Integrations</a></li></ul></div>
+            <div><h4 class="text-white font-semibold mb-4 text-sm">Company</h4><ul class="space-y-2 text-sm"><li><a href="./about.html" class="hover:text-white">About</a></li><li><a href="./es/index.html" class="hover:text-white">LatAm Edition</a></li><li><a href="mailto:aistartuplaunch@gmail.com" class="hover:text-white">Contact</a></li></ul></div>
+        </div>
+        <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+            <p>© 2026 SoloFrameHub. All rights reserved.</p>
+            <p class="text-slate-500">Built in Bogotá.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

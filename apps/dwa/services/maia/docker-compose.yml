@@ -1,0 +1,23 @@
+version: '3.8'
+
+# Local development compose
+services:
+  maia:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: maia-classifier-dev
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 90s
+    volumes:
+      # Mount models directory for hot-swapping trained models
+      - ./models:/app/models

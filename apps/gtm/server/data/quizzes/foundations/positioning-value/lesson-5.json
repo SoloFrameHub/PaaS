@@ -1,0 +1,141 @@
+{
+    "lessonId": "5",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Value Quantification: Proving the ROI",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary mindset of a B2B buyer according to this lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are looking for the cheapest possible software"
+                },
+                {
+                    "id": "b",
+                    "text": "They are making an investment and expect a return"
+                },
+                {
+                    "id": "c",
+                    "text": "They want to have the most modern tech stack available"
+                },
+                {
+                    "id": "d",
+                    "text": "They are mainly focused on user interface and aesthetics"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "To a business buyer, software is an investment. They expect the value (return) to be significantly higher than the cost of the subscription."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which ROI bucket involves reducing the amount of money a customer is currently spending?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Revenue Growth"
+                },
+                {
+                    "id": "b",
+                    "text": "Risk Mitigation"
+                },
+                {
+                    "id": "c",
+                    "text": "Hard Cost Savings"
+                },
+                {
+                    "id": "d",
+                    "text": "Time Reclaimed"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Hard Cost Savings (Money Out) is about lowering existing expenses, such as a cloud hosting bill or a legacy software subscription."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How do you calculate the 'Labor Savings' ROI?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hours saved per week × Hourly rate of the employee"
+                },
+                {
+                    "id": "b",
+                    "text": "Total revenue ÷ Total number of employees"
+                },
+                {
+                    "id": "c",
+                    "text": "Subscription cost ÷ Number of users"
+                },
+                {
+                    "id": "d",
+                    "text": "Number of features × Employee satisfaction score"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Labor savings are quantified by taking the time reclaimed and multiplying it by the cost of that labor. This reveals the 'hidden' cost of manual work."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is 'Cost of Inaction'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The price of the competitor's software"
+                },
+                {
+                    "id": "b",
+                    "text": "The operational cost of maintaining your own product"
+                },
+                {
+                    "id": "c",
+                    "text": "The measurable loss or risk of staying with the 'status quo' for the next 12 months"
+                },
+                {
+                    "id": "d",
+                    "text": "The onboarding fee for new customers"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Cost of Inaction helps create urgency by showing the prospect how much money they are losing (or risk they are taking) by doing nothing."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should you do if your product's value is 'creative' or 'soft'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Avoid using numbers entirely and focus on emotions"
+                },
+                {
+                    "id": "b",
+                    "text": "Find a 'Proxy Metric' that can be measured (e.g., time to publish)"
+                },
+                {
+                    "id": "c",
+                    "text": "Lower your price so it's not a rational decision"
+                },
+                {
+                    "id": "d",
+                    "text": "Only sell to customers who don't care about ROI"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Even 'soft' values have underlying metrics. By finding a proxy (like 'time spent' or 'output volume'), you can speak the rational language of business ROI even for creative tools."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Calculate a 'back-of-the-envelope' ROI for your product. Pick one person in your ICP and estimate: How many hours a week do they waste? What is their hourly cost? What is the total annual 'waste' your product eliminates?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's ability to quantify value. Check if they used specific numbers for hours and labor rates. Provide feedback on whether their ROI calculation is realistic and compelling for their target ICP."
+        }
+    ],
+    "passingScore": 70
+}

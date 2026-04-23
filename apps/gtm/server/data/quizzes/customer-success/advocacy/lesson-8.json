@@ -1,0 +1,82 @@
+{
+  "lessonId": "8",
+  "courseId": "advocacy",
+  "sectionId": "customer-success",
+  "title": "Your Advocacy Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three layers of a scalable advocacy system?",
+      "options": [
+        { "id": "a", "text": "Ask, Collect, Deploy" },
+        {
+          "id": "b",
+          "text": "Trigger Detection, Human Touch, Deployment Engine"
+        },
+        { "id": "c", "text": "Testimonials, Case Studies, Referrals" },
+        { "id": "d", "text": "Automation, Templates, Metrics" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three layers are: (1) Trigger Detection — automated alerts when customers hit milestones, (2) Human Touch — personal asks from the founder at the right moment, and (3) Deployment Engine — proof surfaces everywhere automatically."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the correct advocacy ask sequence for a new customer over their lifecycle?",
+      "options": [
+        { "id": "a", "text": "Referral → Testimonial → Case study → Review" },
+        { "id": "b", "text": "Testimonial → Review → Case study → Referral" },
+        { "id": "c", "text": "Case study → Testimonial → Referral → Review" },
+        { "id": "d", "text": "Review → Referral → Testimonial → Case study" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The optimal journey is: testimonial first (lowest friction, Day 30), then review (Day 60), then case study (Day 90), then referral (renewal). Each step builds on the previous and increases in commitment."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How many deployment surfaces should each piece of social proof appear in at minimum?",
+      "options": [
+        { "id": "a", "text": "1 (just the testimonials page)" },
+        { "id": "b", "text": "2 (website and email)" },
+        { "id": "c", "text": "3+ (website, email, proposal, social, etc.)" },
+        { "id": "d", "text": "It depends on the proof type" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Every piece of proof should appear in at least 3 places. If it's only on your testimonials page, you're wasting 80% of its value. Deploy across homepage, sales emails, proposals, LinkedIn, and more."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Personal emails from the founder get approximately 3-4x the response rate of automated advocacy request templates.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Automated templates get 8-12% response rates while personal emails from the founder get 35-50%. Customers can tell the difference between a genuine personal ask and a corporate template."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Which of the following is an 'advocacy killer' that founders should avoid?",
+      "options": [
+        { "id": "a", "text": "Asking for advocacy too frequently" },
+        { "id": "b", "text": "Collecting proof but never deploying it" },
+        { "id": "c", "text": "Using too many different proof formats" },
+        { "id": "d", "text": "Sending approval requests to customers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Collecting but not deploying is one of the 5 advocacy killers. Proof in a folder equals $0 value. The other killers are: waiting for 'enough' proof, asking everyone at once, using generic templates, and skipping the approval step."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Outline your complete 30-day advocacy sprint plan. Include your trigger setup for Week 1, your collection blitz targets for Week 2, your case study and referral strategy for Week 3, and your deployment plan for Week 4.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response covers all four weeks with specific, actionable tasks. Look for: trigger detection setup (Zapier, CRM flags), realistic collection targets (3-5 testimonial requests per week), case study interview scheduling, referral ask templates, and a deployment plan covering 3+ surfaces. The plan should be concrete, not generic."
+    }
+  ]
+}

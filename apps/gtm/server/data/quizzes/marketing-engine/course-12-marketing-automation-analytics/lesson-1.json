@@ -1,0 +1,153 @@
+{
+    "lessonId": "1",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 10: Marketing Operations Rhythm",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary benefit of establishing a 'Monday Review & Plan' rhythm?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To spend as many hours as possible on marketing."
+                },
+                {
+                    "id": "b",
+                    "text": "To review last week's data and set three specific, non-negotiable marketing tasks for the week."
+                },
+                {
+                    "id": "c",
+                    "text": "To reply to every single email in your inbox."
+                },
+                {
+                    "id": "d",
+                    "text": "To buy new marketing tools every week."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Monday session ensures you are making data-driven decisions and focusing on the activities that move the needle."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which task is recommended as part of a 'Monthly Maintenance Checklist'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Testing all your lead capture forms by submitting them yourself."
+                },
+                {
+                    "id": "b",
+                    "text": "Redesigning your entire website from scratch."
+                },
+                {
+                    "id": "c",
+                    "text": "Changing your company name."
+                },
+                {
+                    "id": "d",
+                    "text": "Deleting your entire email list."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Testing your forms monthly ensures that your capture engine is still working and data is flowing correctly into your CRM."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "What should a founder do during a 'Quarterly Strategic Deep-Dive'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Look at daily traffic spikes only."
+                },
+                {
+                    "id": "b",
+                    "text": "Assess long-term trends in conversion rates, evaluate channel performance, and audit the tool stack."
+                },
+                {
+                    "id": "c",
+                    "text": "Hire 10 new employees."
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore the data and trust their gut feeling for the whole year."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Quarterly reviews are for high-level strategy, ensuring the overall direction and unit economics (like LTV:CAC) are healthy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "According to the lesson, how often should a solo founder typically check their marketing metrics to avoid 'Over-Monitoring'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Every hour."
+                },
+                {
+                    "id": "b",
+                    "text": "Ten times a day."
+                },
+                {
+                    "id": "c",
+                    "text": "Once a week (with a quick mid-week check)."
+                },
+                {
+                    "id": "d",
+                    "text": "Once every six months."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Weekly checks provide enough data to see trends without becoming a distraction from execution."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the 'Set and Forget Fallacy'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The belief that if you set a goal, you will automatically reach it."
+                },
+                {
+                    "id": "b",
+                    "text": "The belief that automations and systems will work indefinitely without testing or maintenance."
+                },
+                {
+                    "id": "c",
+                    "text": "Forgetting to set an alarm for your review sessions."
+                },
+                {
+                    "id": "d",
+                    "text": "The idea that marketing is a one-time setup."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Systems decay over time—links break, APIs change, and content gets stale. Regular maintenance is required."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Establish your initial Marketing Operations rhythm. Which day and time will you commit to for your half-hour Monday Review? List three specific items from the monthly maintenance checklist that are most critical for your current system. How will you remind yourself to do them?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's commitment to a rhythm. Check if their chosen critical items match their current stack complexity. Suggest one 'Experimental' task they could add to their first quarterly review."
+        }
+    ]
+}

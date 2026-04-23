@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Hybrid Course + Community Offers",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What completion rate do hybrid course+community products typically achieve, compared to standalone online courses?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Standalone: 30-40%, Hybrid: 50-60%"
+                },
+                {
+                    "id": "b",
+                    "text": "Standalone: 5-15%, Hybrid: 40-65%"
+                },
+                {
+                    "id": "c",
+                    "text": "Standalone: 20-30%, Hybrid: 35-45%"
+                },
+                {
+                    "id": "d",
+                    "text": "Standalone: 50-60%, Hybrid: 80-90%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Standalone online courses have a 5-15% completion rate, while hybrid course+community products see 40-65% completion rates. The community creates accountability, peer support, and implementation momentum that dramatically improve follow-through."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the key advantage of a live cohort model over a self-paced + evergreen community model?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Live cohorts generate more consistent monthly revenue"
+                },
+                {
+                    "id": "b",
+                    "text": "Live cohorts require less of the creator's time per student"
+                },
+                {
+                    "id": "c",
+                    "text": "Live cohorts achieve the highest completion rates (65-80%) due to shared momentum and peer pressure"
+                },
+                {
+                    "id": "d",
+                    "text": "Live cohorts can accept unlimited participants"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Live cohorts achieve 65-80% completion rates because all students progress through the material together, creating shared momentum, peer accountability, and a sense of collective commitment. The trade-off is limited scalability and lumpy revenue from launch cycles."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Component Anchoring' pricing framework, what is the purpose of showing the value of each component separately before revealing the bundle price?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To justify charging more than the total value of all components"
+                },
+                {
+                    "id": "b",
+                    "text": "To confuse the buyer into thinking they are getting more than they actually are"
+                },
+                {
+                    "id": "c",
+                    "text": "To create a transparent value anchor so the bundled price feels like a significant deal"
+                },
+                {
+                    "id": "d",
+                    "text": "To allow the buyer to purchase individual components instead of the bundle"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Component anchoring works by showing the total value of each piece (e.g., course $497 + community $582 + coaching $600 = $1,679 total value), then revealing a bundled price of $797. The gap between the anchor ($1,679) and the actual price ($797) creates a transparent 'deal' perception that helps justify the purchase."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Choose between live cohort, self-paced + evergreen community, or the hybrid approach for your specific offer. Explain your choice by addressing: (1) what outcome your students are trying to achieve, (2) whether that outcome benefits more from shared momentum or flexible timing, and (3) how you would price the hybrid offer using one of the three pricing frameworks from the lesson.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has made a clear model choice with logical reasoning tied to their specific audience and outcome. Check that they addressed all three parts of the question. If they chose the hybrid approach, verify they explained how both cohort and evergreen elements work together. Assess whether their pricing uses one of the three frameworks (outcome-based, component anchoring, or bridge price) correctly. Offer specific suggestions for improving their pricing strategy if needed."
+        }
+    ]
+}

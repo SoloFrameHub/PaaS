@@ -1,0 +1,91 @@
+{
+    "lessonId": "5",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "The 5-Day Challenge Framework Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is the 5-day format considered the sweet spot for challenges, rather than 3 days or 7 days?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because 5 days is the cheapest to produce and requires the least content"
+                },
+                {
+                    "id": "b",
+                    "text": "Because 3 days is too short to build momentum and community bonds, while 7 days causes dramatic drops in completion rates and burns out the creator"
+                },
+                {
+                    "id": "c",
+                    "text": "Because social media algorithms favor 5-day events over other durations"
+                },
+                {
+                    "id": "d",
+                    "text": "Because Pedro Adao trademarked the 5-day format and it cannot legally be changed"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 5-day format maps to a Monday-Friday work week, provides enough time for meaningful transformation without excessive attrition, and balances the endowment effect (3 days is too short) with practical completion rates (7+ days causes significant dropout after Day 5 and burns out the creator)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of the Day 1 'quick win' in a challenge?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To teach the most important concept of the entire challenge"
+                },
+                {
+                    "id": "b",
+                    "text": "To filter out participants who are not serious about the challenge"
+                },
+                {
+                    "id": "c",
+                    "text": "To give participants an immediate, tangible result that creates a dopamine hit and shifts their psychology from 'let's see' to 'this is working'"
+                },
+                {
+                    "id": "d",
+                    "text": "To collect additional data about participants for the sales pitch on Day 5"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Most challenge participants start skeptical, having started and abandoned things before. The Day 1 quick win provides an immediate dopamine hit from a tangible result, which shifts their psychology from skepticism to belief and sets the emotional foundation for the rest of the challenge."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the challenge economics table, what is the average conversion rate from Day 5 attendees to buyers?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-2%"
+                },
+                {
+                    "id": "b",
+                    "text": "10%"
+                },
+                {
+                    "id": "c",
+                    "text": "25%"
+                },
+                {
+                    "id": "d",
+                    "text": "50%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The average conversion rate from Day 5 attendees to buyers is 10%, with 5% being conservative and 15% being strong. This is higher than typical webinar conversion rates because the multi-day format builds significantly more trust and investment."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design the Day 1 quick win for your challenge. What specific, tangible result will participants achieve in 30-60 minutes? Why is this particular quick win effective for your audience? How does it connect to the paid offer you will present on Day 5? Also outline the homework assignments for all 5 days.",
+            "minLength": 100,
+            "aiPrompt": "The student should describe a specific Day 1 quick win that is achievable in 30-60 minutes and produces a tangible output (not just an insight or feeling). The win should be relevant to their audience and logically connect to their paid offer. The 5-day homework outline should show a clear progression from simple to complex. Evaluate whether the quick win would actually create the 'dopamine hit' described in the lesson and whether the homework arc follows the escalation ladder."
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+{
+    "lessonId": "9",
+    "courseId": "email-deliverability",
+    "sectionId": "ai-acquisition",
+    "title": "Monitoring & Troubleshooting Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "Your MailReach inbox score drops from 88 to 64 overnight. What's your first action?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediately pause all sends from that inbox"
+                },
+                {
+                    "id": "b",
+                    "text": "Increase warmup volume to rebuild reputation"
+                },
+                {
+                    "id": "c",
+                    "text": "Change your email content"
+                },
+                {
+                    "id": "d",
+                    "text": "Buy a new domain"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Always pause first when placement drops >20 points. Prevents further damage while you diagnose the root cause.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "GlockApps shows 'DKIM: FAIL' and inbox placement dropped to 15%. What's the issue?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your email content has spam triggers"
+                },
+                {
+                    "id": "b",
+                    "text": "Your DNS DKIM record is broken or missing"
+                },
+                {
+                    "id": "c",
+                    "text": "You're sending too much volume"
+                },
+                {
+                    "id": "d",
+                    "text": "Your list quality is poor"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "DKIM failure is always a DNS configuration issue. Check your DKIM record in MXToolbox and regenerate if needed.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "Google Postmaster shows your spam complaint rate is 0.22%. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing, that's acceptable"
+                },
+                {
+                    "id": "b",
+                    "text": "Monitor it but keep sending"
+                },
+                {
+                    "id": "c",
+                    "text": "Reduce volume by 50% immediately and investigate list quality"
+                },
+                {
+                    "id": "d",
+                    "text": "Increase volume to dilute the complaint rate"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "0.22% is in the danger zone (Google blocks at 0.3%). Reduce volume immediately and clean your list to prevent domain damage.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "You increased from 30/day to 75/day per inbox and placement dropped from 85% to 58%. What happened?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Authentication failure"
+                },
+                {
+                    "id": "b",
+                    "text": "Content spam triggers"
+                },
+                {
+                    "id": "c",
+                    "text": "Volume spike triggered ISP filters"
+                },
+                {
+                    "id": "d",
+                    "text": "List quality issue"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Sudden volume increases (>20% in one day) trigger ISP suspicion. Roll back to previous volume and ramp slowly (2-3 emails/day increase).",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "Your bounce rate jumped from 2% to 14% overnight. What's the most likely cause?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "DNS authentication failure"
+                },
+                {
+                    "id": "b",
+                    "text": "Bad list data (old emails or spam traps)"
+                },
+                {
+                    "id": "c",
+                    "text": "Content spam triggers"
+                },
+                {
+                    "id": "d",
+                    "text": "Sending too fast"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sudden bounce rate spikes indicate list quality issues — old data, purchased lists, or spam traps. Clean your list immediately.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "How often should you run GlockApps tests during the warmup phase?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Once at the beginning"
+                },
+                {
+                    "id": "b",
+                    "text": "Once per week"
+                },
+                {
+                    "id": "c",
+                    "text": "Daily"
+                },
+                {
+                    "id": "d",
+                    "text": "Only when you see problems"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "During warmup, test daily to catch issues early. At cruise speed, 2-3x per week is sufficient.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q7",
+            "question": "Gmail inbox placement is 88% but Outlook is 22%. What's the issue?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Authentication failure (affects all providers equally)"
+                },
+                {
+                    "id": "b",
+                    "text": "Content spam triggers (Outlook filters are stricter)"
+                },
+                {
+                    "id": "c",
+                    "text": "Volume spike (affects all providers equally)"
+                },
+                {
+                    "id": "d",
+                    "text": "List quality (affects all providers equally)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Provider-specific placement differences indicate content issues. Outlook penalizes links, HTML, and spam words more heavily than Gmail.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q8",
+            "question": "What's the safe maximum increase in daily sending volume per inbox?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Double it overnight"
+                },
+                {
+                    "id": "b",
+                    "text": "Increase by 50% per week"
+                },
+                {
+                    "id": "c",
+                    "text": "Increase by 2-3 emails/day every 2-3 days"
+                },
+                {
+                    "id": "d",
+                    "text": "Increase by 10 emails/day every day"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Safe ramp: 2-3 emails/day increase every 2-3 days. Faster increases trigger ISP filters and damage reputation.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q9",
+            "question": "Google Postmaster domain reputation dropped from 'High' to 'Medium'. How long does recovery typically take?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "24 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "3-5 days"
+                },
+                {
+                    "id": "c",
+                    "text": "7-14 days"
+                },
+                {
+                    "id": "d",
+                    "text": "30+ days"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Reputation recovery takes 7-14 days of reduced volume, improved engagement, and clean list hygiene. Patience is critical.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q10",
+            "question": "What's the minimum daily volume needed for Google Postmaster to show domain reputation data?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10 emails/day"
+                },
+                {
+                    "id": "b",
+                    "text": "50 emails/day"
+                },
+                {
+                    "id": "c",
+                    "text": "100+ emails/day"
+                },
+                {
+                    "id": "d",
+                    "text": "1,000+ emails/day"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Google Postmaster requires 100+ daily emails to Gmail addresses to display domain reputation. Below that, you won't see data.",
+            "type": "multiple-choice"
+        }
+    ]
+}

@@ -1,0 +1,227 @@
+{
+  "industry_id": "hr_recruiting",
+  "display_name": "HR Tech / Recruiting",
+  "parent_category": "services",
+  "description": "Human resources technology companies, recruiting agencies, corporate talent acquisition teams, and HR departments focused on hiring, talent management, and workforce planning. This sector is increasingly focused on AI-driven solutions while navigating concerns about bias and candidate experience.",
+  "typical_company_sizes": ["11-50", "51-200", "201-500"],
+  "typical_deal_sizes": ["smb", "mid_market"],
+  "sales_cycle_length": "months",
+
+  "pain_points": [
+    {
+      "pain": "Time-to-hire is too long, causing candidate drop-off",
+      "level": "straightforward",
+      "context": "Average time-to-hire exceeds 40 days for many roles; top candidates accept other offers"
+    },
+    {
+      "pain": "Candidate quality from job boards is declining",
+      "level": "straightforward",
+      "context": "High volume of unqualified applicants wastes recruiter time on screening"
+    },
+    {
+      "pain": "DEI compliance and representation goals",
+      "level": "complex",
+      "context": "Regulatory pressure and company commitments require demonstrable diverse hiring practices"
+    },
+    {
+      "pain": "AI bias concerns creating legal and ethical risks",
+      "level": "complex",
+      "context": "NYC Local Law 144 and similar regulations require AI audit and disclosure"
+    },
+    {
+      "pain": "Recruiter burnout and high turnover",
+      "level": "straightforward",
+      "context": "Corporate recruiters average 18-month tenure; agency recruiters often burn out faster"
+    },
+    {
+      "pain": "Inconsistent candidate experience damaging employer brand",
+      "level": "complex",
+      "context": "Glassdoor reviews and social media amplify poor candidate experiences"
+    },
+    {
+      "pain": "Inability to demonstrate quality of hire metrics",
+      "level": "complex",
+      "context": "HR struggles to connect recruiting investments to employee performance outcomes"
+    }
+  ],
+
+  "buying_triggers": [
+    "Significant hiring ramp or growth initiative",
+    "New CHRO or VP of Talent Acquisition hired",
+    "Failed or problematic hire in leadership position",
+    "DEI audit or compliance requirement",
+    "Merger or acquisition requiring talent integration",
+    "Competitor winning talent with better candidate experience",
+    "Layoffs creating need for efficient rehiring processes"
+  ],
+
+  "budget_cycle": "Annual HR technology budgets, often set Q4 for following year. Large implementations may require IT budget involvement. Point solutions sometimes purchased from departmental budgets.",
+
+  "regulatory_concerns": [
+    "EEOC compliance and adverse impact analysis",
+    "NYC Local Law 144 (AI in hiring)",
+    "Illinois AI Video Interview Act",
+    "GDPR candidate data requirements",
+    "State-specific pay transparency laws",
+    "Ban-the-box and fair chance hiring laws"
+  ],
+
+  "compliance_language": [
+    "EEOC compliant",
+    "Bias-audited AI",
+    "Adverse impact tested",
+    "GDPR/CCPA compliant",
+    "OFCCP audit-ready"
+  ],
+
+  "risk_tolerance": "medium",
+
+  "terminology": [
+    {
+      "term": "ATS (Applicant Tracking System)",
+      "definition": "Software that manages job postings, applications, and hiring workflow",
+      "usage_context": "The core system of record for recruiting; integration is essential"
+    },
+    {
+      "term": "HRIS (Human Resource Information System)",
+      "definition": "Comprehensive platform managing employee data, benefits, and HR processes",
+      "usage_context": "The post-hire system of record; Workday, SAP SuccessFactors, UKG are leaders"
+    },
+    {
+      "term": "Time-to-Hire",
+      "definition": "Days elapsed from job posting to offer acceptance",
+      "usage_context": "Primary efficiency metric; industry average varies widely by role type"
+    },
+    {
+      "term": "Cost-per-Hire",
+      "definition": "Total recruiting costs divided by number of hires in a period",
+      "usage_context": "Key budget metric; includes advertising, agency fees, technology, and recruiter time"
+    },
+    {
+      "term": "Quality of Hire",
+      "definition": "Measure of new hire performance and retention, typically assessed at 6-12 months",
+      "usage_context": "The holy grail metric that everyone wants but few can accurately measure"
+    },
+    {
+      "term": "Employee NPS (eNPS)",
+      "definition": "Net Promoter Score measuring employee satisfaction and likelihood to recommend employer",
+      "usage_context": "Often used as proxy for culture health and retention risk"
+    },
+    {
+      "term": "Offer Acceptance Rate",
+      "definition": "Percentage of job offers that candidates accept",
+      "usage_context": "Low rates indicate compensation or candidate experience issues"
+    },
+    {
+      "term": "Candidate Experience",
+      "definition": "The overall perception and satisfaction of job applicants throughout the hiring process",
+      "usage_context": "Increasingly important as negative experiences spread on social media"
+    },
+    {
+      "term": "AI Recruiting",
+      "definition": "Use of artificial intelligence for sourcing, screening, matching, or assessing candidates",
+      "usage_context": "Hot topic with significant promise but also bias and regulatory concerns"
+    },
+    {
+      "term": "Skills-based Hiring",
+      "definition": "Evaluating candidates based on demonstrated skills rather than credentials or experience",
+      "usage_context": "Growing trend as companies seek diverse talent and question degree requirements"
+    },
+    {
+      "term": "DEI (Diversity, Equity, and Inclusion)",
+      "definition": "Organizational commitment to building diverse workforce and inclusive culture",
+      "usage_context": "Central to modern talent strategy; increasingly tied to regulatory compliance"
+    },
+    {
+      "term": "Bias Mitigation",
+      "definition": "Techniques and processes to reduce unconscious bias in hiring decisions",
+      "usage_context": "Required for AI tools; also includes structured interviews and diverse panels"
+    }
+  ],
+
+  "formality_level": "professional",
+  "decision_making_style": "committee",
+
+  "common_objections": [
+    {
+      "objection": "How does this integrate with our ATS and HRIS?",
+      "underlying_concern": "Recruiters refuse to work outside their ATS; data silos create compliance risks",
+      "effective_response_approach": "Demonstrate native integrations with their specific systems (Greenhouse, Lever, Workday, etc.), show data sync capabilities, discuss API documentation and implementation support",
+      "level": "complex"
+    },
+    {
+      "objection": "How do you address AI bias? We can't risk discrimination claims",
+      "underlying_concern": "HR leaders are personally liable for discriminatory hiring; lawsuits and EEOC complaints are career-ending",
+      "effective_response_approach": "Provide bias audit documentation, explain adverse impact testing methodology, reference compliance with NYC LL144 and similar regulations, offer to share third-party audit reports",
+      "level": "complex"
+    },
+    {
+      "objection": "Will this negatively impact candidate experience?",
+      "underlying_concern": "Impersonal automation can damage employer brand; candidates share bad experiences",
+      "effective_response_approach": "Show candidate-facing interface and feedback, share candidate satisfaction data from other customers, emphasize human touchpoints, demonstrate personalization capabilities",
+      "level": "straightforward"
+    },
+    {
+      "objection": "What about candidate data privacy and GDPR?",
+      "underlying_concern": "Data breaches and compliance violations carry significant penalties and reputational risk",
+      "effective_response_approach": "Detail data handling practices, explain consent management, provide DPA template, show SOC 2 certification, discuss data retention and deletion capabilities",
+      "level": "complex"
+    },
+    {
+      "objection": "Our recruiters are already overwhelmed - they don't have time to learn a new tool",
+      "underlying_concern": "Implementation burden falls on already-stretched recruiting teams",
+      "effective_response_approach": "Quantify time savings with specific use cases, offer white-glove implementation support, show intuitive UX requiring minimal training, propose phased rollout",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Greenhouse",
+    "Lever",
+    "iCIMS",
+    "Workday Recruiting",
+    "SAP SuccessFactors",
+    "LinkedIn Recruiter",
+    "Indeed",
+    "HireVue",
+    "Phenom",
+    "Eightfold AI"
+  ],
+
+  "switching_barriers": [
+    "ATS migration is complex and risky",
+    "Historical candidate data and compliance records",
+    "Active requisitions and in-flight candidates",
+    "Integration with HRIS and payroll systems",
+    "Trained recruiting team and established workflows",
+    "Job board integrations and career site SEO"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're the {role} at a {company_size}-employee {company_type} company. {trigger_event}. Your main concern is {pain_point}, and you need to present a solution to the {stakeholder} within {timeframe}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "company_type", "trigger_event", "pain_point", "stakeholder", "timeframe"]
+    },
+    {
+      "template": "You're a {role} at a recruiting agency specializing in {specialty}. Your recruiters are spending {time_percentage}% of their time on {low_value_activity}. You're evaluating automation tools but concerned about {concern}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "specialty", "time_percentage", "low_value_activity", "concern"]
+    },
+    {
+      "template": "You're the {role} at a {company_type} that just received a {trigger_event}. The board is demanding {requirement}, but your team is concerned about {concern}. You have {budget} allocated for the solution.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_type", "trigger_event", "requirement", "concern", "budget"]
+    },
+    {
+      "template": "You're a {role} responsible for {area} at a {company_size}-employee company. Your CEO just read about {trend} and wants to implement it. You're skeptical because {skepticism_reason}, but you need to evaluate options.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "area", "company_size", "trend", "skepticism_reason"]
+    },
+    {
+      "template": "You're the {role} at a company that's growing from {current_size} to {target_size} employees in {timeframe}. You currently use {current_tools} but they won't scale. The CHRO wants a recommendation by {deadline}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "current_size", "target_size", "timeframe", "current_tools", "deadline"]
+    }
+  ]
+}

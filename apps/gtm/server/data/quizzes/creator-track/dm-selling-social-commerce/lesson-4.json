@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "Instagram DM Workflows",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the 3-Story Arc funnel, why is it important to include all three stories (Problem, Insight, Offer) instead of jumping directly to the offer on the first story?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because Instagram's algorithm punishes stories that contain links or CTAs"
+                },
+                {
+                    "id": "b",
+                    "text": "Because the first story catches attention, the second builds trust, and the third converts -- skipping straight to the offer produces lower response rates because you have not earned the right to ask for action"
+                },
+                {
+                    "id": "c",
+                    "text": "Because three stories are required for Instagram to count them as a highlight"
+                },
+                {
+                    "id": "d",
+                    "text": "Because each story reaches a different segment of your audience"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 3-Story Arc follows a narrative structure: Problem catches attention, Insight builds trust and demonstrates expertise, and Offer converts. Jumping straight to the CTA on Story 1 gets lower response rates because you have not yet demonstrated that you understand the viewer's problem or that you have a credible solution."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the recommended strategy for designing Instagram poll-to-DM sequences?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Always use simple Yes/No answers to maximize clarity"
+                },
+                {
+                    "id": "b",
+                    "text": "Design one answer as the qualifying answer that identifies someone with the problem you solve, and use playful language instead of binary yes/no"
+                },
+                {
+                    "id": "c",
+                    "text": "Use polls only for entertainment, never for selling"
+                },
+                {
+                    "id": "d",
+                    "text": "Send automated DMs to everyone who votes, regardless of which option they chose"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Effective poll-to-DM sequences treat one poll option as the qualifying answer -- the one that identifies someone with the problem you solve. Using casual, playful language (like 'Crushing it / Send help' instead of 'Yes / No') generates more honest, engaged responses. Only the qualifying answer should trigger the DM automation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the DM triage system, which category of conversations should you respond to first each morning?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Cold conversations -- people who went silent after 2+ days"
+                },
+                {
+                    "id": "b",
+                    "text": "Warm conversations -- people who triggered automation but have not replied yet"
+                },
+                {
+                    "id": "c",
+                    "text": "Hot conversations -- people who asked a question, showed buying intent, or are mid-conversation"
+                },
+                {
+                    "id": "d",
+                    "text": "All conversations should be answered in chronological order, oldest first"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The triage system prioritizes Hot conversations first (people with buying intent, unanswered questions, or active mid-conversations), then Warm (automation recipients who need verification or manual follow-up), then Cold (weekly batch follow-ups). This ensures your highest-value conversations get the fastest responses."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design a qualifying Instagram poll for your niche. Write the exact poll question, both answer options (making one the qualifying answer), and the automated DM message that would be sent to people who select the qualifying answer. Explain why your language choices would feel conversational rather than corporate.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner's poll question surfaces a genuine pain point relevant to their niche, whether the answer options use casual/playful language rather than formal yes/no, and whether the automated DM message references the poll directly and opens a conversation. The DM should not feel like a sales pitch -- it should feel like a natural follow-up to someone admitting a challenge."
+        }
+    ]
+}

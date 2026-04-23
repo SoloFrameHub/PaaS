@@ -1,0 +1,126 @@
+{
+    "lessonId": "1",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "Automation Platform Basics",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which platform offers the most app integrations?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Make"
+                },
+                {
+                    "id": "b",
+                    "text": "n8n"
+                },
+                {
+                    "id": "c",
+                    "text": "Zapier"
+                },
+                {
+                    "id": "d",
+                    "text": "Trigger.dev"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Zapier has 7,000+ integrations — the most of any platform. This is its primary advantage over Make (1,500+) and n8n (400+)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "A 5-step Zapier Zap runs 200 times per month. How many tasks does this consume?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "200"
+                },
+                {
+                    "id": "b",
+                    "text": "500"
+                },
+                {
+                    "id": "c",
+                    "text": "1,000"
+                },
+                {
+                    "id": "d",
+                    "text": "5"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Each step in a Zap consumes one task. 5 steps × 200 runs = 1,000 tasks. Zapier Starter allows 750 tasks/month — you'd need to upgrade to Professional ($49/month) or switch to Make."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which platform is free to run if you self-host on a VPS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Zapier"
+                },
+                {
+                    "id": "b",
+                    "text": "Make"
+                },
+                {
+                    "id": "c",
+                    "text": "n8n"
+                },
+                {
+                    "id": "d",
+                    "text": "Trigger.dev"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "n8n is open-source and free to self-host. A $5-10/month VPS (DigitalOcean, Vultr, Hetzner) runs n8n with unlimited workflows."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "Trigger.dev is the best choice for non-technical founders who want automations running in 10 minutes.",
+            "correctAnswer": "b",
+            "explanation": "False. Trigger.dev requires TypeScript code — it's for developers only. Non-technical founders should start with Zapier (easiest) or Make (more powerful).",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Make Core costs $10.59/month and includes 10,000 operations. Zapier Starter costs $19.99/month and includes 750 tasks. At 5 steps per automation run, how many times can each platform run automations per month?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Make: 2,000 runs. Zapier: 150 runs."
+                },
+                {
+                    "id": "b",
+                    "text": "Make: 1,000 runs. Zapier: 750 runs."
+                },
+                {
+                    "id": "c",
+                    "text": "Make: 10,000 runs. Zapier: 750 runs."
+                },
+                {
+                    "id": "d",
+                    "text": "Make: 2,000 runs. Zapier: 750 runs."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Make: 10,000 ops ÷ 5 steps = 2,000 runs. Zapier: 750 tasks ÷ 5 steps = 150 runs. Make gives you 13x more automation runs at half the price."
+        }
+    ]
+}

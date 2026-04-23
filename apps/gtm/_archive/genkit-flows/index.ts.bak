@@ -1,0 +1,11 @@
+/**
+ * Genkit AI Exports
+ * Consolidated entry point for all AI flows and configuration
+ */
+
+export * from './config';
+export * from './flows/websiteAnalyzer';
+export * from './flows/assessmentGenerator';
+export * from './flows/salesRoleplay3D';
+export * from './flows/salesRoleplayEval3D';
+export * from './flows/quizReflection';

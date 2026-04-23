@@ -1,0 +1,209 @@
+{
+    "lessonId": "7",
+    "courseId": "analytics",
+    "sectionId": "operations-systems",
+    "title": "Channel Attribution Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "Why is first-touch attribution better than last-touch for solo founders making channel investment decisions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's more accurate"
+                },
+                {
+                    "id": "b",
+                    "text": "It tells you which channel is best at bringing new leads in"
+                },
+                {
+                    "id": "c",
+                    "text": "It's easier to track"
+                },
+                {
+                    "id": "d",
+                    "text": "It gives credit to all touchpoints"
+                }
+            ],
+            "explanation": "First-touch attribution reveals which channels are best at acquisition — the decision solo founders need to make when allocating limited time and budget.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q2",
+            "question": "A lead discovers you via a blog post, engages on LinkedIn for 2 months, then closes after an email. Using first-touch attribution, which channel gets credit?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Email"
+                },
+                {
+                    "id": "b",
+                    "text": "LinkedIn"
+                },
+                {
+                    "id": "c",
+                    "text": "Content/Inbound"
+                },
+                {
+                    "id": "d",
+                    "text": "All three equally"
+                }
+            ],
+            "explanation": "First-touch attribution credits the channel that first brought the lead into your world — in this case, the blog post (Content/Inbound).",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q3",
+            "question": "What is 'dark social' in the context of attribution?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Leads from paid ads"
+                },
+                {
+                    "id": "b",
+                    "text": "Traffic from private channels you can't track (Slack, text, DMs)"
+                },
+                {
+                    "id": "c",
+                    "text": "Leads who don't convert"
+                },
+                {
+                    "id": "d",
+                    "text": "Anonymous website visitors"
+                }
+            ],
+            "explanation": "Dark social refers to conversions that happen through private, untrackable channels like Slack messages, texts, or private DMs — often showing up as 'Direct' traffic.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q4",
+            "question": "You spend 20 hours/month on LinkedIn (free tool) and generate 1 deal worth $2,000. Your hourly rate is $100. What's your channel ROI?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Infinite (free tool)"
+                },
+                {
+                    "id": "b",
+                    "text": "1:1 (breakeven)"
+                },
+                {
+                    "id": "c",
+                    "text": "2:1"
+                },
+                {
+                    "id": "d",
+                    "text": "10:1"
+                }
+            ],
+            "explanation": "Total cost = $0 (tool) + (20 hours × $100/hr) = $2,000. Revenue = $2,000. ROI = $2,000 / $2,000 = 1:1 (breakeven). Your time is a cost.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q5",
+            "question": "Which metric is most important when deciding which channel to scale?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Total leads generated"
+                },
+                {
+                    "id": "b",
+                    "text": "Meetings booked"
+                },
+                {
+                    "id": "c",
+                    "text": "Revenue per lead"
+                },
+                {
+                    "id": "d",
+                    "text": "Time spent per lead"
+                }
+            ],
+            "explanation": "Revenue per lead reveals which channel produces the highest-quality leads. This is the key metric for scaling decisions.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q6",
+            "question": "Why might content marketing look weak in Month 1-3 but strong in Month 6+ of attribution analysis?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Content quality improves over time"
+                },
+                {
+                    "id": "b",
+                    "text": "Content has a 3-6 month sales cycle lag"
+                },
+                {
+                    "id": "c",
+                    "text": "More content gets published"
+                },
+                {
+                    "id": "d",
+                    "text": "SEO rankings improve"
+                }
+            ],
+            "explanation": "Content-sourced leads often have longer sales cycles (3-6 months). Cohort analysis reveals this pattern and prevents you from killing content too early.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q7",
+            "question": "What should you do if a channel has high volume but low revenue per lead?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Kill it immediately"
+                },
+                {
+                    "id": "b",
+                    "text": "Scale it for more volume"
+                },
+                {
+                    "id": "c",
+                    "text": "Optimize targeting and messaging to improve conversion"
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore it and focus on other channels"
+                }
+            ],
+            "explanation": "High volume + low conversion = optimization opportunity. Improve targeting, messaging, or qualification to unlock the volume's potential.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q8",
+            "question": "How often should solo founders review attribution data?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Daily"
+                },
+                {
+                    "id": "b",
+                    "text": "Weekly"
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly"
+                },
+                {
+                    "id": "d",
+                    "text": "Quarterly"
+                }
+            ],
+            "explanation": "Weekly reviews (5 minutes) keep you aware of trends. Monthly deep dives (30 minutes) drive channel allocation decisions.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        }
+    ]
+}

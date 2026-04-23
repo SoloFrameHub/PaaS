@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "4",
+    "lessonTitle": "Reddit Strategy for B2B",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason Reddit moderators and users are hostile toward most brand posts?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They don't like tech founders."
+                },
+                {
+                    "id": "b",
+                    "text": "Reddit has a 'Spam Immune System' designed to keep out corporate jargon and disingenuous marketing."
+                },
+                {
+                    "id": "c",
+                    "text": "Moderators get paid more for deleting posts."
+                },
+                {
+                    "id": "d",
+                    "text": "Reddit wants everyone to buy official ads instead."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Reddit is a community-first platform. Overt marketing is seen as 'Value Extraction' and is quickly identified and removed by the collective 'Immune System.'",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the context of Reddit, what is 'Comment Karma' equivalent to?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your total number of followers."
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Credit Score' that proves to mods and the algorithm that you are a helpful human contributor."
+                },
+                {
+                    "id": "c",
+                    "text": "The amount of money you've spent on ads."
+                },
+                {
+                    "id": "d",
+                    "text": "The number of posts you've shared."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Karma is an authority signal. A user with high comment karma is trusted by the community to provide value rather than spam.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which type of subreddit should a solo founder prioritize for lead generation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tool-focused subreddits (e.g., r/CRM) where competitors hang out."
+                },
+                {
+                    "id": "b",
+                    "text": "Problem-focused subreddits (e.g., r/Entrepreneur) where ICPs discuss their frustrations."
+                },
+                {
+                    "id": "c",
+                    "text": "Generic subreddits with millions of members (e.g., r/Funny)."
+                },
+                {
+                    "id": "d",
+                    "text": "Subreddits specifically created for ads (e.g., r/Ads)."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "By going to where the 'Pain' is discussed, you position yourself as a solver. Tool-focused subreddits are often saturated with people selling similar solutions.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the correct structure of a 'Trojan Horse' reply on Reddit?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hook → Link → Pitch → Call for Help."
+                },
+                {
+                    "id": "b",
+                    "text": "Acknowledge Pain → Provide Solution Framework (Value) → Optional Tool Mention with Disclosure."
+                },
+                {
+                    "id": "c",
+                    "text": "Ask for an upvote → Direct Link → Thank you."
+                },
+                {
+                    "id": "d",
+                    "text": "Generic comment + DM invite."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Trojan Horse wins by providing 90% value before even mentioning a tool. The disclosure ensures transparency, which Reddit values highly.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Full Disclosure' mandatory when mentioning your own product on Reddit?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's a legal requirement by the FTC."
+                },
+                {
+                    "id": "b",
+                    "text": "Reddit users will likely find out anyway, and being 'caught' acting as a neutral user will lead to a permanent ban."
+                },
+                {
+                    "id": "c",
+                    "text": "Disclosure makes people click the link more often."
+                },
+                {
+                    "id": "d",
+                    "text": "Both a and b."
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Honesty is your best armor. Reddit users are excellent at spotting 'shills,' and being transparent builds trust while satisfying legal requirements.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Consider a common 'How do I...' question in your niche. If you were to give a 3-step 'Value-First' answer today, what would those three steps be? How would you frame the 'Optional' mention of your product to make it sound like a helpful automation rather than a sales pitch?",
+            "promptHints": [
+                "Focus on 'Selfless' language (I made this for you...).",
+                "Explain the 'Manual' way to solve the problem first.",
+                "Include a 'Practitioner Tip' that only an expert would know."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "15-18 minutes",
+        "prerequisiteQuizzes": [
+            "3"
+        ],
+        "unlocks": [
+            "5"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Reddit Strategy for B2B - Quiz"
+}

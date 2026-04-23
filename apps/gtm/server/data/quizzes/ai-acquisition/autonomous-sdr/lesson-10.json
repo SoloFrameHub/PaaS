@@ -1,0 +1,72 @@
+{
+  "lessonId": "10",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Building a Solo AI SDR Lite System",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is a 'Solo AI SDR Lite' system?",
+      "options": [
+        { "id": "a", "text": "A cheaper version of 11x" },
+        {
+          "id": "b",
+          "text": "A DIY stack configured to automate low-risk, high-time-savings parts while keeping humans in the loop for brand-critical functions"
+        },
+        { "id": "c", "text": "A free trial of an AI SDR platform" },
+        { "id": "d", "text": "Manual outreach with no AI involvement" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Solo AI SDR Lite is a DIY stack (Instantly/Smartlead + Apollo + ChatGPT + Zapier) configured to automate the low-risk, high-time-savings parts of the AI SDR pipeline while keeping humans in the loop for everything brand-critical. It gives 70-80% of platform capability at $100-200/month."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the automation levels across the five layers of the Solo AI SDR Lite architecture?",
+      "options": [
+        { "id": "a", "text": "100% automated across all layers" },
+        {
+          "id": "b",
+          "text": "Ingestion 90%, Research 70%, Sequence 50%, Sending 80%, Reply Handling 20%"
+        },
+        { "id": "c", "text": "0% automated — everything is manual" },
+        { "id": "d", "text": "50% automated across all layers equally" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The five layers have different automation levels based on risk: Ingestion (90% automated — zero brand risk), Research (70% — hallucination risk exists), Sequence (50% — personalization quality matters), Sending (80% — warm infrastructure handles most), Reply Handling (20% — highest stakes, needs human judgment)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How much of a full AI SDR platform's capability does the Solo AI SDR Lite system deliver?",
+      "options": [
+        { "id": "a", "text": "10-20%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "70-80%" },
+        { "id": "d", "text": "100%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Solo AI SDR Lite delivers 70-80% of the capability of a $750-5,000/month platform at $100-200/month cost. The missing 20-30% is mostly full reply automation and autonomous meeting booking — functions that carry the highest risk for solo founders anyway."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Reply handling should be the most automated layer in the Solo AI SDR Lite system since it saves the most time.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Reply handling is only 20% automated in the Solo AI SDR Lite — the least automated layer. This is because reply classification and response carry the highest stakes: misclassifying a warm prospect's intent or sending an automated response to a genuine question can kill deals worth thousands."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your Solo AI SDR Lite system. For each of the five layers (Ingestion, Research, Sequence, Sending, Reply Handling), specify the tools you would use, what percentage you would automate, and what human review gates you would implement.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response covers all five layers with specific tool choices, realistic automation percentages that decrease as risk increases, and concrete human review gates. Look for understanding that Ingestion can be highly automated while Reply Handling needs mostly human judgment."
+    }
+  ]
+}

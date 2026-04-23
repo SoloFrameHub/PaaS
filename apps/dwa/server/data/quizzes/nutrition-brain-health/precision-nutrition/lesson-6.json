@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2024 meta-analysis of 12 RCTs (707 participants) find regarding probiotics and depression?",
+            "options": [
+                { "id": "opt1", "text": "Probiotics had no measurable effect on depressive symptoms" },
+                { "id": "opt2", "text": "Probiotics produced a statistically significant reduction in depressive symptoms with a small-to-moderate effect size" },
+                { "id": "opt3", "text": "Only single-strain probiotics were effective" },
+                { "id": "opt4", "text": "Probiotics were only effective at doses above 100 billion CFU" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2024 meta-analysis found that probiotic supplementation produced a statistically significant reduction in depressive symptoms compared to placebo, with a small-to-moderate effect size. Eight weeks emerged as a minimum threshold for reliable mood effects, with 10^9-10^10 CFU daily as the effective dose range."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why are probiotic effects described as 'strain-specific' rather than 'species-specific'?",
+            "options": [
+                { "id": "opt1", "text": "All strains within a species have identical effects" },
+                { "id": "opt2", "text": "The species name determines the therapeutic effect, not the strain" },
+                { "id": "opt3", "text": "Different strains within the same species (e.g., L. rhamnosus GG vs. L. rhamnosus CCFM1228) have entirely different clinical properties" },
+                { "id": "opt4", "text": "Strain designations are just marketing labels with no scientific basis" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Probiotic effects are strain-specific, meaning that L. rhamnosus strain GG has entirely different clinical properties than L. rhamnosus strain CCFM1228, despite sharing a species name. Products listing only the species (e.g., 'Lactobacillus acidophilus' without a strain designation) cannot be verified for any specific mental health outcome."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is L. rhamnosus CCFM1228's primary psychobiotic mechanism?",
+            "options": [
+                { "id": "opt1", "text": "It destroys harmful bacteria in the gut" },
+                { "id": "opt2", "text": "It produces GABA directly in the gut, increases vagal nerve tone, and modulates the HPA axis stress response" },
+                { "id": "opt3", "text": "It increases serotonin reuptake in the brain" },
+                { "id": "opt4", "text": "It reduces appetite and promotes weight loss" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "L. rhamnosus CCFM1228 produces GABA (gamma-aminobutyric acid) directly in the gut, increases vagal nerve tone, and modulates the HPA axis stress response. It is one of the few strains with a clear, documented mechanism connecting gut colonization to brain neurochemistry."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the 2025 prebiotics vs. probiotics review, what is the key difference in their mental health effects?",
+            "options": [
+                { "id": "opt1", "text": "Prebiotics are effective while probiotics are not" },
+                { "id": "opt2", "text": "Probiotics have stronger evidence for direct mood improvement, while prebiotics have stronger evidence for cortisol reduction and stress reactivity" },
+                { "id": "opt3", "text": "There is no difference between prebiotics and probiotics" },
+                { "id": "opt4", "text": "Prebiotics work faster than probiotics for depression" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2025 review found that probiotics have stronger evidence for direct mood improvement (through strain-specific mechanisms like GABA production and HPA axis modulation), while prebiotics have stronger evidence for cortisol reduction and stress reactivity (by supporting endogenous beneficial bacteria that produce short-chain fatty acids). Combining them (synbiotics) may yield superior outcomes."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What minimum duration of probiotic supplementation is needed for reliable mood effects?",
+            "options": [
+                { "id": "opt1", "text": "2-3 days" },
+                { "id": "opt2", "text": "1 week" },
+                { "id": "opt3", "text": "8 weeks" },
+                { "id": "opt4", "text": "6 months" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Eight weeks emerged as a minimum threshold for reliable mood effects in the meta-analysis. The effective dose range is 10^9-10^10 CFU daily, and consistency matters more than mega-dosing intermittently. The JAMA Psychiatry pilot trial also used an 8-week duration, with effects observable by week 4 but continuing to strengthen through week 8."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "6",
+    "title": "Probiotic Protocols: Evidence-Based Strain Selection - Quiz"
+}

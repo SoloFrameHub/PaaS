@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What distinguishes a psychobiotic from a regular probiotic supplement?",
+            "options": [
+                { "id": "opt1", "text": "Psychobiotics contain higher CFU counts than regular probiotics" },
+                { "id": "opt2", "text": "Psychobiotics contain specific bacterial strains that have been tested in clinical trials for their effects on mood, anxiety, stress, and cognitive function" },
+                { "id": "opt3", "text": "Psychobiotics are prescription-only medications" },
+                { "id": "opt4", "text": "Psychobiotics are made from different raw materials than regular probiotics" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Psychobiotics are probiotic products containing bacterial strains specifically studied for their effects on mood, anxiety, stress, and cognitive function. Not all probiotics are psychobiotics — a probiotic designed for digestive issues may contain completely different strains than those shown to reduce depression scores."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which psychobiotic strain combination emerged as the gold standard in 2025 research?",
+            "options": [
+                { "id": "opt1", "text": "Lactobacillus rhamnosus JB-1 + Bifidobacterium bifidum" },
+                { "id": "opt2", "text": "Lactobacillus casei Shirota + Lactobacillus plantarum" },
+                { "id": "opt3", "text": "Lactobacillus helveticus R0052 + Bifidobacterium longum R0175" },
+                { "id": "opt4", "text": "Lactobacillus acidophilus + Streptococcus thermophilus" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Lactobacillus helveticus R0052 + Bifidobacterium longum R0175 is the gold standard psychobiotic combination with the most replication across multiple studies. It has been shown to reduce cortisol, lower depression and anxiety scores, improve stress coping, and produce effects comparable to the benzodiazepine diazepam on some anxiety measures."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 2024 meta-analysis of 12 RCTs, what was the average reduction in depression scores (BDI) from probiotic supplementation?",
+            "options": [
+                { "id": "opt1", "text": "0.5 points — not clinically meaningful" },
+                { "id": "opt2", "text": "10.5 points — a dramatic improvement" },
+                { "id": "opt3", "text": "2.69 points — a statistically significant and clinically meaningful improvement" },
+                { "id": "opt4", "text": "5.0 points — equivalent to antidepressant medication" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The meta-analysis of 12 RCTs (707 participants) showed a mean reduction of 2.69 points on the Beck Depression Inventory. While modest, this is comparable to or slightly larger than some pharmaceutical antidepressants for mild-to-moderate depression. For someone scoring 16 (mild depression), a drop to 13 could move them below the clinical threshold."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a red flag when evaluating a psychobiotic supplement product?",
+            "options": [
+                { "id": "opt1", "text": "The product lists specific strain codes like R0052" },
+                { "id": "opt2", "text": "The product has third-party NSF certification" },
+                { "id": "opt3", "text": "The product uses a 'proprietary blend' that hides individual strain amounts and claims to 'cure depression'" },
+                { "id": "opt4", "text": "The product guarantees CFU count at time of expiration" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Red flags include proprietary blends that hide individual strain amounts, claims of curing or treating specific diseases (supplements legally cannot make these claims), no strain-level identification, extremely high CFU counts (100 billion+) without clinical justification, and marketing that discourages conventional treatment."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How long should someone take a psychobiotic supplement before evaluating whether it is helping?",
+            "options": [
+                { "id": "opt1", "text": "1-2 days is enough to notice effects" },
+                { "id": "opt2", "text": "At least 8 weeks of consistent daily supplementation" },
+                { "id": "opt3", "text": "6 months minimum before any evaluation" },
+                { "id": "opt4", "text": "You should see results within 24 hours or stop immediately" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Most successful psychobiotic trials ran for 8-12 weeks. While some participants noticed improvements within 2-4 weeks, the full effect typically required at least 8 weeks of consistent daily supplementation. If you try a psychobiotic, commit to at least 8 weeks before evaluating its effectiveness."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "8",
+    "title": "Psychobiotic Supplements: Strains That Work - Quiz"
+}

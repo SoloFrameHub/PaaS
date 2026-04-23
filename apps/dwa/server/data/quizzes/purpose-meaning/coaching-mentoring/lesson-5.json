@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the fundamental principle of the cognitive-behavioral model, and how is it appropriately used in non-clinical coaching?",
+      "options": [
+        {"id": "opt1", "text": "Situations directly cause emotions — coaches should help clients change their external circumstances"},
+        {"id": "opt2", "text": "Our thoughts about a situation (not the situation itself) largely determine how we feel and what we do. Coaches can teach this model as psychoeducation and help explore unhelpful thoughts for performance/goal challenges, but cannot use it to treat clinical symptoms."},
+        {"id": "opt3", "text": "The cognitive-behavioral model is only for therapists — coaches should never discuss thoughts or emotions"},
+        {"id": "opt4", "text": "All negative thoughts are distorted and should be eliminated through positive thinking"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The CB model shows that thoughts (interpretations) mediate between situations and emotional/behavioral responses. Teaching this framework as psychoeducation is within coaching scope — it helps people understand how thinking influences outcomes. Using this model to treat depression, anxiety, trauma, or other clinical conditions is NOT coaching — that's clinical CBT requiring licensure. The distinction: education vs. treatment."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A client says: 'I missed one workout this week, so I've completely failed at my fitness goal. I might as well quit.' Which cognitive distortion is this, and what's an appropriate coaching response?",
+      "options": [
+        {"id": "opt1", "text": "Mind reading — coach should say: 'You don't know what others think about your fitness'"},
+        {"id": "opt2", "text": "All-or-nothing thinking (black-and-white thinking) — coach should ask: 'What if there's a middle ground? You missed one workout AND you completed three others this week. Can both be true?'"},
+        {"id": "opt3", "text": "Catastrophizing — coach should say: 'Missing a workout isn't a catastrophe'"},
+        {"id": "opt4", "text": "This isn't a distortion — the client is being realistic about their failure"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "This is all-or-nothing thinking: seeing one setback as complete failure with no middle ground. The coaching response uses Socratic questioning to help the person see the gray area between 'perfect' and 'total failure.' You're not telling them they're wrong — you're inviting them to examine whether their interpretation accounts for all the evidence (they DID work out 3x). This builds cognitive flexibility without being condescending."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the purpose of a thought record in coaching contexts, and how is it different from clinical CBT?",
+      "options": [
+        {"id": "opt1", "text": "Thought records diagnose mental illness by identifying distorted thinking patterns — only therapists can use them"},
+        {"id": "opt2", "text": "A thought record is a structured self-reflection tool that helps examine the connection between situations, thoughts, feelings, and behaviors. In coaching, it's used for performance/goal-related challenges, not to treat clinical symptoms like depression or anxiety."},
+        {"id": "opt3", "text": "Thought records prove that someone's thoughts are wrong so you can correct them"},
+        {"id": "opt4", "text": "There is no difference — coaches and therapists use thought records identically"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "A thought record structures self-reflection: What happened (situation) → What I thought → How I felt → Evidence for/against the thought → Alternative perspective. In coaching, this explores performance anxieties, goal-related self-doubt, or work challenges — within non-clinical scope. In therapy, it treats clinical conditions. The tool is the same; the application differs. Coaches don't diagnose or treat; they facilitate reflection on non-clinical challenges."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Which of the following thought patterns indicates a clinical concern requiring immediate referral to a mental health professional?",
+      "options": [
+        {"id": "opt1", "text": "'I'm worried I won't do well on this presentation' (performance anxiety about a specific event)"},
+        {"id": "opt2", "text": "'I missed my goal this week — I'm so disappointed in myself' (self-critical thought about a setback)"},
+        {"id": "opt3", "text": "'I've been having thoughts that I'd be better off dead. I don't see the point anymore.' (suicidal ideation with hopelessness)"},
+        {"id": "opt4", "text": "'I always procrastinate — it's so frustrating' (pattern recognition with frustration)"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Suicidal ideation ('better off dead,' 'no point') requires immediate referral to a mental health professional or crisis resources (988 Lifeline). Do NOT attempt to 'reframe' suicidal thoughts. Ask directly about safety, connect to crisis resources, and refer to a therapist or psychiatrist. Options 1, 2, and 4 are within normal coaching territory (performance anxiety, disappointment, frustration) — uncomfortable but not dangerous. Option 3 is life-safety critical."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What is Socratic questioning, and why is it more effective than direct advice for helping someone examine unhelpful thoughts?",
+      "options": [
+        {"id": "opt1", "text": "Socratic questioning is asking 'why' repeatedly until someone admits they're wrong"},
+        {"id": "opt2", "text": "Socratic questioning involves curious, non-judgmental questions ('What's the evidence for that thought?' 'Is there another way to look at this?') that help the person examine their own thinking. It's more effective than advice because people are more convinced by conclusions they reach themselves."},
+        {"id": "opt3", "text": "Socratic questioning is a therapy technique that coaches should never use"},
+        {"id": "opt4", "text": "Socratic questioning is less effective than direct advice — just tell people what to think"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Socratic questioning uses curiosity to help someone explore their own thinking: 'What's the evidence?' 'How would you advise a friend in this situation?' 'Is there another perspective?' This activates self-discovery rather than imposing external judgment. People resist being told 'you're thinking wrong,' but they're open to examining evidence themselves. Self-generated insights stick; advice is easily dismissed."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "5",
+  "title": "Cognitive Behavioral Coaching Techniques - Quiz"
+}

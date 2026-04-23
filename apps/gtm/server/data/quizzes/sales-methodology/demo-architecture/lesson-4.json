@@ -1,0 +1,134 @@
+{
+    "lessonId": "4",
+    "courseId": "demo-architecture",
+    "sectionId": "sales-methodology",
+    "title": "The Altitude Strategy",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core difference between an 'Operator' and a 'Wallet Holder'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Wallet Holders are older"
+                },
+                {
+                    "id": "b",
+                    "text": "Operators care about Efficiency (Workflows); Wallet Holders care about ROI ( Outcomes)"
+                },
+                {
+                    "id": "c",
+                    "text": "Operators have the budget"
+                },
+                {
+                    "id": "d",
+                    "text": "Wallet holders use the software more"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you show a CEO (Wallet Holder) how to filter a CSV, you lose them. They care about the result ($$). The Operator cares about how the button works because they have to click it every day."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Split-Screen' pivot in a mixed-audience demo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using two physical monitors"
+                },
+                {
+                    "id": "b",
+                    "text": "Explicitly addressing both audiences for the same feature: 'For the team, this means fast entry. For the CEO, this means accurate reporting.'"
+                },
+                {
+                    "id": "c",
+                    "text": "Ignoring one person to focus on the other"
+                },
+                {
+                    "id": "d",
+                    "text": "Showing two slides at once"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In a mixed room, you must be a translator. You show one screen, but narrate the value differently for the two distinct 'Altitudes' in the room."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which altitude allows for 'Settings' and 'Configuration' screens?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "30,000 ft (CEO)"
+                },
+                {
+                    "id": "b",
+                    "text": "The Runway (System Admin / IT)"
+                },
+                {
+                    "id": "c",
+                    "text": "10,000 ft (VP)"
+                },
+                {
+                    "id": "d",
+                    "text": "Space (Investors)"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Only the 'Runway' personas (IT, Admins) care about configuration screens. Showing a Settings page to a CEO is a 'No-Fly Zone' violation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a 'Check-In' question designed to do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Fill the silence"
+                },
+                {
+                    "id": "b",
+                    "text": "Validate that you are at the correct altitude ('Is this level of detail helpful, or should we zoom out?')"
+                },
+                {
+                    "id": "c",
+                    "text": "Ask for the sale"
+                },
+                {
+                    "id": "d",
+                    "text": "Check the internet connection"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founders often get stuck in the weeds. A Check-In allows the prospect to give you permission to skip the boring stuff or ask for more detail."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the role of the 'Gatekeeper' (Middle Manager)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To stop you from selling"
+                },
+                {
+                    "id": "b",
+                    "text": "To filter out noise for the decision maker; you must empower them to sell for you"
+                },
+                {
+                    "id": "c",
+                    "text": "To sign the contract"
+                },
+                {
+                    "id": "d",
+                    "text": "To negotiate price"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Gatekeeper controls access. If you ignore them, they block you. If you arm them with the right 'Executive Summary', they become your internal champion."
+        }
+    ],
+    "passingScore": 70
+}

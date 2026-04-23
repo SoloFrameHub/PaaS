@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the relationship between emotional eating and depression?",
+            "options": [
+                { "id": "opt1", "text": "Emotional eating causes depression but depression does not cause emotional eating" },
+                { "id": "opt2", "text": "Depression causes emotional eating but emotional eating does not worsen depression" },
+                { "id": "opt3", "text": "They exist in a bidirectional relationship — each one can worsen the other" },
+                { "id": "opt4", "text": "There is no established relationship between emotional eating and depression" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Research consistently shows that emotional eating and depression exist in a bidirectional relationship. Depression reduces sensitivity to natural reward signals, driving increased food intake, while emotional eating patterns lead to nutritional imbalances and guilt that worsen depressive symptoms."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does the 'T' in the DBT TIPP technique stand for, and how does it work?",
+            "options": [
+                { "id": "opt1", "text": "Thinking — replacing negative thoughts with positive ones" },
+                { "id": "opt2", "text": "Temperature — using cold stimulation to activate the dive reflex and rapidly reduce emotional intensity" },
+                { "id": "opt3", "text": "Time — waiting exactly 10 minutes before acting on any urge" },
+                { "id": "opt4", "text": "Talking — calling a friend to discuss the emotional eating urge" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The T in TIPP stands for Temperature. Holding ice cubes, splashing cold water on your face, or taking a cold shower activates the dive reflex and rapidly reduces emotional intensity. This physiological shift can interrupt the urge to eat within seconds."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the restrict-binge cycle, and why is it relevant to emotional eating?",
+            "options": [
+                { "id": "opt1", "text": "A medical condition requiring hospitalization that is unrelated to emotional eating" },
+                { "id": "opt2", "text": "A pattern where rigid food rules lead to deprivation, which triggers intense cravings and rule-breaking, followed by guilt and more restriction" },
+                { "id": "opt3", "text": "A healthy cycle of eating less on weekdays and more on weekends" },
+                { "id": "opt4", "text": "A technique recommended by CBT therapists to control food intake" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The restrict-binge cycle is a well-documented pattern driven by diet culture: rigid food rules lead to biological and psychological deprivation, which leads to intense cravings, which leads to 'breaking' the rules, which triggers guilt and shame, which leads to more restriction. This cycle is a significant driver of both emotional eating and disordered eating."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In the CBT model for eating behaviors, at what level does the primary intervention happen?",
+            "options": [
+                { "id": "opt1", "text": "At the behavior level — physically preventing yourself from eating" },
+                { "id": "opt2", "text": "At the feeling level — suppressing emotions before they lead to eating" },
+                { "id": "opt3", "text": "At the thought level — expanding automatic thoughts to include multiple options rather than just food" },
+                { "id": "opt4", "text": "At the situation level — avoiding all stressful situations that trigger eating" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The CBT intervention happens at the thought level. Rather than arguing against wanting comfort, it expands the thought pattern. For example, instead of 'Nothing else will make me feel better,' the restructured thought becomes: 'I can choose food as one option, but I also know that calling a friend or taking a walk might address what I actually need.'"
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "According to this lesson, what does nutritional psychiatry's approach to behavior change emphasize?",
+            "options": [
+                { "id": "opt1", "text": "Counting calories and eliminating food groups for optimal brain health" },
+                { "id": "opt2", "text": "Adding nutrient-dense foods, building sustainable patterns, and respecting hunger signals and cultural traditions" },
+                { "id": "opt3", "text": "Following a strict meal plan designed by a nutritional psychiatrist" },
+                { "id": "opt4", "text": "Pursuing weight loss as the primary pathway to improved mental health" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Nutritional psychiatry behavior change means adding nutrient-dense foods that support brain health, building sustainable eating patterns that work with your life, developing emotional coping skills alongside food enjoyment, respecting your body's hunger and fullness signals, and honoring cultural food traditions — not restriction, elimination, or weight loss."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "food-mood-mastery",
+    "lessonId": "4",
+    "title": "Emotional Eating, Food Relationships, and Behavior Change - Quiz"
+}

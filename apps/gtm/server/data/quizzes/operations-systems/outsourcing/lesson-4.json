@@ -1,0 +1,72 @@
+{
+  "lessonId": "4",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "SOP 2: CRM Updates",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of CRM data goes stale within 12 months without active maintenance?",
+      "options": [
+        { "id": "a", "text": "25%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "75%" },
+        { "id": "d", "text": "91%" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "91% of CRM data goes stale within 12 months without active maintenance. Deals without documented next actions die twice as fast. A VA running a 20-minute daily CRM routine is the lowest-cost fix."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the cardinal rule for VA stage updates in the CRM?",
+      "options": [
+        { "id": "a", "text": "Update stages as fast as possible" },
+        {
+          "id": "b",
+          "text": "Only update when evidence is clear; flag ambiguous moves for founder confirmation"
+        },
+        {
+          "id": "c",
+          "text": "Let the CRM auto-update based on email activity"
+        },
+        { "id": "d", "text": "Update stages weekly, not daily" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The VA only updates stages when evidence is clear (reply with interest = Engaged, meeting confirmed = Meeting Scheduled). Ambiguous situations get flagged with a note for the founder to confirm. This prevents false pipeline data."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How long should the daily CRM update routine take a VA?",
+      "options": [
+        { "id": "a", "text": "5 minutes" },
+        { "id": "b", "text": "15-20 minutes" },
+        { "id": "c", "text": "45 minutes" },
+        { "id": "d", "text": "2 hours" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The CRM Update SOP has five components, each taking 3-5 minutes, for a total of 15-20 minutes per day. This includes email-to-stage updates, next actions audit, amount verification, note logging, and data quality check."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Every active deal in your pipeline must have a 'Next Action' field with a specific date.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. This is non-negotiable. The VA runs a daily filter for active deals where Next Action date is missing or in the past, flagging each one for the founder. Deals without next actions drift and die."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Open your CRM right now. How many active deals are missing a next action date? How many have overdue next steps? What would a daily 20-minute VA audit change about your pipeline accuracy?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response demonstrates an honest look at their current CRM hygiene (missing next actions, overdue steps), quantifies the problem, and articulates how a daily VA audit would improve pipeline accuracy and deal velocity."
+    }
+  ]
+}

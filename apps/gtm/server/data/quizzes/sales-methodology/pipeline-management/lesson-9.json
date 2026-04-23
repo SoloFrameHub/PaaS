@@ -1,0 +1,91 @@
+{
+    "lessonId": "9",
+    "courseId": "pipeline-management",
+    "sectionId": "sales-methodology",
+    "title": "Pipeline Visualization Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is a 'Bubble' chart (Value vs. Time) more useful than a standard Kanban board for a busy founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It uses more colors."
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to instantly identify 'Dead Whales'—high-value deals that have been in the pipeline too long without engagement—which a Kanban board hides in its columns."
+                },
+                {
+                    "id": "c",
+                    "text": "It helps you calculate sales tax."
+                },
+                {
+                    "id": "d",
+                    "text": "It makes you look more professional to investors."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Kanban boards treat all deals in a column as equal. A bubble chart adds the dimension of 'Time' and 'Probability', highlighting which high-stakes deals are actually in danger of rotting away due to neglect or friction."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does a 'Sankey' (Flow) diagram reveal about your sales process?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Exactly which step in your funnel is causing the most 'Leakage' (e.g., if you have a massive drop-off between Demo and Proposal), allowing you to fix the specific skill gap."
+                },
+                {
+                    "id": "b",
+                    "text": "The names of the best prospects."
+                },
+                {
+                    "id": "c",
+                    "text": "How many emails you've sent today."
+                },
+                {
+                    "id": "d",
+                    "text": "The total amount of money in the bank."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Visualizing the flow allows you to see the volume of deals at each stage and where they disappear. If the 'neck' is at the Demo stage, it doesn't matter how many more leads you get—you have a Demo problem that must be fixed first."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Sunburst' chart used for in multi-threaded sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To track social media followers."
+                },
+                {
+                    "id": "b",
+                    "text": "To visualize stakeholder coverage across different departments (IT, Legal, etc.), highlighting where you are'Single-Threade d'and at risk."
+                },
+                {
+                    "id": "c",
+                    "text": "To show the weather forecast."
+                },
+                {
+                    "id": "d",
+                    "text": "To map customer locations."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In 2026, you need consensus. If your sunburst chart shows you only have contacts in the'Marketing' slice, the chart is telling you that the'IT' and'HR' slices are blind spots that could kill the deal."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Imagine your pipeline is a 'Flow' diagram. Where is the biggest 'Neck' (the point where the most deals drop out)? What is one specific lesson from Course 16, 17, or 18 that you can apply to widen that specific part of the flow?",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can connect the visualization (Sankey/Flow) to a specific skill (Demo Architecture, Objection Handling, Proposal Writing) to solve the problem."
+        }
+    ]
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Spotting Thinking Traps</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+            --danger-red: #c62828; --danger-bg: #ffebee; --danger-border: #ef9a9a;
+            --success-green: #2e7d32; --success-bg: #e8f5e9; --success-border: #a5d6a7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+            display: flex; justify-content: center;
+        }
+
+        .container { max-width: 900px; width: 100%; }
+
+        .gentle-header {
+            background: linear-gradient(135deg, var(--calming-teal) 0%, var(--soft-blue) 100%);
+            color: white; padding: 30px; text-align: center;
+            border-radius: 12px; margin-bottom: 30px;
+        }
+        .gentle-header h1 { font-size: 2em; margin: 0 0 10px 0; color: white; }
+        .gentle-header p { font-size: 1.1em; margin: 0; opacity: 0.95; }
+
+        .safe-space-container {
+            background: var(--soft-white); border-radius: 12px;
+            padding: 30px 40px; border: 1px solid var(--light-teal);
+            box-shadow: 0 4px 15px rgba(74, 144, 164, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .intro-block h2, .section-header h2 {
+            color: var(--deep-teal); font-size: 1.6em; text-align: center; margin-bottom: 15px;
+        }
+        .intro-block p, .section-header p {
+            font-size: 1.1em; color: var(--warm-gray); max-width: 700px; margin: 0 auto 30px auto; text-align: center;
+        }
+
+        /* Flip Card Field Guide */
+        .field-guide-container {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px; perspective: 1000px;
+        }
+        .flip-card {
+            background-color: transparent; height: 280px;
+            cursor: pointer;
+        }
+        .flip-card-inner {
+            position: relative; width: 100%; height: 100%;
+            transition: transform 0.6s; transform-style: preserve-3d;
+        }
+        .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card-front, .flip-card-back {
+            position: absolute; width: 100%; height: 100%;
+            -webkit-backface-visibility: hidden; backface-visibility: hidden;
+            border-radius: 12px; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .flip-card-front {
+            background: linear-gradient(135deg, var(--light-teal), var(--soft-white));
+            border: 1px solid var(--calming-teal); color: var(--deep-teal);
+        }
+        .flip-card-front .icon { font-size: 3em; margin-bottom: 15px; }
+        .flip-card-front h3 { font-size: 1.3em; margin: 0; }
+        .flip-card-back {
+            background: linear-gradient(135deg, var(--deep-teal), var(--calming-teal));
+            color: white; transform: rotateY(180deg); text-align: left;
+            align-items: flex-start; justify-content: flex-start;
+        }
+        .flip-card-back h3 { font-size: 1.2em; margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.5); padding-bottom: 5px; }
+        .flip-card-back p { font-size: 0.9em; margin: 0 0 10px 0; line-height: 1.5; }
+        .flip-card-back .example { font-style: italic; opacity: 0.85; border-left: 2px solid var(--soft-blue); padding-left: 10px; }
+
+        /* Practice Arena */
+        .practice-arena {
+            background: var(--light-sage); padding: 30px;
+            border-radius: 12px; margin-top: 40px;
+            border: 2px solid var(--light-teal);
+        }
+        .question-card {
+            background: var(--soft-white); padding: 25px; border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; margin-bottom: 20px;
+        }
+        .question-card p {
+            font-style: italic; font-size: 1.3em; color: var(--deep-teal); margin: 0;
+        }
+        .answer-options {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 15px;
+        }
+        .answer-btn {
+            background: var(--soft-white); border: 2px solid var(--light-teal); color: var(--deep-teal);
+            padding: 15px; border-radius: 8px; font-size: 1em; font-weight: 500;
+            cursor: pointer; transition: all 0.2s ease-out; text-align: left;
+        }
+        .answer-btn:hover:not(:disabled) {
+            border-color: var(--soft-blue); background-color: #eef5fa; transform: translateY(-3px);
+        }
+        .answer-btn:disabled { cursor: not-allowed; }
+        .answer-btn.correct { background-color: var(--success-bg); border-color: var(--success-border); color: var(--success-green); font-weight: bold; }
+        .answer-btn.incorrect { background-color: var(--danger-bg); border-color: var(--danger-border); color: var(--danger-red); }
+
+        .feedback-box {
+            padding: 20px; border-radius: 8px; margin-top: 20px;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        
+        .btn {
+            background: var(--sage-green); color: white; border: none; padding: 12px 30px;
+            font-size: 1.1em; font-weight: 600; border-radius: 50px; cursor: pointer;
+            margin-top: 20px; transition: all 0.3s;
+        }
+        .btn:hover { background-color: #769a59; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="gentle-header">
+            <h1>Lesson 2: Spotting "Thinking Traps"</h1>
+            <p>Your field guide to the automatic thoughts that fuel anxiety.</p>
+        </header>
+
+        <main>
+            <section class="safe-space-container">
+                <div class="intro-block">
+                    <h2>Your Brain's Mental Shortcuts</h2>
+                    <p>Anxious thoughts often aren't random; they follow predictable patterns. Think of them like mental shortcuts your brain takes that lead you down a path of worry. We call these **Thinking Traps**. They are faulty filters that distort reality. Learning to spot them is like taking off foggy glasses—suddenly, you can see things more clearly.</p>
+                </div>
+
+                <div class="section-header">
+                    <h2>Part 1: The Field Guide</h2>
+                    <p>Click on each card to flip it over and learn about a common thinking trap. Familiarize yourself with them before heading to the Practice Arena.</p>
+                </div>
+                
+                <div class="field-guide-container">
+                    <!-- Trap 1 -->
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip card for Catastrophizing">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">🌪️</div>
+                                <h3>Catastrophizing</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Catastrophizing</h3>
+                                <p>Jumping to the absolute worst-case scenario, even when it's highly unlikely.</p>
+                                <p class="example">"My heart is beating fast... what if I'm having a heart attack?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trap 2 -->
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip card for All-or-Nothing Thinking">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">⚫⚪</div>
+                                <h3>All-or-Nothing Thinking</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>All-or-Nothing Thinking</h3>
+                                <p>Seeing things in black-and-white. If it's not perfect, it's a total failure.</p>
+                                <p class="example">"I ate one piece of cake. My diet is ruined, so I've failed."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trap 3 -->
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip card for Mind Reading">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">🔮</div>
+                                <h3>Mind Reading</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Mind Reading</h3>
+                                <p>Believing you know what others are thinking about you, without any real evidence.</p>
+                                <p class="example">"They didn't text back right away. They must be angry with me."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trap 4 -->
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip card for Emotional Reasoning">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">💔</div>
+                                <h3>Emotional Reasoning</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Emotional Reasoning</h3>
+                                <p>Assuming that because you *feel* something, it must be true. Letting feelings dictate reality.</p>
+                                <p class="example">"I feel overwhelmed, therefore I must be incompetent and unable to handle this."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Trap 5 -->
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip card for 'Should' Statements">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">📜</div>
+                                <h3>"Should" Statements</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>"Should" Statements</h3>
+                                <p>Holding yourself to a strict, invisible rulebook. "Shoulds" often lead to guilt and frustration.</p>
+                                <p class="example">"I should be able to do this all by myself without asking for help."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Trap 6 -->
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0" aria-label="Flip card for Labeling">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">🏷️</div>
+                                <h3>Labeling</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Labeling</h3>
+                                <p>Assigning a negative, global label to yourself or others based on a single event.</p>
+                                <p class="example">"I made a mistake on that project. I am such a failure."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="practice-arena">
+                <div class="section-header">
+                    <h2>Part 2: The Practice Arena</h2>
+                    <p>Now, let's practice spotting these traps in action. Read the anxious thought below and choose the trap that best fits.</p>
+                </div>
+                
+                <div id="challenge-container">
+                    <!-- Challenge content will be injected by JavaScript -->
+                </div>
+
+                <div id="feedback-container">
+                    <!-- Feedback content will be injected by JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const challenges = [
+            {
+                thought: "My friend seemed quiet during lunch. I bet they think I'm boring and don't want to hang out with me anymore.",
+                options: ["Catastrophizing", "Mind Reading", "Labeling"],
+                correctAnswer: "Mind Reading",
+                explanation: "You're assuming you know exactly what your friend is thinking, and jumping to a negative conclusion without any real proof."
+            },
+            {
+                thought: "I got nervous during my presentation and forgot one of my points. The whole thing was a complete disaster.",
+                options: ["Emotional Reasoning", "Overgeneralizing", "All-or-Nothing Thinking"],
+                correctAnswer: "All-or-Nothing Thinking",
+                explanation: "This is a classic case of black-and-white thinking. One small imperfection made you see the entire presentation as a total failure."
+            },
+            {
+                thought: "I feel so anxious about this flight. Flying must be incredibly dangerous.",
+                options: ["Emotional Reasoning", "Should Statements", "Catastrophizing"],
+                correctAnswer: "Emotional Reasoning",
+                explanation: "Here, the feeling of anxiety is being used as evidence for a fact. 'I *feel* scared, therefore it *must be* dangerous,' even though flying is statistically very safe."
+            },
+            {
+                thought: "I've been working so hard, but I'm still feeling stressed. I should be able to handle this better by now.",
+                options: ["Should Statements", "Labeling", "Mind Reading"],
+                correctAnswer: "Should Statements",
+                explanation: "This thought holds you to an unfair, rigid rule ('I should...'). This often leads to feelings of guilt and inadequacy, adding more pressure."
+            }
+        ];
+
+        let currentChallengeIndex = 0;
+        const challengeContainer = document.getElementById('challenge-container');
+        const feedbackContainer = document.getElementById('feedback-container');
+
+        function displayChallenge() {
+            const challenge = challenges[currentChallengeIndex];
+            feedbackContainer.innerHTML = ''; // Clear previous feedback
+            
+            let optionsHTML = challenge.options.map((option, index) => 
+                `<button class="answer-btn" onclick="checkAnswer('${option}')">${option}</button>`
+            ).join('');
+
+            challengeContainer.innerHTML = `
+                <div class="question-card">
+                    <p>"${challenge.thought}"</p>
+                </div>
+                <div class="answer-options">
+                    ${optionsHTML}
+                </div>
+            `;
+        }
+
+        function checkAnswer(selectedOption) {
+            const challenge = challenges[currentChallengeIndex];
+            const answerButtons = document.querySelectorAll('.answer-btn');
+
+            // Disable all buttons after an answer is chosen
+            answerButtons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === challenge.correctAnswer) {
+                    btn.classList.add('correct');
+                } else if (btn.textContent === selectedOption) {
+                    btn.classList.add('incorrect');
+                }
+            });
+            
+            let feedbackHTML;
+            if (selectedOption === challenge.correctAnswer) {
+                feedbackHTML = `
+                    <div class="feedback-box" style="background-color: var(--success-bg); border: 1px solid var(--success-border);">
+                        <h3 style="color: var(--success-green);">Correct! That's a great spot.</h3>
+                        <p><strong>Why this is a trap:</strong> ${challenge.explanation}</p>
+                    </div>
+                `;
+            } else {
+                feedbackHTML = `
+                    <div class="feedback-box" style="background-color: var(--danger-bg); border: 1px solid var(--danger-border);">
+                        <h3 style="color: var(--danger-red);">That's a good guess!</h3>
+                        <p>The best fit here is actually <strong>${challenge.correctAnswer}</strong>.</p>
+                        <p><strong>Why:</strong> ${challenge.explanation}</p>
+                    </div>
+                `;
+            }
+
+            feedbackContainer.innerHTML = feedbackHTML + `<button class="btn" onclick="nextChallenge()">Continue</button>`;
+        }
+
+        function nextChallenge() {
+            currentChallengeIndex++;
+            if (currentChallengeIndex < challenges.length) {
+                displayChallenge();
+            } else {
+                showCompletion();
+            }
+        }
+        
+        function showCompletion() {
+            const practiceArena = document.querySelector('.practice-arena');
+            practiceArena.innerHTML = `
+                <div class="section-header">
+                    <h2 style="font-size: 2em;">🎉 Fantastic Work!</h2>
+                    <p>You've successfully completed the Practice Arena. Learning to name these thinking traps is a foundational skill in managing anxiety.</p>
+                    <p><strong>The key takeaway is: Naming it helps to tame it.</strong></p>
+                    <p>Now that you can spot these traps, our next lesson will focus on exactly what to do next—how to gently challenge these thoughts and find a more balanced perspective.</p>
+                    <button class="btn" onclick="alert('Proceeding to Lesson 3!')">On to Lesson 3: Finding Balance</button>
+                </div>
+            `;
+        }
+
+        // Initial load
+        displayChallenge();
+    </script>
+</body>
+</html>

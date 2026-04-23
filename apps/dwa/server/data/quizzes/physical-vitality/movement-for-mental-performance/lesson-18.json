@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How do protein and exercise work synergistically for mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Protein has no connection to exercise or mental health"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Protein provides amino acids (tryptophan → serotonin, tyrosine → dopamine/norepinephrine) — the same neurotransmitters that exercise upregulates; adequate protein supports both recovery and mood chemistry"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only carbohydrates matter for mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Protein is only for bodybuilders, not mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Protein provides the building blocks for neurotransmitter synthesis: tryptophan (from protein) → serotonin, and tyrosine (from protein) → dopamine and norepinephrine. These are the same neurotransmitters that exercise upregulates. Adequate protein (0.8-2.2g/kg depending on activity level) supports muscle recovery (enabling consistent exercise) AND provides raw materials for the mood chemistry changes exercise triggers. Post-exercise protein (20-30g within 2 hours) optimizes both."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the relationship between carbohydrates and serotonin synthesis?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Carbohydrates have no effect on serotonin"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Insulin released after carb intake helps tryptophan cross the blood-brain barrier, increasing serotonin synthesis; carbs also replenish glycogen post-exercise (low glycogen = poor mood, fatigue)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "All carbohydrates are harmful for mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only ketogenic diets support mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Carbohydrates trigger insulin release, which helps tryptophan (serotonin precursor) cross the blood-brain barrier more effectively. Additionally, carbs replenish glycogen (stored energy) after exercise — low glycogen is associated with irritability, fatigue, and poor mood. The lesson notes that chronic low-carb diets can impair mood in some people, especially with high exercise volumes. Complex carbs (whole grains, oats, sweet potatoes, fruit) are preferred over refined sugars."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why are omega-3 fatty acids (EPA/DHA) particularly important for the exercise-mental health connection?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Omega-3s have no relevance to mental health or exercise"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Omega-3s reduce inflammation and enhance BDNF signaling — complementing exercise's BDNF boost and anti-inflammatory effects; meta-analyses show significant depression reduction with EPA-rich supplementation"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only saturated fats matter for brain health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Omega-3s are harmful to mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Omega-3 fatty acids (EPA and DHA from fatty fish, algae supplements) have anti-inflammatory effects and enhance BDNF signaling. This synergizes with exercise's BDNF boost and anti-inflammatory benefits. Meta-analyses show omega-3 supplementation (especially EPA-rich) significantly reduces depressive symptoms. The Mediterranean diet (rich in fish, olive oil, nuts) is associated with 30% lower depression risk. Recommended: fatty fish 2-3x/week or algae-based omega-3 if plant-based."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended post-exercise nutrition timing and macronutrient ratio?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Post-exercise nutrition doesn't matter at all"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Within 2 hours post-exercise: carbs + protein in a 3:1 or 4:1 ratio (e.g., Greek yogurt + fruit, chicken + rice) to replenish glycogen, support muscle repair, and optimize neurotransmitter synthesis"
+                },
+                {
+                    "id": "opt3",
+                    "text": "You should fast for 24 hours after exercise"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only protein matters post-exercise; never eat carbs"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Post-exercise nutrition (within 2 hours): carbs + protein in 3:1 or 4:1 ratio. Carbs replenish glycogen (preventing mood crashes and fatigue). Protein supports muscle repair and provides amino acids for serotonin/dopamine synthesis. Examples: Greek yogurt + fruit, chicken + rice + vegetables, protein smoothie + banana. This timing and ratio optimize both physical recovery and mental health benefits by supporting the neurobiological changes exercise triggers."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "How would you describe your current nutrition habits? Are there any patterns you've noticed between what you eat and how you feel during/after exercise? What's one small nutrition change you could make to better support your movement and mental health?",
+            "minLength": 75,
+            "explanation": "This reflection helps you identify nutrition-exercise-mood connections in your own experience and choose one actionable change. Common patterns: skipping pre-exercise meals → low energy, irritability during workout. Post-exercise junk food → mood crash later. Chronic low-carb + high exercise → brain fog, mood instability. Inadequate protein → poor recovery, fatigue. One small change examples: add pre-exercise banana + nut butter, include protein at each meal, eat within 2 hrs post-exercise, add fatty fish 2x/week for omega-3s."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "18",
+    "title": "Nutrition and Exercise Synergy - Quiz"
+}

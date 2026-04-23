@@ -1,0 +1,72 @@
+{
+  "lessonId": "3",
+  "courseId": "onboarding",
+  "sectionId": "customer-success",
+  "title": "Services/Coaching: 90-Day Delivery Rhythm",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How does services onboarding fundamentally differ from SaaS onboarding?",
+      "options": [
+        { "id": "a", "text": "Services onboarding takes less time" },
+        {
+          "id": "b",
+          "text": "In services, onboarding IS delivery — the relationship IS the product"
+        },
+        { "id": "c", "text": "SaaS onboarding is more personal" },
+        {
+          "id": "d",
+          "text": "Services clients don't need structured onboarding"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In services and coaching, you deliver value — not a product. Onboarding isn't separate from delivery. The relationship IS the product, which means the first 14 days set the client's perception of value, and changing it later requires 10x the effort."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What percentage of service churn stems from clients 'feeling like the provider doesn't care'?",
+      "options": [
+        { "id": "a", "text": "25%" },
+        { "id": "b", "text": "45%" },
+        { "id": "c", "text": "68%" },
+        { "id": "d", "text": "90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "68% of service churn stems from clients feeling uncared for, not from poor quality work. This means relationship quality is the primary retention driver in services and coaching businesses."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "By how much do structured kickoff calls reduce first-90-day churn?",
+      "options": [
+        { "id": "a", "text": "10%" },
+        { "id": "b", "text": "20%" },
+        { "id": "c", "text": "35%" },
+        { "id": "d", "text": "50%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Structured kickoff calls reduce first-90-day churn by 35%. Structure creates space for personalization — when the process is handled, you can focus on the relationship rather than figuring out logistics on the fly."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Clients who receive a 'working agreement' document are 40% less likely to experience scope creep.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. A working agreement makes expectations explicit — what's included, what's not, communication cadence, and deliverable timelines. Without it, what's 'obvious' to you is invisible to the client, leading to mismatched expectations."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design a kickoff call agenda for a new client in your business. Include the specific questions you would ask, expectations you would set, and the first deliverable you would commit to. How would this differ from your current approach?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a structured agenda (not freeform conversation), covers goal-setting and expectation-setting, defines a specific first deliverable with a timeline, and reflects on how this structured approach differs from their current process."
+    }
+  ]
+}

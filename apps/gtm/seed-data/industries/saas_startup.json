@@ -1,0 +1,236 @@
+{
+  "industry_id": "saas_startup",
+  "display_name": "SaaS Software Startups",
+  "parent_category": "technology",
+  "description": "B2B SaaS companies typically ranging from 5-200 employees, selling software subscriptions with deal sizes from $500 to $5K annually. Characterized by metrics-driven decision making, rapid growth focus, and committee-based purchasing involving 6-11 stakeholders for mid-market deals.",
+  "typical_company_sizes": ["1-10", "11-50", "51-200"],
+  "typical_deal_sizes": ["smb", "mid_market"],
+  "sales_cycle_length": "weeks",
+
+  "pain_points": [
+    {
+      "pain": "High customer churn eroding ARR growth",
+      "level": "complex",
+      "context": "Net revenue retention below 100% indicates losing more revenue from churned customers than gaining from expansions"
+    },
+    {
+      "pain": "CAC payback period exceeding runway",
+      "level": "complex",
+      "context": "Customer acquisition costs taking too long to recover, threatening cash position"
+    },
+    {
+      "pain": "Difficulty proving ROI within expected timeframe",
+      "level": "straightforward",
+      "context": "57% of buyers expect to see ROI within 3 months of purchase"
+    },
+    {
+      "pain": "Security and compliance requirements blocking deals",
+      "level": "straightforward",
+      "context": "Enterprise prospects requiring SOC 2, data residency, and security questionnaires"
+    },
+    {
+      "pain": "Product-led growth metrics not translating to revenue",
+      "level": "complex",
+      "context": "High activation but low conversion from free users to paid customers"
+    },
+    {
+      "pain": "Competitor lock-in making switching difficult for prospects",
+      "level": "straightforward",
+      "context": "Prospects hesitant to switch due to data migration and integration dependencies"
+    }
+  ],
+
+  "buying_triggers": [
+    "Churn spike threatening growth targets",
+    "Funding round with mandate to improve efficiency",
+    "New product launch requiring supporting tools",
+    "Security audit or SOC 2 certification timeline",
+    "AI initiative or automation mandate from leadership",
+    "Leadership change bringing new priorities",
+    "Competitor action forcing response"
+  ],
+
+  "budget_cycle": "Quarterly budget reviews with annual planning. Post-funding periods often have accelerated purchasing authority. End of quarter urgency common.",
+
+  "regulatory_concerns": [
+    "SOC 2 Type II compliance requirements",
+    "GDPR and data privacy regulations",
+    "Data residency requirements for enterprise customers",
+    "CCPA compliance for California customers"
+  ],
+
+  "compliance_language": [
+    "SOC 2 certified",
+    "GDPR compliant",
+    "Data residency options available",
+    "Enterprise-grade security",
+    "SSO/SAML support"
+  ],
+
+  "risk_tolerance": "medium",
+
+  "terminology": [
+    {
+      "term": "ARR",
+      "definition": "Annual Recurring Revenue - the annualized value of subscription contracts",
+      "usage_context": "Primary growth metric. 'We hit $2M ARR this quarter.'"
+    },
+    {
+      "term": "MRR",
+      "definition": "Monthly Recurring Revenue - subscription revenue normalized to monthly basis",
+      "usage_context": "Used for month-over-month growth tracking. 'MRR grew 8% last month.'"
+    },
+    {
+      "term": "NRR",
+      "definition": "Net Revenue Retention - revenue retained from existing customers including expansions and contractions",
+      "usage_context": "Health metric for customer success. 'Our NRR is 115% meaning customers expand over time.'"
+    },
+    {
+      "term": "CAC",
+      "definition": "Customer Acquisition Cost - total cost to acquire a new customer",
+      "usage_context": "Sales efficiency metric. 'Our CAC payback is under 12 months.'"
+    },
+    {
+      "term": "LTV",
+      "definition": "Lifetime Value - total revenue expected from a customer over their relationship",
+      "usage_context": "Used with CAC for unit economics. 'We need LTV:CAC of at least 3:1.'"
+    },
+    {
+      "term": "Logo Churn",
+      "definition": "Percentage of customers (not revenue) lost in a period",
+      "usage_context": "Customer retention metric. 'Logo churn is 5% annually but revenue churn is only 2%.'"
+    },
+    {
+      "term": "Burn Multiple",
+      "definition": "Net burn divided by net new ARR - measures capital efficiency",
+      "usage_context": "Investor efficiency metric. 'Our burn multiple is under 2x.'"
+    },
+    {
+      "term": "PLG",
+      "definition": "Product-Led Growth - strategy where product usage drives acquisition and expansion",
+      "usage_context": "Go-to-market strategy. 'We're a PLG company with self-serve onboarding.'"
+    },
+    {
+      "term": "PQL",
+      "definition": "Product Qualified Lead - user who has demonstrated buying intent through product behavior",
+      "usage_context": "Lead qualification. 'PQLs convert 5x better than MQLs for us.'"
+    },
+    {
+      "term": "Agentic AI",
+      "definition": "AI systems that can take autonomous actions rather than just providing recommendations",
+      "usage_context": "Current AI trend. 'We're exploring agentic AI for customer support.'"
+    },
+    {
+      "term": "AI SDR",
+      "definition": "AI-powered Sales Development Representative - automated outbound prospecting",
+      "usage_context": "Sales automation. 'Our AI SDR handles initial outreach and qualification.'"
+    },
+    {
+      "term": "AI Copilot",
+      "definition": "AI assistant that augments human work rather than replacing it",
+      "usage_context": "Product positioning. 'We built an AI copilot for sales teams.'"
+    },
+    {
+      "term": "Activation Rate",
+      "definition": "Percentage of signups who complete key actions indicating they've experienced product value",
+      "usage_context": "Onboarding metric. 'Our Day-7 activation rate is 45%.'"
+    },
+    {
+      "term": "SOC 2",
+      "definition": "Service Organization Control 2 - security compliance framework for service providers",
+      "usage_context": "Enterprise requirement. 'We need to complete SOC 2 Type II before closing enterprise deals.'"
+    },
+    {
+      "term": "Data Residency",
+      "definition": "Requirement that data be stored in specific geographic locations",
+      "usage_context": "Compliance requirement. 'European customers require EU data residency.'"
+    }
+  ],
+
+  "formality_level": "professional",
+  "decision_making_style": "committee",
+
+  "common_objections": [
+    {
+      "objection": "We don't have budget for this right now",
+      "underlying_concern": "Uncertain about ROI and competing priorities for limited resources",
+      "effective_response_approach": "Quantify ROI with specific metrics relevant to their business. Reference the 3-month ROI expectation and show how value is realized quickly. Offer pilot or smaller initial scope.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We're already locked into [competitor] for the next year",
+      "underlying_concern": "Switching costs and disruption seem too high relative to potential benefit",
+      "effective_response_approach": "Acknowledge the commitment and propose running parallel or complementary. Calculate the cost of waiting vs. the value gap. Offer migration support or integration path.",
+      "level": "complex"
+    },
+    {
+      "objection": "I need to get buy-in from the rest of the team first",
+      "underlying_concern": "Fear of championing something that fails or faces internal resistance",
+      "effective_response_approach": "Arm the champion with materials for each stakeholder type. Offer to join internal meetings or provide tailored decks. Create consensus-building assets.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We don't have engineering capacity to implement this",
+      "underlying_concern": "Every new tool competes for precious engineering resources",
+      "effective_response_approach": "Demonstrate low-touch or no-code implementation options. Provide realistic implementation timelines from similar customers. Offer implementation support or services.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "How do we know this will actually work for our use case?",
+      "underlying_concern": "Fear of investing in something that doesn't deliver promised results",
+      "effective_response_approach": "Propose a proof of value with clear success criteria. Share case studies from similar companies. Offer success-based pricing or guarantees if possible.",
+      "level": "complex"
+    },
+    {
+      "objection": "We need SOC 2 compliance and you don't have it yet",
+      "underlying_concern": "Security and compliance are non-negotiable for enterprise customers",
+      "effective_response_approach": "Share SOC 2 timeline if in progress. Provide alternative security documentation. Offer to complete security questionnaire. Consider if they can start with non-sensitive use case.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "This doesn't integrate with our existing stack",
+      "underlying_concern": "Fragmented tools create friction and reduce adoption",
+      "effective_response_approach": "Map specific integration requirements. Show API capabilities and existing integrations. Offer to build custom integration as part of deal if strategic.",
+      "level": "complex"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Point solutions from established vendors",
+    "Spreadsheets and manual processes",
+    "Built-in features from existing platforms",
+    "In-house built tools",
+    "Legacy enterprise software"
+  ],
+
+  "switching_barriers": [
+    "Data migration complexity and risk",
+    "Integration dependencies with other tools",
+    "Team retraining and adoption friction",
+    "Contract lock-in with current vendor",
+    "Workflow disruption during transition"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "A {{company_size}} SaaS startup just raised {{funding_round}} and the new VP of {{department}} wants to improve {{metric}}. They're currently using {{current_solution}} but experiencing {{pain_point}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["company_size", "funding_round", "department", "metric", "current_solution", "pain_point"]
+    },
+    {
+      "template": "{{founder_role}} at an early-stage SaaS company is evaluating solutions to address {{pain_point}}. They have {{timeline}} to show results to their board and a budget of {{budget}}.",
+      "complexity": "single_stakeholder",
+      "variables": ["founder_role", "pain_point", "timeline", "budget"]
+    },
+    {
+      "template": "A Series {{stage}} SaaS company with {{arr}} ARR is facing {{pain_point}}. The buying committee includes {{stakeholders}} and they need to justify the investment based on {{success_metric}}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["stage", "arr", "pain_point", "stakeholders", "success_metric"]
+    },
+    {
+      "template": "{{role}} at a PLG SaaS company is struggling with {{pain_point}}. Their activation rate is {{activation_rate}} and they believe improving {{metric}} could significantly impact revenue.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "pain_point", "activation_rate", "metric"]
+    }
+  ]
+}

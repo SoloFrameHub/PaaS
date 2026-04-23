@@ -1,0 +1,72 @@
+{
+  "lessonId": "6",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Playbook: Scaling from 50 to 500 Customers",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the key mindset shift when scaling from 50 to 500 customers?",
+      "options": [
+        { "id": "a", "text": "From selling to marketing" },
+        {
+          "id": "b",
+          "text": "From 'I do outreach' to 'my system generates pipeline'"
+        },
+        { "id": "c", "text": "From product to services" },
+        { "id": "d", "text": "From solo to team of 50" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "At 50 customers, you're a founder doing sales. At 500, you're an operator running an acquisition system. The shift is from personal execution to systematized pipeline generation."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why do tactics that produce 50 customers rarely produce 500?",
+      "options": [
+        { "id": "a", "text": "The market changes after 50 customers" },
+        {
+          "id": "b",
+          "text": "Manual outreach and hustle don't scale — you need data-driven systems"
+        },
+        { "id": "c", "text": "Competitors copy your approach" },
+        { "id": "d", "text": "Customers become harder to find after 50" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "More manual outreach, more networking, more hustle won't produce 500 customers. Scaling requires a systems upgrade — CRM automation, analytics, AI-assisted outreach, and data-driven channel decisions."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Before applying the Scaling playbook, which of these is a readiness requirement?",
+      "options": [
+        { "id": "a", "text": "Having raised venture capital" },
+        { "id": "b", "text": "Knowing your current CAC and LTV" },
+        { "id": "c", "text": "Having a team of 10+" },
+        { "id": "d", "text": "Being profitable for 12+ months" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Scale readiness requires knowing your CAC and LTV, having 50+ paying customers, at least one consistent acquisition channel, a CRM tracking pipeline stages, and a product with low churn. You can't optimize what you can't measure."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The Scaling playbook is appropriate for founders who haven't yet reached 50 paying customers.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Under 50 customers, use Lessons 2-5 (situation-specific playbooks). The Scaling playbook requires enough data and customer base to optimize systems and make data-driven channel decisions."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Review the Scale Readiness checklist. Which items can you check off and which are missing? What needs to happen before you're ready for the Scaling playbook?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses each readiness item (50+ customers, ICP clarity, proven channel, CRM tracking, CAC/LTV knowledge, low churn, time/budget availability), identifies missing prerequisites, and proposes a realistic plan to address gaps."
+    }
+  ]
+}

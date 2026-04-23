@@ -1,0 +1,134 @@
+{
+    "lessonId": "9",
+    "courseId": "ai-lead-research",
+    "sectionId": "ai-acquisition",
+    "title": "Build vs Buy Mastery",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "You're at $3K MRR. Your time is worth $100/hour. Building a DIY enrichment stack would take 20 hours. Clay Explorer costs $149/month. What should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Build DIY — save $149/month"
+                },
+                {
+                    "id": "b",
+                    "text": "Buy Clay — your time is worth more"
+                },
+                {
+                    "id": "c",
+                    "text": "Hybrid — buy Clay, build scoring"
+                },
+                {
+                    "id": "d",
+                    "text": "Wait until $10K MRR to decide"
+                }
+            ],
+            "explanation": "At $3K MRR, you can afford $149/month, but you also have time to build custom logic. Hybrid is optimal: buy Clay for reliable enrichment, build custom scoring in n8n. This balances cost, capability, and time.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q2",
+            "question": "Your n8n enrichment workflow breaks for the third time this month. You've spent 4 hours debugging. What's the real cost of this 'free' solution?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$0 — it's free"
+                },
+                {
+                    "id": "b",
+                    "text": "4 hours of time"
+                },
+                {
+                    "id": "c",
+                    "text": "4 hours × your hourly rate"
+                },
+                {
+                    "id": "d",
+                    "text": "4 hours × hourly rate + opportunity cost of lost deals"
+                }
+            ],
+            "explanation": "The real cost is 4 hours × your hourly rate (direct cost) PLUS the opportunity cost of deals you didn't close because you were debugging instead of selling. If your time is worth $150/hour, that's $600 + lost revenue. Clay's $349/month starts to look cheap.",
+            "type": "multiple-choice",
+            "correctAnswer": "d"
+        },
+        {
+            "id": "q3",
+            "question": "You're a technical founder. You could build a LinkedIn scraper in 10 hours. Should you?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes — save money and learn"
+                },
+                {
+                    "id": "b",
+                    "text": "No — violates LinkedIn ToS"
+                },
+                {
+                    "id": "c",
+                    "text": "Yes — but use a VPN"
+                },
+                {
+                    "id": "d",
+                    "text": "Maybe — if you're building a sales tool"
+                }
+            ],
+            "explanation": "Never build a LinkedIn scraper. It violates LinkedIn's Terms of Service and will get your account banned. Use Apollo or Clay, which have legal data partnerships. This is a hard 'no' regardless of your technical skills.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        },
+        {
+            "id": "q4",
+            "question": "What's the primary advantage of Clay's waterfall enrichment over a DIY stack?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's cheaper"
+                },
+                {
+                    "id": "b",
+                    "text": "It's faster to set up"
+                },
+                {
+                    "id": "c",
+                    "text": "It checks 75+ sources automatically"
+                },
+                {
+                    "id": "d",
+                    "text": "It has better UI"
+                }
+            ],
+            "explanation": "Clay's waterfall checks 75+ data sources automatically. Building this yourself would require 75+ API integrations, each with its own auth, rate limits, and error handling. This is nearly impossible for a solo founder to replicate.",
+            "type": "multiple-choice",
+            "correctAnswer": "c"
+        },
+        {
+            "id": "q5",
+            "question": "When should you migrate from DIY to Hybrid?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When you hit $1K MRR"
+                },
+                {
+                    "id": "b",
+                    "text": "When you hit $5K MRR or spend >3 hours/month on maintenance"
+                },
+                {
+                    "id": "c",
+                    "text": "When you hit $25K MRR"
+                },
+                {
+                    "id": "d",
+                    "text": "Never — DIY is always cheaper"
+                }
+            ],
+            "explanation": "Migrate when you hit $5K MRR (can afford tools) OR when maintenance exceeds 3 hours/month (time is more valuable than money). At 3 hours/month × $150/hour = $450/month, you're paying more in time than Clay costs.",
+            "type": "multiple-choice",
+            "correctAnswer": "b"
+        }
+    ]
+}

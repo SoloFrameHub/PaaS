@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Community Engagement That Converts",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the engagement-to-revenue pipeline, what is the correct progression from joining to purchasing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Lurker → Customer → Participant → Contributor → Advocate"
+                },
+                {
+                    "id": "b",
+                    "text": "Lurker → Participant → Contributor → Advocate → Customer"
+                },
+                {
+                    "id": "c",
+                    "text": "Participant → Lurker → Advocate → Contributor → Customer"
+                },
+                {
+                    "id": "d",
+                    "text": "Contributor → Participant → Lurker → Customer → Advocate"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The pipeline moves from Lurker (reads but never posts) to Participant (comments and asks questions) to Contributor (shares wins, helps others) to Advocate (refers new members, defends the community) to Customer (upgrades to paid). Each stage builds more trust and readiness to buy."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which engagement metric is most important for predicting long-term member retention?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Total number of members in the community"
+                },
+                {
+                    "id": "b",
+                    "text": "Number of posts by the community founder per week"
+                },
+                {
+                    "id": "c",
+                    "text": "First-week post rate -- whether new members post within their first 7 days"
+                },
+                {
+                    "id": "d",
+                    "text": "Number of emoji reactions on posts"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Members who post at least 3 times in their first 14 days are 5x more likely to be retained at 90 days than members who lurk. The first-week post rate is therefore one of the strongest predictors of long-term retention, with a target of 40% or higher."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What makes challenges one of the most effective engagement rituals for driving conversions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are longer than other content formats, keeping members engaged for weeks"
+                },
+                {
+                    "id": "b",
+                    "text": "They create quick wins that trigger upgrade desire -- if free content produces results, members want the paid experience"
+                },
+                {
+                    "id": "c",
+                    "text": "They are automated, requiring no effort from the community creator"
+                },
+                {
+                    "id": "d",
+                    "text": "They eliminate the need for other engagement rituals like weekly wins or AMAs"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Challenges create quick wins through time-boxed, structured activities. When a member implements free advice during a challenge and gets a result, they naturally think: 'If the free content did this, what would the paid content do?' This upgrade trigger is one of the most powerful conversion mechanisms in a community funnel."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design a 5-day challenge for your free community. For each day, write the specific prompt or action step members will complete. Then explain how you would transition challenge completers into your paid tier at the end of the challenge.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has created a specific, actionable 5-day challenge with clear daily prompts relevant to their niche. Look for progressive difficulty (day 1 should be easy, day 5 should stretch), a clear outcome, and a natural transition to the paid tier that feels like a service rather than a hard sell. Suggest improvements if any days feel vague or if the conversion transition feels forced."
+        }
+    ]
+}

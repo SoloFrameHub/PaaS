@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is mind-reading as a cognitive distortion?",
+            "options": [
+                {"id": "opt1", "text": "Accurately understanding what others are thinking through empathy"},
+                {"id": "opt2", "text": "Assuming you know what others are thinking without evidence, typically interpreting their thoughts negatively"},
+                {"id": "opt3", "text": "Reading people's body language to understand their emotions"},
+                {"id": "opt4", "text": "Asking people what they think"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Mind-reading is a cognitive distortion where you assume you know what others are thinking—usually negative thoughts about you—without any evidence to support it. Examples: 'They think I'm incompetent,' 'She's judging me,' 'He's annoyed with me.' It's different from empathy or reading body language because it involves making unfounded negative assumptions and treating them as facts."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is fortune-telling as a cognitive distortion?",
+            "options": [
+                {"id": "opt1", "text": "Planning for the future responsibly"},
+                {"id": "opt2", "text": "Predicting negative outcomes with certainty despite lacking evidence, as if you can see the future"},
+                {"id": "opt3", "text": "Being pessimistic about everything"},
+                {"id": "opt4", "text": "Having realistic concerns about possible risks"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Fortune-telling involves predicting negative outcomes with unwarranted certainty—'I know this will fail,' 'It's definitely going to be terrible,' 'I'll never succeed'—without evidence to support that prediction. It's not the same as planning, being pessimistic, or having realistic concerns. It's treating predictions as facts and acting as though you can see a definitively negative future."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How can you effectively challenge mind-reading thoughts?",
+            "options": [
+                {"id": "opt1", "text": "Just stop caring what people think"},
+                {"id": "opt2", "text": "Ask 'What evidence do I have for this thought? What other explanations are possible? Can I check this assumption rather than treating it as fact?'"},
+                {"id": "opt3", "text": "Assume everyone thinks positively about you instead"},
+                {"id": "opt4", "text": "Avoid all social situations"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Challenging mind-reading involves examining the evidence: 'What actual evidence do I have that they think this? What else could explain their behavior? Am I treating an assumption as a fact?' Often, you can reality-test by asking directly (if appropriate) rather than assuming. The goal isn't to flip to unrealistic positivity or avoid situations—it's to base conclusions on evidence rather than assumptions."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why do mind-reading and fortune-telling tend to be self-fulfilling prophecies?",
+            "options": [
+                {"id": "opt1", "text": "They aren't—they have no real impact"},
+                {"id": "opt2", "text": "Because when you assume negative outcomes or judgments, you behave differently (withdraw, avoid, act defensively), which can actually create the negative outcome you feared"},
+                {"id": "opt3", "text": "Because everyone really is judging you negatively"},
+                {"id": "opt4", "text": "Because positive thinking always works"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "When you engage in mind-reading ('They think I'm boring') or fortune-telling ('This will go badly'), you change your behavior based on that belief—withdrawing, avoiding eye contact, not engaging fully. This behavior can actually create the outcome you feared. For example, if you assume someone dislikes you and act cold toward them, they may respond negatively, confirming your original (unfounded) assumption."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Recall a recent time when you engaged in mind-reading or fortune-telling. What did you assume without evidence? How did that assumption affect your emotions and behavior? Looking back now, what other explanations were possible, and how could you have tested your assumption?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "7",
+    "title": "Mind-Reading and Fortune-Telling - Quiz"
+}

@@ -1,0 +1,256 @@
+{
+  "industry_id": "edtech",
+  "display_name": "EdTech / Online Learning",
+  "parent_category": "services",
+  "description": "Educational technology and online learning companies including learning management systems, online course platforms, corporate training solutions, K-12 education tools, higher education technology, and creator education platforms. Encompasses both B2B (institutional) and B2C (consumer) education markets.",
+  "typical_company_sizes": ["1-10", "11-50", "51-200"],
+  "typical_deal_sizes": ["transactional", "smb"],
+  "sales_cycle_length": "weeks",
+
+  "pain_points": [
+    {
+      "pain": "Low course completion rates undermining program effectiveness",
+      "level": "complex",
+      "context": "Average MOOC completion rates hover around 5-15%, making it difficult to demonstrate learning outcomes and justify investment"
+    },
+    {
+      "pain": "Student engagement dropping off after initial enrollment enthusiasm",
+      "level": "complex",
+      "context": "Without in-person accountability, learners struggle to maintain motivation through self-paced content"
+    },
+    {
+      "pain": "Content creation costs consuming majority of budget",
+      "level": "straightforward",
+      "context": "Professional video production, curriculum development, and SME time make quality content expensive to produce"
+    },
+    {
+      "pain": "Accessibility compliance requirements (WCAG, Section 508) creating legal exposure",
+      "level": "complex",
+      "context": "Educational institutions face lawsuits for inaccessible digital content, requiring captioning, transcripts, and screen reader compatibility"
+    },
+    {
+      "pain": "Assessment validity concerns - can't verify learner actually learned",
+      "level": "complex",
+      "context": "Cheating, credential fraud, and superficial completion undermine the value of certifications and credentials"
+    },
+    {
+      "pain": "LMS user experience frustrating both instructors and learners",
+      "level": "straightforward",
+      "context": "Legacy learning management systems have clunky interfaces that increase support burden and reduce adoption"
+    },
+    {
+      "pain": "Proving ROI of training programs to leadership",
+      "level": "complex",
+      "context": "Learning teams struggle to connect training completion to business outcomes like productivity or retention"
+    },
+    {
+      "pain": "Scaling personalized learning experiences",
+      "level": "complex",
+      "context": "One-size-fits-all content doesn't serve diverse learner needs, but personalization is resource-intensive"
+    }
+  ],
+
+  "buying_triggers": [
+    "Accreditation review requiring updated learning technology",
+    "New academic year planning cycle (March-May for fall semester)",
+    "Failed audit on accessibility compliance",
+    "Major shift to hybrid or fully online program delivery",
+    "Corporate training mandate from leadership",
+    "Competitor institution launching popular online program",
+    "Faculty complaints about current LMS reaching critical mass",
+    "Grant funding received for education technology initiatives"
+  ],
+
+  "budget_cycle": "Academic institutions follow fiscal years (July-June) with major purchasing decisions in spring for fall implementation. Corporate training budgets align with calendar year planning in Q4. Government and grant funding follows specific award cycles.",
+
+  "regulatory_concerns": [
+    "FERPA (Family Educational Rights and Privacy Act) for student data",
+    "Section 508 and WCAG 2.1 accessibility standards",
+    "State authorization for online degree programs",
+    "Accreditation body requirements",
+    "COPPA for K-12 platforms serving children under 13",
+    "GDPR for international students",
+    "Title IX compliance for equity in education"
+  ],
+
+  "compliance_language": [
+    "FERPA compliant",
+    "WCAG 2.1 AA conformance",
+    "Section 508 compliant",
+    "VPAT (Voluntary Product Accessibility Template)",
+    "SOC 2 certified",
+    "single sign-on (SSO)",
+    "LTI integration",
+    "student data privacy"
+  ],
+
+  "risk_tolerance": "low",
+
+  "terminology": [
+    {
+      "term": "LMS",
+      "definition": "Learning Management System - software platform for delivering, tracking, and managing educational courses and training programs",
+      "usage_context": "Core infrastructure discussion. 'We're evaluating whether to stay with Canvas or migrate to a new LMS.'"
+    },
+    {
+      "term": "LXP",
+      "definition": "Learning Experience Platform - next-generation learning platform focused on personalized content discovery and learner-driven experiences, as opposed to administrator-driven LMS",
+      "usage_context": "Modern approach positioning. 'We need an LXP that lets employees find relevant content themselves, not just assigned courses.'"
+    },
+    {
+      "term": "Completion Rate",
+      "definition": "Percentage of enrolled learners who finish a course or program, a key metric for program effectiveness",
+      "usage_context": "Success measurement. 'Our completion rate dropped to 23% and leadership is questioning the program's value.'"
+    },
+    {
+      "term": "NPS",
+      "definition": "Net Promoter Score - measure of learner satisfaction and likelihood to recommend, ranging from -100 to +100",
+      "usage_context": "Quality indicator. 'Course NPS of 45 is good but we need 60+ to justify premium pricing.'"
+    },
+    {
+      "term": "SCORM",
+      "definition": "Sharable Content Object Reference Model - technical standard for e-learning content that ensures interoperability between authoring tools and LMS platforms",
+      "usage_context": "Content compatibility. 'We need SCORM 1.2 or 2004 compliance to import content from our authoring tool into the LMS.'"
+    },
+    {
+      "term": "xAPI",
+      "definition": "Experience API (also called Tin Can) - modern learning data specification that tracks learning activities beyond LMS, including simulations, mobile, and real-world experiences",
+      "usage_context": "Advanced tracking discussion. 'xAPI lets us track learning from our mobile app and VR simulations, not just LMS modules.'"
+    },
+    {
+      "term": "Microlearning",
+      "definition": "Learning delivered in small, focused chunks (typically 3-7 minutes) designed for just-in-time consumption and better retention",
+      "usage_context": "Content strategy. 'We're breaking our 60-minute courses into microlearning modules for mobile consumption.'"
+    },
+    {
+      "term": "Adaptive Learning",
+      "definition": "Technology-enabled approach that adjusts content difficulty, sequence, or style based on individual learner performance and preferences",
+      "usage_context": "Personalization capability. 'The adaptive learning engine identifies knowledge gaps and serves remediation content automatically.'"
+    },
+    {
+      "term": "Gamification",
+      "definition": "Application of game design elements (points, badges, leaderboards, challenges) to learning experiences to increase engagement",
+      "usage_context": "Engagement strategy. 'We added gamification elements and saw 40% improvement in daily active users.'"
+    },
+    {
+      "term": "Cohort-based",
+      "definition": "Learning model where students progress through a program together as a group on a fixed schedule, creating community and accountability",
+      "usage_context": "Program design. 'Switching from self-paced to cohort-based doubled our completion rates.'"
+    },
+    {
+      "term": "Self-paced",
+      "definition": "Learning model where students progress through content on their own schedule without fixed deadlines or cohort structure",
+      "usage_context": "Flexibility positioning. 'Self-paced works for motivated learners but struggles with accountability.'"
+    },
+    {
+      "term": "Synchronous",
+      "definition": "Real-time learning where instructor and students interact simultaneously, such as live video sessions or virtual classrooms",
+      "usage_context": "Delivery mode. 'We blend synchronous sessions for discussion with asynchronous content for flexibility.'"
+    },
+    {
+      "term": "Asynchronous",
+      "definition": "Learning that happens on the student's own time without real-time interaction, such as pre-recorded videos or discussion forums",
+      "usage_context": "Flexibility discussion. 'Asynchronous content works across time zones but lacks the energy of live sessions.'"
+    },
+    {
+      "term": "LTI",
+      "definition": "Learning Tools Interoperability - standard for connecting external learning tools and content with LMS platforms securely",
+      "usage_context": "Integration requirement. 'We need LTI 1.3 integration to embed our assessment tool inside Canvas.'"
+    },
+    {
+      "term": "Proctoring",
+      "definition": "Technology or human monitoring to ensure assessment integrity, verifying the enrolled student is actually taking the exam",
+      "usage_context": "Assessment integrity. 'We use AI proctoring for high-stakes certifications but students complain about privacy.'"
+    }
+  ],
+
+  "formality_level": "professional",
+  "decision_making_style": "committee",
+
+  "common_objections": [
+    {
+      "objection": "Our budget is already allocated for this fiscal year",
+      "underlying_concern": "Education budgets are tight and heavily scrutinized. Unplanned expenditures require significant justification and approval processes.",
+      "effective_response_approach": "Acknowledge budget cycles and offer to align with next planning period. Explore grant funding or pilot programs that use different budget lines. Quantify cost of inaction (poor completion rates, accessibility lawsuits).",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Our procurement process takes 6-9 months minimum",
+      "underlying_concern": "Educational institutions have complex procurement requirements including RFP processes, committee reviews, and legal approval that cannot be shortcut.",
+      "effective_response_approach": "Accept the timeline and build relationship for long-term sale. Offer to participate in formal RFP process. Provide all documentation needed for procurement (security questionnaires, VPAT, references) upfront.",
+      "level": "complex"
+    },
+    {
+      "objection": "How does this integrate with our existing LMS?",
+      "underlying_concern": "Institutions are heavily invested in their LMS ecosystem (Canvas, Blackboard, Moodle). Any new tool must work within that environment, not replace it.",
+      "effective_response_approach": "Lead with LTI integration capabilities. Show existing integrations with their specific LMS. Offer technical call with IT team to discuss architecture. Provide sandbox for testing.",
+      "level": "straightforward"
+    },
+    {
+      "objection": "Faculty/instructors won't adopt another tool",
+      "underlying_concern": "Faculty are already overwhelmed with technology. Change resistance is high, and IT cannot mandate tool usage by faculty.",
+      "effective_response_approach": "Show faculty testimonials and adoption metrics from similar institutions. Offer faculty-specific training and support. Demonstrate how tool reduces (not adds to) their workload. Propose small pilot with enthusiastic early adopters.",
+      "level": "complex"
+    },
+    {
+      "objection": "What about accessibility compliance? We need VPAT documentation.",
+      "underlying_concern": "Institutions face real legal liability for inaccessible educational technology. Accessibility is a non-negotiable requirement, not a nice-to-have.",
+      "effective_response_approach": "Provide VPAT (Voluntary Product Accessibility Template) immediately. Document WCAG 2.1 AA conformance level. Explain accessibility roadmap for any gaps. Offer to work with their accessibility office on evaluation.",
+      "level": "complex"
+    },
+    {
+      "objection": "How do we know students will actually complete courses with this?",
+      "underlying_concern": "Low completion rates are an existential problem for online learning. Leadership questions whether technology investments actually improve outcomes.",
+      "effective_response_approach": "Share completion rate data from comparable institutions. Explain specific engagement features that drive completion (reminders, gamification, cohort accountability). Propose success metrics and measurement plan for pilot.",
+      "level": "straightforward"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Canvas by Instructure",
+    "Blackboard Learn",
+    "Moodle",
+    "D2L Brightspace",
+    "Google Classroom",
+    "Coursera for Business / Campus",
+    "LinkedIn Learning",
+    "Teachable / Thinkific / Kajabi (creator platforms)"
+  ],
+
+  "switching_barriers": [
+    "Years of course content built in current LMS",
+    "Faculty training investment in current platform",
+    "Student familiarity and reduced support burden",
+    "Integration dependencies with SIS and other campus systems",
+    "Contractual commitments with multi-year terms",
+    "Migration complexity for historical data and grades"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're a {role} at a {company_size} online learning platform. Completion rates have dropped to 18% and investors are concerned. {trigger_event}. Your priority is solving {pain_point} before the next board meeting.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} corporate training company. A major client just threatened to cancel because their employees aren't engaging with content. {trigger_event}. You need to address {pain_point} to save the account.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} EdTech startup. You just received a legal complaint about accessibility on your platform. {trigger_event}. Fixing {pain_point} is now urgent before more complaints arrive.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} leading product at a {company_size} creator education platform. Your top course creator is threatening to leave for a competitor with better analytics. {trigger_event}. You must solve {pain_point} to retain key creators.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    },
+    {
+      "template": "You're a {role} at a {company_size} university extension program going fully online. Faculty are struggling with the current LMS and student complaints are rising. {trigger_event}. Your dean wants {pain_point} resolved before fall semester registration.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "trigger_event", "pain_point"]
+    }
+  ]
+}

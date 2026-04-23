@@ -1,0 +1,141 @@
+{
+  "lessonId": "6",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "Estrategia de Categoría de Mercado",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la función principal de una Categoría de Mercado en la mente de un cliente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es una forma en que los desarrolladores organizan su código"
+        },
+        {
+          "id": "b",
+          "text": "Establece una base de expectativas sobre características, precio y competencia"
+        },
+        {
+          "id": "c",
+          "text": "Determina en qué servidor correrá el software"
+        },
+        {
+          "id": "d",
+          "text": "Es un requisito para registrar una patente comercial"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Una categoría actúa como una 'sala' que proporciona contexto. En cuanto un cliente te ubica en una categoría (como 'CRM' vs. 'Lista de Tareas'), inmediatamente tiene expectativas sobre lo que deberías hacer y cuánto deberías costar."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál estrategia de categoría implica ocupar un nicho específico donde puedes ser el líder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estrategia Cara a Cara (Head-to-Head)"
+        },
+        {
+          "id": "b",
+          "text": "Pez Grande, Estanque Pequeño (Estrategia de Sub-segmento)"
+        },
+        {
+          "id": "c",
+          "text": "Estrategia de Nueva Categoría"
+        },
+        {
+          "id": "d",
+          "text": "La Estrategia Commodity"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La estrategia de Pez Grande, Estanque Pequeño (sub-segmentación) consiste en convertirse en 'El Mejor [X] para [Y]', que suele ser el camino más efectivo para los fundadores en solitario."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué la 'Estrategia de Nueva Categoría' (Creación de Categoría) se considera arriesgada para los fundadores en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Requiere demasiado código personalizado"
+        },
+        {
+          "id": "b",
+          "text": "Es ilegal en la mayoría de las jurisdicciones"
+        },
+        {
+          "id": "c",
+          "text": "Es costosa y lenta porque hay que educar al mercado sobre un problema que no sabe que tiene"
+        },
+        {
+          "id": "d",
+          "text": "Los fundadores en solitario no tienen permitido crear nuevas categorías"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Crear una nueva categoría es un 'trabajo pesado'. Requiere una inversión significativa en marketing y tiempo para enseñar a las personas por qué las categorías anteriores están obsoletas."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué sucede con tu 'Poder de Fijación de Precios' cuando sub-segmentas exitosamente una categoría?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disminuye porque el mercado es más pequeño"
+        },
+        {
+          "id": "b",
+          "text": "Se mantiene igual independientemente de la categoría"
+        },
+        {
+          "id": "c",
+          "text": "Aumenta porque estás proporcionando valor especializado a un grupo específico"
+        },
+        {
+          "id": "d",
+          "text": "Desaparece porque te conviertes en un commodity"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La especialización genera mayor valor percibido. Un 'CRM para Dentistas' puede cobrar más que un 'CRM Genérico' porque resuelve problemas específicos del negocio dental."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Si los clientes te dicen que tu producto es 'demasiado caro', ¿cuál podría ser la causa según esta lección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los costos de tu servidor son demasiado altos"
+        },
+        {
+          "id": "b",
+          "text": "Estás posicionado en una categoría con un 'ancla' de precio bajo"
+        },
+        {
+          "id": "c",
+          "text": "No estás ofreciendo suficientes características"
+        },
+        {
+          "id": "d",
+          "text": "El cliente no tiene tarjeta de crédito"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El valor percibido es relativo a la 'sala' (categoría) en la que te encuentras. Si te ubican en una categoría de 'Bajo Valor', tu precio estará anclado a alternativas baratas."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Realiza un 'Cambio de Categoría' para tu producto. Ubícalo en una categoría de Bajo Valor, una Actual y una de Alto Valor. ¿Cuál captura más valor sin dejar de ser 'honesta' con lo que construiste?",
+      "minLength": 100,
+      "promptForAI": "Evalúa el ejercicio de cambio de categoría del estudiante. Verifica si entiende cómo cambiar la 'etiqueta' modifica las expectativas. Proporciona retroalimentación sobre si la categoría de 'Alto Valor' que eligieron es realmente creíble dado sus características."
+    }
+  ],
+  "passingScore": 70
+}

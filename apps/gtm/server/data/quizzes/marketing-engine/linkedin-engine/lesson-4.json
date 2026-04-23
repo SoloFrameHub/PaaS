@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "4",
+    "lessonTitle": "The PAIPS Content Formula",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does the 'P' in the PAIPS formula stand for, and why is it first?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Product; because you should always lead with your features."
+                },
+                {
+                    "id": "b",
+                    "text": "Problem; because describing the ICP's pain better than they can is the best way to earn attention."
+                },
+                {
+                    "id": "c",
+                    "text": "Personality; because you need to be funny to get likes."
+                },
+                {
+                    "id": "d",
+                    "text": "Price; because you should filter out low-budget leads immediately."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Empathy is a powerful hook. By starting with a specific problem, you signal to your ICP that you understand their world.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the PAIPS framework, how is 'Authority' demonstrated?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By listing your degrees and certifications."
+                },
+                {
+                    "id": "b",
+                    "text": "By sharing proprietary data, practitioner insights, or 'Counter-Intuitive Truths' from your work."
+                },
+                {
+                    "id": "c",
+                    "text": "By using complex jargon to sound smarter."
+                },
+                {
+                    "id": "d",
+                    "text": "By following famous influencers and tagging them in every post."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "True authority comes from practitioner experience. Sharing 'Hard Truths' that only someone in the field would know builds immediate trust.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Insight' (I) section of a PAIPS post?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To tell a joke."
+                },
+                {
+                    "id": "b",
+                    "text": "To provide a mental 'Shift' from the 'Old Way' of thinking to your 'New Way'."
+                },
+                {
+                    "id": "c",
+                    "text": "To explain the history of your company."
+                },
+                {
+                    "id": "d",
+                    "text": "To give away a free discount code."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Insight section is where you introduce your unique approach and help the reader see their problem through a new, more solvable lens.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'Proof' (P) a critical component of building a LinkedIn engine?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it makes the post longer."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it removes risk by showing evidence that your claims and frameworks work in the real world."
+                },
+                {
+                    "id": "c",
+                    "text": "Because LinkedIn's algorithm requires images of results."
+                },
+                {
+                    "id": "d",
+                    "text": "Because it helps you get more likes from your family."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Results speak louder than advice. By providing proof (case studies, screenshots, testimonials), you validate your authority.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should the 'Strategy' (S) section of a post always include?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A list of your social media handles."
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Call to Value' that tells the reader exactly what next step to take to move the relationship forward."
+                },
+                {
+                    "id": "c",
+                    "text": "A generic 'Thanks for reading!'"
+                },
+                {
+                    "id": "d",
+                    "text": "No strategy is needed if the content is good enough."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Every post is a bridge. The strategy section tells the user how to cross it—whether that's by commenting, downloading a resource, or sending a DM.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think of a 'Counter-Intuitive Truth' you know about your niche (e.g., 'More leads actually makes your sales worse if they aren't qualified'). How would you frame this as an 'Authority' (A) and 'Insight' (I) section for a LinkedIn post today? What 'Proof' (P) could you pair it with?",
+            "promptHints": [
+                "Focus on an insight that goes against common 'Expert' advice.",
+                "Think about a specific project where you applied this insight.",
+                "Consider how this shift helps your ICP achieve their goal faster."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "3"
+        ],
+        "unlocks": [
+            "5"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "The PAIPS Content Formula - Quiz"
+}

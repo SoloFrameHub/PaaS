@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "Application Funnels & Qualification Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, when should you NOT use an application funnel?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When selling to cold traffic that found you through ads"
+                },
+                {
+                    "id": "b",
+                    "text": "When you have limited capacity and can only serve 10-20 clients"
+                },
+                {
+                    "id": "c",
+                    "text": "When your offer is priced under $1,000, because the overhead of reviewing applications and conducting calls doesn't make economic sense"
+                },
+                {
+                    "id": "d",
+                    "text": "When you are selling a group coaching program"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Application funnels should not be used for offers under $1,000 unless there is a very specific reason. The time cost of reviewing applications and conducting individual sales calls does not make economic sense at lower price points. A $497 course should have a checkout page, not an application."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does the application form serve as both a qualification tool AND a sales tool?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it collects payment information alongside the questions"
+                },
+                {
+                    "id": "b",
+                    "text": "Because the questions give you assessment data while forcing applicants to articulate their goals and struggles, which psychologically primes them for the sales call"
+                },
+                {
+                    "id": "c",
+                    "text": "Because applicants can see other people's responses, creating social proof"
+                },
+                {
+                    "id": "d",
+                    "text": "Because the form includes a video pitch that plays automatically between questions"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Application questions serve a dual purpose: they provide the information needed to assess fit (qualification), and they force applicants to articulate their goals, struggles, and commitment level in writing. This process of self-reflection psychologically primes them for the sales call by crystallizing their desire and making their pain points feel more urgent."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What technique can dramatically reduce no-show rates for booked strategy calls?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Charging a small deposit that is refunded after the call"
+                },
+                {
+                    "id": "b",
+                    "text": "Sending a personal video message that references something specific from their application"
+                },
+                {
+                    "id": "c",
+                    "text": "Booking calls only 24 hours in advance so people don't forget"
+                },
+                {
+                    "id": "d",
+                    "text": "Sending automated SMS reminders every hour on the day of the call"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A personal 60-second video message after booking -- referencing something specific from their application -- dramatically reduces no-shows because it creates a personal connection. When someone knows you've personally reviewed their situation and are looking forward to the conversation, they feel a social obligation to show up."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Draft 5-7 application questions for your high-ticket offer, categorized into: basic information, situation assessment, goal/pain questions, and commitment/investment questions. For each question, explain what you are trying to learn and how the answer will help you qualify (or disqualify) the applicant.",
+            "minLength": 100,
+            "aiPrompt": "The student should draft questions across the four categories from the lesson. Each question should have a clear purpose stated. Evaluate whether the questions genuinely qualify applicants (not just collect vanity data), whether the investment readiness question is included and transparent about pricing, and whether the overall form would take under 5 minutes to complete. The questions should balance getting useful data with not being intrusive or off-putting."
+        }
+    ]
+}

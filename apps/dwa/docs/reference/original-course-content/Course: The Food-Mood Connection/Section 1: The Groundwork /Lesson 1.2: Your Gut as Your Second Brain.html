@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 2: Your Gut as Your Second Brain</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .lesson-header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .lesson-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .lesson-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .practitioner-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logo-brain {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .logo-brain::after {
+            content: '⚙️';
+            position: absolute;
+            font-size: 12px;
+            top: 2px;
+            right: 2px;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            border-left: 5px solid #3498db;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .practitioner-voice {
+            background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+            color: #2c3e50;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            position: relative;
+            font-style: italic;
+            border-left: 5px solid #3498db;
+        }
+
+        .practitioner-voice::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+            color: #3498db;
+        }
+
+        .interactive-diagram {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .diagram-container {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            height: 600px;
+        }
+
+        .brain-element {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 200px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            border-radius: 160px 160px 80px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+            z-index: 5;
+        }
+
+        .brain-element:hover {
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 15px 35px rgba(52, 152, 219, 0.4);
+        }
+
+        .gut-element {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 160px;
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            border-radius: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(39, 174, 96, 0.3);
+            z-index: 5;
+        }
+
+        .gut-element:hover {
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 15px 35px rgba(39, 174, 96, 0.4);
+        }
+
+        .vagus-nerve {
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 180px;
+            background: linear-gradient(to bottom, #f39c12 0%, #e67e22 100%);
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
+        }
+
+        .vagus-nerve:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 12px 30px rgba(243, 156, 18, 0.4);
+        }
+
+        .signal-dots {
+            position: absolute;
+            top: 260px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 8;
+        }
+
+        .signal-dot {
+            width: 8px;
+            height: 8px;
+            background: #e74c3c;
+            border-radius: 50%;
+            animation: signal-travel 2.5s infinite;
+        }
+
+        .signal-dot:nth-child(2) { animation-delay: 0.4s; }
+        .signal-dot:nth-child(3) { animation-delay: 0.8s; }
+        .signal-dot:nth-child(4) { animation-delay: 1.2s; }
+        .signal-dot:nth-child(5) { animation-delay: 1.6s; }
+
+        @keyframes signal-travel {
+            0% { transform: translateY(-20px); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { transform: translateY(160px); opacity: 0; }
+        }
+
+        .info-popup {
+            position: absolute;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            max-width: 320px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+            z-index: 15;
+            border: 3px solid #3498db;
+        }
+
+        .info-popup.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .brain-info {
+            top: 20px;
+            right: 20px;
+        }
+
+        .gut-info {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .vagus-info {
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .vagus-info.active {
+            transform: translateY(-50%) scale(1);
+        }
+
+        .key-points {
+            background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #3498db;
+        }
+
+        .key-points h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .key-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .key-points li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: #2c3e50;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .key-points li::before {
+            content: '🧠';
+            position: absolute;
+            left: 0;
+            top: 12px;
+        }
+
+        .activity-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 2px solid #3498db;
+        }
+
+        .activity-title {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .activity-instruction {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .progress-container {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: #bdc3c7;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            width: 0%;
+            transition: width 0.8s ease;
+            border-radius: 6px;
+        }
+
+        .next-steps {
+            background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            border: 2px solid #3498db;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.4);
+        }
+
+        .interaction-counter {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .lesson-title {
+                font-size: 2rem;
+            }
+            
+            .diagram-container {
+                height: 500px;
+            }
+            
+            .brain-element {
+                width: 280px;
+                height: 170px;
+                font-size: 1.4rem;
+            }
+            
+            .gut-element {
+                width: 240px;
+                height: 140px;
+                font-size: 1.3rem;
+            }
+
+            .vagus-nerve {
+                width: 100px;
+                height: 160px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="lesson-header">
+                <div class="company-logo">
+                    <div class="logo-brain">🧠</div><span style="font-size: 1.1rem; font-weight: 600;">REAL Psychiatric Services</span>
+                </div>
+                <h1 class="lesson-title">Your Gut as Your Second Brain</h1>
+                <p class="lesson-subtitle">Understanding the Gut-Brain Connection</p>
+                <div class="practitioner-info">
+                    <div><strong>Led by Autumn Persinger, PMHNP-BC</strong>
+                        <br><span style="opacity: 0.8;">Psychiatric Mental Health Nurse Practitioner</span>
+                    </div>
+                </div>
+            </header>
+            <section class="content-section">
+                <div class="intro-text"><strong>Have you ever felt "butterflies" in your stomach when nervous, or experienced a "gut feeling" about something?</strong> That's not just a saying—it's your gut-brain axis in action. This lesson explores one of the most fascinating discoveries in mental health: the constant, two-way conversation between your gut and your brain that directly impacts your mood, stress levels, and overall mental wellness.
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">The Information Superhighway: Your Vagus Nerve</h2>
+                <p style="font-size: 1.1rem; color: #555; margin-bottom: 25px;">
+                Imagine a direct, high-speed communication cable connecting your gut to your brain. That's the vagus nerve—the longest cranial nerve in your body and the main highway through which these two vital organs communicate. This nerve sends signals back and forth constantly, with about 80% of the messages traveling FROM your gut TO your brain. </p>
+                <div class="highlight-box">
+                    <h3 style="margin-bottom: 15px; font-size: 1.3rem;">💡 Key Insight</h3>
+                    <p>Your gut contains over 500 million neurons—more than your spinal cord! This "enteric nervous system" produces many of the same neurotransmitters as your brain, including 90% of your body's serotonin (the "happiness hormone").</p>
+                </div>
+                <div class="practitioner-voice"><strong>Autumn's Clinical Insight:</strong> "I often encourage my clients to think of their gut as a vibrant garden. When we give it the right 'soil' and 'nutrients'—like fiber and diverse plant foods—it grows healthy bacteria that send wonderful, calming signals up to the brain. But when it's constantly exposed to things that damage it, like chronic stress or ultra-processed foods, weeds can take over, and the signals become inflamed and anxious. This isn't just a metaphor; it's biochemistry."
+                </div>
+            </section>
+            <section class="activity-section">
+                <h2 class="activity-title">🔬 Interactive Activity: Explore the Connection</h2>
+                <p class="activity-instruction">Click on the brain, gut, and vagus nerve to discover how they communicate</p>
+                <div class="progress-container">
+                    <div class="progress-label"><span>Lesson Progress</span><span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+                <div class="interaction-counter"><span id="interactionCount">0</span> of 3 elements explored
+                </div>
+                <div class="interactive-diagram">
+                    <div class="diagram-container">
+                        <div class="brain-element" onclick="showBrainInfo()" id="brainElement">
+                            🧠 The Brain
+</div>
+                        <div class="vagus-nerve" onclick="showVagusInfo()" id="vagusElement">
+                            Vagus Nerve Highway
+</div>
+                        <div class="signal-dots">
+                            <div class="signal-dot"></div>
+                            <div class="signal-dot"></div>
+                            <div class="signal-dot"></div>
+                            <div class="signal-dot"></div>
+                            <div class="signal-dot"></div>
+                        </div>
+                        <div class="gut-element" onclick="showGutInfo()" id="gutElement">
+                            🌱 The Gut
+</div>
+                        <div class="info-popup brain-info" id="brainInfo">
+                            <h4 style="color: #2c3e50; margin-bottom: 10px;">🧠 The Brain</h4>
+                            <p style="font-size: 0.95rem; color: #7f8c8d;">Receives 80% of vagus nerve signals from the gut. Processes emotions, stress, and mood based on gut health signals.</p>
+                            <ul style="font-size: 0.85rem; color: #7f8c8d; margin-top: 10px; padding-left: 15px;">
+                                <li>Interprets gut bacteria messages</li>
+                                <li>Responds to inflammation signals</li>
+                                <li>Regulates stress response</li>
+                                <li>Controls mood and anxiety levels</li>
+                            </ul>
+                        </div>
+                        <div class="info-popup gut-info" id="gutInfo">
+                            <h4 style="color: #2c3e50; margin-bottom: 10px;">🌱 The Gut</h4>
+                            <p style="font-size: 0.95rem; color: #7f8c8d;">Home to 500+ million neurons and trillions of bacteria that produce neurotransmitters affecting mood.</p>
+                            <ul style="font-size: 0.85rem; color: #7f8c8d; margin-top: 10px; padding-left: 15px;">
+                                <li>Produces 90% of body's serotonin</li>
+                                <li>Houses 70% of immune system</li>
+                                <li>Sends constant signals to brain</li>
+                                <li>Responds to stress and diet</li>
+                            </ul>
+                        </div>
+                        <div class="info-popup vagus-info" id="vagusInfo">
+                            <h4 style="color: #2c3e50; margin-bottom: 10px;">🛤️ Vagus Nerve</h4>
+                            <p style="font-size: 0.95rem; color: #7f8c8d;">The longest cranial nerve, creating a direct communication highway between gut and brain.</p>
+                            <ul style="font-size: 0.85rem; color: #7f8c8d; margin-top: 10px; padding-left: 15px;">
+                                <li>Carries 80% of signals gut → brain</li>
+                                <li>Activates with deep breathing</li>
+                                <li>Reduces inflammation when healthy</li>
+                                <li>Key to gut-brain communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="key-points">
+                    <h3>🎯 Key Takeaways for Your Mental Wellness</h3>
+                    <ul>
+                        <li>
+                            <strong>Your gut directly influences your mood:</strong> Healthy gut bacteria produce calming neurotransmitters, while imbalanced bacteria can trigger anxiety and depression.
+                        </li>
+                        <li>
+                            <strong>Stress affects gut health:</strong> Chronic stress damages the gut lining and disrupts healthy bacteria, creating a vicious cycle.
+                        </li>
+                        <li>
+                            <strong>Food is medicine:</strong> What you eat directly impacts the messages your gut sends to your brain within hours.
+                        </li>
+                        <li>
+                            <strong>The connection is bidirectional:</strong> Your thoughts and emotions also influence gut health through the vagus nerve.
+                        </li>
+                        <li>
+                            <strong>You have control:</strong> Simple daily choices can strengthen this connection and improve both gut and mental health.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">🌟 What This Means for You</h2>
+                <div style="background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%); padding: 25px; border-radius: 15px; margin: 20px 0; border-left: 5px solid #3498db;">
+                    <p style="font-size: 1.1rem; color: #2c3e50; line-height: 1.7;">
+                    Understanding your gut-brain connection empowers you to take concrete steps toward better mental health. When you nourish your gut with fiber-rich foods, manage stress effectively, and prioritize sleep, you're directly supporting your brain's ability to regulate mood, reduce anxiety, and maintain emotional balance. </p>
+                </div>
+            </section>
+            <div class="next-steps">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Ready to Put This Into Practice?</h3>
+                <p style="color: #7f8c8d; margin-bottom: 25px;">
+                In the next module, we'll explore specific, science-backed strategies to optimize your gut-brain connection for better mental health. </p>
+            </div>
+        </div>
+        <script>
+        let progress = 0;
+        let interactionsCompleted = 0;
+        const requiredInteractions = 3;
+        const elementsClicked = new Set();
+
+        function updateProgress(increment) {
+            progress = Math.min(progress + increment, 100);
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressPercent').textContent = Math.round(progress) + '%';
+        }
+
+        function updateInteractionCount() {
+            document.getElementById('interactionCount').textContent = interactionsCompleted;
+        }
+
+        function showBrainInfo() {
+            hideAllPopups();
+            const popup = document.getElementById('brainInfo');
+            popup.classList.add('active');
+            
+            if (!elementsClicked.has('brain')) {
+                elementsClicked.add('brain');
+                interactionsCompleted++;
+                updateInteractionCount();
+                updateProgress(33.33);
+            }
+        }
+
+        function showGutInfo() {
+            hideAllPopups();
+            const popup = document.getElementById('gutInfo');
+            popup.classList.add('active');
+            
+            if (!elementsClicked.has('gut')) {
+                elementsClicked.add('gut');
+                interactionsCompleted++;
+                updateInteractionCount();
+                updateProgress(33.33);
+            }
+        }
+
+        function showVagusInfo() {
+            hideAllPopups();
+            const popup = document.getElementById('vagusInfo');
+            popup.classList.add('active');
+            
+            if (!elementsClicked.has('vagus')) {
+                elementsClicked.add('vagus');
+                interactionsCompleted++;
+                updateInteractionCount();
+                updateProgress(33.34);
+            }
+        }
+
+        function hideAllPopups() {
+            document.getElementById('brainInfo').classList.remove('active');
+            document.getElementById('gutInfo').classList.remove('active');
+            document.getElementById('vagusInfo').classList.remove('active');
+        }
+
+        function completeLesson() {
+            if (interactionsCompleted >= requiredInteractions) {
+                setTimeout(() => {
+                    alert('🎉 Congratulations! You\'ve completed Lesson 2 with 100% progress. Your understanding of the gut-brain connection will help you make more informed decisions about your mental wellness.');
+                }, 300);
+            } else {
+                alert('Please explore all three elements in the interactive diagram before proceeding to the next module.');
+            }
+        }
+
+        // Initialize progress on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgress(0);
+            updateInteractionCount();
+        });
+
+        // Close popups when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.brain-element') && 
+                !event.target.closest('.gut-element') && 
+                !event.target.closest('.vagus-nerve') && 
+                !event.target.closest('.info-popup')) {
+                hideAllPopups();
+            }
+        });
+    </script>
+    </body>
+</html>

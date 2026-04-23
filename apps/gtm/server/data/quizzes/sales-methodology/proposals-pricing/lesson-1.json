@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "The Purpose of a Proposal Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the 'Champion Test' for a proposal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Does the proposal look professional and use the company's brand colors?"
+                },
+                {
+                    "id": "b",
+                    "text": "Can a lawyer review the proposal without finding any liability issues?"
+                },
+                {
+                    "id": "c",
+                    "text": "Could someone who was NOT on the sales call read it and understand exactly why they should buy?"
+                },
+                {
+                    "id": "d",
+                    "text": "Is the proposal shorter than 2 pages?"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A proposal must be a standalone selling document. Your 'Champion' needs to use it to sell your solution to bosses or committees who never spoke to you."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between a 'Price Quote' and a 'Proposal' as defined in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A price quote is for products; a proposal is for services."
+                },
+                {
+                    "id": "b",
+                    "text": "A price quote is just a number; a proposal provides the context (problem, solution, ROI) that makes the number make sense."
+                },
+                {
+                    "id": "c",
+                    "text": "A proposal includes a contract signature line, while a quote does not."
+                },
+                {
+                    "id": "d",
+                    "text": "A proposal is always sent via PDF, while a quote is sent via email body."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Context is key. Without the problem and solution context, a price is just a cost. The proposal frames the price as an investment in a specific outcome."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'The Feature Dump' listed as a common failure mode for technical founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because features are boring to read about."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it lists things the prospect didn't ask for, adding complexity instead of proving value."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it makes the proposal too long."
+                },
+                {
+                    "id": "d",
+                    "text": "Because competitors might steal the feature ideas."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founders often confuse 'more features' with 'more value.' To a buyer, unrequested features look like complexity, risk, and waste. Only list features that solve their specific pain."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should the price/investment be presented in a proposal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "On the very first page so they know if they can afford it."
+                },
+                {
+                    "id": "b",
+                    "text": "Only after the value (problem, solution, evidence) has been established."
+                },
+                {
+                    "id": "c",
+                    "text": "It shouldn't be in the proposal; it should be in a separate email."
+                },
+                {
+                    "id": "d",
+                    "text": "In the email subject line."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Value must precede price. If they see the cost before they understand the ROI, they enter 'budget defense mode' immediately."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the specific problem with ending a proposal with 'Let me know if you have questions'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It sounds too desperate."
+                },
+                {
+                    "id": "b",
+                    "text": "It places the burden of action on the prospect and invites 'ghosting'."
+                },
+                {
+                    "id": "c",
+                    "text": "It implies you didn't explain things clearly."
+                },
+                {
+                    "id": "d",
+                    "text": "It is grammatically incorrect."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You must own the next step. Giving specific times for follow-up keeps the momentum on your side and removes friction for the prospect."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think about the last proposal or price quote you sent. If you applied the 'Champion Test' right now, what is the ONE specific question a stranger would fail to answer just by reading it?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies a specific gap in their past proposals (e.g., 'They wouldn't know the ROI' or 'They wouldn't know why me'). Give feedback on how to bridge that specific gap in their next proposal."
+        }
+    ]
+}

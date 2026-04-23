@@ -1,0 +1,141 @@
+{
+  "lessonId": "3",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Apollo y Herramientas de Enriquecimiento de Datos",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito principal del enriquecimiento de datos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hacer que tu perfil de LinkedIn se vea mejor"
+        },
+        {
+          "id": "b",
+          "text": "Convertir la identidad de un prospecto (Nombre/Empresa) en información de contacto (Correo/Teléfono)"
+        },
+        {
+          "id": "c",
+          "text": "Aumentar el precio de tu producto"
+        },
+        {
+          "id": "d",
+          "text": "Automatizar las características de tu producto"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El enriquecimiento cierra la brecha entre ver quién es alguien y tener una forma de contactarlos directamente."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la tasa de 'Rebote Permanente' aceptable para un dominio de correo frío saludable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "<2%"
+        },
+        {
+          "id": "b",
+          "text": "<10%"
+        },
+        {
+          "id": "c",
+          "text": "No importa"
+        },
+        {
+          "id": "d",
+          "text": "<20%"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Una tasa de rebote permanente superior al 2% señala a los ISPs como Google y Microsoft que estás enviando spam. Mantenerla baja es crítico para la salud del dominio."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuándo deberías usar una herramienta como Clay en lugar de Apollo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para la construcción masiva de listas de 1,000+ prospectos"
+        },
+        {
+          "id": "b",
+          "text": "Cuando necesitas investigación profunda impulsada por IA para prospectos de 'Cliente Soñado' de alto valor"
+        },
+        {
+          "id": "c",
+          "text": "Si quieres la solución más barata posible"
+        },
+        {
+          "id": "d",
+          "text": "Para verificar direcciones de correo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Clay es una herramienta de investigación de alto nivel utilizada para la hiperpersonalización. Aunque más costosa, proporciona una profundidad que el enfoque de base de datos de Apollo no puede igualar."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué es una 'Señal Tecnográfica' en la prospección?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La geografía donde está ubicada la empresa"
+        },
+        {
+          "id": "b",
+          "text": "Datos sobre la salud financiera de la empresa"
+        },
+        {
+          "id": "c",
+          "text": "Información sobre el software y la tecnología que una empresa actualmente usa"
+        },
+        {
+          "id": "d",
+          "text": "El título del trabajo de la persona a la que te diriges"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los tecnográficos te dicen qué hay en su stack. Por ejemplo, si vendes una aplicación de Shopify, apuntar a empresas que ya usan Shopify es una señal tecnográfica."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué es obligatoria la 'Verificación' (usando una herramienta como MillionVerifier)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque las bases de datos de enriquecimiento como Apollo siempre tienen datos 100% precisos"
+        },
+        {
+          "id": "b",
+          "text": "Para proteger la reputación de tu dominio previniendo rebotes permanentes"
+        },
+        {
+          "id": "c",
+          "text": "Para encontrar más prospectos"
+        },
+        {
+          "id": "d",
+          "text": "Porque es un requisito legal en todos los países"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Incluso las mejores bases de datos tienen un 10-20% de datos desactualizados. Las herramientas de verificación proporcionan una verificación en tiempo real para asegurar que la bandeja de entrada aún exista antes de hacer clic en enviar."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Elige tu herramienta de enriquecimiento principal (Apollo, Clay o similar) y explica por qué se ajusta a tu presupuesto y tamaño de lista de cuentas objetivo. Si descubres una tasa de rebote del 10% en una nueva lista, ¿cuál es tu plan de acción inmediato?",
+      "minLength": 100,
+      "promptForAI": "Evalúa la elección de herramienta según el contexto. Apollo es excelente para volumen/SaaS; Clay para alto valor/Consultoría. La respuesta a una tasa de rebote del 10% debe ser 'DETENER, rehacer la verificación e identificar la fuente desactualizada.'"
+    }
+  ]
+}

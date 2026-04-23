@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does a negative score on the Dietary Inflammatory Index (DII) indicate?",
+            "options": [
+                { "id": "opt1", "text": "A harmful, pro-inflammatory dietary pattern" },
+                { "id": "opt2", "text": "A protective, anti-inflammatory dietary pattern" },
+                { "id": "opt3", "text": "That you are not eating enough food" },
+                { "id": "opt4", "text": "That the assessment was not completed correctly" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "On the DII, negative scores indicate an anti-inflammatory diet (protective) while positive scores indicate a pro-inflammatory diet (harmful). Scores range from about -8.87 to +7.98, with the average American diet scoring +1 to +2 (leaning pro-inflammatory)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the Mahdavi et al. 2024 study (n=3,501), what was the increase in anxiety scores for every one-unit increase in DII score?",
+            "options": [
+                { "id": "opt1", "text": "+1.25 points" },
+                { "id": "opt2", "text": "+3.02 points" },
+                { "id": "opt3", "text": "+4.26 points" },
+                { "id": "opt4", "text": "+7.50 points" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Mahdavi et al. (2024) found that for every one-unit increase in DII score, participants showed +4.26 points in anxiety, along with +3.55 points in perceived stress and +3.02 points in depression on standardized psychological scales. These are meaningful effect sizes that can represent the difference between subclinical symptoms and diagnosable distress."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does the inflammatory cytokine IL-6 contribute to depression?",
+            "options": [
+                { "id": "opt1", "text": "It increases serotonin production too quickly, causing mood instability" },
+                { "id": "opt2", "text": "It directly destroys dopamine receptors in the brain" },
+                { "id": "opt3", "text": "It diverts tryptophan away from serotonin production toward the pro-inflammatory kynurenine pathway" },
+                { "id": "opt4", "text": "It prevents the body from absorbing any food nutrients" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "IL-6, elevated by high-sugar and high-fat diets, reduces serotonin availability by diverting its precursor (tryptophan) away from serotonin production and toward the pro-inflammatory kynurenine pathway. This represents a double hit — reducing serotonin while simultaneously producing neurotoxic metabolites."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does a pro-inflammatory diet create a self-reinforcing cycle that is difficult to break?",
+            "options": [
+                { "id": "opt1", "text": "Pro-inflammatory foods are addictive and contain chemicals similar to drugs" },
+                { "id": "opt2", "text": "Elevated inflammatory cytokines increase cravings for the high-sugar, high-fat foods that drive more inflammation" },
+                { "id": "opt3", "text": "Once you start eating inflammatory foods, your taste buds permanently change" },
+                { "id": "opt4", "text": "Grocery stores only stock pro-inflammatory foods" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Inflammation itself changes eating behavior. Elevated cytokines increase cravings for high-sugar, high-fat foods — the very foods that drive more inflammation. This creates a feedback loop: pro-inflammatory diet leads to increased cytokines, which leads to brain changes, which leads to cravings for inflammatory foods, which worsens the diet further."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach for shifting your DII score toward anti-inflammatory according to the 80/20 principle?",
+            "options": [
+                { "id": "opt1", "text": "Eliminate all pro-inflammatory foods immediately and permanently" },
+                { "id": "opt2", "text": "Only eat raw fruits and vegetables" },
+                { "id": "opt3", "text": "Focus on adding anti-inflammatory foods while aiming for 80% healthy choices, leaving 20% for flexibility" },
+                { "id": "opt4", "text": "Take anti-inflammatory supplements instead of changing your diet" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 80/20 approach means that when approximately 80% of your dietary choices are anti-inflammatory, the overall inflammatory load drops significantly. This leaves room for flexibility without guilt. Research shows that adding anti-inflammatory foods is as impactful as removing pro-inflammatory ones — shifting the DII even 1-2 points through additions alone can meaningfully reduce stress and anxiety."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "4",
+    "title": "Anti-Inflammatory Eating and the DII - Quiz"
+}

@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of mood monitoring in CBT?",
+            "options": [
+                {"id": "opt1", "text": "To prove that your mood is always bad and nothing helps"},
+                {"id": "opt2", "text": "To identify patterns, triggers, and effective coping strategies by tracking mood over time"},
+                {"id": "opt3", "text": "To compete with others to see who has the worst mood"},
+                {"id": "opt4", "text": "To vent emotions without examining them"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Mood monitoring creates objective data that reveals patterns you might not notice otherwise: 'My anxiety is always worse in the morning,' 'Social contact improves my mood,' 'I feel better on days I exercise.' This information guides treatment and shows you what actually helps."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is it important to track mood at the same time(s) each day?",
+            "options": [
+                {"id": "opt1", "text": "Because mood never changes throughout the day"},
+                {"id": "opt2", "text": "To create consistent data that reveals patterns rather than random snapshots"},
+                {"id": "opt3", "text": "Because tracking at different times is too complicated"},
+                {"id": "opt4", "text": "To make the process feel more rigid and disciplined"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. If you only track mood when you remember (usually when it's intense), you get a distorted picture. Consistent timing (morning, afternoon, evening) shows you the full range of mood variation and helps identify patterns (time of day, after certain activities, etc.)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What additional information is helpful to track alongside mood ratings?",
+            "options": [
+                {"id": "opt1", "text": "Only the mood number — context doesn't matter"},
+                {"id": "opt2", "text": "Activities, thoughts, physical symptoms, and sleep quality"},
+                {"id": "opt3", "text": "Other people's opinions about your mood"},
+                {"id": "opt4", "text": "Astrological information and weather patterns"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Context helps you understand what drives mood changes: 'Anxiety was 80/100 after two cups of coffee and poor sleep,' 'Mood improved after talking to a friend,' 'Negative thought: I'm a failure.' This turns mood monitoring into a diagnostic tool that guides intervention."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How can mood monitoring help challenge negative thoughts?",
+            "options": [
+                {"id": "opt1", "text": "It can't — mood monitoring and thought work are separate"},
+                {"id": "opt2", "text": "Data showing mood variability contradicts thoughts like 'I always feel terrible' or 'Nothing helps'"},
+                {"id": "opt3", "text": "Mood monitoring makes negative thoughts worse by focusing on them"},
+                {"id": "opt4", "text": "You should stop mood monitoring once you identify a negative thought"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. When you think 'I'm always depressed,' mood tracking might show your mood ranges from 40-70/100, with higher scores after certain activities. This evidence directly contradicts the all-or-nothing thought and shows you have more control than you believed."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "If you tracked your mood for the next week (0-100, three times daily), what patterns do you think you might discover? What factors (sleep, exercise, social contact, thoughts) do you predict would correlate with better or worse mood?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "17",
+    "title": "Mood Monitoring - Quiz"
+}

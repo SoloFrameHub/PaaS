@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the three dimensions of burnout as defined by the World Health Organization?",
+            "options": [
+                { "id": "opt1", "text": "Emotional exhaustion, cynicism/mental distance, and reduced professional efficacy" },
+                { "id": "opt2", "text": "Sadness, anxiety, and fatigue" },
+                { "id": "opt3", "text": "Insomnia, irritability, and weight loss" },
+                { "id": "opt4", "text": "Procrastination, perfectionism, and people-pleasing" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "The WHO (ICD-11) defines burnout as an occupational phenomenon with three dimensions: emotional exhaustion (feeling completely drained), cynicism/mental distance (feeling disconnected from or negative about your work), and reduced professional efficacy (feeling ineffective or incompetent)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the key difference between normal stress and chronic stress?",
+            "options": [
+                { "id": "opt1", "text": "Normal stress is imagined; chronic stress is real" },
+                { "id": "opt2", "text": "Normal stress is short-term and resolves with rest; chronic stress persists and depletes over time" },
+                { "id": "opt3", "text": "Chronic stress only affects your emotions while normal stress affects your body" },
+                { "id": "opt4", "text": "There is no real difference between them" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Normal (acute) stress is short-term, tied to a specific event, and resolves when the situation passes or when you rest. Chronic stress is what happens when demands persist without enough recovery — your stress response stays on at a low simmer that never turns off."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does the lesson say that loving your job does NOT protect you from burnout?",
+            "options": [
+                { "id": "opt1", "text": "Because people who love their jobs work less hard" },
+                { "id": "opt2", "text": "Because passion can increase burnout risk — you are more likely to overextend, blur boundaries, and ignore warning signs" },
+                { "id": "opt3", "text": "Because burnout is caused exclusively by bad management" },
+                { "id": "opt4", "text": "Because job satisfaction has no connection to stress levels" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Passion can actually increase burnout risk. When you deeply care about your work, you are more likely to overextend yourself, blur boundaries, and ignore warning signs. Loving your work does not protect you from unsustainable conditions."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the burnout spectrum, what characterizes the 'Overextended' stage?",
+            "options": [
+                { "id": "opt1", "text": "Complete emotional numbness and inability to function" },
+                { "id": "opt2", "text": "High energy, involved, and feeling challenged but not overwhelmed" },
+                { "id": "opt3", "text": "High exhaustion but still engaged — the warning zone where intervention makes the biggest difference" },
+                { "id": "opt4", "text": "Going through the motions without caring about outcomes" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Overextended stage is characterized by high exhaustion but continued engagement — it is the warning zone. You are working too hard, sleeping too little, and starting to feel the strain. You still care, but the cost is growing. This is where intervention makes the biggest difference."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is burnout described as a systemic issue rather than a personal failure?",
+            "options": [
+                { "id": "opt1", "text": "Because burnout only happens in poorly managed companies" },
+                { "id": "opt2", "text": "Because individual choices play no role in burnout at all" },
+                { "id": "opt3", "text": "Because burnout results from a mismatch between demands and resources, shaped by workload, culture, fairness, and control" },
+                { "id": "opt4", "text": "Because only certain personality types experience burnout" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Burnout is not a personal weakness or character flaw. It is a response to chronic demands exceeding resources, shaped by systemic factors including workload, workplace culture, fairness, control over work, value conflicts, and community dynamics. It often strikes the most dedicated and hardworking people."
+        }
+    ],
+    "sectionId": "stress-resilience",
+    "courseId": "stress-burnout",
+    "lessonId": "1",
+    "title": "Stress vs. Burnout: Recognizing the Signs - Quiz"
+}

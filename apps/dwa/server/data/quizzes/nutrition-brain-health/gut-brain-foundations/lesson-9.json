@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the methylation cycle's primary output that is essential for neurotransmitter synthesis?",
+            "options": [
+                { "id": "opt1", "text": "Homocysteine" },
+                { "id": "opt2", "text": "SAMe (S-adenosylmethionine) — the body's universal methyl donor" },
+                { "id": "opt3", "text": "Cholesterol" },
+                { "id": "opt4", "text": "Glucose" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The methylation cycle produces SAMe (S-adenosylmethionine), which is the body's universal methyl donor. SAMe is essential for hundreds of reactions including neurotransmitter production, gene expression regulation, detoxification, and myelin maintenance. When the cycle stalls, SAMe levels drop and brain chemistry suffers."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does elevated homocysteine indicate, and why is it concerning for mental health?",
+            "options": [
+                { "id": "opt1", "text": "It indicates excellent methylation function and is a sign of good health" },
+                { "id": "opt2", "text": "It indicates a healthy surplus of B vitamins in the body" },
+                { "id": "opt3", "text": "It is a marker of impaired methylation and is directly neurotoxic, promoting oxidative stress and inflammation" },
+                { "id": "opt4", "text": "It indicates too much physical exercise" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Elevated homocysteine is both a marker of impaired methylation and a potential contributor to depression through direct mechanisms. It is neurotoxic at high levels, promotes oxidative stress and inflammation, damages blood vessels (including in the brain), and impairs the blood-brain barrier. People with depression consistently have higher homocysteine levels."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the MTHFR C677T TT genotype and how common is it?",
+            "options": [
+                { "id": "opt1", "text": "A rare genetic mutation found in less than 1% of people that causes guaranteed depression" },
+                { "id": "opt2", "text": "A common variant (about 10-15% of the population) that reduces the ability to convert folate to its active form by approximately 70%" },
+                { "id": "opt3", "text": "A genetic variant that makes people immune to all mental health conditions" },
+                { "id": "opt4", "text": "A genetic variant that only affects people over the age of 70" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The MTHFR C677T TT genotype (two copies of the variant) is found in about 10-15% of the population and reduces MTHFR enzyme activity by approximately 70%. This means a significant reduction in the ability to convert folate to its active form (5-MTHF). It is associated with about 36% increased risk of depression, but does not guarantee it — adequate folate intake significantly modifies this risk."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is L-methylfolate (5-MTHF) often preferred over standard folic acid for supplementation?",
+            "options": [
+                { "id": "opt1", "text": "It is cheaper to manufacture than folic acid" },
+                { "id": "opt2", "text": "It is the active form of folate that bypasses the MTHFR enzyme entirely, working regardless of genetic status" },
+                { "id": "opt3", "text": "It contains additional vitamins that folic acid lacks" },
+                { "id": "opt4", "text": "It tastes better than folic acid supplements" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "L-methylfolate (5-MTHF) is the already-active form of folate that bypasses the MTHFR enzyme entirely. This means it works regardless of whether someone has MTHFR genetic variants that reduce enzyme activity. It has shown significant antidepressant augmentation effects in patients who failed to respond to SSRIs alone."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Up to what percentage of people with major depression have been found to have low serum folate levels?",
+            "options": [
+                { "id": "opt1", "text": "About 5%" },
+                { "id": "opt2", "text": "About 10%" },
+                { "id": "opt3", "text": "About 30%" },
+                { "id": "opt4", "text": "About 75%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Up to 30% of people with major depression have low serum folate levels. Low folate is also associated with poorer response to antidepressant medication. This suggests that nutritional assessment, particularly for B vitamins, should be an important part of depression treatment."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "9",
+    "title": "B Vitamins, Methylation, and Mood - Quiz"
+}

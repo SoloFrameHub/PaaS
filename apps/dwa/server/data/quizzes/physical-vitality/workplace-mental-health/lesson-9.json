@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is workplace bullying, and how is it different from ordinary conflict?",
+            "options": [
+                {"id": "opt1", "text": "Workplace bullying is any disagreement with a coworker"},
+                {"id": "opt2", "text": "Workplace bullying is repeated, unwelcome, hostile behavior creating a harmful work environment — distinguished by power imbalance, pattern, intent/impact of harm, and lack of legitimate work purpose"},
+                {"id": "opt3", "text": "Workplace bullying only includes physical violence"},
+                {"id": "opt4", "text": "Workplace bullying is the same as constructive criticism"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Workplace bullying refers to repeated, unwelcome, hostile behavior that creates a harmful work environment. It's distinguished from normal conflict by: power imbalance, repeated pattern, intent or impact of harm, and lack of legitimate work purpose. Examples include verbal abuse, exclusion, sabotage, humiliation, and discriminatory treatment."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the mental health effects of workplace bullying and harassment?",
+            "options": [
+                {"id": "opt1", "text": "Bullying has no real mental health effects — it's just uncomfortable"},
+                {"id": "opt2", "text": "Bullying predicts anxiety, depression, burnout, PTSD, and suicidal ideation — the effects are severe and well-documented"},
+                {"id": "opt3", "text": "Bullying only affects people who are already mentally ill"},
+                {"id": "opt4", "text": "Bullying can be solved through individual resilience training"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research is unambiguous: workplace bullying predicts anxiety, depression, burnout, PTSD, and suicidal ideation. The relationship is dose-dependent (more frequent/severe harassment = worse outcomes). In healthcare workers, bullying is one of the strongest predictors of burnout. These are serious psychological harms, not just discomfort."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is workplace harassment NOT an individual coping or resilience issue?",
+            "options": [
+                {"id": "opt1", "text": "Because everyone experiences harassment the same way"},
+                {"id": "opt2", "text": "Because harassment is a structural and legal failure requiring organizational policy, leadership accountability, and legal frameworks — not individual skills"},
+                {"id": "opt3", "text": "Because harassment doesn't really harm people"},
+                {"id": "opt4", "text": "Because individuals should just ignore harassment"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Workplace harassment is a structural and legal failure — NOT a personal coping problem. No amount of resilience training, mindfulness, or 'thicker skin' will prevent the mental health harm from systematic abuse, discrimination, or hostile work environments. Effective response requires organizational policy, leadership accountability, and legal frameworks."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are appropriate escalation pathways for workplace harassment?",
+            "options": [
+                {"id": "opt1", "text": "Just try to ignore it and be more resilient"},
+                {"id": "opt2", "text": "Document incidents, report to HR, consult employment lawyer, access EAP for support, escalate to EEOC if needed, consider union representation"},
+                {"id": "opt3", "text": "Only tell your friends about it"},
+                {"id": "opt4", "text": "Harassment should never be reported"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Appropriate escalation pathways include: documenting all incidents, reporting to HR with written complaints, consulting an employment lawyer for legal options, accessing EAP for emotional support, filing EEOC charges for discrimination (within 180-300 days), using union or employee representative for advocacy, and documenting mental health impacts with occupational health. If the organization doesn't respond, external legal action or exit may be necessary."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "9",
+    "title": "Anti-Bullying and Harassment — Organizational Response - Quiz"
+}

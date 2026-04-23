@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does research show about the relationship between physical fitness and ADHD risk in children and adolescents?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "No relationship exists"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A dose-dependent relationship: higher physical fitness levels are associated with reduced risk of depression, anxiety, and ADHD diagnoses in a large Taiwanese national dataset study"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise worsens ADHD symptoms"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only medication works for ADHD"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A large national dataset study from Taiwan found a dose-dependent relationship between physical fitness levels and reduced risk of depression, anxiety, and ADHD diagnoses in children and adolescents. Higher fitness = lower risk. This suggests that regular movement may have protective effects for neurodevelopmental and mental health outcomes in youth."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does exercise acutely improve focus and attention (relevant for ADHD)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It doesn't — exercise impairs focus"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Even a single session of moderate exercise increases norepinephrine and dopamine (neurotransmitters involved in attention and focus), improving cognitive performance for hours afterward"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only stimulant medication improves ADHD focus"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise only helps physically, not cognitively"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise increases norepinephrine and dopamine — the same neurotransmitters targeted by ADHD medications (though via different mechanisms). Even a single 20-30 minute moderate-intensity session can improve focus, attention, and executive function for 2-4 hours afterward. This is why some people with ADHD exercise before work or school to enhance concentration."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended exercise approach for someone with ADHD who struggles with sustained routines?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Force yourself to follow a rigid 90-minute daily routine"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start ridiculously small (5-10 minutes), choose activities you find inherently rewarding, use timers and external cues, and consider morning exercise for daytime focus benefits"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Give up — exercise doesn't work with ADHD"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only team sports work"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "ADHD makes sustained routines and delayed gratification challenging. The key is to work WITH these traits: start with very short sessions (5-10 min), choose activities that provide immediate reward/novelty (dance, sports, outdoor adventure vs. treadmill), use timers and external cues (alarms, habit stacking), and consider morning exercise to boost focus for the day ahead. Rigid long routines often fail; flexible short bursts work better."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why might morning exercise be particularly beneficial for someone with ADHD?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Morning exercise has no special benefit"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Morning exercise increases dopamine and norepinephrine, improving focus and executive function for hours afterward — essentially priming the brain for concentration during work or school"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Evening exercise is better for ADHD"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Time of day doesn't matter"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Morning exercise provides a neurotransmitter boost (dopamine, norepinephrine) that enhances focus, attention, and executive function for 2-4 hours afterward. For someone with ADHD facing a day of work, school, or tasks requiring sustained attention, exercising first thing can 'prime' the brain for better cognitive performance. It's like a natural focus enhancer before the demands of the day."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is important to remember about exercise and ADHD?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise replaces the need for medication or therapy"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise is a helpful adjunct that can improve focus and reduce symptoms, but it doesn't replace professional ADHD treatment — it works best alongside medication, therapy, or behavioral strategies"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise has no role in ADHD management"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only children with ADHD benefit from exercise"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise is an evidence-based adjunct for ADHD — it improves focus, reduces hyperactivity, and enhances executive function. But it's not a replacement for professional ADHD treatment (medication, therapy, behavioral strategies, accommodations). It works best as part of a comprehensive treatment plan. Exercise + medication/therapy typically produces better outcomes than either alone."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "5",
+    "title": "ADHD and Movement-Based Focus Enhancement - Quiz"
+}

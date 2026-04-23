@@ -1,0 +1,60 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the difference between problem-focused coping and emotion-focused coping?",
+            "options": [
+                {"id": "opt1", "text": "Problem-focused coping is better than emotion-focused coping"},
+                {"id": "opt2", "text": "Problem-focused coping addresses the stressor directly (changeable stressors); emotion-focused coping manages your response (unchangeable stressors)"},
+                {"id": "opt3", "text": "Problem-focused coping is for physical stress; emotion-focused coping is for mental stress"},
+                {"id": "opt4", "text": "They are the same thing"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Problem-focused coping directly addresses the stressor (time management, negotiating workload, delegating, problem-solving) — most effective for changeable stressors. Emotion-focused coping manages your emotional response when you can't change the stressor (cognitive reframing, acceptance, mindfulness, seeking support) — most effective for unchangeable stressors. Adaptive coping matches strategy to stressor."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is behavioral activation, and why is it useful for workplace stress?",
+            "options": [
+                {"id": "opt1", "text": "Behavioral activation means working more hours"},
+                {"id": "opt2", "text": "Behavioral activation is deliberately engaging in avoided behaviors in small steps to counter stress-related avoidance and withdrawal — it helps break procrastination cycles"},
+                {"id": "opt3", "text": "Behavioral activation is only for people with depression"},
+                {"id": "opt4", "text": "Behavioral activation means avoiding difficult tasks"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Behavioral activation involves deliberately engaging in avoided behaviors in small, manageable steps. When stressed, people often avoid tasks (procrastination, withdrawal), which provides short-term relief but worsens stress long-term. Behavioral activation breaks this cycle: 'I'll work on the report for 20 minutes, then take a break.' It gathers evidence that contradicts avoidant thoughts."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you use problem-focused coping vs. emotion-focused coping?",
+            "options": [
+                {"id": "opt1", "text": "Always use problem-focused coping"},
+                {"id": "opt2", "text": "Use problem-focused coping for changeable stressors (things you can influence); emotion-focused coping for unchangeable stressors (things outside your control)"},
+                {"id": "opt3", "text": "Always use emotion-focused coping"},
+                {"id": "opt4", "text": "Never use emotion-focused coping"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Adaptive coping matches strategy to stressor controllability. Use problem-focused coping when you can change the stressor (negotiate deadline, organize workflow, ask for help). Use emotion-focused coping when you can't change it (organizational restructuring, waiting for decisions). Many workplace stressors are partially changeable — wisdom is knowing which aspects you can influence."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is self-compassion, and how does it relate to workplace stress?",
+            "options": [
+                {"id": "opt1", "text": "Self-compassion means making excuses for poor performance"},
+                {"id": "opt2", "text": "Self-compassion is treating yourself with kindness when struggling — acknowledging difficulty, normalizing the struggle, and offering yourself support rather than harsh self-criticism"},
+                {"id": "opt3", "text": "Self-compassion is the same as self-esteem"},
+                {"id": "opt4", "text": "Self-compassion doesn't help with stress"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Self-compassion involves treating yourself with the same kindness you'd offer a friend in the same situation. It has three components: (1) acknowledge the difficulty ('This is genuinely hard'), (2) normalize the struggle ('Anyone would find this stressful'), (3) offer yourself kindness ('I'm doing the best I can'). It counters harsh self-criticism that amplifies workplace stress."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "13",
+    "title": "Behavioral Coping and Activation Strategies - Quiz"
+}

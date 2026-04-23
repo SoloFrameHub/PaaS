@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the basic principle behind sleep restriction therapy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Sleep as much as possible to make up for lost sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Temporarily limit time in bed to match actual sleep time, building sleep pressure and consolidating fragmented sleep"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Eliminate all sleep for several days to reset"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only sleep on alternate nights"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep restriction temporarily limits time in bed to match actual sleep time. If you're sleeping only 5.5 hours but spending 8 hours in bed, you restrict to 5.5 hours. This builds powerful sleep pressure, consolidates fragmented sleep, and makes the bed a strong cue for sleep."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the absolute minimum time in bed allowed during sleep restriction therapy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "3 hours"
+                },
+                {
+                    "id": "opt2",
+                    "text": "4 hours"
+                },
+                {
+                    "id": "opt3",
+                    "text": "5 hours - never go below this regardless of average sleep time"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There is no minimum"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The absolute minimum time in bed is 5 hours—never go below this regardless of your average sleep time. This is a critical safety rule. Going below 5 hours can cause dangerous levels of daytime sleepiness and is not recommended even under professional supervision."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you ADD 15-30 minutes to your sleep window during sleep restriction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Whenever you feel like it"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When your weekly sleep efficiency reaches 90% or higher"
+                },
+                {
+                    "id": "opt3",
+                    "text": "After the first night"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only after 6 months"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Add 15-30 minutes to your sleep window when your weekly sleep efficiency reaches 90% or higher. This means you're sleeping well during your restricted window and are ready to gradually extend. If efficiency is 85-89%, keep the current window. Below 85%, you may need to reduce (but never below 5 hours)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you expect during the first 2-3 weeks of sleep restriction therapy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Immediate improvement with no discomfort"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Increased daytime sleepiness - this is expected and means the treatment is working"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Complete inability to function"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No change whatsoever"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Increased daytime sleepiness during weeks 1-3 is expected and means the treatment is working. You're building the sleep pressure needed to consolidate your sleep. This sleepiness is temporary—by month 3, daytime sleepiness returns to normal while sleep quality has improved."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Who should NOT self-administer sleep restriction therapy and should consult a healthcare provider first?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Anyone with occasional poor sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "People with untreated sleep apnea, bipolar disorder, epilepsy, or those who operate heavy machinery professionally"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people over age 65"
+                },
+                {
+                    "id": "opt4",
+                    "text": "People who drink coffee"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep restriction requires caution for certain groups: people with untreated sleep apnea, bipolar disorder (can trigger mania), epilepsy/seizure disorders, severe daytime sleepiness, and professional drivers or heavy machinery operators. These individuals should consult a healthcare provider before starting sleep restriction."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "4",
+    "title": "Sleep Restriction Basics - Quiz"
+}

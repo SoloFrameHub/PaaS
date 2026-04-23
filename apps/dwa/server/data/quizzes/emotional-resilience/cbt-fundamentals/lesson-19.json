@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "How does CBT conceptualize stress?",
+            "options": [
+                {"id": "opt1", "text": "Stress is entirely external — caused by events outside your control"},
+                {"id": "opt2", "text": "Stress results from the interaction between demands and your perceived ability to cope"},
+                {"id": "opt3", "text": "Stress is always harmful and should be eliminated completely"},
+                {"id": "opt4", "text": "Stress is a personality trait — some people are naturally stressed"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. CBT teaches that stress isn't just about the situation — it's about the gap between what's demanded and what you believe you can handle. Two people face the same deadline: one thinks 'I can manage this,' the other thinks 'This is impossible.' The thought creates different stress levels."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the two main pathways for reducing stress in CBT?",
+            "options": [
+                {"id": "opt1", "text": "Avoid all stressful situations and sleep more"},
+                {"id": "opt2", "text": "Change the situation (problem-solving) and change your response (cognitive/behavioral coping)"},
+                {"id": "opt3", "text": "Complain to others and wait for stress to pass"},
+                {"id": "opt4", "text": "Only focus on changing your thoughts — situations don't matter"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. If the situation can be changed (too many commitments → delegate or decline), use problem-solving. If it can't (illness, job loss), use cognitive restructuring and behavioral coping (acceptance, social support, self-care). Most stressful situations require both pathways."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is cognitive restructuring particularly helpful for stress management?",
+            "options": [
+                {"id": "opt1", "text": "Because it eliminates all stressful thoughts permanently"},
+                {"id": "opt2", "text": "Because it helps you distinguish between real threats and exaggerated worries, reducing unnecessary stress"},
+                {"id": "opt3", "text": "Because positive thinking makes stressful situations disappear"},
+                {"id": "opt4", "text": "Because you can ignore problems by changing how you think about them"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exactly. Much of stress comes from catastrophizing ('This will ruin everything'), mind-reading ('They think I'm incompetent'), or all-or-nothing thinking ('I must be perfect or I've failed'). Cognitive restructuring helps you separate realistic concerns from distorted amplifications."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What role does behavioral activation play in stress management?",
+            "options": [
+                {"id": "opt1", "text": "It encourages you to work harder and take on more commitments"},
+                {"id": "opt2", "text": "It helps you maintain valued activities and self-care even when stressed"},
+                {"id": "opt3", "text": "It teaches you to avoid all stressful activities"},
+                {"id": "opt4", "text": "Behavioral activation doesn't apply to stress management"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. When stressed, people often abandon exercise, social contact, hobbies — the very things that buffer against stress. Behavioral activation for stress means: 'Even though I'm overwhelmed, I'm going to walk for 20 minutes / call a friend / take a real lunch break.' These activities restore resources."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify a current source of stress. Is this a problem you can change (problem-solving) or one you need to accept and cope with (cognitive/behavioral)? What specific CBT skill would be most helpful for this stressor and why?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "19",
+    "title": "CBT for Stress Management - Quiz"
+}

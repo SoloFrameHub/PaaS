@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "3",
+    "lessonTitle": "The Inverted Pyramid Structure",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the Inverted Pyramid structure in AEO?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To build suspense and keep the user reading until the end."
+                },
+                {
+                    "id": "b",
+                    "text": "To hide important keywords from competitors."
+                },
+                {
+                    "id": "c",
+                    "text": "To put the most critical answer/information at the very top for AI models to easily find and cite."
+                },
+                {
+                    "id": "d",
+                    "text": "To make the page look like a traditional newspaper article."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "AI models read content from the top down and prioritize the beginning of a page or section. Putting the direct answer first increases the chances of being cited by AI assistants and featured in AI Overviews.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the 'First 50 Words' rule, what should your introduction contain?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A detailed biography of the author."
+                },
+                {
+                    "id": "b",
+                    "text": "A table of contents for the entire website."
+                },
+                {
+                    "id": "c",
+                    "text": "A direct, snippet-ready answer to the primary question of the page."
+                },
+                {
+                    "id": "d",
+                    "text": "A request for the user to sign up for your newsletter."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The first 50 words are the 'Mental Real Estate' AI models use to extract summaries. Providing a direct, concise answer here makes your content 'citable.'",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why are tables and lists significantly more likely to be cited by AI assistants?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they were invented by Google."
+                },
+                {
+                    "id": "b",
+                    "text": "Because they represent 'Structured Knowledge' that is easier for LLMs to parse and accurately recite."
+                },
+                {
+                    "id": "c",
+                    "text": "Because they take up more space on the screen."
+                },
+                {
+                    "id": "d",
+                    "text": "Because they contain more keywords."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Structured data like tables and lists are computationally easier for AI models to interpret than long blocks of narrative text. This 'ease of use' for the model results in higher citation rates.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In Q&A formatting, how should your H2 headers be structured?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "As vague, one-word titles."
+                },
+                {
+                    "id": "b",
+                    "text": "As the exact questions your ICP is likely to search for."
+                },
+                {
+                    "id": "c",
+                    "text": "As quotes from your customers."
+                },
+                {
+                    "id": "d",
+                    "text": "Headers should not be used at all."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Matching your headers to exact user queries creates a direct link between the user's intent and your content, making it easier for search engines and AI assistants to map your answer to their question.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of these is a 'Good' AEO introduction for a page about B2B pricing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Hey there! In this post, we're going to dive deep into everything about pricing."
+                },
+                {
+                    "id": "b",
+                    "text": "Pricing is a complex topic that many founders struggle with every single day."
+                },
+                {
+                    "id": "c",
+                    "text": "Our software costs $49/user/month, with a 20% discount for annual billing. There are no setup fees or hidden costs."
+                },
+                {
+                    "id": "d",
+                    "text": "Click here to see our full pricing table and schedule a discovery call with our sales team."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Option C is a direct answer that can be recited by an AI without needing further context or clicks. It is highly 'citable.'",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at one of your existing pieces of content. If an AI assistant read only the first two sentences to a prospect, would that prospect get the answer they need, or would they just hear an introduction to an answer? How would you rewrite those two sentences to be 'AI-First'?",
+            "promptHints": [
+                "Focus on the 'What' and 'How' immediately.",
+                "Remove all phrases like 'In this post' or 'We will cover'.",
+                "Try to include one concrete metric or fact in the answer."
+            ],
+            "minimumWords": 50,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "8-10 minutes",
+        "prerequisiteQuizzes": [
+            "2"
+        ],
+        "unlocks": [
+            "4"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "The Inverted Pyramid Structure - Quiz"
+}

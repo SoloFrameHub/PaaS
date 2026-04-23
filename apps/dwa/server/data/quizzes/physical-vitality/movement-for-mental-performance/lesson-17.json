@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for exercise as a sleep intervention, based on the 2025-2026 meta-analyses?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise has no effect on sleep quality"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG evidence — 2025 meta-analysis (81 RCTs, n=6,193) showed significant sleep quality improvements (MD = -1.77 PSQI); 2026 analysis found moderate-to-large effect (g = -0.65) for insomnia"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise worsens sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only medication works for sleep problems"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise has STRONG evidence as a non-pharmacological sleep intervention. A 2025 meta-analysis of 81 RCTs (n=6,193) reported significant PSQI score reductions (MD = -1.77), and a 2026 meta-analysis focusing on moderate-intensity exercise in adults with insomnia found a clinically meaningful moderate effect (Hedges' g = -0.65). This qualifies exercise as one of the most effective non-drug sleep interventions available."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the three key mechanisms by which exercise improves sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise only affects sleep through exhaustion"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Three mechanisms: (1) body temperature regulation (core temp drops 4-6 hours post-exercise, signaling sleep onset), (2) adenosine homeostasis (builds sleep pressure), (3) anxiety reduction + parasympathetic activation"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise has no known mechanisms for sleep improvement"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise works through placebo effect only"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Three converging mechanisms: (1) Body temperature regulation — exercise raises core temp, then 4-6 hours later it drops below baseline (rebound hypothermia), signaling sleep onset. (2) Adenosine homeostasis — exercise increases adenosine accumulation (sleep pressure) throughout the day. (3) Anxiety reduction + parasympathetic activation — exercise reduces cortisol and sympathetic activity, shifts to rest-and-digest mode. These work together to improve sleep onset, depth, and efficiency."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the optimal timing for exercise to maximize sleep benefits?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Vigorous exercise right before bed is ideal"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Late afternoon/early evening (4-7 PM) is ideal for most people — allows body temperature to drop at bedtime; morning also works for circadian alignment; avoid vigorous exercise within 1-2 hours of bed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise timing doesn't matter at all for sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only middle-of-the-night exercise improves sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Late afternoon/early evening (4-7 PM) is optimal for most people because body temperature drops 4-6 hours post-exercise, aligning with bedtime. Morning exercise works well for circadian alignment (light exposure + movement strengthens rhythm). Avoid vigorous exercise within 1-2 hours of bedtime — it elevates core temperature, heart rate, and cortisol, which can delay sleep onset. Gentle movement (yoga, stretching, slow walk) close to bedtime is fine."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which exercise modality showed the strongest evidence for older adults with insomnia in the research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only HIIT works for sleep in older adults"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Resistance training (strength training) showed particularly strong evidence for older adults (60+) with insomnia — outperformed aerobic in this population"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercise has no effect on sleep in older adults"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Older adults should never exercise"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson highlights that resistance training is especially effective for older adults with insomnia — it outperformed aerobic exercise in this population. Why: age-related sleep changes include reduced slow-wave (deep) sleep and more fragmented sleep; resistance training helps counteract this. Recommendation: 2-3 days/week resistance training + daily walking or yoga for optimal sleep benefit in older adults."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Based on your current sleep challenges and schedule, what's one change you could make to your exercise timing or type to improve your sleep? (Examples: switch from evening to afternoon exercise, add 10 minutes of evening yoga, go for a morning walk in sunlight, etc.)",
+            "minLength": 50,
+            "explanation": "This reflection applies the lesson's timing and modality recommendations to your situation. Consider: If you exercise late evening and struggle to fall asleep → shift to 4-7 PM or morning. If you have anxiety-related sleep issues → add gentle yoga/stretching 1-2 hours before bed (parasympathetic activation). If you're an older adult with insomnia → consider adding 2-3x/week resistance training. If you're sedentary and poor sleep → start with morning walks (light exposure + circadian alignment + adenosine building)."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "17",
+    "title": "Exercise for Sleep - Quiz"
+}

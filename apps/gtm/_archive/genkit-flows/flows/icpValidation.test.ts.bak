@@ -1,0 +1,83 @@
+import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { icpValidationFlow } from './icpValidation';
+import * as redisModule from '../../redis';
+
+// Mock dependencies
+vi.mock('../../redis', () => ({
+    getCache: vi.fn(),
+    setCache: vi.fn(),
+}));
+
+vi.mock('../config', () => ({
+    ai: {
+        defineFlow: (config: any, fn: any) => fn, // Simple pass-through
+        generate: vi.fn(),
+    },
+    gemini20Flash: 'mock-model',
+}));
+
+import { ai } from '../config';
+
+describe('icpValidationFlow Caching', () => {
+    const mockInput = {
+        industry: 'Tech',
+        companySize: 'Startup',
+        jobTitles: 'CTO',
+        painPoints: 'Bugs',
+        businessContext: 'SaaS',
+    };
+
+    const mockOutput = {
+        score: 85,
+        feedback: [],
+        generalAdvice: 'Good job',
+    };
+
+    beforeEach(() => {
+        vi.clearAllMocks();
+    });
+
+    it('should return cached result if available', async () => {
+        // Setup cache hit
+        (redisModule.getCache as any).mockResolvedValue(mockOutput);
+
+        const result = await icpValidationFlow(mockInput);
+
+        // Verify result matches cache
+        expect(result).toEqual(mockOutput);
+
+        // Verify cache was checked
+        expect(redisModule.getCache).toHaveBeenCalledTimes(1);
+        expect(redisModule.getCache).toHaveBeenCalledWith(expect.stringContaining('icp-validation'));
+
+        // Verify AI was NOT called
+        expect(ai.generate).not.toHaveBeenCalled();
+    });
+
+    it('should call AI and set cache on cache miss', async () => {
+        // Setup cache miss
+        (redisModule.getCache as any).mockResolvedValue(null);
+
+        // Setup AI response
+        (ai.generate as any).mockResolvedValue({ output: mockOutput });
+
+        const result = await icpValidationFlow(mockInput);
+
+        // Verify result matches AI output
+        expect(result).toEqual(mockOutput);
+
+        // Verify cache was checked
+        expect(redisModule.getCache).toHaveBeenCalledTimes(1);
+
+        // Verify AI WAS called
+        expect(ai.generate).toHaveBeenCalledTimes(1);
+
+        // Verify result was cached
+        expect(redisModule.setCache).toHaveBeenCalledTimes(1);
+        expect(redisModule.setCache).toHaveBeenCalledWith(
+            expect.stringContaining('icp-validation'),
+            mockOutput,
+            86400
+        );
+    });
+});

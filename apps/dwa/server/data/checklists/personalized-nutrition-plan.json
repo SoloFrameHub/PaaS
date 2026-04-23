@@ -1,0 +1,100 @@
+{
+  "id": "personalized-nutrition-plan",
+  "title": "Your Personalized Food-Mood Mastery Plan",
+  "description": "Synthesize everything you've learned across the Nutrition Track into a personalized, sustainable action plan. This is your roadmap for using food to support your mental health long-term.",
+  "instructions": "Reflect on what you've learned throughout this course and check off the strategies you commit to. Use the text fields to customize your plan. Revisit monthly to track progress and adjust.",
+  "items": [
+    {
+      "id": "dietary-pattern",
+      "label": "I will follow a primarily Mediterranean/anti-inflammatory dietary pattern",
+      "type": "checkbox",
+      "category": "Dietary Foundation"
+    },
+    {
+      "id": "upf-limit",
+      "label": "I will limit ultra-processed foods to occasional, not daily",
+      "type": "checkbox",
+      "category": "Dietary Foundation"
+    },
+    {
+      "id": "mindful-eating",
+      "label": "I will practice mindful eating at least one meal per day",
+      "type": "checkbox",
+      "category": "Eating Practices"
+    },
+    {
+      "id": "emotional-awareness",
+      "label": "I will check in with hunger/fullness cues before eating",
+      "type": "checkbox",
+      "category": "Eating Practices"
+    },
+    {
+      "id": "nutrient-testing",
+      "label": "I will request baseline nutrient testing from my provider (vitamin D, B12, iron, magnesium)",
+      "type": "checkbox",
+      "category": "Clinical Integration"
+    },
+    {
+      "id": "provider-conversation",
+      "label": "I will discuss nutritional psychiatry with my mental health provider",
+      "type": "checkbox",
+      "category": "Clinical Integration"
+    },
+    {
+      "id": "med-nutrient",
+      "label": "I have reviewed my medications for nutrient depletion risks",
+      "type": "checkbox",
+      "category": "Clinical Integration"
+    },
+    {
+      "id": "gut-health",
+      "label": "I will support my gut health through diet (fiber, fermented foods, plant diversity)",
+      "type": "checkbox",
+      "category": "Gut-Brain Support"
+    },
+    {
+      "id": "sustainability",
+      "label": "I will consider the environmental impact of my food choices",
+      "type": "checkbox",
+      "category": "Sustainability"
+    },
+    {
+      "id": "cultural-respect",
+      "label": "I will honor my cultural food traditions while making evidence-based improvements",
+      "type": "checkbox",
+      "category": "Sustainability"
+    },
+    {
+      "id": "gradual-change",
+      "label": "I will make changes gradually — progress over perfection",
+      "type": "checkbox",
+      "category": "Sustainability"
+    },
+    {
+      "id": "ed-awareness",
+      "label": "I am aware that obsessive focus on \"perfect\" eating can be harmful and will seek help if needed",
+      "type": "checkbox",
+      "category": "Safety"
+    },
+    {
+      "id": "top-priority",
+      "label": "My #1 nutrition priority for the next month:",
+      "type": "text",
+      "placeholder": "e.g., Add more fermented foods and reduce artificial sweeteners"
+    },
+    {
+      "id": "support-person",
+      "label": "Person I will share this plan with for accountability:",
+      "type": "text",
+      "placeholder": "e.g., My partner, my dietitian, my therapist"
+    },
+    {
+      "id": "commitment",
+      "label": "Rate your commitment to this plan",
+      "type": "rating",
+      "min": 0,
+      "max": 10
+    }
+  ],
+  "disclaimer": "This plan is for educational purposes only. Nutritional strategies should complement, not replace, professional mental health treatment. If you develop rigid or obsessive eating patterns, please seek support from a healthcare provider. If you are in crisis, call or text 988."
+}

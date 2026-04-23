@@ -1,0 +1,91 @@
+{
+  "lessonId": "6",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Ratio Audiencia-Ingresos",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué plataforma social produce consistentemente el mayor Ingreso Por Seguidor (IPS) para negocios de creadores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Instagram -- porque el contenido visual impulsa más comportamiento de compra"
+        },
+        {
+          "id": "b",
+          "text": "TikTok -- porque el algoritmo proporciona el mayor alcance orgánico"
+        },
+        {
+          "id": "c",
+          "text": "Lista de email -- produciendo 5-20x más ingresos por contacto que cualquier plataforma social"
+        },
+        {
+          "id": "d",
+          "text": "YouTube -- porque el contenido largo construye la confianza más profunda"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El email produce consistentemente 5-20x más ingresos por contacto que cualquier plataforma social. Los referentes muestran el email en $2.00-10.00 USD de IPS anual (con los mejores en $20+), comparado con LinkedIn en $0.50-2.00, YouTube en $0.20-1.00 y TikTok en solo $0.01-0.10. Por eso todo creador serio construye una lista de email sin importar qué plataformas use."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "El marco de Puntaje de Calidad de Audiencia (PCA) mide 5 dimensiones. Un creador obtiene 2.5 en su PCA. ¿Qué indica esto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Su audiencia no es comercialmente viable y necesitan atraer una audiencia completamente diferente"
+        },
+        {
+          "id": "b",
+          "text": "Tienen potencial comercial emergente -- la audiencia necesita más educación y nutrición antes de comprar ofertas premium"
+        },
+        {
+          "id": "c",
+          "text": "Tienen una audiencia comercial fuerte y el problema son sus ofertas o proceso de ventas"
+        },
+        {
+          "id": "d",
+          "text": "Tienen una audiencia élite y deberían optimizar su escalera de ascenso de inmediato"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un PCA de 2.0-3.0 indica potencial comercial emergente. La audiencia tiene algunas de las características correctas pero necesita más educación y nutrición antes de comprar ofertas premium. Esto es diferente de un PCA de 3.0-4.0 (audiencia comercial fuerte donde las ofertas/proceso de ventas son el problema) o por debajo de 2.0 (no comercialmente viable)."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Un estudio de ConvertKit encontró que creadores con menos de 1,000 suscriptores enfocados en engagement ganaron $4.82 USD por suscriptor anualmente, mientras que creadores con 10,000-50,000 suscriptores enfocados en crecimiento ganaron $0.73 USD por suscriptor. ¿Qué principio ilustra esto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Las listas más pequeñas siempre son más rentables que las más grandes"
+        },
+        {
+          "id": "b",
+          "text": "El email marketing no escala más allá de 10,000 suscriptores"
+        },
+        {
+          "id": "c",
+          "text": "El valor por suscriptor cae cuando priorizas el crecimiento sobre el engagement, porque los nuevos suscriptores diluyen la calidad de la lista"
+        },
+        {
+          "id": "d",
+          "text": "Los creadores nunca deberían crecer más allá de 1,000 suscriptores para maximizar ingresos"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los datos ilustran que priorizar el crecimiento sobre el engagement diluye el valor por suscriptor. Cada nuevo suscriptor baja tu Ingreso Por Suscriptor a menos que esté tan comprometido como tu audiencia existente. Esto no significa que nunca debas crecer -- significa que el crecimiento debe equilibrarse con el engagement y la calidad de la audiencia para mantener una economía saludable."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Califica tu audiencia usando el marco de Puntaje de Calidad de Audiencia de 5 dimensiones (Profundidad de Engagement, Historial de Compras, Conciencia del Problema, Capacidad de Presupuesto, Comportamiento de Referidos -- cada uno del 1 al 5). ¿Cuál es tu PCA total? ¿Qué dimensión tuvo el puntaje más bajo y qué estrategia específica de la lección usarías para mejorarla?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante proporcionó puntajes específicos para cada una de las 5 dimensiones del PCA con autoevaluación honesta. Verifica que su estrategia de mejora coincida con su dimensión más débil -- por ejemplo, si la Capacidad de Presupuesto es baja, debería considerar cambiar su contenido para atraer una audiencia más profesional, no solo publicar más contenido. Anima a dar pasos concretos."
+    }
+  ]
+}

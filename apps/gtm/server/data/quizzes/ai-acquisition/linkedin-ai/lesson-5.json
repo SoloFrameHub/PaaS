@@ -1,0 +1,78 @@
+{
+  "lessonId": "5",
+  "courseId": "linkedin-ai",
+  "sectionId": "ai-acquisition",
+  "title": "Tool Safety Table: Safe vs Caution vs Risky",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What makes a LinkedIn tool detectable by LinkedIn's enforcement system?",
+      "options": [
+        { "id": "a", "text": "Having 'LinkedIn' in the tool name" },
+        {
+          "id": "b",
+          "text": "Velocity patterns, session consistency, action sequence timing, browser fingerprints, and IP behavior that differ from human patterns"
+        },
+        { "id": "c", "text": "Using the tool during business hours" },
+        { "id": "d", "text": "Having a paid LinkedIn subscription" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LinkedIn detects automation through behavioral fingerprinting: velocity patterns (200 requests in 2 hours), session consistency (perfect 9-5 with zero variance), action sequences (exactly 3.2 seconds between actions every time), browser fingerprints (missing/spoofed headers), and IP behavior (cloud IPs or rapid switching)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened to Marcus when he installed Expandi for LinkedIn automation?",
+      "options": [
+        { "id": "a", "text": "His connection count tripled" },
+        {
+          "id": "b",
+          "text": "Account flagged within 14 days, permanently banned within 30 days — losing 3,200 connections, $80K pipeline, and 8 months to rebuild to 1,500 connections"
+        },
+        { "id": "c", "text": "He got more meetings than ever" },
+        { "id": "d", "text": "Nothing happened — the tool worked fine" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Marcus installed Expandi ($99/month) promising 'safe, cloud-based LinkedIn outreach.' Within 14 days, his account was flagged. Within 30 days, permanent ban. He lost 3,200 connections, $80K in active pipeline, and estimated $40K-60K in lost revenue. Recovery took 8 months to rebuild to 1,500 connections."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "If your LinkedIn pipeline value exceeds $10K, what does the lesson recommend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use every automation tool available to maximize returns"
+        },
+        {
+          "id": "b",
+          "text": "You cannot afford to gamble with risky tools — stick to GREEN (safe) tier tools only"
+        },
+        { "id": "c", "text": "Pipeline value doesn't affect tool choice" },
+        { "id": "d", "text": "Disconnect from LinkedIn entirely" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson states directly: if you have more than $10K in LinkedIn pipeline value at risk, you cannot afford to gamble with risky tools. The cost of a ban (lost connections, pipeline, reputation, months of rebuilding) far exceeds any efficiency gain from automation."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Tools that worked safely on LinkedIn in 2023-2024 are still safe to use in 2026.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. LinkedIn's enforcement has become dramatically more aggressive since the 2025 crackdown. Tools that worked fine in 2023-2024 are now instant ban triggers. LinkedIn now uses behavioral fingerprinting that catches even sophisticated tools, and the Apollo/Seamless.AI precedent shows LinkedIn will pursue tool providers and their users."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Estimate the total value at risk in your LinkedIn account (pipeline value, network size, content history, organic discovery value). Given this number, which tier of tools (GREEN/safe, YELLOW/caution, RED/risky) should you restrict yourself to, and why?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response calculates a specific value-at-risk number, correctly maps that to a tool safety tier, and provides reasoning about risk tolerance. Look for understanding that even YELLOW tier tools carry meaningful risk for high-value accounts and that the conservative approach preserves irreplaceable business assets."
+    }
+  ]
+}

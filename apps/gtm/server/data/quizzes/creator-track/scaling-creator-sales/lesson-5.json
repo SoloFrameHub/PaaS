@@ -1,0 +1,99 @@
+{
+    "lessonId": "5",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 5: Transitioning from 1:1 to Group",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "What is the 'Hybrid Bridge Period' described in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A period where you raise 1:1 prices to match group pricing"
+                },
+                {
+                    "id": "b",
+                    "text": "A 3-6 month transitional phase where you run both 1:1 and group models simultaneously while gradually migrating clients"
+                },
+                {
+                    "id": "c",
+                    "text": "A marketing campaign that bridges your old brand to a new group offering"
+                },
+                {
+                    "id": "d",
+                    "text": "A period where you pause all sales to design the group program"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Hybrid Bridge is a 3-6 month transitional phase with three stages: design and pilot (months 1-2, running a beta group alongside 1:1), gradual migration (months 3-4, offering existing clients the choice of premium 1:1 or group), and full transition (months 5-6, group running with momentum)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "A creator currently has 12 clients at $3,000/month (1:1) and wants to transition to the 'High-Touch Group' model described in the lesson. If they run 2 cohorts of 10 clients at $2,000/month each, what is the change in monthly revenue and approximate delivery time?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Revenue increases from $36K to $40K; delivery time stays at 60 hours/month"
+                },
+                {
+                    "id": "b",
+                    "text": "Revenue increases from $36K to $40K; delivery time drops from about 48 hours to 20-25 hours/month"
+                },
+                {
+                    "id": "c",
+                    "text": "Revenue decreases from $36K to $20K; delivery time drops to 10 hours/month"
+                },
+                {
+                    "id": "d",
+                    "text": "Revenue stays at $36K; delivery time increases to 80 hours/month"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Current: 12 clients x $3,000 = $36,000/month with ~48 hours delivery (4 hours per client). High-Touch Group: 2 cohorts x 10 clients x $2,000 = $40,000/month. The lesson states the High-Touch Group model requires 20-25 hours/month delivery. Revenue increases by $4K while delivery time drops by roughly half."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "A creator announces their group program by saying: 'I can no longer take 1:1 clients because I am at capacity, so I am launching a group program at a lower price.' According to the lesson, what is wrong with this framing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The price should be higher for a group program, not lower"
+                },
+                {
+                    "id": "b",
+                    "text": "It positions the group as a consolation prize and communicates that clients are getting less because the creator is too busy"
+                },
+                {
+                    "id": "c",
+                    "text": "It reveals confidential business information about capacity constraints"
+                },
+                {
+                    "id": "d",
+                    "text": "There is nothing wrong -- honesty is always the best approach"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson explicitly calls this the 'wrong framing' because it tells the audience they are getting less because the creator is too busy. The right framing positions the group as an evolution and upgrade -- delivering the creator's proven methodology with peer support and community at a fraction of the 1:1 investment."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "If you were to design a High-Touch Group program based on your current 1:1 work, what would it look like? Describe: (1) the ideal cohort size, (2) the price point relative to your current 1:1 rate, (3) the two or three recurring problems your 1:1 clients share that would form the core curriculum, and (4) whether you would use a cohort or rolling enrollment model and why.",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student has thought through the practical design of their group program rather than giving abstract answers. Their cohort size should be justified (not just picked randomly). Their price point should be between 50-70% of their 1:1 rate as the lesson suggests for High-Touch Group. The recurring problems should be specific enough to build curriculum around. Their enrollment model choice should be backed by reasoning tied to their specific audience and content type."
+        }
+    ]
+}

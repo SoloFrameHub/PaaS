@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "5",
+    "lessonTitle": "Newsletter Strategy",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the fundamental difference between a sequence and a newsletter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sequences are for B2B; newsletters are for creators."
+                },
+                {
+                    "id": "b",
+                    "text": "Sequences are finite and triggered by actions; newsletters are ongoing and broadcast to everyone at the same time."
+                },
+                {
+                    "id": "c",
+                    "text": "Sequences are automated; newsletters are manual."
+                },
+                {
+                    "id": "d",
+                    "text": "There's no real difference—they're the same thing with different names."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sequences move subscribers through a specific journey and end. Newsletters maintain the relationship indefinitely through regular, ongoing communication. You need both in your email system.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, why does 'consistency beat frequency'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because email providers reward consistent senders with better deliverability."
+                },
+                {
+                    "id": "b",
+                    "text": "Because consistent cadence trains your audience to expect and look for you, building a habit that's worth more than any single piece of content."
+                },
+                {
+                    "id": "c",
+                    "text": "Because writing more frequently leads to burnout."
+                },
+                {
+                    "id": "d",
+                    "text": "Because subscribers prefer fewer but higher-quality emails."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "When readers know to expect your newsletter every Thursday morning, they look for it. That habit—the expectation and ritual—is more valuable than any individual article. Random delivery kills this habit.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended '60/30/10 content mix' for a newsletter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "60% promotion, 30% education, 10% personal updates."
+                },
+                {
+                    "id": "b",
+                    "text": "60% education/value, 30% personal/connection, 10% promotion/CTA."
+                },
+                {
+                    "id": "c",
+                    "text": "60% curated links, 30% news updates, 10% ads."
+                },
+                {
+                    "id": "d",
+                    "text": "60% original content, 30% reposts, 10% guest contributions."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The mix ensures you're primarily providing value (60%), building personal connection (30%), and only occasionally promoting (10%). If you're selling more than giving, you're eroding trust.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What's the recommended approach to generating newsletter content ideas?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Wait for inspiration to strike each week."
+                },
+                {
+                    "id": "b",
+                    "text": "Copy what competitors are writing about."
+                },
+                {
+                    "id": "c",
+                    "text": "Maintain a swipe file of ideas collected continuously, and plan topics 4-8 weeks ahead using a content calendar."
+                },
+                {
+                    "id": "d",
+                    "text": "Survey your audience before every newsletter."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Relying on inspiration leads to inconsistency and burnout. A swipe file (continuous idea collection) plus a content calendar (planned topics) removes the 'what should I write?' decision and creates sustainable production.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which newsletter format is described as best for founders who have 'strong opinions and the writing chops to hold attention for 1,000+ words'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Curated Links"
+                },
+                {
+                    "id": "b",
+                    "text": "Long-Form Essay (Single Topic)"
+                },
+                {
+                    "id": "c",
+                    "text": "BIP Journal"
+                },
+                {
+                    "id": "d",
+                    "text": "Mixed Format"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Long-Form Essay format (like Paul Graham or Justin Welsh) goes deep on one topic. It builds deep authority and is highly shareable, but it requires strong writing skills and significant time investment.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Design your newsletter plan: What cadence will you commit to for 52 weeks? Which format matches your strength? Write out topics for your next 4 newsletters, including a brief angle or hook for each.",
+            "promptHints": [
+                "Be realistic about your time—bi-weekly is fine for solo founders.",
+                "Pick a format that plays to your natural communication style.",
+                "Topics should emerge from your expertise and your ICP's questions."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "4"
+        ],
+        "unlocks": [
+            "6"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Newsletter Strategy - Quiz"
+}

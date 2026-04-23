@@ -1,0 +1,69 @@
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { vertexIndexer } from './vertexIndexer';
+import { DocumentServiceClient } from '@google-cloud/discoveryengine';
+
+// Hoist mocks
+const { mockCreateDocument } = vi.hoisted(() => {
+    return {
+        mockCreateDocument: vi.fn(),
+    };
+});
+
+vi.mock('@google-cloud/discoveryengine', () => ({
+    DocumentServiceClient: vi.fn(() => ({
+        createDocument: mockCreateDocument
+    }))
+}));
+
+// Mock env vars - tricky in vitest running inside node, but we can rely on the service reading them at import time or mock process.env
+// Since the module is already imported, we might need to rely on the fact that existing env vars are used.
+// If not set, it logs a warning. We want to test the success path, so we assume they are set or we skip those checks if we can't easily reloading the module.
+// However, looking at the code, it checks env vars inside `indexDocument`. So we CAN mock them.
+
+describe('vertexIndexer', () => {
+    beforeEach(() => {
+        vi.clearAllMocks();
+        process.env.VERTEX_AI_PROJECT_ID = 'test-project';
+        process.env.VERTEX_AI_DATA_STORE_ID = 'test-store';
+    });
+
+    afterEach(() => {
+        delete process.env.VERTEX_AI_PROJECT_ID;
+        delete process.env.VERTEX_AI_DATA_STORE_ID;
+    });
+
+    describe('indexDocument', () => {
+        it('should call createDocument with correct parameters', async () => {
+            mockCreateDocument.mockResolvedValue([{}]);
+
+            const doc = {
+                id: 'doc-123',
+                title: 'Test Document',
+                content: 'Hello World Content',
+                source: 'http://example.com'
+            };
+
+            await vertexIndexer.indexDocument(doc);
+
+            expect(mockCreateDocument).toHaveBeenCalledWith({
+                parent: 'projects/test-project/locations/global/collections/default_collection/dataStores/test-store/branches/default_branch',
+                documentId: 'doc-123',
+                document: {
+                    id: 'doc-123',
+                    schemaId: 'default_schema',
+                    jsonData: expect.stringContaining('"title":"Test Document"'),
+                    content: {
+                        mimeType: 'text/plain',
+                        rawBytes: Buffer.from('Hello World Content').toString('base64'),
+                    }
+                }
+            });
+        });
+
+        it('should log warning and return if creds missing', async () => {
+            delete process.env.VERTEX_AI_PROJECT_ID;
+            await vertexIndexer.indexDocument({ id: '1', title: 't', content: 'c' });
+            expect(mockCreateDocument).not.toHaveBeenCalled();
+        });
+    });
+});

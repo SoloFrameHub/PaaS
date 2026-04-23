@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which vitamin is required as a cofactor in nearly every neurotransmitter production pathway, including serotonin, dopamine, GABA, and norepinephrine?",
+            "options": [
+                { "id": "opt1", "text": "Vitamin C" },
+                { "id": "opt2", "text": "Vitamin D" },
+                { "id": "opt3", "text": "Vitamin B6" },
+                { "id": "opt4", "text": "Vitamin A" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Vitamin B6 is arguably the single most important nutrient for neurotransmitter production. It is needed as a cofactor for the synthesis of serotonin, dopamine, GABA, and norepinephrine. Its deficiency can impair production of multiple neurotransmitters simultaneously."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What amino acid is the precursor for dopamine, norepinephrine, and epinephrine?",
+            "options": [
+                { "id": "opt1", "text": "Tryptophan" },
+                { "id": "opt2", "text": "Glutamine" },
+                { "id": "opt3", "text": "Glycine" },
+                { "id": "opt4", "text": "Tyrosine" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Tyrosine is the precursor for the catecholamine neurotransmitter pathway: tyrosine becomes dopamine, which becomes norepinephrine, which becomes epinephrine. These neurotransmitters drive motivation, reward, alertness, and the stress response."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why might very low-carbohydrate diets sometimes cause mood disturbances?",
+            "options": [
+                { "id": "opt1", "text": "Carbohydrates are the only source of tryptophan in food" },
+                { "id": "opt2", "text": "Without carbohydrates, the body cannot produce any neurotransmitters" },
+                { "id": "opt3", "text": "Low-carb meals reduce insulin response, which means competing amino acids crowd out tryptophan at the blood-brain barrier, reducing serotonin production" },
+                { "id": "opt4", "text": "Low-carb diets destroy all gut bacteria" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "When carbohydrates trigger insulin release, insulin drives competing amino acids into muscle tissue but leaves tryptophan in the blood. Without this insulin response in very low-carb diets, tryptophan faces more competition at the blood-brain barrier, potentially reducing its ability to reach the brain for serotonin production."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "The conversion of glutamate to GABA (the brain's calming neurotransmitter) requires which two essential cofactors?",
+            "options": [
+                { "id": "opt1", "text": "Vitamin C and calcium" },
+                { "id": "opt2", "text": "Vitamin B6 and zinc" },
+                { "id": "opt3", "text": "Iron and magnesium" },
+                { "id": "opt4", "text": "Vitamin D and potassium" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The conversion of glutamate to GABA by the GAD enzyme requires vitamin B6 and zinc as essential cofactors. B6 deficiency can impair GABA production, and low zinc is associated with both anxiety and depression."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does the 'brain chemistry plate' template recommend including at each main meal?",
+            "options": [
+                { "id": "opt1", "text": "Only protein to maximize amino acid availability" },
+                { "id": "opt2", "text": "Only carbohydrates for quick energy" },
+                { "id": "opt3", "text": "A protein source, complex carbohydrates, colorful vegetables or fruits, and healthy fats" },
+                { "id": "opt4", "text": "Supplements and fortified foods only" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 'brain chemistry plate' template includes: a protein source (amino acid precursors), complex carbohydrates (support amino acid transport to the brain), colorful vegetables or fruits (cofactors and antioxidants), and healthy fats (brain cell membranes and receptor function). This combination consistently provides the raw materials for balanced neurotransmitter production."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "8",
+    "title": "Neurotransmitter Nutrition: Feeding Your Brain Chemistry - Quiz"
+}

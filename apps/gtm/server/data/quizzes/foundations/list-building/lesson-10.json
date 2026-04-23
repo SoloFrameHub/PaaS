@@ -1,0 +1,141 @@
+{
+    "lessonId": "10",
+    "courseId": "list-building",
+    "sectionId": "foundations",
+    "title": "Your Prospecting System Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Prospecting Paradox' that solo founders often face?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Having too many leads and not enough time"
+                },
+                {
+                    "id": "b",
+                    "text": "Intense prospecting during 'dry' spells followed by zero prospecting while working on deals, leading to inconsistent pipeline"
+                },
+                {
+                    "id": "c",
+                    "text": "Spending money on tools that you don't use"
+                },
+                {
+                    "id": "d",
+                    "text": "Targeting the wrong companies with the right messages"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'Feast or Famine' cycle is the result of sporadic prospecting. Consistency is the only cure for a fluctuating pipeline."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When is the recommended time for a solo founder to perform their 'Active Prospecting' block?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Friday afternoon before the weekend"
+                },
+                {
+                    "id": "b",
+                    "text": "Late at night when it's quiet"
+                },
+                {
+                    "id": "c",
+                    "text": "The first 90 minutes of the morning, before regular email or Slack"
+                },
+                {
+                    "id": "d",
+                    "text": "Whenever they have a gap between client meetings"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Prospecting requires high cognitive energy and is most prone to avoidance. Booking it first ensures it happens while your energy is highest and before 'urgent' fires distract you."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How many hours per week should a B2B SaaS founder (High Volume context) expect to spend on acquisition overall?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2-4 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "8-12 hours"
+                },
+                {
+                    "id": "c",
+                    "text": "15-20 hours"
+                },
+                {
+                    "id": "d",
+                    "text": "40+ hours"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "In a high-volume SaaS context, acquisition is the primary driver of growth and requires a significant portion of the solo founder's week."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary activity recommended for 'Monday' in the Weekly Rhythm template?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sending mass emails"
+                },
+                {
+                    "id": "b",
+                    "text": "Deep research and list building (finding the 'fuel' for the week)"
+                },
+                {
+                    "id": "c",
+                    "text": "Taking the whole day off"
+                },
+                {
+                    "id": "d",
+                    "text": "Technical domain setup"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Starting the week with 'The Hunt' ensures you have a clean, high-quality list to work through for the rest of the week's outreach."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does the course recommend a 90-day commitment before evaluating your prospecting system?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it takes 90 days to learn how to use the tools"
+                },
+                {
+                    "id": "b",
+                    "text": "To allow time for data normalization, domain warming, and sales cycles to show true results"
+                },
+                {
+                    "id": "c",
+                    "text": "Because the course is 90 days long"
+                },
+                {
+                    "id": "d",
+                    "text": "To make it harder for founders to quit"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Cold outreach results are a lagging indicator. You need 90 days of consistent execution to gather statistically significant data on what's working."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Commit to your 90-day prospecting sprint. What is your daily 'Golden Hour' for outreach? What are your weekly volume targets for each of your primary channels? How will you hold yourself accountable if you miss a day?",
+            "minLength": 100,
+            "promptForAI": "Review the commitment for specificity (Time, Volume, Channel). Evaluate the accountability plan—it should be realistic (e.g., 'Double targets on Saturday' or 'Tell my co-founder/partner')."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "6",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Negotiation Fundamentals Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does BATNA stand for in negotiation theory?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buying Alternatives To Narrow Agreements."
+                },
+                {
+                    "id": "b",
+                    "text": "Best Alternative to a Negotiated Agreement."
+                },
+                {
+                    "id": "c",
+                    "text": "Business Analysis Toward New Acquisitions."
+                },
+                {
+                    "id": "d",
+                    "text": "Budget Assessment for Targeted Negotiation Action."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your BATNA is your walk-away point—what you will do if the current deal doesn't happen. It is your primary source of power in any negotiation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the difference between a 'Position' and an 'Interest'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A position is your role in the company; an interest is your hobby."
+                },
+                {
+                    "id": "b",
+                    "text": "A position is the specific demand (the 'what'); an interest is the underlying reason or need (the 'why')."
+                },
+                {
+                    "id": "c",
+                    "text": "There is no difference; they are synonymous."
+                },
+                {
+                    "id": "d",
+                    "text": "A position is where you stand physically; an interest is how much money you earn."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Argue about positions and you get a tug-of-war. Understand interests and you can find creative solutions that satisfy both parties."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following describes 'Value Creation' in negotiation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Trying to get the largest possible discount from a vendor."
+                },
+                {
+                    "id": "b",
+                    "text": "Finding 'low-cost, high-value' trades that expand the total benefits for both sides."
+                },
+                {
+                    "id": "c",
+                    "text": "Holding firm on your price regardless of the customer's needs."
+                },
+                {
+                    "id": "d",
+                    "text": "Undercutting a competitor's price by 50%."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Value creation is about 'making the pie bigger.' It involves finding things that are easy for you to give but very valuable for the prospect to receive."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary risk of having a 'Weak BATNA'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You might accidentally overcharge the customer."
+                },
+                {
+                    "id": "b",
+                    "text": "You won't have anything to talk about during the call."
+                },
+                {
+                    "id": "c",
+                    "text": "You will be more likely to over-discount and accept bad terms because you feel you 'must' close the deal."
+                },
+                {
+                    "id": "d",
+                    "text": "The customer will think you are too successful."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When you feel you have no options except this one deal, you lose the power to say 'no,' which allows the buyer to squeeze your margins and dictate terms."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In the LARA framework, what is the 'Ask' step used for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking for the credit card number."
+                },
+                {
+                    "id": "b",
+                    "text": "Asking clarifying questions to uncover the underlying interests behind a demand."
+                },
+                {
+                    "id": "c",
+                    "text": "Asking the prospect why they are being so difficult."
+                },
+                {
+                    "id": "d",
+                    "text": "Asking for a referral before the deal is closed."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'Ask' step is where you bridge from their demand to their underlying need. It turns a confrontation into a mutual investigation of facts."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think about a deal you lost or walked away from. At what point did the potential agreement become worse than your BATNA (your alternative)? What was the 'Reservation Price' or condition you weren't willing to breach?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies a clear threshold (e.g., 'They wanted X for half price' or 'They wanted 90-day payment terms'). Provide feedback on how having a clear BATNA in advance provides confidence during difficult calls."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+  "lessonId": "4",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Métodos de Investigación Gratuita",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el principal beneficio de la investigación manual en comparación con el uso de una base de datos masiva?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es más rápida que usar una herramienta automatizada"
+        },
+        {
+          "id": "b",
+          "text": "Proporciona contexto profundo y motivación sobre por qué un prospecto podría necesitar tu ayuda"
+        },
+        {
+          "id": "c",
+          "text": "Es la única forma legal de encontrar prospectos"
+        },
+        {
+          "id": "d",
+          "text": "Las bases de datos no incluyen títulos de trabajo"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las bases de datos son buenas para los filtros, pero la investigación manual revela lo que un prospecto realmente dice, pregunta y hace, lo cual es crítico para una personalización efectiva."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué operador de búsqueda de Google usarías para reducir los resultados SOLO al dominio de LinkedIn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "url:linkedin.com"
+        },
+        {
+          "id": "b",
+          "text": "in:linkedin.com"
+        },
+        {
+          "id": "c",
+          "text": "site:linkedin.com/in"
+        },
+        {
+          "id": "d",
+          "text": "@linkedin.com"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El operador 'site:' limita los resultados de Google a un dominio específico. Agregar '/in' apunta específicamente a los perfiles individuales en lugar de empresas o publicaciones."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Dónde es el mejor lugar para encontrar 'dolor de comprador sin filtrar' de forma gratuita?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los comunicados de prensa oficiales de una empresa"
+        },
+        {
+          "id": "b",
+          "text": "Las biografías de los perfiles de LinkedIn"
+        },
+        {
+          "id": "c",
+          "text": "Subreddits o comunidades de Slack de nicho donde los usuarios piden ayuda"
+        },
+        {
+          "id": "d",
+          "text": "El sitio web del Nasdaq"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Los foros públicos y las comunidades de Slack son donde los profesionales van a desahogarse o pedir soluciones a sus problemas del mundo real. Esto es oro para encontrar prospectos de alta intención."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Qué debe incluir un 'Dossier de Prospecto' para un objetivo de alto valor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solo su nombre y correo"
+        },
+        {
+          "id": "b",
+          "text": "Detalles de su sitio web, publicaciones de blog recientes y comentarios de LinkedIn"
+        },
+        {
+          "id": "c",
+          "text": "Su dirección de casa y teléfono personal"
+        },
+        {
+          "id": "d",
+          "text": "Una lista de los precios de sus competidores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un dossier debe proporcionar una visión holística de las prioridades actuales y las declaraciones públicas del prospecto, permitiendo un outreach hiperpersonalizado."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cómo puedes usar Product Hunt como método de investigación gratuita?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comprando la base de datos de Product Hunt"
+        },
+        {
+          "id": "b",
+          "text": "Enviando mensajes a todos los que votan positivamente por tu propio producto"
+        },
+        {
+          "id": "c",
+          "text": "Identificando a los fundadores que acaban de lanzar (alta energía/necesidad de crecimiento) y a los votantes que muestran interés en tu nicho"
+        },
+        {
+          "id": "d",
+          "text": "Product Hunt es solo para clientes de pago"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Un lanzamiento es una señal de actividad. Los fundadores que acaban de lanzar frecuentemente están en 'modo de adquisición' y podrían necesitar herramientas o servicios que los ayuden a escalar."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Elige una comunidad (Slack, Reddit o Foro) donde se reúne tu ICP. ¿Cuál es una pregunta específica o 'punto de dolor' que has visto mencionado allí recientemente? ¿Cómo enmarcarías un mensaje de contacto que haga referencia a este contexto sin ser intrusivo?",
+      "minLength": 100,
+      "promptForAI": "Evalúa el 'Factor de Intrusión'. El mensaje debe tender un puente (ej., 'Vi tu hilo en r/sales sobre el agotamiento del CRM...') sin sonar como si hubieran estado siguiendo a la persona durante meses. Busca empatía y encuadre de valor primero."
+    }
+  ]
+}

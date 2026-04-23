@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Check the Facts' skill in DBT emotion regulation?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "To prove that your emotions are always wrong and should be ignored"
+                },
+                {
+                    "id": "opt2",
+                    "text": "To determine whether your emotion fits the actual situation by examining your interpretations and assumptions before deciding how to respond"
+                },
+                {
+                    "id": "opt3",
+                    "text": "To suppress negative emotions by replacing them with positive thoughts"
+                },
+                {
+                    "id": "opt4",
+                    "text": "To convince other people that your emotional reaction was justified"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Check the Facts is used to determine whether your emotional response fits the actual situation. Emotions are often based on interpretations and assumptions rather than verified facts. By separating observable facts from interpretations, generating alternative explanations, and evaluating whether your emotional intensity matches the situation, you can determine whether to change the emotion or act on it skillfully."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When should you use Opposite Action?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any time you experience a negative emotion"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Only when you are in a good mood and want to maintain it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "When the emotion does not fit the facts, or when acting on the emotion's urge would be ineffective or harmful"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only for anger -- other emotions should always be acted on"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Opposite Action is used when either of two conditions is true: the emotion does not fit the facts (e.g., your anxiety is based on a misinterpretation), or the emotion fits the facts but acting on the urge would make things worse (e.g., you are justifiably angry but yelling would damage the relationship). It is not used for all negative emotions -- sometimes emotions fit the facts and should be acted on skillfully."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does DBT emphasize that Opposite Action must be done 'wholeheartedly'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because doing it halfway -- changing behavior but mentally fueling the original emotion -- does not work and may even intensify the emotion"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because emotions only last for a few seconds, so you need to act fast"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because half-hearted Opposite Action is considered emotionally dishonest"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because you need to completely eliminate the emotion before moving on"
+                }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Opposite Action only works when done all the way -- changing your actions, body posture, facial expression, and thoughts. Half-hearted Opposite Action (for example, approaching a feared situation while mentally rehearsing everything that could go wrong) does not reduce the emotion and may actually strengthen it. The goal is not to eliminate the emotion but to shift its trajectory by fully engaging in the opposite behavior."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does 'PLEASE' stand for in the ABC PLEASE framework?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Positive thinking, Laughter, Encouragement, Assertiveness, Social connection, Expression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Treat Physical Illness, balanced Eating, Avoid mood-Altering substances, balanced Sleep, Exercise"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Practice mindfulness, Label emotions, Express feelings, Accept reality, Set boundaries, Engage in therapy"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Plan activities, Learn new skills, Evaluate progress, Ask for help, Stay positive, Eliminate stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "PLEASE stands for: treat PhysicaL illness (medications, appointments), balanced Eating (regular meals, balanced nutrition), Avoid mood-Altering substances (alcohol, drugs, excess caffeine), balanced Sleep (consistent schedule, good sleep hygiene), and Exercise (regular physical movement). These physical self-care skills are foundational because physical vulnerability directly amplifies emotional reactivity."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Cope Ahead' skill and when should it be used?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It means avoiding all situations that might trigger strong emotions"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It involves mentally rehearsing using your skills effectively in an upcoming difficult situation, including planning for obstacles"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It means preparing a list of excuses for why you might need to leave a situation early"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It is a crisis skill used only during emotional emergencies"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Cope Ahead is a proactive skill where you mentally rehearse an upcoming difficult situation in specific detail -- imagining yourself feeling the expected emotion, choosing and using a skill effectively, and planning backup strategies if the first skill does not work. It is used before difficult conversations, social events, appointments, or any situation where you have previously lost emotional control. It is proactive, not reactive."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "emotional-dysregulation",
+    "lessonId": "6",
+    "title": "Changing Emotional Responses - Quiz"
+}

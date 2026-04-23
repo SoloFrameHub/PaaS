@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is personalization in cognitive distortions?",
+            "options": [
+                {"id": "opt1", "text": "Taking personal responsibility for events outside your control"},
+                {"id": "opt2", "text": "Making everything about yourself, assuming you caused negative outcomes"},
+                {"id": "opt3", "text": "Customizing your thoughts to fit your personality"},
+                {"id": "opt4", "text": "Blaming others for your own mistakes"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. Personalization is when you assume you're the cause of external events, even when there's little or no evidence. For example, 'My friend didn't text back — they must be mad at me' ignores alternative explanations (they're busy, didn't see it, phone died)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does blame differ from personalization?",
+            "options": [
+                {"id": "opt1", "text": "Blame targets others; personalization targets yourself"},
+                {"id": "opt2", "text": "Blame is always accurate; personalization is always a distortion"},
+                {"id": "opt3", "text": "Blame is a healthy coping mechanism; personalization is not"},
+                {"id": "opt4", "text": "There is no difference — they're the same distortion"}
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Exactly. Personalization is self-directed ('It's all my fault'), while blame is other-directed ('It's all their fault'). Both ignore complexity and shared responsibility. Both prevent problem-solving by oversimplifying causation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What question helps counter personalization and blame?",
+            "options": [
+                {"id": "opt1", "text": "Who is at fault for this situation?"},
+                {"id": "opt2", "text": "What are all the factors that contributed to this outcome?"},
+                {"id": "opt3", "text": "How can I avoid taking any responsibility?"},
+                {"id": "opt4", "text": "What would a confident person think in this situation?"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yes. This question shifts from 'whose fault is it?' to 'what actually caused this?' Most outcomes have multiple contributing factors (timing, context, other people's choices, systems). Recognizing complexity is more accurate and more useful than assigning blame."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is personalization particularly common in anxiety and depression?",
+            "options": [
+                {"id": "opt1", "text": "Because anxious and depressed people are naturally self-centered"},
+                {"id": "opt2", "text": "Because negative mood biases attention toward self-critical interpretations"},
+                {"id": "opt3", "text": "Because personalization causes anxiety and depression"},
+                {"id": "opt4", "text": "Because therapists teach personalization as a coping skill"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correct. When you're already feeling anxious or down, your brain is primed to notice evidence that 'confirms' negative beliefs about yourself. Personalization feels true because it matches your mood — but feelings aren't facts. CBT teaches you to check the evidence instead."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a recent situation where you blamed yourself or someone else. What were the other contributing factors you might have overlooked? How does recognizing complexity change how you feel about the situation?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "8",
+    "title": "Personalization and Blame - Quiz"
+}

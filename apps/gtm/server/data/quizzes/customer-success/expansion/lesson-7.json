@@ -1,0 +1,72 @@
+{
+  "lessonId": "7",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Pricing Expansion Without Alienating Customers",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the lesson, what must every price increase be paired with?",
+      "options": [
+        { "id": "a", "text": "A longer contract commitment" },
+        {
+          "id": "b",
+          "text": "A value increase, a transparent reason, or both"
+        },
+        { "id": "c", "text": "A competitor comparison chart" },
+        { "id": "d", "text": "A customer satisfaction survey" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Pricing Expansion Rule states that every price increase must be paired with a value increase, a transparent reason, or both. Never raise prices in a vacuum — customers need to understand what they're getting or why it's changing."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In a value-paired price increase, what percentage of customers typically accept when the new features genuinely solve problems?",
+      "options": [
+        { "id": "a", "text": "25%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "75%" },
+        { "id": "d", "text": "95%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Value-paired price increases are accepted by 75% of customers when the new features genuinely solve problems. The key is that customers evaluate the new offering on its merits rather than feeling like they're paying more for the same thing."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What was the critical mistake Sarah made when raising prices from $49 to $79/month?",
+      "options": [
+        { "id": "a", "text": "The price increase was too large" },
+        {
+          "id": "b",
+          "text": "She implemented it immediately with no advance notice, on a Friday"
+        },
+        { "id": "c", "text": "She offered no discount to loyal customers" },
+        { "id": "d", "text": "She raised prices without adding new features" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah's mistake was the execution: 'Effective immediately' with no advance notice, sent on a Friday. The problem wasn't the price increase itself — it was the lack of transparency, warning, and customer choice. This led to 47 customers churning in 72 hours."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Transparent cost-driven price increases retain 85-90% of customers when communicated honestly with advance notice.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. When you're transparent about why costs need to increase and give adequate advance notice, 85-90% of customers stay. Honesty and notice are the two keys to successful cost-driven increases."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "If you needed to raise your prices by 20%, which pricing expansion scenario (value-paired, cost-driven, or market-repositioning) would you use? Draft the communication you would send to existing customers explaining the change.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response selects an appropriate scenario and justifies the choice, drafts a communication that leads with value or transparency (not just 'prices are going up'), provides advance notice, and offers customer choice where possible (e.g., grandfathered rates, option to stay on current plan)."
+    }
+  ]
+}

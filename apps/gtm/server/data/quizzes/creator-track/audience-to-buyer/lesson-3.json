@@ -1,0 +1,55 @@
+{
+  "lessonId": "3",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "The Content-to-Conversion Pipeline",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the 70/20/10 content mix, what does each percentage represent?",
+      "options": [
+        { "id": "a", "text": "70% video, 20% written, 10% audio content" },
+        { "id": "b", "text": "70% TOFU (discovery), 20% MOFU (nurture), 10% BOFU (conversion)" },
+        { "id": "c", "text": "70% original content, 20% repurposed, 10% user-generated" },
+        { "id": "d", "text": "70% free content, 20% paid previews, 10% ads" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 70/20/10 content mix means 70% top-of-funnel discovery content, 20% middle-of-funnel nurture content, and 10% bottom-of-funnel conversion content. Most struggling creators run a 95/5/0 split, which is why they have audiences but no revenue."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the most common mistake creators make with their Value Ladder?",
+      "options": [
+        { "id": "a", "text": "Having too many products at different price points" },
+        { "id": "b", "text": "Jumping from free content directly to a $497 course without intermediate stepping stones" },
+        { "id": "c", "text": "Pricing their products too high for their niche" },
+        { "id": "d", "text": "Offering too many free resources that cannibalize paid product sales" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Most creators skip the intermediate steps (low-ticket offers at $9-$49) that build the micro-commitments necessary for a high-ticket purchase. Adding at least one stepping stone between free and your core offer creates a natural, trust-building progression."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What distinguishes BOFU (bottom-of-funnel) content from TOFU (top-of-funnel) content?",
+      "options": [
+        { "id": "a", "text": "BOFU content is longer and more detailed than TOFU content" },
+        { "id": "b", "text": "BOFU content is optimized for existing audience, trust, and purchase readiness; TOFU is optimized for algorithms and discovery" },
+        { "id": "c", "text": "BOFU content is always video-based while TOFU is text-based" },
+        { "id": "d", "text": "BOFU content is published less frequently than TOFU content" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "BOFU content is optimized for your existing audience, includes social proof and clear CTAs, and speaks to people who already trust you. TOFU content is optimized for algorithms, shareability, and reaching new people who have never heard of you."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Audit your last 30 days of content across all platforms. Roughly what percentage was TOFU, MOFU, and BOFU? What specific piece of BOFU conversion content could you create this week, and what offer would it connect to?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student honestly assesses their content mix with approximate percentages and identifies the imbalance. Look for a specific, actionable BOFU content idea (not vague) that connects to a real offer they have or are building."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "lessonId": "6",
+  "courseId": "crm-setup",
+  "sectionId": "operations-systems",
+  "title": "Pon a Prueba tu Comprensión",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "¿Qué es la prueba '¿Actuaría sobre Esto?'?",
+      "options": [
+        "Una prueba para ver si un campo desencadena una decisión o automatización",
+        "Una prueba para ver si un campo parece profesional",
+        "Una prueba para ver si el CRM requiere un campo",
+        "Una prueba para ver si un campo puede llenarse automáticamente"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cada campo personalizado debe pasar esta prueba: si la respuesta no desencadena una decisión o automatización, elimínalo. Los fundadores en solitario no tienen tiempo para métricas de vanidad."
+    },
+    {
+      "id": "q2",
+      "question": "¿Por qué son problemáticas las notas de texto libre para los agentes de IA?",
+      "options": [
+        "Toman demasiado tiempo para escribir",
+        "Son invisibles para la IA — los agentes no pueden extraer insights estructurados",
+        "No se pueden buscar",
+        "Requieren demasiado almacenamiento"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las notas de texto libre como 'Tuvimos una buena llamada' son subjetivas y no estructuradas. Los agentes de IA necesitan campos categóricos (event_type, event_outcome, next_action) para razonar."
+    },
+    {
+      "id": "q3",
+      "question": "¿Cuál es el beneficio de registrar eventos en una línea de tiempo (vs. solo actualizar la etapa del trato)?",
+      "options": [
+        "Se ve más profesional",
+        "Crea una cadena de razonamiento para que los agentes de IA predigan resultados",
+        "Lo requieren la mayoría de los CRMs",
+        "Hace los informes más atractivos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Una línea de tiempo de eventos (email_sent → email_received → llamada → reunión) cuenta una historia. Los agentes de IA leen historias para predecir resultados y sugerir próximas acciones."
+    },
+    {
+      "id": "q4",
+      "question": "¿Por qué usar nombres de campos en snake_case (ej., 'fit_score') en lugar de 'Fit Score'?",
+      "options": [
+        "Es una mejor práctica del CRM",
+        "Es necesario para la compatibilidad con la API y la integración con los agentes del Curso 27",
+        "Ahorra espacio de almacenamiento",
+        "Es más fácil de escribir"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El snake_case con prefijos de categoría (fit_score, deal_priority, health_days_since_contact) hace que los campos sean legibles por máquinas para los agentes de IA e integraciones de API."
+    },
+    {
+      "id": "q5",
+      "question": "¿Cuál de estos es un campo de 'indicador de salud'?",
+      "options": [
+        "Nombre del Trato",
+        "Días desde el Último Contacto",
+        "Fuente del Lead",
+        "Competidor Mencionado"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los indicadores de salud son señales calculadas automáticamente como 'Días desde el Último Contacto', 'Tendencia de Engagement' y 'Tiempo de Respuesta Promedio'. Dan a los agentes de IA datos de salud del trato en tiempo real."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Lewinsohn's model, what is the core mechanism that maintains depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A chemical imbalance that cannot be changed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "A deficit in response-contingent positive reinforcement - reduced activity leads to fewer rewards, which worsens mood"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Too many positive experiences overwhelming the brain"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Genetic factors that are completely fixed"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Lewinsohn's model identifies that depression stems from a deficit in response-contingent positive reinforcement. When you stop doing things that bring rewards, your mood suffers. When mood suffers, you do even less. This creates a self-reinforcing cycle."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the four maintaining pathways that keep the depression cycle going?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Genetics, hormones, nutrition, and sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Activity-mood link, social withdrawal, physical deconditioning, and avoidance relief"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Work stress, relationship problems, health issues, and financial concerns"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Negative thinking, perfectionism, low self-esteem, and anxiety"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The four maintaining pathways are: (1) Activity-mood link - less activity means fewer rewards means lower mood, (2) Social withdrawal - isolation removes support, (3) Physical deconditioning - reduced movement affects energy and health, (4) Avoidance relief - avoiding feels better short-term but worsens long-term."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does avoidance strengthen depression even though it provides short-term relief?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Avoidance is always bad no matter what"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When you avoid and feel better, your brain learns 'avoidance = safety,' making the next encounter feel even more threatening"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Avoidance uses too much mental energy"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Avoidance only affects depression if done for more than a year"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Avoidance provides immediate relief, which teaches your brain that avoidance equals safety. This reinforces the pattern, making the next similar encounter feel even scarier. Over time, more and more situations become 'off-limits,' shrinking your life and deepening depression."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is NOT typically a common avoidance pattern in depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Staying in bed longer than necessary"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Canceling social plans"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Exercising regularly every day"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Using excessive screen time to distract"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Exercising regularly is actually the opposite of avoidance - it's engagement that helps break the depression cycle. Common avoidance patterns include staying in bed, canceling plans, stopping hobbies, and using passive activities like excessive screen time to avoid facing difficult feelings."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What key insight does understanding the depression cycle reveal about recovery?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "You must wait until you feel motivated before taking action"
+                },
+                {
+                    "id": "opt2",
+                    "text": "If reduced activity maintains depression, then increasing activity can help lift it - action creates motivation, not the other way around"
+                },
+                {
+                    "id": "opt3",
+                    "text": "The cycle cannot be broken without medication"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only therapists can break the depression cycle"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The key insight is that the cycle works in reverse too. If reduced activity makes depression worse, then increasing activity - even before you feel like it - can help lift depression. This is the foundation of Behavioral Activation: action creates motivation, not the other way around."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "depression-action",
+    "lessonId": "2",
+    "title": "The Depression Trap: Understanding the Withdrawal Cycle - Quiz"
+}

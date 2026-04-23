@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does research on color psychology show about color-emotion associations?",
+      "options": [
+        {"id": "opt1", "text": "Color directly causes mood changes (e.g., looking at blue makes you calm)"},
+        {"id": "opt2", "text": "Associations between colors and emotions exist but are culturally variable, personal, and correlational—not universal or causal"},
+        {"id": "opt3", "text": "All humans across cultures have identical emotional responses to specific colors"},
+        {"id": "opt4", "text": "Color has no relationship to emotions whatsoever"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows associations between colors and emotions, but these are culturally variable (e.g., white = purity in Western contexts, mourning in some Asian cultures), personally variable (your associations matter most), and correlational, not causal. Color doesn't cause mood changes, but people in certain moods may choose certain colors, and color can support affect labeling."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the most evidence-based use of color in creative practice?",
+      "options": [
+        {"id": "opt1", "text": "Staring at blue walls to cure anxiety and depression"},
+        {"id": "opt2", "text": "Affect labeling—using color to name, track, and externalize emotions over time"},
+        {"id": "opt3", "text": "Interpreting color choices as diagnostic (e.g., 'you chose black so you're depressed')"},
+        {"id": "opt4", "text": "Only using bright, happy colors to avoid negative emotions"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The strongest evidence-based use of color is affect labeling: using color to name and externalize emotions (e.g., daily mood color tracking, emotion color wheels). This leverages the affect labeling mechanism (organizing emotions reduces amygdala activation) rather than relying on direct color-mood causation, which has weak or mixed evidence."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why does coloring or art-making with chosen colors sometimes feel calming?",
+      "options": [
+        {"id": "opt1", "text": "The specific pigments in colored materials have chemical properties that calm the nervous system"},
+        {"id": "opt2", "text": "Engagement in focused, repetitive activity (similar to meditation) is calming—not the color itself"},
+        {"id": "opt3", "text": "All colors are equally calming, so it doesn't matter which you choose"},
+        {"id": "opt4", "text": "Only professional artists experience calming effects from creative work"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Coloring can be calming because it's a focused, repetitive activity that engages attention (similar to meditation), not because of the color itself. If blue represents calm to you, using it may support affect labeling ('I'm choosing calm'), but it's the intention and engagement that help most. This is why any absorbing creative activity can support regulation, regardless of specific colors used."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What should you do if your personal or cultural color associations differ from 'common' associations listed in research?",
+      "options": [
+        {"id": "opt1", "text": "Ignore your associations and force yourself to use research averages"},
+        {"id": "opt2", "text": "Trust your personal and cultural associations—they take priority over research averages"},
+        {"id": "opt3", "text": "Assume something is wrong with you if your associations differ"},
+        {"id": "opt4", "text": "Avoid using color in creative work to prevent confusion"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Your personal and cultural associations take priority over research averages. Color psychology research describes general trends (often in Western populations), but individual and cultural variation is huge. If red feels calming to you (not activating), or white feels heavy (not pure), trust your experience. The goal is to use color for your own affect labeling and expression, not to conform to normative patterns."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When is color tracking or creative work with color NOT appropriate as self-help?",
+      "options": [
+        {"id": "opt1", "text": "Whenever you feel any difficult emotion—color work is only for positive moods"},
+        {"id": "opt2", "text": "If you don't have expensive colored materials or perfect artistic skills"},
+        {"id": "opt3", "text": "If you find yourself obsessing over mood fluctuations, or persistent dark colors over weeks suggest ongoing depression needing clinical support"},
+        {"id": "opt4", "text": "Color tracking is always sufficient—professional help is never needed"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Color tracking is a tool for awareness, not diagnosis or treatment. If it becomes obsessive (ruminating over daily color changes) or if persistent dark/heavy colors over weeks suggest ongoing depression, consult a mental health professional. Color work can complement clinical care but cannot replace it for persistent mood disturbance or clinical conditions."
+    }
+  ],
+  "sectionId": "stress-management",
+  "courseId": "creative-expression",
+  "lessonId": "5",
+  "title": "Color Psychology and Mood Regulation - Quiz"
+}

@@ -1,0 +1,141 @@
+{
+  "lessonId": "2",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Dominio de LinkedIn Sales Navigator",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué nivel de Sales Navigator se recomienda para los fundadores en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Básico (Gratuito)"
+        },
+        {
+          "id": "b",
+          "text": "Core ($99/mes)"
+        },
+        {
+          "id": "c",
+          "text": "Advanced ($149/mes)"
+        },
+        {
+          "id": "d",
+          "text": "Team ($1,600/año)"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sales Navigator Core proporciona el 100% del poder de prospección que necesita un fundador en solitario, incluyendo filtros avanzados, listas de leads y 50 InMails."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "En lógica booleana, ¿qué operador usarías para reducir los resultados y encontrar a alguien con AMBAS palabras clave específicas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OR"
+        },
+        {
+          "id": "b",
+          "text": "NOT"
+        },
+        {
+          "id": "c",
+          "text": "AND"
+        },
+        {
+          "id": "d",
+          "text": "NEAR"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "AND reduce los resultados al requerir que ambas palabras clave estén presentes. OR amplía, y NOT excluye."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Por qué es tan efectivo el filtro de destacados 'Cambió de Trabajo en los Últimos 90 Días'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los empleados nuevos tienen más tiempo para leer correos"
+        },
+        {
+          "id": "b",
+          "text": "Las secuencias automatizadas funcionan mejor con nuevos títulos de trabajo"
+        },
+        {
+          "id": "c",
+          "text": "Los nuevos ejecutivos tienen 3 veces más probabilidades de comprar nuevos servicios/herramientas para generar impacto"
+        },
+        {
+          "id": "d",
+          "text": "Filtra a las personas que probablemente renunciarán pronto"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La rotación ejecutiva es un 'Disparador de Compra' principal. Los nuevos contratados buscan resolver problemas antiguos de formas nuevas y tienen un mandato de cambio."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Para qué se usa una 'Cadena Booleana'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un fragmento de código para raspar datos de LinkedIn"
+        },
+        {
+          "id": "b",
+          "text": "Una combinación de palabras clave y operadores usados para filtrar resultados de búsqueda con precisión"
+        },
+        {
+          "id": "c",
+          "text": "Un tipo de solicitud de referido"
+        },
+        {
+          "id": "d",
+          "text": "Una contraseña para Sales Navigator"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las cadenas booleanas son el 'lenguaje' que usas para decirle a la base de datos exactamente a quién incluir y excluir de tus resultados."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el principal peligro de usar herramientas pesadas de raspado automatizado en LinkedIn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los datos generalmente son inexactos"
+        },
+        {
+          "id": "b",
+          "text": "Cuesta demasiado dinero"
+        },
+        {
+          "id": "c",
+          "text": "Riesgo de suspensión de la cuenta por violar los Términos de Servicio"
+        },
+        {
+          "id": "d",
+          "text": "Hace que tu perfil parezca poco profesional"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "LinkedIn es agresivo en la protección de sus datos propietarios. La automatización pesada puede activar alertas de seguridad y resultar en bloqueos permanentes de la cuenta."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Construye una cadena de búsqueda booleana para tu 'Campeón' más ideal. Explica por qué elegiste cada palabra clave y operador. ¿Cuál de los filtros de 'Destacados' crees que será más efectivo para TU negocio y por qué?",
+      "minLength": 100,
+      "promptForAI": "Revisa la cadena booleana para precisión técnica (comillas adecuadas, lógica). Evalúa si la elección del filtro de destacados se alinea con su modelo de negocio (ej., 'Sigue a la Empresa' para marcas establecidas vs. 'Cambio de Trabajo' para reemplazos de herramientas)."
+    }
+  ]
+}

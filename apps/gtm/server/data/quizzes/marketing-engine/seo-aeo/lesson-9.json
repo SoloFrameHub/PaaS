@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "9",
+    "lessonTitle": "Technical SEO Checklist",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Largest Contentful Paint' (LCP) measuring in Core Web Vitals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The total number of images on the page."
+                },
+                {
+                    "id": "b",
+                    "text": "How fast the main content of the page loads for the user."
+                },
+                {
+                    "id": "c",
+                    "text": "How many seconds it takes to scroll to the bottom of the page."
+                },
+                {
+                    "id": "d",
+                    "text": "The brightness of the website's background color."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LCP tracks when the largest element (usually an image or text block) becomes visible. Google considers 2.5 seconds or less to be 'Good.'",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the primary function of a `sitemap.xml` file?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To provide customers with a map to your physical location."
+                },
+                {
+                    "id": "b",
+                    "text": "To tell search engine crawlers about the structure and pages of your website so they can be indexed."
+                },
+                {
+                    "id": "c",
+                    "text": "To store your website's database backups."
+                },
+                {
+                    "id": "d",
+                    "text": "To prevent bots from visiting your site."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A sitemap is like a 'Table of Contents' for robots. It ensures that every important page on your site is known to search engines, even if it has few internal links.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "A URL like `/blog/category/2023/11/posts/how-to-sell` is considered 'Bad' for what reason?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It uses too many capital letters."
+                },
+                {
+                    "id": "b",
+                    "text": "It is too 'Deep,' making it harder for both users and machines to quickly understand the core topic."
+                },
+                {
+                    "id": "c",
+                    "text": "Search engines are not allowed to read dates in URLs."
+                },
+                {
+                    "id": "d",
+                    "text": "It contains the word 'blog' which is a banned keyword."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Deeply nested URLs increase 'Click Depth' and dilute the keyword focus. 'Flat' URLs (e.g., `/how-to-sell`) are better for AEO because they signal immediate topical relevance.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is 'Mobile-First Indexing' critical for solo founders to understand?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because most founders only work from their phones."
+                },
+                {
+                    "id": "b",
+                    "text": "Because apps are more important than websites in 2025."
+                },
+                {
+                    "id": "c",
+                    "text": "Because Google primarily uses the mobile version of your site for ranking and indexing, even for desktop searches."
+                },
+                {
+                    "id": "d",
+                    "text": "Because iPhones don't support traditional SEO."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Google's index is based on mobile crawling. If your mobile site is slower, harder to navigate, or has less content than your desktop site, your overall rankings will suffer.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the most effective way for a solo founder to fix slow page speeds caused by images?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Removing all images from the website."
+                },
+                {
+                    "id": "b",
+                    "text": "Compressing images and converting them to modern formats like WebP."
+                },
+                {
+                    "id": "c",
+                    "text": "Adding 'alt text' to every image."
+                },
+                {
+                    "id": "d",
+                    "text": "Asking users to use a faster internet connection."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "WebP images provide superior compression compared to PNG or JPEG, significantly reducing file size without losing quality. This is the #1 technical win for site speed.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Perform a '3-Click Audit' of your site: Can you get from your homepage to your most important 'Value' page (e.g., your course or core product) in 3 clicks or less? If not, how would you restructure your internal linking to make it easier for a machine to find that 'Value'?",
+            "promptHints": [
+                "Check your top navigation menu.",
+                "Consider adding links to your most important posts from your homepage.",
+                "Think about using a 'Main Pillar' page to connect related sub-topics."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "8"
+        ],
+        "unlocks": [
+            "10"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Technical SEO Checklist - Quiz"
+}

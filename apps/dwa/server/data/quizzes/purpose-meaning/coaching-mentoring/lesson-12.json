@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to Tuckman's stages of group development, what characterizes the 'storming' stage, and why is it important?",
+      "options": [
+        {"id": "opt1", "text": "Storming means the group is failing and should be disbanded"},
+        {"id": "opt2", "text": "Storming is when conflict emerges, members challenge each other and test boundaries. It's NORMAL and necessary — groups that skip storming often stay superficial. The facilitator's job is to normalize conflict and facilitate productive resolution."},
+        {"id": "opt3", "text": "Storming only happens in dysfunctional groups with poor leadership"},
+        {"id": "opt4", "text": "Storming is the final stage when the group is performing at its best"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Storming is a natural developmental stage where conflict, competition for status, and boundary-testing occur. This is NORMAL and NECESSARY for groups to move beyond superficial politeness into authentic connection. Groups that avoid storming often remain stuck in surface-level interactions. Your job: normalize it ('Disagreement is how groups grow'), facilitate productive conflict resolution, hold boundaries, and don't take challenges personally. After working through storming, groups enter norming (cohesion) and performing (high effectiveness)."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is psychological safety in groups, and why does it matter?",
+      "options": [
+        {"id": "opt1", "text": "Psychological safety means everyone agrees and there's no conflict"},
+        {"id": "opt2", "text": "Psychological safety is the belief that you won't be punished or humiliated for speaking up. Google's Project Aristotle found it's the strongest predictor of team effectiveness — stronger than talent, resources, or structure."},
+        {"id": "opt3", "text": "Psychological safety is just another term for being nice to each other"},
+        {"id": "opt4", "text": "Psychological safety is less important than having clear goals"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Psychological safety = belief you can speak up, make mistakes, ask questions, or disagree without being punished or humiliated. Google's Project Aristotle research found it's THE strongest predictor of group effectiveness. Create it through: clear norms, modeling vulnerability, actively inviting quiet members, managing dominant voices, and naming/navigating conflict productively. Psychological safety ≠ comfort or lack of challenge; it means you can take interpersonal risks."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "A group member dominates every discussion, talking far more than others and not leaving space for quieter members. What's the most effective facilitation response?",
+      "options": [
+        {"id": "opt1", "text": "Let it continue — they're clearly the most engaged member"},
+        {"id": "opt2", "text": "Publicly shame them in front of the group to make them stop"},
+        {"id": "opt3", "text": "Use a combination of: (1) kind interruption in the moment ('Thanks, let's make sure we hear from others'), (2) structural interventions (timed go-arounds), (3) private conversation ('You contribute a lot, which is great. Can you help create space for quieter folks?'), and (4) redirecting to group dialogue"},
+        {"id": "opt4", "text": "Ignore it and hope it resolves itself"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Dominant members (often unintentionally) prevent others from contributing. Multi-pronged approach: (1) Kind interruption: 'Thanks [name], let's pause there to hear others.' (2) Structure: 'Everyone gets 2 min to share.' (3) Private conversation to enlist them as ally in creating space. (4) Redirect: '[Name] raised X — what do others think?' (shifts from monologue to dialogue). Don't ignore (opt4) — quiet members will disengage. Don't shame (opt2) — destroys psychological safety."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Which of the following is a sign that an issue should be addressed in individual coaching rather than group coaching?",
+      "options": [
+        {"id": "opt1", "text": "The person has ambitious goals and wants accountability"},
+        {"id": "opt2", "text": "The person needs to process trauma, is in active mental health crisis (suicidal ideation, psychosis, acute addiction), or consistently monopolizes group time despite interventions"},
+        {"id": "opt3", "text": "The person is introverted and prefers one-on-one conversations"},
+        {"id": "opt4", "text": "Group coaching is always better than individual coaching"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Refer out of group when: (1) trauma processing needed (requires individual therapy, not group), (2) severe mental health crisis (active suicidal ideation, psychosis, acute addiction = clinical care), (3) need for extensive individual attention group can't provide, (4) chronic monopolization despite interventions, (5) confidentiality concerns preventing sharing in group. Ambitious goals (opt1) are perfect for group. Introversion (opt3) is manageable with good facilitation. Groups offer unique benefits but aren't appropriate for clinical presentations or when someone can't share group space effectively."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "What is the purpose of using structured participation techniques like 'go-arounds' or 'silent reflection first' in group facilitation?",
+      "options": [
+        {"id": "opt1", "text": "To waste time and avoid real work"},
+        {"id": "opt2", "text": "To ensure balanced participation: go-arounds guarantee everyone speaks (prevents domination), silent reflection gives processors time to think before reactive discussion, breakout groups create intimacy for introverts"},
+        {"id": "opt3", "text": "To make the facilitator look organized"},
+        {"id": "opt4", "text": "These techniques are outdated and should never be used"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Structured techniques balance participation and accommodate different styles: (1) Go-arounds: everyone speaks in turn, prevents domination, ensures quieter voices heard. (2) Silent reflection: gives processors time to think vs. forcing immediate responses, reduces reactive comments. (3) Breakout pairs/small groups: introverts more comfortable, builds intimacy. (4) Popcorn/raise hand: organic but requires managing dominance. Match technique to goal: forming stage = structure, performing stage = organic, complex topics = reflection time, relationship building = breakouts."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "coaching-mentoring",
+  "lessonId": "12",
+  "title": "Group Coaching and Facilitation Skills - Quiz"
+}

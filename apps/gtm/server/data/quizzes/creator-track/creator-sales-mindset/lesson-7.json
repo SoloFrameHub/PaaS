@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "Handling Rejection as a Creator",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the Three Selves Framework, what happens when a prospect rejects your offer and your brain 'collapses all three circles'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You correctly analyze which specific aspect of your offer needs improvement"
+                },
+                {
+                    "id": "b",
+                    "text": "Your brain treats a Circle 3 rejection (of a specific offer) as a Circle 1 attack (on your fundamental self-worth), because it cannot distinguish between someone declining your program and someone rejecting you as a person"
+                },
+                {
+                    "id": "c",
+                    "text": "You become motivated to create a better offer next time"
+                },
+                {
+                    "id": "d",
+                    "text": "You decide to pivot your entire business model"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Three Selves Framework distinguishes between your Core Self (unconditional worth), Professional Self (skills and expertise), and your Offer (one specific product at one point in time). Left unchecked, the brain collapses all three -- treating a rejected offer as a judgment on your fundamental worth. The practice is to explicitly name which circle was affected after each rejection."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why does the Five-Stage Rejection Processing System require you to 'Feel It' (Stage 1) before extracting data (Stage 3)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because feeling bad is a necessary punishment that motivates you to improve"
+                },
+                {
+                    "id": "b",
+                    "text": "Because emotional suppression research shows that suppressing negative emotions actually intensifies them, so you must allow the feeling to move through you before you can think analytically"
+                },
+                {
+                    "id": "c",
+                    "text": "Because if you skip to data extraction, you will not remember the details of the rejection"
+                },
+                {
+                    "id": "d",
+                    "text": "Because your prospects expect you to show emotion when they reject you"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "James Gross's research at Stanford demonstrates that suppressing negative emotions paradoxically intensifies them. Skipping straight to 'positive thinking' or analysis without first allowing yourself to feel the disappointment creates unprocessed emotional residue that accumulates over time. Feel it first (with a time limit), then separate, then analyze."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What does the lesson mean when it says 'Rejections are not the opposite of sales -- they are a component of sales'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should intentionally get rejected to build character"
+                },
+                {
+                    "id": "b",
+                    "text": "With a typical 20-30% close rate on high-ticket offers, 70-80% of conversations will naturally end in 'no' even when everything is done right -- making rejections a necessary throughput metric, not a failure indicator"
+                },
+                {
+                    "id": "c",
+                    "text": "Rejection means your pricing is wrong and you need to lower it"
+                },
+                {
+                    "id": "d",
+                    "text": "The more rejections you get, the more successful your business is"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The average close rate for high-ticket creator offers is 20-30%. This means even at peak performance, 7-8 out of every 10 conversations end in 'no.' Like a .300 batting average in baseball (considered elite despite 70% misses), rejections are the necessary volume through which successful sales occur -- not evidence of failure."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Take your most recent sales rejection (or a significant one from memory) and process it through all five stages of the Rejection Processing System: (1) name the emotion you felt, (2) identify which of the Three Selves circles was actually affected, (3) categorize the rejection (fit, timing, communication, pricing, or trust issue), (4) describe one specific system update you will make, and (5) state what forward action you will take next.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student has worked through all five stages with a real rejection rather than a hypothetical one. Look for: honest emotional naming in Stage 1 (not just 'I felt bad'), correct use of the Three Selves Framework in Stage 2, a thoughtful categorization in Stage 3 with reasoning, a concrete and actionable system update in Stage 4 (not vague like 'I'll do better'), and a clear forward action in Stage 5."
+        }
+    ]
+}

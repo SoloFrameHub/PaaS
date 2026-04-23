@@ -1,0 +1,55 @@
+import { BigQuery } from '@google-cloud/bigquery';
+import { logger } from '@/lib/logger';
+
+export interface FlowEvent {
+    flowName: string;
+    input: any;
+    output: any;
+    sessionId?: string;
+    userId?: string;
+    metadata?: Record<string, any>;
+    timestamp?: Date;
+}
+
+export const telemetry = {
+    /**
+     * Log a flow execution event to BigQuery
+     */
+    async logFlowEvent(event: FlowEvent) {
+        const projectId = process.env.GOOGLE_CLOUD_PROJECT || process.env.FIREBASE_PROJECT_ID;
+        const datasetId = process.env.BIGQUERY_DATASET_ID || 'genkit_analytics';
+        const tableId = process.env.BIGQUERY_TABLE_ID || 'flow_logs';
+
+        if (!projectId) {
+            logger.warn('GOOGLE_CLOUD_PROJECT not set. Skipping BigQuery logging.');
+            return;
+        }
+
+        // Initialize BigQuery client lazily or per-call (client manages connection pooling usually)
+        const bigquery = new BigQuery({ projectId });
+
+        const row = {
+            timestamp: bigquery.datetime((event.timestamp || new Date()).toISOString()),
+            flow_name: event.flowName,
+            session_id: event.sessionId || null,
+            user_id: event.userId || null,
+            input_json: JSON.stringify(event.input),
+            output_json: JSON.stringify(event.output),
+            metadata_json: event.metadata ? JSON.stringify(event.metadata) : null,
+        };
+
+        try {
+            // Insert data into the table
+            // We use 'partial' insertion to avoid failing on minor schema mismatches if safe
+            await bigquery
+                .dataset(datasetId)
+                .table(tableId)
+                .insert([row], { ignoreUnknownValues: true });
+
+            logger.debug(`Logged flow event to BigQuery: ${event.flowName}`);
+        } catch (error) {
+            // We catch and log, but don't throw to avoid disrupting the main application flow
+            logger.error('Failed to log event to BigQuery', { error });
+        }
+    }
+};

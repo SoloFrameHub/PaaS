@@ -1,0 +1,88 @@
+{
+  "lessonId": "3",
+  "courseId": "retention",
+  "sectionId": "customer-success",
+  "title": "Churn Prediction Signals You Can Actually Track",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of customers who churn never tell you they're unhappy?",
+      "options": [
+        { "id": "a", "text": "30%" },
+        { "id": "b", "text": "50%" },
+        { "id": "c", "text": "70%" },
+        { "id": "d", "text": "90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "70% of customers who churn are 'silent churners' — they never complain, never submit support tickets, and never ask for help. They just stop using your product and cancel weeks later. This is why proactive signal tracking is essential."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How far in advance are churn signals typically visible before a customer cancels?",
+      "options": [
+        { "id": "a", "text": "1-3 days" },
+        { "id": "b", "text": "2-4 weeks" },
+        { "id": "c", "text": "2-3 months" },
+        { "id": "d", "text": "6+ months" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Churn signals are visible 2-4 weeks before cancellation. Usage drops, email engagement declines, and logins become sporadic — all before the customer actually cancels. You have a 14-21 day intervention window."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the difference between leading and lagging indicators in churn prediction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leading indicators are more accurate; lagging indicators are estimates"
+        },
+        {
+          "id": "b",
+          "text": "Leading indicators predict what's about to happen; lagging indicators measure what already happened"
+        },
+        {
+          "id": "c",
+          "text": "Leading indicators come from customers; lagging indicators come from your team"
+        },
+        { "id": "d", "text": "There is no meaningful difference between them" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Lagging indicators measure what already happened (churn, cancellations). Leading indicators predict what's about to happen (usage decline, engagement drop). Effective churn prediction requires tracking leading indicators before it's too late."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If you miss the 14-21 day intervention window, the customer recovery rate drops from 40% to under 10%.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Once a customer has been inactive for 14-21 days, they've mentally moved on. Recovery rate drops below 10% at this point. The critical intervention window is weeks 2-5 after signals first appear."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "According to the churn timeline, at what point does a customer's login frequency typically first drop?",
+      "options": [
+        { "id": "a", "text": "Week 0-1 (immediately)" },
+        { "id": "b", "text": "Week 2-3 (early warning)" },
+        { "id": "c", "text": "Week 6-8 (point of no return)" },
+        { "id": "d", "text": "After they cancel" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Week 2-3 is the early warning phase where login frequency drops 30-50%. The customer is still using the product but less often. Email open rates decline. This is your first signal and the best time to intervene."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "List the 3 most trackable churn signals for your specific product or service. For each signal, describe the threshold that would trigger an alert and the intervention you would take within 48 hours.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies product-specific churn signals (not generic ones), defines concrete thresholds (e.g., 'no login for 7 days' rather than 'reduced usage'), and describes a specific intervention action per signal that could realistically be executed within 48 hours."
+    }
+  ]
+}

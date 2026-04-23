@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the core principle behind Interpersonal and Social Rhythm Therapy (IPSRT)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "That medication alone is sufficient for managing bipolar disorder"
+                },
+                {
+                    "id": "opt2",
+                    "text": "That disruptions to daily routines destabilize biological clocks, which can trigger mood episodes in bipolar disorder"
+                },
+                {
+                    "id": "opt3",
+                    "text": "That social isolation is the primary cause of bipolar episodes"
+                },
+                {
+                    "id": "opt4",
+                    "text": "That people with bipolar disorder should avoid all social interactions to maintain stability"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "IPSRT is based on the social zeitgeber theory, which proposes that life events disrupt social routines, disrupted routines destabilize circadian rhythms, and unstable circadian rhythms trigger mood episodes in biologically vulnerable individuals. Stabilizing social rhythms is therefore protective against episode recurrence."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is sleep called the 'cardinal variable' in bipolar disorder management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because getting enough sleep cures bipolar disorder"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because sleep problems only occur during depressive episodes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because sleep loss can trigger mania, oversleeping can worsen depression, and consistent sleep supports stability -- making it the strongest predictor of mood episodes"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because people with bipolar disorder need more sleep than the general population"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Sleep is called the cardinal variable because sleep disruption is the single strongest predictor of mood episodes in bipolar disorder. Sleep loss can trigger mania (even a single night of significant reduction can trigger hypomania), oversleeping worsens depression, and consistent sleep is one of the most protective factors for mood stability."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which five core daily activities does the Social Rhythm Metric (SRM) track?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Exercise, medication, therapy, journaling, and meditation"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Wake time, first contact with another person, start of main activity, dinner time, and bedtime"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Breakfast, lunch, dinner, snack time, and bedtime"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Morning mood, afternoon mood, evening mood, sleep quality, and energy level"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Social Rhythm Metric tracks five core activities: wake time (anchors circadian rhythm), first contact with another person (social engagement regulates mood), start of main daily activity (structures the day), dinner time (eating patterns affect sleep onset), and bedtime (completes the daily cycle)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If you notice you feel rested after less than 6 hours of sleep and have increased energy, what might this indicate?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "You are becoming a more efficient sleeper"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Your sleep hygiene practices are working well"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It may be an early sign of hypomania rather than genuinely restorative sleep"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should reduce your target sleep time permanently"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Feeling rested after significantly less sleep than usual, especially combined with increased energy, can be an early warning sign of hypomania rather than genuine restorative sleep. During the early stages of a manic or hypomanic episode, reduced sleep need often feels like a benefit, but it actually accelerates the episode."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of the following is considered one of the highest-risk disruptions for people with bipolar disorder?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Changing your exercise routine"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Trying a new restaurant for dinner"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Time zone changes from travel"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Reading a new book before bed"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Time zone changes from travel are among the highest-risk disruptions for people with bipolar disorder because they directly destabilize circadian rhythms. The lesson recommends beginning to shift your schedule 2-3 days before travel (30 minutes per day), maintaining home-time medication schedules for short trips, and using strategic light exposure to adjust."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "bipolar-disorder",
+    "lessonId": "4",
+    "title": "Sleep and Social Rhythm Stability - Quiz"
+}

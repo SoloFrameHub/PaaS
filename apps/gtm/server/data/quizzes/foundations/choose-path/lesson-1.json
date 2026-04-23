@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "choose-path",
+    "sectionId": "foundations",
+    "title": "The Four Founder Contexts Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary distinguishing characteristic of the 'Zero-to-Ten Sprint' context?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Selling software to businesses with buying committees"
+                },
+                {
+                    "id": "b",
+                    "text": "Pre-traction phase with no customers and maximum uncertainty"
+                },
+                {
+                    "id": "c",
+                    "text": "Building an audience before monetization"
+                },
+                {
+                    "id": "d",
+                    "text": "High-touch delivery with relationship-based sales"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Zero-to-Ten Sprint is specifically for founders who haven't validated that anyone will pay yet. It's a phase everyone passes through, characterized by maximum uncertainty and the singular goal of getting 10 paying customers as fast as possible."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Sarah sells a $297/month project management SaaS to marketing agencies. Her deals typically involve the agency owner and their operations manager. Which context best fits her situation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Zero-to-Ten Sprint"
+                },
+                {
+                    "id": "b",
+                    "text": "B2B SaaS"
+                },
+                {
+                    "id": "c",
+                    "text": "Creator/Coach"
+                },
+                {
+                    "id": "d",
+                    "text": "Service Business"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sarah's business has classic B2B SaaS characteristics: software sold to businesses, recurring revenue pricing, and multiple stakeholders (owner + ops manager) involved in purchase decisions. Even though it's a small agency, the buying committee dynamic is present."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Marcus has 12,000 LinkedIn followers and sells a $2,500 coaching program to aspiring consultants. Most clients come from his content. Which context best fits?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Zero-to-Ten Sprint"
+                },
+                {
+                    "id": "b",
+                    "text": "B2B SaaS"
+                },
+                {
+                    "id": "c",
+                    "text": "Creator/Coach"
+                },
+                {
+                    "id": "d",
+                    "text": "Service Business"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Marcus has the Creator/Coach profile: personal brand matters, audience precedes monetization, selling expertise/transformation to individuals who discovered him through content. The high-ticket price and enrollment conversations are typical of this context."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "A founder sells $50/month analytics software AND offers $5,000 consulting engagements to help implement it. How should they approach context selection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Choose B2B SaaS and ignore the consulting"
+                },
+                {
+                    "id": "b",
+                    "text": "Choose Service Business since consulting is higher revenue"
+                },
+                {
+                    "id": "c",
+                    "text": "Identify primary context (likely B2B SaaS) with Service as secondary, borrowing tactics from both"
+                },
+                {
+                    "id": "d",
+                    "text": "They must pick one business model and abandon the other"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Many founders are hybrids. The key is identifying your PRIMARY motion while recognizing secondary contexts. If most customers come through SaaS and consulting is an upsell, B2B SaaS is primary. The hybrid works when pieces reinforce each other."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does the course emphasize that Zero-to-Ten is a 'phase' rather than a permanent context?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's less profitable than other contexts"
+                },
+                {
+                    "id": "b",
+                    "text": "Because every founder passes through validation before they can scale, regardless of eventual business model"
+                },
+                {
+                    "id": "c",
+                    "text": "Because investors don't fund Zero-to-Ten companies"
+                },
+                {
+                    "id": "d",
+                    "text": "Because it only applies to technical founders"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Zero-to-Ten is universal—every founder must validate that someone will pay before building scalable systems. A B2B SaaS founder, creator, and service provider all start at zero. The phase ends when you have proof (10 customers) and can choose your 'real' context."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Based on the four contexts (Zero-to-Ten, B2B SaaS, Creator/Coach, Service Business), which best describes YOUR current situation? Explain your reasoning by referencing specific characteristics: your deal size, how customers find you, who's involved in purchase decisions, and your sales cycle length.",
+            "minLength": 100,
+            "promptForAI": "Evaluate if this reflection: 1) Correctly identifies one of the four contexts, 2) Provides specific evidence from their business (deal size, acquisition source, stakeholders), 3) Shows honest self-assessment about validation status. Push for more specificity if they give generic answers without concrete numbers or examples."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "model": "distilbert/distilbert-base-uncased",
+  "finetuned": true,
+  "dataset": "thePixel42/depression-detection",
+  "train_size": 20000,
+  "test_size": 5000,
+  "threshold": 0.6,
+  "weighted_f1": 0.9604,
+  "distress_f1": 0.9609,
+  "auc_roc": 0.9927,
+  "sensitivity": 0.9582,
+  "specificity": 0.9626,
+  "true_positives": 2431,
+  "false_positives": 92,
+  "false_negatives": 106,
+  "true_negatives": 2371
+}

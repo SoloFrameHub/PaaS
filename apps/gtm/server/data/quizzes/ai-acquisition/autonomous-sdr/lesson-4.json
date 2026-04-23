@@ -1,0 +1,78 @@
+{
+  "lessonId": "4",
+  "courseId": "autonomous-sdr",
+  "sectionId": "ai-acquisition",
+  "title": "Pricing & Economics for Solo Founders",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of total AI SDR cost does the platform fee typically represent?",
+      "options": [
+        { "id": "a", "text": "90-100%" },
+        {
+          "id": "b",
+          "text": "40-60% — setup time, supervision, data costs, and error recovery double or triple the real expense"
+        },
+        { "id": "c", "text": "10-20%" },
+        { "id": "d", "text": "Exactly 50%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The platform fee is only 40-60% of total cost. Hidden costs include setup time (20-40 hours), weekly supervision (3-5 hours), additional data/enrichment costs, and error recovery time. These can double or triple the advertised monthly price."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "A solo founder is getting 8-10 meetings/month with a $156/month DIY stack. An AI SDR platform costs $2,000/month. What improvement is needed to justify the switch?",
+      "options": [
+        { "id": "a", "text": "Any improvement in meeting quality" },
+        {
+          "id": "b",
+          "text": "The platform must generate enough additional revenue to cover the $1,844/month cost difference plus supervision time"
+        },
+        {
+          "id": "c",
+          "text": "No improvement needed — automation always saves time"
+        },
+        { "id": "d", "text": "The platform must book 100+ meetings/month" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The $1,844/month cost difference ($2,000 - $156) plus 3-5 hours/week of supervision time must be offset by increased revenue from additional or higher-quality meetings. If your deal size is $5K, you need roughly 4 additional closed deals per year just to break even."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which cost category is most often overlooked when evaluating AI SDR platforms?",
+      "options": [
+        { "id": "a", "text": "The platform subscription fee" },
+        {
+          "id": "b",
+          "text": "Your time spent on setup, supervision, and error recovery"
+        },
+        { "id": "c", "text": "Internet connection costs" },
+        { "id": "d", "text": "Email domain costs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The most overlooked cost is your own time: 20-40 hours for setup, 3-5 hours/week for supervision, and unpredictable hours for error recovery. At $100-200/hour founder time, this hidden cost often exceeds the platform fee itself."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "When comparing AI SDR platforms to DIY stacks, you should only compare the monthly subscription fees.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. A fair comparison must include all costs: platform fee, additional data/enrichment costs, setup time (amortized), weekly supervision hours (valued at your hourly rate), and error recovery costs. The DIY stack also has time costs, but they're typically lower because you have full control."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate the true monthly cost of adopting an AI SDR platform at your current stage. Include the platform fee, your estimated supervision hours (valued at your hourly rate), setup time amortized over 12 months, and any additional tool costs. Compare this to your current stack cost.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes specific numbers for all cost categories (platform fee, supervision time at an hourly rate, amortized setup cost, additional tools). Look for a clear total-cost comparison between their current stack and the AI SDR option, with a justified conclusion about whether the investment makes sense."
+    }
+  ]
+}

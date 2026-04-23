@@ -1,0 +1,141 @@
+{
+    "lessonId": "8",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "When and How to Ask for Referrals Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "When is the ideal 'Satisfaction Milestone' to ask a customer for a referral?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Immediately after they pay the invoice for the first time."
+                },
+                {
+                    "id": "b",
+                    "text": "When they've achieved a documented result or ROI with your product."
+                },
+                {
+                    "id": "c",
+                    "text": "When they submit a support ticket about a bug."
+                },
+                {
+                    "id": "d",
+                    "text": "Right before you launch a major pricing increase."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Referral asks are most effective when the customer is feeling a high sense of achievement and can clearly articulate the value they've received."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the core idea behind the 'Partner Ask' framing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Asking the customer for a personal favor to help you stay in business."
+                },
+                {
+                    "id": "b",
+                    "text": "Inviting the customer to join you in a mission to help others solve the same problem they faced."
+                },
+                {
+                    "id": "c",
+                    "text": "Offering to make the customer a co-founder of your company."
+                },
+                {
+                    "id": "d",
+                    "text": "Demanding a referral as a condition of continued service."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Partner Ask moves the referral from a 'transactional favor' to a 'helpful service,' making the customer feel like an expert and an advocate."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the Airbnb case study, why did focusing on the 'Gift' to the friend increase referrals by 25%?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because people are inherently selfish and wanted the friend to pay for them."
+                },
+                {
+                    "id": "b",
+                    "text": "Because the social reward of being generous and helpful to a friend is often more powerful than a small cash kickback."
+                },
+                {
+                    "id": "c",
+                    "text": "Because friends were more likely to ignore the email if it only mentioned the referrer's benefit."
+                },
+                {
+                    "id": "d",
+                    "text": "Because it was easier to explain in the email subject line."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Many referrers are motivated by 'Social Currency'—the desire to be seen as helpful and knowledgeable. Focusing on the benefit to the friend leverages this motivation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the best way to handle a customer who stays silent after a referral request?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Follow up every 3 days until they respond."
+                },
+                {
+                    "id": "b",
+                    "text": "Send one gentle follow-up, then respect the silence and move on."
+                },
+                {
+                    "id": "c",
+                    "text": "Call them on their personal phone to explain why you need the lead."
+                },
+                {
+                    "id": "d",
+                    "text": "Threaten to remove them from your referral program."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Referrals are high-trust, voluntary actions. Pushing a customer who isn't ready can damage the relationship and your reputation."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should a 'copy-paste blurb' include to reduce friction for the referrer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A 5-paragraph history of your company."
+                },
+                {
+                    "id": "b",
+                    "text": "A technical specification of your latest API update."
+                },
+                {
+                    "id": "c",
+                    "text": "A short, conversational recommendation and a unique referral link."
+                },
+                {
+                    "id": "d",
+                    "text": "A list of all your competitors and why you are better."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The goal of the blurb is to make it brainless for the customer to share your product. Short and conversational is always better."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Identify your most successful current customer. If you were reaching out to them today, how would you frame the 'mission' of your company to make them feel like a partner in a shared goal? Write the first two sentences of that email.",
+            "minLength": 100,
+            "promptForAI": "The user should define a mission-driven framing that elevates the referral request. Evaluate the response for its ability to move beyond 'asking for a favor' and toward a 'shared goal' narrative."
+        }
+    ]
+}

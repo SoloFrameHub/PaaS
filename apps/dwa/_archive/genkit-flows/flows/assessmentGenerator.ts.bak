@@ -1,0 +1,133 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import type { FounderProfile } from '@/types/profile';
+
+const AssessmentItem = z.object({
+  category: z.string(),
+  title: z.string(),
+  description: z.string(),
+  impact: z.enum(['high', 'medium', 'low']),
+  addressedInCourse: z.number(),
+  actionableStep: z.string(),
+});
+
+const JourneyPhase = z.object({
+  phase: z.string(),
+  courses: z.array(z.number()),
+  estimatedWeeks: z.number(),
+});
+
+const SourceAudit = z.object({
+  source: z.enum(['website', 'linkedin', 'documents']),
+  title: z.string(),
+  critique: z.string(),
+  recommendations: z.array(z.string()),
+});
+
+const AssessmentOutput = z.object({
+  overallReadiness: z.number().min(0).max(100),
+  scores: z.object({
+    icpClarity: z.number().min(0).max(100),
+    positioningStrength: z.number().min(0).max(100),
+    messagingConsistency: z.number().min(0).max(100),
+    channelReadiness: z.number().min(0).max(100),
+    salesProcessMaturity: z.number().min(0).max(100),
+  }),
+  scoreReasoning: z.object({
+    icpClarity: z.string(),
+    positioningStrength: z.string(),
+    messagingConsistency: z.string(),
+    channelReadiness: z.string(),
+    salesProcessMaturity: z.string(),
+  }),
+  quickWins: z.array(z.object({
+    category: z.string(),
+    title: z.string(),
+    description: z.string(),
+    impact: z.enum(['high', 'medium', 'low']),
+    addressedInCourse: z.number().optional(),
+    actionableStep: z.string(),
+  })).optional().default([]),
+  criticalGaps: z.array(z.object({
+    category: z.string(),
+    title: z.string(),
+    description: z.string(),
+    impact: z.enum(['high', 'medium', 'low']),
+    addressedInCourse: z.number().optional(),
+    actionableStep: z.string(),
+  })).optional().default([]),
+  recommendedPath: z.enum(['inbound', 'outbound', 'hybrid']),
+  recommendedStartCourse: z.number().optional().default(1),
+  journeyMap: z.array(z.object({
+    phase: z.string(),
+    courses: z.array(z.number()),
+    estimatedWeeks: z.number(),
+  })).optional().default([]),
+  personalizedInsight: z.string().optional().default("Your profile has been analyzed."),
+  sourceAudits: z.array(SourceAudit).optional().default([]),
+});
+
+export type Assessment = z.infer<typeof AssessmentOutput>;
+
+export const generateAssessmentFlow = ai.defineFlow(
+  {
+    name: 'generateAssessment',
+    inputSchema: z.object({
+      profile: z.custom<Partial<FounderProfile>>(),
+    }),
+    outputSchema: AssessmentOutput,
+  },
+  async ({ profile }: { profile: Partial<FounderProfile> }) => {
+    const result = await ai.generate({
+      model: gemini20Flash,
+      prompt: `MISSION: You are an UNCOMPROMISING GROWTH STRATEGIST & AUDITOR. Your goal is to assess a solo founder's readiness by brutally cross-referencing all data sources to find strategic mismatches. 
+      
+      FOUNDER PROFILE:
+      - Name: ${profile.name}
+      - Business: ${profile.businessName}
+      - Model: ${profile.businessModel}
+      - Stage: ${profile.stage}
+      - Goal: ${profile.primaryGoal}
+      - Challenge: ${profile.biggestChallenge || 'Not specified'}
+      - Website: ${profile.websiteUrl || 'Not provided'}
+      - LinkedIn: ${profile.linkedinUrl || 'Not provided'}
+      - Pitch: ${profile.elevatorPitch || 'Not provided'}
+      - Target Audience: ${profile.targetAudience || 'Not provided'}
+
+      DATA SOURCES FOR CROSS-REFERENCING:
+      1. ICP & VALUE PROP: ${profile.inferred?.icpSummary || profile.targetAudience || 'None'} / ${profile.inferred?.valueProposition || profile.elevatorPitch || 'None'}
+      2. LINKEDIN ANALYSIS: ${JSON.stringify(profile.inferred?.linkedinAnalysis || 'Not analyzed')}
+      3. QUESTIONNAIRE DATA: ${JSON.stringify(profile.questionnaire || 'Not provided')}
+      4. DOCUMENT SIGNALS (Pitch Decks, Proposals, etc): ${JSON.stringify((profile.inferred as any)?.ragSignals || 'No deep document context')}
+
+      YOUR STRATEGIC AUDIT TASKS:
+      1. **Score with Explicit Reasoning**: For every score (0-100), you MUST provide a "scoreReasoning" string explaining EXACTLY why. E.g. "Low score because Pitch Deck targets Enterprise but Website pricing is $29/mo."
+      2. **Source Audits (CRITICAL)**: For each provided source (Website, LinkedIn, Documents), generate a "sourceAudits" entry in your JSON output. 
+         - **LinkedIn Audit**: Critique the profile - is it a landing page or just a resume? Does it speak to the ICP?
+         - **Website Audit**: Critique the hero section and CTA. Does it pass the "5-second test"?
+         - **Documents Audit**: Critique the cohesion between the business plan and pitch deck. Find the gaps.
+      3. **Force a Path Choice**: Do NOT default to "hybrid". If they have no audience, choose "outbound". If they have 10k+ followers, choose "inbound". Only choose "hybrid" if they demonstrate capabilities in BOTH.
+      4. **Spicy Insights**: Call out the specific conflicts in the "personalizedInsight" field.
+
+      RELIABILITY RULES:
+      1. CITE SOURCES in reasoning.
+      2. NO HALLUCINATION.
+      3. ARRAY LENGTH: "sourceAudits" should have one entry for each source providing data. "quickWins" and "criticalGaps" must have 3 items each.
+      4. VOICE: Direct, expert, and slightly provocative. Avoid fluff.`,
+      output: {
+        format: 'json',
+        schema: AssessmentOutput,
+      },
+      config: {
+        temperature: 0.4,
+        maxOutputTokens: 2500,
+      },
+    });
+
+    if (!result.output) {
+      throw new Error('AI failed to generate assessment');
+    }
+
+    return result.output;
+  }
+);

@@ -1,0 +1,91 @@
+{
+    "lessonId": "7",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "Social Proof in DMs",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does sharing a testimonial inside a DM conversation have more impact than displaying the same testimonial on a sales page?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because DM testimonials bypass advertising regulations that apply to sales pages"
+                },
+                {
+                    "id": "b",
+                    "text": "Because in a DM you can match the testimonial precisely to the prospect's situation (similarity bias), share the most recent results (recency effect), and frame it as a story rather than marketing evidence (conversational framing)"
+                },
+                {
+                    "id": "c",
+                    "text": "Because people trust screenshots more than formatted text on websites"
+                },
+                {
+                    "id": "d",
+                    "text": "Because sales pages have too many testimonials, which causes decision fatigue"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Three psychological principles make DM social proof more powerful: similarity bias (you can select proof from someone who matches the prospect's situation), recency effect (you can share the freshest results), and conversational framing (a story told in conversation activates different parts of the brain than a review block on a marketing page). The precision of matching and the personal context are impossible to replicate on a static page."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the correct approach to communicating urgency in DMs without being pushy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tell the prospect the price is going up tomorrow even if it is not, because manufactured urgency drives faster decisions"
+                },
+                {
+                    "id": "b",
+                    "text": "Never mention urgency or deadlines because any form of urgency is manipulative"
+                },
+                {
+                    "id": "c",
+                    "text": "Present real constraints (limited spots, cohort deadlines, genuine capacity limits) as information to help them make an informed decision, not as pressure"
+                },
+                {
+                    "id": "d",
+                    "text": "Send multiple follow-up messages each day reminding them of the deadline"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson distinguishes between manufactured urgency (fake deadlines, false scarcity) and real urgency (genuine capacity constraints, cohort start dates, life events). Real urgency should be communicated as helpful information -- framing it as 'just so you have the full picture' -- rather than as pressure. This respects the prospect's autonomy while giving them the context they need to make a timely decision."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Let Me Show You What [Client] Achieved' framework, what is the purpose of the fourth message (The Bridge)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To ask the prospect for their credit card information"
+                },
+                {
+                    "id": "b",
+                    "text": "To connect the client's story back to the prospect's specific situation and ask whether they would like to explore a similar approach"
+                },
+                {
+                    "id": "c",
+                    "text": "To send the prospect a link to your full portfolio of case studies"
+                },
+                {
+                    "id": "d",
+                    "text": "To apologize for taking up their time with someone else's story"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Bridge message connects the case study back to the prospect by noting the parallels between the client's starting situation and the prospect's current situation. It then asks a soft, permission-based question: 'Would you want to explore whether the same approach could work for you?' By this point, the prospect has already imagined themselves in the client's position, making the transition to discussing your offer feel natural."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Describe your current social proof inventory. What types of proof do you already have (client results, feedback messages, revenue screenshots, casual endorsements)? What gaps exist in your collection? Based on the five categories from the lesson, which category is your weakest, and what specific action will you take this week to start filling it?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner has honestly assessed their existing social proof assets and identified specific gaps. Look for references to the five categories: Quick Wins, Transformation Stories, Similar Situations, Process Validation, and Casual Endorsements. The action plan should be specific and achievable within one week (e.g., reaching out to specific past clients, setting up a screenshot collection system). Encourage them to start building even if their current inventory is sparse."
+        }
+    ]
+}

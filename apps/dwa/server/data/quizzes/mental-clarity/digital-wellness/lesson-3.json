@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is digital mental health literacy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "The ability to avoid all technology to protect mental health"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Understanding how technology affects wellbeing and having skills to evaluate claims critically"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Knowing how to use all social media platforms"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Being able to code and build apps"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Digital mental health literacy combines understanding technology's impact on wellbeing with critical thinking skills to evaluate claims, distinguish evidence quality, and make informed decisions about technology use."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is it important to distinguish between STRONG, MODERATE, and WEAK evidence in digital wellness claims?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because all research is equally valid"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because many popular claims are overstated or based on weak evidence, leading to ineffective or anxiety-inducing interventions"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because you should only trust claims labeled as STRONG"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because evidence quality doesn't matter for wellness decisions"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Evidence grading helps you avoid ineffective strategies (based on weak evidence) and excessive anxiety (from overstated claims), while focusing on interventions with demonstrated benefits."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are common red flags in digital wellness claims?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Citations to peer-reviewed research and acknowledgment of limitations"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Absolute language ('always', 'never'), single studies as proof, and ignoring contradictory evidence"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Using percentages and statistics"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Acknowledging that evidence is mixed or context-dependent"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Red flags include absolute claims, cherry-picking single studies, ignoring contradictory evidence, and oversimplifying complex relationships. Good sources acknowledge limitations and nuance."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the difference between correlation and causation in digital wellness research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "There is no difference — correlation proves causation"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Correlation means two things occur together; causation means one directly causes the other. Most digital wellness research shows correlation, not causation"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Causation is weaker evidence than correlation"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Correlation only matters in experimental studies"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Correlation (association) doesn't prove causation (direct cause-effect). For example, high social media use correlates with depression, but that doesn't prove social media causes depression — depression might cause increased social media use, or both might be caused by a third factor."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a digital wellness claim you've heard recently (e.g., 'social media causes depression', 'blue light ruins your sleep', 'phone addiction is real'). What evidence would you need to see to evaluate whether that claim is strong, moderate, or overstated?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "3",
+    "title": "Digital Mental Health Literacy - Quiz"
+}

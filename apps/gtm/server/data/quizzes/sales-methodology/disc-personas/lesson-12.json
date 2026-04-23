@@ -1,0 +1,94 @@
+{
+  "lessonId": "12",
+  "courseId": "disc-personas",
+  "sectionId": "sales-methodology",
+  "title": "The Grand Unified Theory of Your Sales Process",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "According to the Grand Unified Theory, what is the root cause of most past sales failures for technical founders?",
+      "options": [
+        { "id": "a", "text": "The product wasn't good enough" },
+        { "id": "b", "text": "The market was too competitive" },
+        {
+          "id": "c",
+          "text": "The Translation Layer — broadcasting on FM while the buyer was on AM"
+        },
+        { "id": "d", "text": "Pricing was too high" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Grand Unified Theory identifies the Translation Layer as the root cause. It wasn't the product or the market — it was that you were communicating in your default style instead of adapting to the buyer's DISC frequency."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the four steps of the Dissonance-Reduction Protocol?",
+      "options": [
+        { "id": "a", "text": "Research, pitch, handle objections, close" },
+        {
+          "id": "b",
+          "text": "Identify the Phenotype, Match the Frequency, Detect the Tension, Pivot the Interface"
+        },
+        { "id": "c", "text": "Qualify, demonstrate, negotiate, contract" },
+        { "id": "d", "text": "Listen, empathize, solve, follow up" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The four steps are: (1) Identify the Phenotype using the 120-second diagnostic, (2) Match the Frequency by adjusting pace and focus, (3) Detect the Tension using your Dissonance Radar, and (4) Pivot the Interface by changing your language, not your product."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the core fear of a High S (Guardian) buyer?",
+      "options": [
+        { "id": "a", "text": "Loss of control" },
+        { "id": "b", "text": "Social rejection" },
+        { "id": "c", "text": "Chaos and conflict" },
+        { "id": "d", "text": "Being wrong" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Guardian (S) fears chaos and conflict. Their motto is 'Let's keep things stable.' Their dissonance trigger is insecurity, and the best close is a safe step or pilot that minimizes perceived risk."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Using DISC in sales is about manipulating buyers into purchasing something they don't need.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. DISC-based selling is Problem Solving Applied to Human Systems. You aren't manipulating — you're translating. You're changing your communication interface to reduce cognitive dissonance in the buyer, making it easier for them to evaluate your actual solution."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "In the 30-Day Mastery Roadmap, what is the focus of Days 1-7 (The Labeling Lab)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Completely change your sales pitch for each DISC type"
+        },
+        {
+          "id": "b",
+          "text": "Just label every person you meet as D, I, S, or C without changing your pitch"
+        },
+        {
+          "id": "c",
+          "text": "Write custom email templates for each DISC type"
+        },
+        { "id": "d", "text": "Run a complete sales cycle using DISC" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Days 1-7 focus purely on labeling — don't change your pitch yet, just label every person you meet as D, I, S, or C and note their 'Tells' (pace, vocabulary, focus). Building detection skill comes before behavioral adaptation."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Create your personal DISC Battle Card: identify your own default DISC type, your 'Primitive Default' under stress, and the specific adaptations you need to make for each of the other three types. Include one concrete action you will take this week to practice.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response accurately self-identifies a DISC type with evidence (behavioral patterns, not just preference), recognizes their stress reversion pattern, provides specific adaptations for each of the other three types (pace, language, focus changes), and commits to a concrete practice action this week."
+    }
+  ]
+}

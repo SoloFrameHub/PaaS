@@ -1,0 +1,87 @@
+{
+  "lessonId": "2",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "LinkedIn-Native vs Off-Platform Enrichment (ToS-Safe)",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the '80-Profile Rule' for LinkedIn research?",
+      "options": [
+        {
+          "id": "a",
+          "text": "You must view at least 80 profiles before sending outreach"
+        },
+        {
+          "id": "b",
+          "text": "LinkedIn flags accounts that view more than 80-100 profiles per day without corresponding engagement"
+        },
+        {
+          "id": "c",
+          "text": "You need 80 profiles in your CRM before launching campaigns"
+        },
+        { "id": "d", "text": "80% of profiles have accurate contact data" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LinkedIn's algorithm flags accounts viewing more than 80-100 profiles per day without corresponding engagement (likes, comments, messages). Exceeding this threshold risks being flagged for 'commercial use' and facing restrictions or being pushed to upgrade."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'Two-Screen Workflow' for ToS-safe LinkedIn enrichment?",
+      "options": [
+        { "id": "a", "text": "Using two monitors for faster research" },
+        {
+          "id": "b",
+          "text": "Screen 1: LinkedIn Sales Navigator for manual research; Screen 2: Apollo/Clay/Hunter for off-platform enrichment"
+        },
+        {
+          "id": "c",
+          "text": "Running LinkedIn on desktop and mobile simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "Using two LinkedIn accounts to double your view limit"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Two-Screen Workflow separates LinkedIn research (manual, ToS-compliant browsing on Sales Navigator) from data enrichment (using Apollo, Clay, or Hunter off-platform). You research on LinkedIn, then use company names and public data to find contact info through separate tools."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which of the following activities got Apollo and Seamless.AI users banned from LinkedIn?",
+      "options": [
+        { "id": "a", "text": "Using LinkedIn's built-in search filters" },
+        {
+          "id": "b",
+          "text": "Automated profile viewing, data scraping via Chrome extensions, and systematic data extraction"
+        },
+        { "id": "c", "text": "Posting content about their products" },
+        { "id": "d", "text": "Using LinkedIn Sales Navigator saved searches" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Apollo and Seamless.AI users were banned because their Chrome extensions automated profile viewing, scraped data directly from LinkedIn pages, and stored LinkedIn-sourced data without proper licensing. LinkedIn detected patterns of thousands of profile views per day and automated connection requests."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Exporting your own LinkedIn connections to CSV is a banned activity that violates LinkedIn's Terms of Service.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Exporting your own LinkedIn connections to CSV is classified as safe and ToS-compliant. LinkedIn provides this as a built-in feature under Settings > Data Privacy > Get a copy of your data. What's banned is automated scraping of other people's profiles at scale."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Audit your current LinkedIn data extraction practices. Which activities fall in the safe, grey area, or banned categories? What changes do you need to make to ensure you stay ToS-compliant while still building effective prospect lists?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly audits their current practices against the three categories (safe, grey area, banned). Look for specific tool mentions and whether they identify concrete changes needed. Check that they understand the distinction between manual research and automated scraping."
+    }
+  ]
+}

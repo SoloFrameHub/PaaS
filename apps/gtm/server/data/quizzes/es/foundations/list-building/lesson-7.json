@@ -1,0 +1,141 @@
+{
+  "lessonId": "7",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Selección y Configuración del CRM",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el papel principal de un CRM para un fundador en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crear informes complejos para inversores"
+        },
+        {
+          "id": "b",
+          "text": "Descarga cognitiva — actuar como reemplazo de la memoria para asegurar que no se pierdan los seguimientos"
+        },
+        {
+          "id": "c",
+          "text": "Automatizar todo el proceso de ventas para que el fundador no tenga que trabajar"
+        },
+        {
+          "id": "d",
+          "text": "Almacenar fotos personales y notas"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El CRM de un fundador en solitario es una herramienta de productividad personal y enfoque. Su trabajo principal es liberar energía mental rastreando a quién contactar y cuándo."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la 'Regla de 50' en la gestión de CRM en solitario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solo deberías tener 50 prospectos en total"
+        },
+        {
+          "id": "b",
+          "text": "Mantén el CRM simple hasta que tengas 50 oportunidades activas"
+        },
+        {
+          "id": "c",
+          "text": "El CRM debe costar menos de $50/mes"
+        },
+        {
+          "id": "d",
+          "text": "Cada trato debe valer al menos $5,000"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Complicar excesivamente un CRM desde el principio es una forma común de 'Procrastinar-Construyendo'. La simplicidad te permite enfocarte en vender hasta que el volumen justifique más complejidad."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué CRM se recomienda para ventas de alta confianza y basadas en relaciones (como Coaching o Servicios)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Close"
+        },
+        {
+          "id": "b",
+          "text": "Pipedrive"
+        },
+        {
+          "id": "c",
+          "text": "Folk"
+        },
+        {
+          "id": "d",
+          "text": "Excel"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Folk está diseñado para la gestión de relaciones y ventas con mucho contexto, lo que lo hace ideal para creadores y coaches."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el 'Registro Dorado' o campo más importante en tu CRM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El segundo nombre del prospecto"
+        },
+        {
+          "id": "b",
+          "text": "El Logo de la Empresa"
+        },
+        {
+          "id": "c",
+          "text": "La Fecha de Próxima Acción"
+        },
+        {
+          "id": "d",
+          "text": "La fecha en que se creó el contacto"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Si un trato no tiene una 'Fecha de Próxima Acción', efectivamente está muerto. Este campo impulsa el impulso de tu proceso de ventas."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el propósito de la rutina de CRM de '15 Minutos'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pasar la mayor cantidad de tiempo posible en el CRM"
+        },
+        {
+          "id": "b",
+          "text": "Garantizar la precisión de los datos y el impulso con mínima interrupción a tu trabajo principal"
+        },
+        {
+          "id": "c",
+          "text": "Capacitar a tus empleados sobre cómo usar la herramienta"
+        },
+        {
+          "id": "d",
+          "text": "Encontrar 15 nuevos leads cada día"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La rutina asegura que el CRM se mantenga útil sin convertirse en un trabajo administrativo a tiempo completo."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "¿Qué herramienta de CRM has elegido (o hacia cuál te inclinas) y por qué? ¿Cómo te protegerás de la trampa de 'Procrastinar-Construyendo' durante tu configuración? Comprométete con días/horas específicos para tu rutina diaria de 15 minutos.",
+      "minLength": 100,
+      "promptForAI": "Evalúa si la elección de herramienta coincide con el contexto del Curso 3. Verifica una mención específica de 'Fecha de Acción' en su compromiso de rutina. Responde si describen una configuración que suena excesivamente compleja para su etapa actual."
+    }
+  ]
+}

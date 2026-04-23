@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which omega-3 fatty acid has the strongest evidence for antidepressant effects when used as supplementation?",
+            "options": [
+                { "id": "opt1", "text": "DHA (docosahexaenoic acid)" },
+                { "id": "opt2", "text": "ALA (alpha-linolenic acid)" },
+                { "id": "opt3", "text": "EPA (eicosapentaenoic acid)" },
+                { "id": "opt4", "text": "GLA (gamma-linolenic acid)" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "EPA-predominant supplementation shows the strongest antidepressant effect. The mechanism involves reducing pro-inflammatory cytokines (IL-6, TNF-alpha), enhancing serotonin receptor sensitivity, and improving membrane fluidity in the prefrontal cortex."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What happens when the IDO enzyme is activated by chronic inflammation?",
+            "options": [
+                { "id": "opt1", "text": "It increases serotonin production in the brain" },
+                { "id": "opt2", "text": "It converts dopamine into norepinephrine more efficiently" },
+                { "id": "opt3", "text": "It blocks all neurotransmitter reuptake" },
+                { "id": "opt4", "text": "It diverts tryptophan away from serotonin production into the neurotoxic kynurenine pathway" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Chronic inflammation activates the IDO enzyme, which shunts tryptophan down the kynurenine pathway instead of converting it to serotonin. This produces neurotoxic metabolites while simultaneously depleting serotonin precursors — a dual insult that explains why some individuals do not respond fully to SSRIs."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is L-methylfolate (5-MTHF) preferred over standard folic acid for depression treatment?",
+            "options": [
+                { "id": "opt1", "text": "It is significantly cheaper than folic acid supplements" },
+                { "id": "opt2", "text": "It bypasses the MTHFR enzyme entirely, making it effective regardless of genetic polymorphism status" },
+                { "id": "opt3", "text": "It only needs to be taken once per month" },
+                { "id": "opt4", "text": "It directly increases dopamine without affecting serotonin" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "L-methylfolate bypasses the MTHFR enzyme entirely, making it effective regardless of genetic polymorphism status. Up to 40% of some populations carry MTHFR polymorphisms that impair folate metabolism, and approximately 30% of individuals with treatment-resistant depression have suboptimal folate status."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the SMILES trial, what percentage of participants with moderate-to-severe depression achieved remission through Mediterranean-style dietary counseling?",
+            "options": [
+                { "id": "opt1", "text": "8%" },
+                { "id": "opt2", "text": "15%" },
+                { "id": "opt3", "text": "50%" },
+                { "id": "opt4", "text": "32%" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "The SMILES trial demonstrated that dietary counseling focused on Mediterranean-style eating produced remission in 32% of participants with moderate-to-severe depression — more than triple the rate in the social support control group (8%)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why should SAMe (S-Adenosylmethionine) NOT be combined with serotonergic medications without medical supervision?",
+            "options": [
+                { "id": "opt1", "text": "SAMe neutralizes the effects of all antidepressants" },
+                { "id": "opt2", "text": "SAMe causes severe liver damage when combined with any medication" },
+                { "id": "opt3", "text": "The combination carries a risk of serotonin syndrome, a potentially life-threatening condition" },
+                { "id": "opt4", "text": "SAMe is only effective when taken without any other supplements" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "SAMe increases serotonin, norepinephrine, and dopamine levels. Combining it with serotonergic medications (SSRIs, SNRIs, MAOIs) can lead to excessive serotonergic activity and serotonin syndrome — a potentially fatal medical emergency."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "1",
+    "title": "Nutrition for Major Depressive Disorder - Quiz"
+}

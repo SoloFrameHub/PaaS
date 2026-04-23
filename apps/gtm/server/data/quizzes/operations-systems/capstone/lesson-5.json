@@ -1,0 +1,66 @@
+{
+  "lessonId": "5",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "System Assembly: Retention + Expansion + Advocacy",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the most common cause of preventable churn?",
+      "options": [
+        { "id": "a", "text": "Product bugs" },
+        { "id": "b", "text": "Competitor pricing" },
+        { "id": "c", "text": "Bad onboarding in the first 30 days" },
+        { "id": "d", "text": "Economic downturns" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Bad onboarding is the most common cause of preventable churn. The first 30 days of a customer relationship determine whether they stay for 12. David's simple 30-day onboarding sequence dropped his churn from 32% to 11%."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How much more valuable is a customer who expands compared to a new customer?",
+      "options": [
+        { "id": "a", "text": "2x more valuable" },
+        { "id": "b", "text": "5x more valuable" },
+        { "id": "c", "text": "10x more valuable" },
+        { "id": "d", "text": "Equal value" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A customer who stays is worth 5x a new customer. A customer who expands is worth 10x. And a customer who refers someone who becomes a customer creates the compounding machine that makes the entire system work."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What three qualities make a good health score signal?",
+      "options": [
+        { "id": "a", "text": "Expensive, complex, comprehensive" },
+        { "id": "b", "text": "Observable, leading indicator, actionable" },
+        { "id": "c", "text": "Revenue-based, automated, monthly" },
+        { "id": "d", "text": "Qualitative, subjective, holistic" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Good health score signals are observable (measurable without asking), leading indicators (change before churn behavior), and actionable (a change triggers a specific action). Examples include login frequency, milestone completion, and response rate to check-ins."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The retention system is separate from the acquisition system and has no impact on acquisition costs.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Acquisition, Conversion, Retention, and Advocacy form a loop. Every customer you keep reduces acquisition burden. Every referral lowers cost per customer. Every testimonial improves conversion. Retention directly funds and accelerates acquisition."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Describe your current onboarding experience from the customer's perspective. What happens on Day 1, Day 7, Day 30, and Day 90? Where do customers disengage, and what specific improvement would you make?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response maps specific customer touchpoints at the key milestones (Day 1, 7, 30, 90), identifies where disengagement happens, and proposes a concrete improvement such as adding a check-in sequence or creating a progress tracker."
+    }
+  ]
+}

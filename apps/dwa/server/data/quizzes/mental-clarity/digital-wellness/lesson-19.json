@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the purpose of a personal digital wellness assessment?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "To diagnose a clinical disorder"
+                },
+                {
+                    "id": "opt2",
+                    "text": "To reflect on your current technology habits, identify what's working and what's not, and clarify your values and goals"
+                },
+                {
+                    "id": "opt3",
+                    "text": "To compare yourself to others"
+                },
+                {
+                    "id": "opt4",
+                    "text": "To calculate your total screen time"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A personal digital wellness assessment is a self-reflection tool to examine your current habits, identify patterns that support or undermine your wellbeing, and clarify what changes align with your values and goals."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which question is most important to ask during a digital wellness assessment?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "How many hours per day do I use screens?"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Does my technology use align with my values? Does it support or interfere with what matters most to me?"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Do I use more technology than my friends?"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Which apps are most popular right now?"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The most important question is values alignment: Does your technology use support what matters to you (relationships, health, growth, rest)? Hours matter less than whether your use serves or undermines your priorities."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are key areas to assess in your digital wellness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only your total screen time"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Sleep quality, attention/focus, emotional wellbeing, relationships, physical health, and values alignment"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Which devices you own"
+                },
+                {
+                    "id": "opt4",
+                    "text": "How many apps you have installed"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A comprehensive assessment covers: sleep (nighttime use, quality), attention (fragmentation, focus), emotions (stress, comparison), relationships (connection vs. distraction), physical health (posture, eye strain), and values alignment."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What should you do with insights from your digital wellness assessment?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Feel bad about your habits and do nothing"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Identify 1-3 high-impact changes to experiment with, set specific goals, and track whether they improve your wellbeing"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Quit all technology immediately"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Compare your results to others and compete"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Use assessment insights to prioritize: choose 1-3 changes with the highest potential impact, set specific, measurable goals, experiment, and track results. Small, strategic changes beat overwhelming overhauls."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Complete a quick self-assessment: Rate your satisfaction (1-10) with how technology affects your sleep, focus, relationships, and emotional wellbeing. Which area needs the most improvement? What's one specific change you could test this week?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "19",
+    "title": "Personal Digital Wellness Assessment - Quiz"
+}

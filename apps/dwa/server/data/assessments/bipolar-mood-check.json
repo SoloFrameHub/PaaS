@@ -1,0 +1,92 @@
+{
+  "id": "bipolar-mood-check",
+  "title": "Bipolar Mood Pattern Self-Check",
+  "description": "This brief self-check helps you reflect on mood patterns that are common in bipolar disorder — including elevated mood, depressed mood, and instability. It is not a diagnostic tool and cannot determine whether you have bipolar disorder. Its purpose is to increase self-awareness and help you have more informed conversations with your clinician.",
+  "instructions": "For each statement below, choose the response that best describes your experience over the past 2 weeks. Answer honestly — there are no right or wrong answers.",
+  "timeframe": "Over the past 2 weeks",
+  "questions": [
+    {
+      "id": "elevated-mood",
+      "text": "I had periods where my mood felt unusually high, energized, or irritable — beyond what the situation called for"
+    },
+    {
+      "id": "sleep-decrease",
+      "text": "I needed significantly less sleep than usual but still felt energetic or wired"
+    },
+    {
+      "id": "racing-thoughts",
+      "text": "My thoughts raced or I had so many ideas that I couldn't keep up"
+    },
+    {
+      "id": "impulsivity",
+      "text": "I acted impulsively in ways I normally wouldn't (spending, risky decisions, starting big projects)"
+    },
+    {
+      "id": "depressed-mood",
+      "text": "I felt persistently sad, empty, or hopeless for days at a time"
+    },
+    {
+      "id": "withdrawal",
+      "text": "I withdrew from people, activities, or responsibilities I usually care about"
+    },
+    {
+      "id": "energy-swings",
+      "text": "My energy level swung between extremes — very high or very low — in ways that affected my daily functioning"
+    },
+    {
+      "id": "instability",
+      "text": "My mood shifted dramatically in ways that felt confusing or hard to predict"
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Very often"
+    }
+  },
+  "scoring": {
+    "maxScore": 32,
+    "bands": [
+      {
+        "min": 0,
+        "max": 8,
+        "label": "Low endorsement",
+        "description": "Your answers suggest relatively stable mood patterns over the past two weeks. The psychoeducation in this course can still help you understand mood variability, build healthy routines, and support someone you care about."
+      },
+      {
+        "min": 9,
+        "max": 16,
+        "label": "Moderate endorsement",
+        "description": "You endorsed some mood instability patterns. This course will help you understand these experiences, learn tracking and coping strategies, and identify when professional support is important. If you haven't already, consider discussing these patterns with a clinician."
+      },
+      {
+        "min": 17,
+        "max": 24,
+        "label": "Significant endorsement",
+        "description": "Your answers suggest mood patterns that are meaningfully affecting your life. We encourage you to work through this course AND speak with a mental health professional — ideally one experienced with mood disorders. Structured support can make a real difference."
+      },
+      {
+        "min": 25,
+        "max": 32,
+        "label": "High endorsement",
+        "description": "Your answers suggest pronounced mood instability that is likely causing significant disruption. We strongly encourage you to seek professional evaluation if you haven't already. A psychiatrist or psychologist experienced with bipolar spectrum disorders can provide proper assessment and treatment planning. If you are in crisis or feeling unsafe, please reach out to a crisis resource immediately."
+      }
+    ],
+    "functionalImpairmentQuestion": {
+      "text": "How much have mood swings or instability interfered with your daily life, relationships, or work over the past 2 weeks?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "A little" },
+        { "value": 2, "label": "Moderately" },
+        { "value": 3, "label": "A lot" },
+        { "value": 4, "label": "Severely" }
+      ]
+    }
+  },
+  "disclaimer": "This self-check is for educational self-reflection only. It is NOT a diagnostic tool for bipolar disorder and cannot replace professional evaluation. Bipolar disorder requires clinical assessment by a qualified mental health professional. Do not use these results to self-diagnose or make medication decisions. If you are experiencing a mental health crisis, call or text 988 (Suicide & Crisis Lifeline) or go to your nearest emergency room."
+}

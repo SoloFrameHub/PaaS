@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Your friend says 'I can't keep up with everything anymore. Work is impossible, my family needs me, and I'm failing at both.' Which response demonstrates active listening?",
+      "options": [
+        {"id": "opt1", "text": "'You're not failing! You're doing great — you just need to think more positively!'"},
+        {"id": "opt2", "text": "'I know exactly how you feel. When I was overwhelmed last year, I made a to-do list and prioritized. You should try that.'"},
+        {"id": "opt3", "text": "'It sounds like you're feeling completely overwhelmed trying to manage work and family responsibilities, and like you're not succeeding at either right now. That sounds exhausting.'"},
+        {"id": "opt4", "text": "'Have you talked to your boss about reducing your workload? Maybe you need to set better boundaries.'"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "This response uses two core active listening skills: reflecting/paraphrasing ('feeling completely overwhelmed trying to manage work and family') and validating emotions ('that sounds exhausting'). It shows you're tracking their experience and creates space for them to continue. Option 1 is toxic positivity/minimizing, option 2 makes it about you and gives premature advice, and option 4 jumps to advice without understanding first. Active listening means fully attending, reflecting back, and validating BEFORE problem-solving."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to research on active listening, what was the key finding about advice-giving vs. listening responses?",
+      "options": [
+        {"id": "opt1", "text": "People who received advice were significantly more satisfied than those who received active listening"},
+        {"id": "opt2", "text": "People who received active listening felt more UNDERSTOOD than those who received advice, even though satisfaction didn't differ significantly"},
+        {"id": "opt3", "text": "Active listening was found to be harmful and increased distress in recipients"},
+        {"id": "opt4", "text": "There is no research evidence supporting active listening as a helpful technique"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The 2020 experimental study of 115 participants found that people who received active listening responses felt significantly more *understood* than those who received advice. Satisfaction with the conversation did not differ significantly between groups — meaning both can be satisfying, but listening makes people feel MORE UNDERSTOOD. This is critical because feeling understood activates social safety systems in the brain and reduces distress. The takeaway: listen to understand FIRST; give advice only if asked and only AFTER you've demonstrated understanding."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which of the following is a trauma-informed communication principle that should guide ALL Mental Health First Aid conversations?",
+      "options": [
+        {"id": "opt1", "text": "Make decisions for the person in distress to reduce their burden"},
+        {"id": "opt2", "text": "Ask 'What's wrong with you?' to identify the problem quickly"},
+        {"id": "opt3", "text": "Honor choice and autonomy by offering options, respecting 'no,' and recognizing them as the expert on their own experience"},
+        {"id": "opt4", "text": "Avoid discussing difficult topics to prevent re-traumatization"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Trauma-informed care principles include safety, choice/autonomy, collaboration, and trustworthiness. Honoring autonomy means offering choices ('Would you like to talk now or later?'), respecting 'no' without pressure, and recognizing the person as the expert on their experience — NOT making decisions for them (that's paternalistic), NOT asking 'what's wrong with you' (stigmatizing — instead ask 'what happened to you?'), and NOT avoiding difficult topics entirely (you can discuss hard things while creating safety and offering choice). Autonomy is critical except in immediate life-threatening crisis (where emergency escalation is mandatory)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What neurobiological change occurs when someone feels truly heard through active listening?",
+      "options": [
+        {"id": "opt1", "text": "The amygdala (threat detector) calms, co-regulation occurs, oxytocin is released, and prefrontal cortex (thinking brain) comes back online"},
+        {"id": "opt2", "text": "Cortisol (stress hormone) increases and adrenaline spikes to prepare for action"},
+        {"id": "opt3", "text": "The hippocampus shrinks and memory consolidation is impaired"},
+        {"id": "opt4", "text": "No measurable neurobiological changes occur — active listening is just 'being nice'"}
+      ],
+      "correctAnswer": "opt1",
+      "explanation": "When someone feels truly heard, measurable neurobiological changes occur: the amygdala (threat detector) calms when social safety cues are received (eye contact, calm tone, attunement); your calm presence helps co-regulate their nervous system through mirror neurons; feeling connected triggers oxytocin release (reducing stress hormones like cortisol); and when threat decreases, the prefrontal cortex (higher-order thinking) comes back online, allowing problem-solving instead of just reacting. Active listening is not just emotionally supportive — it has biological effects that reduce distress and restore functioning."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "A coworker discloses active suicidal thoughts during a conversation. What is the appropriate scope boundary for active listening in this situation?",
+      "options": [
+        {"id": "opt1", "text": "Continue active listening for 30-60 minutes to help them work through their feelings and see reasons to live"},
+        {"id": "opt2", "text": "Active listening alone is insufficient for active suicidal crisis — listen briefly, stay calm, and immediately escalate to 911 or 988"},
+        {"id": "opt3", "text": "Promise confidentiality and use active listening to conduct a suicide risk assessment"},
+        {"id": "opt4", "text": "Avoid the topic entirely and change the subject to prevent making it worse"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Active suicidal thoughts represent an immediate, life-threatening crisis that EXCEEDS the scope of active listening alone. While you should stay calm and use supportive communication, you must immediately escalate to emergency services (911 or 988 Suicide & Crisis Lifeline) and not leave them alone if it's safe to stay. Do NOT promise confidentiality when safety is at risk, do NOT attempt to conduct a clinical risk assessment (that's beyond MHFA scope), and do NOT avoid the topic (research shows asking about suicide does not increase risk). Active listening is powerful but is NOT therapy and does NOT replace professional crisis intervention."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "3",
+  "title": "Active Listening and Communication Techniques - Quiz"
+}

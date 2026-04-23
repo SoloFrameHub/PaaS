@@ -1,0 +1,82 @@
+{
+    "id": "nutrition-thought-record",
+    "title": "Food-Mood Thought Record",
+    "description": "Use this worksheet to identify and examine thoughts about food, eating, and nutrition that may be affecting your mood or creating unnecessary stress.",
+    "instructions": "When you notice strong thoughts or emotional reactions related to food, eating choices, or nutrition — complete each section below to examine the connection between your thoughts, emotions, and eating patterns.",
+    "fields": [
+        {
+            "id": "situation",
+            "label": "1. Situation — What happened? (e.g., choosing what to eat, after eating, reading about nutrition)",
+            "type": "textarea",
+            "placeholder": "Describe the food or nutrition situation that triggered your reaction...",
+            "required": true
+        },
+        {
+            "id": "automaticThought",
+            "label": "2. Automatic Thought — What went through your mind about food or eating?",
+            "type": "textarea",
+            "placeholder": "e.g., 'I've ruined my diet', 'I should never eat that', 'I'm not doing nutrition right'",
+            "required": true
+        },
+        {
+            "id": "moodRating",
+            "label": "3. Mood Impact — How much did this thought affect your mood? (0 = not at all, 100 = extremely)",
+            "type": "rating",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "required": true
+        },
+        {
+            "id": "emotions",
+            "label": "4. Emotions — What did you feel? (e.g., guilt, anxiety, frustration, shame)",
+            "type": "textarea",
+            "placeholder": "Name the emotions you experienced...",
+            "required": true
+        },
+        {
+            "id": "thinkingPattern",
+            "label": "5. Thinking Pattern — Which pattern best fits?",
+            "type": "select",
+            "options": [
+                { "value": "all-or-nothing", "label": "All-or-Nothing ('I ate one cookie, so the whole day is ruined')" },
+                { "value": "should-statements", "label": "Should Statements ('I should only eat perfectly healthy food')" },
+                { "value": "catastrophizing", "label": "Catastrophizing ('This meal will undo all my progress')" },
+                { "value": "labeling", "label": "Labeling ('I have no willpower', 'I'm bad with food')" },
+                { "value": "emotional-eating", "label": "Emotional Reasoning ('I feel stressed so I need comfort food')" },
+                { "value": "overgeneralization", "label": "Overgeneralization ('I always make bad food choices')" }
+            ],
+            "required": true
+        },
+        {
+            "id": "evidenceFor",
+            "label": "6. Evidence For — What supports this thought?",
+            "type": "textarea",
+            "required": true
+        },
+        {
+            "id": "evidenceAgainst",
+            "label": "7. Evidence Against — What contradicts this thought? Consider the bigger picture.",
+            "type": "textarea",
+            "placeholder": "Is one meal really that impactful? What do you know about how nutrition actually works over time?",
+            "required": true
+        },
+        {
+            "id": "balancedThought",
+            "label": "8. Balanced Thought — What is a more helpful, realistic perspective?",
+            "type": "textarea",
+            "placeholder": "e.g., 'One meal doesn't define my nutrition. Overall patterns matter more than individual choices.'",
+            "required": true
+        },
+        {
+            "id": "newMoodRating",
+            "label": "9. Re-rate Mood Impact — How much is this thought affecting your mood now? (0 = not at all, 100 = extremely)",
+            "type": "rating",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "required": true
+        }
+    ],
+    "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional nutrition counseling or mental health treatment. If you have a complicated relationship with food, consider working with a registered dietitian or therapist who specializes in disordered eating. If you are in crisis, call or text 988."
+}

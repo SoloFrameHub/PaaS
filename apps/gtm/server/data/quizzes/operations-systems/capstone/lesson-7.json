@@ -1,0 +1,69 @@
+{
+  "lessonId": "7",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Week 1 Execution & Review",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the primary purpose of the Week 1 review?",
+      "options": [
+        { "id": "a", "text": "To celebrate your wins" },
+        {
+          "id": "b",
+          "text": "To capture baseline metrics and identify system friction points"
+        },
+        { "id": "c", "text": "To decide whether to quit the sprint" },
+        { "id": "d", "text": "To compare yourself to competitors" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Week 1 review has two jobs: capture baseline metrics (your Week 1 numbers become the reference point for Weeks 2-4) and identify friction points (what broke or slowed you down). These become the data for Week 2 adjustments."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Week 1 is almost never perfect. According to the lesson, what should you treat imperfections as?",
+      "options": [
+        { "id": "a", "text": "Reasons to change strategy" },
+        { "id": "b", "text": "Signs the sprint is failing" },
+        { "id": "c", "text": "Data — not failure" },
+        { "id": "d", "text": "Reasons to hire help" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Systems break, automations fail, sequences underperform, calls run over, life interrupts. None of that is failure — it is data. The review session is where you learn faster than people who just execute without looking back."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the most valuable part of the Week 1 review?",
+      "options": [
+        { "id": "a", "text": "Counting emails sent" },
+        { "id": "b", "text": "Identifying system friction points clearly" },
+        { "id": "c", "text": "Updating your LinkedIn profile" },
+        { "id": "d", "text": "Celebrating with your team" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Identifying friction clearly is the most valuable part. Something broke or slowed you down — pinpointing exactly what it was (infrastructure friction, execution friction, or quality friction) enables targeted fixes in Week 2."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If your planned email volume in Week 1 was 120 but you only sent 87, the sprint has already failed.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Falling short of planned volume in Week 1 is normal and expected. The important thing is to understand why (deliverability issues, time management, prospect research taking longer) and fix the specific friction point for Week 2."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "If you were conducting a Week 1 review, what planned vs. actual metrics would you track? What friction points would you anticipate in your first week of execution?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific planned vs. actual metrics (emails, calls, hours), anticipates realistic friction points (deliverability, time management, tool configuration), and proposes a fix approach for the most likely friction."
+    }
+  ]
+}

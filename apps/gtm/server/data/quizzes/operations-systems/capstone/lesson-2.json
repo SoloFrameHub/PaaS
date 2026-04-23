@@ -1,0 +1,75 @@
+{
+  "lessonId": "2",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "System Assembly: ICP + Positioning + Channel",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why must your ICP document be updated after real sales activity?",
+      "options": [
+        { "id": "a", "text": "Because the market changes every week" },
+        {
+          "id": "b",
+          "text": "Because your first draft was a hypothesis — real data reveals what's actually true about your buyers"
+        },
+        { "id": "c", "text": "Because investors require quarterly updates" },
+        { "id": "d", "text": "Because your CRM needs new fields" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Your original ICP was a hypothesis built before you had customer data. After actual sales conversations, you now have evidence about which firmographics, titles, pain points, and trigger events actually predict buying behavior. The updates cascade through your entire system."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What does the 'Stranger Test' evaluate about your positioning statement?",
+      "options": [
+        { "id": "a", "text": "Whether it includes enough technical jargon" },
+        {
+          "id": "b",
+          "text": "Whether someone who has never heard of you immediately understands the value"
+        },
+        { "id": "c", "text": "Whether it's short enough to tweet" },
+        { "id": "d", "text": "Whether competitors can't copy it" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Stranger Test checks if someone in your target market, hearing your positioning for the first time, immediately understands who you help, what outcome you deliver, and what they avoid. If they say 'so you do consulting?' you failed."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What do the best-scaling founders do with their acquisition channels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spread effort across 4-5 channels for maximum coverage"
+        },
+        { "id": "b", "text": "Focus on paid ads exclusively" },
+        { "id": "c", "text": "Find 1-2 channels that work and go deep" },
+        { "id": "d", "text": "Change channels every quarter" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Founders who scale do the opposite of spreading thin — they find 1-2 channels that actually produce results and go deep. The channel audit ranks every channel by actual performance to identify which ones deserve your focus."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "During the channel audit, you should rank channels based on what you expected to happen rather than what actually happened.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The channel performance review must be based on actual results — hours invested, conversations generated, and deals produced — not expectations. The brutal channel audit is about what actually happened."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Compare your original ICP hypothesis with what you've learned from real sales conversations. Where were your assumptions correct, and where were you wrong? What specific changes will you make to your ICP v2?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response compares original ICP assumptions with real-world evidence, identifies at least one incorrect assumption, and proposes specific updates to firmographics, role targeting, or pain points based on actual customer data."
+    }
+  ]
+}

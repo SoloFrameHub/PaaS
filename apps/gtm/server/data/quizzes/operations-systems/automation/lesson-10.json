@@ -1,0 +1,101 @@
+{
+    "lessonId": "10",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "The Automation Stack Blueprint",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary output artifact of Course 42?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A list of automation tools with their pricing"
+                },
+                {
+                    "id": "b",
+                    "text": "A Process Automation Map showing all 6 automations, triggers, and connections"
+                },
+                {
+                    "id": "c",
+                    "text": "A Zapier account with 5 Zaps configured"
+                },
+                {
+                    "id": "d",
+                    "text": "A budget spreadsheet for automation tools"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Process Automation Map is your complete documentation of the 6 automations, their triggers, actions, data flows, and tool connections. It's also the SOP you'll hand to a VA in Course 43."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the Automation-First Decision Framework, which tasks should NOT be automated?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tasks that happen more than 4 times per month"
+                },
+                {
+                    "id": "b",
+                    "text": "Tasks that require human judgment each time"
+                },
+                {
+                    "id": "c",
+                    "text": "Tasks that take less than 5 minutes each"
+                },
+                {
+                    "id": "d",
+                    "text": "Tasks that involve your CRM"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Tasks requiring judgment each time cannot be automated reliably. They should be documented as SOPs and delegated to a VA (Course 43). Automation handles predictable, rule-based work; humans handle judgment-based work."
+        },
+        {
+            "id": "q3",
+            "type": "true-false",
+            "question": "Your automation blueprints can serve as SOPs when you hire a VA in Course 43.",
+            "correctAnswer": "a",
+            "explanation": "True. Your automation blueprints document exactly what happens when each trigger fires, which tools are involved, and what the expected outputs are. A VA working on related tasks can use these as their operating manual.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended way to add automation health to your Course 41 weekly review?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Replace 15 minutes of the metrics review with automation debugging"
+                },
+                {
+                    "id": "b",
+                    "text": "Add a separate 2-hour weekly automation review session"
+                },
+                {
+                    "id": "c",
+                    "text": "Add 5 minutes to Friday review: check each automation's last successful run"
+                },
+                {
+                    "id": "d",
+                    "text": "Review automation health only when a deal is lost"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Add 5 minutes to your weekly Friday review to check each automation's last successful run date. This catches failures within 7 days without adding significant time to your existing review ritual."
+        }
+    ]
+}

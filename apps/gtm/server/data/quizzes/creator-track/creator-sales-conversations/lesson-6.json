@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "The Enrollment Call Script Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the full enrollment call script, approximately how much time should be allocated to the 'Pain Amplification' phase on a 50-minute call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2-3 minutes — briefly acknowledge their frustration then move on."
+                },
+                {
+                    "id": "b",
+                    "text": "10 minutes — help them feel the full weight of their current situation through empathetic questions."
+                },
+                {
+                    "id": "c",
+                    "text": "20 minutes — the majority of the call should focus on pain."
+                },
+                {
+                    "id": "d",
+                    "text": "0 minutes — pain amplification is manipulative and should be skipped entirely."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Pain amplification is allocated about 10 minutes (minutes 15-25). The goal is not to manipulate, but to help someone who has been tolerating a bad situation actually confront the full cost of staying stuck. The tone should be empathetic, not aggressive."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the frame-setting statement at the very beginning of the enrollment call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To immediately establish your authority by sharing your credentials and client results."
+                },
+                {
+                    "id": "b",
+                    "text": "To establish that you will lead the conversation, set the expectation that you may share a solution, and remove pressure by making it safe to say no."
+                },
+                {
+                    "id": "c",
+                    "text": "To get the prospect to commit to buying before the call content begins."
+                },
+                {
+                    "id": "d",
+                    "text": "To explain your refund policy and terms of service upfront."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The opening frame sets three important dynamics: you lead the conversation (not the prospect), there will be an offer at the end (so it is not a surprise), and there is no pressure (which paradoxically makes people more open to buying). It positions you as a professional who is selective, not desperate."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When a prospect says yes at the close, what should you do immediately after reinforcing their decision?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ask them to refer three friends who might also be interested."
+                },
+                {
+                    "id": "b",
+                    "text": "Give them a concrete, specific next step with a deadline, such as completing an onboarding form by a particular day."
+                },
+                {
+                    "id": "c",
+                    "text": "End the call quickly before they change their mind."
+                },
+                {
+                    "id": "d",
+                    "text": "Describe every module of the program in detail so they know exactly what they purchased."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "After reinforcing the decision, give them an immediate, concrete action step: 'Complete the intake form by Friday so we can hit the ground running.' The combination of emotional reinforcement and a specific action reduces buyer's remorse because they leave the call feeling good and knowing exactly what to do next."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write out the specific opening you would use for an enrollment call with your offer. Include your frame-setting statement and your transition question into the Situation phase. How would you set the tone for a judgment-free, collaborative conversation?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student's opening achieves three goals: establishing that they will lead the conversation, signaling that an offer may come at the end (no surprise), and creating psychological safety by removing pressure. The transition into the Situation phase should feel natural, not abrupt. Look for language that is warm and professional rather than overly scripted or salesy."
+        }
+    ]
+}

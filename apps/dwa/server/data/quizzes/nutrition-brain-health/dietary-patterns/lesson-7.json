@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why did a Polish university study find that higher fermented food consumption was associated with INCREASED anxiety and depression?",
+            "options": [
+                { "id": "opt1", "text": "Because all fermented foods are harmful to mental health" },
+                { "id": "opt2", "text": "Because the most commonly consumed 'fermented foods' in that population were kvass and beer — alcoholic beverages that harm gut and brain health" },
+                { "id": "opt3", "text": "Because the students were eating too much yogurt" },
+                { "id": "opt4", "text": "Because fermentation always produces toxic byproducts" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Polish study (n=372) found increased symptoms because the dominant 'fermented foods' consumed were kvass and beer — alcoholic fermented beverages. Alcohol is a known depressant and gut disruptor. Grouping all fermented products together masked the beneficial effects of traditional fermented foods while the harmful effects of alcoholic beverages dominated the results."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What key finding emerged from the Stanford University fermented food trial (Wastyk et al. 2021)?",
+            "options": [
+                { "id": "opt1", "text": "Fermented foods had no effect on the microbiome" },
+                { "id": "opt2", "text": "High fiber was more effective than fermented foods at reducing inflammation" },
+                { "id": "opt3", "text": "6+ daily servings of live-culture fermented foods increased microbial diversity and decreased 19 inflammatory markers" },
+                { "id": "opt4", "text": "Only yogurt showed any benefit; other fermented foods were ineffective" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The Stanford trial (n=36, 10-week RCT) found that participants eating 6+ servings/day of live-culture fermented foods showed significant increases in microbial diversity and decreases in 19 inflammatory markers, including IL-6 and CRP. Surprisingly, this was more effective at reducing inflammatory markers than the high-fiber group over the same period."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How can you distinguish fermented foods with live cultures from those without?",
+            "options": [
+                { "id": "opt1", "text": "Live-culture products are always more expensive" },
+                { "id": "opt2", "text": "Look for refrigerated products labeled 'live and active cultures' or 'unpasteurized' with simple ingredient lists" },
+                { "id": "opt3", "text": "All fermented foods in glass containers have live cultures" },
+                { "id": "opt4", "text": "Foods with longer ingredient lists have more diverse live cultures" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Live-culture fermented foods share several clues: they require refrigeration, carry labels like 'contains live and active cultures' or 'unpasteurized,' have simple ingredient lists (e.g., cabbage + salt for sauerkraut), and may have natural fizz or tanginess. Shelf-stable sauerkraut, vinegar pickles, beer, and pasteurized kombucha do NOT contain live cultures."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why do fermented foods and fiber work through complementary mechanisms for gut-brain health?",
+            "options": [
+                { "id": "opt1", "text": "They both kill harmful bacteria in the same way" },
+                { "id": "opt2", "text": "Fiber feeds existing gut bacteria while fermented foods introduce new bacteria and their metabolic products" },
+                { "id": "opt3", "text": "Fermented foods provide all the fiber your gut needs" },
+                { "id": "opt4", "text": "They cancel out each other's negative effects" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Fiber and fermented foods work through different but complementary mechanisms. Fiber feeds the existing bacteria already in your gut, supporting their growth and SCFA production. Fermented foods introduce new beneficial bacteria and their metabolic products. Combining both may be more effective than either approach alone, as the Stanford trial suggested."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What should someone do if they consistently experience headaches, flushing, or digestive upset from fermented foods?",
+            "options": [
+                { "id": "opt1", "text": "Force themselves to eat more fermented foods until the symptoms go away" },
+                { "id": "opt2", "text": "Assume fermented foods are harmful and avoid them permanently" },
+                { "id": "opt3", "text": "Consider histamine intolerance, start with lower-histamine options like fresh yogurt, eat small portions, and consult a healthcare provider" },
+                { "id": "opt4", "text": "Switch exclusively to alcoholic fermented beverages instead" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Some people experience adverse reactions from fermented foods due to histamine intolerance — fermented foods are naturally high in histamine. The recommended approach is to start with lower-histamine options (fresh yogurt tends to be lower than aged cheese or sauerkraut), eat small portions, and consult a healthcare provider about histamine sensitivity."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "7",
+    "title": "Fermented Foods: What the Research Really Shows - Quiz"
+}

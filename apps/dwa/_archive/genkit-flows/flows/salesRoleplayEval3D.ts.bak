@@ -1,0 +1,60 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { buildCoachingPrompt } from '../../services/roleplayPromptBuilder';
+import { RoleplayContext } from '../../services/roleplayService';
+
+const RoleplayEvalInput = z.object({
+    context: z.any(), // RoleplayContext object
+    conversationHistory: z.array(z.object({
+        role: z.enum(['user', 'assistant']),
+        content: z.string(),
+    })),
+});
+
+export type RoleplayEvalInput = z.infer<typeof RoleplayEvalInput>;
+
+const RoleplayEvalOutput = z.object({
+    score: z.number().min(1).max(10),
+    strengths: z.array(z.string()),
+    improvements: z.array(z.string()),
+    coachingMessage: z.string(),
+});
+
+export type RoleplayEvalOutput = z.infer<typeof RoleplayEvalOutput>;
+
+export const salesRoleplayEval3DFlow = ai.defineFlow(
+    {
+        name: 'salesRoleplayEval3D',
+        inputSchema: RoleplayEvalInput,
+        outputSchema: RoleplayEvalOutput,
+    },
+    async (input: RoleplayEvalInput) => {
+        const coachingPrompt = buildCoachingPrompt(input.context as RoleplayContext, input.conversationHistory);
+
+        // Mock response for E2E tests
+        if (process.env.NODE_ENV === 'test' || !process.env.GOOGLE_GENAI_API_KEY) {
+            return {
+                score: 9,
+                strengths: ['Good opening', 'Clear value proposition'],
+                improvements: ['Ask more discovery questions', 'Handling objections more directly'],
+                coachingMessage: "Great job! You handled the initial skepticism well. Focus on uncovering specific pain points next time. (Mock Evaluation)"
+            };
+        }
+
+        const result = await ai.generate({
+            model: gemini20Flash,
+            system: coachingPrompt,
+            prompt: `Review the conversation above and provide a structured evaluation in JSON format.`,
+            output: {
+                format: 'json',
+                schema: RoleplayEvalOutput,
+            }
+        });
+
+        if (!result.output) {
+            throw new Error('Failed to generate evaluation output');
+        }
+
+        return result.output;
+    }
+);

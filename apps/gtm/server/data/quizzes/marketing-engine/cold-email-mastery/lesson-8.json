@@ -1,0 +1,142 @@
+{
+    "lessonId": "8",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Multi-Touch Sequences Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What percentage of sales typically require 5 follow-up touches?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10%"
+                },
+                {
+                    "id": "b",
+                    "text": "30%"
+                },
+                {
+                    "id": "c",
+                    "text": "50%"
+                },
+                {
+                    "id": "d",
+                    "text": "80%"
+                }
+            ],
+            "correctAnswer": "d",
+            "explanation": "Most deals are made in the follow-up. If you stop after one or two emails, you are leaving 80% of your potential revenue on the table."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the 'Breakup' email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "An email where you tell the prospect you're deleting their data"
+                },
+                {
+                    "id": "b",
+                    "text": "An angry email about why they didn't reply"
+                },
+                {
+                    "id": "c",
+                    "text": "A final, low-pressure email acknowledging it might not be the right time and offering to stop reaching out"
+                },
+                {
+                    "id": "d",
+                    "text": "An email sent to a former customer"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The breakup email often gets the highest response rate because it removes the pressure of the 'sale' and asks for a simple clarification of priority."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the key difference between 'Pestering' and 'Helping' in a follow-up email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Helping follow-ups provide a new piece of value or insight; pestering follow-ups just ask for a response"
+                },
+                {
+                    "id": "b",
+                    "text": "There is no difference; all cold outreach is pestering"
+                },
+                {
+                    "id": "c",
+                    "text": "Pestering emails are shorter than helping emails"
+                },
+                {
+                    "id": "d",
+                    "text": "Helping emails are sent more frequently"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "If every touchpoint adds value (a new result, a useful link, a fresh perspective), the prospect views you as a resource rather than an annoyance."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How long should you typically wait between your first email and your first 'Gentle Bump' follow-up?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "24 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "2-3 business days"
+                },
+                {
+                    "id": "c",
+                    "text": "Two weeks"
+                },
+                {
+                    "id": "d",
+                    "text": "Exactly 1 hour"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "2-3 days is long enough to respect their inbox while short enough that your initial context (Lesson 1) is still somewhat fresh in their mind."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Automation' important for a solo founder's sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It can write better copy than a human"
+                },
+                {
+                    "id": "b",
+                    "text": "It ensures that the 'boring' work of follow-up happens consistently without you needing to remember to do it manually"
+                },
+                {
+                    "id": "c",
+                    "text": "It makes you look like a bigger company"
+                },
+                {
+                    "id": "d",
+                    "text": "It is required for legal compliance"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Cold email is a game of consistency. A solo founder's time is better spent talking to leads who reply than manually tracking which sequence day 100 different prospects are on."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Design your 'Breakup' email copy. How can you phrase it so it sounds respectful, professional, and actually makes the prospect want to tell you their current priority? (Try reaching for the 'Humble Practitioner' voice).",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the breakup email is too aggressive or needy. It should offer a 'clean exit' while leaving the door open for future collaboration."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Transformation Selling Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between Level 2 (Benefit Selling) and Level 3 (Transformation Selling)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Benefit selling uses data while transformation selling uses emotion."
+                },
+                {
+                    "id": "b",
+                    "text": "Benefit selling describes what features will do for the client, while transformation selling describes who the client will become."
+                },
+                {
+                    "id": "c",
+                    "text": "Benefit selling is for low-ticket offers while transformation selling is for high-ticket offers."
+                },
+                {
+                    "id": "d",
+                    "text": "Benefit selling focuses on competitor comparisons while transformation selling ignores the competition."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Benefit selling (Level 2) describes what the program will do — 'You will learn to attract high-ticket clients.' Transformation selling (Level 3) describes who the client will become — 'You will be a creator who gets paid for their expertise and stops apologizing for their prices.' The shift from benefits to identity is what makes transformation selling so powerful."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When presenting your offer using the 'Transformation Stack' approach, what should each bullet point lead with?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The feature or deliverable (e.g., '12 video modules')."
+                },
+                {
+                    "id": "b",
+                    "text": "The price of each component if purchased separately."
+                },
+                {
+                    "id": "c",
+                    "text": "The transformation or outcome, with the feature mentioned only as the mechanism."
+                },
+                {
+                    "id": "d",
+                    "text": "A testimonial from a past client for each component."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Transformation Stack leads with the outcome: 'First, we build your enrollment system so you never wonder where your next client is coming from' rather than 'You get 12 video modules.' The feature (modules) is mentioned only as the mechanism that creates the transformation."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is one of the five techniques for making the intangible tangible during an enrollment call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sending a free sample of the course content before the call."
+                },
+                {
+                    "id": "b",
+                    "text": "The Cost-of-Inaction Calculation — helping prospects quantify what staying stuck is costing them."
+                },
+                {
+                    "id": "c",
+                    "text": "Offering a money-back guarantee as the primary selling mechanism."
+                },
+                {
+                    "id": "d",
+                    "text": "Comparing your program feature-by-feature against competitor programs."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The five techniques are: Specific Outcome Anchors, Day-in-the-Life Visualization, Social Proof Stories, The Investment Reframe, and The Cost-of-Inaction Calculation. The Cost-of-Inaction Calculation helps prospects see what staying in their current situation is costing them in concrete terms (income, time, opportunity cost)."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Write a Level 3 (Transformation Selling) description of your current offer. Describe the identity shift your clients experience — who they are before and who they become after. Include specific emotional states in both the before and after picture.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has moved beyond features and benefits to describe a genuine identity-level transformation. Look for specific before/after emotional states (not just business metrics), identity language ('you will be the kind of person who...'), and enough specificity that a real prospect could see themselves in the description. Flag if the response reads more like a Level 1 (features) or Level 2 (benefits) description."
+        }
+    ]
+}

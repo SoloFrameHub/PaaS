@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to David Clark's model, what is the primary driver that maintains panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "A chemical imbalance in the brain that cannot be corrected" },
+                { "id": "opt2", "text": "Catastrophic misinterpretation of normal body sensations" },
+                { "id": "opt3", "text": "External stressors like work and relationships" },
+                { "id": "opt4", "text": "Genetic predisposition that makes panic inevitable" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "David Clark's catastrophic misinterpretation model explains that panic disorder persists because normal body sensations are misinterpreted as dangerous. It is not the sensation itself that causes panic — it is the catastrophic interpretation of that sensation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is 'interoceptive avoidance' in the context of panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "Avoiding places where you previously had a panic attack" },
+                { "id": "opt2", "text": "Avoiding social situations due to embarrassment about panic" },
+                { "id": "opt3", "text": "Avoiding activities that produce feared physical sensations, like exercise or caffeine" },
+                { "id": "opt4", "text": "Avoiding medical checkups out of fear of a diagnosis" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Interoceptive avoidance means avoiding activities that produce feared body sensations — such as exercise (racing heart), caffeine (jittery feelings), or hot environments (sweating). This is particularly insidious because it means avoiding normal parts of daily life."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does avoidance ultimately backfire as a strategy for managing panic?",
+            "options": [
+                { "id": "opt1", "text": "It makes panic attacks more physically intense" },
+                { "id": "opt2", "text": "It causes new types of panic symptoms to develop" },
+                { "id": "opt3", "text": "It prevents you from learning that the feared catastrophe would not have happened" },
+                { "id": "opt4", "text": "It triggers additional panic attacks through boredom" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Avoidance prevents disconfirmation — you never discover that the feared catastrophe wouldn't have happened. Each avoided situation remains 'dangerous' in your mind, reinforcing the danger belief, shrinking your world, and lowering your tolerance for physical sensations."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Two people feel the same heart flutter. One thinks 'must be the coffee' and moves on; the other thinks 'heart attack' and spirals into panic. What does this illustrate?",
+            "options": [
+                { "id": "opt1", "text": "The second person has a weaker heart than the first" },
+                { "id": "opt2", "text": "The sensation itself is more intense for the second person" },
+                { "id": "opt3", "text": "The first person is suppressing their emotions" },
+                { "id": "opt4", "text": "It is the interpretation of the sensation, not the sensation itself, that determines the outcome" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "This is the critical insight from the panic cycle model. The same physical sensation can produce completely different outcomes depending on how it is interpreted. Catastrophic interpretation escalates sensations into panic, while accurate interpretation allows the sensation to pass naturally."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is 'hypervigilance' in the context of panic disorder?",
+            "options": [
+                { "id": "opt1", "text": "Being overly cautious about physical safety in dangerous environments" },
+                { "id": "opt2", "text": "An unconscious habit of constantly scanning your body for signs of danger" },
+                { "id": "opt3", "text": "Deliberately paying close attention to relaxation techniques" },
+                { "id": "opt4", "text": "A heightened awareness of other people's emotions and reactions" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Hypervigilance is an unconscious body-scanning habit where you constantly monitor for signs of danger. You notice sensations most people would never be aware of — a slight heart flutter, brief dizziness — and then interpret them through a 'danger lens,' triggering more anxiety."
+        }
+    ],
+    "sectionId": "anxiety-and-fear",
+    "courseId": "panic-disorder",
+    "lessonId": "2",
+    "title": "The Panic Cycle: Fear of Fear - Quiz"
+}

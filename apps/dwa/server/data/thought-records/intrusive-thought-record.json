@@ -1,0 +1,108 @@
+{
+  "id": "intrusive-thought-record",
+  "title": "Intrusive Thought Perspective Worksheet",
+  "description": "Use this worksheet to practice relating differently to intrusive thoughts. Instead of arguing with or analyzing the thought, you'll compare what OCD says the thought means versus what a compassionate, science-based perspective would say.",
+  "instructions": "When you notice an intrusive thought that feels distressing, work through each step below. The goal is NOT to make the thought go away — it's to practice a different response. This worksheet is for educational self-reflection and is best used alongside therapy with an OCD-trained clinician.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. The Intrusive Thought — What thought, image, or urge showed up?",
+      "type": "textarea",
+      "placeholder": "e.g., An image of pushing someone, a thought about contamination, a feeling that something terrible will happen if I don't check, a blasphemous thought during prayer",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. What OCD Says It Means — How does OCD interpret this thought?",
+      "type": "textarea",
+      "placeholder": "e.g., 'I'm a dangerous person', 'I must secretly want this', 'Something terrible will happen', 'I'm morally corrupt'",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. Distress Level — How distressed do you feel? (0 = not at all, 100 = most distressed ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. OCD Pattern — Which OCD thinking pattern is at work?",
+      "type": "select",
+      "options": [
+        { "value": "thought-action-fusion", "label": "Thought-Action Fusion — 'Thinking it = wanting it or doing it'" },
+        { "value": "overimportance", "label": "Overimportance of Thoughts — 'This thought must mean something significant'" },
+        { "value": "intolerance-uncertainty", "label": "Intolerance of Uncertainty — 'I need to be 100% sure'" },
+        { "value": "inflated-responsibility", "label": "Inflated Responsibility — 'If something bad happens, it's my fault'" },
+        { "value": "perfectionism", "label": "Perfectionism — 'It has to be exactly right or it's wrong'" },
+        { "value": "threat-overestimation", "label": "Threat Overestimation — 'The worst-case scenario is the most likely'" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Compassionate Perspective — What would a knowledgeable, compassionate person say about this thought?",
+      "type": "textarea",
+      "placeholder": "e.g., 'Almost everyone has intrusive thoughts like this — it's a normal brain event, not a sign of your character. The distress you feel shows how much you care about your values, not that you're dangerous.'",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Response Choice — What will you do instead of ritualizing? (e.g., label it, 'maybe maybe not', return to your activity)",
+      "type": "textarea",
+      "placeholder": "e.g., 'I'm going to label this as an OCD thought and continue what I was doing. Maybe, maybe not — I'm not going to figure this out right now.'",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. What Happened — Were you able to resist the compulsion? What did you notice?",
+      "type": "textarea",
+      "placeholder": "e.g., I labeled it and went back to cooking. The anxiety spiked for about 10 minutes then gradually eased. I didn't check or seek reassurance.",
+      "required": false
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. Distress Now — How distressed do you feel now? (0 = not at all, 100 = most distressed ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "thought-action-fusion",
+      "name": "Thought-Action Fusion",
+      "description": "Believing that having a thought is the same as doing the action, or that thinking about something makes it more likely to happen. In reality, thoughts are mental events — not intentions, desires, or predictions."
+    },
+    {
+      "id": "overimportance",
+      "name": "Overimportance of Thoughts",
+      "description": "Treating a random intrusive thought as deeply significant or meaningful. In reality, the brain produces thousands of thoughts daily, many of which are random, bizarre, or contrary to your values."
+    },
+    {
+      "id": "intolerance-uncertainty",
+      "name": "Intolerance of Uncertainty",
+      "description": "Feeling that you must be 100% certain about something or the anxiety is unbearable. OCD demands certainty that is impossible to achieve — learning to tolerate 'maybe' is key to recovery."
+    },
+    {
+      "id": "inflated-responsibility",
+      "name": "Inflated Responsibility",
+      "description": "Believing you are personally responsible for preventing all possible harm, even events outside your control. This drives checking, reassurance-seeking, and excessive caution."
+    },
+    {
+      "id": "perfectionism",
+      "name": "Perfectionism",
+      "description": "Feeling that things must be done exactly right, completely, or perfectly — or something bad will happen. Drives repeating, re-doing, and 'just right' compulsions."
+    },
+    {
+      "id": "threat-overestimation",
+      "name": "Threat Overestimation",
+      "description": "Overestimating the probability or severity of feared outcomes. OCD makes unlikely events feel inevitable and manageable outcomes feel catastrophic."
+    }
+  ],
+  "disclaimer": "This worksheet is for educational self-reflection, not treatment. It helps you practice recognizing OCD patterns. Actual OCD treatment (ERP) should be guided by a trained therapist. If you are having thoughts about ending your life, call or text 988 immediately. If you are in crisis, contact the 988 Suicide & Crisis Lifeline."
+}

@@ -1,0 +1,84 @@
+{
+  "lessonId": "8",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "Content Patterns That Trigger Filters in 2026",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How do 2026 spam filters differ from older keyword-based filters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They still just look for words like 'FREE' and 'ACT NOW'"
+        },
+        {
+          "id": "b",
+          "text": "They use LLMs to understand context, tone, intent, and manipulation tactics — reading emails the way a skeptical prospect would"
+        },
+        { "id": "c", "text": "They only check authentication records" },
+        { "id": "d", "text": "They don't analyze content at all anymore" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Modern spam filters use the same large language models that power ChatGPT. They understand context, tone, intent, and manipulation tactics. They can distinguish between genuinely personalized outreach and mass-produced templates. If the email feels mass-produced, manipulative, or irrelevant — spam folder."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'Content Paradox' of AI-generated cold email?",
+      "options": [
+        { "id": "a", "text": "AI content is always better than human content" },
+        {
+          "id": "b",
+          "text": "AI makes it easier to write personalized emails at scale, but filters use AI to detect exactly that — the only winning move is actual research and genuine relevance"
+        },
+        { "id": "c", "text": "Content doesn't affect deliverability" },
+        { "id": "d", "text": "AI filters can't detect AI-generated content" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "AI makes personalized email at scale easier than ever, but filters also use AI to detect exactly these patterns. The result: the only winning move is emails built on actual research with genuine relevance, not just AI-generated personalization that follows detectable templates."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which template phrase is flagged by modern spam filters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Your post about attribution challenges hit home"
+        },
+        {
+          "id": "b",
+          "text": "'I came across your company and wanted to reach out because we help companies like yours...'"
+        },
+        {
+          "id": "c",
+          "text": "Congrats on the Series A — noticed you're hiring 5 engineers"
+        },
+        { "id": "d", "text": "Your G2 reviews mention onboarding friction" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "'I came across' / 'I wanted to reach out' / 'companies like yours' are template phrases that appear in millions of emails daily and are part of filter training data. They signal mass-produced outreach. The other options reference specific, verifiable information that passes both filters and human scrutiny."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Simply avoiding spam trigger words like 'FREE' is sufficient to reach the inbox in 2026.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Keyword avoidance stopped being sufficient around 2019. Modern filters analyze semantic meaning, template structures, personalization depth, link patterns, and sender behavior. An email can avoid every 'spam word' and still be filtered if it follows mass-send content patterns that LLM-based filters recognize."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Take your most recent cold email template and evaluate it against the content patterns discussed in the lesson. Identify any phrases or patterns that might trigger modern filters and rewrite them to be more authentic and specific.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes an actual email template or quotes from one, identifies specific problematic patterns (template phrases, generic personalization, mass-send indicators), and provides concrete rewrites that use specific research and genuine relevance. Look for understanding that filters read intent, not just words."
+    }
+  ]
+}

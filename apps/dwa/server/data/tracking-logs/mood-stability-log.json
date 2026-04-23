@@ -1,0 +1,86 @@
+{
+  "id": "mood-stability-log",
+  "title": "Daily Mood & Rhythm Log",
+  "description": "Track your mood, sleep, energy, and irritability daily to identify patterns and early warning signs. Over time, this log reveals your personal rhythm and helps you spot changes before they escalate into full episodes.",
+  "instructions": "Complete this log once daily, ideally at the same time each day (evening works well for most people). Be honest — there are no right or wrong answers. The value comes from consistency and pattern recognition over time.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "text",
+      "placeholder": "e.g., Monday, Feb 10",
+      "required": true
+    },
+    {
+      "id": "mood",
+      "label": "Overall mood today (-3 = very depressed, 0 = stable, +3 = very elevated/manic)",
+      "type": "rating",
+      "min": -3,
+      "max": 3,
+      "ratingLabels": {
+        "-3": "Very depressed",
+        "-2": "Depressed",
+        "-1": "Mildly low",
+        "0": "Stable / neutral",
+        "1": "Mildly elevated",
+        "2": "Elevated",
+        "3": "Very elevated / manic"
+      },
+      "required": true
+    },
+    {
+      "id": "sleep-hours",
+      "label": "Hours of sleep last night",
+      "type": "number",
+      "min": 0,
+      "max": 24,
+      "unit": "hours",
+      "placeholder": "e.g., 7.5",
+      "required": true
+    },
+    {
+      "id": "energy",
+      "label": "Energy level (0 = no energy, 10 = extremely high energy)",
+      "type": "rating",
+      "min": 0,
+      "max": 10,
+      "required": true
+    },
+    {
+      "id": "irritability",
+      "label": "Irritability level (0 = calm, 10 = extremely irritable)",
+      "type": "rating",
+      "min": 0,
+      "max": 10,
+      "required": true
+    },
+    {
+      "id": "warning-signs",
+      "label": "Early warning signs noticed today (if any)",
+      "type": "textarea",
+      "placeholder": "e.g., Racing thoughts, spending urge, needing less sleep, withdrawing from people, difficulty concentrating",
+      "required": false
+    },
+    {
+      "id": "medication-taken",
+      "label": "Took prescribed medication today?",
+      "type": "select",
+      "options": [
+        { "value": "yes", "label": "Yes — all doses" },
+        { "value": "partial", "label": "Partial — missed a dose" },
+        { "value": "no", "label": "No" },
+        { "value": "na", "label": "Not applicable" }
+      ],
+      "required": false
+    },
+    {
+      "id": "notes",
+      "label": "Notes (anything else relevant — stressors, triggers, positive events)",
+      "type": "textarea",
+      "placeholder": "e.g., Argument with partner, deadline stress, good social event, skipped exercise",
+      "required": false
+    }
+  ],
+  "disclaimer": "This log is for personal self-awareness and pattern tracking. It is not a clinical tool and does not replace professional monitoring. Share your logs with your treatment team if you find them helpful. Do not enter names, addresses, or other identifying details about other people. If you notice concerning patterns (e.g., sleep dropping significantly, mood rapidly escalating), contact your prescriber or treatment team. If you are in crisis, call or text 988 (Suicide & Crisis Lifeline)."
+}

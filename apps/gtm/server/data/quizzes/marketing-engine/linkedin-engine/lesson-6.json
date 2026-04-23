@@ -1,0 +1,174 @@
+{
+    "courseId": "linkedin-engine",
+    "lessonId": "6",
+    "lessonTitle": "The 4-Hour Weekly System",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason solo founders fail to maintain a consistent LinkedIn presence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They don't have enough followers."
+                },
+                {
+                    "id": "b",
+                    "text": "Inconsistency caused by daily friction and lack of a batching system."
+                },
+                {
+                    "id": "c",
+                    "text": "LinkedIn's algorithm hates solo founders."
+                },
+                {
+                    "id": "d",
+                    "text": "They don't have professional photographers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Without a system, content creation becomes a chore that gets pushed aside whenever 'real work' piles up. Batching removes that daily friction.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the '1-2-1 Content Schedule,' what does the '1 High-Value Carousel' represent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Your weekly personal update."
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Masterclass' authority piece that teaches a framework or shows deep proof."
+                },
+                {
+                    "id": "c",
+                    "text": "A direct sales pitch for your product."
+                },
+                {
+                    "id": "d",
+                    "text": "A list of your favorite books of the month."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The carousel is your heavy-hitter for demonstrating deep expertise and authority (the 'A' in PAIPS).",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is 'Phase 1: Batching' recommended for Monday morning (or a single 90-minute block)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because LinkedIn's algorithm is most active on Mondays."
+                },
+                {
+                    "id": "b",
+                    "text": "To remove the daily 'Blank Page Syndrome' and ensure marketing for the entire week is DONE in one sitting."
+                },
+                {
+                    "id": "c",
+                    "text": "Because AI tools work better on Mondays."
+                },
+                {
+                    "id": "d",
+                    "text": "It doesn't matter when you do it; batching isn't important."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Batching allows you to enter a 'Flow State' and ensures that your strategy remains cohesive across the week.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'No-Go' rule for daily LinkedIn engagement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Never post more than once a day."
+                },
+                {
+                    "id": "b",
+                    "text": "'Like and Run.' Always aim to leave a meaningful comment of 5+ words instead of just a like."
+                },
+                {
+                    "id": "c",
+                    "text": "Never use emojis in comments."
+                },
+                {
+                    "id": "d",
+                    "text": "Only engage with your competitors' posts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "LinkedIn's algorithm rewards meaningful interactions. A comment starts a dialogue; a like is just a vanity signal.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Friday Audit'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To delete posts that didn't get enough likes."
+                },
+                {
+                    "id": "b",
+                    "text": "To identify high-performing topics and double down on them for future content batches."
+                },
+                {
+                    "id": "c",
+                    "text": "To check if your competitors are following you."
+                },
+                {
+                    "id": "d",
+                    "text": "To spend more time scrolling on the weekend."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Success on LinkedIn is a feedback loop. By auditing what worked, you turn 'Luck' into a 'System' for your lead gen engine.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at your calendar for the coming week. Where is the single biggest 'Time Leak' that prevents you from spending 90 minutes batching your content? If you were to implement the 4-Hour Weekly System today, which section (Batching, Daily engagement, or Friday Audit) do you think would have the biggest impact on your lead generation?",
+            "promptHints": [
+                "Be honest about where your time goes (e.g., reactive client emails, random scrolling).",
+                "Consider if you are currently doing 'Random Acts of Posting'.",
+                "Think about which phase of the Trust Pincer you are weakest in."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "5"
+        ],
+        "unlocks": [
+            "7"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "The 4-Hour Weekly System - Quiz"
+}

@@ -1,0 +1,91 @@
+{
+    "lessonId": "6",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "The Creator Confidence Framework",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the Three Pillars of Sales Confidence described in the Creator Confidence Framework?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Positive thinking, visualization, and affirmations"
+                },
+                {
+                    "id": "b",
+                    "text": "Evidence-Based Confidence (built on proof and track record), Preparation-Based Confidence (reducing uncertainty through specific preparation), and Ritual-Based Confidence (pre-performance state management)"
+                },
+                {
+                    "id": "c",
+                    "text": "Pricing confidence, product confidence, and market confidence"
+                },
+                {
+                    "id": "d",
+                    "text": "Self-confidence, social confidence, and technical confidence"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The three pillars are: (1) Evidence-Based Confidence, built on concrete proof like results, testimonials, and expertise hours rather than positive thinking; (2) Preparation-Based Confidence, which reduces anxiety by preparing for objections, scripting openings, and researching prospects; and (3) Ritual-Based Confidence, using consistent pre-call rituals to trigger optimal mental states."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Price Pause' technique and why is it the single hardest skill in sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Waiting 24 hours before sending a proposal to create anticipation"
+                },
+                {
+                    "id": "b",
+                    "text": "Stating your price and then stopping talking completely, allowing the prospect to respond -- because most creators instinctively fill the silence with discounts and qualifications that undermine their confidence"
+                },
+                {
+                    "id": "c",
+                    "text": "Pausing mid-sentence for dramatic effect when discussing pricing"
+                },
+                {
+                    "id": "d",
+                    "text": "Delaying the pricing discussion until the very end of the call"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Price Pause means saying your price and then being silent. Most creators immediately fill the silence with 'But I can do a payment plan, or a smaller package...' -- each word a withdrawal from their confidence account. The silence is not awkward; it is professional, signaling that you are comfortable with the number."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of these is identified as a 'Confidence Drain' that silently sabotages sales performance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spending too much time preparing for calls"
+                },
+                {
+                    "id": "b",
+                    "text": "Having too many testimonials to review"
+                },
+                {
+                    "id": "c",
+                    "text": "Outcome Attachment -- defining a 'good call' as one that results in a sale, which puts enormous pressure on every conversation"
+                },
+                {
+                    "id": "d",
+                    "text": "Practicing your pricing statement too frequently"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Outcome Attachment means equating a 'good call' with a closed deal. This creates immense pressure on every conversation and leads to desperation that prospects can sense. The reframe is that a 'good call' is one where you accurately diagnosed the prospect's situation and presented your offer clearly. The outcome is up to them."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design your personal 15-Minute Pre-Call Ritual by filling in specific details for each time block: Minutes 0-5 (Evidence Review), Minutes 5-10 (Prospect Preparation), Minutes 10-13 (Physical State Reset), and Minutes 13-15 (Intention Setting). Include your specific anchor phrase and explain why you chose it. Commit to using this ritual for your next five sales conversations.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student has created a specific, actionable pre-call ritual rather than a vague plan. Each time block should contain concrete activities (e.g., 'review my top 3 client testimonials' not just 'review evidence'). The anchor phrase should be personal and grounded, not generic motivational language. Look for evidence that the student has thought about what specifically causes them anxiety before calls and designed the ritual to address those triggers."
+        }
+    ]
+}

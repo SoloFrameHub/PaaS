@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which short-chain fatty acid (SCFA) produced by gut bacteria is most studied for its mental health benefits, including antidepressant-like effects and BDNF support?",
+            "options": [
+                { "id": "opt1", "text": "Acetate" },
+                { "id": "opt2", "text": "Propionate" },
+                { "id": "opt3", "text": "Lactate" },
+                { "id": "opt4", "text": "Butyrate" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Butyrate is the most studied SCFA for mental health. It strengthens the intestinal barrier, crosses the blood-brain barrier to directly affect brain function, has antidepressant-like effects, supports BDNF production (which protects and repairs neurons), and reduces neuroinflammation by modulating microglial activity."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the American Gut Project, what was the single strongest dietary predictor of microbiome diversity?",
+            "options": [
+                { "id": "opt1", "text": "Total calorie intake" },
+                { "id": "opt2", "text": "Amount of protein consumed daily" },
+                { "id": "opt3", "text": "The number of different plant types consumed per week" },
+                { "id": "opt4", "text": "Whether participants took probiotic supplements" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The American Gut Project (10,000+ participants) found that the number of different plant types consumed per week was the single strongest dietary predictor of microbiome diversity. Participants eating 30+ plant types per week had significantly higher microbial diversity than those eating fewer than 10, regardless of whether they were vegan, vegetarian, or omnivore."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is resistant starch and how can you easily increase it in foods you already eat?",
+            "options": [
+                { "id": "opt1", "text": "A synthetic fiber supplement that must be purchased separately" },
+                { "id": "opt2", "text": "A type of starch that forms when cooked starchy foods like rice and potatoes are cooled, feeding butyrate-producing bacteria" },
+                { "id": "opt3", "text": "A starch found only in raw vegetables that is destroyed by cooking" },
+                { "id": "opt4", "text": "A type of gluten found in wheat products" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Resistant starch forms when cooked starchy foods (rice, potatoes, pasta) are cooled — the starch molecules rearrange into retrograded starch that feeds butyrate-producing bacteria. Leftover rice, cold potato salad, and reheated pasta all contain more prebiotic fiber than their freshly cooked versions. The resistant starch largely survives reheating."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is fiber diversity potentially more important than total fiber quantity for mental health?",
+            "options": [
+                { "id": "opt1", "text": "Because the body can only absorb one type of fiber at a time" },
+                { "id": "opt2", "text": "Because different fibers feed different bacterial species, and diverse bacteria create a resilient ecosystem that produces a wider range of mood-supporting compounds" },
+                { "id": "opt3", "text": "Because eating too much of the same fiber causes digestive problems" },
+                { "id": "opt4", "text": "Because fiber diversity makes food taste better, improving mood through enjoyment" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Different plant foods contain different types of fiber (inulin, pectin, resistant starch, beta-glucan, etc.), and different bacteria specialize in fermenting different fibers. Eating a wide variety of plants feeds a wide variety of bacteria, creating a diverse, resilient ecosystem — like a garden with many species rather than just one. This diversity produces a broader range of mood-supporting metabolites."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach for increasing fiber intake to avoid digestive discomfort?",
+            "options": [
+                { "id": "opt1", "text": "Immediately increase to 50 grams per day for maximum benefit" },
+                { "id": "opt2", "text": "Only eat raw vegetables since cooking destroys fiber" },
+                { "id": "opt3", "text": "Add one extra serving per day in week one, build gradually over weeks, and increase water intake alongside fiber" },
+                { "id": "opt4", "text": "Take a fiber supplement instead of eating fiber-rich foods" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The recommended two-week ramp-up starts with one additional serving of fiber-rich food per day in week one, adding a second in week two, and building gradually. Key tips include increasing water intake (fiber absorbs water), starting with gentler soluble fiber (oats, bananas), cooking beans well, and soaking dried beans overnight. Sudden large increases cause bloating and gas because gut bacteria need time to adapt."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "dietary-patterns",
+    "lessonId": "6",
+    "title": "Fiber, Prebiotics, and Microbiome Diversity - Quiz"
+}

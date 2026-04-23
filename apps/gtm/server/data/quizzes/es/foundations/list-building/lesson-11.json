@@ -1,0 +1,141 @@
+{
+  "lessonId": "11",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Construyendo la Lista de Correo del Creador",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Por qué una lista de correo se considera 'Tierra Propia' frente a las redes sociales que son 'Tierra Arrendada'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El correo es más barato que los anuncios en redes sociales"
+        },
+        {
+          "id": "b",
+          "text": "Controlas la distribución; los algoritmos de redes sociales pueden reducir tu alcance de la noche a la mañana"
+        },
+        {
+          "id": "c",
+          "text": "Es más fácil diseñar correos bonitos"
+        },
+        {
+          "id": "d",
+          "text": "Las redes sociales son para personas mayores"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las plataformas de redes sociales pueden banearte o cambiar los algoritmos en cualquier momento. Tu lista de correo es un activo portátil que posees y puedes llevar a cualquier plataforma."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Qué es un 'Lead Magnet'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un imán físico que envías por correo a los clientes"
+        },
+        {
+          "id": "b",
+          "text": "Una solicitud genérica de 'Únete a mi boletín'"
+        },
+        {
+          "id": "c",
+          "text": "Una solución específica (plantilla, lista de verificación, curso) dada a cambio de información de contacto"
+        },
+        {
+          "id": "d",
+          "text": "Una llamada de ventas"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Un Lead Magnet intercambia valor por datos. Debe resolver un problema específico rápidamente para ser efectivo."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál de estas opciones es la MENOS efectiva para construir una lista?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una lista de verificación específica para un problema específico"
+        },
+        {
+          "id": "b",
+          "text": "Un formulario genérico de 'Suscríbete para recibir actualizaciones'"
+        },
+        {
+          "id": "c",
+          "text": "Un mini-curso de 5 días por correo"
+        },
+        {
+          "id": "d",
+          "text": "Una plantilla de Notion"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las promesas genéricas como 'actualizaciones' no ofrecen valor inmediato. Los magnets de alta conversión resuelven un dolor inmediato."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la estrategia de 'Actualización de Contenido'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cobrar a las personas para leer tus tweets"
+        },
+        {
+          "id": "b",
+          "text": "Publicar el 80% del valor en las redes sociales y ofrecer el 20% final (activo) a cambio de un correo"
+        },
+        {
+          "id": "c",
+          "text": "Actualizar tu cuenta de LinkedIn Premium"
+        },
+        {
+          "id": "d",
+          "text": "Escribir publicaciones más largas"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Las Actualizaciones de Contenido convierten la atención (lectores casuales) en retención (suscriptores) al ofrecer un activo relevante que completa la lección que acaban de leer."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Las redes sociales son principalmente para ____; el correo es principalmente para ____.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ventas; Diversión"
+        },
+        {
+          "id": "b",
+          "text": "Descubrimiento; Relación y Ventas"
+        },
+        {
+          "id": "c",
+          "text": "Política; Trabajo"
+        },
+        {
+          "id": "d",
+          "text": "Imágenes; Texto"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Usa el algoritmo de las redes sociales para ser encontrado (Descubrimiento), luego muévelos al correo para profundizar la confianza y vender (Relación)."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Haz una lluvia de ideas sobre un Lead Magnet para tu audiencia específica. ¿Cuál es una 'Tarea Molesta' que odian, y qué Plantilla o Lista de Verificación podrías crear para resolverla?",
+      "minLength": 100,
+      "promptForAI": "Evalúa la idea del lead magnet. ¿Es específica? ¿Resuelve un punto de dolor real? ¿Es una victoria rápida (plantilla/lista de verificación) frente a un e-book pesado?"
+    }
+  ]
+}

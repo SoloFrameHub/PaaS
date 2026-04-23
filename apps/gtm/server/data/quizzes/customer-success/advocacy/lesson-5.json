@@ -1,0 +1,78 @@
+{
+  "lessonId": "5",
+  "courseId": "advocacy",
+  "sectionId": "customer-success",
+  "title": "Referral Loop Design",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why does asking 'Do you know 1-2 people?' convert 40% better than 'Tell everyone you know'?",
+      "options": [
+        { "id": "a", "text": "It sounds more professional" },
+        {
+          "id": "b",
+          "text": "Specific, small asks reduce decision paralysis and feel doable"
+        },
+        { "id": "c", "text": "It creates more urgency" },
+        { "id": "d", "text": "It implies an incentive will follow" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Specific, small asks convert better because '1-2 people' feels achievable, while 'everyone' triggers decision paralysis and can sound desperate. Specificity reduces cognitive load and increases action."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Personal intro emails convert at what rate compared to referral links?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Personal intros: 10-15% vs. referral links: 5-10%"
+        },
+        {
+          "id": "b",
+          "text": "Personal intros: 30-50% vs. referral links: 5-10%"
+        },
+        {
+          "id": "c",
+          "text": "Personal intros: 50-70% vs. referral links: 20-30%"
+        },
+        { "id": "d", "text": "They convert at roughly the same rate" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Personal intro emails convert at 30-50% versus 5-10% for referral links — a 5x difference. Personal intros work because they transfer trust, provide context about relevance, and include implicit social proof."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "For solo founders with fewer than 50 customers, what referral incentive is recommended?",
+      "options": [
+        { "id": "a", "text": "10-15% mutual discount" },
+        { "id": "b", "text": "$50 gift card per referral" },
+        { "id": "c", "text": "No incentive — just ask" },
+        { "id": "d", "text": "Free month of service for both parties" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "For the first 50 customers, skip the incentive. The personal ask is enough. Incentives add complexity and cost without significantly improving conversion at this early stage. Save formal programs for 200+ customers."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Referral requests sent within 48 hours of a success milestone get 60-70% response rates, while random-timing requests get only 15-25%.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Emotion drives action. When a customer just achieved a measurable win, they're in a state of gratitude and excitement. That emotional high lasts 48-72 hours. After that, response rates drop by half."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your referral loop by identifying your top 3 referral-ready milestones. For each milestone, write the specific referral ask you would use and explain why that timing is optimal.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific, measurable milestones (not vague ones), ties each ask to the emotional high of the milestone, uses specific low-pressure language ('1-2 people'), and demonstrates understanding of the 48-hour timing window."
+    }
+  ]
+}

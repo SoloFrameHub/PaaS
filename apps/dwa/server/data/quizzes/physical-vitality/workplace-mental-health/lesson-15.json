@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the difference between assertive, passive, and aggressive communication?",
+            "options": [
+                {"id": "opt1", "text": "They are all the same"},
+                {"id": "opt2", "text": "Assertive = clear, direct, respectful; Passive = avoiding conflict, not expressing needs; Aggressive = hostile, blaming, confrontational"},
+                {"id": "opt3", "text": "Assertive communication is rude"},
+                {"id": "opt4", "text": "Passive communication is the most effective"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Assertive communication is clear, direct, and respectful expression of needs and boundaries — it respects both your needs and others' needs. Passive communication avoids conflict by agreeing to everything, leading to resentment and burnout. Aggressive communication is hostile and blaming. Passive-aggressive is indirect resentment. Assertiveness is the most effective workplace communication style."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the DESC model for workload conversations?",
+            "options": [
+                {"id": "opt1", "text": "Demand, Escalate, Stop, Complain"},
+                {"id": "opt2", "text": "Describe (situation objectively), Express (your perspective/concern), Specify (what you need), Consequences (positive outcomes)"},
+                {"id": "opt3", "text": "Deny, Escape, Submit, Comply"},
+                {"id": "opt4", "text": "DESC is not a real framework"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The DESC model is a structured assertive communication framework: (D) Describe the situation objectively without blame, (E) Express your perspective or concern, (S) Specify what you need or propose (concrete request), (C) Consequences — outline positive outcomes of the change. It's clear, solution-focused, and respectful."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When is assertiveness EFFECTIVE vs. when is it INEFFECTIVE or RISKY?",
+            "options": [
+                {"id": "opt1", "text": "Assertiveness is always effective"},
+                {"id": "opt2", "text": "Assertiveness is effective in psychologically safe environments with supportive management; ineffective or risky in toxic cultures with punitive leadership or low psychological safety"},
+                {"id": "opt3", "text": "Assertiveness is always risky"},
+                {"id": "opt4", "text": "Assertiveness doesn't matter"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Assertiveness is most effective in organizationally supportive contexts with psychological safety and fair management. In environments with low PSC, toxic leadership, or punitive cultures that punish boundary-setting, assertiveness may be ineffective or risky (career consequences, retaliation). Recognizing when assertiveness won't work helps you make informed decisions (escalate or exit)."
+        },
+        {
+            "id": "q4",
+            "type": "reflection",
+            "question": "Think of a recent situation where you wanted to decline a work request or negotiate priorities but didn't. Using the DESC model, how would you have communicated assertively? What made it hard to speak up in that situation — individual skills, or organizational culture?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "workplace-mental-health",
+    "lessonId": "15",
+    "title": "Assertiveness and Workload Conversations - Quiz"
+}

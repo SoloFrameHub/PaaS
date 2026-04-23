@@ -1,0 +1,172 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "1",
+    "lessonTitle": "Email as Owned Audience",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between a 'Rented' audience and an 'Owned' audience?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Rented audiences cost more money to maintain."
+                },
+                {
+                    "id": "b",
+                    "text": "Owned audiences (like email) are controlled by you, while rented audiences (like social followers) are controlled by platforms that can change algorithms or shut down access."
+                },
+                {
+                    "id": "c",
+                    "text": "Rented audiences are always larger than owned audiences."
+                },
+                {
+                    "id": "d",
+                    "text": "Owned audiences require more technical setup."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The key distinction is control. With email, you own the relationship and can export your list. With social media, the platform controls who sees your content and can change the rules at any time.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the average ROI (return on investment) for email marketing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$5-10 per $1 spent"
+                },
+                {
+                    "id": "b",
+                    "text": "$15-20 per $1 spent"
+                },
+                {
+                    "id": "c",
+                    "text": "$36-42 per $1 spent"
+                },
+                {
+                    "id": "d",
+                    "text": "$100+ per $1 spent"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Email consistently delivers $36-42 in return for every $1 spent, making it the highest-ROI marketing channel available to solo founders.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the funnel described in the lesson, what is the primary role of email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To replace all other marketing channels."
+                },
+                {
+                    "id": "b",
+                    "text": "To serve as the bridge between awareness and purchase by capturing and nurturing 'not ready yet' visitors."
+                },
+                {
+                    "id": "c",
+                    "text": "To generate initial traffic to your website."
+                },
+                {
+                    "id": "d",
+                    "text": "To replace your CRM system."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email captures visitors who aren't ready to buy immediately and nurtures them over time through welcome and nurture sequences until they're ready to convert.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the '1,000 vs. 10,000 Rule' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You need 10,000 email subscribers before you can make money."
+                },
+                {
+                    "id": "b",
+                    "text": "1,000 engaged email subscribers are worth more than 10,000 social followers who may never see your posts."
+                },
+                {
+                    "id": "c",
+                    "text": "Email lists should be 10x smaller than social followings."
+                },
+                {
+                    "id": "d",
+                    "text": "You should spend $1,000 on email tools and $10,000 on social ads."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Quality beats quantity. A smaller, engaged email list that actually opens your messages is far more valuable than a large social following subject to algorithmic filtering.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of these is part of the 'Email Mindset' required for success?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Send as many emails as possible to maximize revenue."
+                },
+                {
+                    "id": "b",
+                    "text": "Permission is sacred; respect the inbox and provide value with every send."
+                },
+                {
+                    "id": "c",
+                    "text": "Buy email lists to grow faster."
+                },
+                {
+                    "id": "d",
+                    "text": "Focus on short-term transactions over long-term relationships."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Email success requires a value-first, permission-based approach. Subscribers gave you their email address—that's a privilege you must earn with every message.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Perform the 'Owned vs. Rented Audit' from the practice exercise. List your current audience channels, categorize them as owned or rented, and calculate your ratio. If your largest rented platform disappeared tomorrow, what percentage of your pipeline would you lose? What is one specific action you can take this week to shift the balance toward owned audience?",
+            "promptHints": [
+                "Be honest about where your audience currently lives.",
+                "Consider the actual engagement rate, not just follower counts.",
+                "Think about a specific lead magnet or email capture strategy you could implement."
+            ],
+            "minimumWords": 70,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [],
+        "unlocks": [
+            "2"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Email as Owned Audience - Quiz"
+}

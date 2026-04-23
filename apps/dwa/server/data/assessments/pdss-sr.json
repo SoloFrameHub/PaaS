@@ -1,0 +1,66 @@
+{
+  "id": "pdss-sr",
+  "title": "Panic Disorder Severity Scale (Self-Report)",
+  "description": "A brief validated measure to assess the severity of panic disorder symptoms. This 7-item questionnaire helps you understand how panic is currently affecting your life.",
+  "instructions": "For each item below, select the answer that best describes your experience over the past week.",
+  "timeframe": "past week",
+  "questions": [
+    { "id": "q1", "text": "How many panic attacks did you have during the past week?" },
+    { "id": "q2", "text": "If you had any panic attacks during the past week, how distressing (uncomfortable, frightening) were they while they were happening?" },
+    { "id": "q3", "text": "During the past week, how much have you worried or felt anxious about when your next panic attack would occur?" },
+    { "id": "q4", "text": "During the past week, were there any places or situations you avoided or felt afraid of because of panic attacks? (e.g., public transportation, movie theaters, crowds, bridges, tunnels, shopping centers, being alone)" },
+    { "id": "q5", "text": "During the past week, were there any activities you avoided or felt afraid of because they caused physical sensations like those during a panic attack? (e.g., exercise, sexual relations, heated arguments, coffee drinking)" },
+    { "id": "q6", "text": "During the past week, how much did panic attacks, worry about panic attacks, or fear of situations and activities interfere with your work or ability to carry out home responsibilities?" },
+    { "id": "q7", "text": "During the past week, how much did panic attacks, worry about panic attacks, or fear of situations and activities interfere with your social life?" }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "Mild",
+      "2": "Moderate",
+      "3": "Severe",
+      "4": "Extreme"
+    }
+  },
+  "scoring": {
+    "maxScore": 28,
+    "bands": [
+      {
+        "min": 0,
+        "max": 5,
+        "severity": "minimal",
+        "label": "Minimal Panic Symptoms",
+        "description": "Your responses suggest minimal panic-related difficulties. Continue practicing the skills in this course as a preventive measure.",
+        "color": "green"
+      },
+      {
+        "min": 6,
+        "max": 10,
+        "severity": "mild",
+        "label": "Mild Panic Symptoms",
+        "description": "Your responses suggest mild panic symptoms. The self-help strategies in this course can be very effective at this level. Continue learning and practicing.",
+        "color": "yellow"
+      },
+      {
+        "min": 11,
+        "max": 17,
+        "severity": "moderate",
+        "label": "Moderate Panic Symptoms",
+        "description": "Your responses suggest moderate panic symptoms that are affecting your daily life. Consider combining this course with professional CBT support for the best outcomes.",
+        "color": "orange"
+      },
+      {
+        "min": 18,
+        "max": 28,
+        "severity": "severe",
+        "label": "Severe Panic Symptoms",
+        "description": "Your responses suggest severe panic symptoms with significant life interference. We strongly recommend seeking a professional evaluation alongside the educational content in this course.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "Overall, how much do panic attacks and related symptoms interfere with your ability to function in daily life?"
+  },
+  "disclaimer": "This is an educational self-check tool based on the Panic Disorder Severity Scale, not a clinical diagnosis. Results are meant to help you reflect on your experiences. If you are in crisis or need immediate help, please call or text 988 (Suicide & Crisis Lifeline)."
+}

@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "7",
+    "lessonTitle": "Launch and Promotion Sequences",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What two psychological elements make launch sequences effective?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Lower prices and more features."
+                },
+                {
+                    "id": "b",
+                    "text": "Urgency (real deadlines) and concentration (higher email frequency over a short period)."
+                },
+                {
+                    "id": "c",
+                    "text": "Longer emails and more images."
+                },
+                {
+                    "id": "d",
+                    "text": "Emotional appeals and celebrity endorsements."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Urgency forces decision (no more 'tomorrow'), and concentration ensures visibility through the noise. Together, they convert subscribers who genuinely want to buy but haven't taken action.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is fake scarcity (like constantly 'closing' evergreen carts) destructive?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It's illegal in most countries."
+                },
+                {
+                    "id": "b",
+                    "text": "Email providers penalize it."
+                },
+                {
+                    "id": "c",
+                    "text": "It permanently destroys trust—subscribers remember when you lied about urgency."
+                },
+                {
+                    "id": "d",
+                    "text": "It reduces click rates temporarily but has no long-term impact."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The moment subscribers catch you in a fake deadline, they learn to distrust everything you say. Authentic urgency (real cohort dates, genuine price increases) builds trust while driving action.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the Day 2 'Problem' email in the 7-day launch sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To introduce the product features in detail."
+                },
+                {
+                    "id": "b",
+                    "text": "To agitate the pain point and remind subscribers why they signed up—reconnecting them to their motivation."
+                },
+                {
+                    "id": "c",
+                    "text": "To announce the deadline for the offer."
+                },
+                {
+                    "id": "d",
+                    "text": "To share testimonials from current customers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Before you can sell a solution, you need the reader to feel their problem. Day 2 reawakens the pain that motivated them to join your list, setting the stage for your solution on Day 3.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you treat subscribers who didn't buy during the launch?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Remove them from your list—they're not serious."
+                },
+                {
+                    "id": "b",
+                    "text": "Send them a 'no hard feelings' email, continue providing value, optionally survey them for feedback, and bridge to the next opportunity."
+                },
+                {
+                    "id": "c",
+                    "text": "Immediately start another launch sequence with a bigger discount."
+                },
+                {
+                    "id": "d",
+                    "text": "Ignore them and focus only on buyers."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Non-buyers still trust you—this might not have been their time. Treating them well, gathering feedback on why they didn't buy, and continuing to provide value keeps them engaged for future opportunities.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Is it acceptable to send 2-3 emails in the final 48 hours of a launch?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "No, that's spamming and will cause mass unsubscribes."
+                },
+                {
+                    "id": "b",
+                    "text": "Yes, your job during a launch is visibility for decision-ready subscribers. Expect some unsubscribes from non-buyers."
+                },
+                {
+                    "id": "c",
+                    "text": "Only if you have fewer than 1,000 subscribers."
+                },
+                {
+                    "id": "d",
+                    "text": "Only if every email has a discount code."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "During a launch, higher frequency is expected and effective. Some unsubscribes are normal—those people weren't going to buy anyway. The increased frequency ensures decision-ready subscribers don't miss the deadline.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Outline your 7-day launch sequence: Write subject lines for all 7 emails (Announce, Problem, Solution, Proof, FAQ, Deadline, Final Call). What is your genuine scarcity (real deadline, limited spots, price increase)? What testimonial or result will you feature on Day 4?",
+            "promptHints": [
+                "Make sure your scarcity is authentic—what's actually true about your offer?",
+                "Day 3 should focus on transformation, not features.",
+                "Think about what objection you'll address on Day 5."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "6"
+        ],
+        "unlocks": [
+            "8"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Launch and Promotion Sequences - Quiz"
+}

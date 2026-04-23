@@ -1,0 +1,99 @@
+{
+    "lessonId": "7",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 7: Scaling Without Losing Authenticity",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "What does the lesson identify as the core need of audiences in parasocial relationships with creators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Constant direct interaction and daily one-on-one messages from the creator"
+                },
+                {
+                    "id": "b",
+                    "text": "The perception of authenticity and the evidence of ongoing care"
+                },
+                {
+                    "id": "c",
+                    "text": "Discounted pricing and exclusive deals unavailable to the public"
+                },
+                {
+                    "id": "d",
+                    "text": "Behind-the-scenes access to the creator's personal life"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Research on parasocial relationships shows that audiences do not need constant direct interaction. What they need is the perception of authenticity and evidence of ongoing care -- seeing the creator create (not just sell), believing they still care about the mission, having proof quality has not degraded, and feeling seen even if not individually."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "According to the Visible Founder Strategy, which four moments should ALWAYS come from the creator personally, even when a team is handling most operations?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Social media posting, email newsletters, blog writing, and podcast recording"
+                },
+                {
+                    "id": "b",
+                    "text": "Welcome to the program, milestone celebrations, crisis response, and renewals/re-enrollment"
+                },
+                {
+                    "id": "c",
+                    "text": "Lead qualification, sales calls, payment processing, and technical support"
+                },
+                {
+                    "id": "d",
+                    "text": "Community moderation, content scheduling, customer service, and billing"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson identifies four key moments that should always come from the creator: welcoming new clients personally, celebrating milestone achievements, communicating crisis response, and participating in renewal/re-enrollment decisions. These are high-trust, high-impact moments where the founder's personal presence matters most."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "A creator runs their quarterly Authenticity Audit and scores: Visibility 4, Accessibility 2, Quality 4, Honesty 4, Craft 5, Recognition 2. Based on the audit interpretation in the lesson, what should they prioritize?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing -- their average score of 3.5 is acceptable"
+                },
+                {
+                    "id": "b",
+                    "text": "Improving Accessibility and Recognition immediately, since both are below 3 and their audience is likely feeling the gap"
+                },
+                {
+                    "id": "c",
+                    "text": "Improving Craft, since that is the foundation of all other dimensions"
+                },
+                {
+                    "id": "d",
+                    "text": "Reducing their Visibility and Craft scores to spend more time on the low-scoring areas"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson states that any dimension scoring below 3 needs immediate attention, because a sub-3 score means the audience is likely already feeling the gap. Accessibility (2) and Recognition (2) are both below this threshold. The creator needs to create defined access points (office hours, community Q&A) and implement systems for individually recognizing clients at key moments."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Complete a mini Authenticity Audit for your current business. Score yourself 1-5 on each of the six dimensions: Visibility, Accessibility, Quality, Honesty, Craft, and Recognition. For your two lowest-scoring dimensions, describe one specific, actionable change you will implement this month to improve the score. Be concrete -- 'I will be more visible' is not enough; 'I will post one unscripted Instagram story daily by 9am' is.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's self-assessment for honesty and specificity. Students who score themselves 5/5 across the board are likely not being critical enough -- probe gently. For their improvement actions, check that they are truly specific and time-bound. Vague intentions like 'engage more' should be pushed toward concrete commitments with frequency, format, and timing. Affirm authentic self-awareness and help them prioritize the change that would have the biggest impact on their audience's trust."
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Skool & Circle Monetization Models",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary monetization limitation of Skool compared to Circle?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Skool charges higher transaction fees on each payment"
+                },
+                {
+                    "id": "b",
+                    "text": "Skool does not support native payment processing"
+                },
+                {
+                    "id": "c",
+                    "text": "Skool does not have a built-in tier system -- one community equals one price"
+                },
+                {
+                    "id": "d",
+                    "text": "Skool limits communities to 100 members maximum"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Skool is designed around a single-price community model. It does not natively support multiple pricing tiers within one community. Creators who want free/paid/premium tiers on Skool must run multiple separate groups and manage access manually."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the decision framework, which platform question should you answer FIRST when choosing a community platform?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "What is your technical comfort level?"
+                },
+                {
+                    "id": "b",
+                    "text": "Where is your audience?"
+                },
+                {
+                    "id": "c",
+                    "text": "How many products do you sell?"
+                },
+                {
+                    "id": "d",
+                    "text": "What is your monthly budget for platform fees?"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The number of products you sell is the first question in the decision framework because it immediately narrows your options. One product points to Skool, multiple products to Circle or Mighty Networks, and community-as-supplement to Discord."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the true cost of migrating from one community platform to another?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The time spent exporting and importing member data"
+                },
+                {
+                    "id": "b",
+                    "text": "The difference in monthly platform fees"
+                },
+                {
+                    "id": "c",
+                    "text": "The 30-60 days of reduced engagement and a 15-20% churn spike while members adjust"
+                },
+                {
+                    "id": "d",
+                    "text": "The cost of hiring a developer to handle the migration"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The technical migration (emails, content, payment data) is manageable. The real cost is behavioral: members need to re-learn a new platform, re-establish their engagement habits, and re-find their community connections. This disruption typically causes a 15-20% churn spike over 30-60 days."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Using the four-question decision framework from this lesson (number of products, technical comfort, pricing model, audience location), walk through each question for your specific situation and explain which platform you would choose and why.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has systematically worked through all four questions in the decision framework with honest self-assessment. Look for specific answers to each question (not vague generalizations) and a clear platform recommendation that logically follows from their answers. If their choice contradicts their answers, gently point out the inconsistency."
+        }
+    ]
+}

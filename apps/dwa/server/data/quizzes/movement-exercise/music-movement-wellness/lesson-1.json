@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Which brain region is primarily responsible for linking music to emotional memories and feelings?",
+      "options": [
+        {"id": "opt1", "text": "Motor cortex"},
+        {"id": "opt2", "text": "Auditory cortex"},
+        {"id": "opt3", "text": "Limbic system (amygdala and hippocampus)"},
+        {"id": "opt4", "text": "Prefrontal cortex"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "The limbic system, including the amygdala (emotional memory) and hippocampus (context and association), links music to feelings and memories. This is why certain songs can instantly trigger specific emotional memories or states."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to research, what is the primary mechanism by which slow-tempo music (60-80 BPM) reduces stress?",
+      "options": [
+        {"id": "opt1", "text": "It distracts you from stressful thoughts"},
+        {"id": "opt2", "text": "It entrains (synchronizes) your nervous system, activating the parasympathetic branch and reducing cortisol"},
+        {"id": "opt3", "text": "It increases dopamine production"},
+        {"id": "opt4", "text": "It blocks pain receptors in the brain"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Slow rhythms entrain your autonomic nervous system, activating the parasympathetic (rest-and-digest) branch. This slows heart rate, deepens breathing, and reduces cortisol (stress hormone) by 15-25% in many studies. Entrainment is the neurobiological foundation for rhythm-based regulation."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Why does combining music with movement amplify mental health benefits compared to music listening alone?",
+      "options": [
+        {"id": "opt1", "text": "Movement burns calories, which improves mood"},
+        {"id": "opt2", "text": "Music + movement creates bilateral brain activation across both hemispheres and engages motor, emotional, and reward systems simultaneously"},
+        {"id": "opt3", "text": "Movement prevents you from focusing on sad lyrics"},
+        {"id": "opt4", "text": "It's a placebo effect with no neurobiological basis"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Music activates both brain hemispheres (left: rhythm/language, right: melody/emotion), and adding movement engages motor cortex, cerebellum, and vestibular system. This whole-brain, whole-body activation produces greater improvements in mood, stress reduction, and cognitive function than either music or movement alone—a well-documented synergy effect."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for therapist-delivered music therapy in reducing depressive symptoms?",
+      "options": [
+        {"id": "opt1", "text": "LIMITED—few studies, inconsistent results"},
+        {"id": "opt2", "text": "EMERGING—some promising studies but heterogeneous quality"},
+        {"id": "opt3", "text": "MODERATE-STRONG—meta-analyses show SMD ~-0.97 as adjunctive treatment"},
+        {"id": "opt4", "text": "PROVEN—music therapy cures depression in all cases"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Music therapy delivered by board-certified therapists (MT-BC) has MODERATE-STRONG evidence for reducing depressive symptoms, with effect sizes around SMD -0.97 in meta-analyses. This is as adjunctive treatment (combined with usual care), not standalone. The evidence is consistent but varies in study quality, hence 'moderate-to-strong' rather than 'definitive.'"
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When is self-guided music listening NOT sufficient and professional support is needed?",
+      "options": [
+        {"id": "opt1", "text": "When you want to improve your mood on a stressful day"},
+        {"id": "opt2", "text": "When you're building a calming playlist for sleep"},
+        {"id": "opt3", "text": "When you experience moderate-to-severe depression, PTSD, suicidal thoughts, or trauma-related symptoms"},
+        {"id": "opt4", "text": "When you prefer classical music over pop music"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "Self-guided music listening is appropriate for everyday stress and mood support, but it is NOT sufficient for moderate-to-severe mental health conditions. If you have clinical depression, PTSD, suicidal ideation, or trauma symptoms, you need support from a licensed therapist or psychiatrist. Music can complement treatment but cannot replace evidence-based therapy or medication for these conditions."
+    }
+  ],
+  "sectionId": "movement-exercise",
+  "courseId": "music-movement-wellness",
+  "lessonId": "1",
+  "title": "The Neuroscience of Music and Mental Health - Quiz"
+}

@@ -1,0 +1,99 @@
+{
+    "lessonId": "8",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 8: Sales Team Compensation Models",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "What is the typical commission range for a commission-only closer in the creator economy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1-5% of revenue"
+                },
+                {
+                    "id": "b",
+                    "text": "10-20% of revenue"
+                },
+                {
+                    "id": "c",
+                    "text": "30-40% of revenue"
+                },
+                {
+                    "id": "d",
+                    "text": "50% of revenue"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson identifies 10-20% of collected revenue as the typical range for commission-only closers. This higher percentage is necessary to attract talent without a base salary. Base + commission models use a lower commission rate (8-12%) because the base provides income stability."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "A closer on a base + commission plan ($4,000 base + 10% commission) closes a $5,000 deal. The client later requests a refund on day 25. According to the standard clawback policy described in the lesson, what happens?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing -- the closer keeps the full $500 commission because the deal was legitimately closed"
+                },
+                {
+                    "id": "b",
+                    "text": "The $500 commission is deducted from the closer's next pay period because the refund occurred within the 30-day clawback window"
+                },
+                {
+                    "id": "c",
+                    "text": "The closer's base salary is reduced by $500 as a penalty"
+                },
+                {
+                    "id": "d",
+                    "text": "The closer is terminated because any refund indicates poor selling"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The standard clawback policy states that if a client refunds within 30 days, the closer's commission on that deal is deducted from their next pay period. Day 25 falls within the 30-day window. The clawback applies to the commission ($500) only, not the base salary."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "A creator at $80K/month revenue is designing compensation for their sales team. They want to incentivize high performance while protecting brand quality. Based on the lesson's complete compensation example, which combination best achieves both goals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High base salary ($8K) with no commission or bonuses"
+                },
+                {
+                    "id": "b",
+                    "text": "Commission-only at 20% with no quality metrics"
+                },
+                {
+                    "id": "c",
+                    "text": "Base + commission with revenue threshold bonuses AND quality bonuses for low refund rates and high satisfaction scores"
+                },
+                {
+                    "id": "d",
+                    "text": "Equity only, with no short-term compensation"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson's recommended mature compensation package combines base + commission (income stability and performance incentive), revenue threshold bonuses (motivates growth), and quality bonuses for refund rate below 5% and satisfaction above 9/10 (protects brand). Quality bonuses are described as 'often more important than revenue bonuses' because they prevent trading short-term revenue for long-term brand damage."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Design a compensation package for your first closer. Specify: (1) whether you would use commission-only or base + commission and why, (2) the exact percentages or dollar amounts, (3) at least one quality bonus you would include, and (4) your clawback policy. Show the math: at your current deal value and expected close volume, what would this closer earn per month?",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student's compensation design is financially sustainable for their business and attractive enough for quality talent. Check that their math adds up -- if their offer is $3K and they expect 8 closes per month at 10% commission, the closer earns $2,400 in commission plus base. Is the total competitive? Is the quality bonus meaningful enough to influence behavior? If they chose commission-only, do they understand the trade-offs around control and talent quality? Flag any unrealistic assumptions about close volume or deal value."
+        }
+    ]
+}

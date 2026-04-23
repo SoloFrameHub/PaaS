@@ -1,0 +1,84 @@
+{
+  "id": "spin",
+  "title": "Social Phobia Inventory (SPIN)",
+  "description": "A validated 17-item questionnaire to assess the severity of social anxiety symptoms across fear, avoidance, and physiological domains.",
+  "instructions": "Please indicate how much the following problems have bothered you during the past week.",
+  "timeframe": "past week",
+  "questions": [
+    { "id": "q1", "text": "I am afraid of people in authority" },
+    { "id": "q2", "text": "I am bothered by blushing in front of people" },
+    { "id": "q3", "text": "Parties and social events scare me" },
+    { "id": "q4", "text": "I avoid talking to people I don't know" },
+    { "id": "q5", "text": "Being criticized scares me a lot" },
+    { "id": "q6", "text": "Fear of embarrassment causes me to avoid doing things or speaking to people" },
+    { "id": "q7", "text": "Sweating in front of people causes me distress" },
+    { "id": "q8", "text": "I avoid going to parties" },
+    { "id": "q9", "text": "I avoid activities in which I am the center of attention" },
+    { "id": "q10", "text": "Talking to strangers scares me" },
+    { "id": "q11", "text": "I avoid having to give speeches" },
+    { "id": "q12", "text": "I would do anything to avoid being criticized" },
+    { "id": "q13", "text": "Heart palpitations bother me when I am around people" },
+    { "id": "q14", "text": "I am afraid of doing things when people might be watching" },
+    { "id": "q15", "text": "Being embarrassed or looking stupid are among my worst fears" },
+    { "id": "q16", "text": "I avoid speaking to anyone in authority" },
+    { "id": "q17", "text": "Trembling or shaking in front of others is distressing to me" }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 4,
+    "labels": {
+      "0": "Not at all",
+      "1": "A little bit",
+      "2": "Somewhat",
+      "3": "Very much",
+      "4": "Extremely"
+    }
+  },
+  "scoring": {
+    "maxScore": 68,
+    "bands": [
+      {
+        "min": 0,
+        "max": 20,
+        "severity": "minimal",
+        "label": "None to Mild Social Anxiety",
+        "description": "Your responses suggest minimal social anxiety. Continue building confidence with the skills in this course as a preventive measure.",
+        "color": "green"
+      },
+      {
+        "min": 21,
+        "max": 30,
+        "severity": "mild",
+        "label": "Mild Social Anxiety",
+        "description": "Your responses suggest mild social anxiety. The self-help strategies in this course can be very effective at this level. Practice consistently and track your progress.",
+        "color": "yellow"
+      },
+      {
+        "min": 31,
+        "max": 40,
+        "severity": "moderate",
+        "label": "Moderate Social Anxiety",
+        "description": "Your responses suggest moderate social anxiety that is likely affecting your daily life. Consider combining this course with professional CBT support for the best outcomes.",
+        "color": "orange"
+      },
+      {
+        "min": 41,
+        "max": 50,
+        "severity": "severe",
+        "label": "Severe Social Anxiety",
+        "description": "Your responses suggest severe social anxiety with significant life impact. We strongly recommend seeking a professional evaluation alongside the educational content in this course.",
+        "color": "red"
+      },
+      {
+        "min": 51,
+        "max": 68,
+        "severity": "very-severe",
+        "label": "Very Severe Social Anxiety",
+        "description": "Your responses suggest very severe social anxiety. Professional treatment (CBT and/or medication) is strongly recommended. This course can complement professional care.",
+        "color": "red"
+      }
+    ],
+    "functionalImpairmentQuestion": "Overall, how much do social fears and avoidance interfere with your ability to function in work, school, and relationships?"
+  },
+  "disclaimer": "This is an educational self-check tool based on the Social Phobia Inventory (SPIN), not a clinical diagnosis. A score of 19 or above suggests possible social anxiety disorder and warrants professional evaluation. If you are in crisis or need immediate help, please call or text 988 (Suicide & Crisis Lifeline)."
+}

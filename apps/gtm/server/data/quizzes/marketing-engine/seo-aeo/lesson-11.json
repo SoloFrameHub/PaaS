@@ -1,0 +1,174 @@
+{
+    "courseId": "seo-aeo",
+    "lessonId": "11",
+    "lessonTitle": "Tracking AI Citations",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is it currently necessary to perform 'Manual AI Audits' to track AEO performance?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because search engines are broken."
+                },
+                {
+                    "id": "b",
+                    "text": "Because there is no centralized 'ChatGPT Console' or 'Perplexity Dashboard' that provides direct citation data yet."
+                },
+                {
+                    "id": "c",
+                    "text": "Because AI models only respond to manual queries."
+                },
+                {
+                    "id": "d",
+                    "text": "Because Google Search Console has been replaced by AI."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Modern SEO tools are still catching up to the Answer Engine reality. Until dedicated tracking dashboards exist, founders must manually test the models to see if their citation strategy is working.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the benefit of 'Brand Mention Tracking' even if the mention doesn't include a clickable link?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It doesn't provide any benefit."
+                },
+                {
+                    "id": "b",
+                    "text": "It helps AI models build a stronger 'Entity Association' between your name and your niche in their Knowledge Graph."
+                },
+                {
+                    "id": "c",
+                    "text": "It automatically increases your website bandwidth."
+                },
+                {
+                    "id": "d",
+                    "text": "It prevents people from stealing your brand name."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI models learn by association. When your brand name is mentioned near specific keywords or topics across the web (Reddit, Quora, LinkedIn), the AI strengthens its understanding of you as an expert entity in that field.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which Google Search Console metric can serve as a 'Proxy' for being featured in an AI Overview?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Average Position."
+                },
+                {
+                    "id": "b",
+                    "text": "Total Impressions."
+                },
+                {
+                    "id": "c",
+                    "text": "A significantly higher CTR (Click-Through Rate) for a specific query than your average for that rank."
+                },
+                {
+                    "id": "d",
+                    "text": "The number of pages indexed."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When you are the 'Featured Answer' (in a snippet or AIO box), you occupy more screen real estate and demonstrate immediate value, which usually leads to a much higher CTR than a standard blue link in the same position.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "In the 'Share of Model' Audit, what does 'Tier 1' status represent?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The AI knows your name but thinks you are a competitor."
+                },
+                {
+                    "id": "b",
+                    "text": "You are listed as one of the top experts/solutions by the AI when asked a category query."
+                },
+                {
+                    "id": "c",
+                    "text": "You have spend $1,000 on AI advertising."
+                },
+                {
+                    "id": "d",
+                    "text": "The AI refuses to answer questions about your business."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Tier 1 is the 'Holy Grail' of AEO. It means the AI model's training data and retrieval processes have identified you as a primary authority worthy of recommendation for your category.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is it important to use 'Incognito Mode' or fresh sessions when auditing AI models?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To prevent hackers from seeing your searches."
+                },
+                {
+                    "id": "b",
+                    "text": "To ensure the AI's answer isn't biased by your personal chat history or previous mentions of your brand."
+                },
+                {
+                    "id": "c",
+                    "text": "To make the searches load faster."
+                },
+                {
+                    "id": "d",
+                    "text": "AI models don't work in standard browser windows."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "AI models use 'In-Context' learning. If you've been talking about your business in a thread, the AI will naturally biased its next answer towards you. Incognito gives you the 'Cold Lead' perspective of how a new user sees you.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Perform a 'Category Test' for your niche right now in an AI (Perplexity or ChatGPT). Who are the top 3 and what specific 'Reason' does the AI give for recommending them? What is the one specific trait or 'Unique Data' point you would need to display to replace one of them in the AI's eyes?",
+            "promptHints": [
+                "Read the AI's justification for their sources carefully.",
+                "Look for adjectives the AI uses (e.g., 'data-backed', 'innovative', 'established').",
+                "Think about what you have that they don't (Practitioner Experience)."
+            ],
+            "minimumWords": 60,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "10-12 minutes",
+        "prerequisiteQuizzes": [
+            "10"
+        ],
+        "unlocks": [
+            "12"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Tracking AI Citations - Quiz"
+}

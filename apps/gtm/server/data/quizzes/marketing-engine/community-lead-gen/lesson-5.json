@@ -1,0 +1,174 @@
+{
+    "courseId": "community-lead-gen",
+    "lessonId": "5",
+    "lessonTitle": "Hacker News Playbook",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary value prioritized by the Hacker News (HN) community?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Marketing reach and viral growth."
+                },
+                {
+                    "id": "b",
+                    "text": "Intellectual curiosity and technical substance."
+                },
+                {
+                    "id": "c",
+                    "text": "The price of your product."
+                },
+                {
+                    "id": "d",
+                    "text": "The size of your VC funding."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Hacker News is a community of makers and thinkers. They respond to deep 'How' and 'Why' insights rather than polished sales pitches.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is a mandatory requirement for a 'Show HN' post title?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It must include at least three emojis."
+                },
+                {
+                    "id": "b",
+                    "text": "It must be descriptive, neutral, and avoid marketing hype words like 'Best' or 'Revolutionary'."
+                },
+                {
+                    "id": "c",
+                    "text": "It must be in all capital letters."
+                },
+                {
+                    "id": "d",
+                    "text": "It must include a discount code for the community."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "HN culture deeply distrusts 'hype.' A neutral title that clearly states what the tool does is far more likely to get clicked than one that sounds like an ad.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Can you post a 'Show HN' for a product that only has a 'Coming Soon' landing page?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, it's a great way to build a waitlist."
+                },
+                {
+                    "id": "b",
+                    "text": "No, 'Show HN' requires a functional product that people can actually use or try immediately."
+                },
+                {
+                    "id": "c",
+                    "text": "Only if you pay the moderators."
+                },
+                {
+                    "id": "d",
+                    "text": "Yes, but only on the weekends."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'Show' in 'Show HN' implies that there is something to show. Posting just a landing page is a quick way to get your post flagged.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the recommended way to handle 'Brutally Honest' technical criticism on HN?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Argue back and prove why they are wrong."
+                },
+                {
+                    "id": "b",
+                    "text": "Never get defensive; instead, acknowledge the point, explain your trade-offs, and ask for specifics."
+                },
+                {
+                    "id": "c",
+                    "text": "Ignore the criticism and only reply to the positive comments."
+                },
+                {
+                    "id": "d",
+                    "text": "Report the user for negativity."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "HN respects founders who can handle scrutiny with intellectual honesty. Admitting a weakness or explaining a technical choice builds more trust than a defensive argument.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When is the 'Peak Traffic' window for launching on Hacker News?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "7:00 AM to 9:00 AM Pacific Time, Tuesday-Thursday."
+                },
+                {
+                    "id": "b",
+                    "text": "Friday Night, after everyone finished work."
+                },
+                {
+                    "id": "c",
+                    "text": "Sunday Morning."
+                },
+                {
+                    "id": "d",
+                    "text": "Midnight on Monday."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "This window aligns with the start of the workday for the tech hubs in the US and the afternoon for Europe, maximizing your launch's initial runway.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Take an honest look at your current project. What is the #1 'Technical Weakness' or 'Limitation' that a Hacker News user would likely mock or criticize? How can you frame that limitation as a strategic choice or an area where you are actively seeking feedback from the community?",
+            "promptHints": [
+                "Be specific about the trade-off you made (e.g., speed vs. features).",
+                "Think of a question you could ask that would engage a technical expert.",
+                "Consider how 'Intellectual Honesty' builds trust with your ICP."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "4"
+        ],
+        "unlocks": [
+            "6"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Hacker News Playbook - Quiz"
+}

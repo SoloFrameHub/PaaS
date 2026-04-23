@@ -1,0 +1,141 @@
+{
+    "lessonId": "9",
+    "courseId": "positioning-value",
+    "sectionId": "foundations",
+    "title": "Your Positioning Statement",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of a 'Positioning Statement'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To serve as a catchy slogan for your homepage"
+                },
+                {
+                    "id": "b",
+                    "text": "To be an internal 'North Star' that keeps strategy focused"
+                },
+                {
+                    "id": "c",
+                    "text": "To be memorized and recited to investors"
+                },
+                {
+                    "id": "d",
+                    "text": "To help SEO crawlers index your site"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A positioning statement is primarily an internal tool. It defines who you are and who you serve so you can make consistent decisions about product, marketing, and sales."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is the standard formula for a positioning statement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "We are the Uber for [Industry]."
+                },
+                {
+                    "id": "b",
+                    "text": "For [Target] Who [Need], Our Product is a [Category] That [Benefit]. Unlike [Alternative], We [Differentiator]."
+                },
+                {
+                    "id": "c",
+                    "text": "The details don't matter as long as it sounds professional."
+                },
+                {
+                    "id": "d",
+                    "text": "Just list your top 5 features and add a price."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "This specific formula (from 'Crossing the Chasm') forces you to identify all the critical components: Target, Need, Category, Benefit, Alternative, and Differentiator."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'So What?' test?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A psychological test for potential hires"
+                },
+                {
+                    "id": "b",
+                    "text": "Asking 'So what?' repeatedly until you reach a tangible business outcome (money, time, risk)"
+                },
+                {
+                    "id": "c",
+                    "text": "A way to dismiss competitor claims"
+                },
+                {
+                    "id": "d",
+                    "text": "Asking customers if they care about your features"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 'So What?' test forces you to move beyond features ('it uses AI') to benefits ('it's faster') to outcomes ('you won't lose customers')."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should your positioning differ for a 'Website Headline' vs. an 'Internal Statement'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It shouldn't; they should be identical."
+                },
+                {
+                    "id": "b",
+                    "text": "The website headline should be shorter (under 10 words) and focused purely on the immediate outcome."
+                },
+                {
+                    "id": "c",
+                    "text": "The website headline should be longer to explain everything upfront."
+                },
+                {
+                    "id": "d",
+                    "text": "The internal statement should be vaguer to allow flexibility."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Context matters. An internal statement provides complete context. A website headline has about 3 seconds to grab attention, so it must be short and outcome-driven."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does using passive voice weaken a positioning statement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It implies a lack of ownership and authority."
+                },
+                {
+                    "id": "b",
+                    "text": "It is grammatically incorrect."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes the sentence too short."
+                },
+                {
+                    "id": "d",
+                    "text": "Passive voice is actually preferred in B2B."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Active voice ('We help you...') is strong and authoritative. Passive voice ('Solutions are provided by us...') is weak and distant. Positioning requires confidence."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Draft your 'Website Headline' version of your positioning. Keep it under 10 words. It should answer: 'What do I get out of this?'",
+            "minLength": 20,
+            "promptForAI": "Evaluate the student's headline. Is it under 10 words? Is it outcome-focused or feature-focused? Suggest a stronger, punchier variation."
+        }
+    ],
+    "passingScore": 70
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What are the four phases of the 4R Gut Restoration Protocol, in the correct order?",
+            "options": [
+                { "id": "opt1", "text": "Repair, Remove, Reinoculate, Replace" },
+                { "id": "opt2", "text": "Remove, Replace, Reinoculate, Repair" },
+                { "id": "opt3", "text": "Replace, Repair, Remove, Reinoculate" },
+                { "id": "opt4", "text": "Reinoculate, Remove, Repair, Replace" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 4R protocol follows the sequence: Remove (eliminate pathogens, food sensitivities, and irritants), Replace (restore deficient digestive factors), Reinoculate (reestablish beneficial microbiome), and Repair (heal the intestinal barrier). The sequential approach is important — attempting to repair a gut barrier while pathogens are still present is unlikely to succeed."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is the 'Replace' phase of the 4R protocol considered commonly overlooked but critical?",
+            "options": [
+                { "id": "opt1", "text": "Because replacing gut bacteria is the most expensive step" },
+                { "id": "opt2", "text": "Because supplementing with nutrients like vitamin D or omega-3s while having impaired digestive capacity means much of the supplement passes through unabsorbed" },
+                { "id": "opt3", "text": "Because it is the only phase that requires prescription medication" },
+                { "id": "opt4", "text": "Because replacing foods in the diet is unnecessary for gut healing" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Replace phase restores digestive factors (stomach acid, enzymes, bile acids) that may be deficient. This is critical because you cannot absorb mental-health-critical nutrients from food or supplements if you cannot properly digest them. Supplementing with vitamin D or omega-3s while having impaired fat absorption means much of the supplement passes through unabsorbed."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the 2021 Stanford study, what was more effective at increasing microbiome diversity over 10 weeks?",
+            "options": [
+                { "id": "opt1", "text": "A high-fiber diet" },
+                { "id": "opt2", "text": "Probiotic supplementation alone" },
+                { "id": "opt3", "text": "A high-fermented-food diet" },
+                { "id": "opt4", "text": "A calorie-restricted diet" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "A 2021 Stanford study found that a high-fermented-food diet increased microbiome diversity more effectively than a high-fiber diet over 10 weeks. Fermented foods like kimchi, sauerkraut, kefir, and yogurt provide both live organisms and postbiotic metabolites."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is it important to address the 'Remove' phase before the 'Repair' phase in the 4R protocol?",
+            "options": [
+                { "id": "opt1", "text": "It is simply a historical convention with no clinical basis" },
+                { "id": "opt2", "text": "The Remove phase is always the quickest to complete" },
+                { "id": "opt3", "text": "Skipping the Remove phase means persistent infections or overgrowths perpetuate inflammation and barrier damage regardless of repair efforts" },
+                { "id": "opt4", "text": "The Remove phase must come first because it uses the most expensive supplements" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The clinical framework review emphasized that skipping the Remove phase significantly reduces the efficacy of subsequent phases. Persistent infections or overgrowths perpetuate inflammation and barrier damage regardless of repair efforts — removing the source of damage before attempting repair is a fundamental principle."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does the 5th R ('Rebalance') in the gut restoration protocol address?",
+            "options": [
+                { "id": "opt1", "text": "Adding a fifth probiotic strain to the protocol" },
+                { "id": "opt2", "text": "Rebalancing the budget for supplement spending" },
+                { "id": "opt3", "text": "Lifestyle factors like stress management, sleep, movement, and mindful eating that sustain gut restoration long-term" },
+                { "id": "opt4", "text": "Rebalancing macronutrient ratios to a ketogenic diet" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 5th R (Rebalance) addresses lifestyle factors that contributed to gut dysfunction and ensures sustainability: stress management, consistent sleep, moderate exercise, and mindful eating. Without addressing chronic stress, gut restoration gains may be temporary, as stress directly impairs gut function through multiple pathways."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "4",
+    "title": "The 4R Gut Restoration Protocol - Quiz"
+}

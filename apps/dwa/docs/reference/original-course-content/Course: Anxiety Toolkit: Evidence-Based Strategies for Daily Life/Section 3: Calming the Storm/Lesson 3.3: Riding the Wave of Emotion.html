@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.3: Riding the Wave of Emotion</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        .gentle-header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, #477e8f 100%);
+            color: white; padding: 25px 30px; text-align: center;
+            border-radius: 12px; margin-bottom: 30px;
+        }
+        .gentle-header h1 { font-size: 1.8em; margin: 0 0 10px 0; color: white; }
+        .gentle-header p { font-size: 1.1em; margin: 0; opacity: 0.95; }
+
+        .safe-space-container {
+            background: var(--soft-white); border-radius: 12px;
+            padding: 30px 40px; border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15);
+            margin-bottom: 30px;
+        }
+        
+        .intro-block {
+            border-left: 5px solid var(--calming-teal); padding: 20px 25px;
+            background: var(--light-teal); margin-bottom: 30px; border-radius: 0 8px 8px 0;
+        }
+        .intro-block h2 { color: var(--deep-teal); font-size: 1.6em; margin-top: 0; }
+        .intro-block p { font-size: 1.1em; }
+        .intro-block .provider-note { font-style: italic; color: var(--warm-gray); }
+
+        /* Wave Analogy Section */
+        .wave-analogy {
+            background: var(--light-sage); padding: 30px;
+            border-radius: 12px; border: 2px solid var(--light-teal);
+            text-align: center;
+        }
+        .wave-analogy h2 { color: var(--deep-teal); }
+        .wave-analogy p { max-width: 600px; margin: 0 auto 30px auto; }
+        
+        /* Wave Animation */
+        .wave-container {
+            width: 100%; height: 150px;
+            background: linear-gradient(to top, var(--light-teal), transparent);
+            position: relative; overflow: hidden; border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .wave {
+            position: absolute; bottom: 0; left: -100px;
+            width: 300px; height: 100px;
+            background: var(--soft-blue); border-radius: 50%;
+            opacity: 0.7;
+        }
+        .surfer {
+            position: absolute; font-size: 2em;
+            bottom: 50px; left: -50px;
+            transition: all 8s cubic-bezier(0.5, 0, 0.5, 1);
+        }
+        .wave-container.active .surfer {
+            transform: translateX(calc(100vw - 150px)) translateY(-50px) rotate(10deg);
+            left: 50%;
+            bottom: 80px;
+            transition: all 4s cubic-bezier(0.5, 0, 0.5, 1), 
+                        bottom 2s ease-in-out,
+                        transform 4s cubic-bezier(0.5, 0, 0.5, 1) 4s;
+        }
+
+        #wave-animation.active .surfer {
+            animation: surf-the-wave 8s ease-in-out forwards;
+        }
+        @keyframes surf-the-wave {
+            0% { transform: translate(0, 0) rotate(0); }
+            25% { transform: translate(200px, -40px) rotate(15deg); }
+            50% { transform: translate(400px, 0) rotate(0deg); }
+            75% { transform: translate(600px, 20px) rotate(-10deg); }
+            100% { transform: translate(800px, 0) rotate(0); }
+        }
+
+        #wave-text { font-weight: 600; color: var(--deep-teal); font-size: 1.2em; min-height: 2em; }
+
+        /* How-To Section */
+        .how-to-steps {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; margin-top: 40px; text-align: left;
+        }
+        .step-card {
+            background: var(--light-teal); padding: 20px; border-radius: 8px;
+            border-left: 4px solid var(--sage-green);
+        }
+        .step-card h4 { margin: 0 0 10px 0; color: var(--sage-green); font-size: 1.1em; }
+        .step-card p { margin: 0; font-size: 0.95em; }
+
+        .btn {
+            background: var(--sage-green); color: white; border: none; padding: 12px 30px;
+            font-size: 1.1em; font-weight: 600; border-radius: 50px; cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn:hover { background-color: #769a59; transform: translateY(-2px); }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="gentle-header">
+            <h1>Lesson 3.3: Riding the Wave of Emotion</h1>
+            <p>Building strength by learning to surf your feelings.</p>
+        </header>
+
+        <main class="safe-space-container">
+            <section class="intro-block">
+                <h2>What if You Didn't Have to Fight Your Feelings?</h2>
+                <p>Our natural instinct when we feel an intense emotion is to fight it, suppress it, or run from it. But this often makes the emotion stronger, like trying to hold a beach ball underwater. This lesson introduces a radical new idea: what if you could just let the emotion exist, knowing it will pass on its own?</p>
+                <p class="provider-note"><strong>A note from Phillip:</strong> "Emotions are like ocean waves. They build in intensity, they peak, and then they always, always recede. The skill of 'Riding the Wave' is about learning to stay on your surfboard and trust the process, rather than getting tumbled in the surf."</p>
+            </section>
+            
+            <section class="wave-analogy">
+                <h2>The Wave of Emotion</h2>
+                <p>Click the button below to watch the "surfer" ride the wave of an emotion. Notice how the feeling builds, peaks, and then naturally comes back down.</p>
+                <div class="wave-container" id="wave-animation">
+                    <div class="surfer">🏄</div>
+                </div>
+                <p id="wave-text">Press "Ride the Wave" to begin.</p>
+                <button class="btn" id="wave-btn" onclick="startWave()">Ride the Wave</button>
+            </section>
+
+            <section style="margin-top: 40px;">
+                <h2 style="text-align: center; color: var(--deep-teal);">How to "Surf" Your Emotions</h2>
+                <div class="how-to-steps">
+                    <div class="step-card">
+                        <h4>1. Notice & Name</h4>
+                        <p>Acknowledge the feeling without judgment. Simply say to yourself, "This is anxiety," or "I am feeling a wave of anger." Naming it helps you separate from it.</p>
+                    </div>
+                    <div class="step-card">
+                        <h4>2. Let Go of the Story</h4>
+                        <p>Detach from the thoughts fueling the emotion. Let them float by like clouds. Your only job right now is to notice the physical sensations in your body.</p>
+                    </div>
+                    <div class="step-card">
+                        <h4>3. Stay in the Present</h4>
+                        <p>Observe the feeling with curiosity. Where is it in your body? Is it hot or cold? Does it vibrate or ache? Be a scientist of your own sensation, knowing it is temporary.</p>
+                    </div>
+                    <div class="step-card">
+                        <h4>4. Breathe Through It</h4>
+                        <p>Use slow, paced breathing as your anchor. Breathe into the physical sensation. This reminds your body that you are safe even while the emotion is present.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn" onclick="alert('Proceeding to the next lesson!')">I'm Ready for the Next Lesson</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const waveBtn = document.getElementById('wave-btn');
+        const waveText = document.getElementById('wave-text');
+        const waveAnimation = document.getElementById('wave-animation');
+
+        function startWave() {
+            waveBtn.disabled = true;
+            waveAnimation.classList.add('active');
+
+            setTimeout(() => { waveText.textContent = "The emotion begins to build..."; }, 0);
+            setTimeout(() => { waveText.textContent = "It's getting stronger, just observe..."; }, 2000);
+            setTimeout(() => { waveText.textContent = "The wave is peaking. Stay on your board..."; }, 3500);
+            setTimeout(() => { waveText.textContent = "Now, it's starting to recede..."; }, 5500);
+            setTimeout(() => { waveText.textContent = "The emotion is passing. The wave has flattened."; }, 7500);
+
+            setTimeout(() => {
+                waveAnimation.classList.remove('active');
+                waveBtn.disabled = false;
+                waveText.textContent = 'Press "Ride the Wave" to try again.';
+            }, 8500); // Reset after animation
+        }
+    </script>
+</body>
+</html>

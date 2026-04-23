@@ -1,0 +1,166 @@
+{
+    "lessonId": "4",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Buyer Personas & The Creator Follower",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between an ICP (Ideal Customer Profile) and a Buyer Persona?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "ICP is for marketing teams, Persona is for sales teams."
+                },
+                {
+                    "id": "b",
+                    "text": "ICP describes the Company (Firmographics); Persona describes the Human (Role/Psychographics)."
+                },
+                {
+                    "id": "c",
+                    "text": "ICP is based on real data; Persona is entirely fictional."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; they are synonyms."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "ICP defines which accounts to target (firmographics). Persona defines who to talk to within those accounts (psychographics)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which member of the Buying Committee typically holds the veto power on technical or compliance grounds, but cannot authorize the purchase?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Economic Buyer"
+                },
+                {
+                    "id": "b",
+                    "text": "The User Buyer"
+                },
+                {
+                    "id": "c",
+                    "text": "The Technical Evaluator"
+                },
+                {
+                    "id": "d",
+                    "text": "The Blocker"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Technical Evaluator (Gatekeeper) ensures the solution fits the tech stack and compliance rules. They can kill a deal but rarely sign the check."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Who is usually the best entry point (Champion) for a 'Wedge' strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The CEO (Economic Buyer)"
+                },
+                {
+                    "id": "b",
+                    "text": "The User Buyer"
+                },
+                {
+                    "id": "c",
+                    "text": "The HR Manager"
+                },
+                {
+                    "id": "d",
+                    "text": "The Board of Directors"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The User Buyer feels the daily pain most acutely. Winning them over allows you to build a bottom-up case to present to the Economic Buyer."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Solo Founder Advantage' when dealing with Technical Evaluators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You can offer them equity in your company."
+                },
+                {
+                    "id": "b",
+                    "text": "You can speak peer-to-peer about architecture and security, building trust."
+                },
+                {
+                    "id": "c",
+                    "text": "You can afford to take them to expensive dinners."
+                },
+                {
+                    "id": "d",
+                    "text": "You have a larger team than they do."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Technical Evaluators respect technical expertise. A founder who knows the stack can bypass the skepticism usually directed at non-technical sales reps."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is it important to identify the 'Blocker'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "So you can get them fired."
+                },
+                {
+                    "id": "b",
+                    "text": "So you can ignore them."
+                },
+                {
+                    "id": "c",
+                    "text": "So you can understand their threat perception and neutralize it or win them over."
+                },
+                {
+                    "id": "d",
+                    "text": "So you can send them spam emails."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Blockers retard the sale because they feel threatened. Understanding their motivation allows you to position your tool as an asset to them, not a threat."
+        },
+        {
+            "id": "q6",
+            "type": "multiple-choice",
+            "question": "What is the primary purpose of defining a 'Follower Persona' for a creator business?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To increase follower counts for vanity metrics."
+                },
+                {
+                    "id": "b",
+                    "text": "To identify exactly what content to create that leads an audience member toward a purchase."
+                },
+                {
+                    "id": "c",
+                    "text": "To block people from seeing your content if they don't have money."
+                },
+                {
+                    "id": "d",
+                    "text": "To replace the ICP entirely."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Followers consume content but may not be ready to buy. Defining their persona helps you build the 'Transformation Bridge' needed to convert interest into a transaction."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Describe ONE specific buyer persona within your ICP. Include their job title, daily challenges, what success looks like for them, and their typical objections. If you are a creator, also describe your primary 'Follower' and what bridge is needed to move them to a customer.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the buyer/follower persona depth. Check for: (1) specific role definition, (2) real daily challenges/gaps, (3) clear success metrics/transformations, (4) realistic objections. Suggest improvements."
+        }
+    ]
+}

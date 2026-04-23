@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the optimal bedroom temperature range for sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "75-80°F (24-27°C) - warm and cozy"
+                },
+                {
+                    "id": "opt2",
+                    "text": "60-67°F (15.5-19.4°C) - cooler than most people think"
+                },
+                {
+                    "id": "opt3",
+                    "text": "50-55°F (10-13°C) - as cold as possible"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Temperature doesn't affect sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently shows 60-67°F (15.5-19.4°C) is optimal for sleep. This feels cooler than most people keep their bedrooms, but it works because your core body temperature needs to drop 2-3°F to initiate sleep. A cool room facilitates this natural cooling process."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is darkness important for sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Darkness has no effect on sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Even small amounts of light can suppress melatonin production, signal 'daytime' to your brain, and fragment sleep"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Darkness only matters for children"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Some light is actually better for sleep"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Light is the most powerful signal for your circadian rhythm. Even small amounts of light can suppress melatonin production (the sleep hormone), signal 'daytime' to your brain triggering alertness, and fragment sleep—especially in early morning hours. Cover LEDs, use blackout curtains, and minimize light exposure."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If you need a nightlight for safety, what color is best for minimizing sleep disruption?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Bright white for maximum visibility"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Blue light from phone screens"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Red or orange light - it has minimal impact on melatonin"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Green light"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "If you need a nightlight, red or orange light has minimal impact on melatonin production. Blue and white light strongly suppress melatonin and should be avoided. Keep any nightlight as dim as safely possible and position it low, toward the floor."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does white noise help with sleep?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It doesn't help at all"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It masks sudden noises, provides consistency, and prevents jarring awakenings from environmental sounds"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It works by putting you into hypnosis"
+                },
+                {
+                    "id": "opt4",
+                    "text": "White noise only helps babies, not adults"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "White noise (or pink noise, brown noise, fan sounds) helps by masking sudden noises—the garbage truck is less jarring against steady background sound. It provides consistency that your brain gets used to, and some people find total silence anxiety-provoking. Personal preference varies."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'sleep sanctuary' concept and why does it matter?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A sleep sanctuary is a type of sleep medication"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Your bedroom should be a dedicated space for sleep—removing TV, work, clutter, and anything that triggers stress or alertness supports stimulus control"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It means sleeping in a church"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The bedroom should have as many activities as possible for convenience"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Your bedroom should be a dedicated sleep sanctuary—not a multi-purpose room. Remove TV, work desk, exercise equipment, and clutter. This ties directly to stimulus control: when the bedroom is associated only with sleep and rest, your brain learns that entering the room means it's time to sleep."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-insomnia",
+    "lessonId": "5",
+    "title": "Bedroom Environment Optimization - Quiz"
+}

@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the brain's waste-clearance system that operates primarily during deep sleep?",
+            "options": [
+                { "id": "opt1", "text": "The limbic system" },
+                { "id": "opt2", "text": "The glymphatic system" },
+                { "id": "opt3", "text": "The endocrine system" },
+                { "id": "opt4", "text": "The sympathetic system" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The glymphatic system clears toxic waste products from the brain during deep sleep, functioning like a nightly cleaning crew for your neural pathways."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which chemical builds up in the brain during waking hours to create 'sleep pressure'?",
+            "options": [
+                { "id": "opt1", "text": "Cortisol" },
+                { "id": "opt2", "text": "Melatonin" },
+                { "id": "opt3", "text": "Adenosine" },
+                { "id": "opt4", "text": "Serotonin" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Adenosine gradually accumulates in your brain throughout the day, creating increasing sleep pressure. This is part of Process S (homeostatic sleep drive)."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the two biological processes that regulate sleep according to sleep science?",
+            "options": [
+                { "id": "opt1", "text": "REM and NREM cycles" },
+                { "id": "opt2", "text": "Process S (sleep drive) and Process C (circadian rhythm)" },
+                { "id": "opt3", "text": "Sympathetic and parasympathetic responses" },
+                { "id": "opt4", "text": "Melatonin production and cortisol release" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Process S (homeostatic sleep drive) builds sleep pressure through adenosine accumulation, while Process C (circadian rhythm) is your internal 24-hour clock that times when you feel alert and sleepy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "During which sleep stage does the brain consolidate emotional memories and process difficult experiences?",
+            "options": [
+                { "id": "opt1", "text": "Stage 1 (light sleep)" },
+                { "id": "opt2", "text": "Stage 2 (moderate sleep)" },
+                { "id": "opt3", "text": "Stage 3 (deep sleep)" },
+                { "id": "opt4", "text": "REM sleep" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "REM sleep is when your brain consolidates emotional memories and processes difficult experiences. It serves as your nightly therapist, helping you integrate and make sense of emotional events."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What hormone does the suprachiasmatic nucleus (SCN) signal the brain to produce as darkness falls?",
+            "options": [
+                { "id": "opt1", "text": "Adrenaline" },
+                { "id": "opt2", "text": "Cortisol" },
+                { "id": "opt3", "text": "Melatonin" },
+                { "id": "opt4", "text": "Dopamine" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The suprachiasmatic nucleus (SCN), your master circadian clock, signals the pineal gland to produce melatonin as darkness falls, preparing your body for sleep."
+        }
+    ],
+    "sectionId": "sleep-recovery",
+    "courseId": "sleep-mastery",
+    "lessonId": "1",
+    "title": "The Neuroscience of Sleep and Mental Health - Quiz"
+}

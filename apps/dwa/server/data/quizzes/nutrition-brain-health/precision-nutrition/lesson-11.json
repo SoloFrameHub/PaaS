@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is combining 5-HTP with an SSRI considered a medical emergency risk?",
+            "options": [
+                { "id": "opt1", "text": "5-HTP cancels out the SSRI's effects completely" },
+                { "id": "opt2", "text": "5-HTP is a direct serotonin precursor, and combining it with an SSRI can cause serotonin syndrome — a potentially fatal condition" },
+                { "id": "opt3", "text": "5-HTP causes liver damage when taken with any other supplement" },
+                { "id": "opt4", "text": "The combination is only dangerous at extremely high doses of 5-HTP" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "5-HTP is a direct serotonin precursor that bypasses the rate-limiting enzyme. Combining it with SSRIs (which block serotonin reuptake) can produce excessive serotonergic activity, causing serotonin syndrome — a spectrum ranging from tremor and agitation to hyperthermia, seizures, and death. There is no safe dose of 5-HTP alongside serotonergic medications."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How do SSRIs paradoxically contribute to treatment resistance through nutrient depletion?",
+            "options": [
+                { "id": "opt1", "text": "SSRIs deplete B6, folate, and B12 — the very cofactors needed for serotonin synthesis — in over 30% of long-term users" },
+                { "id": "opt2", "text": "SSRIs have no effect on any nutrient levels" },
+                { "id": "opt3", "text": "SSRIs only deplete vitamin C, which is irrelevant to mood" },
+                { "id": "opt4", "text": "SSRIs increase all B vitamin levels, causing toxicity" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "Over 30% of long-term SSRI users show deficient or suboptimal levels of B6, folate, and/or B12. These vitamins are required cofactors for serotonin synthesis. The SSRI increases serotonin availability in the synapse, but the brain cannot synthesize enough new serotonin because the cofactors are depleted — potentially undermining the medication's own therapeutic effect."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why must lithium users maintain consistent sodium intake?",
+            "options": [
+                { "id": "opt1", "text": "Sodium makes lithium work faster" },
+                { "id": "opt2", "text": "Lithium is reabsorbed through sodium transporters in the kidney, so low-sodium conditions increase lithium retention and toxicity risk" },
+                { "id": "opt3", "text": "Sodium prevents lithium from being absorbed in the gut" },
+                { "id": "opt4", "text": "There is no relationship between sodium and lithium" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Lithium is reabsorbed in the kidney's proximal tubule through the same sodium transporters. When sodium intake decreases (low-salt diet, dehydration, excessive sweating), the kidney compensates by retaining more sodium — and more lithium along with it — raising lithium blood levels and increasing toxicity risk."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why must MAOI users avoid aged cheeses, cured meats, and fermented foods?",
+            "options": [
+                { "id": "opt1", "text": "These foods reduce the effectiveness of MAOIs" },
+                { "id": "opt2", "text": "These foods contain tyramine, which can accumulate when MAO is inhibited and trigger a dangerous hypertensive crisis" },
+                { "id": "opt3", "text": "These foods cause stomach upset only when combined with MAOIs" },
+                { "id": "opt4", "text": "MAOIs make these foods taste unpleasant" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "MAOIs inhibit the enzyme that breaks down tyramine (an amino acid found in aged, fermented, and cured foods). When MAO is inhibited, tyramine accumulates and can trigger a hypertensive crisis — dangerously elevated blood pressure. This creates a paradox for nutritional psychiatry, as many gut-supportive fermented foods are exactly what MAOI users must avoid."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the recommended inositol dose that the 2022 pilot study found safe alongside lithium?",
+            "options": [
+                { "id": "opt1", "text": "18 g/day — the same dose used for panic disorder" },
+                { "id": "opt2", "text": "12 g/day" },
+                { "id": "opt3", "text": "4 g/day" },
+                { "id": "opt4", "text": "No dose of inositol is safe with lithium" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 2022 pilot study found that inositol at 4 g/day was safe in combination with lithium, with no evidence of mood destabilization. This low dose may partially restore peripheral inositol function without undermining lithium's central mood-stabilizing mechanism. High-dose inositol (12-18 g/day) should NOT be assumed safe with lithium, as it may counteract lithium's therapeutic effect."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "11",
+    "title": "Medication-Nutrient Interactions: What You Must Know - Quiz"
+}

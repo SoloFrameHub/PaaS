@@ -1,0 +1,141 @@
+{
+    "lessonId": "5",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Borrowed Credibility Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of borrowing credibility as an early-stage founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To trick people into thinking you are a large corporation."
+                },
+                {
+                    "id": "b",
+                    "text": "To associate your unknown entity with known, trusted sources so prospects feel safer."
+                },
+                {
+                    "id": "c",
+                    "text": "To avoid having to ever get real customer testimonials."
+                },
+                {
+                    "id": "d",
+                    "text": "To get famous by association with celebrities."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Borrowed credibility allows prospects to evaluate you through reference points they already trust, reducing their hesitation about trying a new product."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is an example of 'Association Proof'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A case study from a beta user."
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Built on AWS' or 'Stripe Verified Partner' badge on your landing page."
+                },
+                {
+                    "id": "c",
+                    "text": "A video testimonial from a customer."
+                },
+                {
+                    "id": "d",
+                    "text": "A high score in a customer satisfaction survey."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Association proof leverages the existing trust in large, established platforms or tools that you use or integrate with."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does 'Building in Public' generate credibility for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it shows how much free time you have."
+                },
+                {
+                    "id": "b",
+                    "text": "Because transparency builds parasocial trust and signals integrity."
+                },
+                {
+                    "id": "c",
+                    "text": "Because it's a requirement for indie hackers."
+                },
+                {
+                    "id": "d",
+                    "text": "Because it hides your failures from the public."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Sharing your journey, including successes and failures, makes you relatable and shows that you are an honest practitioner who is committed to your work."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When positioning your own background (Founder Credibility), what is more important than just listing your years of experience?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Stating that you are 'world-class'."
+                },
+                {
+                    "id": "b",
+                    "text": "Listing Every company you've ever worked for."
+                },
+                {
+                    "id": "c",
+                    "text": "Translating your experience into a 'narrative of relevance' that connects to the customer's pain."
+                },
+                {
+                    "id": "d",
+                    "text": "Showing a photo of your diploma."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Buyers care less about your resume and more about *why* your specific experience makes you the right person to solve *their* specific problem."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What kind of advisors should a solo founder prioritize for borrowed credibility?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Mainstream celebrities with millions of followers."
+                },
+                {
+                    "id": "b",
+                    "text": "Family members who believe in you."
+                },
+                {
+                    "id": "c",
+                    "text": "Industry veterans and practitioners your target audience would recognize and respect."
+                },
+                {
+                    "id": "d",
+                    "text": "Other founders who are at the exact same stage as you."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Advisors should provide a signal of professional vetting in the specific domain and industry you are serving."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Audit your current 'About' page or personal bio. How can you reframe your past experiences (even if they weren't in this specific industry) to prove that you are the most qualified person to solve the problem your product addresses today?",
+            "minLength": 100,
+            "promptForAI": "The user should re-examine their professional background and create a 'Why Me' narrative that links past roles or projects to the current product's mission. Evaluate the response for its ability to create a compelling 'narrative of relevance' rather than a standard resume list."
+        }
+    ]
+}

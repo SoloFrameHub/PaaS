@@ -1,0 +1,103 @@
+{
+  "lessonId": "1",
+  "courseId": "ai-acquisition-strategy",
+  "sectionId": "ai-acquisition",
+  "title": "The 2026 AI Acquisition Landscape",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the 'Trust Paradox' described in the 2026 AI acquisition landscape?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AI makes outreach cheaper, so buyers trust it more"
+        },
+        {
+          "id": "b",
+          "text": "As AI lowers outreach cost to near-zero, verified human trust becomes the scarcest and most valuable asset"
+        },
+        {
+          "id": "c",
+          "text": "Buyers trust AI-generated content more than human-written content"
+        },
+        { "id": "d", "text": "Trust is no longer important in B2B sales" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Trust Paradox means that as AI makes outreach nearly free, the flood of automated messages makes authentic human trust the scarcest and most valuable asset in B2B sales."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Which type of AI does the lesson recommend solo founders focus on in 2026?",
+      "options": [
+        { "id": "a", "text": "Task AI — does one thing when you ask" },
+        {
+          "id": "b",
+          "text": "Workflow AI — runs multi-step processes with human oversight"
+        },
+        {
+          "id": "c",
+          "text": "Agentic AI — makes decisions and acts fully autonomously"
+        },
+        {
+          "id": "d",
+          "text": "General AI — handles everything without configuration"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The lesson recommends Workflow AI (Level 2) as the solo founder sweet spot. It gives 80% of the efficiency of Agentic AI at 10% of the cost, while keeping the founder in control and avoiding expensive, brittle autonomous systems."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What are the five layers of the AI Acquisition Stack mental model?",
+      "options": [
+        { "id": "a", "text": "Research, Write, Send, Track, Close" },
+        {
+          "id": "b",
+          "text": "Discovery, Enrichment, Scoring, Personalization, Send & Follow-up"
+        },
+        { "id": "c", "text": "Prospect, Email, Call, Demo, Contract" },
+        {
+          "id": "d",
+          "text": "Awareness, Interest, Decision, Action, Retention"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The five layers are Discovery (finding ICP matches), Enrichment (adding missing data), Scoring (ranking by likelihood to buy), Personalization (generating relevant outreach), and Send & Follow-up (delivering messages and managing sequences)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the approximate monthly cost of the 'Recommended' AI acquisition stack (Tier 2)?",
+      "options": [
+        { "id": "a", "text": "$56/month" },
+        { "id": "b", "text": "$106/month" },
+        { "id": "c", "text": "$197/month" },
+        { "id": "d", "text": "$500/month" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Recommended Tier 2 stack costs approximately $197/month and includes Apollo Basic ($49), Instantly ($37), ChatGPT Plus ($20), Sales Navigator ($80), MillionVerifier (~$4), and Zapier (~$7). This is compared to ~$5,000/month for a junior SDR."
+    },
+    {
+      "id": "q5",
+      "type": "true-false",
+      "question": "AI can reliably understand nuanced objections during a live sales call and negotiate pricing with a CFO.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The lesson emphasizes that AI struggles with real-time context, reading between the lines, and strategic negotiation. The golden rule is: automate research and drafting, but keep relationships and decisions human."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Based on the five-layer AI Acquisition Stack model, which layer represents your biggest gap right now? Describe your current setup for each layer and explain which layer you plan to address first and why.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies all five layers (Discovery, Enrichment, Scoring, Personalization, Send & Follow-up) and provides a specific assessment of each. Look for honest self-awareness about gaps and a concrete plan to address the weakest layer first."
+    }
+  ]
+}

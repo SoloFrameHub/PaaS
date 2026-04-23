@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What was the effect size for yoga in the 2024 BMJ meta-analysis, and what made it particularly noteworthy?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Yoga showed no measurable effect on depression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Yoga produced g = -0.55 for depression (second-highest effect after walking/jogging) AND had among the lowest dropout rates of all modalities — making it both effective AND highly tolerable"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Yoga was less effective than all other exercise modalities"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Yoga only works for flexibility, not mental health"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yoga produced a moderate-to-large effect (g = -0.55) for depression, second only to walking/jogging. Critically, it had among the lowest dropout rates — excellent tolerability. This combination of efficacy + tolerability makes yoga particularly valuable for people who find intense exercise overwhelming or need calming rather than energizing movement."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does breath work (pranayama) in yoga regulate the nervous system?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Breath work has no effect on the nervous system"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Controlled breathing activates the vagus nerve (parasympathetic nervous system), blunts HPA axis/cortisol reactivity, and signals safety to your stress response system"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Breath work only affects the lungs, not the brain"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You must practice breath work for years before it has any effect"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Breath is the only part of the autonomic nervous system you can consciously control. Controlled breathing (like ujjayi breath, box breathing, or extended exhale) activates the vagus nerve, which stimulates the parasympathetic nervous system (rest-and-digest mode). This blunts cortisol reactivity, lowers heart rate and blood pressure, and signals safety to the HPA axis — countering the stress response that maintains anxiety and depression."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to network meta-analyses, how does yoga rank for sleep quality improvement?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Yoga has no effect on sleep"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Mind-body exercise (yoga, tai chi) is among the highest-ranked interventions for sleep disorders — comparable to or better than many other exercise modalities"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Yoga worsens sleep quality"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only vigorous exercise improves sleep; yoga is too gentle"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A 2025 meta-analysis of 81 RCTs and a 2026 network meta-analysis both found that mind-body exercise (yoga, tai chi) significantly improved sleep quality and ranked among the highest interventions for sleep disorders. The mechanism is anxiety reduction + parasympathetic activation + body temperature regulation. Restorative yoga in the evening is particularly effective for sleep preparation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How do you choose between active yoga styles (vinyasa, power) and restorative styles (yin, restorative)?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Everyone should only do power yoga for maximum benefit"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Match the style to your need: active yoga (vinyasa, power) energizes hypoarousal/depression; restorative yoga (yin, restorative) calms hyperarousal/anxiety and prepares for sleep"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Restorative yoga is useless for mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The style doesn't matter at all"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Yoga's dual-action nature is a key strength. Active styles (vinyasa, power yoga) provide moderate-intensity aerobic exercise, BDNF upregulation, and energizing effects — good for depression-related lethargy (hypoarousal). Restorative styles (yin, restorative yoga) provide parasympathetic activation, deep relaxation, and nervous system regulation — good for anxiety, stress, insomnia (hyperarousal). Match the style to your current state and goal."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Based on your current mental health needs, which yoga style would you try first (vinyasa/active, hatha/balanced, yin/restorative/calming, power/intense, or trauma-sensitive)? Why does that style fit your needs right now?",
+            "minLength": 50,
+            "explanation": "This reflection applies the lesson's framework for matching yoga style to individual needs. Consider: Do you need energizing (depression, low motivation) → vinyasa/power? Calming (anxiety, stress) → yin/restorative? Beginner-friendly pacing → hatha? Trauma recovery with need for control → trauma-sensitive? There's no wrong answer — this is about self-awareness and meeting yourself where you are."
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "10",
+    "title": "Yoga and Mindful Movement - Quiz"
+}

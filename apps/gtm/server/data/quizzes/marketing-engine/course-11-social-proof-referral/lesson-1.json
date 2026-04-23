@@ -1,0 +1,141 @@
+{
+    "lessonId": "1",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Why Social Proof Drives Decisions Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Robert Cialdini, which psychological phenomenon explains why people do things primarily because others are doing them?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The Scarcity Effect"
+                },
+                {
+                    "id": "b",
+                    "text": "The Bandwagon Effect"
+                },
+                {
+                    "id": "c",
+                    "text": "The Reciprocity Rule"
+                },
+                {
+                    "id": "d",
+                    "text": "The Consistency Principle"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Bandwagon Effect is the psychological phenomenon where individuals mimic the actions of others because they assume those actions are correct for the situation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is social proof particularly critical for technical or complex products?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because technical buyers only care about flashy logos."
+                },
+                {
+                    "id": "b",
+                    "text": "Because it's easier to fake than technical documentation."
+                },
+                {
+                    "id": "c",
+                    "text": "Because buyers often find it difficult to evaluate the underlying technology themselves."
+                },
+                {
+                    "id": "d",
+                    "text": "Because technical products don't need a value proposition."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When technology is complex, buyers rely heavily on peer validation (Expert and User proof) as a shortcut to evaluating the product's effectiveness."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which level of the Trust Ladder is most appropriate for a founder with zero customers and a high-quality tech stack?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Level 6: Full Case Studies"
+                },
+                {
+                    "id": "b",
+                    "text": "Level 1: Activity Proof"
+                },
+                {
+                    "id": "c",
+                    "text": "Level 2: Association Proof"
+                },
+                {
+                    "id": "d",
+                    "text": "Level 5: Micro-Testimonials"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Association Proof involves leveraging the reputation of established tools/brands you use (like Stripe or AWS) to signal quality before you have your own customer proof."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the primary difference between 'Expert Proof' and 'User Proof'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Expert proof comes from authorities; User proof comes from customers."
+                },
+                {
+                    "id": "b",
+                    "text": "Expert proof is always paid; User proof is always free."
+                },
+                {
+                    "id": "c",
+                    "text": "Expert proof is for B2B; User proof is for B2C."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference between them."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Expert proof leverages recognized authority figures or publications, while User proof focuses on the success of actual customers who are 'like the prospect'."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is a 'micro-testimonial'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A very short one-word review."
+                },
+                {
+                    "id": "b",
+                    "text": "An informal win captured from DMs, emails, or social media replies."
+                },
+                {
+                    "id": "c",
+                    "text": "A testimonial from a very small company."
+                },
+                {
+                    "id": "d",
+                    "text": "A logo of a small startup."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Micro-testimonials are organic, informal captures of satisfaction that often feel more authentic than polished, formal testimonials."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at the Trust Ladder again. Based on your current stage of business, which rung are you currently on, and what specifically will you do in the next 30 days to move up to the next rung?",
+            "minLength": 100,
+            "promptForAI": "The user should identify their current level (Activity, Association, Founder, Borrowed, Micro, or Full) and provide a concrete action plan for reaching the next level. Evaluate the plan for specificity (e.g., naming specific advisors, brands, or beta strategies)."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "8",
+    "courseId": "objection-handling",
+    "sectionId": "sales-methodology",
+    "title": "DISC-Adapted Objection Responses Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Which DISC type is most likely to give a blunt, impatient objection that sounds like a challenge?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High D (Dominant)"
+                },
+                {
+                    "id": "b",
+                    "text": "High I (Influencer)"
+                },
+                {
+                    "id": "c",
+                    "text": "High S (Steady)"
+                },
+                {
+                    "id": "d",
+                    "text": "High C (Conscientious)"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "High D personalities are direct and result-oriented. Their objections are often brief and focused on perceived wastes of time or money."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What should you focus on when responding to an objection from a 'High C' (Conscientious) prospect?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Social proof and testimonials from cool influencers."
+                },
+                {
+                    "id": "b",
+                    "text": "Personal stories about your journey as a founder."
+                },
+                {
+                    "id": "c",
+                    "text": "Specific data, technical specifications, and detailed documentation."
+                },
+                {
+                    "id": "d",
+                    "text": "Excitement and the 'vibe' of the product."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High C prospects fear being wrong or inaccurate. They need logical proof and granular details to feel comfortable moving forward."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "A prospect seems worried about the 'Pain of Change' and how it will disrupt their team. Which DISC type are they likely identifying with?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "High D"
+                },
+                {
+                    "id": "b",
+                    "text": "High I"
+                },
+                {
+                    "id": "c",
+                    "text": "High S (Steady)"
+                },
+                {
+                    "id": "d",
+                    "text": "High C"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High S personalities value stability and predictability. Their primary objection trigger is the fear of sudden, chaotic change."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the best way to 'Acknowledge' an objection from a 'High I' (Influencer)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Use a neutral, data-driven statement."
+                },
+                {
+                    "id": "b",
+                    "text": "Use social validation, such as ' others in your position felt exactly the same way.'"
+                },
+                {
+                    "id": "c",
+                    "text": "Immediately correct their logic."
+                },
+                {
+                    "id": "d",
+                    "text": "Tell them to stop talking so you can respond."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High I personalities care deeply about social standing and the feelings of others. Social validation makes them feel safe and included."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How should your 'Respond' style change when moving from a High D to a High S prospect?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Move from outcome-focused efficiency to support-focused reassignment."
+                },
+                {
+                    "id": "b",
+                    "text": "Move from data-driven specs to emotional stories."
+                },
+                {
+                    "id": "c",
+                    "text": "There should be no change—the content of the response is all that matters."
+                },
+                {
+                    "id": "d",
+                    "text": "You should be more aggressive with the High S prospect to make them decide faster."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "The High D wants the result now; the High S wants to know they will be supported and that the process will be manageable. Adapt the 'Vibe' to match the 'Need'."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Which DISC type do you find MOST difficult to handle when they object? (Often, it's the type most different from your own). Write out a LARA response for that specific type for your most common objection, focusing on the tone and keywords that would resonate with them.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate the student's ability to cross-pollenate DISC types. Look for awareness of their own bias and a clear shift in tonality (e.g., 'I will use more data for a C' or 'I will be more direct for a D')."
+        }
+    ]
+}

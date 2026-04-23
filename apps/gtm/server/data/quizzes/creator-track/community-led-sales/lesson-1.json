@@ -1,0 +1,91 @@
+{
+    "lessonId": "1",
+    "courseId": "community-led-sales",
+    "sectionId": "creator-track",
+    "title": "Community as a Business Model",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why is community considered the 'ultimate moat' for solo creators?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Communities are cheaper to run than other business models"
+                },
+                {
+                    "id": "b",
+                    "text": "The member relationships and peer networks cannot be replicated by competitors"
+                },
+                {
+                    "id": "c",
+                    "text": "Communities require less content creation than courses"
+                },
+                {
+                    "id": "d",
+                    "text": "Platform algorithms favor community-based businesses"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "While content can be copied and features can be cloned, the relationships members build with each other belong exclusively to your community. This makes the community irreplaceable in a way that content or tools alone cannot be."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "In the Membership Community model, what is the key metric that determines whether the business grows or declines?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The number of posts per day in the community"
+                },
+                {
+                    "id": "b",
+                    "text": "The price point of the membership"
+                },
+                {
+                    "id": "c",
+                    "text": "Monthly churn rate -- the percentage of members who cancel each month"
+                },
+                {
+                    "id": "d",
+                    "text": "The number of live events hosted per week"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "At 5% monthly churn with 200 members, you need 10 new members per month just to stay flat. At 2% churn, the same community compounds quickly. Churn rate is the single most important metric for a membership community's sustainability."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which community revenue model typically generates $3,000-$25,000+ per year per member and requires curated, vetted membership?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Membership Community"
+                },
+                {
+                    "id": "b",
+                    "text": "Course + Community Hybrid"
+                },
+                {
+                    "id": "c",
+                    "text": "Mastermind"
+                },
+                {
+                    "id": "d",
+                    "text": "Free Community with Sponsorships"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Mastermind model combines community with high-touch facilitation, curated membership (not everyone who applies gets in), and often direct access to the creator. At 15 members paying $10,000/year, you generate $150,000 with a manageable group size."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Based on the Community Readiness Assessment from this lesson, score yourself on the five factors (ongoing need, identity alignment, peer value, your consistency, existing audience). What is your total score, and what specific steps would you take to strengthen your weakest factor before launching a community?",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student has honestly assessed their readiness using the five factors from the lesson. Look for specific scores on each factor, identification of their weakest area, and concrete action steps to address the gap. Encourage them if they scored well, and provide practical suggestions if they identified significant weaknesses."
+        }
+    ]
+}

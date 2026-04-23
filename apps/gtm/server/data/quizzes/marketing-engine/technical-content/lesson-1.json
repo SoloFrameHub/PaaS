@@ -1,0 +1,142 @@
+{
+    "lessonId": "1",
+    "courseId": "technical-content",
+    "track": "marketing",
+    "title": "Content Strategy vs. Content Creation Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why do many founders see high traffic but zero leads from their content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They aren't posting often enough"
+                },
+                {
+                    "id": "b",
+                    "text": "They are focusing on 'Content that Impresses' peers rather than 'Content that Converts' customers"
+                },
+                {
+                    "id": "c",
+                    "text": "Their website is too slow"
+                },
+                {
+                    "id": "d",
+                    "text": "Google is hiding their content from buyers"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Traffic from peers (other experts) rarely turns into revenue. Strategic content targets the person 'one step behind' who actually has the problem you solve."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the 'Job' of Top of Funnel (TOFU) content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To close the deal immediately"
+                },
+                {
+                    "id": "b",
+                    "text": "To compare your product to a competitor"
+                },
+                {
+                    "id": "c",
+                    "text": "To attract a specific audience through educational value"
+                },
+                {
+                    "id": "d",
+                    "text": "To provide a technical documentation for current users"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "TOFU content is about discovery. It addresses broad pain points and educational needs to attract your ICP into your ecosystem."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the ideal ratio for creation vs. distribution?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "80% creation, 20% distribution"
+                },
+                {
+                    "id": "b",
+                    "text": "50% creation, 50% distribution"
+                },
+                {
+                    "id": "c",
+                    "text": "20% creation, 80% distribution"
+                },
+                {
+                    "id": "d",
+                    "text": "100% creation, distribution happens automatically"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Most founders over-invest in writing and under-invest in ensureing people actually see it. The 20/80 ratio ensures your hard work reaches its target."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What 'Technical Founder Advantage' is highlighted as a key to content success?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The ability to write complex code"
+                },
+                {
+                    "id": "b",
+                    "text": "Systematic thinking and documentation instincts"
+                },
+                {
+                    "id": "c",
+                    "text": "Knowledge of SEO algorithms"
+                },
+                {
+                    "id": "d",
+                    "text": "High typing speed"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Technical founders are naturally good at documentation and building systems. Content marketing, when viewed as a repeatable system, plays directly to these strengths."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which company is cited as a case study for successful content-led growth with $0 ad spend?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Google Analytics"
+                },
+                {
+                    "id": "b",
+                    "text": "Plausible Analytics"
+                },
+                {
+                    "id": "c",
+                    "text": "Facebook"
+                },
+                {
+                    "id": "d",
+                    "text": "Salesforce"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Plausible used a 'boring' but consistent content strategy focusing on the pain points of their ICP (privacy) to grow to $3.1M ARR without ads."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Audit one of your recent blog posts or content ideas. Who is the target audience (be specific)? What is the 'one step behind' problem they are facing? What is the one specific next step you want them to take after reading?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder identifies a specific ICP (not just 'everyone') and if the 'next step' is a logical conversion point (e.g., newsletter signup from TOFU). Push back if the audience is too broad."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

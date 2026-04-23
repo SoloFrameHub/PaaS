@@ -1,0 +1,78 @@
+{
+  "lessonId": "7",
+  "courseId": "retention",
+  "sectionId": "customer-success",
+  "title": "Save Plays: Downgrades, Pauses, and Recovery Calls",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What percentage of paused customers typically reactivate, compared to cancelled customers?",
+      "options": [
+        { "id": "a", "text": "Paused: 20-30% vs. cancelled: 5-15%" },
+        { "id": "b", "text": "Paused: 60-70% vs. cancelled: 5-15%" },
+        { "id": "c", "text": "Paused: 40-50% vs. cancelled: 30-40%" },
+        { "id": "d", "text": "They reactivate at the same rate" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "60-70% of paused customers reactivate vs. only 5-15% of cancelled customers. A pause keeps data intact and the door open, making reactivation dramatically easier than winning back a fully churned customer."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the core principle behind all save plays?",
+      "options": [
+        { "id": "a", "text": "Give the customer a large discount to stay" },
+        {
+          "id": "b",
+          "text": "A customer paying $50/month is infinitely more valuable than a churned customer paying $0"
+        },
+        {
+          "id": "c",
+          "text": "All customers who want to cancel should be let go immediately"
+        },
+        { "id": "d", "text": "Save plays only work for enterprise customers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The core principle: a customer paying any amount is infinitely more valuable than a churned customer paying $0. Every save play — whether downgrade, pause, or recovery call — beats losing the customer entirely."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When should you offer a downgrade instead of a pause?",
+      "options": [
+        { "id": "a", "text": "When the customer is angry" },
+        {
+          "id": "b",
+          "text": "When the customer's need has decreased but not disappeared"
+        },
+        {
+          "id": "c",
+          "text": "When the customer has been with you less than 3 months"
+        },
+        { "id": "d", "text": "Downgrades should never be offered" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A downgrade makes sense when the customer's need has decreased but not disappeared: they're using fewer features, their team shrank, business volume dropped, or they have budget constraints but still see value."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Recovery calls for high-value accounts ($200+/month) can save 30-50% of at-risk accounts when conducted within 24 hours.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Personal recovery calls within 24 hours save 30-50% of high-value at-risk accounts. The key is speed and genuine curiosity about what went wrong, combined with a concrete save offer (downgrade, pause, or problem resolution)."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your save play playbook with specific scripts for each scenario: a customer who wants to cancel due to budget, one who says they're not using the product enough, and one who's switching to a competitor. What would you offer in each case?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response provides three distinct save play scripts tailored to different cancellation reasons, includes specific offers (downgrade tier/pricing, pause duration, recovery call structure), and demonstrates empathy rather than desperation in the communication approach."
+    }
+  ]
+}

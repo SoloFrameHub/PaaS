@@ -1,0 +1,174 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "4",
+    "lessonTitle": "Nurture Sequence Architecture",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the 'Nurture Gap' that most founders fall into?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They send too many emails too quickly."
+                },
+                {
+                    "id": "b",
+                    "text": "They go silent after the welcome sequence, then suddenly send aggressive sales pitches—destroying the trust they built."
+                },
+                {
+                    "id": "c",
+                    "text": "They focus too much on education and never sell."
+                },
+                {
+                    "id": "d",
+                    "text": "They use the wrong email automation tool."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The gap between welcome and sale is where most founders fail. Silence makes subscribers forget you, and a sudden hard sell feels like a relationship violation. The nurture sequence fills this gap with systematic value.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What are the four phases of a nurture sequence in the correct order?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sell → Remind → Urgency → Close"
+                },
+                {
+                    "id": "b",
+                    "text": "Education → Trust → Desire → Action"
+                },
+                {
+                    "id": "c",
+                    "text": "Introduction → Features → Benefits → Pricing"
+                },
+                {
+                    "id": "d",
+                    "text": "Awareness → Interest → Decision → Loyalty"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The nurture sequence follows a psychological progression: first teach them the problem (Education), then prove you can solve it (Trust), then make them want the outcome (Desire), and finally invite action (Action).",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the purpose of the 'Trust Phase' (Emails 5-8)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To close the sale as quickly as possible."
+                },
+                {
+                    "id": "b",
+                    "text": "To build credibility through case studies, testimonials, and behind-the-scenes content—proving you can actually deliver results."
+                },
+                {
+                    "id": "c",
+                    "text": "To teach basic concepts about your industry."
+                },
+                {
+                    "id": "d",
+                    "text": "To collect feedback for product improvements."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "After education, the subscriber understands the problem but asks 'Can this person solve it?' The Trust Phase answers this with proof—other people's results, your process, and specific transformations.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why does the email cadence slow down as the nurture sequence progresses (every 2-3 days early, weekly later)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because you run out of content ideas later in the sequence."
+                },
+                {
+                    "id": "b",
+                    "text": "To build momentum early while giving space for reflection and decision later—matching the subscriber's decision-making process."
+                },
+                {
+                    "id": "c",
+                    "text": "Because email providers limit how many emails you can send per week."
+                },
+                {
+                    "id": "d",
+                    "text": "To avoid triggering spam filters."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Early in the sequence, you're building momentum and engagement. Later, as you move toward action, the subscriber needs space to process information and make a decision. The cadence matches their psychology.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What's the best approach for creating content for a 12-email nurture sequence?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Write 12 completely new pieces of content from scratch."
+                },
+                {
+                    "id": "b",
+                    "text": "Repurpose existing content—turn blog posts into multiple emails, answer FAQs in depth, share anonymized customer conversations."
+                },
+                {
+                    "id": "c",
+                    "text": "Copy content from competitors who are successful."
+                },
+                {
+                    "id": "d",
+                    "text": "Use AI to generate all 12 emails automatically without editing."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You don't need to create everything from scratch. A single 2,000-word blog post can become 4 nurture emails. FAQs, customer conversations, and your own learning are all content sources. Work smarter, not harder.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Map out the 4 Education Phase topics for your nurture sequence. What are the 4 core concepts your subscriber needs to understand BEFORE they can make an informed buying decision? For each topic, write a one-sentence summary of what they'll learn.",
+            "promptHints": [
+                "Think about the 'aha moments' that lead to purchase.",
+                "Consider what misconceptions they might have that need correcting.",
+                "Focus on concepts, not features of your product."
+            ],
+            "minimumWords": 80,
+            "xpValue": 25,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 105,
+    "metadata": {
+        "estimatedTime": "12-15 minutes",
+        "prerequisiteQuizzes": [
+            "3"
+        ],
+        "unlocks": [
+            "5"
+        ]
+    },
+    "sectionId": "marketing-engine",
+    "title": "Nurture Sequence Architecture - Quiz"
+}

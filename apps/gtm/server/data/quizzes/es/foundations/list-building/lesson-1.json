@@ -1,0 +1,166 @@
+{
+  "lessonId": "1",
+  "courseId": "list-building",
+  "sectionId": "foundations",
+  "title": "Cuestionario de Filosofía de Construcción de Listas",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la razón principal por la que el curso aboga por 100 prospectos perfectamente ajustados en lugar de 10,000 contactos aleatorios?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuesta más dinero encontrar a 10,000 personas"
+        },
+        {
+          "id": "b",
+          "text": "Es más probable que las listas genéricas tengan direcciones de correo inválidas"
+        },
+        {
+          "id": "c",
+          "text": "Los leads de calidad generan tasas de respuesta más altas y ahorran el tiempo limitado de un fundador en solitario"
+        },
+        {
+          "id": "d",
+          "text": "LinkedIn solo te permite tener 100 contactos"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Las listas de alta calidad permiten invitaciones de diagnóstico en lugar de spam. Esto conduce a tasas de conversión más altas y asegura que el fundador no desperdicie tiempo en llamadas de descubrimiento con prospectos de mala calidad."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿A qué se refiere el concepto de 'Traducción del ICP'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Traducir tu sitio web a diferentes idiomas para alcance global"
+        },
+        {
+          "id": "b",
+          "text": "Convertir las características abstractas del ICP en criterios tácticos y buscables como títulos de trabajo e industrias"
+        },
+        {
+          "id": "c",
+          "text": "Mover datos de una hoja de cálculo a un CRM"
+        },
+        {
+          "id": "d",
+          "text": "Traducir características técnicas en beneficios"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La traducción es el proceso de tomar tu documento estratégico y convertirlo en 'sustantivos' (títulos, industrias, tamaños de empresa) que herramientas como Apollo o Sales Navigator pueden realmente encontrar."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál de los siguientes es un ejemplo de filtro 'Anti-Persona'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excluir a los 'Reclutadores' de una búsqueda de VPs de Marketing"
+        },
+        {
+          "id": "b",
+          "text": "Apuntar solo a empresas Fortune 500"
+        },
+        {
+          "id": "c",
+          "text": "Buscar fundadores en el área de Nueva York"
+        },
+        {
+          "id": "d",
+          "text": "Usar un filtro de 'Cambio de Trabajo' para encontrar nuevos ejecutivos"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Un filtro anti-persona elimina explícitamente a personas que podrían coincidir con algunas palabras clave (como 'VP') pero definitivamente no son tu comprador (como un VP de RRHH cuando vendes a Marketing)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Envías 50 correos personalizados y obtienes 10 respuestas interesadas. ¿Cuál es tu tasa de respuesta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5%"
+        },
+        {
+          "id": "b",
+          "text": "10%"
+        },
+        {
+          "id": "c",
+          "text": "20%"
+        },
+        {
+          "id": "d",
+          "text": "50%"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "10 dividido entre 50 es 0.20, o 20%. Esta es la matemática del 'Enfoque Concentrado' descrita en la lección."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia entre 'Construcción de Listas' y 'Generación de Leads' en este contexto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son lo mismo"
+        },
+        {
+          "id": "b",
+          "text": "La Generación de Leads consiste en encontrar los nombres; la Construcción de Listas consiste en enviar los correos"
+        },
+        {
+          "id": "c",
+          "text": "La Construcción de Listas es la fase de investigación (encontrar coincidencias); la Generación de Leads es la fase de ejecución (invitarlos a hablar)"
+        },
+        {
+          "id": "d",
+          "text": "La Construcción de Listas es para B2B; la Generación de Leads es para Creadores"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La construcción de listas proporciona el 'combustible' (los nombres e información de contacto). La generación de leads usa ese combustible para impulsar conversaciones. Estas son actividades distintas que requieren mentalidades diferentes."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "question": "En el contexto de 'Cazar vs. Magnetizar', ¿qué caracteriza el enfoque del 'Imán de Entrada' utilizado por los creadores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comprar una gran lista de correo de un broker de datos"
+        },
+        {
+          "id": "b",
+          "text": "Identificar clústeres de identidad (comunidades) y ganar datos ofreciendo valor"
+        },
+        {
+          "id": "c",
+          "text": "Enviar 500 correos fríos por día a empresas aleatorias"
+        },
+        {
+          "id": "d",
+          "text": "Usar bots automatizados para raspar perfiles de LinkedIn"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Mientras que el B2B tiende a 'cazar' roles organizacionales, los creadores usan 'magnets' para atraer personas en función de la identidad e intereses compartidos, ganando permiso en lugar de simplemente tomarlo."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "Mira tus esfuerzos de prospección actuales. ¿Te inclinas más hacia el enfoque 'Masivo' o 'Concentrado'? Da un ejemplo específico de una 'Anti-Persona' que deberías excluir de tu próxima búsqueda y explica por qué son una distracción para tu negocio.",
+      "minLength": 100,
+      "promptForAI": "Evalúa si el fundador identifica su sesgo actual (Masivo vs. Concentrado) y si su exclusión de 'Anti-Persona' es lógica. Por ejemplo, si venden a fundadores tecnológicos, excluir a 'Dueños de Pequeños Negocios' que no tienen equipos de ingeniería es una buena exclusión."
+    }
+  ]
+}

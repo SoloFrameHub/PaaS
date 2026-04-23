@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.4: DBT Skills Challenge</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+            --success-green: #2e7d32; --success-bg: #e8f5e9; --success-border: #a5d6a7;
+            --warning-orange: #fb8c00; --warning-bg: #fff3e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        .gentle-header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, #477e8f 100%);
+            color: white; padding: 25px 30px; text-align: center;
+            border-radius: 12px; margin-bottom: 30px;
+        }
+        .gentle-header h1 { font-size: 1.8em; margin: 0 0 10px 0; color: white; }
+        .gentle-header p { font-size: 1.1em; margin: 0; opacity: 0.95; }
+
+        .safe-space-container {
+            background: var(--soft-white); border-radius: 12px;
+            padding: 30px 40px; border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(74, 144, 164, 0.15);
+        }
+        
+        .intro-block { text-align: center; margin-bottom: 30px; }
+        .intro-block h2 { color: var(--deep-teal); font-size: 1.6em; }
+        .intro-block p { font-size: 1.1em; max-width: 700px; margin: 0 auto; }
+
+        /* Challenge Container */
+        .challenge-container {
+            background: var(--light-sage); padding: 30px;
+            border-radius: 12px; border: 2px solid var(--light-teal);
+        }
+        .scenario-card {
+            background: var(--warning-bg); border-left: 5px solid var(--warning-orange);
+            padding: 20px; border-radius: 8px; margin-bottom: 25px;
+        }
+        .scenario-card p { font-style: italic; font-size: 1.2em; color: var(--gentle-text); margin: 0; }
+        
+        .options-container {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px; margin-bottom: 20px;
+        }
+        .option-btn {
+            background: var(--soft-white); border: 2px solid var(--light-teal);
+            color: var(--deep-teal); padding: 15px; border-radius: 8px;
+            font-size: 1em; font-weight: 600; cursor: pointer;
+            transition: all 0.2s; text-align: left;
+        }
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--soft-blue); background-color: #eef5fa; transform: translateY(-3px);
+        }
+        .option-btn:disabled { cursor: not-allowed; opacity: 0.7; }
+
+        .feedback-box {
+            padding: 20px; border-radius: 8px; display: none; /* Hidden by default */
+            animation: fadeIn 0.5s;
+        }
+        .feedback-box.correct { background: var(--success-bg); border-left: 4px solid var(--success-green); }
+        .feedback-box h4 { margin: 0 0 10px 0; font-size: 1.2em; }
+        .feedback-box.correct h4 { color: var(--success-green); }
+        
+        .btn {
+            background: var(--sage-green); color: white; border: none; padding: 12px 30px;
+            font-size: 1.1em; font-weight: 600; border-radius: 50px; cursor: pointer;
+            transition: all 0.3s; margin-top: 15px;
+        }
+        .btn:hover { background-color: #769a59; }
+
+        #completion-screen {
+            text-align: center; padding: 40px;
+        }
+        #completion-screen h2 { color: var(--success-green); font-size: 2em; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="gentle-header">
+            <h1>Lesson 3.4: DBT Skills Challenge</h1>
+            <p>Choosing the right tool for the right moment.</p>
+        </header>
+
+        <main class="safe-space-container">
+            <div class="intro-block">
+                <h2>Practice Makes Progress</h2>
+                <p>You now have three powerful skills in your toolkit. The final step is building the confidence to know which one to use and when. This challenge will help you practice matching the right skill to the right situation.</p>
+            </div>
+
+            <div class="challenge-container" id="challenge-container">
+                <!-- Challenges will be injected by JavaScript -->
+            </div>
+            
+            <div id="completion-screen" style="display: none;">
+                <h2>🎉 Challenge Complete!</h2>
+                <p>Excellent work! You've demonstrated that you understand how and when to apply your new skills for managing intense emotions. This ability to choose the right tool is a sign of true emotional mastery.</p>
+                <button class="btn" onclick="alert('Proceeding to the final lesson of Part 3!')">Finish This Lesson</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const challenges = [
+            {
+                scenario: "You're at the grocery store and suddenly your heart starts pounding. You feel dizzy, your chest is tight, and you're terrified you're having a panic attack right now.",
+                options: ["TIPP Skill", "5-4-3-2-1 Grounding", "Riding the Wave"],
+                correctAnswer: "TIPP Skill",
+                explanation: "That's the best choice. When you are in a full-blown physiological crisis (a panic attack), you need a skill that rapidly changes your body chemistry. The 'T' for Temperature is especially powerful for this."
+            },
+            {
+                scenario: "You're lying in bed trying to sleep, but your mind is stuck in a loop, replaying an awkward conversation from earlier in the day. You feel yourself getting more and more anxious.",
+                options: ["TIPP Skill", "5-4-3-2-1 Grounding", "Riding the Wave"],
+                correctAnswer: "5-4-3-2-1 Grounding",
+                explanation: "Excellent choice. Your mind is stuck in a 'thought spiral.' The 5-4-3-2-1 skill is perfect for pulling your attention out of your thoughts and into the present moment by focusing on your senses."
+            },
+            {
+                scenario: "You just received some disappointing news. You feel a deep wave of sadness and frustration washing over you. The feeling is strong, but you are not in a full crisis.",
+                options: ["TIPP Skill", "5-4-3-2-1 Grounding", "Riding the Wave"],
+                correctAnswer: "Riding the Wave",
+                explanation: "Perfect. This is a powerful but not-quite-crisis emotion. 'Riding the Wave' allows you to acknowledge and sit with the sadness without judgment, letting it pass naturally instead of fighting it and making it stronger."
+            }
+        ];
+
+        let currentChallengeIndex = 0;
+        const challengeContainer = document.getElementById('challenge-container');
+        const completionScreen = document.getElementById('completion-screen');
+
+        function displayChallenge() {
+            const challenge = challenges[currentChallengeIndex];
+            
+            let optionsHTML = challenge.options.map(option => 
+                `<button class="option-btn" onclick="checkAnswer('${option}')">${option}</button>`
+            ).join('');
+
+            challengeContainer.innerHTML = `
+                <div class="scenario-card">
+                    <p>"${challenge.scenario}"</p>
+                </div>
+                <h4>Which skill would be most helpful here?</h4>
+                <div class="options-container">
+                    ${optionsHTML}
+                </div>
+                <div class="feedback-box" id="feedback-box"></div>
+            `;
+        }
+
+        function checkAnswer(selectedOption) {
+            const challenge = challenges[currentChallengeIndex];
+            const feedbackBox = document.getElementById('feedback-box');
+            
+            // Disable all buttons
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === selectedOption) {
+                    btn.style.borderColor = btn.textContent === challenge.correctAnswer ? 'var(--success-green)' : 'var(--danger-red)';
+                }
+            });
+
+            feedbackBox.style.display = 'block';
+
+            if (selectedOption === challenge.correctAnswer) {
+                feedbackBox.classList.add('correct');
+                feedbackBox.innerHTML = `<h4>Correct!</h4><p>${challenge.explanation}</p>`;
+            } else {
+                // To avoid negative reinforcement, we'll still frame it positively
+                 feedbackBox.classList.add('correct'); // Use green style for a gentle correction
+                 feedbackBox.innerHTML = `<h4>That's a good thought!</h4><p>While that skill could help, the most effective choice here is <strong>${challenge.correctAnswer}</strong>. Here's why: ${challenge.explanation}</p>`;
+            }
+            
+            // Add a "Next" button
+            challengeContainer.innerHTML += `<div style="text-align:center;"><button class="btn" onclick="nextChallenge()">Next Scenario</button></div>`;
+        }
+        
+        function nextChallenge() {
+            currentChallengeIndex++;
+            if (currentChallengeIndex < challenges.length) {
+                displayChallenge();
+            } else {
+                challengeContainer.style.display = 'none';
+                completionScreen.style.display = 'block';
+            }
+        }
+
+        // Initial Load
+        displayChallenge();
+    </script>
+</body>
+</html>

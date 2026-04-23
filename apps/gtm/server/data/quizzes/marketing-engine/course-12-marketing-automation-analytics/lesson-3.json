@@ -1,0 +1,153 @@
+{
+    "lessonId": "3",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 3: Lead Scoring Model",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which dimension of lead scoring answers the question, 'Is this the kind of person I want to sell to?'",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Behavioral Engagement"
+                },
+                {
+                    "id": "b",
+                    "text": "Demographic Fit"
+                },
+                {
+                    "id": "c",
+                    "text": "Intent Signals"
+                },
+                {
+                    "id": "d",
+                    "text": "Content Consumption"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Demographic Fit evaluates how well a prospect matches your Ideal Customer Profile based on attributes like job title and company size."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Based on the lesson's weighting, which of these actions would typically receive the HIGHEST score?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Opening a newsletter email."
+                },
+                {
+                    "id": "b",
+                    "text": "Downloading a 1-page checklist."
+                },
+                {
+                    "id": "c",
+                    "text": "Visiting the pricing page multiple times in 48 hours."
+                },
+                {
+                    "id": "d",
+                    "text": "Following the brand on social media."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Pricing page visits are high-intent signals that indicate the prospect is actively considering a purchase."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "What is the primary purpose of implementing 'Points Decay' in a lead scoring model?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To punish leads who don't buy immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "To ensure scores reflect recent, active engagement rather than old, irrelevant data."
+                },
+                {
+                    "id": "c",
+                    "text": "To reduce the amount of data stored in the CRM."
+                },
+                {
+                    "id": "d",
+                    "text": "To artificially inflate conversion rates."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Decay ensures that your scoring data remains fresh and prioritizes leads who are showing intent *now*."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "A lead has a score of 85. According to the suggested thresholds, what should the founder's action be?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Automated nurture only; do nothing manual."
+                },
+                {
+                    "id": "b",
+                    "text": "Wait for them to reach a score of 100."
+                },
+                {
+                    "id": "c",
+                    "text": "Immediate personal outreach (phone or high-priority email)."
+                },
+                {
+                    "id": "d",
+                    "text": "Remove them from the list; they know too much."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "A score of 76+ is 'Sales-Ready,' requiring immediate and personalized founder intervention."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which 'Negative Signal' usually results in a significant reduction in points?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using a Gmail address instead of a corporate domain."
+                },
+                {
+                    "id": "b",
+                    "text": "Unsubscribing from emails."
+                },
+                {
+                    "id": "c",
+                    "text": "Downloading the lead magnet but not opening the welcome email."
+                },
+                {
+                    "id": "d",
+                    "text": "Visiting a blog post instead of a case study."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Unsubscribing is the ultimate negative intent signal, indicating the user no longer wants communication from you."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Design an initial lead scoring rule for your business. Select one Demographic criterion (e.g., job title) and one Behavioral trigger (e.g., clicking a specific case study). Assign point values to each and explain why these two signals, combined, might indicate a prospect is ready for a sales conversation.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's rule design. Check for logical consistency—the behavior should genuinely indicate intent when paired with the fit. Suggest one 'Intent Trigger' they could add to this specific rule to make it even more accurate."
+        }
+    ]
+}

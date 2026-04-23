@@ -1,0 +1,142 @@
+{
+  "lessonId": "4",
+  "courseId": "technical-content",
+  "track": "marketing",
+  "title": "Quiz: Documentación como Contenido",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Qué empresa es famosa por usar la 'Transparencia Radical' para convertir documentos internos en contenido viral?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apple"
+        },
+        {
+          "id": "b",
+          "text": "Buffer"
+        },
+        {
+          "id": "c",
+          "text": "HubSpot"
+        },
+        {
+          "id": "d",
+          "text": "Slack"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Buffer publicó sus fórmulas salariales y procesos de contratación, demostrando que la documentación interna es muy valiosa para una audiencia externa."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el primer paso en el pipeline de transformación 'Documentación a Contenido'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esperar a que un escritor profesional lo revise"
+        },
+        {
+          "id": "b",
+          "text": "Capturarlo: Escribe la documentación interna con precisión para ti/tu equipo"
+        },
+        {
+          "id": "c",
+          "text": "Publicarlo inmediatamente en redes sociales"
+        },
+        {
+          "id": "d",
+          "text": "Anonimizar los nombres y logotipos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Empiezas con tu flujo de trabajo interno normal (Captura). La eficiencia viene de no tener que 'reiniciar' el trabajo para la versión pública."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Un documento interno titulado 'REGISTRO de Corrección de Errores: Problema de Tiempo de Espera de Auth' podría transformarse en ¿qué título de contenido educativo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuestro sistema de Auth está roto de nuevo"
+        },
+        {
+          "id": "b",
+          "text": "Por qué somos mejores que la competencia"
+        },
+        {
+          "id": "c",
+          "text": "Cómo depurar los tiempos de espera de autenticación en aplicaciones de [Nicho]"
+        },
+        {
+          "id": "d",
+          "text": "Conoce a nuestro equipo de desarrollo"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La resolución interna de errores proporciona exactamente el valor 'Paso a Paso' que las audiencias técnicas buscan."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la regla 'Generoso pero Protector'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Regalar el producto pero proteger la documentación"
+        },
+        {
+          "id": "b",
+          "text": "Compartir tu conocimiento y marcos de trabajo pero proteger los datos específicos de los clientes y los secretos comerciales sensibles"
+        },
+        {
+          "id": "c",
+          "text": "Ser generoso con tu tiempo pero protector de tu dinero"
+        },
+        {
+          "id": "d",
+          "text": "Nunca compartir nada hasta que tengas una patente"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La experiencia construye confianza; la sensibilidad previene responsabilidades. Construyes autoridad siendo un libro abierto sobre cómo piensas y trabajas, sin comprometer tu ventaja competitiva."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Por qué la 'Documentación de Procesos Internos' es valiosa para tu ICP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quieren construir un negocio competidor"
+        },
+        {
+          "id": "b",
+          "text": "Quieren contratar a tus empleados"
+        },
+        {
+          "id": "c",
+          "text": "Demuestra que eres un experto sistemático y les proporciona una forma 'probada' de hacer algo"
+        },
+        {
+          "id": "d",
+          "text": "No lo es; solo importan los discursos de ventas"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Cuando muestras cómo haces algo, demuestras que realmente sabes cómo hacerlo. Te hace pasar de 'alguien que hace una afirmación' a 'alguien que muestra un resultado'."
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "question": "¿Cuál es un proceso interno o decisión que documentaste esta semana? ¿Cómo podrías ayudar a tu ICP compartiéndolo? ¿Qué es lo único que necesitarías ANONIMIZAR para que sea seguro publicarlo?",
+      "minLength": 100,
+      "promptForAI": "Revisa si el fundador entiende la 'transformación' necesaria. Busca especificidad en la parte de 'qué debo anonimizar' para asegurarte de que estén pensando en la privacidad de los datos."
+    }
+  ],
+  "sectionId": "marketing-engine"
+}

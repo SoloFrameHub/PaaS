@@ -1,0 +1,88 @@
+{
+  "lessonId": "6",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "Estrategia Podcast-a-Pipeline",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Por qué la CTA de texto para suscripción supera a las CTAs de 'visita esta URL' en podcasts por 5-8 veces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los mensajes de texto tienen tasas de apertura más altas que los correos electrónicos"
+        },
+        {
+          "id": "b",
+          "text": "Los oyentes de podcast generalmente están conduciendo, haciendo ejercicio o haciendo tareas del hogar y pueden enviar mensajes de texto sin dejar de hacer lo que están haciendo"
+        },
+        {
+          "id": "c",
+          "text": "Las operadoras telefónicas dan prioridad a los mensajes de texto de opt-in"
+        },
+        {
+          "id": "d",
+          "text": "Los mensajes de texto evitan los filtros de spam que atraparían los correos"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los oyentes de podcast generalmente consumen contenido mientras tienen sus manos y ojos ocupados (conduciendo, haciendo ejercicio, haciendo tareas). Enviar un mensaje de texto con una palabra clave es posible en este contexto, mientras que navegar a una URL no lo es. Este diseño de CTA consciente del contexto aumenta drásticamente las tasas de conversión."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Al apuntar a podcasts para apariciones como invitado, ¿qué tamaño de audiencia se recomienda y por qué?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100,000+ descargas por episodio, porque las audiencias más grandes generan más prospectos"
+        },
+        {
+          "id": "b",
+          "text": "500-5,000 descargas por episodio, porque los anfitriones buscan invitados activamente y las audiencias están comprometidas"
+        },
+        {
+          "id": "c",
+          "text": "Menos de 100 descargas por episodio, porque las audiencias de nicho convierten mejor"
+        },
+        {
+          "id": "d",
+          "text": "El tamaño de la audiencia no importa; solo cuenta la relevancia del tema"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los podcasts con 500-5,000 descargas por episodio dan en el punto óptimo: suficientemente grandes para generar prospectos significativos, pero suficientemente pequeños para que los anfitriones sean receptivos a los pitches de invitados. Los podcasts muy grandes son difíciles de conseguir y los muy pequeños no mueven la aguja."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la colocación principal de CTA para obtener la máxima conversión dentro de un episodio de podcast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solo en las notas del programa y la descripción del episodio"
+        },
+        { "id": "b", "text": "Una sola mención al final del episodio" },
+        {
+          "id": "c",
+          "text": "Mid-roll (marca del 50-60%) como CTA principal, con menciones de apoyo pre-roll y post-roll"
+        },
+        {
+          "id": "d",
+          "text": "Repetida continuamente cada 5 minutos a lo largo del episodio"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La CTA mid-roll en la marca del 50-60% es tu principal oportunidad de conversión, entregada después de una perspectiva clave cuando el engagement es más alto. Una breve mención pre-roll construye reconocimiento, y un recordatorio post-roll captura a quienes se perdieron la CTA mid-roll."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Redacta un correo de pitch como invitado para un programa específico de tu nicho. Incluye: el nombre del podcast, por qué tu expertise es relevante para su audiencia, un ángulo específico que discutirías y qué valor entregarías. También describe la página de aterrizaje específica para invitado que crearías.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student identifies a real or realistic podcast, tailors the pitch to that specific audience (not generic), proposes a specific angle rather than a broad topic, and describes a landing page strategy. The pitch should focus on value to the host's audience rather than self-promotion."
+    }
+  ]
+}

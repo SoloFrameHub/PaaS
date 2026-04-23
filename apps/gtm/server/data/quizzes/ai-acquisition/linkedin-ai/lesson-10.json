@@ -1,0 +1,81 @@
+{
+  "lessonId": "10",
+  "courseId": "linkedin-ai",
+  "sectionId": "ai-acquisition",
+  "title": "Your LinkedIn AI Playbook",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the recommended LinkedIn AI stack budget for solo founders?",
+      "options": [
+        { "id": "a", "text": "$500+/month for maximum tools" },
+        {
+          "id": "b",
+          "text": "$168/month — Sales Nav ($99.99) + ChatGPT ($20) + Taplio ($49), covering 90% of use cases"
+        },
+        { "id": "c", "text": "$20/month — ChatGPT only" },
+        { "id": "d", "text": "$0 — only use free tools" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Minimal Stack at $168.99/month (Sales Nav + ChatGPT + Taplio) covers 90% of LinkedIn use cases: prospecting, content creation, engagement, and scheduling. The $35 saved versus the Full Stack ($204) buys 2 months of runway, and you can always upgrade when revenue justifies it."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What weekly output should the LinkedIn AI playbook enable?",
+      "options": [
+        { "id": "a", "text": "1 post per month and 5 DMs" },
+        {
+          "id": "b",
+          "text": "3-5 high-quality posts per week (60 min total), 50+ prospect engagements, 20-30 personalized DMs, all within LinkedIn's safety boundaries"
+        },
+        { "id": "c", "text": "100 automated posts and 500 DMs" },
+        { "id": "d", "text": "Daily posts but no outreach" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The complete playbook enables: 3-5 high-quality posts per week in 60 minutes total, research and engagement with 50+ prospects without manual drudgery, 20-30 personalized DMs that actually get replies, all while staying 100% within LinkedIn's safety boundaries and maintaining authentic voice."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the 'Integration Principle' for LinkedIn AI?",
+      "options": [
+        { "id": "a", "text": "Integrate as many tools as possible" },
+        {
+          "id": "b",
+          "text": "AI should amplify your judgment, not replace it — every AI output gets a human edit, every automation has a manual trigger, every tool serves a specific step"
+        },
+        {
+          "id": "c",
+          "text": "Only use integrated platforms, never standalone tools"
+        },
+        {
+          "id": "d",
+          "text": "Integration means connecting LinkedIn to your CRM automatically"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Integration Principle states that AI should amplify judgment, not replace it. Every AI-generated output gets a human edit. Every automation has a manual trigger (no fully autonomous actions on LinkedIn). Every tool serves a specific step in a repeatable workflow. This prevents the Week 3 disaster of automated actions leading to account restrictions."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The common failure pattern is: Week 1 install 5 tools, Week 2 realize posts are generic, Week 3 try automation and get restricted, Week 4 abandon the platform entirely.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. This is the exact failure pattern the lesson describes and designs the playbook to prevent. The root cause is lack of a coherent system that balances AI leverage with human authenticity, speed with safety, and volume with quality. The playbook provides that system."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your weekly LinkedIn AI rhythm. For each day of the work week, describe what LinkedIn activity you would do, which tools you would use, and approximately how much time you would spend. Ensure your plan stays within LinkedIn's safety guidelines.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes a specific daily rhythm covering content creation, engagement, prospecting, and DMs. Look for realistic time estimates (total should be 3-5 hours/week), tool assignments for each activity, and explicit safety guardrails (manual connection requests, human-reviewed DMs, safe send volumes)."
+    }
+  ]
+}

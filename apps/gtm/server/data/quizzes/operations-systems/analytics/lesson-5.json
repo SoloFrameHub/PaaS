@@ -1,0 +1,69 @@
+{
+  "lessonId": "5",
+  "courseId": "analytics",
+  "sectionId": "operations-systems",
+  "title": "CAC, LTV, and Payback Period",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the 'golden ratio' for a healthy SaaS LTV:CAC?",
+      "options": [
+        { "id": "a", "text": "1:1 or higher" },
+        { "id": "b", "text": "2:1 or higher" },
+        { "id": "c", "text": "3:1 or higher" },
+        { "id": "d", "text": "5:1 or higher" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A healthy SaaS business should have an LTV:CAC ratio of 3:1 or higher. For every $1 spent acquiring a customer, you should earn at least $3 back. Bootstrapped founders should target 5:1 since they have no margin for error."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why must solo founders include their own time in CAC calculations?",
+      "options": [
+        { "id": "a", "text": "Investors require it for fundraising" },
+        {
+          "id": "b",
+          "text": "Because opportunity cost is real — time spent on acquisition could be spent elsewhere"
+        },
+        { "id": "c", "text": "It makes their business look bigger" },
+        { "id": "d", "text": "It's required by tax law" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Time has value even if cash doesn't leave your account. Those hours on acquisition could be spent building product, serving customers, or earning income elsewhere. Ignoring time cost leads to false confidence in unit economics."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the 50% Rule, if you have 12 months of runway, your payback period should be under:",
+      "options": [
+        { "id": "a", "text": "3 months" },
+        { "id": "b", "text": "6 months" },
+        { "id": "c", "text": "9 months" },
+        { "id": "d", "text": "12 months" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 50% Rule states your payback period should be less than 50% of your runway. With 12 months of runway, you need payback under 6 months. This gives you buffer for mistakes and growth."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "A 3:1 LTV:CAC ratio with an 18-month payback period is always safe for a bootstrapped founder.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. While the LTV:CAC ratio looks healthy, the 18-month payback means you'll run out of cash before customers pay back their acquisition cost. Cash flow matters as much as profitability ratios for bootstrapped founders."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate your approximate CAC (including time cost) and LTV. What is your LTV:CAC ratio and payback period? Based on these numbers, what is the single most impactful lever you could pull to improve your unit economics?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes actual numbers for CAC (including time cost), LTV, and payback period. Check if they correctly identify one improvement lever (reduce CAC, increase LTV, or accelerate payback) and explain why it's the highest-impact option for their specific situation."
+    }
+  ]
+}

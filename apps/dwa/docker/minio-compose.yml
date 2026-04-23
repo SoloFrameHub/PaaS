@@ -1,0 +1,20 @@
+# MinIO (S3-compatible) for Coolify.
+# In Coolify: Add Resource → Docker Compose → paste this file.
+# Replace MINIO_ROOT_USER/MINIO_ROOT_PASSWORD or use Coolify env vars (e.g. SERVICE_USER_MINIO, SERVICE_PASSWORD_MINIO).
+# After deploy: create bucket "caa-uploads" in MinIO console (port 9001), then set S3_* on the Next.js app.
+
+services:
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${SERVICE_USER_MINIO:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${SERVICE_PASSWORD_MINIO:-minioadmin}
+    volumes:
+      - minio_data:/data
+    ports:
+      - "9000:9000"   # S3 API
+      - "9001:9001"   # Web console
+
+volumes:
+  minio_data:

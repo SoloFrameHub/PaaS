@@ -1,0 +1,69 @@
+{
+  "lessonId": "3",
+  "courseId": "outsourcing",
+  "sectionId": "operations-systems",
+  "title": "SOP 1: Inbox Triage",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why is inbox triage the highest-leverage task to delegate first?",
+      "options": [
+        { "id": "a", "text": "It's the easiest task to explain" },
+        {
+          "id": "b",
+          "text": "It most directly protects revenue by ensuring leads get flagged immediately"
+        },
+        { "id": "c", "text": "It's the cheapest to outsource" },
+        { "id": "d", "text": "It requires the least training" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Inbox triage most directly protects revenue. Leads contacted within one hour are 7x more likely to engage than those contacted after an hour. Your VA running triage means leads get flagged the moment they arrive."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Into how many categories does the inbox triage SOP sort emails?",
+      "options": [
+        { "id": "a", "text": "2 (important vs not important)" },
+        { "id": "b", "text": "3 (urgent, normal, low priority)" },
+        { "id": "c", "text": "4 (Lead, Customer, Admin, Noise)" },
+        { "id": "d", "text": "6 (with sub-categories)" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Every email goes into exactly one of four categories: Lead (potential customer), Customer (existing paying client), Admin (vendor, operational), or Noise (spam, irrelevant). The VA classifies each quickly and routes accordingly."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How long should the inbox triage SOP take a VA per day?",
+      "options": [
+        { "id": "a", "text": "5 minutes" },
+        { "id": "b", "text": "15-20 minutes" },
+        { "id": "c", "text": "1 hour" },
+        { "id": "d", "text": "2-3 hours" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "With a clear SOP, the average solo founder's inbox (50-150 emails/day) can be triaged in 15-20 minutes per day. The SOP makes classification fast and consistent."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "High-priority leads flagged through inbox triage should be responded to by the founder within 4 hours.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. High-priority leads (explicit interest, pricing question, meeting request) should be flagged immediately by the VA and responded to by the founder within 4 hours. Speed of response directly correlates with close rates."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Estimate how many emails you receive daily. What percentage are noise vs. leads vs. customer messages? How would a 15-minute daily triage by a VA change your workflow?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response estimates their daily email volume, categorizes by type (noise, leads, customer, admin), and articulates a specific workflow improvement — particularly around faster lead response time and reduced cognitive load from email sorting."
+    }
+  ]
+}

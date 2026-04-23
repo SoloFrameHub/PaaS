@@ -1,0 +1,141 @@
+{
+    "lessonId": "10",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Buying Committee Mapping - The Deal Killers",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Single Threading' and why is it dangerous?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using only one email thread. It makes inbox zero hard."
+                },
+                {
+                    "id": "b",
+                    "text": "Relying on only one contact at a prospect account. If they leave or get blocked, your deal dies."
+                },
+                {
+                    "id": "c",
+                    "text": "Selling a single product."
+                },
+                {
+                    "id": "d",
+                    "text": "Sewing with one thread."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "B2B deals involve 6-10 stakeholders. Relying on one person is a single point of failure."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Does the 'Compliance/Security' person (Technical Evaluator) usually care about your ROI?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, deeply."
+                },
+                {
+                    "id": "b",
+                    "text": "No. They care about risk reduction, compliance, and not breaking their infrastructure."
+                },
+                {
+                    "id": "c",
+                    "text": "They only care about price."
+                },
+                {
+                    "id": "d",
+                    "text": "They care about your logo color."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Don't pitch ROI to Legal/IT. Pitch safety, compliance, and ease of integration. Their job is to protect the company."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary role of a 'Champion'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To sign the check."
+                },
+                {
+                    "id": "b",
+                    "text": "To sell your product internally when you are not in the room."
+                },
+                {
+                    "id": "c",
+                    "text": "To block your emails."
+                },
+                {
+                    "id": "d",
+                    "text": "To ask for discounts."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Your Champion is your inside partner. They want your solution to succeed so they look good. You must arm them with materials."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Top-Down + Bottom-Up' (Pincer) strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Only emailing the CEO."
+                },
+                {
+                    "id": "b",
+                    "text": "Emailing the VP (Strategy) and the Manager (Pain) simultaneously to create internal alignment."
+                },
+                {
+                    "id": "c",
+                    "text": "Clicking mouse buttons up and down."
+                },
+                {
+                    "id": "d",
+                    "text": "Emailing everyone in the company the same message."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Engaging both levels creates a conversation between them. 'Do we need this?' (VP) -> 'Yes!' (Manager)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If a prospect 'Ghosts' you after a good demo, what is the most likely cause?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They were abducted by aliens."
+                },
+                {
+                    "id": "b",
+                    "text": "A hidden blocker (who you didn't identify) killed the deal behind closed doors."
+                },
+                {
+                    "id": "c",
+                    "text": "They forgot your name."
+                },
+                {
+                    "id": "d",
+                    "text": "They lost their internet."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Ghosting is rarely accidental. It usually means an unspoken 'No' from a stakeholder you failed to engage."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Map out a typical buying committee for your product. Who are the key stakeholders (Champion, Economic Buyer, Technical Evaluator, etc.) and what does each care about?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the buying committee mapping. Check for: (1) key roles identified, (2) understanding of each role priorities, (3) navigation strategy. Suggest how to address each stakeholder."
+        }
+    ]
+}

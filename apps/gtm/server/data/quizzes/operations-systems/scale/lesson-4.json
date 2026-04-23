@@ -1,0 +1,69 @@
+{
+  "lessonId": "4",
+  "courseId": "scale",
+  "sectionId": "operations-systems",
+  "title": "Interview Framework for Sales Roles",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "By how much do roleplays in interviews improve hire quality compared to behavioral-question-only interviews?",
+      "options": [
+        { "id": "a", "text": "5-10%" },
+        { "id": "b", "text": "15-20%" },
+        { "id": "c", "text": "35-50%" },
+        { "id": "d", "text": "80-90%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Roleplays improve hire quality by 35-50%. The best predictor of whether someone can sell your product is whether they can sell something in a controlled setting right now. Interviews should be auditions, not conversations."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How many stages does the recommended interview process have?",
+      "options": [
+        { "id": "a", "text": "1 stage — a single interview" },
+        { "id": "b", "text": "2 stages" },
+        { "id": "c", "text": "3 stages" },
+        { "id": "d", "text": "5 stages" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The 3-stage process takes 3 hours total per finalist: (1) Application screen + async writing task, (2) Live interview with roleplay, (3) Final assessment. Each stage reveals different evidence of sales skill."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the primary purpose of the writing task in the application?",
+      "options": [
+        { "id": "a", "text": "To evaluate their grammar" },
+        {
+          "id": "b",
+          "text": "To see if they can follow instructions, do research, and write outreach a human would respond to"
+        },
+        { "id": "c", "text": "To test their marketing skills" },
+        { "id": "d", "text": "To save time in the interview" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The writing task tests three things: did they follow instructions exactly (playbook compliance), is the writing specific to your ICP (research skills), and does it sound like something a person would respond to (writing instincts)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The best predictor of sales hire success is how confident and articulate they sound in a conversation.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Most founders hire the person who interviewed best, not the person who sells best. Charisma gets mistaken for skill, and storytelling for track record. Roleplays reveal actual selling ability, not presentation polish."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design a roleplay scenario for your sales hire interview. What product/service would you have them sell? What buyer personality would you play? What specific skills would the roleplay reveal?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response designs a realistic roleplay scenario relevant to their business, specifies the buyer persona they'd play, and identifies the specific skills being tested (discovery, objection handling, closing, active listening)."
+    }
+  ]
+}

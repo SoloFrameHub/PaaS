@@ -1,0 +1,229 @@
+{
+  "industry_id": "manufacturing",
+  "display_name": "Manufacturing / Industrial",
+  "parent_category": "traditional",
+  "description": "Companies involved in the production of goods through industrial processes, including discrete manufacturing, process manufacturing, and industrial equipment. This sector is characterized by complex operations, significant capital investments, and a strong focus on efficiency, safety, and reliability.",
+  "typical_company_sizes": ["51-200", "201-500", "500+"],
+  "typical_deal_sizes": ["mid_market", "enterprise"],
+  "sales_cycle_length": "quarters",
+
+  "pain_points": [
+    {
+      "pain": "Unplanned downtime causing significant production losses",
+      "level": "complex",
+      "context": "Equipment failures can cost $10,000-$250,000 per hour depending on the operation"
+    },
+    {
+      "pain": "Supply chain disruptions affecting production schedules",
+      "level": "complex",
+      "context": "Post-pandemic supply chain volatility has made just-in-time manufacturing risky"
+    },
+    {
+      "pain": "Workforce safety incidents and compliance requirements",
+      "level": "straightforward",
+      "context": "OSHA compliance and worker safety are non-negotiable priorities"
+    },
+    {
+      "pain": "Integration challenges between legacy OT and modern IT systems",
+      "level": "complex",
+      "context": "Many plants run 20-30 year old SCADA systems that don't speak modern protocols"
+    },
+    {
+      "pain": "Skills gap as experienced workers retire",
+      "level": "complex",
+      "context": "Tribal knowledge is being lost as baby boomers leave the workforce"
+    },
+    {
+      "pain": "Rising energy costs impacting margins",
+      "level": "straightforward",
+      "context": "Energy can represent 10-30% of operating costs in heavy manufacturing"
+    },
+    {
+      "pain": "Quality control and defect reduction",
+      "level": "straightforward",
+      "context": "Scrap rates and rework directly impact profitability"
+    }
+  ],
+
+  "buying_triggers": [
+    "New plant construction or major expansion",
+    "Critical equipment failure or near-miss incident",
+    "Competitor adopting Industry 4.0 technologies",
+    "New CEO or plant manager with modernization mandate",
+    "Regulatory changes requiring new compliance measures",
+    "Major customer demanding supply chain visibility",
+    "Insurance premium increases due to safety record"
+  ],
+
+  "budget_cycle": "Annual capital expenditure planning, typically Q3-Q4 for following year budgets. Large projects may require multi-year capital allocation approval.",
+
+  "regulatory_concerns": [
+    "OSHA workplace safety requirements",
+    "EPA environmental compliance",
+    "ISO 9001 quality management",
+    "ISO 14001 environmental management",
+    "Industry-specific regulations (FDA for pharma, IATF 16949 for automotive)"
+  ],
+
+  "compliance_language": [
+    "21 CFR Part 11 compliant",
+    "OSHA recordable incident rate",
+    "ISO certified",
+    "GMP compliant",
+    "Audit trail and traceability"
+  ],
+
+  "risk_tolerance": "low",
+
+  "terminology": [
+    {
+      "term": "OEE (Overall Equipment Effectiveness)",
+      "definition": "A metric measuring manufacturing productivity as the product of availability, performance, and quality rates",
+      "usage_context": "Used to benchmark equipment performance; world-class OEE is typically 85%+"
+    },
+    {
+      "term": "Downtime",
+      "definition": "Period when equipment or production lines are not operational",
+      "usage_context": "Distinguish between planned downtime (maintenance) and unplanned downtime (failures)"
+    },
+    {
+      "term": "SCADA (Supervisory Control and Data Acquisition)",
+      "definition": "Industrial control system for monitoring and controlling plant processes",
+      "usage_context": "Often refers to legacy systems that need modernization or integration"
+    },
+    {
+      "term": "MES (Manufacturing Execution System)",
+      "definition": "Software that tracks and documents the transformation of raw materials to finished goods",
+      "usage_context": "Bridges the gap between ERP systems and shop floor operations"
+    },
+    {
+      "term": "PLC (Programmable Logic Controller)",
+      "definition": "Industrial computer used to control manufacturing processes and machinery",
+      "usage_context": "The backbone of factory automation; replacement decisions are major capital investments"
+    },
+    {
+      "term": "IIoT (Industrial Internet of Things)",
+      "definition": "Network of connected sensors, instruments, and devices in industrial settings",
+      "usage_context": "Key enabler of Industry 4.0 and predictive maintenance initiatives"
+    },
+    {
+      "term": "Predictive Maintenance",
+      "definition": "Using data analysis to predict equipment failures before they occur",
+      "usage_context": "Major use case for IIoT investments; often the first Industry 4.0 project"
+    },
+    {
+      "term": "Digital Twin",
+      "definition": "Virtual replica of physical assets, processes, or systems for simulation and analysis",
+      "usage_context": "Used for process optimization, training, and what-if scenario planning"
+    },
+    {
+      "term": "Lean Manufacturing",
+      "definition": "Systematic method for waste minimization without sacrificing productivity",
+      "usage_context": "Cultural framework that influences how manufacturers evaluate new tools"
+    },
+    {
+      "term": "Six Sigma",
+      "definition": "Data-driven methodology for eliminating defects and reducing process variation",
+      "usage_context": "Often requires demonstrating statistical process control capabilities"
+    },
+    {
+      "term": "Kaizen",
+      "definition": "Philosophy of continuous improvement through small, incremental changes",
+      "usage_context": "Solutions should support rather than disrupt continuous improvement culture"
+    },
+    {
+      "term": "Just-in-Time (JIT)",
+      "definition": "Inventory strategy where materials arrive exactly when needed in production",
+      "usage_context": "Reduces inventory costs but increases supply chain risk; hot topic post-pandemic"
+    },
+    {
+      "term": "Bill of Materials (BOM)",
+      "definition": "Comprehensive list of parts, components, and materials required to build a product",
+      "usage_context": "Central to product lifecycle management and ERP system accuracy"
+    }
+  ],
+
+  "formality_level": "formal",
+  "decision_making_style": "lengthy_process",
+
+  "common_objections": [
+    {
+      "objection": "We need proven, reliable solutions - we can't afford experiments in production",
+      "underlying_concern": "Manufacturing environments cannot tolerate failures; downtime has massive cost implications",
+      "effective_response_approach": "Lead with case studies from similar manufacturing environments, emphasize pilot programs that don't risk production, highlight reference customers they can call",
+      "level": "straightforward"
+    },
+    {
+      "objection": "How will this integrate with our existing SCADA/MES/ERP systems?",
+      "underlying_concern": "Legacy system integration is notoriously difficult and expensive; they've likely been burned before",
+      "effective_response_approach": "Provide specific integration documentation, offer a technical discovery session with their OT team, discuss API capabilities and protocol support (OPC-UA, Modbus, etc.)",
+      "level": "complex"
+    },
+    {
+      "objection": "What's the ROI timeline? We need to justify capital expenditure",
+      "underlying_concern": "Capital allocation processes require clear business cases with payback periods",
+      "effective_response_approach": "Build a detailed ROI model using their specific metrics (downtime costs, OEE improvement potential, labor savings), aim for 12-18 month payback to clear typical hurdles",
+      "level": "complex"
+    },
+    {
+      "objection": "Our operators and maintenance team won't adopt new technology",
+      "underlying_concern": "Change management in manufacturing is genuinely difficult; aging workforce may resist digital tools",
+      "effective_response_approach": "Emphasize ease of use, provide comprehensive training programs, share adoption success stories, discuss mobile-first interfaces designed for shop floor use",
+      "level": "straightforward"
+    },
+    {
+      "objection": "We're concerned about IT/OT convergence and cybersecurity risks",
+      "underlying_concern": "Connecting operational technology to IT networks creates new attack vectors for critical infrastructure",
+      "effective_response_approach": "Detail your security architecture, discuss air-gapping options, reference IEC 62443 compliance, offer security assessments as part of implementation",
+      "level": "complex"
+    }
+  ],
+
+  "typical_incumbent_solutions": [
+    "Siemens (PLM, MES, automation)",
+    "Rockwell Automation / FactoryTalk",
+    "SAP (ERP, S/4HANA)",
+    "Oracle Manufacturing Cloud",
+    "Honeywell Forge",
+    "GE Digital (Predix, Proficy)",
+    "AVEVA",
+    "Infor CloudSuite Industrial"
+  ],
+
+  "switching_barriers": [
+    "Deep integration with physical equipment and PLCs",
+    "Years of historical data in existing systems",
+    "Trained workforce familiar with current tools",
+    "Regulatory validation and compliance certifications",
+    "Risk of production disruption during transition",
+    "Long contract terms with existing vendors"
+  ],
+
+  "scenario_templates": [
+    {
+      "template": "You're a {role} at a {company_size} {industry_type} manufacturer. {trigger_event}. Your main concern is {pain_point}, and you report to a leadership team that requires {requirement} before approving new technology investments.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "company_size", "industry_type", "trigger_event", "pain_point", "requirement"]
+    },
+    {
+      "template": "You're the {role} at a mid-sized manufacturing plant. Your CEO just returned from an industry conference excited about Industry 4.0 and wants a digital transformation roadmap. You're skeptical because {concern}, and your immediate priority is {priority}.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "concern", "priority"]
+    },
+    {
+      "template": "You're a {role} responsible for {area} at a {company_size} manufacturing company. A critical piece of equipment failed last month, costing ${cost} in downtime. Leadership is now open to predictive maintenance solutions, but you need to justify the investment against {competing_priority}.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "area", "company_size", "cost", "competing_priority"]
+    },
+    {
+      "template": "You're the {role} at a contract manufacturer serving {industry} customers. Your largest customer is requiring real-time supply chain visibility and {requirement} as a condition of renewing your contract. You have {timeframe} to demonstrate compliance.",
+      "complexity": "multi_stakeholder",
+      "variables": ["role", "industry", "requirement", "timeframe"]
+    },
+    {
+      "template": "You're a {role} at a family-owned manufacturing business. The founder is retiring, and the next generation wants to modernize operations. You've been tasked with evaluating {technology_category} solutions, but the company has never made a significant technology investment before.",
+      "complexity": "single_stakeholder",
+      "variables": ["role", "technology_category"]
+    }
+  ]
+}

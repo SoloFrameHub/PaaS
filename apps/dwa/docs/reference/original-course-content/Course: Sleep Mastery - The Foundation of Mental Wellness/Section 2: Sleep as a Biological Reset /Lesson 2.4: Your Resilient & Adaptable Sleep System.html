@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2.4: Your Resilient Sleep System</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --warning-text-heading: #E65100;
+            --warning-text-body: #666;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; margin-bottom: 20px; }
+        h3 { font-size: 20px; color: var(--brand-secondary-blue); margin-top: 25px; }
+        p { margin-bottom: 15px; }
+        strong { color: var(--brand-primary-blue); }
+
+        /* --- CORRECTED Sleep Window Adjuster --- */
+        .adjuster-tool {
+            background-color: #f0f7ff;
+            border: 1px solid var(--brand-secondary-blue);
+            border-radius: 8px;
+            padding: 25px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .input-container input[type="number"] {
+            width: 70px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .input-container span {
+            color: var(--brand-text-light);
+        }
+        .adjuster-button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 12px 25px;
+            background-color: var(--brand-secondary-blue);
+            color: white; border: none; border-radius: 5px; cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #adjuster-result {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: none; /* Hidden by default */
+        }
+        .result-maintain { background-color: #e3f2fd; color: #1565c0; }
+        .result-extend { background-color: #e8f5e9; color: var(--brand-green); }
+        .result-error { background-color: var(--warning-bg); color: var(--warning-text-heading); }
+
+        /* --- Tabbed Interface for Disruptions --- */
+        .tabs { display: flex; flex-wrap: wrap; border-bottom: 2px solid var(--brand-secondary-blue); }
+        .tab-link {
+            padding: 10px 15px; cursor: pointer; border: none;
+            background-color: transparent; font-size: 16px;
+            color: var(--brand-text-light); border-bottom: 3px solid transparent;
+        }
+        .tab-link.active {
+            color: var(--brand-primary-blue); font-weight: bold;
+            border-bottom-color: var(--brand-primary-blue);
+        }
+        .tab-content { display: none; padding: 20px; background-color: var(--brand-light-grey); border-radius: 0 0 8px 8px; }
+        .tab-content.active { display: block; }
+        
+        /* --- Other Components --- */
+        .autumns-note { background-color: #e8f5e9; border-left: 5px solid var(--brand-green); padding: 20px; font-style: italic; border-radius: 4px; }
+        .toolkit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .toolkit-category h3 { margin-top: 0; font-size: 18px; }
+        .checklist { list-style: none; padding-left: 0; }
+        .checklist-item { display: flex; align-items: flex-start; padding: 8px 0; }
+        .checklist-item input { margin-right: 15px; margin-top: 5px; }
+
+        .part-completion-box { background-color: #f0f7ff; border: 2px solid var(--brand-secondary-blue); border-radius: 8px; padding: 25px; text-align: center; }
+        
+        /* --- Crisis Resources --- */
+        .crisis-footer { background-color: var(--warning-bg); border: 1px solid var(--warning-border); padding: 15px; margin-top: 40px; border-radius: 4px; }
+        
+        @media (max-width: 768px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Lesson 2.4: Your Resilient & Adaptable Sleep System</h1>
+            <p class="lesson-subtitle">Maintaining Progress Through Life's Changes</p>
+        </header>
+
+        <section class="section">
+            <h2>From Following Rules to Inner Wisdom</h2>
+            <p>Welcome to our final lesson in Part 2. Over the past several lessons, you have built a beautiful and powerful foundation. You have the behavioral tools from Part 1 and a deep understanding of the biological 'why' from Part 2. Now, we move from learning the rules to cultivating the wisdom to adapt them.</p>
+            <p>Life isn't a perfectly controlled experiment. There will be travel, stressful weeks, and late nights with friends. A truly resilient system isn't one that never breaks; it's one that is flexible and can get back on track easily. Think of yourself as a gardener of your own well-being. Today, we'll learn how to gently tend to your sleep system, no matter the weather.</p>
+        </section>
+
+        <section class="section">
+            <h2>When and How to Adjust Your Sleep Window</h2>
+            <p>One of the most common questions I get in my practice is, "Do I have to stick to this short sleep window forever?" The answer is no! The initial window is a temporary tool to rebuild sleep pressure. Once your sleep becomes more efficient, we can gradually expand it.</p>
+            <p><strong>The Guideline:</strong> We aim for a Sleep Efficiency of about <strong>85-90%</strong>. If your efficiency is consistently higher than 90%, it's a sign your body is ready for a bit more time in bed. If it's below 80-85%, we hold steady.</p>
+            <p>Use the simple tool below to check in on your progress from the last week.</p>
+
+            <div class="adjuster-tool">
+                <h3>Sleep Window Adjuster</h3>
+                <div class="input-group">
+                    <label for="tib_hours">Enter your average Time in Bed (from the last week):</label>
+                    <div class="input-container">
+                        <input type="number" id="tib_hours" min="0" placeholder="0" aria-label="Time in Bed Hours"> <span>Hrs</span>
+                        <input type="number" id="tib_minutes" min="0" max="59" placeholder="0" aria-label="Time in Bed Minutes"> <span>Mins</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="tst_hours">Enter your average Total Sleep Time (from the last week):</label>
+                     <div class="input-container">
+                        <input type="number" id="tst_hours" min="0" placeholder="0" aria-label="Total Sleep Time Hours"> <span>Hrs</span>
+                        <input type="number" id="tst_minutes" min="0" max="59" placeholder="0" aria-label="Total Sleep Time Minutes"> <span>Mins</span>
+                    </div>
+                </div>
+                <button class="adjuster-button" onclick="calculateAdjustment()">Get My Recommendation</button>
+                <div id="adjuster-result"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Navigating Common Sleep Disruptions</h2>
+            <p>Here is some gentle guidance for maintaining your resilience when life gets in the way. The key in all these scenarios is to <strong>get back to your core routine as soon as possible.</strong></p>
+            
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'Travel')">✈️ Travel & Jet Lag</button>
+                <button class="tab-link" onclick="openTab(event, 'Stress')">🤯 High-Stress Periods</button>
+                <button class="tab-link" onclick="openTab(event, 'Illness')">🤧 Illness</button>
+                <button class="tab-link" onclick="openTab(event, 'Social')">🎉 Social Events</button>
+            </div>
+
+            <div id="Travel" class="tab-content active">
+                <h3>Travel & Jet Lag</h3>
+                <p>Be patient with your body. Adjust to the new time zone as quickly as possible by adopting local meal times and getting morning sunlight. If you have a bad night, don't nap for hours. Instead, stick to your routine and trust your body to recalibrate.</p>
+            </div>
+            <div id="Stress" class="tab-content">
+                <h3>High-Stress Periods</h3>
+                <p>During stressful times, your wind-down routine becomes even more critical. Don't skip it! Double down on the practices that calm you, like your "Worry Time" journal or gentle stretching. Protect your sleep schedule fiercely; it's your best defense against burnout.</p>
+            </div>
+            <div id="Illness" class="tab-content">
+                <h3>When You're Sick</h3>
+                <p>Listen to your body. When you're ill, your body needs more rest for immune function. This is a time to be flexible with your sleep window. Allow yourself to rest as much as you need, and then gently return to your schedule once you're feeling better.</p>
+            </div>
+            <div id="Social" class="tab-content">
+                <h3>Social Events & Late Nights</h3>
+                <p>It's important to live your life! Enjoy the late night. The next day, simply get up at your regular wake-up time (even if it's tough) and avoid napping. This gets you back on track in a single day. One late night does not erase your progress.</p>
+            </div>
+        </section>
+
+        <section class="section">
+             <div class="autumns-note">
+                <h3>What if I Just Can't Sleep? The Power of "Non-Sleep Deep Rest"</h3>
+                <p>"Sometimes, despite our best efforts, sleep just doesn't come. In these moments, I invite you to change the goal. Instead of striving for sleep, strive for rest. Lying quietly in the dark, focusing on your breath, is still profoundly restorative for your nervous system. This is often called Non-Sleep Deep Rest (NSDR). By giving yourself permission to just rest, you take the pressure off, which paradoxically makes sleep more likely to arrive."</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Your Personalized Sleep Toolkit</h2>
+            <p>You have learned so many tools. Let's review them and 'pack your toolkit' so you feel prepared for any situation.</p>
+            <div class="toolkit-grid">
+                <div class="toolkit-category">
+                    <h3>Foundational Tools</h3>
+                    <ul class="checklist">
+                        <li class="checklist-item"><input type="checkbox" checked> Sleep Diary</li>
+                        <li class="checklist-item"><input type="checkbox" checked> Sleep Window & Schedule</li>
+                    </ul>
+                </div>
+                <div class="toolkit-category">
+                    <h3>Mental Tools</h3>
+                    <ul class="checklist">
+                        <li class="checklist-item"><input type="checkbox" checked> The 3 C's Technique</li>
+                        <li class="checklist-item"><input type="checkbox" checked> Scheduled Worry Time</li>
+                    </ul>
+                </div>
+                <div class="toolkit-category">
+                    <h3>Environmental Tools</h3>
+                     <ul class="checklist">
+                        <li class="checklist-item"><input type="checkbox" checked> Stimulus Control Rule</li>
+                        <li class="checklist-item"><input type="checkbox" checked> Sleep Sanctuary (Cool, Dark, Quiet)</li>
+                    </ul>
+                </div>
+                 <div class="toolkit-category">
+                    <h3>Wellness Tools</h3>
+                     <ul class="checklist">
+                        <li class="checklist-item"><input type="checkbox" checked> Gentle Nutrition & Hydration</li>
+                        <li class="checklist-item"><input type="checkbox" checked> Non-Sleep Deep Rest (NSDR)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+             <div class="part-completion-box">
+                <h2>Congratulations! You've Completed Part 2</h2>
+                <p>You have successfully moved from learning the 'how' to understanding the 'why.' You don't just have a set of rules; you have a responsive, resilient system that you can adapt to your life. You have the wisdom to be your own guide.</p>
+                <p>This is a huge achievement. Take a moment to honor the care and commitment you've shown yourself. We're excited to see you in the next part of the course!</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="crisis-footer">
+                <h3>Crisis Resources & Immediate Support</h3>
+                <p>This course is educational. If you're in immediate danger, please use the resources below.</p>
+                <ul><li><strong>Emergency Services:</strong> 911</li><li><strong>National Suicide Prevention Lifeline:</strong> 988</li><li><strong>Crisis Text Line:</strong> Text HOME to 741741</li></ul>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        function calculateAdjustment() {
+            const tibHours = parseInt(document.getElementById('tib_hours').value) || 0;
+            const tibMinutes = parseInt(document.getElementById('tib_minutes').value) || 0;
+            const tstHours = parseInt(document.getElementById('tst_hours').value) || 0;
+            const tstMinutes = parseInt(document.getElementById('tst_minutes').value) || 0;
+            const resultDiv = document.getElementById('adjuster-result');
+            
+            const totalTibInMinutes = (tibHours * 60) + tibMinutes;
+            const totalTstInMinutes = (tstHours * 60) + tstMinutes;
+
+            resultDiv.className = ''; // Reset classes
+
+            if (totalTibInMinutes <= 0) {
+                resultDiv.classList.add('result-error');
+                resultDiv.textContent = 'Please enter a "Time in Bed" greater than zero.';
+                resultDiv.style.display = 'block';
+                return;
+            }
+             if (totalTstInMinutes > totalTibInMinutes) {
+                resultDiv.classList.add('result-error');
+                resultDiv.textContent = 'Please enter valid times. Sleep time cannot exceed time in bed.';
+                resultDiv.style.display = 'block';
+                return;
+            }
+
+            const efficiency = Math.round((totalTstInMinutes / totalTibInMinutes) * 100);
+            let message = `Your Sleep Efficiency is ${efficiency}%. `;
+            
+            if (efficiency > 90) {
+                message += "Recommendation: Your sleep is very consolidated! You can consider extending your time in bed by 15-30 minutes.";
+                resultDiv.classList.add('result-extend');
+            } else if (efficiency >= 85 && efficiency <= 90) {
+                message += "Recommendation: This is a great efficiency range! You are right on track. Maintain your current schedule.";
+                resultDiv.classList.add('result-maintain');
+            } else if (efficiency >= 80 && efficiency < 85) {
+                message += "Recommendation: You're in a good place. Continue to maintain your current schedule to build more consistency.";
+                 resultDiv.classList.add('result-maintain');
+            } else {
+                 message += "Recommendation: Your efficiency is still building. It's best to stick with your current schedule to strengthen it. Be patient and trust the process.";
+                 resultDiv.classList.add('result-error');
+            }
+            
+            resultDiv.textContent = message;
+            resultDiv.style.display = 'block';
+        }
+
+        function openTab(evt, tabName) {
+            const tabcontent = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            const tablinks = document.getElementsByClassName("tab-link");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

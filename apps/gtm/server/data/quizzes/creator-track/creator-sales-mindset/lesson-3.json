@@ -1,0 +1,91 @@
+{
+    "lessonId": "3",
+    "courseId": "creator-sales-mindset",
+    "sectionId": "creator-track",
+    "title": "Serve First, Sell Second Philosophy",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the Doctor Diagnosis Model, what is the most powerful sales move a creator can make?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Presenting a polished pitch deck with impressive visuals"
+                },
+                {
+                    "id": "b",
+                    "text": "Offering a significant discount to close the deal quickly"
+                },
+                {
+                    "id": "c",
+                    "text": "Articulating the prospect's problem more precisely than they can articulate it themselves, which immediately builds trust in your ability to solve it"
+                },
+                {
+                    "id": "d",
+                    "text": "Sharing your personal story of overcoming the same challenge"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "When you name and clarify a prospect's problem better than they can describe it themselves, they instantly trust that you can solve it. This requires no manipulation -- only genuine expertise and careful listening. It is the hallmark of the diagnostic approach."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the critical distinction between what you give away for free and what you charge for?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Give away basic information for free and charge for advanced information"
+                },
+                {
+                    "id": "b",
+                    "text": "Give away the diagnosis (what the problem is and what needs to happen) for free, and charge for the implementation (helping them actually do it with your framework, support, and guidance)"
+                },
+                {
+                    "id": "c",
+                    "text": "Never give anything away for free because it devalues your expertise"
+                },
+                {
+                    "id": "d",
+                    "text": "Give away implementation for free and charge for ongoing access to your community"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Like a doctor who tells you for free that you need to lose weight but charges for the structured program, creators should freely diagnose problems (which builds trust via reciprocity) while charging for the implementation -- the framework, accountability, and guided process that produces results."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why does the lesson recommend sometimes telling a prospect 'I don't think I'm the right fit for you'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To create artificial scarcity and make the prospect want you more"
+                },
+                {
+                    "id": "b",
+                    "text": "Because it is a negotiation tactic that makes them offer more money"
+                },
+                {
+                    "id": "c",
+                    "text": "Because honest fit assessment builds immense trust, leads to referrals, and means the prospect will return if their situation changes"
+                },
+                {
+                    "id": "d",
+                    "text": "To avoid the discomfort of actually making a sales offer"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Honestly declining a poor-fit prospect is a counterintuitive power move. The prospect remembers you as someone who prioritized their best interest over your own revenue. This builds deep trust, generates referrals, and often means they come back when their situation aligns with your offer."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design your own Diagnostic Sales Call by writing out 4-5 specific questions you would ask in Phase 1 (Context Gathering) and 2-3 insights you could offer in Phase 2 (Problem Clarification) for your specific offer and audience. Explain how these questions lead naturally to your paid solution.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student has created specific, thoughtful questions tailored to their particular audience and offer -- not generic sales questions. The Phase 1 questions should demonstrate genuine curiosity about the prospect's situation. The Phase 2 insights should show the student can add diagnostic value before selling. Look for a logical flow from questions to diagnosis to paid solution."
+        }
+    ]
+}

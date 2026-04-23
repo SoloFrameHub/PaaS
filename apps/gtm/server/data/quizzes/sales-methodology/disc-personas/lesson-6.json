@@ -1,0 +1,133 @@
+{
+    "title": "Lesson 6 Quiz",
+    "questions": [
+        {
+            "question": "What are the two binary questions you need to answer to diagnose a DISC type?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Are they rich or poor? Are they smart or dumb?"
+                },
+                {
+                    "id": "b",
+                    "text": "How fast is their motor (Pace)? Where is their compass pointed (Focus)?"
+                },
+                {
+                    "id": "c",
+                    "text": "Do they like me? Do they hate me?"
+                },
+                {
+                    "id": "d",
+                    "text": "Are they technical? Are they business?"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The DISC matrix is formed by the intersection of Pace (Fast/Measured) and Focus (Task/People).",
+            "id": "q1",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "You meet a prospect who speaks slowly, pauses often, and asks questions about 'how this affects the team.' What type are they likely?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Dominant (D)"
+                },
+                {
+                    "id": "b",
+                    "text": "Influential (I)"
+                },
+                {
+                    "id": "c",
+                    "text": "Steady (S)"
+                },
+                {
+                    "id": "d",
+                    "text": "Conscientious (C)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Slow/Measured Pace + People Focus = Steady (S). They care about the team and stability.",
+            "id": "q2",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "A prospect sends you a one-line email: 'Send pricing deck. Meeting Tuesday confirmed.' What type is this?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Dominant (D)"
+                },
+                {
+                    "id": "b",
+                    "text": "Influential (I)"
+                },
+                {
+                    "id": "c",
+                    "text": "Steady (S)"
+                },
+                {
+                    "id": "d",
+                    "text": "Conscientious (C)"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Short, direct, task-oriented, no fluff. This is classic High-D communication.",
+            "id": "q3",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "Why is the 'Diagonal' relationship (e.g., C selling to I) considered the 'Danger Zone'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because they are too similar"
+                },
+                {
+                    "id": "b",
+                    "text": "Because they are opposites in BOTH Pace and Focus"
+                },
+                {
+                    "id": "c",
+                    "text": "Because they compete for dominance"
+                },
+                {
+                    "id": "d",
+                    "text": "Because they both want to talk about feelings"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A C is Slow+Task. An I is Fast+People. They share no common ground naturally. The C thinks the I is shallow; the I thinks the C is boring.",
+            "id": "q4",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "How fast should you aim to diagnose the primary DISC type in a call?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Within the first 2 minutes (120 seconds)"
+                },
+                {
+                    "id": "b",
+                    "text": "By the end of the call"
+                },
+                {
+                    "id": "c",
+                    "text": "After the third meeting"
+                },
+                {
+                    "id": "d",
+                    "text": "Before the call starts, using LinkedIn only"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "You need to know the type *before* you start your main pitch, so you can adapt. The first 2 minutes of small talk (or lack thereof) provides the signals.",
+            "id": "q5",
+            "type": "multiple-choice"
+        }
+    ],
+    "sectionId": "sales-methodology",
+    "courseId": "disc-personas",
+    "lessonId": "6"
+}

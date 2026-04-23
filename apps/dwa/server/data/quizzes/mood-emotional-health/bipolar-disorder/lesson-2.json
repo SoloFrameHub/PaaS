@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the most important variable to track daily for bipolar disorder management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Calorie intake"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Exercise duration"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleep (hours and quality)"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Social media usage"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Sleep is the most important variable to track because changes in sleep are often the earliest warning sign of an impending mood episode. Even one night of lost sleep can precipitate mania, making sleep monitoring the cornerstone of bipolar self-management."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the correct structure for a response plan?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "\"I will try to feel better when I notice changes\""
+                },
+                {
+                    "id": "opt2",
+                    "text": "\"If I notice [warning sign] for [number of days], I will [specific action]\""
+                },
+                {
+                    "id": "opt3",
+                    "text": "\"I will stop all activities until the episode passes\""
+                },
+                {
+                    "id": "opt4",
+                    "text": "\"I will increase my medication on my own when I notice warning signs\""
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A response plan follows the structure: 'If I notice [warning sign] for [number of days], I will [specific action].' This turns awareness into concrete action by specifying the trigger, a threshold, and a predetermined response -- removing the need for decision-making during a vulnerable time."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is retrospective recall (remembering your mood at a later appointment) unreliable for bipolar disorder management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "People with bipolar disorder have permanent memory impairment"
+                },
+                {
+                    "id": "opt2",
+                    "text": "We tend to overestimate depressive severity, underestimate hypomanic symptoms, and forget timelines"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Doctors prefer to rely on blood tests rather than patient reports"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Memory only works for events that happened in the last 24 hours"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that retrospective recall is unreliable because we tend to remember recent mood states more than past ones, overestimate severity during depressive episodes, underestimate hypomanic symptoms (which can feel normal or even good), and forget the timeline of symptom changes. Consistent tracking replaces guesswork with data."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is an important limitation of self-monitoring mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It is too expensive for most people"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It requires a medical degree to interpret the data"
+                },
+                {
+                    "id": "opt3",
+                    "text": "During full mania, you may not recognize that you are manic, which is why trusted contacts and care team involvement matter"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Self-monitoring always increases anxiety and should be avoided"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "One of the key limitations of self-monitoring is that insight may be impaired during episodes. During full mania, a person may not recognize that they are manic -- symptoms can feel like 'finally feeling good.' This is why having trusted contacts and care team involvement is essential alongside self-monitoring."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does the lesson recommend as the best starting point if tracking all variables feels overwhelming?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Wait until you feel ready to track everything at once"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start with just mood and sleep, then add more variables once the habit is established"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only track during episodes, not between them"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Have someone else track for you"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson recommends starting with just mood and sleep if tracking everything feels overwhelming. These are the two most important variables for bipolar disorder management. Once the daily habit is established, you can add more variables like energy, irritability, and impulsivity."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "bipolar-disorder",
+    "lessonId": "2",
+    "title": "Mood Tracking and Early Warning Signs - Quiz"
+}

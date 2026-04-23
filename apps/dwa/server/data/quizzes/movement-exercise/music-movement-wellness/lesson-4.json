@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why does extending your exhale longer than your inhale activate the parasympathetic (calming) nervous system?",
+      "options": [
+        {"id": "opt1", "text": "Long exhales increase oxygen to the brain"},
+        {"id": "opt2", "text": "Long exhales stimulate the vagus nerve, which increases the 'vagal brake' on heart rate and activates rest-and-digest response"},
+        {"id": "opt3", "text": "Exhale length has no effect on nervous system function"},
+        {"id": "opt4", "text": "Long exhales only work if done while exercising"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The vagus nerve connects your brainstem to heart, lungs, and digestive system. Slow, extended exhales stimulate the vagus nerve, which applies a 'vagal brake' to your heart rate (slowing it down) and activates the parasympathetic (rest-and-digest) branch of your autonomic nervous system. This is the neurobiological mechanism behind calming breath practices like 4-7-8 breath."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "You're feeling anxious before a presentation and have 2 minutes. Which breath practice is most effective for rapid calming?",
+      "options": [
+        {"id": "opt1", "text": "Bellows breath (rapid forceful breathing)"},
+        {"id": "opt2", "text": "4-7-8 breath (inhale 4, hold 7, exhale 8) repeated 3-4 times"},
+        {"id": "opt3", "text": "Hold your breath as long as possible"},
+        {"id": "opt4", "text": "Hyperventilate to increase oxygen"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "4-7-8 breath is designed for rapid calming. The long exhale (8 counts) activates the parasympathetic nervous system, and 3-4 rounds take about 90 seconds—perfect for acute pre-event anxiety. Bellows breath increases arousal (wrong direction). Prolonged breath-holding can trigger panic. Hyperventilation worsens anxiety symptoms."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is 'coherent breathing' and why is it beneficial for long-term stress resilience?",
+      "options": [
+        {"id": "opt1", "text": "Breathing only through your mouth"},
+        {"id": "opt2", "text": "Inhaling and exhaling for equal counts (typically 5 seconds each, ~6 breaths/minute) to maximize heart rate variability (HRV)—a key marker of nervous system flexibility and stress resilience"},
+        {"id": "opt3", "text": "Holding your breath between each inhale and exhale"},
+        {"id": "opt4", "text": "Breathing in sync with another person"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Coherent breathing (5-second inhale, 5-second exhale, approximately 6 breaths per minute) maximizes heart rate variability (HRV)—the variation in time between heartbeats. Higher HRV indicates a flexible, resilient nervous system and correlates with better emotional regulation, lower anxiety, and improved cardiovascular health. Daily coherent breathing (10-20 minutes) builds cumulative stress resilience."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "How can music at 60 BPM support breathwork practices?",
+      "options": [
+        {"id": "opt1", "text": "It can't—music and breath are unrelated"},
+        {"id": "opt2", "text": "60 BPM equals 1 beat per second, which allows you to count breath cycles to the music's rhythm (e.g., inhale for 4 beats = 4 seconds) without mental counting"},
+        {"id": "opt3", "text": "60 BPM is too slow to be useful"},
+        {"id": "opt4", "text": "Only classical music works for breathwork"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "60 BPM music provides a 1-beat-per-second rhythm, which makes breath pacing intuitive: inhale for 4 beats = 4 seconds, exhale for 6 beats = 6 seconds. This frees you from mentally counting and makes breathwork feel more effortless. Many calming tracks ('Weightless' by Marconi Union, for example) are designed at 60 BPM specifically to support breath regulation."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When should you avoid intense breathwork practices (like bellows breath or extended breath-holds)?",
+      "options": [
+        {"id": "opt1", "text": "When you want to feel more energized"},
+        {"id": "opt2", "text": "When you have panic disorder, asthma, COPD, cardiovascular conditions, or when rapid breathing triggers dizziness or anxiety"},
+        {"id": "opt3", "text": "When you're listening to music"},
+        {"id": "opt4", "text": "Never—intense breathwork is always safe"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Intense breathwork (rapid breathing, extended holds) can trigger dizziness, tingling, or anxiety in people with panic disorder, and can be dangerous for those with asthma, COPD, or cardiovascular conditions. If you have these conditions, stick to gentle practices (coherent breathing, long exhales) and consult a healthcare provider before attempting intense techniques. Safety and individual variation matter."
+    }
+  ],
+  "sectionId": "movement-exercise",
+  "courseId": "music-movement-wellness",
+  "lessonId": "4",
+  "title": "Breath, Rhythm, and Nervous System Regulation - Quiz"
+}

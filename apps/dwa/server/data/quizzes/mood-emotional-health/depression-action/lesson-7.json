@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What effect size did the Mediterranean diet show for reducing depressive symptoms?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "No effect at all"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Moderate effect (SMD = -0.53) with significant reduction in symptoms"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only effective for severe depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The Mediterranean diet increases depression"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Mediterranean Diet meta-analysis (2024) showed a moderate effect size (SMD = -0.53) with significant reduction in depressive symptoms. Benefits were seen within weeks of dietary changes. This supports nutrition as a meaningful component of depression management."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the relationship between sleep and depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Sleep has no connection to depression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Bidirectional - poor sleep increases depression risk, and depression disrupts sleep; 80%+ of depressed people have insomnia"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only depression affects sleep, not the reverse"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sleeping more always helps depression"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep and depression have a bidirectional relationship: poor sleep increases depression risk (insomnia doubles it), while depression disrupts sleep. Over 80% of people with depression experience insomnia. Poor sleep maintains depression even when other factors improve."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why should alcohol NOT be used as a sleep aid or coping mechanism for depression?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Alcohol is expensive"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Alcohol is a CNS depressant that provides temporary relief but worsens depression long-term, disrupts sleep architecture, and can interfere with treatment"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Alcohol has no effect on depression"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Alcohol only affects sleep, not mood"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Alcohol is a central nervous system depressant that may provide temporary relief but worsens depression long-term. It disrupts sleep architecture (even if it helps you fall asleep), can interfere with medication effectiveness, and using it to cope is a warning sign."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are the four domains of sleep hygiene?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Only the bedroom environment matters"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Schedule/timing, pre-sleep routine, sleep environment, and substances/activities"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Pillows, mattress, blankets, and sheets"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sleep hygiene has no defined domains"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The four domains of sleep hygiene are: (1) Schedule and timing (consistent bed/wake times), (2) Pre-sleep routine (wind-down activities, dim lights), (3) Sleep environment (dark, cool, quiet), and (4) Substances and activities (caffeine, alcohol, screens, exercise timing)."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Worry Time' technique for managing racing thoughts at night?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Worry as much as possible right before bed"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Schedule 15 minutes earlier in the day to write out worries, so when they arise at night you can remind yourself they've been addressed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never think about worries at all"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Set an alarm to wake up and worry"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The Worry Time technique involves scheduling 15 minutes earlier in the day to write out worries. When worries arise at night, you remind yourself: 'I've already addressed that during worry time.' This contains worry to a specific time rather than letting it invade sleep."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "depression-action",
+    "lessonId": "7",
+    "title": "Food, Sleep, and Lifestyle Factors - Quiz"
+}

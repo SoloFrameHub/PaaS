@@ -1,0 +1,60 @@
+{
+  "id": "activity-mood-log",
+  "title": "Activity-Mood Log",
+  "description": "Track how activities affect your mood. Log activities throughout the day to discover what boosts your energy and motivation.",
+  "instructions": "Record an activity you did (or are about to do) and rate your mood before and after. Log as many entries as you like each day.",
+  "frequency": "per-event",
+  "fields": [
+    {
+      "id": "timeOfDay",
+      "label": "Time of day",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "morning", "label": "Morning" },
+        { "value": "midday", "label": "Midday" },
+        { "value": "afternoon", "label": "Afternoon" },
+        { "value": "evening", "label": "Evening" }
+      ]
+    },
+    {
+      "id": "activity",
+      "label": "What did you do?",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Went for a 15-minute walk"
+    },
+    {
+      "id": "moodBefore",
+      "label": "Mood before (0 = very low, 10 = great)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "moodAfter",
+      "label": "Mood after (0 = very low, 10 = great)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "pleasure",
+      "label": "Pleasure/enjoyment (0 = none, 10 = very high)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "mastery",
+      "label": "Sense of accomplishment (0 = none, 10 = very high)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 10
+    }
+  ]
+}

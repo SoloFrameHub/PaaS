@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFYRWNQKZG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-SFYRWNQKZG");
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020408">
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/src/css/fonts.css">
+    <title>Five Layers, One OS: The Architecture Behind GTM OS | SoloFrameHub</title>
+    <meta name="description" content="Most platforms are a course with extras. GTM OS is five integrated layers - Learn, Practice, Execute, Connect, and Measure - where each layer's output feeds the next.">
+    <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+    <link rel="canonical" href="https://soloframehub.com/blog-five-layers.html"/>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soloframehub.com/blog-five-layers.html">
+    <meta property="og:title" content="Five Layers, One OS: The Architecture Behind GTM OS">
+    <meta property="og:description" content="Most platforms are a course with extras. GTM OS is five integrated layers - each one feeds the next. Here's how the architecture works.">
+    <meta property="og:image" content="https://soloframehub.com/assets/images/integrated-intelligence.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Five Layers, One OS: The Architecture Behind GTM OS">
+    <meta name="twitter:description" content="Learn, Practice, Execute, Connect, Measure - five integrated layers where each layer's output becomes the next layer's input.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Five Layers, One OS: The Architecture Behind GTM OS",
+      "datePublished": "2026-03-30",
+      "dateModified": "2026-03-30",
+      "author": {"@id": "https://soloframehub.com/#mike-sullivan", "@type": "Person", "name": "Mike Sullivan", "image": "https://soloframehub.com/assets/images/academy/mike-sullivan-author-creator-solo-founder.webp", "sameAs": ["https://linkedin.com/in/michaeljsullivan", "https://www.linkedin.com/company/soloframehub", "https://x.com/soloframehub"]},
+      "publisher": {"@type": "Organization", "name": "SoloFrameHub", "url": "https://soloframehub.com"},
+      "url": "https://soloframehub.com/blog-five-layers.html",
+      "description": "Most platforms are a course with extras. GTM OS is five integrated layers - Learn, Practice, Execute, Connect, and Measure - where each layer's output feeds the next."
+    }
+    </script>
+    <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    <style>body { font-family: 'Inter', sans-serif; } .font-serif-custom { font-family: 'Newsreader', serif; }</style>
+</head>
+<body class="bg-[#020408] min-h-screen flex flex-col items-center text-zinc-300">
+    <main class="w-full max-w-[1400px] relative z-10 flex flex-col bg-black/20 lg:rounded-[2.5rem] lg:my-8 lg:border lg:border-white/5 shadow-2xl overflow-hidden">
+        <!-- Navigation -->
+        <nav class="sticky top-0 z-50 border-b border-white/5 bg-[#020408]/80 backdrop-blur-md px-6 py-6 md:px-12 flex items-center justify-between">
+            <a href="index.html"><img src="assets/images/soloframeHubLogo.png" alt="GTM OS" width="200" height="50" class="h-12 w-auto object-contain"></a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="founders-ai-customer-acquisition-playbook.html" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Book</a>
+                <a href="gtm-os.html" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">OS</a>
+                <a href="https://soloframehub.com/certified" class="text-lg font-medium text-zinc-300 hover:text-white transition-colors">Certified</a>
+                <div class="group relative px-2 py-1">
+                    <button class="text-lg font-medium text-zinc-300 hover:text-white transition-colors" aria-label="Platform menu" aria-haspopup="true">Platform</button>
+                    <div class="absolute top-full left-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                            <a href="https://soloframehub.com/readiness-score" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Readiness Score</a>
+                            <a href="https://soloframehub.com/compare" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Compare</a>
+                            <a href="platform-architecture.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Architecture</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative px-2 py-1">
+                    <button class="text-lg font-medium text-white transition-colors" aria-label="Resources menu" aria-haspopup="true">Resources</button>
+                    <div class="absolute top-full left-0 pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <div class="bg-[#09090b] border border-white/10 rounded-2xl p-3 shadow-2xl">
+                            <a href="blog-five-layers.html" class="block px-4 py-3 text-sm text-white bg-white/5 rounded-xl">Five Layers, One OS: Platform Architecture</a>
+                            <a href="blog-byok-integrations.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">6 BYOK Integrations</a>
+                            <a href="blog-quick-win-path.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Quick Win Path: First Win in 90 Minutes</a>
+                            <a href="blog-certified-gtm.html" class="block px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl">Certified GTM Practitioner Badge</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="es/index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">ES</a>
+            </div>
+            <a href="https://forms.soloframehub.com/forms/beta-tester" class="hidden sm:flex px-6 py-3 rounded-full bg-zinc-900 border border-white/10 text-sm font-medium text-white hover:bg-zinc-800 transition-all items-center gap-2">Start Free Beta</a>
+        </nav>
+
+        <!-- Article -->
+        <article class="max-w-2xl mx-auto px-6 py-16 md:py-24 w-full">
+            <div class="mb-10">
+                <p class="text-xs font-mono text-sky-400 mb-4">MARCH 30, 2026 · PLATFORM</p>
+                <h1 class="text-3xl md:text-4xl font-serif-custom text-white mb-4 leading-tight">Five Layers, One OS: The Architecture Behind GTM OS</h1>
+                <p class="text-lg text-zinc-400 leading-relaxed">Most platforms are a course with extras. GTM OS is five integrated layers - each one feeds the next.</p>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-8 text-sm md:text-base leading-relaxed text-zinc-300">
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Why layers matter</h2>
+                <p>Course platforms bolt features on. A course ships. Then a community tab gets added. Then a certificate. Then maybe a tool or two. Each addition is independent - they don't talk to each other, don't share state, and don't compound.</p>
+                <p>GTM OS was architected differently from the start. Five layers, each with a specific job, and each layer's output becomes the next layer's input. What you learn in Layer 1 shapes what you practice in Layer 2. What you build in Layer 2 gets deployed in Layer 3. How you perform in Layer 3 surfaces in Layer 5. The layers compound because they're connected - not bolted together after the fact.</p>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Layer 1: Learn</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-white font-semibold text-base">Learn</span>
+                        <span class="text-[10px] text-sky-400 font-mono bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-full">LAYER 1</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">49 courses, 487 lessons, 487 quizzes</strong> across 7 tracks - Foundations, Sales Methodology, Marketing Engine, AI Acquisition, Creator Track, Operations and Systems, Customer Success.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">165,000+ words of original curriculum.</strong> Not repurposed blog posts or AI-generated filler - purpose-built for B2B founders and their teams.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Smart onboarding.</strong> A 4-step intake analyzes your business context - stage, industry, goals, bottlenecks - and personalizes your learning path before you open your first lesson.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Free 98,000-word book</strong> bundled with the platform, with RAG-powered semantic search so you can ask questions and get answers grounded in the actual text.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Layer 2: Practice</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-white font-semibold text-base">Practice</span>
+                        <span class="text-[10px] text-sky-400 font-mono bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-full">LAYER 2</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Voice-enabled AI roleplay</strong> against 4 DISC buyer types - Dominant, Influential, Steady, Conscientious - across 80+ industries. Practice discovery, demos, objection handling, and closing conversations before they happen in real deals.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Versioned artifact builders.</strong> ICP document, positioning statement, email sequences, discovery playbook, objection library - each one versioned so you can track how your thinking evolves.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Interactive workshops</strong> that pull in your actual business data from the onboarding intake - so exercises reflect your real market, not a generic example.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Layer 3: Execute</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-white font-semibold text-base">Execute</span>
+                        <span class="text-[10px] text-sky-400 font-mono bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-full">LAYER 3</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Kanban pipeline board</strong> with deal tracking - stage, value, next action, last touch - so your live pipeline sits inside the same OS you learned from.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Outreach log by channel</strong> - email, LinkedIn, phone, WhatsApp - with timestamps and outcome tracking for each touchpoint.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">6 BYOK integrations: Attio, Pipedrive, Hunter.io, Notion, Brevo, WhatsApp Business.</strong> Your own API keys. No SaaS tax. Nothing stored on our servers.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">ICP Builder workbench</strong> with enrichment - combine Hunter.io email finding with Attio firmographic data to qualify and contact prospects without leaving the OS.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Layer 4: Connect</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-white font-semibold text-base">Connect</span>
+                        <span class="text-[10px] text-sky-400 font-mono bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-full">LAYER 4</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">DISC-matched accountability pods</strong> of 4-6 founders - matched on communication style and business stage so pod dynamics are productive rather than generic.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">NodeBB-powered community forum</strong> with structured categories, voting, activity feed, and member directory - not a Discord server with pinned posts.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Automated n8n facilitator rhythm.</strong> Monday kickoff posts, Wednesday mid-week nudges, Friday synthesis - generated per-pod by AI and posted automatically so no pod goes quiet.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Milestone celebrations</strong> posted to pods automatically when members hit achievements - so the community sees real progress, not just announcements.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">Layer 5: Measure</h2>
+                <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 my-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-white font-semibold text-base">Measure</span>
+                        <span class="text-[10px] text-sky-400 font-mono bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-full">LAYER 5</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Context-aware AI coach</strong> with RAG search across your documents and the full lesson library - answers are grounded in both your business context and the curriculum, not generic advice.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">5-dimension readiness tracking</strong> with before/after deltas - so you can see which competency areas moved and which are still gaps after each learning cycle.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">AI coaching nudges</strong> with specific daily recommendations - not generic "keep going" messages, but next-action suggestions based on your actual progress data.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">40+ achievement badges</strong> across 4 tiers, with Badgr Open Badges 3.0 certification - shareable credentials that live outside the platform.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">-</span> <span><strong class="text-white">Chatwoot live support</strong> built into the platform for real-time help when you're stuck - not a chatbot queue.</span></li>
+                    </ul>
+                </div>
+
+                <h2 class="text-xl font-medium text-white mt-10 mb-3">The numbers</h2>
+                <p>Building five integrated layers across one platform requires infrastructure that most course tools don't expose. Here's what's running under the hood.</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 my-6">
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-4 text-center">
+                        <p class="text-2xl font-semibold text-white mb-1">70</p>
+                        <p class="text-xs text-zinc-500">page routes</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-4 text-center">
+                        <p class="text-2xl font-semibold text-white mb-1">49</p>
+                        <p class="text-xs text-zinc-500">API endpoints</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-4 text-center">
+                        <p class="text-2xl font-semibold text-white mb-1">14</p>
+                        <p class="text-xs text-zinc-500">database tables</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-4 text-center">
+                        <p class="text-2xl font-semibold text-white mb-1">13</p>
+                        <p class="text-xs text-zinc-500">AI task types</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-4 text-center">
+                        <p class="text-2xl font-semibold text-white mb-1">6</p>
+                        <p class="text-xs text-zinc-500">integrations</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-4 text-center">
+                        <p class="text-2xl font-semibold text-white mb-1">487</p>
+                        <p class="text-xs text-zinc-500">lessons</p>
+                    </div>
+                </div>
+                <p>None of these numbers matter on their own. What matters is that they connect - a deal in the pipeline feeds coaching nudges in Layer 5. A quiz score in Layer 1 shapes the roleplay difficulty in Layer 2. A pod milestone in Layer 4 updates your progress dashboard in Layer 5. That's what a platform architecture looks like when it's designed as a system instead of assembled as a product.</p>
+
+                <div class="border-t border-white/5 pt-8 mt-12">
+                    <div class="bg-zinc-900/50 border border-white/8 rounded-xl p-5 mb-6">
+                        <p class="text-[10px] font-mono text-sky-400 mb-2">BUILT WITH CLAUDE CODE</p>
+                        <p class="text-sm text-zinc-300 leading-relaxed">The entire GTM OS was built by a founder using Claude Code. No engineering team. No agency. Self-hosted on a single VPS for under $100/month. <a href="index.html" class="text-sky-400 hover:text-sky-300">Learn the full story.</a></p>
+                    </div>
+                    <p class="text-xs text-zinc-500 mb-4">FILED UNDER: PLATFORM · ARCHITECTURE · PRODUCT</p>
+                    <a href="https://forms.soloframehub.com/forms/beta-tester" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sky-700 hover:bg-sky-600 text-white text-sm font-medium transition-colors">Start Free Beta <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Related posts -->
+        <section class="border-t border-white/5 px-6 md:px-12 py-12 max-w-2xl mx-auto w-full">
+            <p class="text-xs font-mono text-zinc-500 mb-6">MORE FROM THE BLOG</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="blog-byok-integrations.html" class="bg-zinc-900/40 border border-white/8 rounded-xl p-5 hover:border-white/20 transition-colors">
+                    <p class="text-xs text-zinc-500 mb-2">MARCH 30, 2026</p>
+                    <p class="text-sm font-medium text-white">6 BYOK Integrations: Your Tools, Your Keys, Inside the GTM OS</p>
+                </a>
+                <a href="blog-quick-win-path.html" class="bg-zinc-900/40 border border-white/8 rounded-xl p-5 hover:border-white/20 transition-colors">
+                    <p class="text-xs text-zinc-500 mb-2">MARCH 27, 2026</p>
+                    <p class="text-sm font-medium text-white">Quick Win Path: First Win in 90 Minutes</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black/50 border-t border-white/5 py-12 px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="assets/images/soloframeHubLogo.png" alt="GTM OS" width="200" height="50" class="h-6 w-auto object-contain"><span class="text-sm text-zinc-400 ml-2">© 2026</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400">
+                    <a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a>
+                    <a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="https://soloframehub.com/certified" class="hover:text-white transition-colors">Certified</a>
+                    <a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

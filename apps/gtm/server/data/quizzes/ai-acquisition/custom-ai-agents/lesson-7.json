@@ -1,0 +1,84 @@
+{
+  "lessonId": "7",
+  "courseId": "custom-ai-agents",
+  "sectionId": "ai-acquisition",
+  "title": "Agent 5: Post-Call Summary Agent",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What seven outputs does the Post-Call Summary Agent generate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transcript, recording, notes, action items, follow-up date, next meeting, deal status"
+        },
+        {
+          "id": "b",
+          "text": "Executive summary, key pain points with quotes, commitments made, next steps, deal stage assessment, red flags, talking points for next call"
+        },
+        {
+          "id": "c",
+          "text": "Name, company, budget, timeline, authority, need, competition"
+        },
+        {
+          "id": "d",
+          "text": "Call duration, talk ratio, sentiment score, keywords, topics, questions asked, objections"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The agent generates: executive summary (2-3 sentences), key pain points (with direct quotes), commitments made (with deadlines), next steps (for both parties), deal stage assessment, red flags (budget concerns, competing solutions), and talking points for the next call."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why is the Post-Call Summary Agent described as the 'highest-ROI agent'?",
+      "options": [
+        { "id": "a", "text": "It's the cheapest to build" },
+        {
+          "id": "b",
+          "text": "It improves close rates (you remember what matters), speeds onboarding (complete handoff context), and reduces churn (you deliver what you promised)"
+        },
+        { "id": "c", "text": "It generates the most revenue directly" },
+        { "id": "d", "text": "It replaces the need for a CRM" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Post-Call Summary Agent has the highest ROI because it impacts three revenue levers: higher close rates (you remember key details), faster onboarding (handoff context is complete), and lower churn (you deliver what was actually promised, not what you vaguely recall). Manual notes only capture 30-40% vs the agent's 80-90%."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What happened in the $40K churn story that the Post-Call Summary Agent would have prevented?",
+      "options": [
+        { "id": "a", "text": "The customer couldn't afford the product" },
+        {
+          "id": "b",
+          "text": "Sarah couldn't remember the client's original pain points or promises she'd made, leading to misalignment and churn after 4 months"
+        },
+        { "id": "c", "text": "The product had a bug" },
+        { "id": "d", "text": "A competitor offered a lower price" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarah closed a $40K deal but churned the client 4 months later because she couldn't remember specific pain points or promises from the original call. Her CRM notes said 'Good call. Moving forward.' Structured call summaries with commitments and success metrics would have prevented the misalignment."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "It's possible to take detailed, structured notes during a call while also maintaining rapport and active listening.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Typing detailed notes while maintaining rapport on a call is effectively impossible. You either sacrifice note quality or sacrifice presence. The Post-Call Summary Agent solves this by processing the call transcript after the fact, letting you be fully present during the conversation."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Think about your last 3 sales calls. How complete were your notes? What details did you miss that could have helped close the deal or improve the customer relationship? How would a Post-Call Summary Agent have changed the outcome?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response honestly assesses the quality of their actual call notes, identifies specific missed details (pain points, commitments, objections), and explains how structured summaries would have improved outcomes. Look for concrete examples rather than generic statements about note-taking."
+    }
+  ]
+}

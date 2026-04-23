@@ -1,0 +1,141 @@
+{
+    "lessonId": "6",
+    "courseId": "icp-builder",
+    "sectionId": "foundations",
+    "title": "Behavioral Signals - When Timing is Everything",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the key difference between Static Data and Dynamic Signals?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Static Data changes weekly; Dynamic Signals never change."
+                },
+                {
+                    "id": "b",
+                    "text": "Static Data tells you 'who' they are; Dynamic Signals tell you 'what state' they are in (timing)."
+                },
+                {
+                    "id": "c",
+                    "text": "Static Data is for B2B; Dynamic Signals are for B2C."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Static data (size, location) confirms fit. Dynamic signals (hiring, funding) confirm timing/urgency."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is a 'New Executive' (Job Change < 90 days) such a powerful sales signal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They don't know how to say 'no' yet."
+                },
+                {
+                    "id": "b",
+                    "text": "They have a mandate for change, a budget, and no loyalty to legacy tools."
+                },
+                {
+                    "id": "c",
+                    "text": "They usually have a smaller budget than the previous person."
+                },
+                {
+                    "id": "d",
+                    "text": "They are lonely and want to talk to salespeople."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "New leaders are hired to fix problems. They are 10x more likely to buy new solutions to make their mark."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "If a company posts a job description for a specific role (e.g., 'React Developer'), what does this signal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are firing people."
+                },
+                {
+                    "id": "b",
+                    "text": "They have an internal gap or pain point that they are trying to solve with a human."
+                },
+                {
+                    "id": "c",
+                    "text": "They are too busy to talk to you."
+                },
+                {
+                    "id": "d",
+                    "text": "They simply like posting jobs."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A job post is a 'public confession of pain.' If they are hiring for X, they are struggling with X."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the 'Tech Install' signal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When a company buys new computers."
+                },
+                {
+                    "id": "b",
+                    "text": "When the wifi goes down."
+                },
+                {
+                    "id": "c",
+                    "text": "When a company adds or removes a specific software tool from their website/stack."
+                },
+                {
+                    "id": "d",
+                    "text": "When a developer writes code."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Monitoring tools like BuiltWith can show when a company adds a competitor or complementary tool, signalling intent."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Which of these is the BEST way to use funding news (Series A raise)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ask them for a donation."
+                },
+                {
+                    "id": "b",
+                    "text": "Congratulate them and ask for 15 minutes of their time."
+                },
+                {
+                    "id": "c",
+                    "text": "Ignore the money and pitch the 'Pressure to Grow' that comes with it."
+                },
+                {
+                    "id": "d",
+                    "text": "Assume they are too rich to care about saving money."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Funding creates pressure. Investors demand growth. Pitch how you help them achieve that growth."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "List 3 specific behavioral signals or triggers that indicate a company is ready to buy your solution. How would you detect each signal?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the behavioral triggers. Check for: (1) specificity of signals, (2) detectability, (3) correlation to buying intent. Suggest additional signals or detection methods."
+        }
+    ]
+}

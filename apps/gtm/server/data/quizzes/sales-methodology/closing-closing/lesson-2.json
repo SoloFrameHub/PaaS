@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Closing Frameworks Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary benefit of the 'Alternative Close' (Choice of Two)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It confuses the buyer into signing."
+                },
+                {
+                    "id": "b",
+                    "text": "It preserves buyer autonomy while shifting the cognitive focus from 'Whether to buy' to 'How to buy'."
+                },
+                {
+                    "id": "c",
+                    "text": "It makes the proposal look longer."
+                },
+                {
+                    "id": "d",
+                    "text": "It allows you to double the price."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Autonomy is a key psychological need for buyers. By providing two valid paths to success, you reduce the perceived pressure of a 'forced' decision while keeping the deal moving forward."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "When using the 'Direct Close', what should you do immediately after making the ask?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep talking to explain the value again."
+                },
+                {
+                    "id": "b",
+                    "text": "Immediately offer a discount."
+                },
+                {
+                    "id": "c",
+                    "text": "Maintain silence (The Golden Pause) to allow the buyer to process the decision."
+                },
+                {
+                    "id": "d",
+                    "text": "Hang up and wait for an email."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Silence creates space for the buyer to commit. Internal processing takes time; interrupting that silence often signals desperation and can restart the buyer's skepticism loop."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In the 'Assumptive Close', how does the founder shift their frame?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They act like a pushy salesperson."
+                },
+                {
+                    "id": "b",
+                    "text": "They shift from a 'Seller' frame to a 'Project Manager' frame, focusing on implementation logistics."
+                },
+                {
+                    "id": "c",
+                    "text": "They assume the prospect is lying."
+                },
+                {
+                    "id": "d",
+                    "text": "They act like they don't care about the deal."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Project Manager frame is much more comfortable for technical buyers. It assumes the decision is logical and focuses on the work to be done, which reduces the perceived'social risk' of the sale."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Which of the three closing frameworks (Direct, Assumptive, or Alternative) feels most natural to you as a founder? Why? Contrast this with the framework that feels most difficult, and describe a scenario where that difficult framework might actually be more effective.",
+            "minLength": 100,
+            "aiPrompt": "Check if the student can articulate their personal comfort zone and recognize the situational utility of different frameworks, especially the'Direct' ask or the'Assumptive' logistic move."
+        }
+    ]
+}

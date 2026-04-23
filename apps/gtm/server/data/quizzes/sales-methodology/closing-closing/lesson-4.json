@@ -1,0 +1,91 @@
+{
+    "lessonId": "4",
+    "courseId": "closing-closing",
+    "sectionId": "sales-methodology",
+    "title": "Managing the Shadow Committee Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the most effective way to handle the 'What if you get hit by a bus?' (Continuity) objection from a Legal department?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tell them you are very healthy and exercise daily."
+                },
+                {
+                    "id": "b",
+                    "text": "Ignore the question and focus on the product features."
+                },
+                {
+                    "id": "c",
+                    "text": "Provide a 'Continuity Protocol' that details your technical architecture, data portability, and third-party maintenance partnerships."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask them not to be so morbid."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Legal stakeholders care about risk mitigation, not your personal health. A technical continuity protocol demonstrates that the business asset (the software/service) is decoupled from your physical presence."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why should you avoid negotiating 'Redlines' exclusively over email?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it's more expensive."
+                },
+                {
+                    "id": "b",
+                    "text": "Because email creates asynchronous friction and allows legal departments to stall; a direct call forces resolution and clarifies intent behind the changes."
+                },
+                {
+                    "id": "c",
+                    "text": "Because you want to charge for the phone calls."
+                },
+                {
+                    "id": "d",
+                    "text": "Because email is not legally binding."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Asynchronous communication is the enemy of momentum. A 1:1 call with a legal stakeholder allows you to explain the 'Why' behind your terms, which often resolves their concerns much faster than a text-based back-and-forth."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Trust Bundle'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A discount for new customers."
+                },
+                {
+                    "id": "b",
+                    "text": "A collection of proactive documents (Security overview, MSA, Insurance, Privacy policy) designed to pre-emptively satisfy the Shadow Committee."
+                },
+                {
+                    "id": "c",
+                    "text": "A list of testimonials."
+                },
+                {
+                    "id": "d",
+                    "text": "A group of referral partners."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Speed is your advantage as a solo founder. By providing all the risk-mitigation data before Legal even asks for it, you look like a much larger and more prepared organization."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Imagine a Procurement officer asks for a 15% discount at the literal last second of a deal. Write your response script that defends the price using the 'Scope vs. Price' or 'Alternative Terms' (Payment window/Length) strategy.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the student defends the value without being aggressive. The response should offer a non-price concession (like terms) or re-anchor to the ROI, rather than just giving in to the discount."
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+  "lessonId": "2",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Show-Up Rate Optimization Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "A creator runs a live webinar with 600 registrants and 180 attend. What is their show-up rate, and how does it benchmark?",
+      "options": [
+        { "id": "a", "text": "30% -- excellent, above average for live webinars" },
+        { "id": "b", "text": "30% -- average, within the typical 25-35% range without optimization" },
+        { "id": "c", "text": "30% -- poor, well below the 45-55% target for live webinars" },
+        { "id": "d", "text": "33% -- good, in the 35-45% healthy range" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "180/600 = 30%, which falls in the 25-35% 'average' range for live webinars. This is where most creators land without specific optimization. Good show-up rates (35-45%) require strong pre-event engagement and optimized reminder sequences."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to the PACE reminder framework, what does the 'C' stand for and why is it important?",
+      "options": [
+        { "id": "a", "text": "Calendar -- reminding them to add the event to their calendar increases commitment" },
+        { "id": "b", "text": "Consequence -- reminding them what staying stuck costs creates urgency to attend" },
+        { "id": "c", "text": "Community -- showing how many others are attending provides social proof" },
+        { "id": "d", "text": "Confirmation -- asking them to confirm attendance locks in commitment" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In the PACE framework, C stands for Consequence -- reminding prospects what staying stuck costs. For example: 'Every week without this system is another week of guessing.' This creates emotional urgency that generic reminders ('Don't forget about tomorrow!') fail to generate."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which single tactic can increase webinar show-up rates by 10-15% according to the lesson?",
+      "options": [
+        { "id": "a", "text": "Sending more than 10 reminder emails in the week before the event" },
+        { "id": "b", "text": "Offering a replay to everyone who registers but cannot attend" },
+        { "id": "c", "text": "Adding SMS/text message reminders to your sequence" },
+        { "id": "d", "text": "Running the webinar on Saturday mornings instead of weekday evenings" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The lesson states that SMS reminders alone can increase show-up rates by 10-15%. This is one of the highest-impact single changes a creator can make. The lesson recommends collecting phone numbers at registration and sending 60-minute and 15-minute SMS reminders."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Map out your current reminder sequence for your most recent event (webinar, workshop, call, etc.). How many touchpoints exist between registration and the event? Based on the optimized sequence in this lesson, what specific touchpoints are you missing, and which one would you add first?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student has identified specific gaps in their reminder sequence. Look for awareness of same-day touchpoints, SMS reminders, and commitment micro-steps. Encourage them to prioritize the single highest-impact addition rather than trying to implement everything at once."
+    }
+  ]
+}

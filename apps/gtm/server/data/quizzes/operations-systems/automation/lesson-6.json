@@ -1,0 +1,126 @@
+{
+    "lessonId": "6",
+    "courseId": "automation",
+    "sectionId": "operations-systems",
+    "title": "Notification Design",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the primary risk of notifying every CRM event in real-time?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It costs too much in Zapier tasks"
+                },
+                {
+                    "id": "b",
+                    "text": "It creates notification fatigue and you start ignoring all alerts"
+                },
+                {
+                    "id": "c",
+                    "text": "It slows down your CRM"
+                },
+                {
+                    "id": "d",
+                    "text": "It violates GDPR"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Notification fatigue sets in above 20 alerts/day. When everything is urgent, nothing is urgent."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which event should trigger a real-time Slack notification?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Email opened (no reply)"
+                },
+                {
+                    "id": "b",
+                    "text": "Task completed"
+                },
+                {
+                    "id": "c",
+                    "text": "New lead with ICP fit score = 9"
+                },
+                {
+                    "id": "d",
+                    "text": "Note added to CRM contact"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-score leads (≥7) deserve immediate attention. Email opens and task completions can be batched into daily digests."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What's the benefit of using Slack blocks instead of plain text notifications?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They're easier to set up"
+                },
+                {
+                    "id": "b",
+                    "text": "They support rich formatting, color-coding, and interactive buttons"
+                },
+                {
+                    "id": "c",
+                    "text": "They consume fewer Zapier tasks"
+                },
+                {
+                    "id": "d",
+                    "text": "They work without an internet connection"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Slack blocks support formatting, colors, and buttons — making notifications actionable without opening the CRM."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should you use SMS notifications?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "For every new lead"
+                },
+                {
+                    "id": "b",
+                    "text": "For all deal stage changes"
+                },
+                {
+                    "id": "c",
+                    "text": "Only for critical, high-value events (e.g., $25K+ deal at risk)"
+                },
+                {
+                    "id": "d",
+                    "text": "Never — email and Slack are enough"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "SMS is for emergencies only. Overuse creates fatigue and costs money. Reserve it for critical, high-value events."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "True or False: You should add interactive 'Mark as Won' buttons to all deal notifications to save time.",
+            "correctAnswer": "b",
+            "explanation": "False. Interactive buttons for high-risk actions (like marking deals as won) can lead to accidental clicks. Use buttons only for low-risk actions like 'View in CRM.'",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

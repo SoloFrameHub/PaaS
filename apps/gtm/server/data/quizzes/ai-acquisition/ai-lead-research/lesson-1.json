@@ -1,0 +1,126 @@
+{
+    "lessonId": "1",
+    "courseId": "ai-lead-research",
+    "sectionId": "ai-acquisition",
+    "title": "Test Your Understanding",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the average email coverage rate for a single enrichment source like Apollo?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "10-20%"
+                },
+                {
+                    "id": "b",
+                    "text": "30-40%"
+                },
+                {
+                    "id": "c",
+                    "text": "60-70%"
+                },
+                {
+                    "id": "d",
+                    "text": "90-100%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Single-source enrichment typically yields 30-40% email coverage. This is why waterfall enrichment (checking multiple sources) is essential."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which tool is best for domain-based email lookups with 90-95% accuracy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Clay"
+                },
+                {
+                    "id": "b",
+                    "text": "Apollo"
+                },
+                {
+                    "id": "c",
+                    "text": "Hunter.io"
+                },
+                {
+                    "id": "d",
+                    "text": "Snov.io"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Hunter.io specializes in domain-based email finding and verification, with 90-95% accuracy for verified emails."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What happens if you send emails to a list with 10% invalid addresses?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — email providers ignore bounces"
+                },
+                {
+                    "id": "b",
+                    "text": "You get a warning but no lasting damage"
+                },
+                {
+                    "id": "c",
+                    "text": "Your domain reputation tanks and future emails go to spam"
+                },
+                {
+                    "id": "d",
+                    "text": "Only that batch is affected"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Email providers track bounce rates. Above 5% hard bounces, they flag your domain and route future emails to spam — even for valid addresses. Recovery takes 3-6 months."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "For a solo founder enriching 500 leads/month with a $100 budget, what's the recommended stack?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Clay Explorer ($149/mo)"
+                },
+                {
+                    "id": "b",
+                    "text": "Apollo Free + Hunter Free + Snov Free (manual)"
+                },
+                {
+                    "id": "c",
+                    "text": "Apollo Basic ($49) + Hunter Starter ($49)"
+                },
+                {
+                    "id": "d",
+                    "text": "Apollo Pro ($99) only"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "At 500 leads/month with $100 budget, Apollo Basic + Hunter Starter gives you 75% coverage with bulk export/import, saving significant time vs. the free manual stack."
+        },
+        {
+            "id": "q5",
+            "type": "true-false",
+            "question": "Clay checks 75+ data providers in a single waterfall enrichment workflow.",
+            "correctAnswer": "a",
+            "explanation": "True. Clay's waterfall enrichment can check 75+ data providers sequentially, making it the most comprehensive enrichment tool available.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        }
+    ]
+}

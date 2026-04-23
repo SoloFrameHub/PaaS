@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is catastrophizing, and how does it differ from realistic concern?",
+            "options": [
+                {"id": "opt1", "text": "Catastrophizing means worrying about anything negative; realistic concern means never worrying"},
+                {"id": "opt2", "text": "Catastrophizing involves magnifying the probability and severity of negative outcomes beyond what evidence supports, jumping to worst-case scenarios"},
+                {"id": "opt3", "text": "Catastrophizing is planning for emergencies; realistic concern is ignoring risks"},
+                {"id": "opt4", "text": "They're the same thing—all worry is catastrophizing"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Catastrophizing is a cognitive distortion where you magnify the probability and/or severity of negative outcomes, jumping to the worst-case scenario without evidence to support it. It differs from realistic concern, which involves proportionate assessment of actual risks. Catastrophizing means 'a headache becomes a brain tumor,' 'being late becomes job loss,' 'awkward moment becomes social ruin.' It's the gap between realistic risk and catastrophic interpretation."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What's the most effective strategy for de-catastrophizing a thought?",
+            "options": [
+                {"id": "opt1", "text": "Just stop worrying and think positive"},
+                {"id": "opt2", "text": "Distinguish between possibility and probability, examine evidence for the worst-case scenario, and ask 'What's the most likely outcome?'"},
+                {"id": "opt3", "text": "Assume the worst will happen so you're prepared"},
+                {"id": "opt4", "text": "Distract yourself and don't think about it"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Effective de-catastrophizing involves distinguishing possibility (could happen) from probability (likely to happen based on evidence). Ask: 'What evidence supports this catastrophic outcome? What's the most likely outcome based on past experience and current evidence? Even if the worst happened, could I cope?' This grounds your thinking in reality rather than jumping to extremes or using avoidance."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "When should you seek professional help rather than trying to de-catastrophize on your own?",
+            "options": [
+                {"id": "opt1", "text": "Never—you can always handle catastrophic thinking yourself"},
+                {"id": "opt2", "text": "Only if you're diagnosed with panic disorder"},
+                {"id": "opt3", "text": "When catastrophic thoughts are frequent, overwhelming, interfere with daily functioning, or are accompanied by panic attacks, avoidance, or safety-seeking behaviors that impair your life"},
+                {"id": "opt4", "text": "Whenever you have any negative thought"}
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Self-guided de-catastrophizing works well for occasional catastrophic thoughts in mild-to-moderate presentations. However, when catastrophic thinking is frequent, overwhelming, significantly interferes with functioning, or is accompanied by panic disorder, health anxiety, or pervasive avoidance/safety behaviors, professional help is appropriate. CBT delivered by a trained clinician provides structured support for severe presentations."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does catastrophizing maintain anxiety over time?",
+            "options": [
+                {"id": "opt1", "text": "It doesn't—catastrophizing actually reduces anxiety"},
+                {"id": "opt2", "text": "Catastrophic thoughts trigger anxiety, which you interpret as evidence the catastrophe is real, creating a self-reinforcing cycle where anxiety confirms the catastrophic belief"},
+                {"id": "opt3", "text": "Catastrophizing causes brain damage"},
+                {"id": "opt4", "text": "It only affects anxiety in people with diagnosed disorders"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Catastrophizing creates a vicious cycle: catastrophic thought → anxiety → interpreting anxiety as evidence the thought is true → more catastrophic thinking. For example, 'My heart is racing—this confirms something is seriously wrong with me,' which increases anxiety further. The anxiety itself becomes 'proof' of danger, maintaining the pattern. Breaking this cycle requires recognizing that anxiety is a response to the thought, not evidence the thought is accurate."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Think of a recent situation where you catastrophized. What was the worst-case scenario you imagined? Now examine the evidence: What's the most likely outcome based on past experience and current facts? What percentage probability would you realistically assign to the catastrophic outcome vs. the most likely outcome?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "cbt-fundamentals",
+    "lessonId": "6",
+    "title": "Catastrophizing: Managing Worst-Case Thinking - Quiz"
+}

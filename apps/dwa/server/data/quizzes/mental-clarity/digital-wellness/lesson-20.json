@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the purpose of a Digital Wellness Action Plan?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "To eliminate all technology from your life"
+                },
+                {
+                    "id": "opt2",
+                    "text": "To translate insights from your assessment into specific, actionable, measurable goals and strategies you'll implement"
+                },
+                {
+                    "id": "opt3",
+                    "text": "To list all the things you're doing wrong"
+                },
+                {
+                    "id": "opt4",
+                    "text": "To copy someone else's technology habits"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "An Action Plan turns assessment insights into concrete next steps: specific goals, strategies to implement, measurable outcomes, and accountability systems. It's the bridge from awareness to change."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What makes a digital wellness goal more likely to succeed?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Making it vague and aspirational ('be better with technology')"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Making it specific, measurable, achievable, and tied to a clear 'why' (your values)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Making it as extreme as possible"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Not writing it down"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Effective goals are SMART: Specific (what exactly?), Measurable (how will you know?), Achievable (realistic?), Relevant (tied to your values), and Time-bound (by when?). Vague goals like 'use my phone less' rarely produce change."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the recommended approach for implementing multiple digital wellness changes?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Change everything at once for maximum impact"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start with 1-3 high-impact changes, establish them as habits, then add more"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Wait until you feel motivated to change everything"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Never make more than one change"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Start small: choose 1-3 high-impact changes based on your assessment. Establish these as habits (3-4 weeks) before adding more. Behavior change works better through incremental progress than overwhelming overhauls."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you track progress on your Digital Wellness Action Plan?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Don't track — just hope for the best"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Use specific metrics (screen time, sleep quality, focus rating, mood) and review weekly to assess what's working"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only track once a year"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Compare yourself to others constantly"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Track meaningful metrics tied to your goals: screen time, sleep quality, focus/productivity ratings, mood, relationship satisfaction. Review weekly to see what's working and adjust. What gets measured gets managed."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Create a mini action plan: Choose ONE digital wellness goal to start with. Make it specific and measurable. What's the first action you'll take this week? How will you know if it's working? When will you review your progress?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "20",
+    "title": "Your Digital Wellness Action Plan - Quiz"
+}

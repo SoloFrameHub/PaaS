@@ -1,0 +1,75 @@
+{
+  "lessonId": "3",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Playbook: B2B SaaS Founder",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the 'repeatability problem' that B2B SaaS founders face?",
+      "options": [
+        { "id": "a", "text": "Their product keeps breaking" },
+        {
+          "id": "b",
+          "text": "They know how to get customers through hustle but can't build a machine that generates customers predictably"
+        },
+        { "id": "c", "text": "They can't find product-market fit" },
+        { "id": "d", "text": "Their pricing is inconsistent" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The repeatability problem is the gap between knowing how to win individual customers through personal effort and building a machine that generates customers at predictable volume. This is where most B2B SaaS founders stall."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Who is the B2B SaaS Founder playbook designed for?",
+      "options": [
+        { "id": "a", "text": "Pre-revenue founders building an MVP" },
+        {
+          "id": "b",
+          "text": "Founders with 5-20 paying customers and a working product"
+        },
+        { "id": "c", "text": "Companies with 500+ customers" },
+        { "id": "d", "text": "Enterprise sales teams" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "This playbook is for founders with a working product, 5-20 paying customers, a specific ICP, 5-7 hours/week for acquisition, and $100-300/month tool budget. Still at zero? Use Lesson 2. Over 50 customers? Use Lesson 6."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What drives every activity target in the B2B SaaS playbook?",
+      "options": [
+        { "id": "a", "text": "Industry benchmarks" },
+        {
+          "id": "b",
+          "text": "Working backward from the revenue goal using pipeline math"
+        },
+        { "id": "c", "text": "Competitor analysis" },
+        { "id": "d", "text": "Available time each week" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every activity target derives from working backward from the revenue goal. Start with target revenue, divide by deal size to get deals needed, divide by close rate to get proposals needed, and so on through the funnel."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Founders with 50+ customers and $50K+ MRR should still use the B2B SaaS Founder playbook.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. At 50+ customers and $50K+ MRR, the Scaling playbook (Lesson 6) is more appropriate. The B2B SaaS Founder playbook is designed for 5-20 customers building repeatable processes."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Work backward from your monthly revenue target. How many deals, proposals, meetings, and prospects do you need? What does this pipeline math reveal about your current activity levels?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response performs actual pipeline math (revenue target to deals to proposals to meetings to prospects), compares the required activity to their current activity, and identifies the specific gap that needs to be addressed."
+    }
+  ]
+}

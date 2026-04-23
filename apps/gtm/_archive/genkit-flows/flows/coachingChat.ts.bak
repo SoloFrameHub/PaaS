@@ -1,0 +1,117 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { logger } from '@/lib/logger';
+import { telemetry } from '../telemetry';
+import { profileService } from '../../services/profileService';
+import { vertexRetriever } from '../vertexRetriever';
+
+const FounderProfileSchema = z.object({
+    name: z.string(),
+    businessName: z.string(),
+    businessModel: z.string().nullable(),
+    stage: z.string().nullable(),
+    primaryGoal: z.string().nullable(),
+    biggestChallenge: z.string().nullable(),
+    elevatorPitch: z.string().nullable(),
+    targetAudience: z.string().nullable(),
+    questionnaire: z.object({
+        industry: z.string().optional(),
+        target_roles: z.array(z.string()).optional(),
+        deal_size: z.string().optional(),
+        urgency: z.string().optional(),
+    }).optional(),
+    inferred: z.record(z.any()).optional(),
+});
+
+const CoachingInput = z.object({
+    userMessage: z.string().transform(val => val.replace(/[\n\r]/g, ' ').trim()),
+    conversationHistory: z.array(z.object({
+        role: z.enum(['user', 'assistant']),
+        content: z.string(),
+    })),
+    founderProfile: FounderProfileSchema.optional(),
+    courseContext: z.object({
+        courseId: z.number().optional(),
+        lessonId: z.string().optional(),
+        currentTopic: z.string().optional(),
+    }).optional(),
+});
+
+export type CoachingInput = z.infer<typeof CoachingInput>;
+
+export const coachingChatFlow = ai.defineFlow(
+    {
+        name: 'coachingChat',
+        inputSchema: CoachingInput,
+    },
+    async (input: CoachingInput) => {
+        const historyText = input.conversationHistory
+            .map((m: { role: string; content: string }) => `${m.role === 'user' ? 'USER' : 'COACH'}: ${m.content}`)
+            .join('\n');
+
+        const safeProfile = input.founderProfile ? profileService.getSafeContext(input.founderProfile as any, { ultraLean: true }) : null;
+
+        // --- RAG RETRIEVAL ---
+        let ragContext = '';
+        try {
+            const docs = await ai.retrieve({
+                retriever: vertexRetriever,
+                query: input.userMessage,
+                options: { limit: 3 },
+            });
+
+            if (docs.length > 0) {
+                ragContext = `RETRIEVED KNOWLEDGE BASE:\n${docs.map(d => `- ${d.content[0].text} (Source: ${d.metadata?.source || 'Unknown'})`).join('\n')}`;
+            }
+        } catch (err) {
+            console.warn('RAG retrieval failed:', err);
+            // Non-blocking, continue without RAG
+        }
+
+        const profileText = safeProfile
+            ? `Founder Profile Context: ${JSON.stringify(safeProfile)}
+               Strategic RAG Signals: ${JSON.stringify(safeProfile.inferred?.ragSignals || 'None available')}`
+            : 'Founder Profile context not available.';
+
+        const contextText = input.courseContext
+            ? `Current Context: Course ${input.courseContext.courseId}, Lesson ${input.courseContext.lessonId}, Topic: ${input.courseContext.currentTopic}`
+            : 'No specific course context provided.';
+
+        const response = await ai.generate({
+            model: gemini20Flash,
+            prompt: `You are the SoloFrameHub Elite Sales Coach. Your goal is to help solo founders build systematic customer acquisition engines.
+
+COACHING PHILOSOPHY:
+- No fluff. Actionable, business-focused advice.
+- Personalize everything to THEIR business model and ICP.
+- Challenge their assumptions if they are too generic.
+- Use the founder's profile context to make examples relevant.
+- CITATIONS: If you use information from the RETRIEVED KNOWLEDGE BASE, explicitly cite it.
+
+${profileText}
+${ragContext}
+${contextText}
+
+CONVERSATION HISTORY:
+${historyText}
+
+USER: ${input.userMessage}
+
+Respond as the coach:`,
+            config: {
+                temperature: 0.7,
+                maxOutputTokens: 1000,
+            },
+        });
+
+        // Log specific telemetry for business analytics
+        await telemetry.logFlowEvent({
+            flowName: 'coachingChat',
+            input: input,
+            output: response.output,
+            // In a real app we'd pass session/user IDs here if available in input context
+        });
+
+        return response.output;
+    }
+);

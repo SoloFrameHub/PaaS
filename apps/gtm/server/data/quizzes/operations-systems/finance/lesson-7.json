@@ -1,0 +1,66 @@
+{
+  "lessonId": "7",
+  "courseId": "finance",
+  "sectionId": "operations-systems",
+  "title": "Your Finance Dashboard",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How many numbers should you review every Friday in your weekly financial review?",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "15" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Friday Five: Cash Balance + 13-Week Status, Net New MRR, Outstanding Invoices, CAC Payback Period, and Gross Margin. Five numbers, 20-30 minutes, every Friday."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the most common finance mistake among solo founders?",
+      "options": [
+        { "id": "a", "text": "Getting the accounting wrong" },
+        { "id": "b", "text": "Not having a consistent weekly review routine" },
+        { "id": "c", "text": "Spending too much on tools" },
+        { "id": "d", "text": "Hiring an accountant too early" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The most common mistake isn't bad accounting — it's not having a routine. Founders check numbers when worried, ignore them when things feel good, and spend enormous mental energy on anxiety that a simple weekly ritual would eliminate."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "How often should you conduct a deep financial review beyond the weekly Friday Five?",
+      "options": [
+        { "id": "a", "text": "Daily" },
+        { "id": "b", "text": "Monthly (2 hours)" },
+        { "id": "c", "text": "Quarterly" },
+        { "id": "d", "text": "Annually" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Monthly: 2 hours for a deeper review. The weekly Friday Five takes 20-30 minutes. Monthly reviews add deeper analysis of trends, forecasting, and strategic financial planning."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Solo businesses with a consistent weekly financial review spend 70% less time worrying about money.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. Not because their numbers are better, but because they're never surprised. You can only fix what you're watching. What you're not watching becomes a crisis."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Design your Friday Five financial review. Where will you find each of the 5 numbers? What red flags will trigger immediate action? When will you schedule your first review?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response maps each of the 5 metrics to a specific data source (bank portal, Stripe, spreadsheet), defines at least one red flag threshold that triggers action, and commits to a specific day and time for the first review."
+    }
+  ]
+}

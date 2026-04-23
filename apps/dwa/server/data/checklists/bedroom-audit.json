@@ -1,0 +1,105 @@
+{
+  "id": "bedroom-audit",
+  "title": "Bedroom Environment Audit",
+  "description": "Audit your bedroom environment across four key areas. Check off each item you have addressed, then prioritize the unchecked ones.",
+  "instructions": "Walk through your bedroom and honestly assess each item. Check off what is already in place. The unchecked items are your action list for creating an optimal sleep environment.",
+  "items": [
+    {
+      "id": "temp-setting",
+      "label": "Room temperature is set to 60-67°F (15.5-19.4°C)",
+      "type": "checkbox",
+      "category": "Temperature"
+    },
+    {
+      "id": "temp-bedding",
+      "label": "Breathable bedding materials (cotton, linen, or moisture-wicking)",
+      "type": "checkbox",
+      "category": "Temperature"
+    },
+    {
+      "id": "temp-airflow",
+      "label": "Fan or air circulation available",
+      "type": "checkbox",
+      "category": "Temperature"
+    },
+    {
+      "id": "temp-layers",
+      "label": "Option to adjust layers (extra blankets available but not always used)",
+      "type": "checkbox",
+      "category": "Temperature"
+    },
+    {
+      "id": "dark-curtains",
+      "label": "Blackout curtains or room-darkening shades installed",
+      "type": "checkbox",
+      "category": "Darkness"
+    },
+    {
+      "id": "dark-leds",
+      "label": "No LED lights from electronics visible (covered or removed)",
+      "type": "checkbox",
+      "category": "Darkness"
+    },
+    {
+      "id": "dark-eyemask",
+      "label": "Eye mask available if needed",
+      "type": "checkbox",
+      "category": "Darkness"
+    },
+    {
+      "id": "dark-nightlight",
+      "label": "Dim, red-toned nightlight in bathroom for nighttime trips",
+      "type": "checkbox",
+      "category": "Darkness"
+    },
+    {
+      "id": "sound-quiet",
+      "label": "Room is as quiet as possible",
+      "type": "checkbox",
+      "category": "Sound"
+    },
+    {
+      "id": "sound-whitenoise",
+      "label": "White noise machine or fan available if external noise is present",
+      "type": "checkbox",
+      "category": "Sound"
+    },
+    {
+      "id": "sound-snoring",
+      "label": "Partner's snoring addressed if disruptive",
+      "type": "checkbox",
+      "category": "Sound"
+    },
+    {
+      "id": "sound-phone",
+      "label": "Phone on silent or do-not-disturb mode",
+      "type": "checkbox",
+      "category": "Sound"
+    },
+    {
+      "id": "comfort-mattress",
+      "label": "Mattress supports my body comfortably (no sagging or pressure points)",
+      "type": "checkbox",
+      "category": "Comfort"
+    },
+    {
+      "id": "comfort-pillow",
+      "label": "Pillow properly supports head and neck alignment",
+      "type": "checkbox",
+      "category": "Comfort"
+    },
+    {
+      "id": "comfort-linens",
+      "label": "Bed linens are clean and comfortable",
+      "type": "checkbox",
+      "category": "Comfort"
+    },
+    {
+      "id": "comfort-purpose",
+      "label": "Room is used primarily for sleep (not work or entertainment)",
+      "type": "checkbox",
+      "category": "Comfort"
+    }
+  ],
+  "disclaimer": "This audit is for educational purposes. Small changes can make a big difference — you don't need to address everything at once. Start with one or two items that are easiest to fix."
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 5: Self-Assessment</title>
+    <style>
+        :root {
+            --calming-teal: #4a90a4; --deep-teal: #357a8a; --soft-blue: #6ba3d0;
+            --sage-green: #87a96b; --warm-gray: #7d8597; --gentle-text: #4a5568;
+            --light-sage: #f7f8f6; --soft-white: #fdfdfd; --light-teal: #e8f4f6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; color: var(--gentle-text); margin: 0;
+            padding: 20px; background-color: var(--light-sage);
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card {
+            background: var(--soft-white); border-radius: 12px; padding: 25px 30px;
+            margin-bottom: 20px; border: 1px solid var(--light-teal);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .card.header {
+            background: linear-gradient(135deg, var(--deep-teal), var(--calming-teal));
+            color: white; text-align: center;
+        }
+        .card.header h1 { color: white; margin: 0 0 10px 0; }
+        .card h2 { color: var(--deep-teal); margin-top: 0; }
+        .intro-card { background: var(--light-teal); border-left: 5px solid var(--soft-blue); }
+        .assessment-section { margin-bottom: 30px; }
+        .assessment-question {
+            background: var(--light-sage); padding: 20px;
+            border-radius: 8px; margin-bottom: 10px;
+        }
+        .assessment-question p { margin: 0 0 15px 0; font-weight: 600; font-size: 1.1em; }
+        
+        .rating-scale { display: flex; justify-content: space-between; align-items: center; }
+        .rating-scale .label { font-size: 0.9em; color: var(--warm-gray); }
+        .rating-options { display: flex; gap: 10px; }
+        .rating-options label {
+            width: 40px; height: 40px; border-radius: 50%;
+            border: 2px solid var(--light-teal); background: var(--soft-white);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-weight: bold; transition: all 0.2s;
+        }
+        .rating-options input[type="radio"] { display: none; }
+        .rating-options input[type="radio"]:checked + label {
+            background-color: var(--calming-teal);
+            color: white; border-color: var(--deep-teal); transform: scale(1.1);
+        }
+
+        .commitment-card { background: #fff9e6; border-left: 5px solid #ffb74d; }
+        .commitment-card textarea {
+            width: 100%; min-height: 70px; border: 2px solid #ffe0b2;
+            border-radius: 6px; padding: 10px; font-size: 1em;
+            margin-top: 10px; box-sizing: border-box;
+        }
+        .final-card { background: var(--light-sage); text-align: center; border-left: 5px solid var(--sage-green); }
+        .final-card p { font-weight: 500; font-size: 1.1em; }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card header">
+            <h1>Section 5 Self-Assessment</h1>
+            <p>A gentle check-in on your relational wellness skills.</p>
+        </div>
+
+        <div class="card intro-card">
+            <h2>This Isn't a Test. It's a Mirror.</h2>
+            <p>The goal of this self-assessment is not to get a "perfect score." It is simply a chance for you to pause and reflect on where you are right now. Honesty with yourself is the only requirement. Please answer based on how you feel today, without judgment.</p>
+        </div>
+
+        <form onsubmit="event.preventDefault();">
+            <div class="card">
+                <div class="assessment-section">
+                    <h2>On a scale of 1 (Not at all confident) to 5 (Very confident), please rate your current confidence level:</h2>
+                    
+                    <div class="assessment-question">
+                        <p>1. Before a social event, I feel prepared and have a plan.</p>
+                        <div class="rating-scale">
+                            <span class="label">Not at all</span>
+                            <div class="rating-options">
+                                <input type="radio" id="q1r1" name="q1"><label for="q1r1">1</label>
+                                <input type="radio" id="q1r2" name="q1"><label for="q1r2">2</label>
+                                <input type="radio" id="q1r3" name="q1"><label for="q1r3">3</label>
+                                <input type="radio" id="q1r4" name="q1"><label for="q1r4">4</label>
+                                <input type="radio" id="q1r5" name="q1"><label for="q1r5">5</label>
+                            </div>
+                            <span class="label">Very</span>
+                        </div>
+                    </div>
+
+                    <div class="assessment-question">
+                        <p>2. During a social event, I have tools to manage my anxiety in the moment.</p>
+                        <div class="rating-scale">
+                            <span class="label">Not at all</span>
+                            <div class="rating-options">
+                                <input type="radio" id="q2r1" name="q2"><label for="q2r1">1</label>
+                                <input type="radio" id="q2r2" name="q2"><label for="q2r2">2</label>
+                                <input type="radio" id="q2r3" name="q2"><label for="q2r3">3</label>
+                                <input type="radio" id="q2r4" name="q2"><label for="q2r4">4</label>
+                                <input type="radio" id="q2r5" name="q2"><label for="q2r5">5</label>
+                            </div>
+                            <span class="label">Very</span>
+                        </div>
+                    </div>
+
+                    <div class="assessment-question">
+                        <p>3. I feel confident that I can express my needs clearly using the "I feel... when... I would appreciate..." formula.</p>
+                        <div class="rating-scale">
+                            <span class="label">Not at all</span>
+                            <div class="rating-options">
+                                <input type="radio" id="q3r1" name="q3"><label for="q3r1">1</label>
+                                <input type="radio" id="q3r2" name="q3"><label for="q3r2">2</label>
+                                <input type="radio" id="q3r3" name="q3"><label for="q3r3">3</label>
+                                <input type="radio" id="q3r4" name="q3"><label for="q3r4">4</label>
+                                <input type="radio" id="q3r5" name="q3"><label for="q3r5">5</label>
+                            </div>
+                            <span class="label">Very</span>
+                        </div>
+                    </div>
+                    
+                     <div class="assessment-question">
+                        <p>4. I am aware of my personal boundaries around my time and energy.</p>
+                        <div class="rating-scale">
+                            <span class="label">Not at all</span>
+                            <div class="rating-options">
+                                <input type="radio" id="q4r1" name="q4"><label for="q4r1">1</label>
+                                <input type="radio" id="q4r2" name="q4"><label for="q4r2">2</label>
+                                <input type="radio" id="q4r3" name="q4"><label for="q4r3">3</label>
+                                <input type="radio" id="q4r4" name="q4"><label for="q4r4">4</label>
+                                <input type="radio" id="q4r5" name="q4"><label for="q4r5">5</label>
+                            </div>
+                            <span class="label">Very</span>
+                        </div>
+                    </div>
+                    
+                    <div class="assessment-question">
+                        <p>5. I feel capable of saying "no" politely when I need to, even if it feels uncomfortable.</p>
+                        <div class="rating-scale">
+                            <span class="label">Not at all</span>
+                            <div class="rating-options">
+                                <input type="radio" id="q5r1" name="q5"><label for="q5r1">1</label>
+                                <input type="radio" id="q5r2" name="q5"><label for="q5r2">2</label>
+                                <input type="radio" id="q5r3" name="q5"><label for="q5r3">3</label>
+                                <input type="radio" id="q5r4" name="q5"><label for="q5r4">4</label>
+                                <input type="radio" id="q5r5" name="q5"><label for="q5r5">5</label>
+                            </div>
+                            <span class="label">Very</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card commitment-card">
+                <h2>My Next Small Step</h2>
+                <p>Based on your reflections, what is **one area** you would like to focus on? And what is **one small, achievable step** you can take this week to practice?</p>
+                <textarea placeholder="Example: My area is setting time boundaries. My small step is to tell one friend who calls this week, 'I can only talk for about 15 minutes.'"></textarea>
+            </div>
+
+            <div class="card final-card">
+                <h2>Awareness is the Goal</h2>
+                <p>Thank you for taking the time for this reflection. Simply noticing where you are is a huge accomplishment. You have the tools, and now you have a focus for your practice. Remember, this is a journey of progress, not perfection.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

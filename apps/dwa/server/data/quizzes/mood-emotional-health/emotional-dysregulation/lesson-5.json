@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Why does accurately labeling an emotion reduce its intensity?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It distracts you from the emotion by forcing you to think about words"
+                },
+                {
+                    "id": "opt2",
+                    "text": "It activates the prefrontal cortex and reduces amygdala activity, creating a shift from being consumed by the emotion to observing it"
+                },
+                {
+                    "id": "opt3",
+                    "text": "It suppresses the emotion so you no longer feel it"
+                },
+                {
+                    "id": "opt4",
+                    "text": "It only works for positive emotions, not negative ones"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that accurately labeling an emotion activates the prefrontal cortex and reduces activity in the amygdala (the brain's threat-detection center). This creates a shift from being consumed by the emotion to observing it, which reduces intensity. This is different from suppression -- you still feel the emotion, but with more distance and clarity."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the correct sequence in the 'anatomy of an emotion' as described in DBT?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Action urge → body sensations → interpretation → prompting event → expression"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Body sensations → expression → prompting event → interpretation → action urge"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Prompting event → interpretation → body sensations → action urge → expression → aftereffects"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Interpretation → prompting event → expression → body sensations → aftereffects"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "DBT describes emotions as unfolding in a specific sequence: a prompting event occurs, you assign an interpretation (often automatic), body sensations activate, an action urge arises, the emotion is expressed outwardly, and aftereffects follow. Understanding this sequence helps you identify where to intervene."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are 'secondary emotions' and why do they matter?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "They are less important emotions that can be safely ignored"
+                },
+                {
+                    "id": "opt2",
+                    "text": "They are emotional reactions to your primary emotions (e.g., shame about anger), and they often cause more suffering than the original feeling"
+                },
+                {
+                    "id": "opt3",
+                    "text": "They are emotions that only occur after the primary emotion has completely ended"
+                },
+                {
+                    "id": "opt4",
+                    "text": "They are emotions experienced by other people in response to your behavior"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Secondary emotions are your reactions to your primary emotions -- for example, feeling shame about anger, anger about sadness, or anxiety about anxiety. They often cause more suffering than the original feeling. Recognizing secondary emotions allows you to address the real issue and reduce unnecessary layers of distress."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Which of the following is a myth about emotions identified in DBT?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Emotions provide useful information about your environment and needs"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Emotions are temporary physiological events that peak and subside"
+                },
+                {
+                    "id": "opt3",
+                    "text": "If I feel an emotion strongly, I should act on it immediately"
+                },
+                {
+                    "id": "opt4",
+                    "text": "All emotions serve a biological or social function"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The belief that 'if I feel it, I should act on it' is a common myth about emotions. While emotions provide valuable information and urges, acting on every urge is not the same as honoring the emotion. You can feel angry without yelling, feel afraid without fleeing. Emotions inform, but skillful response requires a pause between feeling and action."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What does the 'wave metaphor' in DBT teach about managing emotions?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "You should fight against emotions to stop them as quickly as possible"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Emotions are like waves -- they build, peak, and recede on their own if you do not fight them or feed them"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Emotions come in predictable patterns that repeat at the same times each day"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should wait for emotions to completely disappear before taking any action"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The wave metaphor teaches that emotions are like ocean waves: they build, peak, and naturally recede. You cannot stop a wave, but you do not need to -- if you do not fight it or feed it (through rumination or suppression), it will pass. Your job is to ride the wave, not eliminate it. Most emotional peaks last 60-90 seconds without additional fuel."
+        }
+    ],
+    "sectionId": "mood-emotional-health",
+    "courseId": "emotional-dysregulation",
+    "lessonId": "5",
+    "title": "Understanding and Labeling Your Emotions - Quiz"
+}

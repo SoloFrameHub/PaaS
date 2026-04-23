@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What does research tell us about maintaining stress management skills long-term?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Once you learn stress management skills, they work automatically forever"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Long-term maintenance requires: habitual practice (not just capacity), early warning sign monitoring, plan adjustment over time, and relapse prevention strategies—skills erode without ongoing practice"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Long-term maintenance is impossible"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You only need to practice stress management when you're in crisis"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research on skill maintenance, particularly from CBT follow-up studies and relapse prevention literature, shows that long-term benefit requires ongoing practice. The research brief notes that CBT effects show 'durability' (SMD=0.73 post-intervention, SMD=1.17 at follow-up), but this requires continued application. Key maintenance factors include: (1) habitual practice—remember from lesson 5 that habitual use of reappraisal (not just capacity) predicts mental health, (2) early warning sign monitoring—catching stress early before it escalates, (3) plan adjustment—adapting strategies as life circumstances change, (4) regular check-ins—not waiting for crisis to activate skills, and (5) relapse prevention—recognizing that stress will increase periodically and having a plan for responding rather than interpreting this as failure."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based approach to 'relapse' or stress escalation after a period of effective management?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any stress escalation means you've failed and should give up"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Stress escalation is normal and expected—effective response involves: recognizing early warning signs, activating your plan without self-judgment, identifying what triggered escalation, adjusting strategies if needed"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Relapse prevention is not relevant to stress management"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should never experience stress again after learning management skills"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Relapse prevention frameworks (originally developed for addiction treatment, adapted for depression/anxiety relapse) are highly relevant to stress management. The evidence-based stance is that stress escalation is normal, expected, and does not represent failure—life inevitably brings periods of increased stress (major life transitions, losses, crises, seasonal patterns). Effective relapse prevention involves: (1) normalizing that stress will increase periodically, (2) recognizing your personal early warning signs early, (3) activating your stress management plan without self-judgment or shame, (4) identifying what triggered the escalation (new stressor, drift from healthy habits, structural change), (5) adjusting strategies if needed, and (6) seeking professional support if escalation is severe or sustained. This prevents all-or-nothing thinking ('I was doing well, now I'm stressed, so I've failed') that leads to abandoning helpful strategies."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does habit formation research apply to maintaining stress management practices?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Habits form instantly and require no ongoing effort"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Habits form through consistent repetition in consistent contexts, with cue-routine-reward loops—embedding stress management as habits (not effortful decisions) increases sustainability"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Habit formation is a myth"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only bad habits can form, not healthy ones"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Habit formation research (behavioral psychology, neuroscience of habit loops) shows that behaviors become automatic through consistent repetition in consistent contexts, typically following a cue-routine-reward pattern. For stress management, this means: (1) linking practices to existing routines or consistent cues (morning breathing practice after coffee, evening reflection before bed), (2) starting small enough to be sustainable (5 minutes, not 60), (3) ensuring the practice provides intrinsic reward (feels good, reduces tension, aligns with values) not just external pressure, and (4) maintaining consistency across contexts until the behavior becomes automatic. The goal is moving stress management from effortful, decision-requiring activities to embedded habits that happen with minimal cognitive load—this is what creates sustainability over months and years."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the evidence-based difference between stress management as a short-term fix vs. long-term lifestyle integration?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Stress management only works as a short-term fix"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Short-term: using techniques only during crises. Long-term: regular practice during low-stress periods builds capacity and resilience that prevents crises and enables faster recovery—this produces durable effects"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Long-term practice makes no difference compared to crisis-only use"
+                },
+                {
+                    "id": "opt4",
+                    "text": "You should only practice stress management during high stress"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The research distinguishes between reactive (crisis-only) and proactive (ongoing) stress management. Short-term/reactive approaches use techniques only when stress is already high—this provides some benefit but limited durability. Long-term lifestyle integration involves regular practice during both low and high stress periods, which: (1) builds capacity—exercise, sleep quality, cognitive flexibility, social connection—that prevents stress from escalating to crisis, (2) creates habits that activate automatically rather than requiring effortful initiation during crisis when capacity is lowest, (3) produces the durable effects seen in follow-up studies (CBT effects increase at follow-up rather than decrease), and (4) enables faster recovery when stress does escalate. This is the difference between managing crises and building resilience."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "When should you seek professional support even while maintaining your personal stress management plan?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Never—if you have a plan, you should never need professional help"
+                },
+                {
+                    "id": "opt2",
+                    "text": "When stress persists despite consistent plan implementation, when symptoms reach clinical severity (depression, anxiety, suicidality), when structural stressors exceed individual coping capacity, or for periodic check-ins and skill refinement"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only if you are hospitalized"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Seeking help means your plan failed"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Having a personal stress management plan does not mean you should never seek professional support—it means you have a foundation to build on. Professional support is appropriate when: (1) stress persists or worsens despite consistent implementation of your plan for 4+ weeks (may indicate clinical condition or need for plan adjustment), (2) symptoms reach clinical severity (persistent depression, severe anxiety, panic attacks, suicidality)—these require clinical treatment, not just self-management, (3) structural stressors (workplace abuse, financial crisis, relationship violence) exceed individual coping capacity and require advocacy/intervention, (4) major life transitions or traumas require processing beyond self-help, or (5) periodic check-ins with a therapist or counselor for skill refinement and accountability, even when functioning well. Professional support complements, not replaces, personal stress management—they work together."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "20",
+    "title": "Maintaining Long-Term Stress Resilience - Quiz"
+}

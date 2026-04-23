@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1.5: Common Roadblocks & How to Overcome Them</title>
+    <style>
+        /* --- Brand Colors & Fonts --- */
+        :root {
+            --brand-primary-blue: #004b8d;
+            --brand-secondary-blue: #126cbe;
+            --brand-light-grey: #F8F8F8;
+            --brand-text-dark: #1A1A1A;
+            --brand-text-light: #5A5A5A;
+            --brand-white: #FFFFFF;
+            --brand-green: #4CAF50;
+            --warning-bg: #FFF3E0;
+            --warning-border: #FFC107;
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- General & Layout --- */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--brand-text-dark);
+            background-color: var(--brand-white);
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        /* --- Typography & Headers --- */
+        h1, h2, h3 { font-weight: 600; color: var(--brand-primary-blue); }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+        h2 { font-size: 24px; border-bottom: 2px solid var(--brand-light-grey); padding-bottom: 10px; margin-bottom: 20px; }
+        p { margin-bottom: 15px; }
+
+        /* --- Interactive Flip Cards --- */
+        .roadblock-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            perspective: 1200px;
+        }
+        .roadblock-card { background-color: transparent; height: 220px; cursor: pointer; }
+        .roadblock-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; }
+        .roadblock-card.flipped .roadblock-card-inner { transform: rotateY(180deg); }
+        .roadblock-card-front, .roadblock-card-back {
+            position: absolute; width: 100%; height: 100%;
+            -webkit-backface-visibility: hidden; backface-visibility: hidden;
+            display: flex; flex-direction: column; justify-content: center;
+            padding: 20px; border-radius: 8px;
+        }
+        .roadblock-card-front {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+        }
+        .roadblock-card-front h3 { color: #E65100; font-size: 20px; margin-top: 0; }
+        .roadblock-card-back {
+            background-color: #e8f5e9;
+            border: 1px solid var(--brand-green);
+            transform: rotateY(180deg);
+        }
+        .roadblock-card-back h3 { color: var(--brand-green); font-size: 18px; margin-top: 0; }
+        .roadblock-card-back p { font-size: 14px; margin-bottom: 0; }
+        
+        /* --- Other Components --- */
+        .davids-note {
+            background-color: #f0f7ff;
+            border-left: 5px solid var(--brand-secondary-blue);
+            padding: 20px;
+            font-style: italic;
+            border-radius: 4px;
+        }
+        .final-cta {
+            background-color: var(--brand-light-grey);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* --- Crisis Resources --- */
+        .crisis-footer {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            padding: 15px; margin-top: 40px; border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Lesson 1.5: Common Roadblocks & How to Overcome Them</h1>
+            <p class="lesson-subtitle">Guidance for when the journey gets tough, from David Glenn, PMHNP-BC</p>
+        </header>
+
+        <section class="section">
+            <h2>Normalizing the Challenge</h2>
+            <p>Welcome. By now, you've started implementing some of the most powerful techniques in sleep science. And if you're like most people, you may have also discovered that this process isn't always a straight line. This is completely normal and expected.</p>
+            <div class="davids-note">
+                <p><strong>A Clinical Note from David:</strong> In my practice, the first two weeks are often the most challenging. Your body and mind are unlearning old, ingrained habits and building new ones. The initial discomfort is often a sign that the changes are taking hold. My goal in this lesson is to be a voice of reassurance and give you the practical strategies I share with my own patients to navigate these common bumps in the road.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Common Roadblocks: What You Might Be Feeling</h2>
+            <p>Do any of these sound familiar? Click on a card to reveal the strategy for overcoming it.</p>
+            <div class="roadblock-grid">
+                <div class="roadblock-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0">
+                    <div class="roadblock-card-inner">
+                        <div class="roadblock-card-front"><h3>"I'm even MORE tired since starting my sleep window."</h3></div>
+                        <div class="roadblock-card-back">
+                            <h3>Strategy: Trust the Process</h3>
+                            <p>This is the most common feedback! It's a sign that you are successfully building sleep pressure. This intense tiredness is temporary. Stick with your schedule—especially your wake-up time—for at least 7-10 days. The deep, consolidated sleep that follows is worth it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadblock-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0">
+                    <div class="roadblock-card-inner">
+                        <div class="roadblock-card-front"><h3>"My racing thoughts are still keeping me awake."</h3></div>
+                        <div class="roadblock-card-back">
+                            <h3>Strategy: Schedule Your Worry</h3>
+                            <p>Don't battle your thoughts in bed. Double down on the "Worry Time" technique from Lesson 1.3. Set aside 15 minutes in the early evening to write down every anxiety. This gives your brain a designated time to process, making it less likely to interrupt you at night.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="roadblock-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0">
+                    <div class="roadblock-card-inner">
+                        <div class="roadblock-card-front"><h3>"I missed a day / stayed up late. Have I ruined my progress?"</h3></div>
+                        <div class="roadblock-card-back">
+                            <h3>Strategy: The "Next Right Choice" Rule</h3>
+                            <p>Absolutely not. The goal is progress, not perfection. You cannot fail. The only thing that matters is the next right choice. Did you stay up late? The next right choice is to get up at your scheduled wake-up time. Don't let one off night derail the entire system.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="roadblock-card" onclick="this.classList.toggle('flipped')" role="button" tabindex="0">
+                    <div class="roadblock-card-inner">
+                        <div class="roadblock-card-front"><h3>"I get anxious just thinking about having to follow the rules."</h3></div>
+                        <div class="roadblock-card-back">
+                            <h3>Strategy: Focus on ONE Thing</h3>
+                            <p>If the whole system feels overwhelming, simplify. For this week, focus on just ONE core rule. Make it your non-negotiable. Is it your wake-up time? Is it the 'digital sunset'? Master one component, build confidence, and then layer on the next when you feel ready.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section final-cta">
+            <h2>You Have What It Takes</h2>
+            <p>Building a new skill takes practice, patience, and self-compassion. The fact that you are here, learning how to navigate challenges, shows your commitment. You are building resilience.</p>
+            <p>Remember to use the resources available to you, including the downloadable notes for this lesson and the community forum to connect with others on the same journey.</p>
+        </section>
+
+        <footer>
+            <div class="crisis-footer">
+                <h3>Crisis Resources & Immediate Support</h3>
+                <p>This course is educational. If you're in immediate danger, please use the resources below.</p>
+                <ul><li><strong>Emergency Services:</strong> 911</li><li><strong>National Suicide Prevention Lifeline:</strong> 988</li><li><strong>Crisis Text Line:</strong> Text HOME to 741741</li></ul>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the primary mechanism by which creative expression (journaling, drawing) helps with emotional regulation?",
+      "options": [
+        {"id": "opt1", "text": "It provides a cathartic release that makes emotions go away"},
+        {"id": "opt2", "text": "Affect labeling—naming and organizing emotions through words or visuals reduces amygdala activation"},
+        {"id": "opt3", "text": "It distracts you from difficult feelings so you don't have to process them"},
+        {"id": "opt4", "text": "It increases emotional intensity so you can experience feelings more deeply"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research on affect labeling shows that naming emotions (through words or visual forms) helps organize and regulate feelings by increasing prefrontal cortex activity while decreasing amygdala reactivity. The benefit comes from organizing and labeling emotions, not from venting or distraction."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the critical difference between this course and licensed art therapy?",
+      "options": [
+        {"id": "opt1", "text": "This course teaches the same techniques but costs less than seeing a therapist"},
+        {"id": "opt2", "text": "This course provides creative self-help tools for emotional awareness; art therapy is clinical treatment delivered by trained therapists"},
+        {"id": "opt3", "text": "This course is for beginners and art therapy is for advanced practitioners"},
+        {"id": "opt4", "text": "There is no real difference—both involve using art to improve mental health"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Licensed art therapy involves trained, credentialed therapists providing clinical assessment, treatment planning, and therapeutic interventions for mental health conditions. This course provides educational tools for emotional awareness and regulation—self-care practices, not clinical treatment. The evidence base, scope, and safety considerations are different."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "According to the research, which type of journaling shows better outcomes than unstructured emotional venting?",
+      "options": [
+        {"id": "opt1", "text": "Writing whatever comes to mind without any specific focus or prompts"},
+        {"id": "opt2", "text": "Structured journaling with gratitude, self-compassion, or strengths-based prompts"},
+        {"id": "opt3", "text": "Writing only about traumatic experiences in as much detail as possible"},
+        {"id": "opt4", "text": "Journaling only when you're feeling extremely distressed"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Research shows that structured journaling approaches—gratitude lists, self-compassion prompts, strengths-based reflection—produce small-to-moderate improvements in depression and anxiety, while unstructured venting or purely negative recounting is less helpful. Structured reflection that connects feelings to values, context, and coping is more beneficial."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "What is the evidence grade for creative activities and affect labeling in supporting wellbeing?",
+      "options": [
+        {"id": "opt1", "text": "STRONG—large, consistent effects across all populations and conditions"},
+        {"id": "opt2", "text": "MODERATE—associations with wellbeing, supported by neuroscience of affect labeling"},
+        {"id": "opt3", "text": "EMERGING—only a few preliminary studies with mixed results"},
+        {"id": "opt4", "text": "LIMITED—no reliable evidence that creative expression helps with emotions"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "The evidence for creative activities and affect labeling is graded as MODERATE. Creative activities are associated with greater day-to-day wellbeing (mediated by autonomy and competence), and neuroscience shows affect labeling reduces amygdala activation. Effects are reliable but modest—not large or universal, but supported by consistent research."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "When is creative expression NOT sufficient as a standalone approach, requiring professional help instead?",
+      "options": [
+        {"id": "opt1", "text": "Whenever you feel stressed or anxious about daily life"},
+        {"id": "opt2", "text": "If you don't consider yourself naturally creative or artistic"},
+        {"id": "opt3", "text": "If you experience persistent suicidal thoughts, active self-harm, psychosis, severe eating disorders, or complex PTSD"},
+        {"id": "opt4", "text": "If you prefer talking to a therapist rather than doing creative activities"}
+      ],
+      "correctAnswer": "opt3",
+      "explanation": "This course is educational, not clinical treatment. If you experience persistent suicidal ideation, active self-harm, psychotic symptoms, acute mania, severe eating disorders, or complex PTSD, creative self-help is not sufficient—these conditions require professional clinical care. Creative expression can complement therapy but cannot replace it for serious mental health conditions."
+    }
+  ],
+  "sectionId": "stress-management",
+  "courseId": "creative-expression",
+  "lessonId": "1",
+  "title": "The Science of Creative Expression for Wellbeing - Quiz"
+}

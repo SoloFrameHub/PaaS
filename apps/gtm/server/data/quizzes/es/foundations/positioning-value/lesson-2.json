@@ -1,0 +1,141 @@
+{
+  "lessonId": "2",
+  "courseId": "positioning-value",
+  "sectionId": "foundations",
+  "title": "El Marco de Posicionamiento de April Dunford",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el primer paso recomendado en el marco de posicionamiento de 5 componentes de April Dunford?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elegir una Categoría de Mercado"
+        },
+        {
+          "id": "b",
+          "text": "Identificar Segmentos de Clientes Objetivo"
+        },
+        {
+          "id": "c",
+          "text": "Encontrar Alternativas Competitivas"
+        },
+        {
+          "id": "d",
+          "text": "Listar Atributos Únicos"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "El marco comienza con las Alternativas Competitivas porque no puedes definir qué te hace único o valioso hasta que sepas qué haría el cliente si no existieras."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Para la mayoría de las startups B2B, ¿quién o qué es a menudo su mayor 'competidor'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Competidores directos con características similares"
+        },
+        {
+          "id": "b",
+          "text": "Líderes del mercado como Salesforce o Microsoft"
+        },
+        {
+          "id": "c",
+          "text": "Hojas de cálculo o 'no hacer nada'"
+        },
+        {
+          "id": "d",
+          "text": "Alternativas de código abierto"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A menudo el mayor obstáculo es el 'statu quo.' La mayoría de los fundadores pierden tratos ante las hojas de cálculo, los procesos manuales o el cliente que simplemente decide que el problema no vale el esfuerzo de resolver."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es la diferencia principal entre un 'Atributo Único' y un 'Valor Diferenciado'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los Atributos son sobre el cliente; el Valor es sobre el producto"
+        },
+        {
+          "id": "b",
+          "text": "Los Atributos son características o hechos específicos; el Valor es el resultado que esas características habilitan para el cliente"
+        },
+        {
+          "id": "c",
+          "text": "No hay diferencia; son lo mismo"
+        },
+        {
+          "id": "d",
+          "text": "El Valor es técnico; los Atributos son emocionales"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los Atributos Únicos son hechos funcionales (ej., 'API en tiempo real'), mientras que el Valor Diferenciado es el beneficio que el cliente obtiene de ese hecho (ej., 'Nunca tomes decisiones con datos desactualizados')."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "En el marco, ¿cuándo deberías decidir sobre tu 'Categoría de Mercado'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al principio, para establecer el alcance"
+        },
+        {
+          "id": "b",
+          "text": "Justo después de listar tus atributos únicos"
+        },
+        {
+          "id": "c",
+          "text": "Al final, ya que proporciona el contexto para todas las demás decisiones"
+        },
+        {
+          "id": "d",
+          "text": "Solo después de tener tus primeros 10 clientes"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La Categoría de Mercado es el último escalón de la escalera porque debe proporcionar el mejor contexto para que tu valor único sea visto como una necesidad y no como algo agradable de tener."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "¿Qué busca específicamente el 'Segmento de Cliente Objetivo' en este marco?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cualquiera que posiblemente pueda usar tu producto"
+        },
+        {
+          "id": "b",
+          "text": "El grupo de personas que MÁS se preocupa por tu valor único diferenciado"
+        },
+        {
+          "id": "c",
+          "text": "El tamaño de mercado más grande posible (TAM)"
+        },
+        {
+          "id": "d",
+          "text": "Inversores y socios que pueden ayudarte a escalar"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Tu segmento objetivo debe ser específico — las personas cuyos dolores específicos son resueltos exactamente por tu valor único. Apuntar a 'todos' diluye tu mensajería."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Aplica el marco de April Dunford a tu propio negocio. ¿Cuál es la 'Alternativa Competitiva' más importante que usan hoy tus clientes (ej., una hoja de cálculo, no hacer nada o un rival directo)? ¿Por qué la eligen sobre una solución especializada?",
+      "minLength": 100,
+      "promptForAI": "Evalúa la comprensión del estudiante sobre las alternativas competitivas. Verifica si identificaron una alternativa específica y explicaron la razón detrás de su uso actual. Proporciona retroalimentación sobre cómo sus atributos únicos podrían contrarrestar esta alternativa."
+    }
+  ],
+  "passingScore": 70
+}

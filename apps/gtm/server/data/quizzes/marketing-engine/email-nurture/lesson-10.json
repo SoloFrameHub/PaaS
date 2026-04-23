@@ -1,0 +1,172 @@
+{
+    "courseId": "email-nurture",
+    "lessonId": "10",
+    "lessonTitle": "Your Email Playbook",
+    "track": "marketing-engine",
+    "version": "1.0.0",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the purpose of creating a documented email 'playbook'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To impress investors with your marketing documentation."
+                },
+                {
+                    "id": "b",
+                    "text": "To prevent you from having to re-learn your own system every time you want to make changes, ensuring consistency and sustainability."
+                },
+                {
+                    "id": "c",
+                    "text": "To share your strategy publicly for marketing purposes."
+                },
+                {
+                    "id": "d",
+                    "text": "To compare your system with competitors."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A playbook is your operating manual. When everything is documented—sequences, segments, schedules—you can maintain the system without starting from scratch each time. It also helps you train others if you ever hire help.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the recommended total weekly time investment for maintaining an email system?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 hour per week maximum."
+                },
+                {
+                    "id": "b",
+                    "text": "3-4 hours per week."
+                },
+                {
+                    "id": "c",
+                    "text": "10+ hours per week."
+                },
+                {
+                    "id": "d",
+                    "text": "Whatever time is left after other work."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The weekly rhythm described—metrics review, newsletter planning/writing/sending, and sequence maintenance—totals 3-4 hours per week. This is sustainable long-term for a solo founder while keeping email consistently running.",
+            "difficulty": "foundational",
+            "xpValue": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What should be included in your monthly email review?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Complete rewrite of all email sequences."
+                },
+                {
+                    "id": "b",
+                    "text": "List growth analysis, sequence performance review, segmentation effectiveness check, and content calendar planning."
+                },
+                {
+                    "id": "c",
+                    "text": "Comparison of your email tool to competitors."
+                },
+                {
+                    "id": "d",
+                    "text": "A/B testing of all subject lines."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Monthly reviews focus on trends and planning: How is the list growing? Are sequences performing? Are segments effective? What topics will next month cover? This prevents drift and keeps the system optimized.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "According to the 'First 30 Days Action Plan,' what should be completed in Week 1?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Write the full nurture sequence."
+                },
+                {
+                    "id": "b",
+                    "text": "Foundation: Choose email tool, create account, verify domain, create first lead magnet, build landing page, set up basic form."
+                },
+                {
+                    "id": "c",
+                    "text": "Send first newsletter to the list."
+                },
+                {
+                    "id": "d",
+                    "text": "Set up advanced segmentation and automation."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Week 1 is about foundations: getting the tool in place, verifying your domain for deliverability, and creating your first lead magnet with a landing page. You can't run before you walk.",
+            "difficulty": "application",
+            "xpValue": 15
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "How does email connect to the broader acquisition ecosystem?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Email replaces all other marketing channels."
+                },
+                {
+                    "id": "b",
+                    "text": "Email exists in isolation—it has no connection to other channels."
+                },
+                {
+                    "id": "c",
+                    "text": "Content drives traffic → Email captures and nurtures → Sale. LinkedIn connections and community members should flow into email. Cold email and email nurture are separate systems."
+                },
+                {
+                    "id": "d",
+                    "text": "Email is only for customer support, not acquisition."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Email is the central hub of the acquisition system. SEO, social, and community drive traffic that email captures. LinkedIn connections become email subscribers. Cold outreach is separate from opt-in nurture. All channels feed the email list.",
+            "difficulty": "synthesis",
+            "xpValue": 20
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Create the outline for your email playbook. Document: (1) Your first lead magnet, (2) Your 5-email welcome sequence structure, (3) Your newsletter format and cadence, (4) Your 2-3 initial segments, (5) What you'll track in your metrics dashboard. This is your operational document—make it specific enough to actually use.",
+            "promptHints": [
+                "Be specific—vague playbooks are useless playbooks.",
+                "Focus on what you can actually implement in the next 30 days.",
+                "This is a living document—start simple and expand over time."
+            ],
+            "minimumWords": 100,
+            "xpValue": 30,
+            "aiEvaluationCriteria": {
+                "requiresSpecificity": true,
+                "requiresPersonalContext": true,
+                "requiresActionableInsight": true
+            }
+        }
+    ],
+    "passingScore": 70,
+    "totalXP": 110,
+    "metadata": {
+        "estimatedTime": "15-18 minutes",
+        "prerequisiteQuizzes": [
+            "9"
+        ],
+        "unlocks": []
+    },
+    "sectionId": "marketing-engine",
+    "title": "Your Email Playbook - Quiz"
+}

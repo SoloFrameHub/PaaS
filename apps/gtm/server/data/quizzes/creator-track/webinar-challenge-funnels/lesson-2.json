@@ -1,0 +1,91 @@
+{
+    "lessonId": "2",
+    "courseId": "webinar-challenge-funnels",
+    "sectionId": "creator-track",
+    "title": "The Perfect Webinar Framework Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In the Perfect Webinar Framework, what is the purpose of the 'Three Secrets' section?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To tease content from the paid program without giving away any real value"
+                },
+                {
+                    "id": "b",
+                    "text": "To systematically replace the three biggest false beliefs that prevent the audience from buying"
+                },
+                {
+                    "id": "c",
+                    "text": "To share three client testimonials that prove the offer works"
+                },
+                {
+                    "id": "d",
+                    "text": "To reveal three hidden features of the paid product that are not on the sales page"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Three Secrets are built on the insight that people don't buy because of false beliefs, not because of lack of information. Each secret addresses a specific false belief: the vehicle (this won't work), the internal belief (I can't do this), and the external belief (this won't work for my situation)."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What psychological principle makes the 'stack' technique effective in the offer presentation?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The scarcity principle -- showing limited availability"
+                },
+                {
+                    "id": "b",
+                    "text": "The anchoring principle -- establishing total value before revealing the actual price"
+                },
+                {
+                    "id": "c",
+                    "text": "The reciprocity principle -- giving before asking"
+                },
+                {
+                    "id": "d",
+                    "text": "The authority principle -- citing expert endorsements"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The stack leverages the anchoring principle. By building a visual list of components with individual values that sum to a high total, the actual price feels dramatically low by comparison. The audience evaluates the price against the anchor, not in a vacuum."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the five steps of the Epiphany Bridge origin story structure?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Problem, Solution, Proof, Price, Close"
+                },
+                {
+                    "id": "b",
+                    "text": "Hook, Story, Offer, Testimonial, Guarantee"
+                },
+                {
+                    "id": "c",
+                    "text": "Backstory, The Wall, The Epiphany, The Transformation, The Bridge"
+                },
+                {
+                    "id": "d",
+                    "text": "Introduction, Conflict, Climax, Resolution, Call to Action"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The Epiphany Bridge structure moves through: the Backstory (where you were before), the Wall (the moment of maximum frustration), the Epiphany (the insight that changed everything), the Transformation (what happened after), and the Bridge (connecting your story to the audience's situation)."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Identify the three biggest false beliefs that your ideal customer holds that prevent them from buying your offer. For each false belief, describe how you would reframe it using a story, framework, or evidence. Structure your answer using the Vehicle belief, Internal belief, and External belief categories.",
+            "minLength": 100,
+            "aiPrompt": "The student should identify three distinct false beliefs mapped to the three categories: Vehicle (the method won't work), Internal (I can't do this), and External (this won't work for my situation). Each belief should have a specific reframing strategy using story, framework, or evidence. Evaluate whether the beliefs are genuinely distinct and whether the reframes are persuasive and honest."
+        }
+    ]
+}

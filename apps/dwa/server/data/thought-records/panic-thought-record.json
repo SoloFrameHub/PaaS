@@ -1,0 +1,108 @@
+{
+  "id": "panic-thought-record",
+  "title": "Panic Catastrophic Thought Challenger",
+  "description": "Use this worksheet to identify and challenge the catastrophic thoughts that fuel panic attacks. This is cognitive restructuring applied directly to panic.",
+  "instructions": "When you notice panic-related anxiety rising — or after a panic attack — work through each step below. Start with the triggering sensation, identify the catastrophic thought, examine the evidence, and develop a more balanced interpretation.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Trigger — What sensation or situation started the panic?",
+      "type": "textarea",
+      "placeholder": "e.g., I noticed my heart beating fast while sitting at my desk...",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. Catastrophic Thought — What did you think was happening?",
+      "type": "textarea",
+      "placeholder": "e.g., 'I'm having a heart attack', 'I'm going to faint', 'I'm losing my mind'",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. Fear Intensity — How scared were you? (0 = not at all, 100 = most terrified ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. Thinking Trap — Which cognitive distortion best fits?",
+      "type": "select",
+      "options": [
+        { "value": "catastrophizing", "label": "Catastrophizing — Jumping to the worst possible outcome" },
+        { "value": "emotional-reasoning", "label": "Emotional Reasoning — 'I feel scared so something must be dangerous'" },
+        { "value": "fortune-telling", "label": "Fortune Telling — Predicting a negative outcome" },
+        { "value": "interoceptive-bias", "label": "Interoceptive Bias — Over-focusing on body sensations" },
+        { "value": "mind-reading", "label": "Mind Reading — 'Everyone can see something is wrong with me'" },
+        { "value": "overgeneralization", "label": "Overgeneralization — 'This always happens'" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. Evidence For — What makes you believe the catastrophic thought?",
+      "type": "textarea",
+      "placeholder": "e.g., My heart was racing, I felt dizzy...",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. Evidence Against — What contradicts the catastrophic thought?",
+      "type": "textarea",
+      "placeholder": "e.g., I've had this sensation 50+ times and it was always panic, not a heart attack. My doctor said my heart is healthy. The sensation passed in 15 minutes.",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. Balanced Thought — What is a more accurate interpretation?",
+      "type": "textarea",
+      "placeholder": "e.g., 'My heart is racing because of adrenaline, not because something is wrong. This is a panic attack and it will pass on its own.'",
+      "required": true
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. Re-rate Fear — How scared do you feel now? (0 = not at all, 100 = most terrified ever)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "catastrophizing",
+      "name": "Catastrophizing",
+      "description": "Jumping to the worst possible outcome: 'My heart is racing so I must be having a heart attack.'"
+    },
+    {
+      "id": "emotional-reasoning",
+      "name": "Emotional Reasoning",
+      "description": "Believing feelings are facts: 'I feel terrified, so something terrible must be happening.'"
+    },
+    {
+      "id": "fortune-telling",
+      "name": "Fortune Telling",
+      "description": "Predicting negative outcomes: 'I know I'm going to have a panic attack at the party.'"
+    },
+    {
+      "id": "interoceptive-bias",
+      "name": "Interoceptive Bias",
+      "description": "Selectively noticing and amplifying body sensations: 'My heart skipped a beat — something is wrong.'"
+    },
+    {
+      "id": "mind-reading",
+      "name": "Mind Reading",
+      "description": "Assuming others can see your distress: 'Everyone can tell I'm about to lose control.'"
+    },
+    {
+      "id": "overgeneralization",
+      "name": "Overgeneralization",
+      "description": "Drawing broad conclusions from single events: 'I panicked once at the store, so I can never go back.'"
+    }
+  ],
+  "disclaimer": "This worksheet is for educational purposes only and is not a substitute for professional mental health treatment. If you are in crisis, contact the 988 Suicide & Crisis Lifeline by calling or texting 988."
+}

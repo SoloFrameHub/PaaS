@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Approximately what percentage of the body's serotonin is produced in the gut rather than the brain?",
+            "options": [
+                { "id": "opt1", "text": "About 10%" },
+                { "id": "opt2", "text": "About 50%" },
+                { "id": "opt3", "text": "About 90%" },
+                { "id": "opt4", "text": "About 25%" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "About 90% of the body's serotonin is produced in the gut, not the brain. This highlights how the gut is a major player in mood regulation through the gut-brain axis."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "The vagus nerve carries signals primarily in which direction?",
+            "options": [
+                { "id": "opt1", "text": "About 80% of signals travel from the brain to the gut" },
+                { "id": "opt2", "text": "Signals travel equally in both directions" },
+                { "id": "opt3", "text": "The vagus nerve only sends signals from the brain to the gut" },
+                { "id": "opt4", "text": "About 80% of signals travel from the gut to the brain" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "About 80% of vagus nerve fibers carry signals from the gut to the brain, meaning your gut is 'talking' to your brain far more than the other way around. This makes your gut a major source of information for your brain."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is NOT one of the four main communication pathways between the gut and brain?",
+            "options": [
+                { "id": "opt1", "text": "The vagus nerve" },
+                { "id": "opt2", "text": "The skeletal muscular system" },
+                { "id": "opt3", "text": "The immune system" },
+                { "id": "opt4", "text": "Microbial metabolites" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The four main gut-brain communication pathways are the vagus nerve, the immune system, the endocrine system, and microbial metabolites. The skeletal muscular system is not a primary communication pathway between the gut and brain."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does 'vagal tone' refer to, and why is it relevant to mental health?",
+            "options": [
+                { "id": "opt1", "text": "The sound your vagus nerve makes, which can be measured with a stethoscope" },
+                { "id": "opt2", "text": "How active and responsive your vagus nerve is — higher vagal tone is linked to better emotional regulation and lower anxiety" },
+                { "id": "opt3", "text": "The thickness of the vagus nerve, which determines overall intelligence" },
+                { "id": "opt4", "text": "The frequency of nerve signals, which remains constant throughout life" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Vagal tone refers to how active and responsive the vagus nerve is. Higher vagal tone is associated with better emotional regulation, lower anxiety, and greater resilience to stress. Importantly, vagal tone is not fixed and can be improved through practices like deep breathing, meditation, and cold water exposure."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "A healthy microbiome is best characterized by which quality?",
+            "options": [
+                { "id": "opt1", "text": "Having one dominant species of bacteria that crowds out all others" },
+                { "id": "opt2", "text": "Having no bacteria at all, since bacteria cause disease" },
+                { "id": "opt3", "text": "Having a small number of highly specialized bacterial strains" },
+                { "id": "opt4", "text": "Having high diversity — many different species of bacteria, each contributing different functions" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "A healthy microbiome is characterized by diversity — having many different species of bacteria, each contributing different functions. Research consistently shows that people with depression and anxiety tend to have less microbial diversity."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "gut-brain-foundations",
+    "lessonId": "1",
+    "title": "The Gut-Brain Axis: Your Body's Hidden Communication Network - Quiz"
+}

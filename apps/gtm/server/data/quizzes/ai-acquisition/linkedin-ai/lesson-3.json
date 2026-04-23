@@ -1,0 +1,126 @@
+{
+    "lessonId": "3",
+    "courseId": "linkedin-ai",
+    "sectionId": "ai-acquisition",
+    "title": "Repurposing Mastery Check",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What's the ideal repurposing ratio for solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "1 long-form piece → 2-3 LinkedIn posts"
+                },
+                {
+                    "id": "b",
+                    "text": "1 long-form piece → 5-7 LinkedIn posts"
+                },
+                {
+                    "id": "c",
+                    "text": "1 long-form piece → 8-12 LinkedIn posts"
+                },
+                {
+                    "id": "d",
+                    "text": "1 long-form piece → 15+ LinkedIn posts"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The 1:8 ratio is the sweet spot. Less than 5 and you're leaving ROI on the table. More than 12 and you risk repetition fatigue."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What's the biggest mistake when repurposing content to LinkedIn?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using AI to draft posts"
+                },
+                {
+                    "id": "b",
+                    "text": "Copy-pasting the exact same text from your newsletter"
+                },
+                {
+                    "id": "c",
+                    "text": "Creating multiple posts from one piece"
+                },
+                {
+                    "id": "d",
+                    "text": "Scheduling posts in advance"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Copy-paste is the cardinal sin. LinkedIn's algorithm detects duplicates, and your audience can tell you're phoning it in. Always reformat for the platform."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How long is the 'freshness window' for repurposed content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "24-48 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "7-14 days"
+                },
+                {
+                    "id": "c",
+                    "text": "30-60 days"
+                },
+                {
+                    "id": "d",
+                    "text": "90+ days"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Repurposed content performs best within 7-14 days of original publication. After 30 days, add a new angle or updated data to make it feel current."
+        },
+        {
+            "id": "q4",
+            "type": "true-false",
+            "question": "LinkedIn penalizes repurposed content in its algorithm.",
+            "correctAnswer": "b",
+            "explanation": "False. LinkedIn doesn't penalize repurposed content IF it's reformatted to feel native to the platform. Line breaks, hooks, and platform-specific CTAs are key.",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "True"
+                },
+                {
+                    "id": "b",
+                    "text": "False"
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What are the 4 core angles for remixing content?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Story, Tactical, Promotional, Generic"
+                },
+                {
+                    "id": "b",
+                    "text": "Story, Tactical, Contrarian, Data"
+                },
+                {
+                    "id": "c",
+                    "text": "Personal, Professional, Educational, Entertaining"
+                },
+                {
+                    "id": "d",
+                    "text": "Short, Medium, Long, Visual"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Story, Tactical, Contrarian, and Data are the 4 angles that ensure each post feels distinct while covering the same core insight."
+        }
+    ]
+}

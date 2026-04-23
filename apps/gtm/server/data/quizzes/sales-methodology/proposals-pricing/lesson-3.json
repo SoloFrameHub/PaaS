@@ -1,0 +1,141 @@
+{
+    "lessonId": "3",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Pricing Psychology Fundamentals Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Anchoring' in the context of pricing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Providing the lowest possible price to 'anchor' the customer's loyalty."
+                },
+                {
+                    "id": "b",
+                    "text": "The psychological tendency to rely too heavily on the first piece of information offered (the 'anchor') when making decisions."
+                },
+                {
+                    "id": "c",
+                    "text": "Ensuring your price is 'anchored' to your competitors' prices exactly."
+                },
+                {
+                    "id": "d",
+                    "text": "Fixing your price for at least 12 months to show stability."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Anchoring means the first number a buyer sees shapes their perception of every subsequent number. A high anchor makes following prices seem reasonable by comparison."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which framing is generally more effective for selling B2B software or services?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "'This software costs $1,200.'"
+                },
+                {
+                    "id": "b",
+                    "text": "'For a $1,200 investment, you'll recover 20 hours of manual work every month.'"
+                },
+                {
+                    "id": "c",
+                    "text": "'The total fee for this service is $1,200.'"
+                },
+                {
+                    "id": "d",
+                    "text": "'Our price is $1,200, which is cheaper than our competitors.'"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Framing the price as an 'investment' tied to a specific ROI (recovered time) shifts the mindset from 'money lost' to 'value gained.'"
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'Goldilocks Effect' in three-tier pricing?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Buyers always choosing the cheapest option to save money."
+                },
+                {
+                    "id": "b",
+                    "text": "Buyers feeling the high tier is overkill, the low tier is insufficient, and the middle tier is 'just right'."
+                },
+                {
+                    "id": "c",
+                    "text": "Naming your tiers after fairy tale characters."
+                },
+                {
+                    "id": "d",
+                    "text": "Only offering a single price so there is no confusion."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Three-tier pricing helps buyers avoid the anxiety of choosing the 'extreme' options, making the middle (and often most profitable) tier the most frequent choice."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "When should you generally AVOID 'Charm Pricing' (e.g., $49,997) and use 'Prestige Pricing' (e.g., $50,000)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When selling an ebook for $19."
+                },
+                {
+                    "id": "b",
+                    "text": "When selling a monthly software subscription to a small business."
+                },
+                {
+                    "id": "c",
+                    "text": "When dealing with high-ticket enterprise contracts or high-end professional consulting."
+                },
+                {
+                    "id": "d",
+                    "text": "Charm pricing should never be avoided."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Round numbers signal confidence, luxury, and professionalism in high-ticket environments. Charm pricing in a $50k deal can look 'cheap' or amateur."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "If a prospect asks for a 'ballpark' price early in discovery, what is the best strategy according to the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Give your lowest possible price to keep them interested."
+                },
+                {
+                    "id": "b",
+                    "text": "Refuse to answer until the very end of the second call."
+                },
+                {
+                    "id": "c",
+                    "text": "Provide a wide range anchored to the cost of the problem, and redirect back to discovery."
+                },
+                {
+                    "id": "d",
+                    "text": "Give them a link to your pricing page and hang up."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Providing a range satisfies the prospect's curiosity while allowing you to anchor the conversation in value before committing to a specific number."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Think about your 'High Anchor.' If you don't have a high-tier product today, what would a 'Concierge' or 'Managed' version of your offering look like that costs 5x-10x your current price? Describe it briefly.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies high-value features (e.g., personalized setup, 24/7 support, manual auditing). Provide feedback on how this hypothetical high anchor makes their current price look more attractive."
+        }
+    ]
+}

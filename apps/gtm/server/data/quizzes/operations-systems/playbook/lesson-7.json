@@ -1,0 +1,69 @@
+{
+  "lessonId": "7",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "The One-Page Personal Acquisition System",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why does the one-page constraint work?",
+      "options": [
+        { "id": "a", "text": "Because shorter documents are easier to email" },
+        {
+          "id": "b",
+          "text": "Because it forces prioritization — everything on the page earned its place"
+        },
+        { "id": "c", "text": "Because most printers only hold one page" },
+        { "id": "d", "text": "Because investors prefer one-pagers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The one-page constraint generates real commitments by making real decisions unavoidable. A 15-page strategy can hold contradictions. One page can't — you're forced to pick one channel, one ICP, one set of daily activities."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to research, how much more likely are written goals to be achieved?",
+      "options": [
+        { "id": "a", "text": "10% more likely" },
+        { "id": "b", "text": "25% more likely" },
+        { "id": "c", "text": "42% more likely" },
+        { "id": "d", "text": "80% more likely" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Written goals are 42% more likely to be achieved than unwritten ones. The one-page system amplifies this through commitment via constraint, daily visibility, and forced accountability."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Companies with a one-page strategy document execute how much faster?",
+      "options": [
+        { "id": "a", "text": "50% faster" },
+        { "id": "b", "text": "2x faster" },
+        { "id": "c", "text": "3x faster" },
+        { "id": "d", "text": "10x faster" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Companies with a one-page strategy document execute 3x faster than those with 20-page documents. Not because one-pagers have less information, but because the constraint forces prioritization."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The one-page system is just a simplification exercise — it contains less information than a full strategy.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. It's a clarity test, not a simplification exercise. The constraint forces you to eliminate vague aspirations and keep only what's actionable. Everything on the page earned its place through real decisions."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Draft your one-page acquisition system. What is your single ICP sentence, your primary channel, your daily activities, and your weekly metrics? Can you fit it on one page?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response creates a concise system with a specific ICP, named primary channel, concrete daily activities, and measurable weekly metrics. Check if it demonstrates the prioritization required by the one-page constraint rather than trying to include everything."
+    }
+  ]
+}

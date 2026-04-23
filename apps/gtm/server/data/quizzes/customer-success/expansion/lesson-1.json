@@ -1,0 +1,75 @@
+{
+  "lessonId": "1",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Expansion as a Growth Engine",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What does a Net Revenue Retention (NRR) of 106% mean for your business?",
+      "options": [
+        { "id": "a", "text": "You acquired 6% more new customers this month" },
+        {
+          "id": "b",
+          "text": "Your existing customer base grows 6% monthly from expansion alone, even without new customers"
+        },
+        { "id": "c", "text": "Your churn rate is 6%" },
+        { "id": "d", "text": "Your prices increased by 6%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "NRR above 100% means your existing customer base is growing in value. At 106%, your base grows 6% monthly just from expansion revenue, which compounds to roughly 100% annual growth without any new customer acquisition."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the NRR formula?",
+      "options": [
+        { "id": "a", "text": "(New MRR + Expansion MRR) / Starting MRR x 100" },
+        {
+          "id": "b",
+          "text": "(Starting MRR + Expansion - Contraction - Churn) / Starting MRR x 100"
+        },
+        {
+          "id": "c",
+          "text": "(Ending MRR - Starting MRR) / Starting MRR x 100"
+        },
+        { "id": "d", "text": "(Expansion MRR - Churn MRR) / Total MRR x 100" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "NRR = (Starting MRR + Expansion - Contraction - Churn) / Starting MRR x 100. This captures all changes to your existing customer base: upgrades, downgrades, and cancellations."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What NRR range do best-in-class SaaS companies achieve?",
+      "options": [
+        { "id": "a", "text": "95-100%" },
+        { "id": "b", "text": "100-110%" },
+        { "id": "c", "text": "120-130%" },
+        { "id": "d", "text": "150%+" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Best-in-class SaaS companies achieve 120-130% NRR. This means their existing customer base grows 20-30% annually purely from expansion, even if they stopped acquiring new customers entirely."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If your NRR is 95%, you need to acquire at least 5% new MRR each month just to stand still.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "True. An NRR of 95% means you're losing 5% of your existing base monthly. You need at least 5% new MRR from acquisition just to replace what you're losing, and even more to actually grow."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Calculate your current NRR using last month's data (starting MRR, expansion, contraction, and churn). Based on your result, describe whether your existing base is growing or shrinking and what specific actions you could take to improve it.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response includes actual or estimated numbers for all four NRR components, correctly calculates the result, accurately interprets whether the base is growing or shrinking, and proposes specific expansion strategies (not generic advice)."
+    }
+  ]
+}

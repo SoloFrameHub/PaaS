@@ -1,0 +1,142 @@
+{
+    "lessonId": "10",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Sales Linter for Email Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary function of the Sales Linter?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To fix your spelling and grammar"
+                },
+                {
+                    "id": "b",
+                    "text": "To audit your email drafts for psychological 'bugs' and sales effectiveness"
+                },
+                {
+                    "id": "c",
+                    "text": "To send your emails automatically"
+                },
+                {
+                    "id": "d",
+                    "text": "To find new leads for your business"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A Sales Linter focuses on the *strategy* and *psychology* of the outreach, ensuring it is prospect-focused and low-friction."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "If the Linter gives you a 'High Friction Score' for your CTA, what should you do?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Make the email longer to explain yourself better"
+                },
+                {
+                    "id": "b",
+                    "text": "Switch to a lower-friction ask, like a permission-based or binary question"
+                },
+                {
+                    "id": "c",
+                    "text": "Add a link to your full pricing page"
+                },
+                {
+                    "id": "d",
+                    "text": "Delete the CTA entirely"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "High friction means the bar for the prospect's response is too high. Softening the request (e.g., 'Worth a chat?' vs 'Can we meet for 30 minutes?') makes saying 'Yes' easier."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is 'Founder-Focus' in an email draft?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Focusing on your goals as a founder"
+                },
+                {
+                    "id": "b",
+                    "text": "Dominating the text with 'I', 'We', and 'Our' instead of 'You' and 'Your'"
+                },
+                {
+                    "id": "c",
+                    "text": "Writing about your personal hobbies"
+                },
+                {
+                    "id": "d",
+                    "text": "Only sending emails to other founders"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Founder-focus is a major turn-off for prospects. They care about their own problems, not your company's achievements or features."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How does the Linter catch 'Walls of Text'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By counting the total word count"
+                },
+                {
+                    "id": "b",
+                    "text": "By calculating the font size"
+                },
+                {
+                    "id": "c",
+                    "text": "By identifying long paragraphs (4+ lines) that will be difficult to read on a mobile screen"
+                },
+                {
+                    "id": "d",
+                    "text": "By checking the background color"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Readability is a form of respect for the recipient's time. Short paragraphs and white space make an email feel manageable."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why is 'Sales Stench' a problem for a solo founder?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It makes your email smell bad"
+                },
+                {
+                    "id": "b",
+                    "text": "It uses marketing buzzwords that signal to the prospect that you are a generic salesperson rather than a helpful practitioner"
+                },
+                {
+                    "id": "c",
+                    "text": "It is a sign that you are too successful"
+                },
+                {
+                    "id": "d",
+                    "text": "It is a trigger for computer viruses"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "As a solo founder, your advantage is your authenticity and expertise. Buzzwords like 'leveraging' or 'synergistic' undermine that trust and trigger the 'Delete' reflex."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Apply the 'Manual Linter Checklist' to your current best email template. Which 'Invisible Bug' (Self-Focus, Vague Ask, or Wall of Text) are you most guilty of? How exactly will you refactor that specific section today?",
+            "minLength": 100,
+            "promptForAI": "Evaluate the founder's honesty. Look for a specific refactoring plan (e.g., 'I will break my 5-sentence paragraph into three separate blocks')."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

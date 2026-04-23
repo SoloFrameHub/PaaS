@@ -1,0 +1,259 @@
+{
+    "lessonId": "10",
+    "courseId": "custom-ai-agents",
+    "sectionId": "ai-acquisition",
+    "title": "Security and Compliance Fundamentals",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "question": "Which of the following is NOT considered PII under GDPR?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Email address"
+                },
+                {
+                    "id": "b",
+                    "text": "Company name + job title"
+                },
+                {
+                    "id": "c",
+                    "text": "Industry category (e.g., 'SaaS')"
+                },
+                {
+                    "id": "d",
+                    "text": "LinkedIn profile URL"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Industry category alone is not PII. However, company name + job title CAN identify a person (e.g., 'CEO at Acme Corp' likely identifies one person), making it PII.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q2",
+            "question": "You're using Claude API to generate prospect research briefs. What's the minimum compliance requirement?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — API usage is exempt from GDPR"
+                },
+                {
+                    "id": "b",
+                    "text": "Sign a Data Processing Agreement (DPA) with Anthropic"
+                },
+                {
+                    "id": "c",
+                    "text": "Get explicit consent from every prospect before researching them"
+                },
+                {
+                    "id": "d",
+                    "text": "Only use anonymized data in prompts"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Under GDPR, you're the data controller and Anthropic is the data processor. You must have a DPA in place. Anthropic provides a standard DPA in account settings.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q3",
+            "question": "A prospect requests deletion of their data. What's your legal deadline to comply under GDPR?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "24 hours"
+                },
+                {
+                    "id": "b",
+                    "text": "7 days"
+                },
+                {
+                    "id": "c",
+                    "text": "30 days"
+                },
+                {
+                    "id": "d",
+                    "text": "90 days"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "GDPR requires deletion 'without undue delay' and within 30 days. Best practice: respond within 24 hours, complete deletion within 7-14 days.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q4",
+            "question": "Where should you NEVER store API keys?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Environment variables (.env file)"
+                },
+                {
+                    "id": "b",
+                    "text": "Railway Secrets or Vercel Environment Variables"
+                },
+                {
+                    "id": "c",
+                    "text": "Hardcoded in a Python script committed to GitHub"
+                },
+                {
+                    "id": "d",
+                    "text": "n8n credential store (encrypted)"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Never hardcode API keys in code that gets committed to version control. GitHub bots scan for leaked keys and will exploit them within hours.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q5",
+            "question": "You're sending cold emails to 500 EU-based B2B prospects scraped from LinkedIn. Which legal basis should you use?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Explicit consent (double opt-in)"
+                },
+                {
+                    "id": "b",
+                    "text": "Legitimate interest (GDPR Article 6(1)(f))"
+                },
+                {
+                    "id": "c",
+                    "text": "Contract performance"
+                },
+                {
+                    "id": "d",
+                    "text": "No legal basis needed for B2B"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "For B2B cold outreach, 'legitimate interest' is the standard legal basis. You must prove the outreach is relevant, targeted, and non-intrusive. Document your ICP and personalization strategy.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q6",
+            "question": "What's the recommended maximum monthly spend limit for OpenAI API keys used by solo founders?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$10-20"
+                },
+                {
+                    "id": "b",
+                    "text": "$50-100"
+                },
+                {
+                    "id": "c",
+                    "text": "$200-500"
+                },
+                {
+                    "id": "d",
+                    "text": "No limit needed"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "$50-100/month is a safe cap for solo founders. If a key leaks, the attacker can only burn through your cap. You can always increase it if you hit the limit legitimately.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q7",
+            "question": "How often should you rotate API keys?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Weekly"
+                },
+                {
+                    "id": "b",
+                    "text": "Monthly"
+                },
+                {
+                    "id": "c",
+                    "text": "Quarterly (every 90 days)"
+                },
+                {
+                    "id": "d",
+                    "text": "Annually"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Quarterly (90 days) is the recommended rotation schedule. It balances security (limits exposure window) with operational overhead (not too frequent).",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q8",
+            "question": "You're using Apollo to enrich 1,000 contacts. What compliance step is required?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Nothing — Apollo handles compliance"
+                },
+                {
+                    "id": "b",
+                    "text": "Sign a DPA with Apollo"
+                },
+                {
+                    "id": "c",
+                    "text": "Get consent from all 1,000 contacts before enriching"
+                },
+                {
+                    "id": "d",
+                    "text": "Only enrich contacts who visited your website"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Apollo is a data processor. You must have a DPA in place. Request it via Apollo support. You also need a lawful basis (consent or legitimate interest) to enrich the contacts.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q9",
+            "question": "What's the primary risk of storing PII in unencrypted JSON files on a VPS?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Slower performance"
+                },
+                {
+                    "id": "b",
+                    "text": "If the VPS is compromised, all PII is exposed in plaintext"
+                },
+                {
+                    "id": "c",
+                    "text": "JSON files can't be backed up"
+                },
+                {
+                    "id": "d",
+                    "text": "It violates CAN-SPAM"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Unencrypted data at rest is a critical vulnerability. If an attacker gains access to your VPS (via SSH brute force, misconfigured firewall, etc.), they can read all PII. Always encrypt sensitive data.",
+            "type": "multiple-choice"
+        },
+        {
+            "id": "q10",
+            "question": "What should your data retention policy be for unengaged B2B prospects?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Keep forever — you might re-engage them later"
+                },
+                {
+                    "id": "b",
+                    "text": "Delete after 6-12 months of no engagement"
+                },
+                {
+                    "id": "c",
+                    "text": "Delete after 3 years"
+                },
+                {
+                    "id": "d",
+                    "text": "Only delete if they request it"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "GDPR's 'data minimization' principle requires you to delete data when it's no longer needed. For unengaged prospects, 6-12 months is reasonable. After that, the data is stale and the legal basis weakens.",
+            "type": "multiple-choice"
+        }
+    ]
+}

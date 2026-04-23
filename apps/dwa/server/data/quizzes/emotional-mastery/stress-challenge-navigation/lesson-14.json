@@ -1,0 +1,133 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the evidence grade for sleep quality as a predictor of stress resilience?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "WEAK—only anecdotal reports connect sleep and stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "STRONG—a University of York study (N=600+) found high-quality sleep predicted resilience to depression and anxiety under chronic stress, operating through positive coping pathways"
+                },
+                {
+                    "id": "opt3",
+                    "text": "MODERATE—only small correlational studies exist"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sleep has no relationship to stress resilience"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep has STRONG evidence as a resilience determinant. A University of York study with over 600 participants during the COVID-19 pandemic found that high-quality sleep predicted resilience to depression and anxiety under chronic stress, operating through the same positive coping pathways as cognitive reframing. Additionally, psychological resilience mediates the relationship between sleep quality and anxiety symptoms. A 2024 review found that digital CBT for insomnia (dCBT-I) improves sleep, which then reduces perceived stress and improves depressive symptoms and global health. This makes sleep hygiene and sleep-focused content a high-value, high-evidence module for stress courses."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is dCBT-I and what is its evidence base for stress-related outcomes?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "A sleep medication with no evidence"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Digital Cognitive-Behavioral Therapy for Insomnia—STRONG evidence that it improves sleep → reduces perceived stress → improves depressive symptoms and global health"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A relaxation technique with weak evidence"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Digital CBT-I only works for diagnosed insomnia, not general sleep issues"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "dCBT-I (digital Cognitive-Behavioral Therapy for Insomnia) is a structured, evidence-based intervention that can be delivered via apps or online programs. A 2024 review in Current Sleep Medicine Reports found that dCBT-I has STRONG evidence: it improves sleep quality, which then reduces perceived stress, which in turn improves depressive symptom severity and global health. This creates a beneficial cascade—better sleep → better stress management → better mental health. dCBT-I typically includes sleep restriction, stimulus control, cognitive restructuring about sleep, and sleep hygiene—going beyond basic 'sleep tips' to address behavioral and cognitive factors maintaining insomnia."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "How does sleep quality influence stress resilience according to research?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Sleep only affects energy levels, not stress response"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Sleep quality operates through the same positive coping pathways as cognitive reframing—good sleep enhances cognitive resources needed for effective stress appraisal and coping"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people with sleep disorders are affected by sleep quality"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Sleep has no mechanism connecting it to resilience"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The University of York research found that sleep quality predicts resilience through the same positive coping pathways as cognitive reframing. This makes mechanistic sense: sleep deprivation impairs prefrontal cortex function (needed for cognitive reappraisal and executive function), increases amygdala reactivity (emotional responses feel more intense), disrupts HPA axis regulation (cortisol dysregulation), and reduces capacity for emotion regulation. Conversely, good sleep preserves the cognitive resources, emotional regulation capacity, and physiological balance needed for effective stress appraisal and coping. Sleep isn't just rest—it's active restoration of systems required for resilience."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the bidirectional relationship between sleep and stress?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Stress affects sleep, but sleep doesn't affect stress"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Stress disrupts sleep (activation, rumination, cortisol), AND poor sleep worsens stress response (impaired coping, increased reactivity)—creating a reinforcing cycle that must be interrupted"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleep and stress are completely unrelated"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only sleep medications can break the stress-sleep cycle"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Sleep and stress have a bidirectional, reinforcing relationship. Stress disrupts sleep through multiple pathways: physiological activation (elevated cortisol, sympathetic nervous system arousal makes it hard to fall/stay asleep), cognitive (rumination and worry interfere with sleep onset), and behavioral (stress-related habits like late-night work, alcohol use). Simultaneously, poor sleep worsens stress response: it impairs cognitive coping resources, increases emotional reactivity, disrupts HPA axis regulation, and reduces stress tolerance. This creates a vicious cycle where stress causes poor sleep, which worsens stress response, which further disrupts sleep. Effective intervention addresses both directions—stress management improves sleep, and sleep improvement enhances stress resilience."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What sleep symptoms require professional evaluation rather than self-management with sleep hygiene?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Any difficulty sleeping requires medical intervention"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Loud snoring with breathing pauses (possible sleep apnea), extreme daytime sleepiness despite adequate sleep (narcolepsy/hypersomnia), chronic insomnia >3 months unresponsive to sleep hygiene, or shift work sleep disorder"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Sleep problems never require professional help"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only insomnia, not other sleep issues, requires evaluation"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Several sleep symptoms indicate potential sleep disorders requiring clinical evaluation beyond sleep hygiene: loud snoring with witnessed breathing pauses suggests obstructive sleep apnea (requires sleep study; CPAP or other medical treatment); extreme daytime sleepiness despite adequate sleep duration suggests narcolepsy or hypersomnia (requires specialized evaluation); chronic insomnia persisting >3 months despite good sleep hygiene suggests need for CBT-I or medical workup for underlying causes; shift work sleep disorder may require occupational medicine consultation and circadian rhythm interventions beyond self-help. Sleep hygiene is valuable for general sleep quality, but these conditions require professional diagnosis and treatment."
+        }
+    ],
+    "sectionId": "emotional-mastery",
+    "courseId": "stress-challenge-navigation",
+    "lessonId": "14",
+    "title": "Sleep and Stress: Breaking the Cycle - Quiz"
+}

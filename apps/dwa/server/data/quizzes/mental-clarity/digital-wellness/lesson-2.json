@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the single most important factor in whether technology helps or harms your mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "The total amount of screen time per day"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Whether you use it intentionally (with purpose) or out of habit (passively)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "What specific apps or platforms you're using"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Whether you use it on mobile devices or desktop computers"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2026 SEM study (n=842) found that intentional, goal-directed use predicted better wellbeing (β=0.37) and attentional control (β=0.42) — independent of total screen time. Passive, habitual use showed negative associations with both."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What defines 'intentional technology use'?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Using technology only for work, never for entertainment"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Using technology with a clear goal, aligned with your values, with self-regulation and awareness"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never using technology unless absolutely necessary"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only using technology during designated time blocks"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Intentional use has four components: (1) clear goal/purpose, (2) values alignment, (3) self-regulation (choosing when to start and stop), and (4) awareness of how it makes you feel. It's not about avoiding technology — it's about using it purposefully."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which scenario best represents passive/habitual technology use?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Setting a 20-minute timer to watch YouTube tutorials for learning"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Opening Instagram to check on a friend recovering from surgery"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Automatically opening TikTok while waiting for the bus without thinking"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Scheduling a video call with family members"
+                }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "Passive use = no clear goal, automatic behavior, scrolling until external event ends it (bus arrives). The other options show intentional use with clear goals and self-regulation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What does the research say about the simple 'passive vs. active' social media distinction?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "It's perfectly clear — passive scrolling is always worse than active posting"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The distinction is oversimplified and context-dependent (MODERATE-CONTESTED evidence)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Active posting always produces better mental health outcomes"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The distinction has been disproven entirely"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "A meta-analysis of 141 studies (Godard & Holtzman, 2024) found that the simple passive/active dichotomy is oversimplified and context-dependent. It's more nuanced than 'passive bad, active good.'"
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Choose one technology habit you have (checking social media, news apps, video streaming, etc.). Is your use mostly intentional or mostly passive? How could you make it more intentional?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "2",
+    "title": "Intentional vs. Passive Use - Quiz"
+}

@@ -1,0 +1,153 @@
+{
+    "lessonId": "6",
+    "courseId": "course-12-marketing-automation-analytics",
+    "sectionId": "marketing-engine",
+    "title": "Lesson 6: Landing Page Fundamentals",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the primary purpose of removing navigation menus from a landing page?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To make the page load faster."
+                },
+                {
+                    "id": "b",
+                    "text": "To save space for more text."
+                },
+                {
+                    "id": "c",
+                    "text": "To keep the visitor focused on a single goal and prevent them from clicking away."
+                },
+                {
+                    "id": "d",
+                    "text": "Because navigation menus don't work on mobile devices."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Landing pages are 'one-way streets.' Removing navigation reduces distractions and forces the visitor to either convert or leave."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "Which of these headlines follows the 'Specific Result' formula?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Welcome to our innovative marketing platform."
+                },
+                {
+                    "id": "b",
+                    "text": "Double your sales calls in 30 days without spending more on ads."
+                },
+                {
+                    "id": "c",
+                    "text": "The best CRM for small businesses."
+                },
+                {
+                    "id": "d",
+                    "text": "Stop struggling with your business operations today."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Formula: [Achieve X] in [Timeframe] without [Frustration]. Option B clearly defines the result, time, and removed obstacle."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "According to the lesson, what is the best way to design a CTA button to maximize clicks?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Make it the same color as the background for a sleek look."
+                },
+                {
+                    "id": "b",
+                    "text": "Use generic copy like 'Submit'."
+                },
+                {
+                    "id": "c",
+                    "text": "Use a contrasting color and value-oriented copy like 'Get My Free Guide'."
+                },
+                {
+                    "id": "d",
+                    "text": "Hide it at the very bottom of the page only."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-performing CTAs use contrasting colors to stand out and copy that emphasizes the value the user receives from clicking."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What does 'Above the Fold' mean in landing page design?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The portion of the page visible before the user scrolls."
+                },
+                {
+                    "id": "b",
+                    "text": "The section where the testimonials are located."
+                },
+                {
+                    "id": "c",
+                    "text": "The footer of the website."
+                },
+                {
+                    "id": "d",
+                    "text": "The code used to build the page."
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "This is the most critical area of your page, as it's the first thing every visitor sees."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "Which of these is considered a 'Conversion Killer' by the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Including a product screenshot."
+                },
+                {
+                    "id": "b",
+                    "text": "Having a page that takes 10 seconds to load."
+                },
+                {
+                    "id": "c",
+                    "text": "Using bullet points for scannability."
+                },
+                {
+                    "id": "d",
+                    "text": "Adding an FAQ section at the bottom."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Slow load times significantly decrease conversion rates as visitors lose patience and leave."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Choose an existing page on your site or a page you intended to build. Apply the 'What if I...' test to your current (or planned) CTA button. What is the value-oriented copy you would write for that button? Then, identify one element you will remove from your page to reduce distraction.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's CTA copy and distraction reduction strategy. Check if the new CTA copy is truly value-driven. Suggest one specific 'Risk Reduction' phrase they could add near their new button."
+        }
+    ]
+}

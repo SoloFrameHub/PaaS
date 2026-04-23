@@ -1,0 +1,79 @@
+{
+  "lessonId": "3",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "Quiz de Ratios de Llamada a Cierre",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Un creador vende un paquete de coaching de $5,000 USD (aproximadamente $87,500 MXN) y cierra 4 de 20 llamadas de venta calificadas este mes. ¿Cuál es su tasa de cierre calificada y cómo se compara con los puntos de referencia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20% -- rango saludable para una oferta de $3,000-$5,000 USD (referencia: 15-25%)"
+        },
+        {
+          "id": "b",
+          "text": "20% -- por debajo del promedio para una oferta de $5,000 USD y necesita mejora inmediata"
+        },
+        {
+          "id": "c",
+          "text": "20% -- excepcional, por encima del referente de 10-20% para ofertas de $5,000+ USD"
+        },
+        {
+          "id": "d",
+          "text": "25% -- desempeño fuerte muy por encima del rango típico"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "4/20 = 20% de tasa de cierre calificada. Para ofertas de $3,000-$5,000 USD, el rango saludable es 15-25%, así que 20% está sólidamente en la zona saludable. Este creador está teniendo un buen desempeño y podría enfocarse en optimizar otras partes del embudo o probar un aumento de precio."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Un creador tiene puntajes altos en Conexión y Descubrimiento pero consistentemente bajos en Cierre en sus llamadas de venta. ¿Cuál es la causa raíz más probable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Personas equivocadas en las llamadas -- un problema de calificación que trae prospectos no aptos"
+        },
+        {
+          "id": "b",
+          "text": "Pre-venta débil -- los prospectos llegan sin suficiente contexto sobre la oferta"
+        },
+        {
+          "id": "c",
+          "text": "Estructura de llamada deficiente -- no se está siguiendo el marco SPIN"
+        },
+        {
+          "id": "d",
+          "text": "Debilidad en el cierre -- un problema de confianza donde el creador evita pedir la venta"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Puntajes altos en Conexión y Descubrimiento con un puntaje bajo en Cierre es el patrón clásico de un problema de confianza al cerrar. El creador puede construir rapport y diagnosticar problemas efectivamente pero se paraliza al momento de pedir el dinero. La solución involucra practicar la frase de transición, declarar el precio claramente y abrazar el silencio después de revelar el precio."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Si un creador mejora su tasa de cierre del 15% al 25% manteniendo 20 llamadas por mes en una oferta de $5,000 USD, ¿cuál es el aumento anual de ingresos?",
+      "options": [
+        { "id": "a", "text": "$50,000 USD por año" },
+        { "id": "b", "text": "$60,000 USD por año" },
+        { "id": "c", "text": "$120,000 USD por año" },
+        { "id": "d", "text": "$100,000 USD por año" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Con tasa de cierre del 15%: 20 llamadas x 0.15 = 3 ventas/mes x $5,000 = $15,000/mes. Con tasa de cierre del 25%: 20 llamadas x 0.25 = 5 ventas/mes x $5,000 = $25,000/mes. La diferencia es $10,000/mes o $120,000 USD/año (aproximadamente $2,100,000 MXN/año) -- con el mismo número de llamadas sin gasto adicional en publicidad."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Usando el marco de Puntaje de Calidad de Llamada (Conexión, Descubrimiento, Presentación, Manejo de Objeciones, Cierre -- cada uno calificado del 1 al 5), califica tu última llamada de ventas. ¿Cuál fue tu puntaje total sobre 25, qué dimensión tuvo el puntaje más bajo y qué acción específica tomarás para mejorar esa dimensión?",
+      "minLength": 100,
+      "aiPrompt": "Evalúa si el estudiante proporcionó una autoevaluación honesta con puntajes específicos para cada dimensión. Verifica que su acción de mejora sea concreta y aborde directamente su dimensión más débil. Anímalo a practicar la habilidad específica (no solo 'mejorar') y a registrar el puntaje en sus próximas 5 llamadas para medir el progreso."
+    }
+  ]
+}

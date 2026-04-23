@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the WHO-recommended minimum dose of physical activity for general health and wellbeing?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "30 minutes once a week"
+                },
+                {
+                    "id": "opt2",
+                    "text": "150 minutes per week of moderate-intensity activity, or 75 minutes of vigorous-intensity activity"
+                },
+                {
+                    "id": "opt3",
+                    "text": "500 minutes per week minimum"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Any amount is fine; there's no recommended minimum"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The WHO recommends 150-300 minutes per week of moderate-intensity activity (or 75-150 minutes of vigorous-intensity) as the evidence-based minimum for general health and wellbeing. This dose consistently produces mental health benefits across studies."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Why is adherence considered 'the bottleneck' for exercise and mental health?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because most people prefer medication over exercise"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because without adherence, no protocol works — and people with mental health symptoms face unique barriers like low motivation, fatigue, stigma, and environmental constraints that make consistency difficult"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because exercise doesn't actually help mental health"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Because gyms are too expensive"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Adherence is the bottleneck because without it, even the best evidence-based protocol produces zero benefit. People with mental health challenges face specific barriers: depression causes fatigue and anhedonia; anxiety can make public exercise threatening; trauma can make body awareness unsafe. These are clinical barriers, not willpower failures, requiring specific strategies like graded exposure, social support, and self-efficacy building."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 'graded exposure' approach to starting an exercise habit?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Start with the hardest workout possible to build discipline"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Start below your anxiety/resistance threshold with ridiculously small goals (e.g., putting on shoes, walking to the door), then gradually increase over weeks — building self-efficacy through small successes"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only exercise when you feel motivated"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Exercise for 2 hours daily from day one"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Graded exposure (borrowed from exposure therapy) means starting ridiculously small — below your resistance threshold. Week 1: put on exercise clothes. Week 2: walk to the door. Week 3: 5-minute walk. Each completion builds self-efficacy (belief you CAN do this), which predicts long-term adherence better than any specific protocol. The goal early on is habit formation, not physical dose."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are the red flags that indicate you should seek professional help before relying on exercise alone?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Feeling slightly tired or unmotivated some days"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Active suicidal ideation, severe depression with functional impairment, PTSD with significant somatic symptoms, eating disorder with compulsive exercise, or severe anxiety with panic disorder"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Any level of sadness or stress"
+                },
+                {
+                    "id": "opt4",
+                    "text": "There are no situations where professional help is needed"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Exercise is NOT sufficient as standalone treatment for: active suicidal ideation, severe depression (inability to work/function), PTSD with trauma triggers, eating disorders with exercise component, severe anxiety with panic disorder, psychosis, or mania. These require professional assessment and treatment. Exercise can be PART of the treatment plan, but not the only intervention."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Reflect on your personal movement medicine plan: What is the ONE action you will take this week to start or maintain your movement practice? Be specific (day, time, activity, accountability).",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "physical-vitality",
+    "courseId": "movement-for-mental-performance",
+    "lessonId": "20",
+    "title": "Building Your Personal Movement Medicine Plan - Quiz"
+}

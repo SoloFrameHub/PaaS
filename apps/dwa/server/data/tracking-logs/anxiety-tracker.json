@@ -1,0 +1,25 @@
+{
+  "id": "anxiety-tracker",
+  "title": "Daily Mood & Anxiety Tracker",
+  "description": "A quick daily check-in to monitor your anxiety and mood levels over time. Tracking helps you spot patterns and see progress.",
+  "instructions": "Rate how you felt overall today.",
+  "frequency": "daily",
+  "fields": [
+    {
+      "id": "anxietyLevel",
+      "label": "Anxiety level today (1 = very calm, 10 = extremely anxious)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "mood",
+      "label": "Overall mood today (1 = very low, 10 = great)",
+      "type": "rating",
+      "required": true,
+      "min": 1,
+      "max": 10
+    }
+  ]
+}

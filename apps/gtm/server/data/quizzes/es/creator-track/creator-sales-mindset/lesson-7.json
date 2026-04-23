@@ -1,0 +1,91 @@
+{
+  "lessonId": "7",
+  "courseId": "creator-sales-mindset",
+  "sectionId": "creator-track",
+  "title": "Manejar el Rechazo como Creador",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En el Marco de los Tres Yos, ¿qué ocurre cuando un prospecto rechaza tu oferta y tu cerebro 'colapsa los tres círculos'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Analizas correctamente qué aspecto específico de tu oferta necesita mejorarse"
+        },
+        {
+          "id": "b",
+          "text": "Tu cerebro trata un rechazo del Círculo 3 (de una oferta específica) como un ataque del Círculo 1 (a tu valor personal fundamental), porque no puede distinguir entre que alguien rechace tu programa y que alguien te rechace a ti como persona"
+        },
+        {
+          "id": "c",
+          "text": "Te motivas para crear una mejor oferta la próxima vez"
+        },
+        {
+          "id": "d",
+          "text": "Decides cambiar por completo tu modelo de negocio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "El Marco de los Tres Yos distingue entre tu Yo Central (valor incondicional), el Yo Profesional (habilidades y experiencia) y tu Oferta (un producto específico en un momento dado). Sin control, el cerebro los colapsa todos — tratando una oferta rechazada como un juicio sobre tu valor fundamental. La práctica consiste en nombrar explícitamente qué círculo se vio afectado después de cada rechazo."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "¿Por qué el Sistema de Procesamiento de Rechazo en Cinco Etapas requiere que 'Lo Sientas' (Etapa 1) antes de extraer datos (Etapa 3)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque sentirse mal es un castigo necesario que te motiva a mejorar"
+        },
+        {
+          "id": "b",
+          "text": "Porque la investigación sobre supresión emocional demuestra que suprimir las emociones negativas en realidad las intensifica, por lo que debes permitir que el sentimiento pase a través de ti antes de poder pensar analíticamente"
+        },
+        {
+          "id": "c",
+          "text": "Porque si saltas a la extracción de datos, no recordarás los detalles del rechazo"
+        },
+        {
+          "id": "d",
+          "text": "Porque tus prospectos esperan que muestres emoción cuando te rechazan"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La investigación de James Gross en Stanford demuestra que suprimir las emociones negativas paradójicamente las intensifica. Pasar directamente al 'pensamiento positivo' o al análisis sin permitirte primero sentir la decepción crea residuos emocionales no procesados que se acumulan con el tiempo. Siéntelo primero (con un límite de tiempo), luego separa, luego analiza."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Qué significa la lección cuando dice 'Los rechazos no son lo opuesto de las ventas — son un componente de las ventas'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deberías buscar intencionalmente ser rechazado para forjar el carácter"
+        },
+        {
+          "id": "b",
+          "text": "Con una tasa de cierre típica del 20-30% en ofertas de alto valor, el 70-80% de las conversaciones naturalmente terminan en 'no' incluso cuando todo se hace correctamente — lo que hace que los rechazos sean una métrica de rendimiento necesaria, no un indicador de fracaso"
+        },
+        {
+          "id": "c",
+          "text": "El rechazo significa que tus precios están mal y necesitas bajarlos"
+        },
+        {
+          "id": "d",
+          "text": "Cuantos más rechazos tengas, más exitoso es tu negocio"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La tasa de cierre promedio para ofertas de alto valor de creadores es del 20-30%. Esto significa que incluso en el máximo rendimiento, 7-8 de cada 10 conversaciones terminan en 'no'. Como un promedio de bateo de .300 en béisbol (considerado de élite a pesar de un 70% de fallos), los rechazos son el volumen necesario a través del cual ocurren las ventas exitosas — no evidencia de fracaso."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Toma tu rechazo de ventas más reciente (o uno significativo de la memoria) y procésalo a través de las cinco etapas del Sistema de Procesamiento de Rechazo: (1) nombra la emoción que sentiste, (2) identifica cuál de los círculos de los Tres Yos se vio realmente afectado, (3) categoriza el rechazo (problema de compatibilidad, tiempo, comunicación, precio o confianza), (4) describe una actualización específica del sistema que realizarás, y (5) indica qué acción futura tomarás a continuación.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student has worked through all five stages with a real rejection rather than a hypothetical one. Look for: honest emotional naming in Stage 1 (not just 'I felt bad'), correct use of the Three Selves Framework in Stage 2, a thoughtful categorization in Stage 3 with reasoning, a concrete and actionable system update in Stage 4 (not vague like 'I'll do better'), and a clear forward action in Stage 5."
+    }
+  ]
+}

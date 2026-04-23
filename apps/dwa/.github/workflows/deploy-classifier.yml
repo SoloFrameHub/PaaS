@@ -1,0 +1,174 @@
+name: Deploy Distress Classifier
+
+on:
+  workflow_dispatch:
+    inputs:
+      retrain:
+        description: 'Run finetune.py after setup (takes ~3-6 hrs on CPU)'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Setup classifier directory on VPS
+        env:
+          VPS_PASS: ${{ secrets.VPS_PASSWORD }}
+        run: |
+          sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no root@46.202.88.248 << 'ENDSSH'
+            set -e
+            echo "=== Setting up distress classifier ==="
+
+            # Create service directory
+            mkdir -p /opt/distress-classifier
+
+            # Install Python 3.11 if needed
+            if ! python3.11 --version &>/dev/null; then
+              apt-get update -q && apt-get install -y python3.11 python3.11-venv python3.11-dev
+            fi
+            echo "Python: $(python3.11 --version)"
+          ENDSSH
+
+      - name: Copy service files to VPS
+        env:
+          VPS_PASS: ${{ secrets.VPS_PASSWORD }}
+        run: |
+          sshpass -p "$VPS_PASS" scp -o StrictHostKeyChecking=no \
+            services/distress-classifier/app.py \
+            services/distress-classifier/requirements.txt \
+            services/distress-classifier/finetune.py \
+            services/distress-classifier/evaluate.py \
+            root@46.202.88.248:/opt/distress-classifier/
+
+          # Copy metrics.json if it exists
+          if [ -f services/distress-classifier/metrics.json ]; then
+            sshpass -p "$VPS_PASS" scp -o StrictHostKeyChecking=no \
+              services/distress-classifier/metrics.json \
+              root@46.202.88.248:/opt/distress-classifier/
+          fi
+
+      - name: Install dependencies and create systemd service
+        env:
+          VPS_PASS: ${{ secrets.VPS_PASSWORD }}
+        run: |
+          sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no root@46.202.88.248 << 'ENDSSH'
+            set -e
+            cd /opt/distress-classifier
+
+            # Create virtual environment if it doesn't exist
+            if [ ! -d venv ]; then
+              python3.11 -m venv venv
+            fi
+
+            # Install dependencies
+            source venv/bin/activate
+            pip install -q --upgrade pip
+            pip install -q -r requirements.txt
+            echo "Dependencies installed"
+
+            # Create systemd service
+            cat > /etc/systemd/system/distress-classifier.service << 'EOF'
+[Unit]
+Description=Mental Health Distress Classifier
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+WorkingDirectory=/opt/distress-classifier
+ExecStart=/opt/distress-classifier/venv/bin/python app.py
+StandardOutput=append:/opt/distress-classifier/classifier.log
+StandardError=append:/opt/distress-classifier/classifier.log
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+            systemctl daemon-reload
+            systemctl enable distress-classifier
+            echo "Systemd service created and enabled"
+          ENDSSH
+
+      - name: Start classifier with base model
+        env:
+          VPS_PASS: ${{ secrets.VPS_PASSWORD }}
+        run: |
+          sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no root@46.202.88.248 << 'ENDSSH'
+            # Stop any existing instance
+            systemctl stop distress-classifier 2>/dev/null || true
+
+            # Start service (uses base model if no ./model dir yet)
+            systemctl start distress-classifier
+
+            # Wait for startup
+            sleep 15
+
+            # Health check
+            for i in 1 2 3 4 5; do
+              response=$(curl -s --connect-timeout 5 http://localhost:8001/health 2>/dev/null)
+              if echo "$response" | grep -q '"status":"ok"'; then
+                echo "✓ Classifier is running"
+                echo "$response"
+                break
+              fi
+              echo "Waiting... attempt $i"
+              sleep 10
+            done
+
+            # Test classify
+            echo "=== Test classification ==="
+            curl -s -X POST http://localhost:8001/classify \
+              -H "Content-Type: application/json" \
+              -d '{"text": "I feel completely hopeless and cannot go on anymore"}' | python3 -m json.tool
+          ENDSSH
+
+      - name: Kick off fine-tuning in background (optional)
+        if: ${{ github.event.inputs.retrain == 'true' }}
+        env:
+          VPS_PASS: ${{ secrets.VPS_PASSWORD }}
+        run: |
+          sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no root@46.202.88.248 << 'ENDSSH'
+            cd /opt/distress-classifier
+            source venv/bin/activate
+
+            # Run finetune in background - takes 3-6 hours
+            # Service will auto-restart and pick up ./model/ when done
+            nohup python finetune.py > finetune.log 2>&1 &
+            FINETUNE_PID=$!
+            echo "Fine-tuning started with PID $FINETUNE_PID"
+            echo "Monitor with: tail -f /opt/distress-classifier/finetune.log"
+            echo "After completion the service will restart and load the fine-tuned model"
+
+            # Create a post-finetune restart hook
+            cat > /opt/distress-classifier/restart-after-finetune.sh << 'EOF'
+#!/bin/bash
+# Run this after finetune.py completes
+systemctl restart distress-classifier
+sleep 15
+curl -s http://localhost:8001/health
+curl -s http://localhost:8001/metrics
+EOF
+            chmod +x /opt/distress-classifier/restart-after-finetune.sh
+          ENDSSH
+
+      - name: Summary
+        env:
+          VPS_PASS: ${{ secrets.VPS_PASSWORD }}
+        run: |
+          sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no root@46.202.88.248 \
+            "systemctl status distress-classifier --no-pager | head -20"

@@ -1,0 +1,55 @@
+{
+  "lessonId": "4",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "YouTube Monetization Funnels",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "At what point in a YouTube video should you place your primary call-to-action for maximum effectiveness?",
+      "options": [
+        { "id": "a", "text": "In the first 30 seconds to capture attention immediately" },
+        { "id": "b", "text": "At the very end of the video as a closing statement" },
+        { "id": "c", "text": "At the 60-70% mark of the video" },
+        { "id": "d", "text": "Evenly distributed every 2 minutes throughout the video" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Place your CTA at the 60-70% mark -- not at the beginning (viewers have not received enough value to trust you yet) and not at the very end (most viewers drop off before the last 15%). The 70% mark catches viewers at peak engagement."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Why should YouTube description links go to a dedicated landing page rather than your homepage?",
+      "options": [
+        { "id": "a", "text": "YouTube's algorithm penalizes links to homepages" },
+        { "id": "b", "text": "A single-purpose landing page with a headline matching the video topic converts at 30-50%, while a homepage creates distractions and lowers conversion" },
+        { "id": "c", "text": "Homepages load slower than landing pages on mobile devices" },
+        { "id": "d", "text": "Landing pages are cheaper to host than full websites" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A dedicated, single-purpose landing page with a matching headline, clear bullet points, and an email opt-in form (with no navigation or distractions) converts at 30-50% of visitors. A homepage splits attention across many options and dramatically reduces conversion."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the primary strategic role of YouTube Shorts in a creator's monetization funnel?",
+      "options": [
+        { "id": "a", "text": "Direct product sales through short-form pitches" },
+        { "id": "b", "text": "Generating AdSense revenue from high view counts" },
+        { "id": "c", "text": "Discovery -- driving new viewers to your channel where they find your long-form content" },
+        { "id": "d", "text": "Building email lists through in-Short CTA overlays" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "YouTube Shorts serve as a discovery tool, not a conversion tool. They hook attention around a single idea and drive viewers to your channel, where long-form content builds the trust required for email opt-ins and eventual purchases."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Identify three high-intent search terms in your niche that your ideal buyers are actively searching for on YouTube. For each term, describe what type of video you would create and what lead magnet you would offer in the description.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student identifies specific, realistic search terms (not vague topics) that signal purchase intent. Look for alignment between the search term, the proposed video content, and the lead magnet. The lead magnet should logically connect to both the video topic and the student's paid offer."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+    "lessonId": "1",
+    "courseId": "cold-email-mastery",
+    "track": "marketing",
+    "title": "Why 99% of Cold Emails Fail Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason most cold emails are ignored or deleted immediately?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are sent at the wrong time of day"
+                },
+                {
+                    "id": "b",
+                    "text": "The prospect's inbox is too full for new mail"
+                },
+                {
+                    "id": "c",
+                    "text": "The recipient's brain categorizes them as 'Noise' because they are self-centered and generic"
+                },
+                {
+                    "id": "d",
+                    "text": "Google hides cold emails from professionals"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Professionals use their inbox to clear noise. If an email feels like a generic sales pitch about the sender, it's instantly categorized as noise and deleted."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which of these is considered a 'Fatal Flaw' in cold email strategy?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using a professional email signature"
+                },
+                {
+                    "id": "b",
+                    "text": "Asking for a 30-minute meeting in the very first contact"
+                },
+                {
+                    "id": "c",
+                    "text": "Including a link to your website"
+                },
+                {
+                    "id": "d",
+                    "text": "Sending the email on a Tuesday"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Asking for 30 minutes from a stranger is a 'High-Friction' ask. You haven't earned that much time yet. Your goal should be to start a conversation, not book a full meeting immediately."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "According to the lesson, what is the 'Fix' for visible automation (generic merge tags)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sending more emails to increase the chances of a hit"
+                },
+                {
+                    "id": "b",
+                    "text": "Using 'Hey there' instead of the prospect's name"
+                },
+                {
+                    "id": "c",
+                    "text": "Using specific, relevant personalization that proves you did research"
+                },
+                {
+                    "id": "d",
+                    "text": "Adding 'Sent from my iPhone' at the bottom"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Specificity is your moat. Showing that you've spent even 2 minutes looking at their business or content separates you from 99% of automated spam."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What happens if you try to solve a low response rate by simply increasing your email volume?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You get a promotion from your email provider"
+                },
+                {
+                    "id": "b",
+                    "text": "Your response rate will naturally go up"
+                },
+                {
+                    "id": "c",
+                    "text": "You enter a 'death spiral' that often leads to domain blacklisting"
+                },
+                {
+                    "id": "d",
+                    "text": "Nothing; volume is the only variable that matters"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "High-volume, low-quality outreach leads to spam reports. Too many spam reports will kill your domain reputation, ensuring NONE of your emails (even to customers) arrive."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "What is the 'Golden Rule' of cold email mindset shift?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Coffee is for closers"
+                },
+                {
+                    "id": "b",
+                    "text": "Lead with their problem, not your solution"
+                },
+                {
+                    "id": "c",
+                    "text": "Always follow up every 24 hours"
+                },
+                {
+                    "id": "d",
+                    "text": "The more links, the better"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Prospects don't care about your features; they care about their pain. If you can identify a relevant problem for them, they are significantly more likely to read your solution."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Look at a cold email you recently sent or received. Which of the 4 Fatal Flaws did it exhibit? If you were to rewrite the opening sentence to be 'Recipient-Focused' rather than 'Sender-Focused,' what would it say?",
+            "minLength": 100,
+            "promptForAI": "Evaluate if the founder correctly identifies the sender-focus vs recipient-focus. The rewritten opener should address a specific pain point or insight rather than a product feature."
+        }
+    ],
+    "sectionId": "marketing-engine"
+}

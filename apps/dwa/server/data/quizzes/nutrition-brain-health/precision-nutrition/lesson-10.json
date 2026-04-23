@@ -1,0 +1,73 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What did the 2024 DMTP study find regarding organophosphate pesticide exposure and mental health?",
+            "options": [
+                { "id": "opt1", "text": "No relationship was found between pesticide metabolites and mental health" },
+                { "id": "opt2", "text": "Higher urinary DMTP levels were significantly associated with increased odds of suicidal ideation in the general population through routine dietary exposure" },
+                { "id": "opt3", "text": "Only farmworkers showed any mental health effects from pesticides" },
+                { "id": "opt4", "text": "DMTP levels were associated with improved cognitive function" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2024 study found a significant, dose-dependent association between DMTP (a metabolite of organophosphate pesticides) and suicidal ideation in the general population — not occupational settings. This means routine dietary intake of pesticide residues on conventional produce was sufficient to produce the association."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "How does cadmium exposure affect the brain, according to the 2024 NHANES analysis?",
+            "options": [
+                { "id": "opt1", "text": "Cadmium has no documented effects on the brain" },
+                { "id": "opt2", "text": "Cadmium only affects people who work in factories" },
+                { "id": "opt3", "text": "Cadmium competes with zinc for binding sites, disrupts BDNF expression and NMDA receptor function, and is dose-dependently associated with anxiety" },
+                { "id": "opt4", "text": "Cadmium improves brain function at low doses" }
+            ],
+            "correctAnswer": "opt3",
+            "explanation": "The 2024 NHANES analysis found that cadmium exposure was dose-dependently associated with anxiety (OR = 1.068 per unit increase). Cadmium disrupts zinc-dependent enzyme function, increases oxidative stress, damages the blood-brain barrier, and promotes neuroinflammation. Zinc's displacement by cadmium is particularly relevant given zinc's role in BDNF expression and NMDA receptor function."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What simple washing technique can remove up to 80-96% of surface pesticide residues from produce?",
+            "options": [
+                { "id": "opt1", "text": "Rinsing briefly under running water for 5 seconds" },
+                { "id": "opt2", "text": "Wiping with a dry cloth" },
+                { "id": "opt3", "text": "Soaking in boiling water for 1 minute" },
+                { "id": "opt4", "text": "Soaking in a 1% baking soda solution (1 teaspoon per 2 cups water) for 12-15 minutes" }
+            ],
+            "correctAnswer": "opt4",
+            "explanation": "Research shows that soaking produce in a 1% baking soda solution (1 teaspoon per 2 cups water) for 12-15 minutes removes significantly more pesticide residues than water rinsing alone — up to 80-96% of surface residues. This is a simple, low-cost risk-reduction strategy."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What did the 2023 farming study find regarding pesticide exposure and depression risk?",
+            "options": [
+                { "id": "opt1", "text": "Pesticide-exposed workers had a 6-fold greater risk of depressive symptoms, with organochlorine pesticides producing a 90% heightened risk" },
+                { "id": "opt2", "text": "Farming protected against depression due to outdoor activity" },
+                { "id": "opt3", "text": "Only herbicides were associated with depression, not insecticides" },
+                { "id": "opt4", "text": "Depression risk was only slightly elevated at 10% increase" }
+            ],
+            "correctAnswer": "opt1",
+            "explanation": "The 2023 farming study found that pesticide-exposed workers had a 6x greater risk of depressive symptoms. Organochlorine pesticides specifically produced a 90% heightened risk of depression. OCPs are lipophilic, accumulate in the brain, and disrupt GABAergic neurotransmission — the same system targeted by anti-anxiety medications."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Why does the 2024 study on women's health emphasize cumulative heavy metal exposure rather than individual metals?",
+            "options": [
+                { "id": "opt1", "text": "Because only one heavy metal matters for mental health" },
+                { "id": "opt2", "text": "Because the combination of elevated lead, cadmium, and mercury produces cumulative risk that exceeds what any single metal predicts alone" },
+                { "id": "opt3", "text": "Because women are immune to individual metal exposure" },
+                { "id": "opt4", "text": "Because cumulative exposure is easier to measure" }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The 2024 study found that the combination of elevated lead, cadmium, and mercury produced cumulative risk for anxiety and depression that exceeded what any single metal predicted alone. Heavy metal effects are additive and possibly synergistic, meaning even 'low-level' exposure to multiple metals simultaneously can produce clinically meaningful neuropsychiatric effects."
+        }
+    ],
+    "sectionId": "nutrition-brain-health",
+    "courseId": "precision-nutrition",
+    "lessonId": "10",
+    "title": "Food Quality: Pesticides, Heavy Metals, and Your Mental Health - Quiz"
+}

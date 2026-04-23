@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020408">
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.iconify.design; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://ai-customer-acquisition-academy.soloframehub.com;">
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/src/css/fonts.css">
+    <title>Customer Acquisition Academy for Solo Technical Founders | SoloFrameHub</title>
+    <meta name="description"
+        content="Master systematic customer acquisition with AI-powered roleplay, versioned artifacts, and frameworks built for technical founders. Book + Academy launching January 21, 2026. $49/month.">
+    <meta name="keywords"
+        content="customer acquisition, technical founders, solo founder sales, founder-led sales, B2B SaaS sales system, AI sales coaching, bootstrapped founder sales, MAGNETS framework, DISC selling">
+    <!-- Site Icon -->
+    <link rel="icon" type="image/png" href="assets/images/soloframehub-site-icon.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://soloframehub.com/" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soloframehub.com/">
+    <meta property="og:title" content="Customer Acquisition Academy: AI-Powered Systems for Solo Founders">
+    <meta property="og:description"
+        content="Turn customer acquisition into a repeatable engineering system. AI-powered roleplay and frameworks designed for solo technical founders.">
+    <meta property="og:image" content="https://soloframehub.com/assets/images/customer-acquisition-academy.webp">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://soloframehub.com/">
+    <meta property="twitter:title" content="Customer Acquisition Academy: AI-Powered Systems for Solo Founders">
+    <meta property="twitter:description"
+        content="Turn customer acquisition into a repeatable engineering system. AI-powered roleplay and frameworks designed for solo technical founders.">
+    <meta property="twitter:image" content="https://soloframehub.com/assets/images/customer-acquisition-academy.webp">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "SoloFrameHub",
+            "url": "https://soloframehub.com",
+            "logo": "https://soloframehub.com/assets/images/soloframehub-site-icon.png",
+            "description": "Educational ecosystem and AI-native strategy platform for solo technical founders."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Customer Acquisition Academy",
+            "description": "Systematic customer acquisition for technical founders. Turn sales into an engineering system with AI roleplay and frameworks.",
+            "provider": {
+              "@type": "Organization",
+              "name": "SoloFrameHub",
+              "sameAs": "https://soloframehub.com"
+            },
+            "courseMode": "online",
+            "offers": {
+              "@type": "Offer",
+              "price": "49",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/PreOrder",
+              "validFrom": "2026-01-21"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": "Solo Founder's AI Powered Customer Acquisition Playbook",
+            "author": {
+              "@type": "Person",
+              "name": "Mike Sullivan"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "SoloFrameHub"
+            },
+            "bookFormat": "https://schema.org/EBook",
+            "datePublished": "2026-01-21",
+            "description": "Complete customer acquisition system with MAGNETS framework, DISC personality selling, and AI-powered outreach strategies.",
+            "url": "https://soloframehub.com/solo-founders-ai-customer-acquisition-playbook.html"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the Customer Acquisition Academy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It's an AI-powered training platform that teaches technical founders systematic customer acquisition using interactive lessons, roleplay, and real artifacts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is this different from generic sales courses?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Instead of passive video watching, you practice with AI buyer personas, version your ICPs and playbooks, and get stage-aware coaching tied to your actual pipeline."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does SoloFrameHub cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Customer Acquisition Academy is $49 per month. Founding members lock in this price for life."
+                }
+              }
+            ]
+          }
+        ]
+        </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif-custom {
+            font-family: 'Newsreader', serif;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+    <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"
+        integrity="sha384-6w0TbqQyJ5y8F+7HAVTitSSVeSDGefw81KA7qo6lKUX7JfU8HX6w8j2qRf1PMZZ8f" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="min-h-screen flex flex-col items-center selection:bg-sky-500/30 selection:text-sky-200 text-zinc-300"
+    style="background: linear-gradient(135deg, #020818 0%, #0a1628 25%, #0d1f3c 50%, #081428 75%, #020818 100%);">
+    <!-- Main Container -->
+    <main class="w-full max-w-[1400px] relative z-10 flex flex-col lg:my-8 overflow-hidden">
+        <!-- Navigation -->
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-[100] hidden flex-col p-8"
+            style="background: linear-gradient(135deg, #020818 0%, #0a1628 50%, #020818 100%);">
+            <div class="flex justify-between items-center mb-12">
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50"
+                        class="h-10 w-auto object-contain">
+                </div>
+                <button id="close-menu" aria-label="Close mobile menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-8 overflow-y-auto">
+                <div class="space-y-4">
+                    <h3 class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Academies</h3>
+                    <a href="solo-founders-ai-customer-acquisition-academy.html"
+                        class="block text-2xl font-serif-custom text-white mobile-link">Customer Acquisition Academy</a>
+                    <a href="solo-founders-ai-startup-academy.html"
+                        class="block text-2xl font-serif-custom text-white mobile-link">Startup Academy</a>
+                    <a href="solo-founders-ai-gtm-academy.html"
+                        class="block text-2xl font-serif-custom text-white mobile-link">GTM Academy</a>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Books</h3>
+                    <a href="solo-founders-ai-customer-acquisition-playbook.html"
+                        class="block text-2xl font-serif-custom text-white mobile-link">Customer Acquisition
+                        Playbook</a>
+                    <a href="solo-founders-ai-60-day-roadmap-book.html"
+                        class="block text-2xl font-serif-custom text-white mobile-link">AI Revolution</a>
+                    <a href="8-gtm-frameworks-compounding-growth-book.html"
+                        class="block text-2xl font-serif-custom text-white mobile-link">AI Dominance</a>
+                </div>
+                <div class="pt-8 border-t border-white/5 space-y-6">
+                    <a href="https://sales-suite.soloframehub.com/"
+                        class="block text-lg text-zinc-300 mobile-link">Apps</a>
+                    <a href="platform-architecture.html" class="block text-lg text-zinc-300 mobile-link">Platform</a>
+                    <a href="community-forums.html" class="block text-lg text-zinc-300 mobile-link">Community</a>
+                    <a href="https://content.soloframehub.com" class="block text-lg text-zinc-300 mobile-link">Blog</a>
+                </div>
+            </nav>
+            <div class="mt-auto pt-8">
+                <a href="#pricing"
+                    class="w-full flex items-center justify-center h-14 rounded-full bg-white text-black font-bold mobile-link">
+                    Get Started — $49/mo </a>
+            </div>
+        </div>
+        <!-- SECTION 1: HERO - Bold Typography Only -->
+        <section id="sales" class="px-6 md:px-12 pt-32 pb-40 border-b border-white/5 relative overflow-hidden">
+            <!-- Background glow -->
+            <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] blur-[120px] rounded-full"
+                style="background-color: #003D8B;"></div>
+            <div class="absolute bottom-[-20%] right-[-10%] w-[40%] h-[40%] bg-indigo-500/10 blur-[120px] rounded-full">
+            </div>
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <p class="text-sm font-bold tracking-[0.3em] text-sky-400 uppercase mb-16">
+                    BOOK + ACADEMY LAUNCH: JANUARY 21, 2026 </p>
+                <h2 class="font-normal font-sans italic mb-4 text-5xl text-sky-300 tracking-tight md:text-7xl">Solo
+                    Founders</h2>
+                <h1
+                    class="font-normal font-serif-custom leading-[0.95] mb-40 mt-12 text-6xl text-white tracking-normal md:text-8xl">
+                    AI Powered&nbsp;<span
+                        class="italic text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-indigo-400">Customer
+                        Acquisition Playbook</span></h1>
+                <p class="text-xl md:text-2xl font-bold tracking-[2em] text-white/80 uppercase mb-20"
+                    style="font-weight: 700; letter-spacing: 0.2em;">
+                    36 FRAMEWORKS • ZERO GUESSWORK </p>
+                <p class="font-light leading-[1.8] max-w-3xl mb-3.5 mx-auto text-xl text-zinc-300 md:text-2xl">A
+                    complete system for finding, winning, and keeping customers for Solo Founders</p>
+                <p
+                    class="font-light leading-[1.8] max-w-3xl mb-3.5 mt-80 mx-auto pt-80 text-xl text-zinc-300 md:text-2xl">
+                    A complete system for finding, winning, and keeping customers for Solo Founders</p>
+                <p class="font-light leading-[1.8] max-w-3xl mb-3.5 mx-auto text-xl text-zinc-300 md:text-2xl">A
+                    complete system for finding, winning, and keeping customers for Solo Founders</p>
+            </div>
+        </section>
+        <!-- SECTION 2: THE PROBLEM - Typography Focused -->
+        <section class="px-6 md:px-12 py-40 border-b border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-serif-custom text-white mb-20 leading-[1.1]">
+                    The Customer<br>Acquisition Gap </h2>
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-20">
+                    Why traditional approaches fail technical founders. </p>
+                <div class="space-y-20">
+                    <div>
+                        <p class="text-sm font-bold tracking-[0.3em] text-red-400 uppercase mb-6">PATH 01</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Generic Sales Courses</h3>
+                        <p class="text-4xl md:text-5xl font-serif-custom text-zinc-500 mb-8">$500–5K</p>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            Passive learning and stale content. You spend 20–40 hours watching videos at the exact
+                            moment you should be talking to customers. Examples are enterprise or B2C, not your product
+                            or buyer. No practice, no feedback loop. </p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold tracking-[0.3em] text-orange-400 uppercase mb-6">PATH 02 — MOST
+                            COMMON</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Figuring It Out Alone</h3>
+                        <p class="text-4xl md:text-5xl font-serif-custom text-zinc-500 mb-8">Too Many Trial & Error
+                            Cycles</p>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            You learn from customer meetings instead of closing them. Lead gen stays messy with 1–5%
+                            reply rates. Each call is improvised, nothing is documented, and whatever works lives in
+                            your head—hard to repeat, impossible to hand off later. </p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold tracking-[0.3em] text-red-400 uppercase mb-6">PATH 03</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Hire Leader Too Early</h3>
+                        <p class="text-4xl md:text-5xl font-serif-custom text-zinc-500 mb-8">$150K+/Year</p>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            You bring in a "VP of Sales" before you have ICP, messaging, or a basic playbook. They spend
+                            months trying to invent your process from scratch. With 70–90% failure rates in first-time
+                            sales leadership hires, you burn runway without building a system. </p>
+                    </div>
+                </div>
+                <p class="text-2xl md:text-3xl font-medium text-sky-400 mt-24 leading-[1.6]">
+                    The Missing Link: A system to learn customer acquisition systematically while executing in
+                    real-time. </p>
+            </div>
+        </section>
+        <!-- SECTION 3: THE SOLUTION - Typography Only -->
+        <section class="px-6 md:px-12 py-40 border-b border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-serif-custom text-white mb-12 leading-[1.1]">
+                    How the<br>Academy Works </h2>
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-8">
+                    Three AI-powered components that drive your weekly execution loop. </p>
+                <p class="text-lg text-zinc-400 mb-24">
+                    Theory & practice, simultaneously — compressed into 3–5 focused hours per week. </p>
+                <div class="space-y-24">
+                    <div>
+                        <p class="text-8xl md:text-9xl font-bold text-white/10 mb-6">01</p>
+                        <h3 class="text-3xl md:text-5xl font-bold text-white mb-6">AI Roleplay Practice</h3>
+                        <p class="text-xl font-semibold text-sky-400 mb-8">Unlimited, consequence-free conversations.
+                        </p>
+                        <p class="text-lg leading-[1.9] text-zinc-300 mb-8">
+                            Practice with four distinct buyer personalities (DISC). Get real-time coaching on talk-time
+                            ratio, questions, and objection handling — without risking real deals. Compress 100 learning
+                            cycles into a single week. </p>
+                        <ul class="text-lg text-zinc-300 space-y-3">
+                            <li>✓ Streaming real-time coaching</li>
+                            <li>✓ Session recordings & playback</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-8xl md:text-9xl font-bold text-white/10 mb-6">02</p>
+                        <h3 class="text-3xl md:text-5xl font-bold text-white mb-6">Versioned Sales Artifacts</h3>
+                        <p class="text-xl font-semibold text-indigo-400 mb-8">Build institutional knowledge.</p>
+                        <p class="text-lg leading-[1.9] text-zinc-300 mb-8">
+                            Start with v1. Progress to v3. Every objection gets documented. When you're ready to hire,
+                            you hand your team versioned artifacts that represent months of validated learning — not a
+                            blank slate. </p>
+                        <ul class="text-lg text-zinc-300 space-y-3">
+                            <li>✓ ICP builder (v1 → v3)</li>
+                            <li>✓ Objection handler database</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-8xl md:text-9xl font-bold text-white/10 mb-6">03</p>
+                        <h3 class="text-3xl md:text-5xl font-bold text-white mb-6">Pipeline State Machine</h3>
+                        <p class="text-xl font-semibold text-emerald-400 mb-8">Stage-aware coaching.</p>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            A 7-stage machine. When you're in Discovery, you get SPIN questions. In Negotiation, you get
+                            pricing frameworks. The AI coach adapts its advice based on exactly where the deal sits in
+                            your pipeline. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 4: EXECUTION LOOP -->
+        <section class="px-6 md:px-12 py-40 border-b border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-serif-custom text-white mb-12 leading-[1.1]">
+                    Learn Sales by<br>Executing Sales </h2>
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-24">
+                    The Weekly Execution Loop — 3–5 hours/week </p>
+                <div class="space-y-16">
+                    <div class="flex items-baseline gap-8">
+                        <span class="text-5xl font-bold text-indigo-400">Mon</span>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Learn the Framework</p>
+                            <p class="text-lg text-zinc-400">45 minutes</p>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-8">
+                        <span class="text-5xl font-bold text-sky-400">Tue–Wed</span>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Practice with AI</p>
+                            <p class="text-lg text-zinc-400">90 minutes — Safe, risk-free iteration</p>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-8">
+                        <span class="text-5xl font-bold text-orange-400">Thu</span>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Build Artifacts</p>
+                            <p class="text-lg text-zinc-400">45 minutes — Refine ICP & Scripts</p>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-8">
+                        <span class="text-5xl font-bold text-emerald-400">Fri</span>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Execute Real Calls</p>
+                            <p class="text-lg text-zinc-400">90 minutes — Use versioned artifacts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-32">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-16">4-Week Results</h3>
+                    <div class="space-y-8 text-lg text-zinc-300">
+                        <p><span class="font-bold text-sky-400">Week 1:</span> First roleplay & objection recorded.</p>
+                        <p><span class="font-bold text-indigo-400">Week 2:</span> ICP Profile v1 & Script v1 created.
+                        </p>
+                        <p><span class="font-bold text-emerald-400">Week 3:</span> First discovery call with live
+                            coaching.</p>
+                        <p><span class="font-bold text-amber-400">Week 4:</span> Complete playbook v1 ready.</p>
+                    </div>
+                </div>
+                <p class="text-2xl md:text-3xl font-medium text-white/60 mt-24 leading-[1.6]">
+                    Sales knowledge compounds when documented and versioned each week. </p>
+            </div>
+        </section>
+        <!-- SECTION 5: WHO IS THIS FOR -->
+        <section class="px-6 md:px-12 py-40 border-b border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-serif-custom text-white mb-12 leading-[1.1]">
+                    Built for<br>Technical Founders </h2>
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-24">
+                    Engineers who want to master the "other half" of business. </p>
+                <div class="space-y-16 mb-24">
+                    <div>
+                        <p class="text-sm font-bold tracking-[0.3em] text-sky-400 uppercase mb-4">PROFILE 01</p>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">The Builder</h3>
+                        <p class="text-lg text-zinc-300">Great product, zero traction. Wants to stop coding features and
+                            start getting customers.</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold tracking-[0.3em] text-indigo-400 uppercase mb-4">PROFILE 02</p>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">The Agency Owner</h3>
+                        <p class="text-lg text-zinc-300">Hitting revenue ceilings. Needs to productize services and
+                            delegate sales.</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold tracking-[0.3em] text-emerald-400 uppercase mb-4">PROFILE 03</p>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">The Bootstrapper</h3>
+                        <p class="text-lg text-zinc-300">Refuses VC money. Needs cash flow immediately to extend runway.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-8">You're the Right Fit If:</h3>
+                        <ul class="space-y-4 text-lg text-zinc-300">
+                            <li>✓ Technical/analytical and think in systems, not tactics.</li>
+                            <li>✓ Building bootstrap - profitable first, VC later (or never).</li>
+                            <li>✓ Ready to commit 3-5 hours per week to systematic practice.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-8">NOT the Right Fit If:</h3>
+                        <ul class="space-y-4 text-lg text-zinc-300">
+                            <li>✗ Still in idea stage with no product to sell.</li>
+                            <li>✗ Looking for "growth hacks" instead of systems.</li>
+                            <li>✗ Expecting results without doing the work.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 6: PRICING -->
+        <section class="px-6 md:px-12 py-40 border-b border-white/5" id="pricing">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-serif-custom text-white mb-12 leading-[1.1]">
+                    Stop guessing.<br>Start executing. </h2>
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-24">
+                    Join as a founding member, influence the roadmap during beta, and keep founding pricing for life.
+                </p>
+                <div class="mb-24">
+                    <p class="text-sm font-bold tracking-[0.3em] text-sky-400 uppercase mb-8">BETA TESTERS WANTED</p>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Founding Member Beta Access</h3>
+                    <p class="text-7xl md:text-8xl font-bold text-white mb-4">$49<span
+                            class="text-3xl text-zinc-500">/month</span></p>
+                    <p class="text-lg text-zinc-400 mb-4">Locked in for life when billing starts.</p>
+                    <p class="text-lg text-zinc-400">Increases to $79/month after first 500 members.</p>
+                </div>
+                <div class="space-y-6 text-lg text-zinc-300 mb-16">
+                    <p>✓ All 49 courses (21 at launch)</p>
+                    <p>✓ Unlimited AI roleplay</p>
+                    <p>✓ Artifact builders</p>
+                    <p>✓ Pipeline state machine</p>
+                    <p>✓ Private community</p>
+                </div>
+                <a href="https://ai-customer-acquisition-academy.soloframehub.com/forms/caa-waitlist"
+                    class="inline-block px-12 py-5 rounded-full bg-white text-black text-lg font-bold hover:bg-zinc-200 transition-colors mb-12">
+                    Join as Beta Tester </a>
+                <p class="text-lg text-zinc-400 mb-24">
+                    Beta opens January 21, 2026. No payment collected until launch. </p>
+                <div class="pt-16 border-t border-white/10">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">Beta Checkpoint Promise</h3>
+                    <p class="text-lg leading-[1.9] text-zinc-300">
+                        30 days after billing starts, if you've completed 10 roleplays, built ICP v2, and run 5
+                        discovery calls and still don't feel the system is valuable, request a full refund. We guarantee
+                        the system; you guarantee the work. </p>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION: FAQ -->
+        <section class="px-6 md:px-12 py-40 border-b border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-serif-custom text-white mb-16">
+                    Frequently Asked Questions </h2>
+                <div class="space-y-12">
+                    <details class="group" open>
+                        <summary
+                            class="cursor-pointer text-xl font-bold text-white mb-4 flex items-center justify-between">
+                            What is the weekly time commitment?<span class="text-zinc-500">+</span>
+                        </summary>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            Expect to spend about 3–5 hours per week. This includes learning the framework modules
+                            (Monday), practicing with the AI (Tue/Wed), and executing real calls (Thursday/Friday). </p>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="cursor-pointer text-xl font-bold text-white mb-4 flex items-center justify-between">
+                            Do I need a product to join?<span class="text-zinc-500">+</span>
+                        </summary>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            Yes. This is an execution academy, not a theoretical one. You need something to sell, even
+                            if it's just an MVP or a service, so you can build real artifacts and handle real
+                            objections. </p>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="cursor-pointer text-xl font-bold text-white mb-4 flex items-center justify-between">
+                            Is this just a video course?<span class="text-zinc-500">+</span>
+                        </summary>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            No. There is no "sit-and-watch" video course here. The academy is a highly interactive,
+                            AI-native execution environment: AI roleplay sessions, artifact builders, and a pipeline
+                            state machine that responds to your deals in real time. </p>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="cursor-pointer text-xl font-bold text-white mb-4 flex items-center justify-between">
+                            What if I'm an introvert/engineer?<span class="text-zinc-500">+</span>
+                        </summary>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            You are exactly who this is built for. We treat sales as a system of inputs and outputs, not
+                            a charisma contest. You start by practicing with AI buyer personas in a safe,
+                            consequence-free environment. </p>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="cursor-pointer text-xl font-bold text-white mb-4 flex items-center justify-between">
+                            What's the difference between the book and the academy?<span class="text-zinc-500">+</span>
+                        </summary>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            The Customer Acquisition Playbook teaches the strategic frameworks (MAGNETS, DISC,
+                            Discovery). The Academy provides hands-on practice with AI roleplay, artifact builders, and
+                            real-time coaching. Frameworks in the book, execution in the academy. </p>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="cursor-pointer text-xl font-bold text-white mb-4 flex items-center justify-between">
+                            What is the refund policy?<span class="text-zinc-500">+</span>
+                        </summary>
+                        <p class="text-lg leading-[1.9] text-zinc-300">
+                            We offer a "Do The Work" Beta Checkpoint Promise. Starting from the day billing begins, if
+                            within 30 days you complete the onboarding, 10 roleplay sessions, and 5 real discovery calls
+                            and still don't feel the system is valuable, request a full refund. </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 7: FINAL CTA -->
+        <section class="px-6 md:px-12 py-40">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-12">
+                    53% of solo founders experienced burnout last year.<br>
+                    50% feel "usually lonely." </p>
+                <h2 class="text-5xl md:text-7xl font-serif-custom text-white mb-12 leading-[1.1]">
+                    You're not<br>building alone </h2>
+                <p class="text-xl md:text-2xl leading-[1.8] font-light text-zinc-300 mb-16">
+                    Join a community of bootstrapped founders tackling the real challenges together—burnout, isolation,
+                    customer acquisition, and scaling without a safety net. </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
+                    <a href="https://ai-customer-acquisition-academy.soloframehub.com/forms/caa-waitlist"
+                        class="px-12 py-5 rounded-full bg-white text-black text-lg font-bold hover:bg-zinc-200 transition-colors">
+                        Join the Waitlist — $49/mo </a>
+                    <a href="community-forums.html"
+                        class="px-12 py-5 rounded-full border border-white/20 text-white text-lg font-medium hover:bg-white/5 transition-colors">
+                        Join the Community </a>
+                </div>
+                <p class="text-sm font-medium tracking-[0.2em] text-zinc-500 uppercase">
+                    First 500 founders lock in founding member pricing for life </p>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="border-t border-white/5 py-12 px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="assets/images/soloframeHubLogo.png" alt="SoloFrameHub Logo" width="200" height="50"
+                        class="h-6 w-auto object-contain" loading="lazy">
+                    <span class="text-sm text-zinc-400 ml-2">© 2026</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-xs text-zinc-400">
+                    <a href="legal/terms-of-service.html" class="hover:text-white transition-colors">Terms</a>
+                    <a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="legal/cookie-policy.html" class="hover:text-white transition-colors">Cookies</a>
+                    <a href="legal/refund-policy.html" class="hover:text-white transition-colors">Refunds</a>
+                    <a href="legal/ai-disclaimer.html" class="hover:text-white transition-colors">AI Disclaimer</a>
+                    <a href="legal/acceptable-use-policy.html" class="hover:text-white transition-colors">Acceptable
+                        Use</a>
+                    <a href="mailto:support@soloframehub.com" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            document.body.classList.toggle('overflow-hidden');
+        };
+
+        mobileMenuBtn?.addEventListener('click', toggleMenu);
+        closeMenuBtn?.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>

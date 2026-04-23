@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "creator-sales-conversations",
+    "sectionId": "creator-track",
+    "title": "Group Enrollment Events Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In a live workshop-to-enrollment event, what percentage of the teaching portion should provide genuine, actionable value versus being a teaser for the paid program?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "About 20% real value and 80% teasing the paid content."
+                },
+                {
+                    "id": "b",
+                    "text": "100% of the teaching should be genuinely valuable — attendees should be able to implement what they learned even if they never buy."
+                },
+                {
+                    "id": "c",
+                    "text": "50/50 — half real content, half previews of the paid program."
+                },
+                {
+                    "id": "d",
+                    "text": "The teaching portion should only overview high-level concepts without giving any specifics."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The lesson states the teaching portion must be genuinely valuable. If attendees feel it was a bait-and-switch disguised as free content, trust is destroyed and nobody converts. The counterintuitive principle is: the more value you give away, the more people want to pay for more."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the key difference between selling to a group versus selling one-on-one?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Group selling requires a louder, more energetic presentation style."
+                },
+                {
+                    "id": "b",
+                    "text": "In groups, you speak to audience archetypes and address objections preemptively since you cannot personalize to each individual."
+                },
+                {
+                    "id": "c",
+                    "text": "Group selling requires a lower price point because people are less committed in group settings."
+                },
+                {
+                    "id": "d",
+                    "text": "There is no difference; the same one-on-one script works identically in a group setting."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "In group settings, you cannot tailor your message to each individual. Instead, you identify 2-3 audience archetypes and speak to each one during the presentation. You also address the four core objections preemptively in your slides or talking points, since you will not get to have individual conversations with every attendee."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "In a community enrollment event, why is Day 3 (Social Proof day) placed before Day 4 (Enrollment Opens)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because social proof is legally required before making a sales offer in online communities."
+                },
+                {
+                    "id": "b",
+                    "text": "Because sharing success stories from past members builds trust and desire before the offer is presented, making the enrollment announcement feel like a natural next step."
+                },
+                {
+                    "id": "c",
+                    "text": "Because community platforms require three days of content before you can post a sales link."
+                },
+                {
+                    "id": "d",
+                    "text": "Because people need exactly three days of consideration before making a purchase decision."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Social proof on Day 3 serves as pre-selling. When community members see real success stories from people like them, desire and trust build before the offer is even presented. By the time enrollment opens on Day 4, the audience is already primed and the offer feels like a natural opportunity rather than a surprise sales pitch."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Choose one of the three group enrollment formats (workshop-to-enrollment, webinar-to-call hybrid, or community enrollment event) and outline how you would use it for your specific offer. Include your audience size, the format you would choose, and 2-3 specific 'raise your hand' moments you would use to engage different audience archetypes.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the student chose a format appropriate for their audience size and platform. Look for specific audience archetypes they identified and whether the 'raise your hand' moments are genuinely relatable questions that would create engagement. Strong answers also mention how they would transition from teaching to enrollment and what urgency mechanisms they would use. Weak answers are vague or choose a format without explaining why it fits their situation."
+        }
+    ]
+}

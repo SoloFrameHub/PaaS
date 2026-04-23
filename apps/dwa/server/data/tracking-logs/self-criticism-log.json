@@ -1,0 +1,83 @@
+{
+  "id": "self-criticism-log",
+  "title": "Self-Criticism Awareness Log",
+  "description": "Track self-critical thoughts as they happen. Logging these moments helps you notice patterns, identify triggers, and practice responding with greater self-compassion over time.",
+  "instructions": "When you notice a self-critical thought, pause and complete this log as soon as you can. The goal is not to stop all self-criticism immediately — it is to build awareness and practice choosing a kinder response.",
+  "frequency": "per-event",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g., Monday, Feb 10"
+    },
+    {
+      "id": "selfCriticalThought",
+      "label": "The self-critical thought or message",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "Write the exact words of the inner critic, e.g., 'You're so stupid — you always mess things up'"
+    },
+    {
+      "id": "trigger",
+      "label": "What triggered the self-criticism?",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "e.g., Made a mistake at work, saw someone else's success on social media, received feedback"
+    },
+    {
+      "id": "emotion",
+      "label": "What emotion came up?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "shame", "label": "Shame" },
+        { "value": "guilt", "label": "Guilt" },
+        { "value": "sadness", "label": "Sadness" },
+        { "value": "anxiety", "label": "Anxiety" },
+        { "value": "anger", "label": "Anger" },
+        { "value": "frustration", "label": "Frustration" },
+        { "value": "disgust", "label": "Disgust" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": "How intense was the self-criticism? (0 = barely noticeable, 10 = overwhelming)",
+      "type": "rating",
+      "required": true,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "response",
+      "label": "How did you respond to the self-criticism?",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "believed-it", "label": "Believed it completely" },
+        { "value": "noticed-it", "label": "Noticed it but didn't engage" },
+        { "value": "challenged-it", "label": "Challenged or questioned it" },
+        { "value": "self-compassion", "label": "Responded with self-compassion" },
+        { "value": "distracted", "label": "Distracted myself" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    {
+      "id": "alternativeThought",
+      "label": "A kinder or more balanced perspective",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., 'Everyone makes mistakes — this one doesn't define me', 'I'm learning and that takes time'"
+    },
+    {
+      "id": "notes",
+      "label": "Any other notes or observations",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "e.g., I noticed the self-criticism was loudest when I was tired"
+    }
+  ],
+  "disclaimer": "This log is an educational self-tracking tool. If self-criticism is persistent and significantly affecting your well-being, consider speaking with a mental health professional. If you are in crisis, call or text 988."
+}

@@ -1,0 +1,134 @@
+{
+    "lessonId": "9",
+    "courseId": "disc-personas",
+    "sectionId": "sales-methodology",
+    "title": "Multi-Stakeholder DISC",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "In a 'Committee Sale', why is pitching the same message to everyone a mistake?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It gets boring for you"
+                },
+                {
+                    "id": "b",
+                    "text": "Because the CEO (D), Champion (I), User (S), and CFO (C) all have different 'Buying Currencies'"
+                },
+                {
+                    "id": "c",
+                    "text": "People like variety"
+                },
+                {
+                    "id": "d",
+                    "text": "It isn't a mistake"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you pitch Vision (I) to the CFO (C), they see risk. If you pitch Specs (C) to the CEO (D), they get bored. You must translate the value for each persona."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "The 'Split-Screen' or 'Yo-Yo' technique involves:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Using a split screen monitor"
+                },
+                {
+                    "id": "b",
+                    "text": "Addressing two different personas on the same slide (e.g., 'For the Team, this is easy. For the CEO, this is ROI.')"
+                },
+                {
+                    "id": "c",
+                    "text": "Playing with a yo-yo"
+                },
+                {
+                    "id": "d",
+                    "text": "Moving back and forth in the room"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You can't do 4 separate demos. You must 'pivot' your narration on a single slide to hit the 'Safety' button for the S and the 'Speed' button for the D simultaneously."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the primary goal of the 'Pre-Wire Email'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "To confirm the time of the meeting"
+                },
+                {
+                    "id": "b",
+                    "text": "To frame the agenda so every stakeholder (D, I, S, C) sees a specific section relevant to them"
+                },
+                {
+                    "id": "c",
+                    "text": "To send the invoice early"
+                },
+                {
+                    "id": "d",
+                    "text": "To ask who is coming"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The Pre-Wire tells the CEO 'We will cover ROI in the first 5 mins' (so they show up). It tells the C 'We will do a technical deep dive at the end' (so they don't block you)."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "How should you handle the 'C-Type Blocker' (e.g., Security/IT)?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ignore them and hope they don't speak"
+                },
+                {
+                    "id": "b",
+                    "text": "Proactively send them technical documentation before the call to isolate their objection"
+                },
+                {
+                    "id": "c",
+                    "text": "Tell the CEO to fire them"
+                },
+                {
+                    "id": "d",
+                    "text": "Argue with them in the meeting"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "C-types block deals when they feel surprised or unsafe. Proactively giving them the 'Whitepaper' shows respect and allows them to vet you privately."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "To win over the 'S-Type Crowd' (End Users) without scaring them, you should offer:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "An immediate full rollout"
+                },
+                {
+                    "id": "b",
+                    "text": "A 'Safe Pilot' or 'Beta Test' with just 2 users"
+                },
+                {
+                    "id": "c",
+                    "text": "A discount"
+                },
+                {
+                    "id": "d",
+                    "text": "A party"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "S-types fear disruption. A 'Beta Test' sounds safe, reversible, and low-stakes. It gets your foot in the door without triggering a mutiny."
+        }
+    ],
+    "passingScore": 70
+}

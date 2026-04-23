@@ -1,0 +1,134 @@
+{
+  "lessonId": "9",
+  "courseId": "disc-personas",
+  "sectionId": "sales-methodology",
+  "title": "DISC Multi-Stakeholder",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "En una 'Venta al Comité', ¿por qué es un error presentar el mismo mensaje a todos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se vuelve aburrido para ti"
+        },
+        {
+          "id": "b",
+          "text": "Porque el CEO (D), el Campeón (I), el Usuario (S) y el CFO (C) tienen diferentes 'Divisas de Compra'"
+        },
+        {
+          "id": "c",
+          "text": "A la gente le gusta la variedad"
+        },
+        {
+          "id": "d",
+          "text": "No es un error"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Si haces el pitch de Visión (I) al CFO (C), ven riesgo. Si haces el pitch de Especificaciones (C) al CEO (D), se aburren. Debes traducir el valor para cada persona."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "La técnica de la 'Pantalla Dividida' o 'Yo-Yo' implica:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Usar un monitor de pantalla dividida"
+        },
+        {
+          "id": "b",
+          "text": "Abordar dos personas diferentes en la misma diapositiva (ej., 'Para el Equipo, esto es fácil. Para el CEO, esto es ROI.')"
+        },
+        {
+          "id": "c",
+          "text": "Jugar con un yo-yo"
+        },
+        {
+          "id": "d",
+          "text": "Moverse de un lado a otro en la sala"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "No puedes hacer 4 demos separadas. Debes 'pivotar' tu narración en una sola diapositiva para presionar el botón de 'Seguridad' para el S y el botón de 'Velocidad' para el D simultáneamente."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "¿Cuál es el objetivo principal del 'Email de Pre-Conexión'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confirmar la hora de la reunión"
+        },
+        {
+          "id": "b",
+          "text": "Enmarcar la agenda para que cada stakeholder (D, I, S, C) vea una sección específica relevante para ellos"
+        },
+        {
+          "id": "c",
+          "text": "Enviar la factura antes de tiempo"
+        },
+        {
+          "id": "d",
+          "text": "Preguntar quién va a asistir"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Pre-Conexión le dice al CEO 'Cubriremos el ROI en los primeros 5 minutos' (para que aparezca). Le dice al C 'Haremos una inmersión técnica profunda al final' (para que no te bloquee)."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "¿Cómo debes manejar al 'Bloqueador Tipo C' (ej., Seguridad/IT)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignorarlo y esperar que no hable"
+        },
+        {
+          "id": "b",
+          "text": "Enviarle proactivamente documentación técnica antes de la llamada para aislar su objeción"
+        },
+        {
+          "id": "c",
+          "text": "Decirle al CEO que lo despida"
+        },
+        {
+          "id": "d",
+          "text": "Discutir con ellos en la reunión"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los tipos C bloquean negocios cuando se sienten sorprendidos o inseguros. Darles proactivamente el 'Libro Blanco' muestra respeto y les permite evaluarte en privado."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Para ganar al 'Grupo Tipo S' (Usuarios Finales) sin asustarlos, debes ofrecer:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Una implementación completa inmediata"
+        },
+        {
+          "id": "b",
+          "text": "Un 'Piloto Seguro' o 'Beta Test' con solo 2 usuarios"
+        },
+        {
+          "id": "c",
+          "text": "Un descuento"
+        },
+        {
+          "id": "d",
+          "text": "Una fiesta"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Los tipos S temen la disrupción. Una 'Prueba Beta' suena segura, reversible y de bajo riesgo. Te abre la puerta sin desencadenar un motín."
+    }
+  ],
+  "passingScore": 70
+}

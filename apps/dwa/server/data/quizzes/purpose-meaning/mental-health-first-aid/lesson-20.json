@@ -1,0 +1,73 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Test question 1 for lesson 20",
+      "options": [
+        {"id": "opt1", "text": "Incorrect answer"},
+        {"id": "opt2", "text": "Correct answer with context"},
+        {"id": "opt3", "text": "Incorrect answer"},
+        {"id": "opt4", "text": "Incorrect answer"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Explanation for correct answer with insight from lesson 20 content."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Test question 2 for lesson 20",
+      "options": [
+        {"id": "opt1", "text": "Incorrect"},
+        {"id": "opt2", "text": "Correct"},
+        {"id": "opt3", "text": "Incorrect"},
+        {"id": "opt4", "text": "Incorrect"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Explanation for question 2."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Test question 3 for lesson 20",
+      "options": [
+        {"id": "opt1", "text": "Incorrect"},
+        {"id": "opt2", "text": "Correct"},
+        {"id": "opt3", "text": "Incorrect"},
+        {"id": "opt4", "text": "Incorrect"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Explanation for question 3."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Test question 4 for lesson 20",
+      "options": [
+        {"id": "opt1", "text": "Incorrect"},
+        {"id": "opt2", "text": "Correct"},
+        {"id": "opt3", "text": "Incorrect"},
+        {"id": "opt4", "text": "Incorrect"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Explanation for question 4."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "question": "Test question 5 for lesson 20",
+      "options": [
+        {"id": "opt1", "text": "Incorrect"},
+        {"id": "opt2", "text": "Correct"},
+        {"id": "opt3", "text": "Incorrect"},
+        {"id": "opt4", "text": "Incorrect"}
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Explanation for question 5."
+    }
+  ],
+  "sectionId": "purpose-meaning",
+  "courseId": "mental-health-first-aid",
+  "lessonId": "20",
+  "title": "Lesson 20 Quiz"
+}

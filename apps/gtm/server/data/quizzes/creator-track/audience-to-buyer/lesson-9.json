@@ -1,0 +1,55 @@
+{
+  "lessonId": "9",
+  "courseId": "audience-to-buyer",
+  "sectionId": "creator-track",
+  "title": "The Warm Audience Advantage",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three psychological mechanisms that cause warm audiences to convert 3-5x better than cold traffic?",
+      "options": [
+        { "id": "a", "text": "Price anchoring, scarcity bias, and social proof" },
+        { "id": "b", "text": "Mere exposure effect, reduced perceived risk, and self-selection" },
+        { "id": "c", "text": "Urgency, exclusivity, and fear of missing out" },
+        { "id": "d", "text": "Brand recognition, ad frequency, and retargeting" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three mechanisms are: (1) Mere Exposure Effect -- repeated exposure increases preference and trust; (2) Reduced Perceived Risk -- warm audiences have evidence of your competence from consuming your content; (3) Self-Selection -- your content naturally filters out people who do not resonate, leaving pre-qualified prospects."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "In the 30-day nurture framework, what is the purpose of the 'Trust Phase' (Days 15-25)?",
+      "options": [
+        { "id": "a", "text": "To present paid offers and drive immediate sales" },
+        { "id": "b", "text": "To deliver the lead magnet and set expectations" },
+        { "id": "c", "text": "To build personal connection through vulnerability, social proof, and proactive objection handling" },
+        { "id": "d", "text": "To teach frameworks and demonstrate technical expertise" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Trust Phase (Days 15-25) builds personal connection through vulnerability (sharing failures and lessons), social proof (testimonials and results), and proactive objection handling (FAQ emails that address buying hesitations). This phase prepares subscribers emotionally and rationally for the Offer Phase that follows."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the recommended value-to-sales email ratio to maintain a positive 'trust bank account' with your audience?",
+      "options": [
+        { "id": "a", "text": "1 value email for every 1 sales email" },
+        { "id": "b", "text": "2 value emails for every 1 sales email" },
+        { "id": "c", "text": "3-4 value emails for every 1 sales email" },
+        { "id": "d", "text": "10 value emails for every 1 sales email" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The healthy ratio is 3-4 purely valuable, non-selling emails for every 1 sales email. This keeps the trust bank account in surplus. Every sales pitch is a withdrawal from trust, and every valuable email is a deposit. The account must stay in the positive for your audience to remain receptive to offers."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Evaluate your current nurture system against the ethical selling checklist from this lesson. Where are you strong, and where do you need improvement? Describe one specific change you will make to your sales approach to better honor the trust your audience places in you.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate if the student engages honestly with the ethical selling framework rather than simply claiming they already do everything right. Look for specific examples of where they might be falling short (false urgency, over-promising, inconsistent quality between free and paid) and a concrete commitment to improvement."
+    }
+  ]
+}

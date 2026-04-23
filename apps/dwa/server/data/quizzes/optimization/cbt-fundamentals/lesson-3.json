@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "What is the difference between an automatic thought and a core belief?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Automatic thoughts are negative; core beliefs are neutral"
+        },
+        {
+          "id": "opt2",
+          "text": "Automatic thoughts are situation-specific; core beliefs are deep, global assumptions"
+        },
+        {
+          "id": "opt3",
+          "text": "Core beliefs are conscious; automatic thoughts are unconscious"
+        },
+        {
+          "id": "opt4",
+          "text": "There is no meaningful difference \u2014 they're the same thing"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Correct. Automatic thoughts are the surface-level interpretations ('They think I'm boring'). Core beliefs are the fundamental assumptions that generate those thoughts ('I am unlovable').",
+      "id": "q1"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "According to Beck's model, which of the following is an example of a 'helplessness' core belief?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "'I am unlovable'"
+        },
+        {
+          "id": "opt2",
+          "text": "'I am incompetent and can't handle challenges'"
+        },
+        {
+          "id": "opt3",
+          "text": "'I am a bad person'"
+        },
+        {
+          "id": "opt4",
+          "text": "'I always fail at relationships'"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Yes. Helplessness core beliefs center on themes of powerlessness, inability to cope, failure, and lack of control. This belief generates anxiety and avoidance behaviors.",
+      "id": "q2"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "How do core beliefs maintain themselves over time?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "They don't \u2014 core beliefs change easily with new experiences"
+        },
+        {
+          "id": "opt2",
+          "text": "Through attention, interpretation, and memory biases that filter information to confirm the belief"
+        },
+        {
+          "id": "opt3",
+          "text": "Because they're genetically determined and can't be changed"
+        },
+        {
+          "id": "opt4",
+          "text": "By suppressing contradictory evidence through willpower"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Exactly. Core beliefs act as filters: you notice evidence that confirms the belief, interpret ambiguous events in line with the belief, and recall memories that support it. This creates a self-reinforcing loop.",
+      "id": "q3"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the 'downward arrow technique,' and why is it useful?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "A way to immediately stop negative thoughts by redirecting attention"
+        },
+        {
+          "id": "opt2",
+          "text": "A method for tracing automatic thoughts down to the underlying core belief"
+        },
+        {
+          "id": "opt3",
+          "text": "A relaxation technique for managing anxiety"
+        },
+        {
+          "id": "opt4",
+          "text": "A way to challenge core beliefs by gathering contradictory evidence"
+        }
+      ],
+      "correctAnswer": "opt2",
+      "explanation": "Yes. The downward arrow technique asks 'If that thought were true, what would it mean about me?' repeatedly until you reach the global, absolute belief. This helps you identify the core schema driving your emotional reactions.",
+      "id": "q4"
+    },
+    {
+      "type": "reflection",
+      "question": "Try the downward arrow technique on a recent automatic thought. Start with the thought, then ask 'If that were true, what would it mean about me?' at least 3 times. What core belief did you uncover? Which category does it fall into (helplessness, unlovability, or worthlessness)?",
+      "hint": "Example: 'I embarrassed myself at the party' \u2192 'People think I'm awkward' \u2192 'I don't fit in socially' \u2192 'I am fundamentally different and don't belong' (Unlovability).",
+      "id": "q5"
+    }
+  ],
+  "sectionId": "emotional-resilience",
+  "courseId": "cbt-fundamentals",
+  "lessonId": "3",
+  "title": "Core Beliefs: The Operating System of Your Mind - Quiz"
+}

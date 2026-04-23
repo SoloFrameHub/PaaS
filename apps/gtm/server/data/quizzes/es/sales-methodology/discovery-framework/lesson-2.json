@@ -1,0 +1,133 @@
+{
+  "title": "Quiz de la Lección 2",
+  "questions": [
+    {
+      "question": "¿Qué significa BANT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buying, Asking, Needs, Telling (Comprar, Preguntar, Necesidades, Decir)"
+        },
+        {
+          "id": "b",
+          "text": "Budget, Authority, Need, Timeline (Presupuesto, Autoridad, Necesidad, Cronograma)"
+        },
+        {
+          "id": "c",
+          "text": "Business, Action, Numbers, Time (Negocio, Acción, Números, Tiempo)"
+        },
+        {
+          "id": "d",
+          "text": "Budget, Action, Need, Team (Presupuesto, Acción, Necesidad, Equipo)"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "BANT es el acrónimo clásico de Calificación: Presupuesto (Budget), Autoridad (Authority), Necesidad (Need) y Cronograma (Timeline).",
+      "id": "q1",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Qué componente de BANT es crítico para evitar que 'los negocios se prolonguen indefinidamente'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Presupuesto"
+        },
+        {
+          "id": "b",
+          "text": "Autoridad"
+        },
+        {
+          "id": "c",
+          "text": "Necesidad"
+        },
+        {
+          "id": "d",
+          "text": "Cronograma"
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "El Cronograma crea urgencia. Si no hay una fecha específica para la cual necesitan la solución (Evento Convincente), el prospecto no tiene razón para firmar *ahora*.",
+      "id": "q2",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "Si un prospecto dice 'Necesito consultarlo con mi jefe', ¿cómo calificarías su Autoridad?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fuerte"
+        },
+        {
+          "id": "b",
+          "text": "Débil (solo Influenciador)"
+        },
+        {
+          "id": "c",
+          "text": "Nula"
+        },
+        {
+          "id": "d",
+          "text": "Irrelevante"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Son un Influenciador o Campeón, pero no el Comprador Económico. Necesitas acceder al jefe para asegurar el negocio.",
+      "id": "q3",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "¿Por qué BANT se considera a veces desactualizado para ventas empresariales complejas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque las empresas no tienen presupuestos"
+        },
+        {
+          "id": "b",
+          "text": "Porque la Autoridad ahora está distribuida en comités, no en una sola persona"
+        },
+        {
+          "id": "c",
+          "text": "Porque nadie usa IBM ya"
+        },
+        {
+          "id": "d",
+          "text": "Porque los fundadores de startups son demasiado inteligentes para eso"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "En ventas complejas, la 'Autoridad' rara vez es una sola persona. BANT es demasiado simple para mapear el complejo panorama político de un negocio empresarial (por eso usamos MEDDIC).",
+      "id": "q4",
+      "type": "multiple-choice"
+    },
+    {
+      "question": "Un prospecto dice: 'Tenemos un gran problema con nuestra base de datos que falla, pero tenemos una congelación de gastos hasta el próximo año.' ¿Es esta una oportunidad BANT calificada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sí, porque la Necesidad es fuerte"
+        },
+        {
+          "id": "b",
+          "text": "No, porque el Cronograma y el Presupuesto están bloqueados"
+        },
+        {
+          "id": "c",
+          "text": "Sí, porque encontrarán el dinero"
+        },
+        {
+          "id": "d",
+          "text": "Tal vez"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Incluso con una Necesidad alta, si argumentablemente no pueden comprar (Presupuesto/Cronograma congelados), no es una oportunidad de ventas *actual*. Crea un prospecto de 'Nutrición'.",
+      "id": "q5",
+      "type": "multiple-choice"
+    }
+  ],
+  "sectionId": "sales-methodology",
+  "courseId": "discovery-framework",
+  "lessonId": "2"
+}

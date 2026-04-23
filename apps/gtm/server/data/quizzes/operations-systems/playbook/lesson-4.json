@@ -1,0 +1,75 @@
+{
+  "lessonId": "4",
+  "courseId": "playbook",
+  "sectionId": "operations-systems",
+  "title": "Playbook: Coach/Consultant",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the Trust-Before-Transaction Principle for coaches and consultants?",
+      "options": [
+        { "id": "a", "text": "Always offer free trials before charging" },
+        {
+          "id": "b",
+          "text": "Trust is earned by demonstrating you understand the client's problem better than they do"
+        },
+        { "id": "c", "text": "Get a contract signed before doing any work" },
+        { "id": "d", "text": "Always start with a low-cost engagement" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In coaching and consulting, trust is the currency. You earn it by demonstrating, repeatedly, that you understand your client's problem better than they understand it themselves. Your content is proof of expertise before anyone ever pays you."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "How do coaching/consulting buyers evaluate differently from software buyers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They focus on pricing tables and feature comparisons"
+        },
+        {
+          "id": "b",
+          "text": "They evaluate fit, trust, and proof of transformation"
+        },
+        { "id": "c", "text": "They run 30-day trials" },
+        { "id": "d", "text": "They read G2 reviews" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Coaching buyers ask: 'Can this person actually help me? Do I trust them? Have they helped people like me?' The purchase decision is highly personal, built on fit, trust, and proof of transformation — not feature comparisons."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the typical deal size range for coaching/consulting this playbook addresses?",
+      "options": [
+        { "id": "a", "text": "$50-500" },
+        { "id": "b", "text": "$500-2,000" },
+        { "id": "c", "text": "$2,000-20,000+" },
+        { "id": "d", "text": "$100,000+" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "This playbook is for expertise sellers with typical deal sizes of $2,000-$20,000+. The clients are buying a transformation, not a transaction, and relationships heavily influence purchase decisions."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Coach/consultant acquisition can be built primarily on cold outreach volume and email sequences.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The acquisition playbook must be built on content that demonstrates expertise, relationships that build trust, and an enrollment process that filters for genuine fit — not just cold outreach volume."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "How do you currently demonstrate expertise to potential clients before they buy? What content or proof of transformation do you share? How would you build a trust-based acquisition system?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies specific ways they demonstrate expertise (content, case studies, frameworks), acknowledges the trust-based nature of their selling, and proposes a systematic approach to trust-building that goes beyond cold outreach."
+    }
+  ]
+}

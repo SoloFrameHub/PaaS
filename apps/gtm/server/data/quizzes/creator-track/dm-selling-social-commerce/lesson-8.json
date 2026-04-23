@@ -1,0 +1,91 @@
+{
+    "lessonId": "8",
+    "courseId": "dm-selling-social-commerce",
+    "sectionId": "creator-track",
+    "title": "Your DM Selling System",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to the daily DM routine, how much total time per day should you dedicate to DM selling, and how should it be divided?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "2 hours total: 1 hour in the morning and 1 hour in the evening"
+                },
+                {
+                    "id": "b",
+                    "text": "45 minutes total: a 20-minute morning block (triage, respond, follow up) and a 25-minute evening block (engage, respond, outreach)"
+                },
+                {
+                    "id": "c",
+                    "text": "15 minutes total: one quick check-in per day is sufficient"
+                },
+                {
+                    "id": "d",
+                    "text": "Keep your DMs open all day and respond whenever notifications come in"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The recommended system is 45 minutes per day split into two focused blocks: 20 minutes in the morning for triaging the inbox, responding to active conversations, and sending follow-ups, and 25 minutes in the evening for engaging with content commenters, handling new DMs, and proactive LinkedIn outreach. Keeping DMs open all day creates destructive context-switching."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the recommended follow-up cadence after a prospect says they need to think about your offer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Follow up every day until they respond"
+                },
+                {
+                    "id": "b",
+                    "text": "Day 3 (value-added check-in), Day 7 (gentle reminder with social proof), Day 14 (final check-in), then move to long-term nurture"
+                },
+                {
+                    "id": "c",
+                    "text": "Never follow up -- if they are interested, they will come back"
+                },
+                {
+                    "id": "d",
+                    "text": "Wait 30 days, then send a discount offer"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The standard follow-up cadence is Day 3 (a value-added check-in that includes a helpful resource), Day 7 (a gentle reminder referencing their situation and your offer), and Day 14 (a final check-in before moving to long-term nurture). Each follow-up should add value -- never send a message that is only 'just checking in.' After three unanswered follow-ups, shift to nurturing through content rather than direct messages."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the 70/30 Rule for scaling DM conversations with templates?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Spend 70% of your time on DMs and 30% on content creation"
+                },
+                {
+                    "id": "b",
+                    "text": "Every DM should be approximately 70% template (for structure and key messaging) and 30% personalized (name, specific details from their profile or conversation) to balance efficiency with authenticity"
+                },
+                {
+                    "id": "c",
+                    "text": "Close 70% of conversations and nurture 30%"
+                },
+                {
+                    "id": "d",
+                    "text": "Use automation for 70% of messages and manual responses for 30%"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The 70/30 Rule means each message is approximately 70% templated (the structure, key phrases, and core messaging) and 30% personalized (the prospect's name, references to their specific situation, profession, or previous messages). This balance allows you to handle higher volume without each message feeling mass-produced. Templates without personalization feel robotic; personalization without templates is unsustainable at scale."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Design your complete DM selling system by outlining: (1) your daily schedule with specific times for your morning and evening DM blocks, (2) the CRM columns you will track and where you will maintain this database, (3) your follow-up cadence customized for your specific offer, and (4) one metric you will focus on improving first and why you chose it.",
+            "minLength": 100,
+            "aiPrompt": "Evaluate whether the learner has created a realistic, actionable system rather than an aspirational one. The daily schedule should have specific times that fit their actual lifestyle. The CRM should be a tool they will actually use (spreadsheet, Notion, etc.), not the most sophisticated option. The follow-up cadence should be customized with language relevant to their offer. The chosen metric should be specific and connected to their current bottleneck. Encourage them to start simple and iterate rather than trying to build a perfect system from day one."
+        }
+    ]
+}

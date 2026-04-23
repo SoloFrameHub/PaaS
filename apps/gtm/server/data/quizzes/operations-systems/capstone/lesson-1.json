@@ -1,0 +1,69 @@
+{
+  "lessonId": "1",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "Capstone Overview: What You'll Build",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What are the three connected systems in a complete acquisition machine?",
+      "options": [
+        { "id": "a", "text": "Marketing, Sales, Support" },
+        { "id": "b", "text": "Acquisition, Conversion, Retention" },
+        { "id": "c", "text": "Awareness, Consideration, Decision" },
+        { "id": "d", "text": "Prospecting, Qualifying, Closing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The three systems are Acquisition (finds the right people and starts conversations), Conversion (turns conversations into signed contracts), and Retention (turns customers into repeat buyers and referral sources). They feed each other in a loop."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the key difference between the Capstone and every other course in the academy?",
+      "options": [
+        { "id": "a", "text": "It teaches entirely new material" },
+        {
+          "id": "b",
+          "text": "It connects all 47 artifacts from previous courses into one integrated system"
+        },
+        { "id": "c", "text": "It focuses only on advanced tactics" },
+        { "id": "d", "text": "It requires no prior coursework" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Every other course taught a skill or built a single artifact. The Capstone takes all 47 artifacts and connects them into a system. The difference between a pile of parts and a working engine is integration."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What connects the three acquisition systems together?",
+      "options": [
+        { "id": "a", "text": "Email marketing" },
+        { "id": "b", "text": "Social media" },
+        { "id": "c", "text": "The CRM as a single source of truth" },
+        { "id": "d", "text": "The sales playbook" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The CRM is the single source of truth. Every customer interaction — from first outreach through renewal — lives in the CRM. Acquisition feeds it, Conversion updates it, Retention monitors it."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "The Retention system only reduces churn — it does not impact acquisition costs or conversion rates.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. The retention system doesn't just reduce churn — it funds and accelerates everything upstream. Every customer you keep reduces the acquisition burden. Every referral lowers cost per customer. Every testimonial improves conversion rate."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Of the three systems (Acquisition, Conversion, Retention), which one is currently your weakest? What specific artifacts from previous courses need the most updating before your sprint?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies one specific weak system with concrete reasoning, names specific artifacts that need updating, and demonstrates self-awareness about gaps between what was built in courses and current execution reality."
+    }
+  ]
+}

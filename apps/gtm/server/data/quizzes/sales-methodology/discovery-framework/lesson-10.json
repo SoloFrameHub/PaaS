@@ -1,0 +1,133 @@
+{
+    "title": "Lesson 10 Quiz",
+    "questions": [
+        {
+            "question": "What is a 'Memory Leak' in sales?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Forgetting your login password"
+                },
+                {
+                    "id": "b",
+                    "text": "Losing critical deal details because you failed to document them immediately"
+                },
+                {
+                    "id": "c",
+                    "text": "The CRM crashing"
+                },
+                {
+                    "id": "d",
+                    "text": "Forgetting the prospect's name during the call"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Human memory is volatile. If you don't write down the specifics (Metrics, Timeline, Names) immediately, you lose them, which damages your credibility later.",
+            "id": "q1",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "Why is recording 'Verbatim Quotes' powerful?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It fills up space in the CRM"
+                },
+                {
+                    "id": "b",
+                    "text": "It allows you to use their exact words back to them later, maximizing resonance and trust"
+                },
+                {
+                    "id": "c",
+                    "text": "It helps you learn slang"
+                },
+                {
+                    "id": "d",
+                    "text": "It's required by law"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "If you say 'We improve efficiency', it sounds like marketing. If you say 'We fix the process that is bleeding you dry' (their words), it sounds like Empathy.",
+            "id": "q2",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "When should you document your notes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "At the end of the week"
+                },
+                {
+                    "id": "b",
+                    "text": "Immediately after the call (The 5-minute block)"
+                },
+                {
+                    "id": "c",
+                    "text": "During the call only"
+                },
+                {
+                    "id": "d",
+                    "text": "Never"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Recall degrades exponentially. Waiting even an hour results in significant data loss.",
+            "id": "q3",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "If you are handing the deal off to a technical co-founder for a demo, why is documentation critical?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "So the co-founder doesn't have to ask the same discovery questions again (which annoys the prospect)"
+                },
+                {
+                    "id": "b",
+                    "text": "So the co-founder can charge more"
+                },
+                {
+                    "id": "c",
+                    "text": "So you can blame the co-founder if it fails"
+                },
+                {
+                    "id": "d",
+                    "text": "So the co-founder knows the weather"
+                }
+            ],
+            "correctAnswer": "a",
+            "explanation": "Repeating questions makes a company look disorganized. Good documentation allows the second person to pick up exactly where the first person left off.",
+            "id": "q4",
+            "type": "multiple-choice"
+        },
+        {
+            "question": "What is the best format for discovery notes?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A long stream-of-consciousness paragraph"
+                },
+                {
+                    "id": "b",
+                    "text": "A structured Scorecard (BANT/MEDDIC) with specific fields"
+                },
+                {
+                    "id": "c",
+                    "text": "A sticky note on your monitor"
+                },
+                {
+                    "id": "d",
+                    "text": "Audio recording only"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Structure allows for quick scanning and scoring. 'BANT: Strong' is easier to parse than a 500-word paragraph.",
+            "id": "q5",
+            "type": "multiple-choice"
+        }
+    ],
+    "sectionId": "sales-methodology",
+    "courseId": "discovery-framework",
+    "lessonId": "10"
+}

@@ -1,0 +1,69 @@
+{
+  "lessonId": "1",
+  "courseId": "finance",
+  "sectionId": "operations-systems",
+  "title": "Invoicing Systems: Stripe, Chargebee, PayPal",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How much faster do solo founders using automated invoicing get paid compared to manual invoicing?",
+      "options": [
+        { "id": "a", "text": "10% faster" },
+        { "id": "b", "text": "50% faster" },
+        { "id": "c", "text": "2x faster" },
+        { "id": "d", "text": "5x faster" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Solo founders using automated invoicing get paid 2x faster than those doing it manually. That's the difference between a cash flow problem and a healthy bank balance."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "When should you consider Chargebee over Stripe's native billing?",
+      "options": [
+        { "id": "a", "text": "Always — Chargebee is better in every way" },
+        {
+          "id": "b",
+          "text": "When you have complex pricing (usage-based, tiered, add-ons)"
+        },
+        { "id": "c", "text": "When you have fewer than 10 customers" },
+        { "id": "d", "text": "Only if you use Braintree as a processor" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Chargebee adds value when Stripe's native billing can't handle your pricing complexity — metered billing, tiered pricing, multi-currency, entitlement management. If your pricing is simple (one price, one plan), Chargebee is overkill."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What percentage of invoices globally are paid late?",
+      "options": [
+        { "id": "a", "text": "10%" },
+        { "id": "b", "text": "25%" },
+        { "id": "c", "text": "47%" },
+        { "id": "d", "text": "80%" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "47% of invoices globally are paid late. This is largely an invoicing process problem — unclear invoices, slow delivery, difficult payment methods, or missing required fields get deprioritized."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Stripe Tax at $0.50 per transaction is unnecessary for solo founders selling to customers in multiple US states.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. If you have customers in multiple states or countries, Stripe Tax ($0.50/transaction) handles US sales tax and international VAT automatically. The alternative — non-compliance penalties of 5-25% of unpaid tax plus interest — is far more expensive."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Evaluate your current invoicing process. How long does it take from deal close to invoice sent? What friction points exist in your payment collection? Which invoicing tool best fits your business model and why?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response assesses their current invoicing timeline, identifies specific friction points (manual processes, payment method limitations, delayed sending), and selects a tool with reasoning tied to their business model (SaaS vs services vs project-based)."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lessonId": "4",
+  "courseId": "ai-lead-research",
+  "sectionId": "ai-acquisition",
+  "title": "The 5-Step Pipeline: Discover, Enrich, Score, Personalize, Send",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Why is the order of pipeline stages critical, as illustrated by Alex's $40K mistake?",
+      "options": [
+        { "id": "a", "text": "The tools only work in a specific order" },
+        {
+          "id": "b",
+          "text": "Enriching without discovery criteria wastes money on bad-fit prospects — the pipeline must filter before enriching"
+        },
+        {
+          "id": "c",
+          "text": "Sending must always come last for compliance reasons"
+        },
+        { "id": "d", "text": "Personalization only works on scored leads" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Alex enriched every prospect without a proper discovery stage, wasting $4,000 on enrichment for unqualified leads. The lesson teaches that pipeline architecture isn't about having all five stages — it's about having them in the right order so each stage only processes data worth processing."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What is the 'Pipeline Multiplier Effect'?",
+      "options": [
+        { "id": "a", "text": "Each tool in the pipeline doubles your output" },
+        {
+          "id": "b",
+          "text": "A 30% improvement at each of the 5 stages compounds to 3.7x total improvement"
+        },
+        { "id": "c", "text": "Using multiple pipelines simultaneously" },
+        { "id": "d", "text": "The pipeline gets faster each time you run it" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Pipeline Multiplier Effect means improvements compound across stages. A 30% improvement at each of the 5 stages (Discover, Enrich, Score, Personalize, Send) doesn't add up to 150% — it multiplies to approximately 3.7x total improvement by stage 5."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "At the Score stage, what happens to prospects scoring below 5?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They receive the same outreach as higher-scored prospects"
+        },
+        {
+          "id": "b",
+          "text": "They are moved to nurture or disqualified — they don't proceed to Personalize"
+        },
+        { "id": "c", "text": "They are automatically deleted from the CRM" },
+        {
+          "id": "d",
+          "text": "They get extra enrichment to improve their score"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The quality gate at the Score stage is: Score 5 or above? If no, move to nurture or disqualify. Only Tier A and B leads (score 5+) proceed to the Personalize stage. This prevents wasting personalization effort and sending capacity on low-probability prospects."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "You should enrich every prospect you discover, regardless of whether they match your ICP, because more data is always better.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Enriching 10,000 bad-fit prospects costs the same as enriching 500 perfect-fit ones, but only the second group converts. The Discovery stage must filter with ICP criteria before passing prospects to the Enrich stage. Each stage has a quality gate to prevent wasted resources downstream."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Map your current outreach process to the 5-step pipeline (Discover, Enrich, Score, Personalize, Send). Which stages are you doing well? Which are missing or out of order? What is the first change you would make?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response maps their actual process to all 5 stages, honestly identifies gaps or ordering problems, and proposes a specific first improvement. Look for understanding of quality gates between stages and the importance of filtering before enriching."
+    }
+  ]
+}

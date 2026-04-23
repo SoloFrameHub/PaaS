@@ -1,0 +1,97 @@
+import { ai, gemini20Flash } from '../config';
+import { getCache, setCache } from '../../redis';
+import { z } from 'zod';
+import { PERSONAS } from '@/lib/data/personas';
+
+const ICPValidationInput = z.object({
+    industry: z.string(),
+    companySize: z.string(),
+    jobTitles: z.string(),
+    painPoints: z.string(),
+    businessContext: z.string().optional(),
+});
+
+const ICPValidationOutput = z.object({
+    score: z.number(),
+    feedback: z.array(z.object({
+        personaName: z.string(),
+        role: z.string(),
+        avatar: z.enum(['D', 'I', 'S', 'C']),
+        comments: z.array(z.string()),
+    })),
+    generalAdvice: z.string(),
+});
+
+export type ICPValidationInput = z.infer<typeof ICPValidationInput>;
+export type ICPValidationOutput = z.infer<typeof ICPValidationOutput>;
+
+export const icpValidationFlow = ai.defineFlow(
+    {
+        name: 'icpValidation',
+        inputSchema: ICPValidationInput,
+        outputSchema: ICPValidationOutput,
+    },
+    async (input: ICPValidationInput) => {
+        // Cache Key Generation (Simple deterministic stringify for now)
+        // In prod, use something like object-hash for robustness
+        const cacheKey = `icp-validation:${JSON.stringify(input)}`;
+
+        // Check Cache
+        const cachedResult = await getCache<ICPValidationOutput>(cacheKey);
+        if (cachedResult) {
+            return cachedResult;
+        }
+
+        const prompt = `
+      Act as a board of skeptical buyer personas evaluating a startup's Ideal Customer Profile (ICP).
+
+      BUSINESS CONTEXT:
+      ${input.businessContext || 'Not provided.'}
+
+      ICP DATA BEING EVALUATED:
+      - Industry: ${input.industry}
+      - Company Size: ${input.companySize}
+      - Job Titles: ${input.jobTitles}
+      - Pain Points: ${input.painPoints}
+
+      PERSONAS TO CONSIDER:
+      ${PERSONAS.map(p => `- ${p.name} (${p.role}): ${p.personality.traits.join(', ')}. Hidden Agenda: ${p.hiddenAgenda}`).join('\n')}
+
+      TASK:
+      1. Score the ICP (0-100) based on specificity and market fit.
+      2. Choose 3-4 personas to provide 1-2 critical, honest comments.
+      3. For each comment, identify their DISC type (D, I, S, or C).
+      4. Provide a general piece of strategic advice.
+
+      Be brutally honest. If pain points are generic (e.g., "save time"), call them out.
+
+      Respond ONLY with valid JSON matching this schema:
+      {
+        "score": number,
+        "feedback": [
+          { "personaName": string, "role": string, "avatar": "D"|"I"|"S"|"C", "comments": [string] }
+        ],
+        "generalAdvice": string
+      }
+    `;
+
+        const result = await ai.generate({
+            model: gemini20Flash,
+            prompt: prompt,
+            output: { schema: ICPValidationOutput },
+            config: {
+                temperature: 0.7,
+                maxOutputTokens: 1000,
+            },
+        });
+
+        if (!result.output) {
+            throw new Error('AI failed to generate valid validation output');
+        }
+
+        // Set Cache (24 hours = 86400 seconds)
+        await setCache(cacheKey, result.output, 86400);
+
+        return result.output;
+    }
+);

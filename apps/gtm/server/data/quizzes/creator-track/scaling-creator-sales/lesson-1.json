@@ -1,0 +1,99 @@
+{
+    "lessonId": "1",
+    "courseId": "scaling-creator-sales",
+    "sectionId": "creator-track",
+    "title": "Lesson 1: The Solo Creator Ceiling",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 20,
+            "question": "According to the lesson, at what annual revenue range does the Solo Creator Ceiling typically hit for most creators selling services or coaching?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "$50K-$100K per year"
+                },
+                {
+                    "id": "b",
+                    "text": "$100K-$200K per year"
+                },
+                {
+                    "id": "c",
+                    "text": "$300K-$500K per year"
+                },
+                {
+                    "id": "d",
+                    "text": "$1M-$2M per year"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The lesson identifies $300K-$500K per year as the typical Solo Creator Ceiling, caused by the structural constraints of capacity, energy, and opportunity cost when one person handles marketing, sales, and delivery."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 20,
+            "question": "A creator notices their revenue has plateaued at $35K/month despite working longer hours, their email response time has increased from 2 hours to 2 days, and they are secretly relieved when prospects cancel calls. According to the Ceiling Warning Signs, how many warning signs are they exhibiting?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "One: revenue plateau"
+                },
+                {
+                    "id": "b",
+                    "text": "Two: revenue plateau and lead decay"
+                },
+                {
+                    "id": "c",
+                    "text": "Three: revenue plateau, lead decay, and selling resentment"
+                },
+                {
+                    "id": "d",
+                    "text": "Four: revenue plateau, lead decay, delivery decline, and selling resentment"
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "The creator shows revenue plateauing despite increased effort (sign 1), leads going cold due to slow follow-up (sign 2), and feeling relieved when calls cancel -- which is a form of selling resentment (sign 5). There is no specific mention of content inconsistency or delivery quality decline."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 25,
+            "question": "Using the Ceiling Assessment Matrix, a creator has $40K/month revenue, a 32% close rate, more leads than they can call, a proven offer, a semi-structured sales process, and fully manual delivery with no SOPs. How should they assess their readiness to scale?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Not ready -- they need to fix everything before scaling"
+                },
+                {
+                    "id": "b",
+                    "text": "Ready to scale -- they meet the threshold on four of six factors"
+                },
+                {
+                    "id": "c",
+                    "text": "Getting close -- they should document and systematize before adding team"
+                },
+                {
+                    "id": "d",
+                    "text": "Ready to scale -- revenue alone determines readiness"
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The creator is 'Ready to Scale' on four factors: revenue ($40K+ is $30K+), close rate (32% is 30%+), lead flow (more than they can handle), and offer validation (proven, repeatable). They are 'Getting Close' on sales process and 'Not Ready' on delivery systems. Four of six in the Ready column meets the threshold."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Look at the five warning signs of the Solo Creator Ceiling. Which ones are you currently experiencing in your business, if any? For each one you identify, describe the specific way it is showing up. If you have not hit the ceiling yet, at what revenue level do you anticipate hitting it based on your current capacity, and what is the first constraint (capacity, energy, or opportunity cost) you expect to encounter?",
+            "minLength": 100,
+            "promptForAI": "Evaluate whether the student can accurately self-assess their position relative to the Solo Creator Ceiling. Look for specificity -- vague answers like 'I am busy' should be pushed toward concrete details. If they claim none of the warning signs apply, probe whether they may be in the 'Getting Close' phase without recognizing it. Affirm honest self-assessment and suggest which constraint to address first based on their description."
+        }
+    ]
+}

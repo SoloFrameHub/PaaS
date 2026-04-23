@@ -1,0 +1,137 @@
+import { ai, gemini20Flash } from '../config';
+import { z } from 'zod';
+import { logger } from '@/lib/logger';
+import { vertexIndexer } from '../vertexIndexer';
+import { telemetry } from '../telemetry';
+
+const RagIndexInput = z.object({
+    documents: z.array(z.object({
+        id: z.string(),
+        name: z.string(),
+        content: z.string()
+    })),
+    businessModel: z.string().optional()
+});
+
+const RagIndexOutput = z.object({
+    aggregatedInsights: z.string(),
+    icpSignals: z.array(z.string()),
+    valuePropSignals: z.array(z.string()),
+    competitiveSignals: z.array(z.string()),
+    confidence: z.number(),
+    docContext: z.string().optional() // Persist text for Chat usage
+});
+
+/**
+ * Genkit flow for indexing multiple documents to extract strategic signals.
+ * Aggregates content from all documents and uses Gemini to identify ICP,
+ * Value Proposition, and Competitive signals.
+ */
+export const ragIndexerFlow = ai.defineFlow(
+    {
+        name: 'ragIndexer',
+        inputSchema: RagIndexInput,
+        outputSchema: RagIndexOutput,
+    },
+    async (input) => {
+        // 1. Persist Documents to Vertex AI Search (Optional check)
+        const hasVertexConfig = process.env.VERTEX_AI_PROJECT_ID && process.env.VERTEX_AI_DATA_STORE_ID;
+
+        if (hasVertexConfig) {
+            try {
+                const batchSize = 5;
+                for (let i = 0; i < input.documents.length; i += batchSize) {
+                    const batch = input.documents.slice(i, i + batchSize);
+                    await Promise.all(batch.map(doc =>
+                        vertexIndexer.indexDocument({
+                            id: doc.id,
+                            title: doc.name,
+                            content: doc.content,
+                            source: 'user-upload'
+                        })
+                    ));
+                }
+            } catch (error) {
+                logger.warn('Failed to index documents to Vertex AI - continuing with local analysis', { error });
+            }
+        } else {
+            logger.info('Skipping Vertex AI indexing - configuration missing');
+        }
+
+        // 2. Analyze with Gemini (Full Context)
+        const MAX_CONTEXT_CHARS = 500000; // ~125k tokens
+        let combinedContent = input.documents.map(d => `--- DOCUMENT: ${d.name} ---\n${d.content}`).join('\n\n');
+
+        if (!combinedContent.trim()) {
+            logger.warn('RAG Indexer received documents with empty content');
+            return {
+                aggregatedInsights: "No readable text content found in documents.",
+                icpSignals: [],
+                valuePropSignals: [],
+                competitiveSignals: [],
+                confidence: 0,
+                docContext: ""
+            };
+        }
+
+        if (combinedContent.length > MAX_CONTEXT_CHARS) {
+            logger.warn('Document context too large, truncating', { originalSize: combinedContent.length });
+            const slice = combinedContent.slice(0, MAX_CONTEXT_CHARS);
+            const lastNewline = slice.lastIndexOf('\n');
+            combinedContent = (lastNewline > 0 ? slice.slice(0, lastNewline) : slice) + "\n...[TRUNCATED]";
+        }
+
+        // Save context for persistence (Limit to 100k for Firestore safety)
+        const persistenceContext = combinedContent.slice(0, 100000);
+
+        try {
+            const result = await ai.generate({
+                model: gemini20Flash,
+                prompt: `You are an expert GTM strategist and RAG indexer. Analyze the following documents uploaded by a solo founder.
+      
+COMBINED CONTEXT:
+${combinedContent}
+
+TASK: Extract high-density strategic "signals" that will inform their Customer Acquisition strategy.
+Focus on: ICP clarity, Value Proposition maturity, and Competitive Positioning.
+If the documents are empty or irrelevant, return "None" or "Insufficient Data" for the fields.
+Return ONLY valid JSON.`,
+                config: {
+                    temperature: 0.1,
+                },
+            });
+
+            const responseText = result.text;
+            const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+
+            if (!jsonMatch) {
+                logger.warn('No JSON found in RAG indexer output', { responseText });
+                return {
+                    aggregatedInsights: "Analysis failed to produce structured output.",
+                    icpSignals: [],
+                    valuePropSignals: [],
+                    competitiveSignals: [],
+                    confidence: 0,
+                    docContext: persistenceContext
+                };
+            }
+
+            const parsed = JSON.parse(jsonMatch[0]);
+            return RagIndexOutput.parse({
+                ...parsed,
+                docContext: persistenceContext
+            });
+        } catch (error) {
+            logger.error('RAG Analysis Generation Failed', { error });
+            // Fallback to empty context
+            return {
+                aggregatedInsights: "Analysis processing error.",
+                icpSignals: [],
+                valuePropSignals: [],
+                competitiveSignals: [],
+                confidence: 0,
+                docContext: persistenceContext
+            };
+        }
+    }
+);

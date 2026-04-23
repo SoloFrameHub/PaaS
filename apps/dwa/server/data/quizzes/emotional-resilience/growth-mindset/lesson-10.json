@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "According to Brandtstädter and Renner's research, what are the two complementary coping modes that together predict wellbeing?",
+            "options": [
+                {"id": "opt1", "text": "Positive thinking and negative thinking"},
+                {"id": "opt2", "text": "Tenacious Goal Pursuit (TEN) and Flexible Goal Adjustment (FLEX)—both independently predict wellbeing"},
+                {"id": "opt3", "text": "Approach and avoidance"},
+                {"id": "opt4", "text": "Optimism and pessimism"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Brandtstädter & Renner (1990) identified two orthogonal (independent) processes: Tenacious Goal Pursuit (TEN)—persistence toward valued goals despite obstacles—and Flexible Goal Adjustment (FLEX)—revising or disengaging from goals when they become unattainable. BOTH predict life satisfaction and lower depression. They're not opposites; psychologically healthy individuals can do both—persist when persistence serves goals AND disengage when goals become blocked. The critical skill is knowing which to apply when."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does research show about flexible goal adjustment (FLEX) under chronic adversity?",
+            "options": [
+                {"id": "opt1", "text": "FLEX is maladaptive—people should always persist regardless of circumstances"},
+                {"id": "opt2", "text": "FLEX is especially protective under chronic adversity and major life transitions, predicting lower depression and better wellbeing"},
+                {"id": "opt3", "text": "FLEX has no relationship to wellbeing"},
+                {"id": "opt4", "text": "FLEX only works for people with low self-esteem"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research consistently shows flexible goal adjustment (FLEX) is especially protective under chronic adversity, uncontrollable loss (health decline, bereavement, forced career change), and major life transitions. When goals become objectively unattainable due to factors outside your control, continued pursuit produces rumination, learned helplessness, and depression. Disengaging from blocked goals and re-engaging with attainable goals protects wellbeing. This is particularly important when persistence would be futile—precisely when 'never give up' growth mindset framing is most harmful."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is flexible goal adjustment (FLEX) frequently underrepresented in popular growth mindset education?",
+            "options": [
+                {"id": "opt1", "text": "Because FLEX has no evidence base"},
+                {"id": "opt2", "text": "Because popular growth mindset emphasizes persistence ('never give up') but underemphasizes adaptive disengagement—even though both have equal evidence"},
+                {"id": "opt3", "text": "Because FLEX only applies to children, not adults"},
+                {"id": "opt4", "text": "Because everyone already knows when to quit"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Popular growth mindset content heavily emphasizes persistence ('never give up,' 'persist through challenge') but underemphasizes FLEX—even though both have strong, independent evidence bases (30+ years for FLEX). This creates an incomplete and potentially harmful framework: unyielding persistence toward blocked goals produces rumination, exhaustion, and demoralization, not growth. The lesson explicitly states this gap must be corrected: teach both persistence (when appropriate) AND adaptive disengagement (when appropriate). Knowing when to pivot is as critical as knowing when to persist."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What are red flag signals that a goal may be blocked and require flexible adjustment rather than continued persistence?",
+            "options": [
+                {"id": "opt1", "text": "The goal feels difficult or uncomfortable"},
+                {"id": "opt2", "text": "Repeated effort produces no progress over extended time; success depends entirely on factors outside your control; or pursuing the goal requires sacrificing core values/wellbeing"},
+                {"id": "opt3", "text": "You experience any setback or obstacle"},
+                {"id": "opt4", "text": "Someone else succeeded faster than you"}
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "The lesson identifies specific signals for blocked goals requiring FLEX: (1) Repeated effort produces no progress over years despite strategy changes, (2) Progress depends entirely on uncontrollable factors, (3) Success requires sacrificing core values or wellbeing, (4) The goal was never intrinsically yours (externally imposed), or (5) Reality has changed making success objectively impossible. These are distinct from temporary obstacles (persist through those). The skill is distinguishing difficulty (persist with strategy) from impossibility (adjust or disengage)."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Identify a goal you've been pursuing for a long time with minimal progress. Use the lesson framework to analyze: Is this goal (1) difficult but attainable with persistence (TEN), or (2) blocked by factors outside your control requiring adjustment (FLEX)? What signals point to each? What would flexible adjustment look like (not giving up entirely, but revising the specific path)?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "emotional-resilience",
+    "courseId": "growth-mindset",
+    "lessonId": "10",
+    "title": "Flexible Goal Adjustment: When to Persist and When to Pivot - Quiz"
+}

@@ -1,0 +1,75 @@
+{
+  "lessonId": "3",
+  "courseId": "capstone",
+  "sectionId": "operations-systems",
+  "title": "System Assembly: Outreach + Sequences + CRM",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "In the outreach engine, what is the correct flow for prospects?",
+      "options": [
+        { "id": "a", "text": "CRM to sequence to research agent" },
+        {
+          "id": "b",
+          "text": "Research agent to tested sequences to CRM to next actions"
+        },
+        { "id": "c", "text": "Social media to email to phone call" },
+        { "id": "d", "text": "Cold call to email follow-up to CRM" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The clean outreach engine flow is: research agent finds prospects, they enter tested sequences, replies flow into CRM, and CRM routes next actions back to you. Every step should be automated or have a documented human-in-the-loop gate."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What happened when James 10x'd his cold email volume on the same domain?",
+      "options": [
+        { "id": "a", "text": "His reply rates tripled" },
+        {
+          "id": "b",
+          "text": "His open rates dropped to 8% as emails hit spam, and recovery took 3 weeks"
+        },
+        { "id": "c", "text": "Nothing changed — volume scales linearly" },
+        { "id": "d", "text": "His CRM crashed from too many contacts" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "James's open rates crashed to 8% and emails went to spam. Recovery took 3 weeks. The lesson: volume scales horizontally (more domains/inboxes), not vertically (more sends per domain). He should have spread volume across 10 inboxes at 30/day each."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What is the AI outreach agent's 'human gate' step?",
+      "options": [
+        { "id": "a", "text": "The AI reviews its own output" },
+        {
+          "id": "b",
+          "text": "Human reviews and approves each batch before sending"
+        },
+        { "id": "c", "text": "The CRM automatically filters bad messages" },
+        { "id": "d", "text": "Recipients opt-in before receiving emails" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The human gate means you review and approve each batch of AI-generated personalized emails before they are loaded into the sequence tool and sent. This ensures quality control while maintaining the efficiency of AI personalization."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If your CRM has deals with no activity in 21+ days, those deals are likely healthy and just need patience.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Deals with no activity in 21+ days are 'ghost deals.' They should be reviewed immediately — some may be truly dead, others need follow-up. Stale pipeline data makes every downstream process unreliable."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Map the data flow from when a prospect receives your outreach to when they become a deal in your CRM. Where are the gaps or manual steps that should be automated?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response traces a clear path from outreach to CRM deal creation, identifies specific manual steps or broken integrations, and proposes concrete automation fixes (e.g., Zapier triggers, webhook connections) for the highest-priority gap."
+    }
+  ]
+}

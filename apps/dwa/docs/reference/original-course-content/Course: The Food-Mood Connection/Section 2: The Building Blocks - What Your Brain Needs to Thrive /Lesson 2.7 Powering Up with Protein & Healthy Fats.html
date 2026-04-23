@@ -1,0 +1,184 @@
+<!-- START OF LEARNWORLDS CUSTOM CODE BLOCK FOR LESSON 7 -->
+<style>
+    /* --- RPS Gold Standard Styles - Based on User-Provided Sleep Course Example --- */
+    /* --- Brand Colors & Fonts --- */
+    :root {
+        --brand-primary-blue: #3d70b2;
+        --brand-secondary-blue: #5fa8d3;
+        --brand-light-bg: #f8f9fa;
+        --brand-text-dark: #212529;
+        --brand-text-light: #6c757d;
+        --brand-white: #FFFFFF;
+        --brand-green: #28a745;
+        --brand-orange: #fd7e14;
+        --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* --- General & Layout --- */
+    .rps-lesson-7 *, .rps-lesson-7 *::before, .rps-lesson-7 *::after { box-sizing: border-box; }
+    .rps-lesson-7 {
+        font-family: var(--font-family);
+        line-height: 1.7;
+        color: var(--brand-text-dark);
+        background-color: var(--brand-white);
+    }
+    .rps-lesson-7 .content-wrapper { max-width: 850px; margin: 20px auto; padding: 10px; }
+    .rps-lesson-7 .section { padding: 32px 0; border-bottom: 1px solid #e9ecef; }
+    .rps-lesson-7 .section:last-of-type { border-bottom: none; }
+
+    /* --- Typography & Headers (Fixed Pixel Scale) --- */
+    .rps-lesson-7 .lesson-header { text-align: center; margin-bottom: 32px; }
+    .rps-lesson-7 h1 { font-size: 28px; font-weight: 700; color: var(--brand-primary-blue); margin-bottom: 8px; }
+    .rps-lesson-7 .lesson-subtitle { font-size: 18px; color: var(--brand-text-light); margin-top: 0; }
+    .rps-lesson-7 h2 { font-size: 24px; color: var(--brand-primary-blue); border-bottom: 2px solid #e9ecef; padding-bottom: 12px; margin-bottom: 24px; }
+    .rps-lesson-7 p { font-size: 18px; color: var(--brand-text-light); margin-bottom: 16px; }
+    .rps-lesson-7 strong { color: var(--brand-primary-blue); font-weight: 600; }
+
+    /* --- Special Containers --- */
+    .rps-lesson-7 .practitioner-voice { display: flex; align-items: flex-start; gap: 20px; background-color: #eaf5fd; padding: 24px; border-radius: 8px; margin: 24px 0; }
+    .rps-lesson-7 .practitioner-voice blockquote { margin: 0; font-style: italic; color: var(--brand-text-light); border-left: 4px solid var(--brand-secondary-blue); padding-left: 20px; font-size: 17px; }
+    .rps-lesson-7 .highlight-box { background-color: #eaf5fd; border-left: 5px solid var(--brand-primary-blue); padding: 20px; margin-top: 20px; border-radius: 4px; }
+    .rps-lesson-7 .highlight-box h3 { color: var(--brand-primary-blue); margin-top: 0; font-size: 18px; }
+
+    /* --- Interactive Activity --- */
+    .rps-lesson-7 .activity-box { background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 24px; margin-top: 24px; }
+    .rps-lesson-7 .breakfast-builder-container { display: grid; grid-template-columns: 250px 1fr; gap: 32px; margin-top: 24px; align-items: start; }
+    .rps-lesson-7 .food-choices { display: flex; flex-direction: column; gap: 12px; }
+    .rps-lesson-7 .food-choice { padding: 12px 20px; background: var(--brand-white); border: 2px solid var(--brand-secondary-blue); border-radius: 8px; cursor: pointer; font-weight: 500; font-size: 16px; display: flex; align-items: center; gap: 12px; transition: all 0.2s; }
+    .rps-lesson-7 .food-choice:hover { background-color: #eaf5fd; }
+    .rps-lesson-7 .food-choice.added { opacity: 0.5; cursor: not-allowed; background-color: #f1f1f1; }
+    .rps-lesson-7 .plate-area { background-color: var(--brand-white); border-radius: 8px; padding: 24px; min-height: 200px; }
+    .rps-lesson-7 #breakfastPlate { display: flex; flex-direction: column; gap: 12px; }
+    .rps-lesson-7 #plateMessage { color: var(--brand-text-light); font-style: italic; text-align: center; }
+    .rps-lesson-7 .feedback-message { text-align: center; font-weight: 600; padding: 16px; border-radius: 8px; margin-top: 24px; font-size: 18px; opacity: 0; transition: opacity 0.5s; }
+    .rps-lesson-7 .feedback-message.visible { opacity: 1; }
+
+    /* --- Mobile Responsiveness --- */
+    @media (max-width: 768px) {
+        .rps-lesson-7 .breakfast-builder-container { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="rps-lesson-container rps-lesson-7">
+    <div class="content-wrapper">
+        <header class="lesson-header">
+            <h1>Lesson 7: Powering Up with Protein & Healthy Fats</h1>
+            <p class="lesson-subtitle">The Building Blocks for a Stable Brain</p>
+        </header>
+
+        <section class="section">
+            <h2>Getting Off the Rollercoaster</h2>
+            <p>In the last lesson, we saw how the blood sugar rollercoaster can trigger anxiety and tank our energy. So, how do we get off the ride? The answer lies in two powerful macronutrients: **protein and healthy fats**. Think of them as the brakes and the shock absorbers for your system—they slow everything down, prevent the jarring spikes and crashes, and provide the steady fuel your brain craves.</p>
+        </section>
+
+        <section class="section">
+            <h2>The Power of Protein</h2>
+            <p>Protein is more than just muscle fuel; it's a non-negotiable for mental health. When you include protein in a meal, it dramatically slows the absorption of carbohydrates, preventing that rapid blood sugar spike. This is why a breakfast of eggs keeps you full and focused for hours, while a muffin might leave you hungry and jittery by 10 AM.</p>
+            <p>Even more importantly, proteins are made of amino acids, which are the literal building blocks for your neurotransmitters. Your brain needs the amino acid **Tryptophan** to make serotonin (for mood) and **Tyrosine** to make dopamine (for focus and motivation).</p>
+             <div class="practitioner-voice">
+                <blockquote>"So often, clients tell me they 'don't have time for breakfast' or just grab a coffee. This is a recipe for a mid-morning anxiety spike. One of the most impactful changes we can make is front-loading the day with protein. Adding eggs, a protein smoothie, or Greek yogurt to your morning provides your brain with the raw materials it needs to build focus and stability for the *entire* day. It's a game-changer." - Autumn Persinger, PMHNP-BC</blockquote>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>The Brilliance of Healthy Fats</h2>
+            <p>For decades, fat was unfairly demonized. We now know that healthy fats are essential for brain health. In fact, your brain is nearly 60% fat! It needs a constant supply of good fats to build cell membranes, reduce inflammation, and facilitate communication between brain cells.</p>
+            <p>The superstars are **Omega-3 fatty acids** (found in fatty fish like salmon, walnuts, and flaxseeds), which are powerfully anti-inflammatory and crucial for mood regulation. Including sources of healthy fats with every meal adds to that feeling of satiety and provides long-lasting, stable energy.</p>
+            <div class="highlight-box">
+                <h3>💡 Key Insight: Build a Better Brain Cell</h3>
+                <p>Think of your brain cells like little houses. Healthy fats (especially Omega-3s) create strong, flexible walls that let good signals pass through easily. Diets high in unhealthy trans fats create rigid, brittle walls, making it harder for your brain cells to communicate effectively, which can contribute to brain fog and low mood.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Interactive Activity: Build a Brain-Boosting Breakfast</h2>
+            <div class="activity-box">
+                <h3 style="text-align:center; color: var(--brand-primary-blue); margin-top:0;">Breakfast Plate Builder</h3>
+                <p style="text-align:center; margin-top:8px;">Click on foods to add them to your plate. Try to build a meal that includes Protein, Healthy Fat, and Fiber to get off the rollercoaster!</p>
+                <div class="breakfast-builder-container">
+                    <div class="food-choices">
+                        <div class="food-choice" id="fc1" data-type="carb-only">🥣 Sugary Cereal</div>
+                        <div class="food-choice" id="fc2" data-type="protein">🥚 Eggs</div>
+                        <div class="food-choice" id="fc3" data-type="fat">🥑 Avocado</div>
+                        <div class="food-choice" id="fc4" data-type="carb-fiber">🍓 Berries</div>
+                        <div class="food-choice" id="fc5" data-type="carb-only">🥯 Plain Bagel</div>
+                        <div class="food-choice" id="fc6" data-type="protein">🥛 Greek Yogurt</div>
+                    </div>
+                    <div class="plate-area">
+                        <div id="breakfastPlate7">
+                            <p id="plateMessage7">Your plate is empty...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-message" id="feedbackMessage7"></div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const container = document.querySelector('.rps-lesson-7');
+        if (!container) return;
+
+        const plate = container.querySelector('#breakfastPlate7');
+        const plateMessage = container.querySelector('#plateMessage7');
+        const feedbackMessage = container.querySelector('#feedbackMessage7');
+        const foodChoices = container.querySelectorAll('.food-choice');
+        
+        const selectedTypes = new Set();
+
+        function addFoodToPlate(element) {
+            if (element.classList.contains('added')) return;
+
+            if (plate.children.length === 1 && plate.contains(plateMessage)) {
+                plate.innerHTML = ''; // Clear "empty" message
+            }
+            
+            const type = element.dataset.type;
+            selectedTypes.add(type);
+
+            const newFood = document.createElement('div');
+            newFood.className = 'food-choice';
+            newFood.textContent = element.textContent;
+            newFood.style.cursor = 'default';
+            plate.appendChild(newFood);
+            
+            element.classList.add('added');
+
+            provideFeedback();
+        }
+
+        function provideFeedback() {
+            feedbackMessage.classList.remove('visible');
+            
+            setTimeout(() => {
+                let msg = '';
+                let color = '';
+
+                if (selectedTypes.has('carb-only') && !selectedTypes.has('protein') && !selectedTypes.has('fat')) {
+                    msg = 'This breakfast is mostly carbs. You might be headed for that rollercoaster! Try adding a protein or fat.';
+                    color = '#fdedec';
+                } else if (selectedTypes.has('protein') && selectedTypes.has('fat') && selectedTypes.has('carb-fiber')) {
+                    msg = 'Excellent! This breakfast has protein, fat, and fiber. This will provide steady, long-lasting energy for your brain.';
+                    color = '#e8f5e9';
+                } else if (selectedTypes.has('protein') || selectedTypes.has('fat')) {
+                    msg = 'Great start! You have a stabilizing element. Adding fiber from a fruit or vegetable would make it even better.';
+                    color = '#eaf5fd';
+                } else {
+                    return; // No feedback yet
+                }
+                
+                feedbackMessage.textContent = msg;
+                feedbackMessage.style.backgroundColor = color;
+                feedbackMessage.classList.add('visible');
+            }, 300);
+        }
+
+        foodChoices.forEach(choice => {
+            choice.addEventListener('click', () => addFoodToPlate(choice)); 
+        });
+
+    })();
+</script>
+<!-- END OF LEARNWORLDS CUSTOM CODE BLOCK FOR LESSON 7 -->

@@ -1,0 +1,75 @@
+{
+  "lessonId": "2",
+  "courseId": "expansion",
+  "sectionId": "customer-success",
+  "title": "Usage-Based Expansion Triggers",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "At what percentage of a plan limit should you initiate an expansion conversation with a customer?",
+      "options": [
+        { "id": "a", "text": "50% — start the conversation early" },
+        { "id": "b", "text": "80% — the optimal window before frustration" },
+        { "id": "c", "text": "100% — wait until they hit the wall" },
+        { "id": "d", "text": "110% — after they've experienced the limitation" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 80% rule is optimal because the customer has breathing room and the conversation feels helpful rather than desperate. At 100%, they're frustrated and you're reacting to a problem. Conversion rates are 40-60% at 80% vs. 15-25% after hitting the wall."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What makes a usage trigger 'usage-based' rather than 'outcome-based'?",
+      "options": [
+        { "id": "a", "text": "It measures customer satisfaction levels" },
+        {
+          "id": "b",
+          "text": "It tracks how the customer uses the product, not what results they achieve"
+        },
+        { "id": "c", "text": "It requires manual detection by the founder" },
+        { "id": "d", "text": "It only applies to enterprise customers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Usage-based triggers track measurable product behaviors — seats used, storage consumed, API calls made — while outcome-based triggers track business results like revenue growth or churn reduction. Usage triggers are objective and product-driven."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which of the following is a key characteristic of an effective usage trigger?",
+      "options": [
+        { "id": "a", "text": "It requires subjective interpretation" },
+        {
+          "id": "b",
+          "text": "It fires after the customer has already churned"
+        },
+        {
+          "id": "c",
+          "text": "It is objective, measurable, predictive, and timely"
+        },
+        { "id": "d", "text": "It only works with annual billing cycles" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Effective usage triggers are objective (no interpretation required), measurable (trackable in your systems), predictive (correlate with successful upgrades historically), and timely (fire before frustration, not after the customer hits a wall)."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "Waiting until a customer hits 100% of their plan limit before reaching out results in higher conversion rates than reaching out at 80%.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Reaching out at 80% converts at 40-60%, while reaching out after they hit the wall converts at only 15-25%. At 100%, customers are frustrated and may already be evaluating competitors."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "Identify 3 usage-based triggers specific to your product. For each trigger, define the threshold that should fire the alert, how you would detect it technically, and what expansion conversation you would initiate.",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response identifies product-specific triggers (not generic ones), defines concrete thresholds (e.g., '80% of 50 project limit'), describes a realistic detection method (database query, analytics tool, or billing system), and outlines a helpful expansion conversation rather than a hard sell."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "lessonId": "1",
+  "courseId": "creator-metrics",
+  "sectionId": "creator-track",
+  "title": "The Creator Revenue Dashboard Quiz",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "A creator has 3,000 active email subscribers and generated $12,000 in revenue over the last 90 days. What is their Revenue Per Subscriber (RPS), and how does it benchmark?",
+      "options": [
+        { "id": "a", "text": "$4.00/subscriber/quarter -- below average for most creator types" },
+        { "id": "b", "text": "$4.00/subscriber/quarter -- strong, typical for mid-ticket course creators or coaches" },
+        { "id": "c", "text": "$0.40/subscriber/quarter -- the list is cold and needs re-engagement" },
+        { "id": "d", "text": "$12.00/subscriber/quarter -- exceptional, indicating a high-ticket offer model" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "RPS = $12,000 / 3,000 = $4.00 per subscriber per quarter. According to the benchmarks, $3-10/subscriber/quarter is strong and typical for creators with mid-ticket offers ($500-2,000) or coaching businesses."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "According to the 'One Metric That Matters' principle, which metric should a creator earning $8,000/month focus on?",
+      "options": [
+        { "id": "a", "text": "Revenue Per Follower (RPF) to maximize social media ROI" },
+        { "id": "b", "text": "Average Revenue Per Transaction (ARPT) to increase order value" },
+        { "id": "c", "text": "Cost Per Qualified Lead (CPQL) because the offer is proven and they need cheaper acquisition" },
+        { "id": "d", "text": "Sales Conversion Rate because they need to prove they can close" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "At $5K-15K/month, the lesson recommends focusing on CPQL. At this stage, you have a working offer (proven by the $8K/month revenue), so the priority is reducing the cost of finding buyers rather than optimizing conversion or transaction value."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which of the following is a vanity metric that does NOT directly connect to revenue or business health?",
+      "options": [
+        { "id": "a", "text": "Revenue Per Subscriber" },
+        { "id": "b", "text": "Cost Per Qualified Lead" },
+        { "id": "c", "text": "Instagram likes and comments" },
+        { "id": "d", "text": "Sales Conversion Rate" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Instagram likes and comments are vanity metrics -- they make you feel good but don't directly connect to revenue. The lesson specifically notes that engagement and purchasing intent are different behaviors, and some of the highest-engagement content attracts the worst buyers."
+    },
+    {
+      "id": "reflection_1",
+      "type": "reflection",
+      "question": "Calculate your current Revenue Per Subscriber (RPS) using your actual numbers. What is the number, and what does it tell you about the alignment between your audience and your offers? If your RPS is below the benchmark for your creator type, what is one specific change you could make to improve it?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the student correctly applied the RPS formula (90-day revenue / active subscribers). Check if they identified realistic improvements such as list cleaning, offer alignment, segmentation, or raising prices. Encourage specific action over vague plans."
+    }
+  ]
+}

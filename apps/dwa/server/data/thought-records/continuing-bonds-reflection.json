@@ -1,0 +1,108 @@
+{
+  "id": "continuing-bonds-reflection",
+  "title": "Continuing Bonds Reflection",
+  "description": "This reflection helps you explore and nurture your ongoing connection with who or what you've lost. It's not about 'moving on' — it's about discovering how this bond can continue to be part of your life in meaningful ways.",
+  "instructions": "Choose a memory, quality, or aspect of your loss that feels important to you right now. Work through the prompts gently — there's no rush. You can return to this reflection many times with different memories.",
+  "fields": [
+    {
+      "id": "situation",
+      "label": "1. Who or what are you remembering right now?",
+      "type": "textarea",
+      "placeholder": "e.g., My mother, my partner, a friendship that ended, my health before the diagnosis, a career I loved",
+      "required": true
+    },
+    {
+      "id": "automaticThought",
+      "label": "2. A specific memory, quality, or value that comes to mind",
+      "type": "textarea",
+      "placeholder": "e.g., The way she laughed at her own jokes. His patience when I was struggling. The feeling of belonging I had in that role. Their unconditional kindness.",
+      "required": true
+    },
+    {
+      "id": "emotionRating",
+      "label": "3. How does sitting with this memory feel right now? (0 = very painful, 100 = very comforting)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": true
+    },
+    {
+      "id": "thinkingTrap",
+      "label": "4. What type of continuing bond feels most meaningful to you?",
+      "type": "select",
+      "options": [
+        { "value": "memory", "label": "Memory Keeping — photos, stories, shared memories" },
+        { "value": "values", "label": "Values & Legacy — carrying forward what they taught or stood for" },
+        { "value": "ritual", "label": "Ritual & Tradition — candles, visits, traditions you shared" },
+        { "value": "object", "label": "Meaningful Object — something tangible that connects you" },
+        { "value": "conversation", "label": "Internal Conversation — talking to them in your mind or prayers" },
+        { "value": "action", "label": "Action & Service — honoring them through volunteering, creating, or giving" }
+      ],
+      "required": true
+    },
+    {
+      "id": "evidenceFor",
+      "label": "5. What did this person or experience teach you or give you?",
+      "type": "textarea",
+      "placeholder": "e.g., She taught me that it's okay to ask for help. He showed me what patience looks like. That job taught me I was more capable than I thought.",
+      "required": true
+    },
+    {
+      "id": "evidenceAgainst",
+      "label": "6. How might you carry this forward? (A ritual, an activity, a value, a conversation)",
+      "type": "textarea",
+      "placeholder": "e.g., I could cook their recipe on their birthday each year. I want to practice the patience they modeled. I could write a letter telling them what they meant to me.",
+      "required": true
+    },
+    {
+      "id": "balancedThought",
+      "label": "7. A message to yourself about this connection",
+      "type": "textarea",
+      "placeholder": "e.g., This bond doesn't end because they're gone. I carry them with me, and that's not holding on too tight — it's love continuing in a different form.",
+      "required": false
+    },
+    {
+      "id": "reRateEmotion",
+      "label": "8. How do you feel now? (0 = very painful, 100 = very comforting)",
+      "type": "rating",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "distortionsList": [
+    {
+      "id": "memory",
+      "name": "Memory Keeping",
+      "description": "Preserving and sharing memories through photos, videos, stories, and conversations. Keeping the person or experience alive through remembrance."
+    },
+    {
+      "id": "values",
+      "name": "Values & Legacy",
+      "description": "Carrying forward what the person taught you, stood for, or modeled. Living out values that honor their influence on your life."
+    },
+    {
+      "id": "ritual",
+      "name": "Ritual & Tradition",
+      "description": "Continuing shared traditions, creating new rituals (lighting candles, visiting meaningful places), or marking meaningful dates in ways that honor the bond."
+    },
+    {
+      "id": "object",
+      "name": "Meaningful Object",
+      "description": "Keeping or wearing something tangible — jewelry, clothing, a favorite mug, a handwritten note — that maintains a physical connection to what was lost."
+    },
+    {
+      "id": "conversation",
+      "name": "Internal Conversation",
+      "description": "Talking to the person in your mind, in prayer, or out loud. Asking what they would think, sharing your day, or simply saying 'I miss you.'"
+    },
+    {
+      "id": "action",
+      "name": "Action & Service",
+      "description": "Honoring the person through volunteering, donating, advocating, creating (art, music, writing), or acts of kindness in their name or memory."
+    }
+  ],
+  "disclaimer": "This reflection is for personal exploration and is not therapy. If your grief feels overwhelming or you are struggling to function, please reach out to a grief-informed therapist or counselor. If you are having thoughts of ending your life, call or text 988 (Suicide & Crisis Lifeline) immediately."
+}

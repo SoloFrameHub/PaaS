@@ -1,0 +1,153 @@
+{
+    "lessonId": "4",
+    "courseId": "course-15-discovery-simulations",
+    "sectionId": "sales-methodology",
+    "title": "Lesson 4: Handling Guarded Prospects",
+    "version": "1.0",
+    "passingScore": 80,
+    "totalXP": 100,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "What is the most likely reason a prospect acts 'Guarded' giving short answers and deflecting questions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are naturally hostile and hate your product."
+                },
+                {
+                    "id": "b",
+                    "text": "They are trying to protect themselves from potentially pushy sales tactics or organizational exposure."
+                },
+                {
+                    "id": "c",
+                    "text": "They have already decided to buy and don't think they need to talk to you."
+                },
+                {
+                    "id": "d",
+                    "text": "They accidentally joined the call and are too polite to leave."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Guarded behavior is usually a defensive mechanism built from previous bad experiences or perceived risks in disclosing internal information."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "When a prospect 'leans back' and becomes guarded, what should the founder do according to the 'Pull Back' principle?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Talk faster and ask more direct questions to break through the wall."
+                },
+                {
+                    "id": "b",
+                    "text": "End the call immediately; they clearly aren't interested."
+                },
+                {
+                    "id": "c",
+                    "text": "Slow down, lean back as well, and use empathy and curiosity to build trust."
+                },
+                {
+                    "id": "d",
+                    "text": "Start a high-pressure technical demo to show them what they're missing."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Matching the prospect's pace and reducing pressure helps disarm their defensive shell and earns you the right to continue discovery."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "difficulty": "synthesis",
+            "xpValue": 20,
+            "question": "Why is the technique 'Share First, Then Ask' effective with guarded prospects?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "It allows you to pitch your product for 10 minutes uninterrupted."
+                },
+                {
+                    "id": "b",
+                    "text": "It demonstrates your industry expertise and understanding of their world before you demand information from them."
+                },
+                {
+                    "id": "c",
+                    "text": "It proves that you are smarter than the prospect."
+                },
+                {
+                    "id": "d",
+                    "text": "It forces the prospect to agree with your claims."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Demonstrating that you understand common industry pain points makes the prospect feel 'seen' and safer to reveal their specific situation."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "difficulty": "application",
+            "xpValue": 15,
+            "question": "What is the primary benefit of using 'Permission' questions?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They trick the prospect into signing a contract."
+                },
+                {
+                    "id": "b",
+                    "text": "They waste time and make the call longer."
+                },
+                {
+                    "id": "c",
+                    "text": "They give the prospect a sense of control, which reduces their need to be defensive."
+                },
+                {
+                    "id": "d",
+                    "text": "They allow you to avoid asking hard questions."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Permission questions are micro-commitments that empower the prospect, making them more likely to share information willingly."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "difficulty": "foundational",
+            "xpValue": 15,
+            "question": "How should you respond to a guarded prospect giving a one-word answer?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Correct their grammar and ask them to be more detailed."
+                },
+                {
+                    "id": "b",
+                    "text": "Accept it gracefully, pause for a few seconds of silence, and then move to a lower-stakes question."
+                },
+                {
+                    "id": "c",
+                    "text": "Ask them the same question again, but louder."
+                },
+                {
+                    "id": "d",
+                    "text": "Complain about their lack of cooperation."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Gracefully accepting short answers and using silence shows patience, which is a powerful trust-building signal."
+        },
+        {
+            "id": "r1",
+            "type": "reflection",
+            "question": "Think of a 'Permission-based' question and an 'I may be wrong' observation tailored for your business. For example: 'Would it be okay if I asked a few questions about your [specific process]?' followed by 'I might be off-base, but my sense is that [specific frustration] is happening. Is that right?' Write them out below and explain why they would be effective for your typical ICP.",
+            "minLength": 100,
+            "promptForAI": "Evaluate the student's tailored questions. Check if they follow the 'Soft' and 'Empathetic' tone required for guarded prospects. Suggest one way to make the 'I may be wrong' observation even less threatening."
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "lessonId": "4",
+    "courseId": "proposals-pricing",
+    "sectionId": "sales-methodology",
+    "title": "Value-Based Pricing Quiz",
+    "passingScore": 80,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is 'Value-Based Pricing' as defined in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Pricing based on the cost of your time plus a margin."
+                },
+                {
+                    "id": "b",
+                    "text": "Pricing based on what your closest competitor is charging."
+                },
+                {
+                    "id": "c",
+                    "text": "Tying your price to the economic value (ROI) you create for the customer."
+                },
+                {
+                    "id": "d",
+                    "text": "Giving everyone the same price regardless of their company size."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Value-based pricing focuses on the outcomes and financial impact for the customer, rather than the internal costs of the founder or the market average."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What is the '10x Rule' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You should try to close 10 times more deals than your competitors."
+                },
+                {
+                    "id": "b",
+                    "text": "Your price should generally deliver a ten-fold return on the quantified value created."
+                },
+                {
+                    "id": "c",
+                    "text": "You should follow up with a prospect at least 10 times."
+                },
+                {
+                    "id": "d",
+                    "text": "Your proposal should be 10 pages long."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "A 10x ROI (10% of value created) is a psychological sweet spot where the investment feels like an obvious choice for the buyer."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What is the first step in the value-based pricing formula?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sending a quote."
+                },
+                {
+                    "id": "b",
+                    "text": "Quantifying the current cost of the problem (in time, revenue, or risk)."
+                },
+                {
+                    "id": "c",
+                    "text": "Presenting your features."
+                },
+                {
+                    "id": "d",
+                    "text": "Calculating your hourly rate."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "You cannot establish value without first establishing the pain. Quantifying the problem's current cost creates the 'negative anchor' that makes your price seem small."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "If a prospect says 'It's not in the budget,' how does value-based pricing suggest you respond?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Apologize and offer a 50% discount immediately."
+                },
+                {
+                    "id": "b",
+                    "text": "Remind them of the monthly cost of *not* solving the problem compared to the investment."
+                },
+                {
+                    "id": "c",
+                    "text": "Ask them to let you know when the budget opens up next year."
+                },
+                {
+                    "id": "d",
+                    "text": "Tell them they are wrong about their own budget."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Budget is often a matter of priority. By comparing the cost of staying still (the ongoing pain) to the cost of the solution, you re-frame the budget as an emergency tool."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "In a B2B SaaS context, how might you quantify the 'Value' of an automation tool?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "By counting the number of source lines of code in the product."
+                },
+                {
+                    "id": "b",
+                    "text": "By calculating [Recovered Hours] x [Blended Hourly Rate] x [Frequency]."
+                },
+                {
+                    "id": "c",
+                    "text": "By measuring how fast the software loads."
+                },
+                {
+                    "id": "d",
+                    "text": "By asking the user if they 'like' the interface."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Human time is the most expensive resource for most companies. Mapping hourly recovery to a financial rate is the most objective way to prove value."
+        },
+        {
+            "id": "reflection_1",
+            "type": "reflection",
+            "question": "Select a common problem your customers face. How would you quantify the 'Cost of Inaction' for that problem? (Try to include specific variables like hours, employee rates, or lost leads).",
+            "minLength": 100,
+            "aiPrompt": "Evaluate if the user identifies specific numeric variables (e.g., '10 hours a week' or '$150/hour'). Provide feedback on how to turn these variables into a 'Total Annual Cost' anchor."
+        }
+    ]
+}

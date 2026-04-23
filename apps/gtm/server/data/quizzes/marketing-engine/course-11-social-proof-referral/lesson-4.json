@@ -1,0 +1,141 @@
+{
+    "lessonId": "4",
+    "courseId": "course-11-social-proof-referral",
+    "sectionId": "marketing-engine",
+    "title": "Video Testimonials Quiz",
+    "passingScore": 70,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is the primary reason raw smartphone videos often outperform polished studio-produced testimonials?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They are cheaper to produce."
+                },
+                {
+                    "id": "b",
+                    "text": "They feel more authentic and relatable to peers."
+                },
+                {
+                    "id": "c",
+                    "text": "They have better sound quality."
+                },
+                {
+                    "id": "d",
+                    "text": "They are usually shorter."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Authenticity is the most valuable currency in social proof. Raw video feels like a genuine recommendation, whereas polished video can feel like a scripted commercial."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "According to the 'Make It Easy' philosophy, what is the best way to handle the technical side of video collection?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ask the customer to upload a 4K file to Dropbox."
+                },
+                {
+                    "id": "b",
+                    "text": "Schedule a Zoom call and record them yourself."
+                },
+                {
+                    "id": "c",
+                    "text": "Use a tool that allows for one-click, in-browser recording (like Senja or Testimonial.to)."
+                },
+                {
+                    "id": "d",
+                    "text": "Ask them to mail you a USB drive."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Reducing technical friction is the key to getting more submissions. One-click, in-browser tools minimize the effort required from the customer."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "What are the four components of the '30-Second Success Formula' mentioned in the lesson?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Introduction, Professional background, Detailed feature list, Goodbye."
+                },
+                {
+                    "id": "b",
+                    "text": "Introduction, The 'Before' state, The 'Solution', The Recommendation."
+                },
+                {
+                    "id": "c",
+                    "text": "Product name, Price, Feature 1, Feature 2."
+                },
+                {
+                    "id": "d",
+                    "text": "Customer name, Date, Problem, Rating out of 5 stars."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "The formula ensures the video tells a concise story: Who it's from, what their specific pain was, how the product helped, and why others should join."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "Why is adding captions to your video testimonials considered 'mandatory'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because it makes the video look more professional."
+                },
+                {
+                    "id": "b",
+                    "text": "Because 80% of social media video is watched with the sound off."
+                },
+                {
+                    "id": "c",
+                    "text": "Because search engines can't crawl video yet."
+                },
+                {
+                    "id": "d",
+                    "text": "To hide any mistakes the customer made while speaking."
+                }
+            ],
+            "correctAnswer": "b",
+            "explanation": "Most users scroll through social feeds in environments where they can't or won't play audio. Without captions, your message is lost to the majority of viewers."
+        },
+        {
+            "id": "q5",
+            "type": "multiple-choice",
+            "question": "Where on your website should you place your absolute strongest video testimonial?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "On the contact page."
+                },
+                {
+                    "id": "b",
+                    "text": "In the footer of every page."
+                },
+                {
+                    "id": "c",
+                    "text": "In the hero section next to the primary CTA."
+                },
+                {
+                    "id": "d",
+                    "text": "Only on a dedicated 'Wall of Love' page."
+                }
+            ],
+            "correctAnswer": "c",
+            "explanation": "Placing your strongest proof 'above the fold' and near the main action button provides the maximum boost to conversion rates."
+        },
+        {
+            "id": "reflection",
+            "type": "reflection",
+            "question": "Think about your most common buyer's #1 hesitation (e.g., 'Will this work for my niche?' or 'Is it too expensive?'). Write a 1-sentence prompt you would give a happy customer to record a video specifically addressing that hesitation.",
+            "minLength": 100,
+            "promptForAI": "The user should identify a specific buyer hesitation and craft a clear, actionable prompt for a customer to record a video that neutralizes that objection. Evaluate the response for its strategic use of social proof as an objection-handling tool."
+        }
+    ]
+}

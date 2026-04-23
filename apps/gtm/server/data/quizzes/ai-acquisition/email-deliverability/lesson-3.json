@@ -1,0 +1,75 @@
+{
+  "lessonId": "3",
+  "courseId": "email-deliverability",
+  "sectionId": "ai-acquisition",
+  "title": "Microsoft Outlook: Why It's Harsher",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "How does Outlook's filtering philosophy differ from Gmail's?",
+      "options": [
+        { "id": "a", "text": "Outlook is more lenient than Gmail" },
+        {
+          "id": "b",
+          "text": "Gmail uses optimistic filtering (benefit of the doubt); Outlook uses pessimistic filtering (assume spam until proven otherwise)"
+        },
+        { "id": "c", "text": "They use identical approaches" },
+        { "id": "d", "text": "Outlook doesn't filter emails at all" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Gmail takes an optimistic approach — give senders the benefit of the doubt and route borderline emails to Promotions. Outlook takes a pessimistic approach — assume unknown senders are spam until proven otherwise and route aggressively to Junk. This means Outlook is significantly harder to reach for cold email."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "What are the three layers of Outlook's defense system?",
+      "options": [
+        { "id": "a", "text": "Spam folder, promotions tab, focused inbox" },
+        {
+          "id": "b",
+          "text": "SmartScreen (proprietary spam filter), Sender Reputation (IP/domain history via SNDS), Content Heuristics (pattern matching)"
+        },
+        {
+          "id": "c",
+          "text": "Authentication, volume limits, content scanning"
+        },
+        { "id": "d", "text": "SPF, DKIM, DMARC" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Outlook uses three layers: SmartScreen (Microsoft's proprietary spam filter trained on billions of emails), Sender Reputation (tracked via Microsoft SNDS), and Content Heuristics (aggressive pattern matching for links, images, formatting, and language). All three must pass for inbox placement."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "What percentage of B2B email is served by Microsoft Outlook?",
+      "options": [
+        { "id": "a", "text": "5%" },
+        { "id": "b", "text": "28% — the second-largest B2B email provider" },
+        { "id": "c", "text": "80%" },
+        { "id": "d", "text": "Less than 1%" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Outlook holds approximately 28% B2B email market share, making it the second-largest provider. Its aggressive filtering means that even with perfect Gmail deliverability (green on Postmaster), you could have near-zero inbox placement on Outlook without knowing it."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "question": "If Google Postmaster shows green (good reputation), your emails are definitely reaching Outlook inboxes too.",
+      "options": [
+        { "id": "a", "text": "True" },
+        { "id": "b", "text": "False" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "False. Gmail and Outlook use completely different filtering systems. The lesson describes a founder with 98% delivery rate and green Google Postmaster scores but 2% Outlook open rate — emails were silently routed to Junk. You must monitor Outlook separately via Microsoft SNDS."
+    },
+    {
+      "id": "r1",
+      "type": "reflection",
+      "question": "What percentage of your ICP likely uses Outlook (Microsoft 365) for email? Based on this, how would you adjust your sending strategy to account for Outlook's harsher filtering? What monitoring tools would you add?",
+      "minLength": 100,
+      "aiPrompt": "Evaluate whether the response estimates their ICP's Outlook usage, identifies specific adjustments for Outlook (lower volume, text-only formatting, SNDS monitoring), and names concrete monitoring tools. Look for understanding that Outlook requires separate attention and that Gmail success doesn't guarantee Outlook success."
+    }
+  ]
+}

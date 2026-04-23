@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is environmental design in the context of digital wellness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Using your phone only outdoors in natural environments"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Structuring your physical and digital environment to make desired behaviors easier and undesired behaviors harder"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Decorating your workspace with plants"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only using devices made from sustainable materials"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Environmental design means shaping your surroundings (physical and digital) to support your goals — making helpful behaviors easy and automatic, while adding friction to unhelpful behaviors."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "Which is an example of effective environmental design for reducing passive phone use?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Keeping your phone on your nightstand within arm's reach"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Deleting distracting apps from your home screen, enabling grayscale mode, and charging your phone outside the bedroom"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Relying solely on willpower to resist checking your phone"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Buying a new phone with better features"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Effective environmental design adds friction to undesired behavior: removing apps from home screen (extra steps to access), grayscale (reduces visual appeal), charging elsewhere (physical barrier). These work better than willpower alone."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Why is environmental design often more effective than relying on willpower alone?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Because willpower is unlimited and can always override design"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Because willpower is a limited resource that depletes, while environmental changes create consistent barriers or supports without requiring constant decision-making"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Because environmental design is easier to implement"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Environmental design is not more effective — willpower is always better"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Willpower is a finite resource that depletes with use (decision fatigue). Environmental design works passively and consistently without requiring repeated decisions, making desired behavior automatic and undesired behavior harder."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is a boundary-setting strategy for digital wellness?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Using technology whenever and however you feel like it"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Creating clear rules for when, where, and how you use devices (e.g., no phones during meals, no screens after 9pm, no work email on weekends)"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Never using technology at all"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Only using devices that cost over $1000"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Boundary-setting means creating explicit rules for technology use that align with your values: time boundaries (when), place boundaries (where), and content boundaries (what). Examples: no phones at meals, screens off 1 hour before bed."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "What's one environmental design change you could implement this week to support healthier technology use? What friction or support would it create? How would you measure whether it's working?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "13",
+    "title": "Boundary-Setting and Environmental Design - Quiz"
+}

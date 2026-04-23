@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "What is attention fragmentation?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "The total number of hours spent on screens per day"
+                },
+                {
+                    "id": "opt2",
+                    "text": "The frequent switching between tasks and contexts, driven by interruptions and notifications, which impairs deep focus"
+                },
+                {
+                    "id": "opt3",
+                    "text": "A clinical attention disorder requiring medication"
+                },
+                {
+                    "id": "opt4",
+                    "text": "The ability to multitask effectively"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Attention fragmentation refers to the splitting of attention across multiple tasks and contexts due to interruptions (notifications, messages, alerts), which reduces the ability to sustain deep, focused attention."
+        },
+        {
+            "id": "q2",
+            "type": "multiple-choice",
+            "question": "What does research show about task-switching and productivity?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Multitasking increases productivity by allowing you to do more simultaneously"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Task-switching imposes cognitive costs (switching time, reduced accuracy) and can reduce productivity by 40%"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only people with ADHD experience task-switching costs"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Task-switching has no impact on work quality"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows task-switching imposes significant cognitive costs: time to switch contexts, reduced accuracy, and up to 40% productivity loss. What feels like multitasking is actually rapid switching with costs."
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Which of the following is a consequence of chronic attention fragmentation?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Improved ability to focus deeply over time"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Reduced capacity for sustained attention, increased mental fatigue, and impaired learning"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Enhanced multitasking skills"
+                },
+                {
+                    "id": "opt4",
+                    "text": "No long-term effects on cognition"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Chronic fragmentation reduces the capacity for sustained attention, increases mental fatigue, impairs learning and memory consolidation, and can reduce overall wellbeing."
+        },
+        {
+            "id": "q4",
+            "type": "multiple-choice",
+            "question": "What is the relationship between notifications and attention fragmentation?",
+            "options": [
+                {
+                    "id": "opt1",
+                    "text": "Notifications have no impact on attention — you can easily ignore them"
+                },
+                {
+                    "id": "opt2",
+                    "text": "Even notifications you don't respond to create attention residue and cognitive load, fragmenting focus"
+                },
+                {
+                    "id": "opt3",
+                    "text": "Only audible notifications cause fragmentation"
+                },
+                {
+                    "id": "opt4",
+                    "text": "Notifications improve focus by keeping you engaged"
+                }
+            ],
+            "correctAnswer": "opt2",
+            "explanation": "Research shows that even unattended notifications create 'attention residue' — part of your mind remains thinking about the notification, fragmenting focus. The mere presence of notifications reduces cognitive performance."
+        },
+        {
+            "id": "q5",
+            "type": "reflection",
+            "question": "Estimate how many times your attention is fragmented by notifications or self-interruptions (checking phone, email, messages) during a typical work or study hour. How does this impact your ability to think deeply?",
+            "minLength": 50
+        }
+    ],
+    "sectionId": "mental-clarity",
+    "courseId": "digital-wellness",
+    "lessonId": "6",
+    "title": "Attention Fragmentation - Quiz"
+}
