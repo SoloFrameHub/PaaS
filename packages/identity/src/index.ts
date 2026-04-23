@@ -1,2 +1,9 @@
-// @platform/identity — empty stub. Implementation lands during §10 of the Implementation Blueprint.
+export {
+  createLuciaInstance,
+  isSecureCookieContext,
+  memoizeLucia,
+  type CreateLuciaInstanceOptions,
+  type PlatformAuthUser,
+} from './createLuciaInstance.js';
+
 export const __package = '@platform/identity';
