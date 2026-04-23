@@ -245,7 +245,7 @@ export default function ForEmployersPage() {
               },
               {
                 title: 'Personalized Onboarding',
-                desc: '9-step onboarding recommends the right courses for each employee's role, goals, and challenges.',
+                desc: "9-step onboarding recommends the right courses for each employee's role, goals, and challenges.",
               },
               {
                 title: '24/7 AI Coach',

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 import { user, profile, moodEntry, coachSession, patientAssignment, session } from '@/lib/db/schema';
-import { lt, and, isNotNull } from 'drizzle-orm';
+import { eq, lt, and, isNotNull } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 
 /**
@@ -75,7 +75,7 @@ export async function GET(request: NextRequest) {
         });
 
         // 1. Delete sessions (logout all devices)
-        await db.delete(session).where(and(session.userId === eligibleUser.id));
+        await db.delete(session).where(eq(session.userId, eligibleUser.id));
 
         // 2. Scrub profile data (replace with anonymized stub)
         await db
@@ -86,20 +86,20 @@ export async function GET(request: NextRequest) {
               _purgedAt: new Date().toISOString(),
             },
           })
-          .where(profile.userId === eligibleUser.id);
+          .where(eq(profile.userId, eligibleUser.id));
 
         // 3. Delete mood entries (non-audit PHI)
-        await db.delete(moodEntry).where(moodEntry.userId === eligibleUser.id);
+        await db.delete(moodEntry).where(eq(moodEntry.userId, eligibleUser.id));
 
         // 4. Delete coach sessions (non-audit PHI)
-        await db.delete(coachSession).where(coachSession.userId === eligibleUser.id);
+        await db.delete(coachSession).where(eq(coachSession.userId, eligibleUser.id));
 
         // 5. Delete patient assignments (if they were a patient)
-        await db.delete(patientAssignment).where(patientAssignment.patientId === eligibleUser.id);
+        await db.delete(patientAssignment).where(eq(patientAssignment.patientId, eligibleUser.id));
 
         // 6. Delete user row last (FKs with SET NULL preserve audit logs)
         // Audit logs (distress_event, moderation_log, lesson_feedback) remain with user_id=null
-        await db.delete(user).where(user.id === eligibleUser.id);
+        await db.delete(user).where(eq(user.id, eligibleUser.id));
 
         purgedAccounts.push({
           userId: eligibleUser.id,

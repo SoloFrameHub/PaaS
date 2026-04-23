@@ -34,6 +34,9 @@ function partialOnboardingProfile(): WellnessProfile {
         onboardingCompletedAt: null,
         profileVersion: 2,
         assessment: null,
+        // Intentional partial shape: only steps 1-3 filled, step 4 fields (learningStyle/
+        // timeCommitment/preferredContentTypes) absent and completedAt null — the test
+        // exercises the "questionnaire-in-progress" path which the strict type doesn't model.
         questionnaire: {
             primarySymptoms: [
                 { category: 'anxiety', severity: 'moderate', duration: '1-3-months', isPrimary: true },
@@ -43,8 +46,8 @@ function partialOnboardingProfile(): WellnessProfile {
             currentlyReceivingTreatment: false,
             wellnessGoals: ['reduce-anxiety'],
             crisisScreeningCompleted: true,
-            completedAt: null, // questionnaire not finished
-        },
+            completedAt: null,
+        } as unknown as WellnessProfile['questionnaire'],
         progress: {
             completedCourses: [],
             completedLessons: {},

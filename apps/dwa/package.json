@@ -22,7 +22,8 @@
     "test:e2e:report": "playwright show-report",
     "test:all": "npm run test:coverage && npm run test:e2e",
     "analyze": "ANALYZE=true next build",
-    "generate:openapi": "tsx scripts/generate-openapi.ts"
+    "generate:openapi": "tsx scripts/generate-openapi.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^7.3.4",

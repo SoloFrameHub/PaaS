@@ -9,7 +9,7 @@
  * - Test patient accounts with sample data
  */
 
-import { chromium } from 'playwright'
+import { chromium } from '@playwright/test'
 import { join } from 'path'
 
 const SCREENSHOT_DIR = join(process.cwd(), 'public/images/practices')
