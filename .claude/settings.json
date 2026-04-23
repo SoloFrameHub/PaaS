@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(corepack enable *)",
+      "Bash(corepack prepare *)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm -r build)",
+      "Bash(pnpm -r typecheck)",
+      "Bash(pnpm -r test)",
+      "Bash(pnpm -r lint)",
+      "Bash(pnpm -r clean)",
+      "Bash(pnpm --filter * build)",
+      "Bash(pnpm --filter * typecheck)",
+      "Bash(pnpm --filter * test)",
+      "Bash(pnpm --filter * lint)",
+      "Bash(turbo run build)",
+      "Bash(turbo run typecheck)",
+      "Bash(turbo run test)",
+      "Bash(turbo run lint)",
+      "Bash(npm audit *)",
+      "mcp__Claude_Preview__preview_eval",
+      "mcp__Claude_Preview__preview_screenshot",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__dokploy__deployment-all",
+      "mcp__dokploy__application-readLogs",
+      "mcp__dokploy__application-one"
+    ]
+  }
+}

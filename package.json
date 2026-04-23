@@ -1,0 +1,25 @@
+{
+  "name": "solofame-platform",
+  "version": "0.0.0",
+  "private": true,
+  "description": "SoloFrame Platform monorepo — engines, adapters, verticals, apps.",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.9",
+    "@types/node": "^20.14.10",
+    "turbo": "^2.3.3",
+    "typescript": "^5.6.3"
+  }
+}
