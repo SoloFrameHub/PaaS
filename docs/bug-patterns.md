@@ -819,3 +819,165 @@ request-handler bodies or inside lazily-called methods — safe.
   module-level env guard must answer. If yes, use lazy init.
 - The smoke test: if `docker build` succeeds for every app, this
   class is caught. Make that part of CI before we ship v1.
+
+---
+
+## Shell + Docker Swarm integration
+
+### B-023 · `pipe | python3 <<HEREDOC` merges stdin with the heredoc
+
+**What:** bash sees `cmd | python3 <<'PY' … PY` and splices both the
+pipe output AND the heredoc into python's stdin. Python reads the
+merged stream, treats the first chunk (pipe output) as source code,
+and barfs with `SyntaxError` on whatever JSON/text came through. The
+heredoc is never executed.
+
+**Why it looks like a Dokploy/API bug:** the symptom is "I call dk
+GET, pipe to python, and python blows up on valid JSON." The JSON is
+fine; the pipe plumbing is broken.
+
+**Seen in:** provision-05-domains.sh's initial `find_domain_id`
+helper. Fixed in [0e6f010](commit 0e6f010) by switching to
+`python3 -c '…'` (keeps stdin free for the pipe).
+
+**Grep signature:**
+```
+grep -rnE "\| *python3 *<<" tools/ infra/ --include="*.sh" 2>/dev/null
+```
+
+**Fix pattern:** always use `-c` when you need stdin for a pipe:
+```
+cmd | python3 -c 'import sys; d = json.load(sys.stdin); …'
+```
+Use heredocs ONLY when python doesn't need pipe stdin (or with
+`< /dev/null` to explicitly close it):
+```
+python3 <<'PY'
+…
+PY
+```
+
+**Cross-check:** swept `tools/dokploy/*.sh` as of 39cd12c. Only the
+fixed site had this shape.
+
+---
+
+### B-024 · Dokploy appends a random 6-char suffix to service appNames
+
+**What:** `postgres.create` / `redis.create` / `application.create`
+register a display `name` (e.g., "postgres-primary") but Docker
+Swarm's service registry uses `appName = <name>-<6char>` to prevent
+collisions across projects on the same cluster. Our postgres is
+reachable on the overlay as `postgres-primary-xjydtw:5432`, NOT
+`postgres-primary:5432`.
+
+**Symptom:** apps + ops-runner log
+`Error: getaddrinfo ENOTFOUND postgres-primary` on every DB call.
+Nothing else is wrong — connection refused, auth fail, etc. are all
+ruled out because no TCP handshake is even attempted.
+
+**Seen in:** provision-04 + provision-06 initially hardcoded
+`postgres://…@postgres-primary:5432`. Fixed in
+[39cd12c](commit 39cd12c) — scripts now read `appName` back from
+`postgres.one` / `redis.one` and template it into `DATABASE_URL` /
+`REDIS_URL`. Next Dokploy service rotation (which changes the
+suffix) self-heals on the next `provision-04` / `provision-06` run.
+
+**Grep signature (find hard-coded service hostnames):**
+```
+grep -rnE "@(postgres-primary|redis-primary)[:/]" tools/ apps/ packages/ adapters/ --include="*.ts" --include="*.sh" --include="*.md" 2>/dev/null | grep -v /node_modules/ | grep -v _archive
+```
+
+**Cross-check:** after 39cd12c, only docs / bug-patterns references
+remain (describing the pattern itself, not using it as a hostname).
+
+**Going forward:** any script that composes a URL against a Dokploy-
+managed sidecar MUST look up `appName` first. Same rule applies if we
+ever add `valkey-primary` / `rabbitmq-primary` / etc.
+
+---
+
+### B-025 · CHECK constraints silently rejected plausible values
+
+**What:** `0001_tenancy.sql` has stricter CHECK constraints than the
+Drizzle schema in `packages/tenancy/src/schema/` makes obvious. The
+offending constraints:
+
+| column | allowed |
+|---|---|
+| `tenant.kind` | `'first_party','licensed','self_serve'` |
+| `tenant.tier` | `'pooled','isolated','dedicated'` |
+| `tenant.region` | `'shared-eu','shared-us','dedicated'` |
+| `tenant_member.role` | `'super_admin','tenant_admin','operator','member','external_partner'` |
+| `system_audit.actor_kind` + `tenant_audit.actor_kind` | `'user','system','workflow','api_key'` |
+| `system_audit.outcome` + `tenant_audit.outcome` | `'ok','denied','error'` |
+
+**Seen in (four sites, all fixed in 39cd12c):**
+- `tools/tenancy/seed-tenant.ts` defaults — used `kind='pooled'`
+  (that's a tier!), `tier='free'` (not allowed), `region='local'`
+  (not allowed), `role='owner'` (not allowed).
+- `packages/testing/src/tenantLeakHarness.ts` — same wrong values
+  hard-coded + `actor_kind='tenant_user'` in its audit insert.
+- `tools/platform-ops/run-and-trace.sh` — used
+  `actor_kind='ops_runner'` (not allowed). Silently dropped every
+  trace row until I figured it out.
+
+**Why it took so long to catch:** the symptom chain is
+`INSERT fails with CHECK` → psql exit 1 → ON_ERROR_STOP=1 → schedule
+status=error → Dokploy returns HTTP 500 from runManually → no
+visible stack trace. The CHECK violation error is in the schedule's
+on-disk log file (`/etc/dokploy/schedules/*.log`), not exposed via
+the REST API.
+
+**Grep signature:**
+```
+grep -rnE "actor_kind|outcome" infra/migrations/ packages/ tools/ --include="*.sql" --include="*.ts" --include="*.sh" | grep -vE "// |^[^:]+://" | grep -E "(actor_kind|outcome)[ \"'=]" | head -40
+```
+
+Then manually cross-check each literal against the allowed set above.
+
+**Cross-check:** clean as of 39cd12c.
+
+**Going forward:**
+- The Drizzle schema doesn't currently encode the CHECK constraints
+  (they're only in the raw SQL). Options: (a) mirror them as Zod
+  `.enum(...)` in `@platform/contracts`, (b) add `.check()` calls in
+  the Drizzle table definitions (Drizzle supports raw CHECK since
+  0.31), (c) codegen the enums from the migration via a script.
+  Any of those means INSERTs get a compile-time error instead of a
+  runtime surprise. Deferred to the B-009 migration work when we
+  touch the schemas anyway.
+- Second-order lesson: never skip reading the migration SQL because
+  "we have the Drizzle types." Types ≠ constraints.
+
+---
+
+### B-026 · Schedule command output is unreadable from the Dokploy REST API
+
+**What:** Dokploy's schedule runner writes each invocation's stdout/
+stderr to `/etc/dokploy/schedules/<appName>/<appName>-<timestamp>.log`
+on the VPS filesystem. There is NO REST endpoint to read those files
+back. The only observable signal from outside the VPS is
+`schedule.status = done | error`, with no `errorMessage` populated
+even on error.
+
+**Impact:** a failing schedule is a black box. Root-causing anything
+requires SSH to the VPS + manually `cat`ing the log file, which
+breaks the "deploy and iterate via git push + dk API" workflow.
+
+**Workaround (this commit):** every ops-runner command now goes
+through `run-and-trace.sh`, which captures the child's stdout/exit
+and best-effort writes them to `system_audit.meta.out_b64`. A
+gated admin route (`apps/dwa/app/api/admin/debug/audit/route.ts`)
+reads them back for anyone holding `ADMIN_API_SECRET`. No SSH.
+
+Not a bug in our code — Dokploy limitation. But the workaround is
+mandatory for anything we schedule; cataloged so the next maintainer
+doesn't invent it from scratch.
+
+**Going forward:**
+- Retire the workaround when Dokploy ships schedule log reads via
+  API (upstream feature request worth filing).
+- Keep `run-and-trace` as the canonical entrypoint for ops scripts
+  even after that lands — structured system_audit rows are more
+  useful than raw log files anyway.
