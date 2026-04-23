@@ -86,27 +86,27 @@ export async function tenantLeakHarness(
           {
             id: tenantA,
             slug: slugA,
-            kind: 'pooled',
-            tier: 'free',
+            kind: 'first_party',
+            tier: 'pooled',
             manifestVersion: '0.0.0',
             status: 'active',
-            region: 'local',
+            region: 'shared-us',
             ownerUserId: ownerA,
           },
           {
             id: tenantB,
             slug: slugB,
-            kind: 'pooled',
-            tier: 'free',
+            kind: 'first_party',
+            tier: 'pooled',
             manifestVersion: '0.0.0',
             status: 'active',
-            region: 'local',
+            region: 'shared-us',
             ownerUserId: ownerB,
           },
         ]);
       await tx.insert(schema.tenantMember).values([
-        { tenantId: tenantA, userId: memberA, role: 'owner' },
-        { tenantId: tenantB, userId: memberB, role: 'owner' },
+        { tenantId: tenantA, userId: memberA, role: 'tenant_admin' },
+        { tenantId: tenantB, userId: memberB, role: 'tenant_admin' },
       ]);
     });
 
@@ -144,7 +144,7 @@ export async function tenantLeakHarness(
             sql`INSERT INTO tenant_audit
                   (tenant_id, user_id, actor_kind, action, resource_kind, outcome, meta)
                 VALUES
-                  (${tenantB}, ${memberB}, 'tenant_user', 'tenant_member.insert',
+                  (${tenantB}, ${memberB}, 'user', 'tenant_member.insert',
                    'tenant_member', 'denied',
                    ${JSON.stringify({ attemptedTenantId: tenantA })}::jsonb)`,
           );

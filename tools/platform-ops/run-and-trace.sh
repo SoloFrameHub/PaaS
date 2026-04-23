@@ -44,13 +44,18 @@ OUTCOME="ok"
 
 if [ -n "${DATABASE_URL:-}" ]; then
   psql "$DATABASE_URL" -v ON_ERROR_STOP=0 -q -v "tag=$TAG" -v "ec=$EC" -v "out=$OUT_B64" -v "outcome=$OUTCOME" <<'SQL' 2>/dev/null || true
+-- system_audit CHECK constraint: actor_kind IN ('user','system','workflow','api_key')
+--                                outcome     IN ('ok','denied','error')
+-- Using 'system' for the runner, and 'error' when the child exits non-zero
+-- (outcome='ok' stays valid for success).
 INSERT INTO system_audit (actor_kind, action, resource_kind, outcome, meta)
 VALUES (
-  'ops_runner',
+  'system',
   :'tag',
   'schedule',
   :'outcome',
   jsonb_build_object(
+    'runner', 'ops_runner',
     'exit', :'ec'::int,
     'out_b64', :'out'
   )

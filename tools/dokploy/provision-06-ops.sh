@@ -164,8 +164,25 @@ ok "buildType set (Dockerfile.ops)"
 # ─── 4. env vars (same pg + redis + internal as gtm/dwa) ────────────────
 POSTGRES_PW="$(get_env SOLOFAME_POSTGRES_PASSWORD || die 'SOLOFAME_POSTGRES_PASSWORD missing')"
 REDIS_PW="$(get_env SOLOFAME_REDIS_PASSWORD     || die 'SOLOFAME_REDIS_PASSWORD missing')"
-DATABASE_URL="postgres://app_user:${POSTGRES_PW}@postgres-primary:5432/solofame"
-REDIS_URL="redis://:${REDIS_PW}@redis-primary:6379"
+
+# See B-024 in docs/bug-patterns.md — Dokploy suffixes service appNames on
+# Swarm, so `postgres-primary` doesn't resolve; `postgres-primary-<suffix>`
+# does. Read the real appName back from postgres.one / redis.one.
+PG_ID="$(get_state postgresId)"
+REDIS_ID="$(get_state redisId)"
+POSTGRES_HOST="$("$DK" GET "/api/postgres.one?postgresId=$PG_ID" | python3 -c '
+import json, sys
+print(json.load(sys.stdin).get("appName") or "")
+')"
+REDIS_HOST="$("$DK" GET "/api/redis.one?redisId=$REDIS_ID" | python3 -c '
+import json, sys
+print(json.load(sys.stdin).get("appName") or "")
+')"
+[ -n "$POSTGRES_HOST" ] || die "could not read postgres.one appName"
+[ -n "$REDIS_HOST" ]    || die "could not read redis.one appName"
+
+DATABASE_URL="postgres://app_user:${POSTGRES_PW}@${POSTGRES_HOST}:5432/solofame"
+REDIS_URL="redis://:${REDIS_PW}@${REDIS_HOST}:6379"
 
 ENV_STR="$(cat <<EOF
 # --- infrastructure (set by provision-06) ---

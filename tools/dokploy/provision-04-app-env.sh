@@ -101,6 +101,26 @@ DWA_ID="$(get_state dwaApplicationId)"
 POSTGRES_PW="$(get_env SOLOFAME_POSTGRES_PASSWORD || die 'SOLOFAME_POSTGRES_PASSWORD missing — run provision-01')"
 REDIS_PW="$(get_env SOLOFAME_REDIS_PASSWORD     || die 'SOLOFAME_REDIS_PASSWORD missing — run provision-01')"
 
+# Dokploy appends a random 6-char suffix to appName to avoid Swarm service
+# collisions. The display `name` (postgres-primary / redis-primary) does
+# NOT resolve on the overlay — the `appName` (postgres-primary-xjydtw)
+# does. Always read it back from postgres.one / redis.one.
+PG_ID="$(get_state postgresId)"
+REDIS_ID="$(get_state redisId)"
+[ -n "$PG_ID" ]    || die "no postgresId — run provision-01"
+[ -n "$REDIS_ID" ] || die "no redisId — run provision-01"
+POSTGRES_HOST="$("$DK" GET "/api/postgres.one?postgresId=$PG_ID" | python3 -c '
+import json, sys
+print(json.load(sys.stdin).get("appName") or "")
+')"
+REDIS_HOST="$("$DK" GET "/api/redis.one?redisId=$REDIS_ID" | python3 -c '
+import json, sys
+print(json.load(sys.stdin).get("appName") or "")
+')"
+[ -n "$POSTGRES_HOST" ] || die "could not read postgres.one appName"
+[ -n "$REDIS_HOST" ]    || die "could not read redis.one appName"
+log "postgres host=$POSTGRES_HOST redis host=$REDIS_HOST"
+
 GTM_ADMIN_SECRET="$(get_env SOLOFAME_APP_GTM_ADMIN_API_SECRET || gen_secret)"
 DWA_ADMIN_SECRET="$(get_env SOLOFAME_APP_DWA_ADMIN_API_SECRET || gen_secret)"
 GTM_ENCRYPTION_KEY="$(get_env SOLOFAME_APP_GTM_ENCRYPTION_KEY || gen_secret)"
@@ -115,10 +135,10 @@ put_env SOLOFAME_APP_GTM_ENCRYPTION_KEY   "$GTM_ENCRYPTION_KEY"
 OPENROUTER_API_KEY_VAL="$(get_env OPENROUTER_API_KEY || echo '')"
 RESEND_API_KEY_VAL="$(get_env RESEND_API_KEY || echo '')"
 
-# Docker Swarm internal service names for the sidecars — provision-01 created
-# them as postgres-primary / redis-primary, so they resolve on the overlay.
-DATABASE_URL="postgres://app_user:${POSTGRES_PW}@postgres-primary:5432/solofame"
-REDIS_URL="redis://:${REDIS_PW}@redis-primary:6379"
+# Swarm-internal service URLs. The HOST here is the Dokploy-suffixed appName
+# from postgres.one / redis.one, not the display name (see comment above).
+DATABASE_URL="postgres://app_user:${POSTGRES_PW}@${POSTGRES_HOST}:5432/solofame"
+REDIS_URL="redis://:${REDIS_PW}@${REDIS_HOST}:6379"
 
 # Build the per-app env string. Blank lines + comments are legal in Dokploy's
 # env field (it parses like a .env file). Third-party keys land as empty

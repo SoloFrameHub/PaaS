@@ -53,12 +53,16 @@ function parseArgs(argv: string[]): Args {
   if (!/^[a-z][a-z0-9-]{1,62}$/.test(slug)) {
     throw new Error(`--slug ${slug} must match /^[a-z][a-z0-9-]{1,62}$/`);
   }
+  // Defaults match the CHECK constraints in 0001_tenancy.sql:
+  //   kind   IN ('first_party','licensed','self_serve')
+  //   tier   IN ('pooled','isolated','dedicated')
+  //   region IN ('shared-eu','shared-us','dedicated')
   return {
     slug,
     ownerUserId: raw.get('owner-user-id') ?? randomUUID(),
-    kind: raw.get('kind') ?? 'pooled',
-    tier: raw.get('tier') ?? 'free',
-    region: raw.get('region') ?? 'local',
+    kind: raw.get('kind') ?? 'first_party',
+    tier: raw.get('tier') ?? 'pooled',
+    region: raw.get('region') ?? 'shared-us',
     manifestVersion: raw.get('manifest-version') ?? '0.0.1',
     parentManifestId: raw.get('parent-manifest-id'),
   };
@@ -103,7 +107,8 @@ async function main(): Promise<void> {
       .values({
         tenantId: row!.id,
         userId: args.ownerUserId,
-        role: 'owner',
+        // tenant_member.role CHECK: ('super_admin','tenant_admin','operator','member','external_partner')
+        role: 'tenant_admin',
       })
       .onConflictDoNothing({
         target: [schema.tenantMember.tenantId, schema.tenantMember.userId],
