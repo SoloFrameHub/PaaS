@@ -1,2 +1,5 @@
-// @platform/manifest-loader — empty stub. Implementation lands during §10 of the Implementation Blueprint.
+export * from './errors.js';
+export * from './hash.js';
+export * from './loader.js';
+
 export const __package = '@platform/manifest-loader';

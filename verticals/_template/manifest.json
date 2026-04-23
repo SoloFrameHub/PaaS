@@ -1,0 +1,40 @@
+{
+  "$schema": "https://platform.tld/schemas/vertical-manifest/v1",
+  "id": "__VERTICAL_ID__",
+  "version": "0.1.0",
+  "kind": "first_party",
+  "displayName": "__DISPLAY_NAME__",
+  "modules": {
+    "content":      { "rootPath": "./content/courses" },
+    "assessments":  {},
+    "artifacts":    { "exporters": ["pdf", "json"] },
+    "knowledge":    { "vector": "pgvector" },
+    "workflows":    {},
+    "gamification": {},
+    "billing":      {}
+  },
+  "compliance": {
+    "phi": false,
+    "gdpr": true,
+    "dataRetentionDays": 395,
+    "redactPromptsInAudit": false
+  },
+  "ai": {
+    "modelOverrides": {},
+    "temperature":    {},
+    "guardrails":     []
+  },
+  "branding":   { "themePath": "./branding/theme.json" },
+  "navigation": { "path": "./navigation.json" },
+  "prompts":     [],
+  "knowledge":   [],
+  "scenarios":   [],
+  "assessments": [],
+  "artifacts":   [],
+  "workflows":   [],
+  "events":      ["session.created", "user.onboarded"],
+  "roles":       ["super_admin", "tenant_admin", "operator", "member"],
+  "billingPlans":[],
+  "features":    {},
+  "extensions":  []
+}

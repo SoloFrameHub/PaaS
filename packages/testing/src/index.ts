@@ -1,2 +1,3 @@
-// @platform/testing — empty stub. Implementation lands during §10 of the Implementation Blueprint.
+export * from './tenantLeakHarness.js';
+
 export const __package = '@platform/testing';

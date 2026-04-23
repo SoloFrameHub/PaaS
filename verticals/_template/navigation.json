@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "tree": [
+    { "id": "home",     "label": "Home",     "route": "/",         "page": "home" },
+    { "id": "courses",  "label": "Courses",  "route": "/courses",  "page": "course-list", "module": "content" },
+    { "id": "settings", "label": "Settings", "route": "/settings", "page": "settings" }
+  ]
+}

@@ -15,11 +15,16 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "echo \"(no tests yet)\"",
+    "test": "vitest run",
     "lint": "echo \"(no lint yet)\"",
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
   },
+  "dependencies": {
+    "@platform/contracts": "workspace:*",
+    "@platform/tenancy": "workspace:*"
+  },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
   }
 }

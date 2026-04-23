@@ -1,0 +1,19 @@
+{
+  "name": "@platform/new-vertical",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "new-vertical": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "echo \"(no tests yet)\"",
+    "lint": "echo \"(no lint yet)\"",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

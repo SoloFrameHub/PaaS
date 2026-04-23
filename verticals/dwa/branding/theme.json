@@ -1,0 +1,21 @@
+{
+  "name": "dwa",
+  "tokens": {
+    "colors": {
+      "primary":   "#0ea5a4",
+      "primaryFg": "#ffffff",
+      "bg":        "#f8fafc",
+      "fg":        "#0f172a",
+      "muted":     "#64748b",
+      "accent":    "#a855f7"
+    },
+    "radii": { "sm": "4px", "md": "10px", "lg": "16px" },
+    "type": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif",
+      "scale": { "sm": "0.875rem", "base": "1rem", "lg": "1.25rem", "xl": "1.875rem" }
+    }
+  },
+  "logo":     "./logo.svg",
+  "favicon":  "./favicon.ico",
+  "emailFrom": "DigitalWellness Academy <hello@dwa.platform.tld>"
+}

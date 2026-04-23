@@ -1,0 +1,63 @@
+{
+  "$schema": "https://platform.tld/schemas/vertical-manifest/v1",
+  "id": "dwa",
+  "version": "0.1.0",
+  "kind": "first_party",
+  "displayName": "DigitalWellness Academy",
+  "modules": {
+    "content":      { "rootPath": "./content/courses" },
+    "assessments":  {},
+    "artifacts":    { "exporters": ["pdf", "json"] },
+    "knowledge":    { "vector": "pgvector" },
+    "voice":        {},
+    "community":    { "provider": "flarum" },
+    "workflows":    {},
+    "gamification": { "xpLevels": [0, 100, 250, 500, 1000, 2000] },
+    "classifier":   { "provider": "maia" },
+    "billing":      {}
+  },
+  "compliance": {
+    "phi": true,
+    "gdpr": true,
+    "dataRetentionDays": 2557,
+    "redactPromptsInAudit": true
+  },
+  "ai": {
+    "modelOverrides": {
+      "coaching":         "anthropic/claude-haiku-4-5",
+      "quiz_reflection":  "google/gemini-2.5-flash",
+      "moderation":       "google/gemini-2.5-flash",
+      "rag_synthesis":    "openai/gpt-4o-mini"
+    },
+    "temperature": { "coaching": 0.4, "moderation": 0.0 },
+    "guardrails":  ["never-diagnose", "always-988-on-crisis"]
+  },
+  "branding":   { "themePath": "./branding/theme.json" },
+  "navigation": { "path": "./navigation.json" },
+  "prompts": [
+    { "task": "coaching", "path": "./prompts/coaching", "version": "v1" }
+  ],
+  "knowledge":   [],
+  "scenarios":   [],
+  "assessments": [],
+  "artifacts":   [],
+  "workflows":   [],
+  "events": [
+    "lesson.completed",
+    "assessment.scored",
+    "artifact.created",
+    "crisis.flagged",
+    "moderation.action",
+    "ai.call.completed",
+    "session.created",
+    "user.onboarded"
+  ],
+  "roles": ["super_admin", "tenant_admin", "operator", "external_partner", "member"],
+  "billingPlans": ["dwa-member-monthly", "dwa-member-annual"],
+  "features": {
+    "providerPortal": true,
+    "optimizationSchool": true,
+    "forumPosting": true
+  },
+  "extensions": []
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@platform/manifest-loader",
+  "name": "@platform/eslint-plugin",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -15,16 +15,15 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run",
+    "test": "echo \"(no tests yet)\"",
     "lint": "echo \"(no lint yet)\"",
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
   },
-  "dependencies": {
-    "@platform/contracts": "workspace:*"
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
   },
   "devDependencies": {
-    "@platform/prompt-registry": "workspace:*",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.8"
+    "@types/eslint": "^9.6.1",
+    "typescript": "^5.6.3"
   }
 }

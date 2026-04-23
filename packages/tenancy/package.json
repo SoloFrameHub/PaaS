@@ -13,6 +13,10 @@
     "./middleware": {
       "types": "./dist/middleware.d.ts",
       "import": "./dist/middleware.js"
+    },
+    "./schema": {
+      "types": "./dist/schema/index.d.ts",
+      "import": "./dist/schema/index.js"
     }
   },
   "files": ["dist"],
@@ -24,9 +28,17 @@
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
-    "@platform/contracts": "workspace:*"
+    "@platform/contracts": "workspace:*",
+    "drizzle-orm": "^0.36.4"
   },
   "devDependencies": {
+    "@types/pg": "^8.11.10",
     "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "postgres": "^3.4.5"
+  },
+  "peerDependenciesMeta": {
+    "postgres": { "optional": true }
   }
 }

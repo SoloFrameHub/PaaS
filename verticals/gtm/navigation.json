@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "tree": [
+    { "id": "dashboard", "label": "Dashboard", "route": "/", "page": "dashboard" },
+    { "id": "courses",   "label": "Courses",   "route": "/courses", "page": "course-list", "module": "content" },
+    { "id": "coaching",  "label": "Coaching",  "route": "/coaching", "page": "ai-coach",    "module": "ai-orchestration" },
+    { "id": "artifacts", "label": "Artifacts", "route": "/artifacts","page": "artifact-list","module": "artifacts" },
+    { "id": "settings",  "label": "Settings",  "route": "/settings", "page": "settings"   }
+  ]
+}

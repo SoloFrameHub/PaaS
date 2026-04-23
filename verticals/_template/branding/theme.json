@@ -1,0 +1,21 @@
+{
+  "name": "__VERTICAL_ID__",
+  "tokens": {
+    "colors": {
+      "primary":   "#4f46e5",
+      "primaryFg": "#ffffff",
+      "bg":        "#ffffff",
+      "fg":        "#111827",
+      "muted":     "#6b7280",
+      "accent":    "#f59e0b"
+    },
+    "radii": { "sm": "4px", "md": "8px", "lg": "12px" },
+    "type": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif",
+      "scale": { "sm": "0.875rem", "base": "1rem", "lg": "1.25rem", "xl": "1.875rem" }
+    }
+  },
+  "logo":     "./logo.svg",
+  "favicon":  "./favicon.ico",
+  "emailFrom": "__DISPLAY_NAME__ <hello@__VERTICAL_ID__.platform.tld>"
+}
