@@ -109,6 +109,12 @@ put_env SOLOFAME_APP_GTM_ADMIN_API_SECRET "$GTM_ADMIN_SECRET"
 put_env SOLOFAME_APP_DWA_ADMIN_API_SECRET "$DWA_ADMIN_SECRET"
 put_env SOLOFAME_APP_GTM_ENCRYPTION_KEY   "$GTM_ENCRYPTION_KEY"
 
+# Third-party API keys that the user supplies via .env.local. Read but
+# never generated — if they're empty, the corresponding line is written
+# empty and the Dokploy UI shows a blank field.
+OPENROUTER_API_KEY_VAL="$(get_env OPENROUTER_API_KEY || echo '')"
+RESEND_API_KEY_VAL="$(get_env RESEND_API_KEY || echo '')"
+
 # Docker Swarm internal service names for the sidecars — provision-01 created
 # them as postgres-primary / redis-primary, so they resolve on the overlay.
 DATABASE_URL="postgres://app_user:${POSTGRES_PW}@postgres-primary:5432/solofame"
@@ -131,9 +137,12 @@ MANIFEST_VERTICAL_ROOT=/app/verticals
 NEXT_PUBLIC_APP_NAME=dwa
 NEXT_PUBLIC_APP_VERSION=0.1.0
 
+# --- third-party keys supplied via .env.local ---
+OPENROUTER_API_KEY=$OPENROUTER_API_KEY_VAL
+RESEND_API_KEY=$RESEND_API_KEY_VAL
+
 # --- third-party (fill in via Dokploy UI before first real traffic) ---
 NEXT_PUBLIC_APP_URL=
-OPENROUTER_API_KEY=
 OPENAI_API_KEY=
 MAIA_URL=
 AI_MODEL_COACHING=
@@ -158,10 +167,13 @@ MANIFEST_VERTICAL_ROOT=/app/verticals
 NEXT_PUBLIC_APP_NAME=gtm
 NEXT_PUBLIC_APP_VERSION=0.1.0
 
+# --- third-party keys supplied via .env.local ---
+OPENROUTER_API_KEY=$OPENROUTER_API_KEY_VAL
+RESEND_API_KEY=$RESEND_API_KEY_VAL
+
 # --- third-party (fill in via Dokploy UI before first real traffic) ---
 NEXT_PUBLIC_APP_URL=
 ADMIN_EMAILS=
-OPENROUTER_API_KEY=
 OPENAI_API_KEY=
 ANTHROPIC_API_KEY=
 AI_PROVIDER=
@@ -170,7 +182,6 @@ POLAR_SUCCESS_URL=
 POLAR_WEBHOOK_SECRET=
 POLAR_MODE=sandbox
 NEXT_PUBLIC_POLAR_BOOK_PRODUCT_ID=
-RESEND_API_KEY=
 NOTION_CLIENT_ID=
 NOTION_CLIENT_SECRET=
 EOF
