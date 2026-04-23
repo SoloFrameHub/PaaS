@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+# dk — thin wrapper around the Dokploy REST API.
+# Reads DOKPLOY_URL + DOKPLOY_API_KEY from .env.local at one of several
+# canonical paths. Parses the file line-by-line and ignores keys that are
+# not valid shell identifiers (the real file has keys like SSH-ACCESS that
+# break `set -a; . file`).
+#
+# Usage:
+#   tools/dokploy/dk GET  /api/project.all
+#   tools/dokploy/dk POST /api/project.create '{"name":"x"}'
+set -euo pipefail
+
+ENV_FILES=(
+  "${BASH_SOURCE%/*}/../../.env.local"
+  "${BASH_SOURCE%/*}/../../../PaaS/.env.local"
+  "$HOME/.env.local"
+)
+
+load_env() {
+  local f="$1"
+  while IFS= read -r line || [ -n "$line" ]; do
+    # Strip Windows CR, leading/trailing spaces.
+    line="${line%$'\r'}"
+    line="${line#"${line%%[![:space:]]*}"}"
+    line="${line%"${line##*[![:space:]]}"}"
+    # Skip blank + comment.
+    [ -z "$line" ] && continue
+    [[ "$line" == "#"* ]] && continue
+    # Require KEY=... where KEY is a valid shell identifier.
+    if [[ "$line" =~ ^([A-Za-z_][A-Za-z0-9_]*)=(.*)$ ]]; then
+      local k="${BASH_REMATCH[1]}"
+      local v="${BASH_REMATCH[2]}"
+      # Strip matching quotes.
+      if [[ "$v" =~ ^\"(.*)\"$ ]]; then v="${BASH_REMATCH[1]}"
+      elif [[ "$v" =~ ^\'(.*)\'$ ]]; then v="${BASH_REMATCH[1]}"
+      fi
+      export "$k=$v"
+    fi
+  done < "$f"
+}
+
+for f in "${ENV_FILES[@]}"; do
+  if [ -f "$f" ]; then
+    load_env "$f"
+    break
+  fi
+done
+
+: "${DOKPLOY_URL:?DOKPLOY_URL not set — put it in .env.local}"
+: "${DOKPLOY_API_KEY:?DOKPLOY_API_KEY not set — put it in .env.local}"
+
+method="${1:?usage: dk <GET|POST|PUT|DELETE|PATCH> <path> [json-body]}"
+path="${2:?usage: dk <method> <path> [json-body]}"
+body="${3:-}"
+
+base="${DOKPLOY_URL%/}"
+case "$path" in
+  /*) url="${base}${path}" ;;
+  *)  url="${base}/${path}" ;;
+esac
+
+args=(-fsS -X "$method" -H "x-api-key: $DOKPLOY_API_KEY" -H "Accept: application/json")
+if [ -n "$body" ]; then
+  args+=(-H "Content-Type: application/json" -d "$body")
+fi
+
+curl "${args[@]}" "$url"
