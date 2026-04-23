@@ -1,6 +1,11 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'standalone',
+    // Monorepo: tell Next.js where the workspace root lives so standalone
+    // output traces files from @platform/* workspace packages.
+    outputFileTracingRoot: path.join(__dirname, '../..'),
     async headers() {
         const isProd = process.env.NODE_ENV === 'production';
         const securityHeaders = [

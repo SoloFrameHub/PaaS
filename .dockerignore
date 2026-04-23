@@ -1,0 +1,57 @@
+# Excluded from the Docker build context.
+# Keep this tight — every file listed here speeds up build context upload.
+
+# VCS
+.git
+.github
+
+# Local env / secrets — must never land in an image layer.
+.env
+.env.*
+!.env.example
+apps/*/.env
+apps/*/.env.*
+!apps/*/.env.example
+
+# Editor / IDE
+.vscode
+.idea
+*.swp
+.DS_Store
+
+# Node / pnpm
+node_modules
+**/node_modules
+.pnpm-store
+
+# Build output (regenerated inside the image)
+.next
+**/.next
+dist
+**/dist
+.turbo
+**/.turbo
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# Tests + coverage (not needed at runtime or build)
+coverage
+**/coverage
+playwright-report
+**/playwright-report
+test-results
+**/test-results
+
+# Python + misc caches
+__pycache__
+**/__pycache__
+
+# Infra/docs not needed for the app build
+docs
+infra
+.claude
+
+# The Docker/CI metadata itself
+Dockerfile
+Dockerfile.*
+.dockerignore
