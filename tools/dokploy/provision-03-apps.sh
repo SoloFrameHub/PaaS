@@ -170,6 +170,8 @@ print(json.dumps({
   "customGitUrl": os.environ["URL"],
   "customGitBranch": os.environ["BR"],
   "customGitBuildPath": "/",
+  "watchPaths": [],
+  "enableSubmodules": False,
   "customGitSSHKeyId": None,
 }))')"
     call POST /api/application.saveGitProvider "$body" > /dev/null
@@ -178,16 +180,15 @@ print(json.dumps({
     ok "  git provider already $GIT_URL"
   fi
 
-  # 3. Build type — dockerfile at repo root with APP build arg.
+  # 3. Build type — dockerfile at repo root.
+  # Note: Dokploy's saveBuildType does NOT accept build args. The APP=<name>
+  # build arg is set via application.saveEnvironment's `buildArgs` field below.
   local current_bt
   current_bt="$(J="$app_json" python3 -c 'import json,os; print(json.loads(os.environ["J"] or "{}").get("buildType") or "")')"
-  local current_args
-  current_args="$(J="$app_json" python3 -c 'import json,os; print(json.loads(os.environ["J"] or "{}").get("dockerBuildArgs") or "")')"
-  local want_args="APP=$build_arg_app"
-  if [ "$current_bt" != "dockerfile" ] || [ "$current_args" != "$want_args" ]; then
-    log "  saveBuildType dockerfile APP=$build_arg_app"
+  if [ "$current_bt" != "dockerfile" ]; then
+    log "  saveBuildType dockerfile"
     local body
-    body="$(APP="$app_id" DF="$DOCKERFILE" CTX="$DOCKER_CONTEXT" ARGS="$want_args" python3 -c '
+    body="$(APP="$app_id" DF="$DOCKERFILE" CTX="$DOCKER_CONTEXT" python3 -c '
 import json, os
 print(json.dumps({
   "applicationId": os.environ["APP"],
@@ -195,13 +196,41 @@ print(json.dumps({
   "dockerfile": os.environ["DF"],
   "dockerContextPath": os.environ["CTX"],
   "dockerBuildStage": "",
-  "dockerBuildArgs": os.environ["ARGS"],
+  "herokuVersion": "",
+  "railpackVersion": "",
   "isStaticSpa": False,
 }))')"
     call POST /api/application.saveBuildType "$body" > /dev/null
     ok "  buildType set"
   else
-    ok "  buildType already dockerfile (APP=$build_arg_app)"
+    ok "  buildType already dockerfile"
+  fi
+
+  # 4. Build args (APP=<name>) via saveEnvironment. Env vars are set via the
+  # Dokploy UI per docs/deployment-env.md; buildArgs are separate and go here.
+  local want_build_args="APP=$build_arg_app"
+  local current_build_args
+  current_build_args="$(J="$app_json" python3 -c 'import json,os; print(json.loads(os.environ["J"] or "{}").get("buildArgs") or "")')"
+  local current_env
+  current_env="$(J="$app_json" python3 -c 'import json,os; print(json.loads(os.environ["J"] or "{}").get("env") or "")')"
+  if [ "$current_build_args" != "$want_build_args" ]; then
+    log "  saveEnvironment (preserving env, setting buildArgs=$want_build_args)"
+    local body
+    body="$(APP="$app_id" ENV="$current_env" BA="$want_build_args" python3 <<'PY'
+import json, os
+print(json.dumps({
+  "applicationId": os.environ["APP"],
+  "env": os.environ["ENV"],
+  "buildArgs": os.environ["BA"],
+  "buildSecrets": "",
+  "createEnvFile": False,
+}))
+PY
+)"
+    call POST /api/application.saveEnvironment "$body" > /dev/null
+    ok "  buildArgs set"
+  else
+    ok "  buildArgs already $want_build_args"
   fi
 }
 
