@@ -1,5 +1,11 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { resolveTenantSlugFromHost } from '@platform/tenancy/middleware';
+
+const TENANT_ROOT_DOMAINS = (process.env.TENANT_ROOT_DOMAINS ?? '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
 
 /**
  * Next.js Middleware — runs in Edge Runtime.
@@ -75,8 +81,17 @@ export async function proxy(request: NextRequest) {
     // Must pass headers via `request` option or downstream route handlers won't see them.
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-request-id', requestId);
+
+    // Tenant slug from host header. Node-runtime API routes complete the
+    // resolution with a DB lookup; middleware stays Edge-safe (pure regex).
+    const tenantSlug = resolveTenantSlugFromHost(request.headers.get('host'), {
+        rootDomains: TENANT_ROOT_DOMAINS,
+    });
+    if (tenantSlug) requestHeaders.set('x-tenant-slug', tenantSlug);
+
     const response = NextResponse.next({ request: { headers: requestHeaders } });
     response.headers.set('x-request-id', requestId);
+    if (tenantSlug) response.headers.set('x-tenant-slug', tenantSlug);
     return addSecurityHeaders(response);
 }
 

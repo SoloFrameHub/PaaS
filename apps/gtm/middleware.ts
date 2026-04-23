@@ -1,10 +1,46 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { resolveTenantSlugFromHost } from "@platform/tenancy/middleware";
 
 // Subdomains that serve the platform (redirect to /welcome instead of marketing page)
 const PLATFORM_SUBDOMAINS = new Set([
   "ai-solo-gtm-os",
   "ai-customer-acquisition-academy",
 ]);
+
+const TENANT_ROOT_DOMAINS = (process.env.TENANT_ROOT_DOMAINS ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+// Reserved subdomains — extends the defaults with this app's own platform
+// subdomains so they never get picked up as tenant slugs.
+const RESERVED_SUBDOMAINS = [
+  "www",
+  "api",
+  "admin",
+  "n8n",
+  "metabase",
+  "docs",
+  "status",
+  "assets",
+  "static",
+  "cdn",
+  "mail",
+  "auth",
+  ...PLATFORM_SUBDOMAINS,
+];
+
+function attachTenantSlug(
+  request: NextRequest,
+  response: NextResponse,
+): NextResponse {
+  const tenantSlug = resolveTenantSlugFromHost(request.headers.get("host"), {
+    rootDomains: TENANT_ROOT_DOMAINS,
+    reservedSubdomains: RESERVED_SUBDOMAINS,
+  });
+  if (tenantSlug) response.headers.set("x-tenant-slug", tenantSlug);
+  return response;
+}
 
 export function middleware(request: NextRequest) {
   // www → non-www redirect (301 for SEO canonical)
@@ -28,11 +64,17 @@ export function middleware(request: NextRequest) {
     // Platform subdomains: serve welcome page (language chooser)
     const subdomain = host.split(".")[0];
     if (PLATFORM_SUBDOMAINS.has(subdomain)) {
-      return NextResponse.rewrite(new URL("/welcome", request.url));
+      return attachTenantSlug(
+        request,
+        NextResponse.rewrite(new URL("/welcome", request.url)),
+      );
     }
 
     // Serve marketing homepage for unauthenticated visitors
-    return NextResponse.rewrite(new URL("/home.html", request.url));
+    return attachTenantSlug(
+      request,
+      NextResponse.rewrite(new URL("/home.html", request.url)),
+    );
   }
 
   // 301 redirect: old academy URL → new OS URL
@@ -51,10 +93,30 @@ export function middleware(request: NextRequest) {
 
   // Directory index rewrites for static HTML directories
   if (pathname === "/blog" || pathname === "/blog/") {
-    return NextResponse.rewrite(new URL("/blog/index.html", request.url));
+    return attachTenantSlug(
+      request,
+      NextResponse.rewrite(new URL("/blog/index.html", request.url)),
+    );
   }
   if (pathname === "/es" || pathname === "/es/") {
-    return NextResponse.rewrite(new URL("/es/index.html", request.url));
+    return attachTenantSlug(
+      request,
+      NextResponse.rewrite(new URL("/es/index.html", request.url)),
+    );
+  }
+
+  // Default: continue and propagate x-tenant-slug via request headers so
+  // downstream route handlers can read it and complete tenant resolution.
+  const tenantSlug = resolveTenantSlugFromHost(host, {
+    rootDomains: TENANT_ROOT_DOMAINS,
+    reservedSubdomains: RESERVED_SUBDOMAINS,
+  });
+  if (tenantSlug) {
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-tenant-slug", tenantSlug);
+    const response = NextResponse.next({ request: { headers: requestHeaders } });
+    response.headers.set("x-tenant-slug", tenantSlug);
+    return response;
   }
 }
 
