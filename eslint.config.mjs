@@ -1,6 +1,5 @@
-// Flat config root. Per-package overrides live in each package's
-// eslint.config.js when needed.
-
+// Flat config root.
+import tseslint from 'typescript-eslint';
 import platformPlugin from './tools/eslint-plugin-platform/dist/index.js';
 
 export default [
@@ -13,6 +12,7 @@ export default [
       '**/coverage/**',
     ],
   },
+  ...tseslint.configs.recommended,
   {
     files: ['**/*.{ts,tsx,js,jsx,mjs,cjs}'],
     plugins: {
@@ -21,6 +21,13 @@ export default [
     rules: {
       '@platform/no-direct-db-access': 'error',
       '@platform/no-cross-vertical-import': 'error',
+      // The recommended preset is strict; relax a few that fire heavily in
+      // the stub/skeleton phase without adding safety.
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 ];

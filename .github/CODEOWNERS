@@ -1,0 +1,24 @@
+# Blueprint §10 Day 2 — platform-team approval required for these paths.
+# Placeholder owner — replace with GitHub team/handle once the team exists.
+
+# Contracts are the interface surface every engine depends on. Breaking changes
+# require platform-team review.
+/packages/contracts/               @SoloFrameHub/platform-team
+
+# DB schema changes are one-way. Review required.
+/infra/migrations/                 @SoloFrameHub/platform-team
+/packages/tenancy/src/schema/      @SoloFrameHub/platform-team
+
+# Terraform changes base infra — slow to roll back.
+/infra/terraform/                  @SoloFrameHub/platform-team
+
+# Manifests for first-party verticals are semver-published. PR review required.
+/verticals/*/manifest.json         @SoloFrameHub/platform-team
+/verticals/*/manifest.lock         @SoloFrameHub/platform-team
+
+# ADRs are the decision record. Do not edit lightly.
+/docs/adrs/                        @SoloFrameHub/platform-team
+
+# Enforcement rules — tampering defeats the point.
+/tools/eslint-plugin-platform/     @SoloFrameHub/platform-team
+/.dependency-cruiser.cjs           @SoloFrameHub/platform-team

@@ -53,6 +53,7 @@ module.exports = {
   ],
   options: {
     doNotFollow: { path: 'node_modules' },
+    exclude: { path: '(^|/)(dist|\\.turbo|coverage)/' },
     tsConfig: { fileName: 'tsconfig.base.json' },
     enhancedResolveOptions: {
       exportsFields: ['exports'],
