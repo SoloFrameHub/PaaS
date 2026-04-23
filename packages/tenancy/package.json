@@ -17,28 +17,28 @@
     "./schema": {
       "types": "./dist/schema/index.d.ts",
       "import": "./dist/schema/index.js"
+    },
+    "./internal": {
+      "types": "./dist/internal/index.d.ts",
+      "import": "./dist/internal/index.js"
     }
   },
   "files": ["dist"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "echo \"(no tests yet)\"",
+    "test": "vitest run",
     "lint": "echo \"(no lint yet)\"",
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
     "@platform/contracts": "workspace:*",
-    "drizzle-orm": "^0.36.4"
+    "drizzle-orm": "^0.36.4",
+    "pg": "^8.13.0"
   },
   "devDependencies": {
     "@types/pg": "^8.11.10",
-    "typescript": "^5.6.3"
-  },
-  "peerDependencies": {
-    "postgres": "^3.4.5"
-  },
-  "peerDependenciesMeta": {
-    "postgres": { "optional": true }
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
   }
 }
