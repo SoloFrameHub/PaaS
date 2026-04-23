@@ -1,8 +1,9 @@
 import Redis from 'ioredis';
 import { logger } from './logger';
 
-const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
-const redisEnabled = process.env.REDIS_ENABLED !== 'false';
+const redisUrl = process.env.REDIS_URL;
+const redisEnabled =
+  process.env.REDIS_ENABLED !== 'false' && Boolean(redisUrl);
 
 /**
  * Singleton Redis client provider.
@@ -17,7 +18,7 @@ class RedisClient {
      * @returns The configured Redis client instance, or null if Redis is disabled.
      */
     static getInstance(): Redis | null {
-        if (!redisEnabled) {
+        if (!redisEnabled || !redisUrl) {
             return null;
         }
 

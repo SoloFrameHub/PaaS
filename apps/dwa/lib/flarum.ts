@@ -190,16 +190,40 @@ class FlarumClient {
   private apiKey: string;
 
   constructor() {
-    this.baseUrl = (process.env.FLARUM_URL || 'http://localhost:8080').replace(/\/$/, '');
-    // Public URL is what browsers see (for avatar/asset URLs in API responses)
-    this.publicUrl = (process.env.FLARUM_PUBLIC_URL || process.env.FLARUM_URL || 'http://localhost:8080').replace(/\/$/, '');
+    // Resolve URLs lazily at first use instead of at construction: the
+    // module is imported during `next build`'s page-data collection phase,
+    // where NODE_ENV==='production' is true but env vars aren't available
+    // yet. Throwing here would break CI/CD builds. The getters below
+    // throw on first call if the prod env hasn't been configured.
+    this.baseUrl = '';
+    this.publicUrl = '';
     this.apiKey = process.env.FLARUM_API_KEY || '';
+  }
+
+  private resolveUrls(): { baseUrl: string; publicUrl: string } {
+    if (this.baseUrl && this.publicUrl) {
+      return { baseUrl: this.baseUrl, publicUrl: this.publicUrl };
+    }
+    const devFallback = 'http://localhost:8080';
+    const isProd = process.env.NODE_ENV === 'production';
+    const flarumUrl = process.env.FLARUM_URL;
+    const flarumPublicUrl = process.env.FLARUM_PUBLIC_URL ?? flarumUrl;
+    if (isProd && (!flarumUrl || !flarumPublicUrl)) {
+      throw new Error(
+        'FLARUM_URL (and optionally FLARUM_PUBLIC_URL) must be set in production; localhost fallback is dev-only.',
+      );
+    }
+    this.baseUrl = (flarumUrl ?? devFallback).replace(/\/$/, '');
+    this.publicUrl = (flarumPublicUrl ?? devFallback).replace(/\/$/, '');
+    return { baseUrl: this.baseUrl, publicUrl: this.publicUrl };
   }
 
   /** Rewrite internal URLs in a string to public-facing ones */
   private rewriteUrls(value: string | null): string | null {
-    if (!value || this.baseUrl === this.publicUrl) return value;
-    return value.replaceAll(this.baseUrl, this.publicUrl);
+    if (!value) return value;
+    const { baseUrl, publicUrl } = this.resolveUrls();
+    if (baseUrl === publicUrl) return value;
+    return value.replaceAll(baseUrl, publicUrl);
   }
 
   private headers(userToken?: string): HeadersInit {
@@ -220,7 +244,8 @@ class FlarumClient {
     options: RequestInit = {},
     cache?: { revalidate: number },
   ): Promise<FlarumJsonApiResponse> {
-    const url = `${this.baseUrl}/api${path}`;
+    const { baseUrl } = this.resolveUrls();
+    const url = `${baseUrl}/api${path}`;
     const res = await fetch(url, {
       ...options,
       headers: { ...this.headers((options.headers as Record<string, string>)?.['Authorization']?.replace('Token ', '')), ...options.headers },
@@ -412,7 +437,8 @@ class FlarumClient {
   ): Promise<string> {
     // Use the master API key to create/retrieve a token for this user.
     // Flarum's token endpoint: POST /api/token
-    const res = await fetch(`${this.baseUrl}/api/token`, {
+    const { baseUrl } = this.resolveUrls();
+    const res = await fetch(`${baseUrl}/api/token`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

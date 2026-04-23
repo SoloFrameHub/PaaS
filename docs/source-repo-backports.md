@@ -217,6 +217,96 @@ Next.js team; no runtime cost.)
 
 ---
 
+## Backports for **gtm source** — added after monorepo catalog expansion
+
+### [B-013] Polar webhook GA4 `value: 0` — **still listed above as HIGH**
+
+### [B-020] `/api/checkout` Polar token non-null assertion — **HIGH, crash landmine**
+
+Every request to `/api/checkout` crashes at module init if either
+`POLAR_ACCESS_TOKEN` or `POLAR_SUCCESS_URL` is missing. Not a clean
+500 — a `TypeError` on undefined, which most deploys surface as
+"something in gtm is down" with no message pointing at the cause.
+
+**File:** `app/api/checkout/route.ts`
+
+**Diff:**
+```diff
+-export const GET = Checkout({
+-  accessToken: process.env.POLAR_ACCESS_TOKEN!,
+-  successUrl: process.env.POLAR_SUCCESS_URL!,
+-  server: (process.env.POLAR_MODE as 'sandbox' | 'production') || 'sandbox',
+-});
++const accessToken = process.env.POLAR_ACCESS_TOKEN;
++const successUrl = process.env.POLAR_SUCCESS_URL;
++if (!accessToken || !successUrl) {
++  throw new Error(
++    '/api/checkout is misconfigured: POLAR_ACCESS_TOKEN and POLAR_SUCCESS_URL are required.',
++  );
++}
++
++export const GET = Checkout({
++  accessToken,
++  successUrl,
++  server: (process.env.POLAR_MODE as 'sandbox' | 'production') || 'sandbox',
++});
+```
+
+Also check `drizzle.config.ts` for a `process.env.DATABASE_URL!`
+pattern; same fix shape (pull into `const`, guard with
+`if (!DATABASE_URL) throw ...`).
+
+---
+
+### [B-021] localhost fallback URLs in prod — **MEDIUM, degradation**
+
+Three hits in the gtm source:
+
+1. **`lib/redis.ts:4`** — `process.env.REDIS_URL || 'redis://localhost:6379'`.
+   In Dokploy, localhost is the container; the Redis client
+   reconnects forever, spamming logs that look like a real outage.
+
+   **Diff:**
+   ```diff
+   -const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+   -const redisEnabled = process.env.REDIS_ENABLED !== 'false';
+   +const redisUrl = process.env.REDIS_URL;
+   +const redisEnabled =
+   +  process.env.REDIS_ENABLED !== 'false' && Boolean(redisUrl);
+   ```
+
+   Plus in `RedisClient.getInstance()`:
+   ```diff
+   -    if (!redisEnabled) {
+   +    if (!redisEnabled || !redisUrl) {
+          return null;
+   ```
+
+2. **`app/api/notion/callback/route.ts:6`** and
+   **`lib/notion/client.ts:18-21`** — both fall back to
+   `http://localhost:3000` for `NEXT_PUBLIC_APP_URL`. In prod this
+   redirects Notion OAuth returns to localhost (user sees a broken
+   page). Fix: gate the localhost fallback on
+   `NODE_ENV !== 'production'`; throw in prod with a clear message.
+   Full diffs are in [97c6b58](commit 97c6b58).
+
+---
+
+## Backports for **dwa source** — added after monorepo catalog expansion
+
+### [B-021] Flarum + Notion-style localhost fallback — **MEDIUM**
+
+1. **`lib/flarum.ts:193-195`** — two localhost fallbacks. Apply
+   the monorepo's guarded constructor (see apps/dwa/lib/flarum.ts
+   in 97c6b58).
+
+2. **`lib/ai/maia-client.ts:26`** — localhost fallback is
+   INTENTIONAL per the "Finding 13: fail-safe, not fail-hard"
+   comment. Keep as-is. Document it if the team wants the
+   behavior formalized.
+
+---
+
 ## Applying a backport
 
 The monorepo is authoritative. If a diff here disagrees with the

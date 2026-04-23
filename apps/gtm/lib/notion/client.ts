@@ -16,7 +16,15 @@ class NotionClient {
     return process.env.NOTION_CLIENT_SECRET || "";
   }
   private get redirectUri(): string {
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL;
+    if (!appUrl) {
+      if (process.env.NODE_ENV === "production") {
+        throw new Error(
+          "NEXT_PUBLIC_APP_URL must be set in production — Notion OAuth redirect_uri would otherwise point to localhost.",
+        );
+      }
+      return "http://localhost:3000/api/notion/callback";
+    }
     return `${appUrl}/api/notion/callback`;
   }
 

@@ -662,18 +662,28 @@ this looks like "the whole API is down."
 first time it's hit after deploy to a fresh environment that
 hasn't set the env var.
 
-**Seen in:** `apps/gtm/app/api/checkout/route.ts:4-5` —
-`POLAR_ACCESS_TOKEN!` and `POLAR_SUCCESS_URL!`. Surfaced by the
-deployment-env audit.
+**Seen in:**
+- `apps/gtm/app/api/checkout/route.ts:4-5` — `POLAR_ACCESS_TOKEN!`
+  and `POLAR_SUCCESS_URL!`.
+- `apps/gtm/drizzle.config.ts:10` — `DATABASE_URL!` at module init
+  of drizzle-kit config.
 
-**Grep signature:**
+Both fixed in the follow-up commit after this catalog entry landed:
+replaced each `!` with an explicit guard that throws a readable
+error before the module finishes initializing. The polar route also
+moved the guard above the `Checkout({ ... })` export so import-time
+failures carry a message pointing at the missing var name.
+
+**Grep signature (tightened — excludes `!==` comparisons):**
 ```
-grep -rnE "process\.env\.[A-Z_][A-Z0-9_]*\s*!" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/
+grep -rnE "process\.env\.[A-Z_][A-Z0-9_]*!([^=]|$)" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/ | grep -v _archive
 ```
 
-**Cross-check pending:** full sweep of the catch list is follow-up
-work. This entry lands so future additions go through a proper
-guard, not the bang.
+**Cross-check:** swept. `apps/gtm/app/api/checkout/route.ts` +
+`apps/gtm/drizzle.config.ts` were the only runtime hits (the noisy
+`process.env.X !== 'Y'` comparisons in redis.ts et al. are not
+assertions). Clean across `apps/` and `packages/` after the follow-up
+commit.
 
 **Going forward:**
 - Replace with an explicit guard that throws a clear error:
@@ -709,27 +719,39 @@ bug is a missing env var.
 cache behavior silently degrades. The app may still answer HTTP
 200 because the callers tolerate the failure.
 
-**Seen in:**
-- `apps/gtm/lib/redis.ts:4` — defaults to `redis://localhost:6379`.
-- `apps/dwa/lib/redis.ts:4` — same.
-- `apps/dwa/lib/ai/maia-client.ts:26` — defaults to
-  `http://localhost:8001`.
-- `apps/dwa/lib/flarum.ts:193-196` — defaults to
-  `http://localhost:8080`.
+**Seen in + fix status (all addressed in the follow-up commit after
+this catalog entry landed):**
+- `apps/gtm/lib/redis.ts:4` — aligned to dwa's pattern: no
+  `localhost` fallback; if `REDIS_URL` is unset, the getter returns
+  `null` and all cache calls no-op. No more spam logs.
+- `apps/dwa/lib/redis.ts` — already correct; kept as the reference
+  pattern for Redis clients across the platform.
+- `apps/dwa/lib/flarum.ts:193-195` — localhost fallbacks now gated
+  on `NODE_ENV !== 'production'`; a prod boot with `FLARUM_URL`
+  unset throws at the constructor with a readable error.
+- `apps/gtm/app/api/notion/callback/route.ts:6` + `apps/gtm/lib/notion/client.ts:18-21`
+  — same gate. Prod without `NEXT_PUBLIC_APP_URL` now throws at
+  import / first use rather than silently 302-ing OAuth returns to
+  `localhost:3000`.
 
-Both `docker run` smoke tests from commit 97c6b58 caught these as
-hundreds of Redis connection-error log lines — harmless in that
-test because it's a bare `docker run` with no sidecars, but the
-signal would be indistinguishable from a real Redis outage in
-prod.
+**Intentionally NOT changed:** `apps/dwa/lib/ai/maia-client.ts:26`.
+The comment at line 28 (`Finding 13: fail-safe, not fail-hard`)
+marks the localhost fallback as an explicit design choice — the
+crisis-classifier dependency should degrade to safe fallbacks
+rather than crash user sessions. The existing code already warns
+in production via `logger.warn`; no additional hardening without
+a product decision to change the fail-safe posture.
 
 **Grep signature:**
 ```
-grep -rnE "(process\.env\.[A-Z_][A-Z0-9_]*\s*\?\?|process\.env\.[A-Z_][A-Z0-9_]*\s*\|\|)\s*['\"]https?://localhost|redis://localhost" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/
+grep -rnE "['\"]https?://localhost|['\"]redis://localhost|['\"]postgres://localhost" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/ | grep -v _archive | grep -v /test/ | grep -v /e2e/ | grep -v '\.test\.' | grep -v '\.spec\.'
 ```
 
-**Cross-check pending:** list above is the known hits from the
-deployment-env audit. Clean sweep + fix is follow-up work.
+Expect only: `maia-client.ts` (fail-safe, kept), `playwright.config.ts`,
+`scripts/*.ts` (dev scripts), `openapi/generator.ts` (schema only).
+Any other hit is a B-021 regression.
+
+**Cross-check:** swept. Only intentional fallbacks remain.
 
 **Going forward:**
 - In production (`NODE_ENV==='production'`), treat a missing
