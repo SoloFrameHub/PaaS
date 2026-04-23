@@ -46,9 +46,12 @@ test-results
 __pycache__
 **/__pycache__
 
-# Infra/docs not needed for the app build
+# Infra/docs not needed for the app build.
+# NB: Dockerfile.ops DOES need infra/migrations/*.sql — it COPYs the dir
+# explicitly after the turbo prune, which this ignore doesn't block (the
+# COPY reads the build context pre-prune-stage-filter). But keep docs +
+# .claude out — they'd bloat the context for no gain.
 docs
-infra
 .claude
 
 # The Docker/CI metadata itself

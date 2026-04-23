@@ -1,0 +1,63 @@
+# syntax=docker/dockerfile:1.7
+# Dockerfile.ops — long-running platform-ops container.
+#
+# Lives on Dokploy's Swarm overlay next to postgres-primary + redis-primary,
+# so one-shot DB work (migrations, tenant seeding, integration harness) can
+# run from the internal network — no externalPort exposure, no B-003 risk.
+#
+# Build:
+#   docker build -f Dockerfile.ops -t solofame/ops:local .
+#
+# Deployed by tools/dokploy/provision-06-ops.sh as Dokploy application
+# `ops-runner`. Invoked via Dokploy's schedule.runManually against
+# registered commands (seed-tenant, apply-migrations, leak-harness).
+
+ARG NODE_VERSION=20-alpine
+ARG PNPM_VERSION=9.15.0
+ARG TURBO_VERSION=2.3.3
+
+FROM node:${NODE_VERSION} AS base
+RUN apk add --no-cache libc6-compat postgresql-client tini
+ENV PNPM_HOME=/pnpm
+ENV PATH=$PNPM_HOME:$PATH
+RUN corepack enable \
+ && corepack prepare pnpm@${PNPM_VERSION} --activate \
+ && npm install -g turbo@${TURBO_VERSION}
+
+# ─── Stage 1: prune to just the ops dep closure ─────────────────────────
+FROM base AS pruner
+WORKDIR /repo
+COPY . .
+# Include @tools/tenancy (seeding), @platform/testing (leak harness).
+# Their dep closure will pull in @platform/tenancy, @platform/identity,
+# @platform/contracts, @platform/manifest-loader etc.
+RUN turbo prune @tools/tenancy @platform/testing --docker
+
+# ─── Stage 2: install + build platform packages ─────────────────────────
+FROM base AS builder
+WORKDIR /repo
+COPY --from=pruner /repo/out/json/ ./
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+    pnpm install --frozen-lockfile
+COPY --from=pruner /repo/out/full/ ./
+COPY tsconfig.base.json ./
+# Migrations are the source of truth for schema — ship them with the image
+# so `psql -f` can apply them.
+COPY infra ./infra
+RUN turbo run build --filter=@tools/tenancy --filter=@platform/testing
+
+# ─── Stage 3: runtime — stays alive, commands invoked via exec ──────────
+FROM base AS runner
+WORKDIR /repo
+COPY --from=builder /repo /repo
+
+# Write the ops command wrappers to /usr/local/bin so schedules can invoke
+# them by name: `ops-seed-tenant`, `ops-apply-migrations`, `ops-leak-harness`.
+RUN printf '#!/bin/sh\nset -eu\ncd /repo\nexec pnpm --filter @tools/tenancy exec tsx seed-tenant.ts "$@"\n' > /usr/local/bin/ops-seed-tenant \
+ && printf '#!/bin/sh\nset -eu\ncd /repo\nexec psql -v ON_ERROR_STOP=1 "$DATABASE_URL" -f infra/migrations/0001_tenancy.sql -f infra/migrations/0002_rls_helpers.sql\n' > /usr/local/bin/ops-apply-migrations \
+ && printf '#!/bin/sh\nset -eu\ncd /repo\nexport TEST_DATABASE_URL="${TEST_DATABASE_URL:-$DATABASE_URL}"\nexec pnpm --filter @platform/testing exec vitest run test/harness.test.ts\n' > /usr/local/bin/ops-leak-harness \
+ && chmod +x /usr/local/bin/ops-*
+
+ENV NODE_ENV=production
+ENTRYPOINT ["/sbin/tini", "--"]
+CMD ["sleep", "infinity"]
