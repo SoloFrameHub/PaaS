@@ -11,6 +11,14 @@ plausibly exist in another file — especially any shape-of-the-bug that
 would survive lint but break at runtime or in stricter type checking —
 add an entry here.
 
+**Fixes in this monorepo don't propagate upstream.** Many of these
+bugs still exist in the source repos that `apps/gtm` and `apps/dwa`
+were lifted from — and those source repos are still deployed to
+production. After fixing a bug here, if the class likely exists in an
+upstream source repo, add a per-repo entry to
+[`docs/source-repo-backports.md`](source-repo-backports.md) so the fix
+can be ported out.
+
 ---
 
 ## Runtime bugs — silent until observed
