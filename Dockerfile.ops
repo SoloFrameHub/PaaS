@@ -53,9 +53,11 @@ COPY --from=builder /repo /repo
 
 # Write the ops command wrappers to /usr/local/bin so schedules can invoke
 # them by name: `ops-seed-tenant`, `ops-apply-migrations`, `ops-leak-harness`.
-RUN printf '#!/bin/sh\nset -eu\ncd /repo\nexec pnpm --filter @tools/tenancy exec tsx seed-tenant.ts "$@"\n' > /usr/local/bin/ops-seed-tenant \
- && printf '#!/bin/sh\nset -eu\ncd /repo\nexec psql -v ON_ERROR_STOP=1 "$DATABASE_URL" -f infra/migrations/0001_tenancy.sql -f infra/migrations/0002_rls_helpers.sql\n' > /usr/local/bin/ops-apply-migrations \
- && printf '#!/bin/sh\nset -eu\ncd /repo\nexport TEST_DATABASE_URL="${TEST_DATABASE_URL:-$DATABASE_URL}"\nexec pnpm --filter @platform/testing exec vitest run test/harness.test.ts\n' > /usr/local/bin/ops-leak-harness \
+COPY tools/platform-ops/run-and-trace.sh /usr/local/bin/run-and-trace
+RUN chmod +x /usr/local/bin/run-and-trace \
+ && printf '#!/bin/sh\nexec run-and-trace seed-tenant pnpm --filter @tools/tenancy exec tsx seed-tenant.ts "$@"\n' > /usr/local/bin/ops-seed-tenant \
+ && printf '#!/bin/sh\nexec run-and-trace apply-migrations psql -v ON_ERROR_STOP=1 "$DATABASE_URL" -f /repo/infra/migrations/0001_tenancy.sql -f /repo/infra/migrations/0002_rls_helpers.sql\n' > /usr/local/bin/ops-apply-migrations \
+ && printf '#!/bin/sh\nexport TEST_DATABASE_URL="${TEST_DATABASE_URL:-$DATABASE_URL}"\nexec run-and-trace leak-harness pnpm --filter @platform/testing exec vitest run test/harness.test.ts\n' > /usr/local/bin/ops-leak-harness \
  && chmod +x /usr/local/bin/ops-*
 
 ENV NODE_ENV=production
