@@ -1031,6 +1031,19 @@ had `appName = schedule-<adj>-<noun>-<hash>`, `serviceName = null`.
 Separately, `schedule.list` revealed 8 rows instead of 4 —
 confirming the idempotency bug.
 
+**Caveat — the 500 is the same HTTP shape as "child exited non-zero".**
+Dokploy returns 500 on any non-success path for `runManually` (both
+"can't locate Swarm service" and "ran the command, exit was 1"). So
+the HTTP status alone does not distinguish Part A from a broken
+in-container command. The distinguishing signal is
+`deployment.allByType?type=schedule&id=<scheduleId>`: a broken-appName
+run usually leaves no deployment row (Dokploy bails before recording
+one) or a row with no `logPath`; a real-child-error run leaves a row
+with `status=error`, a populated `logPath`, and a 1–2s
+`finishedAt - startedAt` gap. When you fix Part A and `runManually`
+still 500s, pivot to the in-container diagnosis path — B-027
+catalogs the wiring trap, not the runtime-of-the-command failure.
+
 **Fix commit:** this commit — `tools/dokploy/provision-06-ops.sh`
 now (a) reads the target application's `appName` via
 `application.one` (B-024 pattern) and includes `appName` +
