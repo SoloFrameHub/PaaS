@@ -1,0 +1,20 @@
+{
+  "name": "@tools/tenancy",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed-tenant": "tsx seed-tenant.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"(no tests yet)\"",
+    "lint": "echo \"(no lint yet)\""
+  },
+  "dependencies": {
+    "@platform/tenancy": "workspace:*",
+    "drizzle-orm": "^0.45.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

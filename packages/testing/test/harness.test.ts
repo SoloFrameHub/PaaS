@@ -25,12 +25,14 @@ describe.runIf(Boolean(process.env.TEST_DATABASE_URL))(
       await __closePool();
     });
 
-    it('blocks cross-tenant reads and RLS-rejects cross-tenant writes', async () => {
+    it('blocks cross-tenant reads, RLS-rejects cross-tenant writes, and resolves each slug to the right tenant', async () => {
       const result = await tenantLeakHarness();
 
       expect(result.crossReadRows).toBe(0);
       expect(result.crossWriteDenied).toBe(true);
       expect(result.tenantA).not.toBe(result.tenantB);
+      expect(result.slugA).not.toBe(result.slugB);
+      expect(result.resolverMatched).toBe(true);
     }, 30_000);
   },
 );

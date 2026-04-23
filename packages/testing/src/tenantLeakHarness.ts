@@ -10,6 +10,8 @@
 import { sql } from 'drizzle-orm';
 import {
   TenancyError,
+  __resetTenantResolverCache,
+  resolveTenantBySlug,
   withSystemAdmin,
   withTenant,
   type TenantTx,
@@ -19,10 +21,14 @@ import { schema } from '@platform/tenancy/internal';
 export interface TenantLeakHarnessResult {
   tenantA: string;
   tenantB: string;
+  slugA: string;
+  slugB: string;
   /** Rows visible to tenant B when reading members of tenant A — must be 0. */
   crossReadRows: number;
   /** True when RLS denied a cross-tenant insert and an audit row was written. */
   crossWriteDenied: boolean;
+  /** True when resolveTenantBySlug returned the correct tenant id for each slug. */
+  resolverMatched: boolean;
 }
 
 export interface TenantLeakHarnessOptions {
@@ -60,10 +66,16 @@ export async function tenantLeakHarness(
 
   const tenantA = crypto.randomUUID();
   const tenantB = crypto.randomUUID();
+  const slugA = `harness-a-${tenantA.slice(0, 8)}`;
+  const slugB = `harness-b-${tenantB.slice(0, 8)}`;
   const ownerA = randomUserId();
   const ownerB = randomUserId();
   const memberA = randomUserId();
   const memberB = randomUserId();
+
+  // Clear resolver cache in case a prior harness run left stale negative
+  // entries for these slugs (random but conceivable across retries).
+  __resetTenantResolverCache();
 
   try {
     // ─── Seed two tenants + one member each under platform_system. ───────
@@ -73,7 +85,7 @@ export async function tenantLeakHarness(
         .values([
           {
             id: tenantA,
-            slug: `harness-a-${tenantA.slice(0, 8)}`,
+            slug: slugA,
             kind: 'pooled',
             tier: 'free',
             manifestVersion: '0.0.0',
@@ -83,7 +95,7 @@ export async function tenantLeakHarness(
           },
           {
             id: tenantB,
-            slug: `harness-b-${tenantB.slice(0, 8)}`,
+            slug: slugB,
             kind: 'pooled',
             tier: 'free',
             manifestVersion: '0.0.0',
@@ -142,14 +154,27 @@ export async function tenantLeakHarness(
       }
     }
 
+    // ─── Exercise resolveTenantBySlug against both seeded tenants. ───────
+    // Clear cache again so the lookup hits the DB, not a stale entry from
+    // a previous iteration of the harness.
+    __resetTenantResolverCache();
+    const resolvedA = await resolveTenantBySlug(slugA);
+    const resolvedB = await resolveTenantBySlug(slugB);
+    const resolverMatched =
+      resolvedA?.id === tenantA && resolvedB?.id === tenantB;
+
     return {
       tenantA,
       tenantB,
+      slugA,
+      slugB,
       crossReadRows,
       crossWriteDenied,
+      resolverMatched,
     };
   } finally {
     await cleanup([tenantA, tenantB]);
+    __resetTenantResolverCache();
     if (!prevPlatform && !prevDatabase) delete process.env.DATABASE_URL;
   }
 }
