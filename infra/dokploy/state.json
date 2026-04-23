@@ -1,0 +1,12 @@
+{
+  "projectId": "4D6k8WkSqfTojDjCE5gda",
+  "environmentId": "zQWrRHd04VFAN01Jx2oNE",
+  "postgresId": "7WxLR0C38J18q1RqAeU5s",
+  "postgresName": "postgres-primary",
+  "postgresImage": "pgvector/pgvector:pg16",
+  "postgresDatabase": "solofame",
+  "postgresUser": "app_user",
+  "redisId": "q1YtpGqhxgwPKa-6FdQ9V",
+  "redisName": "redis-primary",
+  "redisImage": "redis:7-alpine"
+}

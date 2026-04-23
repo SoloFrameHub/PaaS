@@ -39,10 +39,12 @@ load_env() {
   done < "$f"
 }
 
-for f in "${ENV_FILES[@]}"; do
+# Load every .env.local we find, in reverse order so earlier entries (the
+# monorepo-local file) take precedence over later ones (the shared PaaS file).
+for (( i=${#ENV_FILES[@]}-1; i>=0; i-- )); do
+  f="${ENV_FILES[$i]}"
   if [ -f "$f" ]; then
     load_env "$f"
-    break
   fi
 done
 

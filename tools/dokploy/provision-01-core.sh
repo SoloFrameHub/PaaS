@@ -3,20 +3,14 @@
 #
 # Steps:
 #   1. Create project `solofame-prod` (skips if exists).
-#   2. Read default environment id (environmentId).
+#   2. Read default environment id.
 #   3. Create `postgres-primary` with pgvector/pg16 image (skips if exists).
 #   4. Create `redis-primary` (skips if exists).
-#   5. Persist ids + generated passwords to:
-#        - infra/dokploy/state.json  (ids only, committed)
-#        - .env.local                (secrets, gitignored, NEVER committed)
+#   5. Persist ids + generated passwords:
+#        infra/dokploy/state.json  — ids only (committed)
+#        .env.local                — secrets (gitignored, NEVER committed)
 #
-# Re-run safe: each step checks existing resources first. Passwords are only
-# generated on the first successful create and then stored; re-runs never
-# rotate them.
-#
-# Usage:
-#   tools/dokploy/provision-01-core.sh
-
+# Re-runs are safe: existing resources are detected and skipped.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -28,55 +22,61 @@ ENV_LOCAL="$ROOT/.env.local"
 mkdir -p "$(dirname "$STATE_FILE")"
 
 PROJECT_NAME="solofame-prod"
+PROJECT_DESC="SoloFrame Platform production — monorepo verticals (gtm, dwa, tenant-runtime, studio) + workers."
 POSTGRES_NAME="postgres-primary"
 POSTGRES_APPNAME="postgres-primary"
 POSTGRES_DB="solofame"
 POSTGRES_USER="app_user"
 POSTGRES_IMAGE="pgvector/pgvector:pg16"
+POSTGRES_DESC="Shared Postgres — pgvector/pg16. RLS + tenant isolation. See ADR 0003."
 REDIS_NAME="redis-primary"
 REDIS_APPNAME="redis-primary"
 REDIS_IMAGE="redis:7-alpine"
+REDIS_DESC="Shared Redis — quota counters (§6.5), session cache, BullMQ bridge when >500 evt/s (ADR 0009)."
 
-# ---------- helpers ----------
-j() { python3 -c "import json,sys; print(json.dumps(sys.argv[1]))" "$1"; }
-jq_q() { python3 -c "import json,sys; d=json.load(sys.stdin); print(eval(sys.argv[1]))" "$1"; }
+log() { printf '\033[36m[provision]\033[0m %s\n' "$*" >&2; }
+ok()  { printf '\033[32m  ✓\033[0m %s\n' "$*" >&2; }
+die() { printf '\033[31m  ✗\033[0m %s\n' "$*" >&2; exit 1; }
 
 gen_password() {
-  # 32 urlsafe bytes; no punctuation that breaks shell env files.
-  python3 -c "import secrets; print(secrets.token_urlsafe(24))"
+  python3 -c 'import secrets; print(secrets.token_urlsafe(24))'
 }
 
-# Append/replace a KEY=VAL line in $ENV_LOCAL. Creates the file if missing.
 put_env() {
   local key="$1" val="$2"
   touch "$ENV_LOCAL"
-  # Remove any existing line for this key, then append fresh.
-  python3 - "$ENV_LOCAL" "$key" "$val" <<'PY'
-import sys, re
-path, key, val = sys.argv[1], sys.argv[2], sys.argv[3]
+  KEY="$key" VAL="$val" FILE="$ENV_LOCAL" python3 <<'PY'
+import os, re
+path = os.environ['FILE']
+key  = os.environ['KEY']
+val  = os.environ['VAL']
 try:
     lines = open(path).read().splitlines()
 except FileNotFoundError:
     lines = []
-kept = [ln for ln in lines if not re.match(rf'^\s*{re.escape(key)}\s*=', ln)]
+pat = re.compile(rf'^\s*{re.escape(key)}\s*=')
+kept = [ln for ln in lines if not pat.match(ln)]
 kept.append(f'{key}={val}')
 open(path, 'w').write('\n'.join(kept) + '\n')
 PY
 }
 
-# Read a KEY from $ENV_LOCAL if present.
 get_env() {
   local key="$1"
   [ -f "$ENV_LOCAL" ] || return 1
-  grep -E "^${key}=" "$ENV_LOCAL" | tail -n1 | cut -d= -f2- || return 1
+  local line
+  line="$(grep -E "^${key}=" "$ENV_LOCAL" | tail -n1 || true)"
+  [ -n "$line" ] || return 1
+  printf '%s\n' "${line#*=}"
 }
 
-# Update infra/dokploy/state.json with `key = value` at root.
 put_state() {
   local key="$1" val="$2"
-  python3 - "$STATE_FILE" "$key" "$val" <<'PY'
+  KEY="$key" VAL="$val" FILE="$STATE_FILE" python3 <<'PY'
 import json, os, sys
-path, key, val = sys.argv[1], sys.argv[2], sys.argv[3]
+path = os.environ['FILE']
+key  = os.environ['KEY']
+val  = os.environ['VAL']
 try:
     data = json.load(open(path)) if os.path.getsize(path) else {}
 except (FileNotFoundError, ValueError):
@@ -86,33 +86,41 @@ open(path, 'w').write(json.dumps(data, indent=2) + '\n')
 PY
 }
 
-log() { printf '\033[36m[provision]\033[0m %s\n' "$*" >&2; }
-ok()  { printf '\033[32m  ✓\033[0m %s\n' "$*" >&2; }
-warn(){ printf '\033[33m  !\033[0m %s\n' "$*" >&2; }
-die() { printf '\033[31m  ✗\033[0m %s\n' "$*" >&2; exit 1; }
+# JSON-encode an object from NAMED env vars (comma-separated). Supports only
+# string values, which is all the Dokploy create endpoints need.
+json_obj() {
+  VARS="$*" python3 <<'PY'
+import json, os
+names = [n for n in os.environ['VARS'].split(',') if n]
+body = {n: os.environ.get('F_' + n, '') for n in names}
+print(json.dumps(body))
+PY
+}
 
 # ---------- 1. project ----------
 log "1/4 project.all"
 PROJECTS_JSON="$("$DK" GET /api/project.all)"
-PROJECT_ID="$(printf '%s' "$PROJECTS_JSON" \
-  | python3 -c "import json,sys; d=json.load(sys.stdin); [print(p['projectId']) for p in d if p['name']=='$PROJECT_NAME']" \
-  | head -n1 || true)"
+PROJECT_ID="$(PROJECTS="$PROJECTS_JSON" NAME="$PROJECT_NAME" python3 -c '
+import json, os
+d = json.loads(os.environ["PROJECTS"])
+for p in d:
+    if p["name"] == os.environ["NAME"]:
+        print(p["projectId"]); break
+')"
 
 if [ -z "$PROJECT_ID" ]; then
   log "creating project '$PROJECT_NAME'"
-  CREATE_JSON="$("$DK" POST /api/project.create "$(python3 -c "
-import json
-print(json.dumps({
-    'name': '$PROJECT_NAME',
-    'description': 'SoloFrame Platform production — monorepo verticals (gtm, dwa, tenant-runtime, studio) + workers.'
-}))")")"
-  PROJECT_ID="$(printf '%s' "$CREATE_JSON" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
-# dokploy returns {'project': {...}, 'environment': {...}} OR just the project; handle both
-pid = d.get('projectId') or d.get('project',{}).get('projectId')
-print(pid or '')
-")"
+  export F_name="$PROJECT_NAME"
+  export F_description="$PROJECT_DESC"
+  BODY="$(json_obj name,description)"
+  unset F_name F_description
+  CREATE_JSON="$("$DK" POST /api/project.create "$BODY")"
+  PROJECT_ID="$(BODY="$CREATE_JSON" python3 -c '
+import json, os
+d = json.loads(os.environ["BODY"])
+pid = d.get("projectId") or d.get("project",{}).get("projectId")
+print(pid or "")
+')"
   [ -n "$PROJECT_ID" ] || die "project.create returned no projectId: $CREATE_JSON"
   ok "project created: $PROJECT_ID"
 else
@@ -123,51 +131,54 @@ put_state "projectId" "$PROJECT_ID"
 # ---------- 2. default environment ----------
 log "2/4 resolve default environmentId"
 PROJECTS_JSON="$("$DK" GET /api/project.all)"
-ENV_ID="$(printf '%s' "$PROJECTS_JSON" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
+ENV_ID="$(PROJECTS="$PROJECTS_JSON" PID="$PROJECT_ID" python3 -c '
+import json, os
+d = json.loads(os.environ["PROJECTS"])
+pid = os.environ["PID"]
 for p in d:
-    if p['projectId'] != '$PROJECT_ID': continue
-    for e in p.get('environments', []):
-        if e.get('isDefault'):
-            print(e['environmentId']); break
+    if p["projectId"] != pid: continue
+    for e in p.get("environments", []):
+        if e.get("isDefault"):
+            print(e["environmentId"]); break
     break
-")"
+')"
 [ -n "$ENV_ID" ] || die "no default environment found for project $PROJECT_ID"
 put_state "environmentId" "$ENV_ID"
 ok "environmentId: $ENV_ID"
 
 # ---------- 3. postgres-primary ----------
 log "3/4 postgres-primary"
-# Check if already exists by scanning project.
-PG_ID="$(printf '%s' "$PROJECTS_JSON" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
+PG_ID="$(PROJECTS="$PROJECTS_JSON" PID="$PROJECT_ID" EID="$ENV_ID" python3 -c '
+import json, os
+d = json.loads(os.environ["PROJECTS"])
 for p in d:
-    if p['projectId'] != '$PROJECT_ID': continue
-    for e in p.get('environments', []):
-        if e['environmentId'] != '$ENV_ID': continue
-        for pg in e.get('postgres', []):
-            print(pg['postgresId']); break
-")"
+    if p["projectId"] != os.environ["PID"]: continue
+    for e in p.get("environments", []):
+        if e["environmentId"] != os.environ["EID"]: continue
+        for pg in e.get("postgres", []):
+            print(pg["postgresId"]); break
+')"
 
 if [ -z "$PG_ID" ]; then
   PG_PW="$(get_env SOLOFAME_POSTGRES_PASSWORD || gen_password)"
   put_env SOLOFAME_POSTGRES_PASSWORD "$PG_PW"
   log "creating postgres-primary (image $POSTGRES_IMAGE)"
-  PG_RES="$("$DK" POST /api/postgres.create "$(python3 -c "
-import json
-print(json.dumps({
-    'name': '$POSTGRES_NAME',
-    'appName': '$POSTGRES_APPNAME',
-    'databaseName': '$POSTGRES_DB',
-    'databaseUser': '$POSTGRES_USER',
-    'databasePassword': '$PG_PW',
-    'dockerImage': '$POSTGRES_IMAGE',
-    'environmentId': '$ENV_ID',
-    'description': 'Shared Postgres — pgvector/pg16. RLS + tenant isolation. See ADR 0003.'
-}))")")"
-  PG_ID="$(printf '%s' "$PG_RES" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('postgresId') or d.get('id') or '')")"
+  export F_name="$POSTGRES_NAME"
+  export F_appName="$POSTGRES_APPNAME"
+  export F_databaseName="$POSTGRES_DB"
+  export F_databaseUser="$POSTGRES_USER"
+  export F_databasePassword="$PG_PW"
+  export F_dockerImage="$POSTGRES_IMAGE"
+  export F_environmentId="$ENV_ID"
+  export F_description="$POSTGRES_DESC"
+  BODY="$(json_obj name,appName,databaseName,databaseUser,databasePassword,dockerImage,environmentId,description)"
+  unset F_name F_appName F_databaseName F_databaseUser F_databasePassword F_dockerImage F_environmentId F_description
+  PG_RES="$("$DK" POST /api/postgres.create "$BODY")"
+  PG_ID="$(BODY="$PG_RES" python3 -c '
+import json, os
+d = json.loads(os.environ["BODY"])
+print(d.get("postgresId") or d.get("id") or "")
+')"
   [ -n "$PG_ID" ] || die "postgres.create returned no id: $PG_RES"
   ok "postgres created: $PG_ID"
 else
@@ -182,32 +193,35 @@ put_state "postgresUser" "$POSTGRES_USER"
 # ---------- 4. redis-primary ----------
 log "4/4 redis-primary"
 PROJECTS_JSON="$("$DK" GET /api/project.all)"
-REDIS_ID="$(printf '%s' "$PROJECTS_JSON" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
+REDIS_ID="$(PROJECTS="$PROJECTS_JSON" PID="$PROJECT_ID" EID="$ENV_ID" python3 -c '
+import json, os
+d = json.loads(os.environ["PROJECTS"])
 for p in d:
-    if p['projectId'] != '$PROJECT_ID': continue
-    for e in p.get('environments', []):
-        if e['environmentId'] != '$ENV_ID': continue
-        for r in e.get('redis', []):
-            print(r['redisId']); break
-")"
+    if p["projectId"] != os.environ["PID"]: continue
+    for e in p.get("environments", []):
+        if e["environmentId"] != os.environ["EID"]: continue
+        for r in e.get("redis", []):
+            print(r["redisId"]); break
+')"
 
 if [ -z "$REDIS_ID" ]; then
   REDIS_PW="$(get_env SOLOFAME_REDIS_PASSWORD || gen_password)"
   put_env SOLOFAME_REDIS_PASSWORD "$REDIS_PW"
   log "creating redis-primary (image $REDIS_IMAGE)"
-  R_RES="$("$DK" POST /api/redis.create "$(python3 -c "
-import json
-print(json.dumps({
-    'name': '$REDIS_NAME',
-    'appName': '$REDIS_APPNAME',
-    'databasePassword': '$REDIS_PW',
-    'dockerImage': '$REDIS_IMAGE',
-    'environmentId': '$ENV_ID',
-    'description': 'Shared Redis — quota counters (§6.5), session cache, event fanout bridge when >500 evt/s (ADR 0009).'
-}))")")"
-  REDIS_ID="$(printf '%s' "$R_RES" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('redisId') or d.get('id') or '')")"
+  export F_name="$REDIS_NAME"
+  export F_appName="$REDIS_APPNAME"
+  export F_databasePassword="$REDIS_PW"
+  export F_dockerImage="$REDIS_IMAGE"
+  export F_environmentId="$ENV_ID"
+  export F_description="$REDIS_DESC"
+  BODY="$(json_obj name,appName,databasePassword,dockerImage,environmentId,description)"
+  unset F_name F_appName F_databasePassword F_dockerImage F_environmentId F_description
+  R_RES="$("$DK" POST /api/redis.create "$BODY")"
+  REDIS_ID="$(BODY="$R_RES" python3 -c '
+import json, os
+d = json.loads(os.environ["BODY"])
+print(d.get("redisId") or d.get("id") or "")
+')"
   [ -n "$REDIS_ID" ] || die "redis.create returned no id: $R_RES"
   ok "redis created: $REDIS_ID"
 else
@@ -217,7 +231,42 @@ put_state "redisId" "$REDIS_ID"
 put_state "redisName" "$REDIS_NAME"
 put_state "redisImage" "$REDIS_IMAGE"
 
-# ---------- done ----------
+# ---------- 5. deploy idle services ----------
+# Dokploy create endpoints only record config; they don't start containers.
+# Deploy iff the current applicationStatus is 'idle' (fresh or manually stopped)
+# — avoid noisy redeploys of 'running' or 'done' services.
+deploy_if_idle() {
+  local kind="$1"       # postgres | redis
+  local id_field="$2"   # postgresId | redisId
+  local id_val="$3"
+  local status
+  status="$("$DK" GET "/api/${kind}.one?${id_field}=${id_val}" \
+    | BODY="$(cat)" python3 -c 'import json,os; d=json.loads(os.environ["BODY"]); print(d.get("applicationStatus",""))' 2>/dev/null \
+    || true)"
+  # The pipeline above eats the input. Redo without the pipe dance.
+  RESP="$("$DK" GET "/api/${kind}.one?${id_field}=${id_val}")"
+  status="$(BODY="$RESP" python3 -c 'import json,os; d=json.loads(os.environ["BODY"]); print(d.get("applicationStatus",""))')"
+  case "$status" in
+    idle)
+      log "deploying $kind (status=$status)"
+      export F_key_id="$id_val"
+      BODY="{\"$id_field\":\"$id_val\"}"
+      unset F_key_id
+      "$DK" POST "/api/${kind}.deploy" "$BODY" > /dev/null
+      ok "$kind deploy kicked off"
+      ;;
+    running|done)
+      ok "$kind already $status"
+      ;;
+    *)
+      ok "$kind status=$status (leaving alone)"
+      ;;
+  esac
+}
+log "5/5 deploy idle services"
+deploy_if_idle postgres postgresId "$PG_ID"
+deploy_if_idle redis redisId "$REDIS_ID"
+
 log "state file: $STATE_FILE"
 cat "$STATE_FILE"
 log "secrets written to $ENV_LOCAL (gitignored)"
