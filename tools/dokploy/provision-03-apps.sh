@@ -121,13 +121,16 @@ provision_app() {
   if [ -z "$app_id" ]; then
     log "  application.create"
     local body
-    body="$(NAME="$name" ENV_ID="$ENV_ID" python3 -c '
+    body="$(NAME="$name" ENV_ID="$ENV_ID" python3 <<'PY'
 import json, os
+name = os.environ["NAME"]
 print(json.dumps({
-  "name": os.environ["NAME"],
+  "name": name,
   "environmentId": os.environ["ENV_ID"],
-  "description": f"SoloFrame vertical app ({os.environ[\"NAME\"]}) — built from monorepo Dockerfile at repo root.",
-}))')"
+  "description": f"SoloFrame vertical app ({name}) — built from monorepo Dockerfile at repo root.",
+}))
+PY
+)"
     local res; res="$(call POST /api/application.create "$body")"
     app_id="$(BODY="$res" python3 -c '
 import json, os

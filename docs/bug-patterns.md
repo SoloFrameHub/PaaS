@@ -425,3 +425,317 @@ occurrences of `async_hooks` imports in `apps/` or `packages/`.
 `perf_hooks`, etc.) should declare `import 'server-only'` as its first
 line. That's a hard failure at build if a client component pulls it
 in, which beats a late runtime crash.
+
+---
+
+### B-015 · Edge subpath re-exporting a Node-only module pulls Node builtins into the Edge bundle
+
+**What:** a module advertised as the Edge-safe entry point
+(`@platform/<pkg>/middleware`) runtime-re-exports a symbol
+(`export { X } from './y.js'`) from a sibling module that itself
+imports Node-only builtins (`pg`, `crypto`, `fs`, etc.). The
+re-exported symbol is never called from Edge code, but the import
+graph still reaches the builtin. Turbopack bundles it; Next.js ships
+the image; the Edge runtime crashes on first request with:
+
+`Error: The edge runtime does not support Node.js 'crypto' module.`
+
+**Why it slips through:**
+- TypeScript strict typecheck: passes (legal).
+- `next build` (Turbopack): passes — no runtime info at build time.
+- Unit tests: pass — no Edge runtime in Node.
+- Only surfaces when the Docker image runs and the first HTTP
+  request enters the Edge chunk.
+
+**Seen in:** `packages/tenancy/src/middleware.ts` had
+`export { resolveTenant } from './resolveTenant.js'` left over from
+the stub era. Once [98cbe3d](commit 98cbe3d) made `resolveTenant`
+do real DB work via `withSystemAdmin` (→
+`@platform/tenancy/internal` → `pg` → `node:crypto`), the Edge
+bundle for `apps/gtm/middleware.ts` dragged `crypto` along. The
+runtime `export { ... } from` line was the culprit — type-only
+re-exports (`export type { ... }`) are erased at compile time and
+stay safe. Fix in [97c6b58](commit 97c6b58): strip the runtime
+re-export; keep the type-only one. Apps needing the async resolver
+already import it from `@platform/tenancy` root, which is
+Node-runtime by convention.
+
+**Grep signature (find other Edge subpaths doing this):**
+```
+# Every Edge subpath file in workspace packages:
+ls packages/*/src/middleware.ts adapters/*/src/middleware.ts 2>/dev/null
+# For each, any runtime re-export (NOT `export type`):
+grep -nE "^export \{" packages/*/src/middleware.ts adapters/*/src/middleware.ts 2>/dev/null
+# For each re-exporting module, see what IT imports — the chain reaches
+# back to Node-only builtins in nearly all B-015 cases.
+```
+
+**Compiled-output check (the truth at runtime):**
+```
+grep -E "^(import|export|require)" packages/*/dist/middleware.js
+```
+If the output contains anything other than plain `export function`
+lines, audit each import target for transitive Node dependencies.
+
+**Cross-check:** swept. As of 97c6b58,
+`packages/tenancy/dist/middleware.js` has zero runtime imports.
+No other `packages/*/src/middleware.ts` exists.
+
+**Going forward:**
+- Edge subpath convention: only export pure functions + types.
+  Never `export { X } from '...'` at runtime from an Edge subpath,
+  unless the target module is also provably Edge-safe (and that's
+  fragile — a future commit can regress it invisibly).
+- Apply `import 'server-only'` to the Node-runtime sibling modules
+  (B-014 discipline). That makes Edge imports of them a hard build
+  failure instead of a runtime crash.
+- The `docker run` boot test we now do for every app after a build
+  (curl / → HTTP 200) catches this class. Add it to CI when we
+  land GH Actions for Docker builds.
+
+---
+
+## Workspace hygiene
+
+### B-016 · `drizzle-orm` version skew across workspace packages
+
+**What:** each workspace `package.json` pinned its own
+`drizzle-orm` range. `apps/dwa` had `^0.45.2`, `apps/gtm` had
+`^0.38.0`, `@platform/tenancy` / `@platform/testing` /
+`@platform/identity` had `^0.36.4`. pnpm resolved these to three
+different versions in `node_modules/.pnpm/`. Types from these
+copies were structurally different (e.g., `ColumnDataType` added
+`'dateDuration'` between minors), so when a workspace package
+exposed a Drizzle `PgDatabase` / `PgTable` and an app consumed it,
+typecheck failed at the boundary with:
+
+`Type 'PgTableWithColumns<...@0.45.2...>' is not assignable to type
+'PgTableWithColumns<...@0.36.4...>'.`
+
+**Why it wasn't caught earlier:** pre-`@platform/identity`, no
+workspace package exposed Drizzle types that an app consumed. Each
+package was self-contained. The factory in `@platform/identity`
+(createLuciaInstance) was the first to take an app's db / tables
+as parameters.
+
+**Seen in:** `apps/dwa` + `apps/gtm` + `@platform/identity`
+boundary, surfaced in [d055698](commit d055698). Fix in that commit:
+unified every workspace's `drizzle-orm` to `^0.45.2`. Typecheck
+went back to 26/26; the `pnpm-lock.yaml` dropped 126 net lines.
+
+**Grep signature:**
+```
+grep -E '"drizzle-orm":' apps/*/package.json packages/*/package.json adapters/*/package.json 2>/dev/null | sort -u
+```
+All hits should print the same version range.
+
+**Cross-check:** all workspace packages on `^0.45.2` as of d055698.
+
+**Going forward:**
+- Any dep that flows across a workspace-package boundary (not just
+  Drizzle — applies to `zod`, `typescript` peer types, `@types/*`,
+  Next.js) must be pinned to a single version across the workspace.
+- Consider an `.npmrc` `strict-peer-dependencies=true` setting once
+  the tree stabilises — pnpm will refuse to install skewed majors.
+- A root `pnpm.overrides` in `package.json` is the hammer if we
+  ever need to force a pin faster than editing each leaf
+  `package.json`.
+
+---
+
+## Docker / deployment
+
+### B-017 · Monorepo Docker: copying `node_modules` across stages drops pnpm workspace symlinks
+
+**What:** pnpm creates per-workspace `node_modules` directories with
+symlinks into `/pnpm/store` (via `.pnpm/`). In a multi-stage
+Dockerfile, copying only the top-level `/repo/node_modules` from an
+install stage to a builder stage leaves each workspace with just a
+`package.json` — the `node_modules/.bin/next` (and every other
+workspace-installed binary) is absent. The next `pnpm build` fails:
+
+`sh: next: not found`
+`WARN Local package.json exists, but node_modules missing, did you
+mean to install?`
+
+**Seen in:** first dwa Docker build attempt. Fix in
+[97c6b58](commit 97c6b58): collapse the `deps` and `builder` stages
+into one, so `pnpm install` and the `COPY --from=pruner out/full`
+both land in the same image layer. A `--mount=type=cache id=pnpm`
+BuildKit mount keeps re-runs fast (the pnpm store survives across
+builds).
+
+**Grep signature (in existing Dockerfiles):**
+```
+grep -nE "^COPY --from=[^ ]+ [^ ]+/node_modules" Dockerfile*
+```
+Any hit crossing a stage boundary is a B-017 candidate in a
+monorepo.
+
+**Cross-check:** our single repo-root Dockerfile now does the
+combined install+build pattern.
+
+**Going forward:** keep install + build in one stage for pnpm
+monorepos. The pnpm store cache-mount is the real caching win — not
+splitting stages.
+
+---
+
+### B-018 · `turbo prune --docker` omits root-level config files referenced by workspace packages
+
+**What:** `turbo prune <app> --docker` copies `package.json` +
+lockfile + the selected workspace sources into `/repo/out/json` and
+`/repo/out/full`. It does NOT copy arbitrary files at the
+monorepo root. Workspace packages whose `tsconfig.json` extends
+`../../tsconfig.base.json` (or any other shared root file) fail to
+build inside a Docker stage:
+
+`error TS5083: Cannot read file '/repo/tsconfig.base.json'.`
+
+**Seen in:** second dwa Docker build attempt. Fix in
+[97c6b58](commit 97c6b58): explicit `COPY tsconfig.base.json ./`
+after the full-source copy.
+
+**Grep signature (what root files do packages reference?):**
+```
+grep -hE '"extends"\s*:\s*"\.\.' packages/*/tsconfig.json adapters/*/tsconfig.json | sort -u
+```
+Any path climbing to the monorepo root is a file the Dockerfile
+needs to copy explicitly.
+
+**Cross-check:** `tsconfig.base.json` is the only root-extended
+config today. If we add more (shared `eslint.config.js`,
+`.browserslistrc`, shared `vitest.config.ts`), they need to land
+in the same Dockerfile `COPY` block.
+
+---
+
+### B-019 · `pnpm --filter=<app> build` skips workspace-dep builds; use `turbo run build --filter`
+
+**What:** pnpm's `--filter=<name>` runs the named package's script
+directly and does not traverse `dependsOn`-style task graphs. For
+a Next.js app that imports compiled output from a workspace
+package (`@platform/tenancy/dist/...`), this means:
+
+`Module not found: Can't resolve '@platform/tenancy/middleware'`
+
+…because the workspace package's `dist/` was never emitted.
+
+`turbo run build --filter=<app>` respects `turbo.json`'s
+`dependsOn: ["^build"]` and builds workspace dependencies first.
+
+**Seen in:** third dwa Docker build attempt. Fix in
+[97c6b58](commit 97c6b58): replace
+`RUN pnpm --filter=${APP} build` with
+`RUN turbo run build --filter=${APP}`.
+
+**Grep signature (for other build scripts that could hit this):**
+```
+grep -rnE "pnpm (run )?--filter[= ][^ ]+ build" . --include="*.sh" --include="*.yml" --include="*.yaml" --include=Dockerfile 2>/dev/null | grep -v node_modules
+```
+
+**Cross-check:** only the Dockerfile used this pattern. CI + local
+use root-level `turbo run build`.
+
+**Going forward:** any fresh automation that builds a subset of
+the workspace goes through turbo. pnpm's filter is fine for
+non-build tasks (test, lint) that don't depend on workspace
+artifacts.
+
+---
+
+## Runtime-config landmines
+
+### B-020 · Non-null assertion (`!`) on `process.env.X` at module init
+
+**What:** `const TOKEN = process.env.POLAR_ACCESS_TOKEN!;` at a
+route module's top level. TypeScript's `!` assertion tells the
+compiler "this isn't undefined" — at runtime it absolutely can be.
+Because the assertion happens at **module init** (not request
+time), the first import of the module crashes the route — not with
+a clean 500, but with an uncaught `TypeError: Cannot read
+properties of undefined` wired through whatever downstream code
+consumed the value. Without production logs + full stack traces,
+this looks like "the whole API is down."
+
+**Symptom:** route 500s with no useful user-facing message the
+first time it's hit after deploy to a fresh environment that
+hasn't set the env var.
+
+**Seen in:** `apps/gtm/app/api/checkout/route.ts:4-5` —
+`POLAR_ACCESS_TOKEN!` and `POLAR_SUCCESS_URL!`. Surfaced by the
+deployment-env audit.
+
+**Grep signature:**
+```
+grep -rnE "process\.env\.[A-Z_][A-Z0-9_]*\s*!" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/
+```
+
+**Cross-check pending:** full sweep of the catch list is follow-up
+work. This entry lands so future additions go through a proper
+guard, not the bang.
+
+**Going forward:**
+- Replace with an explicit guard that throws a clear error:
+  ```ts
+  const TOKEN = process.env.POLAR_ACCESS_TOKEN;
+  if (!TOKEN) throw new Error('POLAR_ACCESS_TOKEN is required');
+  ```
+- Or defer to request time: look up inside the handler, return a
+  tagged 503 if missing, log once per process.
+- Consider a typed env-config module (Zod + `process.env` parse at
+  boot) — single place where every var is validated, single place
+  that throws on startup with a readable message.
+
+---
+
+### B-021 · `http://localhost:<port>` fallback for URLs consumed in production
+
+**What:** a service-client module reads an env var and falls back
+to a localhost URL:
+
+```ts
+const REDIS_URL = process.env.REDIS_URL ?? 'redis://localhost:6379';
+const MAIA_URL  = process.env.MAIA_URL  ?? 'http://localhost:8001';
+```
+
+In production (inside a Docker Swarm service), `localhost` means
+the container itself, so every call fails with
+`ECONNREFUSED`/`ENOTFOUND`. Logs fill with connection errors that
+look like genuine downstream outages — obscuring that the actual
+bug is a missing env var.
+
+**Symptom:** spammy connection-error logs, rate limiter / AI /
+cache behavior silently degrades. The app may still answer HTTP
+200 because the callers tolerate the failure.
+
+**Seen in:**
+- `apps/gtm/lib/redis.ts:4` — defaults to `redis://localhost:6379`.
+- `apps/dwa/lib/redis.ts:4` — same.
+- `apps/dwa/lib/ai/maia-client.ts:26` — defaults to
+  `http://localhost:8001`.
+- `apps/dwa/lib/flarum.ts:193-196` — defaults to
+  `http://localhost:8080`.
+
+Both `docker run` smoke tests from commit 97c6b58 caught these as
+hundreds of Redis connection-error log lines — harmless in that
+test because it's a bare `docker run` with no sidecars, but the
+signal would be indistinguishable from a real Redis outage in
+prod.
+
+**Grep signature:**
+```
+grep -rnE "(process\.env\.[A-Z_][A-Z0-9_]*\s*\?\?|process\.env\.[A-Z_][A-Z0-9_]*\s*\|\|)\s*['\"]https?://localhost|redis://localhost" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/
+```
+
+**Cross-check pending:** list above is the known hits from the
+deployment-env audit. Clean sweep + fix is follow-up work.
+
+**Going forward:**
+- In production (`NODE_ENV==='production'`), treat a missing
+  required URL as startup-fatal — don't silently substitute
+  localhost.
+- For dev convenience, use a clearly-dev-only default
+  (`'redis://localhost:6379'` *only* if `NODE_ENV !== 'production'`;
+  otherwise throw or warn loudly once).
+- Tie into the same typed env-config module suggested in B-020.
