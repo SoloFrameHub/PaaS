@@ -43,6 +43,17 @@ export async function proxy(request: NextRequest) {
 
     const requestId = request.headers.get('x-request-id') || crypto.randomUUID();
 
+    // Marketing lives at digitalwellness.academy (tidy-next, already deployed).
+    // Send unauthenticated visitors there; `dwa.soloframehub.com` is the
+    // app, not a marketing site. /signin, /signup etc. stay reachable — only
+    // the bare `/` redirects out.
+    if (pathname === '/' && request.method === 'GET') {
+        const hasSession = request.cookies.has('session');
+        if (!hasSession) {
+            return NextResponse.redirect('https://digitalwellness.academy/', 307);
+        }
+    }
+
     // 1. CSRF Protection for Mutations (POST, PUT, DELETE, PATCH)
     const mutations = ['POST', 'PUT', 'DELETE', 'PATCH'];
     if (mutations.includes(request.method) && pathname.startsWith('/api/')) {

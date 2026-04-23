@@ -70,11 +70,11 @@ export function middleware(request: NextRequest) {
       );
     }
 
-    // Serve marketing homepage for unauthenticated visitors
-    return attachTenantSlug(
-      request,
-      NextResponse.rewrite(new URL("/home.html", request.url)),
-    );
+    // Marketing lives at soloframehub.com (tidy-next, already deployed).
+    // Send unauthenticated visitors there; `gtm.soloframehub.com` is the
+    // app, not a marketing site. Signin/signup pages under /signin, /signup
+    // still work — only the bare `/` redirects out.
+    return NextResponse.redirect("https://soloframehub.com/", 307);
   }
 
   // 301 redirect: old academy URL → new OS URL
