@@ -5,7 +5,8 @@
 // `resolveTenantBySlug`, and returns a `TenantContext` ready to pass to
 // `withTenant(ctx, tx => …)`.
 
-import { TenancyError } from './errors.js';
+import { NotATenantMemberError, TenancyError } from './errors.js';
+import { isTenantMember } from './isTenantMember.js';
 import {
   resolveTenantByHost,
   resolveTenantBySlug,
@@ -21,6 +22,14 @@ export interface RequireTenantContextOptions {
   role?: 'system' | 'tenant';
   /** Forwarded to the resolver — bypass the in-process cache. */
   bypassCache?: boolean;
+  /**
+   * When true (default), `userId` — if present — must be in
+   * `tenant_member` for the resolved tenant. Non-member access throws
+   * `NotATenantMemberError`. Pass `false` for public routes that take a
+   * tenant slug but don't yet have an authenticated user (signup, checkout
+   * pre-auth), but keep this `true` for anything behind auth.
+   */
+  requireMembership?: boolean;
 }
 
 function getHeader(
@@ -78,6 +87,17 @@ export async function maybeTenantContext(
   }
 
   if (!tenant) return null;
+
+  // Membership gate. Defaults to on; can be opted out for pre-auth routes
+  // (signup, public tenant checkout preview) via requireMembership:false.
+  const gate = options.requireMembership ?? true;
+  if (gate && options.userId) {
+    const member = await isTenantMember(tenant.id, options.userId);
+    if (!member) {
+      throw new NotATenantMemberError(tenant.id, options.userId);
+    }
+  }
+
   return {
     tenantId: tenant.id,
     userId: options.userId ?? null,

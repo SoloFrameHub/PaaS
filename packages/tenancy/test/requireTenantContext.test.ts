@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   TenancyError,
+  isTenantMember,
   maybeTenantContext,
   requireTenantContext,
   resolveTenantBySlug,
@@ -33,5 +34,15 @@ describe('requireTenantContext — without a live DB', () => {
 describe('__resetTenantResolverCache', () => {
   it('is a no-op when the cache is empty', () => {
     expect(() => __resetTenantResolverCache()).not.toThrow();
+  });
+});
+
+describe('isTenantMember — UUID validation without DB', () => {
+  it('returns false fast for non-UUID tenantId', async () => {
+    await expect(isTenantMember('not-a-uuid', '00000000-0000-0000-0000-000000000001')).resolves.toBe(false);
+  });
+
+  it('returns false fast for non-UUID userId', async () => {
+    await expect(isTenantMember('00000000-0000-0000-0000-000000000001', 'not-a-uuid')).resolves.toBe(false);
   });
 });
