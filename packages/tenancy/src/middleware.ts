@@ -16,7 +16,10 @@
 
 import type { TenantContext } from './withTenant.js';
 
-export { resolveTenant } from './resolveTenant.js';
+// IMPORTANT — this subpath is the Edge-runtime entry point.
+// Do NOT runtime-re-export from ./resolveTenant.js: that module imports from
+// ./internal/db.js → pg → Node `crypto`, which crashes in Edge. Type-only
+// re-exports are erased at compile time, so they're safe.
 export type { ResolvedTenant, TenantResolveRequest } from './resolveTenant.js';
 
 export interface ResolveTenantSlugOptions {

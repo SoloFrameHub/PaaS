@@ -40,23 +40,34 @@ WORKDIR /repo
 COPY . .
 RUN turbo prune ${APP} --docker
 
-# ─── Stage 2: install dependencies (cache-friendly) ────────────────────
-FROM base AS deps
+# ─── Stage 2: install + build ──────────────────────────────────────────
+# Install against the pruned manifests first (cache layer when only source
+# changes), then drop full source on top and build. We DON'T split "deps"
+# and "builder" into two stages because pnpm's per-workspace node_modules
+# are symlinks into /pnpm/store — copying only the top-level node_modules
+# across a stage boundary loses those symlinks and `next` ends up off PATH
+# in the app's .bin. Keeping install + build in one stage preserves the
+# workspace layout; the pnpm store cache-mount gives us the re-run win.
+FROM base AS builder
+ARG APP
 WORKDIR /repo
 COPY --from=pruner /repo/out/json/ ./
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
     pnpm install --frozen-lockfile
-
-# ─── Stage 3: build ────────────────────────────────────────────────────
-FROM base AS builder
-ARG APP
-WORKDIR /repo
-COPY --from=deps /repo/node_modules ./node_modules
 COPY --from=pruner /repo/out/full/ ./
+# `turbo prune --docker` does NOT copy arbitrary root files — only
+# workspace manifests and source. Packages extend `tsconfig.base.json`
+# from the root, so we copy it explicitly. Add other root files here
+# if new packages start referencing them (e.g., a shared eslint
+# config, .browserslistrc, etc.).
+COPY tsconfig.base.json ./
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
-# Build via pnpm to ensure each workspace package's prepare/build hooks run.
-RUN pnpm --filter=${APP} build
+# `turbo run build --filter=<APP>` respects `dependsOn: ["^build"]` in
+# turbo.json, so @platform/tenancy / @platform/identity / etc. emit
+# their dist/ before the app's next build tries to resolve them.
+# (`pnpm --filter=<APP> build` would skip workspace-dep builds entirely.)
+RUN turbo run build --filter=${APP}
 
 # ─── Stage 4: runtime ──────────────────────────────────────────────────
 # Next.js standalone output ships its own minimal runtime tree. We copy it
