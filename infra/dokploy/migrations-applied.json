@@ -1,0 +1,61 @@
+{
+  "$schema": "record of migrations applied to the dokploy2 solofame-prod postgres-primary database",
+  "target": {
+    "dokployUrl": "https://dokploy2.startupapps.cloud",
+    "projectId": "4D6k8WkSqfTojDjCE5gda",
+    "environmentId": "zQWrRHd04VFAN01Jx2oNE",
+    "postgresId": "7WxLR0C38J18q1RqAeU5s",
+    "databaseName": "solofame",
+    "databaseUser": "app_user"
+  },
+  "applied": [
+    {
+      "file": "infra/migrations/0001_tenancy.sql",
+      "sha256": "6596e76af38270d52e46406a6bf1b82ddebd89d5f06d1d44fa2fdcb971454ef1",
+      "appliedAt": "2026-04-23T04:13:00Z",
+      "method": "psql over temporary externalPort=54329; app_user superuser"
+    },
+    {
+      "file": "infra/migrations/0002_rls_helpers.sql",
+      "sha256": "f9cd128a40dfaf3eb202e392a45ce09fa6ee9e4d6914e14f734aab5a81b4feb8",
+      "appliedAt": "2026-04-23T04:20:00Z",
+      "method": "psql over temporary externalPort=54329; app_user superuser",
+      "notes": "first apply of 0002 failed with syntax error (CREATE POLICY clause order: TO before FOR). Fix committed in this change — FOR SELECT now precedes TO platform_tenant as Postgres requires. Re-applied cleanly on the same session."
+    }
+  ],
+  "verification": {
+    "extensions": ["pgcrypto 1.3", "plpgsql 1.0", "vector 0.8.2"],
+    "tables": [
+      "billing_meter_daily",
+      "billing_meter_event",
+      "event_dispatch_log",
+      "event_outbox",
+      "system_audit",
+      "tenant",
+      "tenant_audit",
+      "tenant_member",
+      "tenant_quota_counter"
+    ],
+    "rls": "ENABLE + FORCE on all 9 tables",
+    "policies": 16,
+    "roles": {
+      "platform_system": "NOLOGIN, no BYPASSRLS; system_bypass policies target this role",
+      "platform_tenant": "NOLOGIN, no BYPASSRLS; tenant_isolation policies target PUBLIC but require app.tenant_id GUC",
+      "app_user": "login role, superuser w/ BYPASSRLS; member of both platform_* roles"
+    },
+    "trigger": "event_outbox_notify -> pg_notify('event_outbox', NEW.id)",
+    "tenantIsolationSmoke": {
+      "method": "two tenants seeded in a BEGIN...ROLLBACK txn; SET LOCAL ROLE platform_tenant + SET LOCAL app.tenant_id",
+      "tenantA_visible_members": 2,
+      "tenantB_visible_members": 1,
+      "crossTenantInsertBlocked": "42501 row-level security policy violation on tenant_member WITH CHECK",
+      "platformSystemSawAll": 3,
+      "rolledBack": true
+    }
+  },
+  "portFlow": {
+    "opened": "POST /api/postgres.saveExternalPort {externalPort: 54329}",
+    "firstAttemptWiped": "first 0001 apply completed, but Dokploy recreated the container ~10 min later with an empty data volume; data did not persist through that one recreate. Re-applied after container stabilized.",
+    "closed": "POST /api/postgres.saveExternalPort {externalPort: null}; TCP 54329 confirmed unreachable"
+  }
+}

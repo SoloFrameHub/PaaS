@@ -68,8 +68,8 @@ ALTER TABLE tenant FORCE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS tenant_self_read ON tenant;
 CREATE POLICY tenant_self_read ON tenant
-  TO platform_tenant
   FOR SELECT
+  TO platform_tenant
   USING (id = current_setting('app.tenant_id', true)::uuid);
 
 DROP POLICY IF EXISTS tenant_system_all ON tenant;
