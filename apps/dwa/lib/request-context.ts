@@ -5,7 +5,9 @@
  * Enables request ID tracking for distributed tracing and log correlation.
  */
 
+import 'server-only';
 import { AsyncLocalStorage } from 'async_hooks';
+import { setLoggerContextProvider } from './logger';
 
 export interface RequestContext {
   requestId: string;
@@ -16,6 +18,10 @@ export interface RequestContext {
 }
 
 export const requestContext = new AsyncLocalStorage<RequestContext>();
+
+// Wire the server-only request context into the logger so log() entries
+// get enriched with requestId/userId/path inside withRequestContext() scopes.
+setLoggerContextProvider(() => requestContext.getStore());
 
 /**
  * Get current request context (if available)

@@ -34,7 +34,8 @@ function addSecurityHeaders(response: NextResponse): NextResponse {
 
 export async function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
-    const sessionCookie = request.cookies.get('session')?.value;
+
+    const requestId = request.headers.get('x-request-id') || crypto.randomUUID();
 
     // 1. CSRF Protection for Mutations (POST, PUT, DELETE, PATCH)
     const mutations = ['POST', 'PUT', 'DELETE', 'PATCH'];
@@ -55,21 +56,28 @@ export async function proxy(request: NextRequest) {
         if (process.env.NODE_ENV === 'production' && !isSameOrigin) {
             return new NextResponse(
                 JSON.stringify({ error: 'CSRF Protection: Invalid origin' }),
-                { status: 403, headers: { 'Content-Type': 'application/json' } }
+                {
+                    status: 403,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-request-id': requestId,
+                    },
+                },
             );
         }
     }
 
     // 2. Auth redirects — only for routes that don't handle their own auth.
     //    Pages like /academy, /coach, /community already call getAuthContext()
-    //    and redirect themselves, so the middleware should NOT duplicate that.
-    //
-    //    Finding 21: Removed middlewareProtected array — referenced non-existent routes.
-    //    Actual onboarding steps: /onboarding/goals, /assessment, /welcome, /safety,
-    //    /about-you, /symptoms, /your-experience, /in-your-words.
-    //    All handle their own auth via getAuthContext(), so middleware protection is redundant.
+    //    and redirect themselves, so the proxy should NOT duplicate that.
 
-    return addSecurityHeaders(NextResponse.next());
+    // Propagate x-request-id to downstream handlers and client for log correlation.
+    // Must pass headers via `request` option or downstream route handlers won't see them.
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set('x-request-id', requestId);
+    const response = NextResponse.next({ request: { headers: requestHeaders } });
+    response.headers.set('x-request-id', requestId);
+    return addSecurityHeaders(response);
 }
 
 export const config = {

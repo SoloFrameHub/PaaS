@@ -5,12 +5,27 @@
  * Finding 11: Includes request ID from AsyncLocalStorage for log correlation.
  */
 
-import { getRequestContext } from './request-context';
-
 type LogLevel = 'info' | 'warn' | 'error' | 'debug';
 
 interface LogContext {
     [key: string]: any;
+}
+
+interface LoggerRequestContext {
+    requestId?: string;
+    userId?: string;
+    path?: string;
+}
+
+type ContextProvider = () => LoggerRequestContext | undefined;
+
+// Server-only code (lib/request-context.ts) registers a provider at import time.
+// Client bundles never pull in that module, so the provider stays undefined and
+// log() simply skips context enrichment — keeps async_hooks out of the browser.
+let contextProvider: ContextProvider | undefined;
+
+export function setLoggerContextProvider(fn: ContextProvider): void {
+    contextProvider = fn;
 }
 
 class Logger {
@@ -47,8 +62,9 @@ class Logger {
         const severity = severityMap[level];
         const timestamp = new Date().toISOString();
 
-        // Inject request context for distributed tracing (Finding 11)
-        const requestCtx = getRequestContext();
+        // Inject request context for distributed tracing (Finding 11).
+        // Provider is registered server-side only; undefined on the client.
+        const requestCtx = contextProvider?.();
         const enrichedContext = {
             ...(requestCtx ? {
                 requestId: requestCtx.requestId,

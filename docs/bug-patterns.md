@@ -257,3 +257,163 @@ scaffolding) and then progressive extraction per vertical. The
 `@platform/eslint-plugin`'s `no-direct-db-access` rule already exists
 (`packages/eslint-plugin`); turn it on for `apps/*` once a critical
 mass of call sites have been migrated.
+
+---
+
+## Framework migrations / runtime boundaries
+
+### B-010 · Next.js 16 rename: `middleware.ts` and `proxy.ts` both present
+
+**What:** Next.js 16 renamed the file convention from `middleware.ts`
+to `proxy.ts` (with exported function renamed from `middleware` to
+`proxy`). If both files exist at the app root the build hard-errors:
+`Error: Both middleware file "./middleware.ts" and proxy file
+"./proxy.ts" are detected. Please use "./proxy.ts" only.`
+
+**Symptom:** `next build` exits 1 before compile starts.
+
+**Seen in:** `apps/dwa` — both files existed post-lift. `middleware.ts`
+had older request-ID tracing logic; `proxy.ts` had newer security
+headers + CSRF. Merged request-ID logic into `proxy.ts` and deleted
+`middleware.ts`. Fix in this commit.
+
+**Grep signature:**
+```
+for d in apps/*/; do [ -f "$d/middleware.ts" ] && [ -f "$d/proxy.ts" ] && echo "collision: $d"; done
+```
+
+**Cross-check:** swept `apps/`. Only dwa had the collision. `apps/gtm`
+still uses `middleware.ts` and gets the deprecation warning but
+builds; migrate later when convenient.
+
+---
+
+### B-011 · Node `crypto` import inside Edge Runtime middleware/proxy
+
+**What:** `import { randomUUID } from 'crypto';` at the top of an Edge
+middleware. `crypto` is the Node builtin; it's not available in Edge
+Runtime where middleware/proxy runs. In practice this would have
+crashed at the first invocation. Replace with the global `crypto`
+Web Crypto API — `crypto.randomUUID()` is available without import.
+
+**Symptom:** depends on how Next.js bundles middleware. In older
+versions this shipped but threw at runtime; newer Turbopack may flag
+it at build as "module not found" in the Edge graph.
+
+**Seen in:** `apps/dwa/middleware.ts` (now deleted; logic moved to
+`proxy.ts` using the global `crypto.randomUUID()`).
+
+**Grep signature:**
+```
+grep -rnE "^import .*\b(randomUUID|randomBytes|createHash)\b.* from ['\"]crypto['\"]" apps/*/middleware.ts apps/*/proxy.ts
+```
+
+**Cross-check:** no other occurrences across `apps/*/middleware.ts`
+and `apps/*/proxy.ts`.
+
+---
+
+### B-012 · Request header mutation without `NextResponse.next({ request: { headers } })`
+
+**What:** middleware/proxy does `const requestHeaders = new
+Headers(request.headers); requestHeaders.set('x-request-id', id);` and
+then returns `NextResponse.next()` — without passing the modified
+headers. Downstream route handlers and server components see the
+**original** request headers, so the mutation is a silent no-op.
+
+**Symptom:** no error; the intended header never reaches downstream
+code. Only visible if you verify end-to-end that the header shows up
+in an API route.
+
+**Seen in:** `apps/dwa/middleware.ts` (now deleted). Fix: when
+propagating request headers, use
+`NextResponse.next({ request: { headers: requestHeaders } })`.
+
+**Grep signature:**
+```
+grep -rnE "NextResponse\.next\(\)" apps/*/middleware.ts apps/*/proxy.ts
+```
+(then manually inspect each hit for adjacent `requestHeaders.set(...)`
+calls that were supposed to be propagated)
+
+**Cross-check:** only the deleted `apps/dwa/middleware.ts` had this
+shape. `apps/dwa/proxy.ts` now uses the correct form.
+
+---
+
+### B-013 · Polar SDK `Order.amount` does not exist — use `totalAmount`
+
+**What:** Polar's `@polar-sh/sdk` `Order` model has `subtotalAmount`,
+`discountAmount`, `netAmount`, `taxAmount`, `totalAmount`,
+`appliedBalanceAmount`, `dueAmount`, `refundedAmount`,
+`refundedTaxAmount`, `platformFeeAmount` — **but not** `amount`.
+Referencing `order.amount` yields `undefined`; `(undefined ?? 0) / 100
+= 0`, so GA4 purchase tracking sent `value: 0` for every order.
+
+**Symptom:** `tsc --noEmit` under `moduleResolution: "bundler"` (which
+honors the Polar SDK's `exports` map) flags this as `TS2339` — but
+`moduleResolution: "node"` picks up a looser type declaration that
+lets it slide. Next.js 16 auto-rewrites `tsconfig.json` to `bundler`
+on first build, which is how this finally surfaced.
+
+**Seen in:** `apps/gtm/app/api/webhook/polar/route.ts:80` — the GA4
+purchase tracking in the Polar `onOrderPaid` webhook. Fix: use
+`order.totalAmount` (cents, after discounts and taxes — matches the
+original `/100` intent).
+
+**Grep signature:**
+```
+grep -rnE '\b(order|payload\.data)\.amount\b' apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/
+```
+
+**Cross-check:** only the one GTM webhook site. Clean.
+
+**Going forward:** keep `moduleResolution: "bundler"` in all app
+`tsconfig.json` — it matches how Next.js and Turbopack resolve at
+runtime and catches `exports`-map mismatches. The current per-app
+tsconfigs all need to be `bundler`; `packages/*` tsconfigs can stay
+on `node` since they're consumed by bundlers downstream.
+
+---
+
+### B-014 · Node `async_hooks` pulled into client bundle via a shared logger
+
+**What:** a logger module (`lib/logger.ts`) imported a request-context
+module (`lib/request-context.ts`) that used `AsyncLocalStorage` from
+Node's `async_hooks`. Any client component that used the logger (e.g.,
+`components/error-boundary.tsx`, a `'use client'` file) pulled the
+entire transitive import graph into the client bundle, where
+`async_hooks` does not exist.
+
+**Symptom:** `Error: Module not found: Can't resolve 'async_hooks'` at
+build. Turbopack prints the import trace showing
+`Client Component SSR → logger → request-context → async_hooks`.
+
+**Seen in:** `apps/dwa/lib/logger.ts` (direct import of
+`request-context`) transitively imported by
+`apps/dwa/components/error-boundary.tsx`.
+
+**Fix (this commit):** invert the dependency. Logger exposes
+`setLoggerContextProvider(fn)` and calls `fn?.()` when enriching logs.
+`request-context.ts` is marked `import 'server-only'` and registers
+the provider at module import time. Client bundles never import
+`request-context`, so `async_hooks` stays out and the logger degrades
+to no context enrichment on the browser — consistent with what the
+old code did anyway (client calls had no AsyncLocalStorage scope).
+
+**Grep signature (for other occurrences of this class):**
+```
+grep -rlE "^import .* from ['\"]async_hooks['\"]|^import .* from ['\"]node:async_hooks['\"]" apps/ packages/ adapters/ 2>/dev/null | grep -v /node_modules/ | grep -v /.next/
+```
+Each hit must be a module that is either (a) marked `server-only`, or
+(b) never transitively imported from a `'use client'` file.
+
+**Cross-check:** `apps/dwa/lib/request-context.ts` is now `server-only`
+and no longer imported by the client-safe `logger.ts`. No other
+occurrences of `async_hooks` imports in `apps/` or `packages/`.
+
+**Going forward:** any module that imports a Node builtin
+(`async_hooks`, `fs`, `crypto`, `net`, `child_process`, `worker_threads`,
+`perf_hooks`, etc.) should declare `import 'server-only'` as its first
+line. That's a hard failure at build if a client component pulls it
+in, which beats a late runtime crash.

@@ -77,7 +77,7 @@ export const POST = Webhooks({
             userId: externalId,
             orderId: order.id,
             productId: order.product?.id ?? "unknown",
-            value: (order.amount ?? 0) / 100,
+            value: (order.totalAmount ?? 0) / 100,
           }).catch((err) =>
             logger.error("[ga4] purchase tracking error", { error: err }),
           );
