@@ -761,3 +761,61 @@ Any other hit is a B-021 regression.
   (`'redis://localhost:6379'` *only* if `NODE_ENV !== 'production'`;
   otherwise throw or warn loudly once).
 - Tie into the same typed env-config module suggested in B-020.
+- **And do it lazily** — throwing at module top-level breaks Next.js
+  builds in an orthogonal way. See B-022.
+
+---
+
+### B-022 · Throwing at module-init on `NODE_ENV==='production'` breaks `next build`
+
+**What:** a guard like
+`if (process.env.NODE_ENV === 'production' && !process.env.X) throw new Error(...)`
+at a route's top level or in a singleton's constructor runs during
+Next.js's `next build` "Collecting page data" phase. At build time,
+`NODE_ENV === 'production'` is already true, but runtime env vars
+have not yet been provided — so Next.js imports the module, the
+guard fires, and the build hard-errors:
+
+`Error: Failed to collect page data for /api/...`
+
+**Why it's insidious:** the guard is correct for runtime. It looks
+like the right defensive pattern. It passes local `pnpm dev` (which
+runs `NODE_ENV=development`). It only surfaces inside `next build`
+or `docker build`, where it kills the build with a message pointing
+at the route, not at the guard.
+
+**Seen in (same follow-up commit that tried to fix B-020/B-021 —
+caught during the Docker image rebuild):**
+- `apps/gtm/app/api/checkout/route.ts` — the POLAR_* guard ran at
+  module load, crashing `next build`.
+- `apps/gtm/app/api/notion/callback/route.ts` — `APP_URL` IIFE at
+  module top-level ran at build time.
+- `apps/dwa/lib/flarum.ts` — `FlarumClient` constructor's
+  prod-check ran when `export const flarumClient = new FlarumClient()`
+  evaluated during page-data collection.
+
+Fix shape in all three (commit 2027dd1):
+- Route files: move the guard into a helper called at the top of
+  the HTTP handler, or wrap the expensive export in a
+  `getHandler()` lazy init pattern.
+- Singletons: leave the constructor side-effect-free; resolve
+  URLs/secrets inside a `resolveUrls()` method called on first
+  method invocation.
+
+**Grep signature (find other guards that could hit this):**
+```
+grep -rn "process\.env\.NODE_ENV\s*===\s*['\"]production['\"]" apps/ packages/ adapters/ --include="*.ts" --include="*.tsx" | grep -v /node_modules/ | grep -v /.next/ | grep -v _archive | grep -v '\.test\.' | grep -v '\.spec\.'
+```
+For each hit, check: is this at module top-level or in a
+class constructor that's instantiated at module top-level? If yes,
+migrate to lazy init. If no (it's inside a route handler, factory
+function, or method called per-request), it's fine.
+
+**Cross-check:** swept. Remaining hits after 2027dd1 are in
+request-handler bodies or inside lazily-called methods — safe.
+
+**Going forward:**
+- "Does this code run during `next build`?" is a question every
+  module-level env guard must answer. If yes, use lazy init.
+- The smoke test: if `docker build` succeeds for every app, this
+  class is caught. Make that part of CI before we ship v1.
