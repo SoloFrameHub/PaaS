@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'node:crypto';
 import { getDb } from '@/lib/db';
 import { user, profile, moodEntry, coachSession, patientAssignment, session } from '@/lib/db/schema';
 import { eq, lt, and, isNotNull } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
+import { getClientIp } from '@/lib/security';
 
 /**
  * GET /api/cron/purge-deleted-accounts
@@ -22,14 +24,23 @@ import { logger } from '@/lib/logger';
  * Example cron expression: 0 2 * * *
  */
 export async function GET(request: NextRequest) {
-  // Verify cron secret to prevent unauthorized purges
-  const authHeader = request.headers.get('authorization');
+  // Verify cron secret to prevent unauthorized purges.
+  // Use constant-time compare — the old `!==` leaks the secret via timing.
+  // (slice 01 / B-036 class.)
+  const authHeader = request.headers.get('authorization') ?? '';
   const cronSecret = process.env.CRON_SECRET || process.env.ADMIN_API_SECRET;
+  const expected = `Bearer ${cronSecret ?? ''}`;
 
-  if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
-    logger.warn('unauthorized_purge_attempt', {
-      ip: request.headers.get('x-forwarded-for') || 'unknown',
-    });
+  const authorized =
+    !!cronSecret &&
+    authHeader.length === expected.length &&
+    (() => {
+      try { return timingSafeEqual(Buffer.from(authHeader), Buffer.from(expected)); }
+      catch { return false; }
+    })();
+
+  if (!authorized) {
+    logger.warn('unauthorized_purge_attempt', { ip: getClientIp(request) });
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -65,7 +76,10 @@ export async function GET(request: NextRequest) {
 
     const purgedAccounts: Array<{ userId: string; email: string; deletedAt: Date }> = [];
 
-    // Purge each user's data
+    // Purge each user's data.
+    // Wrap each user's six-step delete in a transaction so a mid-loop crash
+    // doesn't leave an account half-purged (e.g. sessions + mood wiped but
+    // user row still present). (slice 01 finding.)
     for (const eligibleUser of eligibleUsers) {
       try {
         logger.info('purging_account', {
@@ -74,32 +88,34 @@ export async function GET(request: NextRequest) {
           deletedAt: eligibleUser.deletedAt,
         });
 
-        // 1. Delete sessions (logout all devices)
-        await db.delete(session).where(eq(session.userId, eligibleUser.id));
+        await db.transaction(async (tx) => {
+          // 1. Delete sessions (logout all devices)
+          await tx.delete(session).where(eq(session.userId, eligibleUser.id));
 
-        // 2. Scrub profile data (replace with anonymized stub)
-        await db
-          .update(profile)
-          .set({
-            data: {
-              _purged: true,
-              _purgedAt: new Date().toISOString(),
-            },
-          })
-          .where(eq(profile.userId, eligibleUser.id));
+          // 2. Scrub profile data (replace with anonymized stub)
+          await tx
+            .update(profile)
+            .set({
+              data: {
+                _purged: true,
+                _purgedAt: new Date().toISOString(),
+              },
+            })
+            .where(eq(profile.userId, eligibleUser.id));
 
-        // 3. Delete mood entries (non-audit PHI)
-        await db.delete(moodEntry).where(eq(moodEntry.userId, eligibleUser.id));
+          // 3. Delete mood entries (non-audit PHI)
+          await tx.delete(moodEntry).where(eq(moodEntry.userId, eligibleUser.id));
 
-        // 4. Delete coach sessions (non-audit PHI)
-        await db.delete(coachSession).where(eq(coachSession.userId, eligibleUser.id));
+          // 4. Delete coach sessions (non-audit PHI)
+          await tx.delete(coachSession).where(eq(coachSession.userId, eligibleUser.id));
 
-        // 5. Delete patient assignments (if they were a patient)
-        await db.delete(patientAssignment).where(eq(patientAssignment.patientId, eligibleUser.id));
+          // 5. Delete patient assignments (if they were a patient)
+          await tx.delete(patientAssignment).where(eq(patientAssignment.patientId, eligibleUser.id));
 
-        // 6. Delete user row last (FKs with SET NULL preserve audit logs)
-        // Audit logs (distress_event, moderation_log, lesson_feedback) remain with user_id=null
-        await db.delete(user).where(eq(user.id, eligibleUser.id));
+          // 6. Delete user row last (FKs with SET NULL preserve audit logs)
+          // Audit logs (distress_event, moderation_log, lesson_feedback) remain with user_id=null
+          await tx.delete(user).where(eq(user.id, eligibleUser.id));
+        });
 
         purgedAccounts.push({
           userId: eligibleUser.id,

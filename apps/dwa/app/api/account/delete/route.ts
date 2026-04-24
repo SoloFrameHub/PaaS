@@ -2,7 +2,7 @@ import { NextRequest } from 'next/server';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse } from '@/lib/api/response-utils';
 import { getDb } from '@/lib/db';
-import { user, profile, moodEntry, coachSession, patientAssignment } from '@/lib/db/schema';
+import { user, profile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 
@@ -41,15 +41,25 @@ export const DELETE = withAuth(async (request: NextRequest, { userId, email }) =
       })
       .where(eq(user.id, userId));
 
-    // Mark profile as pending deletion (preserves data for recovery)
+    // Mark profile as pending deletion (preserves data for recovery).
+    // MUST merge with existing profile.data — a bare object would wipe the
+    // user's assessment/onboarding/progress, defeating the 30-day grace-period
+    // recovery path in cancel-deletion/route.ts. (slice 01 finding)
+    const [existingProfile] = await db
+      .select({ data: profile.data })
+      .from(profile)
+      .where(eq(profile.userId, userId));
+    const currentData = (existingProfile?.data as Record<string, unknown>) ?? {};
     await db
       .update(profile)
       .set({
         data: {
+          ...currentData,
           _pendingDeletion: true,
           _deletionScheduledAt: now.toISOString(),
           _purgeAfter: purgeDate.toISOString(),
         },
+        updatedAt: now,
       })
       .where(eq(profile.userId, userId));
 

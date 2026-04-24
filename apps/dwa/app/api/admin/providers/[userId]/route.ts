@@ -8,7 +8,7 @@ import { z } from 'zod';
 import { withAdminAuth } from '@/lib/api/with-auth';
 import { getDb } from '@/lib/db';
 import { providerProfile, user } from '@/lib/db/schema';
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 
 const actionSchema = z.object({
@@ -62,8 +62,14 @@ export const POST = withAdminAuth(async (req, { userId: adminId }, context) => {
       })
       .where(eq(providerProfile.userId, targetUserId));
 
-    // Ensure role stays 'user'
-    await db.update(user).set({ role: 'user' }).where(eq(user.id, targetUserId));
+    // Only downgrade role if the user currently claims to be a provider.
+    // (slice 01 fix) Unconditional `role='user'` would demote admins and
+    // any other role if they happened to have a pending provider
+    // application.
+    await db
+      .update(user)
+      .set({ role: 'user' })
+      .where(and(eq(user.id, targetUserId), eq(user.role, 'provider')));
 
     logger.info('provider_admin_rejected', { targetUserId, adminId, notes });
   }

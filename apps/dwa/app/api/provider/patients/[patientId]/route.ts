@@ -33,11 +33,17 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
   const cutoffDate = new Date();
   cutoffDate.setDate(cutoffDate.getDate() - days);
 
-  // Verify this patient belongs to this provider
+  // Verify this patient belongs to this provider AND the link is active.
+  // Dropping the `status='active'` filter would let an ex-provider keep
+  // reading PHI after the patient revoked the relationship. (B-040.)
   const [link] = await db
     .select()
     .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.patientId, patientId)));
+    .where(and(
+      eq(providerPatient.providerId, providerId),
+      eq(providerPatient.patientId, patientId),
+      eq(providerPatient.status, 'active'),
+    ));
 
   if (!link) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
 
@@ -139,10 +145,21 @@ export const PATCH = withProviderAuth(async (req, { userId: providerId }, contex
   const parsed = patchSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: parsed.error.flatten() }, { status: 422 });
 
-  await db
+  // PATCH must also require an active link — an inactive link should
+  // not be editable. (B-040.)
+  const result = await db
     .update(providerPatient)
     .set({ ...(parsed.data.displayName !== undefined ? { displayName: parsed.data.displayName } : {}), ...(parsed.data.notes !== undefined ? { notes: parsed.data.notes } : {}) })
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.patientId, patientId)));
+    .where(and(
+      eq(providerPatient.providerId, providerId),
+      eq(providerPatient.patientId, patientId),
+      eq(providerPatient.status, 'active'),
+    ))
+    .returning({ patientId: providerPatient.patientId });
+
+  if (result.length === 0) {
+    return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+  }
 
   return NextResponse.json({ success: true });
 });

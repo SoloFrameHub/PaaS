@@ -24,6 +24,18 @@ export const GET = withAuth(async (request: NextRequest, { userId, email }) => {
     return successResponse({ data: responseData });
 });
 
+// (slice 01 fix) Previously this route's allowlist included
+// `onboardingCompleted` and `questionnaire`, both of which are clinically
+// significant. A user could PUT `onboardingCompleted=true` to skip
+// onboarding, and PUT arbitrary `questionnaire` JSONB to rewrite their own
+// symptom severities, which feeds provider-dashboard wellness scores.
+// Both have dedicated endpoints (`/api/onboarding/complete`,
+// `/api/onboarding/questionnaire`) that apply the correct Zod schemas —
+// this generic PUT is now narrowed to cosmetic fields only.
+const updateProfileSchema = z.object({
+    name: z.string().trim().min(1).max(120).optional(),
+});
+
 export const PUT = withAuth(async (request: NextRequest, { userId }) => {
     let body;
     try {
@@ -32,28 +44,17 @@ export const PUT = withAuth(async (request: NextRequest, { userId }) => {
         throw new ValidationError('Invalid JSON body');
     }
 
-    if (!body || typeof body !== 'object') {
-        throw new ValidationError('Invalid request body');
+    const parsed = updateProfileSchema.safeParse(body);
+    if (!parsed.success) {
+        throw new ValidationError(parsed.error.message);
     }
 
-    // STRICT VALIDATION: Define allowed fields explicitly to prevent prototype pollution or mass assignment
-    // Use Zod? Or just manual allowlist for now per the existing pattern, but stricter.
-    const ALLOWED_FIELDS = new Set([
-        'name', 'onboardingCompleted', 'questionnaire'
-    ]);
-
-    const updates: Record<string, any> = {};
-    for (const [key, value] of Object.entries(body)) {
-        if (ALLOWED_FIELDS.has(key)) {
-            updates[key] = value;
-        }
-    }
-
+    // Zod.strip() keeps only known keys; an empty object means nothing to do.
+    const updates = parsed.data;
     if (Object.keys(updates).length === 0) {
         throw new ValidationError('No valid fields to update');
     }
 
-    // Perform update
     await profileService.updateProfile(userId, updates);
 
     return successResponse({ success: true });

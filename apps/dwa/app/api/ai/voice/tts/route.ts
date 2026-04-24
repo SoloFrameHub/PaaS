@@ -1,8 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
 import { voiceService } from '@/lib/services/voiceService';
 import { logger } from '@/lib/logger';
 import { withAuth } from '@/lib/api/with-auth';
 import { isRateLimited, AI_RATE_LIMIT } from '@/lib/security';
+
+const ttsSchema = z.object({
+    text: z.string().min(1).max(5000),
+});
 
 export const POST = withAuth(async (req: NextRequest, { userId }) => {
     try {
@@ -23,17 +28,16 @@ export const POST = withAuth(async (req: NextRequest, { userId }) => {
             );
         }
 
-        const body = await req.json();
-        const { text } = body;
-
-        if (!text) {
+        const body = await req.json().catch(() => null);
+        const parsed = ttsSchema.safeParse(body);
+        if (!parsed.success) {
             return NextResponse.json(
-                { error: 'Text is required' },
+                { error: 'text must be 1-5000 characters', details: parsed.error.flatten() },
                 { status: 400 }
             );
         }
 
-        const audioContent = await voiceService.synthesizeSpeech(text);
+        const audioContent = await voiceService.synthesizeSpeech(parsed.data.text);
 
         if (!audioContent) {
             return NextResponse.json(

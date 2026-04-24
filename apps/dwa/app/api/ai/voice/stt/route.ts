@@ -27,12 +27,29 @@ export const POST = withAuth(async (req: NextRequest, { userId }) => {
         }
 
         const formData = await req.formData();
-        const file = formData.get('audio') as File;
+        const file = formData.get('audio');
 
-        if (!file) {
+        if (!(file instanceof File)) {
             return NextResponse.json(
                 { error: 'Audio file is required' },
                 { status: 400 }
+            );
+        }
+
+        // Size + MIME guards — prevent oversized/wrong-type uploads hitting
+        // the transcription vendor and running up cost / leaking non-audio
+        // data into STT logs. (slice 01 fix.)
+        const MAX_BYTES = 25 * 1024 * 1024; // 25 MB
+        if (file.size > MAX_BYTES) {
+            return NextResponse.json(
+                { error: `Audio file too large (max ${MAX_BYTES} bytes)` },
+                { status: 413 }
+            );
+        }
+        if (file.type && !file.type.startsWith('audio/')) {
+            return NextResponse.json(
+                { error: 'Unsupported audio MIME type' },
+                { status: 415 }
             );
         }
 

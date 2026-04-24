@@ -18,6 +18,7 @@ import { eq, and, desc, isNull, inArray, gte } from 'drizzle-orm';
 import { generateSessionPrepBrief, type SessionPrepContext } from '@/lib/ai/rag';
 import { CURRICULUM } from '@/lib/data/curriculum';
 import { logger } from '@/lib/logger';
+import { isRateLimited, AI_RATE_LIMIT } from '@/lib/security';
 import type { WellnessProfile } from '@/types/wellness-profile';
 
 function courseTitle(courseId: string): string {
@@ -30,6 +31,30 @@ function courseTitle(courseId: string): string {
 
 export const GET = withProviderAuth(async (req, { userId: providerId }, context) => {
   const patientId = context.params.patientId as string;
+
+  // (slice 01 fix) Gate the LLM call behind the AI rate limit keyed per
+  // (provider, patient) pair. A rogue client can't hammer session-prep
+  // generation.
+  const { limited, remaining, reset } = await isRateLimited(
+    `${providerId}:${patientId}`,
+    AI_RATE_LIMIT,
+    'session-prep',
+  );
+  if (limited) {
+    return NextResponse.json(
+      { error: 'Rate limit exceeded' },
+      {
+        status: 429,
+        headers: {
+          'Retry-After': String(Math.ceil((reset - Date.now()) / 1000)),
+          'X-RateLimit-Limit': String(AI_RATE_LIMIT.limit),
+          'X-RateLimit-Remaining': String(remaining),
+          'X-RateLimit-Reset': String(reset),
+        },
+      },
+    );
+  }
+
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
 
@@ -41,11 +66,15 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
   const cutoffDate = new Date();
   cutoffDate.setDate(cutoffDate.getDate() - days);
 
-  // Verify relationship
+  // Verify relationship AND that it is active. (B-040.)
   const [link] = await db
     .select({ displayName: providerPatient.displayName, notes: providerPatient.notes })
     .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.patientId, patientId)));
+    .where(and(
+      eq(providerPatient.providerId, providerId),
+      eq(providerPatient.patientId, patientId),
+      eq(providerPatient.status, 'active'),
+    ));
 
   if (!link) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
 

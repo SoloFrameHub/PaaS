@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { sql } from 'drizzle-orm';
+import { timingSafeEqual } from 'node:crypto';
 import { getDb, hasDatabase } from '@/lib/db';
 import { aiClient, hasAIKey } from '@/lib/ai/client';
 import { resolveModel } from '@/lib/ai/models';
@@ -9,9 +10,28 @@ import { redis } from '@/lib/redis';
 /**
  * Health check for Dokploy / Docker / load balancers.
  * GET /api/health → 200 when app + DB are healthy.
- * GET /api/health?diag=ai → includes AI service readiness (no secrets exposed).
- * GET /api/health?diag=ai-test → attempts a minimal AI completion to verify connectivity.
+ *
+ * Diagnostic branches (admin-only — require `Authorization: Bearer <ADMIN_API_SECRET>`):
+ *   GET /api/health?diag=ai      → AI service readiness + env-var presence
+ *   GET /api/health?diag=ai-test → triggers a billed completion; admin-only.
+ *   GET /api/health?diag=maia    → Maia classifier diagnostics
+ *
+ * (slice 01 finding) Previously the diag branches were unauthenticated, which
+ * made `ai-test` a cost-amplification vector against the OpenRouter/OpenAI
+ * bill and leaked env-var presence.
  */
+function isAdminRequest(request: NextRequest): boolean {
+  const hdr = request.headers.get('authorization') ?? '';
+  const want = `Bearer ${process.env.ADMIN_API_SECRET ?? ''}`;
+  if (!process.env.ADMIN_API_SECRET) return false;
+  if (hdr.length !== want.length) return false;
+  try {
+    return timingSafeEqual(Buffer.from(hdr), Buffer.from(want));
+  } catch {
+    return false;
+  }
+}
+
 export async function GET(request: NextRequest) {
   const checks: Record<string, string> = { app: 'ok' };
 
@@ -65,8 +85,15 @@ export async function GET(request: NextRequest) {
 
   const diag = request.nextUrl.searchParams.get('diag');
 
-  // Optional AI diagnostics (no secret values exposed)
+  // Any diagnostic branch requires admin auth — these leak env-var presence
+  // and can trigger billed AI calls.
   if (diag === 'ai' || diag === 'ai-test' || diag === 'maia') {
+    if (!isAdminRequest(request)) {
+      return NextResponse.json(
+        { status: 'ok', service: 'wellness-academy', checks },
+        { status: 200 },
+      );
+    }
     checks.openrouter_key = process.env.OPENROUTER_API_KEY ? 'set' : 'MISSING';
     checks.openai_key = process.env.OPENAI_API_KEY ? 'set' : 'MISSING';
     checks.ai_model_coaching = resolveModel('coaching');
@@ -76,8 +103,9 @@ export async function GET(request: NextRequest) {
     checks.maia_url = process.env.MAIA_URL || process.env.DISTRESS_CLASSIFIER_URL || 'http://localhost:8001 (fallback)';
   }
 
-  // Live AI connectivity test — sends a minimal 1-token completion
-  if (diag === 'ai-test' && hasAIKey) {
+  // Live AI connectivity test — sends a minimal 1-token completion.
+  // Admin-only (already gated above; double-check here for clarity).
+  if (diag === 'ai-test' && hasAIKey && isAdminRequest(request)) {
     try {
       const model = resolveModel('coaching');
       const start = Date.now();

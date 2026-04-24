@@ -1,7 +1,8 @@
 import { NextRequest } from 'next/server';
+import { z } from 'zod';
 import { profileService } from '@/lib/services/profileService';
 import { withAuth } from '@/lib/api/with-auth';
-import { successResponse } from '@/lib/api/response-utils';
+import { successResponse, errorResponse } from '@/lib/api/response-utils';
 import type { SymptomCategory } from '@/types/wellness-profile';
 import {
     computeOverallScoreFromSymptoms,
@@ -11,13 +12,31 @@ import {
     computePersonalizedInsight,
 } from '@/lib/utils/onboarding-assessment';
 
+// Symptom categories that may appear in priorityFocus.
+const SYMPTOM_CATEGORY = z.enum([
+    'anxiety', 'panic', 'social-anxiety', 'ocd',
+    'depression', 'grief', 'anger',
+    'sleep',
+    'stress', 'trauma',
+]);
+
+const completeBodySchema = z.object({
+    recommendedCourses: z.array(z.string().min(1).max(100)).max(50).optional(),
+    selectedStartCourse: z.string().min(1).max(100).optional(),
+    priorityFocus: z.array(SYMPTOM_CATEGORY).max(20).optional(),
+});
+
 export const POST = withAuth(async (request: NextRequest, { userId }) => {
-    // Optionally accept assessment data to save atomically with completion
-    let assessmentBody: Record<string, unknown> | null = null;
+    // Optionally accept assessment data to save atomically with completion.
+    // (slice 01 fix) Parse through Zod — previously this route used `as`
+    // casts, letting arbitrary untyped values flow into the saved assessment.
+    let assessmentBody: z.infer<typeof completeBodySchema> | null = null;
     try {
         const body = await request.json();
-        if (body && body.recommendedCourses) {
-            assessmentBody = body;
+        if (body && (body as Record<string, unknown>).recommendedCourses) {
+            const parsed = completeBodySchema.safeParse(body);
+            if (!parsed.success) return errorResponse(parsed.error);
+            assessmentBody = parsed.data;
         }
     } catch {
         // No body or invalid JSON — that's fine, just complete onboarding
@@ -29,8 +48,8 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
         const symptoms = savedProfile?.questionnaire?.primarySymptoms ?? [];
         const questionnaire = savedProfile?.questionnaire;
 
-        const recommendedCourses = (assessmentBody.recommendedCourses as string[]) || [];
-        const startCourse = (assessmentBody.selectedStartCourse as string) || recommendedCourses[0] || '';
+        const recommendedCourses = assessmentBody.recommendedCourses ?? [];
+        const startCourse = assessmentBody.selectedStartCourse || recommendedCourses[0] || '';
 
         // Derive all assessment fields from actual symptom severity — never hardcode
         const overallWellnessScore = computeOverallScoreFromSymptoms(symptoms);
@@ -46,7 +65,7 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
         const assessment = {
             recommendedCourses,
             recommendedStartCourse: startCourse,
-            priorityFocus: (assessmentBody.priorityFocus as SymptomCategory[]) || [],
+            priorityFocus: (assessmentBody.priorityFocus ?? []) as SymptomCategory[],
             overallWellnessScore,
             anxietyScore,
             moodScore,

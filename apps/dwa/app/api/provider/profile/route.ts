@@ -17,7 +17,7 @@ import { z } from 'zod';
 import { withAuth } from '@/lib/api/with-auth';
 import { getDb } from '@/lib/db';
 import { providerProfile, user } from '@/lib/db/schema';
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 import { verifyProviderNPI } from '@/lib/services/npiService';
 import { logger } from '@/lib/logger';
 
@@ -55,14 +55,35 @@ export const POST = withAuth(async (req, { userId }) => {
 
   const { displayName, credentials, specialty, licenseNumber, npiNumber, bio } = parsed.data;
 
-  // ── Verification ────────────────────────────────────────────────────────────
-  let verificationStatus: string = 'manual_review';
-  let verificationMethod: string = 'admin_manual';
-  let verificationNotes: string | null = null;
-  let npiData: Record<string, unknown> | null = null;
-  let verifiedAt: Date | null = null;
+  // (slice 01 fix) Load any existing profile so we only re-run NPI
+  // verification when the NPI number actually changed. Editing bio/specialty
+  // on an already-verified profile used to silently demote the user to
+  // manual_review while leaving their `user.role='provider'` — an
+  // inconsistent state.
+  const [existing] = await db
+    .select({
+      npiNumber: providerProfile.npiNumber,
+      verificationStatus: providerProfile.verificationStatus,
+      verificationMethod: providerProfile.verificationMethod,
+      verificationNotes: providerProfile.verificationNotes,
+      npiData: providerProfile.npiData,
+      verifiedAt: providerProfile.verifiedAt,
+      verifiedBy: providerProfile.verifiedBy,
+    })
+    .from(providerProfile)
+    .where(eq(providerProfile.userId, userId));
 
-  if (npiNumber) {
+  const npiChanged = (npiNumber ?? null) !== (existing?.npiNumber ?? null);
+  const shouldReverify = !existing || npiChanged;
+
+  // ── Verification ────────────────────────────────────────────────────────────
+  let verificationStatus: string = existing?.verificationStatus ?? 'manual_review';
+  let verificationMethod: string | null = existing?.verificationMethod ?? 'admin_manual';
+  let verificationNotes: string | null = existing?.verificationNotes ?? null;
+  let npiData: Record<string, unknown> | null = (existing?.npiData as Record<string, unknown> | null) ?? null;
+  const verifiedAt: Date | null = existing?.verifiedAt ?? null;
+
+  if (shouldReverify && npiNumber) {
     try {
       const npiResult = await verifyProviderNPI(npiNumber.trim(), displayName);
       npiData = npiResult.rawData;
@@ -117,10 +138,11 @@ export const POST = withAuth(async (req, { userId }) => {
       verificationMethod  = 'admin_manual';
       verificationNotes   = 'NPI lookup service unavailable. Queued for manual review.';
     }
-  } else {
-    // No NPI provided — manual review
+  } else if (shouldReverify && !npiNumber) {
+    // Brand-new profile with no NPI — manual review.
     verificationNotes = 'No NPI number provided. Queued for manual review.';
   }
+  // (else: existing profile, NPI unchanged — preserve stored verification state.)
 
   // ── Upsert provider profile ─────────────────────────────────────────────────
   await db
@@ -157,10 +179,19 @@ export const POST = withAuth(async (req, { userId }) => {
     });
 
   // ── Role elevation — only on verified ───────────────────────────────────────
+  // (slice 01 fix) Reconcile user.role with verificationStatus on every run
+  // so the two can't drift. Previously we elevated on 'verified' but never
+  // demoted when verification was re-triggered and lost.
   if (verificationStatus === 'verified') {
     await db.update(user).set({ role: 'provider' }).where(eq(user.id, userId));
+  } else {
+    // Only demote if the user currently claims to be a provider — leave
+    // admins and other roles alone.
+    await db
+      .update(user)
+      .set({ role: 'user' })
+      .where(and(eq(user.id, userId), eq(user.role, 'provider')));
   }
-  // manual_review stays as 'user' until admin approves
 
   return NextResponse.json({
     success: true,

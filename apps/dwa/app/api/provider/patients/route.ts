@@ -10,10 +10,11 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { withProviderAuth } from '@/lib/api/with-auth';
+import { withProviderAuth, withAdminAuth } from '@/lib/api/with-auth';
 import { getDb } from '@/lib/db';
 import { providerPatient, user, profile, distressEvent, moodEntry, patientAssignment } from '@/lib/db/schema';
 import { eq, and, desc, count, inArray, isNull, gte } from 'drizzle-orm';
+import { logger } from '@/lib/logger';
 import type { WellnessProfile } from '@/types/wellness-profile';
 
 export const GET = withProviderAuth(async (req, { userId: providerId }) => {
@@ -138,12 +139,25 @@ export const GET = withProviderAuth(async (req, { userId: providerId }) => {
 });
 
 const addPatientSchema = z.object({
+  providerId:  z.string().min(1),
   patientId:   z.string().min(1),
   displayName: z.string().optional(),
   notes:       z.string().optional(),
 });
 
-export const POST = withProviderAuth(async (req, { userId: providerId }) => {
+/**
+ * POST /api/provider/patients — admin-only.
+ *
+ * Establishing a provider↔patient link consents the patient to share PHI with
+ * the provider. The consented path is the invite-redeem flow in
+ * `provider/invite/route.ts`; this handler exists only for admin-operator
+ * tooling (migrations, support intervention) and records the acting admin.
+ *
+ * (slice 01 finding) Previously this was `withProviderAuth` and accepted
+ * `providerId` implicitly from the session, letting any provider unilaterally
+ * claim any user as a patient. Now admin-gated with audit logging.
+ */
+export const POST = withAdminAuth(async (req, { userId: adminId }) => {
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
 
@@ -153,11 +167,22 @@ export const POST = withProviderAuth(async (req, { userId: providerId }) => {
   const parsed = addPatientSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: parsed.error.flatten() }, { status: 422 });
 
-  const { patientId, displayName, notes } = parsed.data;
+  const { providerId, patientId, displayName, notes } = parsed.data;
 
-  // Verify patient exists
-  const [patientUser] = await db.select({ id: user.id }).from(user).where(eq(user.id, patientId));
-  if (!patientUser) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+  // Verify both users exist AND are the right role
+  const rows = await db
+    .select({ id: user.id, role: user.role })
+    .from(user)
+    .where(inArray(user.id, [providerId, patientId]));
+
+  const providerRow = rows.find(r => r.id === providerId);
+  const patientRow = rows.find(r => r.id === patientId);
+  if (!providerRow || providerRow.role !== 'provider') {
+    return NextResponse.json({ error: 'Provider not found or not a provider' }, { status: 404 });
+  }
+  if (!patientRow) {
+    return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+  }
 
   await db.insert(providerPatient).values({
     providerId,
@@ -166,6 +191,12 @@ export const POST = withProviderAuth(async (req, { userId: providerId }) => {
     notes: notes ?? null,
     status: 'active',
   }).onConflictDoNothing();
+
+  logger.info('provider_patient_link_created_by_admin', {
+    adminId,
+    providerId,
+    patientId,
+  });
 
   return NextResponse.json({ success: true });
 });

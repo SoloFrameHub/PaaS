@@ -26,11 +26,15 @@ export const POST = withProviderAuth(async (req, { userId: providerId }, context
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
 
-  // Verify relationship
+  // Verify relationship AND that it is active. (B-040.)
   const [link] = await db
     .select({ patientId: providerPatient.patientId })
     .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.patientId, patientId)));
+    .where(and(
+      eq(providerPatient.providerId, providerId),
+      eq(providerPatient.patientId, patientId),
+      eq(providerPatient.status, 'active'),
+    ));
   if (!link) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
 
   let body: unknown;
