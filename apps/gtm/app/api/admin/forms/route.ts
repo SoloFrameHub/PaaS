@@ -3,10 +3,14 @@
  *
  * Query params: slug, status, page (default 1), limit (default 20)
  * Auth: ADMIN_API_SECRET header
+ *
+ * Cross-tenant view — runs as platform_system to bypass RLS on
+ * `form_submission` (D-7).
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getDb, schema } from '@/lib/db';
+import { hasDatabase, schema } from '@/lib/db';
+import { withSystemAdminApp } from '@/lib/db/with-tenant';
 import { eq, and, desc, sql } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 import { checkAdminSecret } from '@/lib/api/admin-auth';
@@ -16,8 +20,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const db = getDb();
-  if (!db) {
+  if (!hasDatabase()) {
     return NextResponse.json({ error: 'Database unavailable' }, { status: 503 });
   }
 
@@ -35,23 +38,26 @@ export async function GET(request: NextRequest) {
 
     const where = conditions.length > 0 ? and(...conditions) : undefined;
 
-    const [submissions, countResult] = await Promise.all([
-      db
-        .select()
-        .from(schema.formSubmission)
-        .where(where)
-        .orderBy(desc(schema.formSubmission.createdAt))
-        .limit(limit)
-        .offset(offset),
-      db
-        .select({ count: sql<number>`count(*)::int` })
-        .from(schema.formSubmission)
-        .where(where),
-    ]);
+    const { submissions, total } = await withSystemAdminApp(async (tx) => {
+      const [submissions, countResult] = await Promise.all([
+        tx
+          .select()
+          .from(schema.formSubmission)
+          .where(where)
+          .orderBy(desc(schema.formSubmission.createdAt))
+          .limit(limit)
+          .offset(offset),
+        tx
+          .select({ count: sql<number>`count(*)::int` })
+          .from(schema.formSubmission)
+          .where(where),
+      ]);
+      return { submissions, total: countResult[0]?.count || 0 };
+    });
 
     return NextResponse.json({
       submissions,
-      total: countResult[0]?.count || 0,
+      total,
       page,
       pageSize: limit,
     });

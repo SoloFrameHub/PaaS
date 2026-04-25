@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { timingSafeEqual } from 'node:crypto';
 import { getDb } from '@/lib/db';
+import { withSystemAdminApp } from '@/lib/db/with-tenant';
 import { user, profile, moodEntry, coachSession, patientAssignment, session } from '@/lib/db/schema';
 import { eq, lt, and, isNotNull } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
@@ -54,7 +55,8 @@ export async function GET(request: NextRequest) {
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-    // Find users eligible for purge
+    // Find users eligible for purge.
+    // `user` is excluded from RLS (D-2) — read via the raw pool.
     const eligibleUsers = await db
       .select({ id: user.id, email: user.email, deletedAt: user.deletedAt })
       .from(user)
@@ -76,10 +78,15 @@ export async function GET(request: NextRequest) {
 
     const purgedAccounts: Array<{ userId: string; email: string; deletedAt: Date }> = [];
 
-    // Purge each user's data.
-    // Wrap each user's six-step delete in a transaction so a mid-loop crash
-    // doesn't leave an account half-purged (e.g. sessions + mood wiped but
-    // user row still present). (slice 01 finding.)
+    // Purge each user's data. The original wrapped 6 deletes in a single
+    // transaction so a mid-loop crash didn't leave a half-purged account.
+    // After B-009 we split that into two sequential layers (D-2):
+    //   - Layer 1: `withSystemAdminApp` — RLS-scoped tables
+    //     (profile, mood_entry, coach_session, patient_assignment).
+    //   - Layer 2: raw pool — `session`, `user` (not RLS-protected).
+    // Each layer is its own transaction; partial-failure semantics are
+    // marginally weaker than the original single tx, but the loop already
+    // tolerated per-user failures and skipped to the next user.
     for (const eligibleUser of eligibleUsers) {
       try {
         logger.info('purging_account', {
@@ -88,11 +95,9 @@ export async function GET(request: NextRequest) {
           deletedAt: eligibleUser.deletedAt,
         });
 
-        await db.transaction(async (tx) => {
-          // 1. Delete sessions (logout all devices)
-          await tx.delete(session).where(eq(session.userId, eligibleUser.id));
-
-          // 2. Scrub profile data (replace with anonymized stub)
+        // Layer 1 — tenant-scoped deletes under platform_system role.
+        await withSystemAdminApp(async (tx) => {
+          // Scrub profile data (replace with anonymized stub)
           await tx
             .update(profile)
             .set({
@@ -103,17 +108,21 @@ export async function GET(request: NextRequest) {
             })
             .where(eq(profile.userId, eligibleUser.id));
 
-          // 3. Delete mood entries (non-audit PHI)
+          // Delete mood entries (non-audit PHI)
           await tx.delete(moodEntry).where(eq(moodEntry.userId, eligibleUser.id));
 
-          // 4. Delete coach sessions (non-audit PHI)
+          // Delete coach sessions (non-audit PHI)
           await tx.delete(coachSession).where(eq(coachSession.userId, eligibleUser.id));
 
-          // 5. Delete patient assignments (if they were a patient)
+          // Delete patient assignments (if they were a patient)
           await tx.delete(patientAssignment).where(eq(patientAssignment.patientId, eligibleUser.id));
+        });
 
-          // 6. Delete user row last (FKs with SET NULL preserve audit logs)
-          // Audit logs (distress_event, moderation_log, lesson_feedback) remain with user_id=null
+        // Layer 2 — `session` + `user` are excluded from RLS (D-2); raw pool.
+        await db.transaction(async (tx) => {
+          // Delete sessions (logout all devices)
+          await tx.delete(session).where(eq(session.userId, eligibleUser.id));
+          // Delete user row last (FKs with SET NULL preserve audit logs)
           await tx.delete(user).where(eq(user.id, eligibleUser.id));
         });
 

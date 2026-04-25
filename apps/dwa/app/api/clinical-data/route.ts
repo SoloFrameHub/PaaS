@@ -1,7 +1,8 @@
 import { NextRequest } from 'next/server';
+import { requireTenantContext } from '@platform/tenancy';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse, validateBody } from '@/lib/api/response-utils';
-import { getDb } from '@/lib/db';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { clinicalComponentData, providerPatient } from '@/lib/db/schema';
 import { clinicalDataSaveSchema } from '@/lib/validations/clinical';
 import { eq, and } from 'drizzle-orm';
@@ -14,10 +15,7 @@ import { sanitizeJsonb } from '@/lib/utils/sanitize-jsonb';
  * HIPAA: Tenant-isolated via userId check
  */
 export const POST = withAuth(async (request: NextRequest, { userId }) => {
-  const db = getDb();
-  if (!db) {
-    return errorResponse('Database unavailable', 503);
-  }
+  const ctx = await requireTenantContext(request, { userId });
 
   const { componentType, componentId, courseId, lessonId, data } = await validateBody(
     request,
@@ -26,16 +24,18 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
 
   try {
     // Verify user has an assigned provider before saving
-    const providerLink = await db
-      .select({ id: providerPatient.id })
-      .from(providerPatient)
-      .where(
-        and(
-          eq(providerPatient.patientId, userId),
-          eq(providerPatient.status, 'active')
+    const providerLink = await withTenantApp(ctx, async (tx) =>
+      tx
+        .select({ id: providerPatient.id })
+        .from(providerPatient)
+        .where(
+          and(
+            eq(providerPatient.patientId, userId),
+            eq(providerPatient.status, 'active')
+          )
         )
-      )
-      .limit(1);
+        .limit(1)
+    );
 
     if (providerLink.length === 0) {
       return errorResponse(
@@ -48,30 +48,32 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
     const sanitizedData = sanitizeJsonb(data);
 
     // Upsert clinical data
-    await db
-      .insert(clinicalComponentData)
-      .values({
-        userId,
-        componentType,
-        componentId,
-        courseId: courseId ?? null,
-        lessonId: lessonId ?? null,
-        data: sanitizedData,
-        lastModified: new Date(),
-      })
-      .onConflictDoUpdate({
-        target: [
-          clinicalComponentData.userId,
-          clinicalComponentData.componentType,
-          clinicalComponentData.componentId,
-        ],
-        set: {
-          data: sanitizedData,
-          lastModified: new Date(),
+    await withTenantApp(ctx, async (tx) =>
+      tx
+        .insert(clinicalComponentData)
+        .values({
+          userId,
+          componentType,
+          componentId,
           courseId: courseId ?? null,
           lessonId: lessonId ?? null,
-        },
-      });
+          data: sanitizedData,
+          lastModified: new Date(),
+        })
+        .onConflictDoUpdate({
+          target: [
+            clinicalComponentData.userId,
+            clinicalComponentData.componentType,
+            clinicalComponentData.componentId,
+          ],
+          set: {
+            data: sanitizedData,
+            lastModified: new Date(),
+            courseId: courseId ?? null,
+            lessonId: lessonId ?? null,
+          },
+        })
+    );
 
     return successResponse({ saved: true });
   } catch (error) {

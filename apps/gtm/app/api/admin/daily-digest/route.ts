@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { checkAdminSecret } from "@/lib/api/admin-auth";
-import { getDb, hasDatabase, schema } from "@/lib/db";
+import { hasDatabase, schema } from "@/lib/db";
+import { withSystemAdminApp } from "@/lib/db/with-tenant";
 import { getResend } from "@/lib/email/resend";
-import { gte, sql, desc } from "drizzle-orm";
+import { gte, sql } from "drizzle-orm";
 import { logger } from "@/lib/logger";
 import { generateDigestContext } from "@/lib/services/digestService";
 import { generateDigestNudge } from "@/lib/ai/digest-nudge";
@@ -27,26 +28,27 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const db = getDb()!;
-
   try {
-    // Find active users: logged in within last 7 days with a profile
+    // Find active users: logged in within last 7 days with a profile.
+    // Cross-tenant scan — runs as platform_system to bypass RLS on `profile`.
     const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
 
-    const activeUsers = await db
-      .select({
-        userId: schema.profile.userId,
-        profileData: schema.profile.data,
-        email: schema.user.email,
-      })
-      .from(schema.profile)
-      .innerJoin(schema.user, sql`${schema.user.id} = ${schema.profile.userId}`)
-      .innerJoin(
-        schema.session,
-        sql`${schema.session.userId} = ${schema.user.id}`,
-      )
-      .where(gte(schema.session.expiresAt, oneWeekAgo))
-      .groupBy(schema.profile.userId, schema.profile.data, schema.user.email);
+    const activeUsers = await withSystemAdminApp(async (tx) =>
+      tx
+        .select({
+          userId: schema.profile.userId,
+          profileData: schema.profile.data,
+          email: schema.user.email,
+        })
+        .from(schema.profile)
+        .innerJoin(schema.user, sql`${schema.user.id} = ${schema.profile.userId}`)
+        .innerJoin(
+          schema.session,
+          sql`${schema.session.userId} = ${schema.user.id}`,
+        )
+        .where(gte(schema.session.expiresAt, oneWeekAgo))
+        .groupBy(schema.profile.userId, schema.profile.data, schema.user.email)
+    );
 
     let sent = 0;
     let skipped = 0;
