@@ -16,8 +16,14 @@ export const PlanRefZ = z.object({
 });
 export type PlanRef = z.infer<typeof PlanRefZ>;
 
+// Shape stored in `tenant.domains` (JSONB). The resolver looks up tenants by
+// host via JSONB `@>` against this exact structure; calling the canonical key
+// anything else (e.g. `primary`) silently breaks host resolution even though
+// `@>` containment succeeds for the alias array. Aligned with the comment on
+// the SQL column in infra/migrations/0001_tenancy.sql and with
+// packages/tenancy/src/resolveTenant.ts:resolveTenantByHost (B-033).
 export const TenantDomainsZ = z.object({
-  primary: z.string().min(1),
+  canonical: z.string().min(1).optional(),
   aliases: z.array(z.string().min(1)).optional(),
 });
 export type TenantDomains = z.infer<typeof TenantDomainsZ>;
@@ -30,7 +36,9 @@ export const TenantZ = z.object({
   parentManifestId: z.string().optional(),
   manifestVersion: z.string().regex(/^\d+\.\d+\.\d+$/),
   status: TenantStatusZ,
-  domains: TenantDomainsZ,
+  // B-033: DB column defaults to '{}' and both subkeys are optional at
+  // runtime (tenant reachable by slug only until a custom domain is wired).
+  domains: TenantDomainsZ.default({}),
   region: z.enum(['shared-eu', 'shared-us', 'dedicated']),
   pii: z.object({
     phi: z.boolean(),

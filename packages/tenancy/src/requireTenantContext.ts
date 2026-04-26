@@ -90,8 +90,19 @@ export async function maybeTenantContext(
 
   // Membership gate. Defaults to on; can be opted out for pre-auth routes
   // (signup, public tenant checkout preview) via requireMembership:false.
+  //
+  // B-034: previously the gate was silently bypassed when `userId` was
+  // omitted — a caller that forgot to pass the authenticated user got a
+  // resolved tenant context without any membership check. Now: if the gate
+  // is on and no userId was supplied, fail closed. Callers that really want
+  // an unscoped resolution must opt out explicitly.
   const gate = options.requireMembership ?? true;
-  if (gate && options.userId) {
+  if (gate) {
+    if (!options.userId) {
+      throw new TenancyError(
+        'requireTenantContext: requireMembership is on but no userId was supplied. Pass the authenticated userId, or set requireMembership:false for pre-auth routes.',
+      );
+    }
     const member = await isTenantMember(tenant.id, options.userId);
     if (!member) {
       throw new NotATenantMemberError(tenant.id, options.userId);

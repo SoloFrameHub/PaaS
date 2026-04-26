@@ -46,3 +46,28 @@ describe('isTenantMember — UUID validation without DB', () => {
     await expect(isTenantMember('00000000-0000-0000-0000-000000000001', 'not-a-uuid')).resolves.toBe(false);
   });
 });
+
+// B-034 regression — membership gate must fail closed when the caller asks
+// for membership enforcement but forgets to pass userId. Previously the gate
+// was silently skipped, leaving the resolver trusting whatever x-tenant-slug
+// was on the request.
+describe('requireTenantContext — membership gate with no userId', () => {
+  it('rejects when requireMembership defaults to true and userId is absent', async () => {
+    const headers = new Headers({ 'x-tenant-slug': 'harness-pre-db' });
+    // No DB is available in this test; we still expect the fail-closed path
+    // to kick in before any DB call.
+    await expect(
+      requireTenantContext({ headers }),
+    ).rejects.toBeInstanceOf(TenancyError);
+  });
+
+  it('does not throw up-front when requireMembership is explicitly false', async () => {
+    const headers = new Headers();
+    // With no header set at all, the function returns null/throws for a
+    // different reason (no tenant). We only want to confirm the membership
+    // gate itself does not pre-throw when it's opted out.
+    await expect(
+      requireTenantContext({ headers }, { requireMembership: false }),
+    ).rejects.toThrow(/no x-tenant-slug/);
+  });
+});
