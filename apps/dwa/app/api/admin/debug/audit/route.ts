@@ -5,6 +5,7 @@
 // SSH'ing to the VPS. Remove when the ops runner has a proper log surface.
 
 import { NextResponse, type NextRequest } from 'next/server';
+import { timingSafeEqual } from 'node:crypto';
 import { sql } from 'drizzle-orm';
 import { withSystemAdmin } from '@platform/tenancy';
 
@@ -20,7 +21,14 @@ export async function GET(request: NextRequest) {
 
   const header = request.headers.get('authorization') ?? '';
   const match = header.match(/^Bearer\s+(.+)$/i);
-  if (!match || match[1] !== secret) return unauthorized();
+  const presented = match?.[1] ?? '';
+  // B-036: plain `!==` leaks timing info. Fixed-length compare via
+  // timingSafeEqual after an up-front length guard (timingSafeEqual throws
+  // on length mismatch).
+  if (!presented || presented.length !== secret.length) return unauthorized();
+  if (!timingSafeEqual(Buffer.from(presented), Buffer.from(secret))) {
+    return unauthorized();
+  }
 
   const url = new URL(request.url);
   const limit = Math.min(parseInt(url.searchParams.get('limit') ?? '20', 10) || 20, 200);
