@@ -1,9 +1,10 @@
 import { NextRequest } from 'next/server';
+import { requireTenantContext } from '@platform/tenancy';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse } from '@/lib/api/response-utils';
 import { NotFoundError } from '@/lib/api/errors';
-import { getDb } from '@/lib/db';
-import { clinicalComponentData, providerPatient, user } from '@/lib/db/schema';
+import { withTenantApp } from '@/lib/db/with-tenant';
+import { clinicalComponentData, providerPatient } from '@/lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 
@@ -13,10 +14,7 @@ import { logger } from '@/lib/logger';
  * Providers can access their assigned patients' data via ?userId= query param
  */
 export const GET = withAuth(async (request: NextRequest, { userId, role }, context) => {
-  const db = getDb();
-  if (!db) {
-    return errorResponse('Database unavailable', 503);
-  }
+  const ctx = await requireTenantContext(request, { userId });
 
   const { componentType, componentId } = await context.params;
 
@@ -26,19 +24,21 @@ export const GET = withAuth(async (request: NextRequest, { userId, role }, conte
   try {
     // If provider is accessing patient data, verify assignment
     if (role === 'provider' && targetUserId !== userId) {
-      const [link] = await db
-        .select()
-        .from(providerPatient)
-        .where(
-          and(
-            eq(providerPatient.providerId, userId),
-            eq(providerPatient.patientId, targetUserId),
-            eq(providerPatient.status, 'active')
+      const link = await withTenantApp(ctx, async (tx) =>
+        tx
+          .select()
+          .from(providerPatient)
+          .where(
+            and(
+              eq(providerPatient.providerId, userId),
+              eq(providerPatient.patientId, targetUserId),
+              eq(providerPatient.status, 'active')
+            )
           )
-        )
-        .limit(1);
+          .limit(1)
+      );
 
-      if (!link) {
+      if (link.length === 0) {
         logger.warn('Provider unauthorized patient access attempt', {
           providerId: userId,
           patientId: targetUserId,
@@ -56,17 +56,19 @@ export const GET = withAuth(async (request: NextRequest, { userId, role }, conte
       });
     }
 
-    const results = await db
-      .select()
-      .from(clinicalComponentData)
-      .where(
-        and(
-          eq(clinicalComponentData.userId, targetUserId),
-          eq(clinicalComponentData.componentType, componentType),
-          eq(clinicalComponentData.componentId, componentId)
+    const results = await withTenantApp(ctx, async (tx) =>
+      tx
+        .select()
+        .from(clinicalComponentData)
+        .where(
+          and(
+            eq(clinicalComponentData.userId, targetUserId),
+            eq(clinicalComponentData.componentType, componentType),
+            eq(clinicalComponentData.componentId, componentId)
+          )
         )
-      )
-      .limit(1);
+        .limit(1)
+    );
 
     if (results.length === 0) {
       throw new NotFoundError('Clinical data not found');
@@ -96,23 +98,22 @@ export const GET = withAuth(async (request: NextRequest, { userId, role }, conte
  * HIPAA: Tenant-isolated - users can only delete their own data
  */
 export const DELETE = withAuth(async (request: NextRequest, { userId }, context) => {
-  const db = getDb();
-  if (!db) {
-    return errorResponse('Database unavailable', 503);
-  }
+  const ctx = await requireTenantContext(request, { userId });
 
   const { componentType, componentId } = await context.params;
 
   try {
-    await db
-      .delete(clinicalComponentData)
-      .where(
-        and(
-          eq(clinicalComponentData.userId, userId),
-          eq(clinicalComponentData.componentType, componentType),
-          eq(clinicalComponentData.componentId, componentId)
+    await withTenantApp(ctx, async (tx) =>
+      tx
+        .delete(clinicalComponentData)
+        .where(
+          and(
+            eq(clinicalComponentData.userId, userId),
+            eq(clinicalComponentData.componentType, componentType),
+            eq(clinicalComponentData.componentId, componentId)
+          )
         )
-      );
+    );
 
     return successResponse({ deleted: true });
   } catch (error) {

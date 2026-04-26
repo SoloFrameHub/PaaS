@@ -2,9 +2,11 @@
  * /provider-pending
  * Shown when a provider application is in manual_review or pending state.
  */
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerProfile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import Link from 'next/link';
@@ -19,12 +21,17 @@ export default async function ProviderPendingPage({ searchParams }: { searchPara
   const { reauth } = await searchParams;
   const isReauth = reauth === '1';
 
-  const db = getDb();
-  let prof: any = null;
-  if (db) {
-    const [row] = await db.select().from(providerProfile).where(eq(providerProfile.userId, session.uid));
-    prof = row ?? null;
-  }
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: session.uid },
+  );
+
+  // Drop the `if (!db)` short-circuit — `withTenantApp` throws when
+  // DATABASE_URL is unset, which is the correct semantic per Phase 7.
+  const rows = await withTenantApp(ctx, async (tx) =>
+    tx.select().from(providerProfile).where(eq(providerProfile.userId, session.uid))
+  );
+  const prof: any = rows[0] ?? null;
 
   // Already approved with a fresh session → send to portal
   // (but not when reauth=1 — that means the session is stale and we must NOT loop back)

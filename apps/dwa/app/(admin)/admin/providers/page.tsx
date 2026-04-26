@@ -1,6 +1,6 @@
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { withSystemAdminApp } from '@/lib/db/with-tenant';
 import { providerProfile, user } from '@/lib/db/schema';
 import { eq, desc } from 'drizzle-orm';
 import AdminProviderActions from './admin-provider-actions';
@@ -19,29 +19,32 @@ export default async function AdminProvidersPage() {
   const session = await getServerSession();
   if (!session?.uid || session.role !== 'admin') redirect('/dashboard');
 
-  const db = getDb();
-  if (!db) return <div className="p-8 text-gray-500 text-center">Database unavailable.</div>;
-
-  const applications = await db
-    .select({
-      userId:             providerProfile.userId,
-      displayName:        providerProfile.displayName,
-      credentials:        providerProfile.credentials,
-      specialty:          providerProfile.specialty,
-      npiNumber:          providerProfile.npiNumber,
-      licenseNumber:      providerProfile.licenseNumber,
-      verificationStatus: providerProfile.verificationStatus,
-      verificationMethod: providerProfile.verificationMethod,
-      verificationNotes:  providerProfile.verificationNotes,
-      npiData:            providerProfile.npiData,
-      verifiedAt:         providerProfile.verifiedAt,
-      verifiedBy:         providerProfile.verifiedBy,
-      createdAt:          providerProfile.createdAt,
-      email:              user.email,
-    })
-    .from(providerProfile)
-    .innerJoin(user, eq(user.id, providerProfile.userId))
-    .orderBy(desc(providerProfile.createdAt));
+  // Cross-tenant view — runs as platform_system to bypass RLS on
+  // `provider_profile` (D-7). The `if (!db)` short-circuit is dropped:
+  // `withSystemAdminApp` throws when DATABASE_URL is unset, which is the
+  // correct semantic per Phase 7 precedent.
+  const applications = await withSystemAdminApp(async (tx) =>
+    tx
+      .select({
+        userId:             providerProfile.userId,
+        displayName:        providerProfile.displayName,
+        credentials:        providerProfile.credentials,
+        specialty:          providerProfile.specialty,
+        npiNumber:          providerProfile.npiNumber,
+        licenseNumber:      providerProfile.licenseNumber,
+        verificationStatus: providerProfile.verificationStatus,
+        verificationMethod: providerProfile.verificationMethod,
+        verificationNotes:  providerProfile.verificationNotes,
+        npiData:            providerProfile.npiData,
+        verifiedAt:         providerProfile.verifiedAt,
+        verifiedBy:         providerProfile.verifiedBy,
+        createdAt:          providerProfile.createdAt,
+        email:              user.email,
+      })
+      .from(providerProfile)
+      .innerJoin(user, eq(user.id, providerProfile.userId))
+      .orderBy(desc(providerProfile.createdAt))
+  );
 
   const pending  = applications.filter(a => a.verificationStatus === 'manual_review' || a.verificationStatus === 'pending');
   const verified = applications.filter(a => a.verificationStatus === 'verified');

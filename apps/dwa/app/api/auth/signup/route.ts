@@ -40,6 +40,12 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid password (min 12 characters)' }, { status: 400 });
   }
 
+  // D-2/D-8: signup writes only to `user` (excluded from RLS) and creates a
+  // Lucia `session`. Both stay on the raw pool — there is no tenant-scoped
+  // row to insert here. Profile creation happens later in the onboarding
+  // flow under withTenantApp; tenant_member is a platform-spine table and
+  // would land via withSystemAdminApp if/when signup grows membership
+  // bootstrap. None of that applies today.
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'Database not available' }, { status: 503 });
 
