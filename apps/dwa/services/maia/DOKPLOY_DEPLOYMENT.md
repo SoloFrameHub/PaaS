@@ -70,7 +70,11 @@ The new Maia service replaces the old `distress-classifier` with a unified multi
 
 **SSH into VPS:**
 ```bash
-sshpass -p 'scJx4BdYgGBgMuuDrja86#' ssh -o StrictHostKeyChecking=no root@46.202.88.248
+# Use your SSH key and ~/.ssh/config — the previous sshpass+password pattern
+# was removed because it committed a plaintext root password into the repo
+# (B-049). Host key must be primed in ~/.ssh/known_hosts; do not add
+# StrictHostKeyChecking=no.
+ssh "$CLASSIFIER_SSH_HOST"
 ```
 
 **Check service is running:**

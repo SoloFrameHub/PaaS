@@ -14,12 +14,19 @@ RUN pip install --no-cache-dir -r requirements.txt
 # App files
 COPY app.py evaluate.py finetune.py ./
 
-# Copy fine-tuned model if it exists (built by finetune.py)
-# If ./model/ doesn't exist, app.py falls back to the HuggingFace base model
-COPY model/ ./model/ 2>/dev/null || true
-
-# Copy metrics if they exist
-COPY metrics.json ./ 2>/dev/null || true
+# Copy fine-tuned model + metrics. The old `COPY … 2>/dev/null || true`
+# pattern used shell syntax that Dockerfile COPY does not understand — Docker
+# treated `2>/dev/null` as an extra source path and `|| true` as a broken
+# destination. The net effect was that the build silently failed the COPY
+# and relied on app.py's HuggingFace fallback. (B-054)
+#
+# The model/ directory and metrics.json are expected to be present in the
+# build context (metrics.json is checked in; model weights are transferred
+# out-of-band by deploy-classifier-with-model.sh). If you need to build an
+# image without them, comment out the relevant COPY and the app will fall
+# back to the HuggingFace base model.
+COPY model/ ./model/
+COPY metrics.json ./
 
 # Non-root user
 RUN useradd --system --uid 1001 classifier

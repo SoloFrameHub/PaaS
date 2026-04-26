@@ -2,8 +2,6 @@
  * Docker entrypoint: runs database migration then starts the Next.js server.
  * Migration is idempotent (CREATE TABLE IF NOT EXISTS).
  */
-const { execSync } = require('child_process');
-
 const DATABASE_URL = process.env.DATABASE_URL;
 
 const SQL = `
