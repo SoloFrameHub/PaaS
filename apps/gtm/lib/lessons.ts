@@ -121,12 +121,18 @@ export async function getLessonContent(
 
   for (const filePath of candidates) {
     try {
-      // Prevent path traversal — resolved path must stay within CONTENT_PATH
+      // Prevent path traversal — resolved path must stay within CONTENT_PATH.
+      // Include `path.sep` to defend against the prefix-match edge case where
+      // a sibling directory like `<CONTENT_PATH>_evil/` would startsWith the
+      // base. (B-045 partial-mitigation hardening.)
       const resolved = path.resolve(filePath);
-      if (
-        !resolved.startsWith(CONTENT_PATH) &&
-        !resolved.startsWith(CONTENT_ES_PATH)
-      ) {
+      const inEn =
+        resolved === CONTENT_PATH ||
+        resolved.startsWith(CONTENT_PATH + path.sep);
+      const inEs =
+        resolved === CONTENT_ES_PATH ||
+        resolved.startsWith(CONTENT_ES_PATH + path.sep);
+      if (!inEn && !inEs) {
         logger.error("Path traversal attempt blocked", {
           trackId,
           courseId,
@@ -143,7 +149,7 @@ export async function getLessonContent(
         meta: data,
         content: cleanedContent,
         readingTime: calculateReadingTime(cleanedContent),
-        locale: resolved.startsWith(CONTENT_ES_PATH) ? "es" : "en",
+        locale: inEs ? "es" : "en",
       };
     } catch {
       // File not found — try next candidate

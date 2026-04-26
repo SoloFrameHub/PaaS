@@ -49,8 +49,17 @@ export const getServerSession = cache(async (): Promise<SessionUser | null> => {
   // (prevents static prerendering at build time when DATABASE_URL isn't set)
   const cookieStore = await cookies();
   try {
-    // Mock auth takes priority — allows testing even when DATABASE_URL is set
     if (process.env.NEXT_PUBLIC_MOCK_AUTH === 'true') {
+      // B-028: NEXT_PUBLIC_* is client-visible and baked into the build, so
+      // it must never gate auth mode in production. Fail loud if ever enabled
+      // on a prod deploy — a silent bypass would let any client forge
+      // `session={"uid":"..."}` and be treated as authenticated.
+      if (process.env.NODE_ENV === 'production') {
+        logger.error('CRITICAL SECURITY VIOLATION: Mock auth enabled in production', {
+          NODE_ENV: process.env.NODE_ENV,
+        });
+        throw new Error('Mock auth cannot be enabled in production');
+      }
       return await getMockSession(cookieStore);
     }
     if (process.env.DATABASE_URL) {
