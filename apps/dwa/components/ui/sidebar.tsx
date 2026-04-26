@@ -35,7 +35,7 @@ export default function Sidebar({
     }
     document.addEventListener('click', clickHandler)
     return () => document.removeEventListener('click', clickHandler)
-  })
+  }, [sidebarOpen, setSidebarOpen])
 
   // close if the esc key is pressed
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Sidebar({
     }
     document.addEventListener('keydown', keyHandler)
     return () => document.removeEventListener('keydown', keyHandler)
-  })
+  }, [sidebarOpen, setSidebarOpen])
 
   return (
     <div className={`min-w-fit ${sidebarExpanded ? 'sidebar-expanded' : ''}`}>

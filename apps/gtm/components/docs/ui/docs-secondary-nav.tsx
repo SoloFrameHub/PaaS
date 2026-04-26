@@ -6,40 +6,6 @@ export default function DocsSecondaryNav() {
   const [targets, setTargets] = useState<HTMLElement[]>([]);
   const [links, setLinks] = useState<HTMLElement[]>([]);
 
-  const scrollSpy = () => {
-    const links = document.querySelectorAll(
-      "[data-scrollspy-link]",
-    ) as NodeListOf<HTMLElement>;
-    if (links.length < 1) return;
-    const addActive = (i: number) => {
-      const link = links[i] ? links[i] : links[0];
-      link.classList.add("scrollspy-active");
-    };
-    const removeActive = (i: number) => {
-      links[i].classList.remove("scrollspy-active");
-    };
-    const removeAllActive = () =>
-      [...Array(targets.length).keys()].forEach((link) => removeActive(link));
-    const targetMargin = 100;
-    let currentActive = 0;
-    addActive(0);
-    window.addEventListener("scroll", () => {
-      const current =
-        targets.length -
-        [...targets]
-          .reverse()
-          .findIndex(
-            (target) => window.scrollY >= target.offsetTop - targetMargin,
-          ) -
-        1;
-      if (current !== currentActive) {
-        removeAllActive();
-        currentActive = current;
-        addActive(current);
-      }
-    });
-  };
-
   useEffect(() => {
     const targets = document.querySelectorAll("h2") as NodeListOf<HTMLElement>;
     setTargets(Array.from(targets));
@@ -54,8 +20,43 @@ export default function DocsSecondaryNav() {
   }, [targets]);
 
   useEffect(() => {
-    scrollSpy();
-  }, [links]);
+    const linksEls = document.querySelectorAll(
+      "[data-scrollspy-link]",
+    ) as NodeListOf<HTMLElement>;
+    if (linksEls.length < 1) return;
+    const addActive = (i: number) => {
+      const link = linksEls[i] ? linksEls[i] : linksEls[0];
+      link.classList.add("scrollspy-active");
+    };
+    const removeActive = (i: number) => {
+      linksEls[i].classList.remove("scrollspy-active");
+    };
+    const removeAllActive = () =>
+      [...Array(targets.length).keys()].forEach((link) => removeActive(link));
+    const targetMargin = 100;
+    let currentActive = 0;
+    addActive(0);
+    // Attach the scroll listener inside useEffect with a cleanup — the
+    // previous shape attached a fresh listener every time `links` changed
+    // and never removed any of them, so they accumulated on each re-render.
+    const onScroll = () => {
+      const current =
+        targets.length -
+        [...targets]
+          .reverse()
+          .findIndex(
+            (target) => window.scrollY >= target.offsetTop - targetMargin,
+          ) -
+        1;
+      if (current !== currentActive) {
+        removeAllActive();
+        currentActive = current;
+        addActive(current);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [links, targets]);
 
   return (
     <div className="hidden xl:block w-48 shrink-0">
