@@ -12,7 +12,8 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { withProviderAuth } from '@/lib/api/with-auth';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, profile, distressEvent, moodEntry, patientAssignment } from '@/lib/db/schema';
 import { eq, and, desc, isNull, inArray, gte } from 'drizzle-orm';
 import { generateSessionPrepBrief, type SessionPrepContext } from '@/lib/ai/rag';
@@ -55,8 +56,7 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
     );
   }
 
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
+  const tenantCtx = await requireTenantContext(req, { userId: providerId });
 
   // Parse pagination params (Finding 12: DoS prevention)
   const searchParams = req.nextUrl.searchParams;
@@ -66,62 +66,68 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
   const cutoffDate = new Date();
   cutoffDate.setDate(cutoffDate.getDate() - days);
 
-  // Verify relationship AND that it is active. (B-040.)
-  const [link] = await db
-    .select({ displayName: providerPatient.displayName, notes: providerPatient.notes })
-    .from(providerPatient)
-    .where(and(
-      eq(providerPatient.providerId, providerId),
-      eq(providerPatient.patientId, patientId),
-      eq(providerPatient.status, 'active'),
-    ));
+  const result = await withTenantApp(tenantCtx, async (tx) => {
+    // Verify relationship AND that it is active. (B-040.)
+    const [link] = await tx
+      .select({ displayName: providerPatient.displayName, notes: providerPatient.notes })
+      .from(providerPatient)
+      .where(and(
+        eq(providerPatient.providerId, providerId),
+        eq(providerPatient.patientId, patientId),
+        eq(providerPatient.status, 'active'),
+      ));
 
-  if (!link) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+    if (!link) return { status: 'not_found' as const };
 
-  const alias = link.displayName ?? `Patient ${patientId.slice(-4)}`;
+    // Profile (Finding 15: properly typed, no 'as any')
+    const [patientProfile] = await tx
+      .select({ data: profile.data })
+      .from(profile)
+      .where(eq(profile.userId, patientId));
 
-  // Profile (Finding 15: properly typed, no 'as any')
-  const [patientProfile] = await db
-    .select({ data: profile.data })
-    .from(profile)
-    .where(eq(profile.userId, patientId));
-  const p = (patientProfile?.data ?? {}) as Partial<WellnessProfile>;
+    // Latest mood (within time window - Finding 12)
+    const [latestMood] = await tx
+      .select({ moodRating: moodEntry.moodRating, anxietyLevel: moodEntry.anxietyLevel, sleepQuality: moodEntry.sleepQuality })
+      .from(moodEntry)
+      .where(and(
+        eq(moodEntry.userId, patientId),
+        gte(moodEntry.date, cutoffDate)
+      ))
+      .orderBy(desc(moodEntry.date))
+      .limit(1);
 
-  // Latest mood (within time window - Finding 12)
-  const [latestMood] = await db
-    .select({ moodRating: moodEntry.moodRating, anxietyLevel: moodEntry.anxietyLevel, sleepQuality: moodEntry.sleepQuality })
-    .from(moodEntry)
-    .where(and(
-      eq(moodEntry.userId, patientId),
-      gte(moodEntry.date, cutoffDate)
-    ))
-    .orderBy(desc(moodEntry.date))
-    .limit(1);
-
-  // Recent unresolved distress (within time window - Finding 12)
-  const recentAlerts = await db
-    .select({ level: distressEvent.level, createdAt: distressEvent.createdAt })
-    .from(distressEvent)
-    .where(
-      and(
-        eq(distressEvent.userId, patientId),
-        isNull(distressEvent.resolvedAt),
-        inArray(distressEvent.level, ['crisis', 'mild']),
-        gte(distressEvent.createdAt, cutoffDate)
+    // Recent unresolved distress (within time window - Finding 12)
+    const recentAlerts = await tx
+      .select({ level: distressEvent.level, createdAt: distressEvent.createdAt })
+      .from(distressEvent)
+      .where(
+        and(
+          eq(distressEvent.userId, patientId),
+          isNull(distressEvent.resolvedAt),
+          inArray(distressEvent.level, ['crisis', 'mild']),
+          gte(distressEvent.createdAt, cutoffDate)
+        )
       )
-    )
-    .orderBy(desc(distressEvent.createdAt))
-    .limit(5);
+      .orderBy(desc(distressEvent.createdAt))
+      .limit(5);
 
-  // Assignments (limited - Finding 12)
-  const assignments = await db
-    .select({ courseId: patientAssignment.courseId, lessonId: patientAssignment.lessonId, completedAt: patientAssignment.completedAt, dueDate: patientAssignment.dueDate })
-    .from(patientAssignment)
-    .where(and(eq(patientAssignment.providerId, providerId), eq(patientAssignment.patientId, patientId)))
-    .orderBy(desc(patientAssignment.createdAt))
-    .limit(assignmentLimit);
+    // Assignments (limited - Finding 12)
+    const assignments = await tx
+      .select({ courseId: patientAssignment.courseId, lessonId: patientAssignment.lessonId, completedAt: patientAssignment.completedAt, dueDate: patientAssignment.dueDate })
+      .from(patientAssignment)
+      .where(and(eq(patientAssignment.providerId, providerId), eq(patientAssignment.patientId, patientId)))
+      .orderBy(desc(patientAssignment.createdAt))
+      .limit(assignmentLimit);
 
-  const pendingAssignments = assignments
+    return { status: 'ok' as const, link, patientProfile, latestMood, recentAlerts, assignments };
+  });
+
+  if (result.status === 'not_found') return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+
+  const alias = result.link.displayName ?? `Patient ${patientId.slice(-4)}`;
+  const p = (result.patientProfile?.data ?? {}) as Partial<WellnessProfile>;
+
+  const pendingAssignments = result.assignments
     .filter(a => !a.completedAt)
     .map(a => a.lessonId ? `${courseTitle(a.courseId)} — Lesson ${a.lessonId}` : courseTitle(a.courseId));
 
@@ -130,14 +136,14 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
 
   const ctx: SessionPrepContext = {
     patientAlias:        alias,
-    recentAlerts:        recentAlerts.map(a => `${a.level} (${new Date(a.createdAt).toLocaleDateString()})`),
+    recentAlerts:        result.recentAlerts.map(a => `${a.level} (${new Date(a.createdAt).toLocaleDateString()})`),
     completedCourses,
     currentCourse,
-    latestMoodRating:    latestMood?.moodRating ?? null,
-    latestAnxietyLevel:  latestMood?.anxietyLevel ?? null,
-    latestSleepQuality:  latestMood?.sleepQuality ?? null,
+    latestMoodRating:    result.latestMood?.moodRating ?? null,
+    latestAnxietyLevel:  result.latestMood?.anxietyLevel ?? null,
+    latestSleepQuality:  result.latestMood?.sleepQuality ?? null,
     pendingAssignments,
-    providerNotes:       link.notes ?? null,
+    providerNotes:       result.link.notes ?? null,
   };
 
   try {

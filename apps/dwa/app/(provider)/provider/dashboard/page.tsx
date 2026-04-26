@@ -1,6 +1,8 @@
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, distressEvent, patientAssignment, providerProfile } from '@/lib/db/schema';
 import { eq, and, isNull, inArray, count, desc } from 'drizzle-orm';
 import Link from 'next/link';
@@ -11,78 +13,79 @@ export default async function ProviderDashboardPage() {
   const session = await getServerSession();
   if (!session?.uid) redirect('/signin');
 
-  const db = getDb();
-  if (!db) {
-    return (
-      <div className="p-8 text-center text-gray-500">
-        Database not available. Check your DATABASE_URL environment variable.
-      </div>
-    );
-  }
-
   const providerId = session.uid;
 
-  // Provider profile
-  const [prof] = await db.select().from(providerProfile).where(eq(providerProfile.userId, providerId));
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: providerId },
+  );
 
-  // Patient count
-  const [{ total: patientCount }] = await db
-    .select({ total: count() })
-    .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')));
+  const data = await withTenantApp(ctx, async (tx) => {
+    // Provider profile
+    const [prof] = await tx.select().from(providerProfile).where(eq(providerProfile.userId, providerId));
 
-  // Patient IDs
-  const links = await db
-    .select({ patientId: providerPatient.patientId, displayName: providerPatient.displayName })
-    .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')));
-
-  const patientIds = links.map(l => l.patientId);
-  const nameMap = new Map(links.map(l => [l.patientId, l.displayName ?? `Patient ${l.patientId.slice(-4)}`]));
-
-  // Unresolved alerts
-  let unresolvedAlerts: any[] = [];
-  let pendingCount = 0;
-
-  if (patientIds.length > 0) {
-    unresolvedAlerts = await db
-      .select()
-      .from(distressEvent)
-      .where(
-        and(
-          inArray(distressEvent.userId, patientIds),
-          isNull(distressEvent.resolvedAt),
-          inArray(distressEvent.level, ['crisis', 'mild']),
-        )
-      )
-      .orderBy(desc(distressEvent.createdAt))
-      .limit(5);
-
-    const [{ total }] = await db
+    // Patient count
+    const [{ total: patientCount }] = await tx
       .select({ total: count() })
-      .from(patientAssignment)
-      .where(
-        and(
-          eq(patientAssignment.providerId, providerId),
-          isNull(patientAssignment.completedAt),
-        )
-      );
-    pendingCount = Number(total);
-  }
+      .from(providerPatient)
+      .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')));
 
-  const crisisAlerts = unresolvedAlerts.filter(a => a.level === 'crisis');
-  const mildAlerts   = unresolvedAlerts.filter(a => a.level === 'mild');
+    // Patient IDs
+    const links = await tx
+      .select({ patientId: providerPatient.patientId, displayName: providerPatient.displayName })
+      .from(providerPatient)
+      .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')));
+
+    const patientIds = links.map(l => l.patientId);
+
+    // Unresolved alerts
+    let unresolvedAlerts: any[] = [];
+    let pendingCount = 0;
+
+    if (patientIds.length > 0) {
+      unresolvedAlerts = await tx
+        .select()
+        .from(distressEvent)
+        .where(
+          and(
+            inArray(distressEvent.userId, patientIds),
+            isNull(distressEvent.resolvedAt),
+            inArray(distressEvent.level, ['crisis', 'mild']),
+          )
+        )
+        .orderBy(desc(distressEvent.createdAt))
+        .limit(5);
+
+      const [{ total }] = await tx
+        .select({ total: count() })
+        .from(patientAssignment)
+        .where(
+          and(
+            eq(patientAssignment.providerId, providerId),
+            isNull(patientAssignment.completedAt),
+          )
+        );
+      pendingCount = Number(total);
+    }
+
+    return { prof, patientCount, links, unresolvedAlerts, pendingCount };
+  });
+
+  const nameMap = new Map(data.links.map(l => [l.patientId, l.displayName ?? `Patient ${l.patientId.slice(-4)}`]));
+
+  const crisisAlerts = data.unresolvedAlerts.filter(a => a.level === 'crisis');
+  const mildAlerts   = data.unresolvedAlerts.filter(a => a.level === 'mild');
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-          {prof ? `Welcome, ${prof.displayName}` : 'Provider Dashboard'}
+          {data.prof ? `Welcome, ${data.prof.displayName}` : 'Provider Dashboard'}
         </h1>
-        {prof?.credentials && (
+        {data.prof?.credentials && (
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
-            {prof.credentials}{prof.specialty ? ` · ${prof.specialty}` : ''}
+            {data.prof.credentials}{data.prof.specialty ? ` · ${data.prof.specialty}` : ''}
           </p>
         )}
       </div>
@@ -91,7 +94,7 @@ export default async function ProviderDashboardPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <StatCard
           label="Active Patients"
-          value={Number(patientCount)}
+          value={Number(data.patientCount)}
           color="violet"
           href="/provider/patients"
         />
@@ -109,7 +112,7 @@ export default async function ProviderDashboardPage() {
         />
         <StatCard
           label="Pending Assignments"
-          value={pendingCount}
+          value={data.pendingCount}
           color="blue"
           href="/provider/patients"
         />
@@ -168,7 +171,7 @@ export default async function ProviderDashboardPage() {
       </div>
 
       {/* No patients onboarding nudge */}
-      {Number(patientCount) === 0 && (
+      {Number(data.patientCount) === 0 && (
         <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-8 text-center">
           <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">
             No patients linked yet. Share an invite code to connect patients to your account.

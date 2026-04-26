@@ -1,6 +1,8 @@
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, distressEvent } from '@/lib/db/schema';
 import { eq, and, isNull, isNotNull, inArray, desc } from 'drizzle-orm';
 import Link from 'next/link';
@@ -13,49 +15,56 @@ export default async function AlertsPage() {
   const session = await getServerSession();
   if (!session?.uid) redirect('/signin');
 
-  const db = getDb();
-  if (!db) return <div className="p-8 text-gray-500 text-center">Database unavailable.</div>;
-
   const providerId = session.uid;
 
-  const links = await db
-    .select({ patientId: providerPatient.patientId, displayName: providerPatient.displayName })
-    .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')));
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: providerId },
+  );
 
-  const patientIds = links.map(l => l.patientId);
+  const { links, alerts, resolved } = await withTenantApp(ctx, async (tx) => {
+    const links = await tx
+      .select({ patientId: providerPatient.patientId, displayName: providerPatient.displayName })
+      .from(providerPatient)
+      .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')));
+
+    const patientIds = links.map(l => l.patientId);
+
+    let alerts: any[] = [];
+    let resolved: any[] = [];
+
+    if (patientIds.length > 0) {
+      alerts = await tx
+        .select()
+        .from(distressEvent)
+        .where(
+          and(
+            inArray(distressEvent.userId, patientIds),
+            isNull(distressEvent.resolvedAt),
+            inArray(distressEvent.level, ['crisis', 'mild']),
+          )
+        )
+        .orderBy(desc(distressEvent.createdAt))
+        .limit(50);
+
+      resolved = await tx
+        .select()
+        .from(distressEvent)
+        .where(
+          and(
+            inArray(distressEvent.userId, patientIds),
+            isNotNull(distressEvent.resolvedAt),
+            inArray(distressEvent.level, ['crisis', 'mild']),
+          )
+        )
+        .orderBy(desc(distressEvent.createdAt))
+        .limit(20);
+    }
+
+    return { links, alerts, resolved };
+  });
+
   const nameMap = new Map(links.map(l => [l.patientId, l.displayName ?? `Patient ${l.patientId.slice(-4)}`]));
-
-  let alerts: any[] = [];
-  let resolved: any[] = [];
-
-  if (patientIds.length > 0) {
-    alerts = await db
-      .select()
-      .from(distressEvent)
-      .where(
-        and(
-          inArray(distressEvent.userId, patientIds),
-          isNull(distressEvent.resolvedAt),
-          inArray(distressEvent.level, ['crisis', 'mild']),
-        )
-      )
-      .orderBy(desc(distressEvent.createdAt))
-      .limit(50);
-
-    resolved = await db
-      .select()
-      .from(distressEvent)
-      .where(
-        and(
-          inArray(distressEvent.userId, patientIds),
-          isNotNull(distressEvent.resolvedAt),
-          inArray(distressEvent.level, ['crisis', 'mild']),
-        )
-      )
-      .orderBy(desc(distressEvent.createdAt))
-      .limit(20);
-  }
 
   const crisis = alerts.filter(a => a.level === 'crisis');
   const mild   = alerts.filter(a => a.level === 'mild');

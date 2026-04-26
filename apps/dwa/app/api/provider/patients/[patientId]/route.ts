@@ -13,15 +13,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { withProviderAuth } from '@/lib/api/with-auth';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, profile, distressEvent, moodEntry, patientAssignment } from '@/lib/db/schema';
 import { eq, and, desc, gte } from 'drizzle-orm';
 import type { WellnessProfile } from '@/types/wellness-profile';
 
 export const GET = withProviderAuth(async (req, { userId: providerId }, context) => {
   const patientId = context.params.patientId as string;
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
+  const ctx = await requireTenantContext(req, { userId: providerId });
 
   // Parse pagination params (Finding 12: DoS prevention)
   const searchParams = req.nextUrl.searchParams;
@@ -33,75 +33,81 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
   const cutoffDate = new Date();
   cutoffDate.setDate(cutoffDate.getDate() - days);
 
-  // Verify this patient belongs to this provider AND the link is active.
-  // Dropping the `status='active'` filter would let an ex-provider keep
-  // reading PHI after the patient revoked the relationship. (B-040.)
-  const [link] = await db
-    .select()
-    .from(providerPatient)
-    .where(and(
-      eq(providerPatient.providerId, providerId),
-      eq(providerPatient.patientId, patientId),
-      eq(providerPatient.status, 'active'),
-    ));
+  const result = await withTenantApp(ctx, async (tx) => {
+    // Verify this patient belongs to this provider AND the link is active.
+    // Dropping the `status='active'` filter would let an ex-provider keep
+    // reading PHI after the patient revoked the relationship. (B-040.)
+    const [link] = await tx
+      .select()
+      .from(providerPatient)
+      .where(and(
+        eq(providerPatient.providerId, providerId),
+        eq(providerPatient.patientId, patientId),
+        eq(providerPatient.status, 'active'),
+      ));
 
-  if (!link) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+    if (!link) return { status: 'not_found' as const };
 
-  // Profile
-  const [patientProfile] = await db
-    .select({ data: profile.data })
-    .from(profile)
-    .where(eq(profile.userId, patientId));
+    // Profile
+    const [patientProfile] = await tx
+      .select({ data: profile.data })
+      .from(profile)
+      .where(eq(profile.userId, patientId));
+
+    // Recent mood entries (time-filtered + limited - Finding 12)
+    const recentMoods = await tx
+      .select()
+      .from(moodEntry)
+      .where(and(
+        eq(moodEntry.userId, patientId),
+        gte(moodEntry.date, cutoffDate)
+      ))
+      .orderBy(desc(moodEntry.date))
+      .limit(moodLimit);
+
+    // Distress history (time-filtered + limited - Finding 12)
+    const distressHistory = await tx
+      .select({
+        id:              distressEvent.id,
+        level:           distressEvent.level,
+        confidence:      distressEvent.confidence,
+        context:         distressEvent.context,
+        courseId:        distressEvent.courseId,
+        lessonId:        distressEvent.lessonId,
+        providerAlerted: distressEvent.providerAlerted,
+        resolvedAt:      distressEvent.resolvedAt,
+        createdAt:       distressEvent.createdAt,
+      })
+      .from(distressEvent)
+      .where(and(
+        eq(distressEvent.userId, patientId),
+        gte(distressEvent.createdAt, cutoffDate)
+      ))
+      .orderBy(desc(distressEvent.createdAt))
+      .limit(alertLimit);
+
+    // Assignments from this provider to this patient (limited - Finding 12)
+    const assignments = await tx
+      .select()
+      .from(patientAssignment)
+      .where(and(eq(patientAssignment.providerId, providerId), eq(patientAssignment.patientId, patientId)))
+      .orderBy(desc(patientAssignment.createdAt))
+      .limit(assignmentLimit);
+
+    return { status: 'ok' as const, link, patientProfile, recentMoods, distressHistory, assignments };
+  });
+
+  if (result.status === 'not_found') return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
 
   // Type profile data properly (Finding 15: no more 'as any')
-  const profileData = (patientProfile?.data ?? {}) as Partial<WellnessProfile>;
-
-  // Recent mood entries (time-filtered + limited - Finding 12)
-  const recentMoods = await db
-    .select()
-    .from(moodEntry)
-    .where(and(
-      eq(moodEntry.userId, patientId),
-      gte(moodEntry.date, cutoffDate)
-    ))
-    .orderBy(desc(moodEntry.date))
-    .limit(moodLimit);
-
-  // Distress history (time-filtered + limited - Finding 12)
-  const distressHistory = await db
-    .select({
-      id:              distressEvent.id,
-      level:           distressEvent.level,
-      confidence:      distressEvent.confidence,
-      context:         distressEvent.context,
-      courseId:        distressEvent.courseId,
-      lessonId:        distressEvent.lessonId,
-      providerAlerted: distressEvent.providerAlerted,
-      resolvedAt:      distressEvent.resolvedAt,
-      createdAt:       distressEvent.createdAt,
-    })
-    .from(distressEvent)
-    .where(and(
-      eq(distressEvent.userId, patientId),
-      gte(distressEvent.createdAt, cutoffDate)
-    ))
-    .orderBy(desc(distressEvent.createdAt))
-    .limit(alertLimit);
-
-  // Assignments from this provider to this patient (limited - Finding 12)
-  const assignments = await db
-    .select()
-    .from(patientAssignment)
-    .where(and(eq(patientAssignment.providerId, providerId), eq(patientAssignment.patientId, patientId)))
-    .orderBy(desc(patientAssignment.createdAt))
-    .limit(assignmentLimit);
+  const profileData = (result.patientProfile?.data ?? {}) as Partial<WellnessProfile>;
 
   return NextResponse.json({
     patientId,
-    displayName:  link.displayName ?? `Patient ${patientId.slice(-4)}`,
-    notes:        link.notes,
-    status:       link.status,
-    linkedAt:     link.createdAt,
+    displayName:  result.link.displayName ?? `Patient ${patientId.slice(-4)}`,
+    notes:        result.link.notes,
+    status:       result.link.status,
+    linkedAt:     result.link.createdAt,
     profile: {
       onboardingCompleted: profileData.onboardingCompleted ?? false,
       currentCourse:       profileData.progress?.currentCourse ?? null,
@@ -117,15 +123,15 @@ export const GET = withProviderAuth(async (req, { userId: providerId }, context)
         })) ?? [],
       },
     },
-    recentMoods: recentMoods.map(m => ({
+    recentMoods: result.recentMoods.map(m => ({
       date:         m.date,
       moodRating:   m.moodRating,
       anxietyLevel: m.anxietyLevel,
       sleepQuality: m.sleepQuality,
       energyLevel:  m.energyLevel,
     })),
-    distressHistory,
-    assignments,
+    distressHistory: result.distressHistory,
+    assignments: result.assignments,
   });
 });
 
@@ -136,8 +142,6 @@ const patchSchema = z.object({
 
 export const PATCH = withProviderAuth(async (req, { userId: providerId }, context) => {
   const patientId = context.params.patientId as string;
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
 
   let body: unknown;
   try { body = await req.json(); } catch { return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 }); }
@@ -145,17 +149,21 @@ export const PATCH = withProviderAuth(async (req, { userId: providerId }, contex
   const parsed = patchSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: parsed.error.flatten() }, { status: 422 });
 
+  const ctx = await requireTenantContext(req, { userId: providerId });
+
   // PATCH must also require an active link — an inactive link should
   // not be editable. (B-040.)
-  const result = await db
-    .update(providerPatient)
-    .set({ ...(parsed.data.displayName !== undefined ? { displayName: parsed.data.displayName } : {}), ...(parsed.data.notes !== undefined ? { notes: parsed.data.notes } : {}) })
-    .where(and(
-      eq(providerPatient.providerId, providerId),
-      eq(providerPatient.patientId, patientId),
-      eq(providerPatient.status, 'active'),
-    ))
-    .returning({ patientId: providerPatient.patientId });
+  const result = await withTenantApp(ctx, async (tx) =>
+    tx
+      .update(providerPatient)
+      .set({ ...(parsed.data.displayName !== undefined ? { displayName: parsed.data.displayName } : {}), ...(parsed.data.notes !== undefined ? { notes: parsed.data.notes } : {}) })
+      .where(and(
+        eq(providerPatient.providerId, providerId),
+        eq(providerPatient.patientId, patientId),
+        eq(providerPatient.status, 'active'),
+      ))
+      .returning({ patientId: providerPatient.patientId }),
+  );
 
   if (result.length === 0) {
     return NextResponse.json({ error: 'Patient not found' }, { status: 404 });

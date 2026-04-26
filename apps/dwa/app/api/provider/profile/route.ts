@@ -15,7 +15,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { withAuth } from '@/lib/api/with-auth';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerProfile, user } from '@/lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { verifyProviderNPI } from '@/lib/services/npiService';
@@ -30,23 +31,21 @@ const profileSchema = z.object({
   bio:           z.string().max(1000).optional(),
 });
 
-export const GET = withAuth(async (_req, { userId }) => {
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
+export const GET = withAuth(async (req, { userId }) => {
+  const ctx = await requireTenantContext(req, { userId });
 
-  const [prof] = await db
-    .select()
-    .from(providerProfile)
-    .where(eq(providerProfile.userId, userId));
+  const [prof] = await withTenantApp(ctx, async (tx) =>
+    tx
+      .select()
+      .from(providerProfile)
+      .where(eq(providerProfile.userId, userId)),
+  );
 
   if (!prof) return NextResponse.json({ profile: null });
   return NextResponse.json({ profile: prof });
 });
 
 export const POST = withAuth(async (req, { userId }) => {
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
-
   let body: unknown;
   try { body = await req.json(); } catch { return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 }); }
 
@@ -55,23 +54,27 @@ export const POST = withAuth(async (req, { userId }) => {
 
   const { displayName, credentials, specialty, licenseNumber, npiNumber, bio } = parsed.data;
 
+  const ctx = await requireTenantContext(req, { userId });
+
   // (slice 01 fix) Load any existing profile so we only re-run NPI
   // verification when the NPI number actually changed. Editing bio/specialty
   // on an already-verified profile used to silently demote the user to
   // manual_review while leaving their `user.role='provider'` — an
   // inconsistent state.
-  const [existing] = await db
-    .select({
-      npiNumber: providerProfile.npiNumber,
-      verificationStatus: providerProfile.verificationStatus,
-      verificationMethod: providerProfile.verificationMethod,
-      verificationNotes: providerProfile.verificationNotes,
-      npiData: providerProfile.npiData,
-      verifiedAt: providerProfile.verifiedAt,
-      verifiedBy: providerProfile.verifiedBy,
-    })
-    .from(providerProfile)
-    .where(eq(providerProfile.userId, userId));
+  const [existing] = await withTenantApp(ctx, async (tx) =>
+    tx
+      .select({
+        npiNumber: providerProfile.npiNumber,
+        verificationStatus: providerProfile.verificationStatus,
+        verificationMethod: providerProfile.verificationMethod,
+        verificationNotes: providerProfile.verificationNotes,
+        npiData: providerProfile.npiData,
+        verifiedAt: providerProfile.verifiedAt,
+        verifiedBy: providerProfile.verifiedBy,
+      })
+      .from(providerProfile)
+      .where(eq(providerProfile.userId, userId)),
+  );
 
   const npiChanged = (npiNumber ?? null) !== (existing?.npiNumber ?? null);
   const shouldReverify = !existing || npiChanged;
@@ -144,26 +147,12 @@ export const POST = withAuth(async (req, { userId }) => {
   }
   // (else: existing profile, NPI unchanged — preserve stored verification state.)
 
-  // ── Upsert provider profile ─────────────────────────────────────────────────
-  await db
-    .insert(providerProfile)
-    .values({
-      userId,
-      displayName,
-      credentials:        credentials ?? null,
-      specialty:          specialty ?? null,
-      licenseNumber:      licenseNumber ?? null,
-      npiNumber:          npiNumber ?? null,
-      bio:                bio ?? null,
-      verificationStatus,
-      verificationMethod: verificationMethod ?? null,
-      verificationNotes:  verificationNotes ?? null,
-      npiData:            npiData ?? undefined,
-      verifiedAt:         verifiedAt ?? undefined,
-    })
-    .onConflictDoUpdate({
-      target: providerProfile.userId,
-      set: {
+  // ── Upsert provider profile + reconcile role ────────────────────────────────
+  await withTenantApp(ctx, async (tx) => {
+    await tx
+      .insert(providerProfile)
+      .values({
+        userId,
         displayName,
         credentials:        credentials ?? null,
         specialty:          specialty ?? null,
@@ -175,23 +164,39 @@ export const POST = withAuth(async (req, { userId }) => {
         verificationNotes:  verificationNotes ?? null,
         npiData:            npiData ?? undefined,
         verifiedAt:         verifiedAt ?? undefined,
-      },
-    });
+      })
+      .onConflictDoUpdate({
+        target: providerProfile.userId,
+        set: {
+          displayName,
+          credentials:        credentials ?? null,
+          specialty:          specialty ?? null,
+          licenseNumber:      licenseNumber ?? null,
+          npiNumber:          npiNumber ?? null,
+          bio:                bio ?? null,
+          verificationStatus,
+          verificationMethod: verificationMethod ?? null,
+          verificationNotes:  verificationNotes ?? null,
+          npiData:            npiData ?? undefined,
+          verifiedAt:         verifiedAt ?? undefined,
+        },
+      });
 
-  // ── Role elevation — only on verified ───────────────────────────────────────
-  // (slice 01 fix) Reconcile user.role with verificationStatus on every run
-  // so the two can't drift. Previously we elevated on 'verified' but never
-  // demoted when verification was re-triggered and lost.
-  if (verificationStatus === 'verified') {
-    await db.update(user).set({ role: 'provider' }).where(eq(user.id, userId));
-  } else {
-    // Only demote if the user currently claims to be a provider — leave
-    // admins and other roles alone.
-    await db
-      .update(user)
-      .set({ role: 'user' })
-      .where(and(eq(user.id, userId), eq(user.role, 'provider')));
-  }
+    // ── Role elevation — only on verified ─────────────────────────────────────
+    // (slice 01 fix) Reconcile user.role with verificationStatus on every run
+    // so the two can't drift. Previously we elevated on 'verified' but never
+    // demoted when verification was re-triggered and lost.
+    if (verificationStatus === 'verified') {
+      await tx.update(user).set({ role: 'provider' }).where(eq(user.id, userId));
+    } else {
+      // Only demote if the user currently claims to be a provider — leave
+      // admins and other roles alone.
+      await tx
+        .update(user)
+        .set({ role: 'user' })
+        .where(and(eq(user.id, userId), eq(user.role, 'provider')));
+    }
+  });
 
   return NextResponse.json({
     success: true,

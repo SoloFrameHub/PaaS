@@ -1,6 +1,8 @@
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, profile, distressEvent, moodEntry, patientAssignment } from '@/lib/db/schema';
 import { eq, and, isNull, inArray, count, desc } from 'drizzle-orm';
 import Link from 'next/link';
@@ -12,38 +14,38 @@ export default async function PatientsPage() {
   const session = await getServerSession();
   if (!session?.uid) redirect('/signin');
 
-  const db = getDb();
-  if (!db) return <div className="p-8 text-gray-500 text-center">Database unavailable.</div>;
-
   const providerId = session.uid;
 
-  const links = await db
-    .select({
-      patientId:   providerPatient.patientId,
-      displayName: providerPatient.displayName,
-      status:      providerPatient.status,
-      linkedAt:    providerPatient.createdAt,
-    })
-    .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')))
-    .orderBy(desc(providerPatient.createdAt));
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: providerId },
+  );
 
-  const patientIds = links.map(l => l.patientId);
+  const data = await withTenantApp(ctx, async (tx) => {
+    const links = await tx
+      .select({
+        patientId:   providerPatient.patientId,
+        displayName: providerPatient.displayName,
+        status:      providerPatient.status,
+        linkedAt:    providerPatient.createdAt,
+      })
+      .from(providerPatient)
+      .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')))
+      .orderBy(desc(providerPatient.createdAt));
 
-  // Batch-load profile data
-  let profileMap = new Map<string, any>();
-  let crisisMap  = new Map<string, number>();
-  let moodMap    = new Map<string, any>();
-  let assignMap  = new Map<string, { pending: number; total: number }>();
+    const patientIds = links.map(l => l.patientId);
 
-  if (patientIds.length > 0) {
-    const profiles = await db
+    if (patientIds.length === 0) {
+      return { links, profiles: [], crisisRows: [], moods: [], allAssignments: [] };
+    }
+
+    // Batch-load profile data
+    const profiles = await tx
       .select({ userId: profile.userId, data: profile.data })
       .from(profile)
       .where(inArray(profile.userId, patientIds));
-    profileMap = new Map(profiles.map(p => [p.userId, p.data]));
 
-    const crisisRows = await db
+    const crisisRows = await tx
       .select({ userId: distressEvent.userId, cnt: count() })
       .from(distressEvent)
       .where(
@@ -54,28 +56,41 @@ export default async function PatientsPage() {
         )
       )
       .groupBy(distressEvent.userId);
-    crisisMap = new Map(crisisRows.map(r => [r.userId!, Number(r.cnt)]));
 
-    const moods = await db
+    const moods = await tx
       .select({ userId: moodEntry.userId, moodRating: moodEntry.moodRating, anxietyLevel: moodEntry.anxietyLevel, date: moodEntry.date })
       .from(moodEntry)
       .where(inArray(moodEntry.userId, patientIds))
       .orderBy(desc(moodEntry.date));
-    for (const m of moods) {
-      if (!moodMap.has(m.userId)) moodMap.set(m.userId, m);
-    }
 
-    const allAssignments = await db
+    const allAssignments = await tx
       .select({ patientId: patientAssignment.patientId, completedAt: patientAssignment.completedAt })
       .from(patientAssignment)
       .where(eq(patientAssignment.providerId, providerId));
-    for (const a of allAssignments) {
-      const cur = assignMap.get(a.patientId) ?? { pending: 0, total: 0 };
-      cur.total++;
-      if (!a.completedAt) cur.pending++;
-      assignMap.set(a.patientId, cur);
-    }
+
+    return { links, profiles, crisisRows, moods, allAssignments };
+  });
+
+  const profileMap = new Map<string, any>(data.profiles.map(p => [p.userId, p.data]));
+
+  const crisisMap = new Map<string, number>(
+    data.crisisRows.map(r => [r.userId!, Number(r.cnt)]),
+  );
+
+  const moodMap = new Map<string, any>();
+  for (const m of data.moods) {
+    if (!moodMap.has(m.userId)) moodMap.set(m.userId, m);
   }
+
+  const assignMap = new Map<string, { pending: number; total: number }>();
+  for (const a of data.allAssignments) {
+    const cur = assignMap.get(a.patientId) ?? { pending: 0, total: 0 };
+    cur.total++;
+    if (!a.completedAt) cur.pending++;
+    assignMap.set(a.patientId, cur);
+  }
+
+  const links = data.links;
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">

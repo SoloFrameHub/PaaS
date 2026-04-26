@@ -1,6 +1,8 @@
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerProfile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import ProviderProfileForm from './provider-profile-form';
@@ -12,16 +14,19 @@ export default async function ProviderProfilePage() {
   const session = await getServerSession();
   if (!session?.uid) redirect('/signin');
 
-  const db = getDb();
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: session.uid },
+  );
 
-  let existing: any = null;
-  if (db) {
-    const [prof] = await db
+  const [prof] = await withTenantApp(ctx, async (tx) =>
+    tx
       .select()
       .from(providerProfile)
-      .where(eq(providerProfile.userId, session.uid));
-    existing = prof ?? null;
-  }
+      .where(eq(providerProfile.userId, session.uid)),
+  );
+
+  const existing = prof ?? null;
 
   return (
     <div className="max-w-xl mx-auto space-y-6">

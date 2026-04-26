@@ -1,6 +1,8 @@
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, profile, distressEvent, moodEntry, patientAssignment } from '@/lib/db/schema';
 import { eq, and, desc, isNull } from 'drizzle-orm';
 import Link from 'next/link';
@@ -25,46 +27,64 @@ export default async function PatientDetailPage({ params }: { params: Promise<{ 
   if (session.role !== 'provider' && session.role !== 'admin') redirect('/provider-signup');
 
   const { patientId } = await params;
-  const db = getDb();
-  if (!db) return <div className="p-8 text-gray-500 text-center">Database unavailable.</div>;
-
   const providerId = session.uid;
 
-  const [link] = await db
-    .select()
-    .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.patientId, patientId)));
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: providerId },
+  );
 
-  if (!link) redirect('/provider/patients');
+  const data = await withTenantApp(ctx, async (tx) => {
+    const [link] = await tx
+      .select()
+      .from(providerPatient)
+      .where(and(
+        eq(providerPatient.providerId, providerId),
+        eq(providerPatient.patientId, patientId),
+        // B-040: gate PHI on active link only — terminated relationships
+        // leave the row in place with status != 'active' and would otherwise
+        // still render the patient detail page for an ex-provider.
+        eq(providerPatient.status, 'active'),
+      ));
+
+    if (!link) return { link: null as typeof link | null };
+
+    // Profile
+    const [patientProfile] = await tx.select({ data: profile.data }).from(profile).where(eq(profile.userId, patientId));
+
+    // Moods (last 10)
+    const moods = await tx
+      .select()
+      .from(moodEntry)
+      .where(eq(moodEntry.userId, patientId))
+      .orderBy(desc(moodEntry.date))
+      .limit(10);
+
+    // Distress events (last 10)
+    const distressEvents = await tx
+      .select()
+      .from(distressEvent)
+      .where(eq(distressEvent.userId, patientId))
+      .orderBy(desc(distressEvent.createdAt))
+      .limit(10);
+
+    // Assignments
+    const assignments = await tx
+      .select()
+      .from(patientAssignment)
+      .where(and(eq(patientAssignment.providerId, providerId), eq(patientAssignment.patientId, patientId)))
+      .orderBy(desc(patientAssignment.createdAt));
+
+    return { link, patientProfile, moods, distressEvents, assignments };
+  });
+
+  if (!data.link) redirect('/provider/patients');
+
+  const { link, patientProfile, moods, distressEvents, assignments } = data;
 
   const displayName = link.displayName ?? `Patient ${patientId.slice(-4)}`;
 
-  // Profile
-  const [patientProfile] = await db.select({ data: profile.data }).from(profile).where(eq(profile.userId, patientId));
   const p = (patientProfile?.data ?? {}) as any;
-
-  // Moods (last 10)
-  const moods = await db
-    .select()
-    .from(moodEntry)
-    .where(eq(moodEntry.userId, patientId))
-    .orderBy(desc(moodEntry.date))
-    .limit(10);
-
-  // Distress events (last 10)
-  const distressEvents = await db
-    .select()
-    .from(distressEvent)
-    .where(eq(distressEvent.userId, patientId))
-    .orderBy(desc(distressEvent.createdAt))
-    .limit(10);
-
-  // Assignments
-  const assignments = await db
-    .select()
-    .from(patientAssignment)
-    .where(and(eq(patientAssignment.providerId, providerId), eq(patientAssignment.patientId, patientId)))
-    .orderBy(desc(patientAssignment.createdAt));
 
   const completedCourses: string[] = p?.progress?.completedCourses ?? [];
   const completedLessonsMap: Record<string, string[]> = p?.progress?.completedLessons ?? {};
