@@ -32,6 +32,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Password must be at least 6 characters' }, { status: 400 });
   }
 
+  // D-2/D-8: reset-password/confirm only reads/updates `user` (RLS-excluded)
+  // and invalidates Lucia sessions. No tenant-scoped row is touched, so the
+  // raw pool is the correct shape; there's no tenant header on this request.
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'Database not available' }, { status: 503 });
 

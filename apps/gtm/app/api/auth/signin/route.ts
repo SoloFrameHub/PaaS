@@ -41,6 +41,9 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // D-2/D-8: signin reads/updates only `user` and creates a Lucia `session`,
+  // both RLS-excluded. No tenant-scoped row touched, so the raw pool is the
+  // correct shape — there is no tenant header on the signin request anyway.
   const db = getDb();
   if (!db)
     return NextResponse.json(

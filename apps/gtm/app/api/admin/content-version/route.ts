@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { hasDatabase, getDb, schema } from '@/lib/db';
+import { hasDatabase, schema } from '@/lib/db';
+import { withSystemAdminApp } from '@/lib/db/with-tenant';
 import { checkAdminSecret } from '@/lib/api/admin-auth';
 
 const contentVersionSchema = z.object({
@@ -16,6 +17,10 @@ const contentVersionSchema = z.object({
  * POST /api/admin/content-version
  * Logs a content/manuscript change for Metabase analytics tracking.
  * Protected by admin secret.
+ *
+ * Cross-tenant — content_version tracks platform curriculum changes that
+ * are not bound to a specific tenant request. Runs as platform_system to
+ * bypass RLS (D-7, Pattern E).
  */
 export async function POST(request: NextRequest) {
     if (!checkAdminSecret(request)) {
@@ -29,20 +34,17 @@ export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
         const data = contentVersionSchema.parse(body);
-        const db = getDb();
 
-        if (!db) {
-            return NextResponse.json({ error: 'Database connection failed' }, { status: 503 });
-        }
-
-        await db.insert(schema.contentVersion).values({
-            id: `cv_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`,
-            entityType: data.entityType,
-            entityId: data.entityId,
-            versionLabel: data.versionLabel,
-            changeSummary: data.changeSummary,
-            changedBy: data.changedBy ?? null,
-            metadata: data.metadata ?? null,
+        await withSystemAdminApp(async (tx) => {
+            await tx.insert(schema.contentVersion).values({
+                id: `cv_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`,
+                entityType: data.entityType,
+                entityId: data.entityId,
+                versionLabel: data.versionLabel,
+                changeSummary: data.changeSummary,
+                changedBy: data.changedBy ?? null,
+                metadata: data.metadata ?? null,
+            });
         });
 
         return NextResponse.json({ success: true });
@@ -60,6 +62,9 @@ export async function POST(request: NextRequest) {
 /**
  * GET /api/admin/content-version
  * Lists recent content versions for display.
+ *
+ * Cross-tenant view — runs as platform_system to bypass RLS on
+ * `content_version` (D-7, Pattern E).
  */
 export async function GET(request: NextRequest) {
     if (!checkAdminSecret(request)) {
@@ -71,15 +76,12 @@ export async function GET(request: NextRequest) {
     }
 
     try {
-        const db = getDb();
-        if (!db) {
-            return NextResponse.json({ error: 'Database connection failed' }, { status: 503 });
-        }
-
-        const versions = await db.select()
-            .from(schema.contentVersion)
-            .orderBy(schema.contentVersion.createdAt)
-            .limit(50);
+        const versions = await withSystemAdminApp(async (tx) =>
+            tx.select()
+                .from(schema.contentVersion)
+                .orderBy(schema.contentVersion.createdAt)
+                .limit(50)
+        );
 
         return NextResponse.json({ versions });
     } catch (error) {

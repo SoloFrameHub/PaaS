@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { checkAdminSecret } from "@/lib/api/admin-auth";
-import { getDb, hasDatabase, schema } from "@/lib/db";
+import { hasDatabase, schema } from "@/lib/db";
+import { withSystemAdminApp } from "@/lib/db/with-tenant";
 import { getResend } from "@/lib/email/resend";
-import { eq, and, sql, isNull } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { logger } from "@/lib/logger";
 
 /**
@@ -11,6 +12,9 @@ import { logger } from "@/lib/logger";
  * Targets submissions from ~24h ago that haven't converted.
  * Called by OpenClaw cron (daily 10am UTC).
  * Protected by ADMIN_API_SECRET.
+ *
+ * Cross-tenant cron sweep — scans all tenants' `form_submission` rows and
+ * runs as platform_system to bypass RLS (D-7, Pattern B).
  */
 export async function POST(request: NextRequest) {
   if (!checkAdminSecret(request)) {
@@ -24,52 +28,54 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const db = getDb()!;
-
   try {
     // Find readiness-score submissions from 20-28 hours ago (window around 24h)
     const windowStart = new Date(Date.now() - 28 * 60 * 60 * 1000);
     const windowEnd = new Date(Date.now() - 20 * 60 * 60 * 1000);
 
-    const submissions = await db
-      .select({
-        id: schema.formSubmission.id,
-        email: schema.formSubmission.email,
-        name: schema.formSubmission.name,
-        score: schema.formSubmission.score,
-        scoreBreakdown: schema.formSubmission.scoreBreakdown,
-      })
-      .from(schema.formSubmission)
-      .where(
-        sql`${schema.formSubmission.formSlug} = 'readiness-score'
-          AND ${schema.formSubmission.createdAt} >= ${windowStart}
-          AND ${schema.formSubmission.createdAt} <= ${windowEnd}
-          AND ${schema.formSubmission.status} = 'new'`,
-      )
-      .limit(100);
+    const { unconverted } = await withSystemAdminApp(async (tx) => {
+      const submissions = await tx
+        .select({
+          id: schema.formSubmission.id,
+          email: schema.formSubmission.email,
+          name: schema.formSubmission.name,
+          score: schema.formSubmission.score,
+          scoreBreakdown: schema.formSubmission.scoreBreakdown,
+        })
+        .from(schema.formSubmission)
+        .where(
+          sql`${schema.formSubmission.formSlug} = 'readiness-score'
+            AND ${schema.formSubmission.createdAt} >= ${windowStart}
+            AND ${schema.formSubmission.createdAt} <= ${windowEnd}
+            AND ${schema.formSubmission.status} = 'new'`,
+        )
+        .limit(100);
 
-    if (submissions.length === 0) {
-      return NextResponse.json({ sent: 0, message: "No eligible submissions" });
-    }
+      if (submissions.length === 0) {
+        return { unconverted: [] as typeof submissions };
+      }
 
-    // Filter out emails that already have a user account
-    const existingUsers = await db
-      .select({ email: schema.user.email })
-      .from(schema.user)
-      .where(
-        sql`${schema.user.email} IN (${sql.join(
-          submissions.map((s) => sql`${s.email}`),
-          sql`, `,
-        )})`,
-      );
+      // Filter out emails that already have a user account
+      const existingUsers = await tx
+        .select({ email: schema.user.email })
+        .from(schema.user)
+        .where(
+          sql`${schema.user.email} IN (${sql.join(
+            submissions.map((s) => sql`${s.email}`),
+            sql`, `,
+          )})`,
+        );
 
-    const existingEmails = new Set(existingUsers.map((u) => u.email));
-    const unconverted = submissions.filter((s) => !existingEmails.has(s.email));
+      const existingEmails = new Set(existingUsers.map((u) => u.email));
+      return {
+        unconverted: submissions.filter((s) => !existingEmails.has(s.email)),
+      };
+    });
 
     if (unconverted.length === 0) {
       return NextResponse.json({
         sent: 0,
-        message: "All quiz takers already signed up",
+        message: "No unconverted submissions found",
       });
     }
 
@@ -128,10 +134,12 @@ export async function POST(request: NextRequest) {
         });
 
         // Mark as followed up
-        await db
-          .update(schema.formSubmission)
-          .set({ status: "followed_up" })
-          .where(eq(schema.formSubmission.id, sub.id));
+        await withSystemAdminApp(async (tx) => {
+          await tx
+            .update(schema.formSubmission)
+            .set({ status: "followed_up" })
+            .where(eq(schema.formSubmission.id, sub.id));
+        });
 
         sent++;
       } catch (err) {

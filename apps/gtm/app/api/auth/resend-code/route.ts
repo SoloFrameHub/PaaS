@@ -11,6 +11,8 @@ export async function POST() {
     return NextResponse.json({ error: 'Not authenticated' }, { status: 401 });
   }
 
+  // D-2/D-8: resend-code only reads/updates `user` (RLS-excluded). No tenant-
+  // scoped row is touched, so the raw pool is the correct shape.
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'Database not available' }, { status: 503 });
 

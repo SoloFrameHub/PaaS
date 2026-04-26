@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { checkAdminSecret } from "@/lib/api/admin-auth";
-import { getDb, hasDatabase, schema } from "@/lib/db";
+import { hasDatabase, schema } from "@/lib/db";
+import { withSystemAdminApp } from "@/lib/db/with-tenant";
 import { getResend } from "@/lib/email/resend";
-import { gte, sql, desc } from "drizzle-orm";
+import { gte, sql } from "drizzle-orm";
 import { logger } from "@/lib/logger";
 
 /**
@@ -10,6 +11,9 @@ import { logger } from "@/lib/logger";
  * Generates and sends weekly progress report emails to active users.
  * Called by OpenClaw cron (Monday 9am UTC).
  * Protected by ADMIN_API_SECRET.
+ *
+ * Cross-tenant cron sweep — scans all tenants' `profile` and `lesson_event`
+ * rows. Runs as platform_system to bypass RLS (D-7, Pattern B).
  */
 export async function POST(request: NextRequest) {
   if (!checkAdminSecret(request)) {
@@ -23,30 +27,30 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const db = getDb()!;
-
   try {
     // Find active users: logged in within last 14 days with a profile
     const twoWeeksAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
 
-    const activeUsers = await db
-      .select({
-        userId: schema.user.id,
-        email: schema.user.email,
-        profileData: schema.profile.data,
-      })
-      .from(schema.user)
-      .innerJoin(
-        schema.profile,
-        sql`${schema.profile.userId} = ${schema.user.id}`,
-      )
-      .innerJoin(
-        schema.session,
-        sql`${schema.session.userId} = ${schema.user.id}`,
-      )
-      .where(gte(schema.session.expiresAt, twoWeeksAgo))
-      .groupBy(schema.user.id, schema.user.email, schema.profile.data)
-      .limit(500);
+    const activeUsers = await withSystemAdminApp(async (tx) =>
+      tx
+        .select({
+          userId: schema.user.id,
+          email: schema.user.email,
+          profileData: schema.profile.data,
+        })
+        .from(schema.user)
+        .innerJoin(
+          schema.profile,
+          sql`${schema.profile.userId} = ${schema.user.id}`,
+        )
+        .innerJoin(
+          schema.session,
+          sql`${schema.session.userId} = ${schema.user.id}`,
+        )
+        .where(gte(schema.session.expiresAt, twoWeeksAgo))
+        .groupBy(schema.user.id, schema.user.email, schema.profile.data)
+        .limit(500),
+    );
 
     if (activeUsers.length === 0) {
       return NextResponse.json({ sent: 0, message: "No active users found" });
@@ -75,12 +79,14 @@ export async function POST(request: NextRequest) {
         const overallReadiness = (assessment?.overallReadiness as number) || 0;
 
         // Get this week's lesson completions
-        const weekEvents = await db
-          .select({ lessonId: schema.lessonEvent.lessonId })
-          .from(schema.lessonEvent)
-          .where(
-            sql`${schema.lessonEvent.userId} = ${user.userId} AND ${schema.lessonEvent.createdAt} >= ${oneWeekAgo} AND ${schema.lessonEvent.eventType} = 'complete'`,
-          );
+        const weekEvents = await withSystemAdminApp(async (tx) =>
+          tx
+            .select({ lessonId: schema.lessonEvent.lessonId })
+            .from(schema.lessonEvent)
+            .where(
+              sql`${schema.lessonEvent.userId} = ${user.userId} AND ${schema.lessonEvent.createdAt} >= ${oneWeekAgo} AND ${schema.lessonEvent.eventType} = 'complete'`,
+            ),
+        );
 
         const lessonsThisWeek = weekEvents.length;
 
