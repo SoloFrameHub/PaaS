@@ -30,6 +30,12 @@ const RESERVED_SUBDOMAINS = [
   ...PLATFORM_SUBDOMAINS,
 ];
 
+// B-030 — headers the client must never be allowed to supply. Middleware is
+// the only source of truth for tenant scoping; without this strip, a request
+// could carry `x-tenant-slug: <any>` and a downstream handler calling
+// `requireTenantContext` would trust it.
+const TENANT_HEADERS = ['x-tenant-slug', 'x-tenant-id'] as const;
+
 function attachTenantSlug(
   request: NextRequest,
   response: NextResponse,
@@ -38,11 +44,16 @@ function attachTenantSlug(
     rootDomains: TENANT_ROOT_DOMAINS,
     reservedSubdomains: RESERVED_SUBDOMAINS,
   });
+  // Always strip any inbound tenant headers, even when we don't reattach one.
+  for (const h of TENANT_HEADERS) response.headers.delete(h);
   if (tenantSlug) response.headers.set("x-tenant-slug", tenantSlug);
   return response;
 }
 
-export function middleware(request: NextRequest) {
+// B-031: Next 16 renamed this convention from `middleware.ts` + `middleware()`
+// to `proxy.ts` + `proxy()`. The old name still works but emits a deprecation
+// warning. Both apps in this monorepo stay on `proxy.ts` + `proxy()`.
+export function proxy(request: NextRequest) {
   // www → non-www redirect (301 for SEO canonical)
   const host = request.headers.get("host") ?? "";
   if (host.startsWith("www.")) {
@@ -105,21 +116,31 @@ export function middleware(request: NextRequest) {
     );
   }
 
-  // Default: continue and propagate x-tenant-slug via request headers so
-  // downstream route handlers can read it and complete tenant resolution.
+  // Default: continue. We always build `requestHeaders` from scratch with
+  // the tenant-control headers stripped, so a request can never present a
+  // spoofed slug to downstream handlers. Setting `x-tenant-slug` is then
+  // the one-way write from middleware → route.
+  const requestHeaders = new Headers(request.headers);
+  for (const h of TENANT_HEADERS) requestHeaders.delete(h);
+
   const tenantSlug = resolveTenantSlugFromHost(host, {
     rootDomains: TENANT_ROOT_DOMAINS,
     reservedSubdomains: RESERVED_SUBDOMAINS,
   });
-  if (tenantSlug) {
-    const requestHeaders = new Headers(request.headers);
-    requestHeaders.set("x-tenant-slug", tenantSlug);
-    const response = NextResponse.next({ request: { headers: requestHeaders } });
-    response.headers.set("x-tenant-slug", tenantSlug);
-    return response;
-  }
+  if (tenantSlug) requestHeaders.set("x-tenant-slug", tenantSlug);
+
+  const response = NextResponse.next({ request: { headers: requestHeaders } });
+  for (const h of TENANT_HEADERS) response.headers.delete(h);
+  if (tenantSlug) response.headers.set("x-tenant-slug", tenantSlug);
+  return response;
 }
 
+// B-031: the matcher previously excluded `/api/*`, which meant API routes
+// never received the middleware-set `x-tenant-slug`. With the strip in place
+// above, `/api/*` would then receive any client-supplied tenant header
+// unchallenged. Include `/api/*` in the matcher so the strip + rewrite runs
+// for every tenant-reachable surface. We still exclude `_next` and static
+// asset folders (the regex exclusion list) for performance.
 export const config = {
-  matcher: ["/", "/((?!_next|api|assets|images|src|tailwind_theme|fonts).*)"],
+  matcher: ["/", "/((?!_next|assets|images|src|tailwind_theme|fonts).*)"],
 };
