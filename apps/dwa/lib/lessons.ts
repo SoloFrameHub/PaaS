@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import matter from 'gray-matter';
 import { logger } from './logger';
+import { safeResolveInside } from './utils/safe-path';
 
 const CONTENT_PATH = path.join(process.cwd(), 'server/data/content');
 
@@ -91,8 +92,12 @@ function stripQuizJson(content: string): string {
  * @returns An object containing the lesson metadata, content, and reading time.
  */
 export async function getLessonContent(trackId: string, courseId: string, lessonId: string) {
+    const filePath = safeResolveInside(CONTENT_PATH, trackId, courseId, `lesson-${lessonId}.md`);
+    if (!filePath) {
+        logger.warn(`Lesson content rejected (invalid ids)`, { trackId, courseId, lessonId });
+        return null;
+    }
     try {
-        const filePath = path.join(CONTENT_PATH, trackId, courseId, `lesson-${lessonId}.md`);
         const fileContent = await fs.readFile(filePath, 'utf-8');
         const { data, content } = matter(fileContent);
 

@@ -9,12 +9,16 @@ import type { WellnessProfile } from '@/types/wellness-profile';
 import type { ChecklistProgress } from '@/types/checklist';
 import fs from 'fs';
 import path from 'path';
+import { safeResolveInside } from './safe-path';
 
 // ── Lesson content reader ───────────────────────────────────────────────────
 
+const CONTENT_PATH = path.join(process.cwd(), 'server/data/content');
+
 function readLessonContent(trackId: string, courseId: string, lessonId: string): string {
+    const filePath = safeResolveInside(CONTENT_PATH, trackId, courseId, `lesson-${lessonId}.md`);
+    if (!filePath) return '';
     try {
-        const filePath = path.join(process.cwd(), 'server/data/content', trackId, courseId, `lesson-${lessonId}.md`);
         return fs.readFileSync(filePath, 'utf-8');
     } catch {
         return '';

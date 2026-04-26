@@ -15,8 +15,9 @@ export interface IProfileRepository {
 
 const getProfileRepository = (): IProfileRepository => {
     if (process.env.NEXT_PUBLIC_MOCK_AUTH === 'true') {
-        // Security: Block mock mode in actual production runtime (not during builds)
-        if (process.env.NODE_ENV === 'production' && process.env.VERCEL_ENV === 'production') {
+        // B-044: NODE_ENV alone — VERCEL_ENV is unset on Dokploy, so the dual
+        // check let mock repo ship to prod there. Match the auth.ts guard shape.
+        if (process.env.NODE_ENV === 'production') {
             throw new Error('CRITICAL: Mock auth cannot be enabled in production');
         }
         return new MockProfileRepository();

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import type { ChecklistConfig } from '@/types/checklist';
 import { logger } from './logger';
+import { safeResolveInside } from './utils/safe-path';
 
 const CHECKLISTS_PATH = path.join(process.cwd(), 'server/data/checklists');
 
@@ -18,8 +19,12 @@ function loadLessonMap(): Record<string, Record<string, string>> {
 
 /** Loads a checklist config by its ID */
 export function getChecklistConfig(checklistId: string): ChecklistConfig | null {
+    const filePath = safeResolveInside(CHECKLISTS_PATH, `${checklistId}.json`);
+    if (!filePath) {
+        logger.warn(`Checklist config rejected (invalid id): ${checklistId}`);
+        return null;
+    }
     try {
-        const filePath = path.join(CHECKLISTS_PATH, `${checklistId}.json`);
         const raw = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(raw) as ChecklistConfig;
     } catch {

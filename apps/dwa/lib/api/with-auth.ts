@@ -4,6 +4,7 @@ import { UnauthorizedError } from './errors';
 import { errorResponse } from './response-utils';
 import { logger } from '@/lib/logger';
 import { withRequestContext } from '@/lib/request-context';
+import { getClientIp } from '@/lib/security';
 
 export interface UserContext {
     userId: string;
@@ -71,10 +72,10 @@ export function withAuth(handler: AuthenticatedHandler) {
             }
 
             // Set up request context for distributed tracing (Finding 11)
+            // B-046: getClientIp prefers x-real-ip / tails XFF — clients can
+            // spoof the head of the chain otherwise and poison log correlation.
             const requestId = request.headers.get('x-request-id') || crypto.randomUUID();
-            const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
-                       request.headers.get('x-real-ip') ||
-                       'unknown';
+            const ip = getClientIp(request);
 
             return await withRequestContext({
                 requestId,
@@ -116,9 +117,7 @@ export function withAdminAuth(handler: AuthenticatedHandler) {
 
             // Set up request context for distributed tracing (Finding 11)
             const requestId = request.headers.get('x-request-id') || crypto.randomUUID();
-            const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
-                       request.headers.get('x-real-ip') ||
-                       'unknown';
+            const ip = getClientIp(request);
 
             return await withRequestContext({
                 requestId,

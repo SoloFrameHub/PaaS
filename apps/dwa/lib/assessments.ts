@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { AssessmentConfig } from '@/types/assessment';
 import { logger } from './logger';
+import { safeResolveInside } from './utils/safe-path';
 
 const ASSESSMENTS_PATH = path.join(process.cwd(), 'server/data/assessments');
 
@@ -19,8 +20,12 @@ function loadLessonMap(): Record<string, Record<string, string>> {
 
 /** Loads an assessment config by its ID (e.g., 'gad7', 'phq9') */
 export function getAssessmentConfig(assessmentId: string): AssessmentConfig | null {
+    const filePath = safeResolveInside(ASSESSMENTS_PATH, `${assessmentId}.json`);
+    if (!filePath) {
+        logger.warn(`Assessment config rejected (invalid id): ${assessmentId}`);
+        return null;
+    }
     try {
-        const filePath = path.join(ASSESSMENTS_PATH, `${assessmentId}.json`);
         const raw = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(raw) as AssessmentConfig;
     } catch {

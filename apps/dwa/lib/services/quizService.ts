@@ -7,8 +7,13 @@ import fs from 'fs';
 import path from 'path';
 import { logger } from '../logger';
 import { Quiz, QuizQuestion, QuizOption } from '@/types/course';
+import { safeResolveInside } from '../utils/safe-path';
 
 const QUIZ_BASE_PATH = path.join(process.cwd(), 'server/data/quizzes');
+
+function resolveQuizPath(sectionId: string, courseId: string, lessonId: string): string | null {
+    return safeResolveInside(QUIZ_BASE_PATH, sectionId, courseId, `lesson-${lessonId}.json`);
+}
 
 export interface QuizResult {
     id: string;
@@ -36,9 +41,8 @@ export interface QuizResults {
  */
 export function loadQuiz(sectionId: string, courseId: string, lessonId: string): Quiz | null {
     try {
-        const quizPath = path.join(QUIZ_BASE_PATH, sectionId, courseId, `lesson-${lessonId}.json`);
-
-        if (!fs.existsSync(quizPath)) {
+        const quizPath = resolveQuizPath(sectionId, courseId, lessonId);
+        if (!quizPath || !fs.existsSync(quizPath)) {
             return null;
         }
 
@@ -82,9 +86,8 @@ export function loadQuiz(sectionId: string, courseId: string, lessonId: string):
  */
 export function loadFullQuiz(sectionId: string, courseId: string, lessonId: string): Quiz | null {
     try {
-        const quizPath = path.join(QUIZ_BASE_PATH, sectionId, courseId, `lesson-${lessonId}.json`);
-
-        if (!fs.existsSync(quizPath)) {
+        const quizPath = resolveQuizPath(sectionId, courseId, lessonId);
+        if (!quizPath || !fs.existsSync(quizPath)) {
             return null;
         }
 
@@ -107,8 +110,8 @@ export function loadFullQuiz(sectionId: string, courseId: string, lessonId: stri
  * Check if a quiz exists for a lesson
  */
 export function hasQuiz(sectionId: string, courseId: string, lessonId: string): boolean {
-    const quizPath = path.join(QUIZ_BASE_PATH, sectionId, courseId, `lesson-${lessonId}.json`);
-    return fs.existsSync(quizPath);
+    const quizPath = resolveQuizPath(sectionId, courseId, lessonId);
+    return !!quizPath && fs.existsSync(quizPath);
 }
 
 /**
