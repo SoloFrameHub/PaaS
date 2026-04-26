@@ -56,7 +56,8 @@ Every DB-touching engine MUST go through [packages/tenancy](packages/tenancy/src
 
 - Engines **import the `TenantTx` type alias** from `@platform/tenancy` and accept it as a parameter. Never reach for `db` directly.
 - `withSystemAdmin` is the only legal escape hatch and is reserved for platform-level work.
-- The current `withTenant` body is a stub that throws — the real Drizzle wiring lands with migration 0001 (Blueprint §10 Day 3). Until then, write engines against the type signature, not against runtime behavior.
+- `withTenant` is fully wired (B-009, 2026-04-26): opens a Drizzle transaction, pins `SET LOCAL ROLE platform_tenant`/`platform_system`, and sets `app.tenant_id`/`app.user_id` GUCs. Tenant-scoped tables have `tenant_id NOT NULL DEFAULT current_setting('app.tenant_id', true)::uuid`, so inserts inside `withTenantApp` auto-fill the column from the GUC.
+- For `apps/dwa` and `apps/gtm`, use the per-app wrappers `withTenantApp` / `withSystemAdminApp` from `apps/{dwa,gtm}/lib/db/with-tenant.ts`. These mirror `withTenant` but yield a transaction typed against the app's local Drizzle schema (per ADR §D-1 in [docs/Paas/B-009-migration-plan.md](docs/Paas/B-009-migration-plan.md)).
 
 Tenant resolution happens in each app's `middleware.ts` via `resolveTenant({ host })` from [packages/tenancy/src/resolveTenant.ts](packages/tenancy/src/resolveTenant.ts) — also currently a stub returning `null`.
 
