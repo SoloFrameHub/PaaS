@@ -9,6 +9,7 @@ import {
 import { fetchWebsiteText, fetchLinkedinSnippet } from "@/lib/ai/fetch-helpers";
 import { withAuth } from "@/lib/api/with-auth";
 import { successResponse, validateBody } from "@/lib/api/response-utils";
+import { AppError } from "@/lib/api/errors";
 import { analysisSchema } from "@/lib/validations/onboarding";
 import { Stage, Impact, Assessment, AcquisitionPath } from "@/types/profile";
 import { logger } from "@/lib/logger";
@@ -231,6 +232,20 @@ export const POST = withAuth(
 
     const { onboardingData } = await validateBody(request, analysisSchema);
     const isMockMode = process.env.NEXT_PUBLIC_MOCK_AUTH === "true";
+    if (isMockMode && process.env.NODE_ENV === "production") {
+      // B-028: NEXT_PUBLIC_* is baked into the build and client-visible. Never
+      // let it silently swap real assessments for mock ones in production —
+      // fail loud the same way auth.ts/security.ts do. NODE_ENV alone (B-044).
+      logger.error("CRITICAL: Mock mode enabled in production for onboarding/analyze", {
+        requestId,
+        userId,
+      });
+      throw new AppError(
+        "Security Configuration Error",
+        500,
+        "MOCK_AUTH_IN_PROD",
+      );
+    }
 
     // Fetch and migrate profile
     let initialProfile = await profileService.getOrCreateProfile(userId, email);
