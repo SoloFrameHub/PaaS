@@ -4,7 +4,9 @@ import { withAuth } from "@/lib/api/with-auth";
 import { successResponse, validateBody } from "@/lib/api/response-utils";
 import { completeLessonSchema } from "@/lib/validations/academy";
 import { logger } from "@/lib/logger";
-import { hasDatabase, getDb, schema } from "@/lib/db";
+import { schema } from "@/lib/db";
+import { requireTenantContext } from "@platform/tenancy";
+import { withTenantApp } from "@/lib/db/with-tenant";
 import { streakService } from "@/lib/services/streakService";
 import { badgeService } from "@/lib/services/badgeService";
 import { getLevel } from "@/lib/data/xp-levels";
@@ -15,6 +17,8 @@ import type { Celebrations } from "@/types/profile";
 export const POST = withAuth(async (request: NextRequest, { userId }) => {
   const { courseId, courseNumber, lessonId, xpEarned, isLastLesson, timezone } =
     await validateBody(request, completeLessonSchema);
+
+  const ctx = await requireTenantContext(request, { userId });
 
   // Validate courseId exists in curriculum to prevent data corruption
   if (courseId && !getCourse(courseId)) {
@@ -46,19 +50,18 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
   });
 
   // Log analytics event for Metabase time-series tracking
-  if (hasDatabase() && courseId) {
+  if (courseId) {
     try {
-      const db = getDb();
-      if (db) {
-        await db.insert(schema.lessonEvent).values({
+      await withTenantApp(ctx, async (tx) =>
+        tx.insert(schema.lessonEvent).values({
           id: `le_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`,
           userId,
           courseId,
           lessonId,
           eventType: "completed",
           xpEarned: 25,
-        });
-      }
+        }),
+      );
     } catch (err) {
       logger.error("Failed to log lesson event", {
         err,

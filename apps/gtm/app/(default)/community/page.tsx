@@ -1,5 +1,8 @@
+import { headers } from 'next/headers';
 import { getAuthContext, getSubscriptionStatus } from '@/lib/auth';
 import { redirect } from 'next/navigation';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import CommunityHub from './community-hub';
 
 export const metadata = {
@@ -20,17 +23,19 @@ export default async function CommunityPage() {
   // Check if user has completed the entrance survey
   let hasMatchingProfile = false;
   try {
-    const { getDb, hasDatabase, schema } = await import('@/lib/db');
-    if (hasDatabase()) {
-      const db = getDb();
-      if (db) {
-        const { eq } = await import('drizzle-orm');
-        const [mp] = await db.select()
-          .from(schema.memberMatchingProfile)
-          .where(eq(schema.memberMatchingProfile.userId, user.uid));
-        hasMatchingProfile = Boolean(mp);
-      }
-    }
+    const { schema } = await import('@/lib/db');
+    const { eq } = await import('drizzle-orm');
+    const ctx = await requireTenantContext(
+      { headers: await headers() },
+      { userId: user.uid },
+    );
+    const [mp] = await withTenantApp(ctx, async (tx) =>
+      tx
+        .select()
+        .from(schema.memberMatchingProfile)
+        .where(eq(schema.memberMatchingProfile.userId, user.uid)),
+    );
+    hasMatchingProfile = Boolean(mp);
   } catch {
     // DB not available, proceed without check
   }
