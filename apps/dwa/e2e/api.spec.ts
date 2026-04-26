@@ -33,8 +33,13 @@ test.describe('API - Health Endpoint', () => {
 });
 
 test.describe('API - AI Health Endpoint', () => {
+    // The endpoint switched from `?key=…` query-string to `Authorization:
+    // Bearer …` (B-042). The old query-string-accepting variant no longer
+    // exists. (B-055 — test drift: the pre-B-042 test passed for the wrong
+    // reason, because both the missing-header path and the ?key= path
+    // return 403.)
 
-    test('should return 403 without admin key', async ({ request }) => {
+    test('should return 403 without Authorization header', async ({ request }) => {
         const response = await request.get('/api/health/ai');
         expect(response.status()).toBe(403);
 
@@ -42,12 +47,21 @@ test.describe('API - AI Health Endpoint', () => {
         expect(body.error).toBe('Forbidden');
     });
 
-    test('should return 403 with wrong admin key', async ({ request }) => {
-        const response = await request.get('/api/health/ai?key=wrong-key');
+    test('should return 403 with wrong Bearer token', async ({ request }) => {
+        const response = await request.get('/api/health/ai', {
+            headers: { Authorization: 'Bearer wrong-key' },
+        });
         expect(response.status()).toBe(403);
 
         const body = await response.json();
         expect(body.error).toBe('Forbidden');
+    });
+
+    test('should ignore query-string `key=` param (post-B-042)', async ({ request }) => {
+        // Regression guard: if anyone re-adds query-string auth, this test
+        // will flip from pass to fail loudly.
+        const response = await request.get('/api/health/ai?key=anything');
+        expect(response.status()).toBe(403);
     });
 });
 

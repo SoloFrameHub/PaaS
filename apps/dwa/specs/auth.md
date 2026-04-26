@@ -13,10 +13,10 @@ No JWT tokens. Sessions stored server-side in Postgres via Drizzle ORM.
 ## Security Invariants
 - Passwords must be >= 12 characters
 - Email is normalized: trimmed and lowercased
-- Rate limiting on signin/signup (IP-based via Redis)
-- Mock auth (`NEXT_PUBLIC_MOCK_AUTH`) is blocked in production
+- Rate limiting on signin/signup (IP-based via Redis; key derived from `x-real-ip` / `cf-connecting-ip` / right-most of XFF — never the left-most entry)
+- Mock auth (`NEXT_PUBLIC_MOCK_AUTH`) is blocked in production (NODE_ENV-only; no VERCEL_ENV conjunct since Dokploy doesn't set it)
 - Session cookies: httpOnly, secure, sameSite=lax
-- Generic error messages on failed login ("Invalid email or password") — no user enumeration
+- **No user enumeration**: signin collapses all failure branches to a single generic 400 with dummy argon2 verify on the `!user` path to level timing. Signup returns 200 `{ ok, redirect: '/signin' }` whether the email is new or already registered; it still runs argon2 hash on both paths to keep response time uniform.
 - Argon2 params: memoryCost=19456, timeCost=2, outputLen=32, parallelism=1
 
 ## Error Behavior
@@ -24,8 +24,8 @@ No JWT tokens. Sessions stored server-side in Postgres via Drizzle ORM.
 |-----------|--------|---------|
 | Invalid email format | 400 | "Invalid email" |
 | Password < 12 chars | 400 | "Invalid password (min 12 characters)" |
-| Wrong credentials | 400 | "Invalid email or password" |
-| Email already used (signup) | 400 | "Email already used" |
+| Wrong credentials (signin) | 400 | "Invalid email or password" |
+| Email already used (signup) | 200 | `{ ok: true, redirect: '/signin' }` — indistinguishable from a successful signup; must not leak "email in use". |
 | Rate limited | 429 | "Too many attempts. Please try again later." |
 | No DATABASE_URL | 503 | "Auth not configured (no database)" |
 
