@@ -1,5 +1,23 @@
 # B-009 multi-tenancy migration — session 2 handoff
 
+> **RESOLVED 2026-04-26.** All phases shipped on `b-009-migration`
+> (tip moved past `e2c3ed8`). Phase 7 used Option 1 — the 10
+> exemplar routes proposed below. See commits
+> `df60763..2814bff`:
+>
+> | Phase | Commit | Subject |
+> |---|---|---|
+> | 7 | `df60763` | refactor 10 routes to `withTenantApp` |
+> | 8a | `e211a21` | DWA non-provider routes + pages |
+> | 8b | `64e1731` | DWA provider routes + pages |
+> | 8c | `adc8690` | GTM auth + admin + webhooks |
+> | 8d | `1e465b4` | GTM core routes + pages |
+> | followup | `7b1c12c` | tenant_id columns auto-default from `app.tenant_id` GUC |
+> | 9+10 | `2814bff` | docs: mark B-009 resolved (CLAUDE.md, bug-patterns, source-repo-backports) |
+>
+> Branch has not yet merged to `main`. The text below is preserved
+> for historical reference; do not act on it.
+
 **Status as of 2026-04-25:** Phases 1–6 done and committed on
 `b-009-migration` (tip `e2c3ed8`); Phases 7–10 remain. Phase 7
 (exemplar refactor) is the next step and was paused awaiting
