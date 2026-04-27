@@ -1,9 +1,11 @@
 import { NextRequest } from 'next/server';
+import { requireTenantContext } from '@platform/tenancy';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, validateBody } from '@/lib/api/response-utils';
 import { lessonFeedbackSchema } from '@/lib/validations/academy';
 import { logger } from '@/lib/logger';
 import { getDb } from '@/lib/db';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { lessonFeedback } from '@/lib/db/schema';
 import { sql } from 'drizzle-orm';
 
@@ -23,6 +25,7 @@ async function ensureLessonFeedbackTable(db: NonNullable<ReturnType<typeof getDb
 }
 
 export const POST = withAuth(async (request: NextRequest, { userId }) => {
+    const ctx = await requireTenantContext(request, { userId });
     const data = await validateBody(request, lessonFeedbackSchema);
 
     const db = getDb();
@@ -39,26 +42,32 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
     }
 
     try {
-        await db.insert(lessonFeedback).values({
-            userId,
-            courseId: data.courseId,
-            lessonId: data.lessonId,
-            rating: data.rating,
-            category: data.category,
-            message: data.message,
-        });
-    } catch (insertErr: any) {
-        // Table missing (first deploy before migration runs) — create it and retry
-        if (insertErr?.code === '42P01') {
-            await ensureLessonFeedbackTable(db);
-            await db.insert(lessonFeedback).values({
+        await withTenantApp(ctx, async (tx) =>
+            tx.insert(lessonFeedback).values({
                 userId,
                 courseId: data.courseId,
                 lessonId: data.lessonId,
                 rating: data.rating,
                 category: data.category,
                 message: data.message,
-            });
+            })
+        );
+    } catch (insertErr: any) {
+        // Table missing (first deploy before migration runs) — create it via
+        // raw pool (DDL is not permitted under `platform_tenant`) and retry
+        // the insert under the tenant-scoped wrapper.
+        if (insertErr?.code === '42P01') {
+            await ensureLessonFeedbackTable(db);
+            await withTenantApp(ctx, async (tx) =>
+                tx.insert(lessonFeedback).values({
+                    userId,
+                    courseId: data.courseId,
+                    lessonId: data.lessonId,
+                    rating: data.rating,
+                    category: data.category,
+                    message: data.message,
+                })
+            );
         } else {
             throw insertErr;
         }

@@ -1,27 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getDb } from '@/lib/db';
+import { sql } from 'drizzle-orm';
+import { withSystemAdminApp } from '@/lib/db/with-tenant';
 import { getChapter } from '@/lib/data/book-structure';
 import { logger } from '@/lib/logger';
-import type { Pool as PoolType } from 'pg';
 
-let _searchPool: PoolType | null = null;
-function getSearchPool(): PoolType {
-  if (!_searchPool) {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { Pool } = require('pg') as typeof import('pg');
-    _searchPool = new Pool({ connectionString: process.env.DATABASE_URL, max: 3 });
-  }
-  return _searchPool;
-}
-
+/**
+ * GET /api/book/search — full-text search across `book_search_index`.
+ *
+ * The book index is system-owned public catalog content (D-7 in
+ * docs/Paas/B-009-migration-plan.md), shared across all tenants. Run as
+ * `platform_system` to bypass per-tenant RLS — there is no tenant scope
+ * for book chapters.
+ */
 export async function GET(request: NextRequest) {
   const query = request.nextUrl.searchParams.get('q')?.trim();
   if (!query || query.length < 2) {
-    return NextResponse.json({ results: [] });
-  }
-
-  const db = getDb();
-  if (!db) {
     return NextResponse.json({ results: [] });
   }
 
@@ -38,33 +31,35 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ results: [] });
     }
 
-    // Raw SQL for full-text search (Drizzle has limited tsvector support)
-    const pool = getSearchPool();
-
-    let rows: any[];
-    try {
-      const result = await pool.query(
-        `
+    // Raw SQL for full-text search (Drizzle has limited tsvector support).
+    // Run inside `withSystemAdminApp` so the query inherits the same
+    // pinned-role transaction discipline as the rest of the codebase.
+    const rows = await withSystemAdminApp(async (tx) => {
+      const result = await tx.execute<{
+        chapter_id: string;
+        chapter_title: string;
+        is_free: boolean;
+        snippet: string;
+        rank: number;
+      }>(sql`
         SELECT
           chapter_id,
           chapter_title,
           is_free,
-          ts_headline('english', plain_text, to_tsquery('english', $1),
+          ts_headline('english', plain_text, to_tsquery('english', ${tsquery}),
             'StartSel=<mark>, StopSel=</mark>, MaxWords=40, MinWords=20') AS snippet,
-          ts_rank(search_vector, to_tsquery('english', $1)) AS rank
+          ts_rank(search_vector, to_tsquery('english', ${tsquery})) AS rank
         FROM book_search_index
-        WHERE search_vector @@ to_tsquery('english', $1)
+        WHERE search_vector @@ to_tsquery('english', ${tsquery})
         ORDER BY rank DESC
         LIMIT 20
-        `,
-        [tsquery]
-      );
-      rows = result.rows;
-    } finally {
-      // Pool is reused — do not end it
-    }
+      `);
+      // Drizzle's `tx.execute` returns either an array (better-sqlite-style)
+      // or a `{ rows }` object (node-postgres). Normalize to the array form.
+      return Array.isArray(result) ? result : (result as { rows: any[] }).rows;
+    });
 
-    const results = rows.map((r) => {
+    const results = rows.map((r: any) => {
       const chapter = getChapter(r.chapter_id);
       // Sanitize snippet: ts_headline produces <mark> tags but underlying text
       // could contain HTML. Strip everything except <mark> tags.

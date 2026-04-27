@@ -15,17 +15,17 @@ import { formatValue } from '@/components/utils/utils'
 
 Chart.register(LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip)
 
-interface LineChart08Props {
+interface LineChart09Props {
   data: ChartData
   width: number
   height: number
 }
 
-export default function LineChart08({
+export default function LineChart09({
   data,
   width,
   height
-}: LineChart08Props) {
+}: LineChart09Props) {
 
   const [chart, setChart] = useState<Chart | null>(null)
   const canvas = useRef<HTMLCanvasElement>(null)

@@ -3,18 +3,14 @@
 // Blueprint §6.3 calls for `middleware.ts` in each app to identify the tenant
 // and stash it on the request so downstream handlers don't have to reason
 // about it. The real DB-backed lookup lives in `resolveTenant`, but that's
-// Node-runtime only (pg.Pool doesn't work in Edge). So this file exposes:
+// Node-runtime only (pg.Pool doesn't work in Edge). So this file exposes
+// `resolveTenantSlugFromHost(host)`: pure regex-based slug extraction,
+// Edge-safe, used in the app middleware to set `x-tenant-slug`.
 //
-//   - resolveTenantSlugFromHost(host): pure regex-based slug extraction,
-//     Edge-safe, used in the app middleware / proxy to set `x-tenant-slug`.
-//   - getTenantContextFromHeaders(headers): Node-runtime helper that API
-//     routes call to turn the forwarded headers into a `TenantContext`.
-//
-// The Node-runtime resolver (by slug or custom domain) stays exported as
-// `resolveTenant` via the package root; tomorrow's work fills it in to do the
-// DB lookup and cache per-request.
-
-import type { TenantContext } from './withTenant.js';
+// Route handlers finish resolution with `requireTenantContext` (Node-runtime),
+// which re-resolves via the DB + enforces membership. There is deliberately
+// NO header-only helper any more: trusting a client-readable header without a
+// DB lookup is a tenant-spoofing footgun (B-030).
 
 // IMPORTANT — this subpath is the Edge-runtime entry point.
 // Do NOT runtime-re-export from ./resolveTenant.js: that module imports from
@@ -112,31 +108,9 @@ export function resolveTenantSlugFromHost(
   return null;
 }
 
-/**
- * Node-runtime only. Reads the headers that middleware forwarded
- * (`x-tenant-id` and `x-tenant-slug`) and assembles a TenantContext.
- *
- * Returns null when no tenant header is present (unscoped request). Throws
- * when only a slug is present — that means resolution is incomplete; the
- * caller should run the async DB resolver before constructing a context.
- */
-export function getTenantContextFromHeaders(
-  headers: Headers | Record<string, string | undefined>,
-  userId?: string | null,
-): TenantContext | null {
-  const get = (name: string): string | null => {
-    if (typeof (headers as Headers).get === 'function') {
-      return (headers as Headers).get(name);
-    }
-    const rec = headers as Record<string, string | undefined>;
-    return rec[name] ?? rec[name.toLowerCase()] ?? null;
-  };
-
-  const tenantId = get('x-tenant-id');
-  if (!tenantId) return null;
-  return {
-    tenantId,
-    userId: userId ?? null,
-    role: 'tenant',
-  };
-}
+// `getTenantContextFromHeaders` was intentionally removed: it read
+// `x-tenant-id` directly from the request and trusted it, which made the
+// function a tenant-spoofing footgun. All callers must use
+// `requireTenantContext` from the package root — it re-resolves via the DB
+// using the middleware-written `x-tenant-slug` (stripped from inbound
+// requests by the app middleware) and enforces membership.

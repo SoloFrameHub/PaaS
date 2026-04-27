@@ -1,7 +1,8 @@
 import { NextRequest } from 'next/server';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse } from '@/lib/api/response-utils';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient } from '@/lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
@@ -11,23 +12,22 @@ import { logger } from '@/lib/logger';
  * Used by useClinicalStorage to determine storage strategy
  */
 export const GET = withAuth(async (request: NextRequest, { userId }) => {
-  const db = getDb();
-  if (!db) {
-    return errorResponse('Database unavailable', 503);
-  }
+  const ctx = await requireTenantContext(request, { userId });
 
   try {
     // Check if user is linked to any active provider
-    const links = await db
-      .select({ id: providerPatient.id })
-      .from(providerPatient)
-      .where(
-        and(
-          eq(providerPatient.patientId, userId),
-          eq(providerPatient.status, 'active')
+    const links = await withTenantApp(ctx, async (tx) =>
+      tx
+        .select({ id: providerPatient.id })
+        .from(providerPatient)
+        .where(
+          and(
+            eq(providerPatient.patientId, userId),
+            eq(providerPatient.status, 'active')
+          )
         )
-      )
-      .limit(1);
+        .limit(1),
+    );
 
     return successResponse({
       hasProvider: links.length > 0,

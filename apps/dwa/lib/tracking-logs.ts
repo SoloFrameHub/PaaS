@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import type { TrackingLogConfig, TrackingLogEntry } from '@/types/tracking-log';
 import { logger } from './logger';
+import { safeResolveInside } from './utils/safe-path';
 
 const TRACKING_LOGS_PATH = path.join(process.cwd(), 'server/data/tracking-logs');
 
@@ -18,8 +19,12 @@ function loadLessonMap(): Record<string, Record<string, string>> {
 
 /** Loads a tracking log config by its ID */
 export function getTrackingLogConfig(logId: string): TrackingLogConfig | null {
+    const filePath = safeResolveInside(TRACKING_LOGS_PATH, `${logId}.json`);
+    if (!filePath) {
+        logger.warn(`Tracking log config rejected (invalid id): ${logId}`);
+        return null;
+    }
     try {
-        const filePath = path.join(TRACKING_LOGS_PATH, `${logId}.json`);
         const raw = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(raw) as TrackingLogConfig;
     } catch {

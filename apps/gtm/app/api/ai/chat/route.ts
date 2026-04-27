@@ -6,7 +6,9 @@ import { successResponse, validateBody } from "@/lib/api/response-utils";
 import { chatSchema } from "@/lib/validations/ai";
 import { logger } from "@/lib/logger";
 import { isRateLimited, AI_RATE_LIMIT } from "@/lib/security";
-import { hasDatabase, getDb, schema } from "@/lib/db";
+import { schema } from "@/lib/db";
+import { requireTenantContext } from "@platform/tenancy";
+import { withTenantApp } from "@/lib/db/with-tenant";
 import { sql } from "drizzle-orm";
 import { getCourse, getCourseByNumber, getLesson } from "@/lib/data/curriculum";
 import type { FounderProfile } from "@/types/profile";
@@ -258,6 +260,7 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
     context,
     sessionId: incomingSessionId,
   } = await validateBody(request, chatSchema);
+  const ctx = await requireTenantContext(request, { userId });
   const profile = await profileService.getProfile(userId);
 
   const validHistory = history.filter(
@@ -334,45 +337,45 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
       contextString,
     });
 
-    // Persist chat session + messages for Metabase analytics
+    // Persist chat session + messages for Metabase analytics. The LLM call
+    // above (`openaiCoachingReply`) ran outside any DB tx — we only open the
+    // tenant tx for the local DB writes, so the connection isn't held open
+    // across external HTTP I/O.
     let sessionId = incomingSessionId;
-    if (hasDatabase()) {
-      try {
-        const db = getDb();
-        if (db) {
-          // Create session if none exists
-          if (!sessionId) {
-            sessionId = genId("cs");
-            await db.insert(schema.chatSession).values({
-              id: sessionId,
-              userId,
-              contextCourseId: context?.courseId ?? null,
-              contextLessonId: context?.lessonId ?? null,
-              contextSectionId: context?.sectionId ?? null,
-              messageCount: 0,
-            });
-          }
-
-          // Insert user message + assistant response
-          await db.insert(schema.chatMessage).values([
-            { id: genId("cm"), sessionId, role: "user", content: message },
-            {
-              id: genId("cm"),
-              sessionId,
-              role: "assistant",
-              content: response,
-            },
-          ]);
-
-          // Increment message count
-          await db
-            .update(schema.chatSession)
-            .set({ messageCount: sql`${schema.chatSession.messageCount} + 2` })
-            .where(sql`${schema.chatSession.id} = ${sessionId}`);
+    try {
+      await withTenantApp(ctx, async (tx) => {
+        // Create session if none exists
+        if (!sessionId) {
+          sessionId = genId("cs");
+          await tx.insert(schema.chatSession).values({
+            id: sessionId,
+            userId,
+            contextCourseId: context?.courseId ?? null,
+            contextLessonId: context?.lessonId ?? null,
+            contextSectionId: context?.sectionId ?? null,
+            messageCount: 0,
+          });
         }
-      } catch (err) {
-        logger.error("Failed to persist chat messages", { err, userId });
-      }
+
+        // Insert user message + assistant response
+        await tx.insert(schema.chatMessage).values([
+          { id: genId("cm"), sessionId, role: "user", content: message },
+          {
+            id: genId("cm"),
+            sessionId,
+            role: "assistant",
+            content: response,
+          },
+        ]);
+
+        // Increment message count
+        await tx
+          .update(schema.chatSession)
+          .set({ messageCount: sql`${schema.chatSession.messageCount} + 2` })
+          .where(sql`${schema.chatSession.id} = ${sessionId}`);
+      });
+    } catch (err) {
+      logger.error("Failed to persist chat messages", { err, userId });
     }
 
     return successResponse({ message: response, sessionId });

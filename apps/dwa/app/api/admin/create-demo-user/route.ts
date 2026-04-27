@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'node:crypto';
 import { z } from 'zod';
 import { createDemoUser } from '@/lib/utils/demo-accounts';
 import { logger } from '@/lib/logger';
@@ -24,19 +25,32 @@ const createDemoUserSchema = z.object({
  */
 export async function POST(request: NextRequest) {
   try {
-    // Verify N8N_API_KEY authorization
+    // B-029: when N8N_API_KEY is unset, the previous compare built
+    // "Bearer undefined" as the expected value — any client sending that
+    // literal string authenticated. Now we fail closed and use a
+    // timing-safe equal over equal-length buffers.
+    const apiKey = process.env.N8N_API_KEY;
     const authHeader = request.headers.get('authorization');
-    const expectedKey = `Bearer ${process.env.N8N_API_KEY}`;
+    const presented =
+      typeof authHeader === 'string' && authHeader.startsWith('Bearer ')
+        ? authHeader.slice('Bearer '.length)
+        : '';
 
-    if (!authHeader || authHeader !== expectedKey) {
+    const unauthorized = (): NextResponse => {
       logger.warn('Unauthorized demo user creation attempt', {
         ip: request.headers.get('x-forwarded-for'),
         authHeader: authHeader ? 'present' : 'missing',
       });
-      return NextResponse.json(
-        { error: 'Unauthorized' },
-        { status: 401 }
-      );
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    };
+
+    if (!apiKey || !presented || presented.length !== apiKey.length) {
+      return unauthorized();
+    }
+    if (
+      !timingSafeEqual(Buffer.from(presented), Buffer.from(apiKey))
+    ) {
+      return unauthorized();
     }
 
     // Validate input

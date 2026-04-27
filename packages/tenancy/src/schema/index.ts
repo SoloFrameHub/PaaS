@@ -3,6 +3,7 @@
 // the engines a typed query surface and is what `withTenant` returns from.
 
 import {
+  bigint,
   bigserial,
   boolean,
   date,
@@ -110,7 +111,10 @@ export const tenantQuotaCounter = pgTable(
     metric: text('metric').notNull(),
     period: text('period').notNull(),
     windowStart: date('window_start').notNull(),
-    amount: bigserial('amount', { mode: 'bigint' }).notNull(),
+    // B-032: SQL migration declares this BIGINT NOT NULL DEFAULT 0. The prior
+    // `bigserial` binding implied an auto-increment sequence that doesn't
+    // exist on this column — inserts that omitted `amount` would fail.
+    amount: bigint('amount', { mode: 'bigint' }).notNull().default(0n),
   },
   (t) => ({
     pk: primaryKey({
@@ -129,7 +133,9 @@ export const billingMeterEvent = pgTable(
       .default(sql`now()`),
     metric: text('metric').notNull(),
     dimensions: jsonb('dimensions').notNull().default({}),
-    amount: bigserial('amount', { mode: 'bigint' }).notNull(),
+    // B-032: SQL declares this BIGINT NOT NULL (caller supplies amount) —
+    // bigserial implies an auto-increment sequence that doesn't exist.
+    amount: bigint('amount', { mode: 'bigint' }).notNull(),
     unit: text('unit').notNull(),
   },
   (t) => ({
@@ -147,7 +153,8 @@ export const billingMeterDaily = pgTable(
     tenantId: uuid('tenant_id').notNull(),
     day: date('day').notNull(),
     metric: text('metric').notNull(),
-    amount: bigserial('amount', { mode: 'bigint' }).notNull(),
+    // B-032: same fix as tenantQuotaCounter.amount.
+    amount: bigint('amount', { mode: 'bigint' }).notNull(),
   },
   (t) => ({
     pk: primaryKey({ columns: [t.tenantId, t.day, t.metric] }),
@@ -176,7 +183,8 @@ export const eventDispatchLog = pgTable(
   'event_dispatch_log',
   {
     id: bigserial('id', { mode: 'bigint' }).primaryKey(),
-    outboxId: bigserial('outbox_id', { mode: 'bigint' }).notNull(),
+    // B-032: outbox_id is a FK to event_outbox(id), not a new sequence.
+    outboxId: bigint('outbox_id', { mode: 'bigint' }).notNull(),
     subscriber: text('subscriber').notNull(),
     attemptedAt: timestamp('attempted_at', { withTimezone: true })
       .notNull()

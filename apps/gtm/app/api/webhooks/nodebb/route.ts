@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getDb, hasDatabase, schema } from '@/lib/db';
-import { eq, and, sql } from 'drizzle-orm';
+import { hasDatabase, schema } from '@/lib/db';
+import { withSystemAdminApp, withTenantApp } from '@/lib/db/with-tenant';
+import { eq } from 'drizzle-orm';
 import { personaService } from '@/lib/services/personaService';
 import { FORUM_BOTS } from '@/lib/data/forum-bots';
 import { logger } from '@/lib/logger';
@@ -19,6 +20,11 @@ function generateId(prefix: string): string {
  *   1. Logs forum analytics event
  *   2. Updates pod member activity
  *   3. Optionally triggers a persona response
+ *
+ * Pattern C (resolve-then-pin) — NodeBB doesn't carry our tenant header,
+ * so we resolve the matching `pod` by its `nodebbCategoryId` under
+ * platform_system, read its `tenantId`, then pin all writes via
+ * withTenantApp (D-7).
  */
 export async function POST(request: NextRequest) {
   // Verify webhook secret
@@ -32,11 +38,6 @@ export async function POST(request: NextRequest) {
 
   if (!hasDatabase()) {
     return NextResponse.json({ error: 'Database not available' }, { status: 503 });
-  }
-
-  const db = getDb();
-  if (!db) {
-    return NextResponse.json({ error: 'Database connection failed' }, { status: 503 });
   }
 
   try {
@@ -56,47 +57,61 @@ export async function POST(request: NextRequest) {
         const tid = data?.tid;
         const content = data?.content || '';
 
-        // Find the pod by NodeBB category ID
-        const [pod] = await db.select()
-          .from(schema.pod)
-          .where(eq(schema.pod.nodebbCategoryId, categoryId));
+        // Cross-tenant lookup: find the pod owning this NodeBB category id.
+        const pod = await withSystemAdminApp(async (tx) => {
+          const [row] = await tx
+            .select()
+            .from(schema.pod)
+            .where(eq(schema.pod.nodebbCategoryId, categoryId));
+          return row;
+        });
 
         if (!pod) {
-          // Not a pod category, just log analytics
-          await db.insert(schema.forumAnalyticsEvent).values({
-            id: generateId('fae'),
-            eventType: event === 'action:topic.post' ? 'topic_created' : 'post_created',
-            nodebbCategoryId: categoryId,
-            metadata: { tid },
+          // No matching pod => no tenant to attribute the event to.
+          // `forum_analytics_event.tenant_id` is NOT NULL post-B-009, so we
+          // can't insert an orphan analytics row. Log + drop instead. Audit
+          // follow-up B-009-P9: decide whether NodeBB should reject events
+          // for un-mapped categories at the edge, or whether we want a
+          // platform-level "unattached forum events" surface.
+          logger.warn('NodeBB webhook: no pod for category, dropping analytics insert', {
+            categoryId,
+            event,
+            tid,
           });
           break;
         }
 
-        // Log forum analytics
-        await db.insert(schema.forumAnalyticsEvent).values({
-          id: generateId('fae'),
-          eventType: event === 'action:topic.post' ? 'topic_created' : 'post_created',
-          podId: pod.id,
-          nodebbCategoryId: categoryId,
-          metadata: { tid, contentLength: content.length },
-        });
+        // All subsequent writes are pinned to the pod's tenant.
+        await withTenantApp({ tenantId: pod.tenantId }, async (tx) => {
+          // Log forum analytics
+          await tx.insert(schema.forumAnalyticsEvent).values({
+            id: generateId('fae'),
+            eventType: event === 'action:topic.post' ? 'topic_created' : 'post_created',
+            podId: pod.id,
+            nodebbCategoryId: categoryId,
+            metadata: { tid, contentLength: content.length },
+          });
 
-        // Update pod member activity (if we can identify the user)
-        // TODO: Map NodeBB uid to platform userId via SSO
-        // For now, log the activity at the pod level
-        await db.insert(schema.podActivity).values({
-          id: generateId('pa'),
-          podId: pod.id,
-          eventType: 'post_created',
-          metadata: {
-            nodebbUsername: data?.user?.username,
-            tid,
-            contentPreview: content.slice(0, 200),
-          },
+          // Update pod member activity (if we can identify the user)
+          // TODO: Map NodeBB uid to platform userId via SSO
+          // For now, log the activity at the pod level
+          await tx.insert(schema.podActivity).values({
+            id: generateId('pa'),
+            podId: pod.id,
+            eventType: 'post_created',
+            metadata: {
+              nodebbUsername: data?.user?.username,
+              tid,
+              contentPreview: content.slice(0, 200),
+            },
+          });
         });
 
         // Trigger persona response synchronously before returning.
         // setTimeout does not survive after a serverless function returns.
+        // personaService runs outside the tenant tx — it has its own DB
+        // wiring; threading the tenant through it is tracked separately
+        // and out of scope for this refactor.
         if (tid) {
           try {
             const personaId = await personaService.selectRespondingPersona(pod.id, content);

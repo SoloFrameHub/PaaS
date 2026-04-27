@@ -1,51 +1,58 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
-# Deploy distress classifier to VPS WITH fine-tuned model
-# Run from project root: bash deploy-classifier-with-model.sh
+# Deploy distress classifier (WITH fine-tuned model) to a VPS via SSH + scp.
+# Run from apps/dwa: bash deploy-classifier-with-model.sh
+#
+# Required environment variables:
+#   CLASSIFIER_SSH_HOST   e.g. root@vps.example.com
+#   CLASSIFIER_REMOTE_DIR e.g. /opt/distress-classifier   (optional, defaults below)
+#
+# Authentication:
+#   SSH key only (SSH_AUTH_SOCK / ~/.ssh/config). Password auth is NOT used;
+#   the previous sshpass-based flow was removed because it committed a
+#   plaintext root password into the repo (B-049).
+#
+# Host key verification:
+#   The VPS's host key MUST be in ~/.ssh/known_hosts before running this
+#   script. The previous `StrictHostKeyChecking=no` + `UserKnownHostsFile=/dev/null`
+#   shortcut meant any MITM on the first connection would silently succeed.
 
-echo "=== Deploying Distress Classifier (with fine-tuned model) to VPS ==="
+: "${CLASSIFIER_SSH_HOST:?Set CLASSIFIER_SSH_HOST (e.g. root@vps.example.com)}"
+REMOTE_DIR="${CLASSIFIER_REMOTE_DIR:-/opt/distress-classifier}"
 
-VPS_HOST="root@46.202.88.248"
-VPS_PASS="scJx4BdYgGBgMuuDrja86#"
-REMOTE_DIR="/opt/distress-classifier"
-
-# Check if sshpass is installed
-if ! command -v sshpass &> /dev/null; then
-    echo "Installing sshpass..."
-    brew install hudochenkov/sshpass/sshpass
-fi
+echo "=== Deploying Distress Classifier (with fine-tuned model) to $CLASSIFIER_SSH_HOST ==="
 
 # 1. Create directory structure on VPS
 echo "→ Creating directory on VPS..."
-sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no "$VPS_HOST" "mkdir -p $REMOTE_DIR"
+ssh "$CLASSIFIER_SSH_HOST" "mkdir -p $REMOTE_DIR"
 
 # 2. Copy service files
 echo "→ Copying service files..."
-sshpass -p "$VPS_PASS" scp -o StrictHostKeyChecking=no \
+scp \
     services/distress-classifier/app.py \
     services/distress-classifier/requirements.txt \
     services/distress-classifier/finetune.py \
     services/distress-classifier/evaluate.py \
     services/distress-classifier/metrics.json \
-    "$VPS_HOST:$REMOTE_DIR/"
+    "$CLASSIFIER_SSH_HOST:$REMOTE_DIR/"
 
 # 3. Copy the FINE-TUNED MODEL (only inference files, ~260MB - excludes training checkpoints)
 echo "→ Copying fine-tuned model weights and config (260MB)..."
-sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no "$VPS_HOST" "mkdir -p $REMOTE_DIR/model"
-sshpass -p "$VPS_PASS" scp -o StrictHostKeyChecking=no \
+ssh "$CLASSIFIER_SSH_HOST" "mkdir -p $REMOTE_DIR/model"
+scp \
     services/distress-classifier/model/model.safetensors \
     services/distress-classifier/model/config.json \
     services/distress-classifier/model/tokenizer.json \
     services/distress-classifier/model/tokenizer_config.json \
     services/distress-classifier/model/training_args.bin \
-    "$VPS_HOST:$REMOTE_DIR/model/"
+    "$CLASSIFIER_SSH_HOST:$REMOTE_DIR/model/"
 echo "✓ Fine-tuned model transferred (256MB - trained weights only, no training checkpoints)"
 
 # 4. Install Python and dependencies
 echo "→ Installing dependencies on VPS..."
-sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no "$VPS_HOST" << 'ENDSSH'
-set -e
+ssh "$CLASSIFIER_SSH_HOST" bash -s <<'ENDSSH'
+set -euo pipefail
 cd /opt/distress-classifier
 
 # Install Python 3.11 if needed
@@ -69,8 +76,9 @@ ENDSSH
 
 # 5. Create systemd service
 echo "→ Creating systemd service..."
-sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no "$VPS_HOST" << 'ENDSSH'
-cat > /etc/systemd/system/distress-classifier.service << 'EOF'
+ssh "$CLASSIFIER_SSH_HOST" bash -s <<'ENDSSH'
+set -euo pipefail
+cat > /etc/systemd/system/distress-classifier.service <<'EOF'
 [Unit]
 Description=Mental Health Distress Classifier
 After=network.target
@@ -80,7 +88,8 @@ StartLimitIntervalSec=0
 Type=simple
 Restart=always
 RestartSec=5
-User=root
+# Run as a non-root service user; create it if missing.
+User=distress-classifier
 WorkingDirectory=/opt/distress-classifier
 ExecStart=/opt/distress-classifier/venv/bin/python app.py
 StandardOutput=append:/opt/distress-classifier/classifier.log
@@ -91,6 +100,11 @@ Environment=PYTHONUNBUFFERED=1
 WantedBy=multi-user.target
 EOF
 
+if ! id -u distress-classifier >/dev/null 2>&1; then
+  useradd --system --home-dir /opt/distress-classifier --shell /usr/sbin/nologin distress-classifier
+fi
+chown -R distress-classifier:distress-classifier /opt/distress-classifier
+
 systemctl daemon-reload
 systemctl enable distress-classifier
 echo "✓ Systemd service created"
@@ -98,7 +112,8 @@ ENDSSH
 
 # 6. Start the service
 echo "→ Starting classifier service (with fine-tuned model)..."
-sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no "$VPS_HOST" << 'ENDSSH'
+ssh "$CLASSIFIER_SSH_HOST" bash -s <<'ENDSSH'
+set -euo pipefail
 # Stop any existing instance
 systemctl stop distress-classifier 2>/dev/null || true
 
@@ -125,7 +140,7 @@ ENDSSH
 # 7. Test classification with a sample crisis-level input
 echo ""
 echo "→ Testing classification..."
-sshpass -p "$VPS_PASS" ssh -o StrictHostKeyChecking=no "$VPS_HOST" << 'ENDSSH'
+ssh "$CLASSIFIER_SSH_HOST" bash -s <<'ENDSSH'
 curl -s -X POST http://localhost:8001/classify \
   -H "Content-Type: application/json" \
   -d '{"text": "I feel completely hopeless and cannot go on anymore"}' | python3 -m json.tool
@@ -134,9 +149,9 @@ ENDSSH
 echo ""
 echo "=== ✓ Deployment Complete with Fine-Tuned Model ==="
 echo ""
-echo "Service running: ssh root@46.202.88.248 'systemctl status distress-classifier'"
-echo "View logs:      ssh root@46.202.88.248 'tail -f /opt/distress-classifier/classifier.log'"
-echo "Test health:    ssh root@46.202.88.248 'curl http://localhost:8001/health'"
+echo "Service running: ssh $CLASSIFIER_SSH_HOST 'systemctl status distress-classifier'"
+echo "View logs:      ssh $CLASSIFIER_SSH_HOST 'tail -f $REMOTE_DIR/classifier.log'"
+echo "Test health:    ssh $CLASSIFIER_SSH_HOST 'curl http://localhost:8001/health'"
 echo ""
 echo "✓ Distress classifier is now accessible at http://localhost:8001 (internal VPS only)"
 echo "✓ Dokploy env var should be: DISTRESS_CLASSIFIER_URL=http://localhost:8001"

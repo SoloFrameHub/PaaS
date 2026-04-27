@@ -1,8 +1,10 @@
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import ProviderSidebar from './provider-sidebar';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerProfile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 
@@ -16,15 +18,21 @@ export default async function ProviderLayout({ children }: { children: React.Rea
   // Admins bypass all checks
   if (session.role === 'admin') {
     // fall through to render
-  } else if (session.role === 'provider') {
-    // Verify the profile is actually approved (role alone isn't sufficient)
-    const db = getDb();
-    if (db) {
-      const [prof] = await db
+  } else {
+    const ctx = await requireTenantContext(
+      { headers: await headers() },
+      { userId: session.uid },
+    );
+
+    const [prof] = await withTenantApp(ctx, async (tx) =>
+      tx
         .select({ verificationStatus: providerProfile.verificationStatus })
         .from(providerProfile)
-        .where(eq(providerProfile.userId, session.uid));
+        .where(eq(providerProfile.userId, session.uid)),
+    );
 
+    if (session.role === 'provider') {
+      // Verify the profile is actually approved (role alone isn't sufficient)
       if (!prof) redirect('/provider-signup');
       if (prof.verificationStatus === 'pending' || prof.verificationStatus === 'manual_review') {
         redirect('/provider-pending');
@@ -32,16 +40,8 @@ export default async function ProviderLayout({ children }: { children: React.Rea
       if (prof.verificationStatus === 'rejected') {
         redirect('/provider-rejected');
       }
-    }
-  } else {
-    // role = 'user' — check application status before redirecting
-    const db = getDb();
-    if (db) {
-      const [prof] = await db
-        .select({ verificationStatus: providerProfile.verificationStatus })
-        .from(providerProfile)
-        .where(eq(providerProfile.userId, session.uid));
-
+    } else {
+      // role = 'user' — check application status before redirecting
       if (prof?.verificationStatus === 'pending' || prof?.verificationStatus === 'manual_review') {
         redirect('/provider-pending');
       }
@@ -54,8 +54,8 @@ export default async function ProviderLayout({ children }: { children: React.Rea
       if (prof?.verificationStatus === 'verified') {
         redirect('/provider-pending?reauth=1');
       }
+      redirect('/provider-signup');
     }
-    redirect('/provider-signup');
   }
 
   return (

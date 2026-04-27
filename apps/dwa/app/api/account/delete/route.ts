@@ -1,8 +1,10 @@
 import { NextRequest } from 'next/server';
+import { requireTenantContext } from '@platform/tenancy';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse } from '@/lib/api/response-utils';
 import { getDb } from '@/lib/db';
-import { user, profile, moodEntry, coachSession, patientAssignment } from '@/lib/db/schema';
+import { withTenantApp } from '@/lib/db/with-tenant';
+import { user, profile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 
@@ -18,8 +20,12 @@ import { logger } from '@/lib/logger';
  * - After 30 days, scheduled job purges data permanently
  *
  * Audit logs (distress_event, moderation_log, lesson_feedback) preserved via SET NULL FKs.
+ *
+ * D-2 layered: `user` is excluded from RLS — soft-delete via the raw pool.
+ * `profile` is tenant-scoped — flagged inside `withTenantApp`.
  */
 export const DELETE = withAuth(async (request: NextRequest, { userId, email }) => {
+  const ctx = await requireTenantContext(request, { userId });
   const db = getDb();
   if (!db) {
     return errorResponse('Database not available', 503);
@@ -32,7 +38,7 @@ export const DELETE = withAuth(async (request: NextRequest, { userId, email }) =
     const purgeDate = new Date(now);
     purgeDate.setDate(purgeDate.getDate() + 30);
 
-    // Soft delete: Set deleted_at timestamp (actual deletion happens after 30 days)
+    // Layer 1 — `user` is RLS-excluded (D-2); raw pool soft-delete.
     await db
       .update(user)
       .set({
@@ -41,17 +47,29 @@ export const DELETE = withAuth(async (request: NextRequest, { userId, email }) =
       })
       .where(eq(user.id, userId));
 
-    // Mark profile as pending deletion (preserves data for recovery)
-    await db
-      .update(profile)
-      .set({
-        data: {
-          _pendingDeletion: true,
-          _deletionScheduledAt: now.toISOString(),
-          _purgeAfter: purgeDate.toISOString(),
-        },
-      })
-      .where(eq(profile.userId, userId));
+    // Layer 2 — `profile` is tenant-scoped; pin role + app.tenant_id GUC.
+    // MUST merge with existing profile.data — a bare object would wipe the
+    // user's assessment/onboarding/progress, defeating the 30-day grace-period
+    // recovery path in cancel-deletion/route.ts. (slice 01 finding)
+    await withTenantApp(ctx, async (tx) => {
+      const [existingProfile] = await tx
+        .select({ data: profile.data })
+        .from(profile)
+        .where(eq(profile.userId, userId));
+      const currentData = (existingProfile?.data as Record<string, unknown>) ?? {};
+      await tx
+        .update(profile)
+        .set({
+          data: {
+            ...currentData,
+            _pendingDeletion: true,
+            _deletionScheduledAt: now.toISOString(),
+            _purgeAfter: purgeDate.toISOString(),
+          },
+          updatedAt: now,
+        })
+        .where(eq(profile.userId, userId));
+    });
 
     logger.info('account_soft_deleted', {
       userId,

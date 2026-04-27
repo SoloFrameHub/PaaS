@@ -661,12 +661,17 @@ function showResults() {
 # From local machine
 cd /Users/mike/github/rps-digital-wellness-platform/github-deployment/anxiety-toolkit
 
-# Copy all JS files to VPS
-sshpass -p 'jJnMo7tYb8DVao3zU3ZTUodgKG4c84kEMmkpZdWmLyC#' scp -r js/ \
+# Copy all JS files to VPS.
+# NOTE: The committed password that used to be on these two lines was
+# redacted as part of B-057. That credential must be considered compromised
+# and rotated out of band. Use SSH key auth only; if the passphrase escapes
+# ~/.ssh/config, set it via `sshpass -e` reading from SSHPASS env, never
+# inline.
+scp -r js/ \
   root@46.202.88.248:/opt/digital-wellness/static-files/anxiety-toolkit/
 
 # Verify deployment
-sshpass -p 'jJnMo7tYb8DVao3zU3ZTUodgKG4c84kEMmkpZdWmLyC#' ssh root@46.202.88.248 \
+ssh root@46.202.88.248 \
   "docker exec nginx ls -lh /usr/share/nginx/html/anxiety-toolkit/js/"
 ```
 

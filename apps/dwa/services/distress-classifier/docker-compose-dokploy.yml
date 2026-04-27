@@ -7,8 +7,12 @@ services:
       dockerfile: Dockerfile
     container_name: distress-classifier
     restart: always
-    ports:
-      - "8001:8001"
+    # No `ports:` — reachability is via the dokploy-network overlay DNS
+    # (`http://distress-classifier:8001`). Publishing 8001 to the host with no
+    # auth + `allow_origins=["*"]` makes the classifier publicly reachable if
+    # the host firewall ever opens the port (B-050).
+    expose:
+      - "8001"
     environment:
       - PYTHONUNBUFFERED=1
     healthcheck:

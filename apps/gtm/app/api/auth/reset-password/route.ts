@@ -22,6 +22,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Please enter a valid email address' }, { status: 400 });
   }
 
+  // D-2/D-8: reset-password lookup only reads/updates `user` (RLS-excluded).
+  // No tenant-scoped row is touched, so the raw pool is the correct shape;
+  // there's no authenticated user yet, so there's no tenant header anyway.
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'Database not available' }, { status: 503 });
 

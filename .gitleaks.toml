@@ -1,0 +1,73 @@
+title = "solofame-platform gitleaks config"
+
+# Extend the default ruleset — we keep all built-in detectors
+# and add targeted allowlists for known-false-positive patterns.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Monorepo allowlist — noise classes identified during 2026-04-24 inventory"
+# Match regex patterns against the full line, not just the extracted secret.
+# Required for things like `websiteToken: '...'` where the classifier prefix
+# sits on the same line as the matched value.
+regexTarget = "line"
+
+# Paths that never contain real secrets:
+#   - MDX/MD lesson content in both verticals (interactive React component
+#     props like persistKey="..." trigger generic-api-key)
+#   - API reference docs whose curl examples use literal YOUR_API_KEY /
+#     $DOKPLOY_API_KEY placeholders (trigger curl-auth-header)
+#   - archived legacy code we are not deploying
+#   - test fixtures and e2e specs
+#   - lockfiles, build output, node_modules
+#   - Spanish-localized lesson content (same component-prop issue)
+#   - reference research prompts showing localStorage keys ending in _vN
+paths = [
+  '''apps/dwa/server/data/content/.*\.(mdx?|md)$''',
+  '''apps/gtm/server/data/content/.*\.(mdx?|md)$''',
+  '''apps/gtm/docs/dokploy-conversion/.*\.md$''',
+  '''apps/dwa/docs/reference/course-research-prompts/.*\.md$''',
+  '''apps/dwa/_archive/.*''',
+  '''apps/gtm/_archive/.*''',
+  '''apps/dwa/_Full-Platform-Capabilities-Plans/.*''',
+  '''apps/dwa/docs/_Full-Platform-Capabilities-Plans/.*''',
+  '''apps/dwa/docs/reference/legacy-lesson-guides/.*''',
+  # .env.example files hold empty placeholder keys, not secrets
+  '''.*\.env\.example$''',
+  # Script files containing code examples / docs strings with component props
+  '''apps/gtm/scripts/content-pipeline\.ts$''',
+  '''e2e/.*''',
+  '''.*\.test\.(ts|tsx|js|jsx)$''',
+  '''.*\.spec\.(ts|tsx|js|jsx)$''',
+  '''package-lock\.json$''',
+  '''pnpm-lock\.yaml$''',
+  '''node_modules/''',
+  '''\.next/''',
+  '''\.turbo/''',
+  '''dist/''',
+  '''test-results/''',
+  '''playwright-report/''',
+]
+
+# Regex allowlist for specific patterns that look like secrets but aren't:
+regexes = [
+  # Interactive component state key (MDX prop, localStorage key shape)
+  '''persistKey=["'][^"']+["']''',
+  # Arbitrary data-* HTML attributes
+  '''data-[a-z-]+=["'][^"']+["']''',
+  # GA4 Measurement IDs — public by design, not secrets
+  '''G-[A-Z0-9]{10}''',
+  # Literal placeholder values in API reference docs
+  '''YOUR_(API_KEY|TOKEN|SECRET|PASSWORD)''',
+  '''\$[A-Z_]*(API_KEY|TOKEN|SECRET|PASSWORD)[A-Z_]*''',
+  # Chatwoot / support-widget public website tokens (these ship in client
+  # JS by design). Review before removing this line if chat provider changes.
+  '''websiteToken:\s*["'][A-Za-z0-9]+["']''',
+  # Firebase web API keys (AIza...) — public by design, gated by Firebase
+  # Security Rules, not secrecy. REMOVE this line once all apphosting.yaml
+  # files are deleted (Firebase is no longer used).
+  '''AIza[A-Za-z0-9_-]{35}''',
+]
+
+# Commit SHAs to ignore (populate with: gitleaks detect --log-opts="--all")
+# commits = []

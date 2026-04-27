@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import type { ThoughtRecordConfig, ThoughtRecordEntry } from '@/types/thought-record';
 import { logger } from './logger';
+import { safeResolveInside } from './utils/safe-path';
 
 const THOUGHT_RECORDS_PATH = path.join(process.cwd(), 'server/data/thought-records');
 
@@ -18,8 +19,12 @@ function loadLessonMap(): Record<string, Record<string, string>> {
 
 /** Loads a thought record config by its ID */
 export function getThoughtRecordConfig(recordId: string): ThoughtRecordConfig | null {
+    const filePath = safeResolveInside(THOUGHT_RECORDS_PATH, `${recordId}.json`);
+    if (!filePath) {
+        logger.warn(`Thought record config rejected (invalid id): ${recordId}`);
+        return null;
+    }
     try {
-        const filePath = path.join(THOUGHT_RECORDS_PATH, `${recordId}.json`);
         const raw = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(raw) as ThoughtRecordConfig;
     } catch {

@@ -1,17 +1,39 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getLucia } from '@/lib/auth-lucia';
 import { getDb, schema } from '@/lib/db';
-import { verify } from '@node-rs/argon2';
+import { hash, verify } from '@node-rs/argon2';
 import { eq } from 'drizzle-orm';
-import { isRateLimited, AUTH_RATE_LIMIT } from '@/lib/security';
+import { isRateLimited, AUTH_RATE_LIMIT, getClientIp } from '@/lib/security';
 import { logger } from '@/lib/logger';
+
+const ARGON2_OPTS = {
+  memoryCost: 19456,
+  timeCost: 2,
+  outputLen: 32,
+  parallelism: 1,
+} as const;
+
+// Dummy hash computed once per process. Used to keep the "no such user" path's
+// response time equal to "wrong password" — a real argon2 verify against this
+// hash always fails (no one knows the input), but it burns the same CPU.
+// (B-043 timing-side-channel fix.)
+let dummyHashPromise: Promise<string> | undefined;
+function getDummyHash(): Promise<string> {
+  if (!dummyHashPromise) {
+    dummyHashPromise = hash(
+      'a-constant-never-matches-any-user-password-',
+      ARGON2_OPTS,
+    );
+  }
+  return dummyHashPromise;
+}
 
 export async function POST(request: NextRequest) {
   if (!process.env.DATABASE_URL) {
     return NextResponse.json({ error: 'Auth not configured (no database)' }, { status: 503 });
   }
 
-  const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+  const ip = getClientIp(request);
   const { limited, remaining, reset } = await isRateLimited(ip, AUTH_RATE_LIMIT, 'auth:signin');
   if (limited) {
     return NextResponse.json(
@@ -44,45 +66,34 @@ export async function POST(request: NextRequest) {
   try {
     const users = await db.select().from(schema.user).where(eq(schema.user.email, email)).limit(1);
     const user = users[0];
-    if (!user) {
-      return NextResponse.json({ error: 'Invalid email or password' }, { status: 400 });
-    }
 
-    // Reject soft-deleted accounts (Finding 9: 30-day grace period)
-    if (user.deletedAt) {
-      const deletedDate = new Date(user.deletedAt);
-      const purgeDate = new Date(deletedDate);
-      purgeDate.setDate(purgeDate.getDate() + 30);
+    // Always run argon2 verify — against the real hash if the user exists,
+    // against a dummy otherwise. This (a) levels response time, (b) makes
+    // "no such user" and "wrong password" indistinguishable from the outside.
+    const candidateHash = user?.hashedPassword ?? (await getDummyHash());
+    const verifyOk = await verify(candidateHash, password, ARGON2_OPTS)
+      .catch(() => false);
 
-      logger.warn('signin_attempt_deleted_account', { userId: user.id, email, deletedAt: user.deletedAt });
-
-      return NextResponse.json({
-        error: 'Account is scheduled for deletion',
-        deletedAt: user.deletedAt,
-        purgeAfter: purgeDate.toISOString(),
-        message: 'Your account deletion is in progress. To cancel and restore access, contact support or use the cancellation link from your deletion confirmation email.',
-      }, { status: 403 });
-    }
-
-    const valid = await verify(user.hashedPassword, password, {
-      memoryCost: 19456,
-      timeCost: 2,
-      outputLen: 32,
-      parallelism: 1,
-    });
-    if (!valid) {
+    // Single failure response for: no user, soft-deleted user, wrong password.
+    // Do NOT leak which it was — the previous implementation had three
+    // distinct responses, enabling email enumeration and worse, leaking
+    // soft-deletion timestamps. (B-043 enumeration fix.)
+    const loginValid = Boolean(user) && !user!.deletedAt && verifyOk;
+    if (!loginValid) {
+      if (user?.deletedAt) {
+        logger.warn('signin_attempt_deleted_account', { userId: user.id, deletedAt: user.deletedAt });
+      }
       return NextResponse.json({ error: 'Invalid email or password' }, { status: 400 });
     }
 
     const lucia = getLucia();
-    const session = await lucia.createSession(user.id, {});
+    const session = await lucia.createSession(user!.id, {});
     const sessionCookie = lucia.createSessionCookie(session.id);
     const res = NextResponse.json({ ok: true, redirect: '/dashboard' });
     res.cookies.set(sessionCookie.name, sessionCookie.value, sessionCookie.attributes);
     return res;
   } catch (err) {
     logger.error('Signin error', {
-      email,
       error: err instanceof Error ? err.message : String(err),
     });
     return NextResponse.json({ error: 'Sign in failed. Please try again.' }, { status: 500 });

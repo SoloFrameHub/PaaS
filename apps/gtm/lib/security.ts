@@ -27,6 +27,12 @@ export async function isRateLimited(
 ): Promise<{ limited: boolean; remaining: number; reset: number }> {
   // Bypass rate limiting in mock environments to prevent Redis errors
   if (process.env.NEXT_PUBLIC_MOCK_AUTH === "true") {
+    // B-044: NEXT_PUBLIC_* is client-settable at build time. Fail loud if ever
+    // shipped to prod — silent rate-limit disable + forged session cookie is
+    // full auth bypass. NODE_ENV alone; do NOT add VERCEL_ENV (unset on Dokploy).
+    if (process.env.NODE_ENV === "production") {
+      throw new Error("CRITICAL: Mock auth cannot be enabled in production");
+    }
     return {
       limited: false,
       remaining: config.limit,

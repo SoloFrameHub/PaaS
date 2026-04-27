@@ -10,11 +10,16 @@
  *     --slug demo \
  *     --owner-user-id <uuid?> \
  *     [--kind pooled] [--tier free] [--region local] \
- *     [--manifest-version 0.0.1] [--parent-manifest-id dwa]
+ *     [--manifest-version 0.0.1] [--parent-manifest-id dwa] \
+ *     [--scaffold-app dwa|gtm|both]
  *
  * Without --owner-user-id, a random UUID is used as a placeholder so the
  * NOT NULL constraint is satisfied; you can reassign ownership later via
  * a tenant_member upsert once real users exist.
+ *
+ * --scaffold-app runs per-app onboarding hooks after tenant insert. For
+ * B-009 these hooks are no-ops (plan §D-6); the flag exists so future
+ * per-app onboarding has a stable surface.
  */
 
 import process from 'node:process';
@@ -25,6 +30,9 @@ import { eq } from 'drizzle-orm';
 import { withSystemAdmin } from '@platform/tenancy';
 import { __closePool, schema } from '@platform/tenancy/internal';
 
+const SCAFFOLD_APPS = ['dwa', 'gtm', 'both'] as const;
+type ScaffoldApp = (typeof SCAFFOLD_APPS)[number];
+
 interface Args {
   slug: string;
   ownerUserId: string;
@@ -33,6 +41,7 @@ interface Args {
   region: string;
   manifestVersion: string;
   parentManifestId?: string;
+  scaffoldApp?: ScaffoldApp;
 }
 
 function parseArgs(argv: string[]): Args {
@@ -57,6 +66,16 @@ function parseArgs(argv: string[]): Args {
   //   kind   IN ('first_party','licensed','self_serve')
   //   tier   IN ('pooled','isolated','dedicated')
   //   region IN ('shared-eu','shared-us','dedicated')
+  const scaffoldRaw = raw.get('scaffold-app');
+  let scaffoldApp: ScaffoldApp | undefined;
+  if (scaffoldRaw !== undefined) {
+    if (!(SCAFFOLD_APPS as readonly string[]).includes(scaffoldRaw)) {
+      throw new Error(
+        `--scaffold-app must be one of ${SCAFFOLD_APPS.join('|')}`,
+      );
+    }
+    scaffoldApp = scaffoldRaw as ScaffoldApp;
+  }
   return {
     slug,
     ownerUserId: raw.get('owner-user-id') ?? randomUUID(),
@@ -65,7 +84,22 @@ function parseArgs(argv: string[]): Args {
     region: raw.get('region') ?? 'shared-us',
     manifestVersion: raw.get('manifest-version') ?? '0.0.1',
     parentManifestId: raw.get('parent-manifest-id'),
+    scaffoldApp,
   };
+}
+
+/**
+ * Per-app onboarding hooks. No-op for B-009 (plan §D-6) — this stays in the
+ * CLI rather than importing from apps/* so we don't pull a Next.js bundle
+ * into the seed tool. Future per-app row-level scaffolding goes here.
+ */
+async function runScaffold(app: ScaffoldApp, tenantId: string): Promise<void> {
+  const targets = app === 'both' ? (['dwa', 'gtm'] as const) : ([app] as const);
+  for (const target of targets) {
+    console.error(
+      `scaffold-app[${target}]: no-op for tenant=${tenantId} (B-009 placeholder per plan §D-6)`,
+    );
+  }
 }
 
 async function main(): Promise<void> {
@@ -83,6 +117,9 @@ async function main(): Promise<void> {
   if (existing) {
     console.error(`tenant with slug=${args.slug} already exists (status=${existing.status})`);
     console.log(`TENANT_ID=${existing.id}`);
+    if (args.scaffoldApp) {
+      await runScaffold(args.scaffoldApp, existing.id);
+    }
     return;
   }
 
@@ -120,6 +157,9 @@ async function main(): Promise<void> {
     `seeded tenant slug=${args.slug} id=${id} ownerUserId=${args.ownerUserId}`,
   );
   console.log(`TENANT_ID=${id}`);
+  if (args.scaffoldApp) {
+    await runScaffold(args.scaffoldApp, id);
+  }
 }
 
 main()

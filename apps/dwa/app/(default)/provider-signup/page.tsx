@@ -3,9 +3,11 @@
  * Allows upgrading to provider role by filling in credentials.
  * After saving, redirects to /provider/dashboard (gated by provider layout).
  */
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerProfile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import ProviderProfileForm from '@/app/(provider)/provider/profile/provider-profile-form';
@@ -20,12 +22,20 @@ export default async function ProviderSignupPage() {
   // Already a verified provider → go straight to portal
   if (session.role === 'admin') redirect('/provider/dashboard');
 
-  const db = getDb();
-  let existing = null;
-  if (db) {
-    const [prof] = await db.select().from(providerProfile).where(eq(providerProfile.userId, session.uid));
-    existing = prof ?? null;
-  }
+  // Page is read-only here — the form posts to a separate endpoint that owns
+  // the insert/update. No D-8 split needed: no membership-pre-existing row
+  // is written from this server component.
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: session.uid },
+  );
+
+  // Drop the `if (!db)` short-circuit — `withTenantApp` throws when
+  // DATABASE_URL is unset, which is the correct semantic per Phase 7.
+  const rows = await withTenantApp(ctx, async (tx) =>
+    tx.select().from(providerProfile).where(eq(providerProfile.userId, session.uid))
+  );
+  const existing = rows[0] ?? null;
 
   if (session.role === 'provider') {
     if (existing?.verificationStatus === 'verified') redirect('/provider/dashboard');

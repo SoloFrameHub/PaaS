@@ -68,16 +68,31 @@ export async function POST(request: NextRequest) {
     .from(schema.user)
     .where(eq(schema.user.email, email))
     .limit(1);
-  if (existing.length > 0) {
-    return NextResponse.json({ error: "Email already used" }, { status: 400 });
-  }
 
+  // B-043: hash regardless of whether the email is taken so response time is
+  // constant, and return a uniform 200 envelope so the API doesn't enumerate
+  // accounts. "Email already used" leaks account presence — for any auth
+  // surface that's a privacy breach. (TODO(mail): when the existing-account
+  // mail path lands, send a "you already have an account, use sign in / reset"
+  // mail here instead of just redirecting.)
   const passwordHash = await hash(password, {
     memoryCost: 19456,
     timeCost: 2,
     outputLen: 32,
     parallelism: 1,
   });
+
+  if (existing.length > 0) {
+    logger.info("signup_email_already_registered", {
+      // Email itself intentionally omitted from the log to avoid creating a
+      // PII trail of who attempted re-signup.
+    });
+    return NextResponse.json(
+      { ok: true, redirect: "/signin" },
+      { status: 200 },
+    );
+  }
+
   const userId = generateIdFromEntropySize(10);
   const code = generateVerificationCode();
   const expiresAt = new Date(Date.now() + 15 * 60 * 1000); // 15 minutes

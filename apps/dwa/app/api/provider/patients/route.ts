@@ -10,15 +10,16 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { withProviderAuth } from '@/lib/api/with-auth';
-import { getDb } from '@/lib/db';
+import { withProviderAuth, withAdminAuth } from '@/lib/api/with-auth';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerPatient, user, profile, distressEvent, moodEntry, patientAssignment } from '@/lib/db/schema';
 import { eq, and, desc, count, inArray, isNull, gte } from 'drizzle-orm';
+import { logger } from '@/lib/logger';
 import type { WellnessProfile } from '@/types/wellness-profile';
 
 export const GET = withProviderAuth(async (req, { userId: providerId }) => {
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
+  const ctx = await requireTenantContext(req, { userId: providerId });
 
   // Parse pagination params (Finding 12: DoS prevention)
   const searchParams = req.nextUrl.searchParams;
@@ -29,85 +30,93 @@ export const GET = withProviderAuth(async (req, { userId: providerId }) => {
   const cutoffDate = new Date();
   cutoffDate.setDate(cutoffDate.getDate() - days);
 
-  // Fetch active provider-patient links (paginated - Finding 12)
-  const links = await db
-    .select({
-      patientId:   providerPatient.patientId,
-      displayName: providerPatient.displayName,
-      notes:       providerPatient.notes,
-      status:      providerPatient.status,
-      linkedAt:    providerPatient.createdAt,
-    })
-    .from(providerPatient)
-    .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')))
-    .orderBy(desc(providerPatient.createdAt))
-    .limit(limit)
-    .offset(offset);
+  const result = await withTenantApp(ctx, async (tx) => {
+    // Fetch active provider-patient links (paginated - Finding 12)
+    const links = await tx
+      .select({
+        patientId:   providerPatient.patientId,
+        displayName: providerPatient.displayName,
+        notes:       providerPatient.notes,
+        status:      providerPatient.status,
+        linkedAt:    providerPatient.createdAt,
+      })
+      .from(providerPatient)
+      .where(and(eq(providerPatient.providerId, providerId), eq(providerPatient.status, 'active')))
+      .orderBy(desc(providerPatient.createdAt))
+      .limit(limit)
+      .offset(offset);
 
-  if (links.length === 0) {
+    if (links.length === 0) {
+      return { links, profiles: [], latestMoods: [], crisisRows: [], assignments: [] };
+    }
+
+    const patientIds = links.map(l => l.patientId);
+
+    // Batch-fetch profile data
+    const profiles = await tx
+      .select({ userId: profile.userId, data: profile.data })
+      .from(profile)
+      .where(inArray(profile.userId, patientIds));
+
+    // Latest mood entry per patient (time-filtered - Finding 12)
+    const latestMoods = await tx
+      .select({
+        userId:       moodEntry.userId,
+        moodRating:   moodEntry.moodRating,
+        anxietyLevel: moodEntry.anxietyLevel,
+        sleepQuality: moodEntry.sleepQuality,
+        date:         moodEntry.date,
+      })
+      .from(moodEntry)
+      .where(and(
+        inArray(moodEntry.userId, patientIds),
+        gte(moodEntry.date, cutoffDate)
+      ))
+      .orderBy(desc(moodEntry.date));
+
+    // Unresolved crisis events per patient
+    const crisisRows = await tx
+      .select({ userId: distressEvent.userId, cnt: count() })
+      .from(distressEvent)
+      .where(
+        and(
+          inArray(distressEvent.userId, patientIds),
+          eq(distressEvent.level, 'crisis'),
+          isNull(distressEvent.resolvedAt),
+        )
+      )
+      .groupBy(distressEvent.userId);
+
+    // Pending assignments per patient
+    const assignments = await tx
+      .select({ patientId: patientAssignment.patientId, courseId: patientAssignment.courseId, lessonId: patientAssignment.lessonId, completedAt: patientAssignment.completedAt })
+      .from(patientAssignment)
+      .where(eq(patientAssignment.providerId, providerId));
+
+    return { links, profiles, latestMoods, crisisRows, assignments };
+  });
+
+  if (result.links.length === 0) {
     return NextResponse.json({ patients: [] });
   }
 
-  const patientIds = links.map(l => l.patientId);
-
-  // Batch-fetch profile data
-  const profiles = await db
-    .select({ userId: profile.userId, data: profile.data })
-    .from(profile)
-    .where(inArray(profile.userId, patientIds));
-
   // Type profile data properly (Finding 15: no more 'as any')
-  const profileMap = new Map(profiles.map(p => [p.userId, p.data as Partial<WellnessProfile>]));
+  const profileMap = new Map(result.profiles.map(p => [p.userId, p.data as Partial<WellnessProfile>]));
 
-  // Latest mood entry per patient (time-filtered - Finding 12)
-  const latestMoods = await db
-    .select({
-      userId:       moodEntry.userId,
-      moodRating:   moodEntry.moodRating,
-      anxietyLevel: moodEntry.anxietyLevel,
-      sleepQuality: moodEntry.sleepQuality,
-      date:         moodEntry.date,
-    })
-    .from(moodEntry)
-    .where(and(
-      inArray(moodEntry.userId, patientIds),
-      gte(moodEntry.date, cutoffDate)
-    ))
-    .orderBy(desc(moodEntry.date));
-
-  const moodMap = new Map<string, typeof latestMoods[0]>();
-  for (const m of latestMoods) {
+  const moodMap = new Map<string, typeof result.latestMoods[0]>();
+  for (const m of result.latestMoods) {
     if (!moodMap.has(m.userId)) moodMap.set(m.userId, m);
   }
 
-  // Unresolved crisis events per patient
-  const crisisRows = await db
-    .select({ userId: distressEvent.userId, cnt: count() })
-    .from(distressEvent)
-    .where(
-      and(
-        inArray(distressEvent.userId, patientIds),
-        eq(distressEvent.level, 'crisis'),
-        isNull(distressEvent.resolvedAt),
-      )
-    )
-    .groupBy(distressEvent.userId);
+  const crisisMap = new Map(result.crisisRows.map(r => [r.userId, Number(r.cnt)]));
 
-  const crisisMap = new Map(crisisRows.map(r => [r.userId, Number(r.cnt)]));
-
-  // Pending assignments per patient
-  const assignments = await db
-    .select({ patientId: patientAssignment.patientId, courseId: patientAssignment.courseId, lessonId: patientAssignment.lessonId, completedAt: patientAssignment.completedAt })
-    .from(patientAssignment)
-    .where(eq(patientAssignment.providerId, providerId));
-
-  const assignMap = new Map<string, typeof assignments>();
-  for (const a of assignments) {
+  const assignMap = new Map<string, typeof result.assignments>();
+  for (const a of result.assignments) {
     if (!assignMap.has(a.patientId)) assignMap.set(a.patientId, []);
     assignMap.get(a.patientId)!.push(a);
   }
 
-  const patients = links.map(link => {
+  const patients = result.links.map(link => {
     const p = profileMap.get(link.patientId) ?? {};
     const mood = moodMap.get(link.patientId);
     const unresolvedCrises = crisisMap.get(link.patientId) ?? 0;
@@ -138,34 +147,74 @@ export const GET = withProviderAuth(async (req, { userId: providerId }) => {
 });
 
 const addPatientSchema = z.object({
+  providerId:  z.string().min(1),
   patientId:   z.string().min(1),
   displayName: z.string().optional(),
   notes:       z.string().optional(),
 });
 
-export const POST = withProviderAuth(async (req, { userId: providerId }) => {
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: 'No database' }, { status: 503 });
-
+/**
+ * POST /api/provider/patients — admin-only.
+ *
+ * Establishing a provider↔patient link consents the patient to share PHI with
+ * the provider. The consented path is the invite-redeem flow in
+ * `provider/invite/route.ts`; this handler exists only for admin-operator
+ * tooling (migrations, support intervention) and records the acting admin.
+ *
+ * (slice 01 finding) Previously this was `withProviderAuth` and accepted
+ * `providerId` implicitly from the session, letting any provider unilaterally
+ * claim any user as a patient. Now admin-gated with audit logging.
+ */
+export const POST = withAdminAuth(async (req, { userId: adminId }) => {
   let body: unknown;
   try { body = await req.json(); } catch { return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 }); }
 
   const parsed = addPatientSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: parsed.error.flatten() }, { status: 422 });
 
-  const { patientId, displayName, notes } = parsed.data;
+  const { providerId, patientId, displayName, notes } = parsed.data;
 
-  // Verify patient exists
-  const [patientUser] = await db.select({ id: user.id }).from(user).where(eq(user.id, patientId));
-  if (!patientUser) return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+  const ctx = await requireTenantContext(req, { userId: adminId });
 
-  await db.insert(providerPatient).values({
+  const result = await withTenantApp(ctx, async (tx) => {
+    // Verify both users exist AND are the right role
+    const rows = await tx
+      .select({ id: user.id, role: user.role })
+      .from(user)
+      .where(inArray(user.id, [providerId, patientId]));
+
+    const providerRow = rows.find(r => r.id === providerId);
+    const patientRow = rows.find(r => r.id === patientId);
+    if (!providerRow || providerRow.role !== 'provider') {
+      return { status: 'provider_not_found' as const };
+    }
+    if (!patientRow) {
+      return { status: 'patient_not_found' as const };
+    }
+
+    await tx.insert(providerPatient).values({
+      providerId,
+      patientId,
+      displayName: displayName ?? null,
+      notes: notes ?? null,
+      status: 'active',
+    }).onConflictDoNothing();
+
+    return { status: 'ok' as const };
+  });
+
+  if (result.status === 'provider_not_found') {
+    return NextResponse.json({ error: 'Provider not found or not a provider' }, { status: 404 });
+  }
+  if (result.status === 'patient_not_found') {
+    return NextResponse.json({ error: 'Patient not found' }, { status: 404 });
+  }
+
+  logger.info('provider_patient_link_created_by_admin', {
+    adminId,
     providerId,
     patientId,
-    displayName: displayName ?? null,
-    notes: notes ?? null,
-    status: 'active',
-  }).onConflictDoNothing();
+  });
 
   return NextResponse.json({ success: true });
 });

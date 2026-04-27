@@ -1,14 +1,17 @@
 import { NextRequest } from 'next/server';
+import { requireTenantContext } from '@platform/tenancy';
 import { profileService } from '@/lib/services/profileService';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse } from '@/lib/api/response-utils';
 import { inYourWordsSchema } from '@/lib/validations/onboarding';
 import { maia } from '@/lib/ai/maia-client';
-import { getDb } from '@/lib/db';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { distressEvent } from '@/lib/db/schema';
 import { logger } from '@/lib/logger';
 
 export const POST = withAuth(async (request: NextRequest, { userId }) => {
+    const ctx = await requireTenantContext(request, { userId });
+
     const body = await request.json();
     const result = inYourWordsSchema.safeParse(body);
     if (!result.success) {
@@ -37,24 +40,20 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
         maia.distress(combinedText)
             .then((distressResult) => {
                 if (distressResult.level !== 'none') {
-                    const db = getDb();
-                    if (db) {
-                        db.insert(distressEvent)
-                            .values({
-                                userId,
-                                level: distressResult.level,
-                                confidence: distressResult.confidence,
-                                context: 'onboarding',
-                                providerAlerted: false,
-                            })
-                            .execute()
-                            .catch((err) =>
-                                logger.error('distress_event_insert_error', {
-                                    context: 'onboarding',
-                                    error: err,
-                                })
-                            );
-                    }
+                    withTenantApp(ctx, async (tx) =>
+                        tx.insert(distressEvent).values({
+                            userId,
+                            level: distressResult.level,
+                            confidence: distressResult.confidence,
+                            context: 'onboarding',
+                            providerAlerted: false,
+                        })
+                    ).catch((err) =>
+                        logger.error('distress_event_insert_error', {
+                            context: 'onboarding',
+                            error: err,
+                        })
+                    );
                 }
             })
             .catch((err) =>

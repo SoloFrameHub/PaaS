@@ -6,7 +6,9 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { getDb, schema } from "@/lib/db";
+import { schema } from "@/lib/db";
+import { requireTenantContext } from "@platform/tenancy";
+import { withTenantApp } from "@/lib/db/with-tenant";
 import { isRateLimited } from "@/lib/security";
 import { logger } from "@/lib/logger";
 import { FORM_DEFINITIONS, getAllFields } from "@/lib/forms/definitions";
@@ -102,42 +104,15 @@ export async function POST(request: NextRequest) {
     const email = validatedData.email as string;
     const name = (validatedData.name as string) || "";
 
-    // 6. Database check
-    const db = getDb();
-    if (!db) {
-      return NextResponse.json(
-        { error: { message: "Database unavailable.", code: "DB_ERROR" } },
-        { status: 503 },
-      );
-    }
+    // 6. Resolve tenant context. This is a public, pre-auth route (the
+    // visitor has no session yet), so `requireMembership: false` — the
+    // membership gate would have nothing to check. The tenant is derived
+    // from the host header by middleware.
+    const ctx = await requireTenantContext(request, {
+      requireMembership: false,
+    });
 
-    // 7. Duplicate check
-    if (!formDef.settings.allowMultiple) {
-      const existing = await db
-        .select({ id: schema.formSubmission.id })
-        .from(schema.formSubmission)
-        .where(
-          and(
-            eq(schema.formSubmission.formSlug, formSlug),
-            eq(schema.formSubmission.email, email),
-          ),
-        )
-        .limit(1);
-
-      if (existing.length > 0) {
-        return NextResponse.json(
-          {
-            error: {
-              message: "You've already submitted this form.",
-              code: "DUPLICATE",
-            },
-          },
-          { status: 409 },
-        );
-      }
-    }
-
-    // 8. Calculate score
+    // 7. Calculate score (pure compute — outside the tx)
     let score: number | null = null;
     let scoreBreakdown: Record<string, number> | null = null;
 
@@ -152,29 +127,60 @@ export async function POST(request: NextRequest) {
       scoreBreakdown = result.breakdown;
     }
 
-    // 9. DB insert
+    // 8. Duplicate check + insert in one tenant tx
     const submissionId = generateId();
-    await db.insert(schema.formSubmission).values({
-      id: submissionId,
-      formSlug,
-      email,
-      name: name || null,
-      data: validatedData,
-      score,
-      scoreBreakdown,
-      status: "new",
-      ipAddress: ip,
-      userAgent: request.headers.get("user-agent")?.slice(0, 500) || null,
-      utmSource: (body.utm?.source as string) || null,
-      utmMedium: (body.utm?.medium as string) || null,
-      utmCampaign: (body.utm?.campaign as string) || null,
-      referrer:
-        (body.utm?.referrer as string) ||
-        request.headers.get("referer")?.slice(0, 500) ||
-        null,
+    const duplicate = await withTenantApp(ctx, async (tx) => {
+      if (!formDef.settings.allowMultiple) {
+        const existing = await tx
+          .select({ id: schema.formSubmission.id })
+          .from(schema.formSubmission)
+          .where(
+            and(
+              eq(schema.formSubmission.formSlug, formSlug),
+              eq(schema.formSubmission.email, email),
+            ),
+          )
+          .limit(1);
+
+        if (existing.length > 0) return true;
+      }
+
+      await tx.insert(schema.formSubmission).values({
+        id: submissionId,
+        formSlug,
+        email,
+        name: name || null,
+        data: validatedData,
+        score,
+        scoreBreakdown,
+        status: "new",
+        ipAddress: ip,
+        userAgent: request.headers.get("user-agent")?.slice(0, 500) || null,
+        utmSource: (body.utm?.source as string) || null,
+        utmMedium: (body.utm?.medium as string) || null,
+        utmCampaign: (body.utm?.campaign as string) || null,
+        referrer:
+          (body.utm?.referrer as string) ||
+          request.headers.get("referer")?.slice(0, 500) ||
+          null,
+      });
+
+      return false;
     });
 
-    // 10. Fire workflows (non-blocking)
+    if (duplicate) {
+      return NextResponse.json(
+        {
+          error: {
+            message: "You've already submitted this form.",
+            code: "DUPLICATE",
+          },
+        },
+        { status: 409 },
+      );
+    }
+
+    // 9. Fire workflows (non-blocking)
     runFormWorkflows(
       submissionId,
       formSlug,

@@ -3,6 +3,7 @@
  * Tables: user (Lucia), session (Lucia), profile (founder profile JSONB).
  */
 
+import { sql } from "drizzle-orm";
 import {
   pgTable,
   text,
@@ -15,6 +16,7 @@ import {
   boolean,
   index,
   serial,
+  uuid,
   vector,
 } from "drizzle-orm/pg-core";
 
@@ -55,6 +57,9 @@ export const profile = pgTable("profile", {
   updatedAt: timestamp("updated_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Subscription (Polar.sh) ─────────────────────────────────────────────
@@ -77,6 +82,9 @@ export const subscription = pgTable("subscription", {
   updatedAt: timestamp("updated_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const roleplaySession = pgTable("roleplay_session", {
@@ -99,6 +107,9 @@ export const roleplaySession = pgTable("roleplay_session", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Analytics tables ──────────────────────────────────────────────────
@@ -115,6 +126,9 @@ export const lessonEvent = pgTable("lesson_event", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const chatSession = pgTable("chat_session", {
@@ -130,6 +144,9 @@ export const chatSession = pgTable("chat_session", {
     .defaultNow()
     .notNull(),
   endedAt: timestamp("ended_at", { withTimezone: true }),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const chatMessage = pgTable("chat_message", {
@@ -142,6 +159,9 @@ export const chatMessage = pgTable("chat_message", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const assessmentSnapshot = pgTable("assessment_snapshot", {
@@ -163,6 +183,9 @@ export const assessmentSnapshot = pgTable("assessment_snapshot", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const forumTopicSync = pgTable("forum_topic_sync", {
@@ -179,6 +202,9 @@ export const forumTopicSync = pgTable("forum_topic_sync", {
   syncedAt: timestamp("synced_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const forumPostSync = pgTable("forum_post_sync", {
@@ -193,6 +219,9 @@ export const forumPostSync = pgTable("forum_post_sync", {
   syncedAt: timestamp("synced_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const contentVersion = pgTable("content_version", {
@@ -206,6 +235,9 @@ export const contentVersion = pgTable("content_version", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Cohort Forum: Pods ──────────────────────────────────────────────
@@ -228,6 +260,9 @@ export const pod = pgTable("pod", {
   updatedAt: timestamp("updated_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const podMember = pgTable(
@@ -247,6 +282,9 @@ export const podMember = pgTable(
     lastActiveAt: timestamp("last_active_at", { withTimezone: true }),
     postCount: integer("post_count").default(0),
     engagementScore: integer("engagement_score").default(0),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     uniqueMember: uniqueIndex("idx_pod_member_unique").on(
@@ -287,6 +325,9 @@ export const memberMatchingProfile = pgTable("member_matching_profile", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const podActivity = pgTable("pod_activity", {
@@ -300,6 +341,9 @@ export const podActivity = pgTable("pod_activity", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const facilitatorContext = pgTable(
@@ -328,6 +372,9 @@ export const facilitatorContext = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     uniquePodWeek: uniqueIndex("idx_facilitator_pod_week").on(
@@ -354,6 +401,9 @@ export const personaActivity = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     uniquePodPersona: uniqueIndex("idx_persona_pod_unique").on(
@@ -373,6 +423,9 @@ export const forumAnalyticsEvent = pgTable("forum_analytics_event", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Community: NodeBB user mapping + activity events ────────────────
@@ -385,6 +438,9 @@ export const nodebbUserMap = pgTable("nodebb_user_map", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 export const activityEvent = pgTable("activity_event", {
@@ -399,6 +455,9 @@ export const activityEvent = pgTable("activity_event", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Intelligence: Social Media Signals ──────────────────────────────
@@ -416,6 +475,9 @@ export const socialSignal = pgTable("social_signal", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Book: One-time purchases ────────────────────────────────────────
@@ -433,6 +495,9 @@ export const bookPurchase = pgTable("book_purchase", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Book: Full-text search index ────────────────────────────────────
@@ -462,6 +527,9 @@ export const bookReadingEvent = pgTable("book_reading_event", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Intelligence: SEO Research (NeuronWriter) ───────────────────────
@@ -483,6 +551,9 @@ export const seoResearch = pgTable("seo_research", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Native Forms ──────────────────────────────────────────────
@@ -505,6 +576,9 @@ export const formSubmission = pgTable("form_submission", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Component State Persistence ─────────────────────────────────────
@@ -524,6 +598,9 @@ export const userComponentState = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     uniqueUserComponent: uniqueIndex("idx_user_component_state_unique").on(
@@ -547,6 +624,9 @@ export const formWorkflowLog = pgTable("form_workflow_log", {
   createdAt: timestamp("created_at", { withTimezone: true })
     .defaultNow()
     .notNull(),
+  tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
 });
 
 // ── Connected Accounts (Attio, Notion, Hunter, Pipedrive, Brevo, WhatsApp) ──
@@ -573,6 +653,9 @@ export const connectedAccount = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     uniqueUserProvider: uniqueIndex("idx_connected_account_unique").on(
@@ -606,6 +689,9 @@ export const outreachLog = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     userIdx: index("idx_outreach_log_user").on(table.userId),
@@ -648,6 +734,9 @@ export const pipelineDeal = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     userIdx: index("idx_pipeline_deal_user").on(table.userId),
@@ -674,6 +763,9 @@ export const lessonFeedback = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     lessonIdx: index("idx_lesson_feedback_lesson").on(
@@ -714,6 +806,9 @@ export const documentEmbedding = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true })
       .defaultNow()
       .notNull(),
+    tenantId: uuid("tenant_id")
+    .notNull()
+    .default(sql`current_setting('app.tenant_id', true)::uuid`), // FK enforced by Postgres in 0003_app_tenancy.sql; cross-package import blocked by B-035 ESLint rule.
   },
   (table) => ({
     userIdx: index("idx_doc_embedding_user").on(table.userId),

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { withAuth } from '@/lib/api/with-auth';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { bookReadingEvent } from '@/lib/db/schema';
 import crypto from 'crypto';
 
@@ -21,17 +22,16 @@ export const POST = withAuth(async (request: NextRequest, user) => {
     );
   }
 
-  const db = getDb();
-  if (!db) {
-    return NextResponse.json({ ok: false });
-  }
+  const ctx = await requireTenantContext(request, { userId: user.userId });
 
-  await db.insert(bookReadingEvent).values({
-    id: `bre_${crypto.randomUUID()}`,
-    userId: user.userId,
-    chapterId,
-    eventType,
-  });
+  await withTenantApp(ctx, async (tx) =>
+    tx.insert(bookReadingEvent).values({
+      id: `bre_${crypto.randomUUID()}`,
+      userId: user.userId,
+      chapterId,
+      eventType,
+    }),
+  );
 
   return NextResponse.json({ ok: true });
 });

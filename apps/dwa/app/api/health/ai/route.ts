@@ -1,15 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'node:crypto';
 import { aiClient, hasAIKey, isOpenRouter } from '@/lib/ai/client';
 import { resolveModel } from '@/lib/ai/models';
 
 /**
  * AI connectivity diagnostic endpoint.
- * GET /api/health/ai?key=<ADMIN_API_SECRET> → tests OpenRouter/OpenAI connection.
- * Returns diagnostic info (no secrets exposed).
+ *
+ * Requires `Authorization: Bearer <ADMIN_API_SECRET>`.
+ *
+ * (slice 01 finding) The previous shape (`?key=<secret>`) put the admin
+ * secret in the URL, which ends up in Traefik/Dokploy access logs,
+ * browser history, and Referer headers. Plus the `!==` compare was
+ * timing-unsafe. (B-042.)
  */
 export async function GET(request: NextRequest) {
-  const key = request.nextUrl.searchParams.get('key');
-  if (!key || key !== process.env.ADMIN_API_SECRET) {
+  const hdr = request.headers.get('authorization') ?? '';
+  const want = `Bearer ${process.env.ADMIN_API_SECRET ?? ''}`;
+  const authorized =
+    !!process.env.ADMIN_API_SECRET &&
+    hdr.length === want.length &&
+    (() => {
+      try { return timingSafeEqual(Buffer.from(hdr), Buffer.from(want)); }
+      catch { return false; }
+    })();
+
+  if (!authorized) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
   }
   const model = resolveModel('coaching');
@@ -41,8 +56,9 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({ status: 'ok', diag });
   } catch (error) {
-    const msg = error instanceof Error ? error.message : String(error);
-    diag.error = msg;
+    // Don't return the raw upstream error — redact to a short tag. The full
+    // error stays in server logs only. (slice 01 finding.)
+    diag.error = error instanceof Error ? error.name : 'UpstreamError';
     return NextResponse.json({ status: 'error', diag }, { status: 503 });
   }
 }

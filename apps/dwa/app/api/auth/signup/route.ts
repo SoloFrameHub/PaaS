@@ -4,7 +4,7 @@ import { hash } from '@node-rs/argon2';
 import { getLucia } from '@/lib/auth-lucia';
 import { getDb, schema } from '@/lib/db';
 import { eq } from 'drizzle-orm';
-import { isRateLimited, AUTH_RATE_LIMIT } from '@/lib/security';
+import { isRateLimited, AUTH_RATE_LIMIT, getClientIp } from '@/lib/security';
 import { logger } from '@/lib/logger';
 
 export async function POST(request: NextRequest) {
@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Auth not configured (no database)' }, { status: 503 });
   }
 
-  const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+  const ip = getClientIp(request);
   const { limited, remaining, reset } = await isRateLimited(ip, AUTH_RATE_LIMIT, 'auth:signup');
   if (limited) {
     return NextResponse.json(
@@ -40,21 +40,46 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid password (min 12 characters)' }, { status: 400 });
   }
 
+  // D-2/D-8: signup writes only to `user` (excluded from RLS) and creates a
+  // Lucia `session`. Both stay on the raw pool — there is no tenant-scoped
+  // row to insert here. Profile creation happens later in the onboarding
+  // flow under withTenantApp; tenant_member is a platform-spine table and
+  // would land via withSystemAdminApp if/when signup grows membership
+  // bootstrap. None of that applies today.
   const db = getDb();
   if (!db) return NextResponse.json({ error: 'Database not available' }, { status: 503 });
 
   try {
     const existing = await db.select().from(schema.user).where(eq(schema.user.email, email)).limit(1);
-    if (existing.length > 0) {
-      return NextResponse.json({ error: 'Email already used' }, { status: 400 });
-    }
 
+    // Always hash the password regardless of whether the email is taken.
+    // Returning "Email already used" for taken addresses enumerates accounts
+    // — a concrete privacy breach for a mental-health platform. Instead we
+    // hash (keeping response time constant) and return a uniform 200 that
+    // doesn't distinguish new vs existing. (B-043 enumeration fix.)
+    //
+    // TODO(mail): when the transactional-mail adapter ships, send a
+    // "welcome / verify your email" mail for new accounts and a
+    // "you already have an account, here is a reset link" mail for taken
+    // addresses. Both yield the same public response.
     const passwordHash = await hash(password, {
       memoryCost: 19456,
       timeCost: 2,
       outputLen: 32,
       parallelism: 1,
     });
+
+    if (existing.length > 0) {
+      logger.info('signup_email_already_registered', {
+        // Intentionally not logging the email itself; email presence inferable
+        // from auth audit trail but the monitoring dashboard doesn't need it.
+      });
+      return NextResponse.json(
+        { ok: true, redirect: '/signin' },
+        { status: 200 },
+      );
+    }
+
     const userId = generateIdFromEntropySize(10);
     await db.insert(schema.user).values({
       id: userId,
@@ -70,7 +95,6 @@ export async function POST(request: NextRequest) {
     return res;
   } catch (err) {
     logger.error('Signup error', {
-      email,
       error: err instanceof Error ? err.message : String(err),
     });
     return NextResponse.json({ error: 'Sign up failed. Please try again.' }, { status: 500 });

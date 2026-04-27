@@ -62,8 +62,9 @@ export interface RateLimitConfig {
 export async function isRateLimited(identifier: string, config: RateLimitConfig, namespace: string = 'global'): Promise<{ limited: boolean; remaining: number; reset: number }> {
     // Bypass rate limiting in mock environments to prevent Redis errors
     if (process.env.NEXT_PUBLIC_MOCK_AUTH === 'true') {
-        // Security: Block mock mode in actual production runtime (not during builds)
-        if (process.env.NODE_ENV === 'production' && process.env.VERCEL_ENV === 'production') {
+        // B-044: NODE_ENV alone — never rely on VERCEL_ENV to close the prod gate
+        // (not set on Dokploy, so the dual-check silently failed open in prod there).
+        if (process.env.NODE_ENV === 'production') {
             throw new Error('CRITICAL: Mock auth cannot be enabled in production');
         }
         return {
@@ -139,3 +140,29 @@ export const GENERAL_RATE_LIMIT = {
     limit: 60,           // 60 requests
     windowMs: 60 * 1000  // per 1 minute
 };
+
+/**
+ * Extract the client IP for rate-limit bucketing.
+ *
+ * The client fully controls the `X-Forwarded-For` header and our reverse
+ * proxy (Traefik / Dokploy) appends the real socket IP to the tail.
+ * Using `split(',')[0]` keyed the limiter on the attacker-controlled value,
+ * letting one attacker rotate the header and bypass the bucket (B-041).
+ *
+ * Preference order:
+ *   1. `x-real-ip` — Traefik/Dokploy sets this from the socket, not from
+ *      any client-supplied header.
+ *   2. Rightmost entry of `x-forwarded-for` — the one appended by our own
+ *      trusted proxy.
+ *   3. Literal `'unknown'`.
+ */
+export function getClientIp(request: { headers: Headers }): string {
+    const realIp = request.headers.get('x-real-ip');
+    if (realIp && realIp.trim()) return realIp.trim();
+    const xff = request.headers.get('x-forwarded-for');
+    if (xff) {
+        const parts = xff.split(',').map(p => p.trim()).filter(Boolean);
+        if (parts.length) return parts[parts.length - 1]!;
+    }
+    return 'unknown';
+}

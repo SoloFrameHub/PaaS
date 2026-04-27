@@ -30,7 +30,8 @@ export async function POST(request: NextRequest) {
       const mockUserId = uid || 'mock-user-123';
       const mockEmail = email || 'mock@example.com';
 
-      // Ensure a user row exists in the DB so profile FK constraints are satisfied
+      // Ensure a user row exists in the DB so profile FK constraints are satisfied.
+      // D-2/D-8: only `schema.user` is touched (RLS-excluded) — raw pool is correct.
       if (process.env.DATABASE_URL) {
         try {
           const { getDb, schema } = await import('@/lib/db');

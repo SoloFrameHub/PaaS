@@ -8,12 +8,24 @@ const TENANT_ROOT_DOMAINS = (process.env.TENANT_ROOT_DOMAINS ?? '')
     .filter(Boolean);
 
 /**
- * Next.js Middleware — runs in Edge Runtime.
+ * Next.js Proxy (Middleware) — runs in Edge Runtime. In Next 16 the
+ * convention is `proxy.ts` at the app root exporting a function named
+ * `proxy` (or a default export); the older `middleware.ts` convention
+ * still works but is deprecated (B-031).
  *
  * IMPORTANT: Only use Web-API-compatible code here. Node.js modules
  * (ioredis, pg, fs, etc.) will crash the Edge Runtime. Rate limiting
  * is handled inside each route handler (Node.js runtime) instead.
  */
+
+/**
+ * Headers the client must never be allowed to control — they're written by
+ * middleware as the trust boundary into the Node-runtime tenancy resolver.
+ * See B-030: without this strip, an unauthenticated client could send
+ * `x-tenant-slug: <any>` and downstream handlers that call
+ * `requireTenantContext` would treat that value as the authoritative tenant.
+ */
+const TENANT_HEADERS = ['x-tenant-slug', 'x-tenant-id'] as const;
 
 /**
  * Add security headers to a response
@@ -84,13 +96,10 @@ export async function proxy(request: NextRequest) {
         }
     }
 
-    // 2. Auth redirects — only for routes that don't handle their own auth.
-    //    Pages like /academy, /coach, /community already call getAuthContext()
-    //    and redirect themselves, so the proxy should NOT duplicate that.
-
-    // Propagate x-request-id to downstream handlers and client for log correlation.
-    // Must pass headers via `request` option or downstream route handlers won't see them.
+    // Build the forwarded header set from scratch for the tenant-control
+    // headers so a client cannot seed them. Every other header flows through.
     const requestHeaders = new Headers(request.headers);
+    for (const h of TENANT_HEADERS) requestHeaders.delete(h);
     requestHeaders.set('x-request-id', requestId);
 
     // Tenant slug from host header. Node-runtime API routes complete the

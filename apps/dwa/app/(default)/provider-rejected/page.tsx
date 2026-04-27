@@ -2,9 +2,11 @@
  * /provider-rejected
  * Shown when a provider application was rejected by an admin.
  */
+import { headers } from 'next/headers';
 import { getServerSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { providerProfile } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import Link from 'next/link';
@@ -16,12 +18,17 @@ export default async function ProviderRejectedPage() {
   const session = await getServerSession();
   if (!session?.uid) redirect('/signin');
 
-  const db = getDb();
-  let prof: any = null;
-  if (db) {
-    const [row] = await db.select().from(providerProfile).where(eq(providerProfile.userId, session.uid));
-    prof = row ?? null;
-  }
+  const ctx = await requireTenantContext(
+    { headers: await headers() },
+    { userId: session.uid },
+  );
+
+  // Drop the `if (!db)` short-circuit — `withTenantApp` throws when
+  // DATABASE_URL is unset, which is the correct semantic per Phase 7.
+  const rows = await withTenantApp(ctx, async (tx) =>
+    tx.select().from(providerProfile).where(eq(providerProfile.userId, session.uid))
+  );
+  const prof: any = rows[0] ?? null;
 
   if (!prof || prof.verificationStatus !== 'rejected') redirect('/provider-signup');
 

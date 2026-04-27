@@ -38,7 +38,14 @@ export async function POST(request: NextRequest) {
     }
 
     // 3. Rate limit
-    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+    // B-041: leftmost XFF entry is whatever the client sent — Traefik/Dokploy
+    // appends the real socket IP to the tail. Trust x-real-ip first (set by
+    // the proxy from the socket), then the rightmost XFF entry; never the
+    // leftmost (which lets an attacker rotate the rate-limit bucket per request).
+    const ip =
+      request.headers.get('x-real-ip') ||
+      request.headers.get('x-forwarded-for')?.split(',').at(-1)?.trim() ||
+      'unknown';
     if (isRateLimited(ip)) {
       return NextResponse.json({ error: { message: 'Too many submissions. Please try again later.', code: 'RATE_LIMITED' } }, { status: 429 });
     }

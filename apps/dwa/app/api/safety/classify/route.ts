@@ -19,9 +19,10 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { requireTenantContext, type TenantContext } from '@platform/tenancy';
 import { withAuth } from '@/lib/api/with-auth';
 import { checkDistress } from '@/lib/safety/checkDistress';
-import { getDb } from '@/lib/db';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { distressEvent } from '@/lib/db/schema';
 import { logger } from '@/lib/logger';
 import { isRateLimited, AI_RATE_LIMIT } from '@/lib/security';
@@ -34,6 +35,8 @@ const classifySchema = z.object({
 });
 
 export const POST = withAuth(async (request: NextRequest, { userId }) => {
+  const ctx = await requireTenantContext(request, { userId });
+
   // Finding 12: Rate limit distress classification (cost-sensitive: DistilBERT inference + DB insert)
   const rateLimitResult = await isRateLimited(userId, AI_RATE_LIMIT, 'ai');
   if (rateLimitResult.limited) {
@@ -71,7 +74,7 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
 
   // Only log events where distress was actually detected — skip 'none' to avoid noise
   if (result.level !== 'none') {
-    logDistressEvent({ userId, result, context, courseId, lessonId });
+    logDistressEvent({ ctx, userId, result, context, courseId, lessonId });
   }
 
   // Log crisis events always for HIPAA audit trail, regardless of level
@@ -93,25 +96,27 @@ export const POST = withAuth(async (request: NextRequest, { userId }) => {
  * Fire-and-forget database write.
  * Follows the same pattern as logModerationDecision in with-moderation.ts.
  * Does NOT store text — only the classification metadata.
+ *
+ * `distress_event` is tenant-scoped — write goes through `withTenantApp`
+ * so RLS sees the pinned `app.tenant_id` GUC.
  */
 function logDistressEvent({
+  ctx,
   userId,
   result,
   context,
   courseId,
   lessonId,
 }: {
+  ctx: TenantContext;
   userId: string;
   result: { level: string; confidence: number; crisis: boolean };
   context: string;
   courseId?: string;
   lessonId?: string;
 }) {
-  const db = getDb();
-  if (!db) return;
-
-  db.insert(distressEvent)
-    .values({
+  withTenantApp(ctx, async (tx) =>
+    tx.insert(distressEvent).values({
       userId,
       level:           result.level,
       confidence:      result.confidence,
@@ -120,6 +125,5 @@ function logDistressEvent({
       lessonId:        lessonId ?? null,
       providerAlerted: false,
     })
-    .execute()
-    .catch((err) => logger.error('distress_event_insert_error', { error: err }));
+  ).catch((err) => logger.error('distress_event_insert_error', { error: err }));
 }

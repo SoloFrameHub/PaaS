@@ -1,12 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { profileRepository } from '@/lib/repositories/profileRepository';
 import { hasDatabase } from '@/lib/db';
+import { requireTenantContext } from '@platform/tenancy';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { FounderProfile } from '@/types/profile';
 import { logger } from '@/lib/logger';
 
 /**
  * Test Setup API - Only available in test/development mode
  * Allows E2E tests to pre-populate profiles (works with both mock and Postgres repos)
+ *
+ * The user being created here is brand new and not yet a tenant member,
+ * so we resolve the tenant context with `requireMembership: false` — the
+ * membership gate would otherwise reject a freshly-minted test user.
  */
 export async function POST(request: NextRequest) {
     // Only allow in test mode with mock auth
@@ -29,16 +35,18 @@ export async function POST(request: NextRequest) {
 
         // Ensure a user row exists in the DB so profile FK constraints are satisfied
         if (hasDatabase()) {
-            const { getDb, schema } = await import('@/lib/db');
-            const db = getDb();
-            if (db) {
-                await db.insert(schema.user).values({
+            const { schema } = await import('@/lib/db');
+            const ctx = await requireTenantContext(request, {
+                requireMembership: false,
+            });
+            await withTenantApp(ctx, async (tx) =>
+                tx.insert(schema.user).values({
                     id: profile.userId,
                     email: profile.email || `${profile.userId}@test.local`,
                     hashedPassword: 'mock-not-used',
                     emailVerified: true,
-                }).onConflictDoNothing();
-            }
+                }).onConflictDoNothing(),
+            );
         }
 
         // Save the profile to the repository (Postgres if available, else mock)

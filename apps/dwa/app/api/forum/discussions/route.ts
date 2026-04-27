@@ -8,14 +8,24 @@ import { createDiscussionSchema } from '@/lib/validations/forum';
 /**
  * GET /api/forum/discussions — public, lists discussions with optional filters.
  */
+// Pagination caps — without these, `?limit=100000` hits Flarum directly.
+// (slice 01 fix.)
+const MAX_PAGE = 200;
+const MAX_LIMIT = 100;
+
 export async function GET(request: NextRequest) {
   try {
     const params = request.nextUrl.searchParams;
+    const rawSort = params.get('sort');
+    const sort: 'popular' | 'newest' | 'oldest' | 'top' =
+      rawSort === 'newest' || rawSort === 'oldest' || rawSort === 'top' ? rawSort : 'popular';
+    const page = Math.max(1, Math.min(Number(params.get('page')) || 1, MAX_PAGE));
+    const limit = Math.max(1, Math.min(Number(params.get('limit')) || 20, MAX_LIMIT));
     const result = await flarumClient.listDiscussions({
-      sort: (params.get('sort') as 'popular' | 'newest' | 'oldest' | 'top') || 'popular',
+      sort,
       tagSlug: params.get('tag') || undefined,
-      page: Number(params.get('page')) || 1,
-      limit: Number(params.get('limit')) || 20,
+      page,
+      limit,
       q: params.get('q') || undefined,
     });
     return successResponse(result);

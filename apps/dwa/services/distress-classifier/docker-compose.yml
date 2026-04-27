@@ -7,8 +7,11 @@ services:
       dockerfile: Dockerfile
     container_name: mental-health-classifier
     restart: unless-stopped
+    # Local dev: bind to loopback only so the classifier is reachable from
+    # the host's Next.js app but not from the LAN. Prod uses the overlay
+    # network (see docker-compose-dokploy.yml). (B-050)
     ports:
-      - "8001:8001"
+      - "127.0.0.1:8001:8001"
     environment:
       - PYTHONUNBUFFERED=1
     healthcheck:

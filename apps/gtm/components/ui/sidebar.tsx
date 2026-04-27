@@ -29,6 +29,8 @@ export default function Sidebar({
   // ... (rest of the component remains the same, but using 'tracks' instead of 'CURRICULUM')
 
   // close on click outside
+  // B-048: include deps — without them, every render unmounts and re-attaches
+  // the document listener (correct, but wasteful churn on parent re-renders).
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
       if (!sidebar.current) return;
@@ -37,7 +39,7 @@ export default function Sidebar({
     };
     document.addEventListener("click", clickHandler);
     return () => document.removeEventListener("click", clickHandler);
-  });
+  }, [sidebarOpen, setSidebarOpen]);
 
   // close if the esc key is pressed
   useEffect(() => {
@@ -47,7 +49,7 @@ export default function Sidebar({
     };
     document.addEventListener("keydown", keyHandler);
     return () => document.removeEventListener("keydown", keyHandler);
-  });
+  }, [sidebarOpen, setSidebarOpen]);
 
   return (
     <div className={`min-w-fit ${sidebarExpanded ? "sidebar-expanded" : ""}`}>

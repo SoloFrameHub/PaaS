@@ -1,9 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import {
-  getTenantContextFromHeaders,
-  resolveTenantSlugFromHost,
-} from '../src/middleware.js';
+import { resolveTenantSlugFromHost } from '../src/middleware.js';
 
 describe('resolveTenantSlugFromHost', () => {
   const opts = { rootDomains: ['soloframehub.com'] };
@@ -90,29 +87,13 @@ describe('resolveTenantSlugFromHost', () => {
   });
 });
 
-describe('getTenantContextFromHeaders', () => {
-  it('returns null when x-tenant-id is absent', () => {
-    expect(getTenantContextFromHeaders(new Headers())).toBe(null);
-    expect(getTenantContextFromHeaders({})).toBe(null);
-  });
-
-  it('builds a tenant context from Headers object', () => {
-    const h = new Headers({
-      'x-tenant-id': '00000000-0000-0000-0000-000000000042',
-    });
-    expect(getTenantContextFromHeaders(h, 'user-id')).toEqual({
-      tenantId: '00000000-0000-0000-0000-000000000042',
-      userId: 'user-id',
-      role: 'tenant',
-    });
-  });
-
-  it('builds a tenant context from a plain record', () => {
-    const h = { 'x-tenant-id': '00000000-0000-0000-0000-000000000001' };
-    expect(getTenantContextFromHeaders(h)).toEqual({
-      tenantId: '00000000-0000-0000-0000-000000000001',
-      userId: null,
-      role: 'tenant',
-    });
+// `getTenantContextFromHeaders` was removed (B-030). Its behaviour — trusting
+// `x-tenant-id` from the request — was a tenant-spoofing footgun. The
+// replacement is `requireTenantContext`, which re-resolves via the DB and
+// enforces membership. Its tests live in requireTenantContext.test.ts.
+describe('tenant header trust boundary', () => {
+  it('does not export a header-only tenant helper', async () => {
+    const mod: Record<string, unknown> = await import('../src/middleware.js');
+    expect(mod.getTenantContextFromHeaders).toBeUndefined();
   });
 });

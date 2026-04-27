@@ -1,9 +1,11 @@
 import { NextRequest } from 'next/server';
+import { requireTenantContext } from '@platform/tenancy';
 import { withAuth } from '@/lib/api/with-auth';
 import { successResponse, errorResponse } from '@/lib/api/response-utils';
 import { getDb } from '@/lib/db';
+import { withTenantApp } from '@/lib/db/with-tenant';
 import { user, profile } from '@/lib/db/schema';
-import { eq, isNotNull } from 'drizzle-orm';
+import { eq } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 
 /**
@@ -13,15 +15,19 @@ import { logger } from '@/lib/logger';
  * Clears the deleted_at timestamp and restores full account access.
  *
  * Finding 9: Grace period recovery endpoint.
+ *
+ * D-2 layered: `user` is excluded from RLS — read/update via the raw pool.
+ * `profile` is tenant-scoped — touched inside `withTenantApp`.
  */
 export const POST = withAuth(async (request: NextRequest, { userId, email }) => {
+  const ctx = await requireTenantContext(request, { userId });
   const db = getDb();
   if (!db) {
     return errorResponse('Database not available', 503);
   }
 
   try {
-    // Check if account is actually marked for deletion
+    // Layer 1 — `user` is excluded from RLS (D-2); raw pool.
     const [userRecord] = await db
       .select()
       .from(user)
@@ -44,7 +50,7 @@ export const POST = withAuth(async (request: NextRequest, { userId, email }) => 
       );
     }
 
-    // Restore account: Clear deleted_at timestamp
+    // Restore account: Clear deleted_at timestamp (raw pool — `user` is RLS-excluded)
     await db
       .update(user)
       .set({
@@ -53,26 +59,28 @@ export const POST = withAuth(async (request: NextRequest, { userId, email }) => 
       })
       .where(eq(user.id, userId));
 
-    // Clear pending deletion flag from profile
-    const [currentProfile] = await db
-      .select()
-      .from(profile)
-      .where(eq(profile.userId, userId));
-
-    if (currentProfile) {
-      const profileData = currentProfile.data as Record<string, unknown>;
-      delete profileData._pendingDeletion;
-      delete profileData._deletionScheduledAt;
-      delete profileData._purgeAfter;
-
-      await db
-        .update(profile)
-        .set({
-          data: profileData,
-          updatedAt: now,
-        })
+    // Layer 2 — `profile` is tenant-scoped; pin role + app.tenant_id GUC.
+    await withTenantApp(ctx, async (tx) => {
+      const [currentProfile] = await tx
+        .select()
+        .from(profile)
         .where(eq(profile.userId, userId));
-    }
+
+      if (currentProfile) {
+        const profileData = currentProfile.data as Record<string, unknown>;
+        delete profileData._pendingDeletion;
+        delete profileData._deletionScheduledAt;
+        delete profileData._purgeAfter;
+
+        await tx
+          .update(profile)
+          .set({
+            data: profileData,
+            updatedAt: now,
+          })
+          .where(eq(profile.userId, userId));
+      }
+    });
 
     logger.info('deletion_cancelled', { userId, email, daysSinceDeletion: daysSinceDeletion.toFixed(1) });
 

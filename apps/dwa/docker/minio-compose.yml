@@ -1,20 +1,35 @@
 # MinIO (S3-compatible) for Coolify.
 # In Coolify: Add Resource → Docker Compose → paste this file.
-# Replace MINIO_ROOT_USER/MINIO_ROOT_PASSWORD or use Coolify env vars (e.g. SERVICE_USER_MINIO, SERVICE_PASSWORD_MINIO).
-# After deploy: create bucket "caa-uploads" in MinIO console (port 9001), then set S3_* on the Next.js app.
+# Set SERVICE_USER_MINIO and SERVICE_PASSWORD_MINIO env vars (or
+# MINIO_ROOT_USER / MINIO_ROOT_PASSWORD) in the Coolify UI before deploying.
+# After deploy: create bucket "caa-uploads" in MinIO console (port 9001),
+# then set S3_* on the Next.js app.
+#
+# Security notes (B-051, B-052):
+#   - Credentials must come from env. No `minioadmin/minioadmin` default; an
+#     unset env var deliberately aborts the container rather than booting with
+#     well-known credentials.
+#   - Image is pinned to a specific tag. Bump manually after reviewing changelog.
+#   - The console port 9001 is bound to 127.0.0.1 on the host, so it is only
+#     reachable via an SSH tunnel. Traefik/Coolify exposes it publicly only
+#     through an explicit route + basic auth, not via published host ports.
 
 services:
   minio:
-    image: minio/minio:latest
+    # Pinned: bump deliberately after reviewing https://github.com/minio/minio/releases
+    image: minio/minio:RELEASE.2025-01-20T14-49-07Z
     command: server /data --console-address ":9001"
     environment:
-      MINIO_ROOT_USER: ${SERVICE_USER_MINIO:-minioadmin}
-      MINIO_ROOT_PASSWORD: ${SERVICE_PASSWORD_MINIO:-minioadmin}
+      MINIO_ROOT_USER: ${SERVICE_USER_MINIO:?Set SERVICE_USER_MINIO (e.g. via Coolify env UI)}
+      MINIO_ROOT_PASSWORD: ${SERVICE_PASSWORD_MINIO:?Set SERVICE_PASSWORD_MINIO (e.g. via Coolify env UI)}
     volumes:
       - minio_data:/data
+    # Bind to loopback only. Coolify's reverse proxy publishes the S3 endpoint
+    # via a Traefik route with TLS + optional auth; the raw host ports stay
+    # local. (B-051)
     ports:
-      - "9000:9000"   # S3 API
-      - "9001:9001"   # Web console
+      - "127.0.0.1:9000:9000"   # S3 API
+      - "127.0.0.1:9001:9001"   # Web console
 
 volumes:
   minio_data:

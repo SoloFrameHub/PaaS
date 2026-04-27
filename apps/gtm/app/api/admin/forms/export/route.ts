@@ -3,10 +3,15 @@
  *
  * Query params: slug (required), status (optional)
  * Auth: ADMIN_API_SECRET header
+ *
+ * Cross-tenant view — runs as platform_system to bypass RLS on
+ * `form_submission` (D-7, Pattern E). Mirrors
+ * `apps/gtm/app/api/admin/forms/route.ts`.
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getDb, schema } from '@/lib/db';
+import { hasDatabase, schema } from '@/lib/db';
+import { withSystemAdminApp } from '@/lib/db/with-tenant';
 import { eq, and, desc } from 'drizzle-orm';
 import { logger } from '@/lib/logger';
 import { checkAdminSecret } from '@/lib/api/admin-auth';
@@ -25,8 +30,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const db = getDb();
-  if (!db) {
+  if (!hasDatabase()) {
     return NextResponse.json({ error: 'Database unavailable' }, { status: 503 });
   }
 
@@ -42,11 +46,13 @@ export async function GET(request: NextRequest) {
     const conditions = [eq(schema.formSubmission.formSlug, slug)];
     if (status) conditions.push(eq(schema.formSubmission.status, status));
 
-    const submissions = await db
-      .select()
-      .from(schema.formSubmission)
-      .where(and(...conditions))
-      .orderBy(desc(schema.formSubmission.createdAt));
+    const submissions = await withSystemAdminApp(async (tx) =>
+      tx
+        .select()
+        .from(schema.formSubmission)
+        .where(and(...conditions))
+        .orderBy(desc(schema.formSubmission.createdAt))
+    );
 
     if (submissions.length === 0) {
       return new NextResponse('No submissions found', { status: 404 });

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createHmac, timingSafeEqual } from "crypto";
-import { getDb, schema } from "@/lib/db";
+import { schema } from "@/lib/db";
+import { withSystemAdminApp } from "@/lib/db/with-tenant";
 import { eq } from "drizzle-orm";
 import { logger } from "@/lib/logger";
 import type { AttioWebhookPayload } from "@/lib/attio/types";
@@ -9,6 +10,11 @@ import type { AttioWebhookPayload } from "@/lib/attio/types";
  * POST /api/webhook/attio
  * Handles incoming Attio webhooks for deal stage changes.
  * Validates HMAC signature via ATTIO_WEBHOOK_SECRET.
+ *
+ * Pattern C (resolve-then-pin) — Attio doesn't carry our tenant header,
+ * so we look up the matching `pipeline_deal` by `attioRecordId` under
+ * platform_system to read its `tenant_id`, then would re-enter
+ * withTenantApp for any subsequent stage-sync writes (D-7).
  */
 export async function POST(request: NextRequest) {
   const secret = process.env.ATTIO_WEBHOOK_SECRET;
@@ -44,25 +50,36 @@ export async function POST(request: NextRequest) {
       payload.type === "list-entry.updated" ||
       payload.type === "record.updated"
     ) {
-      const db = getDb();
-      if (db && payload.data?.id) {
+      if (payload.data?.id) {
         const attioRecordId =
           payload.data.id.record_id || payload.data.id.entry_id;
         if (attioRecordId) {
-          // Find matching pipeline deal
-          const [deal] = await db
-            .select()
-            .from(schema.pipelineDeal)
-            .where(eq(schema.pipelineDeal.attioRecordId, attioRecordId))
-            .limit(1);
+          // Cross-tenant lookup: find the pipeline deal that owns this
+          // Attio record id, then use its tenantId to pin any subsequent
+          // writes via withTenantApp.
+          const deal = await withSystemAdminApp(async (tx) => {
+            const [row] = await tx
+              .select()
+              .from(schema.pipelineDeal)
+              .where(eq(schema.pipelineDeal.attioRecordId, attioRecordId))
+              .limit(1);
+            return row;
+          });
 
           if (deal) {
             logger.info("Attio webhook: matched deal", {
               dealId: deal.id,
               attioRecordId,
               eventType: payload.type,
+              tenantId: deal.tenantId,
             });
-            // Stage sync would be handled here once Attio custom attributes are mapped
+            // Stage-sync writes would go here — pinned to the deal's tenant.
+            // Example shape (left as a noop until Attio attribute mapping lands):
+            //   await withTenantApp({ tenantId: deal.tenantId }, async (tx) => {
+            //     await tx.update(schema.pipelineDeal)
+            //       .set({ stage: nextStage })
+            //       .where(eq(schema.pipelineDeal.id, deal.id));
+            //   });
           }
         }
       }

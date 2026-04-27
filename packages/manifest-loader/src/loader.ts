@@ -76,7 +76,7 @@ export async function loadManifest(
       );
     }
     for (const [relPath, expected] of Object.entries(lock.assets)) {
-      const abs = path.join(verticalDir, relPath);
+      const abs = resolveInside(verticalDir, relPath);
       if (!(await pathExists(abs))) {
         throw new ManifestError(
           `manifest.lock references missing asset ${relPath}`,
@@ -104,7 +104,7 @@ export async function computeManifestLock(
   const assetPaths = collectAssetPaths(manifest);
   const assets: Record<string, string> = {};
   for (const rel of assetPaths) {
-    const abs = path.join(verticalDir, rel);
+    const abs = resolveInside(verticalDir, rel);
     if (!(await pathExists(abs))) continue;
     assets[rel] = `sha256:${await sha256File(abs)}`;
   }
@@ -115,6 +115,30 @@ export async function computeManifestLock(
     engines: engineVersions,
     assets,
   };
+}
+
+/**
+ * Join `verticalDir` with a manifest-supplied relative path and refuse any
+ * result that escapes `verticalDir`. For first-party verticals the paths are
+ * trusted, but Studio / self-serve manifests (Blueprint §9) will be
+ * attacker-controlled; a `../../etc/passwd` entry would otherwise resolve
+ * outside the vertical tree. (B-037)
+ */
+function resolveInside(verticalDir: string, relPath: string): string {
+  if (path.isAbsolute(relPath)) {
+    throw new ManifestError(
+      `manifest path escapes vertical root (absolute): ${relPath}`,
+    );
+  }
+  const resolvedRoot = path.resolve(verticalDir);
+  const resolved = path.resolve(resolvedRoot, relPath);
+  const rel = path.relative(resolvedRoot, resolved);
+  if (rel.startsWith('..') || path.isAbsolute(rel)) {
+    throw new ManifestError(
+      `manifest path escapes vertical root: ${relPath}`,
+    );
+  }
+  return resolved;
 }
 
 function collectAssetPaths(m: VerticalManifest): string[] {
